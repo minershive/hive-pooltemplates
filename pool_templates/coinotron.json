@@ -1,0 +1,300 @@
+[
+    {
+        "name": "ETH coinotron.com",
+        "props": {
+            "ewal": "your_username",
+            "claymore": {
+                "epools_tpl": "POOL: coinotron.com:3344, WALLET: %EWAL%.%WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-mode 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "pass": "x",
+                "port": "3344",
+                "server": "coinotron.com",
+                "template": "%EWAL%.%WORKER_NAME%",
+                "user_config": "--stratum-protocol 1"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://coinotron.com:3344",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%EWAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            }
+        },
+        "coins": [
+            "ETH"
+        ]
+    },
+    {
+        "name": "ETC coinotron.com",
+        "props": {
+            "ewal": "your_username",
+            "claymore": {
+                "epools_tpl": "POOL: coinotron.com:3345, WALLET: %EWAL%.%WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-mode 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "pass": "x",
+                "port": "3345",
+                "server": "coinotron.com",
+                "template": "%EWAL%.%WORKER_NAME%",
+                "user_config": "--stratum-protocol 1"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://coinotron.com:3345",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%EWAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            }
+        },
+        "coins": [
+            "ETC"
+        ]
+    },
+    {
+        "name": "ETH-ETC multiport coinotron.com",
+        "props": {
+            "ewal": "your_username",
+            "claymore": {
+                "epools_tpl": "POOL: coinotron.com:7777, WALLET: %EWAL%.%WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-mode 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "pass": "x",
+                "port": "7777",
+                "server": "coinotron.com",
+                "template": "%EWAL%.%WORKER_NAME%",
+                "user_config": "--stratum-protocol 1"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://coinotron.com:7777",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%EWAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            }
+        },
+        "coins": [
+            "ETH",
+            "ETC"
+        ]
+    },
+    {
+        "name": "ZEC coinotron.com",
+        "props": {
+            "zwal": "your_username",
+            "dstm": {
+                "pass": "x",
+                "port": "3346",
+                "server": "coinotron.com:3346",
+                "template": "%ZWAL%.%WORKER_NAME%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "3346",
+                "zserver": "coinotron.com:3346",
+                "ztemplate": "%ZWAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "stratum+tcp://coinotron.com:3346",
+                "pass": "x",
+                "template": "%ZWAL%.%WORKER_NAME%/%EMAIL%"
+            },
+            "claymore-z": {
+                "zpools_tpl": "POOL: coinotron.com:3346, WALLET: %ZWAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://coinotron.com:3346",
+                "algo": "equihash",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%ZWAL%.%WORKER_NAME%"
+            }
+        },
+        "coins": [
+            "ZEC"
+        ]
+    },
+    {
+        "name": "BTG coinotron.com",
+        "props": {
+            "zwal": "your_username",
+            "dstm": {
+                "pass": "x",
+                "port": "3349",
+                "server": "coinotron.com:3349",
+                "template": "%ZWAL%.%WORKER_NAME%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "3346",
+                "zserver": "coinotron.com:3349",
+                "ztemplate": "%ZWAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "stratum+tcp://coinotron.com:3349",
+                "pass": "x",
+                "template": "%ZWAL%.%WORKER_NAME%/%EMAIL%"
+            },
+            "claymore-z": {
+                "zpools_tpl": "POOL: coinotron.com:3349, WALLET: %ZWAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://coinotron.com:3349",
+                "algo": "equihash",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%ZWAL%.%WORKER_NAME%"
+            }
+        },
+        "coins": [
+            "BTG"
+        ]
+    },
+    {
+        "name": "ZEC-BTG multiport coinotron.com",
+        "props": {
+            "zwal": "your_username",
+            "dstm": {
+                "pass": "x",
+                "port": "7778",
+                "server": "coinotron.com:3346",
+                "template": "%ZWAL%.%WORKER_NAME%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "7778",
+                "zserver": "coinotron.com:3346",
+                "ztemplate": "%ZWAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "stratum+tcp://coinotron.com:7778",
+                "pass": "x",
+                "template": "%ZWAL%.%WORKER_NAME%/%EMAIL%"
+            },
+            "claymore-z": {
+                "zpools_tpl": "POOL: coinotron.com:7778, WALLET: %ZWAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://coinotron.com:7778",
+                "algo": "equihash",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%ZWAL%.%WORKER_NAME%"
+            }
+        },
+        "coins": [
+            "ZEC",
+            "BTG"
+        ]
+    },
+    {
+        "name": "PASC coinotron.com",
+        "props": {
+            "dwal": "your_username",
+            "claymore": {
+                "dcri": "30",
+                "dcoin": "pasc",
+                "dpools_tpl": "POOL: coinotron.com:3348, WALLET: %DWAL%.%WORKER_NAME%, PSW: x"
+            }
+        },
+        "coins": [
+            "PASC"
+        ]
+    },
+    {
+        "name": "LTC, DOGE, VIA merged mining minergate.com",
+        "props": {
+            "dwal": "your_username",
+            "ccminer": {
+                "ccurl": "stratum+tcp://coinotron.com:3334",
+                "ccalgo": "scrypt",
+                "ccpass": "x",
+                "ccuser": "%DWAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://coinotron.com:3334",
+                "algo": "scrypt",
+                "pass": "x",
+                "template": "%DWAL%.%WORKER_NAME%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        },
+        "coins": [
+            "LTC",
+            "DOGE",
+            "VIA"
+        ]
+    },
+    {
+        "name": "DASH coinotron.com",
+        "props": {
+            "dwal": "your_username",
+            "ccminer": {
+                "ccurl": "stratum+tcp://coinotron.com:3341",
+                "ccalgo": "x11",
+                "ccpass": "x",
+                "ccuser": "%DWAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://coinotron.com:3341",
+                "algo": "darkcoin",
+                "pass": "x",
+                "template": "%DWAL%.%WORKER_NAME%,",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        },
+        "coins": [
+            "DASH"
+        ]
+    },
+    {
+        "name": "FTC coinotron.com",
+        "props": {
+            "dwal": "your_username",
+            "ccminer": {
+                "ccurl": "stratum+tcp://coinotron.com:3337",
+                "ccalgo": "neoscrypt",
+                "ccpass": "x",
+                "ccuser": "%DWAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://coinotron.com:3337",
+                "algo": "neoscrypt",
+                "pass": "x",
+                "template": "%DWAL%.%WORKER_NAME%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        },
+        "coins": [
+            "FTC"
+        ]
+    },
+    {
+        "name": "VTC coinotron.com",
+        "props": {
+            "dwal": "your_username",
+            "sgminer-gm": {
+                "url": "stratum+tcp://coinotron.com:3340",
+                "algo": "lyra2rev2",
+                "pass": "x",
+                "template": "%DWAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://coinotron.com:3340",
+                "ccalgo": "lyra2rev2",
+                "ccpass": "x",
+                "ccuser": "%DWAL%.%WORKER_NAME%"
+            }
+        },
+        "coins": [
+            "VTC"
+        ]
+    }
+]

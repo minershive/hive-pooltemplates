@@ -1,0 +1,520 @@
+[
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "eth.coinmine.pl:4000"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
+                "claymore_user_config": "-mode 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            }
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "etc.coinmine.pl:24000"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
+                "claymore_user_config": "-mode 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            }
+        }
+    },
+    {
+        "coin": "ZEC",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "zec.coinmine.pl:7007"
+                ]
+            }
+        ],
+        "miners": {
+            "dstm": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%"
+            },
+            "bminer": {
+                "url": "stratum://%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "claymore-z": {
+                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "equihash",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "ZCL",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "zcl.coinmine.pl:7007"
+                ]
+            }
+        ],
+        "miners": {
+            "dstm": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%"
+            },
+            "bminer": {
+                "url": "stratum://%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "claymore-z": {
+                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "equihash",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "xmr.mixpools.org:8080"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"currency\": \"monero7\""
+            },
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "claymore-x_user_config": "-pow7 1"
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "DASH",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "dash.coinmine.pl:6099"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "x11",
+                "ccpass": "x",
+                "ccuser": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "darkcoin",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
+        "coin": "DCR",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "dcr.coinmine.pl:2222"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "decred",
+                "ccpass": "x",
+                "ccuser": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "blake256r14",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
+        "coin": "EXP",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "exp.coinmine.pl:1500"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
+                "claymore_user_config": "-mode 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            }
+        }
+    },
+    {
+        "coin": "GRS",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "mine1.coinmine.pl:13000"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "groestl",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "groestlcoin",
+                "pass": "x",
+                "template": "%WAL.%WORKER_NAME% PSW: x",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
+        "coin": "LBC",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "lbc.coinmine.pl:8787"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "dcri": "30",
+                "dcoin": "lbc",
+                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3, ALLPOOLS: 1",
+                "claymore_user_config": "-allpools 0"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "lbry",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lbry",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
+        "coin": "MUSIC",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "music.coinmine.pl:2020"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
+                "claymore_user_config": "-mode 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            }
+        }
+    },
+    {
+        "coin": "UBQ",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "ubiq.coinmine.pl:2120"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
+                "claymore_user_config": "-mode 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            }
+        }
+    },
+    {
+        "coin": "SRC",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "mine2.coinmine.pl:6020"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "quark",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "quarkcoin",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%,",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
+        "coin": "PPC",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "mine1.coinmine.pl:6050"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "sha256",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
+        "coin": "ELLA",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "ella.coinmine.pl:6600"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
+                "claymore_user_config": "-mode 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            }
+        }
+    },
+    {
+        "coin": "AURA",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "aura.coinmine.pl:3388"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
+                "claymore_user_config": "-mode 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            }
+        }
+    },
+    {
+        "coin": "AKA",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "aka.coinmine.pl:3666"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
+                "claymore_user_config": "-mode 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            }
+        }
+    }
+]

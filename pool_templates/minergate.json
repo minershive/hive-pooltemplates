@@ -1,0 +1,460 @@
+[
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "eth.pool.minergate.com:45791"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
+                "claymore_user_config": "-mode 1 -allpools 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "etc.pool.minergate.com:45777"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "ZEC",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "zec.pool.minergate.com:3357"
+                ]
+            }
+        ],
+        "miners": {
+            "dstm": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST",
+                "ztemplate": "%WAL%"
+            },
+            "bminer": {
+                "url": "stratum://%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "claymore-z": {
+                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%",
+                "claymore_user_config": "-allpools 1"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "equihash",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "BTG",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "BTG.pool.minergate.com:3257"
+                ]
+            }
+        ],
+        "miners": {
+            "dstm": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST",
+                "ztemplate": "%WAL%"
+            },
+            "bminer": {
+                "url": "stratum://%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "claymore-z": {
+                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%",
+                "claymore_user_config": "-allpools 1"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "equihash",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "LTC",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "ltc.pool.minergate.com:3336"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "scrypt",
+                "ccpass": "x",
+                "ccuser": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "scrypt",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "xmr.pool.minergate.com:45700"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"monero7\""
+            },
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
+                "claymore-x_user_config": "-pow7 1"
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "cpuminer-opt": {
+                "url": "%URL%",
+                "algo": "cryptonightv7",
+                "pass": "x",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "XMO",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "xmo.pool.minergate.com:45560"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x"
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "cryptonight",
+                "ccpass": "x",
+                "ccuser": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\": \"256\"\n\"gpu-threads\": \"1\"\n\"worksize\": \"2\""
+            }
+        }
+    },
+    {
+        "coin": "BCN",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "bcn.pool.minergate.com:45550"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x"
+            },
+            "xmr-stak-cpu": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "cryptonight",
+                "ccpass": "x",
+                "ccuser": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\": \"256\"\n\"gpu-threads\": \"1\"\n\"worksize\": \"2\""
+            }
+        }
+    },
+    {
+        "coin": "QCN",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "qcn.pool.minergate.com:45570"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x"
+            },
+            "xmr-stak-cpu": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "cryptonight",
+                "ccpass": "x",
+                "ccuser": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\": \"256\"\n\"gpu-threads\": \"1\"\n\"worksize\": \"2\""
+            }
+        }
+    },
+    {
+        "coin": "XDN",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "xdn.pool.minergate.com:45620"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x"
+            },
+            "xmr-stak-cpu": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "cryptonight",
+                "ccpass": "x",
+                "ccuser": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\": \"256\"\n\"gpu-threads\": \"1\"\n\"worksize\": \"2\""
+            }
+        }
+    },
+    {
+        "coin": "FCN",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "fcn.pool.minergate.com:45610"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x"
+            },
+            "xmr-stak-cpu": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "cryptonight",
+                "ccpass": "x",
+                "ccuser": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\": \"256\"\n\"gpu-threads\": \"1\"\n\"worksize\": \"2\""
+            }
+        }
+    },
+    {
+        "coin": "DSH",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "dsh.pool.minergate.com:4572"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x"
+            },
+            "xmr-stak-cpu": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "cryptonight",
+                "ccpass": "x",
+                "ccuser": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\": \"256\"\n\"gpu-threads\": \"1\"\n\"worksize\": \"2\""
+            }
+        }
+    }
+]
