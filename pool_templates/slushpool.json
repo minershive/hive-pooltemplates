@@ -1,0 +1,105 @@
+[
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "GLOBAL",
+                "urls": [
+                    "stratum.slushpool.com:3333"
+                ]
+            },
+            {
+                "geo": "USA (east coast)",
+                "urls": [
+                    "us-east.stratum.slushpool.com:3333"
+                ]
+            },
+            {
+                "geo": "Canada",
+                "urls": [
+                    "ca.stratum.slushpool.com:3333"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.stratum.slushpool.com:3333"
+                ]
+            },
+            {
+                "geo": "China (mainland)",
+                "urls": [
+                    "cn.stratum.slushpool.com:3333",
+                    "cn.stratum.slushpool.com:443"
+                ]
+            },
+            {
+                "geo": "Singapore",
+                "urls": [
+                    "sg.stratum.slushpool.com:3333"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "jp.stratum.slushpool.com:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ZEC",
+        "servers": [
+            {
+                "geo": "GLOBAL",
+                "urls": [
+                    "zec.slushpool.com:4444"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.zec.slushpool.com:4444"
+                ]
+            },
+            {
+                "geo": "USA (east coast)",
+                "urls": [
+                    "us-east.zec.slushpool.com:4444"
+                ]
+            }
+        ],
+        "miners": {
+            "dstm": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST",
+                "ztemplate": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "stratum://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "claymore-z": {
+                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

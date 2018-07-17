@@ -1,0 +1,65 @@
+[
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "China North",
+                "urls": [
+                    "btc-bj.s.dpool.top:1800",
+                    "btc-bj.s.dpool.top:443"
+                ]
+            },
+            {
+                "geo": "China South",
+                "urls": [
+                    "btc-hn.s.dpool.top:1800",
+                    "btc-hn.s.dpool.top:443"
+                ]
+            },
+            {
+                "geo": "America",
+                "urls": [
+                    "btc-va.s.dpool.top:1800",
+                    "btc-va.s.dpool.top:443"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "btc-eu.s.dpool.top:1800",
+                    "btc-eu.s.dpool.top:443"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "eth-sh.s.dpool.top:8008"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
