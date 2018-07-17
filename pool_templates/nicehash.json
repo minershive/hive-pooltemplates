@@ -1,6 +1,6 @@
 [
     {
-        "coin": "Nichash-Ethash",
+        "coin": "Nicehash-Ethash",
         "servers": [
             {
                 "geo": "Europe",
@@ -55,7 +55,7 @@
         }
     },
     {
-        "coin": "Nichash-Equihash",
+        "coin": "Nicehash-Equihash",
         "servers": [
             {
                 "geo": "Europe",
@@ -125,7 +125,7 @@
         }
     },
     {
-        "coin": "Nichash-Lyra2REv2",
+        "coin": "Nicehash-Lyra2REv2",
         "servers": [
             {
                 "geo": "Europe",
@@ -181,7 +181,7 @@
         }
     },
     {
-        "coin": "Nichash-Blacke256r14",
+        "coin": "Nicehash-Blacke256r14",
         "servers": [
             {
                 "geo": "Europe",
@@ -237,7 +237,7 @@
         }
     },
     {
-        "coin": "Nichash-Neoscrypt",
+        "coin": "Nicehash-Neoscrypt",
         "servers": [
             {
                 "geo": "Europe",
@@ -293,7 +293,7 @@
         }
     },
     {
-        "coin": "Nichash-CryptoNight",
+        "coin": "Nicehash-CryptoNight",
         "servers": [
             {
                 "geo": "Europe",
@@ -349,7 +349,7 @@
         }
     },
     {
-        "coin": "Nichash-CryptoNightV7",
+        "coin": "Nicehash-CryptoNightV7",
         "servers": [
             {
                 "geo": "Europe",
@@ -407,7 +407,7 @@
         }
     },
     {
-        "coin": "Nichash-CryptoNightHeavy",
+        "coin": "Nicehash-CryptoNightHeavy",
         "servers": [
             {
                 "geo": "Europe",
@@ -1476,59 +1476,115 @@
         }
     },
     {
-        "coin": "Nicehash-SHA",
+        "coin": "Nicehash-Lyra2Z",
         "servers": [
             {
                 "geo": "Europe",
                 "urls": [
-                    "sha256.eu.nicehash.com:3334"
+                    "lyra2z.eu.nicehash.com:3365"
                 ]
             },
             {
                 "geo": "USA",
                 "urls": [
-                    "sha256.usa.nicehash.com:3334"
+                    "lyra2z.usa.nicehash.com:3365"
                 ]
             },
             {
                 "geo": "Hong Kong",
                 "urls": [
-                    "sha256.hk.nicehash.com:3334"
+                    "lyra2z.hk.nicehash.com:3365"
                 ]
             },
             {
                 "geo": "Japan",
                 "urls": [
-                    "sha256.jp.nicehash.com:3334"
+                    "lyra2z.jp.nicehash.com:3365"
                 ]
             },
             {
                 "geo": "Brazil",
                 "urls": [
-                    "sha256.br.nicehash.com:3334"
+                    "lyra2z.br.nicehash.com:3365"
                 ]
             },
             {
                 "geo": "India",
                 "urls": [
-                    "sha256.in.nicehash.com:3334"
+                    "lyra2z.in.nicehash.com:3365"
                 ]
             }
         ],
         "miners": {
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "sha256",
+                "ccalgo": "lyra2z",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "x",
+                "miner": "tdxminer",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "http://download.hiveos.farm/custom/tdxminer-0.2.2.2.tar.gz"
+            }
+        }
+    },
+    {
+        "coin": "Nicehash-X16R",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "x16r.eu.nicehash.com:3366"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "x16r.usa.nicehash.com:3366"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "x16r.hk.nicehash.com:3366"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "x16r.jp.nicehash.com:3366"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "x16r.br.nicehash.com:3366"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "x16r.in.nicehash.com:3366"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "x16r",
                 "ccpass": "x",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             },
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "sha256",
+                "algo": "x16r",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "-I 21 \n-w 64 \n-g 2"
             }
         }
-    }
+    },
 ]
