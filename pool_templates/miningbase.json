@@ -1,0 +1,28 @@
+[
+    {
+        "coin": "ANI",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "miningbase.tk:3033"
+                ]
+            }
+        ],
+        "miners": {
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "animecoin",
+                "pass": "c=ANI",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "anime",
+                "ccpass": "c=ANI",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
