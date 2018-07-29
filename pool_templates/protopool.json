@@ -1,0 +1,109 @@
+[   
+    {
+        "coin": "SERA",
+        "servers": [
+            {
+                "geo":  null,
+                "urls": [
+                    "eu1.protopool.net:8323",
+                    "eu2.protopool.net:8323"  
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {     
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": [
+					"phi",
+					"phi1612"
+				],
+				"ccpass": "с=SERA"
+            },
+			"sgminer-gm": {     
+                "url": "stratum+tcp://%URL%",
+				"algo": [
+					"phi",
+					"phi1612"
+				],
+                "pass": "c=SERA", 
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            }
+        }
+    },
+	{
+        "coin": "HTH",
+        "servers": [
+            {
+                "geo":  null,
+                "urls": [
+                    "eu1.protopool.net:3636",
+                    "eu2.protopool.net:3636"  
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {     
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": "x16r",			
+				"ccpass": "с=HTH"
+            },
+            "sgminer-gm": {     
+                "url": "stratum+tcp://%URL%",
+				"algo": "x16r",
+                "pass": "c=HTH", 
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            }
+        }
+    },
+	{
+        "coin": "REEF",
+        "servers": [
+            {
+                "geo":  null,
+                "urls": [
+                    "eu1.protopool.net:3665",
+                    "eu2.protopool.net:3665"  
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {     
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": "x16s",			
+				"ccpass": "с=REEF"
+            },
+            "sgminer-gm": {     
+                "url": "stratum+tcp://%URL%",
+				"algo": "x16s",
+                "pass": "c=REEF", 
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            }
+        }
+    },
+	{
+        "coin": "RESS",
+        "servers": [
+            {
+                "geo":  null,
+                "urls": [
+                    "eu1.protopool.net:5252",
+                    "eu2.protopool.net:5252"  
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {     
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": "renesis",
+				"ccpass": "с=RESS"
+            }
+        }
+    }
+]

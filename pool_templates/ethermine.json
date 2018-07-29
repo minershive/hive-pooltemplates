@@ -72,57 +72,5 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
-    },
-    {
-        "coin": "ZEC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "eu1-zcash.flypool.org:3333"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "us1-zcash.flypool.org:3333"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia1-zcash.flypool.org:3333"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "stratum://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
     }
 ]
