@@ -11,18 +11,15 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: pool.minerall.io:3401, WALLET: %EWAL%.%WORKER_NAME%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3"
+                "epools_tpl": "POOL: pool.minerall.io:3401, WALLET: %WAL%.%WORKER_NAME%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3"
             },
             "ethminer": {
                 "cuda": 1,
                 "pass": "x",
                 "port": "3401",
-                "server": "pool.minerall.io",
-                "template": "%EWAL%.%WORKER_NAME%",
-                "user_config": "--stratum-protocol 2"
-            },
-            
-            
+                "server": "stratum2+tcp://pool.minerall.io",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
         }
     },
     {
@@ -39,29 +36,29 @@
             "bminer": {
                 "url": "stratum://pool.minerall.io:3304",
                 "pass": "x",
-                "template": "%ZWAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "ewbf": {
                 "zpass": "x",
                 "zport": "3304",
                 "zserver": "pool.minerall.io",
-                "ztemplate": "%ZWAL%.%WORKER_NAME%"
+                "ztemplate": "%WAL%.%WORKER_NAME%"
             },
             "claymore-z": {
-                "zpools_tpl": "POOL: pool.minerall.io:3304, WALLET: %ZWAL%.%WORKER_NAME%"
+                "zpools_tpl": "POOL: pool.minerall.io:3304, WALLET: %WAL%.%WORKER_NAME%"
             },
             "dstm": {
                 "pass": "x",
                 "port": "3304",
                 "server": "pool.minerall.io",
-                "template": "%ZWAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "sgminer-gm": {
                 "url": "stratum+tcp://pool.minerall.io:3304",
                 "algo": "equihash",
                 "fork": "gm",
                 "pass": "x",
-                "template": "%ZWAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }
