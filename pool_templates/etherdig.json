@@ -1,0 +1,26 @@
+[
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "etherdig.net:4444"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

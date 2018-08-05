@@ -1,0 +1,27 @@
+[
+    {
+        "coin": "ETP",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "etp.dodopool.com:8008"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, EWORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1\n-ftime 10"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

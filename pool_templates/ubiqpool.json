@@ -1,0 +1,35 @@
+[
+    {
+        "coin": "UBQ",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.ubiqpool.io:8008",
+					"eu2.ubiqpool.io:8008"
+                ]
+            },
+			{
+                "geo": "USA",
+                "urls": [
+                    "us.ubiqpool.io:8008",
+					"us2.ubiqpool.io:8008"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, EWORKER: %WORKER_NAME%, PSW: %EMAIL%, ESM: 0",
+                "claymore_user_config": "-allcoins 1\n-ftime 10"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "%EMAIL%",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
