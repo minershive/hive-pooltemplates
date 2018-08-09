@@ -1,0 +1,27 @@
+[
+	{
+		"coin": "CLO",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"eu.clopool.org:8001"
+				]
+			}
+		],
+		"miners":{
+			"claymore": {
+				"epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+				"claymore_user_config": "-allcoins 1"
+			},
+			"ethminer": {
+				"cuda": 1,
+				"opencl": 0,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "stratum1+tcp://%URL_HOST%",
+				"template": "%WAL%"
+			}
+		}
+	}
+]
