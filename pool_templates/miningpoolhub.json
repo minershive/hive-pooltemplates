@@ -38,7 +38,7 @@
                 "algo": "qubitcoin",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -115,7 +115,7 @@
                 "algo": "groestlcoin",
                 "pass": "x",
                 "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -141,7 +141,7 @@
                 "algo": "qubitcoin",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -167,7 +167,33 @@
                 "algo": "skein",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+	{
+        "coin": "MPH-Skein",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "hub.miningpoolhub.com:17016"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "skein",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "skein",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -378,7 +404,7 @@
                 "algo": "neoscrypt",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -421,7 +447,7 @@
                 "algo": "yescrypt",
                 "pass": "x",
                 "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -447,7 +473,7 @@
                 "algo": "groestlcoin",
                 "pass": "x",
                 "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -490,7 +516,33 @@
                 "algo": "keccak",
                 "pass": "x",
                 "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+	{
+        "coin": "MPH-Lyra2REv2",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "hub.miningpoolhub.com:17018"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "lyra2rev2",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2rev2",
+                "pass": "x",
+                "template": "%WAL.%WORKER_NAME% PSW: x",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -516,7 +568,7 @@
                 "algo": "lyra2rev2",
                 "pass": "x",
                 "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -619,7 +671,7 @@
                 "algo": "groestlcoin",
                 "pass": "x",
                 "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -671,7 +723,7 @@
                 "algo": "yescrypt",
                 "pass": "x",
                 "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -770,7 +822,7 @@
                 "algo": "lyra2rev2",
                 "pass": "x",
                 "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
