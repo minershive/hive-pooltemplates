@@ -1,0 +1,29 @@
+[
+    {
+        "coin": "BTX",
+        "servers": [
+            {            
+                "geo": null,
+                "urls": [
+                    "bitcorepool.cc:8001",
+					"bitcorepool.cc:1111"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {     
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": "bitcore",
+                "ccpass": "x"
+            },
+            "sgminer-gm": {     
+                "url": "stratum+tcp://%URL%",
+                "algo": "bitcore",
+                "pass": "123", 
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            }
+        }
+    }
+]

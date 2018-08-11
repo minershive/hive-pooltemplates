@@ -90,7 +90,7 @@
         "coin": "RESS",
         "servers": [
             {
-                "geo":  null,
+                "geo":  "EU",
                 "urls": [
                     "eu1.protopool.net:5252",
                     "eu2.protopool.net:5252"  
@@ -99,10 +99,39 @@
         ],
         "miners": {
             "ccminer": {     
+                "fork": "enemy",
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%",
                 "ccalgo": "renesis",
-				"ccpass": "с=RESS"
+                "ccpass": "с=RESS"
+            }
+        }
+    },
+    {
+        "coin": "XDNA",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu1.protopool.net:5233",
+                    "eu2.protopool.net:5233"
+                ]
+            }
+        ],
+        "miners": {
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16m",
+                "pass": "c=XDNA",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"xintensity\" : \"256\""
+            },
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "hex",
+                "ccpass": "c=XDNA",
+                "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
     }

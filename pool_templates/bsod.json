@@ -215,14 +215,15 @@
         "miners": {
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "keccak",
+                "algo": "x16m",
                 "pass": "c=XDNA",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+                "user_config": "\"xintensity\" : \"256\""
             },
             "ccminer": {
+		"fork": "enemy",
                 "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "keccak",
+                "ccalgo": "hex",
                 "ccpass": "c=XDNA",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             }
