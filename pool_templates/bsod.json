@@ -344,6 +344,44 @@
         }
     },
 	{
+        "coin": "GTM",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.bsod.pw:2370"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "us.bsod.pw:2370"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.bsod.pw:2370"
+                ]
+            }
+        ],
+        "miners": {
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2z",
+                "pass": "c=GTM",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "lyra2z",
+                "ccpass": "c=GTM",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
         "coin": "IFX",
         "servers": [
             {
