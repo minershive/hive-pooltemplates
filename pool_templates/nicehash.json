@@ -1,4 +1,823 @@
 [
+	{
+        "coin": "Nicehash-Scrypt",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "scrypt.eu.nicehash.com:3333"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "scrypt.usa.nicehash.com:3333"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "scrypt.hk.nicehash.com:3333"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "scrypt.jp.nicehash.com:3333"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "scrypt.br.nicehash.com:3333"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "scrypt.in.nicehash.com:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-SHA",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "sha256.eu.nicehash.com:3334"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "sha256.usa.nicehash.com:3334"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "sha256.hk.nicehash.com:3334"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "sha256.jp.nicehash.com:3334"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "sha256.br.nicehash.com:3334"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "sha256.in.nicehash.com:3334"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },   
+	{
+        "coin": "Nicehash-X11",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "x11.eu.nicehash.com:3336"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "x11.usa.nicehash.com:3336"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "x11.hk.nicehash.com:3336"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "x11.jp.nicehash.com:3336"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "x11.br.nicehash.com:3336"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "x11.in.nicehash.com:3336"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-X13",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "x13.eu.nicehash.com:3337"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "x13.usa.nicehash.com:3337"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "x13.hk.nicehash.com:3337"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "x13.jp.nicehash.com:3337"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "x13.br.nicehash.com:3337"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "x13.in.nicehash.com:3337"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "x13",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "marucoin",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-Keccak",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "keccak.eu.nicehash.com:3338"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "keccak.usa.nicehash.com:3338"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "keccak.hk.nicehash.com:3338"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "keccak.jp.nicehash.com:3338"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "keccak.br.nicehash.com:3338"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "keccak.in.nicehash.com:3338"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "dcri": "30",
+                "dcoin": "keccak",
+                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x",
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "keccak",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "keccak",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-X15",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "x15.eu.nicehash.com:3339"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "x15.usa.nicehash.com:3339"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "x15.hk.nicehash.com:3339"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "x15.jp.nicehash.com:3339"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "x15.br.nicehash.com:3339"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "x15.in.nicehash.com:3339"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "x15",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "bitblock",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-Nist5",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "nist5.eu.nicehash.com:3340"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "nist5.usa.nicehash.com:3340"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "nist5.hk.nicehash.com:3340"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "nist5.jp.nicehash.com:3340"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "nist5.br.nicehash.com:3340"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "nist5.in.nicehash.com:3340"
+                ]
+            }
+        ],
+        "miners": {
+            "dwal": "33v4eKxAeJxgBEURuvjiYDhBPfRap4K8Lf",
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "nist5",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "nist5",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-Neoscrypt",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "neoscrypt.eu.nicehash.com:3341"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "neoscrypt.usa.nicehash.com:3341"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "neoscrypt.hk.nicehash.com:3341"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "neoscrypt.jp.nicehash.com:3341"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "neoscrypt.br.nicehash.com:3341"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "neoscrypt.in.nicehash.com:3341"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "neoscrypt",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "neoscrypt",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-Lyra2RE",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "lyra2re.eu.nicehash.com:3342"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "lyra2re.usa.nicehash.com:3342"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "lyra2re.hk.nicehash.com:3342"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "lyra2re.jp.nicehash.com:3342"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "lyra2re.br.nicehash.com:3342"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "lyra2re.in.nicehash.com:3342"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "lyra2re",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2re",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-Qubit",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "qubit.eu.nicehash.com:3344"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "qubit.usa.nicehash.com:3344"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "qubit.hk.nicehash.com:3344"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "qubit.jp.nicehash.com:3344"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "qubit.br.nicehash.com:3344"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "qubit.in.nicehash.com:3344"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "qubit",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "qubitcoin",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-Quark",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "quark.eu.nicehash.com:3345"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "quark.usa.nicehash.com:3345"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "quark.hk.nicehash.com:3345"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "quark.jp.nicehash.com:3345"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "quark.br.nicehash.com:3345"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "quark.in.nicehash.com:3345"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "quark",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "quarkcoin",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-Lyra2REv2",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "lyra2rev2.eu.nicehash.com:3347"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "lyra2rev2.usa.nicehash.com:3347"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "lyra2rev2.hk.nicehash.com:3347"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "lyra2rev2.jp.nicehash.com:3347"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "lyra2rev2.br.nicehash.com:3347"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "lyra2rev2.in.nicehash.com:3347"
+                ]
+            }
+        ],
+        "miners": {
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2rev2",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "lyra2rev2",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "Nicehash-Blake256r8",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "blake256r8.eu.nicehash.com:3349"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "blake256r8.usa.nicehash.com:3349"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "blake256r8.hk.nicehash.com:3349"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "blake256r8.jp.nicehash.com:3349"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "blake256r8.br.nicehash.com:3349"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "blake256r8.in.nicehash.com:3349"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "blakecoin",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "blake256r8",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-Blake256r14",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "blake256r14.eu.nicehash.com:3350"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "blake256r14.usa.nicehash.com:3350"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "blake256r14.hk.nicehash.com:3350"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "blake256r14.jp.nicehash.com:3350"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "blake256r14.br.nicehash.com:3350"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "blake256r14.in.nicehash.com:3350"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "blake",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "blake256r14",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-Blake256r8vnl",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "blake256r8vnl.eu.nicehash.com:3351"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "blake256r8vnl.usa.nicehash.com:3351"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "blake256r8vnl.hk.nicehash.com:3351"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "blake256r8vnl.jp.nicehash.com:3351"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "blake256r8vnl.br.nicehash.com:3351"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "blake256r8vnl.in.nicehash.com:3351"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "blakecoin",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "blake256r8",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
     {
         "coin": "Nicehash-Ethash",
         "servers": [
@@ -41,8 +860,7 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allpools 0"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3, ALLPOOLS: 1"
             },
             "ethminer": {
                 "cuda": 1,
@@ -51,6 +869,184 @@
                 "port": "%URL_PORT%",
                 "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-Decred",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "decred.eu.nicehash.com:3354"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "decred.usa.nicehash.com:3354"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "decred.hk.nicehash.com:3354"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "decred.jp.nicehash.com:3354"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "decred.br.nicehash.com:3354"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "decred.in.nicehash.com:3354"
+                ]
+            }
+        ],
+        "miners": {
+			"claymore": {
+                "dcri": "20",
+                "dcoin": "dcr",
+                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "decred",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "blake256r14",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+    {
+        "coin": "Nicehash-CryptoNight",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "cryptonight.eu.nicehash.com:3355"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "cryptonight.usa.nicehash.com:3355"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "cryptonight.hk.nicehash.com:3355"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "cryptonight.jp.nicehash.com:3355"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "cryptonight.br.nicehash.com:3355"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "cryptonight.in.nicehash.com:3355"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3, ALLPOOLS: 1"
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-LBRY",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "lbry.eu.nicehash.com:3356"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "lbry.usa.nicehash.com:3356"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "lbry.hk.nicehash.com:3356"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "lbry.jp.nicehash.com:3356"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "lbry.br.nicehash.com:3356"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "lbry.in.nicehash.com:3356"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "dcri": "30",
+                "dcoin": "lbc",
+                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x",
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "lbry",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://lbry.eu.nicehash.com:3356",
+                "algo": "lbry",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -124,227 +1120,274 @@
             }
         }
     },
-    {
-        "coin": "Nicehash-Lyra2REv2",
+	{
+        "coin": "Nicehash-Pascal",
         "servers": [
             {
                 "geo": "Europe",
                 "urls": [
-                    "lyra2rev2.eu.nicehash.com:3347"
+                    "pascal.eu.nicehash.com:3358"
                 ]
             },
             {
                 "geo": "USA",
                 "urls": [
-                    "lyra2rev2.usa.nicehash.com:3347"
+                    "pascal.usa.nicehash.com:3358"
                 ]
             },
             {
                 "geo": "Hong Kong",
                 "urls": [
-                    "lyra2rev2.hk.nicehash.com:3347"
+                    "pascal.hk.nicehash.com:3358"
                 ]
             },
             {
                 "geo": "Japan",
                 "urls": [
-                    "lyra2rev2.jp.nicehash.com:3347"
+                    "pascal.jp.nicehash.com:3358"
                 ]
             },
             {
                 "geo": "Brazil",
                 "urls": [
-                    "lyra2rev2.br.nicehash.com:3347"
+                    "pascal.br.nicehash.com:3358"
                 ]
             },
             {
                 "geo": "India",
                 "urls": [
-                    "lyra2rev2.in.nicehash.com:3347"
+                    "pascal.in.nicehash.com:3358"
                 ]
             }
         ],
         "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2rev2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2rev2",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
+            "claymore": {
+                "dcri": "30",
+                "dcoin": "pasc",
+                "dpools_tpl": "POOL: %WAL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x"
             }
         }
     },
     {
-        "coin": "Nicehash-Blacke256r14",
+        "coin": "Nicehash-X11Gost",
         "servers": [
             {
                 "geo": "Europe",
                 "urls": [
-                    "decred.eu.nicehash.com:3354"
+                    "x11gost.eu.nicehash.com:3359"
                 ]
             },
             {
                 "geo": "USA",
                 "urls": [
-                    "decred.usa.nicehash.com:3354"
+                    "x11gost.usa.nicehash.com:3359"
                 ]
             },
             {
                 "geo": "Hong Kong",
                 "urls": [
-                    "decred.hk.nicehash.com:3354"
+                    "x11gost.hk.nicehash.com:3359"
                 ]
             },
             {
                 "geo": "Japan",
                 "urls": [
-                    "decred.jp.nicehash.com:3354"
+                    "x11gost.jp.nicehash.com:3359"
                 ]
             },
             {
                 "geo": "Brazil",
                 "urls": [
-                    "decred.br.nicehash.com:3354"
+                    "x11gost.br.nicehash.com:3359"
                 ]
             },
             {
                 "geo": "India",
                 "urls": [
-                    "decred.in.nicehash.com:3354"
+                    "x11gost.in.nicehash.com:3359"
                 ]
             }
         ],
         "miners": {
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "decred",
+                "ccalgo": "sib",
                 "ccpass": "x",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             },
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "blake256r14",
+                "algo": "sibcoin",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
-    {
-        "coin": "Nicehash-Neoscrypt",
+	{
+        "coin": "Nicehash-Sia",
         "servers": [
             {
                 "geo": "Europe",
                 "urls": [
-                    "neoscrypt.eu.nicehash.com:3341"
+                    "sia.eu.nicehash.com:3360"
                 ]
             },
             {
                 "geo": "USA",
                 "urls": [
-                    "neoscrypt.usa.nicehash.com:3341"
+                    "sia.usa.nicehash.com:3360"
                 ]
             },
             {
                 "geo": "Hong Kong",
                 "urls": [
-                    "neoscrypt.hk.nicehash.com:3341"
+                    "sia.hk.nicehash.com:3360"
                 ]
             },
             {
                 "geo": "Japan",
                 "urls": [
-                    "neoscrypt.jp.nicehash.com:3341"
+                    "sia.jp.nicehash.com:3360"
                 ]
             },
             {
                 "geo": "Brazil",
                 "urls": [
-                    "neoscrypt.br.nicehash.com:3341"
+                    "sia.br.nicehash.com:3360"
                 ]
             },
             {
                 "geo": "India",
                 "urls": [
-                    "neoscrypt.in.nicehash.com:3341"
+                    "sia.in.nicehash.com:3360"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "dcri": "40",
+                "dcoin": "sc",
+                "dpools_tpl": "POOL: %WAL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x, ESM: 3, ALLPOOLS: 1",
+                "claymore_user_config": "-allpools 0"
+            }
+        }
+    },
+	{
+        "coin": "Nicehash-Blake2s",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "keccak.eu.nicehash.com:3361"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "keccak.usa.nicehash.com:3361"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "keccak.hk.nicehash.com:3361"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "keccak.jp.nicehash.com:3361"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "keccak.br.nicehash.com:3361"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "keccak.in.nicehash.com:3361"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "dcri": "30",
+                "dcoin": "blake2s",
+                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x, ESM: 3, ALLPOOLS: 1",
+                "claymore_user_config": "-allpools 0"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "blake2s",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "blake2s",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+		}		
+    },
+	{
+        "coin": "Nicehash-Skunk",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "skunk.eu.nicehash.com:3362"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "skunk.usa.nicehash.com:3362"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "skunk.hk.nicehash.com:3362"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "skunk.jp.nicehash.com:3362"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "skunk.br.nicehash.com:3362"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "skunk.in.nicehash.com:3362"
                 ]
             }
         ],
         "miners": {
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "neoscrypt",
+                "ccalgo": "skunk",
                 "ccpass": "x",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             },
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "neoscrypt",
+                "algo": "skunk",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-CryptoNight",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "cryptonight.eu.nicehash.com:3355"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "cryptonight.usa.nicehash.com:3355"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "cryptonight.hk.nicehash.com:3355"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "cryptonight.jp.nicehash.com:3355"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "cryptonight.br.nicehash.com:3355"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "cryptonight.in.nicehash.com:3355"
-                ]
-            }
-        ],
-        "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3, ALLPOOLS: 1"
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -460,1083 +1503,7 @@
                 "user_config": "\"algo\": \"cryptonight-heavy\""
             }
         }
-    },
-    {
-        "coin": "Nicehash-Pascal",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "pascal.eu.nicehash.com:3358"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "pascal.usa.nicehash.com:3358"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "pascal.hk.nicehash.com:3358"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "pascal.jp.nicehash.com:3358"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "pascal.br.nicehash.com:3358"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "pascal.in.nicehash.com:3358"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "dcri": "30",
-                "dcoin": "pasc",
-                "dpools_tpl": "POOL: %WAL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x, ESM: 3, ALLPOOLS: 1",
-                "claymore_user_config": "-allpools 0"
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-X11",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "x11.eu.nicehash.com:3336"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "x11.usa.nicehash.com:3336"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "x11.hk.nicehash.com:3336"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "x11.jp.nicehash.com:3336"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "x11.br.nicehash.com:3336"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "x11.in.nicehash.com:3336"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "x11",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "darkcoin",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%,",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-X11Gost",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "x11gost.eu.nicehash.com:3359"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "x11gost.usa.nicehash.com:3359"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "x11gost.hk.nicehash.com:3359"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "x11gost.jp.nicehash.com:3359"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "x11gost.br.nicehash.com:3359"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "x11gost.in.nicehash.com:3359"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "sib",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "sibcoin",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-X13",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "x13.eu.nicehash.com:3337"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "x13.usa.nicehash.com:3337"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "x13.hk.nicehash.com:3337"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "x13.jp.nicehash.com:3337"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "x13.br.nicehash.com:3337"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "x13.in.nicehash.com:3337"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "x13",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "marucoin",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-X15",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "x15.eu.nicehash.com:3339"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "x15.usa.nicehash.com:3339"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "x15.hk.nicehash.com:3339"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "x15.jp.nicehash.com:3339"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "x15.br.nicehash.com:3339"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "x15.in.nicehash.com:3339"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "x15",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "bitblock",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Lyra2RE",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "lyra2re.eu.nicehash.com:3342"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "lyra2re.usa.nicehash.com:3342"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "lyra2re.hk.nicehash.com:3342"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "lyra2re.jp.nicehash.com:3342"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "lyra2re.br.nicehash.com:3342"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "lyra2re.in.nicehash.com:3342"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2re",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2re",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Quark",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "quark.eu.nicehash.com:3345"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "quark.usa.nicehash.com:3345"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "quark.hk.nicehash.com:3345"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "quark.jp.nicehash.com:3345"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "quark.br.nicehash.com:3345"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "quark.in.nicehash.com:3345"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "quark",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "quarkcoin",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-LBRY",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "lbry.eu.nicehash.com:3356"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "lbry.usa.nicehash.com:3356"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "lbry.hk.nicehash.com:3356"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "lbry.jp.nicehash.com:3356"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "lbry.br.nicehash.com:3356"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "lbry.in.nicehash.com:3356"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "dcri": "30",
-                "dcoin": "lbc",
-                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x, ESM: 3, ALLPOOLS: 1",
-                "claymore_user_config": "-allpools 0"
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lbry",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://lbry.eu.nicehash.com:3356",
-                "algo": "lbry",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Qubit",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "qubit.eu.nicehash.com:3344"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "qubit.usa.nicehash.com:3344"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "qubit.hk.nicehash.com:3344"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "qubit.jp.nicehash.com:3344"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "qubit.br.nicehash.com:3344"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "qubit.in.nicehash.com:3344"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "qubit",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "qubitcoin",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Scrypt",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "scrypt.eu.nicehash.com:3333"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "scrypt.usa.nicehash.com:3333"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "scrypt.hk.nicehash.com:3333"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "scrypt.jp.nicehash.com:3333"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "scrypt.br.nicehash.com:3333"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "scrypt.in.nicehash.com:3333"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "scrypt",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "scrypt",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-ScryptNf",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "scryptnf.eu.nicehash.com:3335"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "scryptnf.usa.nicehash.com:3335"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "scryptnf.hk.nicehash.com:3335"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "scryptnf.jp.nicehash.com:3335"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "scryptnf.br.nicehash.com:3335"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "scryptnf.in.nicehash.com:3335"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "scryptnf",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "scryptnf",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-ScryptJaneNf16",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "scryptjanenf16.eu.nicehash.com:3348"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "scryptjanenf16.usa.nicehash.com:3348"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "scryptjanenf16.hk.nicehash.com:3348"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "scryptjanenf16.jp.nicehash.com:3348"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "scryptjanenf16.br.nicehash.com:3348"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "scryptjanenf16.in.nicehash.com:3348"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "scrypt-jane",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "scrypt-jane",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Blake256r8",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "blake256r8.eu.nicehash.com:3349"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "blake256r8.usa.nicehash.com:3349"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "blake256r8.hk.nicehash.com:3349"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "blake256r8.jp.nicehash.com:3349"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "blake256r8.br.nicehash.com:3349"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "blake256r8.in.nicehash.com:3349"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "blakecoin",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "blake256r8",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Blake256r8vnl",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "blake256r8vnl.eu.nicehash.com:3351"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "blake256r8vnl.usa.nicehash.com:3351"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "blake256r8vnl.hk.nicehash.com:3351"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "blake256r8vnl.jp.nicehash.com:3351"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "blake256r8vnl.br.nicehash.com:3351"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "blake256r8vnl.in.nicehash.com:3351"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "blakecoin",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "blake256r8",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Blake256r14",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "blake256r14.eu.nicehash.com:3350"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "blake256r14.usa.nicehash.com:3350"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "blake256r14.hk.nicehash.com:3350"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "blake256r14.jp.nicehash.com:3350"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "blake256r14.br.nicehash.com:3350"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "blake256r14.in.nicehash.com:3350"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "blake",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "blake256r14",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-WhirlpoolX",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "whirpoolx.eu.nicehash.com:3343"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "whirpoolx.usa.nicehash.com:3343"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "whirpoolx.hk.nicehash.com:3343"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "whirpoolx.jp.nicehash.com:3343"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "whirpoolx.br.nicehash.com:3343"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "whirpoolx.in.nicehash.com:3343"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "whirlpoolx",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "whirlpoolx",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Nist5",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "nist5.eu.nicehash.com:3340"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "nist5.usa.nicehash.com:3340"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "nist5.hk.nicehash.com:3340"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "nist5.jp.nicehash.com:3340"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "nist5.br.nicehash.com:3340"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "nist5.in.nicehash.com:3340"
-                ]
-            }
-        ],
-        "miners": {
-            "dwal": "33v4eKxAeJxgBEURuvjiYDhBPfRap4K8Lf",
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "nist5",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "nist5",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Keccak",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "keccak.eu.nicehash.com:3338"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "keccak.usa.nicehash.com:3338"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "keccak.hk.nicehash.com:3338"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "keccak.jp.nicehash.com:3338"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "keccak.br.nicehash.com:3338"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "keccak.in.nicehash.com:3338"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "dcri": "30",
-                "dcoin": "keccak",
-                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x, ESM: 3, ALLPOOLS: 1",
-                "claymore_user_config": "-allpools 0"
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "keccak",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "keccak",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-	{
-        "coin": "Nicehash-Blake2s",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "keccak.eu.nicehash.com:3361"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "keccak.usa.nicehash.com:3361"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "keccak.hk.nicehash.com:3361"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "keccak.jp.nicehash.com:3361"
-                ]
-            },
-            {
-                "geo": "Brazil",
-                "urls": [
-                    "keccak.br.nicehash.com:3361"
-                ]
-            },
-            {
-                "geo": "India",
-                "urls": [
-                    "keccak.in.nicehash.com:3361"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "dcri": "30",
-                "dcoin": "blake2s",
-                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x, ESM: 3, ALLPOOLS: 1",
-                "claymore_user_config": "-allpools 0"
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "blake2s",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "blake2s",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
+    },              
     {
         "coin": "Nicehash-Lyra2Z",
         "servers": [
