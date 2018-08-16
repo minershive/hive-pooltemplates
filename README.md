@@ -18,6 +18,24 @@ If you want your pool to be listed here then create yourpool.json and push it, w
 
 `%EMAIL%` - e-mail for some pool (ex. nanopool)
 
+## Miners
+Available miners:
+- claymore - Claymore's DUAL ETH GPU AMD&NVidia miner
+- claymore-x - Claymore's Cryptonote AMD GPU miner
+- claymore-z - Claymore's AMD GPU ZCash miner
+- ewbf - ewbf for equihash and new for equihash algo variants miner
+- ccminer - ccminer & forks
+- ethminer
+- sgminer-gm - sgminer & forks
+- dstm
+- bminer
+- lolminer
+- optiminer
+- xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo)
+- xmrig - XMRig (CPU cryptonight variants miner)
+- cpuminer-opt - cpuminer-opt (CPU miner)
+- custom - Custom miner package
+
 ## Pool template example
 ```javascript
 [
@@ -33,8 +51,8 @@ If you want your pool to be listed here then create yourpool.json and push it, w
             }
         ],
         "miners": { // miner's settings section
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
+            "claymore": { //miner's name
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x" //miner's settings
             },
             "ethminer": {
                 "cuda": 1,
@@ -43,8 +61,18 @@ If you want your pool to be listed here then create yourpool.json and push it, w
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
             }
         }
     }
 ]
 ```
+
+WARNING!
+Comments in this example only for helping purposes!
