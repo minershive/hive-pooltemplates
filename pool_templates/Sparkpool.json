@@ -1,0 +1,55 @@
+[
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.sparkpool.com:3333",
+                    "eu.sparkpool.com:13333"
+                ]
+            },
+			{
+				"geo": "USA",
+                "urls": [
+                    "us-west.sparkpool.com:3333",
+                    "us-west.sparkpool.com:13333"
+				]
+			},
+			{
+				"geo": "China",
+                "urls": [
+                    "cn.sparkpool.com:3333",
+                    "cn.sparkpool.com:13333"
+				]
+			},
+			{
+				"geo": "Taiwan",
+                "urls": [
+                    "tw.sparkpool.com:3333",
+                    "tw.sparkpool.com:13333"
+				]
+			},
+			{
+				"geo": "Southeast Asia",
+                "urls": [
+                    "asia.sparkpool.com:3333",
+                    "asia.sparkpool.com:13333"
+				]
+			}
+		],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
