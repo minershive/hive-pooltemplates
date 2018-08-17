@@ -1,0 +1,103 @@
+[
+	{
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.icemining.ca:3636"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "mine.icemining.ca:3636"
+                ]
+            }
+        ],
+        "miners": {
+            "sgminer-gm": {
+				"fork": "avermore",
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=RVN",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "ccminer": {
+				"fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "x16r",
+                "ccpass": "c=RVN",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
+        "coin": "TUX",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.icemining.ca:4443"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "mine.icemining.ca:4443"
+                ]
+            }
+        ],
+        "miners": {
+            "sgminer-gm": {
+				"fork": "avermore",
+                "url": "stratum+tcp://%URL%",
+                "algo": "allium",
+                "pass": "c=TUX",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "ccminer": {
+				"fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "allium",
+                "ccpass": "c=TUX",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
+        "coin": "ACM",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.icemining.ca:4557"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "mine.icemining.ca:4557"
+                ]
+            }
+        ],
+        "miners": {
+            "custom": {
+				"url": "stratum+tcp://%URL%",
+				"pass": "c=ACM",
+				"miner": "tdxminer",
+				"template": "%WAL%.%WORKER_NAME%",
+				"install_url": "http://download.hiveos.farm/custom/tdxminer-0.2.2.2.tar.gz"
+			},
+            "ccminer": {
+				"fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "lyra2z",
+                "ccpass": "c=ACM",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

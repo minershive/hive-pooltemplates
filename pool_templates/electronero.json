@@ -1,0 +1,39 @@
+[
+	{
+		"coin": "ETNX",
+		"servers": [		
+			{
+				"geo": "Low-end",
+				"urls": [
+					"uspool.electronero.org:1122"
+				]
+			},
+			{
+				"geo": "Mid-end",
+				"urls": [
+					"uspool.electronero.org:2233"
+				]
+			},
+			{
+				"geo": "High-end",
+				"urls": [
+					"uspool.electronero.org:3344"
+				]
+			}
+		],
+		"miners": {
+			"xmrig": {
+				"url": "%URL_HOST%:3333",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"algo\": \"cryptonight/msr\""
+			},
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"cryptonight_masari\""
+			}
+		}
+	}
+]

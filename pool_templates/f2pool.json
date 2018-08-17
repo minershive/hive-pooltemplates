@@ -146,9 +146,35 @@
         ],
         "miners": {
             "claymore": {
-                "dcri": "40",
-                "dcoin": "sia",
+                "dcri": "20",
+                "dcoin": "blake2s",
                 "dpools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+            }
+        }
+    },
+    {
+        "coin": "XZC",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "xzc.f2pool.com:5740"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "lyra2z",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "x",
+                "miner": "tdxminer",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "http://download.hiveos.farm/custom/tdxminer-0.2.2.2.tar.gz"
             }
         }
     }
