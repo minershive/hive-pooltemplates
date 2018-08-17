@@ -5,7 +5,7 @@
             {
                 "geo": "POOL",
                 "urls": [
-                    "etp.europool.me:3334"
+                    "etp.europool.me:3333"
                 ]
             }
         ],
