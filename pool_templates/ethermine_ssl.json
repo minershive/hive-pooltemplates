@@ -1,0 +1,75 @@
+[
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu1.ethermine.org:5555"
+                ]
+            },
+            {
+                "geo": "US East",
+                "urls": [
+                    "us1.ethermine.org:5555"
+                ]
+            },
+            {
+                "geo": "US West",
+                "urls": [
+                    "us2.ethermine.org:5555"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia1.ethermine.org:5555"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: stratum+ssl://%URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+ssl://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu1-etc.ethermine.org:5555"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us1-etc.ethermine.org:5555"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: stratum+ssl://%URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+ssl://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
