@@ -1,5 +1,5 @@
 [
-	{
+    {
         "coin": "RVN",
         "servers": [
             {
@@ -11,7 +11,7 @@
         ],
         "miners": {
             "sgminer-gm": {
-				"fork": "avermore",
+                "fork": "avermore",
                 "url": "stratum+tcp://%URL%",
                 "algo": "x16r",
                 "pass": "%WORKER_NAME% c=RVN",
@@ -19,7 +19,7 @@
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             },
             "ccminer": {
-				"fork": "enemy",
+                "fork": "enemy",
                 "ccurl": "stratum+tcp://%URL%",
                 "ccalgo": "x16r",
                 "ccpass": "%WORKER_NAME% c=RVN",
@@ -39,7 +39,7 @@
         ],
         "miners": {
             "sgminer-gm": {
-				"fork": "avermore",
+                "fork": "avermore",
                 "url": "stratum+tcp://%URL%",
                 "algo": "x16s",
                 "pass": "%WORKER_NAME% c=PGN",
@@ -47,7 +47,7 @@
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             },
             "ccminer": {
-				"fork": "enemy",
+                "fork": "enemy",
                 "ccurl": "stratum+tcp://%URL%",
                 "ccalgo": "x16s",
                 "ccpass": "%WORKER_NAME% c=PGN",
@@ -67,7 +67,7 @@
         ],
         "miners": {
             "sgminer-gm": {
-				"fork": "avermore",
+                "fork": "avermore",
                 "url": "stratum+tcp://%URL%",
                 "algo": "x16s",
                 "pass": "%WORKER_NAME% c=REEF",
@@ -75,7 +75,7 @@
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             },
             "ccminer": {
-				"fork": "enemy",
+                "fork": "enemy",
                 "ccurl": "stratum+tcp://%URL%",
                 "ccalgo": "x16s",
                 "ccpass": "%WORKER_NAME% c=REEF",
@@ -83,7 +83,7 @@
             }
         }
     },
-	{
+    {
         "coin": "TUX",
         "servers": [
             {
@@ -95,24 +95,24 @@
         ],
         "miners": {
             "ccminer": {
-				"fork": "allium",
+                "fork": "allium",
                 "ccurl": "stratum+tcp://%URL%",
                 "ccalgo": "allium",
                 "ccpass": "%WORKER_NAME% c=TUX",
                 "ccuser": "%WAL%"
             },
             "custom": {
-				"url": "stratum+tcp://%URL%",
-				"pass": "%WORKER_NAME% c=TUX",
-				"miner": "cryptodredge",
-				"template": "%WAL%",
-				"user_config": "-a allium",
-				"install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
+                "url": "stratum+tcp://%URL%",
+                "pass": "%WORKER_NAME% c=TUX",
+                "miner": "cryptodredge",
+                "template": "%WAL%",
+                "user_config": "-a allium",
+                "algo": "allium",
+                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
             }
-
         }
     },
-	{
+    {
         "coin": "GRLC",
         "servers": [
             {
@@ -124,24 +124,24 @@
         ],
         "miners": {
             "ccminer": {
-				"fork": "allium",
+                "fork": "allium",
                 "ccurl": "stratum+tcp://%URL%",
                 "ccalgo": "allium",
                 "ccpass": "%WORKER_NAME% c=GRLC",
                 "ccuser": "%WAL%"
             },
             "custom": {
-				"url": "stratum+tcp://%URL%",
-				"pass": "%WORKER_NAME% c=GRLC",
-				"miner": "cryptodredge",
-				"template": "%WAL%",
-				"user_config": "-a allium",
-				"install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
+                "url": "stratum+tcp://%URL%",
+                "pass": "%WORKER_NAME% c=GRLC",
+                "miner": "cryptodredge",
+                "template": "%WAL%",
+                "user_config": "-a allium",
+                "algo": "allium",
+                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
             }
-
         }
     },
-	{
+    {
         "coin": "MCT",
         "servers": [
             {
@@ -158,10 +158,10 @@
                 "ccpass": "%WORKER_NAME% c=MCT",
                 "ccuser": "%WAL%"
             },
-            "sgminer-sg": {     
+            "sgminer-sg": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "lyra2z",
-                "pass": "%WORKER_NAME% c=MCT", 
+                "pass": "%WORKER_NAME% c=MCT",
                 "template": "%WAL%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             }
