@@ -277,5 +277,67 @@
 				"template": "%WAL%"
 			}
 		}
+	},
+	{
+		"coin": "ETHO",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"ether1.dgpool.ru:8716"
+				]
+			},
+			{
+				"geo": "EU SOLO",
+				"urls": [
+					"solo-ether1.dgpool.ru:10716"
+				]
+			}
+		],
+		"miners":{
+			"claymore": {
+				"epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+				"claymore_user_config": "-allcoins 1\n-allpools 1\n-tstop 80"
+			},
+			"ethminer": {
+				"cuda": 1,
+				"opencl": 1,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "stratum1+tcp://%URL_HOST%",
+				"template": "%WAL%"
+			}
+		}
+	},
+	{
+		"coin": "MUSIC",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"music.dgpool.ru:8816"
+				]
+			},
+			{
+				"geo": "EU SOLO",
+				"urls": [
+					"solo-music.dgpool.ru:10816"
+				]
+			}
+		],
+		"miners":{
+			"claymore": {
+				"epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+				"claymore_user_config": "-allcoins 1\n-allpools 1\n-tstop 80"
+			},
+			"ethminer": {
+				"cuda": 1,
+				"opencl": 1,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "stratum1+tcp://%URL_HOST%",
+				"template": "%WAL%"
+			}
+		}
 	}
 ]
