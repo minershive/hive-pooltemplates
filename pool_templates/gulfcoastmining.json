@@ -1,5 +1,45 @@
 [   
     {
+        "coin": "FLM",
+        "servers": [
+            {
+                "geo":  null,
+                "urls": [
+                    "pool.gulfcoastmining.com:8334"  
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {     
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "phi",
+				"ccpass": "c=FLM"
+            },
+			"sgminer-gm": {     
+                "url": "stratum+tcp://%URL%",
+				"algo": "phi",
+                "pass": "c=FLM", 
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "cpuminer-opt": {
+				"url": " stratum+tcp://%URL%",
+				"algo": "phi",
+				"pass": "c=FLM",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "phi",
+                "pass": "c=FLM",
+                "miner": "cryptodredge",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
+            }
+        }
+    },
+    {
         "coin": "LUX",
         "servers": [
             {
@@ -14,7 +54,7 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "phi2",
-				"ccpass": "с=LUX"
+				"ccpass": "c=LUX"
             },
 			"sgminer-gm": {     
                 "url": "stratum+tcp://%URL%",
@@ -26,13 +66,13 @@
             "cpuminer-opt": {
 				"url": " stratum+tcp://%URL%",
 				"algo": "phi2",
-				"pass": "с=LUX",
+				"pass": "c=LUX",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
             "custom": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "lyra2z",
-                "pass": "c=ACM",
+                "algo": "phi2",
+                "pass": "c=LUX",
                 "miner": "cryptodredge",
                 "template": "%WAL%.%WORKER_NAME%",
                 "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
@@ -54,7 +94,7 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "lyra2z",
-				"ccpass": "с=ACM"
+				"ccpass": "c=ACM"
             },
 			"sgminer-gm": {     
                 "url": "stratum+tcp://%URL%",
@@ -66,7 +106,7 @@
             "cpuminer-opt": {
 				"url": " stratum+tcp://%URL%",
 				"algo": "lyra2z",
-				"pass": "с=ACM",
+				"pass": "c=ACM",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
             "custom": {
@@ -94,18 +134,51 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "allium",
-				"ccpass": "с=GRLC"
+				"ccpass": "c=GRLC"
             },
             "cpuminer-opt": {
 				"url": " stratum+tcp://%URL%",
 				"algo": "allium",
-				"pass": "с=GRLC",
+				"pass": "c=GRLC",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
             "custom": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "allium",
                 "pass": "c=GRLC",
+                "miner": "cryptodredge",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
+            }
+        }
+    },
+    {
+        "coin": "TUX",
+        "servers": [
+            {
+                "geo":  null,
+                "urls": [
+                    "pool.gulfcoastmining.com:4442"  
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {     
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "allium",
+				"ccpass": "c=TUX"
+            },
+            "cpuminer-opt": {
+				"url": " stratum+tcp://%URL%",
+				"algo": "allium",
+				"pass": "c=TUX",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "allium",
+                "pass": "c=TUX",
                 "miner": "cryptodredge",
                 "template": "%WAL%.%WORKER_NAME%",
                 "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
@@ -127,7 +200,7 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "lyra2z",
-				"ccpass": "с=IFX"
+				"ccpass": "c=IFX"
             },
 			"sgminer-gm": {     
                 "url": "stratum+tcp://%URL%",
@@ -161,7 +234,7 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "lyra2z",
-				"ccpass": "с=MANO"
+				"ccpass": "c=MANO"
             },
 			"sgminer-gm": {     
                 "url": "stratum+tcp://%URL%",
@@ -195,7 +268,7 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "lyra2z",
-				"ccpass": "с=VTL"
+				"ccpass": "c=VTL"
             },
 			"sgminer-gm": {     
                 "url": "stratum+tcp://%URL%",
@@ -207,13 +280,13 @@
             "cpuminer-opt": {
 				"url": " stratum+tcp://%URL%",
 				"algo": "lyra2z",
-				"pass": "с=VTC",
+				"pass": "c=VTL",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
             "custom": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "lyra2z",
-                "pass": "c=VTC",
+                "pass": "c=VTL",
                 "miner": "cryptodredge",
                 "template": "%WAL%.%WORKER_NAME%",
                 "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
@@ -235,7 +308,7 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "x16r",
-				"ccpass": "с=RVN"
+				"ccpass": "c=RVN"
             },
 			"sgminer-gm": {     
                 "url": "stratum+tcp://%URL%",
@@ -243,14 +316,6 @@
                 "pass": "c=RVN", 
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "c=RVN",
-                "miner": "cryptodredge",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
             }
         }
     },
@@ -269,7 +334,7 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "x17",
-				"ccpass": "с=MLM"
+				"ccpass": "c=MLM"
             },
 			"sgminer-gm": {     
                 "url": "stratum+tcp://%URL%",
@@ -277,11 +342,43 @@
                 "pass": "c=MLM", 
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            }
+        }
+    },
+    {
+        "coin": "DVS",
+        "servers": [
+            {
+                "geo":  null,
+                "urls": [
+                    "pool.gulfcoastmining.com:4528"  
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {     
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "lyra2v2",
+				"ccpass": "c=DVS"
             },
+			"sgminer-gm": {     
+                "url": "stratum+tcp://%URL%",
+				"algo": "lyra2v2",
+                "pass": "c=DVS", 
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "cpuminer-opt": {
+				"url": " stratum+tcp://%URL%",
+				"algo": "lyra2v2",
+				"pass": "c=DVS",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
             "custom": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x17",
-                "pass": "c=MLM",
+                "algo": "lyra2v2",
+                "pass": "c=DVS",
                 "miner": "cryptodredge",
                 "template": "%WAL%.%WORKER_NAME%",
                 "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
@@ -303,7 +400,7 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "lyra2v2",
-				"ccpass": "с=ORE"
+				"ccpass": "c=ORE"
             },
 			"sgminer-gm": {     
                 "url": "stratum+tcp://%URL%",
@@ -313,15 +410,55 @@
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             },
             "cpuminer-opt": {
-            "url": " stratum+tcp://%URL%",
-            "algo": "lyra2v2",
-            "pass": "с=ORE",
-            "template": "%WAL%.%WORKER_NAME%"
+                "url": " stratum+tcp://%URL%",
+                "algo": "lyra2v2",
+                "pass": "c=ORE",
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "custom": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "lyra2v2",
                 "pass": "c=ORE",
+                "miner": "cryptodredge",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
+            }
+        }
+    },
+    {
+        "coin": "MONA",
+        "servers": [
+            {
+                "geo":  null,
+                "urls": [
+                    "pool.gulfcoastmining.com:4529"  
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {     
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "lyra2v2",
+				"ccpass": "c=MONA"
+            },
+			"sgminer-gm": {     
+                "url": "stratum+tcp://%URL%",
+				"algo": "lyra2v2",
+                "pass": "c=MONA", 
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "cpuminer-opt": {
+				"url": " stratum+tcp://%URL%",
+				"algo": "lyra2v2",
+				"pass": "c=MONA",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2v2",
+                "pass": "c=MONA",
                 "miner": "cryptodredge",
                 "template": "%WAL%.%WORKER_NAME%",
                 "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
@@ -343,7 +480,7 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "lyra2v2",
-				"ccpass": "с=SAP"
+				"ccpass": "c=SAP"
             },
 			"sgminer-gm": {     
                 "url": "stratum+tcp://%URL%",
@@ -355,13 +492,53 @@
             "cpuminer-opt": {
 				"url": " stratum+tcp://%URL%",
 				"algo": "lyra2v2",
-				"pass": "с=SAP",
+				"pass": "c=SAP",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
             "custom": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "lyra2v2",
                 "pass": "c=SAP",
+                "miner": "cryptodredge",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
+            }
+        }
+    },
+    {
+        "coin": "VTC",
+        "servers": [
+            {
+                "geo":  null,
+                "urls": [
+                    "pool.gulfcoastmining.com:4532"  
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {     
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "lyra2v2",
+				"ccpass": "c=VTC"
+            },
+			"sgminer-gm": {     
+                "url": "stratum+tcp://%URL%",
+				"algo": "lyra2v2",
+                "pass": "c=VTC", 
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "cpuminer-opt": {
+				"url": " stratum+tcp://%URL%",
+				"algo": "lyra2v2",
+				"pass": "c=VTC",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2v2",
+                "pass": "c=VTC",
                 "miner": "cryptodredge",
                 "template": "%WAL%.%WORKER_NAME%",
                 "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
@@ -382,7 +559,7 @@
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
                 "ccalgo": "sha256",
-                "ccpass": "с=BTC",
+                "ccpass": "c=BTC",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             },
             "sgminer-gm": {
@@ -528,7 +705,7 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "x16s",
-				"ccpass": "с=PGN"
+				"ccpass": "c=PGN"
             },
 			"sgminer-gm": {     
                 "url": "stratum+tcp://%URL%",
@@ -536,14 +713,32 @@
                 "pass": "c=PGN", 
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            }
+        }
+    },
+	{
+        "coin": "RESQ",
+        "servers": [
+            {
+                "geo":  null,
+                "urls": [
+                    "pool.gulfcoastmining.com:3665"  
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {     
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "x16s",
+				"ccpass": "c=RESQ"
             },
-            "custom": {
+			"sgminer-gm": {     
                 "url": "stratum+tcp://%URL%",
-                "algo": "x16s",
-                "pass": "c=PGN",
-                "miner": "cryptodredge",
+				"algo": "x16s",
+                "pass": "c=RESQ", 
                 "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             }
         }
     }
