@@ -1,11 +1,11 @@
 [   
     {
-        "coin": "FTC",
+        "coin": "LUX",
         "servers": [
             {
                 "geo":  null,
                 "urls": [
-                    "pool.gulfcoastmining.com:4222"  
+                    "pool.gulfcoastmining.com:6667"  
                 ]
             }
         ],
@@ -13,86 +13,30 @@
             "ccminer": {     
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "neoscrypt",
-				"ccpass": "с=FTC"
+                "ccalgo": "phi2",
+				"ccpass": "с=LUX"
             },
 			"sgminer-gm": {     
                 "url": "stratum+tcp://%URL%",
-				"algo": "neoscrypt",
-                "pass": "c=FTC", 
+				"algo": "phi2",
+                "pass": "c=LUX", 
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             },
             "cpuminer-opt": {
 				"url": " stratum+tcp://%URL%",
-				"algo": "neoscrypt",
-				"pass": "с=FTC",
+				"algo": "phi2",
+				"pass": "с=LUX",
 				"template": "%WAL%.%WORKER_NAME%"
-			}
-        }
-    },
-    {
-        "coin": "GBX",
-        "servers": [
-            {
-                "geo":  null,
-                "urls": [
-                    "pool.gulfcoastmining.com:4221"  
-                ]
+			},
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2z",
+                "pass": "c=ACM",
+                "miner": "cryptodredge",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
             }
-        ],
-        "miners": {
-            "ccminer": {     
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "neoscrypt",
-				"ccpass": "с=GBX"
-            },
-			"sgminer-gm": {     
-                "url": "stratum+tcp://%URL%",
-				"algo": "neoscrypt",
-                "pass": "c=GBX", 
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "cpuminer-opt": {
-				"url": " stratum+tcp://%URL%",
-				"algo": "neoscrypt",
-				"pass": "с=GBX",
-				"template": "%WAL%.%WORKER_NAME%"
-			}
-        }
-    },
-    {
-        "coin": "TZC",
-        "servers": [
-            {
-                "geo":  null,
-                "urls": [
-                    "pool.gulfcoastmining.com:4230"  
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {     
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "neoscrypt",
-				"ccpass": "с=TZC"
-            },
-			"sgminer-gm": {     
-                "url": "stratum+tcp://%URL%",
-				"algo": "neoscrypt",
-                "pass": "c=TZC", 
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "cpuminer-opt": {
-				"url": " stratum+tcp://%URL%",
-				"algo": "neoscrypt",
-				"pass": "с=TZC",
-				"template": "%WAL%.%WORKER_NAME%"
-			}
         }
     },
     {
@@ -124,7 +68,15 @@
 				"algo": "lyra2z",
 				"pass": "с=ACM",
 				"template": "%WAL%.%WORKER_NAME%"
-			}
+			},
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2z",
+                "pass": "c=ACM",
+                "miner": "cryptodredge",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
+            }
         }
     },
 	{
@@ -149,58 +101,14 @@
 				"algo": "allium",
 				"pass": "с=GRLC",
 				"template": "%WAL%.%WORKER_NAME%"
-			}
-        }
-    },
-    {
-        "coin": "GIN",
-        "servers": [
-            {
-                "geo":  null,
-                "urls": [
-                    "pool.gulfcoastmining.com:4558"  
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {     
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "lyra2z",
-				"ccpass": "с=GIN"
-            },
-			"sgminer-gm": {     
+			},
+            "custom": {
                 "url": "stratum+tcp://%URL%",
-				"algo": "lyra2z",
-                "pass": "c=GIN", 
+                "algo": "allium",
+                "pass": "c=GRLC",
+                "miner": "cryptodredge",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-	{
-        "coin": "GTM",
-        "servers": [
-            {
-                "geo":  null,
-                "urls": [
-                    "pool.gulfcoastmining.com:4557"  
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {     
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "lyra2z",
-				"ccpass": "с=GTM"
-            },
-			"sgminer-gm": {     
-                "url": "stratum+tcp://%URL%",
-				"algo": "lyra2z",
-                "pass": "c=GTM", 
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
             }
         }
     },
@@ -602,57 +510,6 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "LTC",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "pool.gulfcoastmining.com:3446"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-	{
-        "coin": "CREA",
-        "servers": [
-            {
-                "geo":  null,
-                "urls": [
-                    "pool.gulfcoastmining.com:5135"  
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {     
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "keccakc",
-				"ccpass": "с=CREA"
-            },
-			"sgminer-gm": {     
-                "url": "stratum+tcp://%URL%",
-				"algo": "keccakc",
-                "pass": "c=CREA", 
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "keccakc",
-                "pass": "c=CREA",
-                "miner": "cryptodredge",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
             }
         }
     },

@@ -143,6 +143,30 @@
 			}
 		}
 	},
+		{
+		"coin": "MUSIC",
+		"servers": [
+            {            
+                "geo": "Turkey",
+                "urls": [
+                    "music.arsmine.net:8008"
+				]
+			}
+		],
+		"miners": {
+			"claymore": {
+				"epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
+				"claymore_user_config": "-allpools 0\n-nofee 0\n-allcoins moac\n-estale 0\n-gser 3"
+			},
+			"ethminer": {
+				"port": "%URL_PORT%",
+				"opencl": 1,
+				"server": "stratum1+tcp://%URL_HOST%",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "--farm-recheck 2000"
+			}
+		}
+	},
 	{
 		"coin": "CLO",
 		"servers": [
