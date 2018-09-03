@@ -1,0 +1,39 @@
+[
+	{
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "ravenminer.com:3336",
+					"ravenminer.com:3366",
+					"ravenminer.com:3636"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.ravenminer.com:4567",
+					"us.ravenminer.com:5678"
+                ]
+            }
+        ],
+        "miners": {
+            "sgminer-gm": {
+				"fork": "avermore",
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "ccminer": {
+				"fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "x16r",
+                "ccpass": "%WORKER_NAME%",
+                "ccuser": "%WAL%"
+            }
+        }
+    }
+]

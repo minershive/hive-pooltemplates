@@ -1,0 +1,49 @@
+[
+    {
+        "coin": "GRFT",
+        "servers": [
+            {
+                "geo": "Low-end",
+                "urls": ["pool.graft.community:3333"]
+            },
+            {
+                "geo": "Mid-range",
+                "urls": ["pool.graft.community:5555"]
+            },
+            {
+                "geo": "High-end",
+                "urls": ["pool.graft.community:8888"]
+            },
+            {
+                "geo": "Low-end",
+                "urls": ["eu.graft.community:3333"]
+            },
+            {
+                "geo": "Mid-range",
+                "urls": ["eu.graft.community:5555"]
+            },
+            {
+                "geo": "High-end",
+                "urls": ["eu.graft.community:8888"]
+            }
+        ],
+        "miners": {
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%",
+                "claymore-x_user_config": "-pow7 1"
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/1\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"graft\""
+            }
+        }
+    }
+]

@@ -178,18 +178,9 @@
             }
         ],
         "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "x11",
-                "ccpass": "x",
-                "ccuser": "%WAL%"
-            },
-            "sgminer-gm": {
+            "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "darkcoin",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -215,7 +206,12 @@
                 "algo": "blake256r14",
                 "pass": "x",
                 "template": "%WAL%",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            },
+			"claymore": {
+                "dcri": "15",
+                "dcoin": "sia",
+                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
             }
         }
     },

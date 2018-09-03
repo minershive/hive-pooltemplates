@@ -25,6 +25,18 @@
                 "urls": [
                     "us-solo-eth.2miners.com:6060"
                 ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia-eth.2miners.com:2020"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA",
+                "urls": [
+                    "asia-solo-eth.2miners.com:6060"
+                ]
             }
         ],
         "miners": {
@@ -38,7 +50,7 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -68,6 +80,18 @@
                 "urls": [
                     "us-solo-etc.2miners.com:5050"
                 ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia-etc.2miners.com:1010"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA",
+                "urls": [
+                    "asia-solo-etc.2miners.com:5050"
+                ]
             }
         ],
         "miners": {
@@ -81,7 +105,7 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -99,6 +123,30 @@
                 "urls": [
                     "solo-clo.2miners.com:3131"
                 ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us-clo.2miners.com:3030"
+                ]
+            },
+            {
+                "geo": "SOLO US",
+                "urls": [
+                    "us-solo-clo.2miners.com:3131"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia-clo.2miners.com:3030"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA",
+                "urls": [
+                    "asia-solo-clo.2miners.com:3131"
+                ]
             }
         ],
         "miners": {
@@ -112,7 +160,7 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -155,7 +203,7 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -198,7 +246,7 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -229,7 +277,7 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -260,7 +308,7 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -285,7 +333,7 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -310,7 +358,7 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -341,7 +389,7 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -372,7 +420,7 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -403,7 +451,62 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "MOAC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "moac.2miners.com:5050"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "solo-moac.2miners.com:8080"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us-moac.2miners.com:5050"
+                ]
+            },
+            {
+                "geo": "SOLO US",
+                "urls": [
+                    "us-solo-moac.2miners.com:8080"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia-moac.2miners.com:5050"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA",
+                "urls": [
+                    "asia-solo-moac.2miners.com:8080"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -420,6 +523,30 @@
                 "geo": "SOLO EU",
                 "urls": [
                     "solo-zec.2miners.com:1010"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us-zec.2miners.com:1010"
+                ]
+            },
+            {
+                "geo": "SOLO US",
+                "urls": [
+                    "us-solo-zec.2miners.com:1010"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia-zec.2miners.com:1010"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA",
+                "urls": [
+                    "asia-solo-zec.2miners.com:1010"
                 ]
             }
         ],
@@ -512,6 +639,30 @@
                 "geo": "SOLO EU",
                 "urls": [
                     "solo-zen.2miners.com:7070"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us-zen.2miners.com:3030"
+                ]
+            },
+            {
+                "geo": "SOLO US",
+                "urls": [
+                    "us-solo-zen.2miners.com:7070"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia-zen.2miners.com:3030"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA",
+                "urls": [
+                    "asia-solo-zen.2miners.com:7070"
                 ]
             }
         ],

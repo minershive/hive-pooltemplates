@@ -196,33 +196,34 @@
             {
                 "geo": "Europe",
                 "urls": [
-                    "eu.bsod.pw:2330"
+                    "eu.bsod.pw:2320"
                 ]
             },
             {
                 "geo": "North America",
                 "urls": [
-                    "us.bsod.pw:2330"
+                    "us.bsod.pw:2320"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "asia.bsod.pw:2330"
+                    "asia.bsod.pw:2320"
                 ]
             }
         ],
         "miners": {
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "keccak",
+                "algo": "x16m",
                 "pass": "c=XDNA",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+                "user_config": "\"xintensity\" : \"256\""
             },
             "ccminer": {
+		"fork": "enemy",
                 "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "keccak",
+                "ccalgo": "hex",
                 "ccpass": "c=XDNA",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             }
@@ -338,6 +339,44 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccalgo": "lyra2z",
                 "ccpass": "c=GIN",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
+        "coin": "GTM",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.bsod.pw:2370"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "us.bsod.pw:2370"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.bsod.pw:2370"
+                ]
+            }
+        ],
+        "miners": {
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2z",
+                "pass": "c=GTM",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "lyra2z",
+                "ccpass": "c=GTM",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
