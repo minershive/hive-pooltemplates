@@ -25,6 +25,31 @@
 		}
 	},
 	{
+		"coin": "YOC",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"s1.solopool.org:8003"
+				]
+			}
+		],
+		"miners":{
+			"claymore": {
+				"epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+				"claymore_user_config": "-allcoins 1"
+			},
+			"ethminer": {
+				"cuda": 1,
+				"opencl": 0,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "stratum1+tcp://%URL_HOST%",
+				"template": "%WAL%"
+			}
+		}
+	},
+	{
 		"coin": "NUKO",
 		"servers": [
 			{
@@ -81,6 +106,31 @@
 				"geo": "EU",
 				"urls": [
 					"s1.solopool.org:8006"
+				]
+			}
+		],
+		"miners":{
+			"claymore": {
+				"epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+				"claymore_user_config": "-allcoins 1"
+			},
+			"ethminer": {
+				"cuda": 1,
+				"opencl": 0,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "stratum1+tcp://%URL_HOST%",
+				"template": "%WAL%"
+			}
+		}
+	},
+	{
+		"coin": "EGEM",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"s1.solopool.org:8007"
 				]
 			}
 		],
@@ -430,6 +480,31 @@
 				"geo": "EU",
 				"urls": [
 					"s2.solopool.org:8009"
+				]
+			}
+		],
+		"miners":{
+			"claymore": {
+				"epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+				"claymore_user_config": "-allcoins 1"
+			},
+			"ethminer": {
+				"cuda": 1,
+				"opencl": 0,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "stratum1+tcp://%URL_HOST%",
+				"template": "%WAL%"
+			}
+		}
+	},
+	{
+		"coin": "ATH",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"s2.solopool.org:8010"
 				]
 			}
 		],
@@ -877,6 +952,26 @@
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%",
 				"user_config": "\"currency\": \"cryptonight_bittube2\""
+			}
+		}
+	},
+	{
+		"coin": "MSR",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"s3.solopool.org:8007"
+				]
+			}
+		],
+		"miners":{
+			"xmr-stak": {
+				"cpu": "\"cpu_threads_conf\" : null,",
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"currency\": \"masari\""
 			}
 		}
 	}
