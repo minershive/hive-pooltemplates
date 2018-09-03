@@ -1,4 +1,4 @@
-[
+	[
 		{
 		"coin": "BTCP",
 		"servers": [
@@ -45,7 +45,7 @@
             }
         }
 	},
-		{
+	{
 		"coin": "BTCZ",
 		"servers": [
 			{
@@ -68,8 +68,7 @@
 			}
 		}
 	},
-
-		{
+	{
         "coin": "KMD",
         "servers": [
             {
@@ -116,7 +115,7 @@
             }
         }
 	},	
-		{
+	{
 		"coin": "ZEL",
 		"servers": [
 			{
@@ -144,7 +143,7 @@
 			}
 		}
 	},
-		{
+	{
         "coin": "ZEN",
         "servers": [
             {
@@ -195,5 +194,142 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
-	}
+	},
+	{
+		"coin": "VOT",
+		"servers": [
+            {
+                "geo": "US Hobby",
+                "urls": [
+                    "us.fomominers.com:3336"
+                ]
+            },
+			{
+                "geo": "US Small Farm",
+                "urls": [
+                    "us.fomominers.com:3367"
+                ]
+            },
+			{
+                "geo": "US Large Farm",
+                "urls": [
+                    "us.fomominers.com:3366"
+                ]
+            }
+		],		
+        "miners": {
+            "dstm": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "claymore-z": {
+                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "%URL%",
+                "algo": "equihash",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+	},
+	{
+		"coin": "XSG",
+		"servers": [
+			{
+				"geo": "US",
+				"urls": [
+					"us.fomominers.com:3333"
+				]
+			}
+		],
+		"miners": {
+				"ewbf": {
+				"algo":"144_5",
+				"fork":"zhash",
+				"zpass": "x",
+				"zport": "%URL_PORT%",
+				"zserver": "%URL_HOST%",
+				"ztemplate": "%WAL%.%WORKER_NAME%",
+				"user_config": "pers sngemPoW"
+			}
+		}
+	},
+	{
+        "coin": "ZCL",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fomominers.com:2222"
+                ]
+            }
+		],
+
+		"miners": {
+            "dstm": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "claymore-z": {
+                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "%URL%",
+                "algo": "equihash",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+	},
+	{
+		"coin": "ZER",
+		"servers": [
+			{
+				"geo": "US",
+				"urls": [
+					"us.fomominers.com:3400"
+				]
+			}
+		],
+		"miners": {
+				"ewbf": {
+				"algo":"192_7",
+				"fork":"zhash",
+				"zpass": "x",
+				"zport": "%URL_PORT%",
+				"zserver": "%URL_HOST%",
+				"ztemplate": "%WAL%.%WORKER_NAME%",
+				"user_config": "pers ZERO_PoW"
+			}
+		}
+	}	
 	]
