@@ -1,87 +1,86 @@
-	[
-		{
-		"coin": "MRR-Ethash",
-		"servers": [
+[
+    {
+        "coin": "MRR-Ethash",
+        "servers": [
             {
                 "geo": "US East",
                 "urls": [
                     "us-east01.miningrigrentals.com:3344"
                 ]
             },
-			{
+            {
                 "geo": "US Central",
                 "urls": [
                     "us-central01.miningrigrentals.com:3344"
                 ]
             },
-			{
+            {
                 "geo": "US West",
                 "urls": [
                     "us-west01.miningrigrentals.com:3344"
                 ]
             },
-			{
+            {
                 "geo": "EU",
                 "urls": [
                     "eu-de02.miningrigrentals.com:3344",
-					"eu-01.miningrigrentals.com:3344",
-					"eu-de01.miningrigrentals.com:3344",
-					"eu-ru01.miningrigrentals.com:3344"
+                    "eu-01.miningrigrentals.com:3344",
+                    "eu-de01.miningrigrentals.com:3344",
+                    "eu-ru01.miningrigrentals.com:3344"
                 ]
             },
-			{
+            {
                 "geo": "Asia",
                 "urls": [
                     "ap-01.miningrigrentals.com:3344"
                 ]
             }
-		],		
+        ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WAL%, ESM: 1, PSW: x, ALLPOOLS: 1",
                 "claymore_user_config": "-allcoins 1"
             }
         }
-	},
-	{
-		"coin": "MRR-Equihash",
-		"servers": [
-			{
+    },
+    {
+        "coin": "MRR-Equihash",
+        "servers": [
+            {
                 "geo": "US East",
                 "urls": [
                     "us-east01.miningrigrentals.com:3333"
                 ]
             },
-			{
+            {
                 "geo": "US Central",
                 "urls": [
                     "us-central01.miningrigrentals.com:3333"
                 ]
             },
-			{
+            {
                 "geo": "US West",
                 "urls": [
                     "us-west01.miningrigrentals.com:3333"
                 ]
             },
-			{
+            {
                 "geo": "EU",
                 "urls": [
                     "eu-de02.miningrigrentals.com:3333",
-					"eu-01.miningrigrentals.com:3333",
-					"eu-de01.miningrigrentals.com:3333",
-					"eu-ru01.miningrigrentals.com:3333"
+                    "eu-01.miningrigrentals.com:3333",
+                    "eu-de01.miningrigrentals.com:3333",
+                    "eu-ru01.miningrigrentals.com:3333"
                 ]
             },
-			{
+            {
                 "geo": "Asia",
                 "urls": [
                     "ap-01.miningrigrentals.com:3333"
                 ]
             }
-		],
-
-		"miners": {
+        ],
+        "miners": {
             "dstm": {
                 "pass": "x",
                 "port": "%URL_PORT%",
@@ -108,60 +107,11 @@
                 "fork": "gm",
                 "pass": "x",
                 "template": "%WAL%"
-			}
-		}
-	},
-	{
-		"coin": "MRR-192_7",
-		"servers": [
-			{
-                "geo": "US East",
-                "urls": [
-                    "us-east01.miningrigrentals.com:3333"
-                ]
-            },
-			{
-                "geo": "US Central",
-                "urls": [
-                    "us-central01.miningrigrentals.com:3333"
-                ]
-            },
-			{
-                "geo": "US West",
-                "urls": [
-                    "us-west01.miningrigrentals.com:3333"
-                ]
-            },
-			{
-                "geo": "EU",
-                "urls": [
-                    "eu-de02.miningrigrentals.com:3333",
-					"eu-01.miningrigrentals.com:3333",
-					"eu-de01.miningrigrentals.com:3333",
-					"eu-ru01.miningrigrentals.com:3333"
-                ]
-            },
-			{
-                "geo": "Asia",
-                "urls": [
-                    "ap-01.miningrigrentals.com:3333"
-                ]
             }
-		],
-		"miners": {
-				"ewbf": {
-				"algo":"192_7",
-				"fork":"zhash",
-				"zpass": "x",
-				"zport": "%URL_PORT%",
-				"zserver": "%URL_HOST%",
-				"ztemplate": "%WAL%.%WORKER_NAME%",
-				"user_config": "pers ZERO_PoW"
-			}
-		}
-	},
-	{
-        "coin": "MRR-144_5",
+        }
+    },
+    {
+        "coin": "MRR-Equihash_192_7",
         "servers": [
             {
                 "geo": "US East",
@@ -169,28 +119,28 @@
                     "us-east01.miningrigrentals.com:3333"
                 ]
             },
-			{
+            {
                 "geo": "US Central",
                 "urls": [
                     "us-central01.miningrigrentals.com:3333"
                 ]
             },
-			{
+            {
                 "geo": "US West",
                 "urls": [
                     "us-west01.miningrigrentals.com:3333"
                 ]
             },
-			{
+            {
                 "geo": "EU",
                 "urls": [
                     "eu-de02.miningrigrentals.com:3333",
-					"eu-01.miningrigrentals.com:3333",
-					"eu-de01.miningrigrentals.com:3333",
-					"eu-ru01.miningrigrentals.com:3333"
+                    "eu-01.miningrigrentals.com:3333",
+                    "eu-de01.miningrigrentals.com:3333",
+                    "eu-ru01.miningrigrentals.com:3333"
                 ]
             },
-			{
+            {
                 "geo": "Asia",
                 "urls": [
                     "ap-01.miningrigrentals.com:3333"
@@ -199,53 +149,102 @@
         ],
         "miners": {
             "ewbf": {
-				"algo":"144_5",
-				"fork":"zhash",
-				"zpass": "x",
-				"zport": "%URL_PORT%",
-				"zserver": "%URL_HOST%",
-				"ztemplate": "%WAL%",
-				"user_config": "pers auto"
+                "algo": "192_7",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers ZERO_PoW"
             }
         }
-	},
-	{
-		"coin": "MRR-Lyra2z",
-		"servers": [
+    },
+    {
+        "coin": "MRR-Equihash_144_5",
+        "servers": [
             {
                 "geo": "US East",
                 "urls": [
                     "us-east01.miningrigrentals.com:3333"
                 ]
             },
-			{
+            {
                 "geo": "US Central",
                 "urls": [
                     "us-central01.miningrigrentals.com:3333"
                 ]
             },
-			{
+            {
                 "geo": "US West",
                 "urls": [
                     "us-west01.miningrigrentals.com:3333"
                 ]
             },
-			{
+            {
                 "geo": "EU",
                 "urls": [
                     "eu-de02.miningrigrentals.com:3333",
-					"eu-01.miningrigrentals.com:3333",
-					"eu-de01.miningrigrentals.com:3333",
-					"eu-ru01.miningrigrentals.com:3333"
+                    "eu-01.miningrigrentals.com:3333",
+                    "eu-de01.miningrigrentals.com:3333",
+                    "eu-ru01.miningrigrentals.com:3333"
                 ]
             },
-			{
+            {
                 "geo": "Asia",
                 "urls": [
                     "ap-01.miningrigrentals.com:3333"
                 ]
             }
-		],		
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%",
+                "user_config": "pers auto"
+            }
+        }
+    },
+    {
+        "coin": "MRR-Lyra2z",
+        "servers": [
+            {
+                "geo": "US East",
+                "urls": [
+                    "us-east01.miningrigrentals.com:3333"
+                ]
+            },
+            {
+                "geo": "US Central",
+                "urls": [
+                    "us-central01.miningrigrentals.com:3333"
+                ]
+            },
+            {
+                "geo": "US West",
+                "urls": [
+                    "us-west01.miningrigrentals.com:3333"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu-de02.miningrigrentals.com:3333",
+                    "eu-01.miningrigrentals.com:3333",
+                    "eu-de01.miningrigrentals.com:3333",
+                    "eu-ru01.miningrigrentals.com:3333"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "ap-01.miningrigrentals.com:3333"
+                ]
+            }
+        ],
         "miners": {
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
@@ -261,5 +260,5 @@
                 "install_url": "http://download.hiveos.farm/custom/tdxminer-0.2.2.2.tar.gz"
             }
         }
-	}
-	]
+    }
+]
