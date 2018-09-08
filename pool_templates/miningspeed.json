@@ -1,5 +1,46 @@
 [
     {
+        "coin": "ATH",
+        "servers": [
+            {
+                "geo": "EU under 150MH",
+                "urls": [
+                    "atheios-eu.miningspeed.com:8002"
+                ]
+            },
+            {
+                "geo": "EU 150MH - 800MH",
+                "urls": [
+                    "atheios-eu.miningspeed.com:8004"
+                ]
+            },
+	    {
+                "geo": "EU above 850MH",
+                "urls": [
+                    "atheios-eu.miningspeed.com:8009"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allpools 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.$WORKER_NAME%"
+            },
+	    "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
         "coin": "ZCL",
         "servers": [
             {
