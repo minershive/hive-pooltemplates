@@ -1,29 +1,35 @@
 [
     {
-        "coin": "ETH",
+        "coin": "EMCD.IO-sha256",
         "servers": [
             {
-                "geo": "EU",
+                "geo": null,
                 "urls": [
-                    "eu1.ethpool.org:3333"
+                    "emcd.io:3333#xnsub"
                 ]
-            },
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "c=BTC"
+            }
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
             {
-                "geo": "US",
+                "geo": null,
                 "urls": [
-                    "us1.ethpool.org:3333"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia1.ethpool.org:3333"
+                    "etc.emcd.io:8008"
                 ]
             }
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ALLPOOLS: 0"
             },
             "ethminer": {
                 "cuda": 1,

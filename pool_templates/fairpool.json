@@ -6,10 +6,10 @@
                 "geo": null,
                 "urls": [
                     "mine.etc.fairpool.xyz:4444",
-					"mine.etc.fairpool.cc:4444",
-					"mine.etc.fairpool.in:4444",
-					"mine.etc.fairpool.pw:4444",
-					"mine.etc.fairpool.cloud:4444"
+                    "mine.etc.fairpool.cc:4444",
+                    "mine.etc.fairpool.in:4444",
+                    "mine.etc.fairpool.pw:4444",
+                    "mine.etc.fairpool.cloud:4444"
                 ]
             }
         ],
@@ -25,12 +25,16 @@
                 "server": "stratum1+tcp://%URL_HOST%",
                 "template": "%WAL%+%WORKER_NAME%"
             },
-            "sgminer-gm": {     
+            "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "ethash",
-                "pass": "x", 
+                "pass": "x",
                 "template": "%WAL%+%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -41,17 +45,17 @@
                 "geo": null,
                 "urls": [
                     "mine.dogx.fairpool.xyz:7788",
-					"mine.dogx.fairpool.cc:7788",
-					"mine.dogx.fairpool.in:7788",
-					"mine.dogx.fairpool.pw:7788",
-					"mine.dogx.fairpool.cloud:7788"
+                    "mine.dogx.fairpool.cc:7788",
+                    "mine.dogx.fairpool.in:7788",
+                    "mine.dogx.fairpool.pw:7788",
+                    "mine.dogx.fairpool.cloud:7788"
                 ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%+%WORKER_NAME%, PSW: x, ESM: 3",
-				"claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1"
             },
             "ethminer": {
                 "cuda": 1,
@@ -61,12 +65,16 @@
                 "server": "stratum1+tcp://%URL_HOST%",
                 "template": "%WAL%+%WORKER_NAME%"
             },
-            "sgminer-gm": {     
+            "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "ethash",
-                "pass": "x", 
+                "pass": "x",
                 "template": "%WAL%+%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -77,20 +85,20 @@
                 "geo": null,
                 "urls": [
                     "mine.qrl.fairpool.xyz:7000",
-					"mine.qrl.fairpool.cc:7000",
-					"mine.qrl.fairpool.in:7000",
-					"mine.qrl.fairpool.pw:7000",
-					"mine.qrl.fairpool.cloud:7000"
+                    "mine.qrl.fairpool.cc:7000",
+                    "mine.qrl.fairpool.in:7000",
+                    "mine.qrl.fairpool.pw:7000",
+                    "mine.qrl.fairpool.cloud:7000"
                 ]
             }
         ],
         "miners": {
-			"xmr-stak": {
-				"url": "%URL%",
-				"pass": "x",
-				"template": "%WAL%+%WORKER_NAME%",
-				"user_config": "\"currency\": \"cryptonight_v7\""
-			}
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%+%WORKER_NAME%",
+                "user_config": "\"currency\": \"cryptonight_v7\""
+            }
         }
     },
     {
@@ -100,18 +108,18 @@
                 "geo": null,
                 "urls": [
                     "mine.pasl.fairpool.xyz:4009",
-					"mine.pasl.fairpool.cc:4009",
-					"mine.pasl.fairpool.in:4009",
-					"mine.pasl.fairpool.pw:4009",
-					"mine.pasl.fairpool.cloud:4009"
+                    "mine.pasl.fairpool.cc:4009",
+                    "mine.pasl.fairpool.in:4009",
+                    "mine.pasl.fairpool.pw:4009",
+                    "mine.pasl.fairpool.cloud:4009"
                 ]
             }
         ],
         "miners": {
-            "sgminer-gm": {     
+            "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "pascal",
-                "pass": "x", 
+                "pass": "x",
                 "template": "%WAL%+%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             }
@@ -124,20 +132,20 @@
                 "geo": null,
                 "urls": [
                     "mine.xhv.fairpool.xyz:5566",
-					"mine.xhv.fairpool.cc:5566",
-					"mine.xhv.fairpool.in:5566",
-					"mine.xhv.fairpool.pw:5566",
-					"mine.xhv.fairpool.cloud:5566"
+                    "mine.xhv.fairpool.cc:5566",
+                    "mine.xhv.fairpool.in:5566",
+                    "mine.xhv.fairpool.pw:5566",
+                    "mine.xhv.fairpool.cloud:5566"
                 ]
             }
         ],
         "miners": {
-			"xmr-stak": {
-				"url": "%URL%",
-				"pass": "x",
-				"template": "%WAL%.%PAYMENT_ID%+%WORKER_NAME%",
-				"user_config": "\"currency\": \"haven\""
-			}
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%PAYMENT_ID%+%WORKER_NAME%",
+                "user_config": "\"currency\": \"haven\""
+            }
         }
     },
     {
@@ -147,17 +155,17 @@
                 "geo": null,
                 "urls": [
                     "mine.aka.fairpool.xyz:2222",
-					"mine.aka.fairpool.cc:2222",
-					"mine.aka.fairpool.in:2222",
-					"mine.aka.fairpool.pw:2222",
-					"mine.aka.fairpool.cloud:2222"
+                    "mine.aka.fairpool.cc:2222",
+                    "mine.aka.fairpool.in:2222",
+                    "mine.aka.fairpool.pw:2222",
+                    "mine.aka.fairpool.cloud:2222"
                 ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%+%WORKER_NAME%, PSW: x, ESM: 3",
-				"claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1"
             },
             "ethminer": {
                 "cuda": 1,
@@ -167,12 +175,16 @@
                 "server": "stratum1+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "sgminer-gm": {     
+            "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "ethash",
-                "pass": "x", 
+                "pass": "x",
                 "template": "%WAL%+%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -183,26 +195,26 @@
                 "geo": null,
                 "urls": [
                     "mine.ryo.fairpool.xyz:5555",
-					"mine.ryo.fairpool.cc:5555",
-					"mine.ryo.fairpool.in:5555",
-					"mine.ryo.fairpool.pw:5555",
-					"mine.ryo.fairpool.cloud:5555"
+                    "mine.ryo.fairpool.cc:5555",
+                    "mine.ryo.fairpool.in:5555",
+                    "mine.ryo.fairpool.pw:5555",
+                    "mine.ryo.fairpool.cloud:5555"
                 ]
             }
         ],
         "miners": {
-			"xmr-stak": {
-				"url": "%URL%",
-				"pass": "x",
-				"template": "%WAL%.%PAYMENT_ID%+%WORKER_NAME%",
-				"user_config": "\"currency\": \"cryptonight_heavy\""
-			},
-			"xmrig": {
-				"url": "%URL%",
-				"pass": "x",
-				"template": "%WAL%.%PAYMENT_ID%+%WORKER_NAME%",
-				"user_config": "\"algo\": \"cryptonight-heavy\""
-			}
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%PAYMENT_ID%+%WORKER_NAME%",
+                "user_config": "\"currency\": \"cryptonight_heavy\""
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%PAYMENT_ID%+%WORKER_NAME%",
+                "user_config": "\"algo\": \"cryptonight-heavy\""
+            }
         }
     },
     {
@@ -212,10 +224,10 @@
                 "geo": null,
                 "urls": [
                     "mine.purk.fairpool.xyz:2244",
-					"mine.purk.fairpool.cc:2244",
-					"mine.purk.fairpool.in:2244",
-					"mine.purk.fairpool.pw:2244",
-					"mine.purk.fairpool.cloud:2244"
+                    "mine.purk.fairpool.cc:2244",
+                    "mine.purk.fairpool.in:2244",
+                    "mine.purk.fairpool.pw:2244",
+                    "mine.purk.fairpool.cloud:2244"
                 ]
             }
         ],
@@ -229,26 +241,26 @@
                 "geo": null,
                 "urls": [
                     "mine.loki.fairpool.xyz:5577",
-					"mine.loki.fairpool.cc:5577",
-					"mine.loki.fairpool.in:5577",
-					"mine.loki.fairpool.pw:5577",
-					"mine.loki.fairpool.cloud:5577"
+                    "mine.loki.fairpool.cc:5577",
+                    "mine.loki.fairpool.in:5577",
+                    "mine.loki.fairpool.pw:5577",
+                    "mine.loki.fairpool.cloud:5577"
                 ]
             }
         ],
         "miners": {
-			"xmr-stak": {
-				"url": "%URL%",
-				"pass": "x",
-				"template": "%WAL%.%PAYMENT_ID%+%WORKER_NAME%",
-				"user_config": "\"currency\": \"sumokoin\""
-			},
-			"xmrig": {
-				"url": "%URL%",
-				"pass": "x",
-				"template": "%WAL%.%PAYMENT_ID%+%WORKER_NAME%",
-				"user_config": "\"algo\": \"cryptonight-heavy\""
-			}
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%PAYMENT_ID%+%WORKER_NAME%",
+                "user_config": "\"currency\": \"sumokoin\""
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%PAYMENT_ID%+%WORKER_NAME%",
+                "user_config": "\"algo\": \"cryptonight-heavy\""
+            }
         }
     }
 ]

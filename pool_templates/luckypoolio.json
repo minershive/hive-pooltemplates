@@ -1,53 +1,93 @@
 [
-	{
-		"coin": "BBR",
-		"servers": [
-			{
-				"geo": "Low-End",
-				"urls": [
-					"bbr.luckypool.io:5566"
-				]
-			},		
-			{
-				"geo": "Mid range",
-				"urls": [
-					"bbr.luckypool.io:5577",
-					"bbr.luckypool.io:5588"
-				]
-			},
-			{
-				"geo": "High-End",
-				"urls": [
-					"bbr.luckypool.io:5599"
-				]
-			}
-		],
-		"miners":{
-		}
-	},
-	{
-		"coin": "PURK",
-		"servers": [
-			{
-				"geo": "Low-End",
-				"urls": [
-					"purk.luckypool.io:6677"
-				]
-			},		
-			{
-				"geo": "Mid range",
-				"urls": [
-					"purk.luckypool.io:6688"
-				]
-			},
-			{
-				"geo": "High-End",
-				"urls": [
-					"purk.luckypool.io:6699"
-				]
-			}
-		],
-		"miners":{
-		}
-	}
+    {
+        "coin": "BBR",
+        "servers": [
+            {
+                "geo": "Low-End",
+                "urls": [
+                    "bbr.luckypool.io:5566"
+                ]
+            },
+            {
+                "geo": "Mid range",
+                "urls": [
+                    "bbr.luckypool.io:5577",
+                    "bbr.luckypool.io:5588"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "urls": [
+                    "bbr.luckypool.io:5599"
+                ]
+            }
+        ],
+        "miners": {
+        }
+    },
+    {
+        "coin": "PURK",
+        "servers": [
+            {
+                "geo": "Low-End",
+                "urls": [
+                    "purk.luckypool.io:6677"
+                ]
+            },
+            {
+                "geo": "Mid range",
+                "urls": [
+                    "purk.luckypool.io:6688"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "urls": [
+                    "purk.luckypool.io:6699"
+                ]
+            }
+        ],
+        "miners": {
+        }
+    },
+    {
+        "coin": "BCI",
+        "servers": [
+            {
+                "geo": "EU - Normal Diff",
+                "urls": [
+                    "bci.luckypool.io:3857"
+                ]
+            },
+            {
+                "geo": "EU - High Diff",
+                "urls": [
+                    "bci.luckypool.io:3333"
+                ]
+            },
+            {
+                "geo": "Asia - Normal Diff",
+                "urls": [
+                    "asia-bci.luckypool.io:3857"
+                ]
+            },
+            {
+                "geo": "Asia - High Diff",
+                "urls": [
+                    "asia-bci.luckypool.io:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "ver": "progpow",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
 ]

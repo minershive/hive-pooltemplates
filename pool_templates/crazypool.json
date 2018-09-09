@@ -1,102 +1,38 @@
 [
     {
-        "coin": "MOAC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "moac.dgpool.ru:8008"
-                ]
-            },
-            {
-                "geo": "EU SOLO",
-                "urls": [
-                    "solo-moac.dgpool.ru:10008"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1\n-tstop 80"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "CLO",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "clo.dgpool.ru:8308"
-                ]
-            },
-            {
-                "geo": "EU SOLO",
-                "urls": [
-                    "solo-clo.dgpool.ru:10308"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1\n-tstop 80"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "AKA",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "SOLO RIG",
                 "urls": [
-                    "akroma.dgpool.ru:8208"
+                    "solo-aka.crazypool.org:8007"
                 ]
             },
             {
-                "geo": "EU SOLO",
+                "geo": "SOLO FARM",
                 "urls": [
-                    "solo-akroma.dgpool.ru:10208"
+                    "solo-aka.crazypool.org:8008"
+                ]
+            },
+            {
+                "geo": "SOLO NH",
+                "urls": [
+                    "solo-aka.crazypool.org:8009"
                 ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1\n-tstop 80"
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 1,
+                "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
@@ -105,33 +41,39 @@
         }
     },
     {
-        "coin": "PIRL",
+        "coin": "EGEM",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "POOL RIG",
                 "urls": [
-                    "pirl.dgpool.ru:8408"
+                    "egem.crazypool.org:8007"
                 ]
             },
             {
-                "geo": "EU SOLO",
+                "geo": "POOL FARM",
                 "urls": [
-                    "solo-pirl.dgpool.ru:10408"
+                    "egem.crazypool.org:8008"
+                ]
+            },
+            {
+                "geo": "POOL NH",
+                "urls": [
+                    "egem.crazypool.org:8009"
                 ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1\n-tstop 80"
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 1,
+                "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
@@ -140,33 +82,39 @@
         }
     },
     {
-        "coin": "EXP",
+        "coin": "ETC",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "SOLO RIG",
                 "urls": [
-                    "expanse.dgpool.ru:8512"
+                    "solo-etc.crazypool.org:8007"
                 ]
             },
             {
-                "geo": "EU SOLO",
+                "geo": "SOLO FARM",
                 "urls": [
-                    "solo-expanse.dgpool.ru:10512"
+                    "solo-etc.crazypool.org:8008"
+                ]
+            },
+            {
+                "geo": "SOLO NH",
+                "urls": [
+                    "solo-etc.crazypool.org:8009"
                 ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1\n-tstop 80"
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 1,
+                "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
@@ -175,103 +123,39 @@
         }
     },
     {
-        "coin": "ATH",
+        "coin": "ETH",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "POOL RIG",
                 "urls": [
-                    "atheios.dgpool.ru:8514"
+                    "eth.crazypool.org:8007"
                 ]
             },
             {
-                "geo": "EU SOLO",
+                "geo": "POOL FARM",
                 "urls": [
-                    "solo-atheios.dgpool.ru:10514"
+                    "eth.crazypool.org:8008"
+                ]
+            },
+            {
+                "geo": "POOL NH",
+                "urls": [
+                    "eth.crazypool.org:8009"
                 ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1\n-tstop 80"
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 1,
+                "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "DBIX",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "dubai.dgpool.ru:8516"
-                ]
-            },
-            {
-                "geo": "EU SOLO",
-                "urls": [
-                    "solo-dubai.dgpool.ru:10516"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1\n-tstop 80"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "B2G",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "b2g.dgpool.ru:8108"
-                ]
-            },
-            {
-                "geo": "EU SOLO",
-                "urls": [
-                    "solo-b2g.dgpool.ru:10108"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1\n-tstop 80"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
@@ -283,30 +167,39 @@
         "coin": "ETHO",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "GPU",
                 "urls": [
-                    "ether1.dgpool.ru:8716"
+                    "ether1.crazypool.org:8007",
+                    "solo-ether1.crazypool.org:8007"
                 ]
             },
             {
-                "geo": "EU SOLO",
+                "geo": "FARM",
                 "urls": [
-                    "solo-ether1.dgpool.ru:10716"
+                    "ether1.crazypool.org:8008",
+                    "solo-ether1.crazypool.org:8008"
+                ]
+            },
+            {
+                "geo": "NH",
+                "urls": [
+                    "ether1.crazypool.org:8009",
+                    "solo-ether1.crazypool.org:8009"
                 ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1\n-tstop 80"
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 1,
+                "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
@@ -315,33 +208,124 @@
         }
     },
     {
-        "coin": "MUSIC",
+        "coin": "ETP",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "SOLO GPU",
                 "urls": [
-                    "music.dgpool.ru:8816"
+                    "solo-etp.crazypool.org:8007"
                 ]
             },
             {
-                "geo": "EU SOLO",
+                "geo": "SOLO FARM",
                 "urls": [
-                    "solo-music.dgpool.ru:10816"
+                    "solo-etp.crazypool.org:8008"
+                ]
+            },
+            {
+                "geo": "SOLO NH",
+                "urls": [
+                    "solo-etp.crazypool.org:8009"
                 ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1\n-tstop 80"
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 1,
+                "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "MOAC",
+        "servers": [
+            {
+                "geo": "RIG",
+                "urls": [
+                    "moac.crazypool.org:8007",
+                    "solo-moac.crazypool.org:8007"
+                ]
+            },
+            {
+                "geo": "FARM",
+                "urls": [
+                    "moac.crazypool.org:8008",
+                    "solo-moac.crazypool.org:8008"
+                ]
+            },
+            {
+                "geo": "NH",
+                "urls": [
+                    "moac.crazypool.org:8009",
+                    "solo-moac.crazypool.org:8009"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "NUKO",
+        "servers": [
+            {
+                "geo": "SOLO RIG",
+                "urls": [
+                    "solo-nuko.crazypool.org:8007"
+                ]
+            },
+            {
+                "geo": "SOLO FARM",
+                "urls": [
+                    "solo-nuko.crazypool.org:8008"
+                ]
+            },
+            {
+                "geo": "SOLO NH",
+                "urls": [
+                    "solo-nuko.crazypool.org:8009"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",

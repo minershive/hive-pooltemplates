@@ -5,39 +5,39 @@
             {
                 "geo": null,
                 "urls": [
-                    "gulf.moneroocean.stream:10001"
+                    "mine.monero.pool-moscow.ru:8888"
                 ]
             }
         ],
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "x",
+                "pass": "%WORKER_NAME%:%EMAIL%",
                 "template": "%WAL%",
                 "user_config": "\"algo\": \"cryptonight/1\""
             },
             "xmr-stak": {
                 "url": "%URL%",
-                "pass": "x",
+                "pass": "%WORKER_NAME%:%EMAIL%",
                 "template": "%WAL%",
                 "user_config": "\"currency\": \"monero7\""
             },
             "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%:%EMAIL%",
                 "claymore-x_user_config": "-pow7 1"
             },
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "cryptonight",
                 "fork": "gm",
-                "pass": "x",
+                "pass": "%WORKER_NAME%:%EMAIL%",
                 "template": "%WAL%",
-                "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"monero\": \"true\"\n\"auto-fan\": \"false\""
+                "user_config": "\"rawintensity\": \"448\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"monero\": \"true\"\n\"auto-fan\": \"false\""
             },
             "cpuminer-opt": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "cryptonightv7",
-                "pass": "x",
+                "pass": "%WORKER_NAME%:%EMAIL%",
                 "template": "%WAL%"
             }
         }

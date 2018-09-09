@@ -3,23 +3,24 @@
         "coin": "ETH",
         "servers": [
             {
-                "geo": "Turkey",
+                "geo": "EU",
                 "urls": [
-                    "eth.arsmine.net:8008"
+                    "eth.uleypool.com:8008"
                 ]
             }
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
-                "claymore_user_config": "-allpools 0\n-nofee 0\n-allcoins eth\n-estale 0\n-gser 3"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allpools 0"
             },
             "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
                 "port": "%URL_PORT%",
-                "opencl": 1,
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--farm-recheck 2000"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
@@ -31,163 +32,24 @@
         "coin": "ETC",
         "servers": [
             {
-                "geo": "Turkey",
+                "geo": "EU",
                 "urls": [
-                    "etc.arsmine.net:8008"
+                    "etc.uleypool.com:11008"
                 ]
             }
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
-                "claymore_user_config": "-allpools 0\n-nofee 0\n-allcoins etc\n-estale 0\n-gser 3"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
             },
             "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
                 "port": "%URL_PORT%",
-                "opencl": 1,
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--farm-recheck 2000"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "EXP",
-        "servers": [
-            {
-                "geo": "Turkey",
-                "urls": [
-                    "exp.arsmine.net:8008"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
-                "claymore_user_config": "-allpools 0\n-nofee 0\n-allcoins exp\n-estale 0\n-gser 3"
-            },
-            "ethminer": {
-                "port": "%URL_PORT%",
-                "opencl": 1,
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--farm-recheck 2000"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "ELLA",
-        "servers": [
-            {
-                "geo": "Turkey",
-                "urls": [
-                    "ella.arsmine.net:8008"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
-                "claymore_user_config": "-allpools 0\n-nofee 0\n-allcoins ella\n-estale 0\n-gser 3"
-            },
-            "ethminer": {
-                "port": "%URL_PORT%",
-                "opencl": 1,
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--farm-recheck 2000"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "PIRL",
-        "servers": [
-            {
-                "geo": "Turkey",
-                "urls": [
-                    "pirl.arsmine.net:8008"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
-                "claymore_user_config": "-allpools 0\n-nofee 0\n-allcoins pirl\n-estale 0\n-gser 3"
-            },
-            "ethminer": {
-                "port": "%URL_PORT%",
-                "opencl": 1,
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--farm-recheck 2000"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "MOAC",
-        "servers": [
-            {
-                "geo": "Turkey",
-                "urls": [
-                    "moac.arsmine.net:8008"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
-                "claymore_user_config": "-allpools 0\n-nofee 0\n-allcoins moac\n-estale 0\n-gser 3"
-            },
-            "ethminer": {
-                "port": "%URL_PORT%",
-                "opencl": 1,
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--farm-recheck 2000"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "MUSIC",
-        "servers": [
-            {
-                "geo": "Turkey",
-                "urls": [
-                    "music.arsmine.net:8008"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
-                "claymore_user_config": "-allpools 0\n-nofee 0\n-allcoins moac\n-estale 0\n-gser 3"
-            },
-            "ethminer": {
-                "port": "%URL_PORT%",
-                "opencl": 1,
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--farm-recheck 2000"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
@@ -199,23 +61,169 @@
         "coin": "CLO",
         "servers": [
             {
-                "geo": "Turkey",
+                "geo": "EU",
                 "urls": [
-                    "clo.arsmine.net:9009"
+                    "clo.uleypool.com:28008"
                 ]
             }
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
-                "claymore_user_config": "-allpools 0\n-nofee 0\n-allcoins clo\n-estale 0\n-gser 3"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
             },
             "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
                 "port": "%URL_PORT%",
-                "opencl": 1,
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--farm-recheck 2000"
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "EXP",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "exp.uleypool.com:10008"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "PIRL",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "pirl.uleypool.com:58008"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "WHL",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "whl.uleypool.com:51008"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "AKA",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "aka.uleypool.com:18008"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ETHO",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "etho.uleypool.com:38008"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
