@@ -49,5 +49,45 @@
         ],
         "miners": {
         }
+    },
+    {
+        "coin": "BCI",
+        "servers": [
+            {
+                "geo": "EU - Normal Diff",
+                "urls": [
+                    "bci.luckypool.io:3857"
+                ]
+            },
+            {
+                "geo": "EU - High Diff",
+                "urls": [
+                    "bci.luckypool.io:3333"
+                ]
+            },
+            {
+                "geo": "Asia - Normal Diff",
+                "urls": [
+                    "asia-bci.luckypool.io:3857"
+                ]
+            },
+            {
+                "geo": "Asia - High Diff",
+                "urls": [
+                    "asia-bci.luckypool.io:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "ver": "progpow",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
