@@ -392,5 +392,41 @@
                 "user_config": "pers ZelProof"
             }
         }
+    },
+    {
+        "coin": "BCI",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "bci-eu.coinblockers.com:3910",
+                    "bci-eu2.coinblockers.com:3910"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "bci-us.coinblockers.com:3910",
+                    "bci-us2.coinblockers.com:3910"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "bci-asia.coinblockers.com:3910"
+                ]
+            }
+        ],
+        "miners": {
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "ver": "progpow",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
