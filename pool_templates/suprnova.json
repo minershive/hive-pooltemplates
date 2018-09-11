@@ -904,5 +904,27 @@
                 "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
+    },
+    {
+        "coin": "BCI",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "bci.suprnova.cc:9166"
+                ]
+            }
+        ],
+        "miners": {
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "ver": "progpow",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
