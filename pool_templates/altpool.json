@@ -166,5 +166,45 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "ANON",
+        "servers": [
+            {
+                "geo": "Standard",
+                "urls": [
+                    "anon.altpool.pro:2666"
+                ]
+            },
+            {
+                "geo": "High Diff",
+                "urls": [
+                    "anon.altpool.pro:2667"
+                ]
+            },
+            {
+                "geo": "SOLO Standard",
+                "urls": [
+                    "anon.altpool.pro:2668"
+                ]
+            },
+            {
+                "geo": "SOLO High Diff",
+                "urls": [
+                    "anon.altpool.pro:2669"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers AnonyPoW"
+            }
+        }
     }
 ]
