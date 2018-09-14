@@ -1107,5 +1107,30 @@
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             }
         }
+    },
+    {
+        "coin": "Zpool-argon2d-dyn",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "argon2d-dyn.eu.mine.zpool.ca:4239"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "argon2d-dyn.na.mine.zpool.ca:4239"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": " stratum+tcp://%URL%",
+                "algo": "argon2d500",
+                "pass": "c=BTC,%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
     }
 ]
