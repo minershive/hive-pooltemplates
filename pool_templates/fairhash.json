@@ -313,35 +313,6 @@
         }
     },
     {
-        "coin": "XTL",
-        "servers": [
-            {
-                "geo": "Low-End",
-                "urls": [
-                    "pool.xtl.fairhash.org:3333"
-                ]
-            },
-            {
-                "geo": "Mid range",
-                "urls": [
-                    "pool.xtl.fairhash.org:5555"
-                ]
-            },
-            {
-                "geo": "asic 80 port",
-                "urls": [
-                    "pool.sumo.fairhash.org:80"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "NCP",
         "servers": [
             {
@@ -561,48 +532,22 @@
         "coin": "SUMO",
         "servers": [
             {
-                "geo": "asic",
+                "geo": "Antminer X3",
                 "urls": [
                     "pool.sumo.fairhash.org:7777"
                 ]
             },
             {
-                "geo": "High-End",
+                "geo": "Baikal N, N+",
                 "urls": [
-                    "pool.xtl.fairhash.org:7777"
-                ]
-            },
-            {
-                "geo": "SSL Low-End",
-                "urls": [
-                    "pool.xtl.fairhash.org:3334"
-                ]
-            },
-            {
-                "geo": "SSL Mid range",
-                "urls": [
-                    "pool.xtl.fairhash.org:5556"
-                ]
-            },
-            {
-                "geo": "SSL High-End",
-                "urls": [
-                    "pool.xtl.fairhash.org:7778"
+                    "pool.sumo.fairhash.org:5555"
                 ]
             }
         ],
         "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/xtl\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"stellite\""
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
