@@ -85,31 +85,31 @@
             "xmr-stak": {
                 "url": "%URL%",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"currency\": \"monero7\""
             },
             "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%/%EMAIL%, PSW: x",
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
                 "claymore-x_user_config": "-pow7 1"
             },
             "xmrig": {
                 "url": "%URL%",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
              "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "cryptonight",
                 "fork": "gm",
                 "pass": "x",
-                "template": "%WAL%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"monero\": \"true\"\n\"auto-fan\": \"false\""
             },
             "cpuminer-opt": {
                 "url": "%URL%",
                 "algo": "cryptonightv7",
                 "pass": "x",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }
