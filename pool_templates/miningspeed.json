@@ -32,7 +32,7 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.$WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
@@ -59,118 +59,6 @@
                 "geo": "Asia",
                 "urls": [
                     "asia.miningspeed.com:3052"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "bminer": {
-                "url": "stratum://%URL%",
-                "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "HUSH",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "eu.miningspeed.com:3092"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "us.miningspeed.com:3092"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia.miningspeed.com:3092"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "bminer": {
-                "url": "stratum://%URL%",
-                "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "KMD",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "eu.miningspeed.com:3032"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "us.miningspeed.com:3032"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia.miningspeed.com:3032"
                 ]
             }
         ],
@@ -441,6 +329,40 @@
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers Safecoin"
+            }
+        }
+    },
+    {
+        "coin": "ANON",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.miningspeed.com:3062"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.miningspeed.com:3062"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.miningspeed.com:3062"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers AnonyPoW"
             }
         }
     },
