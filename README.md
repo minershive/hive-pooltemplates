@@ -25,9 +25,9 @@ Available miners:
 - claymore-z - Claymore's AMD GPU ZCash miner
 - ewbf - ewbf for equihash and new for equihash algo variants miner
 - ccminer - ccminer & forks
-- ethminer
+- ethminer - ethminer and ProgPow fork
 - sgminer-gm - sgminer & forks
-- dstm
+- dstm - legacy 0.3.4b and new zhash
 - bminer
 - lolminer
 - optiminer
