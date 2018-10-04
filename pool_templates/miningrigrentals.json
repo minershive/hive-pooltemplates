@@ -306,30 +306,9 @@
             }
         ],
         "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_v7\""
-            },
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: GBAbkNUD5uE23PCkTX1mTgZhsxatoFg7VLDcsHozwv1J8VAHKinvXceMuPEpZw5oiH64C4N9bhD6BJ81nu1YXfzd62wdJma, PSW: %WAL%:x",
-                "claymore-x_user_config": "-pow7 1"
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%"
-            },
-            "custom": {
-                "url": "%URL%",
-                "algo": "cryptonight-v7",
-                "pass": "x",
-                "miner": "xmrig-amd",
-                "template": "%WAL%",
-                "install_url": "http://download.hiveos.farm/custom/xmrig-amd-2.7.3_beta.tar.gz",
-                "user_config": "-a cryptonight --opencl-devices=0,0,1,1,2,2,3,3,4,4,5,5 --opencl-launch=1008x8,1008x8,1008x8,1008x8,1008x8,1008x8,1008x8,1008x8,1008x8,1008x8,1008x8,1008x8 --donate-level=1"
-			}	
+                "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: GBAbkNUD5uE23PCkTX1mTgZhsxatoFg7VLDcsHozwv1J8VAHKinvXceMuPEpZw5oiH64C4N9bhD6BJ81nu1YXfzd62wdJma, PSW: [%WAL%:x]"
+            }	
         }
     }
 ]
