@@ -468,6 +468,12 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME% PSW: x",
                 "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            },
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "yescrypt",
+                "pass": "x",
+                "user": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1109,6 +1115,47 @@
                 "miner": "tdxminer",
                 "template": "%WAL%.%WORKER_NAME%",
                 "install_url": "http://download.hiveos.farm/custom/tdxminer-0.2.2.2.tar.gz"
+            }
+        }
+    },
+    {
+        "coin": "ESN",
+        "servers": [
+            {
+                "geo": "U.S.",
+                "urls": [
+                    "us-east.ethash-hub.miningpoolhub.com:20605"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.ethash-hub.miningpoolhub.com:20605"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "europe.ethash-hub.miningpoolhub.com:20605"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, WORKER: %WAL%.%WORKER_NAME%, ESM: 2, PSW: x",
+                "claymore_user_config": "-allcoins 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }
