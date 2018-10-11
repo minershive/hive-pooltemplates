@@ -1,0 +1,34 @@
+[
+
+  {
+        "coin": "TUBE",
+        "servers": [
+            {
+                "geo": "Italia (-4 GPU)",
+                "urls": [
+                    "coinpoolit.webhop.me:5556"
+                ]
+            },
+            {
+                "geo": "Italia (+4 GPU)",
+                "urls": [
+                    "coinpoolit.webhop.me:7778"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-heavy/tube\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_bittube2\""
+            }
+        }
+  },
+]
