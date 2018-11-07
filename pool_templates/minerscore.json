@@ -107,7 +107,7 @@
         "pass": "x",
         "miner": "t-rex",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "http://download.hiveos.farm/custom/t-rex-0.7.2.tar.gz"
+        "install_url": "http://download.hiveos.farm/custom/t-rex-0.7.3.tar.gz"
       },
       "sgminer-gm": {
         "fork": "avermore",
@@ -200,28 +200,7 @@
         "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
       }
     }
-  },
-  {
-    "coin": "VTL",
-    "servers": [
-      {
-        "geo": "null",
-        "urls": [
-          "pool.minerscore.com:3232"
-        ]
-      }
-    ],
-    "miners": {
-      "custom": {
-        "url": "stratum+tcp://%URL%",
-        "algo": "lbk3",
-        "pass": "x",
-        "miner": "cryptodredge",
-        "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.9.3.tar.gz"
-      }
-    }
-  },
+  },  
   {
     "coin": "VTC",
     "servers": [
@@ -239,7 +218,7 @@
         "pass": "x",
         "miner": "cryptodredge",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.9.3.tar.gz"
+        "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.9.6.tar.gz"
       }
     }
   },
@@ -281,7 +260,7 @@
         "pass": "x",
         "miner": "t-rex",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "http://download.hiveos.farm/custom/t-rex-0.7.2.tar.gz"
+        "install_url": "http://download.hiveos.farm/custom/t-rex-0.7.3.tar.gz"
       }
     }
   },
@@ -302,7 +281,42 @@
         "pass": "x",
         "miner": "t-rex",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "http://download.hiveos.farm/custom/t-rex-0.7.2.tar.gz"
+        "install_url": "http://download.hiveos.farm/custom/t-rex-0.7.3.tar.gz"
+      },
+      "ccminer": {
+        "fork": "enemy",
+        "ccurl": "stratum+tcp://%URL%",
+        "ccuser": "%WAL%.%WORKER_NAME%",
+        "ccalgo": "x16r",
+        "ccpass": "x"
+      }
+    }
+  },
+  {
+    "coin": "RESQ",
+    "servers": [
+      {
+        "geo": "null",
+        "urls": [
+          "pool.minerscore.com:3114"
+        ]
+      }
+    ],
+    "miners": {
+      "custom": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "x16s",
+        "pass": "x",
+        "miner": "t-rex",
+        "template": "%WAL%.%WORKER_NAME%",
+        "install_url": "http://download.hiveos.farm/custom/t-rex-0.7.3.tar.gz"
+      },
+      "ccminer": {
+        "fork": "enemy",
+        "ccurl": "stratum+tcp://%URL%",
+        "ccuser": "%WAL%.%WORKER_NAME%",
+        "ccalgo": "x16s",
+        "ccpass": "x"
       }
     }
   }
