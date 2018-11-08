@@ -319,5 +319,33 @@
         "ccpass": "x"
       }
     }
+  },
+  {
+    "coin": "WIKI",
+    "servers": [
+      {
+        "geo": "null",
+        "urls": [
+          "pool.minerscore.com:3034"
+        ]
+      }
+    ],
+    "miners": {
+      "custom": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "x16r",
+        "pass": "x",
+        "miner": "t-rex",
+        "template": "%WAL%.%WORKER_NAME%",
+        "install_url": "http://download.hiveos.farm/custom/t-rex-0.7.3.tar.gz"
+      },
+      "ccminer": {
+        "fork": "enemy",
+        "ccurl": "stratum+tcp://%URL%",
+        "ccuser": "%WAL%.%WORKER_NAME%",
+        "ccalgo": "x16r",
+        "ccpass": "x"
+      }
+    }
   }
 ]
