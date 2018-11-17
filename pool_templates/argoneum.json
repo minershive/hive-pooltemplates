@@ -1,0 +1,28 @@
+[
+    {
+        "coin": "AGM",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "pool.argoneum.net:8332"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": "phi2",
+                "ccpass": "c=AGM"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "phi2",
+                "pass": "c=AGM",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            }
+        }
+    }
+]
