@@ -55,6 +55,14 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL/%WORKER_NAME%/%EMAIL%, PSW: x"
+            },
+            "bminer": {
+                "template": "%WAL%/%WORKER_NAME%/%EMAIL%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -115,6 +123,14 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x"
+            },
+            "bminer": {
+                "template": "%WAL%/%WORKER_NAME%/%EMAIL%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -290,11 +306,39 @@
                 "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
                 "user_config": "\"currency\": \"monero\""
             },
-            
+
             "xmrig": {
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "algo": "cryptonight-v8"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "algo": "cryptonight-v8"
+            },
+            "cast-xmr": {
+              "url": "%URL%",
+              "pass": "x",
+              "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+              "algo": "cryptonight-v8"
             }
         }
     },
