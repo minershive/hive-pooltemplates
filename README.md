@@ -33,8 +33,18 @@ Available miners:
 - optiminer
 - xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo)
 - xmrig - XMRig (CPU cryptonight variants miner)
+- xmrig-amd - XMRig (AMD cryptonight variants miner)
+- xmrig-nvidia - XMRig (NVidia cryptonight variants miner)
+- cast-xmr
+- cryptodredge
+- teamredminer
+- phoenixminer
+- t-rex
 - cpuminer-opt - cpuminer-opt (CPU miner)
+- wildrig-multi
 - custom - Custom miner package
+
+
 
 ## Pool template example
 ```javascript
@@ -43,7 +53,7 @@ Available miners:
         "coin": "ETH",  // coin name
         "servers": [    // pool addresses array
             {
-                "geo": "Europe", // geo location, maybe null if unknown or in some cases you can indicate port difficulty 
+                "geo": "Europe", // geo location, maybe null if unknown or in some cases you can indicate port difficulty
                 "urls": [
                     "eu1-eth.hiveon.net:4444",  // pool server URL  and port
                     "eu1-eth.hiveon.net:14444"  // another server instance
