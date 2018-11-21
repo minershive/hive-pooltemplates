@@ -308,33 +308,38 @@
         "coin": "UBQ",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "PPLNS 3G",
                 "urls": [
                     "ubq.altpool.pro:8247"
                 ]
             },
             {
-                "geo": "SOLO EU",
+                "geo": "PPLNS 15G",
+                "urls": [
+                    "ubq.altpool.pro:8249"
+                ]
+            },
+            {
+                "geo": "SOLO 3G",
                 "urls": [
                     "solo-ubq.altpool.pro:8251"
+                ]
+            },
+            {
+                "geo": "SOLO 15G",
+                "urls": [
+                    "solo-ubq.altpool.pro:8253"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1"
-            },
             "ethminer": {
+                "fork": "ubqminer",
                 "cuda": 1,
                 "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
