@@ -769,6 +769,65 @@
         }
     },
 	{
+        "coin": "MIX",
+        "servers": [
+            {
+                "geo": "POOL RIG",
+                "urls": [
+                    "mix.crazypool.org:8047"
+                ]
+            },
+            {
+                "geo": "POOL FARM",
+                "urls": [
+                    "mix.crazypool.org:8048"
+                ]
+            },
+            {
+                "geo": "POOL NH",
+                "urls": [
+                    "mix.crazypool.org:8049"
+                ]
+            },
+            {
+                "geo": "SOLO RIG",
+                "urls": [
+                    "solo-mix.crazypool.org:9047"
+                ]
+            },
+            {
+                "geo": "SOLO FARM",
+                "urls": [
+                    "solo-mix.crazypool.org:9048"
+                ]
+            },
+            {
+                "geo": "SOLO NH",
+                "urls": [
+                    "solo-mix.crazypool.org:9049"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
         "coin": "MOAC",
         "servers": [
             {
