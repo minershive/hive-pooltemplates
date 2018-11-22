@@ -5,13 +5,13 @@
             {
                 "geo": "EU",
                 "urls": [
-                    "eth.baikalmine.com:3333"
+                    "eth.baikalmine.com:1141"
                 ]
             },
             {
-                "geo": "SOLO EU",
+                "geo": "SOLO EU 8G",
                 "urls": [
-                    "eth-solo.baikalmine.com:3344"
+                    "eth-solo.baikalmine.com:1145"
                 ]
             }
         ],
@@ -44,9 +44,15 @@
                 ]
             },
             {
-                "geo": "SOLO EU",
+                "geo": "SOLO EU 4G",
                 "urls": [
                     "etc-solo.baikalmine.com:4444"
+                ]
+            },
+			{
+                "geo": "SOLO EU 8G",
+                "urls": [
+                    "etc-solo.baikalmine.com:1444"
                 ]
             }
         ],
@@ -241,7 +247,7 @@
         }
     },
     {
-        "coin": "ETH1",
+        "coin": "ETHO",
         "servers": [
             {
                 "geo": "EU",
@@ -346,70 +352,6 @@
         }
     },
     {
-        "coin": "YOC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "yoc.baikalmine.com:4422"
-                ]
-            },
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "yoc-solo.baikalmine.com:4433"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "AKA",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "aka.baikalmine.com:3344"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "MOAC",
         "servers": [
             {
@@ -480,41 +422,6 @@
         }
     },
     {
-        "coin": "ESN",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "esn.baikalmine.com:3355"
-                ]
-            },
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "esn-solo.baikalmine.com:3366"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "B2G",
         "servers": [
             {
@@ -550,18 +457,24 @@
         }
     },
     {
-        "coin": "VIC",
+        "coin": "REOSC",
         "servers": [
             {
                 "geo": "EU",
                 "urls": [
-                    "vic.baikalmine.com:3355"
+                    "reosc.baikalmine.com:1010"
                 ]
             },
             {
-                "geo": "SOLO EU",
+                "geo": "SOLO EU 4G",
                 "urls": [
-                    "vic-solo.baikalmine.com:3366"
+                    "reosc-solo.baikalmine.com:1011"
+                ]
+            },
+			{
+                "geo": "SOLO EU 8G",
+                "urls": [
+                    "reosc-solo.baikalmine.com:1012"
                 ]
             }
         ],
@@ -584,37 +497,36 @@
             }
         }
     },
-    {
-        "coin": "EOSC",
+	{
+        "coin": "UBQ",
         "servers": [
             {
                 "geo": "EU",
                 "urls": [
-                    "eosc.baikalmine.com:3311"
+                    "ubiq.baikalmine.com:5050"
                 ]
             },
             {
-                "geo": "SOLO EU",
+                "geo": "SOLO EU 4G",
                 "urls": [
-                    "eosc-solo.baikalmine.com:3322"
+                    "ubiq-solo.baikalmine.com:5051"
+                ]
+            },
+            {
+                "geo": "SOLO EU 8G",
+                "urls": [
+                    "ubiq-solo.baikalmine.com:5052"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
             "ethminer": {
+			"fork":"ubqminer",
                 "cuda": 1,
                 "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
@@ -662,31 +574,31 @@
             }
         }
     },
-    {
-        "coin": "XMR",
+	{
+        "coin": "BLOC",
         "servers": [
             {
                 "geo": "Low-End",
                 "urls": [
-                    "xmr.baikalmine.com:7771"
+                    "bloc.baikalmine.com:4441"
                 ]
             },
             {
                 "geo": "Mid range",
                 "urls": [
-                    "xmr.baikalmine.com:7772"
+                    "bloc.baikalmine.com:4442"
                 ]
             },
             {
                 "geo": "High-End",
                 "urls": [
-                    "xmr.baikalmine.com:7773"
+                    "bloc.baikalmine.com:4445"
                 ]
             },
             {
                 "geo": "Very High-End",
                 "urls": [
-                    "xmr.baikalmine.com:7774"
+                    "bloc.baikalmine.com:4443"
                 ]
             }
         ],
@@ -695,13 +607,7 @@
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/2\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"monero\""
+                "user_config": "\"algo\": \"cryptonight_haven\""
             }
         }
     },
@@ -730,53 +636,6 @@
                 "geo": "Very High-End",
                 "urls": [
                     "xmv.baikalmine.com:7777"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/1\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_v7\""
-            },
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%",
-                "claymore-x_user_config": "-pow7 1"
-            }
-        }
-    },
-    {
-        "coin": "ETNC",
-        "servers": [
-            {
-                "geo": "Low-End",
-                "urls": [
-                    "etnc.baikalmine.com:4441"
-                ]
-            },
-            {
-                "geo": "Mid range",
-                "urls": [
-                    "etnc.baikalmine.com:4442"
-                ]
-            },
-            {
-                "geo": "High-End",
-                "urls": [
-                    "etnc.baikalmine.com:4445"
-                ]
-            },
-            {
-                "geo": "Very High-End",
-                "urls": [
-                    "etnc.baikalmine.com:4443"
                 ]
             }
         ],
