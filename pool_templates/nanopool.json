@@ -41,30 +41,7 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WALLET: %WAL/%WORKER_NAME%/%EMAIL%, PSW: x"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%",
-                "url": "%URL%",
-                "pass": "x"
-            }
+            "_prototype": "miners_ethash_slash_email"
         }
     },
     {
@@ -109,30 +86,9 @@
             }
         ],
         "miners": {
+            "_prototype": "miners_ethash_slash_email",
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x",
                 "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%",
-                "url": "%URL%",
-                "pass": "x"
             }
         }
     },
