@@ -8,6 +8,8 @@ If you want your pool to be listed here then create yourpool.json and push it, w
 ## Variables
 `%WAL%` - Wallet address
 
+`%COIN%` - Wallet coin
+
 `%URL%` - pool URL <address:port>
 
 `%URL_HOST%` - pool address
@@ -42,6 +44,8 @@ Available miners:
 - t-rex
 - cpuminer-opt - cpuminer-opt (CPU miner)
 - wildrig-multi
+- finminer
+- gminer
 - custom - Custom miner package
 
 
