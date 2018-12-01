@@ -113,5 +113,38 @@
             "pass": "x",
             "user_config": "rigName = %WORKER_NAME%"
         }
+    },
+
+    "miners_zhash_btg": {
+        "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers BgoldPoW"
+        },
+        "bminer": {
+                "algo": "zhash",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+        },
+        "gminer": {
+                "algo": "144_5",
+                "host": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers BgoldPoW"
+        },
+        "lolminer": {
+                "algo": "BTG",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+        }
     }
 }
