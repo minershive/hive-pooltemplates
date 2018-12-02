@@ -72,6 +72,43 @@
         }
     },
     {
+        "coin": "ETP",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "etp.baikalmine.com:5150"
+                ]
+            },
+            {
+                "geo": "SOLO EU 4G",
+                "urls": [
+                    "etp-solo.baikalmine.com:5151"
+                ]
+            },
+            {
+                "geo": "SOLO EU 8G",
+                "urls": [
+                    "etp-solo.baikalmine.com:5152"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "CLO",
         "servers": [
             {
