@@ -1,14 +1,20 @@
 [
     {
         "coin": "ETH",
-		"servers": [
+        "servers": [
             {
-                "geo": null,
+                "geo": "Ethereum",
                 "urls": [
                     "coinotron.com:3344"
                 ]
+            },
+            {
+                "geo": "Autoswitch ETH-ETC",
+                "urls": [
+                    "coinotron.com:7777"
+                ]
             }
-		],	
+        ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
@@ -26,49 +32,29 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
     {
         "coin": "ETC",
-		"servers": [
+        "servers": [
             {
-                "geo": null,
+                "geo": "Ethereum Classic",
                 "urls": [
                     "coinotron.com:3345"
                 ]
-            }
-		],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
             },
-            "ethminer": {
-                "cuda": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "ethash",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
-            }
-        }
-    },
-    {
-        "coin": "Multi-Ethash",
-		"servers": [
             {
-                "geo": null,
+                "geo": "Autoswitch ETH-ETC",
                 "urls": [
                     "coinotron.com:7777"
                 ]
             }
-		],		
+        ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
@@ -86,19 +72,23 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
     {
         "coin": "ZEC",
-		"servers": [
+        "servers": [
             {
                 "geo": null,
                 "urls": [
                     "coinotron.com:3346"
                 ]
             }
-		],		
+        ],
         "miners": {
             "dstm": {
                 "pass": "x",
@@ -126,41 +116,45 @@
                 "fork": "gm",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
     {
         "coin": "BTG",
-		"servers": [
+        "servers": [
             {
                 "geo": null,
                 "urls": [
                     "coinotron.com:3349"
                 ]
             }
-		],		
-		"miners":{
-			"ewbf": {
-				"algo": "144_5",
-				"fork": "zhash",
-				"zpass": "x",
-				"zport": "%URL_PORT%",
-				"zserver": "%URL_HOST%",
-				"ztemplate": "%WAL%.%WORKER_NAME%",
-				"user_config": "pers BgoldPoW"
-			}
-		}
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers BgoldPoW"
+            }
+        }
     },
     {
         "coin": "FTC",
-		"servers": [
+        "servers": [
             {
                 "geo": null,
                 "urls": [
                     "coinotron.com:3337"
                 ]
             }
-		],
+        ],
         "miners": {
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
@@ -173,7 +167,7 @@
                 "algo": "neoscrypt",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"intensity\" : \"21\"\n\"worksize\" : \"64\"\n\"gpu-threads\" : \"2\""				
+                "user_config": "\"intensity\" : \"21\"\n\"worksize\" : \"64\"\n\"gpu-threads\" : \"2\""
             }
         }
     }

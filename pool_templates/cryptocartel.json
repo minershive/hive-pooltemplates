@@ -1,0 +1,219 @@
+[
+    {
+        "coin": "SMART",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "smart.blake2s.com:9999"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "keccak",
+                "ccpass": "c=SMART",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "keccak",
+                "pass": "c=SMART",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            },
+            "claymore": {
+                "dcri": "6",
+                "dcoin": "keccak",
+                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, PSW: c=SMART"
+            }
+        }
+    },
+    {
+        "coin": "MAX",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "keccak.blake2s.com:9998"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "keccak",
+                "ccpass": "c=MAX",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "keccak",
+                "pass": "c=SMART",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            },
+            "claymore": {
+                "dcri": "6",
+                "dcoin": "keccak",
+                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, PSW: c=MAX"
+            }
+        }
+    },
+    {
+        "coin": "XVG",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "xvg.blake2s.com:8888"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": "blake2s",
+                "ccpass": "c=XVG"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "blake2s",
+                "pass": "c=XVG",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "claymore": {
+                "dcri": "40",
+                "dcoin": "blake2s",
+                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, PSW: c=XVG"
+            }
+        }
+    },
+    {
+        "coin": "XSH",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "xsh.blake2s.com:8887"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": "blake2s",
+                "ccpass": "c=XSH"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "blake2s",
+                "pass": "c=XSH",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "claymore": {
+                "dcri": "40",
+                "dcoin": "blake2s",
+                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, PSW: c=XSH"
+            }
+        }
+    },
+    {
+        "coin": "NEVA",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "neva.blake2s.com:8886"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": "blake2s",
+                "ccpass": "c=NEVA"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "blake2s",
+                "pass": "c=NEVA",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "claymore": {
+                "dcri": "40",
+                "dcoin": "blake2s",
+                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, PSW: c=NEVA"
+            }
+        }
+    },
+    {
+        "coin": "INFO",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "info.blake2s.com:8886"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": "blake2s",
+                "ccpass": "c=INFO"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "blake2s",
+                "pass": "c=INFO",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "claymore": {
+                "dcri": "40",
+                "dcoin": "blake2s",
+                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, PSW: c=INFO"
+            }
+        }
+    },
+    {
+        "coin": "TAJ",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "taj.blake2s.com:8886"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": "blake2s",
+                "ccpass": "c=TAJ"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "blake2s",
+                "pass": "c=TAJ",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "claymore": {
+                "dcri": "40",
+                "dcoin": "blake2s",
+                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, PSW: c=TAJ"
+            }
+        }
+    }
+]

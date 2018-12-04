@@ -1,48 +1,48 @@
 [
-	{
-		"coin": "RVN",
-		"servers": [
-			{
-				"geo": null,
-				"urls": [
-					"cryptopool.party:3636"
-				]
-			}
-		],
-		"miners":{
-			"ccminer": {     
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "cryptopool.party:3636"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%",
                 "ccalgo": "x16r",
-				"ccpass": "c=RVN"
+                "ccpass": "c=RVN"
             },
-			"sgminer-gm": {			
+            "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
-				"fork": "avermore",
-				"algo": "x16r",
-                "pass": "c=RVN", 
+                "fork": "avermore",
+                "algo": "x16r",
+                "pass": "c=RVN",
                 "template": "%WAL%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             }
-		}
-	},
-	{
-		"coin": "RESS",
-		"servers": [
-			{
-				"geo": null,
-				"urls": [
-					"cryptopool.party:4444"
-				]
-			}
-		],
-		"miners":{
-			"ccminer": {     
+        }
+    },
+    {
+        "coin": "RESS",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "cryptopool.party:4444"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%",
                 "ccalgo": "renesis",
-				"ccpass": "c=RESS"
+                "ccpass": "c=RESS"
             }
-		}
-	}
+        }
+    }
 ]

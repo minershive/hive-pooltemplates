@@ -41,17 +41,7 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            }
+            "_prototype": "miners_ethash_slash_email"
         }
     },
     {
@@ -96,66 +86,76 @@
             }
         ],
         "miners": {
+            "_prototype": "miners_ethash_slash_email",
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x",
                 "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%stratum1+tcp://URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
             }
         }
     },
     {
-        "coin": "SC",
+        "coin": "RVN",
         "servers": [
             {
                 "geo": "EU",
                 "urls": [
-                    "sia-eu1.nanopool.org:19999",
-                    "sia-eu2.nanopool.org:19999"
+                    "rvn-eu1.nanopool.org:12222",
+                    "rvn-eu2.nanopool.org:12222"
                 ]
             },
             {
                 "geo": "US East",
                 "urls": [
-                    "sia-us-east1.nanopool.org:19999"
+                    "rvn-us-east1.nanopool.org:12222"
                 ]
             },
             {
                 "geo": "US West",
                 "urls": [
-                    "sia-us-west1.nanopool.org:19999"
+                    "rvn-us-west1.nanopool.org:12222"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "sia-asia1.nanopool.org:19999"
+                    "rvn-asia1.nanopool.org:12222"
                 ]
             },
             {
                 "geo": "Japan",
                 "urls": [
-                    "sia-jp1.nanopool.org:19999"
+                    "rvn-jp1.nanopool.org:12222"
                 ]
             },
             {
                 "geo": "Australia",
                 "urls": [
-                    "sia-au1.nanopool.org:19999"
+                    "rvn-au1.nanopool.org:12222"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "dcri": "15",
-                "dcoin": "sia",
-                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x"
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "ccalgo": "x16r",
+                "ccpass": "x"
+            },
+            "custom": {
+                "miner": "t-rex",
+                "algo": "x16r",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "pass": "x",
+                "install_url": "http://download.hiveos.farm/custom/t-rex-0.8.3.tar.gz"
+            },
+            "sgminer-gm": {
+                "fork": "avermore",
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             }
         }
     },
@@ -227,6 +227,10 @@
                 "fork": "gm",
                 "pass": "x",
                 "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -276,22 +280,40 @@
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
-                "user_config": "\"currency\": \"monero7\""
-            },
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%/%EMAIL%, PSW: x",
-                "claymore-x_user_config": "-pow7 1"
+                "user_config": "\"currency\": \"monero\""
             },
             "xmrig": {
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
             },
-            "cpuminer-opt": {
+            "xmrig-amd": {
                 "url": "%URL%",
-                "algo": "cryptonightv7",
                 "pass": "x",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "algo": "cryptonight-v8"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "algo": "cnv8"
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "algo": "cryptonight-v8"
             }
         }
     },
@@ -357,6 +379,10 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
                 "user_config": "\"rawintensity\": \"256\"\n\"gpu-threads\": \"1\"\n\"worksize\": \"2\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -366,46 +392,48 @@
             {
                 "geo": "EU",
                 "urls": [
-                    "pasc-eu1.nanopool.org:15555",
-                    "pasc-eu2.nanopool.org:15555"
+                    "pasc-eu1.nanopool.org:15556",
+                    "pasc-eu2.nanopool.org:15556"
                 ]
             },
             {
                 "geo": "US East",
                 "urls": [
-                    "pasc-us-east1.nanopool.org:15555"
+                    "pasc-us-east1.nanopool.org:15556"
                 ]
             },
             {
                 "geo": "US West",
                 "urls": [
-                    "pasc-us-west1.nanopool.org:15555"
+                    "pasc-us-west1.nanopool.org:15556"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "pasc-asia1.nanopool.org:15555"
+                    "pasc-asia1.nanopool.org:15556"
                 ]
             },
             {
                 "geo": "Japan",
                 "urls": [
-                    "pasc-jp1.nanopool.org:15555"
+                    "pasc-jp1.nanopool.org:15556"
                 ]
             },
             {
                 "geo": "Australia",
                 "urls": [
-                    "pasc-au1.nanopool.org:15555"
+                    "pasc-au1.nanopool.org:15556"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "dcri": "30",
-                "dcoin": "pasc",
-                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%/%EMAIL%, PSW: x"
+            "finminer": {
+                "algo": "randomhash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
             }
         }
     }

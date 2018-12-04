@@ -1,9 +1,9 @@
 [
     {
-        "coin": "Walesburg-Ethash",
+        "coin": "Whalesburg-Ethash",
         "servers": [
             {
-                "geo": null,
+                "geo": "Europe",
                 "urls": [
                     "proxy.pool.whalesburg.com:8082"
                 ]
@@ -12,15 +12,29 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allpools 0"
+                "claymore_user_config": "-allcoins 1\n-allpools 1"
             },
             "ethminer": {
                 "cuda": 1,
                 "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "stratum1+tcp://%WAL%.%WORKER_NAME%"
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "rigName = %WORKER_NAME%"
             }
         }
     }

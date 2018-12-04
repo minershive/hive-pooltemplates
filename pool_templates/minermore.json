@@ -1,0 +1,94 @@
+[
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "pool.minermore.com:3636"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "x16r",
+                "ccpass": "c=RVN"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=RVN",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            }
+        }
+    },
+    {
+        "coin": "XSG",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "pool.minermore.com:4606"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers sngemPoW"
+            }
+        }
+    },
+    {
+        "coin": "ZEL",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "pool.minermore.com:4605"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers ZelProof"
+            }
+        }
+    },
+    {
+        "coin": "SAFE",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "pool.minermore.com:4603"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers Safecoin"
+            }
+        }
+    }
+]

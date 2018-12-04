@@ -26,6 +26,10 @@
                 "pass": "x",
                 "template": "%WAL%",
                 "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -56,6 +60,10 @@
                 "pass": "x",
                 "template": "%WAL%",
                 "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -96,6 +104,10 @@
                 "fork": "gm",
                 "pass": "x",
                 "template": "%WAL%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -136,6 +148,10 @@
                 "fork": "gm",
                 "pass": "x",
                 "template": "%WAL%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -154,11 +170,7 @@
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"monero7\""
-            },
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "claymore-x_user_config": "-pow7 1"
+                "user_config": "\"currency\": \"monero\""
             },
             "xmrig": {
                 "url": "%URL%",
@@ -178,18 +190,9 @@
             }
         ],
         "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "x11",
-                "ccpass": "x",
-                "ccuser": "%WAL%"
-            },
-            "sgminer-gm": {
+            "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "darkcoin",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -215,7 +218,16 @@
                 "algo": "blake256r14",
                 "pass": "x",
                 "template": "%WAL%",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            },
+            "claymore": {
+                "dcri": "15",
+                "dcoin": "sia",
+                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -246,6 +258,10 @@
                 "pass": "x",
                 "template": "%WAL%",
                 "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -270,7 +286,7 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "groestlcoin",
                 "pass": "x",
-                "template": "%WAL.%WORKER_NAME% PSW: x",
+                "template": "%WAL%.%WORKER_NAME% PSW: x",
                 "user_config": "-I 21 \n-w 64 \n-g 2"
             }
         }
@@ -334,6 +350,10 @@
                 "pass": "x",
                 "template": "%WAL%",
                 "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -364,6 +384,10 @@
                 "pass": "x",
                 "template": "%WAL%",
                 "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -446,6 +470,10 @@
                 "pass": "x",
                 "template": "%WAL%",
                 "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -476,6 +504,10 @@
                 "pass": "x",
                 "template": "%WAL%",
                 "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -506,6 +538,10 @@
                 "pass": "x",
                 "template": "%WAL%",
                 "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }

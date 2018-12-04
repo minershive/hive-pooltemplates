@@ -1,0 +1,45 @@
+[
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "Low-End",
+                "urls": [
+                    "xmrpool.eu:3333"
+                ]
+            },
+            {
+                "geo": "Mid range",
+                "urls": [
+                    "xmrpool.eu:5555"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "urls": [
+                    "xmrpool.eu:7777"
+                ]
+            },
+            {
+                "geo": "SSL",
+                "urls": [
+                    "xmrpool.eu:9999"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%:%EMAIL%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/2\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"monero\""
+            }
+        }
+    }
+]

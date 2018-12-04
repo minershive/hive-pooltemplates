@@ -1,5 +1,5 @@
 [
-	{
+    {
         "coin": "AEX",
         "servers": [
             {
@@ -23,7 +23,7 @@
         ],
         "miners": {
             "sgminer-gm": {
-				"fork": "enemy",
+                "fork": "enemy",
                 "url": "stratum+tcp://%URL%",
                 "algo": "aergo",
                 "pass": "c=AEX",
@@ -38,7 +38,7 @@
             }
         }
     },
-	{
+    {
         "coin": "XSH",
         "servers": [
             {
@@ -76,7 +76,7 @@
             }
         }
     },
-	{
+    {
         "coin": "AXS",
         "servers": [
             {
@@ -114,7 +114,7 @@
             }
         }
     },
-	{
+    {
         "coin": "LEX",
         "servers": [
             {
@@ -152,7 +152,7 @@
             }
         }
     },
-	{
+    {
         "coin": "ZOO",
         "servers": [
             {
@@ -190,45 +190,46 @@
             }
         }
     },
-	{
+    {
         "coin": "XDNA",
         "servers": [
             {
                 "geo": "Europe",
                 "urls": [
-                    "eu.bsod.pw:2330"
+                    "eu.bsod.pw:2320"
                 ]
             },
             {
                 "geo": "North America",
                 "urls": [
-                    "us.bsod.pw:2330"
+                    "us.bsod.pw:2320"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "asia.bsod.pw:2330"
+                    "asia.bsod.pw:2320"
                 ]
             }
         ],
         "miners": {
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "keccak",
+                "algo": "x16m",
                 "pass": "c=XDNA",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+                "user_config": "\"xintensity\" : \"256\""
             },
             "ccminer": {
+                "fork": "enemy",
                 "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "keccak",
+                "ccalgo": "hex",
                 "ccpass": "c=XDNA",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
     },
-	{
+    {
         "coin": "ORE",
         "servers": [
             {
@@ -266,7 +267,7 @@
             }
         }
     },
-	{
+    {
         "coin": "SECI",
         "servers": [
             {
@@ -304,7 +305,7 @@
             }
         }
     },
-	{
+    {
         "coin": "GIN",
         "servers": [
             {
@@ -342,7 +343,45 @@
             }
         }
     },
-	{
+    {
+        "coin": "GTM",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.bsod.pw:2370"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "us.bsod.pw:2370"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.bsod.pw:2370"
+                ]
+            }
+        ],
+        "miners": {
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2z",
+                "pass": "c=GTM",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "lyra2z",
+                "ccpass": "c=GTM",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "IFX",
         "servers": [
             {
@@ -380,7 +419,7 @@
             }
         }
     },
-	{
+    {
         "coin": "VTL",
         "servers": [
             {
@@ -403,22 +442,9 @@
             }
         ],
         "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2z",
-                "pass": "c=VTL",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2z",
-                "ccpass": "c=VTL",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
         }
     },
-	{
+    {
         "coin": "MANO",
         "servers": [
             {
@@ -456,7 +482,7 @@
             }
         }
     },
-	{
+    {
         "coin": "FxTC",
         "servers": [
             {
@@ -494,7 +520,7 @@
             }
         }
     },
-	{
+    {
         "coin": "ALPS",
         "servers": [
             {
@@ -532,7 +558,7 @@
             }
         }
     },
-	{
+    {
         "coin": "CRS",
         "servers": [
             {
@@ -570,7 +596,7 @@
             }
         }
     },
-	{
+    {
         "coin": "GBX",
         "servers": [
             {
@@ -608,7 +634,7 @@
             }
         }
     },
-	{
+    {
         "coin": "SPK",
         "servers": [
             {
@@ -646,7 +672,7 @@
             }
         }
     },
-	{
+    {
         "coin": "INN",
         "servers": [
             {
@@ -684,7 +710,7 @@
             }
         }
     },
-	{
+    {
         "coin": "QBIC",
         "servers": [
             {
@@ -722,7 +748,7 @@
             }
         }
     },
-	{
+    {
         "coin": "CRC",
         "servers": [
             {
@@ -760,7 +786,7 @@
             }
         }
     },
-	{
+    {
         "coin": "DIN",
         "servers": [
             {
@@ -798,7 +824,7 @@
             }
         }
     },
-	{
+    {
         "coin": "LINC",
         "servers": [
             {
@@ -836,7 +862,7 @@
             }
         }
     },
-	{
+    {
         "coin": "LUX",
         "servers": [
             {
@@ -874,7 +900,7 @@
             }
         }
     },
-	{
+    {
         "coin": "FLM",
         "servers": [
             {
@@ -912,7 +938,7 @@
             }
         }
     },
-	{
+    {
         "coin": "GIO",
         "servers": [
             {
@@ -950,7 +976,7 @@
             }
         }
     },
-	{
+    {
         "coin": "HOLD",
         "servers": [
             {
@@ -988,7 +1014,7 @@
             }
         }
     },
-	{
+    {
         "coin": "QUANS",
         "servers": [
             {
@@ -1026,7 +1052,7 @@
             }
         }
     },
-	{
+    {
         "coin": "SCRIV",
         "servers": [
             {
@@ -1064,7 +1090,7 @@
             }
         }
     },
-	{
+    {
         "coin": "BZL",
         "servers": [
             {
@@ -1102,7 +1128,7 @@
             }
         }
     },
-	{
+    {
         "coin": "AOP",
         "servers": [
             {
@@ -1140,7 +1166,7 @@
             }
         }
     },
-	{
+    {
         "coin": "RVN",
         "servers": [
             {
@@ -1178,7 +1204,7 @@
             }
         }
     },
-	{
+    {
         "coin": "GRV",
         "servers": [
             {
@@ -1216,7 +1242,7 @@
             }
         }
     },
-	{
+    {
         "coin": "XMN",
         "servers": [
             {
@@ -1254,7 +1280,7 @@
             }
         }
     },
-	{
+    {
         "coin": "HTH",
         "servers": [
             {
@@ -1292,7 +1318,7 @@
             }
         }
     },
-	{
+    {
         "coin": "VLM",
         "servers": [
             {
@@ -1330,7 +1356,7 @@
             }
         }
     },
-	{
+    {
         "coin": "SOV",
         "servers": [
             {
@@ -1368,7 +1394,7 @@
             }
         }
     },
-	{
+    {
         "coin": "REDN",
         "servers": [
             {
@@ -1406,7 +1432,7 @@
             }
         }
     },
-	{
+    {
         "coin": "XSH",
         "servers": [
             {
@@ -1444,7 +1470,7 @@
             }
         }
     },
-	{
+    {
         "coin": "BTNX",
         "servers": [
             {
@@ -1482,7 +1508,7 @@
             }
         }
     },
-	{
+    {
         "coin": "XSH",
         "servers": [
             {
@@ -1520,7 +1546,7 @@
             }
         }
     },
-	{
+    {
         "coin": "ELLI",
         "servers": [
             {
@@ -1556,6 +1582,31 @@
                 "ccpass": "c=ELLI",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             }
+        }
+    },
+    {
+        "coin": "SUQA",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.bsod.pw:2460"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "us.bsod.pw:2460"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.bsod.pw:2460"
+                ]
+            }
+        ],
+        "miners": {
         }
     }
 ]

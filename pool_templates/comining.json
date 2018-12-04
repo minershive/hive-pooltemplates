@@ -1,0 +1,55 @@
+[
+    {
+        "coin": "Comining-Ethash",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "s-ru.comining.io:9999"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "s-eu.comining.io:9999"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "s-us.comining.io:9999"
+                ]
+            },
+            {
+                "geo": "Singapore",
+                "urls": [
+                    "s-sg.comining.io:9999"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "s-jp.comining.io:9999"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3, ALLPOOLS: 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--farm-recheck 10000"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

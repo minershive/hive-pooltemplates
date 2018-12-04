@@ -38,7 +38,7 @@
                 "algo": "qubitcoin",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -65,15 +65,7 @@
             }
         ],
         "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers BgoldPoW"
-            }
+            "_prototype": "miners_zhash_btg"
         }
     },
     {
@@ -114,8 +106,8 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "groestlcoin",
                 "pass": "x",
-                "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "template": "%WAL%.%WORKER_NAME% PSW: x",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -141,7 +133,7 @@
                 "algo": "qubitcoin",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -167,7 +159,33 @@
                 "algo": "skein",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+    {
+        "coin": "MPH-Skein",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "hub.miningpoolhub.com:17016"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "skein",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "skein",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -206,6 +224,10 @@
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -243,6 +265,10 @@
                 "port": "%URL_PORT%",
                 "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -278,6 +304,10 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
@@ -316,6 +346,10 @@
                 "port": "%URL_PORT%",
                 "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -353,6 +387,10 @@
                 "port": "%URL_PORT%",
                 "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -378,7 +416,7 @@
                 "algo": "neoscrypt",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -420,8 +458,14 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "yescrypt",
                 "pass": "x",
-                "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "template": "%WAL%.%WORKER_NAME% PSW: x",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            },
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "yescrypt",
+                "pass": "x",
+                "user": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -446,8 +490,8 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "groestlcoin",
                 "pass": "x",
-                "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "template": "%WAL%.%WORKER_NAME% PSW: x",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -489,8 +533,34 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "keccak",
                 "pass": "x",
-                "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "template": "%WAL%.%WORKER_NAME% PSW: x",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+    {
+        "coin": "MPH-Lyra2REv2",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "hub.miningpoolhub.com:17018"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "lyra2v2",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2rev2",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"256\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -507,7 +577,7 @@
         "miners": {
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2rev2",
+                "ccalgo": "lyra2v2",
                 "ccpass": "x",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             },
@@ -515,8 +585,8 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "lyra2rev2",
                 "pass": "x",
-                "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"256\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -547,11 +617,7 @@
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"cryptonight_v7\""
-            },
-            "claymore-x": {
-                "xpools_tpl": "POOL: ssl://%URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "claymore-x_user_config": "-pow7 1"
+                "user_config": "\"currency\": \"cryptonight_v8\""
             },
             "xmrig": {
                 "url": "%URL%",
@@ -594,6 +660,10 @@
                 "port": "%URL_PORT%",
                 "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -618,8 +688,8 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "groestlcoin",
                 "pass": "x",
-                "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "template": "%WAL%.%WORKER_NAME% PSW: x",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -644,7 +714,7 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "skein",
                 "pass": "x",
-                "template": "%WAL.%WORKER_NAME% PSW: x",
+                "template": "%WAL%.%WORKER_NAME% PSW: x",
                 "user_config": "-I 21 \n-w 64 \n-g 2"
             }
         }
@@ -670,8 +740,8 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "yescrypt",
                 "pass": "x",
-                "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "template": "%WAL%.%WORKER_NAME% PSW: x",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -761,7 +831,7 @@
         "miners": {
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2rev2",
+                "ccalgo": "lyra2v2",
                 "ccpass": "x",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             },
@@ -769,8 +839,8 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "lyra2rev2",
                 "pass": "x",
-                "template": "%WAL.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"256\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -812,7 +882,7 @@
             "bminer": {
                 "url": "%URL%",
                 "pass": "x",
-                "template": "stratum+ssl://%WAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "claymore-z": {
                 "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
@@ -822,6 +892,10 @@
                 "algo": "equihash",
                 "fork": "gm",
                 "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
@@ -864,7 +938,7 @@
             "bminer": {
                 "url": "%URL%",
                 "pass": "x",
-                "template": "stratum+ssl://%WAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "claymore-z": {
                 "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
@@ -874,6 +948,10 @@
                 "algo": "equihash",
                 "fork": "gm",
                 "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
@@ -916,7 +994,7 @@
             "bminer": {
                 "url": "%URL%",
                 "pass": "x",
-                "template": "stratum+ssl://%WAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "claymore-z": {
                 "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
@@ -927,6 +1005,10 @@
                 "fork": "gm",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -936,19 +1018,19 @@
             {
                 "geo": "Europe",
                 "urls": [
-                    "europe.equihash-hub.miningpoolhub.com:20596"
+                    "europe.equihash-hub.miningpoolhub.com:20594"
                 ]
             },
             {
                 "geo": "USA (east)",
                 "urls": [
-                    "us-east.equihash-hub.miningpoolhub.com:20596"
+                    "us-east.equihash-hub.miningpoolhub.com:20594"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "asia.equihash-hub.miningpoolhub.com:20596"
+                    "asia.equihash-hub.miningpoolhub.com:20594"
                 ]
             }
         ],
@@ -968,7 +1050,7 @@
             "bminer": {
                 "url": "%URL%",
                 "pass": "x",
-                "template": "stratum+ssl://%WAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "claymore-z": {
                 "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
@@ -979,6 +1061,10 @@
                 "fork": "gm",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -988,19 +1074,19 @@
             {
                 "geo": "Europe",
                 "urls": [
-                    "europe.equihash-hub.miningpoolhub.com:20596"
+                    "europe.lyra2z-hub.miningpoolhub.com:20581"
                 ]
             },
             {
                 "geo": "USA (east)",
                 "urls": [
-                    "us-east.equihash-hub.miningpoolhub.com:20596"
+                    "us-east.lyra2z-hub.miningpoolhub.com:20581"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "asia.equihash-hub.miningpoolhub.com:20596"
+                    "asia.lyra2z-hub.miningpoolhub.com:20581"
                 ]
             }
         ],
@@ -1017,6 +1103,47 @@
                 "miner": "tdxminer",
                 "template": "%WAL%.%WORKER_NAME%",
                 "install_url": "http://download.hiveos.farm/custom/tdxminer-0.2.2.2.tar.gz"
+            }
+        }
+    },
+    {
+        "coin": "ESN",
+        "servers": [
+            {
+                "geo": "U.S.",
+                "urls": [
+                    "us-east.ethash-hub.miningpoolhub.com:20605"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.ethash-hub.miningpoolhub.com:20605"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "europe.ethash-hub.miningpoolhub.com:20605"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, WORKER: %WAL%.%WORKER_NAME%, ESM: 2, PSW: x",
+                "claymore_user_config": "-allcoins 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }

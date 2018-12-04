@@ -1,27 +1,70 @@
 [
     {
+        "pool": {
+            "name": "Hiveon",
+            "url": "https://hiveon.net/",
+            "fee": 0,
+            "type": "PPS+"
+        }
+    },
+    {
         "coin": "ETH",
         "servers": [
             {
                 "geo": "Europe",
                 "urls": [
-                    "eu1-eth.hiveon.net:4444",
-                    "eu1-eth.hiveon.net:14444"
+                    "eu-eth.hiveon.net:4444",
+                    "eu-eth.hiveon.net:14444"
+                ]
+            },
+            {
+                "geo": "N.America West",
+                "urls": [
+                    "naw-eth.hiveon.net:4444",
+                    "naw-eth.hiveon.net:14444"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "_prototype": "miners_ethash"
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu-etc.hiveon.net:5555",
+                    "eu-etc.hiveon.net:15555"
+                ]
             }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash",
+            "claymore": {
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
+            }
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "Europe (Rigs)",
+                "urls": [
+                    "eu-xmr.hiveon.net:12000"
+                ]
+            },
+            {
+                "geo": "Europe (CPU)",
+                "urls": [
+                    "eu-xmr.hiveon.net:11000"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_cryptonight"
         }
     }
 ]

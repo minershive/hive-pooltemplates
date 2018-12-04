@@ -1,0 +1,232 @@
+[
+    {
+        "coin": "UBQ",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "ubiq-eu.maxhash.org:8008",
+                    "ubiq-eu.maxhash.org:10008",
+                    "ubiq-eu.maxhash.org:8888"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "ubiq-us.maxhash.org:8008",
+                    "ubiq-us.maxhash.org:10008",
+                    "ubiq-us.maxhash.org:8888"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "ubiq-as.maxhash.org:8008",
+                    "ubiq-as.maxhash.org:10008",
+                    "ubiq-as.maxhash.org:8888"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eth-eu.maxhash.org:12011",
+                    "eth-eu.maxhash.org:11011",
+                    "eth-eu.maxhash.org:8011",
+                    "eth-eu.maxhash.org:10011",
+                    "eth-eu.maxhash.org:8891"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "eth-us.maxhash.org:12011",
+                    "eth-us.maxhash.org:11011",
+                    "eth-us.maxhash.org:8011",
+                    "eth-us.maxhash.org:10011",
+                    "eth-us.maxhash.org:8891"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "eth-as.maxhash.org:12011",
+                    "eth-as.maxhash.org:11011",
+                    "eth-as.maxhash.org:8011",
+                    "eth-as.maxhash.org:10011",
+                    "eth-as.maxhash.org:8891"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "EXP",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "exp-eu.maxhash.org:8010",
+                    "exp-eu.maxhash.org:10010",
+                    "exp-eu.maxhash.org:8890"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "exp-us.maxhash.org:8008",
+                    "exp-us.maxhash.org:10008",
+                    "exp-us.maxhash.org:8890"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "MUSIC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "music-eu.maxhash.org:8009",
+                    "music-eu.maxhash.org:10009",
+                    "music-eu.maxhash.org:8889"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "music-us.maxhash.org:8009",
+                    "music-us.maxhash.org:10009",
+                    "music-us.maxhash.org:8889"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "etc-eu.maxhash.org:12012",
+                    "etc-eu.maxhash.org:11012",
+                    "etc-eu.maxhash.org:8012",
+                    "etc-eu.maxhash.org:10012",
+                    "etc-eu.maxhash.org:8892"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "etc-us.maxhash.org:12012",
+                    "etc-us.maxhash.org:11012",
+                    "etc-us.maxhash.org:8012",
+                    "etc-us.maxhash.org:10012",
+                    "etc-us.maxhash.org:8892"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "etc-as.maxhash.org:12012",
+                    "etc-as.maxhash.org:11012",
+                    "etc-as.maxhash.org:8012",
+                    "etc-as.maxhash.org:10012",
+                    "etc-as.maxhash.org:8892"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKERNAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

@@ -35,7 +35,7 @@
                     "pool.minerall.io:3304"
                 ]
             }
-        ], 
+        ],
         "miners": {
             "bminer": {
                 "url": "stratum://%URL%",
@@ -62,6 +62,10 @@
                 "algo": "equihash",
                 "fork": "gm",
                 "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
@@ -152,6 +156,6 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
-    },
-
+    }
 ]
+
