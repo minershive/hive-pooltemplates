@@ -16,7 +16,7 @@
             "ethminer": {
                 "cuda": 1,
                 "pass": "x",
-                "port": "3401",
+                "port": "%URL_PORT%",
                 "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
@@ -69,5 +69,93 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "pool.minerall.io:3404"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "pool.minerall.io:4201"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": "x16r",
+                "ccpass": "x"
+            },
+            "sgminer-gm-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            }
+        }
+    },
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "pool.minerall.io:3101"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "pool.minerall.io:3102"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
+
