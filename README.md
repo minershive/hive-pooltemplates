@@ -26,9 +26,9 @@ Available miners:
 - claymore-x - Claymore's Cryptonote AMD GPU miner
 - claymore-z - Claymore's AMD GPU ZCash miner
 - ewbf - ewbf for equihash and new for equihash algo variants miner
-- ccminer - ccminer & forks
-- ethminer - ethminer and ProgPow fork
-- sgminer-gm - sgminer & forks
+- ccminer - ccminer & forks (ccminer forks (alexis, allium, bcd, dace-cryptonight, djm34, enemy, klaust, klaust-yescrypt, nanashi, nevermore, nevermore-x16s, phi-anxmod, rvn, suprminer, sp-mod, tpruvot, vertminer, xevan, zp))
+- ethminer - ethminer (forks available - ethash, progpow, ubiqhash)
+- sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi)
 - dstm - legacy 0.3.4b and new zhash
 - bminer
 - lolminer
