@@ -1302,5 +1302,32 @@
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "XZC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "xzc.2miners.com:8080"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "solo-xzc.2miners.com:9090"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccalgo": "mtp",
+                "fork": "djm34",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccpass": "x",
+                "ccextra": "\"devices\": \"0\""
+            }
+        }
     }
 ]
