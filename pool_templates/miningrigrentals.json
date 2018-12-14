@@ -113,7 +113,7 @@
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%"
             }
         }
     },
@@ -161,8 +161,16 @@
                 "zpass": "x",
                 "zport": "%URL_PORT%",
                 "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers ZERO_PoW"
+                "ztemplate": "%WAL%",
+                "user_config": "pers auto"
+            },
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%",
+                "user_config": "--pers auto"
             }
         }
     },
@@ -212,6 +220,14 @@
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%",
                 "user_config": "pers auto"
+            },
+            "gminer": {
+                "algo": "144_5",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%",
+                "user_config": "--pers auto"
             }
         }
     },
@@ -257,13 +273,13 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccalgo": "lyra2z",
                 "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
+                "ccuser": "%WAL%"
             },
             "custom": {
                 "url": "stratum+tcp://%URL%",
                 "pass": "x",
                 "miner": "tdxminer",
-                "template": "%WAL%.%WORKER_NAME%",
+                "template": "%WAL%",
                 "install_url": "http://download.hiveos.farm/custom/tdxminer-0.2.2.2.tar.gz"
             }
         }
