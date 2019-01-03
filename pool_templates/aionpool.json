@@ -1,51 +1,51 @@
 [
-	{
-		"coin": "AION",
-		"servers": [
-			{
-				"geo": "NormalMiner 3 GPU+ Rigs",
-				"urls": [
-				"cluster.aionpool.tech:3333"
-                ]
-            },
-            {
-				"geo": "BigMiner/RigProxy/FPGA",
-                "urls": [
-				"cluster.aionpool.tech:4444"
-				]
-			},
-			{
-				"geo": "SmallMiner Max 3 GPU Rigs",
-				"urls": [
-				"cluster.aionpool.tech:2222"
-				]
-			}
-		],
-		"miners": {
-			"ewbf": {
-				"algo": "210_9",
-				"fork": "zhash",
-				"zserver": "%URL_HOST%",
-				"zport": "%URL_PORT%",
-				"zpass": "x",
-				"ztemplate": "%WAL%.%WORKER_NAME%",
-				"user_config": "pers AION0PoW"
-			},
-			"gminer": {
-				"algo": "210_9",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"user_config": "--pers AION0PoW"
-			},
-			"lolminer": {
-				"algo": "AION",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%"
-			}
-		}
-	}
+  {
+    "coin": "AION",
+    "servers": [
+      {
+        "geo": "NormalRig 3GPUs+",
+        "urls": [
+          "cluster.aionpool.tech:3333"
+        ]
+      },
+      {
+        "geo": "Multi-Rig 10+",
+        "urls": [
+          "cluster.aionpool.tech:4444"
+        ]
+      },
+      {
+        "geo": "SmallRig Max3GPUs",
+        "urls": [
+          "cluster.aionpool.tech:2222"
+        ]
+      }
+    ],
+    "miners": {
+      "ewbf": {
+        "algo": "210_9",
+        "fork": "zhash",
+        "zserver": "%URL_HOST%",
+        "zport": "%URL_PORT%",
+        "zpass": "x",
+        "ztemplate": "%WAL%.%WORKER_NAME%",
+        "user_config": "pers AION0PoW"
+      },
+      "gminer": {
+        "algo": "210_9",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--pers AION0PoW"
+      },
+      "lolminer": {
+        "algo": "AION",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
 ]
