@@ -76,5 +76,26 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "BEAM",
+        "servers": [
+            {
+              "geo": "Beta",
+              "urls": [
+                  "beam.sparkpool.com:2222"
+              ]
+            }
+          ],
+        "miners": {
+            "beamcl": {
+                "template": "%WAL%",
+                "server": "%URL%"
+            },
+            "beamcuda": {
+                "template": "%WAL%",
+                "server": "%URL%"
+            },
+        }
     }
 ]
