@@ -1,5 +1,13 @@
 [
     {
+        "pool": {
+            "name": "Spark Pool",
+            "url": "https://sparkpool.com",
+            "fee": 1,
+            "type": "PPS+"
+        }
+    },
+    {
         "coin": "ETH",
         "servers": [
             {
@@ -60,21 +68,37 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "_prototype": "miners_ethash"
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "etc-cn.sparkpool.com:5555",
+                    "etc-cn.sparkpool.com:15555"
+                ]
             }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash"
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "xmr-cn.sparkpool.com:11000",
+                    "xmr-cn.sparkpool.com:21000"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_cryptonight"
         }
     },
     {
