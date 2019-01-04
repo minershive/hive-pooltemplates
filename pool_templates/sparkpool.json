@@ -105,19 +105,31 @@
         "coin": "BEAM",
         "servers": [
             {
-              "geo": "Beta",
+              "geo": "China",
               "urls": [
                   "beam.sparkpool.com:2222"
+              ]
+            },
+            {
+              "geo": "Europe",
+              "urls": [
+                  "beam-eu.sparkpool.com:2222"
+              ]
+            },
+            {
+              "geo": "Southeast Asia",
+              "urls": [
+                  "beam-asia.sparkpool.com:2222"
               ]
             }
           ],
         "miners": {
             "beamcl": {
-                "template": "%WAL%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "server": "%URL%"
             },
             "beamcuda": {
-                "template": "%WAL%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "server": "%URL%"
             }
         }
