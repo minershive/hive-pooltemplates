@@ -143,5 +143,51 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "BEAM",
+        "servers": [
+            {
+              "geo": "EU",
+              "urls": [
+                  "beam-eu.leafpool.com:4444"
+              ]
+            },
+            {
+              "geo": "US",
+              "urls": [
+                  "beam-us.leafpool.com:4444"
+              ]
+            },
+            {
+              "geo": "Asia",
+              "urls": [
+                  "beam-asia.leafpool.com:4444"
+              ]
+            }
+          ],
+        "miners": {
+            "beamcl": {
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "beamcuda": {
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "bminer": {
+                "algo": "beam+ssl",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "150_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--ssl 1"
+            }
+        }
     }
 ]
