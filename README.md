@@ -31,8 +31,7 @@ Available miners:
 - sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi)
 - dstm - legacy 0.3.4b and new zhash
 - bminer
-- lolminer
-- optiminer
+- lolminer - equihash variants OpenCL miner
 - xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo)
 - xmrig - XMRig (CPU cryptonight variants miner)
 - xmrig-amd - XMRig (AMD cryptonight variants miner)
@@ -45,7 +44,9 @@ Available miners:
 - cpuminer-opt - cpuminer-opt (CPU miner)
 - wildrig-multi
 - finminer
-- gminer
+- gminer - equihash variants CUDA miner
+- beamcl - BEAM OpenCL miner
+- beamcuda - BEAM CUDA miner
 - custom - Custom miner package
 
 
