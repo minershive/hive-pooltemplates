@@ -146,5 +146,64 @@
                 "user_config": "--ssl 1"
             }
         }
+    },
+    {
+        "coin": "GRIN",
+        "servers": [
+            {
+              "geo": "C29 Asia",
+              "urls": [
+                  "grin-asia.sparkpool.com:6666",
+                  "grin-asia.sparkpool.com:16667"
+              ]
+            },
+            {
+              "geo": "C29 Europe",
+              "urls": [
+                  "grin-eu.sparkpool.com:6666",
+                  "grin-eu.sparkpool.com:16666"
+              ]
+            },
+            {
+              "geo": "C29 US",
+              "urls": [
+                  "grin-us.sparkpool.com:6666",
+                  "grin-us.sparkpool.com:16666"
+              ]
+            },
+            {
+              "geo": "C31 Asia",
+              "urls": [
+                  "grin-asia.sparkpool.com:6667",
+                  "grin-asia.sparkpool.com:16667"
+              ]
+            },
+            {
+              "geo": "C31 Europe",
+              "urls": [
+                  "grin-eu.sparkpool.com:6667",
+                  "grin-eu.sparkpool.com:16667"
+              ]
+            },
+            {
+              "geo": "C31 US",
+              "urls": [
+                  "grin-us.sparkpool.com:6667",
+                  "grin-us.sparkpool.com:16667"
+              ]
+            }
+        ],
+        "miners": {
+            "bminer": {
+                "algo": "cuckaroo29",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "grinminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%/%WORKER_NAME%"
+            }
+        }
     }
 ]
