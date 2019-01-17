@@ -676,5 +676,41 @@
                 "user_config": "\"currency\": \"cryptonight_heavy\""
             }
         }
+    },
+     {
+        "coin": "GENX",
+        "servers": [
+            {
+                "geo": "GPU",
+                "urls": [
+                    "genx.baikalmine.com:1010"
+                ]
+            },
+            {
+                "geo": "BIG FARM/NiceHash",
+                "urls": [
+                    "genx.baikalmine.com:1011"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "192_7",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers GENX_PoW"
+            },
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers GENX_PoW"
+            }
+        }
     }
 ]
