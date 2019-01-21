@@ -716,6 +716,46 @@
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "--pers GENX_PoW"
+            },
+            {
+        "coin": "ANON",
+        "servers": [
+            {
+                "geo": "GPU",
+                "urls": [
+                    "anon.baikalmine.com:2010"
+                ]
+            },
+            {
+                "geo": "HIGH DIFF",
+                "urls": [
+                    "anon.baikalmine.com:2011"
+                ]
+            },
+            {
+                "geo": "SOLO",
+                "urls": [
+                    "anon.baikalmine.com:2020"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers AnonyPoW"
+            },
+            "gminer": {
+                "algo": "144_5",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers AnonyPoW"
             }
         }
     }
