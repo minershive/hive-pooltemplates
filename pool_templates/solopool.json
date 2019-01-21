@@ -12,7 +12,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -20,11 +20,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -41,7 +58,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -49,11 +66,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -70,7 +104,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -78,11 +112,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -97,21 +148,9 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
             }
         }
     },
@@ -128,7 +167,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -136,11 +175,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -157,7 +213,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -165,11 +221,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -186,7 +259,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -194,11 +267,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -215,7 +305,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -223,11 +313,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -244,7 +351,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -252,11 +359,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -273,7 +397,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -281,11 +405,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -302,7 +443,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -310,16 +451,33 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
     {
-        "coin": "ARA",
+        "coin": "REOSC",
         "servers": [
             {
                 "geo": "EU",
@@ -331,7 +489,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -339,11 +497,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -359,7 +534,8 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -367,11 +543,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -388,7 +581,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -396,11 +589,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -417,7 +627,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -425,11 +635,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -446,7 +673,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -454,11 +681,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -475,7 +719,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -483,11 +727,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -504,7 +765,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -512,11 +773,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -533,7 +811,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -541,11 +819,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -562,7 +857,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -570,11 +865,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -591,7 +903,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins 1\n-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -599,11 +911,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -626,6 +955,14 @@
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers BitcoinZ"
+            },
+            "gminer": {
+                    "algo": "144_5",
+                    "host": "%URL_HOST%",
+                    "port": "%URL_PORT%",
+                    "pass": "x",
+                    "template": "%WAL%.%WORKER_NAME%",
+                    "user_config": "--pers BitcoinZ"
             }
         }
     },
@@ -669,6 +1006,14 @@
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers AnonyPoW"
+            },
+            "gminer": {
+                    "algo": "144_5",
+                    "host": "%URL_HOST%",
+                    "port": "%URL_PORT%",
+                    "pass": "x",
+                    "template": "%WAL%.%WORKER_NAME%",
+                    "user_config": "--pers AnonyPoW"
             }
         }
     },
@@ -735,6 +1080,14 @@
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers sngemPoW"
+            },
+            "gminer": {
+                    "algo": "144_5",
+                    "host": "%URL_HOST%",
+                    "port": "%URL_PORT%",
+                    "pass": "x",
+                    "template": "%WAL%.%WORKER_NAME%",
+                    "user_config": "--pers sngemPoW"
             }
         }
     },
@@ -933,6 +1286,58 @@
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers BgoldPoW"
+            },
+            "gminer": {
+                    "algo": "144_5",
+                    "host": "%URL_HOST%",
+                    "port": "%URL_PORT%",
+                    "pass": "x",
+                    "template": "%WAL%.%WORKER_NAME%",
+                    "user_config": "--pers BgoldPoW"
+            }
+        }
+    },
+    {
+        "coin": "ZEC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "s4.solopool.org:8011"
+                ]
+            }
+        ],
+        "miners": {
+            "dstm": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "claymore-z": {
+                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "%URL%",
+                "algo": "equihash",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -955,6 +1360,14 @@
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers ZelProof"
+            },
+            "gminer": {
+                    "algo": "144_5",
+                    "host": "%URL_HOST%",
+                    "port": "%URL_PORT%",
+                    "pass": "x",
+                    "template": "%WAL%.%WORKER_NAME%",
+                    "user_config": "--pers ZelProof"
             }
         }
     },
@@ -977,6 +1390,14 @@
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers Safecoin"
+            },
+            "gminer": {
+                    "algo": "144_5",
+                    "host": "%URL_HOST%",
+                    "port": "%URL_PORT%",
+                    "pass": "x",
+                    "template": "%WAL%.%WORKER_NAME%",
+                    "user_config": "--pers Safecoin"
             }
         }
     },
@@ -992,11 +1413,25 @@
         ],
         "miners": {
             "xmr-stak": {
-                "cpu": "\"cpu_threads_conf\" : null,",
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"currency\": \"cryptonight_heavy\""
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1012,11 +1447,25 @@
         ],
         "miners": {
             "xmr-stak": {
-                "cpu": "\"cpu_threads_conf\" : null,",
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"currency\": \"cryptonight_heavy\""
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1032,11 +1481,25 @@
         ],
         "miners": {
             "xmr-stak": {
-                "cpu": "\"cpu_threads_conf\" : null,",
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"cryptonight_v8\""
+                "user_config": "\"currency\": \"graft\""
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1052,11 +1515,59 @@
         ],
         "miners": {
             "xmr-stak": {
-                "cpu": "\"cpu_threads_conf\" : null,",
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"currency\": \"haven\""
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XTL",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "s3.solopool.org:8005"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"currency\": \"stellite\""
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1072,11 +1583,25 @@
         ],
         "miners": {
             "xmr-stak": {
-                "cpu": "\"cpu_threads_conf\" : null,",
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"currency\": \"cryptonight_bittube2\""
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1092,11 +1617,84 @@
         ],
         "miners": {
             "xmr-stak": {
-                "cpu": "\"cpu_threads_conf\" : null,",
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"currency\": \"masari\""
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "s3.solopool.org:8008"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"currency\": \"monero\""
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cryptonight-v8"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cnv8"
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cryptonight-v8"
+            },
+            "finminer": {
+                "algo": "cryptonightv8",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             }
         }
     }
