@@ -151,10 +151,17 @@
         "coin": "GRIN",
         "servers": [
             {
+              "geo": "C29 China",
+              "urls": [
+                  "grin.sparkpool.com:6666",
+                  "grin.sparkpool.com:16666"
+              ]
+            },
+            {
               "geo": "C29 Asia",
               "urls": [
                   "grin-asia.sparkpool.com:6666",
-                  "grin-asia.sparkpool.com:16667"
+                  "grin-asia.sparkpool.com:16666"
               ]
             },
             {
@@ -169,6 +176,13 @@
               "urls": [
                   "grin-us.sparkpool.com:6666",
                   "grin-us.sparkpool.com:16666"
+              ]
+            },
+            {
+              "geo": "C31 China",
+              "urls": [
+                  "grin.sparkpool.com:6667",
+                  "grin.sparkpool.com:16667"
               ]
             },
             {
@@ -199,10 +213,20 @@
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%"
             },
+            "gminer": {
+                "algo": "grin29",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
             "grinminer": {
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%/%WORKER_NAME%"
+            },
+            "gringoldminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }
