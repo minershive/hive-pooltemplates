@@ -1740,5 +1740,35 @@
         "miners": {
             "_prototype": "miners_zhash_btg"
         }
+    },
+        {
+        "coin": "BEAM",
+        "servers": [
+            {
+              "geo": "China",
+              "urls": [
+                  "beam.sparkpool.com:2222"
+              ]
+            },
+            {
+              "geo": "Europe",
+              "urls": [
+                  "beam-eu.sparkpool.com:2222"
+              ]
+            },
+            {
+              "geo": "Southeast Asia",
+              "urls": [
+                  "beam-asia.sparkpool.com:2222"
+              ]
+            }
+          ],
+        "miners": {
+            "bminer": {
+                "algo": "beam+ssl",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            }
+        }
     }
 ]
