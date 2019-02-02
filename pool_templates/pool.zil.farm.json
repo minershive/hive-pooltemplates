@@ -1,0 +1,32 @@
+[
+    {
+        "coin": "ZIL",  // coin name
+        "servers": [    // pool addresses array
+            {
+                "geo": null, // geo location, maybe null if unknown or in some cases you can indicate port difficulty
+                "urls": [
+                    "pool.zil.farm:5000/api",  // pool server URL  and port
+
+                ]
+            }
+        ],
+        "miners": { // miner's settings section
+            "ethminer": { //miner's name
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x" //miner's settings
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "5000/api",
+                "server": "zil://pool.zil.farm",
+                "template": "%WAL%.%WORKER_NAME%"
+				"extra": "--max-submit=1 
+						  --farm-recheck 10000 
+				          --work-timeout=7200 
+						  --farm-retries=10 
+						  --retry-delay=10"
+            },
+        }
+    }
+]
