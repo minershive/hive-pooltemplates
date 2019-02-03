@@ -1,0 +1,73 @@
+[
+    {
+        "pool": {
+            "name": "Grinmint",
+            "url": "https://grinmint.com",
+            "fee": 0,
+            "type": "PPLNG"
+        }
+    },
+    {
+        "coin": "GRIN",
+        "servers": [
+            {
+              "geo": "EU",
+              "urls": [
+                  "eu-west-stratum.grinmint.com:3416",
+                  "eu-west-stratum.grinmint.com:13416"
+              ]
+            },
+            {
+              "geo": "US",
+              "urls": [
+                  "us-east-stratum.grinmint.com:3416",
+                  "us-east-stratum.grinmint.com:13416"
+              ]
+            },
+            {
+              "geo": "EU (TLS)",
+              "urls": [
+                  "eu-west-stratum.grinmint.com:4416",
+                  "eu-west-stratum.grinmint.com:23416"
+              ]
+            },
+            {
+              "geo": "US (TLS)",
+              "urls": [
+                  "us-east-stratum.grinmint.com:4416",
+                  "us-east-stratum.grinmint.com:23416"
+              ]
+            }
+        ],
+        "miners": {
+            "bminer": {
+                "algo": "cuckaroo29",
+                "template": "%WAL%/%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "grin29",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "grinminer": {
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "gringoldminer": {
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "grinprominer": {
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%",
+                "algo": "cuckaroo"
+            }
+        }
+    }
+]
