@@ -1741,31 +1741,54 @@
             "_prototype": "miners_zhash_btg"
         }
     },
-        {
+    {
         "coin": "BEAM",
         "servers": [
             {
-              "geo": "China",
-              "urls": [
-                  "beam.sparkpool.com:2222"
-              ]
+                "geo": "Europe",
+                "urls": [
+                    "beam.eu.nicehash.com:3370"
+                ]
             },
             {
-              "geo": "Europe",
-              "urls": [
-                  "beam-eu.sparkpool.com:2222"
-              ]
+                "geo": "USA",
+                "urls": [
+                    "beam.usa.nicehash.com:3370"
+                ]
             },
             {
-              "geo": "Southeast Asia",
-              "urls": [
-                  "beam-asia.sparkpool.com:2222"
-              ]
+                "geo": "Hong Kong",
+                "urls": [
+                    "beam.hk.nicehash.com:3370"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "beam.jp.nicehash.com:3370"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "beam.br.nicehash.com:3370"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "beam.in.nicehash.com:3370"
+                ]
             }
-          ],
+        ],
         "miners": {
             "bminer": {
                 "algo": "beam+ssl",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "150_5",
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%"
             }
