@@ -15,20 +15,13 @@
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
             },
             "ethminer": {
-				"fork":"zilminer",
+		"fork":"zilminer",
                 "cuda": 1,
                 "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT",
                 "server": "zil://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",
-				"extra": "
-							--max-submit=1 
-						  --farm-recheck=10000 
-				          --work-timeout=7200 
-						  --farm-retries=10 
-						  --retry-delay=10
-						  "
+                "template": "%WAL%.%WORKER_NAME%",				
             },
         }
     }
