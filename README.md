@@ -27,7 +27,7 @@ Available miners:
 - claymore-z - Claymore's AMD GPU ZCash miner
 - ewbf - ewbf for equihash and new for equihash algo variants miner
 - ccminer - ccminer & forks (ccminer forks available: alexis, allium, bcd, dace-cryptonight, djm34, enemy, klaust, klaust-yescrypt, nanashi, nevermore, nevermore-x16s, phi-anxmod, rvn, suprminer, sp-mod, tpruvot, vertminer, xevan, zp)
-- ethminer - ethminer (forks available - ethash, progpow, ubiqhash)
+- ethminer - ethminer (forks available - ethash, progpow, ubiqhash, zilminer)
 - sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi)
 - dstm - legacy 0.3.4b and new zhash
 - bminer
@@ -47,6 +47,10 @@ Available miners:
 - gminer - equihash variants CUDA miner
 - beamcl - BEAM OpenCL miner
 - beamcuda - BEAM CUDA miner
+- grinminer - Cuckaroo29 and Cuckatoo31 miner (AMD/NVidia)
+- gringoldminer - Cuckaroo29 miner (AMD/NVidia)
+- grinpro - improved version of grinminer (AMD/NVidia)
+- nbminer - ETH, BTM, Cuckoo miner (NVidia)
 - custom - Custom miner package
 
 
