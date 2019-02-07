@@ -1835,6 +1835,11 @@
             }
         ],
         "miners": {
+            "gminer": {
+                "algo": "grin29",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            }
         }
     },
     {
@@ -1878,6 +1883,11 @@
             }
         ],
         "miners": {
+            "gminer": {
+                "algo": "grin31",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            }
         }
     },
     {
@@ -1921,6 +1931,31 @@
             }
         ],
         "miners": {
+            "cryptodredge": {
+                "algo": "lyra2v3",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "algo": "lyra2rev3",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer": {
+                "url": "%URL%",
+                "algo": "lyra2rev3",
+                "fork": "fancyix",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"256\"\n\"intensity\": \"24\""
+            },
+            "wildrig-multi": {
+                "url": "%URL%",
+                "algo": "lyra2v3",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--opencl-threads auto\n--opencl-launch auto"
+            }
         }
     }
 ]
