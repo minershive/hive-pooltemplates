@@ -5,24 +5,20 @@
             {
                 "geo": "America", 
                 "urls": [
-                    "pool.zil.farm:5000/api", 
-
+                    "pool.zil.farm:5000/api"
                 ]
             }
         ],
         "miners": { 
-            "ethminer": { 
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
-            },
             "ethminer": {
-		"fork":"zilminer",
+                "fork":"zilminer",
                 "cuda": 1,
                 "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT",
                 "server": "zil://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",				
-            },
+                "template": "%WAL%.%WORKER_NAME%"
+            }
         }
     }
 ]
