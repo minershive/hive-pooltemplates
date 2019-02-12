@@ -45,7 +45,7 @@
 		}
 	},
 	{
-		"coin": "GXX",
+		"coin": "XLI",
 		"servers": [
 			{
 				"geo": "Europe",
@@ -136,6 +136,57 @@
 		}
 	},
 	{
+		"coin": "VERT",
+		"servers": [
+			{
+				"geo": "Europe",
+				"urls": [
+					"eu.gos.cx:4505"
+				]
+			},
+			{
+				"geo": "US/Canada",
+				"urls": [
+					"us.gos.cx:4505"
+				]
+			},
+			{
+				"geo": "Russia",
+				"urls": [
+					"ru.gos.cx:4505"
+				]
+			},
+			{
+				"geo": "Asia",
+				"urls": [
+					"asia.gos.cx:4505"
+				]
+			}
+
+		],
+		"miners": {
+			"cryptodredge": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "lyra2v3",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "lyra2v3",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"opencl-threads\" : \"2\""
+			},
+			"teamredminer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "lyra2v3",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
 		"coin": "GIN",
 		"servers": [
 			{
@@ -167,15 +218,22 @@
 		"miners": {
 			"cryptodredge": {
 				"url": "stratum+tcp://%URL%",
-				"algo": "lyra2z",
+				"algo": "x16rt",
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
-			"teamredminer": {
+			"t-rex": {
 				"url": "stratum+tcp://%URL%",
-				"algo": "lyra2z",
+				"algo": "x16rt",
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16rt",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"opencl-threads\" : \"2\""
 			}
 		}
 	},
@@ -310,7 +368,7 @@
 				"template": "%WAL%.%WORKER_NAME%",
 				"user_config": "\"opencl-threads\" : \"2\""
 			}
-        }
+        	}
     	},
 	{
         	"coin": "RVN",
