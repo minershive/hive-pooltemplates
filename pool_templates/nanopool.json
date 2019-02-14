@@ -141,14 +141,6 @@
                 "ccalgo": "x16r",
                 "ccpass": "x"
             },
-            "custom": {
-                "miner": "t-rex",
-                "algo": "x16r",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
-                "pass": "x",
-                "install_url": "http://download.hiveos.farm/custom/t-rex-0.8.3.tar.gz"
-            },
             "sgminer-gm": {
                 "fork": "avermore",
                 "url": "stratum+tcp://%URL%",
@@ -156,6 +148,12 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
             }
         }
     },
@@ -434,6 +432,78 @@
                 "template": "%WAL%",
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
+            }
+        }
+    },
+    {
+        "coin": "GRIN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "grin29-eu1.nanopool.org:12111",
+                    "grin29-eu2.nanopool.org:12111"
+                ]
+            },
+            {
+                "geo": "US East",
+                "urls": [
+                    "grin29-us-east1.nanopool.org:12111"
+                ]
+            },
+            {
+                "geo": "US West",
+                "urls": [
+                    "grin29-us-west1.nanopool.org:12111"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "grin29-asia1.nanopool.org:12111"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "grin29-jp1.nanopool.org:12111"
+                ]
+            },
+            {
+                "geo": "Australia",
+                "urls": [
+                    "grin29-au1.nanopool.org:12111"
+                ]
+            }
+        ],
+        "miners": {
+            "bminer": {
+                "algo": "cuckaroo29",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "grin29",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "grinminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "gringoldminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "grinprominer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cuckaroo"
             }
         }
     }
