@@ -639,35 +639,64 @@
             {
                 "geo": "Low-End",
                 "urls": [
-                    "ryo.baikalmine.com:3333"
+                    "ryo.baikalmine.com:3301"
                 ]
             },
             {
                 "geo": "Mid range",
                 "urls": [
-                    "ryo.baikalmine.com:4444"
+                    "ryo.baikalmine.com:3302"
                 ]
             },
             {
                 "geo": "High-End",
                 "urls": [
-                    "ryo.baikalmine.com:5555"
+                    "ryo.baikalmine.com:3303"
+                ]
+                 {
+                "geo": "SOLO Low-End",
+                "urls": [
+                    "ryo-solo.baikalmine.com:3321"
+                ]
+            },
+            {
+                "geo": "SOLO Mid range",
+                "urls": [
+                    "ryo-solo.baikalmine.com:3322"
+                ]
+            },
+            {
+                "geo": "SOLO High-End",
+                "urls": [
+                    "ryo-solo.baikalmine.com:3323"
+                ]
+            },
+            {
+                "geo": "SOLO BIG FARM",
+                "urls": [
+                    "ryo-solo.baikalmine.com:6626"
                 ]
             }
         ],
         "miners": {
-            "xmrig": {
+            "xmrig-amd": {
                 "url": "%URL_HOST%:3333",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-heavy\""
+                "user_config": "\"algo\": \"cryptonight-gpu\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL_HOST%:3333",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-gpu\""
             },
             "xmr-stak": {
                 "cpu": "\"cpu_threads_conf\" : null,",
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_heavy\""
+                "user_config": "\"currency\": \"cryptonight_gpu\""
             }
         }
     },
@@ -710,48 +739,6 @@
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "--pers GENX_PoW"
-            }
-        }
-    },
-    {
-        "coin": "ANON",
-        "servers": [
-            {
-                "geo": "GPU",
-                "urls": [
-                    "anon.baikalmine.com:2010"
-                ]
-            },
-            {
-                "geo": "HIGH DIFF",
-                "urls": [
-                    "anon.baikalmine.com:2011"
-                ]
-            },
-            {
-                "geo": "SOLO",
-                "urls": [
-                    "anon.baikalmine.com:2020"
-                ]
-            }
-        ],
-        "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers AnonyPoW"
-            },
-            "gminer": {
-                "algo": "144_5",
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers AnonyPoW"
             }
         }
     },
