@@ -1751,9 +1751,21 @@
                 ]
             },
             {
+                "geo": "Europe SSL",
+                "urls": [
+                    "beam.eu.nicehash.com:33370"
+                ]
+            },
+            {
                 "geo": "USA",
                 "urls": [
                     "beam.usa.nicehash.com:3370"
+                ]
+            },
+            {
+                "geo": "USA SSL",
+                "urls": [
+                    "beam.usa.nicehash.com:33370"
                 ]
             },
             {
@@ -1783,19 +1795,28 @@
         ],
         "miners": {
             "bminer": {
-                "algo": "beam+ssl",
+                "algo": "beam",
                 "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%"
+                "url": "%URL_HOST%:%URL_PORT%"
             },
             "gminer": {
                 "algo": "150_5",
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%"
+            },
+            "lolminer": {
+                "ver": "0.7.a5",
+                "algo": "BEAM",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--tls 0"
             }
         }
     },
     {
-        "coin": "Nicehash-GrinCuckaroo29",
+        "coin": "Nicehash-Cuckaroo29",
         "servers": [
             {
                 "geo": "Europe",
@@ -1835,49 +1856,59 @@
             }
         ],
         "miners": {
+            "gminer": {
+                "algo": "grin29",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            }
         }
     },
     {
-        "coin": "Nicehash-GrinCuckatoo31",
+        "coin": "Nicehash-Cuckatoo31",
         "servers": [
             {
                 "geo": "Europe",
                 "urls": [
-                    "grincuckaroo29.eu.nicehash.com:3372"
+                    "grincuckatoo31.eu.nicehash.com:3372"
                 ]
             },
             {
                 "geo": "USA",
                 "urls": [
-                    "grincuckaroo29.usa.nicehash.com:3372"
+                    "grincuckatoo31.usa.nicehash.com:3372"
                 ]
             },
             {
                 "geo": "Hong Kong",
                 "urls": [
-                    "grincuckaroo29.hk.nicehash.com:3372"
+                    "grincuckatoo31.hk.nicehash.com:3372"
                 ]
             },
             {
                 "geo": "Japan",
                 "urls": [
-                    "grincuckaroo29.jp.nicehash.com:3372"
+                    "grincuckatoo31.jp.nicehash.com:3372"
                 ]
             },
             {
                 "geo": "Brazil",
                 "urls": [
-                    "grincuckaroo29.br.nicehash.com:3372"
+                    "grincuckatoo31.br.nicehash.com:3372"
                 ]
             },
             {
                 "geo": "India",
                 "urls": [
-                    "grincuckaroo29.in.nicehash.com:3372"
+                    "grincuckatoo31.in.nicehash.com:3372"
                 ]
             }
         ],
         "miners": {
+            "gminer": {
+                "algo": "grin31",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            }
         }
     },
     {
@@ -1921,6 +1952,37 @@
             }
         ],
         "miners": {
+            "ccminer": {
+                "fork": "tpruvot",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "lyra2v3",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "cryptodredge": {
+                "algo": "lyra2v3",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "algo": "lyra2rev3",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer": {
+                "url": "%URL%",
+                "algo": "lyra2rev3",
+                "fork": "fancyix",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"256\"\n\"intensity\": \"24\""
+            },
+            "wildrig-multi": {
+                "url": "%URL%",
+                "algo": "lyra2v3",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--opencl-threads auto\n--opencl-launch auto"
+            }
         }
     }
 ]
