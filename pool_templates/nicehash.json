@@ -1984,5 +1984,67 @@
                 "user_config": "--opencl-threads auto\n--opencl-launch auto"
             }
         }
+    },
+    {
+        "coin": "Nicehash-MTP",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "mtp.eu.nicehash.com:3374"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "mtp.usa.nicehash.com:3374"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "mtp.hk.nicehash.com:3374"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "mtp.jp.nicehash.com:3374"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "mtp.br.nicehash.com:3374"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "mtp.in.nicehash.com:3374"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "fork": "djm34",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "mtp",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "cryptodredge": {
+                "algo": "mtp",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer": {
+                "url": "%URL%",
+                "algo": "mtp",
+                "fork": "fancyix",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"intensity\": \"20\""
+            }
+        }
     }
 ]
