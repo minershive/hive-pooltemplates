@@ -488,6 +488,41 @@
         }
     },
     {
+        "coin": "TSF",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "tesla.baikalmine.com:2010"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "tesla-solo.baikalmine.com:2020"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "REOSC",
         "servers": [
             {
