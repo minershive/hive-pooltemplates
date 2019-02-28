@@ -434,6 +434,12 @@
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "algo": "cryptonight-fast-v8"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-fast-v8"
             }
         }
 	},
@@ -491,6 +497,12 @@
                 "user_config": "\"algo\": \"cn/half\""
             },
             "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-fast-v8"
+            },
+            "cryptodredge": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
@@ -657,85 +669,6 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-	},
-	{
-        "coin": "XCASH",
-        "servers": [
-            {
-                "geo": "Low-End Cpu and Gpu",
-                "urls": [
-                    "xcash.herominers.com:10440"
-                ]
-            },
-            {
-                "geo": "Modern Cpu and Gpu",
-                "urls": [
-                    "xcash.herominers.com:10441"
-                ]
-            },
-            {
-                "geo": "Multi-Gpu Rigs and Higher",
-                "urls": [
-                    "xcash.herominers.com:10442"
-                ]
-            },
-            {
-                "geo": "Cloud-Mining / NiceHash",
-                "urls": [
-                    "xcash.herominers.com:10443"
-                ]
-            },
-            {
-                "geo": "SSL Connection",
-                "urls": [
-                    "xcash.herominers.com:10444"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/2\""
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/2\""
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/2\""
-            },
-            "cryptodredge": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cryptonight-v8"
-            },
-            "teamredminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cnv8"
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_v8\""
-            },
-            "cast-xmr": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cryptonight-v8"
             }
         }
 	},
@@ -1094,7 +1027,13 @@
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_gpu\""
+                "user_config": "\"currency\": \"ryo\""
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-gpu"
             }
 		}
 	},
@@ -1235,6 +1174,12 @@
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "user_config": "\"currency\": \"cryptonight_turtle\""
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-trtl"
             }
         }
 	},
@@ -1796,5 +1741,79 @@
                 "algo": "cryptonight-v8"
             }
         }
-	}
+	},
+    {
+        "coin": "XWP",
+        "servers": [
+            {
+                "geo": "Very Low end hardware",
+                "urls": [
+                    "swap.herominers.com:10440"
+                ]
+            },
+            {
+                "geo": "Low end hardware",
+                "urls": [
+                    "swap.herominers.com:10441"
+                ]
+            },
+            {
+                "geo": "Mid range hardware",
+                "urls": [
+                    "swap.herominers.com:10442"
+                ]
+            },
+            {
+                "geo": "High end hardware",
+                "urls": [
+                    "swap.herominers.com:10443"
+                ]
+            },
+            {
+                "geo": "Very High end hardware",
+                "urls": [
+                    "swap.herominers.com:10444"
+                ]
+            },
+            {
+                "geo": "SSL Connection - Very Low end hardware",
+                "urls": [
+                    "swap.herominers.com:10445"
+                ]
+            },
+            {
+                "geo": "SSL Connection - Low end hardware",
+                "urls": [
+                    "swap.herominers.com:10446"
+                ]
+            },
+            {
+                "geo": "SSL Connection - Mid range hardware",
+                "urls": [
+                    "swap.herominers.com:10447"
+                ]
+            },
+            {
+                "geo": "SSL Connection - High end hardware",
+                "urls": [
+                    "swap.herominers.com:10448"
+                ]
+            },
+            {
+                "geo": "SSL Connection - Very High end hardware",
+                "urls": [
+                    "swap.herominers.com:10449"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "swap",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            }
+        }
+    }
 ]
