@@ -1,36 +1,33 @@
 [
-    {
-        "coin": "UBQ",
+   {
+        "coin": "CLO",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "EU",
                 "urls": [
-                    "ubiq-eu.maxhash.org:8008",
-                    "ubiq-eu.maxhash.org:10008",
-                    "ubiq-eu.maxhash.org:8888"
+                    "clo-eu.maxhash.org:8016",
+                    "clo-eu.maxhash.org:10016"
                 ]
             },
             {
-                "geo": "USA",
+                "geo": "US",
                 "urls": [
-                    "ubiq-us.maxhash.org:8008",
-                    "ubiq-us.maxhash.org:10008",
-                    "ubiq-us.maxhash.org:8888"
+                    "clo-us.maxhash.org:8016",
+                    "clo-us.maxhash.org:10016"
                 ]
             },
             {
-                "geo": "Asia",
+                "geo": "ASIA",
                 "urls": [
-                    "ubiq-as.maxhash.org:8008",
-                    "ubiq-as.maxhash.org:10008",
-                    "ubiq-as.maxhash.org:8888"
+                    "clo-as.maxhash.org:8016",
+                    "clo-as.maxhash.org:10016"
                 ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins -1"
             },
             "ethminer": {
                 "cuda": 1,
@@ -43,6 +40,40 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+            }
+        }
+    },
+    {
+        "coin": "UBQ",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "ubiq-eu.maxhash.org:8008",
+                    "ubiq-eu.maxhash.org:10008"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "ubiq-us.maxhash.org:8008",
+                    "ubiq-us.maxhash.org:10008"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "ubiq-as.maxhash.org:8008",
+                    "ubiq-as.maxhash.org:10008"
+                ]
+            }
+        ],
+        "miners": {
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
             }
         }
     },
@@ -50,39 +81,64 @@
         "coin": "ETH",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "EU",
                 "urls": [
-                    "eth-eu.maxhash.org:12011",
-                    "eth-eu.maxhash.org:11011",
                     "eth-eu.maxhash.org:8011",
-                    "eth-eu.maxhash.org:10011",
-                    "eth-eu.maxhash.org:8891"
+                    "eth-eu.maxhash.org:11011",
+                    "eth-eu.maxhash.org:12011",
+                    "eth-eu.maxhash.org:10011"
                 ]
             },
             {
-                "geo": "USA",
+                "geo": "SOLO EU",
                 "urls": [
-                    "eth-us.maxhash.org:12011",
-                    "eth-us.maxhash.org:11011",
+                    "eth-eu.maxhash.org:8013",
+                    "eth-eu.maxhash.org:11013",
+                    "eth-eu.maxhash.org:12013",
+                    "eth-eu.maxhash.org:10013"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
                     "eth-us.maxhash.org:8011",
-                    "eth-us.maxhash.org:10011",
-                    "eth-us.maxhash.org:8891"
+                    "eth-us.maxhash.org:11011",
+                    "eth-us.maxhash.org:12011",
+                    "eth-us.maxhash.org:10011"
                 ]
             },
             {
-                "geo": "Asia",
+                "geo": "SOLO US",
                 "urls": [
-                    "eth-as.maxhash.org:12011",
-                    "eth-as.maxhash.org:11011",
+                    "eth-us.maxhash.org:8013",
+                    "eth-us.maxhash.org:11013",
+                    "eth-us.maxhash.org:12013",
+                    "eth-us.maxhash.org:10013"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
                     "eth-as.maxhash.org:8011",
-                    "eth-as.maxhash.org:10011",
-                    "eth-as.maxhash.org:8891"
+                    "eth-as.maxhash.org:11011",
+                    "eth-as.maxhash.org:12011",
+                    "eth-as.maxhash.org:10011"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA",
+                "urls": [
+                    "eth-as.maxhash.org:8013",
+                    "eth-as.maxhash.org:11013",
+                    "eth-as.maxhash.org:12013",
+                    "eth-as.maxhash.org:10013"
                 ]
             }
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allpools 0"
             },
             "ethminer": {
                 "cuda": 1,
@@ -95,6 +151,9 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
             }
         }
     },
@@ -102,26 +161,24 @@
         "coin": "EXP",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "EU",
                 "urls": [
                     "exp-eu.maxhash.org:8010",
-                    "exp-eu.maxhash.org:10010",
-                    "exp-eu.maxhash.org:8890"
+                    "exp-eu.maxhash.org:10010"
                 ]
             },
             {
-                "geo": "USA",
+                "geo": "US",
                 "urls": [
-                    "exp-us.maxhash.org:8008",
-                    "exp-us.maxhash.org:10008",
-                    "exp-us.maxhash.org:8890"
+                    "exp-us.maxhash.org:8010",
+                    "exp-us.maxhash.org:10010"
                 ]
-            }
+            }   
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins -1"
             },
             "ethminer": {
                 "cuda": 1,
@@ -134,33 +191,26 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
             }
         }
     },
     {
-        "coin": "MUSIC",
+        "coin": "DBIX",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "US",
                 "urls": [
-                    "music-eu.maxhash.org:8009",
-                    "music-eu.maxhash.org:10009",
-                    "music-eu.maxhash.org:8889"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "music-us.maxhash.org:8009",
-                    "music-us.maxhash.org:10009",
-                    "music-us.maxhash.org:8889"
+                    "dbix-us.maxhash.org:8017"
                 ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
+                "claymore_user_config": "-allcoins -1"
             },
             "ethminer": {
                 "cuda": 1,
@@ -173,6 +223,9 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
             }
         }
     },
@@ -180,33 +233,63 @@
         "coin": "ETC",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "EU",
                 "urls": [
-                    "etc-eu.maxhash.org:12012",
-                    "etc-eu.maxhash.org:11012",
                     "etc-eu.maxhash.org:8012",
-                    "etc-eu.maxhash.org:10012",
-                    "etc-eu.maxhash.org:8892"
+                    "etc-eu.maxhash.org:11012",
+                    "etc-eu.maxhash.org:12012",
+                    "etc-eu.maxhash.org:10012"
                 ]
             },
             {
-                "geo": "USA",
+                "geo": "SOLO EU",
                 "urls": [
-                    "etc-us.maxhash.org:12012",
-                    "etc-us.maxhash.org:11012",
+                    "etc-eu.maxhash.org:8015",
+                    "etc-eu.maxhash.org:11015",
+                    "etc-eu.maxhash.org:12015",
+                    "etc-eu.maxhash.org:10015"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
                     "etc-us.maxhash.org:8012",
-                    "etc-us.maxhash.org:10012",
-                    "etc-us.maxhash.org:8892"
+                    "etc-us.maxhash.org:11012",
+                    "etc-us.maxhash.org:12012",
+                    "etc-us.maxhash.org:10012"
                 ]
             },
             {
-                "geo": "Asia",
+                "geo": "SOLO US",
                 "urls": [
-                    "etc-as.maxhash.org:12012",
-                    "etc-as.maxhash.org:11012",
+                    "etc-us.maxhash.org:8015",
+                    "etc-us.maxhash.org:11015",
+                    "etc-us.maxhash.org:12015",
+                    "etc-us.maxhash.org:10015"
+                ]
+            },
+            {
+                "geo": "PPS US",
+                "urls": [
+                    "etc-us.maxhash.org:8014"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
                     "etc-as.maxhash.org:8012",
-                    "etc-as.maxhash.org:10012",
-                    "etc-as.maxhash.org:8892"
+                    "etc-as.maxhash.org:11012",
+                    "etc-as.maxhash.org:12012",
+                    "etc-as.maxhash.org:10012"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA",
+                "urls": [
+                    "etc-as.maxhash.org:8015",
+                    "etc-as.maxhash.org:11015",
+                    "etc-as.maxhash.org:12015",
+                    "etc-as.maxhash.org:10015"
                 ]
             }
         ],
@@ -221,11 +304,14 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKERNAME%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
             }
         }
     }
