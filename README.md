@@ -118,4 +118,3 @@ If your pool contains SSL ports on the same domains then you can add special sec
 }
 ```
 
-[Imgur](https://i.imgur.com/puUlgnVm.gif)
