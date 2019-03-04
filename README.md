@@ -116,4 +116,6 @@ If your pool contains SSL ports on the same domains then you can add special sec
             "pool.wowne.ro:3334"
         ]
 }
+```
+
 [Imgur](https://i.imgur.com/puUlgnVm.gif)
