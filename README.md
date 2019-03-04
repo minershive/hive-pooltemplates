@@ -6,9 +6,9 @@ If you want your pool to be listed here then create yourpool.json and push it, w
 
 
 ## Variables
-`%WAL%` - Wallet address
+`%WAL%` - wallet address
 
-`%COIN%` - Wallet coin
+`%COIN%` - wallet coin
 
 `%URL%` - pool URL <address:port>
 
@@ -45,8 +45,8 @@ Available miners:
 - wildrig-multi
 - finminer
 - gminer - equihash variants CUDA miner
-- beamcl - BEAM OpenCL miner
-- beamcuda - BEAM CUDA miner
+- beamcl - open source BEAM OpenCL miner
+- beamcuda - open source BEAM CUDA miner
 - grinminer - Cuckaroo29 and Cuckatoo31 miner (AMD/NVidia)
 - gringoldminer - Cuckaroo29 miner (AMD/NVidia)
 - grinpro - improved version of grinminer (AMD/NVidia)
@@ -58,10 +58,18 @@ Available miners:
 ## Pool template example
 ```javascript
 [
+    { // pool header section - not necessary
+        "pool": {
+            "name": "Hiveon",             // pool name
+            "url": "https://hiveon.net",  // pool URL
+            "fee": 0,                     // pool fee in persent
+            "type": "PPS+"                // pool reward system
+        }
+    },
     {
         "coin": "ETH",  // coin name
         "servers": [    // pool addresses array
-            {
+            {   // geo element
                 "geo": "Europe", // geo location, maybe null if unknown or in some cases you can indicate port difficulty
                 "urls": [
                     "eu1-eth.hiveon.net:4444",  // pool server URL  and port
@@ -95,3 +103,17 @@ Available miners:
 
 WARNING!
 Comments in this example only for helping purposes!
+
+## SSL ports
+If your pool contains SSL ports on the same domains then you can add special section "ssl_urls" in geo element
+```json
+{
+    "geo": "Low-End",
+        "urls": [
+            "pool.wowne.ro:3333"
+        ],
+        "ssl_urls": [
+            "pool.wowne.ro:3334"
+        ]
+}
+[Imgur](https://i.imgur.com/puUlgnVm.gif)
