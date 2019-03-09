@@ -213,39 +213,32 @@
         }
      },
      {
-        "coin": "STH",
+        "coin": "SPDR",
         "servers": [
             {
                 "geo": "Europe",
                 "urls": [
-                    "pool.rig.tokyo:4550"
+                    "pool.rig.tokyo:8334"
                 ]
             }
         ],
         "miners": {
             "cryptodredge": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v3",
-                "pass": "c=STH,%WORKER_NAME%",
+                "algo": "phi2",
+                "pass": "c=SPDR,%WORKER_NAME%",
                 "template": "%WAL%"
             },
             "t-rex": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v3",
-                "pass": "c=STH,%WORKER_NAME%",
+                "algo": "phi2",
+                "pass": "c=SPDR,%WORKER_NAME%",
                 "template": "%WAL%"
-            },
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v3",
-                "pass": "c=STH,%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"opencl-threads\" : \"2\""
             },
             "TeamRedMiner": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v3",
-                "pass": "c=STH,%WORKER_NAME%",
+                "algo": "phi2",
+                "pass": "c=SPDR,%WORKER_NAME%",
                 "template": "%WAL%"
             }
         }
