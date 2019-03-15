@@ -313,6 +313,88 @@
                 "template": "%WAL%"
             }
         }
-    }
+    },
+    {
+        "coin": "BST",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "pool.rig.tokyo:3573"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "c11",
+                "pass": "c=BST,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "c11",
+                "pass": "c=BST,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "c11",
+                "pass": "c=BST,%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+    {
+        "coin": "BITC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "pool.rig.tokyo:8001"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=BITC,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=BITC,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=BITC,%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+    {
+            "coin": "BSTY",
+               "servers": [
+                  {
+                     "geo": "Europe",
+                     "urls": [ "pool.rig.tokyo:6233" ]
+                  }
+               ],
+               "miners": {
+                  "ccminer": {
+                     "fork": "klaust-yescrypt",
+                     "url": "stratum+tcp://%URL%",
+                     "algo": "yescrypt",
+                     "pass": "c=BSTY,%WORKER_NAME%",
+                     "template": "%WAL%"
+                  }
+               }
+   }
 ]
 
