@@ -38,12 +38,14 @@ Available miners:
 - xmrig-nvidia - XMRig (NVidia cryptonight variants miner)
 - cast-xmr
 - cryptodredge
-- teamredminer
+- teamredminer - lyra2z/lyra2v3/phi2/cryptonight-r/v8/half/double/reverse waltz OpenCL miner (AMD)
 - phoenixminer
 - t-rex
 - cpuminer-opt - cpuminer-opt (CPU miner)
 - wildrig-multi
-- finminer
+- finminer - ethash, randomhash miner
+- nanominer - next genertion of finminer
+- rhminer - randomhash CPU miner
 - gminer - equihash variants CUDA miner
 - beamcl - open source BEAM OpenCL miner
 - beamcuda - open source BEAM CUDA miner
@@ -51,6 +53,9 @@ Available miners:
 - gringoldminer - Cuckaroo29 miner (AMD/NVidia)
 - grinpro - improved version of grinminer (AMD/NVidia)
 - nbminer - ETH, BTM, Cuckoo miner (NVidia)
+- hspminerae - CUDA AE miner (NVidia)
+- kbminer - AE/Grin29/Grin31 miner (AMD/NVidia)
+- zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
 - custom - Custom miner package
 
 
