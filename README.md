@@ -54,7 +54,7 @@ Available miners:
 - grinpro - improved version of grinminer (AMD/NVidia)
 - nbminer - ETH, BTM, Cuckoo miner (NVidia)
 - hspminerae - CUDA AE miner (NVidia)
-- kbminer - AE/Grin29/Grin31 miner (AMD/NVidia)
+- kbminer - AE/Cuckaroo29/Cuckatoo31 miner (AMD/NVidia)
 - zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
 - custom - Custom miner package
 
