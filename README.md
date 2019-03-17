@@ -30,16 +30,16 @@ Available miners:
 - ethminer - ethminer (forks available - ethash, progpow, ubiqhash, zilminer)
 - sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi)
 - dstm - legacy 0.3.4b and new zhash
-- bminer
+- bminer - ethash/tensority/equihash variants/Grin PoW miner 
 - lolminer - equihash variants OpenCL miner
 - xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo)
 - xmrig - XMRig (CPU cryptonight variants miner)
 - xmrig-amd - XMRig (AMD cryptonight variants miner)
 - xmrig-nvidia - XMRig (NVidia cryptonight variants miner)
-- cast-xmr
+- cast-xmr - cryptonight variants (AMD)
 - cryptodredge - multi algo CUDA miner (NVidia)
 - teamredminer - lyra2z/lyra2v3/phi2/cryptonight-r/v8/half/double/reverse waltz OpenCL miner (AMD)
-- phoenixminer
+- phoenixminer - ethash miner (AMD/NVidia)
 - t-rex - multi algo CUDA miner (NVidia)
 - cpuminer-opt - cpuminer-opt (CPU miner)
 - wildrig-multi - multi-algo OpenCL miner (AMD)
