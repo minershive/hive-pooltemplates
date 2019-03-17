@@ -37,14 +37,14 @@ Available miners:
 - xmrig-amd - XMRig (AMD cryptonight variants miner)
 - xmrig-nvidia - XMRig (NVidia cryptonight variants miner)
 - cast-xmr
-- cryptodredge
+- cryptodredge - multi algo CUDA miner (NVidia)
 - teamredminer - lyra2z/lyra2v3/phi2/cryptonight-r/v8/half/double/reverse waltz OpenCL miner (AMD)
 - phoenixminer
-- t-rex
+- t-rex - multi algo CUDA miner (NVidia)
 - cpuminer-opt - cpuminer-opt (CPU miner)
-- wildrig-multi
-- finminer - ethash, randomhash miner
-- nanominer - next genertion of finminer
+- wildrig-multi - multi-algo OpenCL miner (AMD)
+- finminer - ethash, randomhash miner (AMD/NVidia/CPU)
+- nanominer - next generation of finminer (AMD/NVidia/CPU)
 - rhminer - randomhash CPU miner
 - gminer - equihash variants CUDA miner
 - beamcl - open source BEAM OpenCL miner
