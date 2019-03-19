@@ -1,11 +1,11 @@
 [
 	{
-		"coin": "ETH",
+		"coin": "ETC",
 		"servers": [
 			{
 				"geo": "EU",
 				"urls": [
-					"eth.bylt.gq:7007"
+					"etc.miners.by:3003"
 				]
 			}
 		],
@@ -29,13 +29,7 @@
 			{
 				"geo": "EU",
 				"urls": [
-					"moac.bylt.gq:5005"
-				]
-			},
-			{
-				"geo": "EU SOLO",
-				"urls": [
-					"solo-moac.bylt.gq:15005"
+					"moac.miners.by:5005"
 				]
 			}
 		],
@@ -60,7 +54,7 @@
 			{
 				"geo": "EU",
 				"urls": [
-					"etho.bylt.gq:4004"
+					"etho.miners.by:4004"
 				]
 			}
 		],
@@ -85,7 +79,7 @@
 			{
 				"geo": "EU",
 				"urls": [
-					"akroma.bylt.gq:8008"
+					"aka.miners.by:8008"
 				]
 			}
 		],
@@ -110,7 +104,7 @@
 			{
 				"geo": "EU",
 				"urls": [
-					"ath.bylt.gq:6006"
+					"ath.miners.by:6006"
 				]
 			}
 		],
@@ -135,7 +129,32 @@
 			{
 				"geo": "EU",
 				"urls": [
-					"clo.bylt.gq:2002"
+					"clo.miners.by:2002"
+				]
+			}
+		],
+		"miners":{
+			"claymore": {
+				"epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+				"claymore_user_config": "-allcoins 1"
+			},
+			"ethminer": {
+				"cuda": 1,
+				"opencl": 0,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "stratum1+tcp://%URL_HOST%",
+				"template": "%WAL%"
+			}
+		}
+	},
+	{
+		"coin": "B2G",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"b2g.miners.by:9009"
 				]
 			}
 		],
