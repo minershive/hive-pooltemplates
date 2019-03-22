@@ -1,235 +1,387 @@
 [
-    {
-        "coin": "XHV",
-        "servers": [
-            {
-                "geo": "Iran",
-                "urls": [
-                    "cn.gpumining.ir:8235"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%",
-                "claymore-x_user_config": "-pow7 1"
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/1\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"haven\""
-            }
-        }
-    },
-    {
-        "coin": "XTA",
-        "servers": [
-            {
-                "geo": "Iran",
-                "urls": [
-                    "cn.gpumining.ir:8435"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-heavy\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_heavy\""
-            }
-        }
-    },
-    {
-        "coin": "RYO",
-        "servers": [
-            {
-                "geo": "Iran",
-                "urls": [
-                    "cn.gpumining.ir:8035"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-heavy\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_heavy\""
-            }
-        }
-    },
-    {
-        "coin": "PARSI",
-        "servers": [
-            {
-                "geo": "Iran",
-                "urls": [
-                    "elya.ingest.cryptoknight.cc:8635"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%",
-                "claymore-x_user_config": "-pow7 1"
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/1\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_v7\""
-            }
-        }
-    },
-    {
-        "coin": "GRFT",
-        "servers": [
-            {
-                "geo": "High-End",
-                "urls": [
-                    "cn.gpumining.ir:8835"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/2\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"graft\""
-            }
-        }
-    },
-    {
-        "coin": "LOKI",
-        "servers": [
-            {
-                "geo": "Iran",
-                "urls": [
-                    "cn.gpumining.ir:8735"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-heavy\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_heavy\""
-            }
-        }
-    },
-    {
-        "coin": "XMR",
-        "servers": [
-            {
-                "geo": "Iran",
-                "urls": [
-                    "cn.gpumining.ir:8935"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/2\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"monero\""
-            }
-        }
-    },
-    {
-        "coin": "RVN",
-        "servers": [
-            {
-                "geo": "Iran",
-                "urls": [
-                    "pool.gpumining.ir:3636"
-                ]
-            }
-        ],
-        "miners": {
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "c=RVN",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "cryptodredge": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "c=RVN",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "PGN",
-        "servers": [
-            {
-                "geo": "Iran",
-                "urls": [
-                    "pool.gpumining.ir:3663"
-                ]
-            }
-        ],
-        "miners": {
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16s",
-                "pass": "c=PGN",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "cryptodredge": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16s",
-                "pass": "c=PGN",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    }
+	{
+		"coin": "XHV",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"cn.gpumining.ir:8235"
+				]
+			}
+		],
+		"miners": {
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"haven\""
+			}
+		}
+	},
+	{
+		"coin": "XTA",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"cn.gpumining.ir:8435"
+				]
+			}
+		],
+		"miners": {
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"cryptonight_heavy\""
+			}
+		}
+	},
+	{
+		"coin": "RYO",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"cn.gpumining.ir:8035"
+				]
+			}
+		],
+		"miners": {
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"ryo\""
+			}
+		}
+	},
+	{
+		"coin": "PARSI",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"cn.gpumining.ir:8635"
+				]
+			}
+		],
+		"miners": {
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"cryptonight_v7\""
+			}
+		}
+	},
+	{
+		"coin": "GRFT",
+		"servers": [
+			{
+				"geo": "High-End",
+				"urls": [
+					"cn.gpumining.ir:8835"
+				]
+			}
+		],
+		"miners": {
+			"teamredminer": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"algo": "cnv8_rwz"
+			},
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"cryptonight_v8_reversewaltz\""
+			}
+		}
+	},
+	{
+		"coin": "LOKI",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"cn.gpumining.ir:8735"
+				]
+			}
+		],
+		"miners": {
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"cryptonight_heavy\""
+			}
+		}
+	},
+	{
+		"coin": "BBS",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"cn.gpumining.ir:8935"
+				]
+			}
+		],
+		"miners": {
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"cryptonight_v7\""
+			}
+		}
+	},
+	{
+		"coin": "LTHN",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"cn.gpumining.ir:8335"
+				]
+			}
+		],
+		"miners": {
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"cryptonight_v8\""
+			}
+		}
+	},
+	{
+		"coin": "MSR",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"cn.gpumining.ir:8535"
+				]
+			}
+		],
+		"miners": {
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"cryptonight_v8_half\""
+			}
+		}
+	},
+	{
+		"coin": "TUBE",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"cn.gpumining.ir:8935"
+				]
+			}
+		],
+		"miners": {
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"cryptonight_lite_v7_xor\""
+			}
+		}
+	},
+	{
+		"coin": "CCX",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"cn.gpumining.ir:9035"
+				]
+			}
+		],
+		"miners": {
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"cryptonight_v8_half\""
+			}
+		}
+	},
+	{
+		"coin": "XCASH",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"cn.gpumining.ir:9435"
+				]
+			}
+		],
+		"miners": {
+			"xmr-stak": {
+				"url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "\"currency\": \"cryptonight_v8_double\""
+			}
+		}
+	},
+	{
+		"coin": "RVN",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"pool.gpumining.ir:3636"
+				]
+			}
+		],
+		"miners": {
+			"t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16r",
+				"pass": "c=RVN",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"cryptodredge": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16r",
+				"pass": "c=RVN",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
+		"coin": "HTA",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"pool.gpumining.ir:3636"
+				]
+			}
+		],
+		"miners": {
+			"t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16r",
+				"pass": "c=HTA",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"cryptodredge": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16r",
+				"pass": "c=HTA",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
+		"coin": "RITO",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"pool.gpumining.ir:3224"
+				]
+			}
+		],
+		"miners": {
+			"t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x21s",
+				"pass": "c=RITO",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
+		"coin": "GIN",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"pool.gpumining.ir:3637"
+				]
+			}
+		],
+		"miners": {
+			"t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16rt",
+				"pass": "c=GIN",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
+		"coin": "AGM",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"pool.gpumining.ir:8332"
+				]
+			}
+		],
+		"miners": {
+			"t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "phi2",
+				"pass": "c=AGM",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
+		"coin": "BTX",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"pool.gpumining.ir:3556"
+				]
+			}
+		],
+		"miners": {
+			"t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "bitcore",
+				"pass": "c=BTX",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
+		"coin": "PGN",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"pool.gpumining.ir:3663"
+				]
+			}
+		],
+		"miners": {
+			"t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16s",
+				"pass": "c=PGN",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"cryptodredge": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16s",
+				"pass": "c=PGN",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	}
 ]
