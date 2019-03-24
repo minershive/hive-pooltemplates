@@ -1042,102 +1042,50 @@
         }
     },
     {
-        "coin": "HUSH",
+        "coin": "GRIN",
         "servers": [
             {
                 "geo": "EU",
                 "urls": [
-                    "hush.2miners.com:7070"
+                    "grin.2miners.com:3030"
                 ]
             },
             {
                 "geo": "SOLO EU",
                 "urls": [
-                    "solo-hush.2miners.com:7171"
+                    "solo-grin.2miners.com:4040"
                 ]
             }
         ],
         "miners": {
-            "dstm": {
-                "pass": "x",
+            "bminer": {
+                "algo": "cuckaroo29",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "grin29",
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
+            "grinminer": {
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
+            "gringoldminer": {
                 "url": "%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "BTCP",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "btcp.2miners.com:1010"
-                ]
-            },
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "solo-btcp.2miners.com:1111"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
+            "grinprominer": {
                 "url": "%URL%",
-                "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
+            "nbminer": {
                 "url": "%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cuckaroo"
             }
         }
     },
