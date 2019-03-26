@@ -103,54 +103,141 @@
     },
 
 
-    "miners_cryptonight": {
+    "miners_cryptonight_v8": {
         "xmr-stak": {
             "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
-            "user_config": "\"currency\": \"monero\""
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"currency\": \"cryptonight_v8\""
         },
         "xmrig": {
             "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
-            "algo": "cryptonight"
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cryptonight/2"
         },
         "xmrig-amd": {
             "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
-            "algo": "cryptonight"
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cryptonight/2"
         },
         "xmrig-nvidia": {
             "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
-            "algo": "cryptonight"
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cryptonight/2"
         },
         "cryptodredge": {
             "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
             "algo": "cryptonight-v8"
         },
         "teamredminer": {
             "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
             "algo": "cnv8"
         },
         "cast-xmr": {
             "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
             "algo": "cryptonight-v8"
         },
         "finminer": {
             "algo": "cryptonightv8",
             "url": "%URL%",
             "template": "%WAL%",
+            "pass": "%WORKER_NAME%",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        },
+        "nanominer": {
+            "algo": "cryptonightv8",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "%WORKER_NAME%",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        }
+    },
+
+    "miners_cryptonight_r_hive": {
+        "xmr-stak": {
+            "url": "%URL%",
             "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "\"currency\": \"cryptonight_r\""
+        },
+        "xmrig": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "algo": "cn/r"
+        },
+        "xmrig-amd": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "algo": "cn/r"
+        },
+        "xmrig-nvidia": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "algo": "cn/r"
+        },
+        "teamredminer": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "algo": "cnr"
+        },
+        "nanominer": {
+            "algo": "cryptonightr",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        }
+    },
+
+    "miners_cryptonight_r": {
+        "xmr-stak": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"currency\": \"cryptonight_r\""
+        },
+        "xmrig": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cn/r"
+        },
+        "xmrig-amd": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cn/r"
+        },
+        "xmrig-nvidia": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cn/r"
+        },
+        "teamredminer": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cnr"
+        },
+        "nanominer": {
+            "algo": "cryptonightr",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "%WORKER_NAME%",
             "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
         }
     },
