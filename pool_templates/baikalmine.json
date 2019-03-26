@@ -2,14 +2,8 @@
     {
         "coin": "ETH",
         "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "eth.baikalmine.com:1141"
-                ]
-            },
-            {
-                "geo": "SOLO EU 8G",
+           {
+                "geo": "SOLO EU 9G",
                 "urls": [
                     "eth-solo.baikalmine.com:1145"
                 ]
@@ -138,41 +132,6 @@
                 "geo": "SOLO EU",
                 "urls": [
                     "exp-solo.baikalmine.com:3333"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "MUSIC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "music.baikalmine.com:3399"
-                ]
-            },
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "music-solo.baikalmine.com.com:4411"
                 ]
             }
         ],
@@ -586,145 +545,6 @@
         }
     },
     {
-        "coin": "XMV",
-        "servers": [
-            {
-                "geo": "Low-End",
-                "urls": [
-                    "xmv.baikalmine.com:2010"
-                ]
-            },
-            {
-                "geo": "Mid range",
-                "urls": [
-                    "xmv.baikalmine.com:2011"
-                ]
-            },
-            {
-                "geo": "High-End",
-                "urls": [
-                    "xmv.baikalmine.com:2012"
-                ]
-            },
-            {
-                "geo": "Very High-End",
-                "urls": [
-                    "xmv.baikalmine.com:2013"
-                ]
-            },
-            {
-                "geo": "SOLO Low-End",
-                "urls": [
-                    "xmv-solo.baikalmine.com:2020"
-                ]
-            },
-            {
-                "geo": "SOLO Mid range",
-                "urls": [
-                    "xmv-solo.baikalmine.com:2021"
-                ]
-            },
-            {
-                "geo": "SOLO High-End",
-                "urls": [
-                    "xmv-solo.baikalmine.com:2022"
-                ]
-            },
-            {
-                "geo": "SOLO Very High-End",
-                "urls": [
-                    "xmv-solo.baikalmine.com:2023"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/1\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_v7\""
-            },
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%",
-                "claymore-x_user_config": "-pow7 1"
-            }
-        }
-    },
-    {
-        "coin": "RYO",
-        "servers": [
-            {
-                "geo": "Low-End",
-                "urls": [
-                    "ryo.baikalmine.com:3301"
-                ]
-            },
-            {
-                "geo": "Mid range",
-                "urls": [
-                    "ryo.baikalmine.com:3302"
-                ]
-            },
-            {
-                "geo": "High-End",
-                "urls": [
-                    "ryo.baikalmine.com:3303"
-                ]
-            },
-            {
-                "geo": "SOLO Low-End",
-                "urls": [
-                    "ryo-solo.baikalmine.com:3321"
-                ]
-            },
-            {
-                "geo": "SOLO Mid range",
-                "urls": [
-                    "ryo-solo.baikalmine.com:3322"
-                ]
-            },
-            {
-                "geo": "SOLO High-End",
-                "urls": [
-                    "ryo-solo.baikalmine.com:3323"
-                ]
-            },
-            {
-                "geo": "SOLO BIG FARM",
-                "urls": [
-                    "ryo-solo.baikalmine.com:6626"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig-amd": {
-                "url": "%URL_HOST%:3333",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-gpu\""
-            },
-            "xmrig-nvidia": {
-                "url": "%URL_HOST%:3333",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-gpu\""
-            },
-            "xmr-stak": {
-                "cpu": "\"cpu_threads_conf\" : null,",
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_gpu\""
-            }
-        }
-    },
-    {
         "coin": "GENX",
         "servers": [
             {
@@ -763,48 +583,6 @@
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "--pers GENX_PoW"
-            }
-        }
-    },
-    {
-        "coin": "BTG",
-        "servers": [
-            {
-                "geo": "GPU",
-                "urls": [
-                    "btg.baikalmine.com:3010"
-                ]
-            },
-            {
-                "geo": "HIGH DIFF",
-                "urls": [
-                    "btg.baikalmine.com:3011"
-                ]
-            },
-            {
-                "geo": "SOLO",
-                "urls": [
-                    "btg.baikalmine.com:3020"
-                ]
-            }
-        ],
-        "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers BgoldPoW"
-            },
-            "gminer": {
-                "algo": "144_5",
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers BgoldPoW"
             }
         }
     }
