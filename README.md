@@ -32,10 +32,10 @@ Available miners:
 - dstm - legacy 0.3.4b and new zhash
 - bminer - ethash/tensority/equihash variants/Grin PoW miner 
 - lolminer - equihash variants OpenCL miner
-- xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo)
-- xmrig - XMRig (CPU cryptonight variants miner)
-- xmrig-amd - XMRig (AMD cryptonight variants miner)
-- xmrig-nvidia - XMRig (NVidia cryptonight variants miner)
+- xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo with forks arto, alloy, b2n, mox, marketcash)
+- xmrig - XMRig (CPU cryptonight variants miner with forks xmrigcc, hycon,webchain)
+- xmrig-amd - XMRig (AMD cryptonight variants miner with forks xmrigcc, hycon, webchain)
+- xmrig-nvidia - XMRig (NVidia cryptonight variants miner  with forks fruityminer, hycon, webchain)
 - cast-xmr - cryptonight variants (AMD)
 - cryptodredge - multi algo CUDA miner (NVidia)
 - teamredminer - lyra2z/lyra2v3/phi2/cryptonight-r/v8/half/double/reverse waltz OpenCL miner (AMD)
