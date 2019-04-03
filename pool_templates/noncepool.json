@@ -1,0 +1,32 @@
+[
+    {
+        "pool": {
+            "name": "NoncePool",
+            "url":  "http://www.noncepool.com",
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "BIS",
+        "servers": [
+            {
+                "geo": "Dashboard",
+                "urls": [
+                    "http://www.noncepool.com/site/mining"
+                ]
+            }
+        ],
+        "miners": {
+            "noncepool-amd": {
+                "tmpfs": "1",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "noncepool-nvidia": {
+                "tmpfs": "1",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+    }
+]
