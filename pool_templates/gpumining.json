@@ -97,7 +97,13 @@
 				"pass": "%WORKER_NAME%",
 				"template": "%WAL%",
 				"user_config": "\"currency\": \"cryptonight_v8_reversewaltz\""
-			}
+			},
+	        "teamredminer": {
+	            "url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+	            "algo": "cnv8_rwz"
+	        }
 		}
 	},
 	{
@@ -116,26 +122,13 @@
 				"pass": "%WORKER_NAME%",
 				"template": "%WAL%",
 				"user_config": "\"currency\": \"cryptonight_heavy\""
-			}
-		}
-	},
-	{
-		"coin": "BBS",
-		"servers": [
-			{
-				"geo": "Iran",
-				"urls": [
-					"cn.gpumining.ir:8935"
-				]
-			}
-		],
-		"miners": {
-			"xmr-stak": {
-				"url": "%URL%",
+			},
+	        "teamredminer": {
+	            "url": "%URL%",
 				"pass": "%WORKER_NAME%",
 				"template": "%WAL%",
-				"user_config": "\"currency\": \"cryptonight_v7\""
-			}
+	            "algo": "cnv8_trtl"
+	        }
 		}
 	},
 	{
@@ -154,7 +147,13 @@
 				"pass": "%WORKER_NAME%",
 				"template": "%WAL%",
 				"user_config": "\"currency\": \"cryptonight_v8\""
-			}
+			},
+	        "teamredminer": {
+	            "url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+	            "algo": "cnr"
+	        }
 		}
 	},
 	{
@@ -173,26 +172,13 @@
 				"pass": "%WORKER_NAME%",
 				"template": "%WAL%",
 				"user_config": "\"currency\": \"cryptonight_v8_half\""
-			}
-		}
-	},
-	{
-		"coin": "TUBE",
-		"servers": [
-			{
-				"geo": "Iran",
-				"urls": [
-					"cn.gpumining.ir:8935"
-				]
-			}
-		],
-		"miners": {
-			"xmr-stak": {
-				"url": "%URL%",
+			},
+	        "teamredminer": {
+	            "url": "%URL%",
 				"pass": "%WORKER_NAME%",
 				"template": "%WAL%",
-				"user_config": "\"currency\": \"cryptonight_lite_v7_xor\""
-			}
+	            "algo": "cnv8_half"
+	        }
 		}
 	},
 	{
@@ -210,7 +196,7 @@
 				"url": "%URL%",
 				"pass": "%WORKER_NAME%",
 				"template": "%WAL%",
-				"user_config": "\"currency\": \"cryptonight_v8_half\""
+				"user_config": "\"currency\": \"cryptonight_conceal\""
 			}
 		}
 	},
@@ -230,7 +216,13 @@
 				"pass": "%WORKER_NAME%",
 				"template": "%WAL%",
 				"user_config": "\"currency\": \"cryptonight_v8_double\""
-			}
+			},
+	        "teamredminer": {
+	            "url": "%URL%",
+				"pass": "%WORKER_NAME%",
+				"template": "%WAL%",
+	            "algo": "cnv8_dbl"
+	        }
 		}
 	},
 	{
@@ -239,7 +231,7 @@
 			{
 				"geo": "Iran",
 				"urls": [
-					"pool.gpumining.ir:3636"
+					"pool.gpumining.ir:36361"
 				]
 			}
 		],
@@ -264,7 +256,7 @@
 			{
 				"geo": "Iran",
 				"urls": [
-					"pool.gpumining.ir:3636"
+					"pool.gpumining.ir:36362"
 				]
 			}
 		],
@@ -284,12 +276,37 @@
 		}
 	},
 	{
+		"coin": "PHL",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"pool.gpumining.ir:36363"
+				]
+			}
+		],
+		"miners": {
+			"t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16r",
+				"pass": "c=PHL",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"cryptodredge": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16r",
+				"pass": "c=PHL",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
 		"coin": "RITO",
 		"servers": [
 			{
 				"geo": "Iran",
 				"urls": [
-					"pool.gpumining.ir:3224"
+					"pool.gpumining.ir:32241"
 				]
 			}
 		],
@@ -308,7 +325,7 @@
 			{
 				"geo": "Iran",
 				"urls": [
-					"pool.gpumining.ir:3637"
+					"pool.gpumining.ir:36371"
 				]
 			}
 		],
@@ -327,7 +344,7 @@
 			{
 				"geo": "Iran",
 				"urls": [
-					"pool.gpumining.ir:8332"
+					"pool.gpumining.ir:83321"
 				]
 			}
 		],
@@ -346,7 +363,7 @@
 			{
 				"geo": "Iran",
 				"urls": [
-					"pool.gpumining.ir:3556"
+					"pool.gpumining.ir:35561"
 				]
 			}
 		],
@@ -380,6 +397,31 @@
 				"url": "stratum+tcp://%URL%",
 				"algo": "x16s",
 				"pass": "c=PGN",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
+		"coin": "QBS",
+		"servers": [
+			{
+				"geo": "Iran",
+				"urls": [
+					"pool.gpumining.ir:3663"
+				]
+			}
+		],
+		"miners": {
+			"t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16s",
+				"pass": "c=QBS",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"cryptodredge": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16s",
+				"pass": "c=QBS",
 				"template": "%WAL%.%WORKER_NAME%"
 			}
 		}
