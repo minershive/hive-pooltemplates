@@ -38,7 +38,7 @@ Available miners:
 - xmrig-nvidia - XMRig (NVidia cryptonight variants miner  with forks fruityminer, hycon, webchain)
 - cast-xmr - cryptonight variants (AMD)
 - cryptodredge - multi algo CUDA miner (NVidia)
-- teamredminer - lyra2z/lyra2v3/phi2/cryptonight-r/v8/half/double/reverse waltz OpenCL miner (AMD)
+- teamredminer - lyra2z/lyra2v3/phi2/cryptonight-r/v7/v8/half/double/rwz/trtl OpenCL miner (AMD)
 - phoenixminer - ethash miner (AMD/NVidia)
 - t-rex - multi algo CUDA miner (NVidia)
 - cpuminer-opt - cpuminer-opt (CPU miner)
