@@ -1266,5 +1266,45 @@
                 "algo": "mtp"
             }
         }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "rvn.2miners.com:6060"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "solo-rvn.2miners.com:7070"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "x16r",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "fork": "avermore",
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"xintensity\": \"256\""
+            }
+        }
     }
 ]
