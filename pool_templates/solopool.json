@@ -1,50 +1,5 @@
 [
     {
-        "coin": "VIC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s1.solopool.org:8002"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            }
-        }
-    },
-    {
         "coin": "YOC",
         "servers": [
             {
@@ -936,12 +891,12 @@
                 "user_config": "pers BitcoinZ"
             },
             "gminer": {
-                    "algo": "144_5",
-                    "host": "%URL_HOST%",
-                    "port": "%URL_PORT%",
-                    "pass": "x",
-                    "template": "%WAL%.%WORKER_NAME%",
-                    "user_config": "--pers BitcoinZ"
+                "algo": "144_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers BitcoinZ"
             }
         }
     },
@@ -963,6 +918,14 @@
                 "zport": "%URL_PORT%",
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%"
+            },
+            "gminer": {
+                "algo": "96_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
             }
         }
     },
@@ -987,12 +950,12 @@
                 "user_config": "pers AnonyPoW"
             },
             "gminer": {
-                    "algo": "144_5",
-                    "host": "%URL_HOST%",
-                    "port": "%URL_PORT%",
-                    "pass": "x",
-                    "template": "%WAL%.%WORKER_NAME%",
-                    "user_config": "--pers AnonyPoW"
+                "algo": "144_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers AnonyPoW"
             }
         }
     },
@@ -1061,12 +1024,12 @@
                 "user_config": "pers sngemPoW"
             },
             "gminer": {
-                    "algo": "144_5",
-                    "host": "%URL_HOST%",
-                    "port": "%URL_PORT%",
-                    "pass": "x",
-                    "template": "%WAL%.%WORKER_NAME%",
-                    "user_config": "--pers sngemPoW"
+                "algo": "144_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers sngemPoW"
             }
         }
     },
@@ -1121,50 +1084,6 @@
                 "geo": "EU",
                 "urls": [
                     "s4.solopool.org:8007"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "BTCP",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s4.solopool.org:8008"
                 ]
             }
         ],
@@ -1267,12 +1186,12 @@
                 "user_config": "pers BgoldPoW"
             },
             "gminer": {
-                    "algo": "144_5",
-                    "host": "%URL_HOST%",
-                    "port": "%URL_PORT%",
-                    "pass": "x",
-                    "template": "%WAL%.%WORKER_NAME%",
-                    "user_config": "--pers BgoldPoW"
+                "algo": "144_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers BgoldPoW"
             }
         }
     },
@@ -1341,12 +1260,12 @@
                 "user_config": "pers ZelProof"
             },
             "gminer": {
-                    "algo": "144_5",
-                    "host": "%URL_HOST%",
-                    "port": "%URL_PORT%",
-                    "pass": "x",
-                    "template": "%WAL%.%WORKER_NAME%",
-                    "user_config": "--pers ZelProof"
+                "algo": "144_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZelProof"
             }
         }
     },
@@ -1371,250 +1290,12 @@
                 "user_config": "pers Safecoin"
             },
             "gminer": {
-                    "algo": "192_7",
-                    "host": "%URL_HOST%",
-                    "port": "%URL_PORT%",
-                    "pass": "x",
-                    "template": "%WAL%.%WORKER_NAME%",
-                    "user_config": "--pers Safecoin"
-            }
-        }
-    },
-    {
-        "coin": "RYO",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s3.solopool.org:8001"
-                ]
-            }
-        ],
-        "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
+                "algo": "192_7",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"ryo\""
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "LOKI",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s3.solopool.org:8002"
-                ]
-            }
-        ],
-        "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"cryptonight_heavy\""
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "GRFT",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s3.solopool.org:8003"
-                ]
-            }
-        ],
-        "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"graft\""
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "XHV",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s3.solopool.org:8004"
-                ]
-            }
-        ],
-        "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"haven\""
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "XTL",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s3.solopool.org:8005"
-                ]
-            }
-        ],
-        "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"stellite\""
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "TUBE",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s3.solopool.org:8006"
-                ]
-            }
-        ],
-        "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"cryptonight_bittube2\""
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "MSR",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s3.solopool.org:8007"
-                ]
-            }
-        ],
-        "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"masari\""
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
+                "user_config": "--pers Safecoin"
             }
         }
     },
@@ -1624,56 +1305,94 @@
             {
                 "geo": "EU",
                 "urls": [
-                    "s3.solopool.org:8008"
+                    "s3.solopool.org:8010"
                 ]
             }
         ],
         "miners": {
             "xmr-stak": {
                 "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
                 "user_config": "\"currency\": \"monero\""
             },
             "xmrig": {
                 "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
             },
             "xmrig-amd": {
                 "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
             },
             "xmrig-nvidia": {
                 "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "cryptodredge": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "cryptonight-v8"
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
             },
             "teamredminer": {
                 "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "cnv8"
-            },
-            "cast-xmr": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "cryptonight-v8"
-            },
-            "finminer": {
-                "algo": "cryptonightv8",
-                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
+                "algo": "cnr"
+            }
+        }
+    },
+    {
+        "coin": "XWP",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "s3.solopool.org:8011"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "swap",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "s3.solopool.org:8013"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
                 "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "fork": "avermore",
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "x16r",
+                "ccpass": "x"
             }
         }
     }
