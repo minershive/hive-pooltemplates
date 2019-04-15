@@ -23,13 +23,21 @@
         ],
         "miners": {
             "custom": {
-                "miner": "sushipool_gpu_miner_hiveos",
+                "miner": "sushi-miner-opencl",
                 "install_url": "https://github.com/Sushipool/sushi-miner-opencl/releases/download/2.0.0/sushi-miner-opencl-2.0.0.tar.gz",
                 "algo": "argon2d-nim",
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
-            }
-        }
-    }
+            },
+            "custom": {
+                "miner": "sushi-miner-cuda",
+                "install_url": "https://github.com/Sushipool/sushi-miner-cuda/releases/download/2.0.0/sushi-miner-cuda-2.0.0.tar.gz",
+                "algo": "argon2d-nim",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+           }
+       }
+   }
 ]
