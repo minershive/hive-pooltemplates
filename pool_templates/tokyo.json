@@ -472,5 +472,32 @@
                 "user_config": "\"opencl-threads\" : \"2\""
             }
         }
+    },
+   {
+        "coin": "LTFN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "pool.rig.tokyo:6343"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+               "fork": "klaust-yescrypt",
+               "url": "stratum+tcp://%URL%",
+               "algo": "yescryptr32",
+               "pass": "c=LTFN,%WORKER_NAME%",
+               "template": "%WAL%"
+            },
+            "cpuminer-opt": {
+               "url": "stratum+tcp://%URL%",
+               "algo": "yescrypt",
+               "algo": "yescryptr32",
+               "pass": "c=LTFN,%WORKER_NAME%",
+               "template": "%WAL%"
+            }
+        }
     }
 ]
