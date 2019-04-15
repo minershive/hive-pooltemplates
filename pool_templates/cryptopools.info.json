@@ -1,0 +1,49 @@
+[
+    {
+        "coin": "PIRL",
+        "servers": [
+            {
+                "geo": "EUROPE",
+                "urls": [
+                    "pirl-EU.CryptoPools.info:8002",
+                    "pirl-EU.CryptoPools.info:8004",
+                    "pirl-EU.CryptoPools.info:8008"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "Pirl.CryptoPools.info:8002",
+                    "Pirl.CryptoPools.info:8004",
+                    "Pirl.CryptoPools.info:8008"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "pirl-ASIA.CryptoPools.info:8002",
+                    "pirl-ASIA.CryptoPools.info:8004",
+                    "pirl-ASIA.CryptoPools.info:8008"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1\n-allpools 1\n-gser 2"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
