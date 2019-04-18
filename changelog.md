@@ -1,7 +1,10 @@
 #### 0.6-31@190418 2019-04-18
 Linux:
+
 *   updated `amdmemtweak` v0.1.7
+
 Miners:
+
 *   lolminer v0.8.1 (added support for Grin31 4G/8G, stratum bug fixes 144/5, 192/7 and 96/5, improved general stability)
 *   wildrig-multi v0.15.5 preview (added support honeycomb algo - BeeNode coin)
 *   noncepool-amd and noncepool-nvidia v1.27 (fixed for bug when running 8+ days of uptime)
