@@ -1,4 +1,4 @@
-#### 0.6-31@190418
+#### 0.6-31@190418 2019-04-18
 Linux:
 *   updated `amdmemtweak` v0.1.7
 Miners:
