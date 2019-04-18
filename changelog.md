@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ##### 0.6-31@190418 2019-04-18
+=======
+#### 0.6-31@190418 2019-04-18
+>>>>>>> 53404bb54661a9c0b6e99c9d9847f7356db17b8b
 *   updated `amdmemtweak` v0.1.7
 *   lolminer v0.8.1 (added support for Grin31 4G/8G, stratum bug fixes 144/5, 192/7 and 96/5, improved general stability)
 *   wildrig-multi v0.15.5 preview (added support honeycomb algo - BeeNode coin)
@@ -32,7 +36,7 @@
 *   gminer v1.37 BETA as user selectable version (added 5GB solver for Grin29/Swap/AE, added 144/5 solver for AMD cards, added auto-switching to main pool from failover pool)
 
 ##### 0.6-27@190407 2019-04-07
-*   NEW nvstop - tool for complete and correct unloading Nvidia drivers
+*   NEW `nvstop` - tool for complete and correct unloading Nvidia drivers
 *   improved nvidia-driver-update
 *   updated AMD BIOS flasher to v4.50 (added support for Lexa and Vega)
 *   NEW EggMinerGPU v4.00.100 (miner for Busmuth coin for eggpool)
