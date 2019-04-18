@@ -170,7 +170,7 @@ Examples:
 ##### Body
 Contains any text, mardown syntax is supported.
 
-All lines until next heading are considered as body, empty lines are skipped.
+All lines until next heading are considered as body, empty leading and trailing lines are skipped.
 
 Example:
 ```markdown
