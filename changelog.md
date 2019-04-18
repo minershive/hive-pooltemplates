@@ -1,14 +1,10 @@
-<<<<<<< HEAD
 ##### 0.6-31@190418 2019-04-18
-=======
-#### 0.6-31@190418 2019-04-18
->>>>>>> 53404bb54661a9c0b6e99c9d9847f7356db17b8b
 *   updated `amdmemtweak` v0.1.7
 *   lolminer v0.8.1 (added support for Grin31 4G/8G, stratum bug fixes 144/5, 192/7 and 96/5, improved general stability)
 *   wildrig-multi v0.15.5 preview (added support honeycomb algo - BeeNode coin)
 *   noncepool-amd and noncepool-nvidia v1.27 (fixed for bug when running 8+ days of uptime)
 *   grinpro v2.1 (added swap support for AMD, a lot of improvemets and bug fixes)
-*   nanominer v1.2.1 (fixed bbug with crash on some system wititout Nvidia cards)
+*   nanominer v1.2.1 (fixed bug with crash on some system wititout Nvidia cards)
 *   removed webchain fork of xmrig/-amd/-nvidia due Webchain coin hardfork to other algo
 *   fixed ccminer-djm34 v1.1.16 and v1.1.17 packages
 *   fixed nanominer randomhash algo stats
