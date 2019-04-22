@@ -29,8 +29,7 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allpools 0"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3, ALLCOINS: eth, ALLPOOLS: 0"
             },
             "ethminer": {
                 "cuda": 0,
@@ -39,6 +38,9 @@
                 "port": "%URL_PORT%",
                 "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+             "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4"
             }
         }
     },
@@ -72,8 +74,7 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3, ALLCOINS: etc, ALLPOOLS: 0"
             },
             "ethminer": {
                 "cuda": 0,
@@ -82,6 +83,9 @@
                 "port": "%URL_PORT%",
                 "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+             "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4"
             }
         }
     }
