@@ -1,3 +1,10 @@
+##### 0.6-32@190423 2019-04-23
+*   added OC support Nvidia GTX 1660 TI (need driver v418.43+)
+*   added support AMD Radeon VII (VEGA's image)
+*   updated `amdmemtweak` v0.1.7.1
+*   updated some system tools
+*   teamredminer v0.4.4
+
 ##### 0.6-31@190418 2019-04-18
 *   updated `amdmemtweak` v0.1.7
 *   lolminer v0.8.1 (added support for Grin31 4G/8G, stratum bug fixes 144/5, 192/7 and 96/5, improved general stability)
