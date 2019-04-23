@@ -1,6 +1,6 @@
 ##### 0.6-32@190423 2019-04-23
-*   added OC support Nvidia GTX 1660 TI (need driver v418.43+)
-*   added support AMD Radeon VII (VEGA's image)
+*   added OC support **Nvidia GTX 1660 TI** (need driver v418.43+)
+*   added support **AMD Radeon VII** (VEGA's image)
 *   updated `amdmemtweak` v0.1.7.1
 *   updated some system tools
 *   teamredminer v0.4.4
