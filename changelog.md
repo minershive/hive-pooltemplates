@@ -1,3 +1,9 @@
+##### 0.6-34@190423-3 2019-04-23
+*   bug fix
+
+##### 0.6-33@190423-2 2019-04-23
+*   fixed `selfupgrade`
+
 ##### 0.6-32@190423 2019-04-23
 *   added OC support **Nvidia GTX 1660 TI** (need driver v418.43+)
 *   added support **AMD Radeon VII** (VEGA's image)
