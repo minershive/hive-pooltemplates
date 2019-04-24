@@ -1,3 +1,6 @@
+##### 0.6-36@190424-3 2019-04-24
+*   wildrig-multi v0.15.6 preview (honeycomb algo up to 30% faster)
+
 ##### 0.6-36@190424-2 2019-04-24
 *   fixed packages dependencies
 
