@@ -1,3 +1,6 @@
+##### 0.6-36@190424-2 2019-04-24
+*   fixed packages dependencies
+
 ##### 0.6-35@190424 2019-04-24
 *   fixed `amdmeminfo` tool
 
