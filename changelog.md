@@ -1,3 +1,8 @@
+##### 0.6-36@190425 2019-04-25
+*   bminer v15.5.1 (fixed regression Grin29 on RTX cards, huge hashrate improvements ETH+VBK)
+*   nanominer v1.2.2 (added QuarkChain node support, up to 8% Grin29 for AMD RX580 8G)
+*   HSPMinerAE v2.2.4 (hashrate improvements, improved stability, bug fixes)
+
 ##### 0.6-36@190424-3 2019-04-24
 *   wildrig-multi v0.15.6 preview (honeycomb algo up to 30% faster)
 
