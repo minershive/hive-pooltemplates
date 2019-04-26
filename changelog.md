@@ -1,5 +1,5 @@
 ##### 0.6-37@190426 2019-04-26
-*   fixed disabling wifi
+*   fixed disabling wifi service
 *   nanominer v1.2.3 (fixed issue with devices parameter ignored for Ethash)
 *   gminer v1.39 (added 4G solver AE, improved performance for 144/5, 192/7, Grin29, Swap, AE)
 
