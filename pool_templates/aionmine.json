@@ -1,0 +1,74 @@
+[
+  {
+    "coin": "AION",
+    "servers": [
+      {
+        "geo": "Default",
+        "urls": [
+          "stratum.aionmine.org:3333",
+          "stratum.aionmine.org:9999"
+        ]
+      },
+      {
+        "geo": "Low Ping",
+        "urls": [
+          "stratum.aionmine.org:2222"
+        ]
+      },
+      {
+        "geo": "High Ping",
+        "urls": [
+          "stratum.aionmine.org:5555",
+          "stratum.aionmine.org:6666",
+          "stratum.aionmine.org:7777"
+        ]
+      },
+      {
+        "geo": "Germany (DE)",
+        "urls": [
+          "de.aionmine.org:3333",
+          "de.aionmine.org:9999"
+        ]
+      },
+      {
+        "geo": "Portugal (PT)",
+        "urls": [
+          "pt.aionmine.org:3333",
+          "pt.aionmine.org:9999"
+        ]
+      },
+      {
+        "geo": "Backup (centrys)",
+        "urls": [
+          "backup.aionmine.org:3333"
+        ]
+      }
+    ],
+    "miners": {
+      "ewbf": {
+        "algo": "210_9",
+        "fork": "zhash",
+        "zserver": "%URL_HOST%",
+        "zport": "%URL_PORT%",
+        "zpass": "x",
+        "ztemplate": "%WAL%.%WORKER_NAME%",
+        "user_config": "pers AION0PoW"
+      },
+      "gminer": {
+        "algo": "210_9",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--pers AION0PoW"
+      },
+      "lolminer": {
+        "algo": "AION",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]
