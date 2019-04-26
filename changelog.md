@@ -1,3 +1,8 @@
+##### 0.6-37@190426 2019-04-26
+*   fixed disabling wifi
+*   nanominer v1.2.3 (fixed issue with devices parameter ignored for Ethash)
+*   gminer v1.39 (added 4G solver AE, improved performance for 144/5, 192/7, Grin29, Swap, AE)
+
 ##### 0.6-36@190425 2019-04-25
 *   bminer v15.5.1 (fixed regression Grin29 on RTX cards, huge hashrate improvements ETH+VBK)
 *   nanominer v1.2.2 (added QuarkChain node support, up to 8% Grin29 for AMD RX580 8G)
