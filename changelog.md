@@ -1,8 +1,8 @@
 ##### 0.6-38@190430 2019-04-30
 *   stats traffic optimization
-*   xmrig-xmrigcc, xmrig-amd-xmrigcc v1.9.3
-*   nanominer v1.2.4
-*   teamredminer v0.4.5
+*   xmrig forks xmrigcc and xmrigcc-amd v1.9.3  (added cn-upx2 support)
+*   nanominer v1.2.4 (QuarkChain support optimization and bug fixes)
+*   teamredminer v0.4.5 (added cn-upx2 support)
 
 ##### 0.6-37@190426 2019-04-26
 *   fixed disabling wifi service
