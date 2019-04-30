@@ -1,3 +1,9 @@
+##### 0.6-38@190430 2019-04-30
+*   stats traffic optimization
+*   xmrig-xmrigcc v1.9.3
+*   nanominer v1.2.4
+*   teamredminer v0.4.5
+
 ##### 0.6-37@190426 2019-04-26
 *   fixed disabling wifi service
 *   nanominer v1.2.3 (fixed issue with devices parameter ignored for Ethash)
