@@ -1,6 +1,6 @@
 ##### 0.6-38@190430 2019-04-30
 *   stats traffic optimization
-*   xmrig-xmrigcc v1.9.3
+*   xmrig-xmrigcc, xmrig-amd-xmrigcc v1.9.3
 *   nanominer v1.2.4
 *   teamredminer v0.4.5
 
