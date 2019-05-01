@@ -1,3 +1,8 @@
+##### 0.6-39@190501 2019-05-01
+*   fixed wifi startup
+*   bminer v15.5.2 (fixed invalid shares ETH+VBK)
+*   gminer v1.40 (performance improvements for BEAM)
+
 ##### 0.6-38@190430 2019-04-30
 *   stats traffic optimization
 *   xmrig forks xmrigcc and xmrigcc-amd v1.9.3  (added cn-upx2 support)
