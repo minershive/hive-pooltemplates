@@ -1,3 +1,7 @@
+##### LINUX IMAGE RELEASE 0.6-39 2019-05-03
+*   Release of stable branch with updating system packages, etc 
+*   Nvidia drivers v418.56
+
 ##### 0.6-39@190501 2019-05-01
 *   fixed wifi startup
 *   bminer v15.5.2 (fixed invalid shares ETH+VBK)
