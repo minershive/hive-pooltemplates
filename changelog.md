@@ -7,7 +7,7 @@
 *   CryptoDredge v0.19.0 (added argon2d 250/4096 algos, improved mtp up to 5%, improved CN-like and cn-gpu, removed some old algos)
 *   **NEW** miniZ v1.3n5 (fast and friendly Equihash 144/5, 150/5, 192/7, 96/5 CUDA miner)
 *   Wildrig-Multi v0.16.0 (added wildkeccak, up to 5% honeycomb, some hashrate improvemnets x16-like algorithms)
-*   Fixed Custom miner downloading from SSL reasources (Bleeding Edge/VEGA images)
+*   Fixed Custom miner downloading from SSL resources (Bleeding Edge/VEGA images)
 
 ##### LINUX IMAGE RELEASE 0.6-39 2019-05-03
 *   Release of stable branch with updating system packages, etc 
