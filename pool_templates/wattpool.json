@@ -702,6 +702,68 @@
         }
     },
     {
+        "coin": "PRKL",
+        "servers": [
+            {
+                "geo": "POOL Diff 2G",
+                "urls": [
+                    "perkle.wattpool.net:8008"
+                ],
+                "ssl_urls": [
+                    "perkle.wattpool.net:8009"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
         "coin": "PIRL",
         "servers": [
             {
@@ -858,6 +920,35 @@
                 "algo": "ethash",
                 "pass": "x",
                 "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "UBQ",
+        "servers": [
+            {
+                "geo": "POOL Diff 2G",
+                "urls": [
+                    "ubiq.wattpool.net:8008"
+                ]
+            },
+            {
+                "geo": "POOL Diff 4G",
+                "urls": [
+                    "ubiq.wattpool.net:8448"
+                ]
+            },
+            {
+                "geo": "POOL Diff 9G",
+                "urls": [
+                    "ubiq.wattpool.net:8998"
+                ]
+            }
+        ],
+        "miners": {
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, COIN: ubq",
+                "user_config": "-coin %COIN%"
             }
         }
     }
