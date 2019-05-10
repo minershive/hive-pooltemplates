@@ -1,3 +1,7 @@
+##### 0.6-41@190510-2 2019-05-10
+*   NBMiner v23.2 (hotfix: fixed support AE for NiceHash)
+*   WildRig-Multi v0.16.2 (fixed xevan on Vega, small improved x16-like algo)
+
 ##### 0.6-41@190510 2019-05-10
 *   Gminer v1.42 (improved performance for BEAM at RTX cards, fixed performance regression on GTX 1080ti)
 *   NBMiner v23.2 (improved Grin/AE/SWAP performance, added support AE for NiceHash)
