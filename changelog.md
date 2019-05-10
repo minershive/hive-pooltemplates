@@ -1,3 +1,8 @@
+##### 0.6-41@190510 2019-05-10
+*   Gminer v1.42 (improved performance for BEAM at RTX cards, fixed performance regression on GTX 1080ti)
+*   NBMiner v23.2 (improved Grin/AE/SWAP performance, added support AE for NiceHash)
+*   WildRig-Multi v0.16.1 (added xevan algo, small improved speed at x16-like algos)
+
 ##### 0.6-40@190506 2019-05-06
 *   Improved SSL session agent support
 *   Added `Push interval` and `Maintenance mode` support
