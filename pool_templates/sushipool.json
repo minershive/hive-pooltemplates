@@ -30,6 +30,58 @@
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
             }
-        }
-    }
+      }
+},
+        { 
+                "coin": "XWP",
+                "servers": [
+        			{
+                        "geo": "Europe Low End GPU",
+                        "ssl_urls": [
+                            "swap.sushipool.com:33066"
+                        ]
+                    },
+                    {
+                        "geo": "Europe Mid Range GPU",
+                        "ssl_urls": [
+                            "swap.herominers.com:33077"
+                        ]
+                    },
+                    {
+                        "geo": "Europe High End GPU",
+                        "ssl_urls": [
+                            "swap.herominers.com:33088"
+                        ]
+                    },
+                    {
+                        "geo": "Europe Extreme High End GPU",
+                        "urls": [
+                            "swap.herominers.com:33055"
+                        ]
+                    }
+                ],
+                "miners": {
+                    "gminer": {
+                        "algo": "swap",
+                        "server": "%URL_HOST%",
+                        "port": "%URL_PORT%",
+                        "template": "%WAL%",
+                        "pass": "%WORKER_NAME%"
+                    },
+                    "nbminer": {
+                        "algo": "cuckaroo_swap",
+                        "url": "%URL%",
+                        "port": "%URL_PORT%",
+                        "template": "%WAL%",
+                        "pass": "%WORKER_NAME%"
+                    },
+                    "grinprominer": {
+                        "algo": "swap",
+                        "url": "%URL%",
+                        "port": "%URL_PORT%",
+                        "template": "%WAL%",
+                        "pass": "%WORKER_NAME%"
+                    }
+            }
+      }
 ]
