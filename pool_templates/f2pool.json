@@ -55,15 +55,21 @@
         "coin": "ETH",
         "servers": [
             {
-                "geo": "China",
+                "geo": "ASIS (Only username)",
+                "urls": [
+                    "eth.f2pool.com:6688"
+                ]
+              },
+              {
+                "geo": "ASIA (Only wallet)",
                 "urls": [
                     "eth.f2pool.com:8008"
-                ]
+              ]
             }
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+                "epools_tpl": "%URL%, WALLET: %WAL%.%WORKER_NAME% , PSW: x, ALLPOOLS: 1, ESTALE: 1"
             },
             "ethminer": {
                 "cuda": 1,
