@@ -1,5 +1,5 @@
 ##### 0.6-42@190515-2 2019-05-15
-*   fixed T-Rex v0.10.2 restarts (disabled internal miner watchdog)
+*   fixed T-Rex v0.10.2 restarts
 
 ##### 0.6-42@190515 2019-05-15
 *   CryptoDredge v0.19.1 (fixed some issues)
