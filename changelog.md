@@ -1,3 +1,10 @@
+##### 0.6-42@190515 2019-05-15
+*   CryptoDredge v0.19.1 (fixed some issues)
+*   WildRig-Multi v0.16.3 (honeycomb optimization, little improvements for x16-like algos, some special improvements for Vega)
+*   nanominer v1.3.0 (added support cn-r and cn-rwz for AMD, improved QuarkChain support)
+*   rhminer v1.5.1 (little performance boost)
+*   T-Rex v0.10.2 (added mtp algo)
+
 ##### 0.6-41@190510-2 2019-05-10
 *   NBMiner v23.2 (hotfix: fixed support AE for NiceHash)
 *   WildRig-Multi v0.16.2 (fixed xevan on Vega, small improved x16-like algo)
