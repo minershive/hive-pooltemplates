@@ -35,18 +35,6 @@
         { 
                 "coin": "XWP",
                 "servers": [
-        			{
-                        "geo": "Europe Low End GPU",
-                        "ssl_urls": [
-                            "swap.sushipool.com:33066"
-                        ]
-                    },
-                    {
-                        "geo": "Europe Mid Range GPU",
-                        "ssl_urls": [
-                            "swap.sushipool.com:33077"
-                        ]
-                    },
                     {
                         "geo": "Europe High End GPU",
                         "ssl_urls": [
@@ -84,4 +72,61 @@
                     }
             }
       }
+   ,
+    {
+        "coin": "XHV",
+        "servers": [
+            {
+                "geo": "Europe High End GPU",
+                "ssl_urls": [
+                    "haven.sushipool.com:9999"
+                ]
+            },
+            {
+                "geo": "Europe Extreme High End GPU",
+                "urls": [
+                    "haven.sushipool.com:500000"
+                ]
+            }
+            
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_haven\""
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-xhv"
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-xhv"
+            }
+		}
+	}
 ]
