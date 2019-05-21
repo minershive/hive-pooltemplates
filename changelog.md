@@ -1,3 +1,14 @@
+##### 0.6-43@190521 2019-05-21
+*   `hive-replace` fixed md5 checksum check
+*   fixed time synchronization
+*   minor changes in AMD OC
+*   WildRig-Multi v0.16.5 (better stability for wildkeccak using --scratchpad-safe-update on some systems, small improvements x16-like algo and honeycomb)
+*   Nanominer v1.3.1 (fixed cn-r runtime compilation issue on some AMD devices)
+*   cpuminer-opt v3.9.0 (added lyra2rev3/yespower/yespowerr16/phi2)
+*   T-Rex v0.11.0 (added x25x algo, bug fixes with built-in watchdog)
+*   Gminer v1.43 (added support for mining mining V-Dimension, added support AE for NiceHash)
+*   NEW teominer v0.16.3 (ethminer fork)
+
 ##### 0.6-42@190515-2 2019-05-15
 *   fixed T-Rex v0.10.2 restarts
 
