@@ -1,3 +1,6 @@
+##### 0.6-43@190521-2 2019-05-21
+*   Nanominer v1.3.2 (fixed hanging while enumerating AMD devices on some systems)
+
 ##### 0.6-43@190521 2019-05-21
 *   `hive-replace` fixed md5 checksum check
 *   fixed time synchronization
