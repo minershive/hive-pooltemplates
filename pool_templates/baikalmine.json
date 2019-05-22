@@ -417,6 +417,34 @@
         }
     },
     {
+        "coin": "TEO",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "tao.baikalmine.com:2620"
+                ]
+            },
+            {
+                "geo": "SOLO EU 9G",
+                "urls": [
+                    "tao-solo.baikalmine.com:2625"
+                ]
+            }
+        ],
+        "miners": {
+            "ethminer": {
+                "fork": "teominer",
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "XWP",
         "servers": [
             {
