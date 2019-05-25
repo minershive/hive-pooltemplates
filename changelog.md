@@ -1,3 +1,9 @@
+##### 0.6-45@190525 2019-05-25
+*   added support of RXboost feature (fine tuning memory timings for Polaris cards)
+*   Gminer v1.44 (improved GPU utilization for high-end GPUs on VOLLAR)
+*   WildRig-Multi v0.17.0 (added x25x, re-tuned auto-parameters to maximize hashrate)
+*   GrinPro v2.2 (fixed AMD compatibility)
+
 ##### 0.6-44@190522 2019-05-22
 *   updated `amdmemtweak` v0.1.8.1
 *   fixed teominer for AMD platform
