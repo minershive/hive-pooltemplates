@@ -1,3 +1,10 @@
+##### 0.6-46@190527 2019-05-27
+*   Claymore's Dual ETH v14.6 (first v14.x series Linux build, options -rxboost and -strap not working in Linux build)
+*   CryptoDredge v0.20.0 (improved MTP algo, improved argon2d algo, new argon2d-nim algo)
+*   WildRig-Multi v0.17.2 (fixed support x22i and x25x algos, re-tuned auto parameters for Baffin)
+*   ccminer-enemy v2.0 (known as z-enemy miner)
+*   NEW ccminer-rfv2 v1.0.2 (ccminer fork for Rainforest v2)
+
 ##### 0.6-45@190525 2019-05-25
 *   added support of RXboost feature (fine tuning memory timings for Polaris cards)
 *   Gminer v1.44 (improved GPU utilization for high-end GPUs on VOLLAR)
