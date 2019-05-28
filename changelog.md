@@ -1,3 +1,6 @@
+##### 0.6-46@190528 2019-05-28
+*   Claymore's Dual ETH v14.6.1 (fixed hashrate drops on Nvidia cards vs v12.0)
+
 ##### 0.6-46@190527 2019-05-27
 *   Claymore's Dual ETH v14.6 (first v14.x series Linux build, options -rxboost and -strap not working in Linux build)
 *   CryptoDredge v0.20.0 (improved MTP algo, improved argon2d algo, new argon2d-nim algo)
