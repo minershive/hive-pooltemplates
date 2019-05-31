@@ -1,64 +1,61 @@
 [
     {
-        "coin": "EMCD.IO-sha256",
+        "coin": "BTC",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "Russia",
                 "urls": [
-                    "emcd.io:3333#xnsub"
+                    "gate.emcd.io:3333"
                 ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "c=BTC"
-            }
-        }
-    },
-    {
-        "coin": "EMCD.IO-x11",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "emcd.io:3533#xnsub"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "c=BTC"
-            }
-        }
-    },
-    {
-        "coin": "RVN",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "emcd.io:3636"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "fork": "enemy",
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "x16r",
-                "ccpass": "c=RVN"
             },
-            "sgminer-gm": {
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.emcd.io:3333",
+                    "eu2.emcd.io:3333"
+                ]
+            },
+            {
+                "geo": "China",
+                "urls": [
+                    "cn.emcd.io:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "c=RVN",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "LTC",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "gate.emcd.io:3434"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.emcd.io:3434",
+                    "eu2.emcd.io:3434"
+                ]
+            },
+            {
+                "geo": "China",
+                "urls": [
+                    "cn.emcd.io:3434"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -103,32 +100,6 @@
                 "template": "%WAL%",
                 "pass": "x",
                 "user_config": "rigName = %WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "EMCD.IO-lyra2v2",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "emcd.io:4533"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "lyra2v2",
-                "ccpass": "c=BTC"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=BTC",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             }
         }
     }
