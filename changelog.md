@@ -1,3 +1,12 @@
+##### 0.6-47@190601 2019-06-01
+*   Added support for diskless rig
+*   CPUminer-opt v3.9.1.1 (added sonoa algo, fixed non-avx2)
+*   nanominer v1.3.3 (fixed random Monero mining crashes on some connection types)
+*   SGminer-fancyIX v5.6.1.3.b6 (added x25x algo support)
+*   Gminer v1.45 (improved performance for Grin29/AE/SWAP on Nvidia cards)
+*   XMRig /-AMD/-Nvidia v2.14.4 (removed obsolete automatic variants)
+*   WildRig-Multi v0.17.3 (up to 20% faster x25x)
+
 ##### 0.6-46@190528 2019-05-28
 *   Claymore's Dual ETH v14.6.1 (fixed hashrate drops on Nvidia cards vs v12.0)
 
