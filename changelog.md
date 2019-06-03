@@ -1,3 +1,7 @@
+##### 0.6-48@190603 2019-06-03
+*   CryptoDredge v0.20.1 (fixed too many rejected shares on MTP algo, improved argon2d algos)
+*   nanominer v1.3.4 (fixed critical connection issue introduced in version 1.3.3)
+
 ##### 0.6-47@190601 2019-06-01
 *   Added support for diskless rig
 *   CPUminer-opt v3.9.1.1 (added sonoa algo, fixed non-avx2)
