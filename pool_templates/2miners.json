@@ -1306,5 +1306,41 @@
                 "user_config": "\"xintensity\": \"256\""
             }
         }
+    },
+    {
+        "coin": "AE",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "ae.2miners.com:4040"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "solo-ae.2miners.com:4141"
+                ]
+            }
+        ],
+        "miners": {
+            "bminer": {
+                "algo": "aeternity",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "aeternity",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "aeternity"
+            }
+        }
     }
 ]
