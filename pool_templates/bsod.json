@@ -1607,27 +1607,59 @@
             }
         ],
         "miners": {
-            "cryptodredge": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x22i",
-                "pass": "c=SUQA",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
             "t-rex": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x22i",
-                "pass": "c=SUQA",
+                "algo": "x25x",
+                "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "wildrig-multi": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x22i",
-                "pass": "c=SUQA",
+                "algo": "x25x",
+                "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"opencl-threads\" : \"2\""
             }
         }
     },
+    {
+        "coin": "SIN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.bsod.pw:2460"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "us.bsod.pw:2460"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.bsod.pw:2460"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x25x",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x25x",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },    
     {
         "coin": "VEIL",
         "servers": [
