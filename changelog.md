@@ -1,3 +1,7 @@
+##### 0.6-48@190605 2019-06-05
+*   CPUminer-opt v3.9.2.2 (added sha256q algo, code optimizations on some algos)
+*   WildRig-Multi v0.17.4 (added anime algo, improved honeycomb up to 3%)
+
 ##### 0.6-48@190603 2019-06-03
 *   CryptoDredge v0.20.1 (fixed too many rejected shares on MTP algo, improved argon2d algos)
 *   nanominer v1.3.4 (fixed critical connection issue introduced in version 1.3.3)
