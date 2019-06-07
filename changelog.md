@@ -1,3 +1,8 @@
+##### 0.6-50@190607 2019-06-07
+*   Fixed issues with AMD OC that appeared in v0.6-49 in some configurations
+*   CCminer-KlausT v8.25 (added lyra2v3, bug fixes)
+*   TeamRedMiner v0.5.1 (added better support for CN intensities 16*15, better support x16rt, fixed some issues)
+
 ##### 0.6-49@190606 2019-06-06
 *   Added LA watchdog & GPU hang detection
 *   CPUminer-opt v3.9.2.3 (cpu-affinity fix)
