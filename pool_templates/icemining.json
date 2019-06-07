@@ -124,5 +124,32 @@
         ],
         "miners": {
         }
+    },
+    {
+        "coin": "NIM",
+        "servers": [
+            {
+                "geo": "North America",
+                "urls": [
+                    "mine.icemining.ca:4200"
+                ]
+            }
+        ],
+        "miners": {
+            "sushi-miner-cuda": {
+              "server": "%URL_HOST%",
+              "port": "%URL_PORT%",
+              "template": "%WAL%",
+              "worker": "%WORKER_NAME%",
+              "user_config": "\"consensus\": \"dumb\""
+            },
+            "sushi-miner-opencl": {
+              "server": "%URL_HOST%",
+              "port": "%URL_PORT%",
+              "template": "%WAL%",
+              "worker": "%WORKER_NAME%",
+              "user_config": "\"consensus\": \"dumb\""
+            }
+        }
     }
 ]
