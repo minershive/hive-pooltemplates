@@ -1,3 +1,9 @@
+##### 0.6-51@190609 2019-06-09
+*   Fixed AMD OC on mixed rigs
+*   CPUminer-opt v3.9.2.4 (yet another cpu-affinity fix)
+*   T-Rex v0.11.1 (significant x25x speed increase, many bug fixes)
+*   Claymore's ETH Dual: fixed stats when mining stopped by overheating on some GPU
+
 ##### 0.6-50@190607 2019-06-07
 *   Fixed an issue with AMD OC, which appeared in v0.6-49 on some configurations
 *   CCminer-KlausT v8.25 (added lyra2v3, bug fixes)
