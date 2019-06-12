@@ -43,18 +43,18 @@
         }
     },
     {
-        "coin": "TRTL",
+        "coin": "SUMO",
         "servers": [
             {
-                "geo": "Italia (CPU)",
+                "geo": "Italia (<5KH/s)",
                 "urls": [
-                    "coinpoolit.webhop.me:8001"
+                    "coinpoolit.webhop.me:5003"
                 ]
             },
             {
-                "geo": "Italia (GPU rig)",
+                "geo": "Italia (>5kH/s)",
                 "urls": [
-                    "coinpoolit.webhop.me:8002"
+                    "coinpoolit.webhop.me:5004"
                 ]
             }
         ],
@@ -63,35 +63,90 @@
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-turtle\""
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-turtle\""
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-turtle\""
+                "user_config": "\"algo\": \"cryptonight/r\""
             },
             "xmr-stak": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_r\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/r\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/r\""
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnr"
+            },
+            "nanominer": {
+                "algo": "CryptoNightR",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ARQ",
+        "servers": [
+            {
+                "geo": "Italia (CPU)",
+                "urls": [
+                    "coinpoolit.webhop.me:8003"
+                ]
+            },
+            {
+                "geo": "Italia (GPU rig)",
+                "urls": [
+                    "coinpoolit.webhop.me:8004"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "PLACE_TURTLE_WALLET_HERE@%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-turtle\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "PLACE_TURTLE_WALLET_HERE@%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-turtle\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "PLACE_TURTLE_WALLET_HERE@%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-turtle\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "PLACE_TURTLE_WALLET_HERE@%WORKER_NAME%",
+                "template": "%WAL%",
                 "user_config": "\"currency\": \"cryptonight_turtle\""
             },
             "cast-xmr": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
+                "pass": "PLACE_TURTLE_WALLET_HERE@%WORKER_NAME%",
                 "template": "%WAL%",
                 "algo": "cryptonight-trtl"
             },
             "teamredminer": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
+                "pass": "PLACE_TURTLE_WALLET_HERE@%WORKER_NAME%",
                 "template": "%WAL%",
                 "algo": "cnv8_trtl"
             }
