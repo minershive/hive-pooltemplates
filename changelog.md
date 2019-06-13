@@ -4,7 +4,7 @@
 *   Improved support of Push Interval (interval will decreased if sending stats error occurred)
 *   XMR-Stak v2.10.5 (up to 10% improvement for cn-gpu on Nvidia)
 *   KBminer v1.3.3 (up to 10% on vds, notice: version only supports VDS on AMD cards)
-*   WildRig-Multi v0.17.5 (added added blake2b, blake2b-glt, blake2s algos)
+*   WildRig-Multi v0.17.5 (added blake2b, blake2b-glt, blake2s algos)
 
 ##### 0.6-51@190609 2019-06-09
 *   Fixed AMD OC on mixed rigs
