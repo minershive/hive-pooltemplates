@@ -1,3 +1,9 @@
+##### 0.6-52@190614 2019-06-14
+*   TeamRedMiner v0.5.2 (bug fix release without new features)
+*   CPUminer-opt v3.9.3.1 (fixed x16r algo 25% invalid share reject rate, fixed a couple of regressions)
+*   NBminer v23.3 (fixed mining CuckooCycle on NiceHash)
+*   KBminer v1.3.8 (improved performance by 25%, reduced hashrate lose in pools, notice: build only supports VDS on AMD cards)
+
 ##### 0.6-52@190613 2019-06-13
 *   Update URL for Intel e1000e driver
 *   Fixed `hello` fail for some types net-interfaces
