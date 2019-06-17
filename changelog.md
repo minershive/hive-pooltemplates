@@ -1,3 +1,7 @@
+##### 0.6-53@190617 2019-06-17
+*   Claymore's ETH Dual v14.7 (no new features in Linux build, bug fixes)
+*   KBminer v1.3.10 (added support mining vds on Nvidia cards)
+
 ##### 0.6-52@190614 2019-06-14
 *   TeamRedMiner v0.5.2 (bug fix release without new features)
 *   CPUminer-opt v3.9.3.1 (fixed x16r algo 25% invalid share reject rate, fixed a couple of regressions)
