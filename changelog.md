@@ -1,5 +1,5 @@
 ##### 0.6-53@190617 2019-06-17
-*   Claymore's ETH Dual v14.7 (no new features in Linux build, bug fixes)
+*   Claymore's Dual ETH v14.7 (no new features in Linux build, bug fixes)
 *   KBminer v1.3.10 (added support mining vds on Nvidia cards)
 
 ##### 0.6-52@190614 2019-06-14
