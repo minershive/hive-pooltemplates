@@ -1,5 +1,13 @@
 [
     {
+        "pool": {
+            "name": "Hiveon",
+            "url": "https://hiveon.net",
+            "fee": 0,
+            "type": "PPS+"
+        }
+    },
+    {
         "coin": "ETH",
         "servers": [
             {
@@ -18,21 +26,7 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_ethash"
         }
     },
     {
@@ -47,21 +41,9 @@
             }
         ],
         "miners": {
+            "_prototype": "miners_ethash",
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
                 "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -82,17 +64,7 @@
             }
         ],
         "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"monero\""
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_cryptonight_r_hive"
         }
     }
 ]

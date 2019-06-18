@@ -1,5 +1,13 @@
 [
     {
+        "pool": {
+            "name": "Spark Pool",
+            "url": "https://sparkpool.com",
+            "fee": 1,
+            "type": "PPS+"
+        }
+    },
+    {
         "coin": "ETH",
         "servers": [
             {
@@ -60,20 +68,180 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
+            "_prototype": "miners_ethash"
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "etc-cn.sparkpool.com:5555",
+                    "etc-cn.sparkpool.com:15555"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash"
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "xmr-cn.sparkpool.com:11000",
+                    "xmr-cn.sparkpool.com:21000"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_cryptonight_r_hive"
+        }
+    },
+    {
+        "coin": "BEAM",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "beam.sparkpool.com:2222"
+                ]
             },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
+            {
+                "geo": "Europe",
+                "urls": [
+                    "beam-eu.sparkpool.com:2222"
+                ]
+            },
+            {
+                "geo": "Southeast Asia",
+                "urls": [
+                    "beam-asia.sparkpool.com:2222"
+                ]
+            }
+        ],
+        "miners": {
+            "beamcl": {
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "beamcuda": {
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "bminer": {
+                "algo": "beam+ssl",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "150_5",
+                "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "tls": "1"
+            },
+            "lolminer": {
+                "algo": "BEAM",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "ver": "0.7.a4"
+            }
+        }
+    },
+    {
+        "coin": "GRIN",
+        "servers": [
+            {
+                "geo": "C29 China",
+                "urls": [
+                    "grin.sparkpool.com:6666",
+                    "grin.sparkpool.com:16666"
+                ]
+            },
+            {
+                "geo": "C29 Asia",
+                "urls": [
+                    "grin-asia.sparkpool.com:6666",
+                    "grin-asia.sparkpool.com:16666"
+                ]
+            },
+            {
+                "geo": "C29 Europe",
+                "urls": [
+                    "grin-eu.sparkpool.com:6666",
+                    "grin-eu.sparkpool.com:16666"
+                ]
+            },
+            {
+                "geo": "C29 US",
+                "urls": [
+                    "grin-us.sparkpool.com:6666",
+                    "grin-us.sparkpool.com:16666"
+                ]
+            },
+            {
+                "geo": "C31 China",
+                "urls": [
+                    "grin.sparkpool.com:6667",
+                    "grin.sparkpool.com:16667"
+                ]
+            },
+            {
+                "geo": "C31 Asia",
+                "urls": [
+                    "grin-asia.sparkpool.com:6667",
+                    "grin-asia.sparkpool.com:16667"
+                ]
+            },
+            {
+                "geo": "C31 Europe",
+                "urls": [
+                    "grin-eu.sparkpool.com:6667",
+                    "grin-eu.sparkpool.com:16667"
+                ]
+            },
+            {
+                "geo": "C31 US",
+                "urls": [
+                    "grin-us.sparkpool.com:6667",
+                    "grin-us.sparkpool.com:16667"
+                ]
+            }
+        ],
+        "miners": {
+            "bminer": {
+                "algo": "cuckaroo29",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "grin29",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "grinminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "gringoldminer": {
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "grinprominer": {
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%",
+                "algo": "cuckaroo"
             }
         }
     }

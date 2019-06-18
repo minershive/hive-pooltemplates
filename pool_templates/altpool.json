@@ -3,15 +3,21 @@
         "coin": "ETH",
         "servers": [
             {
+                "geo": "EU",
+                "urls": [
+                    "eth.altpool.pro:3841"
+                ]
+            },
+            {
                 "geo": "SOLO EU",
                 "urls": [
-                    "solo-eth.altpool.pro:3841"
+                    "solo-eth.altpool.pro:3842"
                 ]
             }
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
                 "claymore_user_config": "-allpools 1"
             },
             "ethminer": {
@@ -19,7 +25,7 @@
                 "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
+                "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
@@ -308,33 +314,38 @@
         "coin": "UBQ",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "PPLNS 3G",
                 "urls": [
                     "ubq.altpool.pro:8247"
                 ]
             },
             {
-                "geo": "SOLO EU",
+                "geo": "PPLNS 15G",
+                "urls": [
+                    "ubq.altpool.pro:8249"
+                ]
+            },
+            {
+                "geo": "SOLO 3G",
                 "urls": [
                     "solo-ubq.altpool.pro:8251"
+                ]
+            },
+            {
+                "geo": "SOLO 15G",
+                "urls": [
+                    "solo-ubq.altpool.pro:8253"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1"
-            },
             "ethminer": {
+                "fork": "ubqminer",
                 "cuda": 1,
                 "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
@@ -756,6 +767,34 @@
                 "geo": "SOLO EU",
                 "urls": [
                     "solo-anon.altpool.pro:2668"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers auto"
+            }
+        }
+    },
+    {
+        "coin": "BTH",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "bth.altpool.pro:2384"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "solo-bth.altpool.pro:2386"
                 ]
             }
         ],

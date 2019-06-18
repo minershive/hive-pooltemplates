@@ -1,29 +1,139 @@
 [
     {
+        "pool": {
+            "name": "HeroMiners",
+            "url": "https://herominers.com/",
+            "fee": 0.9,
+            "type": "PROP"
+        }
+    },
+    {
         "coin": "TUBE",
         "servers": [
             {
-                "geo": "Low-End",
+                "geo": "Europe CPU",
                 "urls": [
                     "tube.herominers.com:10280"
                 ]
             },
             {
-                "geo": "Mid range",
+                "geo": "Europe GPU",
                 "urls": [
                     "tube.herominers.com:10281"
                 ]
             },
             {
-                "geo": "High-End",
+                "geo": "Europe Rigs",
                 "urls": [
                     "tube.herominers.com:10282"
                 ]
             },
             {
-                "geo": "SSL",
+                "geo": "Europe NiceHash",
                 "urls": [
+                    "tube.herominers.com:10283"
+                ]
+            },
+            {
+                "geo": "Europe CPU",
+                "ssl_urls": [
+                    "tube.herominers.com:10284"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "ssl_urls": [
                     "tube.herominers.com:10285"
+                ]
+            },
+            {
+                "geo": "Europe Rigs",
+                "ssl_urls": [
+                    "tube.herominers.com:10286"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "urls": [
+                    "ca.tube.herominers.com:10280"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "urls": [
+                    "ca.tube.herominers.com:10281"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "urls": [
+                    "ca.tube.herominers.com:10282"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.tube.herominers.com:10283"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "ssl_urls": [
+                    "ca.tube.herominers.com:10284"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "ssl_urls": [
+                    "ca.tube.herominers.com:10285"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "ssl_urls": [
+                    "ca.tube.herominers.com:10286"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "urls": [
+                    "sg.tube.herominers.com:10280"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "urls": [
+                    "sg.tube.herominers.com:10281"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "urls": [
+                    "sg.tube.herominers.com:10282"
+                ]
+            },
+            {
+                "geo": "Asia NiceHash",
+                "urls": [
+                    "sg.tube.herominers.com:10283"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "ssl_urls": [
+                    "sg.tube.herominers.com:10284"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "ssl_urls": [
+                    "sg.tube.herominers.com:10285"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "ssl_urls": [
+                    "sg.tube.herominers.com:10286"
                 ]
             }
         ],
@@ -34,11 +144,344 @@
                 "template": "%WAL%",
                 "user_config": "\"algo\": \"cryptonight-heavy/tube\""
             },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-heavy/tube\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-heavy/tube\""
+            },
             "xmr-stak": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "user_config": "\"currency\": \"cryptonight_bittube2\""
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-saber"
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-saber"
+            }
+        }
+    },
+    {
+        "coin": "LOKI",
+        "servers": [
+            {
+                "geo": "Low-End Cpu and Gpu",
+                "urls": [
+                    "loki.herominers.com:10110"
+                ]
+            },
+            {
+                "geo": "Modern Cpu and Gpu",
+                "urls": [
+                    "loki.herominers.com:10111"
+                ]
+            },
+            {
+                "geo": "Multi-Gpu Rigs and Higher",
+                "urls": [
+                    "loki.herominers.com:10112"
+                ]
+            },
+            {
+                "geo": "Cloud-Mining / NiceHash",
+                "urls": [
+                    "loki.herominers.com:10113"
+                ]
+            },
+            {
+                "geo": "SSL Connection",
+                "urls": [
+                    "loki.herominers.com:10114"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-pico/trtl\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-pico/trtl\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-pico/trtl\""
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-turtle"
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_turtle\""
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-trtl"
+            }
+        }
+    },
+    {
+        "coin": "XHV",
+        "servers": [
+            {
+                "geo": "Low-End Cpu and Gpu",
+                "urls": [
+                    "haven.herominers.com:10140"
+                ]
+            },
+            {
+                "geo": "Modern Cpu and Gpu",
+                "urls": [
+                    "haven.herominers.com:10141"
+                ]
+            },
+            {
+                "geo": "Multi-Gpu Rigs and Higher",
+                "urls": [
+                    "haven.herominers.com:10142"
+                ]
+            },
+            {
+                "geo": "Cloud-Mining / NiceHash",
+                "urls": [
+                    "haven.herominers.com:10143"
+                ]
+            },
+            {
+                "geo": "SSL Connection",
+                "urls": [
+                    "haven.herominers.com:10144"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_haven\""
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-xhv"
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-xhv"
+            }
+        }
+    },
+    {
+        "coin": "GRFT",
+        "servers": [
+            {
+                "geo": "Europe CPU",
+                "urls": [
+                    "graft.herominers.com:10100"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "urls": [
+                    "graft.herominers.com:10101"
+                ]
+            },
+            {
+                "geo": "Europe Rigs",
+                "urls": [
+                    "graft.herominers.com:10102"
+                ]
+            },
+            {
+                "geo": "Europe NiceHash",
+                "urls": [
+                    "graft.herominers.com:10103"
+                ]
+            },
+            {
+                "geo": "Europe CPU",
+                "ssl_urls": [
+                    "graft.herominers.com:10104"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "ssl_urls": [
+                    "graft.herominers.com:10105"
+                ]
+            },
+            {
+                "geo": "Europe Rigs",
+                "ssl_urls": [
+                    "graft.herominers.com:10106"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "urls": [
+                    "ca.graft.herominers.com:10100"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "urls": [
+                    "ca.graft.herominers.com:10101"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "urls": [
+                    "ca.graft.herominers.com:10102"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.graft.herominers.com:10103"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "ssl_urls": [
+                    "ca.graft.herominers.com:10104"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "ssl_urls": [
+                    "ca.graft.herominers.com:10105"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "ssl_urls": [
+                    "ca.graft.herominers.com:10106"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "urls": [
+                    "sg.graft.herominers.com:10100"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "urls": [
+                    "sg.graft.herominers.com:10101"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "urls": [
+                    "sg.graft.herominers.com:10102"
+                ]
+            },
+            {
+                "geo": "Asia NiceHash",
+                "urls": [
+                    "sg.graft.herominers.com:10103"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "ssl_urls": [
+                    "sg.graft.herominers.com:10104"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "ssl_urls": [
+                    "sg.graft.herominers.com:10105"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "ssl_urls": [
+                    "sg.graft.herominers.com:10106"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/rwz\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/rwz\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/rwz\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"graft\""
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnv8_rwz"
             }
         }
     },
@@ -46,27 +489,33 @@
         "coin": "XMR",
         "servers": [
             {
-                "geo": "Low-End",
+                "geo": "Low-End Cpu and Gpu",
                 "urls": [
                     "monero.herominers.com:10190"
                 ]
             },
             {
-                "geo": "Mid range",
+                "geo": "Modern Cpu and Gpu",
                 "urls": [
                     "monero.herominers.com:10191"
                 ]
             },
             {
-                "geo": "High-End",
+                "geo": "Multi-Gpu Rigs and Higher",
                 "urls": [
                     "monero.herominers.com:10192"
                 ]
             },
             {
-                "geo": "SSL",
+                "geo": "Cloud-Mining / NiceHash",
                 "urls": [
-                    "monero.herominers.com:10195"
+                    "monero.herominers.com:10193"
+                ]
+            },
+            {
+                "geo": "SSL Connection",
+                "urls": [
+                    "monero.herominers.com:10194"
                 ]
             }
         ],
@@ -75,41 +524,161 @@
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/2\""
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
             },
             "xmr-stak": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"monero\""
+                "user_config": "\"currency\": \"cryptonight_r\""
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnr"
             }
         }
     },
     {
-        "coin": "XMV",
+        "coin": "MSR",
         "servers": [
             {
-                "geo": "Low-End",
+                "geo": "Europe CPU",
                 "urls": [
-                    "monerov.herominers.com:10200"
+                    "masari.herominers.com:10150"
                 ]
             },
             {
-                "geo": "Mid range",
+                "geo": "Europe GPU",
                 "urls": [
-                    "monerov.herominers.com:10201"
+                    "masari.herominers.com:10151"
                 ]
             },
             {
-                "geo": "High-End",
+                "geo": "Europe Rigs",
                 "urls": [
-                    "monerov.herominers.com:10202"
+                    "masari.herominers.com:10152"
                 ]
             },
             {
-                "geo": "SSL",
+                "geo": "Europe NiceHash",
                 "urls": [
-                    "monerov.herominers.com:10205"
+                    "masari.herominers.com:10153"
+                ]
+            },
+            {
+                "geo": "Europe CPU",
+                "ssl_urls": [
+                    "masari.herominers.com:10154"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "ssl_urls": [
+                    "masari.herominers.com:10155"
+                ]
+            },
+            {
+                "geo": "Europe Rigs",
+                "ssl_urls": [
+                    "masari.herominers.com:10156"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "urls": [
+                    "ca.masari.herominers.com:10150"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "urls": [
+                    "ca.masari.herominers.com:10151"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "urls": [
+                    "ca.masari.herominers.com:10152"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.masari.herominers.com:10153"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "ssl_urls": [
+                    "ca.masari.herominers.com:10154"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "ssl_urls": [
+                    "ca.masari.herominers.com:10155"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "ssl_urls": [
+                    "ca.masari.herominers.com:10156"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "urls": [
+                    "sg.masari.herominers.com:10150"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "urls": [
+                    "sg.masari.herominers.com:10151"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "urls": [
+                    "sg.masari.herominers.com:10152"
+                ]
+            },
+            {
+                "geo": "Asia NiceHash",
+                "urls": [
+                    "sg.masari.herominers.com:10153"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "ssl_urls": [
+                    "sg.masari.herominers.com:10154"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "ssl_urls": [
+                    "sg.masari.herominers.com:10155"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "ssl_urls": [
+                    "sg.masari.herominers.com:10156"
                 ]
             }
         ],
@@ -118,17 +687,122 @@
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/1\""
+                "user_config": "\"algo\": \"cn/half\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/half\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/half\""
             },
             "xmr-stak": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_v7\""
+                "user_config": "\"currency\": \"cryptonight_v8_half\""
             },
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%",
-                "claymore-x_user_config": "-pow7 1"
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-fast-v8"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-fast-v8"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnv8_half"
+            }
+        }
+    },
+    {
+        "coin": "XTC",
+        "servers": [
+            {
+                "geo": "Low-End Cpu and Gpu",
+                "urls": [
+                    "torque.herominers.com:10130"
+                ]
+            },
+            {
+                "geo": "Modern Cpu and Gpu",
+                "urls": [
+                    "torque.herominers.com:10131"
+                ]
+            },
+            {
+                "geo": "Multi-Gpu Rigs and Higher",
+                "urls": [
+                    "torque.herominers.com:10132"
+                ]
+            },
+            {
+                "geo": "Cloud-Mining / NiceHash",
+                "urls": [
+                    "torque.herominers.com:10133"
+                ]
+            },
+            {
+                "geo": "SSL Connection",
+                "urls": [
+                    "torque.herominers.com:10134"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/half\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/half\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/half\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_v8_half\""
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-fast-v8"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-fast-v8"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnv8_half"
             }
         }
     },
@@ -136,25 +810,31 @@
         "coin": "QRL",
         "servers": [
             {
-                "geo": "Low-End",
+                "geo": "Low-End Cpu and Gpu",
                 "urls": [
                     "qrl.herominers.com:10370"
                 ]
             },
             {
-                "geo": "Mid range",
+                "geo": "Modern Cpu and Gpu",
                 "urls": [
                     "qrl.herominers.com:10371"
                 ]
             },
             {
-                "geo": "High-End",
+                "geo": "Multi-Gpu Rigs and Higher",
                 "urls": [
                     "qrl.herominers.com:10372"
                 ]
             },
             {
-                "geo": "SSL",
+                "geo": "Cloud-Mining / NiceHash",
+                "urls": [
+                    "qrl.herominers.com:10373"
+                ]
+            },
+            {
+                "geo": "SSL Connection",
                 "urls": [
                     "qrl.herominers.com:10375"
                 ]
@@ -167,6 +847,18 @@
                 "template": "%WAL%",
                 "user_config": "\"algo\": \"cryptonight/1\""
             },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/1\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/1\""
+            },
             "xmr-stak": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
@@ -176,34 +868,168 @@
             "claymore-x": {
                 "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%",
                 "claymore-x_user_config": "-pow7 1"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"monero\": \"true\"\n\"auto-fan\": \"false\""
+            },
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonightv7",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
             }
         }
     },
     {
-        "coin": "XTL",
+        "coin": "DERO",
         "servers": [
             {
-                "geo": "Low-End",
+                "geo": "Europe Giant BK-N+, RR-200",
                 "urls": [
-                    "stellite.herominers.com:10130"
+                    "dero.herominers.com:10120"
                 ]
             },
             {
-                "geo": "Mid range",
+                "geo": "Europe BK-N70, A8C",
                 "urls": [
-                    "stellite.herominers.com:10131"
+                    "dero.herominers.com:10121"
                 ]
             },
             {
-                "geo": "High-End",
+                "geo": "Europe DragonMint X1, A8",
                 "urls": [
-                    "stellite.herominers.com:10132"
+                    "dero.herominers.com:10122"
                 ]
             },
             {
-                "geo": "SSL",
+                "geo": "Europe NiceHash",
                 "urls": [
-                    "stellite.herominers.com:10134"
+                    "dero.herominers.com:10123"
+                ]
+            },
+            {
+                "geo": "Europe BK-N240",
+                "urls": [
+                    "dero.herominers.com:10124"
+                ]
+            },
+            {
+                "geo": "Europe DragonMint X2, A8+",
+                "urls": [
+                    "dero.herominers.com:10125"
+                ]
+            },
+            {
+                "geo": "Europe Antminer X3",
+                "urls": [
+                    "dero.herominers.com:10126"
+                ]
+            },
+            {
+                "geo": "Europe SSL",
+                "ssl_urls": [
+                    "dero.herominers.com:10127"
+                ]
+            },
+            {
+                "geo": "Canada Giant BK-N+, RR-200",
+                "urls": [
+                    "ca.dero.herominers.com:10120"
+                ]
+            },
+            {
+                "geo": "Canada BK-N70, A8C",
+                "urls": [
+                    "ca.dero.herominers.com:10121"
+                ]
+            },
+            {
+                "geo": "Canada DragonMint X1, A8",
+                "urls": [
+                    "ca.dero.herominers.com:10122"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.dero.herominers.com:10123"
+                ]
+            },
+            {
+                "geo": "Canada BK-N240",
+                "urls": [
+                    "ca.dero.herominers.com:10124"
+                ]
+            },
+            {
+                "geo": "Canada DragonMint X2, A8+",
+                "urls": [
+                    "ca.dero.herominers.com:10125"
+                ]
+            },
+            {
+                "geo": "Canada Antminer X3",
+                "urls": [
+                    "ca.dero.herominers.com:10126"
+                ]
+            },
+            {
+                "geo": "Canada SSL",
+                "ssl_urls": [
+                    "ca.dero.herominers.com:10127"
+                ]
+            },
+            {
+                "geo": "Asia Giant BK-N+, RR-200",
+                "urls": [
+                    "sg.dero.herominers.com:10120"
+                ]
+            },
+            {
+                "geo": "Asia BK-N70, A8C",
+                "urls": [
+                    "sg.dero.herominers.com:10121"
+                ]
+            },
+            {
+                "geo": "Asia DragonMint X1, A8",
+                "urls": [
+                    "sg.dero.herominers.com:10122"
+                ]
+            },
+            {
+                "geo": "Asia NiceHash",
+                "urls": [
+                    "sg.dero.herominers.com:10123"
+                ]
+            },
+            {
+                "geo": "Asia BK-N240",
+                "urls": [
+                    "sg.dero.herominers.com:10124"
+                ]
+            },
+            {
+                "geo": "Asia DragonMint X2, A8+",
+                "urls": [
+                    "sg.dero.herominers.com:10125"
+                ]
+            },
+            {
+                "geo": "Asia Antminer X3",
+                "urls": [
+                    "sg.dero.herominers.com:10126"
+                ]
+            },
+            {
+                "geo": "Asia SSL",
+                "ssl_urls": [
+                    "sg.dero.herominers.com:10127"
                 ]
             }
         ],
@@ -212,13 +1038,1091 @@
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/xtl\""
+                "user_config": "\"algo\": \"cryptonight/0\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/0\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/0\""
             },
             "xmr-stak": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"stellite\""
+                "user_config": "\"currency\": \"cryptonight\""
+            },
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%",
+                "claymore-x_user_config": ""
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "fork": "gm",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"keepalive\": \"true\"\n\"nicehash\": \"false\""
+            },
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XCASH",
+        "servers": [
+            {
+                "geo": "Europe CPU",
+                "urls": [
+                    "xcash.herominers.com:10490"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "urls": [
+                    "xcash.herominers.com:10491"
+                ]
+            },
+            {
+                "geo": "Europe Rigs",
+                "urls": [
+                    "xcash.herominers.com:10492"
+                ]
+            },
+            {
+                "geo": "Europe NiceHash",
+                "urls": [
+                    "xcash.herominers.com:10493"
+                ]
+            },
+            {
+                "geo": "Europe CPU",
+                "ssl_urls": [
+                    "xcash.herominers.com:10494"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "ssl_urls": [
+                    "xcash.herominers.com:10495"
+                ]
+            },
+            {
+                "geo": "Europe Rigs",
+                "ssl_urls": [
+                    "xcash.herominers.com:10496"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "urls": [
+                    "ca.xcash.herominers.com:10490"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "urls": [
+                    "ca.xcash.herominers.com:10491"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "urls": [
+                    "ca.xcash.herominers.com:10492"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.xcash.herominers.com:10493"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "ssl_urls": [
+                    "ca.xcash.herominers.com:10494"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "ssl_urls": [
+                    "ca.xcash.herominers.com:10495"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "ssl_urls": [
+                    "ca.xcash.herominers.com:10496"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "urls": [
+                    "sg.xcash.herominers.com:10490"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "urls": [
+                    "sg.xcash.herominers.com:10491"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "urls": [
+                    "sg.xcash.herominers.com:10492"
+                ]
+            },
+            {
+                "geo": "Asia NiceHash",
+                "urls": [
+                    "sg.xcash.herominers.com:10493"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "ssl_urls": [
+                    "sg.xcash.herominers.com:10494"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "ssl_urls": [
+                    "sg.xcash.herominers.com:10495"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "ssl_urls": [
+                    "sg.xcash.herominers.com:10496"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/double\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/double\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/double\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_v8_double\""
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnv8_dbl"
+            }
+        }
+    },
+    {
+        "coin": "XTNC",
+        "servers": [
+            {
+                "geo": "Low-End Cpu and Gpu",
+                "urls": [
+                    "xtendcash.herominers.com:10390"
+                ]
+            },
+            {
+                "geo": "Modern Cpu and Gpu",
+                "urls": [
+                    "xtendcash.herominers.com:10391"
+                ]
+            },
+            {
+                "geo": "Multi-Gpu Rigs and Higher",
+                "urls": [
+                    "xtendcash.herominers.com:10392"
+                ]
+            },
+            {
+                "geo": "Cloud-Mining / NiceHash",
+                "urls": [
+                    "xtendcash.herominers.com:10393"
+                ]
+            },
+            {
+                "geo": "SSL Connection - Low-End Cpu and Gpu",
+                "urls": [
+                    "xtendcash.herominers.com:10394"
+                ]
+            },
+            {
+                "geo": "SSL Connection - Modern Cpu and Gpu",
+                "urls": [
+                    "xtendcash.herominers.com:10395"
+                ]
+            },
+            {
+                "geo": "SSL Connection - Multi-Gpu Rigs and Higher",
+                "urls": [
+                    "xtendcash.herominers.com:10396"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-pico/trtl\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-pico/trtl\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-pico/trtl\""
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-turtle"
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_turtle\""
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-trtl"
+            }
+        }
+    },
+    {
+        "coin": "CCX",
+        "servers": [
+            {
+                "geo": "Europe CPU",
+                "urls": [
+                    "conceal.herominers.com:10360"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "urls": [
+                    "conceal.herominers.com:10361"
+                ]
+            },
+            {
+                "geo": "Europe Rigs",
+                "urls": [
+                    "conceal.herominers.com:10362"
+                ]
+            },
+            {
+                "geo": "Europe NiceHash",
+                "urls": [
+                    "conceal.herominers.com:10363"
+                ]
+            },
+            {
+                "geo": "Europe CPU",
+                "ssl_urls": [
+                    "conceal.herominers.com:10364"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "ssl_urls": [
+                    "conceal.herominers.com:10365"
+                ]
+            },
+            {
+                "geo": "Europe Rigs",
+                "ssl_urls": [
+                    "conceal.herominers.com:10366"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "urls": [
+                    "ca.conceal.herominers.com:10360"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "urls": [
+                    "ca.conceal.herominers.com:10361"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "urls": [
+                    "ca.conceal.herominers.com:10362"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.conceal.herominers.com:10363"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "ssl_urls": [
+                    "ca.conceal.herominers.com:10364"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "ssl_urls": [
+                    "ca.conceal.herominers.com:10365"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "ssl_urls": [
+                    "ca.conceal.herominers.com:10366"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "urls": [
+                    "sg.conceal.herominers.com:10360"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "urls": [
+                    "sg.conceal.herominers.com:10361"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "urls": [
+                    "sg.conceal.herominers.com:10362"
+                ]
+            },
+            {
+                "geo": "Asia NiceHash",
+                "urls": [
+                    "sg.conceal.herominers.com:10363"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "ssl_urls": [
+                    "sg.conceal.herominers.com:10364"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "ssl_urls": [
+                    "sg.conceal.herominers.com:10365"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "ssl_urls": [
+                    "sg.conceal.herominers.com:10366"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_conceal\""
+            }
+        }
+    },
+    {
+        "coin": "RYO",
+        "servers": [
+            {
+                "geo": "Low-End Cpu and Gpu",
+                "urls": [
+                    "ryo.herominers.com:10270"
+                ]
+            },
+            {
+                "geo": "Modern Cpu and Gpu",
+                "urls": [
+                    "ryo.herominers.com:10271"
+                ]
+            },
+            {
+                "geo": "Multi-Gpu Rigs and Higher",
+                "urls": [
+                    "ryo.herominers.com:10272"
+                ]
+            },
+            {
+                "geo": "Cloud-Mining / NiceHash",
+                "urls": [
+                    "ryo.herominers.com:10273"
+                ]
+            },
+            {
+                "geo": "SSL Connection",
+                "urls": [
+                    "ryo.herominers.com:10274"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-gpu\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-gpu\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-gpu\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"ryo\""
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-gpu"
+            }
+        }
+    },
+    {
+        "coin": "TRTL",
+        "servers": [
+            {
+                "geo": "Low-End Cpu and Gpu",
+                "urls": [
+                    "turtlecoin.herominers.com:10380"
+                ]
+            },
+            {
+                "geo": "Modern Cpu and Gpu",
+                "urls": [
+                    "turtlecoin.herominers.com:10381"
+                ]
+            },
+            {
+                "geo": "Multi-Gpu Rigs and Higher",
+                "urls": [
+                    "turtlecoin.herominers.com:10382"
+                ]
+            },
+            {
+                "geo": "Cloud-Mining / NiceHash",
+                "urls": [
+                    "turtlecoin.herominers.com:10383"
+                ]
+            },
+            {
+                "geo": "SSL Connection",
+                "urls": [
+                    "turtlecoin.herominers.com:10384"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-pico/trtl\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-pico/trtl\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-pico/trtl\""
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-turtle"
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_turtle\""
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-trtl"
+            }
+        }
+    },
+    {
+        "coin": "ARQ",
+        "servers": [
+            {
+                "geo": "Low-End Cpu and Gpu",
+                "urls": [
+                    "arqma.herominers.com:10320"
+                ]
+            },
+            {
+                "geo": "Modern Cpu and Gpu",
+                "urls": [
+                    "arqma.herominers.com:10321"
+                ]
+            },
+            {
+                "geo": "Multi-Gpu Rigs and Higher",
+                "urls": [
+                    "arqma.herominers.com:10322"
+                ]
+            },
+            {
+                "geo": "Cloud-Mining / NiceHash",
+                "urls": [
+                    "arqma.herominers.com:10323"
+                ]
+            },
+            {
+                "geo": "SSL Connection",
+                "urls": [
+                    "arqma.herominers.com:10324"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-lite/1\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-lite/1\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-lite/1\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight-aeonv7\""
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-lite-v7"
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-lite-v7"
+            }
+        }
+    },
+    {
+        "coin": "ETN",
+        "servers": [
+            {
+                "geo": "General Mining Port",
+                "urls": [
+                    "electroneum.herominers.com:10210"
+                ]
+            },
+            {
+                "geo": "High Difficulty Mining Port",
+                "urls": [
+                    "electroneum.herominers.com:10211"
+                ]
+            },
+            {
+                "geo": "Extra High Difficulty Mining Port",
+                "urls": [
+                    "electroneum.herominers.com:10212"
+                ]
+            },
+            {
+                "geo": "Cloud-Mining / NiceHash",
+                "urls": [
+                    "electroneum.herominers.com:10213"
+                ]
+            },
+            {
+                "geo": "SSL Connection",
+                "urls": [
+                    "electroneum.herominers.com:10214"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/0\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/0\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/0\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight\""
+            },
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%",
+                "claymore-x_user_config": ""
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "fork": "gm",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"keepalive\": \"true\"\n\"nicehash\": \"false\""
+            },
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "UPX",
+        "servers": [
+            {
+                "geo": "Europe CPU",
+                "urls": [
+                    "uplexa.herominers.com:10470"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "urls": [
+                    "uplexa.herominers.com:10471"
+                ]
+            },
+            {
+                "geo": "Europe Rigs",
+                "urls": [
+                    "uplexa.herominers.com:10472"
+                ]
+            },
+            {
+                "geo": "Europe NiceHash",
+                "urls": [
+                    "uplexa.herominers.com:10473"
+                ]
+            },
+            {
+                "geo": "Europe CPU",
+                "ssl_urls": [
+                    "uplexa.herominers.com:10474"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "ssl_urls": [
+                    "uplexa.herominers.com:10475"
+                ]
+            },
+            {
+                "geo": "Europe Rigs",
+                "ssl_urls": [
+                    "uplexa.herominers.com:10476"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "urls": [
+                    "ca.uplexa.herominers.com:10470"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "urls": [
+                    "ca.uplexa.herominers.com:10471"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "urls": [
+                    "ca.uplexa.herominers.com:10472"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.uplexa.herominers.com:10473"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "ssl_urls": [
+                    "ca.uplexa.herominers.com:10474"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "ssl_urls": [
+                    "ca.uplexa.herominers.com:10475"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "ssl_urls": [
+                    "ca.uplexa.herominers.com:10476"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "urls": [
+                    "sg.uplexa.herominers.com:10470"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "urls": [
+                    "sg.uplexa.herominers.com:10471"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "urls": [
+                    "sg.uplexa.herominers.com:10472"
+                ]
+            },
+            {
+                "geo": "Asia NiceHash",
+                "urls": [
+                    "sg.uplexa.herominers.com:10473"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "ssl_urls": [
+                    "sg.uplexa.herominers.com:10474"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "ssl_urls": [
+                    "sg.uplexa.herominers.com:10475"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "ssl_urls": [
+                    "sg.uplexa.herominers.com:10476"
+                ]
+            }
+        ],
+        "miners": {
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnv8_upx2"
+            },
+            "xmrig": {
+                "fork": "xmrigcc",
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-extremelite\/upx2"
+            },
+            "xmrig-amd": {
+                "fork": "xmrigcc",
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-extremelite\/upx2"
+            }
+        }
+    },
+    {
+        "coin": "XWP",
+        "servers": [
+            {
+                "geo": "Europe Low CPU",
+                "urls": [
+                    "swap.herominers.com:10440"
+                ]
+            },
+            {
+                "geo": "Europe CPU",
+                "urls": [
+                    "swap.herominers.com:10441"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "urls": [
+                    "swap.herominers.com:10442"
+                ]
+            },
+            {
+                "geo": "Europe Rigs",
+                "urls": [
+                    "swap.herominers.com:10443"
+                ]
+            },
+            {
+                "geo": "Europe Farm",
+                "urls": [
+                    "swap.herominers.com:10444"
+                ]
+            },
+            {
+                "geo": "Europe Low CPU",
+                "ssl_urls": [
+                    "swap.herominers.com:10445"
+                ]
+            },
+            {
+                "geo": "Europe CPU",
+                "ssl_urls": [
+                    "swap.herominers.com:10446"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "ssl_urls": [
+                    "swap.herominers.com:10447"
+                ]
+            },
+            {
+                "geo": "Europe Rigs",
+                "ssl_urls": [
+                    "swap.herominers.com:10448"
+                ]
+            },
+            {
+                "geo": "Europe Farm",
+                "ssl_urls": [
+                    "swap.herominers.com:10449"
+                ]
+            },
+            {
+                "geo": "Canada Low CPU",
+                "urls": [
+                    "ca.swap.herominers.com:10440"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "urls": [
+                    "ca.swap.herominers.com:10441"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "urls": [
+                    "ca.swap.herominers.com:10442"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "urls": [
+                    "ca.swap.herominers.com:10443"
+                ]
+            },
+            {
+                "geo": "Canada Farm",
+                "urls": [
+                    "ca.swap.herominers.com:10444"
+                ]
+            },
+            {
+                "geo": "Canada Low CPU",
+                "ssl_urls": [
+                    "ca.swap.herominers.com:10445"
+                ]
+            },
+            {
+                "geo": "Canada CPU",
+                "ssl_urls": [
+                    "ca.swap.herominers.com:10446"
+                ]
+            },
+            {
+                "geo": "Canada GPU",
+                "ssl_urls": [
+                    "ca.swap.herominers.com:10447"
+                ]
+            },
+            {
+                "geo": "Canada Rigs",
+                "ssl_urls": [
+                    "ca.swap.herominers.com:10448"
+                ]
+            },
+            {
+                "geo": "Canada Farm",
+                "ssl_urls": [
+                    "ca.swap.herominers.com:10449"
+                ]
+            },
+            {
+                "geo": "Asia Low CPU",
+                "urls": [
+                    "sg.swap.herominers.com:10440"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "urls": [
+                    "sg.swap.herominers.com:10441"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "urls": [
+                    "sg.swap.herominers.com:10442"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "urls": [
+                    "sg.swap.herominers.com:10443"
+                ]
+            },
+            {
+                "geo": "Asia Farm",
+                "urls": [
+                    "sg.swap.herominers.com:10444"
+                ]
+            },
+            {
+                "geo": "Asia Low CPU",
+                "ssl_urls": [
+                    "sg.swap.herominers.com:10445"
+                ]
+            },
+            {
+                "geo": "Asia CPU",
+                "ssl_urls": [
+                    "sg.swap.herominers.com:10446"
+                ]
+            },
+            {
+                "geo": "Asia GPU",
+                "ssl_urls": [
+                    "sg.swap.herominers.com:10447"
+                ]
+            },
+            {
+                "geo": "Asia Rigs",
+                "ssl_urls": [
+                    "sg.swap.herominers.com:10448"
+                ]
+            },
+            {
+                "geo": "Asia Farm",
+                "ssl_urls": [
+                    "sg.swap.herominers.com:10449"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "swap",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "cuckaroo_swap",
+                "url": "%URL%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            },
+            "grinprominer": {
+                "algo": "swap",
+                "url": "%URL%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
             }
         }
     }

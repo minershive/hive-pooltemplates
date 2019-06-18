@@ -65,15 +65,7 @@
             }
         ],
         "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers BgoldPoW"
-            }
+            "_prototype": "miners_zhash_btg"
         }
     },
     {
@@ -1073,44 +1065,6 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "XZC",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "europe.lyra2z-hub.miningpoolhub.com:20581"
-                ]
-            },
-            {
-                "geo": "USA (east)",
-                "urls": [
-                    "us-east.lyra2z-hub.miningpoolhub.com:20581"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia.lyra2z-hub.miningpoolhub.com:20581"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2z",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "pass": "x",
-                "miner": "tdxminer",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/tdxminer-0.2.2.2.tar.gz"
             }
         }
     },

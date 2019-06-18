@@ -41,21 +41,7 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_ethash_slash_email"
         }
     },
     {
@@ -100,70 +86,74 @@
             }
         ],
         "miners": {
+            "_prototype": "miners_ethash_slash_email",
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x",
                 "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
     {
-        "coin": "SC",
+        "coin": "RVN",
         "servers": [
             {
                 "geo": "EU",
                 "urls": [
-                    "sia-eu1.nanopool.org:7777",
-                    "sia-eu2.nanopool.org:7777"
+                    "rvn-eu1.nanopool.org:12222",
+                    "rvn-eu2.nanopool.org:12222"
                 ]
             },
             {
                 "geo": "US East",
                 "urls": [
-                    "sia-us-east1.nanopool.org:7777"
+                    "rvn-us-east1.nanopool.org:12222"
                 ]
             },
             {
                 "geo": "US West",
                 "urls": [
-                    "sia-us-west1.nanopool.org:7777"
+                    "rvn-us-west1.nanopool.org:12222"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "sia-asia1.nanopool.org:7777"
+                    "rvn-asia1.nanopool.org:12222"
                 ]
             },
             {
                 "geo": "Japan",
                 "urls": [
-                    "sia-jp1.nanopool.org:7777"
+                    "rvn-jp1.nanopool.org:12222"
                 ]
             },
             {
                 "geo": "Australia",
                 "urls": [
-                    "sia-au1.nanopool.org:7777"
+                    "rvn-au1.nanopool.org:12222"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "dcri": "15",
-                "dcoin": "sia",
-                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x"
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "ccalgo": "x16r",
+                "ccpass": "x"
+            },
+            "sgminer-gm": {
+                "fork": "avermore",
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
             }
         }
     },
@@ -290,11 +280,38 @@
                 "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
                 "user_config": "\"currency\": \"monero\""
             },
-            
             "xmrig": {
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "algo": "cryptonight-v8"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "algo": "cnv8"
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+                "algo": "cryptonight-v8"
             }
         }
     },
@@ -373,46 +390,120 @@
             {
                 "geo": "EU",
                 "urls": [
-                    "pasc-eu1.nanopool.org:15555",
-                    "pasc-eu2.nanopool.org:15555"
+                    "pasc-eu1.nanopool.org:15556",
+                    "pasc-eu2.nanopool.org:15556"
                 ]
             },
             {
                 "geo": "US East",
                 "urls": [
-                    "pasc-us-east1.nanopool.org:15555"
+                    "pasc-us-east1.nanopool.org:15556"
                 ]
             },
             {
                 "geo": "US West",
                 "urls": [
-                    "pasc-us-west1.nanopool.org:15555"
+                    "pasc-us-west1.nanopool.org:15556"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "pasc-asia1.nanopool.org:15555"
+                    "pasc-asia1.nanopool.org:15556"
                 ]
             },
             {
                 "geo": "Japan",
                 "urls": [
-                    "pasc-jp1.nanopool.org:15555"
+                    "pasc-jp1.nanopool.org:15556"
                 ]
             },
             {
                 "geo": "Australia",
                 "urls": [
-                    "pasc-au1.nanopool.org:15555"
+                    "pasc-au1.nanopool.org:15556"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "dcri": "30",
-                "dcoin": "pasc",
-                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%/%EMAIL%, PSW: x"
+            "finminer": {
+                "algo": "randomhash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
+            }
+        }
+    },
+    {
+        "coin": "GRIN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "grin29-eu1.nanopool.org:12111",
+                    "grin29-eu2.nanopool.org:12111"
+                ]
+            },
+            {
+                "geo": "US East",
+                "urls": [
+                    "grin29-us-east1.nanopool.org:12111"
+                ]
+            },
+            {
+                "geo": "US West",
+                "urls": [
+                    "grin29-us-west1.nanopool.org:12111"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "grin29-asia1.nanopool.org:12111"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "grin29-jp1.nanopool.org:12111"
+                ]
+            },
+            {
+                "geo": "Australia",
+                "urls": [
+                    "grin29-au1.nanopool.org:12111"
+                ]
+            }
+        ],
+        "miners": {
+            "bminer": {
+                "algo": "cuckaroo29",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "grin29",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "grinminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "gringoldminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "grinprominer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cuckaroo"
             }
         }
     }
