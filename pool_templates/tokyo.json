@@ -488,6 +488,44 @@
         }
     },
    {
+        "coin": "BNODE",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:8887"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.rig.tokyo:8887"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.rig.tokyo:8887"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "honeycomb",
+                "pass": "c=BNODE",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "honeycomb",
+                "pass": "c=BNODE",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+   {
         "coin": "LTFN",
         "servers": [
             {
