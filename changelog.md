@@ -1,3 +1,7 @@
+##### 0.6-53@190618 2019-06-18
+*   T-Rex v0.12.0 (added honeycomb algo)
+*   WildRig-Multi v0.17.6 (added skein2 algo, up to 6% faster blake2b-btcc and blake2b-glt)
+
 ##### 0.6-53@190617-2 2019-06-17
 *   KBminer: fixed startup with NVidia's backend enabled builds
 
