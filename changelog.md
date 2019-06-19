@@ -1,3 +1,12 @@
+##### 0.6-54@190619 2019-06-19
+*   added new tool `workername` to change rig name
+*   minor linux fixes
+*   CPUminer-opt v3.9.4 (faster AVX2 for lyra2v3, quark, anime; fixed skein AVX2 regression)
+*   CCminer-djm34 v1.1.20 (hashrate improvement up to 5%, bug fixes)
+*   Gminer-opt v1.46 BETA (added ZelCash Equihash 125/4, improved Grin29/Swap/AE)
+*   Sushi-Miner-CUDA v2.1.0 (improved performance)
+*   WildRig-Multi v0.17.7 (slightly improved different algorithms for Vega cards)
+
 ##### 0.6-53@190618 2019-06-18
 *   T-Rex v0.12.0 (added honeycomb algo)
 *   WildRig-Multi v0.17.6 (added skein2 algo, up to 6% faster blake2b-btcc and blake2b-glt)
