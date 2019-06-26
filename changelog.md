@@ -1,4 +1,4 @@
-##### 0.6-55@190627 2019-06-27
+##### 0.6-55@190626 2019-06-26
 *   nanominer v1.4.0 (added 'memTweak' option to control AMD GPU memory timings on Ethash algo, faster Ethash kernel on Vega/VII GPU)
 *   Sushi Miner CUDA v2.1.1 (hashrate improvement and minor bugfixes)
 *   CPUminer-opt v3.9.5 (new share reporting information scheme)
