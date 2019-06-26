@@ -2,7 +2,7 @@
 *   nanominer v1.4.0 (added 'memTweak' option to control AMD GPU memory timings on Ethash algo, faster Ethash kernel on Vega/VII GPU)
 *   Sushi Miner CUDA v2.1.1 (hashrate improvement and minor bugfixes)
 *   CPUminer-opt v3.9.5 (new share reporting information scheme)
-*   lolMiner v0.8.2 (added support for ZelHash for the hardfork ZEL)
+*   lolMiner v0.8.2 (added support for ZelHash for upcoming July 02 hardfork of ZEL)
 *   CCminer-djm34 v1.1.22 (solved issue which were causing lost of connection and/or connection with pool)
 *   WildRig-Multi v0.17.9 (fixed blake2b family, wildkeccak around 1% speed increase)
 
