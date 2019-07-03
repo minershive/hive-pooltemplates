@@ -187,6 +187,131 @@
 		}
 	},
 	{
+		"coin": "RYO",
+		"servers": [
+		    	{
+				"geo": "Europe",
+				"urls": [
+					"eu.gos.cx:4650"
+				]
+		    	},
+		    	{
+				"geo": "US/Canada",
+				"urls": [
+					"us.gos.cx:4650"
+				]
+		    	},
+			{
+				"geo": "Russia",
+				"urls": [
+					"ru.gos.cx:4650"
+				]
+			},
+			{
+				"geo": "Asia",
+				"urls": [
+			 		"asia.gos.cx:4650"
+				]
+		    	}
+
+		],
+		"miners": {
+			"cryptodredge": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "lyra2vc0ban",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "lyra2vc0ban",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "lyra2vc0ban",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"opencl-threads\" : \"2\""
+			}
+		}
+	},
+	{
+        	"coin": "DGB-SCRYPT",
+        	"servers": [
+		    	{
+				"geo": "Europe",
+				"urls": [
+					"eu.gos.cx:3438"
+				]
+		    	},
+		    	{
+				"geo": "US/Canada",
+				"urls": [
+					"us.gos.cx:3438"
+				]
+		    	},
+			{
+				"geo": "Russia",
+				"urls": [
+					"ru.gos.cx:3438"
+				]
+			},
+			{
+				"geo": "Asia",
+				"urls": [
+			 		"asia.gos.cx:3438"
+				]
+		    	}
+
+		],
+        	"miners": {
+            		"asicminer": {
+                		"url": "stratum+tcp://%URL%",
+				"pass": "x",
+                		"template": "%WAL%.%WORKER_NAME%"
+        		}
+        	}
+	},
+	{
+        	"coin": "DGB-SHA",
+        	"servers": [
+		    	{
+				"geo": "Europe",
+				"urls": [
+					"eu.gos.cx:3333"
+				]
+		    	},
+		    	{
+				"geo": "US/Canada",
+				"urls": [
+					"us.gos.cx:3333"
+				]
+		    	},
+			{
+				"geo": "Russia",
+				"urls": [
+					"ru.gos.cx:3333"
+				]
+			},
+			{
+				"geo": "Asia",
+				"urls": [
+			 		"asia.gos.cx:3333"
+				]
+		    	}
+
+		],
+        	"miners": {
+            		"asicminer": {
+                		"url": "stratum+tcp://%URL%",
+				"pass": "x",
+                		"template": "%WAL%.%WORKER_NAME%"
+        		}
+        	}
+	},
+	{
 		"coin": "GIN",
 		"servers": [
 			{
@@ -238,91 +363,54 @@
 		}
 	},
 	{
-		"coin": "LUX",
+		"coin": "VEIL",
 		"servers": [
 			{
 				"geo": "Europe",
 				"urls": [
-					"eu.gos.cx:8333"
+					"eu.gos.cx:4646"
 				]
 			},
 			{
 				"geo": "US/Canada",
 				"urls": [
-					"us.gos.cx:8333"
+					"us.gos.cx:4646"
 				]
 			},
 			{
 				"geo": "Russia",
 				"urls": [
-					"ru.gos.cx:8333"
+					"ru.gos.cx:4646"
 				]
 			},
 			{
 				"geo": "Asia",
 				"urls": [
-					"asia.gos.cx:8333"
+					"asia.gos.cx:4646"
 				]
 			}
 
 		],
 		"miners": {
-			"t-rex": {
+			"cryptodredge": {
 				"url": "stratum+tcp://%URL%",
-				"algo": "phi2",
+				"algo": "x16rt",
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
-			"teamredminer": {
+			"t-rex": {
 				"url": "stratum+tcp://%URL%",
-				"algo": "phi2",
+				"algo": "x16rt",
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x16rt",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"opencl-threads\" : \"2\""
 			}
-		}
-	},
-	{
-		"coin": "AGM",
-		"servers": [
-		    	{
-				"geo": "Europe",
-				"urls": [
-					"eu.gos.cx:8455"
-				]
-		    	},
-		    	{
-				"geo": "US/Canada",
-				"urls": [
-					"us.gos.cx:8455"
-				]
-		    	},
-			{
-				"geo": "Russia",
-				"urls": [
-					"ru.gos.cx:8455"
-				]
-			},
-			{
-				"geo": "Asia",
-				"urls": [
-			 		"asia.gos.cx:8455"
-				]
-		    	}
-
-		],
-		"miners": {
-			"t-rex": {
-				"url": "stratum+tcp://%URL%",
-				"algo": "phi2",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%"
-			},
-			"teamredminer": {
-				"url": "stratum+tcp://%URL%",
-				"algo": "phi2",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%"
-		   	}
 		}
 	},
 	{
@@ -416,51 +504,6 @@
         	}
     	},
 	{
-        	"coin": "PHL",
-        	"servers": [
-            		{
-				"geo": "Europe",
-				"urls": [
-					"eu.gos.cx:3645"
-				]
-            		},
-            		{
-				"geo": "US/Canada",
-				"urls": [
-					"us.gos.cx:3645"
-				]
-            },
-			{
-				"geo": "Russia",
-				"urls": [
-					"ru.gos.cx:3645"
-				]
-			},
-			{
-                		"geo": "Asia",
-                		"urls": [
-                    			"asia.gos.cx:3645"
-                		]
-            		}
-
-        	],
-        	"miners": {
-			"t-rex": {
-				"url": "stratum+tcp://%URL%",
-				"algo": "x16r",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%"
-			},
-			"wildrig-multi": {
-				"url": "stratum+tcp://%URL%",
-				"algo": "x16r",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"user_config": "\"opencl-threads\" : \"2\""
-			}
-        	}
-    	},
-	{
         	"coin": "RITO",
         	"servers": [
             		{
@@ -506,30 +549,30 @@
        		}
     	},
 	{
-        	"coin": "SUQA",
+        	"coin": "SIN",
         	"servers": [
             		{
 				"geo": "Europe",
 				"urls": [
-					"eu.gos.cx:3223"
+					"eu.gos.cx:3423"
 				]
             		},
             		{
 				"geo": "US/Canada",
 				"urls": [
-					"us.gos.cx:3223"
+					"us.gos.cx:3423"
 				]
             		},
 			{
 				"geo": "Russia",
 				"urls": [
-					"ru.gos.cx:3223"
+					"ru.gos.cx:3423"
 				]
 			},
 			{
                 		"geo": "Asia",
                 		"urls": [
-                   			"asia.gos.cx:3223"
+                   			"asia.gos.cx:3423"
                 		]
             		}
 
@@ -537,13 +580,13 @@
         	"miners": {
 			"t-rex": {
 				"url": "stratum+tcp://%URL%",
-				"algo": "x22i",
+				"algo": "x25x",
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
 			"wildrig-multi": {
 				"url": "stratum+tcp://%URL%",
-				"algo": "x22i",
+				"algo": "x25x",
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%",
 				"user_config": "\"opencl-threads\" : \"2\""
