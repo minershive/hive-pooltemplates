@@ -7,7 +7,7 @@
 *   lolMiner v0.8.3 (added 16 GByte solver for Cuckatoo31)
 *   CCminer-djm34 v1.1.23 (stability improvement)
 *   T-Rex v0.12.1 (improved MTP by 1-3% on some cards)
-*   gminer - fixed broken stats on some systems
+*   Gminer - fixed broken stats on some systems
 
 ##### 0.6-55@190626 2019-06-26
 *   nanominer v1.4.0 (added 'memTweak' option to control AMD GPU memory timings on Ethash algo, faster Ethash kernel on Vega/VII GPU)
