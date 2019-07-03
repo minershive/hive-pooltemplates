@@ -862,5 +862,27 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "SERO",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "sero.f2pool.com:4200"
+                ]
+            }
+        ],
+        "miners": {
+            "ethminer": {
+                "fork": "serominer",
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
