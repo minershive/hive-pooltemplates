@@ -1,0 +1,555 @@
+[
+
+   {
+      "pool": {
+         "name": "Tokyo Pool",
+         "url": "https://pool.rig.tokyo",
+         "fee": 1,
+         "type": "PROP"
+         }
+   },
+    {
+        "coin": "GIN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:3637"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.rig.tokyo:3637"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.rig.tokyo:3637"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16rt",
+                "pass": "c=GIN,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16rt",
+                "pass": "c=GIN,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16rt",
+                "pass": "c=GIN,%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            },
+            "TeamRedMiner": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16rt",
+                "pass": "c=GIN,%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "VTC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:4550"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.rig.tokyo:4550"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.rig.tokyo:4550"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2v3",
+                "pass": "c=VTC,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2v3",
+                "pass": "c=VTC,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2v3",
+                "pass": "c=VTC,%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            },
+            "TeamRedMiner": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2v3",
+                "pass": "c=VTC,%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+    },
+     {
+        "coin": "SPDR",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:8334"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "eu.rig.tokyo:8334"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.rig.tokyo:8334"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "phi2",
+                "pass": "c=SPDR,%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config":"-R 1"
+            },
+            "TeamRedMiner": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "phi2",
+                "pass": "c=SPDR,%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+      },
+    {
+        "coin": "BITC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:8001"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.rig.tokyo:8001"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.rig.tokyo:8001"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=BITC,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=BITC,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=BITC,%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+    {
+            "coin": "BSTY",
+               "servers": [
+                  {
+                     "geo": "Europe",
+                     "urls": [ "eu.rig.tokyo:6233" ]
+                  },
+                  {
+                     "geo": "Asia",
+                     "urls": [ "asia.rig.tokyo:6233" ]
+                  },
+                  {
+                     "geo": "USA",
+                     "urls": [ "us.rig.tokyo:6233" ]
+                  }
+               ],
+               "miners": {
+                  "ccminer": {
+                     "fork": "klaust-yescrypt",
+                     "url": "stratum+tcp://%URL%",
+                     "algo": "yescrypt",
+                     "pass": "c=BSTY,%WORKER_NAME%",
+                     "template": "%WAL%"
+                  },
+                  "cpuminer-opt": {
+                     "url": "stratum+tcp://%URL%",
+                     "algo": "yescrypt",
+                     "pass": "c=BSTY,%WORKER_NAME%",
+                     "template": "%WAL%"
+                  }
+               }
+   },
+   {
+        "coin": "c0ban",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:4563"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.rig.tokyo:4563"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.rig.tokyo:4563"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "lyra2vc0ban",
+                "pass": "c=RYO,%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+   },
+   {
+        "coin": "XRD",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:3636"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.rig.tokyo:3636"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.rig.tokyo:3636"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=XRD,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=XRD,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=XRD,%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+   {
+        "coin": "PHL",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:8636"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.rig.tokyo:8636"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.rig.tokyo:8636"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=PHL,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=PHL,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=PHL,%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+   {
+        "coin": "SUQA",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:3223"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.rig.tokyo:3223"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.rig.tokyo:3223"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x22i",
+                "pass": "c=SUQA,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x22i",
+                "pass": "c=SUQA,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x22i",
+                "pass": "c=SUQA,%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+   {
+        "coin": "SIN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:3253"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.rig.tokyo:3253"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.rig.tokyo:3253"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x25x",
+                "pass": "c=SIN,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x22i",
+                "pass": "c=SIN,%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+   {
+        "coin": "GENIX",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:3639"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=GENIX,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=GENIX,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=GENIX,%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+   {
+        "coin": "VELES x16r",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:3640"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=VLS,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=VLS,%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=VLS,%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+   {
+        "coin": "BNODE",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:8887"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.rig.tokyo:8887"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.rig.tokyo:8887"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "honeycomb",
+                "pass": "c=BNODE",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "honeycomb",
+                "pass": "c=BNODE",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+   {
+        "coin": "LTFN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.rig.tokyo:6343"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+               "fork": "klaust-yescrypt",
+               "url": "stratum+tcp://%URL%",
+               "algo": "yescryptr32",
+               "pass": "c=LTFN,%WORKER_NAME%",
+               "template": "%WAL%"
+            },
+            "cpuminer-opt": {
+               "url": "stratum+tcp://%URL%",
+               "algo": "yescrypt",
+               "algo": "yescryptr32",
+               "pass": "c=LTFN,%WORKER_NAME%",
+               "template": "%WAL%"
+            }
+        }
+    }
+]

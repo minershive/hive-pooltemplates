@@ -1,22 +1,22 @@
 [
     {
-        "coin": "ETH",
+        "coin": "EGEM",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "CA PPLNS",
                 "urls": [
-                    "eu.ethget.net:8008"
+                    "egem.protonmine.com:8008"
                 ]
             }
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allpools 0"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1\n-allpools 1\n-gser 2"
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 0,
+                "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",

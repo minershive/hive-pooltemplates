@@ -1,0 +1,41 @@
+[
+    {
+        "pool": {
+            "name": "UUPool",
+            "url": "https://uupool.cn/",
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "VOLLAR",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "vds.uupool.cn:13032"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "vds-eu.uupool.cn:13032"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "vds",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "kbminer": {
+                "algo": "vds",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--checkdifficulty"
+            }
+        }
+    }
+]
