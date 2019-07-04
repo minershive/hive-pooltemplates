@@ -1,3 +1,8 @@
+##### 0.6-56@190704 2019-07-04
+*   Gminer v1.49 (fixed bug in v1.48 with Beam mining on GTX 1060 3GB, improved in v1.48 performance for EQ 150/5 and EQ 125/4 algorithms on RTX cards)
+*   TeamRedMiner v0.5.3 (added support of MTP algo, small stabilization fixes for CN variants)
+*   miniZ - fixed config generation
+
 ##### 0.6-56@190703 2019-07-03
 *   fixed `nvidia-info` tool (added current PL and fixed displaying default PL)
 *   nanominer v1.4.1 (fixed SSL connection with miningpoolhub, fixed calling amdmemtweaktool)
