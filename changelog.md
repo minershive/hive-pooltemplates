@@ -1,3 +1,7 @@
+##### 0.6-56@190705 2019-07-05
+*   Gminer v1.50 (fixed performance regression for BEAM)
+*   CryptoDredge v0.20.2 (improved argon2d-nim, improved x16-like algos, bug fixes)
+
 ##### 0.6-56@190704 2019-07-04
 *   Gminer v1.49 (fixed bug in v1.48 with Beam mining on GTX 1060 3GB, improved in v1.48 performance for EQ 150/5 and EQ 125/4 algorithms on RTX cards)
 *   TeamRedMiner v0.5.3 (added support of MTP algo, small stabilization fixes for CN variants)
