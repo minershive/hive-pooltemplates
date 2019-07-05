@@ -144,6 +144,7 @@ algos | `string[]` or `object` |  | Supported algorithms list.<br>This can be ei
 dalgos | `string[]` or `object` |  | Supported algorithms list for dual mining.<br>This can be either a simple array of strings or an object where keys are algos and values are display names.
 forks | `string[]` or `object` |  | Available forks list.<br>This can be either a simple array of strings or an object where keys are forks and values are display names.
 algomap | `object` |  | Algorithms matching.<br>Keys are miner's algos and values are Hive's algos.
+fork_algo| `object` |  | Algorithms for forks.<br>Keys are fork names, values are algos.
 
 
 # Changelog for Hive 2.0
