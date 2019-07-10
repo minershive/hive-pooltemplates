@@ -1,3 +1,12 @@
+##### 0.6-57@190710 2019-07-10
+*   Fixed `hssh` for PXE boot
+*   TeamRedMiner v0.5.5 (added cuckatoo31 algo for grin; v0.5.4: fixed API bug for MTP, small MTP improvements)
+*   lolMiner v0.8.4 (fixed a 0 sol/s issue for ZEL, reduced EQ 125/4 memory usage to 2.9G, fixed a bug with the stratum for 125/4, 144/5, 192/7 and 96/5 in case the pool sends a very low job id)
+*   RHminer v1.5.3 (added internal cpu throttlin, fixed duplicate shares)
+*   nanominer v1.5.0 (added support for Grin's upcoming hardfork to Cuckarood29 algo, added support 6G+ Nvidia on Cuckaroo29/Cuckarood29, improved randomhash)
+*   Sushi Miner (CUDA/OCL): fixed stats
+*   CryptoDredge: fix config generation
+
 ##### 0.6-56@190705 2019-07-05
 *   Gminer v1.50 (fixed performance regression for BEAM)
 *   CryptoDredge v0.20.2 (improved argon2d-nim, improved x16-like algos, bug fixes)
