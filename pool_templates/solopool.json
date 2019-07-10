@@ -1,50 +1,5 @@
 [
     {
-        "coin": "YOC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s1.solopool.org:8003"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            }
-        }
-    },
-    {
         "coin": "UBQ",
         "servers": [
             {
@@ -466,51 +421,6 @@
         }
     },
     {
-        "coin": "NILU",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s2.solopool.org:8003"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            }
-        }
-    },
-    {
         "coin": "ESN",
         "servers": [
             {
@@ -697,96 +607,6 @@
                 "geo": "EU",
                 "urls": [
                     "s2.solopool.org:8009"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            }
-        }
-    },
-    {
-        "coin": "ATH",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s2.solopool.org:8010"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            }
-        }
-    },
-    {
-        "coin": "AKA",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s2.solopool.org:8013"
                 ]
             }
         ],
@@ -1131,17 +951,8 @@
             }
         ],
         "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers ZelProof"
-            },
             "gminer": {
-                "algo": "144_5",
+                "algo": "125_4",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x",
