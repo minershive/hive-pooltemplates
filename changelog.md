@@ -1,5 +1,5 @@
 ##### 0.6-57@190716-2 2019-07-16
-*   lolMiner v0.8.5 (added support Grin29 hardfork: use GRIN-AD29)
+*   lolMiner v0.8.5 (added support Grin29 hardfork for AMD 4G/8G cards: use GRIN-AD29)
 *   NBMiner: workaround for v24.1 with GRIN-29 hardfork
 
 ##### 0.6-57@190716 2019-07-16
