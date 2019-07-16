@@ -1,3 +1,7 @@
+##### 0.6-57@190716-2 2019-07-16
+*   lolMiner v0.8.5 (added support Grin29 hardfork)
+*   NBMiner: workaround for v24.1 with GRIN-29 hardfork
+
 ##### 0.6-57@190716 2019-07-16
 *   CPUminer-opt v3.9.5.4 (fixed hodl with aes-sse42, fixed sha256q with avx2, fixed skein2 buffer overflow)
 *   Gminer v1.51 (added support Grin29 hardfork to Cuckarood29: use grin29 for autoswith to new algo, added BeamHashII algo for BEAM hardfork: use beamhash to autoswitch to new algo)
