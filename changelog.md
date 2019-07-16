@@ -2,7 +2,7 @@
 *   CPUminer-opt v3.9.5.4 (fixed hodl with aes-sse42, fixed sha256q with avx2, fixed skein2 buffer overflow)
 *   Gminer v1.51 (added support Grin29 hardfork to Cuckarood29: use grin29 for autoswith to new algo, added BeamHashII algo for BEAM hardfork: use beamhash to autoswitch to new algo)
 *   NBMiner v24.1 (added support Grin29 hardfork, improved performance on Grin29 & AE, added support for mining SERO)
-*   lolMiner: fix displaying EQ 125/4
+*   lolMiner: fix displaying EQ 125/4 in dashboard
 
 ##### 0.6-57@190710 2019-07-10
 *   Fixed `hssh` for PXE boot
