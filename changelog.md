@@ -3,7 +3,7 @@
 *   NanoMiner v1.5.2 (fixed Cuckarood29 issue on AMD)
 *   NBMiner v24.2 (fixed Cuckarood29 autoswitch)
 *   Bminer v15.7.1 (improved Cuckaroo29d algo)
-*   GrinGoldMiner v3.0 (CPU&CUDA updated for PoW hardfork to Cuckarood29)
+*   GrinGoldMiner v3.0 (CPU&CUDA updated PoW hardfork to Cuckarood29)
 *   GrinMiner v2.0.0 (added support GRIN hardfork to cuckarood29 algo)
 
 ##### 0.6-57@190716-2 2019-07-16
