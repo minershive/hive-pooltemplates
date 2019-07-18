@@ -1,3 +1,12 @@
+##### 0.6-58@190718 2019-07-18
+*   CPUminer-opt v3.9.6 (added algos: bmw512, x16rt, x16rt-veil, x13bcd)
+*   NanoMiner v1.5.2 (fixed Cuckarood29 issue on AMD)
+*   NBMiner v24.2 (fixed Cuckarood29 autoswitch)
+*   NanoMiner v1.5.2 (fixed Cuckarood29 issue on AMD)
+*   Bminer v15.7.1 (improved Cuckaroo29d algo)
+*   GrinGoldMiner v3.0 (CPU&CUDA updated for PoW hardfork to Cuckarood29)
+*   GrinMiner v2.0.0 (added support GRIN hardfork to cuckarood29 algo)
+
 ##### 0.6-57@190716-2 2019-07-16
 *   lolMiner v0.8.5 (added support Grin29 hardfork for AMD 4G/8G cards: use GRIN-AD29)
 *   NBMiner: workaround for v24.1 with GRIN-29 hardfork
