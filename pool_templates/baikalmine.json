@@ -595,5 +595,47 @@
                 "user_config": "--pers GENX_PoW"
             }
         }
+    },
+    {
+        "coin": "YEC",
+        "servers": [
+            {
+                "geo": "LOW DIFF",
+                "urls": [
+                    "yec.baikalmine.com:1205"
+                ]
+            },
+            {
+                "geo": "HIGH DIFF",
+                "urls": [
+                    "yec.baikalmine.com:1207"
+                ]
+            },
+            {
+                "geo": "SOLO",
+                "urls": [
+                    "yec-solo.baikalmine.com:1105"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "192_7",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers auto"
+            },
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers auto"
+            }
+        }
     }
 ]
