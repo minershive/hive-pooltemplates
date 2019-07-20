@@ -40,7 +40,7 @@ Available miners:
 - cryptodredge - multi algo CUDA miner (NVidia)
 - teamredminer - lyra2z/lyra2v3/phi2/cryptonight-r/v7/v8/half/double/rwz/trtl OpenCL miner (AMD)
 - phoenixminer - ethash miner (AMD/NVidia)
-- t-rex - multi algo CUDA miner (NVidia)
+- trex - T-Rex multi algo CUDA miner (NVidia)
 - cpuminer-opt - cpuminer-opt (CPU miner)
 - wildrig-multi - multi-algo OpenCL miner (AMD)
 - finminer - ethash, randomhash miner (AMD/NVidia/CPU)
@@ -54,8 +54,16 @@ Available miners:
 - grinpro - improved version of grinminer (AMD/NVidia)
 - nbminer - ETH, BTM, Cuckoo miner (NVidia)
 - hspminerae - CUDA AE miner (NVidia)
-- kbminer - AE/Cuckaroo29/Cuckatoo31 miner (AMD/NVidia)
+- kbminer - AE/Cuckaroo29/Cuckatoo31/VDS miner (AMD/NVidia)
 - zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
+- eggminergpu - CUDA/OpenCL miner for BIS - Bismuth coin on Eggpool (AMD/Nvidia)
+- miniz - CUDA Equihash variants miner (Nvidia)
+- noncepool-amd - OpenCL miner for BIS - Bismuth coin on Noncepool (AMD)
+- noncepool-cuda - CUDA miner for BIS - Bismuth coin on Noncepool (Nvidia)
+- sushi-miner-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
+- sushi-miner-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
+- noncerpro-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
+- noncerpro-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
 - custom - Custom miner package
 
 
