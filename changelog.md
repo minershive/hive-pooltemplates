@@ -1,3 +1,12 @@
+##### 0.6-58@190720 2019-07-20
+*   CPUminer-opt v3.9.6.1 (added new algos: x21s, hex)
+*   Bminer v15.7.2 (related to cuckaroo29d: improved the stability, reduced the CPU usage, added 5G solver)
+*   Gminer v1.52 (improved performance for EQ 144/5 and 192/7 on RTX cards)
+*   PhoenixMiner v4.5b (improved stability of Nvidia kernels, added support latest AMD drivers up to v19.30, added advanced hardware monitoring, increased the maximum supported DAG epoch to 450, fixed the devfee pools for some of the alternative coins)
+*   XMRig v2.16.0-beta (added support RandomWOW, please select version in FS/miner config)
+*   NEW XMRig-SChernykh v2.15.4-beta2 (as xmrig fork schernykh, for RandomWOW algo)
+*   Claymore's Dual ETH Miner - fixed DAG loading on 4G card for ETC/ETH
+
 ##### 0.6-58@190718 2019-07-18
 *   CPUminer-opt v3.9.6 (added algos: bmw512, x16rt, x16rt-veil, x13bcd)
 *   NanoMiner v1.5.2 (fixed Cuckarood29 issue on AMD)
