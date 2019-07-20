@@ -9,21 +9,9 @@
                 ]
             },
             {
-                "geo": "POOL NH",
-                "urls": [
-                    "b2g.crazypool.org:7651"
-                ]
-            },
-            {
                 "geo": "SOLO RIG",
                 "urls": [
                     "solo-b2g.crazypool.org:7450"
-                ]
-            },
-            {
-                "geo": "SOLO NH",
-                "urls": [
-                    "solo-b2g.crazypool.org:7451"
                 ]
             }
         ],
@@ -56,21 +44,9 @@
                 ]
             },
             {
-                "geo": "POOL NH",
-                "urls": [
-                    "etc.crazypool.org:7551"
-                ]
-            },
-            {
                 "geo": "SOLO RIG",
                 "urls": [
                     "solo-etc.crazypool.org:8010"
-                ]
-            },
-            {
-                "geo": "SOLO NH",
-                "urls": [
-                    "solo-etc.crazypool.org:8011"
                 ]
             }
         ],
@@ -94,18 +70,53 @@
         }
     },
 	{
-        "coin": "ETHO",
+        "coin": "MOAC",
         "servers": [
             {
                 "geo": "POOL RIG",
                 "urls": [
-                    "etho.crazypool.org:7750"
+                    "moac.crazypool.org:7003"
                 ]
             },
             {
-                "geo": "POOL NH",
+                "geo": "SOLO RIG",
                 "urls": [
-                    "etho.crazypool.org:7751"
+                    "solo-moac.crazypool.org:7004"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 3"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
+        "coin": "PIRL",
+        "servers": [
+            {
+                "geo": "POOL RIG",
+                "urls": [
+                    "pirl.crazypool.org:7001"
+                ]
+            },
+            {
+                "geo": "SOLO RIG",
+                "urls": [
+                    "solo-pirl.crazypool.org:7002"
                 ]
             }
         ],
