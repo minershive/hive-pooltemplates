@@ -5,7 +5,7 @@
 *   PhoenixMiner v4.5b (improved stability of Nvidia kernels, added support latest AMD drivers up to v19.30, added advanced hardware monitoring, increased the maximum supported DAG epoch to 450, fixed the devfee pools for some of the alternative coins)
 *   XMRig v2.16.0-beta (added support RandomWOW, please select version in FS/miner config)
 *   NEW XMRig-SChernykh v2.15.4-beta2 (as xmrig fork schernykh, for RandomWOW algo)
-*   Claymore's Dual ETH Miner - fixed DAG loading on 4G card for ETC/ETH
+*   Claymore's Dual ETH Miner - fixed DAG loading on AMD 4G cards for ETC/ETH when GUI enabled
 
 ##### 0.6-58@190718 2019-07-18
 *   CPUminer-opt v3.9.6 (added algos: bmw512, x16rt, x16rt-veil, x13bcd)
