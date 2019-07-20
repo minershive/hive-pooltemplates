@@ -1,6 +1,6 @@
 ##### 0.6-58@190720-2 2019-07-20
-*   XMRig (some cleanup and reduced default devfee to 1%)
-*   XMRig-SChernykh v2.15.4-beta2 (fixed syntax of global config file)
+*   XMRig: some cleanup and reduced default devfee to 1%
+*   XMRig-SChernykh: fixed syntax of global config file
 
 ##### 0.6-58@190720 2019-07-20
 *   CPUminer-opt v3.9.6.1 (added new algos: x21s, hex)
