@@ -1045,5 +1045,67 @@
                 "pass": "%WORKER_NAME%"
             }
         }
-    }
+    },
+    {
+        "coin": "CCX",
+        "servers": [
+            {
+                "geo": "Low-end",
+                "urls": [
+                    "pool.conceal.hashvault.pro:3333"
+                ]
+            },
+            {
+                "geo": "Mid-range",
+                "urls": [
+                    "pool.conceal.hashvault.pro:5555"
+                ]
+            },
+            {
+                "geo": "High-end",
+                "urls": [
+                    "pool.conceal.hashvault.pro:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_conceal\""
+            }
+        }
+	},
+    {
+        "coin": "WOW",
+        "servers": [
+            {
+                "geo": "Low-end",
+                "urls": [
+                    "pool.wownero.hashvault.pro:3333"
+                ]
+            },
+            {
+                "geo": "Mid-range",
+                "urls": [
+                    "pool.wownero.hashvault.pro:5555"
+                ]
+            },
+            {
+                "geo": "High-end",
+                "urls": [
+                    "pool.wownero.hashvault.pro:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"randomx/wow\""
+            }
+        }
+	}
 ]
