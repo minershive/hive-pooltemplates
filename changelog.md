@@ -1,5 +1,5 @@
 ##### 0.6-58@190721 2019-07-21
-*   TeamRedMiner v0.5.6 (MTP improvements up to 3%)
+*   TeamRedMiner v0.5.6 (MTP algo improvements up to +3%)
 
 ##### 0.6-58@190720-2 2019-07-20
 *   XMRig: some cleanup and reduced default devfee to 1%
