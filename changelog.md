@@ -1,3 +1,7 @@
+##### 0.6-58@190722 2019-07-22
+*   Bminer v15.7.3 (improved performance cuckaroo29d)
+*   XMR-Stak v2.10.6 (fix cryptonight_v8 and derived pows)
+
 ##### 0.6-58@190721 2019-07-21
 *   TeamRedMiner v0.5.6 (MTP algo improvements up to +3%)
 
