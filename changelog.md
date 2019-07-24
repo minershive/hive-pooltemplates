@@ -1,3 +1,10 @@
+##### 0.6-58@190724 2019-07-24
+*   Bminer v15.7.4 (improved performance cuckaroo29d/AE, added 4G solver for cuckaroo29d)
+*   SGminer-djm34 v0.1.2 (improved hashrate)
+*   CCminer-djm34 v1.1.24 (better handling pool connection, solve various crash problem due to pool sending empty data, sliglty improved speed on 20x cards)
+*   ETHminer v0.18.0 (Release, CUDA 10.0 build)
+*   Fixed issue XMR-Stak v2.10.6 with stable image
+
 ##### 0.6-58@190722 2019-07-22
 *   Bminer v15.7.3 (improved performance cuckaroo29d)
 *   XMR-Stak v2.10.6 (fix cryptonight_v8 and derived pows)
