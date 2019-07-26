@@ -2,7 +2,7 @@
 *   Gminer v1.53 (improved performance for EQ 144/5 and 192/7 on RTX cards)
 *   CCminer-djm34 v1.1.25 (stability improvement)
 *   CCminer-enemy/Z-Enemy v2.1 (performance improvements: +4-5% most algos: x16r/x16s/x17/hex/bitcore/bcd)
-*   XMRig v2.99.1-beta (added randomx/loki support)
+*   XMRig v2.99.1-beta (added randomx/loki support. Notice: since this is a beta version, you must directly select the version of the miner in the flight list / miner settings)
 
 ##### 0.6-58@190724 2019-07-24
 *   Bminer v15.7.4 (improved performance cuckaroo29d/AE, added 4G solver for cuckaroo29d)
