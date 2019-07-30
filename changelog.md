@@ -3,7 +3,7 @@
 *   Bminer v15.7.6 (improved the performance of the miner of Cuckatoo31, increased the dynamic ranges of -intensity)
 *   PhoenixMiner v4.5c (fixed issue with ProgPOW BCI mining on Nvidia RTX20x0 and GTX16x0 cards)
 *   CCminer-djm34 v1.1.26 (stability improvement: rearrange how the cards are assigned to thread)
-*   XMRig v2.99.3-beta (as replace for v2.99.1-beta: fixed hwloc auto configuration on AMD FX CPUs, added NUMA support via hwloc, fixed miner freeze when switch between RandomX variants, fixed dataset initialization speed. Notice: since this is a beta version, you must directly select the v**2.99.1-beta** of the miner in the flight list / miner settings)
+*   XMRig v2.99.3-beta (as replace for v2.99.1-beta: fixed hwloc auto configuration on AMD FX CPUs, added NUMA support via hwloc, fixed miner freeze when switch between RandomX variants, fixed dataset initialization speed. Notice: since this is a beta version, you must directly select the v2.99.1-beta of the miner in the flight list / miner settings)
 
 ##### 0.6-58@190725 2019-07-25
 *   Gminer v1.53 (improved performance for EQ 144/5 and 192/7 on RTX cards)
