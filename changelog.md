@@ -1,5 +1,5 @@
 ##### 0.6-59@190730 2019-07-30
-*   Nvidia OC fix (fix OC for GTX 16xx and RTX 20xx cards)
+*   Nvidia OC fix for GTX 16xx and RTX 20xx cards (still no fan control for RTX)
 *   Bminer v15.7.6 (improved the performance of the miner of Cuckatoo31, increased the dynamic ranges of -intensity)
 *   PhoenixMiner v4.5c (fixed issue with ProgPOW BCI mining on Nvidia RTX20x0 and GTX16x0 cards)
 *   CCminer-djm34 v1.1.26 (stability improvement: rearrange how the cards are assigned to thread)
