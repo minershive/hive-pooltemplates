@@ -2,7 +2,7 @@
 *   NanoMiner v1.5.3 (fixed issue with Nvidia devices not shown on nanominer -d output)
 *   CCminer v3.9.6.2 (added new algo blake2b, faster myr-gr on Ryzen using SHA, faster blake2s SSE2, small speedup of around 1% for several other algos)
 *   XMRig fork: XMRigCC v1.95 (integrated algos: cn-conceal, argon2-512 "chukwa", argon2-256 "chukwa-wrkz")
-*   XMR-Stak 2.10.7 (fixed Nvidia critical bug, optimize VEGA auto suggestion, fixed remove unsupported currencies: turtlecoin, xcash, loki)
+*   XMR-Stak 2.10.7 (fixed Nvidia critical bug, optimize VEGA auto suggestion, removed unsupported currencies: turtlecoin, xcash, loki)
 
 ##### 0.6-59@190730 2019-07-30
 *   Nvidia OC fix for GTX 16xx and RTX 20xx cards (still no fan control for RTX)
