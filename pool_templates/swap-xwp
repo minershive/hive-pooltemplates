@@ -1,0 +1,49 @@
+[
+    {
+        "coin": "XWP",
+        "servers": [
+            {
+                "geo": "RU (East Europe) Low end hardware",
+                "urls": [
+                    "xwp.swap-xwp.com:33022"
+                ]
+            },
+            {
+                "geo": "RU (East Europe) High end hardware",
+                "urls": [
+                    "swap-xwp.com:33044"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "swap",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "nbminer": {
+                "algo": "cuckaroo_swap",
+                "url": "%URL%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            },
+            "grinprominer": {
+                "algo": "swap",
+                "url": "%URL%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "algo": "cuckatoo31_grin",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            }
+        }
+    }
+]
