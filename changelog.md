@@ -1,3 +1,16 @@
+0.6-60@190805 2019-08-05
+*   `net-test` added ping and responce times
+*   added more accurate LA checks to watchdog (prevent reboots on short LA peaks)
+*   fixed exit code `amd-oc` and `nvidia-oc`
+*   `selfupgrade` has new option `--force option` (force update of HiveOS in situations when `selfupgrade` says Hive is up to date but this is not true)
+*   WildRig-Multi v0.19.1 (added glt-globalhash, glt-hex algos, implemented GPUs monitoring)
+*   CPUminer-opt v3.9.7 (new parameters for yescrypt/yespower algos - param-n, param-r, param-key)
+*   T-Rex v0.13.0 (added tensority algorithm, added dedal algorithm back, added SSL support)
+*   XMRig v2.99.4-beta (as replace for v2.99.1-beta: fixed compatibility with hwloc 1.10.x, optimized RandomX initialization and switching, fixed rare crash when re-initialize dataset)
+*   CCminer-djm34 v1.2.0 (better handling of eventual packet losses)
+*   *NEW* CCminer-xaya v0.1 (ccminer fork which support neoscrypt-xaya algo)
+*   *NEW* TT-Miner 3.0.0 (Nvidia miner supported algos: Ethash,Lyra2Rev3,MTP,Myr-Gr,ProgPoW variants,TetHashV1,UbqHash)
+
 ##### 0.6-59@190802 2019-08-02
 *   NanoMiner v1.5.3 (fixed issue with Nvidia devices not shown on nanominer -d output)
 *   CCminer v3.9.6.2 (added new algo blake2b, faster myr-gr on Ryzen using SHA, faster blake2s SSE2, small speedup of around 1% for several other algos)
