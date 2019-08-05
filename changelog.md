@@ -2,7 +2,7 @@
 *   `net-test` added ping and responce times
 *   added more accurate LA checks to watchdog (prevent reboots on short LA peaks)
 *   fixed exit code `amd-oc` and `nvidia-oc`
-*   `selfupgrade` has new option `--force` option (force update of HiveOS in situations when `selfupgrade` says Hive is up to date but this is not true)
+*   `selfupgrade` has new option `--force` option (force update of HiveOS in situations when `selfupgrade` says "Hive is up to date" but this is not true)
 *   WildRig-Multi v0.19.1 (added glt-globalhash, glt-hex algos, implemented GPUs monitoring)
 *   CPUminer-opt v3.9.7 (new parameters for yescrypt/yespower algos - param-n, param-r, param-key)
 *   T-Rex v0.13.0 (added tensority algorithm, added dedal algorithm back, added SSL support)
