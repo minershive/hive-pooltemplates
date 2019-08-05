@@ -1,4 +1,4 @@
-0.6-60@190805 2019-08-05
+##### 0.6-60@190805 2019-08-05
 *   `net-test` added ping and responce times
 *   added more accurate LA checks to watchdog (prevent reboots on short LA peaks)
 *   fixed exit code `amd-oc` and `nvidia-oc`
