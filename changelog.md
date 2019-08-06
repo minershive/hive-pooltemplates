@@ -1,3 +1,8 @@
+##### 0.6-60@190806 2019-08-06
+*   T-Rex v0.13.1 (bug fixes: tensority max nonce for BTM, "Unregistered stratum method" error on some pools)
+*   TeamRedMiner v0.5.7 (added support cn-conceal and cuckarood algos)
+*   TT-Miner v3.0.1 (bug fix: hashrate reporting; small fixes Hive control scripts)
+
 ##### 0.6-60@190805 2019-08-05
 *   `net-test` added ping and responce times
 *   added more accurate LA checks to watchdog (prevent reboots on short LA peaks)
