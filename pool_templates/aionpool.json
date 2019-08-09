@@ -1,5 +1,13 @@
 [
     {
+        "pool": {
+            "name": "Aion Pool",
+            "url": "https://aionpool.tech",
+            "fee": 2,
+            "type": "PPLNS"
+        }
+    },
+    {
         "coin": "AION",
         "servers": [
             {
@@ -45,6 +53,13 @@
                 "port": "%URL_PORT%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "url": "%URL%",
+                "algo": "210,9",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers AION0PoW\n--mode 7"
             }
         }
     }
