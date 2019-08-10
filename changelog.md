@@ -1,4 +1,12 @@
-##### 0.6-60@190806 2019-08-06
+##### 0.6-61@190810 2019-08-10
+*   `selfupdate` now also accepts `-f` (as `--force`) to force update and one more fix for "Hive is up to date"
+*   VBIOS flashing bug fix: stop autofan & watchdog before AMD bios flash to prevent to prevent reboots on gpu-stat errors
+*   T-Rex v0.13.2 (tensority nonce fix for antpool)
+*   CryptoDredge v0.21.0 (added support algos: chukwa, chukwa-wrkz, cn-ccx; added support SSL connections)
+*   XMRig v2.99.5-beta (Hive: fixed config generation for v2.99.2-beta and higher, Miner: many bug fixes and improvements)
+*   Gminer v1.54 (fixed bug with auto-switching to BeamHashII, added AMD support for BeamHashII, support GRIMM coin for Nvidia and AMD cards)
+
+##### 0.6-60@19, 0806 2019-08-06
 *   T-Rex v0.13.1 (bug fixes: [urgent] tensority max nonce for BTM, "Unregistered stratum method" error on some pools)
 *   TeamRedMiner v0.5.7 (added support cn-conceal and cuckarood algos)
 *   TT-Miner v3.0.1 (bug fix: hashrate reporting; small fixes Hive control scripts)
