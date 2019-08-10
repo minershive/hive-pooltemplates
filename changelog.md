@@ -1,6 +1,6 @@
 ##### 0.6-61@190810 2019-08-10
 *   `selfupdate` now also accepts `-f` (as well `--force`) to force update and one more fix for "Hive is up to date"
-*   VBIOS flashing bug fix: stop autofan & watchdog before AMD bios flash to prevent to prevent reboots on gpu-stat errors
+*   VBIOS flashing bug fix: stop autofan & watchdog before AMD VBIOS flash to prevent possible reboots on gpu-stat errors
 *   T-Rex v0.13.2 (tensority nonce fix for antpool)
 *   CryptoDredge v0.21.0 (added support algos: chukwa, chukwa-wrkz, cn-ccx; added support SSL connections)
 *   XMRig v2.99.5-beta (Hive: fixed config generation for v2.99.2-beta and higher, Miner: many bug fixes and improvements)
