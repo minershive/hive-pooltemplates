@@ -2015,5 +2015,63 @@
                 "algo": "aeternity"
             }
         }
+    },
+    {
+        "coin": "BEAM",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "beam.2miners.com:5252"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "beam.2miners.com:5353"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "solo-beam.2miners.com:5454"
+                ]
+            },
+            {
+                "geo": "SOLO EU HiDIFF",
+                "urls": [
+                    "solo-beam.2miners.com:5555"
+                ]
+            }
+        ],
+        "miners": {
+            "beamcl": {
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "beamcuda": {
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "bminer": {
+                "algo": "beam+ssl",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "150_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "tls": "1"
+            },
+            "lolminer": {
+                "algo": "BEAM",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "ver": "0.7.a4"
+            }
+        }
     }
 ]
