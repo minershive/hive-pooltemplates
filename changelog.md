@@ -6,7 +6,7 @@
 *   XMRig v2.99.5-beta (Hive: fixed config generation for v2.99.2-beta and higher, Miner: many bug fixes and improvements)
 *   Gminer v1.54 (fixed bug with auto-switching to BeamHashII, added AMD support for BeamHashII, support GRIMM coin for Nvidia and AMD cards)
 
-##### 0.6-60@19, 0806 2019-08-06
+##### 0.6-60@190806 2019-08-06
 *   T-Rex v0.13.1 (bug fixes: [urgent] tensority max nonce for BTM, "Unregistered stratum method" error on some pools)
 *   TeamRedMiner v0.5.7 (added support cn-conceal and cuckarood algos)
 *   TT-Miner v3.0.1 (bug fix: hashrate reporting; small fixes Hive control scripts)
