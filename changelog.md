@@ -1,6 +1,6 @@
 ##### 0.6-62@190815 2019-08-15
 *   added support for NVMe storages
-*   miniZ v1.5p (added support for Beam hardfork with autoswitch, improved support EQ 192/7, improved CPU load)
+*   miniZ v1.5p (added support for Beam hardfork with autoswitch, improved support EQ 192/7, improved CPU load; drivers version 410+ is required or select the version for CUDA 8.0 in the miner settings)
 *   SGminer-djm34 v0.1.3 (improve miner stability in case of bad pool connection)
 *   XMRig v3.0.0 (added support for RandomX/XL/WOW, added NUMA support via hwloc, many other improvements and bug fixes)
 *   Gminer v1.55 (improved beamhashII auto-switch for pools that doesn't send "fork height" on login)
