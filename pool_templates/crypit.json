@@ -1,0 +1,29 @@
+[
+    {
+        "pool": {
+            "name": "Crypit",             
+            "url": "https://crypit.net",  
+            "fee": 0.3,                     
+            "type": "PPLNS"                
+        }
+    },
+    {
+        "coin": "ETC",  
+        "servers": [    
+            {   
+                "geo": "Europe",
+                "urls": [
+                    "crypit.net:8000"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, wallet: %WAL%, eworker: %WORKER_NAME%, allpools: 1, allcoin: 1"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+            }
+        }
+    }
+]
