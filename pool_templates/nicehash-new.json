@@ -2252,5 +2252,67 @@
                 "port": "%URL_PORT%"
             }
         }
+    },
+    {
+        "coin": "Nicehash-BeamV2",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "beam.eu-new.nicehash.com:3378"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "beamv2.usa-new.nicehash.com:3378"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "beamv2.hk-new.nicehash.com:3378"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "beamv2.jp-new.nicehash.com:3378"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "beamv2.br-new.nicehash.com:3378"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "beamv2.in-new.nicehash.com:3378"
+                ]
+            }
+        ],
+        "miners": {
+            "miniZ": {
+                "algo": "150,5,3",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "beamhashII",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%"
+            },
+            "lolminer": {
+                "algo": "BEAM-II",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--tls 0"
+            }
+        }
     }
 ]
