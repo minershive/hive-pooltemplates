@@ -1,3 +1,11 @@
+##### 0.6-62@190815 2019-08-15
+*   added support for NVMe storages
+*   miniZ v1.5p (added support for Beam hardfork with autoswitch, mproved support EQ 192/7, improved CPU load)
+*   SGminer-djm34 v0.1.3 (improve miner stability in case of bad pool connection)
+*   XMRig v3.0.0 (added support for RandomX/XL/WOW, added NUMA support via hwloc, many other improvements and bug fixes)
+*   Gminer v1.55 (improved beamhashII auto-switch for pools that doesn't send "fork height" on login)
+*   lolMiner v0.8.6 (added support the BEAM hard fork, fixed a bug with the BEAM stratum backend)
+
 ##### 0.6-61@190810 2019-08-10
 *   `selfupdate` now also accepts `-f` (as well `--force`) to force update and one more fix for "Hive is up to date"
 *   VBIOS flashing bug fix: stop autofan & watchdog before AMD VBIOS flash to prevent possible reboots on gpu-stat errors
