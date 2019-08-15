@@ -1,3 +1,6 @@
+##### 0.6-62@190815-2 2019-08-15
+*   Bminer v15.8.1 (added support the BEAM hard fork - BeamHashII)
+
 ##### 0.6-62@190815 2019-08-15
 *   added support for NVMe storages
 *   miniZ v1.5p (added support for Beam hardfork with autoswitch, improved support EQ 192/7, improved CPU load; drivers version 410+ is required or select the version for CUDA 8.0 in the miner settings)
