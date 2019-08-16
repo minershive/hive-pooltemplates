@@ -1,3 +1,11 @@
+##### 0.6-62@190816 2019-08-16
+*   Bminer v15.8.2 (fixed the regression on the BeamHashII fails to start on RTX 2060)
+*   NBMiner v24.4 (added support for mining SIPC and fixed SIPC dxpool compatibility, fixed high CPU usage mining SERO with v24.1 & v24.2, fixed Grin intensity)
+*   lolMiner v0.8.7 (added support for BeamHashII for R9 AMD cards, fixed an issue with GENX)
+*   lolMiner: fixed config generation when failover pools used
+*   Gminer: fixed config generation when used failover pools and tls; fixed algo reporting For Beam
+*   XMRig: if no "algo" given in miner's config then assume as "cn/r" (affected to v2.99+)
+
 ##### 0.6-62@190815-2 2019-08-15
 *   Bminer v15.8.1 (added support the BEAM hard fork - BeamHashII)
 
