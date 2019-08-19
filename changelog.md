@@ -1,3 +1,8 @@
+##### 0.6-62@190819 2019-08-19
+*   Gminer v1.56 (improved BeamHashII performance on Nvidia cards)
+*   TT-Miner v3.0.2 (improved most of the supported algos, fixed miner crash if password-field is too long)
+*   XMRig v3.1.0 (added Argon2 algorithm family: argon2/chukwa and argon2/wrkz)
+
 ##### 0.6-62@190816 2019-08-16
 *   Bminer v15.8.2 (fixed the regression on the BeamHashII fails to start on RTX 2060)
 *   NBMiner v24.4 (added support for mining SIPC and fixed SIPC dxpool compatibility, fixed high CPU usage mining SERO with v24.1 & v24.2, fixed Grin intensity)
