@@ -1251,6 +1251,16 @@
             }
         ],
         "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "cryptonight",
+                "ccpass": "%WORKER_NAME%",
+                "ccuser": "%WAL%"
+            },
             "xmrig": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
@@ -1292,10 +1302,6 @@
                 "algo": "cryptonight",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1604,6 +1610,12 @@
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "algo": "cn_conceal"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-ccx"
             }
         }
     },
@@ -2464,6 +2476,209 @@
         }
     },
     {
+        "coin": "QWC",
+        "servers": [
+            {
+                "geo": "Europe Giant BK-N+, RR-200",
+                "urls": [
+                    "qwertycoin.herominers.com:10680"
+                ]
+            },
+            {
+                "geo": "Europe BK-N70, A8C",
+                "urls": [
+                    "qwertycoin.herominers.com:10681"
+                ]
+            },
+            {
+                "geo": "Europe DragonMint X1, A8",
+                "urls": [
+                    "qwertycoin.herominers.com:10682"
+                ]
+            },
+            {
+                "geo": "Europe BK-N240",
+                "urls": [
+                    "qwertycoin.herominers.com:10683"
+                ]
+            },
+            {
+                "geo": "Europe DragonMint X2, A8+",
+                "urls": [
+                    "qwertycoin.herominers.com:10684"
+                ]
+            },
+            {
+                "geo": "Europe Antminer X3",
+                "urls": [
+                    "qwertycoin.herominers.com:10685"
+                ]
+            },
+            {
+                "geo": "Europe Nicehash",
+                "urls": [
+                    "qwertycoin.herominers.com:10686"
+                ]
+            },
+            {
+                "geo": "Europe SSL",
+                "ssl_urls": [
+                    "qwertycoin.herominers.com:10687"
+                ]
+            },
+            {
+                "geo": "Canada Giant BK-N+, RR-200",
+                "urls": [
+                    "qwertycoin.herominers.com:10680"
+                ]
+            },
+            {
+                "geo": "Canada BK-N70, A8C",
+                "urls": [
+                    "qwertycoin.herominers.com:10681"
+                ]
+            },
+            {
+                "geo": "Canada DragonMint X1, A8",
+                "urls": [
+                    "qwertycoin.herominers.com:10682"
+                ]
+            },
+            {
+                "geo": "Canada BK-N240",
+                "urls": [
+                    "qwertycoin.herominers.com:10683"
+                ]
+            },
+            {
+                "geo": "Canada DragonMint X2, A8+",
+                "urls": [
+                    "qwertycoin.herominers.com:10684"
+                ]
+            },
+            {
+                "geo": "Canada Antminer X3",
+                "urls": [
+                    "qwertycoin.herominers.com:10685"
+                ]
+            },
+            {
+                "geo": "Canada Nicehash",
+                "urls": [
+                    "qwertycoin.herominers.com:10686"
+                ]
+            },
+            {
+                "geo": "Canada SSL",
+                "ssl_urls": [
+                    "qwertycoin.herominers.com:10687"
+                ]
+            },
+            {
+                "geo": "Asia Giant BK-N+, RR-200",
+                "urls": [
+                    "qwertycoin.herominers.com:10680"
+                ]
+            },
+            {
+                "geo": "Asia BK-N70, A8C",
+                "urls": [
+                    "qwertycoin.herominers.com:10681"
+                ]
+            },
+            {
+                "geo": "Asia DragonMint X1, A8",
+                "urls": [
+                    "qwertycoin.herominers.com:10682"
+                ]
+            },
+            {
+                "geo": "Asia BK-N240",
+                "urls": [
+                    "qwertycoin.herominers.com:10683"
+                ]
+            },
+            {
+                "geo": "Asia DragonMint X2, A8+",
+                "urls": [
+                    "qwertycoin.herominers.com:10684"
+                ]
+            },
+            {
+                "geo": "Asia Antminer X3",
+                "urls": [
+                    "qwertycoin.herominers.com:10685"
+                ]
+            },
+            {
+                "geo": "Asia Nicehash",
+                "urls": [
+                    "qwertycoin.herominers.com:10686"
+                ]
+            },
+            {
+                "geo": "Asia SSL",
+                "ssl_urls": [
+                    "qwertycoin.herominers.com:10687"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "cryptonight",
+                "ccpass": "%WORKER_NAME%",
+                "ccuser": "%WAL%"
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/0\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/0\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/0\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight\""
+            },
+            "claymore-x": {
+                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%",
+                "claymore-x_user_config": ""
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "fork": "gm",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"keepalive\": \"true\"\n\"nicehash\": \"false\""
+            },
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cryptonight",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
         "coin": "XWP",
         "servers": [
             {
@@ -2665,13 +2880,6 @@
             "grinprominer": {
                 "algo": "swap",
                 "url": "%URL%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%",
-                "pass": "%WORKER_NAME%"
-            },
-            "teamredminer": {
-                "algo": "cuckatoo31_grin",
-                "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "template": "%WAL%",
                 "pass": "%WORKER_NAME%"
