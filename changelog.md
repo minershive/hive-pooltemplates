@@ -1,6 +1,6 @@
 ##### 0.6-63@190821 2019-08-21
 *   Full support of Nvidia RTX cards (OC, fan control, special tools like `gpu-fans-find` and new tool `nvtool`)
-*   Optimization of cache-hive-ip resolving a number of problems with DNS
+*   Optimization of `cache-hive-ip` resolving a number of problems with DNS
 *   Gminer v1.59 (minor performance improvements on GTX for Beam, improved perfomance on RTX cards for Beam)
 *   TT-Miner v3.0.4 (reduced CPU usage and system-memory requirement for MTP/ProgPoW/ETHASH, several bug fixes)
 *   Bminer v15.8.3 (improved the performance of BeamHashII algorithm)
