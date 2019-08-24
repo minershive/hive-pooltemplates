@@ -3,7 +3,7 @@
 *   miniZ v1.5q (adjusted oc modes for 125/4 and 150/5/3, improved 144/5 on RTX cards, other bug fixes and improvements)
 *   TT-Miner v3.0.5 (hot fix for v3.0.4 - add missed some libs)
 *   lolMiner v0.8.8 (improved support for BeamHashII for AMD and Nvidia cards)
-^   Gminer: fixed issues with AMD cards
+*   Gminer: fixed issues with AMD cards
 
 ##### 0.6-63@190821 2019-08-21
 *   Full support of Nvidia RTX cards (OC, fan control, special tools like `gpu-fans-find` and new tool `nvtool`)
