@@ -1,3 +1,9 @@
+##### 0.6-64@190824 2019-08-24
+*   Fixed OC for GTX 1650
+*   miniZ v1.5q (adjusted oc modes for 125/4 and 150/5/3, improved 144/5 on RTX cards)
+*   TT-Miner v3.0.5 (hot fix for v3.0.4 - add missed some libs)
+*   lolMiner v0.8.8 (improved support for BeamHashII for AMD and Nvidia crads)
+
 ##### 0.6-63@190821 2019-08-21
 *   Full support of Nvidia RTX cards (OC, fan control, special tools like `gpu-fans-find` and new tool `nvtool`)
 *   Optimization of `cache-hive-ip` resolving a number of problems with DNS
