@@ -1,3 +1,6 @@
+##### 0.6-64@190825 2019-08-25
+*   miniZ v1.5q2 (hot-fix release for v1.5q)
+
 ##### 0.6-64@190824 2019-08-24
 *   Fixed OC for GTX 1650
 *   miniZ v1.5q (adjusted oc modes for 125/4 and 150/5/3, improved 144/5 on RTX cards, other bug fixes and improvements)
