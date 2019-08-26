@@ -456,12 +456,155 @@
                 ]
             },
             {
+                "geo": "EU POOL Diff 4G",
+                "urls": [
+                    "eu.etc.wattpool.net:8008"
+                ],
+                "ssl_urls": [
+                    "eu.etc.wattpool.net:8009"
+                ]
+            },
+            {
+                "geo": "US POOL Diff 4G",
+                "urls": [
+                    "us.etc.wattpool.net:8008"
+                ],
+                "ssl_urls": [
+                    "us.etc.wattpool.net:8009"
+                ]
+            },
+            {
                 "geo": "SOLO Diff 12G",
                 "urls": [
                     "etc-solo.wattpool.net:8001"
                 ],
                 "ssl_urls": [
                     "etc-solo.wattpool.net:8002"
+                ]
+            },
+            {
+                "geo": "EU SOLO Diff 12G",
+                "urls": [
+                    "eu.etc.wattpool.net:8001"
+                ],
+                "ssl_urls": [
+                    "eu.etc.wattpool.net:8002"
+                ]
+            },
+            {
+                "geo": "US SOLO Diff 12G",
+                "urls": [
+                    "us.etc.wattpool.net:8001"
+                ],
+                "ssl_urls": [
+                    "us.etc.wattpool.net:8002"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": "POOL Diff 4G",
+                "urls": [
+                    "eth.wattpool.net:8008"
+                ],
+                "ssl_urls": [
+                    "eth.wattpool.net:8009"
+                ]
+            },
+            {
+                "geo": "EU POOL Diff 4G",
+                "urls": [
+                    "eu.eth.wattpool.net:8008"
+                ],
+                "ssl_urls": [
+                    "eu.eth.wattpool.net:8009"
+                ]
+            },
+            {
+                "geo": "US POOL Diff 4G",
+                "urls": [
+                    "us.eth.wattpool.net:8008"
+                ],
+                "ssl_urls": [
+                    "us.eth.wattpool.net:8009"
+                ]
+            },
+            {
+                "geo": "SOLO Diff 12G",
+                "urls": [
+                    "eth-solo.wattpool.net:8001"
+                ],
+                "ssl_urls": [
+                    "eth-solo.wattpool.net:8002"
+                ]
+            },
+            {
+                "geo": "EU SOLO Diff 12G",
+                "urls": [
+                    "eu.eth.wattpool.net:8001"
+                ],
+                "ssl_urls": [
+                    "eu.eth.wattpool.net:8002"
+                ]
+            },
+            {
+                "geo": "US SOLO Diff 12G",
+                "urls": [
+                    "us.eth.wattpool.net:8001"
+                ],
+                "ssl_urls": [
+                    "us.eth.wattpool.net:8002"
                 ]
             }
         ],
