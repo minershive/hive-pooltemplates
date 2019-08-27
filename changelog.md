@@ -1,6 +1,6 @@
 ##### 0.6-65@190827 2019-08-27
-*   Added new optional argument to `selfupgrade` tool - repository address. Use `--help` for view all options and syntax.
-*   Claymore's ETH v15.0 (supports up to #384 epoch instead #299 on old version, environment variables sets automatically - required for 4GB AMD cards, added support for Navi cards in ETH-only mode - due driver issues hashrate is very low)
+*   Added new optional argument to `selfupgrade` tool - repository address. Use `--help` for view all available options and their syntax.
+*   Claymore's ETH v15.0 (supports up to #384 epoch instead #299 on old version, environment variables now sets automatically - required for 4GB AMD cards, added support for Navi cards in ETH-only mode - due driver issues hashrate is very low)
 *   Bminer v15.8.4 (improved performance of BeamHashII algo on RTX cards)
 
 ##### 0.6-64@190825 2019-08-25
