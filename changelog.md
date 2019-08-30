@@ -48,6 +48,10 @@
 *   Gminer v1.55 (improved beamhashII auto-switch for pools that doesn't send "fork height" on login)
 *   lolMiner v0.8.6 (added support the BEAM hard fork, fixed a bug with the BEAM stratum backend)
 
+##### image release 0.6-61@190813 2019-08-13
+*   Special image for AMD VEGA GPUs with built-in support of Radeon VII GPU
+*   Image based on Ubuntu 18.04 (other specs: Linux kernel: 5.0.21-hiveos+vega, AMD drivers: amdgpu-pro v19.10)
+
 ##### 0.6-61@190810 2019-08-10
 *   `selfupdate` now also accepts `-f` (as well `--force`) to force update and one more fix for "Hive is up to date"
 *   VBIOS flashing bug fix: stop autofan & watchdog before AMD VBIOS flash to prevent possible reboots on gpu-stat errors
