@@ -1,3 +1,7 @@
+##### image release 0.6-61@190813 2019-08-30
+*   Special image for AMD VEGA GPUs with built-in support of Radeon VII GPU
+*   Image based on Ubuntu 18.04 (other specs: Linux kernel: 5.0.21-hiveos+vega, AMD drivers: amdgpu-pro v19.10)
+
 ##### 0.6-65@190830 2019-08-30
 *   Gminer v1.60 (support AMD cards for ZelCash, improved performance for Equihash 144.5/192.7 on RTX SUPER cards, added OC1 kernel for BeamHashII for GTX 1070)
 *   Gminer v1.61 (improved compatibility with large rigs for 13+ GPUs, improved launch time of miner)
