@@ -1,5 +1,5 @@
 ##### 0.6-66@190904 2019-09-04
-*   Added some new PCI ID to `amdmeminfo`
+*   Added PCI IDs for new devices to `amdmeminfo`
 *   XMRig v3.1.1 (RandomX hashrate improved by 0.5-1.5% depending on variant and CPU, fixed multiple network bugs, other bugs fixes)
 *   XMRig-AMD v2.14.6 (fixed multiple network bugs)
 *   XMRig-Nvidia v2.14.5 (fixed multiple network bugs, available builds for CUDA 9.2/10.0/10.1)
