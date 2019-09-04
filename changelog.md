@@ -1,3 +1,7 @@
+##### 0.6-66@190904-2 2019-09-04
+*   XMRigCC v2.0.0 as fork XMRig (based on XMRig v3.1.1 plus support argon2 based algos, cn-upx2, cn-conceal)
+*   fixed miniZ v1.5q5 for proper build
+
 ##### 0.6-66@190904 2019-09-04
 *   Added PCI IDs for new devices to `amdmeminfo`
 *   XMRig v3.1.1 (RandomX hashrate improved by 0.5-1.5% depending on variant and CPU, fixed multiple network bugs, other bugs fixes)
