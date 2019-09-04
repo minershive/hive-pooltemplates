@@ -1,3 +1,12 @@
+##### 0.6-66@190904 2019-09-04
+*   Added some new PCI ID to `amdmeminfo`
+*   XMRig v3.1.1 (RandomX hashrate improved by 0.5-1.5% depending on variant and CPU, fixed multiple network bugs, other bugs fixes)
+*   XMRig-AMD v2.14.6 (fixed multiple network bugs)
+*   XMRig-Nvidia v2.14.5 (fixed multiple network bugs, available builds for CUDA 9.2/10.0/10.1)
+*   Bminer v15.8.5 (added an API method to stop the miner)
+*   Gminer v1.62 (improved performance for ZelCash on RTX cards up to +8%)
+*   miniZ v1.5q5 (general performance improvement for 150/5/3, fixed invalid shares on 150/5/3, fixing performance on 150/5/3 for P104, fixing reconnection to pool)
+
 ##### 0.6-65@190830 2019-08-30
 *   Gminer v1.60 (support AMD cards for ZelCash, improved performance for Equihash 144.5/192.7 on RTX SUPER cards, added OC1 kernel for BeamHashII for GTX 1070)
 *   Gminer v1.61 (improved compatibility with large rigs for 13+ GPUs, improved launch time of miner)
