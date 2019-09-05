@@ -1,3 +1,7 @@
+##### 0.6-66@190905 2019-09-05
+*   Bminer v15.8.6 (improved the performance of automatic tuning of dual mining parameters)
+*   NBMiner v25.0 (added support for CKB mining & CKB+ETH dual mining)
+
 ##### 0.6-66@190904-2 2019-09-04
 *   XMRigCC v2.0.0 as fork XMRig (based on XMRig v3.1.1 plus support argon2 based algos, cn-upx2, cn-conceal)
 *   fixed miniZ v1.5q5 for proper build
