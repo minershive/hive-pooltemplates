@@ -2,6 +2,12 @@
 *   Bminer v15.8.6 (improved the performance of automatic tuning of dual mining parameters)
 *   NBMiner v25.0 (added support for CKB mining & CKB+ETH dual mining)
 
+##### LINUX IMAGE RELEASE 0.6-65 2019-09-05
+*   First stable Linux client image from a new branch based on Ubuntu 18
+*   Universal boot mode: BIOS | UEFI
+*   Linux kernel: 5.0.21
+*   Drivers version: AMD v19.20, Nvidia: v430.40
+
 ##### 0.6-66@190904-2 2019-09-04
 *   XMRigCC v2.0.0 as fork XMRig (based on XMRig v3.1.1 plus support argon2 based algos, cn-upx2, cn-conceal)
 *   fixed miniZ v1.5q5 for proper build
