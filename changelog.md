@@ -1,3 +1,8 @@
+##### 0.6-67@190906 2019-09-06
+*   Added resending `hello` on connection failures
+*   **NEW** CKB-miner v0.19.2 (CPU/Nvidia CKB miner)
+*   **NEW** Smine v0.2.0 (AMD CKB miner)
+
 ##### 0.6-66@190905 2019-09-05
 *   Bminer v15.8.6 (improved the performance of automatic tuning of dual mining parameters)
 *   NBMiner v25.0 (added support for CKB mining & CKB+ETH dual mining)
