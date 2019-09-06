@@ -16,7 +16,7 @@
 *   miniZ v1.5q5 (general performance improvement for 150/5/3, fixed invalid shares on 150/5/3, fixing performance on 150/5/3 for P104, fixing reconnection to pool)
 
 ##### LINUX IMAGE RELEASE 0.6-65 2019-09-05
-*   First stable Linux client image from a new branch based on Ubuntu 18
+*   First stable Linux client image from a new branch based on Ubuntu 18.04
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: 5.0.21
 *   Drivers version: AMD v19.20, Nvidia: v430.40
