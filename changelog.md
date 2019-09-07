@@ -1,3 +1,7 @@
+##### 0.6-68@190907-2 2019-09-07
+*   Fixed bug in `hive-replace` when need to fix checksum of GPT table
+*   CKB-miner v0.20.0 (CPU/Nvidia CKB miner)
+
 ##### 0.6-67@190907 2019-09-07
 *   Added resending `hello` on connection failures
 *   **NEW** CKB-miner v0.19.2 (CPU/Nvidia CKB miner)
