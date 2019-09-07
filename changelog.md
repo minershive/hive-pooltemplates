@@ -1,4 +1,4 @@
-##### 0.6-67@190906 2019-09-06
+##### 0.6-67@190907 2019-09-07
 *   Added resending `hello` on connection failures
 *   **NEW** CKB-miner v0.19.2 (CPU/Nvidia CKB miner)
 *   **NEW** Smine v0.2.0 (AMD CKB miner)
