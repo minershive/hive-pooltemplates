@@ -1,5 +1,5 @@
 ##### 0.6-68@190907-2 2019-09-07
-*   Fixed bug in `hive-replace` when need to fix checksum of GPT table
+*   Fixed a bug in `hive-replace` that occurred when it was necessary to recalculate the GPT checksum
 *   CKB-miner v0.20.0 (CPU/Nvidia CKB miner)
 
 ##### 0.6-67@190907 2019-09-07
