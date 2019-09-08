@@ -3,15 +3,15 @@
 *   Fixed watchdog in maintenance mode
 *   Smine v0.2.1 (bug fix)
 
-##### LINUX IMAGE RELEASE 0.6-68 2019-09-08
+##### 0.6-68@190907-2 2019-09-07
+*   Fixed a bug in `hive-replace` that occurred when it was necessary to recalculate the GPT checksum
+*   CKB-miner v0.20.0 (CPU/Nvidia CKB miner)
+
+##### LINUX IMAGE RELEASE 0.6-68@190907 2019-09-07
 *   First stable Linux client image from a new branch based on Ubuntu 18.04
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: 5.0.21
 *   Drivers version: AMD v19.20, Nvidia: v430.40
-
-##### 0.6-68@190907-2 2019-09-07
-*   Fixed a bug in `hive-replace` that occurred when it was necessary to recalculate the GPT checksum
-*   CKB-miner v0.20.0 (CPU/Nvidia CKB miner)
 
 ##### 0.6-67@190907 2019-09-07
 *   Added resending `hello` on connection failures
