@@ -1,3 +1,9 @@
+##### 0.6-69@190911 2019-09-11
+*   NBMiner v25.2 (added support for CKB mining on AMD card)
+*   PhoenixMiner v4.6b (implemented hardware control, added advanced hardware stats with `-hstats 2` option, added support for all new AMD Linux drivers up to the latest 19.30-855429)
+*   EggMinerGpu v4.0.200 (upgraded kernel, improved hashrate)
+*   Sushi Miner OpenCL v2.1.1 (improved performance)
+
 ##### 0.6-69@190908 2019-09-08
 *   Added check GPT table on boot
 *   Fixed watchdog in maintenance mode
