@@ -1,3 +1,14 @@
+##### 0.6-70@190915 2019-09-15
+*   fixed manual fan control for AMD
+*   Gminer v1.64 (added support for CKB mining: eaglesong algo)
+*   CCminer-djm34 v1.2.2 (improved solo mining)
+*   PhoenixMiner v4.6c (since the v4.6b added ability to show the current hotspot (junction) and memory temperatures on AMD cards when `-hstats 2` option is used)
+*   miniZ v1.5q6 (performance improvement for 192/7, added `--jobtimeout`, `--retries`, `--retrydelay` for (re)connection customization)
+*   TT-Miner v3.0.6 Beta1 (add support mining EPIC at ProgPoW algo: use `-COIN EPIC` Note: select version in miner settings)
+*   **NEW** CCminer-suprminer-spmod v1.6 (supporting x16rv2/x16r/x16s/c11/x17 algos)
+*   **NEW** ckb-miner v0.20.0.1 OpenCL
+*   **NEW** cortex-miner v1.0.0 (version for Nvidia cards with 11G+ VRAM)
+
 ##### 0.6-69@190911 2019-09-11
 *   NBMiner v25.2 (added support for CKB mining on AMD card)
 *   PhoenixMiner v4.6b (implemented hardware control, added advanced hardware stats with `-hstats 2` option, added support for all new AMD Linux drivers up to the latest 19.30-855429)
