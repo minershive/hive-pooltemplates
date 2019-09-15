@@ -1,3 +1,7 @@
+##### 0.6-71@190915-2 2019-09-15
+*   fixed broken AMD fan control
+*   fixed cortex-miner package
+
 ##### 0.6-70@190915 2019-09-15
 *   fixed manual fan control for AMD
 *   Gminer v1.64 (added support for CKB mining: eaglesong algo)
