@@ -1,3 +1,8 @@
+##### 0.6-72@190917 2019-09-17
+*   T-Rex v0.14.1 BETA (added x16rv2 algo. Note: select version in miner settings)
+*   Gminer v1.65 (support eaglesong mining on AMD cards)
+*   XMRig v3.1.2 (many RandomX optimizations and fixes)
+
 ##### 0.6-71@190915-2 2019-09-15
 *   fixed broken AMD fan control
 *   fixed cortex-miner package
