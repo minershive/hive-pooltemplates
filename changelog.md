@@ -1,6 +1,6 @@
 
 ##### 0.6-72@190918 2019-09-18
-*   T-Rex v0.14.2 BETA (fixed x16rv2 issue where the pool hashrate was lower than reported by the console)
+*   T-Rex v0.14.2 BETA (fixed x16rv2 issue where the pool hashrate was lower than reported by the console. Note: select version in miner settings)
 
 ##### 0.6-72@190917 2019-09-17
 *   T-Rex v0.14.1 BETA (added x16rv2 algo. Note: select version in miner settings)
