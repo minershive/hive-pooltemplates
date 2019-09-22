@@ -1,3 +1,12 @@
+##### 0.6-73@190922 2019-09-22
+*   Added new features and options to `nvidia-driver-update` tool. Bug fixes
+*   Issue fixed: `selfupgrade` now stops miners, watchdog, autofan during update
+*   TT-Miner v3.0.6 Beta4 (added switch to alternate algo mining on idle on Epic ProgPoW)
+*   TeamRedMiner v0.5.8 (added chukwa algo support, issue fixed: kernels not loaded properly for Conceal, added logic for pool reconnect on N rejected shares in a row)
+*   XMRig v3.1.3 (fixed possible duplicated shares after algorithm switching)
+*   CKB-miner v0.21.0 (update to CKB v0.21.0)
+*   NEW XLArig v3.2.0 (XMRig fork for defyx algo for mining XLA Scala - ex Stellite coin)
+*   NEW SparrowMiner-UPX2 v2.1.2 (XMR-Stak fork for support cryptonight-upx2 algo and can be found as fork called `uplexa`)
 
 ##### 0.6-72@190918 2019-09-18
 *   T-Rex v0.14.2 BETA (fixed x16rv2 issue where the pool hashrate was lower than reported by the console. Note: select version in miner settings)
