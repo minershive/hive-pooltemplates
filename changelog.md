@@ -1,7 +1,8 @@
 ##### 0.6-73@190922 2019-09-22
 *   Added new features and options to `nvidia-driver-update` tool. Bug fixes
+*   Added call `disk-expand` on newly installed rig
 *   Issue fixed: `selfupgrade` now stops miners, watchdog, autofan during update
-*   TT-Miner v3.0.6 Beta4 (added switch to alternate algo mining on idle on Epic ProgPoW)
+*   TT-Miner v3.0.6 Beta4 (added switch to alternate mining algo when ProgPoW idle on Epic)
 *   TeamRedMiner v0.5.8 (added chukwa algo support, issue fixed: kernels not loaded properly for Conceal, added logic for pool reconnect on N rejected shares in a row)
 *   XMRig v3.1.3 (fixed possible duplicated shares after algorithm switching)
 *   CKB-miner v0.21.0 (update to CKB v0.21.0)
