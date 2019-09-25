@@ -2,7 +2,7 @@
 *   CKB-miner v0.21.1 (fixed OpenCL bug)
 *   T-Rex v0.14.4 (added ability to auto-switch mining algorithm using new `--fork-at` parameter)
 *   TT-Miner v3.0.6 Release (faster start, bug fixes known for v3.0.6 Beta series)
-*   Z-Enemy v2.2 (added x16rv2 algo, added support for secure stratum+ssl connections. Note: can be found as CCminer fork `enemy`)
+*   Z-Enemy v2.2 (added x16rv2 algo, added support for secure stratum+ssl connections. Note: miner is in CCminer settings as fork of `enemy`)
 *   GMiner v1.66 (significant performance improvements for cuckarood29 up to +10%)
 
 ##### 0.6-73@190922 2019-09-22
