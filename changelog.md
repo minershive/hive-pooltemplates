@@ -1,3 +1,10 @@
+##### 0.6-74@190925 2019-09-25
+*   CKB-miner v0.21.1 (fixed OpenCL bug)
+*   T-Rex v0.14.4 (added ability to auto-switch mining algorithm using new `--fork-at` parameter)
+*   TT-Miner v3.0.6 Release (faster start, bug fixes v3.0.6 Beta)
+*   Z-Enemy v2.2 (added x16rv2 algo, added support for secure stratum+ssl connections. Note: can be found as CCminer fork `enemy`)
+*   GMiner v1.66 (significant performance improvements for cuckarood29 up to +10%)
+
 ##### 0.6-73@190922 2019-09-22
 *   Added new features and options to `nvidia-driver-update` tool. Bug fixes
 *   Added call `disk-expand` on newly installed rig
