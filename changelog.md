@@ -1,4 +1,4 @@
-##### 0.6-75@190927 2019-09-27
+##### 0.6-75@190926 2019-09-26
 *   reworked miner start/stop procedure
 *   improved `nvidia-driver-update` tool
 *   slighty improved `disk-expand` tool
