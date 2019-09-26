@@ -1,3 +1,10 @@
+##### 0.6-75@190927 2019-09-27
+*   reworked miner start/stop procedure
+*   improved `nvidia-driver-update` tool
+*   slighty improved `disk-expand` tool
+*   TeamRedMiner v0.5.9 (added x16rv2 algo; optimization work on x16r: +8-10% hashrate, mem clock no longer as important; issue fix: kernels split into multiple binaries to fix linux amdgpu-pro driver issues)
+*   TT-Miner v3.0.8 (added support ETHASH coins MUSIC, EXP; fixed the device selection option: -d)
+
 ##### 0.6-74@190925 2019-09-25
 *   CKB-miner v0.21.1 (fixed OpenCL bug)
 *   T-Rex v0.14.4 (added ability to auto-switch mining algorithm using new `--fork-at` parameter)
