@@ -1,4 +1,12 @@
 [
+    {
+        "pool": {
+            "name": "Gos.cx Pool",
+            "url": "https://gos.cx/",
+            "fee": 0.9,
+            "type": "Prop, Solo, Party"
+        }
+    },
 		{
 				"coin": "XDNA",
 				"servers": [
@@ -479,6 +487,49 @@
 				}
 		},
 		{
+				"coin": "BITC",
+				"servers": [
+						{
+								"geo": "Europe",
+								"urls": [
+										"eu.gos.cx:3639"
+								]
+						},
+						{
+								"geo": "US/Canada",
+								"urls": [
+										"us.gos.cx:3639"
+								]
+						},
+						{
+								"geo": "Russia",
+								"urls": [
+										"ru.gos.cx:3639"
+								]
+						},
+						{
+								"geo": "Asia",
+								"urls": [
+										"asia.gos.cx:3639"
+								]
+						}
+				],
+				"miners": {
+						"t-rex": {
+								"url": "stratum+tcp://%URL%",
+								"algo": "x16rv2",
+								"pass": "x",
+								"template": "%WAL%.%WORKER_NAME%"
+						},
+						"teamredminer": {
+								"url": "stratum+tcp://%URL%",
+								"algo": "x16rv2",
+								"pass": "x",
+								"template": "%WAL%.%WORKER_NAME%"
+						}
+				}
+		},
+		{
 				"coin": "RITO",
 				"servers": [
 						{
@@ -519,6 +570,13 @@
 								"pass": "x",
 								"template": "%WAL%.%WORKER_NAME%",
 								"user_config": "\"opencl-threads\" : \"2\""
+						},
+						"ccminer": {
+								"fork": "enemy",
+								"ccurl": "stratum+tcp://%URL%",
+								"ccalgo": "x16r",
+								"ccpass": "%WORKER_NAME%",
+								"ccuser": "%WAL%"
 						}
 				}
 		},
