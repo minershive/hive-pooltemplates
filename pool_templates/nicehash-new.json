@@ -1634,12 +1634,24 @@
                 "ccpass": "x",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+            },
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "x16r",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "x16r"
             }
         }
     },
@@ -2264,6 +2276,68 @@
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "--tls 0"
+            }
+        }
+    },
+    {
+        "coin": "Nicehash-X16Rv2",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "x16rv2.eu-new.nicehash.com:3379"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "x16rv2.usa-new.nicehash.com:3379"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "x16rv2.hk-new.nicehash.com:3379"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "x16rv2.jp-new.nicehash.com:3379"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "x16rv2.br-new.nicehash.com:3379"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "x16rv2.in-new.nicehash.com:3379"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "x16rv2",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16rv2",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "x16rv2"
             }
         }
     }
