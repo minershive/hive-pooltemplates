@@ -1,3 +1,9 @@
+##### 0.6-76@190927 2019-09-27
+*   TT-Miner v3.0.9 Beta1 (added information about the DAG size and the available memory, another bugfix with the device option: `-d`, removed library depency to CUDA 10.1 for ProgPoWZ and Ubiq)
+*   Added support CPUminer-opt forks
+*   CPUminer-opt v3.9.8 (added x16rv2, changes to log output to provide data more relevant)
+*   NEW CPUminer-opt-cpupower v3.9.5.2 (fork `cpupower` of CPUminer-opt for CPUchain coin)
+
 ##### 0.6-75@190926 2019-09-26
 *   reworked miner start/stop procedure
 *   improved `nvidia-driver-update` tool
