@@ -1,3 +1,7 @@
+##### 0.6-76@190928 2019-09-28
+*   Gminer v1.67 (performance improvements for cuckarood29 specially on RTX cards)
+*   XMRig v3.2.0 (added per pool option `coin` with single possible value `monero` for pools without algorithm negotiation)
+
 ##### 0.6-76@190927 2019-09-27
 *   TT-Miner v3.0.9 Beta1 (added information about the DAG size and the available memory, another bugfix with the device option: `-d`, removed library depency to CUDA 10.1 for ProgPoWZ and Ubiq)
 *   Added support CPUminer-opt forks
