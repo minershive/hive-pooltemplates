@@ -22,48 +22,51 @@ If you want your pool to be listed here then create yourpool.json and push it, w
 
 ## Miners
 Available miners:
+- beamcl - open source BEAM OpenCL miner
+- beamcuda - open source BEAM CUDA miner
+- bminer - ethash/tensority/equihash variants/Grin PoW miner 
+- cast-xmr - cryptonight variants (AMD)
+- ccminer - ccminer & forks (ccminer forks available: alexis, allium, bcd, dace-cryptonight, djm34, enemy, klaust, klaust-yescrypt, nanashi, nevermore, nevermore-x16s, phi-anxmod, rfv2, rvn, sp-mod, suprminer, suprminer-spmod, tpruvot, vertminer, xaya, xevan, zp)
+- ckb-miner - CKB (Nervos Network) wallet CPU/OpenCL/CUDA miner
 - claymore - Claymore's DUAL ETH GPU AMD&NVidia miner
 - claymore-x - Claymore's Cryptonote AMD GPU miner
 - claymore-z - Claymore's AMD GPU ZCash miner
-- ewbf - ewbf for equihash and new for equihash algo variants miner
-- ccminer - ccminer & forks (ccminer forks available: alexis, allium, bcd, dace-cryptonight, djm34, enemy, klaust, klaust-yescrypt, nanashi, nevermore, nevermore-x16s, phi-anxmod, rvn, suprminer, sp-mod, tpruvot, vertminer, xevan, zp)
-- ethminer - ethminer (forks available - ethash, progpow, ubiqhash, zilminer)
-- sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi)
-- dstm - legacy 0.3.4b and new zhash
-- bminer - ethash/tensority/equihash variants/Grin PoW miner 
-- lolminer - equihash variants OpenCL miner
-- xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo with forks arto, alloy, b2n, mox, marketcash)
-- xmrig - XMRig (CPU cryptonight variants miner with forks xmrigcc, hycon)
-- xmrig-amd - XMRig (AMD cryptonight variants miner with forks xmrigcc, hycon)
-- xmrig-nvidia - XMRig (NVidia cryptonight variants miner  with forks fruityminer, hycon)
-- cast-xmr - cryptonight variants (AMD)
+- cortex-miner - Cortex CUDA miner 
+- cpuminer-opt - cpuminer-opt CPU miner (forks: JayDDee, cpupower)
 - cryptodredge - multi algo CUDA miner (NVidia)
-- teamredminer - lyra2z/lyra2v3/phi2/cryptonight-r/v7/v8/half/double/rwz/trtl OpenCL miner (AMD)
-- phoenixminer - ethash miner (AMD/NVidia)
-- trex - T-Rex multi algo CUDA miner (NVidia)
-- cpuminer-opt - cpuminer-opt (CPU miner)
-- wildrig-multi - multi-algo OpenCL miner (AMD)
+- dstm - legacy 0.3.4b and new zhash
+- eggminergpu - CUDA/OpenCL miner for BIS - Bismuth coin on Eggpool (AMD/Nvidia)
+- ethminer - ethminer (forks available - ethash, progpow, ubiqhash, zilminer)
+- ewbf - ewbf for equihash and new for equihash algo variants miner
 - finminer - ethash, randomhash miner (AMD/NVidia/CPU)
-- nanominer - next generation of finminer (AMD/NVidia/CPU)
-- rhminer - randomhash CPU miner
 - gminer - equihash variants CUDA miner
-- beamcl - open source BEAM OpenCL miner
-- beamcuda - open source BEAM CUDA miner
-- grinminer - Cuckaroo29 and Cuckatoo31 miner (AMD/NVidia)
 - gringoldminer - Cuckaroo29 miner (AMD/NVidia)
-- grinpro - improved version of grinminer (AMD/NVidia)
-- nbminer - ETH, BTM, Cuckoo miner (NVidia)
+- grinminer - Cuckaroo29 and Cuckatoo31 miner (AMD/NVidia)
+- grinprominer - improved version of grinminer (AMD/NVidia)
 - hspminerae - CUDA AE miner (NVidia)
 - kbminer - AE/Cuckaroo29/Cuckatoo31/VDS miner (AMD/NVidia)
-- zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
-- eggminergpu - CUDA/OpenCL miner for BIS - Bismuth coin on Eggpool (AMD/Nvidia)
+- lolminer - equihash variants OpenCL miner
 - miniz - CUDA Equihash variants miner (Nvidia)
+- nanominer - next generation of finminer (AMD/NVidia/CPU)
+- nbminer - ETH, BTM, Cuckoo miner (NVidia)
 - noncepool-amd - OpenCL miner for BIS - Bismuth coin on Noncepool (AMD)
 - noncepool-cuda - CUDA miner for BIS - Bismuth coin on Noncepool (Nvidia)
-- sushi-miner-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
-- sushi-miner-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
 - noncerpro-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
 - noncerpro-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
+- phoenixminer - ethash miner (AMD/NVidia)
+- rhminer - randomhash CPU miner
+- sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi)
+- sushi-miner-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
+- sushi-miner-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
+- t-rex - T-Rex multi algo CUDA miner (NVidia)
+- teamredminer - lyra2z/lyra2v3/phi2/cryptonight-r/v7/v8/half/double/rwz/trtl/x16r/x16rv2 OpenCL miner (AMD)
+- tt-miner - Ethash/Ubqhash/ProgPoW with variants/TEthashV1/MTP/Lyra2rev3 CUDA miner
+- wildrig-multi - multi-algo OpenCL miner (AMD)
+- xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo with forks arto, alloy, b2n, mox, marketcash, uplexa)
+- xmrig - XMRig (CPU cryptonight variants miner with forks: xmrigcc, hycon, xlarig)
+- xmrig-amd - XMRig (AMD cryptonight variants miner with forks xmrigcc, hycon)
+- xmrig-nvidia - XMRig (NVidia cryptonight variants miner  with forks fruityminer, hycon)
+- zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
 - custom - Custom miner package
 
 
