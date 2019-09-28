@@ -56,6 +56,7 @@ Available miners:
 - phoenixminer - ethash miner (AMD/NVidia)
 - rhminer - randomhash CPU miner
 - sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi)
+- smine - CKB Sparkpool miner (AMD)
 - sushi-miner-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
 - sushi-miner-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
 - t-rex - T-Rex multi algo CUDA miner (NVidia)
