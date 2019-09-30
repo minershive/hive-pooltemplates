@@ -986,7 +986,7 @@
                 "user_config": "\"algo\": \"cn/r\""
             },
             "teamredminer": {
-                "url": "%URL%",
+                "url": "stratum+tcp://%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "algo": "cnr"
@@ -1029,7 +1029,7 @@
                 "user_config": "\"algo\": \"cn/r\""
             },
             "teamredminer": {
-                "url": "%URL%",
+                "url": "stratum+tcp://%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "algo": "cnr"
@@ -1049,24 +1049,15 @@
         "miners": {
             "t-rex": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
+                "algo": "x16rv2",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "sgminer-gm": {
-                "fork": "avermore",
+            "teamredminer": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccalgo": "x16r",
-                "fork": "enemy",
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccpass": "x"
+                "algo": "x16rv2"
             }
         }
     },
@@ -1081,21 +1072,20 @@
             }
         ],
         "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "mtp"
+            },
             "t-rex": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "mtp",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "ccminer": {
-                "ccalgo": "mtp",
-                "fork": "mtp",
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccpass": "x"
-            },
-            "cryptodredge": {
-                "url": "%URL%",
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "algo": "mtp"
@@ -1120,7 +1110,7 @@
                 "user_config": "\"currency\": \"cryptonight_conceal\""
             },
             "teamredminer": {
-                "url": "%URL%",
+                "url": "stratum+tcp://%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "algo": "cn_conceal"
