@@ -1,3 +1,6 @@
+##### 0.6-77@191002-2 2019-10-02
+*   CryptoDredge v0.22.0 (added x16rv2 algo, fixed ccminer API, fixed stratum issue related to 'resource deadlock would occur', other minor fixes. Available versions builded with CUDA 9.2/10.0(default)/10.1 toolkits)
+
 ##### 0.6-77@191002 2019-10-02
 *   Reworked miner restart procedure to minimize delays while restarting
 *   `gpu-fans-find` fixes for AMD rigs, added fans stop checking
