@@ -1,3 +1,9 @@
+##### 0.6-77@191002 2019-10-02
+*   Reworked miner restart procedure to minimize delays while restarting
+*   `gpu-fans-find` fixes for AMD rigs, added fans stop checking
+*   CPUminer-opt by JayDDee v3.9.8.1 (small changes in generation of summary log report)
+*   NanoMiner v1.6.0 (added support RandomHash2 and RandomX algos; Cuckarood29 performance improved up to 24% on AMD and Nvidia)
+
 ##### 0.6-76@190928 2019-09-28
 *   Gminer v1.67 (performance improvements for `cuckarood29` specially on RTX cards)
 *   XMRig v3.2.0 (added per pool option `coin` with single possible value `monero` for pools without algorithm negotiation)
