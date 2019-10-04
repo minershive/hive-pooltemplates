@@ -18,8 +18,12 @@
             {
                 "geo": "High Ping",
                 "urls": [
-                    "stratum.aionmine.org:5555",
-                    "stratum.aionmine.org:6666",
+                    "stratum.aionmine.org:5555"
+                ]
+            },
+            {
+                "geo": "Extra High Ping",
+                "urls": [
                     "stratum.aionmine.org:7777"
                 ]
             },
@@ -38,7 +42,7 @@
                 ]
             },
             {
-                "geo": "Backup (centrys)",
+                "geo": "Backup (AionSurf)",
                 "urls": [
                     "backup.aionmine.org:3333"
                 ]
@@ -68,6 +72,13 @@
                 "port": "%URL_PORT%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "url": "%URL%",
+                "algo": "210,9",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers AION0PoW"
             }
         }
     }
