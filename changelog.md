@@ -1,3 +1,8 @@
+##### 0.6-78@191005-2 2019-10-05
+*   S-Mine v0.3.1 (reduced chance for stale shares)
+*   CKB-miner v0.22.0.1 (updated for CKB v0.22)
+*   NBMiner: fixed Ethash stats in CKB+ETH mode
+
 ##### 0.6-78@191005 2019-10-05
 *   `opendev-watchdog` minor fixes
 *   S-Mine v0.3.0 (updated CKB statum protocol, improved performance, bug fixes)
