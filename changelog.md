@@ -1,3 +1,8 @@
+##### 0.6-78@191005 2019-10-05
+*   `opendev-watchdog` minor fixes
+*   S-Mine v0.3.0 (updated CKB statum protocol, improved performance, bug fixes)
+*   NBMiner v25.5 (improved CKB mining performance on both NVIDIA & AMD cards, improved CKB+ETH performance on NVIDIA cards, added support for mining SERO on AMD cards, added a new option `--platform` to allow users to choose GPU platform)
+
 ##### 0.6-77@191002-2 2019-10-02
 *   CryptoDredge v0.22.0 (added x16rv2 algo, fixed ccminer API, fixed stratum issue related to 'resource deadlock would occur', other minor fixes. Available versions builded with CUDA 9.2/10.0(default)/10.1 toolkits)
 
