@@ -1,5 +1,5 @@
 ##### 0.6-78@19106 2019-10-06
-*   PhoenixMiner v4.7b (reduced VRAM usage for both AMD and Nvidia cards, added support for mining QuarkChain/QKC without DAG switching on devfee use `-coin qkc`)
+*   PhoenixMiner v4.7b (reduced VRAM usage for both AMD and Nvidia cards, added support for mining QuarkChain [QKC] without DAG switching on devfee use `-coin qkc`)
 *   Bminer v15.8.7 (improved the performance of Beam for RTX cards, experimental support for dual-mining Ethash and Eaglesong algorithm)
 
 ##### 0.6-78@191005-2 2019-10-05
