@@ -1,3 +1,8 @@
+##### 0.6-78@191007 2019-10-07
+*   TT-Miner v3.0.10 Beta3 (improved performance for ProgPoW based algos, auto detection of the max supported compute capability)
+*   CCminer fork Z-Enemy v2.3 (performance improvement: +2-3% x16rv2 algo)
+*   T-Rex v0.14.5 (small fixes)
+
 ##### 0.6-78@191006 2019-10-06
 *   PhoenixMiner v4.7b (reduced VRAM usage for both AMD and Nvidia cards, added support for mining QuarkChain [QKC] without DAG switching on devfee use `-coin qkc`)
 *   Bminer v15.8.7 (improved the performance of Beam for RTX cards, experimental support for dual-mining Ethash and Eaglesong algorithm)
