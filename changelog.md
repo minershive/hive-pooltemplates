@@ -1,3 +1,6 @@
+##### 0.6-80@191008-2 2019-10-08
+* fixed selfupgrade problem with release 0.6-79@191008
+
 ##### 0.6-79@191008 2019-10-08
 *   fixed droptcpsock-dkms dependency which occurred in some cases
 *   TT-Miner v3.0.10 Beta4 (bug fixes)
