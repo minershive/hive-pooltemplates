@@ -1,3 +1,8 @@
+##### 0.6-79@191008 2019-10-08
+*   fixed droptcpsock-dkms dependency which occurred in some cases
+*   TT-Miner v3.0.10 Beta4 (bug fixes)
+*   CCminer-djm34 v1.2.3 (stability improvement)
+
 ##### 0.6-78@191007 2019-10-07
 *   TT-Miner v3.0.10 Beta3 (improved performance for ProgPoW based algos, auto detection of the max supported compute capability)
 *   CCminer fork Z-Enemy v2.3 (performance improvement: +2-3% x16rv2 algo)
