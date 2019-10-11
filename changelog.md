@@ -1,3 +1,12 @@
+##### 0.6-81@191011 2019-10-11
+*   small fix which affect only for PXE image
+*   TT-Miner v3.0.10 Release (all changes in 3.0.10 beta + fixed an bug that interrupts the API connection under some conditions, added a watchdog for EPIC connection)
+*   PhoenixMiner v4.7c (since the 4.7b beta small improvements)
+*   Gminer v1.68 Beta (removed eaglesong algorithm support, improved performance for Cuckarood29/Cuckaroo29s/Aeternity algos)
+*   NBMiner v26.0 (added support for BFC mininig on Nvidia, fixed CKB compatibility on AMD, fixed cuckcoocycle on nicehash)
+*   WildRig-Multi v0.19.2 (added support x16rv2 algo)
+*   CPUminer-opt v3.9.9 (added power2b algo, added generic yespower-b2b)
+
 ##### 0.6-80@191008-2 2019-10-08
 * fixed selfupgrade problem with release 0.6-79@191008
 
