@@ -607,6 +607,50 @@
 		}
 	},
 	{
+		"coin": "PGN",
+		"servers": [
+			{
+				"geo": "Europe",
+				"urls": [
+					"eu.gos.cx:3324"
+				]
+			},
+			{
+				"geo": "US/Canada",
+				"urls": [
+					"us.gos.cx:3324"
+				]
+			},
+			{
+				"geo": "Russia",
+				"urls": [
+					"ru.gos.cx:3324"
+				]
+			},
+			{
+				"geo": "Asia",
+				"urls": [
+					"asia.gos.cx:3324"
+				]
+			}
+		],
+		"miners": {
+			"t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x21s",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x21s",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"opencl-threads\" : \"2\""
+			}
+		}
+	},
+	{
 		"coin": "SIN",
 		"servers": [
 			{
