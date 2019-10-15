@@ -7,6 +7,31 @@
         }
     },
     {
+        "coin": "BFC",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "bfc.uupool.cn:12210"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "bfc",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nbminer": {
+                "algo": "bfc",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "VOLLAR",
         "servers": [
             {
