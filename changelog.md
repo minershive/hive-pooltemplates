@@ -1,3 +1,10 @@
+##### 0.6-82@191016 2019-10-16
+*   Improved Autofan
+*   Gminer v1.69 (added BFC mining on Nvidia and AMD cards)
+*   T-Rex v0.14.6 (bug fixes)
+*   WildRig-Multi v0.19.3 (fixed x16rv2 algo)
+*   NEW CPUminer-opt fork by rplant v4.0.20 (supported some CPU coins on yespower based algos)
+
 ##### 0.6-81@191011 2019-10-11
 *   small fix which affect only for PXE image
 *   TT-Miner v3.0.10 Release (all changes in 3.0.10 beta + fixed an bug that interrupts the API connection under some conditions, added a watchdog for EPIC connection)
