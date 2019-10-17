@@ -26,13 +26,13 @@ Available miners:
 - beamcuda - open source BEAM CUDA miner
 - bminer - ethash/tensority/equihash variants/Grin PoW miner 
 - cast-xmr - cryptonight variants (AMD)
-- ccminer - ccminer & forks (ccminer forks available: alexis, allium, bcd, dace-cryptonight, djm34, enemy, klaust, klaust-yescrypt, nanashi, nevermore, nevermore-x16s, phi-anxmod, rfv2, rvn, sp-mod, suprminer, suprminer-spmod, tpruvot, vertminer, xaya, xevan, zp)
+- ccminer - ccminer & forks (ccminer forks available: alexis, allium, bcd, dace-cryptonight, djm34, enemy, klaust, klaust-yescrypt, nanashi, nevermore, nevermore-x16s, phi-anxmod, rfv2, rvn, sp-mod, suprminer, suprminer-spmod, tecracoin, tpruvot, vertminer, xaya, xevan, zp)
 - ckb-miner - CKB (Nervos Network) wallet CPU/OpenCL/CUDA miner
 - claymore - Claymore's DUAL ETH GPU AMD&NVidia miner
 - claymore-x - Claymore's Cryptonote AMD GPU miner
 - claymore-z - Claymore's AMD GPU ZCash miner
 - cortex-miner - Cortex CUDA miner 
-- cpuminer-opt - cpuminer-opt CPU miner (forks: JayDDee, cpupower)
+- cpuminer-opt - cpuminer-opt CPU miner (forks: JayDDee, cpupower, rkz, rplant)
 - cryptodredge - multi algo CUDA miner (NVidia)
 - dstm - legacy 0.3.4b and new zhash
 - eggminergpu - CUDA/OpenCL miner for BIS - Bismuth coin on Eggpool (AMD/Nvidia)
@@ -55,7 +55,7 @@ Available miners:
 - noncerpro-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
 - phoenixminer - ethash miner (AMD/NVidia)
 - rhminer - randomhash CPU miner
-- sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi)
+- sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi, tecracoin)
 - smine - CKB Sparkpool miner (AMD)
 - sushi-miner-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
 - sushi-miner-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
