@@ -1,3 +1,12 @@
+##### 0.6-83@191017 2019-10-17
+*   Autofan small fix (force set min_fan=25% for AMD GPU)
+*   Added output for some additional temps in `amd-info` if they exist
+*   Gminer v1.70 (fixed bug in BFC stratum leading to "low difficulty" shares after changing target)
+*   NanoMiner v1.6.1 (more Ethash memory optimizations for Nvidia cards, SSL connections for Nanopool ETH, ETC pools are used by default if no pools provided, Ubiqpool.io pools are used by default if no UBQ pools provided)
+*   NEW CCminer-tecracoin v1.2.4 (based on djm34 code added custom mtp implementation mtp-tcr for Nvidia)
+*   NEW SGminer-tecracoin v0.1.4 (based on djm34 code added custom mtp implementation mtp-tcr for AMD)
+*   NEW CPUminer-opt fork RKZ by RicKillerZ v4.2b (optimized for yespower variants CPUminer-opt version)
+
 ##### 0.6-82@191016 2019-10-16
 *   Improved Autofan
 *   Gminer v1.69 (added BFC mining on Nvidia and AMD cards)
