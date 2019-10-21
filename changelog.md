@@ -1,3 +1,9 @@
+##### 0.6-84@191021 2019-10-21
+*   Improved Autofan (improved algorithm, improved compatibility with custom mining cases)
+*   Issue fix: soft-WD now also stops when `miner stop` command applied
+*   CKB-miner v0.23.0 (updated for CKB v0.23)
+*   miniZ v1.5r (performance improvement for EQ 210/9 up to 7%, improved stability)
+
 ##### 0.6-83@191017 2019-10-17
 *   Autofan small fix (force set min_fan=25% for AMD GPU)
 *   Added output for some additional temps in `amd-info` if they exist
