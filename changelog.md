@@ -1,4 +1,4 @@
-##### image release 0.6-84@191021 2019-10-22
+##### LINUX IMAGE RELEASE 0.6-84@191021 2019-10-22
 *   Stable Linux client image based on Ubuntu 18.04
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: 5.0.21
