@@ -1,3 +1,9 @@
+##### LINUX IMAGE RELEASE 0.6-84@191022 2019-10-22
+*   Stable Linux client image based on Ubuntu 18.04
+*   Universal boot mode: BIOS | UEFI
+*   Linux kernel: 5.0.21
+*   Drivers version: AMD v19.20, Nvidia: v430.50
+
 ##### 0.6-84@191021 2019-10-21
 *   Improved Autofan (improved algorithm, improved compatibility with custom mining cases)
 *   Issue fix: soft-WD now also stops when `miner stop` command applied
