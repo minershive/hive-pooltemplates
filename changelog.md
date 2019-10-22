@@ -1,4 +1,4 @@
-##### LINUX IMAGE RELEASE 0.6-84@191022 2019-10-22
+##### image release 0.6-84@191022 2019-10-22
 *   Stable Linux client image based on Ubuntu 18.04
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: 5.0.21
@@ -227,7 +227,7 @@
 *   Image based on Ubuntu 18.04 (other specs: Linux kernel: 5.0.21-hiveos+vega, AMD drivers: amdgpu-pro v19.10)
 
 ##### 0.6-61@190810 2019-08-10
-*   `selfupdate` now also accepts `-f` (as well `--force`) to force update and one more fix for "Hive is up to date"
+*   `selfupgrade` now also accepts `-f` (as well `--force`) to force update and one more fix for "Hive is up to date"
 *   VBIOS flashing bug fix: stop autofan & watchdog before AMD VBIOS flash to prevent possible reboots on gpu-stat errors
 *   T-Rex v0.13.2 (tensority nonce fix for antpool)
 *   CryptoDredge v0.21.0 (added support algos: chukwa, chukwa-wrkz, cn-ccx; added support SSL connections)
