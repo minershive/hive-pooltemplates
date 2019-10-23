@@ -1,5 +1,13 @@
 [
     {
+        "pool": {
+            "name": "Whalesburg",
+            "url": "https://whalesburg.com",
+            "fee": 1,
+            "type": "SMPPS+"
+        }
+    },
+    {
         "coin": "Whalesburg-Ethash",
         "servers": [
             {
@@ -7,42 +15,20 @@
                 "urls": [
                     "eu1.whalesburg.com:8082",
                     "eu2.whalesburg.com:8082"
-                ]
-            },
-            {
-                "geo": "EU: 3GB cards",
-                "urls": [
-                    "eu1-3g.whalesburg.com:8083",
-                    "eu2-3g.whalesburg.com:8083"
+                ],
+                "ssl_urls": [
+                    "eu1.whalesburg.com:7777",
+                    "eu2.whalesburg.com:7777"
                 ]
             }
         ],
         "miners": {
+            "_prototype": "miners_ethash",
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins -1\n-allpools 1"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, ALLPOOLS: 1, ALLCOINS -1, -GSER 2"
             },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "rigName = %WORKER_NAME%"
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
             }
         }
     },
@@ -54,42 +40,20 @@
                 "urls": [
                     "eu1.whalesburg.com:8082",
                     "eu2.whalesburg.com:8082"
-                ]
-            },
-            {
-                "geo": "EU: 3GB cards",
-                "urls": [
-                    "eu1-3g.whalesburg.com:8083",
-                    "eu2-3g.whalesburg.com:8083"
+                ],
+                "ssl_urls": [
+                    "eu1.whalesburg.com:7777",
+                    "eu2.whalesburg.com:7777"
                 ]
             }
         ],
         "miners": {
+            "_prototype": "miners_ethash",
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins -1\n-allpools 1"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, ALLPOOLS: 1, ALLCOINS -1, -GSER 2"
             },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "rigName = %WORKER_NAME%"
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
             }
         }
     }
