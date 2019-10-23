@@ -1,5 +1,5 @@
 ##### LINUX IMAGE RELEASE 0.6-84@191021 2019-10-22
-*   Hive Linux client image v0.6-84@191021 based on Ubuntu 18.04 (new stable branch)
+*   Hive Linux client image v0.6-84@191021 (new stable branch based on Ubuntu 18.04)
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: 5.0.21
 *   Drivers version: AMD v19.20, Nvidia: v430.50
