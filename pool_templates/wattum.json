@@ -1,0 +1,30 @@
+[
+    {
+        "pool": {
+            "name": "Wattum",
+            "url": "http://wattum.io",
+            "fee": 1,
+            "type": "PPS"
+        }
+    },
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "173.234.158.115:8082",
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash",
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, ALLPOOLS: 1, ALLCOINS -1, -GSER 2"
+            },
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
+            }
+        }
+    }
+]
