@@ -1,3 +1,18 @@
+##### 0.6-85@191028 2019-10-28
+*   `cache-hive-ip` fixes and improvements
+*   Issue fix: added info to `autofan` "unable to set fan speed" message
+*   Issue fix: report all connected disks to web, not only system
+*   Issue fix: nvidia-oc now reports error if setting power limit fails
+*   Issue fix: `autofan` unable set fan speed to MAX in some situations
+*   Improvement: `miner log` now reports if session is active or not
+*   Improvement: added `miner status` command to get running screen sessions without opening them
+*   Improvement: watchdog now sends miner logs with low hashrate message and top processes list on high LA
+*   Improvement: improved api sockets close on miner start
+*   CCminer-djm34 v1.3.0 (fix a bug in solo mining)
+*   XMRigCC v2.1.0 (as XMRig fork - full rebase on XMRig v3.2.0)
+*   WildRig-Multi v0.20.0.3 (added support of mtp and mtp-tcr algo, added new arguments `--opencl-less-cpu-load` and `--split-job`)
+*   TT-Miner v3.1.0 Beta1 (small improvements for all ProgPoW variants)
+
 ##### LINUX IMAGE RELEASE 0.6-84@191021 2019-10-22
 *   Hive Linux client image: 0.6-84@191021 (new stable branch based on Ubuntu 18.04)
 *   Universal boot mode: BIOS | UEFI
