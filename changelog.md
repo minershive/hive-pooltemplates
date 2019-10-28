@@ -1,9 +1,9 @@
 ##### 0.6-85@191028 2019-10-28
 *   `cache-hive-ip` fixes and improvements
-*   Issue fix: added info to `autofan` "unable to set fan speed" message
 *   Issue fix: report all connected disks to web, not only system
 *   Issue fix: nvidia-oc now reports error if setting power limit fails
 *   Issue fix: `autofan` unable set fan speed to MAX in some situations
+*   Improvement: added info to `autofan` "unable to set fan speed" message
 *   Improvement: `miner log` now reports if session is active or not
 *   Improvement: added `miner status` command to get running screen sessions without opening them
 *   Improvement: watchdog now sends miner logs with low hashrate message and top processes list on high LA
