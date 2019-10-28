@@ -7,7 +7,7 @@
 *   Improvement: `miner log` now reports if session is active or not
 *   Improvement: added `miner status` command to get running screen sessions without opening them
 *   Improvement: watchdog now sends miner logs with low hashrate message and top processes list on high LA
-*   Improvement: improved api sockets close on miner start
+*   Improvement: improved API sockets close on miner start
 *   CCminer-djm34 v1.3.0 (fix a bug in solo mining)
 *   XMRigCC v2.1.0 (as XMRig fork - full rebase on XMRig v3.2.0)
 *   WildRig-Multi v0.20.0.3 (added support of mtp and mtp-tcr algo, added new arguments `--opencl-less-cpu-load` and `--split-job`)
