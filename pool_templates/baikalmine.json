@@ -597,6 +597,54 @@
         }
     },
     {
+        "coin": "ZCL",
+        "servers": [
+            {
+                "geo": "EU-low",
+                "urls": [
+                    "zcl.baikalmine.com:2010"
+                ]
+            },
+            {
+                "geo": "EU-high",
+                "urls": [
+                    "zcl.baikalmine.com:2011"
+                ]
+            },
+            {
+                "geo": "SOLO EU-low",
+                "urls": [
+                    "zcl-solo.baikalmine.com:2020"
+                ]
+            },
+            {
+                "geo": "SOLO EU-high",
+                "urls": [
+                    "zcl-solo.baikalmine.com:2021"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "192_7",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers ZcashPoW"
+            },
+            "gminer": {
+                "algo": "192_7",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            }
+        }
+    },
+    {
         "coin": "YEC",
         "servers": [
             {
