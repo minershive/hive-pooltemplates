@@ -597,6 +597,68 @@
         }
     },
     {
+        "coin": "ZCL",
+        "servers": [
+            {
+                "geo": "EU-low",
+                "urls": [
+                    "zcl.baikalmine.com:2010"
+                ]
+            },
+            {
+                "geo": "EU-high",
+                "urls": [
+                    "zcl.baikalmine.com:2011"
+                ]
+            },
+            {
+                "geo": "SOLO EU-low",
+                "urls": [
+                    "zcl-solo.baikalmine.com:2020"
+                ]
+            },
+            {
+                "geo": "SOLO EU-high",
+                "urls": [
+                    "zcl-solo.baikalmine.com:2021"
+                ]
+            }
+        ],
+        "miners": {
+            "dstm": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "claymore-z": {
+                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "%URL%",
+                "algo": "equihash",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "YEC",
         "servers": [
             {
