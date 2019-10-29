@@ -625,36 +625,22 @@
             }
         ],
         "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
             "ewbf": {
+                "algo": "192_7",
+                "fork": "zhash",
                 "zpass": "x",
                 "zport": "%URL_PORT%",
                 "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers ZcashPoW"
             },
-            "bminer": {
-                "url": "%URL%",
+            "gminer": {
+                "algo": "192_7",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
             }
         }
     },
