@@ -1,0 +1,29 @@
+[
+    {
+        "coin": "SERO",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "sero.woolypooly.com:8008"
+                ]
+            }
+        ],
+        "miners": {
+            "ethminer": {
+                "fork": "serominer",
+                "cuda": 0,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "progpow_sero"
+            }
+        }
+    },
