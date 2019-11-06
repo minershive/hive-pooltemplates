@@ -3,10 +3,10 @@
 *   Issue fix: `nvidia-oc` was not applied with large delay values (delay now limited to 150sec and also prevent simultaneous `nvidia-oc` runs by killing already running)
 *   Improvement: increased width of top processes for output triggered by watchdog event "High LA"
 *   Improvement: minor improvement in multiple miners start
-*   Gminer v1.72 (added ethash algo support for ETH/ETC coins also supported NiceHash/MiningPoolHub pools with `--proto stratum` option)
+*   Gminer v1.72 (added ethash algo support for ETH/ETC coins, also supported NiceHash/MiningPoolHub pools with `--proto stratum` option)
 *   CKB-miner v0.24.0 (updated to CKB v0.24)
 *   CCminer-djm34 v1.3.1 (corrects a memory leak which may cause ccminer after a long while if the ressources ram/virtual memory are limited)
-*   WildRig-Multi v0.20.0.3 (added support of mtp and mtp-tcr algo, added new arguments `--opencl-less-cpu-load` and `--split-job`)
+*   WildRig-Multi v0.20.1 (up to 5% hashrate speedup for mtp/mtp-tcr on Navi, fixed x22i incorrect shares)
 *   TT-Miner v3.1.0 Beta2 (improvements for MTP - mostly for RTX cards)
 *   lolMiner stats issue workaround: in some algos lolMiner API not incremented submitted shares but counting accepted shares which breaks ASR
 *   CPUminer-opt and XMRig fix: temperature readings fixed (mostly for AMD Ryzen)
@@ -24,7 +24,7 @@
 *   Improvement: improved API sockets close on miner start
 *   CCminer-djm34 v1.3.0 (fix a bug in solo mining)
 *   XMRigCC v2.1.0 (as XMRig fork - full rebase on XMRig v3.2.0)
-*   WildRig-Multi v0.20.1 (up to 5% hashrate speedup for mtp/mtp-tcr on Navi, fixed x22i incorrect shares)
+*   WildRig-Multi v0.20.0.3 (added support of mtp and mtp-tcr algo, added new arguments `--opencl-less-cpu-load` and `--split-job`)
 *   TT-Miner v3.1.0 Beta1 (small improvements for all ProgPoW variants)
 
 ##### LINUX IMAGE RELEASE 0.6-84@191021 2019-10-22
