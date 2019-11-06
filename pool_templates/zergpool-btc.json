@@ -1,0 +1,48 @@
+[
+    {
+        "pool": {
+            "name": "ZergPool",
+            "url": "https://zergpool.com",
+            "fee": 1,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "Zerg-x21s",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "x21s.mine.zergpool.com:3224"
+                ]
+            }
+        ],
+        "miners": {
+             "cpuminer-opt": {
+                "url": " stratum+tcp://%URL%",
+                "algo": "x21s",
+                "pass": "c=BTC",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+             "cryptodredge": {
+                "algo": "x21s",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "c=BTC"
+            },
+             "t-rex": {
+                "algo": "x21s",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "c=BTC"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x21s",
+                "pass": "c=BTC",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--opencl-threads auto\n--opencl-launch auto"
+            }
+        }
+    }
+]
