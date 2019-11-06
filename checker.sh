@@ -37,3 +37,6 @@ for SUBDIR in $DIR; do
 	[[ $? == 0 ]] && echo -e $GREEN OK $NOCOLOR #|| echo -e $RED ERROR $NOCOLOR
     done
 done
+
+echo -e $YELLOW"Checking complete"$NOCOLOR
+exit 0
