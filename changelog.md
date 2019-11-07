@@ -1,4 +1,4 @@
-##### 0.6-86@191106 2019-11-06
+##### 0.6-86@191107 2019-11-07
 *   Issue fix: miner start exit code fixed
 *   Issue fix: `nvidia-oc` was not applied with large delay values (delay now limited to 150sec and also prevent simultaneous `nvidia-oc` runs by killing already running)
 *   Improvement: increased width of top processes for output triggered by watchdog event "High LA"
