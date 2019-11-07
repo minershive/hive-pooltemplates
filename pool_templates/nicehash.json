@@ -603,7 +603,21 @@
                 "template": "%WAL%",
                 "pass": "x",
                 "user_config": "rigName = %WORKER_NAME%"
-            }
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "rigName = %WORKER_NAME%"
+            },
+            "gminer": {
+                "algo": "ethash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--proto stratum"
+            },
         }
     },
     {
