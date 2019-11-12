@@ -1,7 +1,7 @@
 ##### 0.6-87@191112 2019-11-12
 *   Issue fix: `amd-info` minor fix 
 *   Issue fix: `nvidia-oc` minor fix
-*   Improvement: `agent` fixes and improvements (improved json building and checking to solve issues with bad requests  to Hive API servers; replaced password with asterisks in `hello` and `agent-screen` output; agent now restarts itself in screen on crash; added new commands - `agent-screen [start|restart|stop|log|log1|log2]`)
+*   Improvement: `agent` fixes and improvements (improved json building and checking to solve issues with bad requests  to Hive API servers; replaced password with asterisks in `hello` and `agent-screen` output; `agent` now restarts itself in screen on crash; added new commands - `agent-screen [start|restart|stop|log|log1|log2]`)
 *   Improvement: `autofan` improvement
 *   Improvement: update k10temp module (added some CPU support)
 *   Gminer v1.73 (re-added eaglesong(CKB) algo for Nvidia/AMD)
