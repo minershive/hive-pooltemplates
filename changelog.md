@@ -1,3 +1,15 @@
+##### 0.6-87@191112 2019-11-12
+*   Issue fix: `amd-info` minor fix 
+*   Issue fix: `nvidia-oc` minor fix
+*   Improvement: `agent` fixes and improvements (improved json building and checking to solve issues with bad requests  to Hive API servers; replaced password with asterisks in `hello` and `agent-screen` output; agent now restarts itself in screen on crash; added new commands - `agent-screen [start|restart|stop|log|log1|log2]`)
+*   Improvement: `autofan` improvement
+*   Improvement: update k10temp module (added some CPU support)
+*   Gminer v1.73 (re-added eaglesong(CKB) algo for Nvidia/AMD)
+*   PhoenixMiner v4.8b (added support for the latest AMD drivers under Linux 19.30-934563)
+*   SGminer-fancyIX v5.6.1.3.b6a "0.6.0-1 release" (improved mtp performance - syncup with zcoinofficial repo)
+*   NanoMiner v1.6.2 (fixed setting up RandomX algo)
+*   EggMinerGPU fix: stats fixed for EggMinerGPU v4.0.200
+
 ##### 0.6-86@191107 2019-11-07
 *   Issue fix: miner start exit code fixed
 *   Issue fix: `nvidia-oc` was not applied with large delay values (delay now limited to 150sec and also prevent simultaneous `nvidia-oc` runs by killing already running)
