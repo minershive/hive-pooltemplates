@@ -1,5 +1,5 @@
 ##### 0.6-88@191113 2019-11-13
-*   Issue fix: hot-fix for `autofan` (in some cases, the fan speed was dropped to a minimum and then increased sharply for a short period of time)
+*   Issue fix: hot-fix for `autofan` (on some configurations, there may be jumps in fan speed over a short period of time)
 
 ##### 0.6-87@191112 2019-11-12
 *   Issue fix: `amd-info` minor fix 
