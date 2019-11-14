@@ -1,3 +1,7 @@
+##### 0.6-89@191115 2019-11-15
+*   CKB-miner v0.25 (CKB node miner ready to mainnet)
+*   Gminer v1.74 (significant performance improvements for сuckatoo31 algo)
+
 ##### 0.6-89@191114 2019-11-14
 *   Issue fix: minor `autofan` fix
 *   Spark Miner v0.4.0 (renamed from s-mine; CKB mainnet ready miner for AMD cards; can be launched simultaneously with claymore's or other ethereum miner, use `-scale X` option where X scale factor in range 10-30, 0 for auto, 14-17 for eth dual mining)
