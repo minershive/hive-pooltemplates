@@ -1919,5 +1919,52 @@
                 "tls": "1"
             }
         }
+    },
+    {
+        "coin": "CKB",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "ckb.2miners.com:6464"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "ckb.2miners.com:6565"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "solo-ckb.2miners.com:6767"
+                ]
+            },
+            {
+                "geo": "SOLO EU HiDIFF",
+                "urls": [
+                    "solo-ckb.2miners.com:6868"
+                ]
+            }
+        ],
+        "miners": {
+            "nbminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "eaglesong"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x",
+                "algo": "ckb"
+            },
+            "smine": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
     }
 ]
