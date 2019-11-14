@@ -1,6 +1,6 @@
 ##### 0.6-89@191114 2019-11-14
 *   Issue fix: minor `autofan` fix
-*   Spark Miner v0.4.0 (renamed from s-mine, CKB mainnet ready miner for AMD cards, can be launched simultaneously with claymore's or other ethereum miner)
+*   Spark Miner v0.4.0 (renamed from s-mine; CKB mainnet ready miner for AMD cards; can be launched simultaneously with claymore's or other ethereum miner, use `-scale X` option where X scale factor in range 10-30, 0 for auto, 14-17 for eth dual mining)
 *   miniZ v1.5s (improvement for 125/4, 150/5/3 and 144/5 algos from 0.3% to 3% depending on algo and GPU)
 
 ##### 0.6-88@191113 2019-11-13
