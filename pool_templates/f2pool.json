@@ -276,5 +276,38 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "CKB",
+        "servers": [
+            {
+                "geo": "China (mainland)",
+                "urls": [
+                    "ckb.f2pool.com:4300"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "eaglesong"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "eaglesong"
+            },
+            "smine": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "ckb"
+            }
+        }
     }
 ]
