@@ -249,14 +249,14 @@
         "coin": "CKB",
         "servers": [
             {
-                "geo": "China - testnet",
+                "geo": "China (mainland)",
                 "urls": [
                     "ckb.sparkpool.com:8888",
                     "ckb.sparkpool.com:18888"
                 ]
             },
             {
-                "geo": "Europe - testnet",
+                "geo": "Europe",
                 "urls": [
                     "ckb-eu.sparkpool.com:8888",
                     "ckb-eu.sparkpool.com:18888"
@@ -264,6 +264,11 @@
             }
         ],
         "miners": {
+            "gminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "eaglesong"
+            },
             "nbminer": {
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
