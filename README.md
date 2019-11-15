@@ -118,7 +118,7 @@ Available miners:
 ]
 ```
 
-### WARNING! Comments in this example only for helping purposes! Don't use it in pool template file
+#### WARNING! Comments in this example only for helping purposes! Don't use it in pool template file
 
 ## SSL ports
 If your pool contains SSL ports on the same domains then you can add special section "ssl_urls" in geo element
