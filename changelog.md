@@ -5,8 +5,8 @@
 *   NEW nq-miner v0.99.5 (Nimiq GPU miner for AMD and Nvidia GPUs)
 *   NEW XMR-Stak-RandomX v1.0.0 (free all-in-one CPU/OCL/CUDA RandomX miner which supported only randomx and variants (loki,wow)
 *   NEW XMRig Unified v5.0.0 (XMRig now unified 3-in-1 CPU/OCL/CUDA miner for Argon2/RandomX/Cryptonight based algos, internal name xmrig-new)
-*   NEW NBMiner v26.1 (add support for mining CKB+ETH on AMD GPU, improved performance for mining CKB on Nvidia GPUs
-*   NEW Gminer v1.75 (reduced memory usage for Cuckatoo31 8GB solver, added Ethash+Eaglesong dual mining for Nvidia GPUs)
+*   NBMiner v26.1 (add support for mining CKB+ETH on AMD GPU, improved performance for mining CKB on Nvidia GPUs
+*   Gminer v1.75 (reduced memory usage for Cuckatoo31 8GB solver, added Ethash+Eaglesong dual mining for Nvidia GPUs)
 *   Config and stats fixes and improvements: PhoenixMiner, Gminer, XMR-Stak ()
 *   Other small fixes and improvements
 
