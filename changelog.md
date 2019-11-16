@@ -1,5 +1,5 @@
 ##### 0.6-90@191116 2019-11-16
-*   Improved `net-test` tool (now shows resolved ip, current api server and more local network info, additional info using option `-a|--advanced` for detailed test)
+*   Improved `net-test` tool (now shows resolved ip, current api server and more local network info, added output advanced info using option `-a|--advanced`)
 *   Improved `watchdog-opendev` (added sleep time check to stop pinging wd on very high LA)
 *   Improved `autofan` (small algo improvement, added commands `start|stop|restart|log`)
 *   NEW nq-miner v0.99.5 (Nimiq GPU miner for AMD and Nvidia GPUs)
