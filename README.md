@@ -53,18 +53,20 @@ Available miners:
 - noncepool-cuda - CUDA miner for BIS - Bismuth coin on Noncepool (Nvidia)
 - noncerpro-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
 - noncerpro-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
+- nq-miner - Nimiq GPU OpenCL/CUDA miner
 - phoenixminer - ethash miner (AMD/NVidia)
 - rhminer - randomhash CPU miner
 - sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi, tecracoin)
-- smine - CKB Sparkpool miner (AMD)
+- smine - CKB Spark Miner (AMD)
 - sushi-miner-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
 - sushi-miner-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
 - t-rex - T-Rex multi algo CUDA miner (NVidia)
 - teamredminer - lyra2z/lyra2v3/phi2/cryptonight-r/v7/v8/half/double/rwz/trtl/x16r/x16rv2 OpenCL miner (AMD)
 - tt-miner - Ethash/Ubqhash/ProgPoW with variants/TEthashV1/MTP/Lyra2rev3 CUDA miner
 - wildrig-multi - multi-algo OpenCL miner (AMD)
-- xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo with forks arto, alloy, b2n, mox, marketcash, uplexa)
+- xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo with forks arto, alloy, b2n, mox, marketcash, randomx, uplexa)
 - xmrig - XMRig (CPU cryptonight variants miner with forks: xmrigcc, hycon, xlarig)
+- xmrig-new - XMRig (unified)  CPU/OCL/CUDA miner for Argon2/RandomX/Cryptonight based algos
 - xmrig-amd - XMRig (AMD cryptonight variants miner with forks xmrigcc, hycon)
 - xmrig-nvidia - XMRig (NVidia cryptonight variants miner  with forks fruityminer, hycon)
 - zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
