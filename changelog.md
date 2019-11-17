@@ -7,7 +7,7 @@
 *   NEW XMRig Unified v5.0.0 (XMRig now unified 3-in-1 CPU/OCL/CUDA miner for Argon2/RandomX/Cryptonight based algos, internal name xmrig-new)
 *   NBMiner v26.1 (add support for mining CKB+ETH on AMD GPU, improved performance for mining CKB on Nvidia GPUs
 *   Gminer v1.75 (reduced memory usage for Cuckatoo31 8GB solver, added Ethash+Eaglesong dual mining for Nvidia GPUs)
-*   Config and stats fixes and improvements: PhoenixMiner, Gminer, XMR-Stak ()
+*   Miner config/stats fixes and improvements (PhoenixMiner, Gminer, XMR-Stak)
 *   Other small fixes and improvements
 
 ##### 0.6-89@191115 2019-11-15
