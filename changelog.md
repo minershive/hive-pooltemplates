@@ -1,3 +1,6 @@
+##### 0.6-90@191117 2019-11-17
+*   Fixed config generator for PhoenixMiner (it was affect only to users with extra config settings)
+
 ##### 0.6-90@191116 2019-11-16
 *   Improved `net-test` tool (now shows resolved ip, current api server and more local network info, added output advanced info using option `-a|--advanced`)
 *   Improved `watchdog-opendev` (added sleep time check to stop pinging wd on very high LA)
