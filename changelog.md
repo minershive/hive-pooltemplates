@@ -1,3 +1,7 @@
+##### 0.6-91@191118 2019-11-18
+*   TT-Miner v3.1.0 Beta3 (add support for EagleSong, removed support of Myr-Gr and TeoHashV1 algo)
+*   Fixed XMR-Stak-RandomX package installation
+
 ##### 0.6-90@191117 2019-11-17
 *   Fixed config generator for PhoenixMiner (it was affect only to users with extra config settings)
 *   Fixed potential math bug with very big hashrate values (Bminer, NBMiner)
