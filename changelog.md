@@ -1,6 +1,6 @@
 ##### 0.6-92@191119 2019-11-19
 *   Updated `amdmeminfo` tool (added some IDs of RX 5700 series)
-*   Improved `net-test` (now shows current api connection not only server)
+*   Improved `net-test` (now shows current API connection not only server)
 *   Updated `amd-oc` (introducing  further support of OC/UV Navi cards)
 *   Fixed `agent` (fix switch push interval back to default)
 *   XMRig (unified) v5.0.1 (fixed compatibility with some AMD GPUs)
