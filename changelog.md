@@ -2,7 +2,7 @@
 *   Updated `amdmeminfo` tool (added some IDs of RX 5700 series)
 *   Improved `net-test` (now shows current API connection not only server)
 *   Updated `amd-oc` (introducing  further support of OC/UV Navi cards)
-*   Fixed `agent` (fix switch push interval back to default)
+*   Fixed `agent` (fixes switch push interval back to default)
 *   XMRig (unified) v5.0.1 (fixed compatibility with some AMD GPUs)
 *   lolMiner v0.9 (significant performance improvement for C31 on 8G AMD cards, reduced stale Grin shares, bug fixes)
 *   Gminer v1.76 (improved ETH+CKB performance, reduced stale shares on C31)
