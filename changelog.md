@@ -1,3 +1,13 @@
+##### 0.6-92@191119 2019-11-19
+*   Updated `amdmeminfo` tool (added some IDs of RX 5700 series)
+*   Improved `net-test` (now shows current api connection not only server)
+*   Updated `amd-oc` (introducing  further support of OC/UV Navi cards)
+*   Fixed `agent` (fix switch push interval back to default)
+*   XMRig (unified) v5.0.1 (fixed compatibility with some AMD GPUs)
+*   lolMiner v0.9 (significant performance improvement for C31 on 8G AMD cards, reduced stale Grin shares, bug fixes)
+*   Gminer v1.76 (improved ETH+CKB performance, reduced stale shares on C31)
+*   nq-miner v0.99.6 (fixed automatic memory allocation bug, fixed json API)
+
 ##### 0.6-91@191118 2019-11-18
 *   TT-Miner v3.1.0 Beta3 (add support for EagleSong, removed support of Myr-Gr and TeoHashV1 algo)
 *   Fixed installation XMR-Stak-RandomX package
