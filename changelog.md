@@ -1,6 +1,6 @@
 ##### 0.6-93@191120 2019-11-20
-*   Gminer v1.77 (decreased stale shares on pool side for cuckatoo31 algo, added API support for dual mining)
-*   Spark Miner v0.4.1 (improved parallel work with Сlaymore's ETH Dual Miner)
+*   Gminer v1.77 (decreased stale shares on pool side for C31 algo)
+*   Spark Miner v0.4.1 (improved parallel work with Сlaymore's ETH miner)
 
 ##### 0.6-92@191119 2019-11-19
 *   Updated `amdmeminfo` tool (added some IDs of RX 5700 series)
