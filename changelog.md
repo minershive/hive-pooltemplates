@@ -6,8 +6,8 @@
 *   Fixed stats for Spark Miner
 
 ##### ASIC 0.1-13 2019-11-21
-*   Added support of Antminer S9k,S9SE,T15,S15,T17,S17,S17pro
-*   Added support of Innosilicon T2*,T3*
+*   Added support of Antminer S9k, S9SE, T15,S15, T17, S17, S17pro
+*   Added support of Innosilicon T2*, T3*
 *   Added support Hiveon ASIC S9 firmware v1.02
 *   Other minor fixes and improvemnts
 
