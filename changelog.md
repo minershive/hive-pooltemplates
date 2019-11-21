@@ -1,3 +1,10 @@
+
+##### ASIC 0.1-13 2019-11-21
+*   Added support of Antminer S9k,S9SE,T15,S15,T17,S17,S17pro
+*   Added support of Innosilicon T2*,T3*
+*   Added support Hiveon ASIC S9 firmware v1.02
+*   Other minor fixes and improvemnts
+
 ##### 0.6-93@191120 2019-11-20
 *   Gminer v1.77 (decreased stale shares on pool side for C31 algo)
 *   Spark Miner v0.4.1 (improved parallel work with Сlaymore's ETH miner)
