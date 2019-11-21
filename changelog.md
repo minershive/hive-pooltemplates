@@ -1,3 +1,10 @@
+##### 0.6-94@191121 2019-11-21
+*   Improved `net-stat` (runs traceroute to API server if it is unreachable)
+*   NBMiner v26.2 (improve CKB+ETH performance on AMD GPUs, fixed bug v26.1 when miner crashed on launch on certain AMD rigs)
+*   Gminer v1.78 (added option to control ETH/CKB balance in dual mining, fixed bug with x2 hashare in miner output on eaglesong algo)
+*   TT-Miner v3.1.0 (added support for CUDA 10.2, added eaglesong, removed myr-gr, teohashv1, bug fixes)
+*   Fixed stats for Spark Miner
+
 ##### ASIC 0.1-13 2019-11-21
 *   Added support of Antminer S9k,S9SE,T15,S15,T17,S17,S17pro
 *   Added support of Innosilicon T2*,T3*
@@ -14,7 +21,7 @@
 *   Updated `amd-oc` (introducing  further support of OC/UV Navi cards)
 *   Fixed `agent` (switch push interval back to default)
 *   XMRig (unified) v5.0.1 (fixed compatibility with some AMD GPUs)
-*   lolMiner v0.9 (significant performance improvement for C31 on 8G AMD cards, reduced stale Grin shares, bug fixes)
+*   lolMiner v0.9 (significant performance improvement for C31 on 8G AMD cards, reduced stale GRIN shares, bug fixes)
 *   Gminer v1.76 (improved ETH+CKB performance, reduced stale shares on C31)
 *   nq-miner v0.99.6 (fixed automatic memory allocation bug, fixed json API)
 
