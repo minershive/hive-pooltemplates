@@ -1,5 +1,5 @@
 ##### 0.6-94@191121 2019-11-21
-*   Improved `net-stat` (runs traceroute to API server if it is unreachable)
+*   Improved `net-test` (runs traceroute to API server if it is unreachable)
 *   NBMiner v26.2 (improve CKB+ETH performance on AMD GPUs, fixed bug v26.1 when miner crashed on launch on certain AMD rigs)
 *   Gminer v1.78 (added option to control ETH/CKB balance in dual mining, fixed bug with x2 hashare in miner output on eaglesong algo)
 *   TT-Miner v3.1.0 (added support for CUDA 10.2, added eaglesong, removed myr-gr, teohashv1, bug fixes)
