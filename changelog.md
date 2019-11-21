@@ -1,4 +1,3 @@
-
 ##### ASIC 0.1-13 2019-11-21
 *   Added support of Antminer S9k,S9SE,T15,S15,T17,S17,S17pro
 *   Added support of Innosilicon T2*,T3*
@@ -438,6 +437,16 @@
 *   CCminer-djm34 v1.1.23 (stability improvement)
 *   T-Rex v0.12.1 (improved MTP by 1-3% on some cards)
 *   Gminer - fixed broken stats on some systems
+
+##### ASIC 0.1-12 2019-06-26
+*   Initial support of Antminer S17, S17 Pro, T17
+*   Antminer Z11
+*   Antminer L3 customs, T9 customs
+*   Traffic stats optimization
+*   Initial support (beta) for Innosilicon T3
+*   Bulk install updates
+*   Antminer S9 customs fix
+*   Selfupgrade fixes
 
 ##### 0.6-55@190626 2019-06-26
 *   nanominer v1.4.0 (added 'memTweak' option to control AMD GPU memory timings on Ethash algo, faster Ethash kernel on Vega/VII GPU)
