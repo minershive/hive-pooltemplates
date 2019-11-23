@@ -1,3 +1,8 @@
+##### 0.6-95@191123 2019-11-23
+*   TeamRedMiner v0.6.0 (added ethash support)
+*   Gminer v1.79 (fixed bug with ETH+CKB solver)
+*   TT-Miner v3.1.1 (fix a bug in dual mine EPIC & other coin)
+
 ##### 0.6-94@191121 2019-11-21
 *   Improved `net-test` (runs traceroute to API server if it is unreachable)
 *   NBMiner v26.2 (improve CKB+ETH performance on AMD GPUs, fixed bug v26.1 when miner crashed on launch on certain AMD rigs)
