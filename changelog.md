@@ -1,4 +1,4 @@
-##### 0.6-95@191123 2019-11-23
+##### 0.6-96@191125 2019-11-25
 *   Improved `selfupgrade` command and miners installation procedure
 *   Fixed `hello` command for some system configuration
 *   Fixed some third-party hardware compatibility with Chinese watchdogs
