@@ -1,7 +1,7 @@
 ##### 0.6-96@191125 2019-11-25
 *   Improved `selfupgrade` command and miners installation procedure
 *   Fixed `hello` command for some system configuration
-*   Fixed some third-party hardware compatibility with Chinese watchdogs
+*   Fixed compatibility some third-party hardware with Chinese watchdogs
 *   Added new commands for watchdog-opendev (use `watchdog-opendev` without args to get help)
 *   Better output for `helpme`, `amd-oc` commands
 *   PhoenixMiner v4.8c (the same as in 4.8b + added command-line option `-gbase` to set 0-base or 1-based GPU indexes, default is 1)
