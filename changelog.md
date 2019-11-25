@@ -1,4 +1,15 @@
 ##### 0.6-95@191123 2019-11-23
+*   Improved `selfupgrade` command and miners installation procedure
+*   Fixed `hello` command for some system configuration
+*   Fixed some third-party hardware compatibility with Chinese watchdogs
+*   Added new commands for watchdog-opendev (use `watchdog-opendev` without args to get help)
+*   Better output for `helpme`, `amd-oc` commands
+*   PhoenixMiner v4.8c (the same as in 4.8b + added command-line option `-gbase` to set 0-base or 1-based GPU indexes, default is 1)
+*   lolMiner v0.9.1 (added GRIN-AT31 solver for 16G AMD cards, updated GRIN-AT31 solver for 4G AMD cards, fixed a bug causing too low pool hash on GRIN-AT31, added experimental GRIN-AT31 support for AMD Navi)
+*   CPUminer-Opt by JayDDee v3.9.10 (faster X* algos CPUs with AVX2, small improvements to summary stats report)
+*   XMR-Stak:  fixed stats for legacy AMD CPUs
+
+##### 0.6-95@191123 2019-11-23
 *   TeamRedMiner v0.6.0 (added ethash support)
 *   Gminer v1.79 (fixed bug with ETH+CKB solver)
 *   TT-Miner v3.1.1 (fix a bug in dual mine EPIC & other coin)
