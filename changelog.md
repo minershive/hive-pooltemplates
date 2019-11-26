@@ -2,7 +2,7 @@
 *   Gminer v1.80 Beta (added support mining CTXC/Cortex coin: requires 8G+ cards, devfee 5%, choose version in miner settings)
 
 ##### LINUX IMAGE RELEASE 0.6-96@191125 2019-11-25
-*   Hive Linux client image: 0.6-96@191025 (new stable branch based on Ubuntu 18.04)
+*   Hive Linux client image: 0.6-96@191125 (new stable branch based on Ubuntu 18.04)
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: 5.0.21
 *   Drivers version: AMD v19.20, Nvidia: v440.31
