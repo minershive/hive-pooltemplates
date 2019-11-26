@@ -1,5 +1,5 @@
 ##### 0.6-96@191126 2019-11-26
-*   Gminer v1.80 Beta (added support mining CTXC/Cortex coin: require 8G cards, devfee 5%, choose version in miner settings)
+*   Gminer v1.80 Beta (added support mining CTXC/Cortex coin: require 8G+ cards, devfee 5%, choose version in miner settings)
 
 ##### 0.6-96@191125 2019-11-25
 *   Improved `selfupgrade` command and miners installation procedure
