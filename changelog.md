@@ -1,3 +1,11 @@
+##### 0.6-97@191128 2019-11-28
+*   improved support for some third-party hardware
+*   NEW NoncerPro Kadena v1.3.1 (OpenCL / CUDA GPU miner for KDA/Kadena, will be added to interface later today)
+*   Gminer v1.80 release (the same as beta + support more Ethash coins: PIRL, CLO, ETP, EXP)
+*   Gminer v1.81 (fixed bug with invalid worker name for cortex)
+*   CPUminer-Opt by JayDDee v3.9.11 (added x22i, x25x algos support)
+*   XMR-Stak-RandomX v1.0.1 (bug fixes)
+
 ##### 0.6-96@191126 2019-11-26
 *   Gminer v1.80 Beta (added support mining CTXC/Cortex coin: requires 8G+ cards, devfee 5%, choose version in miner settings)
 
