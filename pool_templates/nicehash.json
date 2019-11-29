@@ -1926,5 +1926,71 @@
                 "algo": "x16rv2"
             }
         }
+    },
+    {
+        "coin": "Nicehash-RandomXMonero",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "randomxmonero.eu.nicehash.com:3380"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "randomxmonero.usa.nicehash.com:3380"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "randomxmonero.hk.nicehash.com:3380"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "randomxmonero.jp.nicehash.com:3380"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "randomxmonero.br.nicehash.com:3380"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "randomxmonero.in.nicehash.com:3380"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"algo\": \"rx/loki\"\n\"donate-level\": 1\n\"donate-over-proxy\": 1"
+            },
+            "xmr-stak": {
+                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+                "url": "%URL%",
+                "fork": "randomx",
+                "pass": "x",
+                "nvidia": "\"gpu_threads_conf\" : [],",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"currency\":\"randomx\""
+            },
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/0",
+                "fork": "xmrig",
+                "pass": "w=%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
     }
 ]
