@@ -53,9 +53,10 @@ Available miners:
 - noncepool-cuda - CUDA miner for BIS - Bismuth coin on Noncepool (Nvidia)
 - noncerpro-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
 - noncerpro-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
-- nq-miner - Nimiq GPU OpenCL/CUDA miner
+- noncerpro-kadena - CUDA/OpenCL miner for KDA - Kadena (Nvidia/AMD)
+- nq-miner - Nimiq GPU OpenCL/CUDA miner (Nvidia/AMD)
 - phoenixminer - ethash miner (AMD/NVidia)
-- rhminer - randomhash CPU miner
+- rhminer - randomhash CPU miner (CPU)
 - sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi, tecracoin)
 - smine - CKB Spark Miner (AMD)
 - sushi-miner-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
