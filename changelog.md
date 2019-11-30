@@ -1,3 +1,12 @@
+##### 0.6-98@191130 2019-11-30
+*   Added new tool `hugepages` for tunning HugePages (XMR-Stak and XMRig (unified) can be tunned from web interface - new field added to miner settings)
+*   Gminer v1.82 (significant performance improvements for cuckoo29 algorithm (AE, BFC) on Nvidia GPUs up to +10%)
+*   lolMiner 0.9.2 beta (improved performance on GRIN-AT31 for 8 and 16G cards by 2-8%, Note:4G solver for GRIN-AT31 disabled, due beta status choose version in miner settings)
+*   TeamRedMiner v0.6.1 (added pool failover and load balancing, added better error messages when failing to allocate eth DAG buffers, added automatic setting for environment variables for 4GB GPUs, added report of pool stats and fixes for submitting hashrate to pools, changed initial pool auto detect mode to eth proxy)
+*   XMR-Stak: fixed stats for 12+ GPU rigs
+*   Fixed CPU threads output: CKB-miner, FinMiner/NanoMiner
+*   NoncerPro Kadena Miner: fixed config generation if user extra config not empty
+
 ##### 0.6-97@191128 2019-11-28
 *   Improved support for some third-party hardware
 *   NEW NoncerPro Kadena v1.3.1 (OpenCL / CUDA GPU miner for KDA/Kadena, will be added to interface later today)
