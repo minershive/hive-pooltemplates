@@ -300,5 +300,108 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
         }
+    },
+    "miners_randomx": {
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"algo\": \"rx/0\"\n\"donate-level\": 1\n\"donate-over-proxy\": 1"
+            },
+            "xmr-stak": {
+                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+                "url": "%URL%",
+                "fork": "randomx",
+                "pass": "x",
+                "nvidia": "\"gpu_threads_conf\" : [],",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"currency\":\"randomx\""
+            },
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/0",
+                "fork": "xmrig",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"nicehash\": true\n\"donate-level\": 1"
+            },
+            "nanominer": {
+                "url": "%URL%",
+                "algo": "randomx",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "rigName=%WORKER_NAME%"
+            }
+        }
+    },
+    "miners_randomx_worker": {
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"rx/0\"\n\"donate-level\": 1\n\"donate-over-proxy\": 1"
+            },
+            "xmr-stak": {
+                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+                "url": "%URL%",
+                "fork": "randomx",
+                "pass": "%WORKER_NAME%",
+                "nvidia": "\"gpu_threads_conf\" : [],",
+                "template": "%WAL%",
+                "user_config": "\"currency\":\"randomx\""
+            },
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/0",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"nicehash\": true\n\"donate-level\": 1"
+            },
+            "nanominer": {
+                "url": "%URL%",
+                "algo": "randomx",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+    },
+    "miners_randomx_w_worker": {
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"rx/0\"\n\"donate-level\": 1\n\"donate-over-proxy\": 1"
+            },
+            "xmr-stak": {
+                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+                "url": "%URL%",
+                "fork": "randomx",
+                "pass": "w=%WORKER_NAME%",
+                "nvidia": "\"gpu_threads_conf\" : [],",
+                "template": "%WAL%",
+                "user_config": "\"currency\":\"randomx\""
+            },
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/0",
+                "fork": "xmrig",
+                "pass": "w=%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"nicehash\": true\n\"donate-level\": 1"
+            },
+            "nanominer": {
+                "url": "%URL%",
+                "algo": "randomx",
+                "pass": "w=%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
     }
 }

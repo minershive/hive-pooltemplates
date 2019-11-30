@@ -240,148 +240,60 @@
                 "urls": [
                     "xmr-eu1.nanopool.org:14444",
                     "xmr-eu2.nanopool.org:14444"
+                ],
+                "ssl_urls": [
+                    "xmr-eu1.nanopool.org:14433",
+                    "xmr-eu2.nanopool.org:14433"
                 ]
             },
             {
                 "geo": "US East",
                 "urls": [
                     "xmr-us-east1.nanopool.org:14444"
+                ],
+                "ssl_urls": [
+                    "xmr-us-east1.nanopool.org:14433"
                 ]
             },
             {
                 "geo": "US West",
                 "urls": [
                     "xmr-us-west1.nanopool.org:14444"
+                ],
+                "ssl_urls": [
+                    "xmr-us-west1.nanopool.org:14433"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
                     "xmr-asia1.nanopool.org:14444"
+                ],
+                "ssl_urls": [
+                    "xmr-asia1.nanopool.org:14433"
                 ]
             },
             {
                 "geo": "Japan",
                 "urls": [
                     "xmr-jp1.nanopool.org:14444"
+                ],
+                "ssl_urls": [
+                    "xmr-jp1.nanopool.org:14433"
                 ]
             },
             {
                 "geo": "Australia",
                 "urls": [
                     "xmr-au1.nanopool.org:14444"
+                ],
+                "ssl_urls": [
+                    "xmr-au1.nanopool.org:14433"
                 ]
             }
         ],
         "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
-                "user_config": "\"currency\": \"monero\""
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
-            },
-            "cryptodredge": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
-                "algo": "cryptonight-v8"
-            },
-            "teamredminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
-                "algo": "cnv8"
-            },
-            "cast-xmr": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
-                "algo": "cryptonight-v8"
-            }
-        }
-    },
-    {
-        "coin": "ETN",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "etn-eu1.nanopool.org:13333",
-                    "etn-eu2.nanopool.org:13333"
-                ]
-            },
-            {
-                "geo": "US East",
-                "urls": [
-                    "etn-us-east1.nanopool.org:13333"
-                ]
-            },
-            {
-                "geo": "US West",
-                "urls": [
-                    "etn-us-west1.nanopool.org:13333"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "etn-asia1.nanopool.org:13333"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "etn-jp1.nanopool.org:13333"
-                ]
-            },
-            {
-                "geo": "Australia",
-                "urls": [
-                    "etn-au1.nanopool.org:13333"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "cryptonight",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%/%EMAIL%"
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
-            },
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%/%EMAIL%, PSW: x"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "cryptonight",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
-                "user_config": "\"rawintensity\": \"256\"\n\"gpu-threads\": \"1\"\n\"worksize\": \"2\""
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_randomx"
         }
     },
     {
