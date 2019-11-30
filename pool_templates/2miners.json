@@ -1372,35 +1372,26 @@
             }
         ],
         "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"monero\""
-            },
             "xmrig": {
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"algo\": \"cryptonight/r\""
+                "user_config": "\"algo\": \"rx/0\"\n\"donate-level\": 1\n\"donate-over-proxy\": 1"
             },
-            "xmrig-amd": {
+            "xmr-stak": {
                 "url": "%URL%",
+                "fork": "randomx",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"algo\": \"cryptonight/r\""
+                "user_config": "\"currency\":\"randomx\""
             },
-            "xmrig-nvidia": {
+            "xmrig-new": {
+                "cpu": "1",
                 "url": "%URL%",
+                "algo": "rx/0",
+                "fork": "xmrig",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"algo\": \"cryptonight/r\""
-            },
-            "teamredminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "cnr"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
