@@ -1,3 +1,7 @@
+##### 0.6-98@191201 2019-12-01
+*   XMRig (unified) v5.1.0 (improved RandomX performance: up to +6-7% on Intel CPUs and +2-3% on Ryzen CPUs)
+*   XMR-Stak-RandomX v1.0.2 (optimize and slightly bit improved hashrate)
+
 ##### 0.6-98@191130 2019-11-30
 *   Added new tool `hugepages` for tuning HugePages (XMR-Stak and XMRig (unified) can be tuned from web interface - new field added to miner settings)
 *   Gminer v1.82 (significant performance improvements for cuckoo29 algorithm (AE, BFC) on Nvidia GPUs up to +10%)
