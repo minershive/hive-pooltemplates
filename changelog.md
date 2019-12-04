@@ -1,3 +1,10 @@
+##### 0.6-99@191204 2019-12-04
+*   Improved `autofan`  (restart autofan on errors, resume mining after overheat when reaching target temp)
+*   XMR-Stak v2.10.8 (AMD: optimize auto adjustment, optimize unroll for rx5700, remove monero support, fixed other issues)
+*   lolMiner 0.9.2 significant performance improvement of GRIN-AT31 on 8/16G cards up to +5% on Polaris & Vega and up to +10 on Navi)
+*   TT-Miner v3.2.0 beta5 (add support for mining KDA/Kadena, added support SSL)
+*   CPUminer-Opt by JayDDee v3.10.0 (added support AVX512 on argon2d, blake2s, keccak, keccakc, skein & skein2, fixed some issues)
+
 ##### 0.6-98@191201 2019-12-01
 *   XMRig (unified) v5.1.0 (improved RandomX performance: up to +6-7% on Intel CPUs and +2-3% on Ryzen CPUs)
 *   XMR-Stak-RandomX v1.0.2 (optimize and slightly bit improved hashrate)
