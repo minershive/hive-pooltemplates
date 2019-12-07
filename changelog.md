@@ -5,10 +5,10 @@
 *   Improvements and fixes for `wifi` command (added wifi network scanning and selection from list, fixed special symbols handling in ssid and password)
 *   Improved `firstrun` command (added offer to setup wifi if no active connection and and question to try again on fail)
 *   Improved `sreboot` command
-*   Improved `motd` (new nice boot screen for rig)
+*   Improved `motd` command (new nice boot screen for rig)
 *   Improved `helpme` command (updated commands list)
-*   Reworked VEGA's OC
-*   Updated hints output for several command including `miner
+*   Reworked VEGA's OC (using driver friendly mode)
+*   Updated hints output for several command including `miner`
 *   Added optional package for RTL8812 based Wi-Fi adapters
 *   Gminer v1.83 (improved Eaglesong performance on Nvidia GPUs)
 *   XMRig (unified) v5.1.1 (fixed various system response/stability issues, added new CPU option yield, fixed wrong priority of main miner thread)
