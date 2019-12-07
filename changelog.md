@@ -15,7 +15,7 @@
 *   TT-Miner v3.2.0 beta7 (small performance improvements for mining KDA/Kadena, added new options: `-tbr`, `-cid`)
 *   CPUminer-opt v3.10.1 (added AVX512 for blake2b, nist5, quark, tribus)
 *   CPUminer-opt by rplant v4.0.28 (added support yespowerIOTS, yespowerIC, sha256csm)
-*   Spark miner: fixed stats (fixed bug when working with another miner)
+*   Spark miner: fixed stats (fixed bug when shares cards with another miner)
 *   XMRig (unified): fix temp in stats for AMD processors
 *   XMRig (unified), XMR-Stak: implemented RandomX autotune if HugePages not set
 
