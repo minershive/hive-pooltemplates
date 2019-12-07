@@ -1,3 +1,24 @@
+##### 0.6-100@191207 2019-12-07
+*   Improved `nvidia-oc` tool (now shows error when GPU were not properly detected)
+*   Improved `hugepages` tool (implemented Intel CPU's RandomX booster - up to +30% more hashrate power on newer Intel CPU's, improved autotune on multi CPUs system)
+*   Improved `hive-replace` (added new options for easy management)
+*   Improvements and fixes for `wifi` command (added wifi network scanning and selection from list, fixed special symbols handling in ssid and password)
+*   Improved `firstrun` command (added offer to setup wifi if no active connection and and question to try again on fail)
+*   Improved `sreboot` command
+*   Improved `motd` (new nice boot screen for rig)
+*   Improved `helpme` command (updated commands list)
+*   Reworked VEGA's OC
+*   Updated hints output for several command including `miner
+*   Added optional package for RTL8812 based Wi-Fi adapters
+*   Gminer v1.83 (improved Eaglesong performance on Nvidia GPUs)
+*   XMRig (unified) v5.1.1 (fixed various system response/stability issues, added new CPU option yield, fixed wrong priority of main miner thread)
+*   TT-Miner v3.2.0 beta7 (small performance improvements for mining KDA/Kadena, added new options: `-tbr`, `-cid`)
+*   CPUminer-opt v3.10.1 (added AVX512 for blake2b, nist5, quark, tribus)
+*   CPUminer-opt by rplant v4.0.28 (added support yespowerIOTS, yespowerIC, sha256csm)
+*   Spark miner: fixed stats (fixed bug when working with another miner)
+*   XMRig (unified): fix temp in stats for AMD processors
+*   XMRig (unified), XMR-Stak: implemented RandomX autotune if HugePages not set
+
 ##### 0.6-99@191204 2019-12-04
 *   Improved `autofan`  (restart autofan on errors, resume mining after overheat when reaching target temp)
 *   XMR-Stak v2.10.8 (AMD: optimize auto adjustment, optimize unroll for rx5700, remove monero support, fixed other issues)
