@@ -7,9 +7,7 @@
 *   Improved `sreboot` command
 *   Improved `motd` command (new nice boot screen for rig)
 *   Improved `helpme` command (updated commands list)
-*   Reworked VEGA's OC (using driver friendly mode)
 *   Updated hints output for several command including `miner`
-*   Added optional package for RTL8812 based Wi-Fi adapters
 *   Gminer v1.83 (improved Eaglesong performance on Nvidia GPUs)
 *   XMRig (unified) v5.1.1 (fixed various system response/stability issues, added new CPU option yield, fixed wrong priority of main miner thread)
 *   TT-Miner v3.2.0 beta7 (small performance improvements for mining KDA/Kadena, added new options: `-tbr`, `-cid`)
