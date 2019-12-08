@@ -1,3 +1,9 @@
+##### 0.6-101@191208 2019-12-08
+*   Fixed `wifi` command (for Ubuntu 16.04 based images)
+*   Small fixes for `motd` command (fixed padding on some configurations, added more hints to commands FAQ, revert back gpu indexes sequence for mixed rigs)
+*   TT-Miner v3.2.0 (release)
+*   NoncerPro Kadena Miner v2.0.1 (added support for pool mining: option `--pool` for pool mining and `--solo` for solo mining, hashrate improvement for some AMD/Nvidia cards, reduced devfee to 2%)
+
 ##### 0.6-100@191207 2019-12-07
 *   Improved `nvidia-oc` tool (now shows error when GPU were not properly detected)
 *   Improved `hugepages` tool (implemented Intel CPU's RandomX booster - up to +30% more hashrate power on newer Intel CPU's, improved autotune on multi CPUs system)
