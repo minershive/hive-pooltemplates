@@ -1,3 +1,6 @@
+##### 0.6-101@191209 2019-12-09
+*   NoncerPro Kadena Miner v2.0.2 (fixed a critical kernel issue of v2.0.1 on non RTX nvidia cards)
+
 ##### 0.6-101@191208 2019-12-08
 *   Fixed `wifi` command (for Ubuntu 16.04 based images)
 *   Small fixes for `motd` command (fixed padding on some configurations, added more hints to commands FAQ, revert back gpu indexes sequence for mixed rigs)
