@@ -158,5 +158,32 @@
                "template": "%WAL%"
             }
         }
+    },
+    {
+        "coin": "KDA",
+        "servers": [
+            {
+                "geo": "North America",
+                "urls": [
+                    "kda-us.icemining.ca:3700"
+                ]
+            }
+        ],
+        "miners": {
+            "tt-miner": {
+                "url": "%URL%",
+                "algo": "BLAKE2S",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-coin kda\n-luck"
+            },
+            "noncerpro-kadena": {
+                "cuda": "1",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--mode pool"
+            }
+        }
     }
 ]
