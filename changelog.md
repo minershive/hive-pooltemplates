@@ -1,4 +1,8 @@
 
+##### 0.6-102@191212 2019-12-12
+*   Gminer v1.85 beta (added blake2s algo for KDA/Kadena mining, decreased stale shares percentage on pool side for cuckatoo31 algorithm)
+*   XMRigCC v2.2.1 as fork XMRig (integrated RandomSFX algo `rx/sfx`, performance improvements for RandomX variants)
+
 ##### 0.6-102@191211 2019-12-11
 *   Improved `hive-replace` tool (more info added for interactive mode, added option `--repo=URL` for list and install images from custom location http/ftp)
 *   lolMiner v0.9.3 (extended GRIN-AT31 compatibility to older drivers 18.xx, deeply reworked kernel scheduler, fixed GRIN-AT31 kernel bugs: improving stability and fidelity)
