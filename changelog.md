@@ -1,8 +1,8 @@
 
 ##### 0.6-102@191211 2019-12-11
-*   Improved `hive-replace` tool (more info added for interactive mode)
+*   Improved `hive-replace` tool (more info added for interactive mode, added option `--repo=URL` for list and install images from custom location http/ftp)
 *   lolMiner v0.9.3 (extended GRIN-AT31 compatibility to older drivers 18.xx, deeply reworked kernel scheduler, fixed GRIN-AT31 kernel bugs: improving stability and fidelity)
-*   CPUminer-opt v3.10.2 (AVX512 added for bmw512, c11, phi1612 (phi), qubit, skunk, x11, x11gost, fixed c11 AVX2 invalid shares)
+*   CPUminer-opt JayDDee v3.10.2 (AVX512 added for bmw512, c11, phi1612 (phi), qubit, skunk, x11, x11gost, fixed c11 AVX2 invalid shares)
 *   TT-Miner v3.2.1 latest (fixed KDA/Kadena solo - no new work, slightly improved hashrate for Blake2S for NVidia GTX 10xx cards)
 *   TT-Miner v3.2.2 beta-2 (performance improvements for Blake2S, add new option for KDA/Kadena solo: `-sbc`: select best Kadena ChainID, fixed ethash algo was not available for CUDA 10.1)
 *   XMRig (unified) v5.2.0 (improved hashrate by 1-2% by adding 1GB huge pages support with new option `1gb-pages` in `randomx` object - need at least 3G free RAM, added automatic huge pages configuration, added automatic Intel prefetchers configuration with new option `wrmsr` in `randomx` object, new performance optimizations for Ryzen CPUs)
