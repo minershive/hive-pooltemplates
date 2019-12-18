@@ -1,7 +1,7 @@
 
 ##### 0.6-103@191218 2019-12-18
-*   Improved `hugepages` tool (added RX boost for AMD Ryzen family, added new mode `-erx` for use with 1Gb HugePages, better error handling)
-*   Improved `agent` (restart hanged gpu-stats, report available RAM instead of just free, reboot if filesystem is mounted read-only)
+*   Improved `hugepages` tool (added RX boost for AMD Ryzen family, added new mode `-erx` use 1Gb HugePages for RandomX if it's possible, better error handling)
+*   Improved `agent` (added restart hanged gpu-stats, added reporting available RAM instead of just free memory, reboot if filesystem is mounted read-only)
 *   Improved `firstrun` (added more strict checking of api host url input)
 *   Improved `selfupgrade` and miners installation (check available memory and stop miners in advance)
 *   Added installer for optional WiFi drivers (/hive/opt/wifi/wifi-installer.sh)
