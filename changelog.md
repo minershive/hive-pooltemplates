@@ -1,4 +1,23 @@
 
+##### 0.6-103@191218 2019-12-18
+*   Improved `hugepages` tool (added RX boost for AMD Ryzen family, added new mode `-erx` for use with 1Gb HugePages, better error handling)
+*   Improved `agent` (restart hanged gpu-stats, report available RAM instead of just free, reboot if filesystem is mounted read-only)
+*   Improved `firstrun` (added more strict checking of api host url input)
+*   Improved `selfupgrade` and miners installation (check available memory and stop miners in advance)
+*   Added installer for optional WiFi drivers (/hive/opt/wifi/wifi-installer.sh)
+*   Reworked software watchdog  `wd` (code refactoring)
+*   Fixed OC for GTX 1660 (without Ti)
+*   NEW CCminer-verus v3.611 (VerusHash 2.1 CUDA miner; Notes: need CPU with AES and AVX support)
+*   NEW XMRig-BigBangCore v3.1.3 (based on code of XMRig (cpu) for cn/bbc algo - BBC/BigBangCore coin)
+*   NEW XMRig-RandomV v5.3.0 (based on code of unified XMRig for RandomV algo - XMV/MoneroV coin)
+*   NEW XMRig-RandomSFX v5.0.2 (based on code of unified XMRig for RandomSFX algo - SFX/Safex Cash coin)
+*   TT-Miner v3.2.2 release (improved Blake2S performance)
+*   CPUminer-opt v3.10.4 (added AVX512 for X* family algos)
+*   XMRig (unified) v5.3.0 (v5.2.1: added support for AMD Ryzen MSR registers - up to +6% hashrate improvement ; v5.3.0: increased stratum send buffer size)
+*   XMRig-Stak-RandomX v1.0.3 (added 1GiB page support, added ArQma support, optimize hash calculation)
+*   lolMiner v0.9.4 (new GRIN-AT31 performance code for Vega up to +7% and Navi up to +12%, added experimental support for cuckatoo-32)
+*   Gminer v1.88 (v1.86: added blake2s algorithm for Nvidia, added ethash+blake2s dual solver, decreased stale shares percentage on pool side for C31; v1.87: added blake2s support for AMD, v1.88: fixed performance regression for Cuckatoo31 algorithm on P104-100)
+
 ##### 0.6-102@191212 2019-12-12
 *   Gminer v1.85 beta (added blake2s algo for KDA/Kadena mining, decreased stale shares percentage on pool side for cuckatoo31 algorithm)
 *   XMRigCC v2.2.1 as fork XMRig (integrated RandomSFX algo: rx/sfx, performance improvements for RandomX variants)
