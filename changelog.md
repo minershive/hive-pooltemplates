@@ -14,7 +14,7 @@
 *   TT-Miner v3.2.2 release (improved Blake2S performance)
 *   CPUminer-opt v3.10.4 (added AVX512 for X* family algos)
 *   XMRig (unified) v5.3.0 (v5.2.1: added support for AMD Ryzen MSR registers - up to +6% hashrate improvement ; v5.3.0: increased stratum send buffer size)
-*   XMRig-Stak-RandomX v1.0.3 (added 1GiB page support, added ArQma support, optimize hash calculation)
+*   XMR-Stak-RandomX v1.0.3 (added 1GiB page support, added ArQma support, optimize hash calculation)
 *   lolMiner v0.9.4 (new GRIN-AT31 performance code for Vega up to +7% and Navi up to +12%, added experimental support for cuckatoo-32)
 *   Gminer v1.88 (v1.86: added blake2s algorithm for Nvidia, added ethash+blake2s dual solver, decreased stale shares percentage on pool side for C31; v1.87: added blake2s support for AMD, v1.88: fixed performance regression for Cuckatoo31 algorithm on P104-100)
 
