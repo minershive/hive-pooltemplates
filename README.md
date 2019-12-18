@@ -26,7 +26,7 @@ Available miners:
 - beamcuda - open source BEAM CUDA miner
 - bminer - ethash/tensority/equihash variants/Grin PoW miner 
 - cast-xmr - cryptonight variants (AMD)
-- ccminer - ccminer & forks (ccminer forks available: alexis, allium, bcd, dace-cryptonight, djm34, enemy, klaust, klaust-yescrypt, nanashi, nevermore, nevermore-x16s, phi-anxmod, rfv2, rvn, sp-mod, suprminer, suprminer-spmod, tecracoin, tpruvot, vertminer, xaya, xevan, zp)
+- ccminer - ccminer & forks (ccminer forks available: alexis, allium, bcd, djm34, enemy, klaust, klaust-yescrypt, nanashi, nevermore, nevermore-x16s, phi-anxmod, rvn, sp-mod, suprminer, suprminer-spmod, tecracoin, tpruvot, vertminer, verus, xaya, xevan, zp)
 - ckb-miner - CKB (Nervos Network) wallet CPU/OpenCL/CUDA miner
 - claymore - Claymore's DUAL ETH GPU AMD&NVidia miner
 - claymore-x - Claymore's Cryptonote AMD GPU miner
@@ -66,8 +66,8 @@ Available miners:
 - tt-miner - Ethash/Ubqhash/ProgPoW with variants/TEthashV1/MTP/Lyra2rev3 CUDA miner
 - wildrig-multi - multi-algo OpenCL miner (AMD)
 - xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo with forks arto, alloy, b2n, mox, marketcash, randomx, uplexa)
-- xmrig - XMRig (CPU cryptonight variants miner with forks: xmrigcc, hycon, xlarig)
-- xmrig-new - XMRig (unified)  CPU/OCL/CUDA miner for Argon2/RandomX/Cryptonight based algos
+- xmrig - XMRig (CPU cryptonight variants miner with forks: bigbangcore, xmrigcc, hycon, xlarig)
+- xmrig-new - XMRig (unified)  CPU/OCL/CUDA miner for Argon2/RandomX/Cryptonight based algos (available forks: xmrig, randomv, randomsfx)
 - xmrig-amd - XMRig (AMD cryptonight variants miner with forks xmrigcc, hycon)
 - xmrig-nvidia - XMRig (NVidia cryptonight variants miner  with forks fruityminer, hycon)
 - zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
