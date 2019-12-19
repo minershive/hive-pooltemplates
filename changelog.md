@@ -1,4 +1,12 @@
 
+##### 0.6-104@191219 2019-12-19
+*   Improved `hugepages` (better error handling, new options `-mc1`, `-mc2`, `-mc3`)
+*   Minor fixes for `wd`
+*   XMRig (unified) RandomSFX v5.4.0 (Safex-Rig v1.2)
+*   XMRigCC v2.2.2 (added CPU max threads option `cpu-max-threads-hint`, fixed autoconfig/autosave for rx/loki)
+*   XMRig (cpu): added HugePages autotune feature
+*   Gminer: fixed dual mode ethash+blake2s (eth+kda)
+
 ##### 0.6-103@191218 2019-12-18
 *   Improved `hugepages` tool (added RX boost for AMD Ryzen family, added new mode `-erx` use 1Gb HugePages for RandomX if it's possible and if not then the action is similar to the `-rx` option, better error handling)
 *   Improved `agent` (added restart hanged gpu-stats, added reporting available RAM instead of just free memory, reboot if filesystem is mounted read-only)
