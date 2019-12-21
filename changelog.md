@@ -1,3 +1,7 @@
+##### 0.6-105@191221 2019-12-21
+*   Improved `swap-file` (ultra fast swap file creation, set default size to 4GB, removed total memory option)
+*   NEW nheqminer-verushash v0.8.0 (fork for CPU mining VerusHash 2.1)
+*   XMRig (unified) v5.4.0 (added RandomSFX and RandomV, added reverting MSR changes on miner exit, fixed crash on first generation Zen CPUs)
 
 ##### 0.6-104@191219 2019-12-19
 *   Improved `hugepages` (better error handling, new options `-mc1`, `-mc2`, `-mc3`)
