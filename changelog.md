@@ -1,3 +1,10 @@
+##### 0.6-106@191226 2019-12-26
+*   Improved `motd` with new feature `motd watch` (console live stats and logs on rigs, added swap file info if enabled)
+*   Rebuild `hssh` with static libs for better compatibility
+*   Gminer v1.91 (added support mining BBC coin, added solo mode for KDA/Kadena with option `--proto solo`)
+*   CPUminer-opt-rplant v4.0.29 (added yespowerITC for ITC/Intercoin)
+*   CPUminer-opt-JayDDee v3.10.6 (added support for SSL stratum, added AVX512 support x21s, x22i, lyra2z, allium, x17, sonoa, xevan, hmq1725, lyra2rev3, lyra2rev2, faster hmq1725 AVX2 implementation)
+
 ##### 0.6-105@191221 2019-12-21
 *   Improved `swap-file` (ultra fast swap file creation, set default size to 4GB, removed total memory option)
 *   NEW nheqminer-verushash v0.8.0 (fork for CPU mining VerusHash 2.1)
