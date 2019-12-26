@@ -1,5 +1,5 @@
 ##### 0.6-106@191226 2019-12-26
-*   NEW feature `motd watch` (console live stats and logs on rigs, added swap file info if enabled)
+*   Improved `motd` with new fearure `motd watch` (console live stats and logs on rigs, added swap file info if enabled)
 *   Rebuild `hssh` with static libs for better compatibility
 *   Gminer v1.91 (added support mining BBC coin, added solo mode for KDA/Kadena with option `--proto solo`)
 *   CPUminer-opt-rplant v4.0.29 (added yespowerITC for ITC/Intercoin)
