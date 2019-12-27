@@ -1,3 +1,6 @@
+##### 0.6-107@191227 2019-12-27
+*   Fixed update error (that occurred when updating to v0.6-106 on some installations)
+
 ##### 0.6-106@191226 2019-12-26
 *   Improved `motd` with new feature `motd watch` (console live stats and logs on rigs, added swap file info if enabled)
 *   Rebuild `hssh` with static libs for better compatibility
