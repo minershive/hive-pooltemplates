@@ -1,3 +1,11 @@
+##### 0.6-108@191231 2019-12-31
+*   Minor fix for `disk-expand` tool (expand filesystem if it is smaller than partition)
+*   NEW MoneroVMiner v1.0 (special version of GrinGoldMiner for MoneroV coin)
+*   XMR-Stak-RX v1.0.4 (NUMA support/better autoconfig, implemented Ryzen speedups)
+*   XMRig (unified) v5.5.0 (removed rx/v, added cryptonight-talleo, fixed crash on very low memory systems, added fix for Ryzen 1st-gen crashes, added support for environment variables in config file)
+*   CPUminer-opt v3.10.7 by JayDDee (added AVX512 for x25x, lbry, x13bcd (bcd))
+*   Gminer v1.92 (fixed miner id for BBC which allowed mining on bbcpool.io pool)
+
 ##### 0.6-107@191227 2019-12-27
 *   Fixed update error (that occurred when updating to v0.6-106 on some installations)
 
