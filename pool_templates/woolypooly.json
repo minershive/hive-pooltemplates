@@ -35,6 +35,82 @@
         }
     },
 {
+        "coin": "XWP",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "xwp.woolypooly.com:33044"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "swap",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "cuckaroo_swap",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            },
+            "grinprominer": {
+                "algo": "swap",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            }
+        }
+    },
+{
+        "coin": "AION",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "aion.wooolypooly.com:33333"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "210_9",
+                "fork": "zhash",
+                "zserver": "%URL_HOST%",
+                "zport": "%URL_PORT%",
+                "zpass": "x",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers AION0PoW"
+            },
+            "gminer": {
+                "algo": "210_9",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers AION0PoW"
+            },
+            "lolminer": {
+                "algo": "AION",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "url": "%URL%",
+                "algo": "210,9",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers AION0PoW"
+            }
+        }
+    },	
+{
         "coin": "ETC",
         "servers": [
             {
