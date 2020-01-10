@@ -1,3 +1,12 @@
+##### 0.6-109@200110 2020-01-10
+*   Slightly changes in`miner` (added comment on log truncate)
+*   Reworked GrinGoldMiner to use forks
+*   MoneroVMiner v1.1 (fix CUDA, GrinGoldMiner fork)
+*   XMRigCC v2.5.0 (sync with mainline XMRig sources)
+*   XLARig v5.0.1 fork of XMRig (unified) (rebase to XMRig v5.4.0, defyx optimization and fixes)
+*   CPUminer-opt by JayDDee v3.11.2 (optimization and fixes)
+*   PhoenixMiner v4.9c (added support for AMD RX5500, added support for AMD Linux drivers 19.50-967956, fixed the problem with loading NVML with the latest Nvidia drivers)
+
 ##### 0.6-108@191231 2019-12-31
 *   Minor fix for `disk-expand` tool (expand filesystem if it is smaller than partition)
 *   NEW MoneroVMiner v1.0 (special version of GrinGoldMiner for MoneroV coin)
