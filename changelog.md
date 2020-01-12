@@ -1,3 +1,9 @@
+##### 0.6-110@200112 2020-01-12
+*   Slightly improved `hugepages` tool (change Intel CPU's MSR boost from 6 to 15)
+*   Added `cpu-temp` tool (get CPU temp)
+*   XMRig (unified) v5.5.1 (default value for Intel MSR preset changed to 15, fixed unwanted resume after RandomX dataset change)
+*   Z-Enemy v2.4 as ccminer fork (fixed high CPU load with latest nVidia drivers)
+
 ##### 0.6-109@200110 2020-01-10
 *   Slightly changes in`miner` (added comment on log truncate)
 *   Reworked GrinGoldMiner to use forks
