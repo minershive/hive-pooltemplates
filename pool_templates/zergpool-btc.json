@@ -8,6 +8,39 @@
         }
     },
     {
+        "coin": "Zerg-equihash192",
+        "servers": [
+            {
+                "geo": "USA",
+                "urls": [
+                    "equihash192.mine.zergpool.com:2144"
+                ]
+            }
+        ],
+        "miners": {
+             "lolminer": {
+                 "algo": "AUTO192_7",
+                 "pass": "c=BTC",
+                 "port": "%URL_PORT%",
+                 "server": "%URL_HOST%",
+                 "template": "%WAL%.%WORKER_NAME%"
+             },
+             "gminer": {
+                 "algo": "192_7",
+                 "pass": "c=BTC",
+                 "port": "%URL_PORT%",
+                 "server": "%URL_HOST%",
+                 "template": "%WAL%.%WORKER_NAME%"
+             },
+             "miniz": {
+                 "url": "%URL%",
+                 "algo": "192,7",
+                 "pass": "c=BTC",
+                 "template": "%WAL%.%WORKER_NAME%"
+             }
+        }
+    },
+    {
         "coin": "Zerg-x21s",
         "servers": [
             {
