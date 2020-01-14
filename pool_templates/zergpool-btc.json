@@ -8,6 +8,25 @@
         }
     },
     {
+        "coin": "Zerg-m7m",
+        "servers": [
+            {
+                "geo": "USA",
+                "urls": [
+                    "m7m.mine.zergpool.com:6033"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": " stratum+tcp://%URL%",
+                "algo": "m7m",
+                "pass": "c=BTC",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "Zerg-equihash192",
         "servers": [
             {
@@ -52,7 +71,7 @@
         ],
         "miners": {
              "cpuminer-opt": {
-                "url": " stratum+tcp://%URL%",
+                "url": "stratum+tcp://%URL%",
                 "algo": "x21s",
                 "pass": "c=BTC",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -75,6 +94,25 @@
                 "pass": "c=BTC",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "--opencl-threads auto\n--opencl-launch auto"
+            }
+        }
+    },
+    {
+        "coin": "Zerg-verushash",
+        "servers": [
+            {
+                "geo": "USA",
+                "urls": [
+                    "verushash.mine.zergpool.com:3300"
+                ]
+            }
+        ],
+        "miners": {
+             "nheqminer": {
+                "fork": "verushash",
+                "url": "%URL%",
+                "pass": "c=BTC",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }
