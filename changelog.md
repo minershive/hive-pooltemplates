@@ -1,10 +1,10 @@
 ##### 0.6-111@200115 2020-01-15
-*   Fixes and improvements for `motd` (added gpu drivers versions and flightsheet info, improved watch mode)
+*   Fixes and improvements for `motd` (added GPU drivers versions and flightsheet info, improved watch mode)
 *   Small fix Wi-Fi drivers installation script
 *   NanoMiner v1.7.0 (fixed issue with Floating point exception at startup observer on some CPUs)
 *   Gminer v1.93 (added Cuckaroom29 with 3% devfee, added Cuckarood29v with 10% devfee, fixed "No shares" bug for Eaglesong when extranonce length not equal to 4)
 *   lolMiner v0.9.5.1 (added support for Grin-C29M, improved C31 performance on 8G cards by ~5%, slightly lowered energy use of C31/C32 solver)
-*   TeamRedMiner: fixed sending worker name for ETH pools
+*   TeamRedMiner: fixed sending worker name for Ethash pools
 
 ##### 0.6-110@200112 2020-01-12
 *   Slightly improved `hugepages` tool (change Intel CPU's MSR boost from 6 to 15)
