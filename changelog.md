@@ -1,3 +1,9 @@
+##### 0.6-112@200116 2020-01-16
+*   Updated `amd-info` tool (display of card names on motherboards using PCI-E hubs is fixed)
+*   Fixed `amd-oc` and `gpu-stats` to use on rigs with modern AMD iGPU
+*   Fixed `nvidia-oc` for Nvidia GTX 1660 Super
+*   Bminer v16.0.0 (initial support for the Cuckaroo29m algorithm)
+
 ##### 0.6-111@200115 2020-01-15
 *   Fixes and improvements for `motd` (added GPU drivers versions and flightsheet info, improved watch mode)
 *   Small fix Wi-Fi drivers installation script
