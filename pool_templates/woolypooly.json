@@ -109,6 +109,35 @@
                 "user_config": "--pers AION0PoW"
             }
         }
+    },
+	  {
+        "coin": "CTXC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "cortex.woolypooly.com:40000"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "cortex",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": ""
+            },
+            "cortex-miner": {
+                "algo": "cuckoo",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": ""
+            }
+        }
     },	
 {
         "coin": "ETC",
