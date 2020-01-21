@@ -1,3 +1,13 @@
+##### 0.6-113@200121 2020-01-21
+*   Fixed potential bug in `hive-replace`
+*   Improved restart hanged `agent`
+*   Gminer v1.96 (improved cuckaroom29 performance up to +5-6% dependent on GPU)
+*   CPUminer-opt v3.11.5 (fixes and improvements)
+NanoMiner v1.7.1 (added Ethash support for AMD Navi 12 and Navi 14 GPUs including AMD RX 5500)
+*   lolMiner v0.9.6 (significant improvement on GRIN-C29M performance: +6-7% on 580 and Vega cards, +10% on Navi, significant improvement on GRIN-C31 and GRIN-C32 solver: ~ +6% on all AMD cards, added a 16G GRIN-C32 solver: approx 20% faster on Radeon VII, Vega FE and 570 16G)
+*   Bminer v16.0.1 (fix the Cuckaroo29m miner fails to start on Turing-based cards or cards that have only 4G memory, fix the Cuckaroo29m miner submits shares that have low difficulty, performance improvement on the Cuckaroo29m)
+*   RHminer v2.0 (added support RandomHash2 algo)
+
 ##### 0.6-112@200116 2020-01-16
 *   Updated `amd-info` tool (display of card names on motherboards using PCI-E hubs is fixed)
 *   Fixed `amd-oc` and `gpu-stats` to use on rigs with modern AMD iGPU
