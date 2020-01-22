@@ -1,3 +1,7 @@
+##### 0.6-113@200122 2020-01-22
+*   XMRig-BigBangСore v1.2 (XMRig for cpu 3.1.3 based code; improved POW hash algorithm of CryptoNight)
+*   TeamRedMiner: small update for sync changes with Miner configuration dialogue
+
 ##### 0.6-113@200121 2020-01-21
 *   Fixed potential bug in `hive-replace`
 *   Improved restart hanged `agent`
