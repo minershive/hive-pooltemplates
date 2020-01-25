@@ -1,3 +1,10 @@
+##### 0.6-114@200125 2020-01-25
+*   Enabled mining in maintenance mode
+*   CPUminer-opt by JayDDee v3.11.6 (fixed CPU temperature regression, improved log output)
+*   Bminer v16.0.2 (performance improvement on Cuckaroo29m)
+*   NanoMiner v1.7.3 (significant up to x5 performance improvements for RandomHash2 algo)
+*   RHminer v2.1 (significant increase hashrate, fixed bug with exiting from main thread)
+
 ##### 0.6-113@200122 2020-01-22
 *   XMRig-BigBangСore v1.2 (XMRig for cpu 3.1.3 based code; improved POW hash algorithm of CryptoNight)
 *   TeamRedMiner: small update for sync changes with Miner configuration dialogue
