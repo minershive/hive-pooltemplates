@@ -406,12 +406,11 @@
             }
         ],
         "miners": {
-            "finminer": {
-                "algo": "randomhash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
+            "rhminer": {
+		"url": "%URL%",
+		"pass": "x",
+		"template": "%WAL%.%WORKER_NAME%",
+		"user_config": "-cputhreads 2"
             },
             "nanominer": {
                 "algo": "randomhash",
