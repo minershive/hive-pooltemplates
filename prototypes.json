@@ -1,0 +1,440 @@
+{
+
+    "miners_ethash": {
+        "claymore": {
+            "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
+        },
+        "ethminer": {
+            "cuda": 1,
+            "opencl": 1,
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "stratum1+tcp://%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "asicminer": {
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "phoenixminer": {
+            "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+            "user_config": "-coin %COIN%"
+        },
+        "finminer": {
+            "algo": "ethash",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        },
+        "bminer": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
+        },
+        "nanominer": {
+            "algo": "ethash",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        },
+        "nbminer": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "tt-miner": {
+            "url": "%URL%",
+            "algo": "ETHASH",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "-RH\n"
+        },
+        "gminer": {
+                "algo": "ethash",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+        },
+        "teamredminer": {
+            "algo": "ethash",
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
+        }
+    },
+
+    "miners_ethash_slash_email": {
+        "claymore": {
+            "epools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x"
+        },
+        "ethminer": {
+            "cuda": 1,
+            "opencl": 1,
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "stratum1+tcp://%URL_HOST%",
+            "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+        },
+        "asicminer": {
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "phoenixminer": {
+            "url": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x",
+            "user_config": "-coin %COIN%"
+        },
+        "bminer": {
+            "algo": "ethash",
+            "template": "%WAL%/%WORKER_NAME%/%EMAIL%",
+            "url": "%URL%",
+            "pass": "x"
+        },
+        "finminer": {
+            "algo": "ethash",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
+        },
+        "bminer": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+            "pass": "x"
+        },
+        "nanominer": {
+            "algo": "ethash",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
+        },
+        "nbminer": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
+        "tt-miner": {
+            "url": "%URL%",
+            "algo": "ETHASH",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+            "user_config": "-RH\n"
+        },
+        "teamredminer": {
+            "algo": "ethash",
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+            "pass": "x"
+        }
+    },
+
+
+    "miners_cryptonight_v8": {
+        "xmr-stak": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"currency\": \"cryptonight_v8\""
+        },
+        "xmrig": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"cn/2\""
+        },
+        "xmrig-amd": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"cn/2\""
+        },
+        "xmrig-nvidia": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"cn/2\""
+        },
+        "cryptodredge": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cryptonight-v8"
+        },
+        "teamredminer": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cnv8"
+        },
+        "cast-xmr": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cryptonight-v8"
+        },
+        "finminer": {
+            "algo": "cryptonightv8",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "%WORKER_NAME%",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        },
+        "nanominer": {
+            "algo": "cryptonightv8",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "%WORKER_NAME%",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        }
+    },
+
+    "miners_cryptonight_r_hive": {
+        "xmr-stak": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "\"currency\": \"cryptonight_r\""
+        },
+        "xmrig": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "\"algo\": \"cn/r\""
+        },
+        "xmrig-amd": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "\"algo\": \"cn/r\""
+        },
+        "xmrig-nvidia": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "\"algo\": \"cn/r\""
+        },
+        "teamredminer": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "algo": "cnr"
+        },
+        "nanominer": {
+            "algo": "cryptonightr",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        }
+    },
+
+    "miners_cryptonight_r": {
+        "xmr-stak": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"currency\": \"cryptonight_r\""
+        },
+        "xmrig": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"cn/r\""
+        },
+        "xmrig-amd": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"cn/r\""
+        },
+        "xmrig-nvidia": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"cn/r\""
+        },
+        "teamredminer": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cnr"
+        },
+        "nanominer": {
+            "algo": "cryptonightr",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "%WORKER_NAME%",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        }
+    },
+
+    "miners_zhash_btg": {
+        "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers BgoldPoW"
+        },
+        "bminer": {
+                "algo": "zhash",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+        },
+        "gminer": {
+                "algo": "144_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers BgoldPoW"
+        },
+        "lolminer": {
+                "algo": "BTG",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+        }
+    },
+    "miners_randomx": {
+        "xmrig": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "\"algo\": \"rx/0\"\n\"donate-level\": 1\n\"donate-over-proxy\": 1"
+        },
+        "xmr-stak": {
+            "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+            "url": "%URL%",
+            "fork": "randomx",
+            "pass": "x",
+            "nvidia": "\"gpu_threads_conf\" : [],",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "\"currency\":\"randomx\""
+        },
+        "xmrig-new": {
+            "cpu": "1",
+            "url": "%URL%",
+            "algo": "rx/0",
+            "fork": "xmrig",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "\"donate-level\": 1"
+        },
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "randomx",
+            "pass": "x",
+            "template": "%WAL%",
+            "user_config": "rigName=%WORKER_NAME%"
+        }
+    },
+    "miners_randomx_plus": {
+        "xmrig": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%+%WORKER_NAME%",
+            "user_config": "\"algo\": \"rx/0\"\n\"donate-level\": 1\n\"donate-over-proxy\": 1"
+        },
+        "xmr-stak": {
+            "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+            "url": "%URL%",
+            "fork": "randomx",
+            "pass": "x",
+            "nvidia": "\"gpu_threads_conf\" : [],",
+            "template": "%WAL%+%WORKER_NAME%",
+            "user_config": "\"currency\":\"randomx\""
+        },
+        "xmrig-new": {
+            "cpu": "1",
+            "url": "%URL%",
+            "algo": "rx/0",
+            "fork": "xmrig",
+            "pass": "x",
+            "template": "%WAL%+%WORKER_NAME%",
+            "user_config": "\"donate-level\": 1"
+        },
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "randomx",
+            "pass": "x",
+            "template": "%WAL%",
+            "user_config": "rigName=%WORKER_NAME%"
+        }
+    },
+    "miners_randomx_worker": {
+        "xmrig": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"rx/0\"\n\"donate-level\": 1\n\"donate-over-proxy\": 1"
+        },
+        "xmr-stak": {
+            "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+            "url": "%URL%",
+            "fork": "randomx",
+            "pass": "%WORKER_NAME%",
+            "nvidia": "\"gpu_threads_conf\" : [],",
+            "template": "%WAL%",
+            "user_config": "\"currency\":\"randomx\""
+        },
+        "xmrig-new": {
+            "cpu": "1",
+            "url": "%URL%",
+            "algo": "rx/0",
+            "fork": "xmrig",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"donate-level\": 1"
+        },
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "randomx",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%"
+        }
+    },
+    "miners_randomx_w_worker": {
+        "xmrig": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"rx/0\"\n\"donate-level\": 1\n\"donate-over-proxy\": 1"
+        },
+        "xmr-stak": {
+            "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+            "url": "%URL%",
+            "fork": "randomx",
+            "pass": "w=%WORKER_NAME%",
+            "nvidia": "\"gpu_threads_conf\" : [],",
+            "template": "%WAL%",
+            "user_config": "\"currency\":\"randomx\""
+        },
+        "xmrig-new": {
+            "cpu": "1",
+            "url": "%URL%",
+            "algo": "rx/0",
+            "fork": "xmrig",
+            "pass": "w=%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"donate-level\": 1"
+        },
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "randomx",
+            "pass": "w=%WORKER_NAME%",
+            "template": "%WAL%"
+        }
+    }
+}

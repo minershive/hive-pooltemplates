@@ -1,35 +1,83 @@
 [
     {
-        "coin": "EMCD.IO-sha256",
+        "coin": "BTC",
         "servers": [
             {
-                "geo": null,
+                "geo": "Russia",
                 "urls": [
-                    "emcd.io:3333#xnsub"
+                    "gate.emcd.io:3333"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.emcd.io:3333",
+                    "eu2.emcd.io:3333"
+                ]
+            },
+            {
+                "geo": "China",
+                "urls": [
+                    "cn.emcd.io:3333"
                 ]
             }
         ],
         "miners": {
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "c=BTC"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
     {
-        "coin": "ETC",
+        "coin": "LTC",
         "servers": [
             {
-                "geo": null,
+                "geo": "Russia",
                 "urls": [
-                    "etc.emcd.io:8008"
+                    "gate.emcd.io:3434"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.emcd.io:3434",
+                    "eu2.emcd.io:3434"
+                ]
+            },
+            {
+                "geo": "China",
+                "urls": [
+                    "cn.emcd.io:3434"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "EMCD.IO-Ethash",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "ethash.mine.emcd.io:8282"
+                ]
+            },
+            {
+                "geo": "Europe 3GB cards",
+                "urls": [
+                    "ethash.mine.emcd.io:8283"
                 ]
             }
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ALLPOOLS: 0"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ALLPOOLS: 1, ALLCOINS: -1"
             },
             "ethminer": {
                 "cuda": 1,
@@ -42,6 +90,16 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "rigName = %WORKER_NAME%"
             }
         }
     }

@@ -1,0 +1,243 @@
+[
+    {
+         "coin": "GRIN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "grin-eu.luxor.tech:3000"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "grin-us.luxor.tech:3000"
+                ]
+            },
+            {
+                "geo": "Asia (Taiwan)",
+                "urls": [
+                    "grin-asia.luxor.tech:3000"
+                ]
+            },
+            {
+                "geo": "China (Beijing)",
+                "urls": [
+                    "grin-cn.luxor.tech:3000"
+                ]
+            }
+        ],
+        "miners": {
+            "bminer": {
+                "algo": "cuckaroo29d",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "grin29",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "grinminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "gringoldminer": {
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "grinprominer": {
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cuckarood"
+            }
+        }
+    },
+    {
+        "coin": "VEIL",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veil-eu.luxor.tech:3033"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "veil-us.luxor.tech:3033"
+                ]
+            },
+            {
+                "geo": "Asia (Taiwan)",
+                "urls": [
+                    "veil-asia.luxor.tech:3033"
+                ]
+            },
+            {
+                "geo": "China (Beijing)",
+                "urls": [
+                    "veil-cn.luxor.tech:3033"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "algo": "x16rt",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "algo": "x16rt",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "algo": "x16rt",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            },
+            "teamredminer": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "algo": "x16rt",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+       "coin": "DCR",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "dcr-eu.luxor.tech:4446"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "dcr-us.luxor.tech:4446"
+                ]
+            },
+            {
+                "geo": "Asia (Taiwan)",
+                "urls": [
+                    "dcr-asia.luxor.tech:4446"
+                ]
+            },
+            {
+                "geo": "China (Beijing)",
+                "urls": [
+                    "dcr-cn.luxor.tech:4446"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "dcri": "20",
+                "dcoin": "dcr",
+                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+      "coin": "YEC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "yec-eu.luxor.tech:6655"
+                ]
+            },
+
+            {
+                "geo": "USA",
+                "urls": [
+                    "yec-us.luxor.tech:6655"
+                ]
+            },
+
+            {
+                "geo": "Asia (Taiwan)",
+                "urls": [
+                    "yec-asia.luxor.tech:6655"
+                ]
+            },
+            {
+                "geo": "China (Beijing)",
+                "urls": [
+                    "yec-cn.luxor.tech:6655"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "192_7",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers auto"
+            },
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers auto"
+            }
+        }
+    },
+    {
+      "coin": "XMR",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "xmr-eu.luxor.tech:8888"
+                ]
+            },
+
+            {
+                "geo": "USA",
+                "urls": [
+                    "xmr-us.luxor.tech:8888"
+                ]
+            },
+
+            {
+                "geo": "Asia (Taiwan)",
+                "urls": [
+                    "xmr-asia.luxor.tech:8888"
+                ]
+            },
+            {
+                "geo": "China (Beijing)",
+                "urls": [
+                    "xmr-cn.luxor.tech:8888"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_randomx"
+        }
+    }
+]

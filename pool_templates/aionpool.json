@@ -1,0 +1,66 @@
+[
+    {
+        "pool": {
+            "name": "Aion Pool",
+            "url": "https://aionpool.tech",
+            "fee": 2,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "AION",
+        "servers": [
+            {
+                "geo": "3+ GPU Rigs",
+                "urls": [
+                    "cluster.aionpool.tech:3333"
+                ]
+            },
+            {
+                "geo": "10+ Rigs/FPGA",
+                "urls": [
+                    "cluster.aionpool.tech:4444"
+                ]
+            },
+            {
+                "geo": "Max 3 GPU Rigs",
+                "urls": [
+                    "cluster.aionpool.tech:2222"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "210_9",
+                "fork": "zhash",
+                "zserver": "%URL_HOST%",
+                "zport": "%URL_PORT%",
+                "zpass": "x",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers AION0PoW"
+            },
+            "gminer": {
+                "algo": "210_9",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers AION0PoW"
+            },
+            "lolminer": {
+                "algo": "AION",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "url": "%URL%",
+                "algo": "210,9",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers AION0PoW\n--mode 7"
+            }
+        }
+    }
+]

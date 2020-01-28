@@ -1,0 +1,78 @@
+[
+    {
+        "pool": {
+            "name": "Wownero pool",
+            "url": "https://wowne.ro",
+            "fee": 0.5,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "WOW",
+        "servers": [
+            {
+                "geo": "Low-End",
+                "urls": [
+                    "pool.wowne.ro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.wowne.ro:3334"
+                ]
+            },
+            {
+                "geo": "Mid-Range",
+                "urls": [
+                    "pool.wowne.ro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.wowne.ro:5556"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "urls": [
+                    "pool.wowne.ro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.wowne.ro:7778"
+                ]
+            },
+            {
+                "geo": "SOLO Low-End",
+                "urls": [
+                    "pool.wowne.ro:3443"
+                ],
+                "ssl_urls": [
+                    "pool.wowne.ro:3444"
+                ]
+            },
+            {
+                "geo": "SOLO Mid-Range",
+                "urls": [
+                    "pool.wowne.ro:5665"
+                ],
+                "ssl_urls": [
+                    "pool.wowne.ro:5666"
+                ]
+            },
+            {
+                "geo": "SOLO High-End",
+                "urls": [
+                    "pool.wowne.ro:7887"
+                ],
+                "ssl_urls": [
+                    "pool.wowne.ro:7888"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "fork": "schernykh",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%+%WORKER_NAME%",
+                "user_config": "\"algo\": \"rx/wow\""
+            }
+        }
+    }
+]

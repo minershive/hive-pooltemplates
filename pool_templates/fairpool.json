@@ -235,31 +235,26 @@
         }
     },
     {
-        "coin": "LOKI",
+        "coin": "WOW",
         "servers": [
             {
                 "geo": null,
                 "urls": [
-                    "mine.loki.fairpool.xyz:5577",
-                    "mine.loki.fairpool.cc:5577",
-                    "mine.loki.fairpool.in:5577",
-                    "mine.loki.fairpool.pw:5577",
-                    "mine.loki.fairpool.cloud:5577"
+                    "mine.wow.fairpool.xyz:6090",
+                    "mine.wow.fairpool.cc:6090",
+                    "mine.wow.fairpool.in:6090",
+                    "mine.wow.fairpool.pw:6090",
+                    "mine.wow.fairpool.cloud:6090"
                 ]
             }
         ],
         "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%PAYMENT_ID%+%WORKER_NAME%",
-                "user_config": "\"currency\": \"sumokoin\""
-            },
             "xmrig": {
+                "fork": "schernykh",
                 "url": "%URL%",
                 "pass": "x",
-                "template": "%WAL%.%PAYMENT_ID%+%WORKER_NAME%",
-                "user_config": "\"algo\": \"cryptonight-heavy\""
+                "template": "%WAL%+%WORKER_NAME%",
+                "user_config": "\"algo\": \"rx/wow\""
             }
         }
     }

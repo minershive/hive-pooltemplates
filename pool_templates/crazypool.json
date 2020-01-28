@@ -1,23 +1,73 @@
 [
-    {
-        "coin": "AKA",
+	{
+        "pool": {
+            "name": "CrazyPool",        	
+            "url": "https://crazypool.org",	
+            "fee": 1,                   	
+            "type": "PPLNS / SOLO"			
+        }
+    },
+	{
+        "coin": "B2G",
         "servers": [
-            {
-                "geo": "SOLO RIG",
+			{
+                "geo": "US-EAST-PPLNS",
                 "urls": [
-                    "solo-aka.crazypool.org:8007"
+                    "us-east.crazypool.org:7007"
                 ]
             },
             {
-                "geo": "SOLO FARM",
+                "geo": "US-EAST-SOLO",
                 "urls": [
-                    "solo-aka.crazypool.org:8008"
+                    "us-east.crazypool.org:7008"
+                ]
+            },
+			{
+                "geo": "US-WEST-PPLNS",
+                "urls": [
+                    "us-west.crazypool.org:7007"
                 ]
             },
             {
-                "geo": "SOLO NH",
+                "geo": "US-WEST-SOLO",
                 "urls": [
-                    "solo-aka.crazypool.org:8009"
+                    "us-west.crazypool.org:7008"
+                ]
+            },
+			{
+                "geo": "EUROPE-PPLNS",
+                "urls": [
+                    "eu.crazypool.org:7007"
+                ]
+            },
+            {
+                "geo": "EUROPE-SOLO",
+                "urls": [
+                    "eu.crazypool.org:7008"
+                ]
+            },
+			{
+                "geo": "ASIA-PPLNS",
+                "urls": [
+                    "asia.crazypool.org:7007"
+                ]
+            },
+            {
+                "geo": "ASIA-SOLO",
+                "urls": [
+                    "asia.crazypool.org:7008"
+                ]
+            },
+			{
+                "geo": "LATAM-PPLNS",
+                "urls": [
+                    "chl.crazypool.org:7007"
+                ]
+            },
+            {
+                "geo": "LATAM-SOLO",
+                "urls": [
+                    "chl.crazypool.org:7008"
                 ]
             }
         ],
@@ -28,7 +78,7 @@
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 0,
+                "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
@@ -36,70 +86,101 @@
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "EGEM",
-        "servers": [
-            {
-                "geo": "POOL RIG",
-                "urls": [
-                    "egem.crazypool.org:8007"
-                ]
+                "template": "%WAL%"
             },
-            {
-                "geo": "POOL FARM",
-                "urls": [
-                    "egem.crazypool.org:8008"
-                ]
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
+                "user_config": "-coin %COIN%"
             },
-            {
-                "geo": "POOL NH",
-                "urls": [
-                    "egem.crazypool.org:8009"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
                 "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
             },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%"
             }
         }
     },
-    {
+	{
         "coin": "ETC",
         "servers": [
-            {
-                "geo": "SOLO RIG",
+			{
+                "geo": "US-EAST-PPLNS",
                 "urls": [
-                    "solo-etc.crazypool.org:8007"
+                    "us-east.crazypool.org:7001"
                 ]
             },
             {
-                "geo": "SOLO FARM",
+                "geo": "US-EAST-SOLO",
                 "urls": [
-                    "solo-etc.crazypool.org:8008"
+                    "us-east.crazypool.org:7002"
+                ]
+            },
+			{
+                "geo": "US-WEST-PPLNS",
+                "urls": [
+                    "us-west.crazypool.org:7001"
                 ]
             },
             {
-                "geo": "SOLO NH",
+                "geo": "US-WEST-SOLO",
                 "urls": [
-                    "solo-etc.crazypool.org:8009"
+                    "us-west.crazypool.org:7002"
+                ]
+            },
+			{
+                "geo": "EUROPE-PPLNS",
+                "urls": [
+                    "eu.crazypool.org:7001"
+                ]
+            },
+            {
+                "geo": "EUROPE-SOLO",
+                "urls": [
+                    "eu.crazypool.org:7002"
+                ]
+            },
+			{
+                "geo": "ASIA-PPLNS",
+                "urls": [
+                    "asia.crazypool.org:7001"
+                ]
+            },
+            {
+                "geo": "ASIA-SOLO",
+                "urls": [
+                    "asia.crazypool.org:7002"
+                ]
+            },
+			{
+                "geo": "LATAM-PPLNS",
+                "urls": [
+                    "chl.crazypool.org:7001"
+                ]
+            },
+            {
+                "geo": "LATAM-SOLO",
+                "urls": [
+                    "chl.crazypool.org:7002"
                 ]
             }
         ],
@@ -110,7 +191,7 @@
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 0,
+                "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
@@ -118,29 +199,101 @@
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%"
             }
         }
     },
-    {
+	{
         "coin": "ETH",
         "servers": [
-            {
-                "geo": "POOL RIG",
+			{
+                "geo": "US-EAST-PPLNS",
                 "urls": [
-                    "eth.crazypool.org:8007"
+                    "us-east.crazypool.org:7011"
                 ]
             },
             {
-                "geo": "POOL FARM",
+                "geo": "US-EAST-SOLO",
                 "urls": [
-                    "eth.crazypool.org:8008"
+                    "us-east.crazypool.org:7012"
+                ]
+            },
+			{
+                "geo": "US-WEST-PPLNS",
+                "urls": [
+                    "us-west.crazypool.org:7011"
                 ]
             },
             {
-                "geo": "POOL NH",
+                "geo": "US-WEST-SOLO",
                 "urls": [
-                    "eth.crazypool.org:8009"
+                    "us-west.crazypool.org:7012"
+                ]
+            },
+			{
+                "geo": "EUROPE-PPLNS",
+                "urls": [
+                    "eu.crazypool.org:7011"
+                ]
+            },
+            {
+                "geo": "EUROPE-SOLO",
+                "urls": [
+                    "eu.crazypool.org:7012"
+                ]
+            },
+			{
+                "geo": "ASIA-PPLNS",
+                "urls": [
+                    "asia.crazypool.org:7011"
+                ]
+            },
+            {
+                "geo": "ASIA-SOLO",
+                "urls": [
+                    "asia.crazypool.org:7012"
+                ]
+            },
+			{
+                "geo": "LATAM-PPLNS",
+                "urls": [
+                    "chl.crazypool.org:7011"
+                ]
+            },
+            {
+                "geo": "LATAM-SOLO",
+                "urls": [
+                    "chl.crazypool.org:7012"
                 ]
             }
         ],
@@ -151,7 +304,7 @@
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 0,
+                "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
@@ -159,73 +312,101 @@
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%"
             }
         }
     },
-    {
-        "coin": "ETHO",
+	{
+        "coin": "FUNC",
         "servers": [
-            {
-                "geo": "GPU",
+			{
+                "geo": "US-EAST-PPLNS",
                 "urls": [
-                    "ether1.crazypool.org:8007",
-                    "solo-ether1.crazypool.org:8007"
+                    "us-east.crazypool.org:7013"
                 ]
             },
             {
-                "geo": "FARM",
+                "geo": "US-EAST-SOLO",
                 "urls": [
-                    "ether1.crazypool.org:8008",
-                    "solo-ether1.crazypool.org:8008"
+                    "us-east.crazypool.org:7014"
+                ]
+            },
+			{
+                "geo": "US-WEST-PPLNS",
+                "urls": [
+                    "us-west.crazypool.org:7013"
                 ]
             },
             {
-                "geo": "NH",
+                "geo": "US-WEST-SOLO",
                 "urls": [
-                    "ether1.crazypool.org:8009",
-                    "solo-ether1.crazypool.org:8009"
+                    "us-west.crazypool.org:7014"
                 ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
             },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "ETP",
-        "servers": [
-            {
-                "geo": "SOLO GPU",
+			{
+                "geo": "EUROPE-PPLNS",
                 "urls": [
-                    "solo-etp.crazypool.org:8007"
+                    "eu.crazypool.org:7013"
                 ]
             },
             {
-                "geo": "SOLO FARM",
+                "geo": "EUROPE-SOLO",
                 "urls": [
-                    "solo-etp.crazypool.org:8008"
+                    "eu.crazypool.org:7014"
+                ]
+            },
+			{
+                "geo": "ASIA-PPLNS",
+                "urls": [
+                    "asia.crazypool.org:7013"
                 ]
             },
             {
-                "geo": "SOLO NH",
+                "geo": "ASIA-SOLO",
                 "urls": [
-                    "solo-etp.crazypool.org:8009"
+                    "asia.crazypool.org:7014"
+                ]
+            },
+			{
+                "geo": "LATAM-PPLNS",
+                "urls": [
+                    "chl.crazypool.org:7013"
+                ]
+            },
+            {
+                "geo": "LATAM-SOLO",
+                "urls": [
+                    "chl.crazypool.org:7014"
                 ]
             }
         ],
@@ -236,7 +417,7 @@
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 0,
+                "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
@@ -244,32 +425,101 @@
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%"
             }
         }
     },
-    {
+	{
         "coin": "MOAC",
         "servers": [
-            {
-                "geo": "RIG",
+			{
+                "geo": "US-EAST-PPLNS",
                 "urls": [
-                    "moac.crazypool.org:8007",
-                    "solo-moac.crazypool.org:8007"
+                    "us-east.crazypool.org:7003"
                 ]
             },
             {
-                "geo": "FARM",
+                "geo": "US-EAST-SOLO",
                 "urls": [
-                    "moac.crazypool.org:8008",
-                    "solo-moac.crazypool.org:8008"
+                    "us-east.crazypool.org:7004"
+                ]
+            },
+			{
+                "geo": "US-WEST-PPLNS",
+                "urls": [
+                    "us-west.crazypool.org:7003"
                 ]
             },
             {
-                "geo": "NH",
+                "geo": "US-WEST-SOLO",
                 "urls": [
-                    "moac.crazypool.org:8009",
-                    "solo-moac.crazypool.org:8009"
+                    "us-west.crazypool.org:7004"
+                ]
+            },
+			{
+                "geo": "EUROPE-PPLNS",
+                "urls": [
+                    "eu.crazypool.org:7003"
+                ]
+            },
+            {
+                "geo": "EUROPE-SOLO",
+                "urls": [
+                    "eu.crazypool.org:7004"
+                ]
+            },
+			{
+                "geo": "ASIA-PPLNS",
+                "urls": [
+                    "asia.crazypool.org:7003"
+                ]
+            },
+            {
+                "geo": "ASIA-SOLO",
+                "urls": [
+                    "asia.crazypool.org:7004"
+                ]
+            },
+			{
+                "geo": "LATAM-PPLNS",
+                "urls": [
+                    "chl.crazypool.org:7003"
+                ]
+            },
+            {
+                "geo": "LATAM-SOLO",
+                "urls": [
+                    "chl.crazypool.org:7004"
                 ]
             }
         ],
@@ -280,7 +530,7 @@
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 0,
+                "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
@@ -288,29 +538,101 @@
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%"
             }
         }
     },
-    {
-        "coin": "NUKO",
+	{
+        "coin": "PIRL",
         "servers": [
-            {
-                "geo": "SOLO RIG",
+			{
+                "geo": "US-EAST-PPLNS",
                 "urls": [
-                    "solo-nuko.crazypool.org:8007"
+                    "us-east.crazypool.org:7005"
                 ]
             },
             {
-                "geo": "SOLO FARM",
+                "geo": "US-EAST-SOLO",
                 "urls": [
-                    "solo-nuko.crazypool.org:8008"
+                    "us-east.crazypool.org:7006"
+                ]
+            },
+			{
+                "geo": "US-WEST-PPLNS",
+                "urls": [
+                    "us-west.crazypool.org:7005"
                 ]
             },
             {
-                "geo": "SOLO NH",
+                "geo": "US-WEST-SOLO",
                 "urls": [
-                    "solo-nuko.crazypool.org:8009"
+                    "us-west.crazypool.org:7006"
+                ]
+            },
+			{
+                "geo": "EUROPE-PPLNS",
+                "urls": [
+                    "eu.crazypool.org:7005"
+                ]
+            },
+            {
+                "geo": "EUROPE-SOLO",
+                "urls": [
+                    "eu.crazypool.org:7006"
+                ]
+            },
+			{
+                "geo": "ASIA-PPLNS",
+                "urls": [
+                    "asia.crazypool.org:7005"
+                ]
+            },
+            {
+                "geo": "ASIA-SOLO",
+                "urls": [
+                    "asia.crazypool.org:7006"
+                ]
+            },
+			{
+                "geo": "LATAM-PPLNS",
+                "urls": [
+                    "chl.crazypool.org:7005"
+                ]
+            },
+            {
+                "geo": "LATAM-SOLO",
+                "urls": [
+                    "chl.crazypool.org:7006"
                 ]
             }
         ],
@@ -321,7 +643,7 @@
             },
             "ethminer": {
                 "cuda": 1,
-                "opencl": 0,
+                "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "stratum1+tcp://%URL_HOST%",
@@ -329,7 +651,263 @@
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%"
+            }
+        }
+    },
+	{
+        "coin": "ENIX",
+        "servers": [
+			{
+                "geo": "US-EAST-PPLNS",
+                "urls": [
+                    "us-east.crazypool.org:7015"
+                ]
+            },
+            {
+                "geo": "US-EAST-SOLO",
+                "urls": [
+                    "us-east.crazypool.org:7016"
+                ]
+            },
+			{
+                "geo": "US-WEST-PPLNS",
+                "urls": [
+                    "us-west.crazypool.org:7015"
+                ]
+            },
+            {
+                "geo": "US-WEST-SOLO",
+                "urls": [
+                    "us-west.crazypool.org:7016"
+                ]
+            },
+			{
+                "geo": "EUROPE-PPLNS",
+                "urls": [
+                    "eu.crazypool.org:7015"
+                ]
+            },
+            {
+                "geo": "EUROPE-SOLO",
+                "urls": [
+                    "eu.crazypool.org:7016"
+                ]
+            },
+			{
+                "geo": "ASIA-PPLNS",
+                "urls": [
+                    "asia.crazypool.org:7015"
+                ]
+            },
+            {
+                "geo": "ASIA-SOLO",
+                "urls": [
+                    "asia.crazypool.org:7016"
+                ]
+            },
+			{
+                "geo": "LATAM-PPLNS",
+                "urls": [
+                    "chl.crazypool.org:7015"
+                ]
+            },
+            {
+                "geo": "LATAM-SOLO",
+                "urls": [
+                    "chl.crazypool.org:7016"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%"
+            }
+        }
+    },
+	{
+        "coin": "ETP",
+        "servers": [
+			{
+                "geo": "US-EAST-PPLNS",
+                "urls": [
+                    "us-east.crazypool.org:7017"
+                ]
+            },
+            {
+                "geo": "US-EAST-SOLO",
+                "urls": [
+                    "us-east.crazypool.org:7018"
+                ]
+            },
+			{
+                "geo": "US-WEST-PPLNS",
+                "urls": [
+                    "us-west.crazypool.org:7017"
+                ]
+            },
+            {
+                "geo": "US-WEST-SOLO",
+                "urls": [
+                    "us-west.crazypool.org:7018"
+                ]
+            },
+			{
+                "geo": "EUROPE-PPLNS",
+                "urls": [
+                    "eu.crazypool.org:7017"
+                ]
+            },
+            {
+                "geo": "EUROPE-SOLO",
+                "urls": [
+                    "eu.crazypool.org:7018"
+                ]
+            },
+			{
+                "geo": "ASIA-PPLNS",
+                "urls": [
+                    "asia.crazypool.org:7017"
+                ]
+            },
+            {
+                "geo": "ASIA-SOLO",
+                "urls": [
+                    "asia.crazypool.org:7018"
+                ]
+            },
+			{
+                "geo": "LATAM-PPLNS",
+                "urls": [
+                    "chl.crazypool.org:7017"
+                ]
+            },
+            {
+                "geo": "LATAM-SOLO",
+                "urls": [
+                    "chl.crazypool.org:7018"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%"
             }
         }
     }

@@ -32,99 +32,26 @@
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers BgoldPoW"
-            }
-        }
-    },
-    {
-        "coin": "BTZ",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "btcz-eu.coinblockers.com:4200",
-                    "btcz-eu2.coinblockers.com:4200"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "btcz-us.coinblockers.com:4200",
-                    "btcz-us2.coinblockers.com:4200"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "btcz-asia.coinblockers.com:4200"
-                ]
-            }
-        ],
-        "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers BitcoinZ"
-            }
-        }
-    },
-    {
-        "coin": "BTCP",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "btcp-eu.coinblockers.com:3050",
-                    "btcp-eu2.coinblockers.com:3050"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "btcp-us.coinblockers.com:3050",
-                    "btcp-us2.coinblockers.com:3050"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "btcp-asia.coinblockers.com:3050"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%/%WORKER_NAME%/%EMAIL%"
             },
             "bminer": {
-                "url": "stratum://%URL%",
+                "algo": "zhash",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "gminer": {
+                "algo": "144_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
                 "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers BgoldPoW"
             },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash",
-                "fork": "gm",
+            "lolminer": {
+                "algo": "BTG",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
                 "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
@@ -158,28 +85,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "ewbf": {
                 "zpass": "x",
                 "zport": "%URL_PORT%",
                 "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "ztemplate": "%WAL%.%WORKER_NAME%"
             },
             "bminer": {
-                "url": "stratum://%URL%",
+                "url": "%URL%",
                 "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%"
+                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
             },
             "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
+                "url": "%URL%",
                 "algo": "equihash",
                 "fork": "gm",
                 "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
@@ -216,28 +143,28 @@
                 "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "ewbf": {
                 "zpass": "x",
                 "zport": "%URL_PORT%",
                 "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "ztemplate": "%WAL%.%WORKER_NAME%"
             },
             "bminer": {
-                "url": "stratum://%URL%",
+                "url": "%URL%",
                 "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%"
+                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
             },
             "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
+                "url": "%URL%",
                 "algo": "equihash",
                 "fork": "gm",
                 "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
@@ -253,6 +180,9 @@
                 "urls": [
                     "rvn-eu.coinblockers.com:4449",
                     "rvn-eu2.coinblockers.com:4449"
+                ],
+                "ssl_urls": [
+                    "rvn-eu.coinblockers.com:4543"
                 ]
             },
             {
@@ -260,28 +190,70 @@
                 "urls": [
                     "rvn-us.coinblockers.com:4449",
                     "rvn-us2.coinblockers.com:4449"
+                ],
+                "ssl_urls": [
+                    "rvn-us.coinblockers.com:4543"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
                     "rvn-asia.coinblockers.com:4449"
+                ],
+                "ssl_urls": [
+                    "rvn-asia.coinblockers.com:4543"
+                ]
+            },
+            {
+                "geo": "EU SOLO",
+                "urls": [
+                    "rvnsolo-eu.coinblockers.com:8449"
+                ]
+            },
+            {
+                "geo": "US SOLO",
+                "urls": [
+                    "rvnsolo-us.coinblockers.com:8449"
+                ]
+            },
+            {
+                "geo": "Asia SOLO",
+                "urls": [
+                    "rvnsolo-asia.coinblockers.com:8449"
+                ]
+            },
+            {
+               "geo": "EU SOLO HiDIFF",
+                "urls": [
+                    "rvnsolo-eu.coinblockers.com:8720"
+                ]
+            },
+            {
+                "geo": "US SOLO HiDIFF",
+                "urls": [
+                    "rvnsolo-us.coinblockers.com:8720"
+                ]
+            },
+            {
+                "geo": "Asia SOLO HiDIFF",
+                "urls": [
+                    "rvnsolo-asia.coinblockers.com:8720"
                 ]
             }
         ],
         "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "x16r",
-                "ccpass": "x"
-            },
-            "sgminer-sg": {
+            "t-rex": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
+                "algo": "x16rv2",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "x16rv2",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -322,42 +294,6 @@
         }
     },
     {
-        "coin": "XSG",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "xsg-eu.coinblockers.com:3810",
-                    "xsg-eu2.coinblockers.com:3810"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "xsg-us.coinblockers.com:3810",
-                    "xsg-us2.coinblockers.com:3810"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "xsg-asia.coinblockers.com:3810"
-                ]
-            }
-        ],
-        "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers sngemPoW"
-            }
-        }
-    },
-    {
         "coin": "ZEL",
         "servers": [
             {
@@ -379,17 +315,51 @@
                 "urls": [
                     "zel-asia.coinblockers.com:4446"
                 ]
+            },
+            {
+                "geo": "EU SOLO",
+                "urls": [
+                    "zelsolo-eu.coinblockers.com:8648"
+                ]
+            },
+            {
+                "geo": "US SOLO",
+                "urls": [
+                    "zelsolo-us.coinblockers.com:8648"
+                ]
+            },
+            {
+                "geo": "Asia SOLO",
+                "urls": [
+                    "zelsolo-asia.coinblockers.com:8648"
+                ]
+            },
+            {
+                "geo": "EU SOLO HiDIFF",
+                "urls": [
+                    "zelsolo-eu.coinblockers.com:8741"
+                ]
+            },
+            {
+                "geo": "US SOLO HiDIFF",
+                "urls": [
+                    "zelsolo-us.coinblockers.com:8741"
+                ]
+            },
+            {
+                "geo": "Asia SOLO HiDIFF",
+                "urls": [
+                    "zelsolo-asia.coinblockers.com:8741"
+                ]
             }
         ],
         "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers ZelProof"
+            "gminer": {
+                "algo": "125_4",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },

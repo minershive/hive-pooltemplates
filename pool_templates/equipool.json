@@ -1,5 +1,49 @@
 [
     {
+        "coin": "ANON",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "mine-btcp-na.equipool.1ds.us:50143"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers AnonyPoW"
+            },
+            "gminer": {
+                "algo": "144_5",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers AnonyPoW"
+            },
+            "lolminer": {
+                "algo": "ANON",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "144_5",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers AnonyPoW"
+            }
+        }
+    },
+    {
         "coin": "BTCP",
         "servers": [
             {
@@ -74,50 +118,84 @@
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers BitcoinZ"
+            },
+            "gminer": {
+                "algo": "144_5",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers BitcoinZ"
+            },
+            "lolminer": {
+                "algo": "BTCZ",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "144_5",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers BitcoinZ"
             }
         }
     },
     {
-        "coin": "HUSH",
+        "coin": "GENX",
         "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "mine-genx-euro.equipool.1ds.us:50133"
+                ]
+            },
             {
                 "geo": "US",
                 "urls": [
-                    "mine-hush-na.equipool.1ds.us:50013"
+                    "mine-genx-na.equipool.1ds.us:50133"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "mine-genx-asia.equipool.1ds.us:50133"
                 ]
             }
         ],
         "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
             "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
                 "zpass": "x",
                 "zport": "%URL_PORT%",
                 "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers GENX_PoW"
             },
-            "bminer": {
-                "url": "stratum://%URL%",
+            "gminer": {
+                "algo": "144_5",
                 "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers GENX_PoW"
             },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash",
-                "fork": "gm",
+            "lolminer": {
+                "algo": "GENX",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
                 "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "144_5",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers GENX_PoW"
             }
         }
     },
@@ -135,12 +213,6 @@
                 "urls": [
                     "mine-ltz-na.equipool.1ds.us:50093"
                 ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "mine-ltz-asia.equipool.1ds.us:50093"
-                ]
             }
         ],
         "miners": {
@@ -151,6 +223,28 @@
                 "zport": "%URL_PORT%",
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers ZcashPoW"
+            },
+            "gminer": {
+                "algo": "144_5",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            },
+            "lolminer": {
+                "algo": "LTZ",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "144_5",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers ZcashPoW"
             }
         }
@@ -179,12 +273,34 @@
         ],
         "miners": {
             "ewbf": {
-                "algo": "144_5",
+                "algo": "192_7",
                 "fork": "zhash",
                 "zpass": "x",
                 "zport": "%URL_PORT%",
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers Safecoin"
+            },
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers Safecoin"
+            },
+            "lolminer": {
+                "algo": "SAFE",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "192_7",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers Safecoin"
             }
         }
@@ -193,21 +309,9 @@
         "coin": "VOT",
         "servers": [
             {
-                "geo": "EU",
-                "urls": [
-                    "mine-vot-euro.equipool.1ds.us:50073"
-                ]
-            },
-            {
                 "geo": "US",
                 "urls": [
                     "mine-vot-na.equipool.1ds.us:50073"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "mine-vot-asia.equipool.1ds.us:50073"
                 ]
             }
         ],
@@ -276,50 +380,65 @@
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers sngemPoW"
+            },
+            "gminer": {
+                "algo": "144_5",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers sngemPoW"
+            },
+            "lolminer": {
+                "algo": "XSG",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "144_5",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers sngemPoW"
             }
         }
     },
     {
-        "coin": "ZCL",
+        "coin": "YEC",
         "servers": [
             {
                 "geo": "US",
                 "urls": [
-                    "mine-zcl-na.equipool.1ds.us:50033"
+                    "mine-yec-na.equipool.1ds.us:50153"
                 ]
             }
         ],
         "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
             "ewbf": {
+                "algo": "192_7",
+                "fork": "zhash",
                 "zpass": "x",
                 "zport": "%URL_PORT%",
                 "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers ZcashPoW"
             },
-            "bminer": {
-                "url": "stratum://%URL%",
+            "gminer": {
+                "algo": "192_7",
                 "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
             },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "miniz": {
+                "algo": "192_7",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers ZcashPoW"
             }
         }
     },
@@ -390,13 +509,26 @@
             }
         ],
         "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
+            "gminer": {
+                "algo": "125_4",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZelProof"
+            },
+            "lolminer": {
+                "algo": "ZEL",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "125_4",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers ZelProof"
             }
         }
@@ -449,6 +581,12 @@
         "coin": "ZER",
         "servers": [
             {
+                "geo": "EU",
+                "urls": [
+                    "mine-zer-euro.equipool.1ds.us:50023"
+                ]
+            },
+            {
                 "geo": "US",
                 "urls": [
                     "mine-zer-na.equipool.1ds.us:50023"
@@ -462,6 +600,28 @@
                 "zport": "%URL_PORT%",
                 "zserver": "%URL_HOST%",
                 "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers ZERO_PoW"
+            },
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers ZERO_PoW"
+            },
+            "lolminer": {
+                "algo": "ZER",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "pers ZERO_PoW"
             },
             "optiminer": {

@@ -1,12 +1,33 @@
 [
     {
+        "pool": {
+            "name": "Hiveon",
+            "url": "https://hiveon.net",
+            "fee": 0,
+            "type": "PPS+"
+        }
+    },
+    {
         "coin": "ETH",
         "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "ru-eth.hiveon.net:4444",
+                    "ru-eth.hiveon.net:14444"
+                ],
+                "ssl_urls": [
+                    "ru-eth.hiveon.net:24443"
+                ]
+            },
             {
                 "geo": "Europe",
                 "urls": [
                     "eu-eth.hiveon.net:4444",
                     "eu-eth.hiveon.net:14444"
+                ],
+                "ssl_urls": [
+                    "eu-eth.hiveon.net:24443"
                 ]
             },
             {
@@ -14,102 +35,23 @@
                 "urls": [
                     "naw-eth.hiveon.net:4444",
                     "naw-eth.hiveon.net:14444"
+                ],
+                "ssl_urls": [
+                    "naw-eth.hiveon.net:24443"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
+            "_prototype": "miners_ethash",
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
             },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "bminer": {
+               "algo": "ethproxy"
             },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "ETC",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "eu-etc.hiveon.net:5555",
-                    "eu-etc.hiveon.net:15555"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-     {
-        "coin": "XMR",
-        "servers": [
-            {
-                "geo": "Europe (Rigs)",
-                "urls": [
-                    "eu-xmr.hiveon.net:12000"
-                ]
-            },
-            {
-                "geo": "Europe (CPU)",
-                "urls": [
-                    "eu-xmr.hiveon.net:11000"
-                ]
-            }
-        ],
-         "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"monero7\""
-            },
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "claymore-x_user_config": "-pow7 1"
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-             "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "cryptonight",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"monero\": \"true\"\n\"auto-fan\": \"false\""
-            },
-            "cpuminer-opt": {
-                "url": "%URL%",
-                "algo": "cryptonightv7",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
+            "teamredminer":{
+               "template": "%WAL%",
+               "worker": "%WORKER_NAME%"
             }
         }
     }

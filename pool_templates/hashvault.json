@@ -1,128 +1,152 @@
 [
     {
-        "coin": "XTL",
+        "pool": {
+            "name": "HashVault",
+            "url": "https://hashvault.pro/",
+            "fee": 0.9,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "TUBE",
         "servers": [
             {
-                "geo": "Low-end",
+                "geo": "Low-End",
                 "urls": [
-                    "pool.stellite.hashvault.pro:3333"
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
                 ]
             },
             {
-                "geo": "Mid-range",
+                "geo": "Mid-End",
                 "urls": [
-                    "pool.stellite.hashvault.pro:5555"
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
                 ]
             },
             {
-                "geo": "High-end",
+                "geo": "High-End",
                 "urls": [
-                    "pool.stellite.hashvault.pro:7777"
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
                 ]
             }
         ],
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/xtl\""
+                "user_config": "\"algo\": \"cn-heavy/tube\""
             },
             "xmr-stak": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_v7_stellite\""
+                "user_config": "\"currency\": \"cryptonight_bittube2\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-heavy/tube\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-heavy/tube\""
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "cn-heavy/tube",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-saber"
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-saber"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cn_saber"
             }
         }
     },
     {
-        "coin": "KRB",
+        "coin": "TRTL",
         "servers": [
             {
-                "geo": "Low-end",
+                "geo": "Low-End",
                 "urls": [
-                    "pool.karbo.hashvault.pro:3333"
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
                 ]
             },
             {
-                "geo": "Mid-range",
+                "geo": "Mid-End",
                 "urls": [
-                    "pool.karbo.hashvault.pro:5555"
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
                 ]
             },
             {
-                "geo": "High-end",
+                "geo": "High-End",
                 "urls": [
-                    "pool.karbo.hashvault.pro:7777"
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
                 ]
             }
         ],
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/0\""
+                "user_config": "\"algo\": \"argon2/chukwa\""
             },
-            "xmr-stak": {
+            "xmrig-new": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight\""
+                "cpu": "1",
+                "algo": "argon2/chukwa",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
             },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "ETN",
-        "servers": [
-            {
-                "geo": "Low-end",
-                "urls": [
-                    "pool.electroneum.hashvault.pro:80"
-                ]
-            },
-            {
-                "geo": "Mid-range",
-                "urls": [
-                    "pool.electroneum.hashvault.pro:3333"
-                ]
-            },
-            {
-                "geo": "High-end",
-                "urls": [
-                    "pool.electroneum.hashvault.pro:5555"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
+              "cryptodredge": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/0\""
+                "algo": "chukwa"
             },
-            "xmr-stak": {
+            "teamredminer": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight\""
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "cryptonight",
-                "fork": "gm",
-                "pass": "%WORKER_NAME%:%EMAIL%",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"keepalive\": \"true\"\n\"nicehash\": \"false\""
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "algo": "trtl_chukwa"
             }
         }
     },
@@ -130,36 +154,56 @@
         "coin": "LOKI",
         "servers": [
             {
-                "geo": "Low-end",
+                "geo": "Low-End",
                 "urls": [
-                    "pool.loki.hashvault.pro:3333"
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
                 ]
             },
             {
-                "geo": "Mid-range",
+                "geo": "Mid-End",
                 "urls": [
-                    "pool.loki.hashvault.pro:5555"
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
                 ]
             },
             {
-                "geo": "High-end",
+                "geo": "High-End",
                 "urls": [
-                    "pool.loki.hashvault.pro:7777"
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
                 ]
             }
         ],
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-heavy\""
+                "user_config": "\"algo\": \"rx/loki\""
+            },
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/loki",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
             },
             "xmr-stak": {
+                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+                "nvidia": "\"gpu_threads_conf\" : [],",
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "fork": "randomx",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_heavy\""
+                "user_config": "\"currency\":\"loki\""
             }
         }
     },
@@ -167,36 +211,82 @@
         "coin": "XHV",
         "servers": [
             {
-                "geo": "Low-end",
+                "geo": "Low-End",
                 "urls": [
-                    "pool.havem.hashvault.pro:3333"
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
                 ]
             },
             {
-                "geo": "Mid-range",
+                "geo": "Mid-End",
                 "urls": [
-                    "pool.havem.hashvault.pro:5555"
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
                 ]
             },
             {
-                "geo": "High-end",
+                "geo": "High-End",
                 "urls": [
-                    "pool.havem.hashvault.pro:7777"
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
                 ]
             }
         ],
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
+                "user_config": "\"algo\": \"cn-heavy/xhv\""
             },
             "xmr-stak": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "user_config": "\"currency\": \"cryptonight_haven\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-heavy/xhv\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn-heavy/xhv\""
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "cn-heavy/xhv",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-xhv"
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-xhv"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cn_haven"
             }
         }
     },
@@ -204,48 +294,76 @@
         "coin": "GRFT",
         "servers": [
             {
-                "geo": "Low-end",
+                "geo": "Low-End",
                 "urls": [
-                    "pool.graft.hashvault.pro:3333"
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
                 ]
             },
             {
-                "geo": "Mid-range",
+                "geo": "Mid-End",
                 "urls": [
-                    "pool.graft.hashvault.pro:5555"
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
                 ]
             },
             {
-                "geo": "High-end",
+                "geo": "High-End",
                 "urls": [
-                    "pool.graft.hashvault.pro:7777"
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
                 ]
             }
         ],
         "miners": {
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%:%EMAIL%",
-                "claymore-x_user_config": "-pow7 1"
-            },
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/1\""
+                "user_config": "\"algo\": \"cn/rwz\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/rwz\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/rwz\""
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "cn/rwz",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
             },
             "xmr-stak": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_v7\""
+                "user_config": "\"currency\": \"graft\""
             },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "cryptonight",
-                "fork": "gm",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"keepalive\": \"true\"\n\"nicehash\": \"false\""
+                "algo": "cnv8_rwz"
+            },
+            "nanominer": {
+                "algo": "CryptoNightReverseWaltz",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
             }
         }
     },
@@ -253,36 +371,82 @@
         "coin": "MSR",
         "servers": [
             {
-                "geo": "Low-end",
+                "geo": "Low-End",
                 "urls": [
-                    "pool.masari.hashvault.pro:3333"
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
                 ]
             },
             {
-                "geo": "Mid-range",
+                "geo": "Mid-End",
                 "urls": [
-                    "pool.masari.hashvault.pro:5555"
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
                 ]
             },
             {
-                "geo": "High-end",
+                "geo": "High-End",
                 "urls": [
-                    "pool.masari.hashvault.pro:7777"
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
                 ]
             }
         ],
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/msr\""
+                "user_config": "\"algo\": \"cn/half\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/half\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/half\""
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "cn/half",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
             },
             "xmr-stak": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_masari\""
+                "user_config": "\"currency\": \"cryptonight_v8_half\""
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-fast-v8"
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-fast-v8"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnv8_half"
             }
         }
     },
@@ -290,81 +454,70 @@
         "coin": "RYO",
         "servers": [
             {
-                "geo": "Low-end",
+                "geo": "Low-End",
                 "urls": [
-                    "pool.ryo.hashvault.pro:3333"
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
                 ]
             },
             {
-                "geo": "Mid-range",
+                "geo": "Mid-End",
                 "urls": [
-                    "pool.ryo.hashvault.pro:5555"
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
                 ]
             },
             {
-                "geo": "High-end",
+                "geo": "High-End",
                 "urls": [
-                    "pool.ryo.hashvault.pro:7777"
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
                 ]
             }
         ],
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-heavy\""
+                "user_config": "\"algo\": \"cn/gpu\""
             },
             "xmr-stak": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_heavy\""
-            }
-        }
-    },
-    {
-        "coin": "AEON",
-        "servers": [
-            {
-                "geo": "Low-end",
-                "urls": [
-                    "pool.aeon.hashvault.pro:3333"
-                ]
+                "user_config": "\"currency\": \"cryptonight_gpu\""
             },
-            {
-                "geo": "Mid-range",
-                "urls": [
-                    "pool.aeon.hashvault.pro:5555"
-                ]
-            },
-            {
-                "geo": "High-end",
-                "urls": [
-                    "pool.aeon.hashvault.pro:7777"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
+            "xmrig-amd": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-lite/1\""
+                "user_config": "\"algo\": \"cn/gpu\""
             },
-            "xmr-stak": {
+            "xmrig-nvidia": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight-aeonv7\""
+                "user_config": "\"algo\": \"cn/gpu\""
             },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "cryptonight",
-                "fork": "gm",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "cn/gpu",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"keepalive\": \"true\"\n\"nicehash\": \"false\""
+                "algo": "cryptonight-gpu"
             }
         }
     },
@@ -372,48 +525,76 @@
         "coin": "SUMO",
         "servers": [
             {
-                "geo": "Low-end",
+                "geo": "Low-End",
                 "urls": [
-                    "pool.sumo.hashvault.pro:3333"
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
                 ]
             },
             {
-                "geo": "Mid-range",
+                "geo": "Mid-End",
                 "urls": [
-                    "pool.sumo.hashvault.pro:5555"
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
                 ]
             },
             {
-                "geo": "High-end",
+                "geo": "High-End",
                 "urls": [
-                    "pool.sumo.hashvault.pro:7777"
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
                 ]
             }
         ],
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/0\""
+                "user_config": "\"algo\": \"cn/r\""
             },
             "xmr-stak": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight\""
+                "user_config": "\"currency\": \"cryptonight_r\""
             },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "cryptonight",
-                "fork": "gm",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"keepalive\": \"true\"\n\"nicehash\": \"false\""
+                "user_config": "\"algo\": \"cn/r\""
             },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "cn/r",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnr"
+            },
+            "nanominer": {
+                "algo": "CryptoNightR",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
             }
         }
     },
@@ -421,89 +602,360 @@
         "coin": "XMR",
         "servers": [
             {
-                "geo": "Low-end",
+                "geo": "Low-End",
                 "urls": [
-                    "pool.monero.hashvault.pro:3333"
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
                 ]
             },
             {
-                "geo": "Mid-range",
+                "geo": "Mid-End",
                 "urls": [
-                    "pool.monero.hashvault.pro:5555"
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
                 ]
             },
             {
-                "geo": "High-end",
+                "geo": "High-End",
                 "urls": [
-                    "pool.monero.hashvault.pro:7777"
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
                 ]
             }
         ],
         "miners": {
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%:%EMAIL%",
-                "claymore-x_user_config": "-pow7 1"
-            },
-            "xmrig": {
+            "xmrig-new": {
+                "cpu": "1",
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/1\""
+                "algo": "rx/0",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
             },
             "xmr-stak": {
+                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+                "nvidia": "\"gpu_threads_conf\" : [],",
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "fork": "randomx",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"monero7\""
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "cryptonight",
-                "fork": "gm",
-                "pass": "%WORKER_NAME%:%EMAIL%",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"keepalive\": \"true\"\n\"nicehash\": \"false\"\n\"monero\": \"true\"\n"
+                "user_config": "\"currency\":\"randomx\""
             }
         }
     },
     {
-        "coin": "ITNS",
+        "coin": "XWP",
         "servers": [
             {
-                "geo": "Low-end",
+                "geo": "Low-End",
                 "urls": [
-                    "pool.intense.hashvault.pro:3333"
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
                 ]
             },
             {
-                "geo": "Mid-range",
+                "geo": "Mid-End",
                 "urls": [
-                    "pool.intense.hashvault.pro:5555"
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
                 ]
             },
             {
-                "geo": "High-end",
+                "geo": "High-End",
                 "urls": [
-                    "pool.intense.hashvault.pro:7777"
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
                 ]
             }
         ],
         "miners": {
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%:%EMAIL%",
-                "claymore-x_user_config": "-pow7 1"
+            "gminer": {
+                "algo": "swap",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
             },
+            "nbminer": {
+                "algo": "cuckaroo_swap",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            },
+            "grinprominer": {
+                "algo": "swap",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "LTHN",
+        "servers": [
+            {
+                "geo": "Low-End",
+                "urls": [
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
+                ]
+            },
+            {
+                "geo": "Mid-End",
+                "urls": [
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "urls": [
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
+                ]
+            }
+        ],
+        "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/1\""
+                "user_config": "\"algo\": \"cn/r\""
             },
             "xmr-stak": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%:%EMAIL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"intense\""
+                "user_config": "\"currency\": \"cryptonight_r\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "cn/r",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnr"
+            },
+            "nanominer": {
+                "algo": "CryptoNightR",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "CCX",
+        "servers": [
+            {
+                "geo": "Low-End",
+                "urls": [
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
+                ]
+            },
+            {
+                "geo": "Mid-End",
+                "urls": [
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "urls": [
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_conceal\""
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cn_conceal"
+            }
+        }
+	},
+    {
+        "coin": "WOW",
+        "servers": [
+            {
+                "geo": "Low-End",
+                "urls": [
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
+                ]
+            },
+            {
+                "geo": "Mid-End",
+                "urls": [
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "urls": [
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"rx/wow\""
+            },
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/wow",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "xmr-stak": {
+                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+                "nvidia": "\"gpu_threads_conf\" : [],",
+                "url": "%URL%",
+                "fork": "randomx",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\":\"wownero\""
+            }
+        }
+    },
+    {
+        "coin": "KVA",
+        "servers": [
+            {
+                "geo": "Low-End",
+                "urls": [
+                    "pool.hashvault.pro:3333"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:3333"
+                ]
+            },
+            {
+                "geo": "Mid-End",
+                "urls": [
+                    "pool.hashvault.pro:5555"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:5555"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "urls": [
+                    "pool.hashvault.pro:7777"
+                ],
+                "ssl_urls": [
+                    "pool.hashvault.pro:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_r\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "cn/r",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnr"
+            },
+            "nanominer": {
+                "algo": "CryptoNightR",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
             }
         }
     }

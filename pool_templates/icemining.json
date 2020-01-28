@@ -99,5 +99,91 @@
                 "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "SUQA",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.icemining.ca:4200"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "mine.icemining.ca:4200"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.icemining.ca:4200"
+                ]
+            }
+        ],
+        "miners": {
+        }
+    },
+    {
+        "coin": "NIM",
+        "servers": [
+            {
+                "geo": "North America",
+                "urls": [
+                    "nimiq.icemining.ca:2053"
+
+                ]
+            }
+        ],
+        "miners": {
+            "sushi-miner-cuda": {
+              "server": "%URL_HOST%",
+              "port": "%URL_PORT%",
+              "template": "%WAL%",
+              "worker": "%WORKER_NAME%",
+              "user_config": "\"consensus\": \"dumb\""
+            },
+            "sushi-miner-opencl": {
+              "server": "%URL_HOST%",
+              "port": "%URL_PORT%",
+              "template": "%WAL%",
+              "worker": "%WORKER_NAME%",
+              "user_config": "\"consensus\": \"dumb\""
+            },
+            "cryptodredge": {
+               "url": "wss://%URL%",
+               "algo": "argon2d-nim",
+               "pass": "%WORKER_NAME%",
+               "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "KDA",
+        "servers": [
+            {
+                "geo": "North America",
+                "urls": [
+                    "kda-us.icemining.ca:3700"
+                ]
+            }
+        ],
+        "miners": {
+            "tt-miner": {
+                "url": "%URL%",
+                "algo": "BLAKE2S",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-coin kda\n-luck"
+            },
+            "noncerpro-kadena": {
+                "cuda": "1",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--mode pool"
+            }
+        }
     }
 ]

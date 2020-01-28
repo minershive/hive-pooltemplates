@@ -1,0 +1,59 @@
+[
+
+   {
+      "pool": {
+         "name": "Taona Official Pool",
+         "url": "https://pool.taonacoin.com",
+         "fee": 1,
+         "type": "PROP"
+         }
+   },
+   {
+        "coin": "TNA",
+        "servers": [
+            {
+                "geo": "CANADA",
+                "urls": [
+                    "pool.taonacoin.com:3636"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=TNA",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+	    "cryptodredge": {
+		"url": "stratum+tcp://%URL%",
+		"algo": "x16r",
+		"pass": "c=TNA",
+		"template": "%WAL%.%WORKER_NAME%"
+	    },
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "x16r",
+                "ccpass": "C=TNA",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=TNA",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            },
+            "sgminer-gm": {
+                "fork": "avermore",
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "C=TNA",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            }
+        }
+    }
+
+]

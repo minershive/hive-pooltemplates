@@ -1,0 +1,49 @@
+[
+    {
+        "coin": "REOSC",
+        "servers": [
+            {
+                "geo": "Paris Solo 8G",
+                "urls": [
+                    "solo.reosc.io:3131"
+                ]
+            },
+            {
+                "geo": "Euro PPLNS 2G",
+                "urls": [
+                    "pool.reosc.io:8002"
+                ]
+            },
+            {
+                "geo": "Euro PPLNS 4G",
+                "urls": [
+                    "pool.reosc.io:8004"
+                ]
+            },
+            {
+                "geo": "Euro PPLNS 9G",
+                "urls": [
+                    "pool.reosc.io:8009"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 0"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

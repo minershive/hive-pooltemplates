@@ -5,7 +5,8 @@
             {
                 "geo": "China",
                 "urls": [
-                    "stratum.f2pool.com:3333"
+                    "stratum.f2pool.com:3333",
+                    "stratum.f2pool.com:25"
                 ]
             }
         ],
@@ -54,7 +55,13 @@
         "coin": "ETH",
         "servers": [
             {
-                "geo": "China",
+                "geo": "ASIA (Only username)",
+                "urls": [
+                    "eth.f2pool.com:6688"
+                ]
+            },
+            {
+                "geo": "ASIA (Only wallet)",
                 "urls": [
                     "eth.f2pool.com:8008"
                 ]
@@ -62,7 +69,7 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME% , PSW: x, ALLPOOLS: 1, ESTALE: 1"
             },
             "ethminer": {
                 "cuda": 1,
@@ -75,6 +82,15 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -103,6 +119,15 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     },
@@ -139,6 +164,10 @@
                 "dcri": "20",
                 "dcoin": "dcr",
                 "dpools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -157,76 +186,6 @@
                 "dcri": "20",
                 "dcoin": "blake2s",
                 "dpools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
-            }
-        }
-    },
-    {
-        "coin": "XZC",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                    "xzc.f2pool.com:5740"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2z",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "pass": "x",
-                "miner": "tdxminer",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/tdxminer-0.2.2.2.tar.gz"
-            }
-        }
-    },
-    {
-        "coin": "ZEC",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                    "zec.f2pool.com:3357"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "stratum://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -316,6 +275,53 @@
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
+        }
+    },
+    {
+        "coin": "CKB",
+        "servers": [
+            {
+                "geo": "China (mainland)",
+                "urls": [
+                    "ckb.f2pool.com:4300"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "eaglesong"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "eaglesong"
+            },
+            "smine": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "ckb"
+            }
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "China (mainland)",
+                "urls": [
+                    "xmr.f2pool.com:13531"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_randomx"
         }
     }
 ]

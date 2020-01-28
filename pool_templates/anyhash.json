@@ -1,0 +1,41 @@
+[
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.anyhash.net:8018"
+                ]
+            }
+        ],
+        "miners": {
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, WORKER: %WORKER_NAME%, PASS: x, COIN: %COIN%, ALLPOOLS: 1"
+            },
+            "claymore": {
+                "epools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins etc\n-allpools 1"
+            },
+            "ethminer": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
+            }
+        }
+    }
+]

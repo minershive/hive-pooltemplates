@@ -141,15 +141,11 @@
             }
         ],
         "miners": {
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%",
-                "claymore-x_user_config": "-pow7 1"
-            },
             "xmrig": {
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/1\""
+                "user_config": "\"algo\": \"cryptonight/2\""
             },
             "xmr-stak": {
                 "url": "%URL%",
@@ -334,21 +330,17 @@
             }
         ],
         "miners": {
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: %WORKER_NAME%",
-                "claymore-x_user_config": "-pow7 1"
-            },
             "xmrig": {
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/1\""
+                "user_config": "\"algo\": \"cryptonight/2\""
             },
             "xmr-stak": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"monero7\""
+                "user_config": "\"currency\": \"monero\""
             }
         }
     },
@@ -449,43 +441,6 @@
         }
     },
     {
-        "coin": "TRIT",
-        "servers": [
-            {
-                "geo": "Low-End",
-                "urls": [
-                    "triton.ingest.cryptoknight.cc:6631"
-                ]
-            },
-            {
-                "geo": "Mid range",
-                "urls": [
-                    "triton.ingest.cryptoknight.cc:6632"
-                ]
-            },
-            {
-                "geo": "High-End",
-                "urls": [
-                    "triton.ingest.cryptoknight.cc:6633"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-lite/1\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_lite_v7\""
-            }
-        }
-    },
-    {
         "coin": "TRTL",
         "servers": [
             {
@@ -519,6 +474,49 @@
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "user_config": "\"currency\": \"cryptonight_lite_v7\""
+            }
+        }
+    },
+    {
+        "coin": "WOW",
+        "servers": [
+            {
+                "geo": "GPU rig",
+                "urls": [
+                    "wownero.ingest.cryptoknight.cc:50903"
+                ]
+            },
+            {
+                "geo": "GPU single",
+                "urls": [
+                    "wownero.ingest.cryptoknight.cc:50902"
+                ]
+            },
+            {
+                "geo": "CPU",
+                "urls": [
+                    "wownero.ingest.cryptoknight.cc:50901"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/r\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/r\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight/r\""
             }
         }
     }

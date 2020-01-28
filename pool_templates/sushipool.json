@@ -1,0 +1,142 @@
+[
+    {
+        "coin": "NIM",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "us.sushipool.com:443"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.sushipool.com:443"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia.sushipool.com:443"
+                ]
+            }
+        ],
+        "miners": {
+            "custom": {
+                "miner": "sushi-miner-opencl",
+                "install_url": "https://github.com/Sushipool/sushi-miner-opencl/releases/download/2.0.3/sushi-miner-opencl-2.0.3.tar.gz",
+                "algo": "argon2d-nim",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "sushi-miner-cuda": {
+              "server": "%URL_HOST%",
+              "port": "%URL_PORT%",
+              "template": "%WAL%",
+              "worker": "%WORKER_NAME%"
+            },
+            "sushi-miner-opencl": {
+              "server": "%URL_HOST%",
+              "port": "%URL_PORT%",
+              "template": "%WAL%",
+              "worker": "%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XWP",
+        "servers": [
+            {
+                "geo": "EU",
+                "ssl_urls": [
+                    "swap.sushipool.com:33088"
+                ]
+            },
+            {
+                "geo": "Nicehash",
+                "urls": [
+                    "swap.sushipool.com:33055"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "swap",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "cuckaroo_swap",
+                "url": "%URL%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            },
+            "grinprominer": {
+                "algo": "swap",
+                "url": "%URL%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XHV",
+        "servers": [
+            {
+                "geo": "EU",
+                "ssl_urls": [
+                    "haven.sushipool.com:9999"
+                ]
+            },
+            {
+                "geo": "Nicehash",
+                "urls": [
+                    "haven.sushipool.com:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_haven\""
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-xhv"
+            },
+            "cast-xmr": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-xhv"
+            }
+        }
+    }
+]

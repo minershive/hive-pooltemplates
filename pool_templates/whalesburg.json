@@ -1,30 +1,59 @@
 [
     {
+        "pool": {
+            "name": "Whalesburg",
+            "url": "https://whalesburg.com",
+            "fee": 1,
+            "type": "SMPPS+"
+        }
+    },
+    {
         "coin": "Whalesburg-Ethash",
         "servers": [
             {
                 "geo": "Europe",
                 "urls": [
-                    "proxy.pool.whalesburg.com:8082"
+                    "eu1.whalesburg.com:8082",
+                    "eu2.whalesburg.com:8082"
+                ],
+                "ssl_urls": [
+                    "eu1.whalesburg.com:7777",
+                    "eu2.whalesburg.com:7777"
                 ]
             }
         ],
         "miners": {
+            "_prototype": "miners_ethash",
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 1"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, ALLPOOLS: 1, ALLCOINS -1, -GSER 2"
             },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
+            }
+        }
+    },
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu1.whalesburg.com:8082",
+                    "eu2.whalesburg.com:8082"
+                ],
+                "ssl_urls": [
+                    "eu1.whalesburg.com:7777",
+                    "eu2.whalesburg.com:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash",
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, ALLPOOLS: 1, ALLCOINS -1, -GSER 2"
             },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
             }
         }
     }

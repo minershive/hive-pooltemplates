@@ -1,38 +1,35 @@
 [
     {
-        "coin": "TRTL",
+        "coin": "LOKI",
         "servers": [
             {
                 "geo": "Low-end",
                 "urls": [
-                    "trtl.pool.mine2gether.com:2225"
+                    "loki.pool.mine2gether.com:2221"
                 ]
             },
             {
                 "geo": "Mid-range",
                 "urls": [
-                    "trtl.pool.mine2gether.com:4445"
+                    "loki.pool.mine2gether.com:3331"
+                ],
+                "ssl_urls": [
+                    "loki.pool.mine2gether.com:1443"
                 ]
             },
             {
                 "geo": "High-end",
                 "urls": [
-                    "trtl.pool.mine2gether.com:6665"
+                    "loki.pool.mine2gether.com:4441"
                 ]
             }
         ],
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "x",
+                "pass": "w=%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-lite/1\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_lite_v7\""
+                "user_config": "\"algo\": \"rx/loki\"\n\"donate-level\": 1\n\"donate-over-proxy\": 1"
             }
         }
     }

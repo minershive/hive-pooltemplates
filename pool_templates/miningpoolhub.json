@@ -65,15 +65,7 @@
             }
         ],
         "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers BgoldPoW"
-            }
+            "_prototype": "miners_zhash_btg"
         }
     },
     {
@@ -468,6 +460,12 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME% PSW: x",
                 "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            },
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "yescrypt",
+                "pass": "x",
+                "user": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -615,21 +613,7 @@
             }
         ],
         "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"cryptonight_v7\""
-            },
-            "claymore-x": {
-                "xpools_tpl": "POOL: ssl://%URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "claymore-x_user_config": "-pow7 1"
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_randomx"
         }
     },
     {
@@ -1075,40 +1059,43 @@
         }
     },
     {
-        "coin": "XZC",
+        "coin": "ESN",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "U.S.",
                 "urls": [
-                    "europe.lyra2z-hub.miningpoolhub.com:20581"
-                ]
-            },
-            {
-                "geo": "USA (east)",
-                "urls": [
-                    "us-east.lyra2z-hub.miningpoolhub.com:20581"
+                    "us-east.ethash-hub.miningpoolhub.com:20605"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "asia.lyra2z-hub.miningpoolhub.com:20581"
+                    "asia.ethash-hub.miningpoolhub.com:20605"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "europe.ethash-hub.miningpoolhub.com:20605"
                 ]
             }
         ],
         "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2z",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, WORKER: %WAL%.%WORKER_NAME%, ESM: 2, PSW: x",
+                "claymore_user_config": "-allcoins 1"
             },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
                 "pass": "x",
-                "miner": "tdxminer",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/tdxminer-0.2.2.2.tar.gz"
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }

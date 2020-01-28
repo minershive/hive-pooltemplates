@@ -1,0 +1,124 @@
+[    
+    {
+        "pool": {
+            "name": "MinersHaven",
+            "url": "https://minershaven.org",
+            "fee": 0.75,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "USA",
+                "urls": [
+                    "xmr.minershaven.org:3333"
+                ]
+            },
+            {
+                "geo": "USA High Diff",
+                "urls": [
+                    "xmr.minershaven.org:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "fork": "randomx",
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"randomx\""
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"rx/0\""
+            },
+            "xmrig-new": {
+                "fork": "xmrig",
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/0",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+    },
+    {
+        "coin": "SUMO",
+        "servers": [
+            {
+                "geo": "USA",
+                "urls": [
+                    "sumo.minershaven.org:3334"
+                ]
+            },
+            {
+                "geo": "USA High Diff",
+                "urls": [
+                    "sumo.minershaven.org:7778"
+                ]
+            }
+        ],
+        "miners": {
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_r\""
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnr"
+            }
+        }
+    },
+    {
+        "coin": "BITC",
+        "servers": [
+            {
+                "geo": "USA",
+                "urls": [
+                    "yiimp.minershaven.org:7307"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16rv2",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "x16rv2"
+            }
+        }
+    }
+]

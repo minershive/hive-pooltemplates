@@ -1,0 +1,73 @@
+[
+{
+        "coin": "ARW",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "arrow.dapool.io:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ArrowPoW"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "pass": "x",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ArrowPoW"
+            },
+            "lolminer": {
+                "algo": "AUTO192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--overwritePersonal ArrowPoW"
+            }
+        }
+    },
+    {
+        "coin": "YEC",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "ycash.dapool.io:3344"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "pass": "x",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            },
+            "lolminer": {
+                "algo": "YEC",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

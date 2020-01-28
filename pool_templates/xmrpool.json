@@ -12,6 +12,9 @@
                 "geo": "Mid range",
                 "urls": [
                     "xmrpool.eu:5555"
+                ],
+                "ssl_urls": [
+                    "xmrpool.eu:9999"
                 ]
             },
             {
@@ -19,39 +22,10 @@
                 "urls": [
                     "xmrpool.eu:7777"
                 ]
-            },
-            {
-                "geo": "SSL",
-                "urls": [
-                    "xmrpool.eu:9999"
-                ]
             }
         ],
         "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"monero7\""
-            },
-            "claymore-x": {
-                "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
-                "claymore-x_user_config": "-pow7 1"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "cryptonight",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\": \"960\"\n\"gpu-threads\": \"2\"\n\"worksize\": \"8\"\n\"monero\": \"true\"\n\"auto-fan\": \"false\""
-            },
-            "cpuminer-opt": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "cryptonightv7",
-                "pass": "x",
-                "template": "%WAL%"
-            }
+            "_prototype": "miners_randomx_plus"
         }
     }
 ]

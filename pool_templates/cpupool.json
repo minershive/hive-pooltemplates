@@ -55,5 +55,43 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "CPU",
+        "servers": [
+            {
+                "geo": "Very Low Diff",
+                "urls": [
+                    "cpu-pool.com:63386"
+                ]
+            },
+            {
+                "geo": "Low Diff",
+                "urls": [
+                    "cpu-pool.com:63387"
+                ]
+            },
+            {
+                "geo": "Med Diff",
+                "urls": [
+                    "cpu-pool.com:63388"
+                ]
+            },
+            {
+                "geo": "High Diff",
+                "urls": [
+                    "cpu-pool.com:63389"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "fork": "cpupower",
+                "url": " stratum+tcp://%URL%",
+                "algo": "cpupower",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
