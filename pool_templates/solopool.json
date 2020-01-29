@@ -481,6 +481,46 @@
         }
     },
     {
+        "coin": "BEAM",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "s3.solopool.org:8008"
+                ]
+            },
+            {
+                "geo": "EU High Diff",
+                "urls": [
+                    "s3.solopool.org:9008"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "beamhash",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "ssl": "1"
+            },
+            "lolminer": {
+                "algo": "BEAM",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "beamhash2+ssl",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
+            }
+        }
+    },
+    {
         "coin": "XWP",
         "servers": [
             {
@@ -717,41 +757,6 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "MNX",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "s4.solopool.org:8002"
-                ]
-            },
-            {
-                "geo": "EU High Diff",
-                "urls": [
-                    "s4.solopool.org:9002"
-                ]
-            }
-        ],
-        "miners": {
-            "ewbf": {
-                "algo": "96_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "gminer": {
-                "algo": "96_5",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers ZcashPoW"
             }
         }
     },
