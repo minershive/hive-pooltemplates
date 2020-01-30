@@ -1,32 +1,5 @@
 [
     {
-        "coin": "MUSIC",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mc.pool.zet-tech.eu:8004"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ALLPOOLS: 1"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "ETH",
         "servers": [
             {
@@ -38,7 +11,7 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+                "epools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
             },
             "ethminer": {
                 "cuda": 1,
@@ -65,34 +38,7 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ALLPOOLS: 1"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "EXP",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "exp.pool.zet-tech.eu:8007"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ALLPOOLS: 1"
+                "epools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ALLPOOLS: 1"
             },
             "ethminer": {
                 "cuda": 1,
@@ -119,34 +65,7 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "UBQ",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "ubq.pool.zet-tech.eu:8009"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ALLPOOLS: 1"
+                "epools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
             },
             "ethminer": {
                 "cuda": 1,
