@@ -7,7 +7,7 @@
 *   TT-Miner v3.2.3 beta-1 (experimental release)
 *   Bminer v16.0.3 (improved performance and stability of the C29m)
 *   CPUminer-opt v3.11.8 by JayDDee (fixes and optimization)
-*   lolMiner: added missed mode `GRIN-AUTO` (Grin* Auto Profit Switcher: works on some pools)
+*   lolMiner: added missed mode `GRIN-AUTO` (Grin Auto Profit Switcher: works on some pools, see miner's manual)
 
 ##### 0.6-115@200130 2020-01-30
 *   Improved `net-test` (added CA1 mirror, compact output to fit more into screen)
