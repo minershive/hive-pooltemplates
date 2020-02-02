@@ -4,7 +4,7 @@
 *   Updated `amdmeminfo` (added ID for RX 5500 XT and RX 5600 XT)
 *   RHminer v2.1b (small fix vs v2.1)
 *   XMRig v5.5.3 (optimization and fixes)
-*   TT-Miner v3.2.3 beta-1 (experemental release)
+*   TT-Miner v3.2.3 beta-1 (experimental release)
 *   Bminer v16.0.3 (improved performance and stability of the C29m)
 *   CPUminer-opt v3.11.8 by JayDDee (fixes and optimization)
 *   lolMiner: added `GRIN-AUTO` (Grin Auto Profit Switcher)
