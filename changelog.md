@@ -1,12 +1,23 @@
+##### 0.6-116@200202 2020-02-02
+*   Improved `nvidia-oc`
+*   Improved `motd` (show help only on session start; show miner fork name)
+*   Updated `amdmeminfo` (added ID for RX 5500 XT and RX 5600 XT)
+*   RHminer v2.1b (small fix vs v2.1)
+*   XMRig v5.5.3 (optimization and fixes)
+*   TT-Miner v3.2.3 beta-1 (experemental release)
+*   Bminer v16.0.3 (improved performance and stability of the C29m)
+*   CPUminer-opt v3.11.8 by JayDDee (fixes and optimization)
+*   lolMiner: added `GRIN-AUTO` (Grin Auto Profit Switcher)
+
 ##### 0.6-115@200130 2020-01-30
-*   ⚙️ Improved `net-test` (added CA1 mirror, compact output to fit more into screen)
-*   ⚙️ Improved miners log rotation (fixed logs truncation bug, increased truncate log size to 20MB, rotate logs before truncation, keep up to 10 logs per miner, gzip logs to save space)
-*   ⚙️ Improved `agent` (prevent  from starting too early in some cases and breaking OC)
-*   ⚙️ Improved `motd` (show miners version in flightsheet info)
-*   ⚙️ Improved `nvidia-info` (added gpu temp, fans rpm, uuid and link width)
-*   ⛏ CPUminer-opt by JayDDee v3.11.7 (added yescryptr8g and sha3d algos)
-*   ⛏ miniZ v1.5t (hashrate improvements for 150,5 and 210,9: up to 4% and up to 2% on other depending on algo and GPU, better support for GTX 1660 Ti, improved stability)
-*   ⛏ lolMiner v0.9.7 (increased GRIN-C32 performance on Vega, VII & Navi cards by 15-18%)
+*   Improved `net-test` (added CA1 mirror, compact output to fit more into screen)
+*   Improved miners log rotation (fixed logs truncation bug, increased truncate log size to 20MB, rotate logs before truncation, keep up to 10 logs per miner, gzip logs to save space)
+*   Improved `agent` (prevent  from starting too early in some cases and breaking OC)
+*   Improved `motd` (show miners version in flightsheet info)
+*   Improved `nvidia-info` (added gpu temp, fans rpm, uuid and link width)
+*   CPUminer-opt by JayDDee v3.11.7 (added yescryptr8g and sha3d algos)
+*   miniZ v1.5t (hashrate improvements for 150,5 and 210,9: up to 4% and up to 2% on other depending on algo and GPU, better support for GTX 1660 Ti, improved stability)
+*   lolMiner v0.9.7 (increased GRIN-C32 performance on Vega, VII & Navi cards by 15-18%)
 
 ##### 0.6-114@200125 2020-01-25
 *   Enabled mining in maintenance mode
