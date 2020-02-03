@@ -1,3 +1,7 @@
+##### 0.6-116@200203 2020-02-03
+*   RHminer v2.1c (fixed a lot of bugs, improved hashrate up to 2%)
+*   lolMiner: fixed stat
+
 ##### 0.6-116@200202 2020-02-02
 *   Improved `nvidia-oc`
 *   Improved `motd` (show help only on session start; show miner fork name)
