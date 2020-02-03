@@ -1,6 +1,6 @@
 ##### 0.6-116@200203 2020-02-03
 *   RHminer v2.1c (fixed a lot of bugs, improved hashrate up to 2%)
-*   lolMiner: fixed stat
+*   lolMiner: fixed stat on some algos
 
 ##### 0.6-116@200202 2020-02-02
 *   Improved `nvidia-oc`
