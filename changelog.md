@@ -1,3 +1,6 @@
+##### 0.6-117@200208-2 2020-02-08
+*   Bminer v16.0.5 (improved performance C29m)
+
 ##### 0.6-117@200208 2020-02-08
 *   Fixed `nvidia-oc` (now restores default values for empty OC parameters)
 *   Fixed X server start on some configuration with Nvidia cards
