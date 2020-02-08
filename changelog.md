@@ -2,8 +2,8 @@
 *   Fixed `nvidia-oc` (now restores default values for empty OC parameters)
 *   Fixed X server start on some configuration with Nvidia cards
 *   Minor fix for `motd`
-*   SRBMiner-Multi v0.3.1 (CPU & AMD GPU miner which supports m7mv2, defyx, yespower based & randomx based algos on CPU, blake 2b, blake2s, mtp and some other algos on GPU)
-*   CPUminer-opt v.3.12.1 (faster implemetation phi2 on avx2 and avx512 capable CPU, improved log output, bug fixes)
+*   SRBMiner-Multi v0.3.1 (CPU & AMD GPU miner which supports m7mv2, defyx, yespower & randomx and their variants algos on CPU, blake2b, blake2s, mtp and some other algos on GPU)
+*   CPUminer-opt v.3.12.1 (faster implementation phi2 on avx2 and avx512 capable CPU, improved log output, bug fixes)
 *   NanoMiner v1.8.0 (added Cortex support for AMD Radeon RX 570 16G cards, improved RandomHash2 performance up to +30% for some of CPUs)
 *   Bminer v16.0.4 (improve the performance of C29m miner, reduce the rejection rate of the C29m miner)
 *   RHminer v2.2 (performance improved up to 55% depend on CPU type)
