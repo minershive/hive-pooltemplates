@@ -6,8 +6,8 @@
 *   Minor `net-test` fix
 *   SRBminer-Multi v0.3.3 (added bl2bsha3 algorithm, RandomX fixes and optimizations)
 *   NanoMiner v1.8.1 (fixed issue with incorrect Ethash pool protocol auto-detection on some connections, removed pool.pascalpool.org from list of default Pascal pools)
-*   CryptoDredge v0.23.0 (new algos: mtp-tcr, cn-ipx2, cn-zls; improved mtp, cn-gpu; bug fixes)
 *   RHminer v2.2b (improved pool connection, code cleanup and minor improvements, removed pool.pascalpool.org)
+*   CryptoDredge v0.23.0 (new algos: mtp-tcr, cn-ipx2, cn-zls; improved mtp, cn-gpu; bug fixes)
 *   CPUminer-opt-jayddee v3.12.3 (faster avx2 & avx512 for skein, skein2, fixed avx2 for skunk, xevan, skein, skein2)
 *   CPUminer-opt-rplant v4.0.31 (added algos: minotaur, lyra2tdc)
 
