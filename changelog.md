@@ -1,3 +1,6 @@
+##### 0.6-118@200216 2020-02-16
+*   XMRig (unified) v5.6.0 (fixed generic OpenCL code for AMD Navi GPUs, added health information for AMD GPUs, fixed possible nicehash nonce overflow in some conditions)
+
 ##### 0.6-118@200215 2020-02-15
 *   Improved optional package `repo-mirror` (now checks for already running instance)
 *   Improved miner start/stop procedure
