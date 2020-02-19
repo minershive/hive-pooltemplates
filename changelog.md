@@ -1,3 +1,8 @@
+##### 0.6-119@200219 2020-02-19
+*   NBMiner v27.1 (improve HNS performance on Nvidia GPUs, added support for HNS mining for AMD GPUs)
+*   Gminer v1.97 (added Cuckatoo32 and Handshake solvers)
+*   CPUminer-opt-rplant v4.5.5 (fixed broken yespower and yespowerR16)
+
 ##### 0.6-119@200218 2020-02-18
 *   NBMiner v27.0 (added support for HNS & HNS_ETH mining for Nvidia GPUs, minor bug fix and improvements)
 *   CPUminer-opt-jayddee v3.12.3.1 (bug fix)
