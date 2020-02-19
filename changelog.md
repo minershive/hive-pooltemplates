@@ -1,6 +1,6 @@
 ##### 0.6-119@200218 2020-02-18
 *   NBMiner v27.0 (added support for HNS & HNS_ETH mining for Nvidia GPUs, minor bug fix and improvements)
-*   CPUminer-opt v.3.12.3.1 (bug fix)
+*   CPUminer-opt v3.12.3.1 (bug fix)
 *   CPUminer-opt-rplant v4.5.4 (new codebase, optimized lyra2*, optimized minotaur AES/SSE4.2, improved yescryptr8g and lyra2z330 if HT enabled)
 
 ##### 0.6-119@200217 2020-02-17
