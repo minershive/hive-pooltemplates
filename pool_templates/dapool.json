@@ -69,5 +69,36 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "XZC",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "zcoin.dapool.io:3355"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "mtp",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "mtp"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "mtp"
+            }
+        }
     }
 ]
