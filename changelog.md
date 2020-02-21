@@ -1,3 +1,9 @@
+##### 0.6-120@200220 2020-02-20
+*   Minor system fixes
+*   NBMiner v27.2 (improve HNS performance on AMD GPUs)
+*   NanoMiner v1.8.2 (network stability improved)
+*   SRBMiner-Multi v0.3.5 (added 'cryptonight_bbc' algorithm devfee to 2.5%, lowered devfee for 'bl2bsha3' to 2%, added GPU sensors for Linux version and ability to use some related options)
+
 ##### 0.6-119@200219 2020-02-19
 *   NBMiner v27.1 (improve HNS performance on Nvidia GPUs, added support for HNS mining for AMD GPUs)
 *   Gminer v1.97 (added Cuckatoo32 and Handshake solvers)
