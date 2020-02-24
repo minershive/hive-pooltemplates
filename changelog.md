@@ -1,3 +1,12 @@
+##### 0.6-121@200224 2020-02-24
+*   X server improvements (added Auto start option - run X server only if Nvidia GPUs are present;fixed X server crashing with lot of Amd GPUs;optimized boot sequence)
+*   Improved overclocking for AMD Polaris family cards
+*   Updated some tools for AMD cards
+*   Bminer v16.0.7 (initial support for mining Ethash as well as dual mining Ethash and Handshake on AMD)
+*   lolMiner v0.9.8.1 (improved GRIN-C29M up to +7-12% depending on card, added support for AMD 5500/5600 series on all Grin algos, dded BEAM support for for 5500/5600/5700 series)
+*   CPUminer-opt-jayddee v3.12.4.2 (improved Lyra2v2 avx2 and avx512, fixes for getwork/solo mode)
+*   MBminer: fixed stats for AMD  cards
+
 ##### 0.6-120@200220 2020-02-20
 *   Minor system fixes
 *   NBMiner v27.2 (improve HNS performance on AMD GPUs)
