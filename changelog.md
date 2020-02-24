@@ -1,6 +1,6 @@
 ##### 0.6-121@200224 2020-02-24
-*   X server improvements (added Auto start option - run X server only if Nvidia GPUs are present;fixed X server crashing with lot of Amd GPUs;optimized boot sequence)
-*   Improved overclocking for AMD Polaris family cards
+*   X server improvements (added Auto start option by default - X server starts only if Nvidia GPUs are present; fixed X server crashing with lot of AMD GPUs; optimized boot sequence)
+*   Improved overclocking for AMD Polaris family cards (much faster and stable aggressive OC. memory clock is always applied in MDPM 1 mode (previously were taken from bios on 16 Ubuntu images)
 *   Updated some tools for AMD cards
 *   Bminer v16.0.7 (initial support for mining Ethash as well as dual mining Ethash and Handshake on AMD)
 *   lolMiner v0.9.8.1 (improved GRIN-C29M up to +7-12% depending on card, added support for AMD 5500/5600 series on all Grin algos, dded BEAM support for for 5500/5600/5700 series)
