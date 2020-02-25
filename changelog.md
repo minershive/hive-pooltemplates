@@ -1,3 +1,9 @@
+##### 0.6-122@200225 2020-02-25
+*   Fixed OC for AMD Polaris (affected to OC profile with empty memory state)
+*   XMRig (unified) v5.7.0 (added SOCKS5 proxies support for Tor, fixed duplicate jobs in daemon (solo) mining client, slightly speedup by 0.3-0.4% on RandomX depending on CPU)
+*   CPUminer-opt-jayddee v3.12.4.3 (fixed segfault in new block log for getwork)
+*   XMRig-BBC (xmrig fork: bigbangcore) v1.3 (improved hash algorithm of CryptoNight-BBC)
+
 ##### 0.6-121@200224 2020-02-24
 *   X server improvements (added Auto start option by default - X server starts only if Nvidia GPUs are present; fixed X server crashing with lot of AMD GPUs; optimized boot sequence)
 *   Improved overclocking for AMD Polaris family cards (much faster and stable aggressive OC. memory clock is always applied in MDPM 1 modereduced power usage in idle mode if DPM or MDPM settings are used)
