@@ -1,5 +1,5 @@
 ##### 0.6-123@200226 2020-02-26
-*   **For owners of AMD RX 400/500 series cards reboot strongly recommended after update will completed (use 'Reboot after complete' option)**
+*   `For owners of AMD RX 400/500 series cards reboot strongly recommended after update will completed (use 'Reboot after complete' option)`
 *   Fixed AMD OC (Polaris) (apply idle power fix only in aggressive mode with core and vddc set)
 *   Fixed `amd-info` (incorrect data displaying with amdmemtweak v0.1.9.1 CLI)
 *   Updated `amdmeminfo` tool (added detection Hynix H5GC8H24AJR GDDR5 memory chip)
