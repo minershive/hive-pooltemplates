@@ -66,6 +66,13 @@
                 "algo": "phi2",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "algo": "phi2",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
             }
         }
     },
@@ -149,7 +156,7 @@
         }
     },
     {
-        "coin": "BCHABC",
+        "coin": "BCH",
         "servers": [
             {
                 "geo": "Europe",
@@ -212,34 +219,15 @@
             }
         ],
         "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16r",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp:\/\/%URL%",
-                "ccalgo": "x16r",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "cryptodredge": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16r",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
             "t-rex": {
                 "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16r",
+                "algo": "x25x",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "wildrig-multi": {
                 "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16r",
+                "algo": "x25x",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"opencl-threads\" : \"2\""
@@ -346,6 +334,41 @@
         }
     },
     {
+        "coin": "BTCV",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.bsod.pw:2627"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "us.bsod.pw:2627"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.bsod.pw:2627"
+                ]
+            },
+            {
+                "geo": "Russia",
+                "urls": [
+                    "ru.bsod.pw:2627"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "BTX",
         "servers": [
             {
@@ -436,7 +459,16 @@
                     "ru.bsod.pw:2534"
                 ]
             }
-        ]
+        ],
+        "miners": {
+            "ccminer": {
+                "fork": "xaya",
+                "ccurl": "stratum+tcp:\/\/%URL%",
+                "ccalgo": "neoscrypt-xaya",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            }
+        }
     },
     {
         "coin": "CXC",
@@ -852,6 +884,41 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+    {
+        "coin": "FCH",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.bsod.pw:2629"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "us.bsod.pw:2629"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.bsod.pw:2629"
+                ]
+            },
+            {
+                "geo": "Russia",
+                "urls": [
+                    "ru.bsod.pw:2629"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1396,69 +1463,6 @@
         }
     },
     {
-        "coin": "JINY",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "eu.bsod.pw:2588"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "us.bsod.pw:2588"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia.bsod.pw:2588"
-                ]
-            },
-            {
-                "geo": "Russia",
-                "urls": [
-                    "ru.bsod.pw:2588"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16r",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp:\/\/%URL%",
-                "ccalgo": "x16r",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "cryptodredge": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16r",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "t-rex": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16r",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "wildrig-multi": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16r",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"opencl-threads\" : \"2\""
-            }
-        }
-    },
-    {
         "coin": "LCC",
         "servers": [
             {
@@ -1596,6 +1600,13 @@
                 "algo": "phi2",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "algo": "phi2",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
             }
         }
     },
@@ -1652,50 +1663,6 @@
                 "algo": "lyra2v2",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "NLG",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "eu.bsod.pw:2578"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "us.bsod.pw:2578"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia.bsod.pw:2578"
-                ]
-            },
-            {
-                "geo": "Russia",
-                "urls": [
-                    "ru.bsod.pw:2578"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "scrypt",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp:\/\/%URL%",
-                "ccalgo": "scrypt",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1807,41 +1774,6 @@
         }
     },
     {
-        "coin": "PAC",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "eu.bsod.pw:2562"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "us.bsod.pw:2562"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia.bsod.pw:2562"
-                ]
-            },
-            {
-                "geo": "Russia",
-                "urls": [
-                    "ru.bsod.pw:2562"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "PEXA",
         "servers": [
             {
@@ -1870,18 +1802,11 @@
             }
         ],
         "miners": {
-            "sgminer-gm": {
+            "t-rex": {
                 "url": "stratum+tcp:\/\/%URL%",
                 "algo": "x16rv2",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp:\/\/%URL%",
-                "ccalgo": "x16rv2",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "teamredminer": {
                 "url": "stratum+tcp:\/\/%URL%",
@@ -1889,24 +1814,12 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "cryptodredge": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16rv2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "t-rex": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16rv2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "wildrig-multi": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16rv2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"opencl-threads\" : \"2\""
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp:\/\/%URL%",
+                "ccalgo": "x16rv2",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1989,25 +1902,6 @@
             }
         ],
         "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16rv2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp:\/\/%URL%",
-                "ccalgo": "x16rv2",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "cryptodredge": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16rv2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
             "t-rex": {
                 "url": "stratum+tcp:\/\/%URL%",
                 "algo": "x16rv2",
@@ -2020,12 +1914,12 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "wildrig-multi": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16rv2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"opencl-threads\" : \"2\""
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp:\/\/%URL%",
+                "ccalgo": "x16rv2",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -2087,30 +1981,30 @@
         }
     },
     {
-        "coin": "TOPAZ",
+        "coin": "TWIT",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "scrypt Europe",
                 "urls": [
-                    "eu.bsod.pw:2602"
+                    "eu.bsod.pw:2626"
                 ]
             },
             {
-                "geo": "North America",
+                "geo": "scrypt North America",
                 "urls": [
-                    "us.bsod.pw:2602"
+                    "us.bsod.pw:2626"
                 ]
             },
             {
-                "geo": "Asia",
+                "geo": "scrypt Asia",
                 "urls": [
-                    "asia.bsod.pw:2602"
+                    "asia.bsod.pw:2626"
                 ]
             },
             {
-                "geo": "Russia",
+                "geo": "scrypt Russia",
                 "urls": [
-                    "ru.bsod.pw:2602"
+                    "ru.bsod.pw:2626"
                 ]
             }
         ],
@@ -2239,96 +2133,6 @@
                 "algo": "lyra2v3",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "XDNA",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "eu.bsod.pw:2320"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "us.bsod.pw:2320"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia.bsod.pw:2320"
-                ]
-            },
-            {
-                "geo": "Russia",
-                "urls": [
-                    "ru.bsod.pw:2320"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16m",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"xintensity\" : \"256\""
-            },
-            "ccminer": {
-                "fork": "enemy",
-                "ccurl": "stratum+tcp:\/\/%URL%",
-                "ccalgo": "hex",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "wildrig-multi": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "hex",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"opencl-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "CHI",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "eu.bsod.pw:2534"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "us.bsod.pw:2534"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia.bsod.pw:2534"
-                ]
-            },
-            {
-                "geo": "Russia",
-                "urls": [
-                    "ru.bsod.pw:2534"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "fork": "xaya",
-                "ccurl": "stratum+tcp:\/\/%URL%",
-                "ccalgo": "neoscrypt-xaya",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -2544,12 +2348,11 @@
             }
         ],
         "miners": {
-            "sgminer-gm": {
+            "t-rex": {
                 "url": "stratum+tcp:\/\/%URL%",
-                "algo": "blake2s",
+                "algo": "x16s",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "ccminer": {
                 "ccurl": "stratum+tcp:\/\/%URL%",
@@ -2557,19 +2360,20 @@
                 "ccpass": "x",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             },
-            "t-rex": {
+            "sgminer-gm": {
                 "url": "stratum+tcp:\/\/%URL%",
-                "algo": "x16s",
+                "algo": "blake2s",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             },
-            "wildrig-multi": {
+            "cryptodredge": {
                 "url": "stratum+tcp:\/\/%URL%",
                 "algo": "lyra2v2",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "cryptodredge": {
+            "wildrig-multi": {
                 "url": "stratum+tcp:\/\/%URL%",
                 "algo": "lyra2v2",
                 "pass": "x",
