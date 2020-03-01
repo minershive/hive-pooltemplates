@@ -1,9 +1,5 @@
 ##### 0.6-124@200301 2020-03-01
-*   AMD OC (Polaris) fixes & optimizations:
-    - added ability to set VDDCI in MDPM field in aggressive mode;
-    - fixed empty OC profile applying in aggressive mode;
-    - fixed instability in aggressive mode with DPM 1 on some GPUs;
-    - set memory state only if state or clock are specified, except aggressive mode with set core clock and DPM>1 (to reduce usage in idle mode)
+*   AMD OC (Polaris) fixes & optimizations (added ability to set VDDCI in MDPM field in aggressive mode; fixed empty OC profile applying in aggressive mode; fixed instability in aggressive mode with DPM 1 on some GPUs; set memory state only if state or clock are specified, except aggressive mode with set core clock and DPM>1 to reduce usage in idle mode)
 *   NBMiner v27.4 (added HNS+ETH mining on AMD GPUs, improved HNS+ETH performance on Nvidia GPUs)
 *   NoncerPro Kadena v2.1.1 (5x hashrate improvement in solo mode for Nvidia cards, this version doesn't work on AMD cards)
 *   CPUminer-Opt by JayDDee v3.12.4.6 (yet another fixes for getwork mode)
