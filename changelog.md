@@ -1,5 +1,5 @@
 ##### 0.6-124@200302 2020-03-02
-*   SRBMiner-Multi v0.3.7 (huge hashrate improvements on kadena)
+*   SRBMiner-Multi v0.3.7 (huge hashrate improvement on mining KDA/Kadena)
 *   NoncerPro Kadena v2.2.0 (added the 5x hashrate improvement for AMD cards, slight hashrate improvement for some Nvidia cards)
 *   CPUminer-Opt-JayDDee v3.12.5 (fixed incorrect share diff for stratum and getwork, fixed incorrect target diff for getwork, getwork: reduce stale blocks, faster response to new work)
 
