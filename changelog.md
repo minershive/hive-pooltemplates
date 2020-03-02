@@ -1,7 +1,7 @@
 ##### 0.6-124@200303 2020-03-03
 *   SRBMiner-Multi v0.3.8 (hashrate increased even more on Kadena mining and at the same time lowered power usage, small hashrate increase on 'yescrypt' CPU algo, minor bug fixes)
 *   Gminer v1.99 (improved cuckaroom29 performance, improved perforance for handshake algorithm, added Ethash+Handshake dual)
-*   NBMiner intensity fix
+*   NBMiner intensity fix (for v27.3 & v27.4)
 
 ##### 0.6-124@200302 2020-03-02
 *   SRBMiner-Multi v0.3.7 (huge hashrate improvement on mining KDA/Kadena)
