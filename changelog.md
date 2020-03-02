@@ -1,3 +1,8 @@
+##### 0.6-124@200302 2020-03-02
+*   SRBMiner-Multi v0.3.7 (huge hashrate improvements on kadena)
+*   NoncerPro Kadena v2.2.0 (added the 5x hashrate improvement for AMD cards, slight hashrate improvement for some Nvidia cards)
+*   CPUminer-Opt-JayDDee v3.12.5 (fixed incorrect share diff for stratum and getwork, fixed incorrect target diff for getwork, getwork: reduce stale blocks, faster response to new work)
+
 ##### 0.6-124@200301 2020-03-01
 *   AMD OC (Polaris) fixes & optimizations (added ability to set VDDCI in MDPM field in aggressive mode; fixed empty OC profile applying in aggressive mode; fixed instability in aggressive mode with DPM 1 on some GPUs; set memory state only if state or clock are specified, except aggressive mode with set core clock and DPM>1 to reduce usage in idle mode)
 *   NBMiner v27.4 (added HNS+ETH mining on AMD GPUs, improved HNS+ETH performance on Nvidia GPUs)
