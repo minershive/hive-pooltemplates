@@ -3,7 +3,7 @@
 *   Improved `amd-info` tool (show memory voltage and VDDCI on Polaris and Vega)
 *   Fixed switching X server output to connected monitor on Nvidia GPU
 *   XMRig (unified) v5.8.1 (added new AstroBWT algorithm for upcoming DERO fork)
-*   SRBMiner-Multi v0.3.9 (this is v0.3.8 build which should now work on older Hive images)
+*   SRBMiner-Multi v0.3.9 (unofficial yet; this is v0.3.8 build which should now work on older Hive images)
 *   miniZ v1.5t2 (improvements for EQ 150/5/3: major (~2-4%) for GTX 1660 Ti, 1080 Ti, and RTX GPUs)
 
 ##### 0.6-124@200303 2020-03-03
