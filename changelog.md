@@ -1,3 +1,11 @@
+##### 0.6-125@200304 2020-03-04
+*   AMD OC (Polaris) optimizations (OC apply only to GPU with changed settings; added ability to set VDDCI in MDPM field in classic mode)
+*   Improved `amd-info` tool (show memory voltage and VDDCI on Polaris and Vega)
+*   Fixed switching X server output to connected monitor on Nvidia GPU
+*   XMRig (unified) v5.8.1 (added new AstroBWT algorithm for upcoming DERO fork)
+*   SRBMiner-Multi v0.3.9 (this is v0.3.8 build which should now work on older Hive images)
+*   miniZ v1.5t2 (improvements for EQ 150/5/3: major (~2-4%) for GTX 1660 Ti, 1080 Ti, and RTX GPUs)
+
 ##### 0.6-124@200303 2020-03-03
 *   SRBMiner-Multi v0.3.8 (hashrate increased even more on Kadena mining and at the same time lowered power usage, small hashrate increase on 'yescrypt' CPU algo, minor bug fixes)
 *   Gminer v1.99 (improved cuckaroom29 performance, improved perforance for handshake algorithm, added Ethash+Handshake dual)
