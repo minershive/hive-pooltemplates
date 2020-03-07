@@ -4,7 +4,7 @@
 *   CPUminer-Opt-JayDDee v3.12.6 (improved stale share detection for getwork, added highest and lowest accepted share to summary log)
 *   XMRig (unified) v5.8.2 (AstroBWT algorithm 20-50% speedup, added new option `astrobwt-max-size`)
 *   XMRigCC v2.6.2 (added RandomKEVA, integrated upstream changes from XMRig: integrated AstroBWT, RandomX hashrate improvements, etc ...)
-*   Fixed config generation for rig-id field on all XMRig miners
+*   Fixed bug in generating configuration for rig-id field on all XMRig miners for all platforms
 
 ##### 0.6-125@200304 2020-03-04
 *   AMD OC (Polaris) optimizations (OC apply only to GPU with changed settings; added ability to set VDDCI in MDPM field in classic mode)
