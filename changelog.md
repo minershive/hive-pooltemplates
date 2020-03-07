@@ -1,3 +1,8 @@
+##### 0.6-126@200308 2020-03-08
+*   ETHminer v0.19.0-beta (implemented fix for Nicehash, choose this version manually in miner setting)
+*   Gminer v2.00 (added ProgPoW (Sero) solver for Nvidia GPUs)
+*   CPUminer-Opt-JayDDee v3.12.6.1 (integrated SSL patch to mainline code; implemented stale share reduction for yespower, x25x, x22i, x21s, x16*, scryptn2)
+
 ##### 0.6-126@200307 2020-03-07
 *   Fixed `repomirror` (update repo was broken) 
 *   NBMiner v27.5 (fixed high ETH reject rate on certain pools when mining HNS+ETH, slightly improved mining HNS+ETH on Nvidia GPUs)
