@@ -49,6 +49,7 @@ Available miners:
 - miniz - CUDA Equihash variants miner (Nvidia)
 - nanominer - next generation of finminer (AMD/NVidia/CPU)
 - nbminer - ETH, BTM, Cuckoo miner (NVidia)
+- nheqminer - fork for CPU mining VerusHash
 - noncepool-amd - OpenCL miner for BIS - Bismuth coin on Noncepool (AMD)
 - noncepool-cuda - CUDA miner for BIS - Bismuth coin on Noncepool (Nvidia)
 - noncerpro-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
@@ -59,6 +60,7 @@ Available miners:
 - rhminer - randomhash CPU miner (CPU)
 - sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi, tecracoin)
 - smine - CKB Spark Miner (AMD)
+- srbminer-multi - CPU and AMD miner
 - sushi-miner-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
 - sushi-miner-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
 - t-rex - T-Rex multi algo CUDA miner (NVidia)
