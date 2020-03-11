@@ -1,3 +1,8 @@
+##### 0.6-127@200310 2020-03-10
+*   XMRig (unified) v5.9.0 + CUDA plugin v2.2.0 (added new RandomKEVA algorithm for upcoming Kevacoin fork, fixed invalid AstroBWT hashes after algorithm switching)
+*   SRBminer-Multi v0.4.0 (added algorithm 'randomkeva', added Navi support for 'cryptonight_bbc')
+*   NoncerPro Nimiq CUDA miner v3.3.0 (~10% hashrate improvement, added new option --autoOptimize. Set this to false to disable the optimizer auto run)
+
 ##### 0.6-126@200308 2020-03-08
 *   ETHminer v0.19.0-beta (implemented fix for Nicehash, choose this version manually in miner setting)
 *   Gminer v2.00 (added ProgPoW (Sero) solver for Nvidia GPUs)
