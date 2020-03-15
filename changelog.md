@@ -1,7 +1,7 @@
 ##### 0.6-128@200315 2020-03-15
 *   Gminer v2.01 (updated BBC algorithm to support latest hardfork, improved ProgPoW support)
 *   NBMiner v27.7 (improved HNS & HNS+ETH on Nvidia GPUs, fixed ETH mining on NiceHash, fixed NVML initialization failure on certain cases)
-*   SRBMiner: fixed some issues with miner restarts and log file
+*   SRBMiner: fixed some issues with miner restart after fault and log file rotation
 
 ##### 0.6-127@200310 2020-03-10
 *   XMRig (unified) v5.9.0 + CUDA plugin v2.2.0 (added new RandomKEVA algorithm for upcoming Kevacoin fork, fixed invalid AstroBWT hashes after algorithm switching)
