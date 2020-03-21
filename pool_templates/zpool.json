@@ -1157,5 +1157,56 @@
                 "template": "%WAL%"
             }
         }
+    },
+    {
+        "coin": "Zerg-equihash125",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "equihash125.eu.mine.zpool.ca:2125"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "equihash125.na.mine.zpool.ca:2125"
+                ]
+            },
+            {
+                "geo": "South East Asia",
+                "urls": [
+                    "equihash125.sea.mine.zpool.ca:2125"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "equihash125.jp.mine.zpool.ca:2125"
+                ]
+            }
+        ],
+        "miners": {
+             "lolminer": {
+                 "algo": "ZEL",
+                 "pass": "c=BTC",
+                 "port": "%URL_PORT%",
+                 "server": "%URL_HOST%",
+                 "template": "%WAL%.%WORKER_NAME%"
+             },
+             "gminer": {
+                 "algo": "125_4",
+                 "pass": "c=BTC",
+                 "port": "%URL_PORT%",
+                 "server": "%URL_HOST%",
+                 "template": "%WAL%.%WORKER_NAME%"
+             },
+             "miniz": {
+                 "url": "%URL%",
+                 "algo": "125,4",
+                 "pass": "c=BTC",
+                 "template": "%WAL%.%WORKER_NAME%"
+             }
+        }
     }
 ]
