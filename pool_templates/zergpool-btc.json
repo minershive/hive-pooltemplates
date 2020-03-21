@@ -206,5 +206,38 @@
         ],
         "miners": {
         }
+    },
+    {
+        "coin": "Zerg-equihash125",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "equihash125.mine.zergpool.com"
+                ]
+            }
+        ],
+        "miners": {
+             "lolminer": {
+                 "algo": "ZEL",
+                 "pass": "c=BTC",
+                 "port": "%URL_PORT%",
+                 "server": "%URL_HOST%",
+                 "template": "%WAL%.%WORKER_NAME%"
+             },
+             "gminer": {
+                 "algo": "125_4",
+                 "pass": "c=BTC",
+                 "port": "%URL_PORT%",
+                 "server": "%URL_HOST%",
+                 "template": "%WAL%.%WORKER_NAME%"
+             },
+             "miniz": {
+                 "url": "%URL%",
+                 "algo": "125,4",
+                 "pass": "c=BTC",
+                 "template": "%WAL%.%WORKER_NAME%"
+             }
+        }
     }
 ]
