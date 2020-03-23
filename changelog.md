@@ -1,3 +1,12 @@
+##### 0.6-129@200323 2020-03-23
+*   Minor fixes for `net-test`
+*   Fixed memory vendor displaying for AMD Vega10/Vega20 family GPUs
+*   Gminer v2.03 (added qitmeer support)
+*   XMRig (unified) v5.10.0 (added AMD GPUs support for AstroBWT algo, added AVX2 optimized code for AstroBWT algo)
+*   CPUminer-Opt-JayDDee v3.12.7 (fixed a file descriptor leak which caused the CPU temperature and frequency query to report zeros, stale share reduction for yescrypt and sonoa)
+*   Ethminer v0.19.0-beta.1 (new build: more accurate checks for available memory; fast share evaluation from previous job after DAG switch; reusing DAG buffer in OpenCL mode and others)
+*   Nanominer: fixed stats for RandomX algo
+
 ##### 0.6-128@200315 2020-03-15
 *   Gminer v2.01 (updated BBC algorithm to support latest hardfork, improved ProgPoW support)
 *   NBMiner v27.7 (improved HNS & HNS+ETH on Nvidia GPUs, fixed ETH mining on NiceHash, fixed NVML initialization failure on certain cases)
