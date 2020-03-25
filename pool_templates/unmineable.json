@@ -1,0 +1,5048 @@
+[
+	{
+			"pool": {
+					"name": "unMineable",
+					"url": "https://unmineable.com"
+			}
+	},
+	{
+			"coin": "ADA",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: ADA:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "ADA:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: ADA:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"ADA:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ADA:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "ADA:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "ADA:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ADA:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "ADA:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "ADA:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "ADA:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "ADA:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "ADA:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "ADA:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "ADA:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "ALGO",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: ALGO:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "ALGO:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: ALGO:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"ALGO:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ALGO:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "ALGO:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "ALGO:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ALGO:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "ALGO:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "ALGO:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "ALGO:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "ALGO:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "ALGO:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "ALGO:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "ALGO:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "ATOM",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: ATOM:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "ATOM:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: ATOM:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"ATOM:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ATOM:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "ATOM:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "ATOM:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ATOM:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "ATOM:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "ATOM:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "ATOM:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "ATOM:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "ATOM:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "ATOM:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "ATOM:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "BAT",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: BAT:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "BAT:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: BAT:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"BAT:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "BAT:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "BAT:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "BAT:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "BAT:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "BAT:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "BAT:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "BAT:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "BAT:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "BAT:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "BAT:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "BAT:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "BNB",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: BNB:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "BNB:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: BNB:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"BNB:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "BNB:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "BNB:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "BNB:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "BNB:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "BNB:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "BNB:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "BNB:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "BNB:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "BNB:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "BNB:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "BNB:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "BTC",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: BTC:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "BTC:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: BTC:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"BTC:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "BTC:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "BTC:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "BTC:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "BTC:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "BTC:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "BTC:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "BTC:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "BTC:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "BTC:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "BTC:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "BTC:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "BTG",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: BTG:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "BTG:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: BTG:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"BTG:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "BTG:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "BTG:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "BTG:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "BTG:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "BTG:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "BTG:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "BTG:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "BTG:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "BTG:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "BTG:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "BTG:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "DASH",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: DASH:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "DASH:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: DASH:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"DASH:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "DASH:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "DASH:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "DASH:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "DASH:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "DASH:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "DASH:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "DASH:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "DASH:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "DASH:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "DASH:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "DASH:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "DOGE",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: DOGE:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "DOGE:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: DOGE:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"DOGE:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "DOGE:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "DOGE:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "DOGE:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "DOGE:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "DOGE:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "DOGE:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "DOGE:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "DOGE:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "DOGE:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "DOGE:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "DOGE:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "EOS",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: EOS:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "EOS:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: EOS:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"EOS:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "EOS:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "EOS:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "EOS:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "EOS:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "EOS:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "EOS:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "EOS:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "EOS:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "EOS:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "EOS:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "EOS:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "ETC",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: ETC:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "ETC:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: ETC:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"ETC:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ETC:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "ETC:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "ETC:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ETC:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "ETC:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "ETC:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "ETC:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "ETC:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "ETC:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "ETC:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "ETC:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "ETH",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: ETH:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "ETH:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: ETH:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"ETH:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ETH:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "ETH:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "ETH:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ETH:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "ETH:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "ETH:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "ETH:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "ETH:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "ETH:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "ETH:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "ETH:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "FUN",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: FUN:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "FUN:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: FUN:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"FUN:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "FUN:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "FUN:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "FUN:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "FUN:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "FUN:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "FUN:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "FUN:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "FUN:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "FUN:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "FUN:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "FUN:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "LINK",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: LINK:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "LINK:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: LINK:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"LINK:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "LINK:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "LINK:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "LINK:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "LINK:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "LINK:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "LINK:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "LINK:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "LINK:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "LINK:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "LINK:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "LINK:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "LSK",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: LSK:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "LSK:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: LSK:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"LSK:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "LSK:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "LSK:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "LSK:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "LSK:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "LSK:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "LSK:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "LSK:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "LSK:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "LSK:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "LSK:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "LSK:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "LTC",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: LTC:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "LTC:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: LTC:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"LTC:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "LTC:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "LTC:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "LTC:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "LTC:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "LTC:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "LTC:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "LTC:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "LTC:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "LTC:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "LTC:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "LTC:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "MANA",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: MANA:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "MANA:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: MANA:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"MANA:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "MANA:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "MANA:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "MANA:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "MANA:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "MANA:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "MANA:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "MANA:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "MANA:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "MANA:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "MANA:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "MANA:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "MTL",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: MTL:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "MTL:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: MTL:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"MTL:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "MTL:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "MTL:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "MTL:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "MTL:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "MTL:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "MTL:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "MTL:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "MTL:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "MTL:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "MTL:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "MTL:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "NANO",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: NANO:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "NANO:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: NANO:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"NANO:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "NANO:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "NANO:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "NANO:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "NANO:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "NANO:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "NANO:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "NANO:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "NANO:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "NANO:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "NANO:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "NANO:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "REP",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: REP:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "REP:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: REP:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"REP:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "REP:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "REP:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "REP:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "REP:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "REP:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "REP:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "REP:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "REP:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "REP:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "REP:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "REP:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "RVN",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: RVN:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "RVN:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: RVN:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"RVN:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "RVN:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "RVN:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "RVN:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "RVN:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "RVN:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "RVN:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "RVN:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "RVN:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "RVN:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "RVN:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "RVN:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "TRX",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: TRX:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "TRX:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: TRX:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"TRX:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "TRX:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "TRX:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "TRX:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "TRX:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "TRX:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "TRX:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "TRX:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "TRX:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "TRX:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "TRX:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "TRX:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "USDT",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: USDT:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "USDT:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: USDT:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"USDT:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "USDT:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "USDT:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "USDT:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "USDT:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "USDT:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "USDT:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "USDT:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "USDT:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "USDT:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "USDT:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "USDT:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "WAVES",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: WAVES:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "WAVES:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: WAVES:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"WAVES:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "WAVES:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "WAVES:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "WAVES:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "WAVES:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "WAVES:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "WAVES:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "WAVES:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "WAVES:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "WAVES:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "WAVES:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "WAVES:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "XMR",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: XMR:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "XMR:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: XMR:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"XMR:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "XMR:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "XMR:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "XMR:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "XMR:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "XMR:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "XMR:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "XMR:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "XMR:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "XMR:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "XMR:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "XMR:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "XRP",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: XRP:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "XRP:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: XRP:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"XRP:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "XRP:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "XRP:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "XRP:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "XRP:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "XRP:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "XRP:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "XRP:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "XRP:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "XRP:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "XRP:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "XRP:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "XLM",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: XLM:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "XLM:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: XLM:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"XLM:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "XLM:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "XLM:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "XLM:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "XLM:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "XLM:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "XLM:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "XLM:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "XLM:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "XLM:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "XLM:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "XLM:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "NEO",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: NEO:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "NEO:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: NEO:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"NEO:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "NEO:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "NEO:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "NEO:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "NEO:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "NEO:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "NEO:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "NEO:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "NEO:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "NEO:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "NEO:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "NEO:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "GAS",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: GAS:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "GAS:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: GAS:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"GAS:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "GAS:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "GAS:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "GAS:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "GAS:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "GAS:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "GAS:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "GAS:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "GAS:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "GAS:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "GAS:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "GAS:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "BCH",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: BCH:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "BCH:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: BCH:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"BCH:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "BCH:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "BCH:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "BCH:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "BCH:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "BCH:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "BCH:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "BCH:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "BCH:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "BCH:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "BCH:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "BCH:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "ENJ",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: ENJ:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "ENJ:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: ENJ:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"ENJ:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ENJ:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "ENJ:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "ENJ:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ENJ:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "ENJ:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "ENJ:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "ENJ:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "ENJ:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "ENJ:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "ENJ:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "ENJ:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "SC",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: SC:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "SC:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: SC:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"SC:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "SC:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "SC:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "SC:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "SC:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "SC:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "SC:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "SC:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "SC:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "SC:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "SC:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "SC:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "SKY",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: SKY:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "SKY:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: SKY:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"SKY:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "SKY:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "SKY:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "SKY:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "SKY:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "SKY:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "SKY:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "SKY:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "SKY:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "SKY:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "SKY:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "SKY:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "VIA",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: VIA:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "VIA:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: VIA:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"VIA:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "VIA:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "VIA:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "VIA:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "VIA:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "VIA:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "VIA:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "VIA:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "VIA:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "VIA:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "VIA:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "VIA:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "XTZ",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: XTZ:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "XTZ:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: XTZ:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"XTZ:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "XTZ:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "XTZ:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "XTZ:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "XTZ:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "XTZ:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "XTZ:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "XTZ:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "XTZ:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "XTZ:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "XTZ:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "XTZ:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "XVG",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: XVG:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "XVG:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: XVG:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"XVG:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "XVG:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "XVG:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "XVG:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "XVG:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "XVG:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "XVG:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "XVG:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "XVG:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "XVG:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "XVG:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "XVG:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "ZEC",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: ZEC:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "ZEC:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: ZEC:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"ZEC:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ZEC:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "ZEC:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "ZEC:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ZEC:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "ZEC:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "ZEC:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "ZEC:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "ZEC:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "ZEC:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "ZEC:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "ZEC:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "ZIL",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: ZIL:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "ZIL:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: ZIL:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"ZIL:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ZIL:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "ZIL:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "ZIL:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ZIL:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "ZIL:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "ZIL:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "ZIL:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "ZIL:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "ZIL:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "ZIL:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "ZIL:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "ZRX",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: ZRX:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "ZRX:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: ZRX:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"ZRX:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ZRX:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "ZRX:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "ZRX:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "ZRX:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "ZRX:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "ZRX:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "ZRX:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "ZRX:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "ZRX:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "ZRX:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "ZRX:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "VET",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: VET:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "VET:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: VET:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"VET:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "VET:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "VET:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "VET:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "VET:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "VET:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "VET:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "VET:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "VET:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "VET:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "VET:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "VET:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "KNC",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: KNC:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "KNC:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: KNC:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"KNC:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "KNC:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "KNC:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "KNC:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "KNC:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "KNC:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "KNC:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "KNC:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "KNC:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "KNC:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "KNC:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "KNC:%WAL%.%WORKER_NAME%"
+					}
+			}
+	},
+	{
+			"coin": "QTUM",
+			"servers": [
+					{
+							"geo": "Ethash",
+							"urls": [
+									"ethash.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "RandomX",
+						"urls": [
+								"rx.unmineable.com:3333"
+							]
+					},
+					{
+						"geo": "X16Rv2",
+						"urls": [
+								"x16rv2.unmineable.com:3333"
+							]
+					}
+			],
+			"miners": {
+					"claymore": {
+							"epools_tpl": "POOL: %URL%, WALLET: QTUM:%WAL%, WORKER: %WORKER_NAME%, PSW: x",
+							"claymore_user_config": "-mode 1\n-allpools 1"
+					},
+					"ethminer": {
+							"ver":"0.18.0",
+							"cuda": 1,
+							"fork":"ethash",
+							"opencl": 0,
+							"pass": "x",
+							"port": "%URL_PORT%",
+							"server": "stratum2+tcp://%URL_HOST%",
+							"template": "QTUM:%WAL%.%WORKER_NAME%"
+					},
+					"phoenixminer": {
+							"url": "POOL: %URL%, WAL: QTUM:%WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+					},
+					"gminer": {
+							"algo":"ethash",
+							"pass":"x",
+							"port":"%URL_PORT%",
+							"server":"%URL_HOST%",
+							"template":"QTUM:%WAL%.%WORKER_NAME%",
+							"user_config":"--proto stratum"
+					},
+					"finminer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "QTUM:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"bminer": {
+							"algo": "ethstratum",
+							"template": "QTUM:%WAL%.%WORKER_NAME%",
+							"url": "%URL%",
+							"pass": "x"
+					},
+					"teamredminer": {
+							"algo": "ethash",
+							"url": "stratum+tcp://%URL%",
+							"template": "QTUM:%WAL%.%WORKER_NAME%",
+							"pass": "x"
+					},
+					"nanominer": {
+							"algo": "ethash",
+							"url": "%URL%",
+							"template": "QTUM:%WAL%",
+							"pass": "x",
+							"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+					},
+					"nbminer": {
+							"algo": "ethash",
+							"url": "nicehash+tcp://%URL%",
+							"pass": "x",
+							"template": "QTUM:%WAL%.%WORKER_NAME%"
+					},
+					"asicminer": {
+							"url": "stratum+tcp://%URL%",
+							"template": "QTUM:%WAL%.%WORKER_NAME%"
+					},
+					"xmrig": {
+							"url": "%URL%",
+							"pass": "x",
+							"template": "QTUM:%WAL%.%WORKER_NAME%",
+							"user_config": "\"algo\": \"rx/0\""
+					},
+					"xmr-stak": {
+							"url": "%URL%",
+							"fork": "randomx",
+							"pass": "x",
+							"template": "QTUM:%WAL%.%WORKER_NAME%",
+							"user_config": "\"currency\":\"randomx\""
+					},
+					"xmrig-new": {
+							"cpu": "1",
+							"url": "%URL%",
+							"algo": "rx/0",
+							"fork": "xmrig",
+							"pass": "x",
+							"template": "QTUM:%WAL%.%WORKER_NAME%"
+					},
+					"t-rex": {
+							"url": "stratum+tcp://%URL%",
+							"algo": "x16rv2",
+							"pass": "x",
+							"template": "QTUM:%WAL%.%WORKER_NAME%"
+					},
+					"ccminer": {
+							"fork": "enemy",
+							"ccurl": "stratum+tcp://%URL%",
+							"ccalgo": "x16rv2",
+							"ccpass": "x",
+							"ccuser": "QTUM:%WAL%.%WORKER_NAME%"
+					}
+			}
+	}
+]
