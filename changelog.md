@@ -1,3 +1,8 @@
+##### 0.6-130@200325 2020-03-25
+*   Minor OS improvement (`hello` & `agent` - don't restart miner if the flightsheet not changed)
+*   SRBMiner-Multi v0.4.1 (added CPU algorithm 'minotaur', added CPU algorithm 'yespowerres', improved up to 2-4% on 'cryptonight_bbc' on some GPU's)
+*   WildRig-Multi v0.20.5.1 (enabled all algorithms for Navi, added lyra2tdc, added x17r algorithm for ufo-project)
+
 ##### 0.6-129@200323 2020-03-23
 *   Minor fixes for `net-test`
 *   Fixed memory vendor displaying for AMD Vega10/Vega20 family GPUs
