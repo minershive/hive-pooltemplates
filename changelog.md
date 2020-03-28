@@ -3,6 +3,7 @@
 *   Updated `amdmeminfo` tool (added detection Samsung K4G80325FC GDDR5 memory)
 *   NBMiner v28.0 (added support for mining TRB & TRB+ETH on Nvidia GPUs, added support for mining ETH on MiningRigRentals service, minor improvements and fixes)
 *   WildRig-Multi v0.20.5.3 (fixed rejects on x17r when haval is first in hashorder, fixed low difficulty shares on 666pool, implemented x17r-protocol2 to support other pools)
+*   XMRig-Epic v5.5.3/v0.0.1 (EpicCash v0.0.1 mining client based on XMRig v5.5.3 code for RandomX PoW, fork work only with 51pool.online pool)
 
 ##### 0.6-130@200325 2020-03-25
 *   Minor OS improvement (`hello` & `agent` - don't restart miner if the flightsheet not changed)
