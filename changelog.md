@@ -1,3 +1,7 @@
+##### 0.6-131@200330 2020-03-30
+*   NBMiner v28.1 (added support HNS & HNS+ETH mining on NiceHash)
+*   Gminer v2.04 (added KawPoW algorithm for upcoming Ravencoin hardfork, added "--trim" parameter to control additional trim round count for cuckoo24 (qitmeer) algorithm, this options will help reduce cpu load)
+
 ##### 0.6-131@200328 2020-03-28
 *   Fixed potential bug with miner starting (miner doesn't start with the same FS when Rocket button used)
 *   Updated `amdmeminfo` tool (added detection Samsung K4G80325FC GDDR5 memory)
