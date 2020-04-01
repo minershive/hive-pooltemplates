@@ -1,3 +1,7 @@
+##### 0.6-131@200401 2020-04-01
+*   Folding@Home v7.5.1 (if you used custom version before then all your data will be safe)
+*   Bminer v16.1.0 (fixed fidelity issues on Cuckatoo29m, support for BFC and Cuckatoo32, improved stability of ETH mining)
+
 ##### 0.6-131@200330 2020-03-30
 *   NBMiner v28.1 (added support HNS & HNS+ETH mining on NiceHash)
 *   Gminer v2.04 (added KawPoW algorithm for upcoming Ravencoin hardfork, added "--trim" parameter to control additional trim round count for cuckoo24 (qitmeer) algorithm, this options will help reduce cpu load)
