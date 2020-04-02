@@ -1,5 +1,5 @@
 ##### 0.6-131@200401 2020-04-01
-*   Folding@Home v7.5.1 (if you used custom version before then all your data will be safe)
+*   Folding@Home client v7.5.1 (if you used custom version before then all your data will be safe)
 *   Bminer v16.1.0 (fixed fidelity issues on Cuckatoo29m, support for BFC and Cuckatoo32, improved stability of ETH mining)
 
 ##### 0.6-131@200330 2020-03-30
