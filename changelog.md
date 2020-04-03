@@ -1,3 +1,8 @@
+##### 0.6-131@200403 2020-04-03
+*   NBMiner v29.0 (added support for RVN new algo 'kawpow' mining on Nvidia & AMD GPUs)
+*   Gminer v2.05 (improved performance up to +30% for qitmeer, significantly decreased CPU usage for qitmeer)
+*   RandomHash v2.3 (improved network stability improved and hashrate by 5-10% depending CPU and memory speed)
+
 ##### 0.6-131@200401 2020-04-01
 *   Folding@Home client v7.5.1 (if you used custom version before then all your data will be safe)
 *   Bminer v16.1.0 (fixed fidelity issues on Cuckatoo29m, support for BFC and Cuckatoo32, improved stability of ETH mining)
