@@ -521,6 +521,45 @@
         }
     },
     {
+        "coin": "GRIN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "s3.solopool.org:8001"
+                ]
+            },
+            {
+                "geo": "EU High Diff",
+                "urls": [
+                    "s3.solopool.org:9001"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "grin29",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "GRIN-C29M",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "cuckaroom29",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "XWP",
         "servers": [
             {
