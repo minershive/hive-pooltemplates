@@ -1,3 +1,7 @@
+##### 0.6-131@200404 2020-04-04
+*   SRBMiner-Multi v0.4.2 (improved 'cryptonight_bbc' on 4G Ellesmere cards, small improvements on 'yespower' CPU algo, fixed 'handshake' mining on Nicehash)
+*   Gminer v2.06 (improved miner stability on qitmeer)
+
 ##### 0.6-131@200403 2020-04-03
 *   NBMiner v29.0 (added support for RVN new algo 'kawpow' mining on Nvidia & AMD GPUs)
 *   Gminer v2.05 (improved performance up to +30% for qitmeer, significantly decreased CPU usage for qitmeer)
