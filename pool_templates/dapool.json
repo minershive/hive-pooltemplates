@@ -36,6 +36,32 @@
         }
     },
     {
+        "coin": "HNS",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "handshake.dapool.io:3366"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "handshake",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "hns",
+                "pass": "x",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "YEC",
         "servers": [
             {
