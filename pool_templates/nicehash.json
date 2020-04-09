@@ -1188,6 +1188,13 @@
             }
         ],
         "miners": {
+            "lolminer": {
+                "algo": "GRIN-C31",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
             "gminer": {
                 "algo": "grin31",
                 "template": "%WAL%.%WORKER_NAME%",
@@ -1805,6 +1812,81 @@
             "lolminer": {
                 "algo": "GRIN-C32",
                 "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "gminer": {
+                "algo": "grin32",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cuckatoo32"
+            }
+        }
+    },
+    {
+        "coin": "Nicehash-Handshake",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "handshake.eu.nicehash.com:3384"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "handshake.usa.nicehash.com:3384"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "handshake.hk.nicehash.com:3384"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "handshake.jp.nicehash.com:3384"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "handshake.br.nicehash.com:3384"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "handshake.in.nicehash.com:3384"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "bl2bsha3",
+                "pass": "x",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            },
+            "nbminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "hns",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "gminer": {
+                "algo": "hns",
+                "pass": "X",
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"

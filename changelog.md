@@ -1,3 +1,20 @@
+##### 0.6-131@200404 2020-04-04
+*   SRBMiner-Multi v0.4.2 (improved 'cryptonight_bbc' on 4G Ellesmere cards, small improvements on 'yespower' CPU algo, fixed 'handshake' mining on Nicehash)
+*   Gminer v2.06 (improved miner stability on qitmeer)
+
+##### 0.6-131@200403 2020-04-03
+*   NBMiner v29.0 (added support for RVN new algo 'kawpow' mining on Nvidia & AMD GPUs)
+*   Gminer v2.05 (improved performance up to +30% for qitmeer, significantly decreased CPU usage for qitmeer)
+*   RHminer v2.3 (improved network stability and improved hashrate by 5-10% depending CPU and memory speed)
+
+##### 0.6-131@200401 2020-04-01
+*   Folding@Home client v7.5.1 (if you used custom version before then all your data will be safe)
+*   Bminer v16.1.0 (fixed fidelity issues on Cuckatoo29m, support for BFC and Cuckatoo32, improved stability of ETH mining)
+
+##### 0.6-131@200330 2020-03-30
+*   NBMiner v28.1 (added support HNS & HNS+ETH mining on NiceHash)
+*   Gminer v2.04 (added KawPoW algorithm for upcoming Ravencoin hardfork, added "--trim" parameter to control additional trim round count for cuckoo24 (qitmeer) algorithm, this options will help reduce cpu load)
+
 ##### 0.6-131@200328 2020-03-28
 *   Fixed potential bug with miner starting (miner doesn't start with the same FS when Rocket button used)
 *   Updated `amdmeminfo` tool (added detection Samsung K4G80325FC GDDR5 memory)
