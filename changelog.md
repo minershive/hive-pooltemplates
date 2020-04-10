@@ -1,3 +1,7 @@
+##### 0.6-132@200410 2020-04-10
+*   CPUminer-opt-JayDDee v3.12.8 (optimization for 'yespower' algo, rewrote diff conversion functions from scratch, some code cleanup and assorted small changes)
+*   NBMiner v29.1 (fixed low hashrate of 'kawpow' on AMD Navi GPUs, improved 'kawpow' hashrate on AMD GPUs)
+
 ##### 0.6-131@200404 2020-04-04
 *   SRBMiner-Multi v0.4.2 (improved 'cryptonight_bbc' on 4G Ellesmere cards, small improvements on 'yespower' CPU algo, fixed 'handshake' mining on Nicehash)
 *   Gminer v2.06 (improved miner stability on qitmeer)
