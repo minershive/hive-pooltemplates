@@ -1,3 +1,6 @@
+##### 0.6-132@200411 2020-04-11
+*   SRBMiner-Multi v0.4.3 (added 'tellor' algo, improved 'minotaur' algo)
+
 ##### 0.6-132@200410 2020-04-10
 *   CPUminer-opt-JayDDee v3.12.8 (optimization for 'yespower' algo, rewrote diff conversion functions from scratch, some code cleanup and assorted small changes)
 *   NBMiner v29.1 (fixed low hashrate of 'kawpow' on AMD Navi GPUs, improved 'kawpow' hashrate on AMD GPUs)
