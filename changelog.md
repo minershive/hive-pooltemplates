@@ -1,3 +1,6 @@
+##### 0.6-134@200421-2 2020-04-21
+*   fixed broken execution commands from dashboard
+
 ##### 0.6-133@200421 2020-04-21
 *   Improved configs sync 
 *   Updated AMD BIOS flasher with Navi support (Notes: 1Mb ROM not supported yet)
