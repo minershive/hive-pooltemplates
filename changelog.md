@@ -1,6 +1,6 @@
 ##### 0.6-133@200421 2020-04-21
 *   Improved configs sync 
-*   Updated AMD BIOS flasher to Navi support (Notes: 1Mb ROM not supported yet)
+*   Updated AMD BIOS flasher with Navi support (Notes: 1Mb ROM not supported yet)
 *   CCminer-djm34 v1.3.2 (fixed high CPU usage on MTP algo) 
 *   CPUminer-Opt-JayDDee v3.12.8.1 (fixed yescryptr8g invalid shares) 
 *   lolMiner v1.0 alpha 1 preview (added cuckaroo30 for mining CTXC/Cortex, added temperature, fan speed and consumption readings. Notes: if you want try this version select it from miner config options) 
