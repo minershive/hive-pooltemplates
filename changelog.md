@@ -1,3 +1,13 @@
+##### 0.6-133@200421 2020-04-21
+*   Improved configs sync 
+*   Updated AMD BIOS flasher to Navi support (Notes: 1Mb ROM not supported yet)
+*   CCminer-djm34 v1.3.2 (fixed high CPU usage on MTP algo) 
+*   CPUminer-Opt-JayDDee v3.12.8.1 (fixed yescryptr8g invalid shares) 
+*   lolMiner v1.0 alpha 1 preview (added cuckaroo30 for mining CTXC/Cortex, added temperature, fan speed and consumption readings. Notes: if you want try this version select it from miner config options) 
+*   XMRig-MO v5.11.0 (MoneroOcean release)
+*   NEW EtherCoreMiner v1.0.0 (etherminer fork 'ethercore') 
+*   NEW DamoMiner v2.6.3 (GPU miner for ETH and dual mode ETH + CKB/HNS/TRB)
+
 ##### 0.6-132@200414 2020-04-14
 *   Bminer v16.1.1 (improved the performance of Cuckaroo29m, added support mining Qitmeer)
 *   XMRig v5.11.0 (added support AstroBWT CUDA and OCL for NVIDIA GPUs, some RandomX optimizations)
