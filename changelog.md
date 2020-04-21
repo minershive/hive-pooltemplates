@@ -1,3 +1,7 @@
+##### 0.6-132@200414 2020-04-14
+*   Bminer v16.1.1 (improved the performance of Cuckaroo29m, added support mining Qitmeer)
+*   XMRig v5.11.0 (added support AstroBWT CUDA and OCL for NVIDIA GPUs, some RandomX optimizations)
+
 ##### 0.6-132@200411 2020-04-11
 *   SRBMiner-Multi v0.4.3 (added 'tellor' algo, improved 'minotaur' algo)
 
