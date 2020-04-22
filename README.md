@@ -34,9 +34,10 @@ Available miners:
 - cortex-miner - Cortex CUDA miner 
 - cpuminer-opt - cpuminer-opt CPU miner (forks: JayDDee, cpupower, rkz, rplant)
 - cryptodredge - multi algo CUDA miner (NVidia)
+- damominer - multi algo CUDA miner (NVidia)
 - dstm - legacy 0.3.4b and new zhash
 - eggminergpu - CUDA/OpenCL miner for BIS - Bismuth coin on Eggpool (AMD/Nvidia)
-- ethminer - ethminer (forks available - ethash, progpow, ubiqhash, zilminer)
+- ethminer - ethminer (forks available - ethash, ethercore, progpow, ubiqhash, zilminer)
 - ewbf - ewbf for equihash and new for equihash algo variants miner
 - finminer - ethash, randomhash miner (AMD/NVidia/CPU)
 - gminer - equihash variants CUDA miner
@@ -69,13 +70,14 @@ Available miners:
 - wildrig-multi - multi-algo OpenCL miner (AMD)
 - xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo with forks arto, alloy, b2n, mox, marketcash, randomx, uplexa)
 - xmrig - XMRig (CPU cryptonight variants miner with forks: bigbangcore, xmrigcc, hycon, xlarig)
-- xmrig-new - XMRig (unified)  CPU/OCL/CUDA miner for Argon2/RandomX/Cryptonight based algos (available forks: xmrig, randomv, randomsfx)
+- xmrig-new - XMRig (unified)  CPU/OCL/CUDA miner for Argon2/RandomX/Cryptonight based algos (available forks: epic, xmrig, mo, randomsfx, xlarig)
 - xmrig-amd - XMRig (AMD cryptonight variants miner with forks xmrigcc, hycon)
 - xmrig-nvidia - XMRig (NVidia cryptonight variants miner  with forks fruityminer, hycon)
 - zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
 - custom - Custom miner package
 
-
+## other
+- fah - Folding@Home client
 
 ## Pool template example
 ```javascript
