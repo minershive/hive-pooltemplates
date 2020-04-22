@@ -1,5 +1,5 @@
 ##### 0.6-134@200422 2020-04-22
-*   TT-Miner v4.0.1 (added support 'kawpow' for upcoming RVN/Ravencoin hardfork, added support mining Hanacoin, EtherCore, TecraCoin (MTP), Veil (ProgPoW testnet), improved algo structure with general performance improvement on all algos)
+*   TT-Miner v4.0.1 (added support 'kawpow' for upcoming RVN/Ravencoin hardfork, added support mining Hanacoin, EtherCore, TecraCoin (MTP), Veil (ProgPoW testnet), improved algo structure with general performance improvements on all algos)
 *   DamoMiner v2.6.6 (added support 'kawpow' for upcoming hardfork RVN/Ravencoin)
 
 ##### 0.6-134@200421-2 2020-04-21
