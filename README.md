@@ -76,7 +76,7 @@ Available miners:
 - zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
 - custom - Custom miner package
 
-## other
+## Other
 - fah - Folding@Home client
 
 ## Pool template example
