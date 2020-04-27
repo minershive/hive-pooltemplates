@@ -118,6 +118,12 @@
             "urls":[
                "cortex.woolypooly.com:40000"
             ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "cortex.woolypooly.com:40001"
+            ]
          }
       ],
       "miners":{
@@ -136,6 +142,13 @@
             "pass":"x",
             "template":"%WAL%.%WORKER_NAME%",
             "user_config":""
+         },
+         "lolminer":{
+            "algo":"CTXC",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
          }
       }
    },
@@ -214,6 +227,69 @@
             "port":"%URL_PORT%",
             "template":"%WAL%.%WORKER_NAME%",
             "pass":"x"
+         }
+      }
+   },
+   {
+      "coin":"AE",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "ae.woolypooly.com:20000"
+            ]
+         }
+      ],
+      "miners":{
+         "bminer":{
+            "algo":"aeternity",
+            "template":"%WAL%.%WORKER_NAME%",
+            "url":"%URL%"
+         },
+         "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"aeternity"
+         },
+         "gminer":{
+            "algo":"aeternity",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         }
+      }
+   },
+   {
+      "coin":"RVN",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "rvn.woolypooly.com:55555"
+            ]
+         }
+      ],
+      "miners":{
+         "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"kawpow"
+         },
+         "tt-miner":{
+            "url":"stratum1+tcp://%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"kawpow",
+            "user_config":"-coin rvn"
+         },
+         "gminer":{
+            "algo":"kawpow",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
          }
       }
    }
