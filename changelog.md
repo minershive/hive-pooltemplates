@@ -1,6 +1,6 @@
 ##### 0.6-135@200428 2020-04-28
 *   Updated CUDA libs (added CUDA 10.2 RTL)
-*   T-Rex v0.15.0 test (added 3 new algorithms: kawpow, progpow, mtp-tcr; improved stat table: added output percentage of rejected shares; Note: select version from miner configuration)
+*   T-Rex v0.15.0 test (added 3 new algorithms: kawpow, progpow, mtp-tcr; improved stat table: added output percentage of rejected shares; *Note: this version for testing purposes, please select version from miner configuration*)
 *   Gminer v2.09 (improved cuckatoo32 performance with up to +20% dependent on GPU and OC mode)
 *   XMRig v5.11.1 (up to 1% RandomX perfomance improvement on recent AMD CPUs; fixed possible double connection to a pool)
 *   CPUminer-Opt-JayDDee v3.12.8.2 (fixed x12 AVX2 rejects, fixed phi AVX2 crash)
