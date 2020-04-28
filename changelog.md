@@ -1,3 +1,14 @@
+##### 0.6-135@200428 20-04-28
+SYSTEM
+*   Updated CUDA libs (added CUDA 10.2 RTL)
+MINERS
+*   T-Rex v0.15.0 test (added 3 new algorithms: kawpow, progpow, mtp-tcr; improved stat table: added output percentage of rejected shares; Note: select version from miner configuration)
+*   Gminer v2.09 (improved cuckatoo32 performance with up to +20% dependent on GPU and OC mode)
+*   XMRig v5.11.1 (up to 1% RandomX perfomance improvement on recent AMD CPUs; fixed possible double connection to a pool)
+*   CPUminer-Opt-JayDDee v3.12.8.2 (fixed x12 AVX2 rejects, fixed phi AVX2 crash)
+*   TT-Miner config generation updated for v4.x and CUDA 10.2
+*   DamoMiner: fixed config generation if Extra config arguments present
+
 ##### 0.6-134@200422 2020-04-22
 *   TT-Miner v4.0.1 (added support 'kawpow' for upcoming RVN/Ravencoin hardfork, added support mining Hanacoin, EtherCore, TecraCoin (MTP), Veil (ProgPoW testnet), improved algo structure with general performance improvements on all algos)
 *   DamoMiner v2.6.6 (added support 'kawpow' for upcoming hardfork RVN/Ravencoin)
