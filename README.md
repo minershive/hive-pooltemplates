@@ -37,7 +37,7 @@ Available miners:
 - damominer - multi algo CUDA miner (NVidia)
 - dstm - legacy 0.3.4b and new zhash
 - eggminergpu - CUDA/OpenCL miner for BIS - Bismuth coin on Eggpool (AMD/Nvidia)
-- ethminer - ethminer (forks available - ethash, ethercore, progpow, ubiqhash, zilminer)
+- ethminer - ethminer (forks available - ethash, ethercore, kawpowminer, progpow, ubiqhash, zilminer)
 - ewbf - ewbf for equihash and new for equihash algo variants miner
 - finminer - ethash, randomhash miner (AMD/NVidia/CPU)
 - gminer - equihash variants CUDA miner
