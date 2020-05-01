@@ -96,8 +96,21 @@ Available miners:
             {   // geo element
                 "geo": "Europe", // geo location, maybe null if unknown or in some cases you can indicate port difficulty
                 "urls": [
-                    "eu1-eth.hiveon.net:4444",  // pool server URL  and port
-                    "eu1-eth.hiveon.net:14444"  // another server instance
+                    "eu-eth.hiveon.net:4444",  // pool server URL  and port
+                    "eu-eth.hiveon.net:14444"  // another server instance
+                ],
+                "ssl_urls": [   // SSL/TLS connection 
+                    "eu-eth.hiveon.net:24443"  // pool server URL and port
+                ]
+            },
+            {   // next geo element
+                "geo": "Russia", // geo location, maybe null if unknown or in some cases you can indicate port difficulty
+                "urls": [
+                    "ru-eth.hiveon.net:4444",  // pool server URL  and port
+                    "ru-eth.hiveon.net:14444"  // another server instance
+                ],
+                "ssl_urls": [   // SSL/TLS connection 
+                    "ru-eth.hiveon.net:24443"  // pool server URL and port
                 ]
             }
         ],
