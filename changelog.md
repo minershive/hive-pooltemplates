@@ -1,3 +1,9 @@
+##### 0.6-135@200501 2020-05-01
+*   T-Rex v0.15.1 test (fixed "unspecified launch failure" error when mining kawpow; *Note: this version for testing purposes, please select version from miner configuration*) 
+*   NBMiner v30.0 (added `memory-tweak` option for using optimized timings on Nvidia GPUs with GDDR5/5X memory, the option can take values from 1 to 6 to activate, add `"memory-tweak": "MODE"` to the configuration with this option using pill for GDDR5X not necessary; added `verbose` option for debugging communication with the pool; added number of shares per GPU in both log print and API)
+*   DamoMiner v2.6.9 (improved kawpow hashrate)
+*   **NEW** KawPoWMiner v1.2.0 (Ravencoin KawPow open source miner with 0% devfee for AMD and Nvidia GPUs; *Note: to use the miner, please select the `kawpowminer` fork in the`ethminer` configuration settings*)
+
 ##### 0.6-135@200428 2020-04-28
 *   Updated CUDA libs (added CUDA 10.2 RTL)
 *   T-Rex v0.15.0 test (added 3 new algorithms: kawpow, progpow, mtp-tcr; improved stat table: added output percentage of rejected shares; *Note: this version for testing purposes, please select version from miner configuration*)
