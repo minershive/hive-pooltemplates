@@ -144,12 +144,12 @@ Available miners:
 If your pool contains SSL ports on the same domains then you can add special section "ssl_urls" in geo element
 ```json
 {
-    "geo": "Low-End",
+    "geo": "N.America West",
         "urls": [
-            "pool.wowne.ro:3333"
+            "naw-eth.hiveon.net:4444"
         ],
         "ssl_urls": [
-            "pool.wowne.ro:3334"
+            "naw-eth.hiveon.net:24443"
         ]
 }
 ```
