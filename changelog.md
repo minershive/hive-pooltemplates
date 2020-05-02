@@ -1,3 +1,8 @@
+##### 0.6-135@200502 2020-05-02
+*   T-Rex v0.15.2 test (fixed all known bugs v0.15,0/v0.15.1; *Note: this version for testing purposes, please select version from miner configuration*)
+*   TT-Miner v4.0.3 (fixed command line parameter bug)
+*   KawPoWMiner v1.2.1 (added more extranonce validation; *Note: to use the miner, please select the `kawpowminer` fork in the`ethminer` configuration settings*)
+
 ##### 0.6-135@200501 2020-05-01
 *   T-Rex v0.15.1 test (fixed "unspecified launch failure" error when mining kawpow; *Note: this version for testing purposes, please select version from miner configuration*) 
 *   NBMiner v30.0 (added `memory-tweak` option for using optimized timings on Nvidia GPUs with GDDR5/5X memory, the option can take values from 1 to 6 to activate, add `"memory-tweak": "MODE"` to the configuration with this option using pill for GDDR5X not necessary; added `verbose` option for debugging communication with the pool; added number of shares per GPU in both log print and API)
