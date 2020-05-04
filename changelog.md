@@ -1,3 +1,10 @@
+##### 0.6-136@200504 2020-05-04
+*   Updated some system tools
+*   T-Rex v0.15.3 (added 3 new algorithms: 'kawpow', 'progpow', 'mtp-tcr'; improved stat table: added output percentage of rejected shares) 
+*   NBMiner v30.1 (reduced startup time on 'ethash' and 'kawpow'; memory tweak don't apply if 0 set on corresponding GPU; fixed a possible crash on certain rigs of reason 'invalid kernel image'; printed system information on start)
+*   NanoMiner v1.9.0 (added 'kawpow' algo for upcoming RVN hardfork implemented on AMD GPUs)
+*   KawPowMiner v1.2.2 (allowed full port range)
+
 ##### 0.6-135@200502 2020-05-02
 *   T-Rex v0.15.2 test (fixed all known bugs v0.15,0/v0.15.1; *Note: this version for testing purposes, please select version from miner configuration*)
 *   TT-Miner v4.0.3 (fixed command line parameter bug)
