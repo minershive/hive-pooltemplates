@@ -1404,6 +1404,15 @@
             }
         ],
         "miners": {
+            "ethminer":{
+            "fork":"kawpowminer",
+            "cuda":1,
+            "opencl":0,
+            "pass":"x",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
             "t-rex": {
                 "url": "%URL%",
                 "algo": "kawpow",
@@ -1416,12 +1425,26 @@
             "template":"%WAL%.%WORKER_NAME%",
             "algo":"kawpow"
          },
+          "nanominer": {
+            "algo": "kawpow",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        },  
+          "ccminer": {
+            "fork": "enemy",
+             "url": "stratum+tcp:\/\/%URL%",
+             "algo": "kawpow",
+             "pass": "x",
+             "user": "%WAL%.%WORKER_NAME%"
+            },     
          "tt-miner":{
             "url":"%URL%",
             "pass":"x",
             "template":"%WAL%.%WORKER_NAME%",
             "algo":"kawpow",
-            "user_config":"-coin rvn"
+            "user_config":"-coin %COIN%"
          },
          "gminer":{
             "algo":"kawpow",
@@ -1429,16 +1452,7 @@
             "port":"%URL_PORT%",
             "pass":"x",
             "template":"%WAL%.%WORKER_NAME%"
-            },
-         "ethminer":{
-            "fork":"kawpowminer",
-            "cuda":1,
-            "opencl":0,
-            "pass":"x",
-            "port":"%URL_PORT%",
-            "server":"%URL_HOST%",
-            "template":"%WAL%.%WORKER_NAME%"
-         }
+            } 
         }
     },
     {
