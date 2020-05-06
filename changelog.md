@@ -5,6 +5,7 @@
 *   T-Rex v0.15.4 (fixed showing miner version info for mining pool)
 *   Bminer v16.2.0 (improved performance on mining AE and BFC; added support for mining SERO and RVN)
 *   Z-Enemy (ccminer-enemy) v2.5 (added 'kawpow' algo; builds with CUDA 9.2/10.0/10.1 available, default 10.0)
+*   **NEW** HellMiner v2.1 (VerusCoin CPU miner)
 *   Fixed config generation in XMRig (old) / XMRig-AMD / XMRig-Nvidia / XMRig (new) (field 'rig-id' which used on some pools not filled with worker name)
 
 ##### 0.6-136@200504 2020-05-04
