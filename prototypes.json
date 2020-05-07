@@ -473,13 +473,6 @@
             "ccpass": "x",
             "ccuser": "%WAL%.%WORKER_NAME%"
         },
-        "tt-miner":{
-            "url":"%URL%",
-            "pass":"x",
-            "template":"%WAL%.%WORKER_NAME%",
-            "algo":"kawpow",
-            "user_config":"-coin %COIN%"
-        },
         "gminer":{
             "algo":"kawpow",
             "server":"%URL_HOST%",
@@ -492,8 +485,15 @@
             "algo": "raven",
             "template": "%WAL%.%WORKER_NAME%"
         },
+        "tt-miner":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"kawpow",
+            "user_config":"-coin %COIN%"
+        },
         "damominer": {
-            "url": "%URL%",
+            "url": "stratum+tcp://%URL%",
             "algo": "rvn",
             "worker": "%WORKER_NAME%",
             "template": "%WAL%"
