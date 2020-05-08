@@ -4,7 +4,7 @@
 *   T-Rex v0.15.5 (less memory consumption. Possible crash fix for "out of memory" error for GPUs with 3GB; unblocked feature of intensity setting)
 *   NanoMiner v1.9.2 (fixed possible wrong GPU hanging detection in some network failure scenarios; fixed confusing common options set up in config)
 *   XMR-Stak-RX (xmr-stak-randomx) v1.0.5 (added support mining 'keva' with alias 'randomx_keva' and 'safex' with alias 'randomx_safex')
-*   CPUminer-Opt-JayDDee v3.12.0.1 (fixed xevan AVX2 invalid shares)
+*   CPUminer-Opt-JayDDee v3.13.0.1 (fixed xevan AVX2 invalid shares)
 
 ##### 0.6-137@200506 2020-05-06
 *   Fixed issue with wrong symlink in CUDA RTL
