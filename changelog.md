@@ -1,5 +1,5 @@
 ##### 0.6-137@200508 2020-05-08
-*   TT-Miner v5.0.1 (Fixed a 'duplicate share issue' that could happened on all ProgPoW like algos;)
+*   TT-Miner v5.0.1 (Fixed a 'duplicate share issue' that could happened on all ProgPoW like algos; starting from v5.0 devfee free version)
 *   Bminer v16.2.1 (fixed compatibility issues with some Raven mining pools)
 *   T-Rex v0.15.5 (less memory consumption. Possible crash fix for "out of memory" error for GPUs with 3GB; unblocked feature of intensity setting)
 *   NanoMiner v1.9.2 (fixed possible wrong GPU hanging detection in some network failure scenarios; fixed confusing common options set up in config)
