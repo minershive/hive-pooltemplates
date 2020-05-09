@@ -44,6 +44,7 @@ Available miners:
 - gringoldminer - Cuckaroo29 miner (AMD/NVidia)
 - grinminer - Cuckaroo29 and Cuckatoo31 miner (AMD/NVidia)
 - grinprominer - improved version of grinminer (AMD/NVidia)
+- hellminer - CPU miner for VRSC/VerusCoin
 - hspminerae - CUDA AE miner (NVidia)
 - kbminer - AE/Cuckaroo29/Cuckatoo31/VDS miner (AMD/NVidia)
 - lolminer - equihash variants OpenCL miner
