@@ -1,5 +1,5 @@
 ##### 0.6-138@200510 2020-05-10
-*   Update Intel's e1000 series driver install script (set default version to latest v3.8.4)
+*   Update Intel's e1000 series LAN card driver installation script (set default version to latest v3.8.4)
 *   T-Rex v0.15.6 (bug fixes: DAG regeneration on epoch change, benchmark for 'kawpow')
 *   SRBMiner-Multi v0.4.4 (added 'ethash' and 'ubqhash' algos)
 *   DamoMiner v2.7.5 (fixed issues on some pools)
