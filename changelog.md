@@ -1,3 +1,10 @@
+##### 0.6-138@200510 2020-05-10
+*   Update Intel's e1000 series driver install script (set default version to latest v3.8.4)
+*   T-Rex v0.15.6 (bug fixes: DAG regeneration on epoch change, benchmark for 'kawpow')
+*   SRBMiner-Multi v0.4.4 (added 'ethash' and 'ubqhash' algos)
+*   DamoMiner v2.7.5 (fixed issues on some pools)
+*   WildRig-Multi v0.23.1 (added 'kawpow' and progpow variants 'ethercore', 'sero', 'zano')
+
 ##### 0.6-137@200508 2020-05-08
 *   TT-Miner v5.0.1 (fixed a 'duplicate share issue' that could happened on all ProgPoW like algos; starting from v5.0 devfee free version)
 *   Bminer v16.2.1 (fixed compatibility issues with some Raven mining pools)
