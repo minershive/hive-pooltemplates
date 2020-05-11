@@ -8,7 +8,7 @@
         }
     },
     {
-        "coin": "K1POOL-ETHASH",
+        "coin": "K1Pool-Ethash",
         "servers": [
             {
                 "geo": "Europe",
@@ -49,8 +49,8 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 0",
+                "claymore_user_config": "-allcoins 1\n-allpools 1"
             },
             "ethminer": {
                 "ver": "0.18.0",
@@ -59,11 +59,11 @@
                 "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
-                "server": "stratum2+tcp://%URL_HOST%",
+                "server": "stratum+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 2, COIN: %COIN%"
             },
             "gminer": {
                 "algo": "ethash",
@@ -71,14 +71,14 @@
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--proto stratum"
+                "user_config": ""
             },
             "finminer": {
                 "algo": "ethash",
                 "url": "%URL%",
-                "template": "%WAL%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+                "user_config": "coin = %COIN%"
             },
             "bminer": {
                 "algo": "ethstratum",
@@ -95,13 +95,13 @@
             "nanominer": {
                 "algo": "ethash",
                 "url": "%URL%",
-                "template": "%WAL%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+                "user_config": "coin = %COIN%"
             },
             "nbminer": {
                 "algo": "ethash",
-                "url": "nicehash+tcp://%URL%",
+                "url": "ethproxy+tcp://%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
@@ -112,7 +112,7 @@
         }
     },
     {
-        "coin": "K1POOL-EQUIHASH",
+        "coin": "K1Pool-Equihash",
         "servers": [
             {
                 "geo": "Europe",
@@ -186,7 +186,7 @@
         }
     },
     {
-        "coin": "K1POOL-EQUIHASH1445",
+        "coin": "K1Pool-Equihash144",
         "servers": [
             {
                 "geo": "Europe",
@@ -266,7 +266,7 @@
         }
     },
     {
-        "coin": "K1POOL-EQUIHASH1927",
+        "coin": "K1Pool-Equihash192",
         "servers": [
             {
                 "geo": "Europe",
@@ -316,7 +316,7 @@
         }
     },
     {
-        "coin": "K1POOL-EQUIHASH1254",
+        "coin": "K1Pool-Equihash125",
         "servers": [
             {
                 "geo": "Europe",
@@ -366,7 +366,7 @@
         }
     },
     {
-        "coin": "K1POOL-KAWPOW",
+        "coin": "K1Pool-Kawpow",
         "servers": [
             {
                 "geo": "Europe",
@@ -512,8 +512,8 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allpools 0"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
+                "claymore_user_config": "-allpools 1"
             },
             "ethminer": {
                 "ver": "0.18.0",
@@ -526,7 +526,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
             },
             "gminer": {
                 "algo": "ethash",
@@ -652,8 +652,8 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
+                "claymore_user_config": "-allcoins etc\n-allpools 1"
             },
             "ethminer": {
                 "ver": "0.18.0",
@@ -666,7 +666,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
             },
             "gminer": {
                 "algo": "ethash",
@@ -744,8 +744,8 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
+                "claymore_user_config": "-allcoins 1\n-allpools 1"
             },
             "ethminer": {
                 "ver": "0.18.0",
@@ -758,7 +758,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
             },
             "gminer": {
                 "algo": "ethash",
@@ -836,8 +836,8 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
+                "claymore_user_config": "-allcoins 1\n-allpools 1"
             },
             "ethminer": {
                 "ver": "0.18.0",
@@ -850,7 +850,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
             },
             "gminer": {
                 "algo": "ethash",
@@ -928,8 +928,8 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
+                "claymore_user_config": "-allcoins 1\n-allpools 1"
             },
             "ethminer": {
                 "ver": "0.18.0",
@@ -942,7 +942,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
             },
             "gminer": {
                 "algo": "ethash",
@@ -1044,8 +1044,8 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
+                "claymore_user_config": "-allcoins 1\n-allpools 1"
             },
             "ethminer": {
                 "ver": "0.18.0",
@@ -1058,7 +1058,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
             },
             "gminer": {
                 "algo": "ethash",
