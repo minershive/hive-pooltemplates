@@ -4,7 +4,7 @@
             "name": "CrazyPool",        	
             "url": "https://crazypool.org",	
             "fee": 1,                   	
-            "type": "PPS+ / PPLNS / SOLO"			
+            "type": "PPS+ / SOLO"			
         }
     },
 	{
@@ -14,12 +14,6 @@
                 "geo": "US-EAST-PPS",
                 "urls": [
                     "us-east.crazypool.org:7000"
-                ]
-            },
-			{
-                "geo": "US-EAST-PPLNS",
-                "urls": [
-                    "us-east.crazypool.org:7001"
                 ]
             },
             {
@@ -34,13 +28,7 @@
                     "us-west.crazypool.org:7000"
                 ]
             },
-			{
-                "geo": "US-WEST-PPLNS",
-                "urls": [
-                    "us-west.crazypool.org:7001"
-                ]
-            },
-			{
+            {
                 "geo": "US-WEST-SOLO",
                 "urls": [
                     "us-west.crazypool.org:7002"
@@ -50,12 +38,6 @@
                 "geo": "EUROPE-PPS",
                 "urls": [
                     "eu.crazypool.org:7000"
-                ]
-            },
-			{
-                "geo": "EUROPE-PPLNS",
-                "urls": [
-                    "eu.crazypool.org:7001"
                 ]
             },
             {
@@ -70,12 +52,6 @@
                     "asia.crazypool.org:7000"
                 ]
             },
-			{
-                "geo": "ASIA-PPLNS",
-                "urls": [
-                    "asia.crazypool.org:7001"
-                ]
-            },
             {
                 "geo": "ASIA-SOLO",
                 "urls": [
@@ -85,8 +61,8 @@
         ],
         "miners": {
             "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 3"
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins %COIN% -allpools 0 -esm 3 -showdiff 1"
             },
             "ethminer": {
                 "cuda": 1,
