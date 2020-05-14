@@ -1,3 +1,13 @@
+##### 0.6-139@200514 2020-05-14
+*   Small system changes (improved support for third-party hardware better CUDA RTL handling with installed Nvidia drivers)
+*   Ethminer v0.19.0-2 (eliminate 4GB DAG limit on OpenCL, small speedup on OpenCL)
+*   CPUminer-Opt-JayDDee v3.13.1 (added minotaur algo for Ringcoin)
+*   WildRig-Multi v0.23.2 (faster kernel compilation for ProgPow/KawPow)
+*   KawPowMiner (ethminer-kawpowminer) v1.2.3 (improved reconnection, added miner version to mining.subscribe)
+*   NanoMiner v1.9.3 (KawPow: performance improved on AMD Navi GPUs, +16% on stock RX 5700 XT and +14% on stock RX 5700; average performance was slightly improved for pre-Navi AMD GPUs)
+*   miniZ v1.5t3 (125,4 (ZEL): major improvements for various GPUs. Up to ~11% for 1660ti and ~8% for RTX 2070; 150,5,3 (BEAM): major improvements up to ~3-4% for GTX 1660 Ti, RTX 2070. Minor for other GPUs)
+*   Z-Enemy (ccminer-enemy) v2.6.1 (KawPow changes: faster initialization on multi-gpu rigs, performance improvements, smoother gpu/power load)
+
 ##### 0.6-138@200510 2020-05-10
 *   Update Intel's e1000 series LAN card driver installation script (set default version to latest v3.8.4)
 *   T-Rex v0.15.6 (bug fixes: DAG regeneration on epoch change, benchmark for 'kawpow')
