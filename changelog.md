@@ -1,7 +1,7 @@
 ##### 0.6-139@200514 2020-05-14
-*   Small system changes (improved support for third-party hardware better CUDA RTL handling with installed Nvidia drivers)
+*   Small system changes (improved support for third-party hardware; better CUDA RTL handling with installed Nvidia drivers)
 *   Ethminer v0.19.0-2 (eliminate 4GB DAG limit on OpenCL, small speedup on OpenCL)
-*   CPUminer-Opt-JayDDee v3.13.1 (added minotaur algo for Ringcoin)
+*   CPUminer-Opt-JayDDee v3.13.1 (added 'minotaur' algo for Ringcoin)
 *   WildRig-Multi v0.23.2 (faster kernel compilation for ProgPow/KawPow)
 *   KawPowMiner (ethminer-kawpowminer) v1.2.3 (improved reconnection, added miner version to mining.subscribe)
 *   NanoMiner v1.9.3 (KawPow: performance improved on AMD Navi GPUs, +16% on stock RX 5700 XT and +14% on stock RX 5700; average performance was slightly improved for pre-Navi AMD GPUs)
