@@ -1,6 +1,6 @@
 ##### 0.6-140@200519 2020-05-19
 *   Minor system changes
-*   Z-Enemy (ccminer-enemy) v2.6.2 (fixed compatibility with NH, MPH and some other pools, fixed start on Ubuntu 16 based distro)
+*   Z-Enemy (ccminer-enemy) v2.6.2 (fixed compatibility with NH, MPH and some other pools, fixed start on Ubuntu 16 based distro using json config file)
 *   WildRig-Multi v0.24.1 (added parameter --progpow-kernel, speedup ProgPow/KawPow up to 10% on pre-Navi GPU's)
 *   DamoMiner v2.7.8 (added supports AMD card on RVN)
 *   NanoMiner v1.9.4 (fixed setting up email for Ravencoin, fixed incompatibility issue with some Ethereum pools)
