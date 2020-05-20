@@ -1623,14 +1623,26 @@
             }
         ],
         "miners": {
-            "t-rex": {
+            "bminer": {
                 "url": "%URL%",
+                "algo": "raven",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "kawpow",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
                 "algo": "kawpow",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "teamredminer": {
-                "url": "%URL%",
+                "url": "stratum+tcp://%URL%",
                 "algo": "kawpow",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -1647,6 +1659,13 @@
                 "algo": "kawpow",
                 "template": "%WAL%.%WORKER_NAME%"
             },
+            "nanominer": {
+                "algo": "kawpow",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "rigName = %WORKER_NAME%"
+            },
             "ethminer": {
                 "ver": "1.2.2",
                 "cuda": 1,
@@ -1656,6 +1675,13 @@
                 "opencl": 1,
                 "server": "stratum+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
             }
         }
     },
