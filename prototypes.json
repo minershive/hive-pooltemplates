@@ -504,6 +504,19 @@
             "algo": "rvn",
             "worker": "%WORKER_NAME%",
             "template": "%WAL%"
+        },
+        "teamredminer": {
+            "url": "stratum+tcp:\/\/%URL%",
+            "algo": "kawpow",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        }, 
+        "wildrig-multi": {
+            "url": "stratum+tcp:\/\/%URL%",
+            "algo": "kawpow",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "\"opencl-threads\" : \"2\""
         }
     }
 }
