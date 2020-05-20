@@ -2,7 +2,7 @@
 *   Minor system changes
 *   Z-Enemy (ccminer-enemy) v2.6.2 (fixed compatibility with NH, MPH and some other pools, fixed start on Ubuntu 16 based distro using json config file)
 *   WildRig-Multi v0.24.1 (added parameter --progpow-kernel, speedup ProgPow/KawPow up to 10% on pre-Navi GPU's)
-*   DamoMiner v2.7.8 (added supports AMD cards on RVN)
+*   DamoMiner v2.7.8 (added support AMD cards on RVN)
 *   NanoMiner v1.9.4 (fixed setting up email for RVN, fixed incompatibility issue with some Ethereum pools)
 *   TeamRedMiner v0.7.1 (added 'kawpow' algo for RVN, added AMD RX5700 support on 'ethash' and 'kawpow'; other improvements)
 *   CPUminer-Opt-JayDDee v3.13.1.1 (minor update)
