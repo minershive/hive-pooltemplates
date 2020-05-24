@@ -1,3 +1,11 @@
+##### 0.6-141@200524 2020-05-24
+*   Improved `hive-replace` (added support for Ubuntu 14 based OS)
+*   Sync changes AMD OC with new web form (fixed VDDCI, MVDD for Navi, added support PL for Vega and Navi)
+*   CPUminer-Opt-JayDDee v3.14.1 (some changes related to solo mining)
+*   XMRig (new) v5.11.2 (improved JSON config error reporting, optimized RandomX dataset initialization)
+*   PhoenixMiner v5.0b (added support for mining with 4 GB AMD cards beyond the DAG epoch 350, up to 380; added support latest drivers. *Note: this version marked as Beta and added for testing purposes, please select version from miner configuration*)
+*   T-Rex v0.15.7 (reduced share rejects especially on high intensity and low difficulty)
+
 ##### 0.6-140@200519 2020-05-19
 *   Minor system changes
 *   Z-Enemy (ccminer-enemy) v2.6.2 (fixed compatibility with NH, MPH and some other pools, fixed start on Ubuntu 16 based distro using json config file)
