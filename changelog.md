@@ -1,3 +1,8 @@
+##### 0.6-142@200528 2020-05-28
+*   Improved `hive-replace` (now can be runned from local console if GUI disabled)
+*   TeamRedMiner v0.7.3 (fixed mining on Vegas on older amdgpu-pro drivers; emergency patch for 4GB cards to handle a few more ETC epochs; added watchdog script)
+*   PhoenixMiner: latest switched to v5.0b from 4.9c
+
 ##### 0.6-141@200524 2020-05-24
 *   Improved `hive-replace` (added support for Ubuntu 14 based OS)
 *   Sync changes AMD OC with new web form (fixed VDDCI, MVDD for Navi, added support PL for Vega and Navi)
