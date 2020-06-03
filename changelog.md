@@ -1,3 +1,13 @@
+##### 0.6-143@200603 2020-06-03
+*   Improved pci.ids updating (rework from updating via internet to Hive opt package)
+*   Fixed bug with checking VBIOS size (1 MB bios fix) 
+*   Improved/fixed hashrate watchdog (fixed starting after miner installation completion, fixed checking for non-zero hashrate in Algo mode)
+*   CPUminer-Opt-JayDDee v3.14.2 (optimize log output)
+*   SRBMiner-Multi v0.4.5 (added 'randomepic' algo, improved up to 1,5% hashrate on Vega, improved RandomX and many other improvements and bug fixes )
+*   lolMiner v1.0 alpha 2 (new GRIN-C29M code: +10% speed on most supported cards, improved GRIN-C29M fidelity which gives additionally 2-3% better pool hash; *Note: this version replaces v1.0 alpha 1 and marked as Preview and added for testing purposes, please select version v1.0 from miner configuration*)
+*   NanoMiner v1.9.5 (fixed 4 GB Ethash DAG problem for AMD GPUs)
+*   PhoenixMiner v5.0c (added SO_REUSEPORT option on to prevent problems when the miner is restarting)
+
 ##### 0.6-142@200528 2020-05-28
 *   Improved `hive-replace` (now can be runned from local console if GUI disabled)
 *   TeamRedMiner v0.7.3 (fixed mining on Vegas on older amdgpu-pro drivers; emergency patch for 4GB cards to handle a few more ETC epochs; added watchdog script)
