@@ -3,8 +3,8 @@
 *   Fixed bug with checking VBIOS size (so 1 MB VBIOS can be flashed) 
 *   Improved/fixed hashrate watchdog (fixed starting after miner installation completion, fixed checking for non-zero hashrate in Algo mode)
 *   CPUminer-Opt-JayDDee v3.14.2 (optimize log output)
-*   SRBMiner-Multi v0.4.5 (added 'randomepic' algo, improved up to 1,5% hashrate on Vega, improved RandomX and many other improvements and bug fixes )
 *   lolMiner v1.0 alpha 2 (new GRIN-C29M code: +10% speed on most supported cards, improved GRIN-C29M fidelity which gives additionally 2-3% better pool hash; *Note: this version replaces v1.0 alpha 1 and marked as Preview and added for testing purposes, please select version v1.0 from miner configuration*)
+*   SRBMiner-Multi v0.4.5 (added 'randomepic' algo, improved up to 1,5% hashrate on Vega, improved RandomX and many other improvements and bug fixes)
 *   NanoMiner v1.9.5 (fixed 4 GB Ethash DAG problem for AMD GPUs)
 *   PhoenixMiner v5.0c (added SO_REUSEPORT option on to prevent problems when the miner is restarting)
 
