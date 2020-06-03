@@ -1,6 +1,6 @@
 ##### 0.6-143@200603 2020-06-03
 *   Improved pci.ids updating (rework from updating via internet to Hive opt package)
-*   Fixed bug with checking VBIOS size (1 MB bios fix) 
+*   Fixed bug with checking VBIOS size (so 1 MB VBIOS can be flashed) 
 *   Improved/fixed hashrate watchdog (fixed starting after miner installation completion, fixed checking for non-zero hashrate in Algo mode)
 *   CPUminer-Opt-JayDDee v3.14.2 (optimize log output)
 *   SRBMiner-Multi v0.4.5 (added 'randomepic' algo, improved up to 1,5% hashrate on Vega, improved RandomX and many other improvements and bug fixes )
