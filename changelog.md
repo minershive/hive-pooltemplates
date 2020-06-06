@@ -1,3 +1,9 @@
+##### 0.6-144@200606 2020-06-06
+*   Improved `agent`
+*   XMRig v6.0.0 beta + CUDA plugin v6.1.0 (added support kawpow, removed support cn-gpu, improved hashrate up to x3 on CUDA AstroBWT) 
+*   SRBMiner-Multi v0.4.6 (fixed 'defyx' algorithm on Intel CPU's)
+*   CPUminer-Opt-JayDDee v3.14.2 (optimize log output)
+
 ##### 0.6-143@200603 2020-06-03
 *   Improved pci.ids updating (rework from updating via internet to Hive opt package)
 *   Fixed bug with checking VBIOS size (so 1 MB VBIOS can be flashed) 
