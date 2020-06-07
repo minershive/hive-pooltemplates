@@ -2013,5 +2013,65 @@
                 "user_config": "\"opencl-threads\" : \"2\""
             }
         }
+    },
+    {
+        "coin": "Nicehash-Cuckaroo29bfc",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "cuckaroo29bfc.eu.nicehash.com:3386"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "cuckaroo29bfc.usa.nicehash.com:3386"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "cuckaroo29bfc.hk.nicehash.com:3386"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "cuckaroo29bfc.jp.nicehash.com:3386"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "cuckaroo29bfc.br.nicehash.com:3386"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "cuckaroo29bfc.in.nicehash.com:3386"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "bfc",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "bfc"
+            },
+            "nbminer":{
+                "url":"%URL%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%",
+                "algo":"bfc"
+             }
+        }
     }
 ]
