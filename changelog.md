@@ -1,3 +1,14 @@
+##### 0.6-144@200607 2020-06-07
+*   XMRig v6.0.1 beta (replaced previous package v6.0.0, minimal CUDA plugin v6.1.0; Note: this version marked as Beta and added for testing purposes, please select version from miner configuration)
+*   WildRig-Multi v0.25.0 (slightly improved speed of kawpow/progpow, bug fixes for progpow variants, initial support NVIDIA GPUs via OpenCL and PTX ISA)
+*   PhoenixMiner v5.0d (fixed problem with crashing or slowing down when switching from ETC to ETH mining)
+
+##### 0.6-144@200606 2020-06-06
+*   Improved `agent`
+*   XMRig v6.0.0 beta + CUDA plugin v6.1.0 (added support kawpow, removed support cn-gpu, improved hashrate up to x3 on CUDA AstroBWT; *Note: this version marked as Beta and added for testing purposes, please select version from miner configuration*) 
+*   SRBMiner-Multi v0.4.6 (fixed 'defyx' algorithm on Intel CPU's)
+*   TeamRedMiner v0.7.5 (increased `ethash` support on 4GB GPUs up to epoch 380-383, implemented split ethash dag buffers for 8GB GPUs to support DAGs over 4GB, `kawpow` optimizations: Navi +2.25%, Vega +1.25%, Polaris +0.25%)
+
 ##### 0.6-143@200603 2020-06-03
 *   Improved pci.ids updating (rework from updating via internet to Hive opt package)
 *   Fixed bug with checking VBIOS size (so 1 MB VBIOS can be flashed) 
