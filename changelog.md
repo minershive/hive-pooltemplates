@@ -1,3 +1,11 @@
+##### 0.6-144@200610 2020-06-10
+*   XMRig v5.11.3 stable + CUDA plugin 6.2.0 (small fixes, new CUDA plugin)
+*   XMRig v6.2.0 beta + CUDA plugin 6.2.0 (added new algorithm cn/ccx for Conceal; Note: this version marked as Beta and added for testing purposes, please select version from miner configuration)
+*   WildRig-Multi v0.25.1 (adl/nvml now won't initialize if not needed, option '--opencl-platforms' now can be set with values 'amd' and 'nvidia', fixed possible crash after donation mining on progpow variants, improved lyra2 variants for nvidia)
+*   PhoenixMiner v5.0e (added additional fixes and some workarounds for the ETH to ETC switching problem)
+*   CPUminer-Opt-rplant v4.5.10 (added 'hodl' algo, lyra2z330 improvements)
+*   Gminer v2.10 (major performance improvements for qitmeer up to +20%, fixed compatibility with latest nvidia drivers known as "no device found" error)
+
 ##### 0.6-144@200607 2020-06-07
 *   XMRig v6.0.1 beta (replaced previous package v6.0.0, minimal CUDA plugin v6.1.0; Note: this version marked as Beta and added for testing purposes, please select version from miner configuration)
 *   WildRig-Multi v0.25.0 (slightly improved speed of kawpow/progpow, bug fixes for progpow variants, initial support NVIDIA GPUs via OpenCL and PTX ISA)
