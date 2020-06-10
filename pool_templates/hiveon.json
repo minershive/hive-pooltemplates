@@ -64,5 +64,43 @@
                "worker": "%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "ru-etc.hiveon.net:8888",
+                    "ru-etc.hiveon.net:4444"
+                ],
+                "ssl_urls": [
+                    "ru-etc.hiveon.net:24443"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu-etc.hiveon.net:8888",
+                    "eu-etc.hiveon.net:4444"
+                ],
+                "ssl_urls": [
+                    "eu-etc.hiveon.net:24443"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash",
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
+            },
+            "bminer": {
+               "algo": "ethproxy"
+            },
+            "teamredminer":{
+               "template": "%WAL%",
+               "worker": "%WORKER_NAME%"
+            }
+        }
     }
 ]
