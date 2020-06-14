@@ -1,7 +1,7 @@
 ##### 0.6-144@200614 2020-06-14
-*   NHEqMiner VerusHash v0.8.1 (обновлен для предстоящего хардфорка VTSC/Veruscoint на VerusHash v2.2 PoW)
-*   HellMiner v0.5 for VerusHash v2.2 (обновлен для предстоящего хардфорка VTSC/Veruscoin на VerusHash v2.2 PoW)
-*   CPUminer-Opt-rplant v4.5.11 (Добавлен алгоритм curvehash для монеты OBV/Oblivion coin)
+*   NHEqMiner VerusHash v0.8.1 (updated to upcoming hardfork VerusCoin to VerusHash v2.2 PoW)
+*   HellMiner v0.5 for VerusHash v2.2 (updated to upcoming hardfork VerusCoin to VerusHash v2.2 PoW)
+*   CPUminer-Opt-rplant v4.5.11 (added curvehash algo, oblivion coin)
 
 ##### 0.6-144@200610 2020-06-10
 *   XMRig v5.11.3 stable + CUDA plugin 6.2.0 (small fixes, new CUDA plugin)
