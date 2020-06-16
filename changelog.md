@@ -1,4 +1,11 @@
 ##### 0.6-144@200614 2020-06-14
+*   **NHEqMiner VerusHash v0.8.2** (improved miner performance; Note: AVX2 capable CPU needed)
+*   **XMRigCC v2.7.0** (fork of old XMRig for CPU; integrated chukwa variants algos pengo for pengolincoin and ninja for ninjacoin)
+*   **SRBMiner-Multi v0.4.7** (removed devfee for 'blake2s', 'mtp', 'keccak', 'yespoweritc', 'm7mv2', 'cryptonight_catalans', 'cryptonight_talleo' algorithms; lowered 'bl2bsha3' devfee to 0.85%; fixed 'randomx' algorithm when running on 64+ threads)
+*   **miniZ v1.5u** (major hashrate improvements on 144/5 up to 6.5%; minor hashrate improvements on 125/4 up to 1%; fixed connection latency issues; added --ocX option for automatic tunning of the best kernel; added --show-mode option to show miniZ kernel that each GPU is using; reduced memory utilization on 144/5 for all GPUs; reduced memory usage on 3GB GPUs for 125/4)
+*   **TeamRedMiner v0.7.6** (added support Navi14 RX 5500XT, fixed broken keyboard input in screen and tmux sessions affected to miner command, fixed watchdog support for hard driver crashes, fixed kawpow NH extranonce support)
+
+##### 0.6-144@200614 2020-06-14
 *   NHEqMiner VerusHash v0.8.1 (updated to upcoming hardfork VerusCoin to VerusHash v2.2 PoW)
 *   HellMiner v0.5 for VerusHash v2.2 (updated to upcoming hardfork VerusCoin to VerusHash v2.2 PoW)
 *   CPUminer-Opt-rplant v4.5.11 (added curvehash algo, oblivion coin)
