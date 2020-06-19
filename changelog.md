@@ -3,7 +3,7 @@
 *   **XLArig v5.1.0** (xmrig-new fork; sync codebase to XMRig v5.11.1; implemented Panthera Algorithm for v7 network)
 *   **TeamRedMiner v0.7.6.2** (added beta support for Nimiq via wss proxy to mine in dumb mode; public nimiq proxy at 18.196.209.223:4444 to nimiq.icemining.ca)
 *   **Bminer v16.2.2** (improved the performance of Ethereum mining on AMD GPUs, improved stability of the Cuckatoo32 miner, added support automatic transition to BeamHashIII, removed ZEC miner support)
-*   **miniZ v1.5.2u2** (fixed bug that on ZEL mining was not submitting shares on some pools, adjusted default kernels for GTX1070, on stock settings, for all algorithms)
+*   **miniZ v1.5u2** (fixed bug that on ZEL mining was not submitting shares on some pools, adjusted default kernels for GTX1070, on stock settings, for all algorithms)
 
 ##### 0.6-144@200616 2020-06-16
 *   **NHEqMiner VerusHash v0.8.2** (improved miner performance; Note: AVX2 capable CPU needed)
