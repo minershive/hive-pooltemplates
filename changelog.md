@@ -2,8 +2,8 @@
 *   **TeamRedMiner v0.7.6.4** (integrated Nimiq node.js network proxy into the miner, fixed Nimiq bug that could lose shares, especially against lower vardiff pools, fixed Nimiq bug that could cause duplicate shares on startup for low-diff pools, fixed regression bug for ethash Nicehash, correct stratum mode now used again)
 *   **XMRig v6.2.2** (fixed detection of AVX2/AVX512, AMD GPUs health display fixed, improved displaying information for compute errors on GPUs, fixed NiceHash disconnects for KawPow; updated CUDA plugin to 6.2.1: optimized KawPow, about 2% hashrate improvement, 10% faster DAG initialization; added fast job switching for KawPow, almost zero stale shares; *Notes: switched this branch and version to Latest*)
 *   **HellMiner v0.52 for VerusHash 2.2** (slightly faster, added new thread priority option)
+*   **XMRig v5.11.4** (Latest v5.x series: fixed detection of AVX2/AVX512, AMD GPUs health display fixed, updated CUDA plugin to 6.2.1)
 *   **NEW** **QuarkChain OneButton EthMiner v2.0** (QuarkChain mainnet Node/Cluster miner)
-*   **XMRig v5.11.4** (fixed detection of AVX2/AVX512, AMD GPUs health display fixed, updated CUDA plugin to 6.2.1)
 
 ##### 0.6-144@200619 2020-06-19
 *   **CPUminer-Opt-JayDDee v3.14.3** (fixed hodl algo potential memory alignment issue)
