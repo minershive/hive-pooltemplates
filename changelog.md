@@ -1,3 +1,6 @@
+##### 0.6-144@200625 2020-06-25
+*   **Bminer v16.2.4** (fixed the miscalculations of the targets for Qitmeer)
+
 ##### 0.6-144@200624 2020-06-24
 *   **Bminer v16.2.3** (added support the Cuckaroo29m hardfork for Qitmeer, fixed compatibility issues when mining Ethereum on Nicehash, removed CKB support)
 *   **NBMiner v31.1** (added cuckatoo32 for GRIN on Nvidia 8G above GPUs, kawpow now fully supports NiceHash's protocol)
