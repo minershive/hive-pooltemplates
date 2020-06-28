@@ -1,5 +1,56 @@
 [
-    {
+        { 
+            "pool": {
+            "name": "LuckPool",
+            "url": "https://luckpool.net", 
+            "fee": 1, 
+            "type": "PPLTS" 
+        }
+    },
+         {
+            "coin": "VRSC",
+            "servers": [
+                 {
+                     "geo": "CPU ",
+                     "urls": [
+                         "na.luckpool.net:3956"
+                         "eu.luckpool.net:3956"
+                         "ap.luckpool.net:3956"
+                     ]
+                 },
+                 {
+                     "geo": "RIG",
+                     "urls": [
+                         "na.luckpool.net:3957"
+                         "eu.luckpool.net:3957"
+                         "ap.luckpool.net:3957"
+                     ]
+                 },
+                 {
+                     "geo": "Farm",
+                     "urls": [
+                         "na.luckpool.net:3960"
+                         "eu.luckpool.net:3960"
+                         "ap.luckpool.net:3960"
+                     ]
+                 }
+             ],
+             "miners": {
+                 "hellminer": {
+                     "pass": "x",
+                     "port": "%URL_PORT%",
+                     "server": "%URL_HOST%",
+                     "template": "%WAL%.%WORKER_NAME%"
+                 },
+                 "NhEqMiner": {
+                     "pass": "x",
+                     "port": "%URL_PORT%",
+                     "server": "%URL_HOST%",
+                     "template": "%WAL%.%WORKER_NAME%"
+                 }
+             }
+         },
+     {
         "coin": "ZEN",
         "servers": [
             {
@@ -36,62 +87,6 @@
                 "geo": "EU - ASIC",
                 "urls": [
                     "eu.luckpool.net:3060"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "stratum://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "HUSH",
-        "servers": [
-            {
-                "geo": "Single GPU",
-                "urls": [
-                    "luckpool.org:3756"
-                ]
-            },
-            {
-                "geo": "GPU Farm",
-                "urls": [
-                    "luckpool.org:3757"
-                ]
-            },
-            {
-                "geo": "ASIC",
-                "urls": [
-                    "luckpool.org:3760"
                 ]
             }
         ],
@@ -186,62 +181,6 @@
         }
     },
     {
-        "coin": "VOT",
-        "servers": [
-            {
-                "geo": "Single GPU",
-                "urls": [
-                    "luckpool.org:3256"
-                ]
-            },
-            {
-                "geo": "GPU Farm",
-                "urls": [
-                    "luckpool.org:3257"
-                ]
-            },
-            {
-                "geo": "ASIC",
-                "urls": [
-                    "luckpool.org:3260"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "stratum://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "ZEC",
         "servers": [
             {
@@ -260,62 +199,6 @@
                 "geo": "ASIC",
                 "urls": [
                     "luckpool.org:3360"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "stratum://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "ZCL",
-        "servers": [
-            {
-                "geo": "Single GPU",
-                "urls": [
-                    "luckpool.org:3556"
-                ]
-            },
-            {
-                "geo": "GPU Farm",
-                "urls": [
-                    "luckpool.org:3557"
-                ]
-            },
-            {
-                "geo": "ASIC",
-                "urls": [
-                    "luckpool.org:3560"
                 ]
             }
         ],
