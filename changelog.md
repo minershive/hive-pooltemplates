@@ -1,3 +1,8 @@
+##### 0.6-144@200629 2020-06-29
+*   **Bminer v16.2.5** (improved performance of the BeamHash III miner, fixed critical issues that the BeamHash III miner computes invalid solutions, reduced the rejection rates of the Ethereum and ProgPOW miners)
+*   **miniZ v1.6v3** (removed autoswitch for Beam, fixed --pers auto that was not working on NiceHash, added support for GTX 1650 4GB, in BeamHashIII, added a few corrections to 144,5 that possible will reduce cpu usage)
+*   **Beam OpenCL v1.0.85** (open-source miner from Beam devs with 0% devfee updated for BeamHashIII, miner slow but it's free)
+
 ##### 0.6-144@200628 2020-06-28
 *   **T-Rex v0.15.8** (added extranonce support for Nicehash)
 *   **miniZ v1.6v2** (added support for BeamHashIII - 144,5s; completely reworked the --ocX mechanism; changed kernel calls for 150,5 possible improves CPU usage; better default kernels for GTX1070, on stock settings, for all algorithms; fixed --show-mode option that was only showing in combination with other options)
