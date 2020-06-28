@@ -121,24 +121,28 @@
                 "urls": [
                     "beam-asia.sparkpool.com:2222"
                 ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "beam-us.sparkpool.com:2222"
+                ]
             }
         ],
         "miners": {
-            "beamcl": {
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%"
-            },
-            "beamcuda": {
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%"
-            },
             "bminer": {
                 "algo": "beam+ssl",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
+            },
+            "miniz": {
+                "algo": "144,5s",
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%"
             },
             "gminer": {
-                "algo": "150_5",
+                "algo": "beamhash",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x",
@@ -148,8 +152,9 @@
             "lolminer": {
                 "algo": "BEAM",
                 "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "ver": "0.7.a4"
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x"
             }
         }
     },
