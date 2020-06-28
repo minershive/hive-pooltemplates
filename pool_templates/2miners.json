@@ -1768,22 +1768,14 @@
             }
         ],
         "miners": {
-            "beamcl": {
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%"
-            },
-            "beamcuda": {
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%"
-            },
             "bminer": {
-                "algo": "beamhash2+ssl",
+                "algo": "beam+ssl",
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%",
                 "pass": "x"
             },
             "gminer": {
-                "algo": "150_5",
+                "algo": "beamhash",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x",
@@ -1791,18 +1783,11 @@
                 "tls": "1"
             },
             "lolminer": {
-                "algo": "BEAM-II",
+                "algo": "BEAM",
                 "template": "%WAL%.%WORKER_NAME%",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x"
-            },
-            "miniz": {
-                "algo": "150,5,3",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x",
-                "tls": "1"
             }
         }
     },
