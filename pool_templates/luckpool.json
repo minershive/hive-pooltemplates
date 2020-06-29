@@ -10,28 +10,25 @@
          {
             "coin": "VRSC",
             "servers": [
-                 {
-                     "geo": "CPU ",
-                     "urls": [
-                         "na.luckpool.net:3956",
-                         "eu.luckpool.net:3956",
-                         "ap.luckpool.net:3956"
-                     ]
-                 },
-                 {
-                     "geo": "RIG",
-                     "urls": [
-                         "na.luckpool.net:3957",
-                         "eu.luckpool.net:3957",
-                         "ap.luckpool.net:3957"
-                     ]
-                 },
-                 {
-                     "geo": "Farm",
-                     "urls": [
-                         "na.luckpool.net:3960",
-                         "eu.luckpool.net:3960",
-                         "ap.luckpool.net:3960"
+                 
+                    { "geo": "Europe - CPU",
+                             "urls": [ "eu.luckpool.net:3956"]},
+                    {"geo": "USA - CPU",
+                             "urls": [ "na.luckpool.net:3956"]}, 
+                    {"geo": "Asia Pacific - CPU",
+                             "urls": ["ap.luckpool.net:3956"]}, 
+                    {"geo": "Europe Rig",
+                             "urls": ["eu.luckpool.net:3957"]}, 
+                    {"geo": "USA Rig",
+                             "urls": ["na.luckpool.net:3957"]}, 
+                    {"geo": "Asia Pacific Rig",
+                             "urls": ["ap.luckpool.net:3957"]}, 
+                    {"geo": "Europe Farm",
+                             "urls": ["eu.luckpool.net:3960"]}, 
+                    {"geo": "USA Farm",
+                             "urls": ["na.luckpool.net:3960"]}, 
+                     {"geo": "Asia Pacific Farm",
+                             "urls": ["ap.luckpool.net:3960"]}
                      ]
                  }
              ],
@@ -42,11 +39,12 @@
                      "server": "%URL_HOST%",
                      "template": "%WAL%.%WORKER_NAME%"
                  },
-                 "NhEqMiner": {
+                 "nheqminer": {
                      "pass": "x",
                      "port": "%URL_PORT%",
                      "server": "%URL_HOST%",
                      "template": "%WAL%.%WORKER_NAME%"
+                     
                  }
              }
          },
