@@ -62,6 +62,42 @@
         }
     },
     {
+        "coin": "SAFE",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "safecoin.dapool.io:3388"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers Safecoin"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "pass": "x",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers Safecoin"
+            },
+            "lolminer": {
+                "algo": "AUTO192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--overwritePersonal Safecoin"
+            }
+        }
+    },
+    {
         "coin": "VDL",
         "servers": [
             {
