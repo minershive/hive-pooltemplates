@@ -1,7 +1,7 @@
 ##### 0.6-145@200701 2020-07-01
 *   Fixed some issues with hardware watchdog (watchdog stopped working after the boot in some cases)
 *   **lolMiner v1.02** (disabled BeamHashIII auto switcher, fixed a bug that made the miner not start mining Cortex, fixed a bug that made the miner not starting 'BEAM-III' on RX 550 4G GPUs, fixed a bug with BeamHashI 3G solver)
-*   **nq-miner** (added support Icemining solo mode: '-pool-params m=solo')
+*   **nq-miner v0.99.7** (added support Icemining solo mode: '-pool-params m=solo')
 *   ***NEW*** **XPM miner by eXtremal-ik7 OpenCL v10.5-beta1** (XPM/PrimeCoin miner for OpenCL)
 *   ***NEW*** **XPM miner by eXtremal-ik7 CUDA v10.3** (XPM/PrimeCoin miner for CUDA)
 
