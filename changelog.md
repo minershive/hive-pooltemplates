@@ -1,3 +1,10 @@
+##### 0.6-145@200701 2020-07-01
+*   Fixed some issues with hardware watchdog (watchdog stopped working after the boot in some cases)
+*   **lolMiner v1.02** (disabled BeamHashIII auto switcher, fixed a bug that made the miner not start mining Cortex, fixed a bug that made the miner not starting 'BEAM-III' on RX 550 4G GPUs, fixed a bug with BeamHashI 3G solver)
+*   **nq-miner** (added support Icemining solo mode: '-pool-params m=solo')
+*   ***NEW*** **XPM miner by eXtremal-ik7 OpenCL v10.5-beta1** (XPM/PrimeCoin miner for OpenCL)
+*   ***NEW*** **XPM miner by eXtremal-ik7 CUDA v10.3** (XPM/PrimeCoin miner for CUDA)
+
 ##### 0.6-144@200629 2020-06-29
 *   **Bminer v16.2.5** (improved performance of the BeamHash III miner, fixed critical issues that the BeamHash III miner computes invalid solutions, reduced the rejection rates of the Ethereum and ProgPOW miners)
 *   **miniZ v1.6v3** (removed autoswitch for Beam, fixed --pers auto that was not working on NiceHash, added support for GTX 1650 4GB, in BeamHashIII, added a few corrections to 144,5 that possible will reduce cpu usage)
@@ -126,7 +133,7 @@
 *   T-Rex v0.15.4 (fixed showing miner version info for mining pool)
 *   Bminer v16.2.0 (improved performance on mining AE and BFC; added support for mining SERO and RVN)
 *   Z-Enemy (ccminer-enemy) v2.5 (added 'kawpow' algo; builds with CUDA 9.2/10.0/10.1 available, default 10.0)
-*   **NEW** HellMiner v2.1 (VerusCoin CPU miner)
+*   ***NEW*** HellMiner v2.1 (VerusCoin CPU miner)
 *   Fixed config generation in XMRig (old) / XMRig-AMD / XMRig-Nvidia / XMRig (new) (field 'rig-id' which used on some pools not filled with worker name)
 
 ##### 0.6-136@200504 2020-05-04
@@ -145,7 +152,7 @@
 *   T-Rex v0.15.1 test (fixed "unspecified launch failure" error when mining kawpow; *Note: this version for testing purposes, please select version from miner configuration*) 
 *   NBMiner v30.0 (added `memory-tweak` option for using optimized timings on Nvidia GPUs with GDDR5/5X memory, the option can take values from 1 to 6 to activate, add `"memory-tweak": "MODE"` to the configuration with this option using pill for GDDR5X not necessary; added `verbose` option for debugging communication with the pool; added number of shares per GPU in both log print and API)
 *   DamoMiner v2.6.9 (improved kawpow hashrate)
-*   **NEW** KawPoWMiner v1.2.0 (Ravencoin KawPow open source miner with 0% devfee for AMD and Nvidia GPUs; *Note: to use the miner, please select the `kawpowminer` fork in the`ethminer` configuration settings*)
+*   ***NEW*** KawPoWMiner v1.2.0 (Ravencoin KawPow open source miner with 0% devfee for AMD and Nvidia GPUs; *Note: to use the miner, please select the `kawpowminer` fork in the`ethminer` configuration settings*)
 
 ##### 0.6-135@200428 2020-04-28
 *   Updated CUDA libs (added CUDA 10.2 RTL)
