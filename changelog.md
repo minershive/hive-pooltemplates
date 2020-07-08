@@ -1,3 +1,10 @@
+##### 0.6-145@200706 2020-07-06
+*   **Gminer v2.14** (fixed bug with share difficulty on cuckaroom29-qitmeer algorithm, lowered devfee to 3% on cuckaroom29-qitmeer algorithm)
+
+##### 0.6-145@200705 2020-07-05
+*   **Gminer v2.13** (added support Qitmeer hardfork to cuckaroom29 algorithm)
+*   **lolMiner v1.03** (added new BeamHashIII 4G solver, replaces the 6G solver on AMD Vega GPUs and earlier: +5-8% performance on RX 580 & Vega GPUs, added new BeamHashIII 6G solver on ROCm and for AMD Navi GPUs: +8-10% performance on Navi cards)
+
 ##### 0.6-145@200702 2020-07-02
 *   **Gminer v2.12** (improved performance for BeamHashIII 2%-10% dependent from GPUs, removed auto-switching to BeamHashIII)
 *   **NoncerPro Nimiq CUDA v3.3.1** (added '--extra', '-x' option for solo mining on icemining pool, eg: usage : -x="m=solo")
