@@ -1,3 +1,7 @@
+##### 0.6-145@200708 2020-07-08
+*   **Gminer v2.15** (added Cuckaroo29b algorithm for TUBE/BitTube hardfork)
+*   **Bminer v16.2.7** (improved performance for the BeamHashIII, fix compatibility issues with Beam mining pools, reduced rejection rates for all miners)
+
 ##### 0.6-145@200706 2020-07-06
 *   **Gminer v2.14** (fixed bug with share difficulty on cuckaroom29-qitmeer algorithm, lowered devfee to 3% on cuckaroom29-qitmeer algorithm)
 
