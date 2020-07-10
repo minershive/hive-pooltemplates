@@ -1,0 +1,83 @@
+[
+    {
+        "pool": {
+            "name": "nimpool.io",
+            "desc": "Nimiq community pool",
+            "url": "http://nimpool.io",
+            "fee": 1,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "NIM",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.nimpool.io:8444"
+                ]
+            },
+            {
+                "geo": "Asia Pacific",
+                "urls": [
+                    "ap.nimpool.io:8444"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "us.nimpool.io:8444"
+                ]
+            }
+        ],
+        "miners": {
+            "sushi-miner-cuda": {
+              "server": "%URL_HOST%",
+              "port": "%URL_PORT%",
+              "template": "%WAL%",
+              "worker": "%WORKER_NAME%",
+              "user_config": "\"consensus\": \"dumb\""
+            },
+            "sushi-miner-opencl": {
+              "server": "%URL_HOST%",
+              "port": "%URL_PORT%",
+              "template": "%WAL%",
+              "worker": "%WORKER_NAME%",
+              "user_config": "\"consensus\": \"dumb\""
+            },
+            "cryptodredge": {
+               "url": "wss://%URL%",
+               "algo": "argon2d-nim",
+               "pass": "%WORKER_NAME%",
+               "template": "%WAL%"
+            },
+            "teamredminer": {
+               "url": "stratum+tcp://%URL%",
+               "algo": "nimiq",
+               "worker": "%WORKER_NAME%",
+               "template": "%WAL%"
+           },
+           "nq-miner": {
+               "url": "%URL%",
+               "cuda": "1",
+               "worker": "%WORKER_NAME%",
+               "template": "%WAL%",
+               "user_config": "-m dumb"
+           },
+           "noncerpro-opencl": {
+               "port": "%URL_PORT%",
+               "server": "%URL_HOST%",
+               "worker": "%WORKER_NAME%",
+               "template": "%WAL%",
+               "user_config": "--mode=dumb\n--optimizer"
+           },
+           "noncerpro-cuda": {
+               "port": "%URL_PORT%",
+               "server": "%URL_HOST%",
+               "worker": "%WORKER_NAME%",
+               "template": "%WAL%",
+               "user_config": "--mode=dumb"
+           }
+        }
+    }
+]
