@@ -1,3 +1,6 @@
+##### 0.6-145@200711 2020-07-11
+*   **XMRig v6.2.3** (AstroBWT: fixed OpenCL compilation on some systems; KawPow: optimized CPU share verification, fixed DAG initialization on slower AMD GPUs, fixed rare duplicate share errors; RandomX: added error message when MSR mod fails, small speedup on Ryzen CPUs; fixed GPU health readings for pre Vega GPUs; added results and connection reports)
+
 ##### 0.6-145@200708 2020-07-08
 *   **Gminer v2.15** (added Cuckaroo29b algorithm for TUBE/BitTube hardfork)
 *   **Bminer v16.2.7** (improved performance for the BeamHashIII, fix compatibility issues with Beam mining pools, reduced rejection rates for all miners)
