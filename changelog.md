@@ -1,5 +1,5 @@
 ##### 0.6-146@200714 2020-07-14
-*   Autofan: fixed & improvements (auto switching to manual control on AMD GPUs, more precise and faster AMD fan control, human readable payload in error msgs)
+*   Autofan: fixes & improvements (auto switching to manual control on AMD GPUs, more precise and faster AMD fan control, human readable payload in error msgs)
 *   **lolMiner v1.04** (slightly improved performance (2-5%) on all AMD cards on BeamHashIII, most significant (about 7%) on Navi GPUs)
 *   **Gminer v2.16** (added support hardfork TUBE/BitTube to Cuckaroo29b on AMD cards)
 
