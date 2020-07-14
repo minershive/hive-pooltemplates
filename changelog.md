@@ -1,8 +1,13 @@
+##### 0.6-146@200714 2020-07-14
+*   Autofan: fixed & improvements (auto switching to manual control on AMD GPUs, more precise and faster AMD fan control, human readable payload in error msgs)
+*   **lolMiner v1.04** (slightly improved performance (2-5%) on all AMD cards on BeamHashIII, most significant (about 7%) on Navi GPUs)
+*   **Gminer v2.16** (added support hardfork TUBE/BitTube to Cuckaroo29b on AMD cards)
+
 ##### 0.6-145@200711 2020-07-11
 *   **XMRig v6.2.3** (AstroBWT: fixed OpenCL compilation on some systems; KawPow: optimized CPU share verification, fixed DAG initialization on slower AMD GPUs, fixed rare duplicate share errors; RandomX: added error message when MSR mod fails, small speedup on Ryzen CPUs; fixed GPU health readings for pre Vega GPUs; added results and connection reports)
 
 ##### 0.6-145@200708 2020-07-08
-*   **Gminer v2.15** (added Cuckaroo29b algorithm for TUBE/BitTube hardfork)
+*   **Gminer v2.15** (added Cuckaroo29b algorithm for TUBE/BitTube hardfork on NVidia GPUs)
 *   **Bminer v16.2.7** (improved performance for the BeamHashIII, fix compatibility issues with Beam mining pools, reduced rejection rates for all miners)
 
 ##### 0.6-145@200706 2020-07-06
