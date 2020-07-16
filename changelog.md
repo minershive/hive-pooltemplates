@@ -1,3 +1,9 @@
+##### 0.6-146@200716 2020-07-16
+*   **PhoenixMiner v5.1b** (added support for VRAM timing adjustments for Nvidia cards of 10x0 series: new command-line parameters '-straps', '-vmt1', '-vmt2', '-vmt3', and '-vmr'; added -ttli option to automatically decrease the mining speed to avoid overheating the GPUs over the target temperature; many other small improvements and fixes)
+*   **Gminer v2.18** (added Cuckarooz29 algorithm)
+*   **Bminer v16.2.8** (added support Cuckaroo29z algorithm for the GRIN hardfork, various performance improvements on the AMD cards on Ethash)
+*   **XMRig v6.3.0 + CUDA plugin v6.3.0** (added support for upcoming Haven offshore fork; RandomX: added new option 'cache_qos' in randomx object for cache QoS support; CryptoNight OpenCL: fix for long input data)
+
 ##### LINUX IMAGE RELEASE 0.6-146@200714 2020-07-15
 *   Hive Linux client image: 0.6-146@200714 (stable branch based on Ubuntu 18.04)
 *   Universal boot mode: BIOS | UEFI
