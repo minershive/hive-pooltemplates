@@ -3,6 +3,7 @@
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: 5.0.21
 *   Drivers version: AMD v19.20, Nvidia: v430.64
+*   Supports Nvidia GPUs: 10xx/16xx/20xx series, AMD GPUs: Polaris and Vega families
 
 ##### 0.6-146@200714 2020-07-14
 *   Autofan: fixes & improvements (auto switching to manual control on AMD GPUs, more precise and faster AMD fan control, human readable payload in error msgs)
