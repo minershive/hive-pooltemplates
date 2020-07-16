@@ -1,3 +1,9 @@
+##### LINUX IMAGE RELEASE 0.6-146@200714 2020-07-15
+*   Hive Linux client image: 0.6-146@200714 (stable branch based on Ubuntu 18.04)
+*   Universal boot mode: BIOS | UEFI
+*   Linux kernel: 5.0.21
+*   Drivers version: AMD v19.20, Nvidia: v430.64
+
 ##### 0.6-146@200714 2020-07-14
 *   Autofan: fixes & improvements (auto switching to manual control on AMD GPUs, more precise and faster AMD fan control, human readable payload in error msgs)
 *   **lolMiner v1.04** (slightly improved performance (2-5%) on all AMD cards on BeamHashIII, most significant (about 7%) on Navi GPUs)
