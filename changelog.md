@@ -3,6 +3,7 @@
 *   **Gminer v2.18** (added Cuckarooz29 algorithm)
 *   **Bminer v16.2.8** (added support Cuckaroo29z algorithm for the GRIN hardfork, various performance improvements on the AMD cards on Ethash)
 *   **XMRig v6.3.0 + CUDA plugin v6.3.0** (added support for upcoming Haven offshore fork; RandomX: added new option 'cache_qos' in randomx object for cache QoS support; CryptoNight OpenCL: fix for long input data)
+*   **NanoMiner v1.9.6** (XMR mining: fixed miner termination in case there are no jobs for 10 minutes)
 
 ##### LINUX IMAGE RELEASE 0.6-146@200714 2020-07-15
 *   Hive Linux client image: 0.6-146@200714 (stable branch based on Ubuntu 18.04)
