@@ -1,4 +1,4 @@
-##### 0.6-146@200718 2020-07-18
+##### 0.6-147@200718 2020-07-18
 *   Minor fix related to GPU stats
 *   **Gminer v2.19** (improved Cuckarooz29 algorithm)
 
