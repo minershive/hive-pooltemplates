@@ -1,3 +1,6 @@
+##### 0.6-147@200719 2020-07-19
+*   **Bminer v16.2.9** (improved Cuckarooz29 algorithm)
+
 ##### 0.6-147@200718 2020-07-18
 *   Minor fix related to GPU stats
 *   **Gminer v2.19** (improved Cuckarooz29 algorithm)
