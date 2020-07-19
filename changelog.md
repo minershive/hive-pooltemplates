@@ -1,3 +1,7 @@
+##### 0.6-146@200718 2020-07-18
+*   Minor fix related to GPU stats
+*   **Gminer v2.19** (improved Cuckarooz29 algorithm)
+
 ##### 0.6-146@200716 2020-07-16
 *   **PhoenixMiner v5.1b** (added support for VRAM timing adjustments for Nvidia cards of 10x0 series: new command-line parameters '-straps', '-vmt1', '-vmt2', '-vmt3', and '-vmr'; added -ttli option to automatically decrease the mining speed to avoid overheating the GPUs over the target temperature; many other small improvements and fixes)
 *   **Gminer v2.18** (added Cuckarooz29 algorithm)
