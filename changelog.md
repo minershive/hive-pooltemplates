@@ -1,3 +1,6 @@
+##### 0.6-147@200720 2020-07-20
+*   **TeamRedMiner v0.7.8** (ready for upcoming XHV/Haven Protocol hardfork on July 20, 2020; tiny Nimiq optimizations: 1-2% max, mostly Vega and Navi; some bugs fixed)
+
 ##### 0.6-147@200719 2020-07-19
 *   **Bminer v16.2.9** (improved Cuckarooz29 algorithm)
 
