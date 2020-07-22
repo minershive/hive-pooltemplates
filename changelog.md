@@ -1,7 +1,7 @@
 ##### 0.6-148@200721 2020-07-21
 *   Improved network stability
 *   **Bminer v16.2.10** (improved Cuckarooz29 algorithm; fixed fidelity issues for GRIN)
-*   **miniZ v1.6v4** (structural software improvements: size than 16Mb; speed improvements for 144,5s – BeamHashIII; fixed invalid shares on AION/F2Pool; faster feedback on miniZ start; fixed some more stability issues that caused unusual random crashes)
+*   **miniZ v1.6v4** (structural software improvements: size < 16Mb; speed improvements for BeamHashIII; fixed invalid shares on AION/F2Pool; faster feedback on miniZ start; fixed some more stability issues that caused unusual random crashes)
 *   **TeamRedMiner v0.7.8.1** test (added support mixed AMD OpenCL platforms: legacy and pal)
 *   **T-Rex v0.15.9** test (added memory tweaks for GDDR5 and GDDR5X 10xx series cards)
 
