@@ -1,3 +1,9 @@
+##### 0.6-149@200722 2020-07-22
+*   Improved autofan module (reworked AMD fan control)
+*   Fixed applying pill on some early GTX 1080 (implemented a special Nvidia pill applying procedure for some early versions of GTX 1080 PCBs)
+*   Bminer v16.2.11 (improved performance of the Cuckaroo29z, more fixes on fidelity issues on GRIN)
+*   miniZ v1.6v5 (fixed some issues of previous version)
+
 ##### 0.6-148@200721 2020-07-21
 *   Improved network stability
 *   **Bminer v16.2.10** (improved Cuckarooz29 algorithm; fixed fidelity issues for GRIN)
