@@ -1,3 +1,7 @@
+##### 0.6-149@200723 2020-07-23
+*   **Gminer v2.20** (improved Cuckarooz29 algorithm on RTX cards)
+*   **PhoenixMiner v5.1c** (added more Pascal-based Nvidia cards to the list of supported Nvidia cards for memory timings; added new parameter '-nvmem' to force using straps even on unsupported Nvidia GPUs: use '-nvmem 1' for GDDR5 cards, or '-nvmem 2' for GDDR5X cards; removed some dead ethash-based altcoins and updated the support for the rest of them; other small fixes)
+
 ##### 0.6-149@200722 2020-07-22
 *   Improved autofan module (reworked AMD fan control)
 *   Fixed applying pill on some early GTX 1080 (implemented a special Nvidia pill applying procedure for some early versions of GTX 1080 PCBs)
