@@ -1168,6 +1168,50 @@
         }
     },
     {
+        "coin": "MWC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "mwc.2miners.com:1111"
+                ],
+                "ssl_urls": [
+                    "mwc.2miners.com:11111"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "solo-mwc.2miners.com:2222"
+                ],
+                "ssl_urls": [
+                    "solo-mwc.2miners.com:12222"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "cuckarood29",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "MWC-C29D",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "cuckaroo29d",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "ZEL",
         "servers": [
             {
