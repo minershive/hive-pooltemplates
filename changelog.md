@@ -1,7 +1,7 @@
 ##### 0.6-150@200729 2020-07-29
 *   Improved Autofan module (added Tmem as second target temp for Vega and Navi; added "Smart mode")
 *   Updated some system libs
-*   **Bminer v16.2.12** (improved performance of the Cuckaroo29z)
+*   **Bminer v16.2.12** (improved Cuckaroo29z performance)
 
 ##### 0.6-149@200723 2020-07-23
 *   **Gminer v2.20** (improved Cuckarooz29 algorithm on RTX cards)
