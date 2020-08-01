@@ -1,3 +1,7 @@
+##### 0.6-150@200801 2020-08-01
+*   **XMRig v6.3.1** (added command line options '--randomx-cache-qos' and '--argon2-impl')
+*   **TeamRedMiner v0.7.9** (fixes for mixed OpenCL rigs, added '--eth_epoch' argument for easier epoch testing; added '--eth_aggr_mode' for automatic aggressive 'B' mode on Polaris 8GB gpus; added '--watchdog_disable' argument)
+
 ##### 0.6-150@200729 2020-07-29
 *   Improved Autofan module (added as a secondary target temperature Tmem for AMD Vega and Navi GPUs; added a new mode "Smart Mode")
 *   Updated some system libs
