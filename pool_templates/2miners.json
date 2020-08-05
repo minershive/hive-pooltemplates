@@ -1168,53 +1168,46 @@
         }
     },
     {
-        "coin": "BTCZ",
+        "coin": "MWC",
         "servers": [
             {
                 "geo": "EU",
                 "urls": [
-                    "btcz.2miners.com:2020"
+                    "mwc.2miners.com:1111"
                 ],
                 "ssl_urls": [
-                    "btcz.2miners.com:12020"
+                    "mwc.2miners.com:11111"
                 ]
             },
             {
                 "geo": "SOLO EU",
                 "urls": [
-                    "solo-btcz.2miners.com:2121"
+                    "solo-mwc.2miners.com:2222"
                 ],
                 "ssl_urls": [
-                    "solo-btcz.2miners.com:12121"
-                ]
-            },
-            {
-                "geo": "SOLO EU HiDIFF",
-                "urls": [
-                    "solo-btcz.2miners.com:2323"
-                ],
-                "ssl_urls": [
-                    "solo-btcz.2miners.com:12323"
+                    "solo-mwc.2miners.com:12222"
                 ]
             }
         ],
         "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers BitcoinZ"
-            },
             "gminer": {
-                "algo": "144_5",
+                "algo": "cuckarood29",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "MWC-C29D",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers BitcoinZ"
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "cuckaroo29d",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
