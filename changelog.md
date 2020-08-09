@@ -1,3 +1,7 @@
+##### 0.6-150@200808 2020-08-08
+*   **NanoMiner v1.10.0** (added support KawPow for Nvidia cards)
+*   **lolMiner v1.06** (added support for mining BitTube - Cuckaroo-29B and Swap - Cuckaroo-29S, improved Beam stratum, bug fixes)
+
 ##### 0.6-150@200806 2020-08-06
 *   **XMRig v6.3.2-dev** (added for test; some improvements for 1Gb Huge Pages)
 *   **CryptoDredge v0.24.0** (improved argon2d (NIM) algorithm; added '--recompute' option to set memory reduction factor; fixed high CPU usage on MTP-like, Argon2-like and CryptoNight-like algorithms; slightly improved Chukwa (Argon2-512) and Ninja (Argon2-256) algorithms; fixed CryptoNightHaven issue related to 'Unsupported blob size'; new CryptoNightTLO algorithm; new sha256csm algorithm; other minor fixes)
