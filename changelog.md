@@ -1,5 +1,5 @@
 ##### 0.6-151@200812 2020-08-12
-*   Added support for another Chinese variant of AMD RX580 2048SP seen under Ninja brand (updated: amdmeminfo, amdmemtweak. Work on images with amdgpu-pro driver v19.30+)
+*   Added support for yet another Chinese variant of AMD RX580 2048SP seen as Ninja brand (updated: amdmeminfo, amdmemtweak. Work on images with amdgpu-pro driver v19.30+)
 *   Updated AMD vBIOS Flasher (amdvbflash v4.71: added Navi22 support)
 *   Minor fix for `gpu-fans-find` tool (fixed work with AMD Navi)
 *   Minor fix for `autofan` (autofan doesn't work correctly with min fan speed set to 1%)
