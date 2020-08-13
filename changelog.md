@@ -1,3 +1,11 @@
+##### 0.6-151@200812 2020-08-12
+*   Added support for one more Chinese variant AMD RX580 2048SP (updated tools: amdmeminfo, amdmemtweak. Needs amdgpu-pro driver v19.30+)
+*   Updated AMD vBIOS Flasher (amdvbflash v4.71: added Navi22 support)
+*   Minor fix for `gpu-fans-find` tool (added support AMD Navi)
+*   Minor fix for `autofan` (autofan doesn't work correctly with min fan speed set to 1%)
+*   Minor AMD OC fix (OC for AMD Vega doesn't work correctly on low GPU core freq)
+*   **Gminer v2.21** (major performance improvement for BeamHashIII)
+
 ##### 0.6-150@200808 2020-08-08
 *   **NanoMiner v1.10.0** (added support KawPow for Nvidia cards)
 *   **lolMiner v1.06** (added support for mining BitTube - Cuckaroo-29B and Swap - Cuckaroo-29S, improved Beam stratum, bug fixes)
