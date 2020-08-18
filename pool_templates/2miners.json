@@ -1168,6 +1168,53 @@
         }
     },
     {
+        "coin": "CTXC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "ctxc.2miners.com:2222"
+                ],
+                "ssl_urls": [
+                    "ctxc.2miners.com:12222"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "solo-ctxc.2miners.com:6666"
+                ],
+                "ssl_urls": [
+                    "solo-ctxc.2miners.com:16666"
+                ]
+            },
+            {
+                "geo": "SOLO EU HiDIFF",
+                "urls": [
+                    "solo-ctxc.2miners.com:6767"
+                ],
+                "ssl_urls": [
+                    "solo-ctxc.2miners.com:16767"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "cortex",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "CTXC",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "MWC",
         "servers": [
             {
