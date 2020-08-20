@@ -1,0 +1,62 @@
+[
+    {
+        "coin": "NIM",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "pool.acemining.co:8443"
+                ]
+            }
+        ],
+        "miners": {
+            "sushi-miner-cuda": {
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "user_config": "\"consensus\": \"dumb\""
+            },
+            "sushi-miner-opencl": {
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "user_config": "\"consensus\": \"dumb\""
+            },
+            "cryptodredge": {
+                "url": "wss://%URL%",
+                "algo": "argon2d-nim",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "nimiq",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "nq-miner": {
+                "url": "%URL%",
+                "cuda": "1",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "-m dumb"
+            },
+            "noncerpro-opencl": {
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "--mode=dumb\n"
+            },
+            "noncerpro-cuda": {
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "--mode=dumb"
+            }
+        }
+    }
+]
