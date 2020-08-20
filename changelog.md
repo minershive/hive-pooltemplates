@@ -1,3 +1,12 @@
+##### 0.6-152@200819 2020-08-19
+*   Improved `nvidia-driver-update` tool (added -f | --force option to bypass some DKMS build errors during install; Tesla driver can be installed by providing appropriate version, ie 440.95.01)
+*   Fixed GPU stat for motherboards with some AMD iGPU (i.e. AMD "Wani")
+*   Fixed autofan for critical temp and action (minimal critical temp can be set as target+10° vs 20° as was before; in some rare cases mining was not resumed after stop on critical temp)
+*   Improved `amdmeminfo` tool (improved Navi support; fixed BIOS version detection on some brands i.e. MSI, Gigabyte; speed up to 10x on some systems; bugfixes and stability improments)
+*   T-Rex v0.16.1 (add memory tweaks for GDDR5 and GDDR5X cards on Pascal 10xx cards, faster DAG generation on kawpow an progpow)
+*   Bminer v16.3.0 (support 6G cards for the Cuckatoo32, initial support for ETH mining on AMD Navi, fix compatibility issues when mining ETH on 4G cards)
+*   XMRigCC v2.8.0 as XMRig for CPU fork (integrated Randomx variant "Panthera" used by Scala[XLA] algo)
+
 ##### 0.6-151@200812 2020-08-12
 *   Added support for yet another Chinese variant of AMD RX580 2048SP seen as Ninja brand (updated: amdmeminfo, amdmemtweak. Work on images with amdgpu-pro driver v19.30+)
 *   Updated AMD vBIOS Flasher (amdvbflash v4.71: added Navi22 support)
