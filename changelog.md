@@ -1,7 +1,7 @@
 ##### 0.6-153@200821 2020-08-21
 *   Fixed `nvidia-driver-update` tool (fixed start with empty cmd line)
 *   NanoMiner v1.10.1 (Nvidia KawPoW (Ravencoin) improvements: better hashrate, less memory consumption)
-*   lolMiner v1.07 (added support for mining Cuckoo 29 (Aeternity - use C29AE) on 6G+ cards, added support ItaloCoin hardfork for mining on Cuckaro 29-48 (cuckaroo29i) on 6G+ cards, minor cosmetic fixes)
+*   lolMiner v1.07 (added support for mining Cuckoo 29 (Aeternity - use C29AE) on 6G+ cards, added support ItaloCoin hardfork for mining on Cuckaroo 29-48 (cuckaroo29i) on 6G+ cards, minor cosmetic fixes)
 *   XMRig v6.3.2 Release (more robust 1 GB pages handling: don't allocate 1 GB per thread if 1 GB is the default huge page size, try to allocate scratchpad from dataset's 1 GB huge pages, if normal huge pages are not available, correctly initialize RandomX cache if 1 GB pages fail to allocate on a first NUMA node)
 *   XMRig-CUDA plugin updated to v6.3.1 for all XMRig v6.3.X packages (fixed RandomX regression since v6.2.1)
 
