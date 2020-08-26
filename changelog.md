@@ -1,3 +1,7 @@
+##### 0.6-154@200825 2020-08-25
+*   Fixed `amdmeminfo` tool (fixed trimming BIOS info message on some custom BIOSes)
+*   Added CUDA 11.0 RTL
+
 ##### 0.6-153@200821 2020-08-21
 *   Fixed `nvidia-driver-update` tool (fixed start with empty cmd line)
 *   NanoMiner v1.10.1 (Nvidia KawPoW (Ravencoin) improvements: better hashrate, less memory consumption)
