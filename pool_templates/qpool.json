@@ -1,0 +1,68 @@
+[
+    {
+        "pool": {
+            "name": "QPool",
+            "url": "https://www.qpool.net",
+            "fee": 0,
+            "type": "SOLO"
+        }
+    },
+    {
+        "coin": "QKC",
+        "servers": [
+            {
+                "geo": "ShardChain0-Global",
+                "urls": [
+                    "pool.qpool.net:8008"
+                ]
+            },
+            {
+                "geo": "ShardChain1-Global",
+                "urls": [
+                    "pool.qpool.net:8018"
+                ]
+            },
+            {
+                "geo": "ShardChain2-Global",
+                "urls": [
+                    "pool.qpool.net:8028"
+                ]
+            },
+            {
+                "geo": "ShardChain3-Global",
+                "urls": [
+                    "pool.qpool.net:8038"
+                ]
+            },
+            {
+                "geo": "ShardChain4-Global",
+                "urls": [
+                    "pool.qpool.net:8048"
+                ]
+            },
+            {
+                "geo": "ShardChain5-Global",
+                "urls": [
+                    "pool.qpool.net:8058"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%",
+                "claymore_user_config": "-allpools 1\n-mode 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%"
+            }
+        }
+    }
+]

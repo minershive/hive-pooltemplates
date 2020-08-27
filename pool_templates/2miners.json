@@ -90,19 +90,25 @@
                 "claymore_user_config": "-allpools 0"
             },
             "ethminer": {
+                "ver":"0.18.0",
                 "cuda": 1,
+                "fork":"ethash",
                 "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
+                "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
                 "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"ethash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
             },
             "finminer": {
                 "algo": "ethash",
@@ -112,10 +118,33 @@
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
             "bminer": {
-                "algo": "ethash",
+                "algo": "ethstratum",
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%",
                 "pass": "x"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -210,19 +239,25 @@
                 "claymore_user_config": "-allcoins etc\n-allpools 0"
             },
             "ethminer": {
+                "ver":"0.18.0",
                 "cuda": 1,
+                "fork":"ethash",
                 "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
+                "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
                 "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"ethash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
             },
             "finminer": {
                 "algo": "ethash",
@@ -232,10 +267,33 @@
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
             "bminer": {
-                "algo": "ethash",
+                "algo": "ethstratum",
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%",
                 "pass": "x"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -276,19 +334,25 @@
                 "claymore_user_config": "-allcoins etc\n-allpools 0"
             },
             "ethminer": {
+                "ver":"0.18.0",
                 "cuda": 1,
+                "fork":"ethash",
                 "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
+                "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
                 "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"ethash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
             },
             "finminer": {
                 "algo": "ethash",
@@ -298,10 +362,33 @@
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
             "bminer": {
-                "algo": "ethash",
+                "algo": "ethstratum",
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%",
                 "pass": "x"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -342,19 +429,25 @@
                 "claymore_user_config": "-allcoins etc\n-allpools 0"
             },
             "ethminer": {
+                "ver":"0.18.0",
                 "cuda": 1,
+                "fork":"ethash",
                 "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
+                "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
                 "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"ethash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
             },
             "finminer": {
                 "algo": "ethash",
@@ -364,10 +457,33 @@
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
             "bminer": {
-                "algo": "ethash",
+                "algo": "ethstratum",
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%",
                 "pass": "x"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -408,19 +524,25 @@
                 "claymore_user_config": "-allcoins etc\n-allpools 0"
             },
             "ethminer": {
+                "ver":"0.18.0",
                 "cuda": 1,
+                "fork":"ethash",
                 "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
+                "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
                 "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"ethash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
             },
             "finminer": {
                 "algo": "ethash",
@@ -430,10 +552,33 @@
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
             "bminer": {
-                "algo": "ethash",
+                "algo": "ethstratum",
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%",
                 "pass": "x"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -466,81 +611,33 @@
                 "ssl_urls": [
                     "solo-etp.2miners.com:19595"
                 ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "us-etp.2miners.com:9292"
-                ],
-                "ssl_urls": [
-                    "us-etp.2miners.com:19292"
-                ]
-            },
-            {
-                "geo": "SOLO US",
-                "urls": [
-                    "us-solo-etp.2miners.com:9292"
-                ],
-                "ssl_urls": [
-                    "us-solo-etp.2miners.com:19292"
-                ]
-            },
-            {
-                "geo": "SOLO US HiDIFF",
-                "urls": [
-                    "us-solo-etp.2miners.com:9595"
-                ],
-                "ssl_urls": [
-                    "us-solo-etp.2miners.com:19595"
-                ]
-            },
-            {
-                "geo": "ASIA",
-                "urls": [
-                    "asia-etp.2miners.com:9292"
-                ],
-                "ssl_urls": [
-                    "asia-etp.2miners.com:19292"
-                ]
-            },
-            {
-                "geo": "SOLO ASIA",
-                "urls": [
-                    "asia-solo-etp.2miners.com:9292"
-                ],
-                "ssl_urls": [
-                    "asia-solo-etp.2miners.com:19292"
-                ]
-            },
-            {
-                "geo": "SOLO ASIA HiDIFF",
-                "urls": [
-                    "asia-solo-etp.2miners.com:9595"
-                ],
-                "ssl_urls": [
-                    "asia-solo-etp.2miners.com:19595"
-                ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
+                "claymore_user_config": "-allpools 1"
             },
             "ethminer": {
+                "ver":"0.18.0",
                 "cuda": 1,
+                "fork":"ethash",
                 "opencl": 0,
                 "pass": "x",
                 "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
+                "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
                 "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"ethash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
             },
             "finminer": {
                 "algo": "ethash",
@@ -550,130 +647,33 @@
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
             "bminer": {
-                "algo": "ethash",
+                "algo": "ethstratum",
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%",
                 "pass": "x"
-            }
-        }
-    },
-    {
-        "coin": "MOAC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "moac.2miners.com:5050"
-                ],
-                "ssl_urls": [
-                    "moac.2miners.com:15050"
-                ]
             },
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "solo-moac.2miners.com:8080"
-                ],
-                "ssl_urls": [
-                    "solo-moac.2miners.com:18080"
-                ]
-            },
-            {
-                "geo": "SOLO EU HiDIFF",
-                "urls": [
-                    "solo-moac.2miners.com:8181"
-                ],
-                "ssl_urls": [
-                    "solo-moac.2miners.com:18181"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "us-moac.2miners.com:5050"
-                ],
-                "ssl_urls": [
-                    "us-moac.2miners.com:15050"
-                ]
-            },
-            {
-                "geo": "SOLO US",
-                "urls": [
-                    "us-solo-moac.2miners.com:8080"
-                ],
-                "ssl_urls": [
-                    "us-solo-moac.2miners.com:18080"
-                ]
-            },
-            {
-                "geo": "SOLO US HiDIFF",
-                "urls": [
-                    "us-solo-moac.2miners.com:8181"
-                ],
-                "ssl_urls": [
-                    "us-solo-moac.2miners.com:18181"
-                ]
-            },
-            {
-                "geo": "ASIA",
-                "urls": [
-                    "asia-moac.2miners.com:5050"
-                ],
-                "ssl_urls": [
-                    "asia-moac.2miners.com:15050"
-                ]
-            },
-            {
-                "geo": "SOLO ASIA",
-                "urls": [
-                    "asia-solo-moac.2miners.com:8080"
-                ],
-                "ssl_urls": [
-                    "asia-solo-moac.2miners.com:18080"
-                ]
-            },
-            {
-                "geo": "SOLO ASIA HiDIFF",
-                "urls": [
-                    "asia-solo-moac.2miners.com:8181"
-                ],
-                "ssl_urls": [
-                    "asia-solo-moac.2miners.com:18181"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
+            "teamredminer": {
+                "algo": "ethash",
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
             },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
+            "nanominer": {
                 "algo": "ethash",
                 "url": "%URL%",
                 "template": "%WAL%",
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
-            "bminer": {
+            "nbminer": {
                 "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -820,66 +820,6 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "ZCL",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "zcl.2miners.com:2020"
-                ],
-                "ssl_urls": [
-                    "zcl.2miners.com:12020"
-                ]
-            },
-            {
-                "geo": "EU HiDIFF",
-                "urls": [
-                    "zcl.2miners.com:2121"
-                ],
-                "ssl_urls": [
-                    "zcl.2miners.com:12121"
-                ]
-            },
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "solo-zcl.2miners.com:6060"
-                ],
-                "ssl_urls": [
-                    "solo-zcl.2miners.com:16060"
-                ]
-            },
-            {
-                "geo": "SOLO EU HiDIFF",
-                "urls": [
-                    "solo-zcl.2miners.com:6161"
-                ],
-                "ssl_urls": [
-                    "solo-zcl.2miners.com:16161"
-                ]
-            }
-        ],
-        "miners": {
-            "ewbf": {
-                "algo": "192_7",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers ZcashPoW"
-            },
-            "gminer": {
-                "algo": "192_7",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers ZcashPoW"
             }
         }
     },
@@ -1213,14 +1153,14 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "lolminer": {
-                "algo": "GRIN-C29M",
+                "algo": "GRIN-C32",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "bminer": {
-                "algo": "cuckaroom29",
+                "algo": "cuckaroo29z",
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -1228,53 +1168,93 @@
         }
     },
     {
-        "coin": "BTCZ",
+        "coin": "CTXC",
         "servers": [
             {
                 "geo": "EU",
                 "urls": [
-                    "btcz.2miners.com:2020"
+                    "ctxc.2miners.com:2222"
                 ],
                 "ssl_urls": [
-                    "btcz.2miners.com:12020"
+                    "ctxc.2miners.com:12222"
                 ]
             },
             {
                 "geo": "SOLO EU",
                 "urls": [
-                    "solo-btcz.2miners.com:2121"
+                    "solo-ctxc.2miners.com:6666"
                 ],
                 "ssl_urls": [
-                    "solo-btcz.2miners.com:12121"
+                    "solo-ctxc.2miners.com:16666"
                 ]
             },
             {
                 "geo": "SOLO EU HiDIFF",
                 "urls": [
-                    "solo-btcz.2miners.com:2323"
+                    "solo-ctxc.2miners.com:6767"
                 ],
                 "ssl_urls": [
-                    "solo-btcz.2miners.com:12323"
+                    "solo-ctxc.2miners.com:16767"
                 ]
             }
         ],
         "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers BitcoinZ"
-            },
             "gminer": {
-                "algo": "144_5",
+                "algo": "cortex",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "CTXC",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers BitcoinZ"
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "MWC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "mwc.2miners.com:1111"
+                ],
+                "ssl_urls": [
+                    "mwc.2miners.com:11111"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "solo-mwc.2miners.com:2222"
+                ],
+                "ssl_urls": [
+                    "solo-mwc.2miners.com:12222"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "cuckarood29",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "MWC-C29D",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "cuckaroo29d",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1629,18 +1609,65 @@
             }
         ],
         "miners": {
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16rv2",
-                "pass": "x",
+            "bminer": {
+                "url": "%URL%",
+                "algo": "raven",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "ccminer": {
                 "fork": "enemy",
                 "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "x16rv2",
+                "ccalgo": "kawpow",
                 "ccpass": "x",
                 "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "gminer": {
+                "algo": "kawpow",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nanominer": {
+                "algo": "kawpow",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "rigName = %WORKER_NAME%"
+            },
+            "ethminer": {
+                "ver": "1.2.2",
+                "cuda": 1,
+                "fork": "kawpowminer",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "opencl": 1,
+                "server": "stratum+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
             }
         }
     },
@@ -1681,78 +1708,6 @@
                 ],
                 "ssl_urls": [
                     "solo-ae.2miners.com:14343"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "us-ae.2miners.com:4040"
-                ],
-                "ssl_urls": [
-                    "us-ae.2miners.com:14040"
-                ]
-            },
-            {
-                "geo": "US HiDIFF",
-                "urls": [
-                    "us-ae.2miners.com:4242"
-                ],
-                "ssl_urls": [
-                    "us-ae.2miners.com:14242"
-                ]
-            },
-            {
-                "geo": "SOLO US",
-                "urls": [
-                    "us-solo-ae.2miners.com:4141"
-                ],
-                "ssl_urls": [
-                    "us-solo-ae.2miners.com:14141"
-                ]
-            },
-            {
-                "geo": "SOLO US HiDIFF",
-                "urls": [
-                    "us-solo-ae.2miners.com:4343"
-                ],
-                "ssl_urls": [
-                    "us-solo-ae.2miners.com:14343"
-                ]
-            },
-            {
-                "geo": "ASIA",
-                "urls": [
-                    "asia-ae.2miners.com:4040"
-                ],
-                "ssl_urls": [
-                    "asia-ae.2miners.com:14040"
-                ]
-            },
-            {
-                "geo": "ASIA HiDIFF",
-                "urls": [
-                    "asia-ae.2miners.com:4242"
-                ],
-                "ssl_urls": [
-                    "asia-ae.2miners.com:14242"
-                ]
-            },
-            {
-                "geo": "SOLO ASIA",
-                "urls": [
-                    "asia-solo-ae.2miners.com:4141"
-                ],
-                "ssl_urls": [
-                    "asia-solo-ae.2miners.com:14141"
-                ]
-            },
-            {
-                "geo": "SOLO ASIA HiDIFF",
-                "urls": [
-                    "asia-solo-ae.2miners.com:4343"
-                ],
-                "ssl_urls": [
-                    "asia-solo-ae.2miners.com:14343"
                 ]
             }
         ],
@@ -1853,22 +1808,14 @@
             }
         ],
         "miners": {
-            "beamcl": {
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%"
-            },
-            "beamcuda": {
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%"
-            },
             "bminer": {
-                "algo": "beamhash2+ssl",
+                "algo": "beam+ssl",
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%",
                 "pass": "x"
             },
             "gminer": {
-                "algo": "150_5",
+                "algo": "beamhash",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x",
@@ -1876,18 +1823,11 @@
                 "tls": "1"
             },
             "lolminer": {
-                "algo": "BEAM-II",
+                "algo": "BEAM",
                 "template": "%WAL%.%WORKER_NAME%",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x"
-            },
-            "miniz": {
-                "algo": "150,5,3",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x",
-                "tls": "1"
             }
         }
     },

@@ -36,6 +36,104 @@
         }
     },
     {
+        "coin": "HNS",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "handshake.dapool.io:3366"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "handshake",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "hns",
+                "pass": "x",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "SAFE",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "safecoin.dapool.io:3388"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers Safecoin"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "pass": "x",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers Safecoin"
+            },
+            "lolminer": {
+                "algo": "AUTO192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--overwritePersonal Safecoin"
+            }
+        }
+    },
+    {
+        "coin": "VDL",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "vidulum.dapool.io:3377"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers EquivPoW"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "pass": "x",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers EquivPoW"
+            },
+            "lolminer": {
+                "algo": "AUTO192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--overwritePersonal EquivPoW"
+            }
+        }
+    },
+    {
         "coin": "YEC",
         "servers": [
             {
@@ -67,6 +165,37 @@
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XZC",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "zcoin.dapool.io:3355"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "mtp",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "mtp"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "mtp"
             }
         }
     }

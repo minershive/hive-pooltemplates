@@ -34,21 +34,24 @@ Available miners:
 - cortex-miner - Cortex CUDA miner 
 - cpuminer-opt - cpuminer-opt CPU miner (forks: JayDDee, cpupower, rkz, rplant)
 - cryptodredge - multi algo CUDA miner (NVidia)
+- damominer - multi algo CUDA miner (NVidia)
 - dstm - legacy 0.3.4b and new zhash
 - eggminergpu - CUDA/OpenCL miner for BIS - Bismuth coin on Eggpool (AMD/Nvidia)
-- ethminer - ethminer (forks available - ethash, progpow, ubiqhash, zilminer)
+- ethminer - ethminer (forks available - ethash, ethercore, kawpowminer, progpow, ubiqhash, zilminer)
 - ewbf - ewbf for equihash and new for equihash algo variants miner
 - finminer - ethash, randomhash miner (AMD/NVidia/CPU)
 - gminer - equihash variants CUDA miner
 - gringoldminer - Cuckaroo29 miner (AMD/NVidia)
 - grinminer - Cuckaroo29 and Cuckatoo31 miner (AMD/NVidia)
 - grinprominer - improved version of grinminer (AMD/NVidia)
+- hellminer - CPU miner for VRSC/VerusCoin
 - hspminerae - CUDA AE miner (NVidia)
 - kbminer - AE/Cuckaroo29/Cuckatoo31/VDS miner (AMD/NVidia)
 - lolminer - equihash variants OpenCL miner
 - miniz - CUDA Equihash variants miner (Nvidia)
 - nanominer - next generation of finminer (AMD/NVidia/CPU)
 - nbminer - ETH, BTM, Cuckoo miner (NVidia)
+- nheqminer - fork for CPU mining VerusHash
 - noncepool-amd - OpenCL miner for BIS - Bismuth coin on Noncepool (AMD)
 - noncepool-cuda - CUDA miner for BIS - Bismuth coin on Noncepool (Nvidia)
 - noncerpro-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
@@ -59,6 +62,7 @@ Available miners:
 - rhminer - randomhash CPU miner (CPU)
 - sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi, tecracoin)
 - smine - CKB Spark Miner (AMD)
+- srbminer-multi - CPU and AMD miner
 - sushi-miner-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
 - sushi-miner-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
 - t-rex - T-Rex multi algo CUDA miner (NVidia)
@@ -67,13 +71,15 @@ Available miners:
 - wildrig-multi - multi-algo OpenCL miner (AMD)
 - xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo with forks arto, alloy, b2n, mox, marketcash, randomx, uplexa)
 - xmrig - XMRig (CPU cryptonight variants miner with forks: bigbangcore, xmrigcc, hycon, xlarig)
-- xmrig-new - XMRig (unified)  CPU/OCL/CUDA miner for Argon2/RandomX/Cryptonight based algos (available forks: xmrig, randomv, randomsfx)
+- xmrig-new - XMRig (unified)  CPU/OCL/CUDA miner for Argon2/RandomX/Cryptonight based algos (available forks: epic, xmrig, mo, randomsfx, xlarig)
 - xmrig-amd - XMRig (AMD cryptonight variants miner with forks xmrigcc, hycon)
 - xmrig-nvidia - XMRig (NVidia cryptonight variants miner  with forks fruityminer, hycon)
+- xpmminer - XPMclient (XPM/Primecoin miner by eXtremal-ik7 for OpenCL and CUDA)
 - zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
 - custom - Custom miner package
 
-
+## Other
+- fah - Folding@Home client
 
 ## Pool template example
 ```javascript
@@ -92,8 +98,21 @@ Available miners:
             {   // geo element
                 "geo": "Europe", // geo location, maybe null if unknown or in some cases you can indicate port difficulty
                 "urls": [
-                    "eu1-eth.hiveon.net:4444",  // pool server URL  and port
-                    "eu1-eth.hiveon.net:14444"  // another server instance
+                    "eu-eth.hiveon.net:4444",  // pool server URL  and port
+                    "eu-eth.hiveon.net:14444"  // another server instance
+                ],
+                "ssl_urls": [   // SSL/TLS connection 
+                    "eu-eth.hiveon.net:24443"  // pool server URL and port
+                ]
+            },
+            {   // next geo element
+                "geo": "Russia", // geo location, maybe null if unknown or in some cases you can indicate port difficulty
+                "urls": [
+                    "ru-eth.hiveon.net:4444",  // pool server URL  and port
+                    "ru-eth.hiveon.net:14444"  // another server instance
+                ],
+                "ssl_urls": [   // SSL/TLS connection 
+                    "ru-eth.hiveon.net:24443"  // pool server URL and port
                 ]
             }
         ],
@@ -127,12 +146,12 @@ Available miners:
 If your pool contains SSL ports on the same domains then you can add special section "ssl_urls" in geo element
 ```json
 {
-    "geo": "Low-End",
+    "geo": "N.America West",
         "urls": [
-            "pool.wowne.ro:3333"
+            "naw-eth.hiveon.net:4444"
         ],
         "ssl_urls": [
-            "pool.wowne.ro:3334"
+            "naw-eth.hiveon.net:24443"
         ]
 }
 ```

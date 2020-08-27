@@ -1,195 +1,425 @@
 [
-    {
-        "coin": "SERO",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "sero.woolypooly.com:8008"
-                ]
-            }
-        ],
-        "miners": {
-            "ethminer": {
-                "fork": "serominer",
-                "cuda": 0,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "nbminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "progpow_sero"
-             },
-             "tt-miner": {
-                "url": "stratum1+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "progpow092",
-                "user_config": "-coin SERO"
-              }
-        }
-    },
-{
-        "coin": "XWP",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "xwp.woolypooly.com:33044"
-                ]
-            }
-        ],
-        "miners": {
-            "gminer": {
-                "algo": "swap",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%",
-                "pass": "%WORKER_NAME%"
-            },
-            "nbminer": {
-                "algo": "cuckaroo_swap",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "%WORKER_NAME%"
-            },
-            "grinprominer": {
-                "algo": "swap",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "%WORKER_NAME%"
-            }
-        }
-    },
-{
-        "coin": "AION",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "aion.wooolypooly.com:33333"
-                ]
-            }
-        ],
-        "miners": {
-            "ewbf": {
-                "algo": "210_9",
-                "fork": "zhash",
-                "zserver": "%URL_HOST%",
-                "zport": "%URL_PORT%",
-                "zpass": "x",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers AION0PoW"
-            },
-            "gminer": {
-                "algo": "210_9",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers AION0PoW"
-            },
-            "lolminer": {
-                "algo": "AION",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "miniz": {
-                "url": "%URL%",
-                "algo": "210,9",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers AION0PoW"
-            }
-        }
-    },
-	  {
-        "coin": "CTXC",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "cortex.woolypooly.com:40000"
-                ]
-            }
-        ],
-        "miners": {
-            "gminer": {
-                "algo": "cortex",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": ""
-            },
-            "cortex-miner": {
-                "algo": "cuckoo",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": ""
-            }
-        }
-    },	
-{
-        "coin": "ETC",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "etc.woolypooly:9009"
-               ]
-            }
-    
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"  
-            },
-			"tt-miner": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "ethash",
-                "user_config": "-coin SERO"
-            }
-        }
-    }
+   {
+      "coin":"SERO",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "sero.woolypooly.com:8008"
+            ]
+         }
+      ],
+      "miners":{
+         "ethminer":{
+            "fork":"serominer",
+            "cuda":0,
+            "opencl":1,
+            "pass":"x",
+            "port":"%URL_PORT%",
+            "server":"stratum1+tcp://%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"progpow_sero"
+         },
+         "tt-miner":{
+            "url":"stratum1+tcp://%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"progpow092",
+            "user_config":"-coin SERO"
+         }
+      }
+   },
+   {
+      "coin":"AION",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "aion.woolypooly.com:33333"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "aion.woolypooly.com:33334"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "aion.us.woolypooly.com:33333"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "aion.us.woolypooly.com:33334"
+            ]
+         }
+      ],
+      "miners":{
+         "ewbf":{
+            "algo":"210_9",
+            "fork":"zhash",
+            "zserver":"%URL_HOST%",
+            "zport":"%URL_PORT%",
+            "zpass":"x",
+            "ztemplate":"%WAL%.%WORKER_NAME%",
+            "user_config":"pers AION0PoW"
+         },
+         "gminer":{
+            "algo":"210_9",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":"--pers AION0PoW"
+         },
+         "lolminer":{
+            "algo":"AION",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "miniz":{
+            "url":"%URL%",
+            "algo":"210,9",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":"--pers AION0PoW"
+         }
+      }
+   },
+   {
+      "coin":"CTXC",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "cortex.woolypooly.com:40000"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "cortex.woolypooly.com:40001"
+            ]
+         }
+      ],
+      "miners":{
+         "gminer":{
+            "algo":"cortex",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":""
+         },
+         "cortex-miner":{
+            "algo":"cuckoo",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":""
+         },
+         "lolminer":{
+            "algo":"CTXC",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         }
+      }
+   },
+   {
+      "coin":"ETC",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "etc.woolypooly.com:35000"
+            ]
+         }
+      ],
+      "miners":{
+         "claymore":{
+            "epools_tpl":"POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+            "claymore_user_config":"-allcoins etc\n-allpools 0"
+         },
+         "ethminer":{
+            "cuda":1,
+            "opencl":0,
+            "pass":"x",
+            "port":"%URL_PORT%",
+            "server":"stratum1+tcp://%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "asicminer":{
+            "url":"stratum+tcp://%URL%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "phoenixminer":{
+            "url":"POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+         },
+         "finminer":{
+            "algo":"ethash",
+            "url":"%URL%",
+            "template":"%WAL%",
+            "pass":"x",
+            "user_config":"coin = %COIN%\nrigName = %WORKER_NAME%"
+         },
+         "bminer":{
+            "algo":"ethash",
+            "template":"%WAL%.%WORKER_NAME%",
+            "url":"%URL%",
+            "pass":"x"
+         },
+         "tt-miner":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"ethash",
+            "user_config":"-coin SERO"
+         }
+      }
+   },
+   {
+      "coin":"AE",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "ae.woolypooly.com:20000"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "ae.woolypooly.com:20001"
+            ]
+         }
+      ],
+      "miners":{
+         "bminer":{
+            "algo":"aeternity",
+            "template":"%WAL%.%WORKER_NAME%",
+            "url":"%URL%"
+         },
+         "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"aeternity"
+         },
+         "gminer":{
+            "algo":"aeternity",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         }
+      }
+   },
+   {
+      "coin":"RVN",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "rvn.woolypooly.com:55555"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "rvn.woolypooly.com:55556"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "rvn.us.woolypooly.com:55555"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "rvn.us.woolypooly.com:55556"
+            ]
+         }
+      ],
+      "miners":{
+         "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"kawpow"
+         },
+         "t-rex":{
+            "url":"%URL%",
+            "algo":"kawpow",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "ethminer":{
+            "fork":"kawpowminer",
+            "cuda":1,
+            "opencl":0,
+            "pass":"x",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "ccminer":{
+            "fork":"enemy",
+            "ccurl":"stratum+tcp://%URL%",
+            "ccalgo":"kawpow",
+            "ccpass":"x",
+            "ccuser":"%WAL%.%WORKER_NAME%"
+         },
+         "nanominer":{
+            "algo":"kawpow",
+            "url":"%URL%",
+            "template":"%WAL%",
+            "pass":"x",
+            "user_config":"coin=%COIN%\nrigName=%WORKER_NAME%"
+         },
+         "teamredminer":{
+            "algo":"kawpow",
+            "url":"stratum+tcp://%URL%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "pass":"x"
+         },
+         "tt-miner":{
+            "url":"stratum1+tcp://%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"kawpow",
+            "user_config":"-coin rvn"
+         },
+         "gminer":{
+            "algo":"kawpow",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         }
+      }
+   },
+   {
+      "coin":"MWC",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "mwc.woolypooly.com:11000"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "mwc.woolypooly.com:11001"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "mwc.us.woolypooly.com:11000"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "mwc.us.woolypooly.com:11001"
+            ]
+         }
+      ],
+      "miners":{
+         "gminer":{
+            "algo":"grin31",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "lolminer":{
+            "algo":"MWC-C31",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "bminer":{
+            "algo":"cuckatoo31",
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "nbminer":{
+            "url":"%URL%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"cuckatoo"
+         }
+      }
+   },
+   {
+      "coin":"GRIN",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "grin.woolypooly.com:12000"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "grin.woolypooly.com:12001"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "grin.us.woolypooly.com:12000"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "grin.us.woolypooly.com:12001"
+            ]
+         }
+      ],
+      "miners":{
+         "gminer":{
+            "algo":"grin32",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "lolminer":{
+            "algo":"GRIN-C32",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "bminer":{
+            "algo":"cuckatoo32",
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "nbminer":{
+            "url":"%URL%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"cuckatoo32"
+         }
+      }
+   }
 ]

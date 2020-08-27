@@ -65,6 +65,13 @@
             "url": "stratum+tcp://%URL%",
             "template": "%WAL%.%WORKER_NAME%",
             "pass": "x"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "--disable-cpu"
         }
     },
 
@@ -435,6 +442,81 @@
             "algo": "randomx",
             "pass": "w=%WORKER_NAME%",
             "template": "%WAL%"
+        }
+    },
+    "miners_kawpow": {
+        "ethminer":{
+            "fork":"kawpowminer",
+            "cuda":1,
+            "opencl":0,
+            "pass":"x",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+        },
+        "t-rex": {
+            "url": "%URL%",
+            "algo": "kawpow",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"kawpow"
+         },
+        "nanominer": {
+            "algo": "kawpow",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        },
+        "ccminer": {
+            "fork": "enemy",
+            "ccurl": "stratum+tcp:\/\/%URL%",
+            "ccalgo": "kawpow",
+            "ccpass": "x",
+            "ccuser": "%WAL%.%WORKER_NAME%"
+        },
+        "gminer":{
+            "algo":"kawpow",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+        },
+        "bminer": {
+            "url": "%URL%",
+            "algo": "raven",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "tt-miner":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"kawpow",
+            "user_config":"-coin %COIN%"
+        },
+        "damominer": {
+            "url": "stratum+tcp://%URL%",
+            "algo": "rvn",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%"
+        },
+        "teamredminer": {
+            "url": "stratum+tcp:\/\/%URL%",
+            "algo": "kawpow",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        }, 
+        "wildrig-multi": {
+            "url": "stratum+tcp:\/\/%URL%",
+            "algo": "kawpow",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "\"opencl-threads\" : \"2\""
         }
     }
 }

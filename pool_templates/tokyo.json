@@ -58,6 +58,56 @@
             }
         }
     },
+   {
+        "coin": "TTN",
+        "servers": [
+            {
+                "geo": "Rissia",
+                "urls": [
+                    "ru.miner.tokyo:3224"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "europe.miner.tokyo:3224"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.miner.tokyo:3224"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.miner.tokyo:3224"
+                ]
+            }
+        ],
+        "miners": {
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x21s",
+                "pass": "c=PGN",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x21s",
+                "pass": "c=PGN",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x21s",
+                "pass": "c=PGN",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
     {
             "coin": "BSTY",
                "servers": [
@@ -220,6 +270,50 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "x25x",
                 "pass": "c=SIN",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+    {
+        "coin": "BITC",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "ru.miner.tokyo:3257"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "europe.miner.tokyo:3257"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.miner.tokyo:3257"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.miner.tokyo:3257"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x25x",
+                "pass": "c=BITC",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x25x",
+                "pass": "c=BITC",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"opencl-threads\" : \"2\""
             }
