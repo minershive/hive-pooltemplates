@@ -1,3 +1,9 @@
+##### 0.6-155@200828 2020-08-28
+*   Improved software watchdog (improved lost GPU detection, improved error messages)
+*   Improved gpu-detect (AMD GPU memory size reading improvement on newer Linux kernels and AMD drivers)
+*   XMRig v6.3.3 (improved CUDA loader error reporting and fixed plugin load, bug fixes)
+*   XMRig-Klaro v5.6.0 (based on original code XMRig v5.6.0 to mine KLARO coin on RandomXHPFI; select fork 'klaro' under 'xmrig-new')
+
 ##### 0.6-154@200825 2020-08-25
 *   Fixed `amdmeminfo` tool (fixed trimming BIOS info message on some custom BIOSes)
 *   Added CUDA 11.0 RTL (supported by new builds of some miners on 450.x series Nvidia drivers)
