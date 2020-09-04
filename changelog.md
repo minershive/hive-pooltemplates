@@ -1,7 +1,7 @@
 ##### 0.6-156@200904 2020-09-04
 *   Improved third-party hardware support (added new CoolBox fan controller)
 *   Improved OC applying procedure after `hello` command
-*   Fixed 'agent' behaviour on rig password change
+*   Fixed `agent` behaviour on change rig password
 *   CryptoDredge v0.25.1 (fixed high CPU usage on MTP when 'Received new job', improved MTP and Argon2d-NIM algorithms, Allow floating-point intensity, removed obsolete algorithms, bug fixes)
 *   T-Rex v0.16.2 (bug fixes: 'can't init enumerate, code -6' error when applying memory tweaks to P102/104/106 cards, memory tweaks stuck after the miner termination, memory tweaks becoming inactive in case of network issues or overclock adjustments)
 *   Gminer v2.22 (added 3GB solver for BeamHashIII)
