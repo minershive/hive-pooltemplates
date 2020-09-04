@@ -1,3 +1,13 @@
+##### 0.6-156@200904 2020-09-04
+*   Improved third-party hardware support (added new CoolBox fan controller)
+*   Improved OC applying procedure after `hello` command
+*   Fixed 'agent' behaviour on rig password change
+*   CryptoDredge v0.25.1 (fixed high CPU usage on MTP when 'Received new job', improved MTP and Argon2d-NIM algorithms, Allow floating-point intensity, removed obsolete algorithms, bug fixes)
+*   T-Rex v0.16.2 (bug fixes: 'can't init enumerate, code -6' error when applying memory tweaks to P102/104/106 cards, memory tweaks stuck after the miner termination, memory tweaks becoming inactive in case of network issues or overclock adjustments)
+*   Gminer v2.22 (added 3GB solver for BeamHashIII)
+*   miniZ v1.6v6 (improved stability in all algorithms, fixed invalid shares while mining BEAM, smarter check for ssl/tls mining, other minor bug fixes)
+*   Update XMRig-CUDA plugin to v6.3.2 (fixed broken AstroBWT)
+
 ##### 0.6-155@200828 2020-08-28
 *   Improved software watchdog (improved lost GPU detection, improved error messages)
 *   Improved `gpu-detect` tool (AMD GPU memory size reading improvement on newer Linux kernels and AMD drivers)
