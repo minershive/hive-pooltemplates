@@ -1,7 +1,7 @@
 ##### LINUX IMAGE RELEASE 0.6-156 2020-09-05
-*   Hive Linux client image: 0.6-156@200904
+*   Hive Linux client: v0.6-156@200904
 *   Universal boot mode: BIOS | UEFI
-*   Linux kernel: 5.0.21-200905-hiveos
+*   Linux kernel: v5.0.21-200905-hiveos
 *   Drivers version: AMD v19.20, Nvidia: v440.100
 *   Supports Nvidia GPUs: 10xx/16xx/20xx series, AMD GPUs: Polaris and Vega families
 *   Supported up to 32 GPU by X.org server
@@ -106,9 +106,9 @@
 *   **NanoMiner v1.9.6** (XMR mining: fixed miner termination in case there are no jobs for 10 minutes)
 
 ##### LINUX IMAGE RELEASE 0.6-146 2020-07-14
-*   Hive Linux client image: 0.6-146@200714 (stable branch based on Ubuntu 18.04)
+*   Hive Linux client: v0.6-146@200714 (stable branch based on Ubuntu 18.04)
 *   Universal boot mode: BIOS | UEFI
-*   Linux kernel: 5.0.21
+*   Linux kernel: v5.0.21
 *   Drivers version: AMD v19.20, Nvidia: v430.64
 *   Supports Nvidia GPUs: 10xx/16xx/20xx series, AMD GPUs: Polaris and Vega families
 
