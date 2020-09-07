@@ -1,4 +1,4 @@
-##### LINUX IMAGE RELEASE 0.6-156@200905 2020-09-07
+##### LINUX IMAGE RELEASE 0.6-156 2020-09-05
 *   Hive Linux client image: 0.6-156@200904
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: 5.0.21-200905-hiveos
