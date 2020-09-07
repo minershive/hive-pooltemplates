@@ -105,7 +105,7 @@
 *   **XMRig v6.3.0 + CUDA plugin v6.3.0** (added support for upcoming Haven offshore fork; RandomX: added new option 'cache_qos' in randomx object for cache QoS support; CryptoNight OpenCL: fix for long input data)
 *   **NanoMiner v1.9.6** (XMR mining: fixed miner termination in case there are no jobs for 10 minutes)
 
-##### LINUX IMAGE RELEASE 0.6-146@200714 2020-07-15
+##### LINUX IMAGE RELEASE 0.6-146 2020-07-14
 *   Hive Linux client image: 0.6-146@200714 (stable branch based on Ubuntu 18.04)
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: 5.0.21
@@ -685,7 +685,7 @@ NanoMiner v1.7.1 (added Ethash support for AMD Navi 12 and Navi 14 GPUs includin
 ##### 0.6-96@191126 2019-11-26
 *   Gminer v1.80 Beta (added support mining CTXC/Cortex coin: requires 8G+ cards, devfee 5%, choose version in miner settings)
 
-##### LINUX IMAGE RELEASE 0.6-96@191125 2019-11-25
+##### LINUX IMAGE RELEASE 0.6-96 2019-11-25
 *   Hive Linux client image: 0.6-96@191125 (new stable branch based on Ubuntu 18.04)
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: 5.0.21
@@ -807,7 +807,7 @@ NanoMiner v1.7.1 (added Ethash support for AMD Navi 12 and Navi 14 GPUs includin
 *   WildRig-Multi v0.20.0.3 (added support of mtp and mtp-tcr algo, added new arguments `--opencl-less-cpu-load` and `--split-job`)
 *   TT-Miner v3.1.0 Beta1 (small improvements for all ProgPoW variants)
 
-##### LINUX IMAGE RELEASE 0.6-84@191021 2019-10-22
+##### LINUX IMAGE RELEASE 0.6-84 2019-10-21
 *   Hive Linux client image: 0.6-84@191021 (new stable branch based on Ubuntu 18.04)
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: 5.0.21
@@ -953,7 +953,7 @@ NanoMiner v1.7.1 (added Ethash support for AMD Navi 12 and Navi 14 GPUs includin
 *   Fixed a bug in `hive-replace` that occurred when it was necessary to recalculate the GPT checksum
 *   CKB-miner v0.20.0 (CPU/Nvidia CKB miner)
 
-##### LINUX IMAGE RELEASE 0.6-68@190907 2019-09-07
+##### LINUX IMAGE RELEASE 0.6-68 2019-09-07
 *   First stable Linux client image from a new branch based on Ubuntu 18.04
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: 5.0.21
