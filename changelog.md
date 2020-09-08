@@ -1,13 +1,3 @@
-##### LINUX IMAGE RELEASE 0.6-156 2020-09-05
-*   Hive Linux client: v0.6-156@200904
-*   Universal boot mode: BIOS | UEFI
-*   Linux kernel: v5.0.21-200905-hiveos
-*   Drivers version: AMD v19.20, Nvidia: v440.100
-*   Supports Nvidia GPUs: 10xx/16xx/20xx series, AMD GPUs: Polaris and Vega families
-*   Supported up to 32 GPU by X.org server
-*   OpenVPN updated to v2.4.9
-*   ShellInABox updated to v2.21
-
 ##### 0.6-156@200904 2020-09-04
 *   Improved third-party hardware support (added new CoolBox fan controller)
 *   Improved OC applying procedure after `hello` command
