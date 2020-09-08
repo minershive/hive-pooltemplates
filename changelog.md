@@ -1,6 +1,6 @@
 ##### 0.6-157@200908 2020-09-08
 *   Improved `amd-info` tool (pretty GPU names output, added VRAM info: total/used/free)
-*   TeamRedMiner v0.7.10 (added MTP for Navi GPUs, added ethash forced initial allocated epoch --eth_alloc_epoch=N ; added ethash family DAG build slowdown configuration --eth_dag_slowdown=N, default value 4; for eth+zil or Nicehash mining try using --eth_dag_slowdown=9; added ethash family DAG build staggering across GPUs)
+*   TeamRedMiner v0.7.10 (added MTP for Navi GPUs, added ethash forced initial allocated epoch --eth_alloc_epoch=N ; added ethash family DAG build slowdown configuration --eth_dag_slowdown=N, default value 4; for eth+zil or Nicehash mining try using --eth_dag_slowdown=9)
 *   Fixed stats on some miners (NanoMiner, Bminer)
 
 ##### 0.6-156@200904 2020-09-04
