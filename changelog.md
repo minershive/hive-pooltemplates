@@ -7,7 +7,6 @@
 *   Supported up to 32 GPU by X.org server
 *   OpenVPN updated to v2.4.9
 *   ShellInABox updated to v2.21
-*   Added more network drivers support
 
 ##### 0.6-156@200904 2020-09-04
 *   Improved third-party hardware support (added new CoolBox fan controller)
