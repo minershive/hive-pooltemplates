@@ -1,7 +1,24 @@
+##### 0.6-158@200913 2020-09-13
+*   Minor autofan changes (changed type of messages to error instead warning when reboot action required)
+*   Improved DoH support (added `dnscrypt` tool)
+*   SRBMiner v0.5.1 (added support new algos: argon2id_chukwa, argon2d_dynamic, cryptonight_ccx, cryptonight_xhv, cryptonight_gpu,
+cryptonight_upx, cryptonight_heavyx, verushash; added GPU auto tune functionality; other improvements and bug fixes)
+*   CCminer-X11k v2.3.2 (fork with X11K support)
+*   Bminer: fixed stats for rigs with iGPU
+
 ##### 0.6-157@200908 2020-09-08
 *   Improved `amd-info` tool (pretty GPU names output, added VRAM info: total/used/free)
 *   TeamRedMiner v0.7.10 (added MTP for Navi GPUs, added ethash forced initial allocated epoch --eth_alloc_epoch=N ; added ethash family DAG build slowdown configuration --eth_dag_slowdown=N, default value 4; for eth+zil or Nicehash mining try using --eth_dag_slowdown=9)
 *   Fixed stats on some miners (NanoMiner, Bminer)
+
+##### LINUX IMAGE RELEASE 0.6-156 2020-09-05
+*   Hive Linux client: v0.6-156@200904
+*   Universal boot mode: BIOS | UEFI
+*   Linux kernel: v5.0.21-200905-hiveos
+*   Drivers version: AMD v19.20, Nvidia: v440.100
+*   Supported up to 32 GPU by X.org server
+*   OpenVPN updated to v2.4.9
+*   ShellInABox updated to v2.21
 
 ##### 0.6-156@200904 2020-09-04
 *   Improved third-party hardware support (added new CoolBox fan controller)
