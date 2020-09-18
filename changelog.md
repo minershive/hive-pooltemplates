@@ -5,6 +5,7 @@
 *   T-Rex v0.17.2 (added ethash and progpowz algos; add 'gpu-init-mode' parameter: enables sequential DAG generation to reduce load on power supplies, print hash rate if no shares have been found for more than 1 minute to indicate miner's activity; bugs fixes: CUDA 11 build not working on some algorithms and RTX cards, GPU is idle error when generating DAG on low-end cards)
 *   WildRig-Multi v0.26.0 (implemented megabtx, megamec and minotaur algos; added default --opencl-launch for p102, p104 and p106 gpu's)
 *   Bminer v16.3.1 (enable tuning memory timings for Ethash on NVIDIA GPUs via the '-fast' option)
+*   SRBMiner-Multi v0.5.2 (added 'verushash' for GPU mining, 'verushash' on CPU optimised a little bit, 'ethash' on GPU optimised a little bit, removed 'MTP' algo)
 
 ##### 0.6-158@200913 2020-09-13
 *   Minor autofan changes (changed type of messages to error instead warning when reboot action required)
