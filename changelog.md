@@ -1,6 +1,6 @@
 ##### 0.6-159@200918 2020-09-18
 *   Added 'agent' configuration sync after loosing connection to Hive API servers
-*   Improved DNS-over-HTTPS / DoH implementation (added service control from web interface, added AliDNS server)
+*   Improved DoH [DNS-over-HTTPS] implementation (added service control from web interface, added AliDNS servers)
 *   Minor fixes for VBIOS flashing procedure (fixed mem size reporting for GPU with 10Gb+, fixed empty Nvidia flashing log, fixed issue of no reboot after successful flashing)
 *   T-Rex v0.17.2 (added ethash and progpowz algos; add 'gpu-init-mode' parameter: enables sequential DAG generation to reduce load on power supplies, print hash rate if no shares have been found for more than 1 minute to indicate miner's activity; bugs fixes: CUDA 11 build not working on some algorithms and RTX cards, GPU is idle error when generating DAG on low-end cards)
 *   WildRig-Multi v0.26.0 (implemented megabtx, megamec and minotaur algos; added default --opencl-launch for p102, p104 and p106 gpu's)
