@@ -1,13 +1,13 @@
 ##### 0.6-160@200924 2020-09-24
 *   Improved `nvidia-driver-update` tool (added support for new version numbering e.g. 455.23.04)
-*   Workaround for AMD iGPU "Picasso" (excluding from GPU stats and OC)
 *   Improved hashrate WD (added condition for check hashrate only if connection is available)
+*   Some workaround for AMD iGPUs "Picasso" (exclusion from GPU stats and OC)
 *   Gminer v2.23 (improved performance for KawPoW algorithm, improved performance of DAG file generation, fixed "no shares" bug for Cuckoo Cycle algorithms when intensity less than 100%)
 *   miniZ v1.6w (major improvements on 150/5  2-20%, depending on GPU, higher on Turing cards, added ocX table to telemetry)
-*   XMRig v6.3.4 (improved RandomX)
+*   XMRig v6.3.4 (misc improvements for RandomX)
 *   CPUminer-Opt-X11K v3.14.3 (fork with x11k implementation)
 *   CPUminer-Opt-rplant v4.5.16 (added x33 algo)
-*   WildRig-Multi v0.27.3 (implemented x11k (Kyancoin), x33 (Qureno), vprogpow (new algo of VeriBlock), added parameter --protocol (ethproxy, ethstratum, stratum, stratum1, stratum2, ufo, ufo2), added parameter --no-dag-split, fixed --ptx-version parameter, fixed RTX 3080/3090 support, fixed incorrect shares on progpow variants after devfee)
+*   WildRig-Multi v0.27.3 (implemented x11k (Kyancoin), x33 (Qureno), vprogpow (new algo of VeriBlock), added parameter '--protocol' (ethproxy, ethstratum, stratum, stratum1, stratum2, ufo, ufo2), added parameter '--no-dag-split', fixed '--ptx-version parameter', fixed RTX 3080/3090 support, fixed incorrect shares on progpow variants after devfee)
 
 ##### 0.6-159@200918 2020-09-18
 *   Added 'agent' configuration sync after loosing connection to Hive API servers
