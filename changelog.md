@@ -1,3 +1,6 @@
+##### 0.6-161@200924-2 2020-09-24
+*   Fixed `nvidia-driver-update`tool
+
 ##### 0.6-160@200924 2020-09-24
 *   Improved `nvidia-driver-update` tool (added support for new version numbering e.g. 455.23.04)
 *   Improved hashrate WD (added condition for check hashrate only if connection is available)
