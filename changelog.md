@@ -1,5 +1,5 @@
 ##### 0.6-161@200924-2 2020-09-24
-*   Fixed `nvidia-driver-update`tool (changed search order for download links, fixed installation for release version numbering)
+*   Fixed `nvidia-driver-update` tool (changed search order for download links, fixed installation for release version numbering)
 
 ##### 0.6-160@200924 2020-09-24
 *   Improved `nvidia-driver-update` tool (added support for new version numbering e.g. 455.23.04)
