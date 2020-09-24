@@ -1,0 +1,42 @@
+[
+    { // pool header section - not necessary
+        "pool": {
+            "name": "Tellorpool", 
+            "url": "http://tellorpool.org/",
+            "fee": 0,
+            "type": "RBPPS"
+        }
+    },
+    {
+        "coin": "TRB",
+        "servers": [
+            {   // geo element
+                "geo": "Europe",
+                "urls": [
+                    "stratum+tcp://eu.tellorpool.org:1138",
+                ],
+                "ssl_urls": [
+                    "eu-eth.hiveon.net:24443"
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
+            }
+        }
+    }
+]
