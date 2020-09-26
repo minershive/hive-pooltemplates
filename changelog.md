@@ -1,3 +1,10 @@
+##### 0.6-162@200926 2020-09-26
+*   Updated NVidia VBIOS flasher to v5.527 (added RTX support)
+*   Improved `hive-replace` tool (added support NVMe drives)
+*   Gminer v2.24 (added support for RTX 30xx cards, removed BBC,Qitmeer algorithms)
+*   T-Rex v0.17.3 (improved 'ethash' 1-2%, added x33 algo, improved compatibility with various mining pools / protocols)
+*   TeamRedMiner v0.7.11 ('ethash' additions: printing share diff in GH (always enabled), hashrate watchdog by option '--eth_hashwatch)', better debug support with new options '--long_timestamps', '--pool_debug', dded DAG allocation patch for certain mobo/bios combinations '--eth_dag_alloc_patch', fixed broken argon2/chukwa)
+
 ##### 0.6-161@200924-2 2020-09-24
 *   Fixed `nvidia-driver-update` tool (changed search order for download links, fixed installation for release version numbering)
 
