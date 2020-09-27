@@ -1,4 +1,4 @@
-##### 0.6-162@200926 2020-09-26
+##### 0.6-162@200927 2020-09-27
 *   Updated NVidia VBIOS flasher to v5.527 (added RTX support)
 *   Improved `hive-replace` tool (added support NVMe drives)
 *   Gminer v2.24 (added support for RTX 30xx cards, removed BBC,Qitmeer algorithms)
