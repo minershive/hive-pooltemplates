@@ -2,7 +2,7 @@
 *   Improved `selfupgrade` tool (update procedure optimized to reduce internet traffic)
 *   Updated `amdmeminfo` tool (added yet another variant of RX580 2048SP)
 *   NBMiner v32.0 (added support for mining BEAM with Nvidia 3GB+ GPUs, added ability to mining cuckatoo32 on Nvidia 6GB GPUs, optimized ethash for AMD RX 4xx, 5xx, Vega series 8GB+ GPUs)
-*   Gminer v2.26 (fixed ProgPoW/KAWPOW compatibility with RTX 30xx cards; fixed performance regression on Aeternity, BitTube, Swap)
+*   Gminer v2.26 (fixed ProgPoW/KawPoW compatibility with RTX 30xx cards; fixed performance regression on Aeternity, BitTube, Swap)
 *   WildRig-Multi v0.27.6 (fixed incorrect work and high CPU load of x11k, minotaur and some other similar algos for Nvidia GPUs, fixed crash of some algorithms on Nvidia, fixed issue with getting banned while mining veriblock on official node, tuned a bit 'minotaur' for Nvidia)
 *   NanoMoner v1.11.0 (removed dev fee for RandomHash2 (Pascal coin) algorithm. Mining Pascal is now free)
 *   Bminer: fixed stats for AMD GPUs
