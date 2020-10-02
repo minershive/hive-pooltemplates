@@ -1,3 +1,7 @@
+##### 0.6-164@201001 2020-10-01
+*   Improved `selfupgrade` tool
+*   TeamRedMiner v0.7.12 (bug fix v0.7.11 release: fixed miner crush on ethash rejected shares)
+
 ##### 0.6-163@200930 2020-09-30
 *   Improved `selfupgrade` tool (update procedure optimized to reduce internet traffic)
 *   Updated `amdmeminfo` tool (added yet another variant of RX580 2048SP)
