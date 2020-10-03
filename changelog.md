@@ -1,3 +1,7 @@
+##### 0.6-164@201002 2020-10-02
+*   CPUminer-Opt-JayDDee v3.15.0 (fugue optimized with AES, improves many sha3 algos, minotaur algo optimized for all architectures)
+*   lolMiner v1.09 (added support for Ethash on AMD GPUs for all 4G cards are supported up to epoch ~380 to 382; new option '--keepfree' to set the number of MBytes the miner should reserve on each GPU for the operation system default 5; ethash specific option '--benchepoch' among with '--benchmark ETHASH' to run the benchmark mode for a fixed epoch height, default: 350; ethash specific option '--ethstratum' to set the stratum mode for ethash currrently available options are ETHV1 (default) and ETHPROXY; ethash specific option '--dagdelay' to put a delay in seconds between allocation of DAG for the single GPUs; bugs fixes)
+
 ##### 0.6-164@201001 2020-10-01
 *   Improved `selfupgrade` tool
 *   TeamRedMiner v0.7.12 (bug fix v0.7.11 release: fixed miner crush on ethash rejected shares)
