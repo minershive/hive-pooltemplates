@@ -2,7 +2,7 @@
 *   Improved `nvidia-driver-update` (added support for CUDA v11.1; added CUDA version info; added new options)
 *   Updated Hive libs (added CUDA RTL v11.1)
 *   Fixed OC for Nvidia GTX 1650 Super
-*   SRBMiner-Multi v0.5.3 (Added GPU mining for 'argon2d_dynamic', 'argon2id_chukwa', CPU&GPU for 'cryptonight_cache'; fixed 'duplicate share' errors with 'ethash'; less stale shares on 'ethash' algorithm in auto mode)
+*   SRBMiner-Multi v0.5.3 (added GPU mining for 'argon2d_dynamic', 'argon2id_chukwa', added for CPU&GPU mining 'cryptonight_cache'; fixed 'duplicate share' errors with 'ethash'; less stale shares on 'ethash' algorithm in auto mode)
 *   TeamRedMiner v0.7.13 (improved miner stability; added option for manual adjustment of 4GB dag allocation '--eth_4g_alloc_adjust')
 *   NBMiner v32.1 (fixed AMD device initialization failure on some rigs)
 
