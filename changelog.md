@@ -1,3 +1,11 @@
+##### 0.6-165@201008 2020-10-08
+*   lolMiner v1.10 (reduced power draw for RX 460 - 590 GPUs on ethash; added support for mining Zilliqa dual mining with ETH/ETC; added new parameter: '--enablezilcache': allows 8G+ AMD GPUs to create two DAGs, one for epoch 0 (Zilliqa) and one regular one; fixed a bug that mining with epoch lower 256 freezes the RIG. Nicehash mining Ethash should be stable now)
+*   T-Rex v0.18.0 BETA (add progpow-veriblock algorithm for Veriblock; add progpow-veil algorithm for VEIL's upcoming fork; dd megabtx algorithm for Bitcore; bug fixes)
+*   WildRig-Multi v0.28.0 (implemented progpow-veil for Veil; one more fix for minotaur on Nvidia; should be fixed monitoring via nvml on newer Nvidia drivers)
+*   Gminer v2.27 (fixed miner crash on Ethash/ProgPoW for DAG over 4GB; added VProgPoW algorithm for VeriBlock; added ProgPoWZ algorithm for Zano)
+*   Fixed missed TeamRedMiner v0.7.13 watchdog script
+*   Fixed Bminer stats (for some cases not shown on dashboard)
+
 ##### 0.6-165@201005 2020-10-05
 *   Improved `nvidia-driver-update` (added support for CUDA v11.1; added CUDA version info; added new options)
 *   Updated Hive libs (added CUDA RTL v11.1)
