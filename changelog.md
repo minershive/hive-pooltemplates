@@ -3,7 +3,7 @@
 *   T-Rex v0.18.0 BETA (add progpow-veriblock algorithm for Veriblock; add progpow-veil algorithm for VEIL's upcoming fork; dd megabtx algorithm for Bitcore; bug fixes; *Notice: since this is a beta version and added for testing purposes only, you must directly select the version of the miner in the Flight Sheet / Miner settings*)
 *   WildRig-Multi v0.28.0 (implemented progpow-veil for Veil; one more fix for minotaur on Nvidia; should be fixed monitoring via nvml on newer Nvidia drivers)
 *   Gminer v2.27 (fixed miner crash on Ethash/ProgPoW for DAG over 4GB; added VProgPoW algorithm for VeriBlock; added ProgPoWZ algorithm for Zano)
-*   Fixed missed watchdog script in TeamRedMiner v0.7.13 package
+*   Added missed watchdog script in TeamRedMiner v0.7.13 package
 *   Fixed Bminer stats (for some cases not shown on dashboard)
 
 ##### 0.6-165@201005 2020-10-05
