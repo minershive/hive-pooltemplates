@@ -1,3 +1,9 @@
+##### 0.6-165@201011 2020-10-11
+*   Gminer v2.28 (support ETH/ETC+ZIL mining, fixed compatibility with luckypool.io for Zano, fixed "All DevFee pools are unavailable" error for Grimm)
+*   T-Rex v0.18.1 (add progpow-veriblock algorithm for Veriblock; add progpow-veil algorithm for VEIL's upcoming fork; dd megabtx algorithm for Bitcore; on stratum+tcp automatically selects the most commonly used pool protocol for a given algorithm; bug fixes)
+*   lolMiner: added total and per GPU invalid shares for v1.10+
+*   WildRig-Multi: fixed stats for some configurations with Nvidia GPUs
+
 ##### 0.6-165@201008 2020-10-08
 *   lolMiner v1.10 (reduced power draw for RX 460 - 590 GPUs on ethash; added support for mining Zilliqa dual mining with ETH/ETC; added new parameter: '--enablezilcache': allows 8G+ AMD GPUs to create two DAGs, one for epoch 0 (Zilliqa) and one regular one; fixed a bug that mining with epoch lower 256 freezes the RIG. Nicehash mining Ethash should be stable now)
 *   T-Rex v0.18.0 BETA (add progpow-veriblock algorithm for Veriblock; add progpow-veil algorithm for VEIL's upcoming fork; dd megabtx algorithm for Bitcore; bug fixes; *Notice: since this is a beta version and added for testing purposes only, you must directly select the version of the miner in the Flight Sheet / Miner settings*)
