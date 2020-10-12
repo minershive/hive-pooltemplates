@@ -1,6 +1,5 @@
 ##### 0.6-165@201012 2020-10-12
-*   SRBMiner-Multi v0.5.4 (added 'argon2id_chukwa2' algorithm for CPU & GPU, fixed bug that caused invalid shares sometimes in multi algorithm mode mining,
-    changed default value for '--retry-time' from 15 to 5 seconds; minor bug fixes
+*   SRBMiner-Multi v0.5.4 (added 'argon2id_chukwa2' algorithm for CPU & GPU, fixed bug that caused invalid shares sometimes in multi algorithm mode mining, changed default value for '--retry-time' from 15 to 5 seconds; minor bug fixes)
 *   CPUminer-Opt-rplant v4.5.17 (added new algo for qureno)
 
 ##### 0.6-165@201011 2020-10-11
