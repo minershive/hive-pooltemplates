@@ -1,3 +1,7 @@
+##### 0.6-165@201012 2020-10-12
+*   SRBMiner-Multi v0.5.4 (added 'argon2id_chukwa2' algorithm for CPU & GPU, fixed bug that caused invalid shares sometimes in multi algorithm mode mining, changed default value for '--retry-time' from 15 to 5 seconds; minor bug fixes)
+*   CPUminer-Opt-rplant v4.5.17 (added new algo for qureno)
+
 ##### 0.6-165@201011 2020-10-11
 *   Gminer v2.28 (support ETH/ETC+ZIL mining, fixed compatibility with luckypool.io for Zano, fixed "All DevFee pools are unavailable" error for Grimm)
 *   T-Rex v0.18.1 (add progpow-veriblock algorithm for Veriblock; add progpow-veil algorithm for VEIL's upcoming fork; dd megabtx algorithm for Bitcore; on stratum+tcp automatically selects the most commonly used pool protocol for a given algorithm; bug fixes)
