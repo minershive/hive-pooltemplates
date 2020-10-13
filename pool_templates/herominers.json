@@ -8,6 +8,1350 @@
         }
     },
     {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": "Germany Low-End",
+                "urls": [
+                    "ethereum.herominers.com:10200"
+                ]
+            },
+            {
+                "geo": "Germany Mid-Range",
+                "urls": [
+                    "ethereum.herominers.com:10201"
+                ]
+            },
+            {
+                "geo": "Germany NiceHash",
+                "urls": [
+                    "ethereum.herominers.com:10202"
+                ]
+            },
+            {
+                "geo": "Finland Low-End",
+                "urls": [
+                    "fi.ethereum.herominers.com:10200"
+                ]
+            },
+            {
+                "geo": "Finland Mid-Range",
+                "urls": [
+                    "fi.ethereum.herominers.com:10201"
+                ]
+            },
+            {
+                "geo": "Finland NiceHash",
+                "urls": [
+                    "fi.ethereum.herominers.com:10202"
+                ]
+            },
+            {
+                "geo": "Canada Low-End",
+                "urls": [
+                    "ca.ethereum.herominers.com:10200"
+                ]
+            },
+            {
+                "geo": "Canada Mid-Range",
+                "urls": [
+                    "ca.ethereum.herominers.com:10201"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.ethereum.herominers.com:10202"
+                ]
+            },
+            {
+                "geo": "HongKong Low-End",
+                "urls": [
+                    "hk.ethereum.herominers.com:10200"
+                ]
+            },
+            {
+                "geo": "HongKong Mid-Range",
+                "urls": [
+                    "hk.ethereum.herominers.com:10201"
+                ]
+            },
+            {
+                "geo": "HongKong NiceHash",
+                "urls": [
+                    "hk.ethereum.herominers.com:10202"
+                ]
+            },
+            {
+                "geo": "Singapore Low-End",
+                "urls": [
+                    "sg.ethereum.herominers.com:10200"
+                ]
+            },
+            {
+                "geo": "Singapore Mid-Range",
+                "urls": [
+                    "sg.ethereum.herominers.com:10201"
+                ]
+            },
+            {
+                "geo": "Singapore NiceHash",
+                "urls": [
+                    "sg.ethereum.herominers.com:10202"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
+                "claymore_user_config": "-allpools 0"
+            },
+            "ethminer": {
+                "ver":"0.18.0",
+                "cuda": 1,
+                "fork":"ethash",
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"ethash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethstratum",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ETHASH",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "SRBMiner-MULTI": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "ethash"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "Germany Low-End",
+                "urls": [
+                    "etc.herominers.com:10160"
+                ]
+            },
+            {
+                "geo": "Germany Mid-Range",
+                "urls": [
+                    "etc.herominers.com:10161"
+                ]
+            },
+            {
+                "geo": "Germany NiceHash",
+                "urls": [
+                    "etc.herominers.com:10162"
+                ]
+            },
+            {
+                "geo": "Finland Low-End",
+                "urls": [
+                    "fi.etc.herominers.com:10160"
+                ]
+            },
+            {
+                "geo": "Finland Mid-Range",
+                "urls": [
+                    "fi.etc.herominers.com:10161"
+                ]
+            },
+            {
+                "geo": "Finland NiceHash",
+                "urls": [
+                    "fi.etc.herominers.com:10162"
+                ]
+            },
+            {
+                "geo": "Canada Low-End",
+                "urls": [
+                    "ca.etc.herominers.com:10160"
+                ]
+            },
+            {
+                "geo": "Canada Mid-Range",
+                "urls": [
+                    "ca.etc.herominers.com:10161"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.etc.herominers.com:10162"
+                ]
+            },
+            {
+                "geo": "HongKong Low-End",
+                "urls": [
+                    "hk.etc.herominers.com:10160"
+                ]
+            },
+            {
+                "geo": "HongKong Mid-Range",
+                "urls": [
+                    "hk.etc.herominers.com:10161"
+                ]
+            },
+            {
+                "geo": "HongKong NiceHash",
+                "urls": [
+                    "hk.etc.herominers.com:10162"
+                ]
+            },
+            {
+                "geo": "Singapore Low-End",
+                "urls": [
+                    "sg.etc.herominers.com:10160"
+                ]
+            },
+            {
+                "geo": "Singapore Mid-Range",
+                "urls": [
+                    "sg.etc.herominers.com:10161"
+                ]
+            },
+            {
+                "geo": "Singapore NiceHash",
+                "urls": [
+                    "sg.etc.herominers.com:10162"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
+                "claymore_user_config": "-allpools 0"
+            },
+            "ethminer": {
+                "ver":"0.18.0",
+                "cuda": 1,
+                "fork":"ethash",
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"ethash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethstratum",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ETHASH",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "SRBMiner-MULTI": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "ethash"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "PIRL",
+        "servers": [
+            {
+                "geo": "Germany Low-End",
+                "urls": [
+                    "pirl.herominers.com:10220"
+                ]
+            },
+            {
+                "geo": "Germany Mid-Range",
+                "urls": [
+                    "pirl.herominers.com:10221"
+                ]
+            },
+            {
+                "geo": "Germany NiceHash",
+                "urls": [
+                    "pirl.herominers.com:10222"
+                ]
+            },
+            {
+                "geo": "Finland Low-End",
+                "urls": [
+                    "fi.pirl.herominers.com:10220"
+                ]
+            },
+            {
+                "geo": "Finland Mid-Range",
+                "urls": [
+                    "fi.pirl.herominers.com:10221"
+                ]
+            },
+            {
+                "geo": "Finland NiceHash",
+                "urls": [
+                    "fi.pirl.herominers.com:10222"
+                ]
+            },
+            {
+                "geo": "Canada Low-End",
+                "urls": [
+                    "ca.pirl.herominers.com:10220"
+                ]
+            },
+            {
+                "geo": "Canada Mid-Range",
+                "urls": [
+                    "ca.pirl.herominers.com:10221"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.pirl.herominers.com:10222"
+                ]
+            },
+            {
+                "geo": "HongKong Low-End",
+                "urls": [
+                    "hk.pirl.herominers.com:10220"
+                ]
+            },
+            {
+                "geo": "HongKong Mid-Range",
+                "urls": [
+                    "hk.pirl.herominers.com:10221"
+                ]
+            },
+            {
+                "geo": "HongKong NiceHash",
+                "urls": [
+                    "hk.pirl.herominers.com:10222"
+                ]
+            },
+            {
+                "geo": "Singapore Low-End",
+                "urls": [
+                    "sg.pirl.herominers.com:10220"
+                ]
+            },
+            {
+                "geo": "Singapore Mid-Range",
+                "urls": [
+                    "sg.pirl.herominers.com:10221"
+                ]
+            },
+            {
+                "geo": "Singapore NiceHash",
+                "urls": [
+                    "sg.pirl.herominers.com:10222"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
+                "claymore_user_config": "-allpools 0"
+            },
+            "ethminer": {
+                "ver":"0.18.0",
+                "cuda": 1,
+                "fork":"ethash",
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"ethash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethstratum",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ETHASH",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "SRBMiner-MULTI": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "ethash"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "CLO",
+        "servers": [
+            {
+                "geo": "Germany Low-End",
+                "urls": [
+                    "callisto.herominers.com:10210"
+                ]
+            },
+            {
+                "geo": "Germany Mid-Range",
+                "urls": [
+                    "callisto.herominers.com:10211"
+                ]
+            },
+            {
+                "geo": "Germany NiceHash",
+                "urls": [
+                    "callisto.herominers.com:10212"
+                ]
+            },
+            {
+                "geo": "Finland Low-End",
+                "urls": [
+                    "fi.callisto.herominers.com:10210"
+                ]
+            },
+            {
+                "geo": "Finland Mid-Range",
+                "urls": [
+                    "fi.callisto.herominers.com:10211"
+                ]
+            },
+            {
+                "geo": "Finland NiceHash",
+                "urls": [
+                    "fi.callisto.herominers.com:10212"
+                ]
+            },
+            {
+                "geo": "Canada Low-End",
+                "urls": [
+                    "ca.callisto.herominers.com:10210"
+                ]
+            },
+            {
+                "geo": "Canada Mid-Range",
+                "urls": [
+                    "ca.callisto.herominers.com:10211"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.callisto.herominers.com:10212"
+                ]
+            },
+            {
+                "geo": "HongKong Low-End",
+                "urls": [
+                    "hk.callisto.herominers.com:10210"
+                ]
+            },
+            {
+                "geo": "HongKong Mid-Range",
+                "urls": [
+                    "hk.callisto.herominers.com:10211"
+                ]
+            },
+            {
+                "geo": "HongKong NiceHash",
+                "urls": [
+                    "hk.callisto.herominers.com:10212"
+                ]
+            },
+            {
+                "geo": "Singapore Low-End",
+                "urls": [
+                    "sg.callisto.herominers.com:10210"
+                ]
+            },
+            {
+                "geo": "Singapore Mid-Range",
+                "urls": [
+                    "sg.callisto.herominers.com:10211"
+                ]
+            },
+            {
+                "geo": "Singapore NiceHash",
+                "urls": [
+                    "sg.callisto.herominers.com:10212"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
+                "claymore_user_config": "-allpools 0"
+            },
+            "ethminer": {
+                "ver":"0.18.0",
+                "cuda": 1,
+                "fork":"ethash",
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"ethash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethstratum",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ETHASH",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "SRBMiner-MULTI": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "ethash"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "EXP",
+        "servers": [
+            {
+                "geo": "Germany Low-End",
+                "urls": [
+                    "expanse.herominers.com:10180"
+                ]
+            },
+            {
+                "geo": "Germany Mid-Range",
+                "urls": [
+                    "expanse.herominers.com:10181"
+                ]
+            },
+            {
+                "geo": "Germany NiceHash",
+                "urls": [
+                    "expanse.herominers.com:10182"
+                ]
+            },
+            {
+                "geo": "Finland Low-End",
+                "urls": [
+                    "fi.expanse.herominers.com:10180"
+                ]
+            },
+            {
+                "geo": "Finland Mid-Range",
+                "urls": [
+                    "fi.expanse.herominers.com:10181"
+                ]
+            },
+            {
+                "geo": "Finland NiceHash",
+                "urls": [
+                    "fi.expanse.herominers.com:10182"
+                ]
+            },
+            {
+                "geo": "Canada Low-End",
+                "urls": [
+                    "ca.expanse.herominers.com:10180"
+                ]
+            },
+            {
+                "geo": "Canada Mid-Range",
+                "urls": [
+                    "ca.expanse.herominers.com:10181"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.expanse.herominers.com:10182"
+                ]
+            },
+            {
+                "geo": "HongKong Low-End",
+                "urls": [
+                    "hk.expanse.herominers.com:10180"
+                ]
+            },
+            {
+                "geo": "HongKong Mid-Range",
+                "urls": [
+                    "hk.expanse.herominers.com:10181"
+                ]
+            },
+            {
+                "geo": "HongKong NiceHash",
+                "urls": [
+                    "hk.expanse.herominers.com:10182"
+                ]
+            },
+            {
+                "geo": "Singapore Low-End",
+                "urls": [
+                    "sg.expanse.herominers.com:10180"
+                ]
+            },
+            {
+                "geo": "Singapore Mid-Range",
+                "urls": [
+                    "sg.expanse.herominers.com:10181"
+                ]
+            },
+            {
+                "geo": "Singapore NiceHash",
+                "urls": [
+                    "sg.expanse.herominers.com:10182"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
+                "claymore_user_config": "-allpools 0"
+            },
+            "ethminer": {
+                "ver":"0.18.0",
+                "cuda": 1,
+                "fork":"ethash",
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"ethash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethstratum",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ETHASH",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "SRBMiner-MULTI": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "ethash"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "CTXC",
+        "servers": [
+            {
+                "geo": "Germany Low-End",
+                "urls": [
+                    "cortex.herominers.com:10320"
+                ]
+            },
+            {
+                "geo": "Germany Mid-Range",
+                "urls": [
+                    "cortex.herominers.com:10321"
+                ]
+            },
+            {
+                "geo": "Germany High-End",
+                "urls": [
+                    "cortex.herominers.com:10322"
+                ]
+            },
+            {
+                "geo": "Finland Low-End",
+                "urls": [
+                    "fi.cortex.herominers.com:10320"
+                ]
+            },
+            {
+                "geo": "Finland Mid-Range",
+                "urls": [
+                    "fi.cortex.herominers.com:10321"
+                ]
+            },
+            {
+                "geo": "Finland High-End",
+                "urls": [
+                    "fi.cortex.herominers.com:10322"
+                ]
+            },
+            {
+                "geo": "Canada Low-End",
+                "urls": [
+                    "ca.cortex.herominers.com:10320"
+                ]
+            },
+            {
+                "geo": "Canada Mid-Range",
+                "urls": [
+                    "ca.cortex.herominers.com:10321"
+                ]
+            },
+            {
+                "geo": "Canada High-End",
+                "urls": [
+                    "ca.cortex.herominers.com:10322"
+                ]
+            },
+            {
+                "geo": "HongKong Low-End",
+                "urls": [
+                    "hk.cortex.herominers.com:10320"
+                ]
+            },
+            {
+                "geo": "HongKong Mid-Range",
+                "urls": [
+                    "hk.cortex.herominers.com:10321"
+                ]
+            },
+            {
+                "geo": "HongKong High-End",
+                "urls": [
+                    "hk.cortex.herominers.com:10322"
+                ]
+            },
+            {
+                "geo": "Singapore Low-End",
+                "urls": [
+                    "sg.cortex.herominers.com:10320"
+                ]
+            },
+            {
+                "geo": "Singapore Mid-Range",
+                "urls": [
+                    "sg.cortex.herominers.com:10321"
+                ]
+            },
+            {
+                "geo": "Singapore High-End",
+                "urls": [
+                    "sg.cortex.herominers.com:10322"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "cortex",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "CTXC",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "cortex-miner":{
+                "algo":"cuckoo",
+                "server":"%URL_HOST%",
+                "port":"%URL_PORT%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "BEAM",
+        "servers": [
+            {
+                "geo": "Germany Low-End",
+                "urls": [
+                    "beam.herominers.com:10230"
+                ]
+            },
+            {
+                "geo": "Germany Mid-Range",
+                "urls": [
+                    "beam.herominers.com:10231"
+                ]
+            },
+            {
+                "geo": "Germany NiceHash",
+                "urls": [
+                    "beam.herominers.com:10232"
+                ]
+            },
+            {
+                "geo": "Finland Low-End",
+                "urls": [
+                    "fi.beam.herominers.com:10230"
+                ]
+            },
+            {
+                "geo": "Finland Mid-Range",
+                "urls": [
+                    "fi.beam.herominers.com:10231"
+                ]
+            },
+            {
+                "geo": "Finland NiceHash",
+                "urls": [
+                    "fi.beam.herominers.com:10232"
+                ]
+            },
+            {
+                "geo": "Canada Low-End",
+                "urls": [
+                    "ca.beam.herominers.com:10230"
+                ]
+            },
+            {
+                "geo": "Canada Mid-Range",
+                "urls": [
+                    "ca.beam.herominers.com:10231"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.beam.herominers.com:10232"
+                ]
+            },
+            {
+                "geo": "HongKong Low-End",
+                "urls": [
+                    "hk.beam.herominers.com:10230"
+                ]
+            },
+            {
+                "geo": "HongKong Mid-Range",
+                "urls": [
+                    "hk.beam.herominers.com:10231"
+                ]
+            },
+            {
+                "geo": "HongKong NiceHash",
+                "urls": [
+                    "hk.beam.herominers.com:10232"
+                ]
+            },
+            {
+                "geo": "Singapore Low-End",
+                "urls": [
+                    "sg.beam.herominers.com:10230"
+                ]
+            },
+            {
+                "geo": "Singapore Mid-Range",
+                "urls": [
+                    "sg.beam.herominers.com:10231"
+                ]
+            },
+            {
+                "geo": "Singapore NiceHash",
+                "urls": [
+                    "sg.beam.herominers.com:10232"
+                ]
+            }
+        ],
+        "miners": {
+            "bminer": {
+                "algo": "beam+ssl",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
+            },
+            "gminer": {
+                "algo": "beamhash",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "tls": "1"
+            },
+            "lolminer": {
+                "algo": "BEAM",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x"
+            },
+            "miniz": {
+                "algo": "beam3",
+                "tls": "1",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nbminer":{
+                "algo":"beamv3",
+                "url":"%URL%",
+                "template":"%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "GRIN",
+        "servers": [
+            {
+                "geo": "Germany Low-End",
+                "urls": [
+                    "grin.herominers.com:10300"
+                ]
+            },
+            {
+                "geo": "Germany Mid-Range",
+                "urls": [
+                    "grin.herominers.com:10301"
+                ]
+            },
+            {
+                "geo": "Germany NiceHash",
+                "urls": [
+                    "grin.herominers.com:10302"
+                ]
+            },
+            {
+                "geo": "Finland Low-End",
+                "urls": [
+                    "fi.grin.herominers.com:10300"
+                ]
+            },
+            {
+                "geo": "Finland Mid-Range",
+                "urls": [
+                    "fi.grin.herominers.com:10301"
+                ]
+            },
+            {
+                "geo": "Finland NiceHash",
+                "urls": [
+                    "fi.grin.herominers.com:10302"
+                ]
+            },
+            {
+                "geo": "Canada Low-End",
+                "urls": [
+                    "ca.grin.herominers.com:10300"
+                ]
+            },
+            {
+                "geo": "Canada Mid-Range",
+                "urls": [
+                    "ca.grin.herominers.com:10301"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.grin.herominers.com:10302"
+                ]
+            },
+            {
+                "geo": "HongKong Low-End",
+                "urls": [
+                    "hk.grin.herominers.com:10300"
+                ]
+            },
+            {
+                "geo": "HongKong Mid-Range",
+                "urls": [
+                    "hk.grin.herominers.com:10301"
+                ]
+            },
+            {
+                "geo": "HongKong NiceHash",
+                "urls": [
+                    "hk.grin.herominers.com:10302"
+                ]
+            },
+            {
+                "geo": "Singapore Low-End",
+                "urls": [
+                    "sg.grin.herominers.com:10300"
+                ]
+            },
+            {
+                "geo": "Singapore Mid-Range",
+                "urls": [
+                    "sg.grin.herominers.com:10301"
+                ]
+            },
+            {
+                "geo": "Singapore NiceHash",
+                "urls": [
+                    "sg.grin.herominers.com:10302"
+                ]
+            }
+        ],
+        "miners":{
+            "gminer":{
+                "algo":"grin32",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%"
+            },
+            "lolminer":{
+                "algo":"GRIN-C32",
+                "server":"%URL_HOST%",
+                "port":"%URL_PORT%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%"
+            },
+            "bminer":{
+                "algo":"cuckatoo32",
+                "url":"%URL%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%"
+            },
+            "nbminer":{
+                "url":"%URL%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "algo":"cuckatoo32"
+            }
+        }
+    },
+    {
+        "coin": "MWC",
+        "servers": [
+            {
+                "geo": "Germany Low-End",
+                "urls": [
+                    "mwc.herominers.com:10310"
+                ]
+            },
+            {
+                "geo": "Germany Mid-Range",
+                "urls": [
+                    "mwc.herominers.com:10311"
+                ]
+            },
+            {
+                "geo": "Germany NiceHash",
+                "urls": [
+                    "mwc.herominers.com:10312"
+                ]
+            },
+            {
+                "geo": "Finland Low-End",
+                "urls": [
+                    "fi.mwc.herominers.com:10310"
+                ]
+            },
+            {
+                "geo": "Finland Mid-Range",
+                "urls": [
+                    "fi.mwc.herominers.com:10311"
+                ]
+            },
+            {
+                "geo": "Finland NiceHash",
+                "urls": [
+                    "fi.mwc.herominers.com:10312"
+                ]
+            },
+            {
+                "geo": "Canada Low-End",
+                "urls": [
+                    "ca.mwc.herominers.com:10310"
+                ]
+            },
+            {
+                "geo": "Canada Mid-Range",
+                "urls": [
+                    "ca.mwc.herominers.com:10311"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.mwc.herominers.com:10312"
+                ]
+            },
+            {
+                "geo": "HongKong Low-End",
+                "urls": [
+                    "hk.mwc.herominers.com:10310"
+                ]
+            },
+            {
+                "geo": "HongKong Mid-Range",
+                "urls": [
+                    "hk.mwc.herominers.com:10311"
+                ]
+            },
+            {
+                "geo": "HongKong NiceHash",
+                "urls": [
+                    "hk.mwc.herominers.com:10312"
+                ]
+            },
+            {
+                "geo": "Singapore Low-End",
+                "urls": [
+                    "sg.mwc.herominers.com:10310"
+                ]
+            },
+            {
+                "geo": "Singapore Mid-Range",
+                "urls": [
+                    "sg.mwc.herominers.com:10311"
+                ]
+            },
+            {
+                "geo": "Singapore NiceHash",
+                "urls": [
+                    "sg.mwc.herominers.com:10312"
+                ]
+            }
+        ],
+        "miners":{
+            "gminer":{
+                "algo":"grin31",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%"
+            },
+            "lolminer":{
+                "algo":"MWC-C31",
+                "server":"%URL_HOST%",
+                "port":"%URL_PORT%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%"
+            },
+            "bminer":{
+                "algo":"cuckatoo31",
+                "url":"%URL%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%"
+            },
+            "nbminer":{
+                "url":"%URL%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "algo":"cuckatoo"
+            }
+        }
+    },
+    {
         "coin": "TUBE",
         "servers": [
             {
@@ -774,7 +2118,7 @@
                 ]
             },
             {
-                "geo": "Germany Mid-End CPU",
+                "geo": "Germany Mid-Range CPU",
                 "urls": [
                     "monero.herominers.com:10191"
                 ]
@@ -798,7 +2142,7 @@
                 ]
             },
             {
-                "geo": "Germany Mid-End CPU",
+                "geo": "Germany Mid-Range CPU",
                 "ssl_urls": [
                     "monero.herominers.com:10195"
                 ]
@@ -816,7 +2160,7 @@
                 ]
             },
             {
-                "geo": "Finland Mid-End CPU",
+                "geo": "Finland Mid-Range CPU",
                 "urls": [
                     "fi.monero.herominers.com:10191"
                 ]
@@ -840,7 +2184,7 @@
                 ]
             },
             {
-                "geo": "Finland Mid-End CPU",
+                "geo": "Finland Mid-Range CPU",
                 "ssl_urls": [
                     "fi.monero.herominers.com:10195"
                 ]
@@ -858,7 +2202,7 @@
                 ]
             },
             {
-                "geo": "Canada Mid-End CPU",
+                "geo": "Canada Mid-Range CPU",
                 "urls": [
                     "ca.monero.herominers.com:10191"
                 ]
@@ -882,7 +2226,7 @@
                 ]
             },
             {
-                "geo": "Canada Mid-End CPU",
+                "geo": "Canada Mid-Range CPU",
                 "ssl_urls": [
                     "ca.monero.herominers.com:10195"
                 ]
@@ -900,7 +2244,7 @@
                 ]
             },
             {
-                "geo": "HongKong Mid-End CPU",
+                "geo": "HongKong Mid-Range CPU",
                 "urls": [
                     "hk.monero.herominers.com:10191"
                 ]
@@ -924,7 +2268,7 @@
                 ]
             },
             {
-                "geo": "HongKong Mid-End CPU",
+                "geo": "HongKong Mid-Range CPU",
                 "ssl_urls": [
                     "hk.monero.herominers.com:10195"
                 ]
@@ -942,7 +2286,7 @@
                 ]
             },
             {
-                "geo": "Singapore Mid-End CPU",
+                "geo": "Singapore Mid-Range CPU",
                 "urls": [
                     "sg.monero.herominers.com:10191"
                 ]
@@ -966,7 +2310,7 @@
                 ]
             },
             {
-                "geo": "Singapore Mid-End CPU",
+                "geo": "Singapore Mid-Range CPU",
                 "ssl_urls": [
                     "sg.monero.herominers.com:10195"
                 ]
@@ -1715,7 +3059,7 @@
                 ]
             },
             {
-                "geo": "Germany Mid-End CPU",
+                "geo": "Germany Mid-Range CPU",
                 "urls": [
                     "scala.herominers.com:10131"
                 ]
@@ -1739,7 +3083,7 @@
                 ]
             },
             {
-                "geo": "Germany Mid-End CPU",
+                "geo": "Germany Mid-Range CPU",
                 "ssl_urls": [
                     "scala.herominers.com:10135"
                 ]
@@ -1757,7 +3101,7 @@
                 ]
             },
             {
-                "geo": "Finland Mid-End CPU",
+                "geo": "Finland Mid-Range CPU",
                 "urls": [
                     "fi.scala.herominers.com:10131"
                 ]
@@ -1781,7 +3125,7 @@
                 ]
             },
             {
-                "geo": "Finland Mid-End CPU",
+                "geo": "Finland Mid-Range CPU",
                 "ssl_urls": [
                     "fi.scala.herominers.com:10135"
                 ]
@@ -1799,7 +3143,7 @@
                 ]
             },
             {
-                "geo": "Canada Mid-End CPU",
+                "geo": "Canada Mid-Range CPU",
                 "urls": [
                     "ca.scala.herominers.com:10131"
                 ]
@@ -1823,7 +3167,7 @@
                 ]
             },
             {
-                "geo": "Canada Mid-End CPU",
+                "geo": "Canada Mid-Range CPU",
                 "ssl_urls": [
                     "ca.scala.herominers.com:10135"
                 ]
@@ -1841,7 +3185,7 @@
                 ]
             },
             {
-                "geo": "HongKong Mid-End CPU",
+                "geo": "HongKong Mid-Range CPU",
                 "urls": [
                     "hk.scala.herominers.com:10131"
                 ]
@@ -1865,7 +3209,7 @@
                 ]
             },
             {
-                "geo": "HongKong Mid-End CPU",
+                "geo": "HongKong Mid-Range CPU",
                 "ssl_urls": [
                     "hk.scala.herominers.com:10135"
                 ]
@@ -1883,7 +3227,7 @@
                 ]
             },
             {
-                "geo": "Singapore Mid-End CPU",
+                "geo": "Singapore Mid-Range CPU",
                 "urls": [
                     "sg.scala.herominers.com:10131"
                 ]
@@ -1907,7 +3251,7 @@
                 ]
             },
             {
-                "geo": "Singapore Mid-End CPU",
+                "geo": "Singapore Mid-Range CPU",
                 "ssl_urls": [
                     "sg.scala.herominers.com:10135"
                 ]
@@ -1939,7 +3283,7 @@
                 ]
             },
             {
-                "geo": "Mid-End CPU",
+                "geo": "Mid-Range CPU",
                 "urls": [
                     "qrl.herominers.com:10371"
                 ]
@@ -1963,7 +3307,7 @@
                 ]
             },
             {
-                "geo": "Mid-End CPU",
+                "geo": "Mid-Range CPU",
                 "ssl_urls": [
                     "qrl.herominers.com:10375"
                 ]
@@ -2023,7 +3367,7 @@
                 ]
             },
             {
-                "geo": "Germany Mid-End CPU",
+                "geo": "Germany Mid-Range CPU",
                 "urls": [
                     "dero.herominers.com:10122"
                 ]
@@ -2047,7 +3391,7 @@
                 ]
             },
             {
-                "geo": "Germany Mid-End CPU",
+                "geo": "Germany Mid-Range CPU",
                 "ssl_urls": [
                     "dero.herominers.com:10126"
                 ]
@@ -2071,7 +3415,7 @@
                 ]
             },
             {
-                "geo": "Finland Mid-End CPU",
+                "geo": "Finland Mid-Range CPU",
                 "urls": [
                     "fi.dero.herominers.com:10122"
                 ]
@@ -2095,7 +3439,7 @@
                 ]
             },
             {
-                "geo": "Finland Mid-End CPU",
+                "geo": "Finland Mid-Range CPU",
                 "ssl_urls": [
                     "fi.dero.herominers.com:10126"
                 ]
@@ -2119,7 +3463,7 @@
                 ]
             },
             {
-                "geo": "Canada Mid-End CPU",
+                "geo": "Canada Mid-Range CPU",
                 "urls": [
                     "ca.dero.herominers.com:10122"
                 ]
@@ -2143,7 +3487,7 @@
                 ]
             },
             {
-                "geo": "Canada Mid-End CPU",
+                "geo": "Canada Mid-Range CPU",
                 "ssl_urls": [
                     "ca.dero.herominers.com:10126"
                 ]
@@ -2167,7 +3511,7 @@
                 ]
             },
             {
-                "geo": "HongKong Mid-End CPU",
+                "geo": "HongKong Mid-Range CPU",
                 "urls": [
                     "hk.dero.herominers.com:10122"
                 ]
@@ -2191,7 +3535,7 @@
                 ]
             },
             {
-                "geo": "HongKong Mid-End CPU",
+                "geo": "HongKong Mid-Range CPU",
                 "ssl_urls": [
                     "hk.dero.herominers.com:10126"
                 ]
@@ -2215,7 +3559,7 @@
                 ]
             },
             {
-                "geo": "Singapore Mid-End CPU",
+                "geo": "Singapore Mid-Range CPU",
                 "urls": [
                     "sg.dero.herominers.com:10122"
                 ]
@@ -2239,7 +3583,7 @@
                 ]
             },
             {
-                "geo": "Singapore Mid-End CPU",
+                "geo": "Singapore Mid-Range CPU",
                 "ssl_urls": [
                     "sg.dero.herominers.com:10126"
                 ]
@@ -2921,7 +4265,7 @@
                 ]
             },
             {
-                "geo": "Germany Mid-End CPU",
+                "geo": "Germany Mid-Range CPU",
                 "urls": [
                     "turtlecoin.herominers.com:10381"
                 ]
@@ -2945,7 +4289,7 @@
                 ]
             },
             {
-                "geo": "Germany Mid-End CPU",
+                "geo": "Germany Mid-Range CPU",
                 "ssl_urls": [
                     "turtlecoin.herominers.com:10385"
                 ]
@@ -2963,7 +4307,7 @@
                 ]
             },
             {
-                "geo": "Finland Mid-End CPU",
+                "geo": "Finland Mid-Range CPU",
                 "urls": [
                     "fi.turtlecoin.herominers.com:10381"
                 ]
@@ -2987,7 +4331,7 @@
                 ]
             },
             {
-                "geo": "Finland Mid-End CPU",
+                "geo": "Finland Mid-Range CPU",
                 "ssl_urls": [
                     "fi.turtlecoin.herominers.com:10385"
                 ]
@@ -3005,7 +4349,7 @@
                 ]
             },
             {
-                "geo": "Canada Mid-End CPU",
+                "geo": "Canada Mid-Range CPU",
                 "urls": [
                     "ca.turtlecoin.herominers.com:10381"
                 ]
@@ -3029,7 +4373,7 @@
                 ]
             },
             {
-                "geo": "Canada Mid-End CPU",
+                "geo": "Canada Mid-Range CPU",
                 "ssl_urls": [
                     "ca.turtlecoin.herominers.com:10385"
                 ]
@@ -3047,7 +4391,7 @@
                 ]
             },
             {
-                "geo": "HongKong Mid-End CPU",
+                "geo": "HongKong Mid-Range CPU",
                 "urls": [
                     "hk.turtlecoin.herominers.com:10381"
                 ]
@@ -3071,7 +4415,7 @@
                 ]
             },
             {
-                "geo": "HongKong Mid-End CPU",
+                "geo": "HongKong Mid-Range CPU",
                 "ssl_urls": [
                     "hk.turtlecoin.herominers.com:10385"
                 ]
@@ -3089,7 +4433,7 @@
                 ]
             },
             {
-                "geo": "Singapore Mid-End CPU",
+                "geo": "Singapore Mid-Range CPU",
                 "urls": [
                     "sg.turtlecoin.herominers.com:10381"
                 ]
@@ -3113,7 +4457,7 @@
                 ]
             },
             {
-                "geo": "Singapore Mid-End CPU",
+                "geo": "Singapore Mid-Range CPU",
                 "ssl_urls": [
                     "sg.turtlecoin.herominers.com:10385"
                 ]
@@ -3171,7 +4515,7 @@
                 ]
             },
             {
-                "geo": "Germany Mid-End CPU",
+                "geo": "Germany Mid-Range CPU",
                 "urls": [
                     "arqma.herominers.com:10641"
                 ]
@@ -3195,7 +4539,7 @@
                 ]
             },
             {
-                "geo": "Germany Mid-End CPU",
+                "geo": "Germany Mid-Range CPU",
                 "ssl_urls": [
                     "arqma.herominers.com:10645"
                 ]
@@ -3213,7 +4557,7 @@
                 ]
             },
             {
-                "geo": "Finland Mid-End CPU",
+                "geo": "Finland Mid-Range CPU",
                 "urls": [
                     "fi.arqma.herominers.com:10641"
                 ]
@@ -3237,7 +4581,7 @@
                 ]
             },
             {
-                "geo": "Finland Mid-End CPU",
+                "geo": "Finland Mid-Range CPU",
                 "ssl_urls": [
                     "fi.arqma.herominers.com:10645"
                 ]
@@ -3255,7 +4599,7 @@
                 ]
             },
             {
-                "geo": "Canada Mid-End CPU",
+                "geo": "Canada Mid-Range CPU",
                 "urls": [
                     "ca.arqma.herominers.com:10641"
                 ]
@@ -3279,7 +4623,7 @@
                 ]
             },
             {
-                "geo": "Canada Mid-End CPU",
+                "geo": "Canada Mid-Range CPU",
                 "ssl_urls": [
                     "ca.arqma.herominers.com:10645"
                 ]
@@ -3297,7 +4641,7 @@
                 ]
             },
             {
-                "geo": "HongKong Mid-End CPU",
+                "geo": "HongKong Mid-Range CPU",
                 "urls": [
                     "hk.arqma.herominers.com:10641"
                 ]
@@ -3321,7 +4665,7 @@
                 ]
             },
             {
-                "geo": "HongKong Mid-End CPU",
+                "geo": "HongKong Mid-Range CPU",
                 "ssl_urls": [
                     "hk.arqma.herominers.com:10645"
                 ]
@@ -3339,7 +4683,7 @@
                 ]
             },
             {
-                "geo": "Singapore Mid-End CPU",
+                "geo": "Singapore Mid-Range CPU",
                 "urls": [
                     "sg.arqma.herominers.com:10641"
                 ]
@@ -3363,7 +4707,7 @@
                 ]
             },
             {
-                "geo": "Singapore Mid-End CPU",
+                "geo": "Singapore Mid-Range CPU",
                 "ssl_urls": [
                     "sg.arqma.herominers.com:10645"
                 ]
@@ -3661,7 +5005,7 @@
                 ]
             },
             {
-                "geo": "Germany Mid-End CPU",
+                "geo": "Germany Mid-Range CPU",
                 "urls": [
                     "wownero.herominers.com:10661"
                 ]
@@ -3685,7 +5029,7 @@
                 ]
             },
             {
-                "geo": "Germany Mid-End CPU",
+                "geo": "Germany Mid-Range CPU",
                 "ssl_urls": [
                     "wownero.herominers.com:10665"
                 ]
@@ -3703,7 +5047,7 @@
                 ]
             },
             {
-                "geo": "Finland Mid-End CPU",
+                "geo": "Finland Mid-Range CPU",
                 "urls": [
                     "fi.wownero.herominers.com:10661"
                 ]
@@ -3727,7 +5071,7 @@
                 ]
             },
             {
-                "geo": "Finland Mid-End CPU",
+                "geo": "Finland Mid-Range CPU",
                 "ssl_urls": [
                     "fi.wownero.herominers.com:10665"
                 ]
@@ -3745,7 +5089,7 @@
                 ]
             },
             {
-                "geo": "Canada Mid-End CPU",
+                "geo": "Canada Mid-Range CPU",
                 "urls": [
                     "ca.wownero.herominers.com:10661"
                 ]
@@ -3769,7 +5113,7 @@
                 ]
             },
             {
-                "geo": "Canada Mid-End CPU",
+                "geo": "Canada Mid-Range CPU",
                 "ssl_urls": [
                     "ca.wownero.herominers.com:10665"
                 ]
@@ -3787,7 +5131,7 @@
                 ]
             },
             {
-                "geo": "HongKong Mid-End CPU",
+                "geo": "HongKong Mid-Range CPU",
                 "urls": [
                     "hk.wownero.herominers.com:10661"
                 ]
@@ -3811,7 +5155,7 @@
                 ]
             },
             {
-                "geo": "HongKong Mid-End CPU",
+                "geo": "HongKong Mid-Range CPU",
                 "ssl_urls": [
                     "hk.wownero.herominers.com:10665"
                 ]
@@ -3829,7 +5173,7 @@
                 ]
             },
             {
-                "geo": "Singapore Mid-End CPU",
+                "geo": "Singapore Mid-Range CPU",
                 "urls": [
                     "sg.wownero.herominers.com:10661"
                 ]
@@ -3853,7 +5197,7 @@
                 ]
             },
             {
-                "geo": "Singapore Mid-End CPU",
+                "geo": "Singapore Mid-Range CPU",
                 "ssl_urls": [
                     "sg.wownero.herominers.com:10665"
                 ]
@@ -3894,252 +5238,6 @@
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "algo": "randomwow"
-            }
-        }
-    },
-    {
-        "coin": "LOKI",
-        "servers": [
-            {
-                "geo": "Germany Low-End CPU",
-                "urls": [
-                    "loki.herominers.com:10110"
-                ]
-            },
-            {
-                "geo": "Germany Mid-End CPU",
-                "urls": [
-                    "loki.herominers.com:10111"
-                ]
-            },
-            {
-                "geo": "Germany High-End CPU",
-                "urls": [
-                    "loki.herominers.com:10112"
-                ]
-            },
-            {
-                "geo": "Germany NiceHash",
-                "urls": [
-                    "loki.herominers.com:10113"
-                ]
-            },
-            {
-                "geo": "Germany Low-End CPU",
-                "ssl_urls": [
-                    "loki.herominers.com:10114"
-                ]
-            },
-            {
-                "geo": "Germany Mid-End CPU",
-                "ssl_urls": [
-                    "loki.herominers.com:10115"
-                ]
-            },
-            {
-                "geo": "Germany High-End CPU",
-                "ssl_urls": [
-                    "loki.herominers.com:10116"
-                ]
-            },
-            {
-                "geo": "Finland Low-End CPU",
-                "urls": [
-                    "fi.loki.herominers.com:10110"
-                ]
-            },
-            {
-                "geo": "Finland Mid-End CPU",
-                "urls": [
-                    "fi.loki.herominers.com:10111"
-                ]
-            },
-            {
-                "geo": "Finland High-End CPU",
-                "urls": [
-                    "fi.loki.herominers.com:10112"
-                ]
-            },
-            {
-                "geo": "Finland NiceHash",
-                "urls": [
-                    "fi.loki.herominers.com:10113"
-                ]
-            },
-            {
-                "geo": "Finland Low-End CPU",
-                "ssl_urls": [
-                    "fi.loki.herominers.com:10114"
-                ]
-            },
-            {
-                "geo": "Finland Mid-End CPU",
-                "ssl_urls": [
-                    "fi.loki.herominers.com:10115"
-                ]
-            },
-            {
-                "geo": "Finland High-End CPU",
-                "ssl_urls": [
-                    "fi.loki.herominers.com:10116"
-                ]
-            },
-            {
-                "geo": "Canada Low-End CPU",
-                "urls": [
-                    "ca.loki.herominers.com:10110"
-                ]
-            },
-            {
-                "geo": "Canada Mid-End CPU",
-                "urls": [
-                    "ca.loki.herominers.com:10111"
-                ]
-            },
-            {
-                "geo": "Canada High-End CPU",
-                "urls": [
-                    "ca.loki.herominers.com:10112"
-                ]
-            },
-            {
-                "geo": "Canada NiceHash",
-                "urls": [
-                    "ca.loki.herominers.com:10113"
-                ]
-            },
-            {
-                "geo": "Canada Low-End CPU",
-                "ssl_urls": [
-                    "ca.loki.herominers.com:10114"
-                ]
-            },
-            {
-                "geo": "Canada Mid-End CPU",
-                "ssl_urls": [
-                    "ca.loki.herominers.com:10115"
-                ]
-            },
-            {
-                "geo": "Canada High-End CPU",
-                "ssl_urls": [
-                    "ca.loki.herominers.com:10116"
-                ]
-            },
-            {
-                "geo": "HongKong Low-End CPU",
-                "urls": [
-                    "hk.loki.herominers.com:10110"
-                ]
-            },
-            {
-                "geo": "HongKong Mid-End CPU",
-                "urls": [
-                    "hk.loki.herominers.com:10111"
-                ]
-            },
-            {
-                "geo": "HongKong High-End CPU",
-                "urls": [
-                    "hk.loki.herominers.com:10112"
-                ]
-            },
-            {
-                "geo": "HongKong NiceHash",
-                "urls": [
-                    "hk.loki.herominers.com:10113"
-                ]
-            },
-            {
-                "geo": "HongKong Low-End CPU",
-                "ssl_urls": [
-                    "hk.loki.herominers.com:10114"
-                ]
-            },
-            {
-                "geo": "HongKong Mid-End CPU",
-                "ssl_urls": [
-                    "hk.loki.herominers.com:10115"
-                ]
-            },
-            {
-                "geo": "HongKong High-End CPU",
-                "ssl_urls": [
-                    "hk.loki.herominers.com:10116"
-                ]
-            },
-            {
-                "geo": "Singapore Low-End CPU",
-                "urls": [
-                    "sg.loki.herominers.com:10110"
-                ]
-            },
-            {
-                "geo": "Singapore Mid-End CPU",
-                "urls": [
-                    "sg.loki.herominers.com:10111"
-                ]
-            },
-            {
-                "geo": "Singapore High-End CPU",
-                "urls": [
-                    "sg.loki.herominers.com:10112"
-                ]
-            },
-            {
-                "geo": "Singapore NiceHash",
-                "urls": [
-                    "sg.loki.herominers.com:10113"
-                ]
-            },
-            {
-                "geo": "Singapore Low-End CPU",
-                "ssl_urls": [
-                    "sg.loki.herominers.com:10114"
-                ]
-            },
-            {
-                "geo": "Singapore Mid-End CPU",
-                "ssl_urls": [
-                    "sg.loki.herominers.com:10115"
-                ]
-            },
-            {
-                "geo": "Singapore High-End CPU",
-                "ssl_urls": [
-                    "sg.loki.herominers.com:10116"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"rx/loki\""
-            },
-            "xmrig-new": {
-                "cpu": "1",
-                "url": "%URL%",
-                "algo": "rx/loki",
-                "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
-            },
-            "xmr-stak": {
-                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
-                "nvidia": "\"gpu_threads_conf\" : [],",
-                "url": "%URL%",
-                "fork": "randomx",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\":\"loki\""
-            },
-            "SRBMiner-MULTI": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "randomxl"
             }
         }
     },
