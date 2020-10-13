@@ -191,18 +191,13 @@
             }
         ],
         "miners": {
-            "ccminer": {
-                "fork": "enemy",
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%/%EMAIL%",
-                "ccalgo": "x16rv2",
-                "ccpass": "x"
-            },
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16rv2",
+            "_prototype": "miners_kawpow",
+            "nanominer": {
+                "algo": "kawpow",
+                "url": "%URL%",
+                "template": "%WAL%",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
             }
         }
     },

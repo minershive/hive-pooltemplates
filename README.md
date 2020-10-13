@@ -44,6 +44,7 @@ Available miners:
 - gringoldminer - Cuckaroo29 miner (AMD/NVidia)
 - grinminer - Cuckaroo29 and Cuckatoo31 miner (AMD/NVidia)
 - grinprominer - improved version of grinminer (AMD/NVidia)
+- hellminer - CPU miner for VRSC/VerusCoin
 - hspminerae - CUDA AE miner (NVidia)
 - kbminer - AE/Cuckaroo29/Cuckatoo31/VDS miner (AMD/NVidia)
 - lolminer - equihash variants OpenCL miner
@@ -73,6 +74,7 @@ Available miners:
 - xmrig-new - XMRig (unified)  CPU/OCL/CUDA miner for Argon2/RandomX/Cryptonight based algos (available forks: epic, xmrig, mo, randomsfx, xlarig)
 - xmrig-amd - XMRig (AMD cryptonight variants miner with forks xmrigcc, hycon)
 - xmrig-nvidia - XMRig (NVidia cryptonight variants miner  with forks fruityminer, hycon)
+- xpmminer - XPMclient (XPM/Primecoin miner by eXtremal-ik7 for OpenCL and CUDA)
 - zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
 - custom - Custom miner package
 

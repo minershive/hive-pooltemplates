@@ -579,8 +579,11 @@
             }
         ],
         "miners": {
-            "claymore": {
+           "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3, ALLPOOLS: 1, ALLCOINS: 1"
+            },
+            "phoenixminer": {
+                "url": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 4"
             },
             "ethminer": {
                 "cuda": 1,
@@ -590,19 +593,11 @@
                 "server": "stratum2+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 4"
-            },
-            "finminer": {
+            "teamredminer": {
                 "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "rigName = %WORKER_NAME%"
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
             },
             "nanominer": {
                 "algo": "ethash",
@@ -611,12 +606,35 @@
                 "pass": "x",
                 "user_config": "rigName = %WORKER_NAME%"
             },
+            "nbminer": {
+                "url": "nicehash+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
             "gminer": {
                 "algo": "ethash",
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "--proto stratum"
+            },
+            "tt-miner": {
+                "url": "%URL%",
+                "algo": "ETHASH",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-RH\n"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1887,6 +1905,292 @@
             "gminer": {
                 "algo": "hns",
                 "pass": "X",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "Nicehash-KawPow",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "kawpow.eu.nicehash.com:3385"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "kawpow.usa.nicehash.com:3385"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "kawpow.hk.nicehash.com:3385"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "kawpow.jp.nicehash.com:3385"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "kawpow.br.nicehash.com:3385"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "kawpow.in.nicehash.com:3385"
+                ]
+            }
+        ],
+        "miners": {
+            "ethminer":{
+                "fork":"kawpowminer",
+                "cuda":0,
+                "opencl":0,
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%"
+            },
+            "t-rex": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer":{
+                "url":"%URL%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%",
+                "algo":"kawpow"
+             },
+            "nanominer": {
+                "algo": "kawpow",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "rigName = %WORKER_NAME%"
+            },
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp:\/\/%URL%",
+                "ccalgo": "kawpow",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "gminer":{
+                "algo":"kawpow",
+                "server":"%URL_HOST%",
+                "port":"%URL_PORT%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "raven",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "algo": "kawpow",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "algo": "kawpow",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+    {
+        "coin": "Nicehash-Cuckaroo29bfc",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "cuckaroo29bfc.eu.nicehash.com:3386"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "cuckaroo29bfc.usa.nicehash.com:3386"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "cuckaroo29bfc.hk.nicehash.com:3386"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "cuckaroo29bfc.jp.nicehash.com:3386"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "cuckaroo29bfc.br.nicehash.com:3386"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "cuckaroo29bfc.in.nicehash.com:3386"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "bfc",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "bfc"
+            },
+            "nbminer":{
+                "url":"%URL%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%",
+                "algo":"bfc"
+             }
+        }
+    },
+    {
+        "coin": "Nicehash-BeamV3",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "beamv3.eu.nicehash.com:3387"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "beamv3.usa.nicehash.com:3387"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "beamv3.hk.nicehash.com:3387"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "beamv3.jp.nicehash.com:3387"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "beamv3.br.nicehash.com:3387"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "beamv3.in.nicehash.com:3387"
+                ]
+            }
+        ],
+        "miners": {
+            "miniz": {
+                "algo": "144,5s",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%"
+            },
+            "gminer": {
+                "algo": "beamhashIII",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%"
+            },
+            "lolminer": {
+                "algo": "BEAM-III",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--tls 0"
+            }
+        }
+    },
+    {
+        "coin": "Nicehash-Cuckarooz29",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "cuckarooz29.eu.nicehash.com:3388"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "cuckarooz29.usa.nicehash.com:3388"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "cuckarooz29.hk.nicehash.com:3388"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "cuckarooz29.jp.nicehash.com:3388"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "cuckarooz29.br.nicehash.com:3388"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "cuckarooz29.in.nicehash.com:3388"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "cuckarooz29",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cuckaroo29z"
+            },
+            "lolminer": {
+                "algo": "C29Z",
+                "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
