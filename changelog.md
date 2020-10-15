@@ -1,3 +1,8 @@
+##### 0.6-166@201015 2020-10-15
+*   Fixed hashrate watchdog (wd was not working in some cases)
+*   lolMiner v1.11 (added experimental ZOMBIE mode for 4G AMD GPUs: allow continue mining Ethash above the 4G DAG size limit with some time memory trade of; completed rework of Ethash memory allocation strategies)
+*   TeamRedMiner v0.7.14 (Ethash: verified Linux support for 4GB gpus up to and including epoch 381; Ethash: added support for extended 4GB mining from epoch 382 and up; Kawpow: cleaned up false hw errs for some block heights)
+
 ##### 0.6-165@201012 2020-10-12
 *   SRBMiner-Multi v0.5.4 (added 'argon2id_chukwa2' algorithm for CPU & GPU, fixed bug that caused invalid shares sometimes in multi algorithm mode mining, changed default value for '--retry-time' from 15 to 5 seconds; minor bug fixes)
 *   CPUminer-Opt-rplant v4.5.17 (added new algo for Qureno: 'x33' renamed to 'qureno')
