@@ -116,69 +116,6 @@
         }
     },
     {
-        "coin": "LOKI",
-        "servers": [
-            {
-                "geo": "Low-End",
-                "urls": [
-                    "pool.hashvault.pro:3333"
-                ],
-                "ssl_urls": [
-                    "pool.hashvault.pro:3333"
-                ]
-            },
-            {
-                "geo": "Mid-End",
-                "urls": [
-                    "pool.hashvault.pro:5555"
-                ],
-                "ssl_urls": [
-                    "pool.hashvault.pro:5555"
-                ]
-            },
-            {
-                "geo": "High-End",
-                "urls": [
-                    "pool.hashvault.pro:7777"
-                ],
-                "ssl_urls": [
-                    "pool.hashvault.pro:7777"
-                ]
-            }
-        ],
-        "miners": {
-            "SRBMiner-MULTI": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "randomxl"
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"rx/loki\""
-            },
-            "xmrig-new": {
-                "cpu": "1",
-                "url": "%URL%",
-                "algo": "rx/loki",
-                "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
-            },
-            "xmr-stak": {
-                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
-                "nvidia": "\"gpu_threads_conf\" : [],",
-                "url": "%URL%",
-                "fork": "randomx",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\":\"loki\""
-            }
-        }
-    },
-    {
         "coin": "XHV",
         "servers": [
             {
@@ -216,6 +153,12 @@
                 "fork": "xmrig",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-xhv"
             },
             "teamredminer": {
                 "url": "%URL%",

@@ -14,19 +14,25 @@
                 "geo": "US",
                 "urls": [
                     "us.crazypool.org:7000"
+                ],
+                "ssl_urls": [
+                    "us.crazypool.org:7777"
                 ]
             },
 	    {
                 "geo": "EU",
                 "urls": [
                     "eu.crazypool.org:7000"
+                ],
+                "ssl_urls": [
+                    "eu.crazypool.org:7777"
                 ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins %COIN% -allpools 0 -esm 3 -showdiff 1 -erate 0 -estale 1"
+                "claymore_user_config": "-allcoins %COIN% -allpools 0 -esm 3 -showdiff 1"
             },
             "ethminer": {
                 "cuda": 1,
@@ -64,9 +70,9 @@
                 "pass": "x",
                 "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
             },
-			"teamredminer": {
+	    "teamredminer": {
                 "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
+                "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
             },
@@ -82,6 +88,13 @@
                 "algo": "ethash",
                 "pass": "x",
                 "template": "%WAL%"
+            },
+            "lolminer": {
+                "algo": "ETHASH",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x"
             }
         }
     },
@@ -104,7 +117,7 @@
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins %COIN% -allpools 0 -esm 3 -showdiff 1 -erate 0 -estale 1"
+                "claymore_user_config": "-allcoins %COIN% -allpools 0 -esm 3 -showdiff 1"
             },
             "ethminer": {
                 "cuda": 1,
@@ -142,9 +155,9 @@
                 "pass": "x",
                 "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
             },
-			"teamredminer": {
+	    "teamredminer": {
                 "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
+                "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
             },
@@ -160,6 +173,13 @@
                 "algo": "ethash",
                 "pass": "x",
                 "template": "%WAL%"
+            },
+            "lolminer": {
+                "algo": "ETHASH",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x"
             }
         }
     },
@@ -170,19 +190,25 @@
                 "geo": "US",
                 "urls": [
                     "us.crazypool.org:3333"
+                ],
+                "ssl_urls": [
+                    "us.crazypool.org:5555"
                 ]
             },
 			{
                 "geo": "EU",
                 "urls": [
                     "eu.crazypool.org:3333"
+                ],
+                "ssl_urls": [
+                    "eu.crazypool.org:5555"
                 ]
             }
         ],
         "miners": {
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins %COIN% -allpools 0 -esm 3 -showdiff 1 -erate 0 -estale 1"
+                "claymore_user_config": "-allcoins %COIN% -allpools 0 -esm 3 -showdiff 1"
             },
             "ethminer": {
                 "cuda": 1,
@@ -220,9 +246,9 @@
                 "pass": "x",
                 "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
             },
-			"teamredminer": {
+	    "teamredminer": {
                 "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
+                "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
             },
@@ -238,6 +264,13 @@
                 "algo": "ethash",
                 "pass": "x",
                 "template": "%WAL%"
+            },
+            "lolminer": {
+                "algo": "ETHASH",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x"
             }
         }
     }

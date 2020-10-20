@@ -1,219 +1,23 @@
 [
     {
-        "coin": "UBQ",
+        "coin": "ETH",
         "servers": [
             {
                 "geo": "EU Low Diff",
                 "urls": [
-                    "s1.solopool.org:8005"
+                    "s1.solopool.org:8002"
                 ]
             },
             {
                 "geo": "EU Mid Diff",
                 "urls": [
-                    "s1.solopool.org:7005"
+                    "s1.solopool.org:7002"
                 ]
             },
             {
                 "geo": "EU High Diff",
                 "urls": [
-                    "s1.solopool.org:9005"
-                ]
-            }
-        ],
-        "miners": {
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 2, COIN: %COIN%"
-            }
-        }
-    },
-    {
-        "coin": "DBIX",
-        "servers": [
-            {
-                "geo": "EU Low Diff",
-                "urls": [
-                    "s1.solopool.org:8006"
-                ]
-            },
-            {
-                "geo": "EU Mid Diff",
-                "urls": [
-                    "s1.solopool.org:7006"
-                ]
-            },
-            {
-                "geo": "EU High Diff",
-                "urls": [
-                    "s1.solopool.org:9006"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
-            },
-            "ethminer": {
-                "server": "stratum1+tcp://%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "cuda": 1,
-                "opencl": 0
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "coin = %COIN%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "teamredminer": {
-                "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "gminer": {
-                "algo":"ethash",
-                "server":"%URL_HOST%",
-                "port":"%URL_PORT%",
-                "template":"%WAL%.%WORKER_NAME%",
-                "pass":"x",
-                "user_config":"--proto stratum"
-            },
-            "nanominer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "coin = %COIN%"
-            },
-            "nbminer": {
-                "algo": "ethash",
-                "url": "nicehash+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            }
-        }
-    },
-    {
-        "coin": "EGEM",
-        "servers": [
-            {
-                "geo": "EU Low Diff",
-                "urls": [
-                    "s1.solopool.org:8007"
-                ]
-            },
-            {
-                "geo": "EU Mid Diff",
-                "urls": [
-                    "s1.solopool.org:7007"
-                ]
-            },
-            {
-                "geo": "EU High Diff",
-                "urls": [
-                    "s1.solopool.org:9007"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
-            },
-            "ethminer": {
-                "server": "stratum1+tcp://%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "cuda": 1,
-                "opencl": 0
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "coin = %COIN%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "teamredminer": {
-                "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "gminer": {
-                "algo":"ethash",
-                "server":"%URL_HOST%",
-                "port":"%URL_PORT%",
-                "template":"%WAL%.%WORKER_NAME%",
-                "pass":"x",
-                "user_config":"--proto stratum"
-            },
-            "nanominer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "coin = %COIN%"
-            },
-            "nbminer": {
-                "algo": "ethash",
-                "url": "nicehash+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            }
-        }
-    },
-    {
-        "coin": "EXP",
-        "servers": [
-            {
-                "geo": "EU Low Diff",
-                "urls": [
-                    "s1.solopool.org:8010"
-                ]
-            },
-            {
-                "geo": "EU Mid Diff",
-                "urls": [
-                    "s1.solopool.org:7010"
-                ]
-            },
-            {
-                "geo": "EU High Diff",
-                "urls": [
-                    "s1.solopool.org:9010"
+                    "s1.solopool.org:9002"
                 ]
             }
         ],
@@ -364,108 +168,52 @@
         }
     },
     {
-        "coin": "ETH",
+        "coin": "UBQ",
         "servers": [
             {
                 "geo": "EU Low Diff",
                 "urls": [
-                    "s2.solopool.org:8002"
+                    "s1.solopool.org:8005"
                 ]
             },
             {
                 "geo": "EU Mid Diff",
                 "urls": [
-                    "s2.solopool.org:7002"
+                    "s1.solopool.org:7005"
                 ]
             },
             {
                 "geo": "EU High Diff",
                 "urls": [
-                    "s2.solopool.org:9002"
+                    "s1.solopool.org:9005"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
-            },
-            "ethminer": {
-                "server": "stratum1+tcp://%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "cuda": 1,
-                "opencl": 0
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
             "phoenixminer": {
                 "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "coin = %COIN%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "teamredminer": {
-                "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "gminer": {
-                "algo":"ethash",
-                "server":"%URL_HOST%",
-                "port":"%URL_PORT%",
-                "template":"%WAL%.%WORKER_NAME%",
-                "pass":"x",
-                "user_config":"--proto stratum"
-            },
-            "nanominer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "coin = %COIN%"
-            },
-            "nbminer": {
-                "algo": "ethash",
-                "url": "nicehash+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
             }
         }
     },
     {
-        "coin": "CLO",
+        "coin": "EXP",
         "servers": [
             {
                 "geo": "EU Low Diff",
                 "urls": [
-                    "s2.solopool.org:8006"
+                    "s1.solopool.org:8010"
                 ]
             },
             {
                 "geo": "EU Mid Diff",
                 "urls": [
-                    "s2.solopool.org:7006"
+                    "s1.solopool.org:7010"
                 ]
             },
             {
                 "geo": "EU High Diff",
                 "urls": [
-                    "s2.solopool.org:9006"
+                    "s1.solopool.org:9010"
                 ]
             }
         ],
@@ -537,19 +285,19 @@
             {
                 "geo": "EU Low Diff",
                 "urls": [
-                    "s2.solopool.org:8007"
+                    "s1.solopool.org:8007"
                 ]
             },
             {
                 "geo": "EU Mid Diff",
                 "urls": [
-                    "s2.solopool.org:7007"
+                    "s1.solopool.org:7007"
                 ]
             },
             {
                 "geo": "EU High Diff",
                 "urls": [
-                    "s2.solopool.org:9007"
+                    "s1.solopool.org:9007"
                 ]
             }
         ],
@@ -616,24 +364,24 @@
         }
     },
     {
-        "coin": "ETHO",
+        "coin": "CLO",
         "servers": [
             {
                 "geo": "EU Low Diff",
                 "urls": [
-                    "s2.solopool.org:8008"
+                    "s1.solopool.org:8006"
                 ]
             },
             {
                 "geo": "EU Mid Diff",
                 "urls": [
-                    "s2.solopool.org:7008"
+                    "s1.solopool.org:7006"
                 ]
             },
             {
                 "geo": "EU High Diff",
                 "urls": [
-                    "s2.solopool.org:9008"
+                    "s1.solopool.org:9006"
                 ]
             }
         ],
@@ -742,78 +490,6 @@
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
-            }
-        }
-    },
-    {
-        "coin": "GRIN",
-        "servers": [
-            {
-                "geo": "EU Low Diff",
-                "urls": [
-                    "s3.solopool.org:8001"
-                ]
-            },
-            {
-                "geo": "EU High Diff",
-                "urls": [
-                    "s3.solopool.org:9001"
-                ]
-            }
-        ],
-        "miners": {
-            "gminer": {
-                "algo": "grin29",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "bminer": {
-                "algo": "cuckaroo29z",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            }
-        }
-    },
-    {
-        "coin": "XWP",
-        "servers": [
-            {
-                "geo": "EU Low Diff",
-                "urls": [
-                    "s3.solopool.org:8011"
-                ]
-            },
-            {
-                "geo": "EU High Diff",
-                "urls": [
-                    "s3.solopool.org:9011"
-                ]
-            }
-        ],
-        "miners": {
-            "gminer": {
-                "algo": "swap",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%",
-                "pass": "%WORKER_NAME%"
-            },
-            "nbminer": {
-                "algo": "cuckaroo_swap",
-                "url": "%URL%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%",
-                "pass": "%WORKER_NAME%"
-            },
-            "grinprominer": {
-                "algo": "swap",
-                "url": "%URL%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%",
-                "pass": "%WORKER_NAME%"
             }
         }
     },
@@ -1427,6 +1103,93 @@
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
+            }
+        }
+    },
+    {
+        "coin": "LTC",
+        "servers": [
+            {
+                "geo": "EU Low Diff",
+                "urls": [
+                    "s3.solopool.org:8009"
+                ]
+            },
+            {
+                "geo": "EU Mid Diff",
+                "urls": [
+                    "s3.solopool.org:7009"
+                ]
+            },
+            {
+                "geo": "EU High Diff",
+                "urls": [
+                    "s3.solopool.org:9009"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "DGB",
+        "servers": [
+            {
+                "geo": "EU Low Diff",
+                "urls": [
+                    "s3.solopool.org:8003"
+                ]
+            },
+            {
+                "geo": "EU Mid Diff",
+                "urls": [
+                    "s3.solopool.org:7003"
+                ]
+            },
+            {
+                "geo": "EU High Diff",
+                "urls": [
+                    "s3.solopool.org:9003"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "DGB",
+        "servers": [
+            {
+                "geo": "EU Low Diff",
+                "urls": [
+                    "s3.solopool.org:8004"
+                ]
+            },
+            {
+                "geo": "EU Mid Diff",
+                "urls": [
+                    "s3.solopool.org:7004"
+                ]
+            },
+            {
+                "geo": "EU High Diff",
+                "urls": [
+                    "s3.solopool.org:9004"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }
