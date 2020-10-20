@@ -1,3 +1,12 @@
+##### 0.6-167@201018 2020-10-18
+*   Small fix for `hive-replace` tool (fixed kernel version info on some images)
+*   Improved hashrate watchdog (reduced power usage if no internet connection)
+*   WildRig-Multi v0.28.1 (updated progpow-veil for started testnet; lowered devfee on megabtx and megamec to default 1%)
+*   Gminer v2.29 (caching DAG file, very useful for Ethash+ZIL mining, miner will not spend time on creating DAG file on Ethash/ZIL change after caching; minimize memory allocation for DAG file; fixed "All DevFee mining pool are unavailable" error on Ethash)
+*   T-Rex v0.18.2 (updated 'progpow-veil' algorithm for VEIL's upcoming fork)
+*   XMRig (new) v6.4.0 + CUDA plugin v6.4.0 (RandomX: removed 'rx/loki' algorithm, improved software AES performance, fixed unexpected resume due to disconnect during dataset init, fixed randomx_create_vm call, added huge-pages-jit config parameter; Added 'argon2/chukwav2' algorithm; Added benchmark and stress test; General code improvements; Added more precise hashrate calculation; Fixed libuv performance issue)
+*   NanoMiner: fixed stats for some configurations
+
 ##### 0.6-166@201015 2020-10-15
 *   Fixed hashrate watchdog (wd was not working in some cases)
 *   lolMiner v1.11 (added experimental ZOMBIE mode for 4G AMD GPUs: allow continue mining Ethash above the 4G DAG size limit with some time memory trade of; completed rework of Ethash memory allocation strategies)
