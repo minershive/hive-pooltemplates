@@ -79,7 +79,12 @@
             "worker": "%WORKER_NAME%",
             "template": "%WAL%",
             "user_config": "--disable-cpu"
-        }
+        },
+        "t-rex": {
+	    "url": "%URL%",
+	    "algo": "ethash",
+	    "template": "%WAL%.%WORKER_NAME%"
+	}
     },
 
     "miners_ethash_slash_email": {
@@ -153,7 +158,12 @@
             "port": "%URL_PORT%",
             "server": "%URL_HOST%",
             "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
-        }
+        },
+        "t-rex": {
+	    "url": "%URL%",
+	    "algo": "ethash",
+	    "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+	}
     },
 
 
