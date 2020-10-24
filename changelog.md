@@ -1,3 +1,6 @@
+##### 0.6-168@201024 2020-10-24
+*   TeamRedMiner v0.7.16c (Churkwa2: fixed kernels loading for Radeon VII GPUs, fixed mem footprint for 2GB GPUs)
+
 ##### 0.6-168@201023 2020-10-23
 *   Improved `hive-replace` (added support for XZ images; reduced min ram limit to 3GB; added '--force' to override this limit; added '--safe' option to run replace in screen session so it can be detached and resumed)
 *   Improved `gpu-fans-find` (now can turn LEDs on and off on Nvidia GPU)
