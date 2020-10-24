@@ -8,7 +8,7 @@
 *   TeamRedMiner v0.7.16b (reverted ethash kernels to v0.7.10 for stability purposes; fixed eth+zil mining bug on 4GBs; added trtl_chukwa2 Turtlecoin's new algo without Navi support)
 *   XMRig-XMRigCC v2.8.3 (added turtlecoin Chukwa v2 algo; removed obsolete rx/loki; fixed potential crash when pool user/pass is not initialized)
 *   CPUminer-Opt-rplant v4.5.18 (small bug fixes)
-*   Updated XMRig-CUDA plugin v6.4.1 for XMRig v6.x (fixed broken KawPow)
+*   XMRig v6.x: updated XMRig-CUDA plugin v6.4.1 (fixed broken KawPow)
 
 ##### 0.6-167@201018 2020-10-18
 *   Small fix for `hive-replace` tool (fixed kernel version info on some images)
