@@ -1,3 +1,11 @@
+##### 0.6-169@201027 2020-10-27
+*   Improved software watchdog (added power usage tracking)
+*   Improved `sreboot` command (added support for powercycle as option)
+*   Improved `message` command (improved error response parsing)
+*   Fixed `motd` for PXE rigs
+*   Reworked optional package `repomirror` (added service control utility: see /hive/opt/repomirror/repomirror -h for help; now using lighttpd instead of nginx)
+*   Fixed `selfupgrade` (revert some changes introduced in v0.6-164)
+
 ##### 0.6-168@201024 2020-10-24
 *   TeamRedMiner v0.7.16c (Churkwa2: fixed kernels loading for Radeon VII GPUs, fixed mem footprint for 2GB GPUs)
 
