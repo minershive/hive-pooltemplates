@@ -2,7 +2,7 @@
 *   Improved `motd` command (added memory temp)
 *   Fixed `selfupgrade` (restart watchdog after update)
 *   NBMiner v33.1 (added new algo 'octopus' for mining CFX/Conflux，support both solo mining and pool mining, need Nvidia GPU above 6G; ethash improve performance on Vega & Navi GPUs; beamv3 improve performance on high end 10xx Nvidia GPUs; modify summary output on console, add share statistics for each GPU; ethash fix zero hashrate on certain cases for AMD GPUs; add new option '--share-check', if no share found in a set period of time, miner will reboot. default to 30 minutes. SOLO miners should set this option to 0 to turn off check)
-*   T-Rex v0.18.5 (mnor performance improvements on ethash for Pascal GPUs on some configurations; ethash mining now allow at a decreased hashrate when DAG no longer fits GPU memory)
+*   T-Rex v0.18.5 (minor performance improvements on ethash for Pascal GPUs on some configurations; ethash mining now allow at a decreased hashrate when DAG no longer fits GPU memory)
 *   ETHminer v0.19.0 Release (original release 2020/08/04 from GitHub builded with CUDA 10.1)
 *   ETHminer v0.19.0.1 nhfix (based on release v0.19.0 with fix for Nicehash; available builds with CUDA 10.1 and 11.1; CUDA v10.1 build set as latest)
 
