@@ -1,3 +1,6 @@
+##### 0.6-170@201029 2020-10-29
+*   Update server under maintenance. Please wait ...
+
 ##### 0.6-169@201027 2020-10-27
 *   Improved software watchdog (added power usage tracking)
 *   Improved `sreboot` command (added support for powercycle as option)
