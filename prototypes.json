@@ -534,13 +534,28 @@
             "algo": "kawpow",
             "pass": "x",
             "template": "%WAL%.%WORKER_NAME%"
-        }, 
+        },
         "wildrig-multi": {
             "url": "stratum+tcp:\/\/%URL%",
             "algo": "kawpow",
             "pass": "x",
             "template": "%WAL%.%WORKER_NAME%",
             "user_config": "\"opencl-threads\" : \"2\""
+        }
+    },
+    "miners_randomhash2_with_email": {
+        "rhminer": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+            "user_config": "-cputhreads 2"
+        },
+        "nanominer": {
+            "algo": "randomhash2",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "rigName = %WORKER_NAME%\nemail=%EMAIL%"
         }
     }
 }
