@@ -5,25 +5,25 @@
          {
             "geo":"Europe",
             "urls":[
-               "eth.woolypooly.com:3096"
+               "eth.woolypooly.com:3094"
             ]
          },
          {
             "geo":"SOLO Europe",
             "urls":[
-               "eth.woolypooly.com:3097"
+               "eth.woolypooly.com:3095"
             ]
          },
          {
             "geo":"USA",
             "urls":[
-               "eth.us.woolypooly.com:3096"
+               "eth.us.woolypooly.com:3094"
             ]
          },
          {
             "geo":"SOLO USA",
             "urls":[
-               "eth.us.woolypooly.com:3097"
+               "eth.us.woolypooly.com:3095"
             ]
          }
       ],
@@ -34,13 +34,6 @@
          },
          "phoenixminer":{
             "url":"POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 4, COIN: %COIN%"
-         },
-         "ethminer":{
-            "cuda":1,
-            "pass":"x",
-            "port":"%URL_PORT%",
-            "server":"stratum2+tcp://%URL_HOST%",
-            "template":"%WAL%.%WORKER_NAME%"
          },
          "asicminer":{
             "url":"stratum+tcp://%URL%",
@@ -57,10 +50,58 @@
             "algo":"ethash",
             "pass":"x",
             "template":"%WAL%.%WORKER_NAME%"
+         }
+      }
+   },
+   {
+      "coin":"ETC",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "etc.woolypooly.com:35000"
+            ]
          },
-         "nbminer":{
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "etc.woolypooly.com:35001"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "etc.us.woolypooly.com:35000"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "etc.us.woolypooly.com:35001"
+            ]
+         }
+      ],
+      "miners":{
+         "claymore":{
+            "epools_tpl":"POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
+            "claymore_user_config":"-allpools 1"
+         },
+         "phoenixminer":{
+            "url":"POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 4, COIN: %COIN%"
+         },
+         "asicminer":{
+            "url":"stratum+tcp://%URL%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "teamredminer":{
             "algo":"ethash",
-            "url":"nicehash+tcp://%URL%",
+            "url":"stratum+tcp://%URL%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "pass":"x"
+         },
+         "t-rex":{
+            "url":"%URL%",
+            "algo":"ethash",
             "pass":"x",
             "template":"%WAL%.%WORKER_NAME%"
          }
@@ -104,6 +145,12 @@
             "server":"stratum1+tcp://%URL_HOST%",
             "template":"%WAL%.%WORKER_NAME%"
          },
+         "t-rex":{
+            "url":"%URL%",
+            "algo":"progpow",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
          "nbminer":{
             "url":"%URL%",
             "pass":"x",
@@ -116,6 +163,50 @@
             "template":"%WAL%.%WORKER_NAME%",
             "algo":"progpow092",
             "user_config":"-coin SERO"
+         }
+      }
+   },
+   {
+      "coin":"VEIL",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "veil.woolypooly.com:3098"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "veil.woolypooly.com:3099"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "veil.us.woolypooly.com:3098"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "veil.us.woolypooly.com:3099"
+            ]
+         }
+      ],
+      "miners":{
+         "t-rex":{
+            "url":"%URL%",
+            "algo":"progpow-veil",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "tt-miner":{
+            "url":"stratum1+tcp://%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"progpow092",
+            "user_config":"-coin VEIL"
          }
       }
    },
