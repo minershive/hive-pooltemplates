@@ -1,3 +1,13 @@
+##### 0.6-171@201101 2020-11-01
+*   Minor system changes (fixed motd display mem temp on mixed rigs; watchdog limit log to 100 lines; other small fixes)
+*   Added additional optimization for 'repomirror' package (smart updates to reduce traffic; speedup file processing)
+*   NanoMiner v1.12.0 (added support upcoming Ethereum Classic hardfork to EtcHash)
+*   lolMiner v1.12 (added support for 'etchash'; slightly improved Ethash efficiency for R9, 470-590 & Navi; added experimental support for Ethash on Nvidia GPUs; added new parameter: '--4g-alloc-size' to define the memory allowed for Ethash on 4G cards. Suggested value: 4076; added new parameter: '--worker' to set the worker in ETHPROXY stratum mode)
+*   NBMiner v33.2 (improved 'octopus' up to +150% on 10 series, +80% on 16, 20, 30 series; fixed share-check with 0 argument which cause high CPU usage)
+*   Ethminer: removed kernels from v0.19.0 for gfx90x GPUs as they are broken (cards show abnormal high hashrate without producing any shares)
+*   Replaced build T-Rex v0.18.5 CUDA 10.0 for fixed version (Zombie mode now works)
+*   Fixed version selection for Sushi-miner-opencl/-cuda miners
+
 ##### 0.6-170@201029 2020-10-29
 *   Improved `motd` command (added memory temp)
 *   Fixed `selfupgrade` (restart watchdog after update)
