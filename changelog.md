@@ -1,3 +1,6 @@
+##### 0.6-171@201102 2020-11-02
+*   miniZ v1.6w2 (Equihash 192/7: hashrate improved ~2-11% depending on GPU. Turing GPUs, and 1050 Ti, have the largest improvements; added 2GB kernel; reduced invalid shares; added experimental support for Ampere GPUs: need CUDA 11.1 compatible driver v455.23 and higher. Notice: choose version in Miner Settings)
+
 ##### 0.6-171@201101 2020-11-01
 *   Minor system changes (fixed motd display mem temp on mixed rigs; watchdog limit log to 100 lines; other small fixes)
 *   Added additional optimization for 'repomirror' package (smart updates to reduce traffic; speedup file processing)
