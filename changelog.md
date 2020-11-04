@@ -1,3 +1,11 @@
+##### 0.6-172@201104 2020-11-04
+*   Minor fix (removed warning on autofan start)
+*   XMRig v6.5.0 (fixed MSR kernel module warning with new Linux kernels; added online benchmark mode for sharing results)
+*   NBMiner v33.3 (improved hashrate on 'octopus' Nvidia, +3% on 10 series, +20% on 16, 20, 30 series; added 'octopus' support for AMD GPUs; fixed crash upon start on certain Nvidia rigs)
+*   Bminer v16.3.3 (added support for mining Conflux; reduced the rejection rates when mining Ethereum; removed support of the Tensority algorithm)
+*   SRBMiner-Multi v0.5.5 (added algorithm 'argon2id_ninja' withfee 0.85%; lowered devfee to 0.65% on 'ethash' and 'ubqhash'; to 0.85% on 'minotaur'; small performance increase on cryptonight_xhv algorithm)
+*   TT-Miner v6.0.0 (added support for VeriBlock, Zelantus, Veil; added fees again. Solo mining & EPIC: 2% and 1% forother)
+
 ##### 0.6-171@201102 2020-11-02
 *   miniZ v1.6w2 (Equihash 192/7: hashrate improved ~2-11% depending on GPU. Turing GPUs, and 1050 Ti, have the largest improvements; added 2GB kernel; reduced invalid shares; added experimental support for Ampere GPUs: need CUDA 11.1 compatible driver v455.23 and higher. Notice: choose version in Miner Settings)
 
