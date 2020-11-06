@@ -1,5 +1,5 @@
 ##### 0.6-172@201105 2020-11-05
-*   TeamRedMiner v0.7.17 (added fan control; fixed deadlock bug that could happen when using multiple pools with the failover strategy; added option for not sending stale shares; added watchdog check for early GPU init hangs)
+*   TeamRedMiner v0.7.17 (added fan control - see details in miner's manual; fixed deadlock bug that could happen when using multiple pools with the failover strategy; added option for not sending stale shares; added watchdog check for early GPU init hangs)
 *   Bminer v16.3.4 (fix compatibilties issues of various Conflux pools)
 
 ##### 0.6-172@201104 2020-11-04
