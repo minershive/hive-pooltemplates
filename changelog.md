@@ -1,6 +1,6 @@
 ##### 0.6-172@201106 2020-11-06
 *   NanoMiner v1.13.0 (added support for Conflux Network's Octopus algorithm on Nvidia GPU with devfee 2%)
-*   T-Rex v0.18.6 (reduced GPU memory consumption on ethash, progpow and kawpow; added cache DAG for epoch 0 when mining ETH+ZIL use `"extra-dag-epoch": 0`  parameter; bug fixes: kernels 4 and 5 generate incorrect shares if DAG size > 4GB; out of memory error in "zombie" mode; 'worker' parameter is ignored if placed under pools section in a config file)
+*   T-Rex v0.18.6 (reduced GPU memory consumption on ethash, progpow and kawpow; added cache DAG for epoch 0 when mining ETH+ZIL use `"extra-dag-epoch": 0`  parameter; bug fixes: kernels 4 and 5 generate incorrect shares if DAG size > 4GB; 'out of memory' error in "zombie" mode; 'worker' parameter is ignored if placed under pools section in a config file)
 
 ##### 0.6-172@201105 2020-11-05
 *   TeamRedMiner v0.7.17 (added fan control - see details in miner's manual; fixed deadlock bug that could happen when using multiple pools with the failover strategy; added option for not sending stale shares; added watchdog check for early GPU init hangs)
