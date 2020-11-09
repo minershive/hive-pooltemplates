@@ -207,12 +207,6 @@
             "template":"%WAL%.%WORKER_NAME%",
             "algo":"progpow092",
             "user_config":"-coin VEIL"
-         },
-         "wildrig-multi": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "progpow-veil",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
          }
       }
    },
@@ -688,6 +682,43 @@
             "pass":"x",
             "template":"%WAL%.%WORKER_NAME%"
          }
+      }
+   },
+   {
+      "coin":"CFX",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "cfx.woolypooly.com:3094"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "cfx.woolypooly.com:3095"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "cfx.us.woolypooly.com:3094"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "cfx.us.woolypooly.com:3095"
+            ]
+         }
+      ],
+      "miners":{
+         "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"octopus"
+         },
       }
    }
 ]
