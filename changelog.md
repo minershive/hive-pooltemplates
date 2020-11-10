@@ -11,6 +11,13 @@
 *   TeamRedMiner v0.7.17 (added fan control - see details in miner's manual; fixed deadlock bug that could happen when using multiple pools with the failover strategy; added option for not sending stale shares; added watchdog check for early GPU init hangs)
 *   Bminer v16.3.4 (fix compatibilties issues of various Conflux pools)
 
+##### LINUX IMAGE RELEASE 0.6-172 2020-11-05
+*   Hive Linux client: v0.6-172@201104
+*   Universal boot mode: BIOS | UEFI
+*   Linux kernel: v5.0.21-201105-hiveos
+*   Drivers version: AMD v20.30, Nvidia: v450.66
+*   Universal image with "support from the box" AMD Polaris/Vega/Navi and Nvidia 10xx/16xx/20xx
+
 ##### 0.6-172@201104 2020-11-04
 *   Minor fix (removed warning on autofan start)
 *   XMRig v6.5.0 (fixed MSR kernel module warning with new Linux kernels; added online benchmark mode for sharing results)
