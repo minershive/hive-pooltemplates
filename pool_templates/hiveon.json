@@ -114,83 +114,21 @@
             }
         ],
         "miners": {
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-	        "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-	    },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "user_config": "-coin %COIN%"
+            "_prototype": "miners_etchash",
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
             },
             "bminer": {
-                "url": "%URL%",
-                "algo": "ethproxy",
-	        "template": "%WAL%.%WORKER_NAME%",
-	        "pass": "x"
-	    },
-	    "nanominer": {
-	        "algo": "ethash",
-	        "url": "%URL%",
-	        "template": "%WAL%",
-	        "pass": "x",
-	        "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-	    },
-	    "nbminer": {
-	        "url": "%URL%",
-	        "algo": "ethash",
-	        "pass": "x",
-	        "template": "%WAL%.%WORKER_NAME%"
-	    },
-	    "tt-miner": {
-                "url": "stratum1+tcp://%URL%",
-	        "algo": "ETHASH",
-	        "pass": "x",
-	        "template": "%WAL%.%WORKER_NAME%",
-    	        "user_config": "-RH\n"
-	    },
-	    "gminer": {
-	        "algo": "ethash",
-	        "server": "%URL_HOST%",
-	        "port": "%URL_PORT%",
-	        "pass": "x",
-	        "template": "%WAL%.%WORKER_NAME%"
-	    },
-	    "teamredminer": {
-	        "algo": "ethash",
-	        "url": "stratum+tcp://%URL%",
+                "algo": "ethproxy"
+            },
+            "teamredminer":{
                 "template": "%WAL%",
-                "worker": "%WORKER_NAME%",
-    		"pass": "x"
-	    },
-            "lolminer": {
-                "algo": "ETHASH",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
+                "worker": "%WORKER_NAME%"
+            },
+            "lolminer":{
                 "template": "%WAL%",
-                "pass": "x",
                 "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "ethash",
-                "worker": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "--disable-cpu"
-            },
-	    "t-rex": {
-		"url": "%URL%",
-		"algo": "ethash",
-		"template": "%WAL%",
-		"user_config": "\"worker\": \"%WORKER_NAME%\""
-	    }
+            }
         }
     }
 ]
