@@ -1,3 +1,8 @@
+##### 0.6-174@201111 2020-11-11
+*   Minor system update (fixed repomirror log)
+*   lolMiner v1.13 (Ethash:reduced power draw significantly on non-zombie mode for Rx Fury & Rx 470 - 590, slight reduction for Vega & Navi; Slightly improved performance on Vega, Navi and Nvidia GPUs; improved Nicehash+ZIL mode; other bug fixes & improvements)
+*   T-Rex v0.18.8 (added etchash for upcoming ETC hardfork; fixed compatibility with MRR service)
+
 ##### 0.6-173@201108 2020-11-08
 *   Fixed 'repomirror' optional package (fixed symlinks; use https by default; use InRelease for checking)
 *   XMRig v6.5.1 (implemented new MSR mod for Ryzen, up to +3.5% on Zen2 and +1-2% on Zen3)
