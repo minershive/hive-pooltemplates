@@ -1,3 +1,6 @@
+##### 0.6-174@201112 2020-11-12
+*   NBMiner v33.3 (improved octopus hashrate: +35% on 16 20 30 series Nvidia GPUs, +20% on all other GPUs; added 'etchash' for upcoming ETC hardfork; added effective pool hashrate on console & api, 10min 4h 24h)
+
 ##### 0.6-174@201111 2020-11-11
 *   Minor system update (fixed repomirror log)
 *   lolMiner v1.13 (Ethash:reduced power draw significantly on non-zombie mode for Rx Fury & Rx 470 - 590, slight reduction for Vega & Navi; Slightly improved performance on Vega, Navi and Nvidia GPUs; improved Nicehash+ZIL mode; other bug fixes & improvements)
