@@ -1,3 +1,6 @@
+##### 0.6-174@201112-2 2020-11-12
+*   lolMiner v1.14 (added Ethash Zombie mode for 4G Nvidia GPUs. Use --4g-alloc-size to calibrate the number of MBytes the GPUs are allowed to use; fixed a segmentation fault on Nvidia & mixed rigs when starting Ethash mining)
+
 ##### 0.6-174@201112 2020-11-12
 *   NBMiner v33.4 (improved octopus hashrate: +35% on 16 20 30 series Nvidia GPUs, +20% on all other GPUs; added 'etchash' for upcoming ETC hardfork; added effective pool hashrate on console & API, 10min 4h 24h)
 
