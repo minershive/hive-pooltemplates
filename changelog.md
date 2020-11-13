@@ -1,3 +1,7 @@
+##### 0.6-174@201113 2020-11-13
+*   lolMiner v1.15 (fixed invalid shares on 4G cards on some systems; fixed hangs up when changing epoch when using the ZIL cache feature; fixed sometimes produced invalid shares when a new job with different epoch arrives while the miner is currently creating the DAG file for an earlier job; fixed emergency scripts when a GPU was hung up; improved Ethash efficiency on Nvidia GPUs; general stability improvements)
+*   XMRig v6.5.2 (separate MSR mod for Zen/Zen2 and Zen3)
+
 ##### 0.6-174@201112-2 2020-11-12
 *   lolMiner v1.14 (added Ethash Zombie mode for 4G Nvidia GPUs. Use --4g-alloc-size to calibrate the number of MBytes the GPUs are allowed to use; fixed a segmentation fault on Nvidia & mixed rigs when starting Ethash mining)
 
