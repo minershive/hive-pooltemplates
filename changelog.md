@@ -1,3 +1,6 @@
+##### 0.6-174@201114 2020-11-14
+*   NanoMiner v1.13.1 (significantly improved performance of octopus (Conflux) algorithm on Nvidia: +96% up to 4.5 MH/s on stock p106, +139% up to 22.7 MH/s on stock 2060; support RTX 30xx (Ampere) will be added in next releases)
+
 ##### 0.6-174@201113 2020-11-13
 *   lolMiner v1.15 (fixed invalid shares on 4G cards on some systems; fixed hangs up when changing epoch when using the ZIL cache feature; fixed sometimes produced invalid shares when a new job with different epoch arrives while the miner is currently creating the DAG file for an earlier job; fixed emergency scripts when a GPU was hung up; improved Ethash efficiency on Nvidia GPUs; general stability improvements)
 *   XMRig v6.5.2 (separate MSR mod for Zen/Zen2 and Zen3)
