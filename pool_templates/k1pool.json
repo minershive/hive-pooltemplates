@@ -92,6 +92,13 @@
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
             },
+            "t-rex": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
+            },
             "nanominer": {
                 "algo": "ethash",
                 "url": "%URL%",
@@ -421,7 +428,7 @@
             },
             "t-rex": {
                 "algo": "kawpow",
-                "url": "stratum+tcp://%URL%",
+                "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
@@ -554,6 +561,13 @@
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
+            },
+            "t-rex": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
             },
             "nanominer": {
                 "algo": "ethash",
@@ -691,6 +705,13 @@
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
             },
+            "t-rex": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
+            },
             "nanominer": {
                 "algo": "ethash",
                 "url": "%URL%",
@@ -782,6 +803,13 @@
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
+            },
+            "t-rex": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
             },
             "nanominer": {
                 "algo": "ethash",
@@ -875,97 +903,12 @@
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
             },
-            "nanominer": {
+            "t-rex": {
                 "algo": "ethash",
                 "url": "%URL%",
-                "template": "%WAL%",
                 "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "nbminer": {
-                "algo": "ethash",
-                "url": "nicehash+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "MOAC",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "eu.moac.k1pool.com:6622"
-                ]
-            },
-            {
-                "geo": "Europe HiDiff",
-                "urls": [
-                    "eu.moac.k1pool.com:6623"
-                ]
-            },
-            {
-                "geo": "Europe SOLO",
-                "urls": [
-                    "eu.moacsolo.k1pool.com:6624"
-                ]
-            },
-            {
-                "geo": "Europe SOLO HiDiff",
-                "urls": [
-                    "eu.moacsolo.k1pool.com:6625"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allcoins 1\n-allpools 1"
-            },
-            "ethminer": {
-                "ver": "0.18.0",
-                "cuda": 1,
-                "fork": "ethash",
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum2+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4"
-            },
-            "gminer": {
-                "algo": "ethash",
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--proto stratum"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethstratum",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            },
-            "teamredminer": {
-                "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
+                "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
             },
             "nanominer": {
                 "algo": "ethash",
@@ -1082,6 +1025,13 @@
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
+            },
+            "t-rex": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
             },
             "nanominer": {
                 "algo": "ethash",
@@ -1852,7 +1802,7 @@
             },
             "t-rex": {
                 "algo": "kawpow",
-                "url": "stratum+tcp://%URL%",
+                "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
