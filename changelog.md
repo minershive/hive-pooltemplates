@@ -4,7 +4,7 @@
 *   SGminer-fancyIX v5.6.1.3.b7a / 0.7.0 release (added over 10x faster yescrypt kernel; added Navi support for yescrypt)
 *   Gminer v2.30 (major performance improvements for BeamHashIII up to +2-3% dependent on GPU; added support Etchash algorithm for Ethereum classic algorithm after hardfork; significantly reduced stale shares percentage on Ethash algorithm, it will improve hashrate on pool side; added AMD solvers for Ethash and Etchash; reduced memory usage for Cortex 8GB solver ~about 50MB)
 *   Bminer v16.3.6 (improved the performance of the Conflux miner; fixed compatibilties issues of various Conflux pools)
-*   miniZ v1.6w4 (added '-cden' option to exclude GPus from mining based on their name; CUDA 11 build: improved performance for RTX 30XX cards on some algos; fixed Beam, Zel, Aion, 144/5)
+*   miniZ v1.6w4 (added '-cden' option to exclude GPUs from mining based on their name; CUDA 11 build: improved performance for RTX 30XX cards on some algos; fixed Beam, Zel, Aion, 144/5)
 
 ##### 0.6-174@201114 2020-11-14
 *   NanoMiner v1.13.1 (significantly improved performance of octopus (Conflux) algorithm on Nvidia: +96% up to 4.5 MH/s on stock p106, +139% up to 22.7 MH/s on stock 2060; support RTX 30xx (Ampere) will be added in next releases)
