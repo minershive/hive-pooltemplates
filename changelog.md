@@ -1,3 +1,11 @@
+##### 0.6-174@201115 2020-11-15
+*   T-Rex 0.18.9 (increased ethash pool side hashrate by 1-2% by reducing the amount of stale shares the miner drops before sending to the pool; set worker name to %hostname% if not specified on ethash, kawpow, progpow; bug fix: low pool side hashrate when mining ETH+ZIL due to incorrect difficulty parsing; bux fix: miner crashes on low RAM multi-GPU rigs during DAG rebuild on ethash, kawpow, progpow)
+*   XMRig v6.5.3 + CUDA plugin v6.5.0 (fixed MSR mod names in JSON API; CUDA plugin: fixed high CPU usage on Cryptonight and AstroBWT)
+*   SGminer-fancyIX v5.6.1.3.b7a / 0.7.0 release (added over 10x faser yescrypt kernel; added Navi support for yescrypt)
+*   Gminer v2.30 (major performance improvements for BeamHashIII up to +2-3% dependent on GPU; added support Etchash algorithm for Ethereum classic algorithm after hardfork; significantly reduced stale shares percentage on Ethash algorithm, it will improve hashrate on pool side; added AMD solvers for Ethash and Etchash; reduced memory usage for Cortex 8GB solver ~about 50MB)
+*   Bminer v16.3.6 (improved the performance of the Conflux miner; fixed compatibilties issues of various Conflux pools)
+*   miniZ v1.6w4 (added '-cden' option to exclude GPus from mining based on their name; CUDA 11 build: improved performance for RTX 30XX cards on some algos; fixed Beam, Zel, Aion, 144/5)
+
 ##### 0.6-174@201114 2020-11-14
 *   NanoMiner v1.13.1 (significantly improved performance of octopus (Conflux) algorithm on Nvidia: +96% up to 4.5 MH/s on stock p106, +139% up to 22.7 MH/s on stock 2060; support RTX 30xx (Ampere) will be added in next releases)
 
