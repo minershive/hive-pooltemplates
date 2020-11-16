@@ -1,4 +1,4 @@
-##### 0.6-174@201114 2020-11-14
+##### 0.6-174@201116 2020-11-16
 *   NanoMiner v3.0.0 (8% performance increase on Nvidia 10xx series GPUs on Octopus algorithm; added support RTX 30xx Ampere as separate build - Octopus (Conflux) performance is 38 MH/s on stock 3070; Ethash and KawPow also supported)
 *   CPUminer-Opt-JayDDee v3.15.2 (small fixes and optimization)
 
