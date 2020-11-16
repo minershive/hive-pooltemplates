@@ -1,5 +1,6 @@
 ##### 0.6-174@201114 2020-11-14
 *   NanoMiner v3.0.0 (8% performance increase on Nvidia 10xx series GPUs on Octopus algorithm; added support RTX 30xx Ampere as separate build - Octopus (Conflux) performance is 38 MH/s on stock 3070; Ethash and KawPow also supported)
+*   CPUminer-Opt-JayDDee v3.15.2 (small fixes and optimization)
 
 ##### 0.6-174@201115 2020-11-15
 *   T-Rex 0.18.9 (increased ethash pool side hashrate by 1-2% by reducing the amount of stale shares the miner drops before sending to the pool; set worker name to %hostname% if not specified on ethash, kawpow, progpow; bug fix: low pool side hashrate when mining ETH+ZIL due to incorrect difficulty parsing; bux fix: miner crashes on low RAM multi-GPU rigs during DAG rebuild on ethash, kawpow, progpow)
