@@ -1,6 +1,6 @@
 ##### 0.6-175@201118 2020-11-18
 *   Updated `hive-replace` tool (safe mode now used by default)
-*   Updated hardware IDs
+*   Improved update procedure for hardware IDs
 *   PhoenixMiner 5.2d (added new `-daglim` parameter to allow a few more weeks of work for 4 GB AMD GPUs with 4GB VRAM; added `-rxboost` parameter to boost the performance of GDDR5  based AMD cards; added memory straps support for AMD Vega cards, use `-straps` command-line option where -strap 1 lower level; AMD GPUs with >4GB RAM will now work without issues until DAG epoch 450; Nvidia memory timing (straps) option is improved and now is turned off during DAG generation to avoid any possible instability issues; option '-dagrestart' is set to 1 whenever '-daglimit' is active for 4GB AMD cards; added new kernels for 4GB AMD cards with higher hashrate when -daglim is in effect; many other improvements and fixes)
 
 ##### 0.6-174@201116 2020-11-16
