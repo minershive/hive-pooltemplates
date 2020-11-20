@@ -1,3 +1,6 @@
+##### 0.6-175@201120 2020-11-20
+*   NanoMiner v3.1.0 (performance improvements of Octopus algorithm on Nvidia GPUs, approx.: +4% on 10xx series, +18% on 16xx and 20xx series, +24% on 30xx series; added Verushash algorithm for VerusCoin support on CPUs with PCLMUL, AES and AVX hardware instructions; added initial support for new AMD RX 6800, 6800 XT and 6900 XT GPUs on Ethash and KawPoW algorithms)
+
 ##### 0.6-175@201119 2020-11-19
 *   NanoMiner v3.0.1 (added `dagSer` option to serialize DAG generation on Octopus, Ethash and KawPoW algorithms)
 *   XMRigCC 2.8.4 - XMRig fork (added cn variant CXCHE algo 'cn/cache_hash'; added latest MSR improvements for Ryzen Zen 2/3 based CPUs when mining randomx algos)
