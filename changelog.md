@@ -1,3 +1,7 @@
+##### 0.6-174@201119 2020-11-19
+*   NanoMiner v3.0.1 (added `dagSer` option to serialize DAG generation on Octopus, Ethash and KawPoW algorithms)
+*   XMRigCC 2.8.4 (added cn variant CXCHE algo 'cn/cache_hash'; added latest msr improvements for ryzen zen 2/3 based cpus when mining randomx algos)
+
 ##### 0.6-175@201118 2020-11-18
 *   Updated `hive-replace` tool (safe mode now used by default)
 *   Improved update procedure for hardware IDs
