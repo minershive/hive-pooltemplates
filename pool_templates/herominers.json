@@ -117,7 +117,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
             },
             "gminer": {
                 "algo":"ethash",
@@ -284,7 +284,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
             },
             "gminer": {
                 "algo":"ethash",
@@ -346,173 +346,118 @@
         }
     },
     {
-        "coin": "PIRL",
+        "coin": "CFX",
         "servers": [
             {
                 "geo": "Germany Low-End",
                 "urls": [
-                    "pirl.herominers.com:10220"
+                    "conflux.herominers.com:10220"
                 ]
             },
             {
                 "geo": "Germany Mid-Range",
                 "urls": [
-                    "pirl.herominers.com:10221"
+                    "conflux.herominers.com:10221"
                 ]
             },
             {
                 "geo": "Germany NiceHash",
                 "urls": [
-                    "pirl.herominers.com:10222"
+                    "conflux.herominers.com:10222"
                 ]
             },
             {
                 "geo": "Finland Low-End",
                 "urls": [
-                    "fi.pirl.herominers.com:10220"
+                    "fi.conflux.herominers.com:10220"
                 ]
             },
             {
                 "geo": "Finland Mid-Range",
                 "urls": [
-                    "fi.pirl.herominers.com:10221"
+                    "fi.conflux.herominers.com:10221"
                 ]
             },
             {
                 "geo": "Finland NiceHash",
                 "urls": [
-                    "fi.pirl.herominers.com:10222"
+                    "fi.conflux.herominers.com:10222"
                 ]
             },
             {
                 "geo": "Canada Low-End",
                 "urls": [
-                    "ca.pirl.herominers.com:10220"
+                    "ca.conflux.herominers.com:10220"
                 ]
             },
             {
                 "geo": "Canada Mid-Range",
                 "urls": [
-                    "ca.pirl.herominers.com:10221"
+                    "ca.conflux.herominers.com:10221"
                 ]
             },
             {
                 "geo": "Canada NiceHash",
                 "urls": [
-                    "ca.pirl.herominers.com:10222"
+                    "ca.conflux.herominers.com:10222"
                 ]
             },
             {
                 "geo": "HongKong Low-End",
                 "urls": [
-                    "hk.pirl.herominers.com:10220"
+                    "hk.conflux.herominers.com:10220"
                 ]
             },
             {
                 "geo": "HongKong Mid-Range",
                 "urls": [
-                    "hk.pirl.herominers.com:10221"
+                    "hk.conflux.herominers.com:10221"
                 ]
             },
             {
                 "geo": "HongKong NiceHash",
                 "urls": [
-                    "hk.pirl.herominers.com:10222"
+                    "hk.conflux.herominers.com:10222"
                 ]
             },
             {
                 "geo": "Singapore Low-End",
                 "urls": [
-                    "sg.pirl.herominers.com:10220"
+                    "sg.conflux.herominers.com:10220"
                 ]
             },
             {
                 "geo": "Singapore Mid-Range",
                 "urls": [
-                    "sg.pirl.herominers.com:10221"
+                    "sg.conflux.herominers.com:10221"
                 ]
             },
             {
                 "geo": "Singapore NiceHash",
                 "urls": [
-                    "sg.pirl.herominers.com:10222"
+                    "sg.conflux.herominers.com:10222"
                 ]
             }
         ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allpools 1"
-            },
-            "ethminer": {
-                "ver":"0.18.0",
-                "cuda": 1,
-                "fork":"ethash",
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum2+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
-            },
-            "gminer": {
-                "algo":"ethash",
+        "miners":{
+            "nbminer":{
+                "url":"%URL%",
                 "pass":"x",
-                "port":"%URL_PORT%",
-                "server":"%URL_HOST%",
                 "template":"%WAL%.%WORKER_NAME%",
-                "user_config":"--proto stratum"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethstratum",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            },
-            "teamredminer": {
-                "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
+                "algo":"octopus"
             },
             "nanominer": {
-                "algo": "ethash",
                 "url": "%URL%",
+                "algo": "octopus",
+                "pass": "x",
                 "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+                "user_config": "coin = CFX\nrigName = %WORKER_NAME%"
             },
-            "nbminer": {
-                "algo": "ethash",
-                "url": "nicehash+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "lolminer": {
-                "algo": "ETHASH",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "srbminer": {
+            "bminer": {
+                "algo": "conflux",
+                "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "ethash"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "pass": "x"
             }
         }
     },
@@ -626,7 +571,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
             },
             "gminer": {
                 "algo":"ethash",
@@ -797,7 +742,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 4, COIN: %COIN%"
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
             },
             "gminer": {
                 "algo":"ethash",
@@ -5221,242 +5166,6 @@
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "algo": "randomwow"
-            }
-        }
-    },
-    {
-        "coin": "BLOC",
-        "servers": [
-            {
-                "geo": "Germany CPU",
-                "urls": [
-                    "bloc.herominers.com:10430"
-                ]
-            },
-            {
-                "geo": "Germany GPU",
-                "urls": [
-                    "bloc.herominers.com:10431"
-                ]
-            },
-            {
-                "geo": "Germany Rigs",
-                "urls": [
-                    "bloc.herominers.com:10432"
-                ]
-            },
-            {
-                "geo": "Germany NiceHash",
-                "urls": [
-                    "bloc.herominers.com:10433"
-                ]
-            },
-            {
-                "geo": "Germany CPU",
-                "ssl_urls": [
-                    "bloc.herominers.com:10434"
-                ]
-            },
-            {
-                "geo": "Germany GPU",
-                "ssl_urls": [
-                    "bloc.herominers.com:10435"
-                ]
-            },
-            {
-                "geo": "Germany Rigs",
-                "ssl_urls": [
-                    "bloc.herominers.com:10436"
-                ]
-            },
-            {
-                "geo": "Finland CPU",
-                "urls": [
-                    "fi.bloc.herominers.com:10430"
-                ]
-            },
-            {
-                "geo": "Finland GPU",
-                "urls": [
-                    "fi.bloc.herominers.com:10431"
-                ]
-            },
-            {
-                "geo": "Finland Rigs",
-                "urls": [
-                    "fi.bloc.herominers.com:10432"
-                ]
-            },
-            {
-                "geo": "Finland NiceHash",
-                "urls": [
-                    "fi.bloc.herominers.com:10433"
-                ]
-            },
-            {
-                "geo": "Finland CPU",
-                "ssl_urls": [
-                    "fi.bloc.herominers.com:10434"
-                ]
-            },
-            {
-                "geo": "Finland GPU",
-                "ssl_urls": [
-                    "fi.bloc.herominers.com:10435"
-                ]
-            },
-            {
-                "geo": "Finland Rigs",
-                "ssl_urls": [
-                    "fi.bloc.herominers.com:10436"
-                ]
-            },
-            {
-                "geo": "Canada CPU",
-                "urls": [
-                    "ca.bloc.herominers.com:10430"
-                ]
-            },
-            {
-                "geo": "Canada GPU",
-                "urls": [
-                    "ca.bloc.herominers.com:10431"
-                ]
-            },
-            {
-                "geo": "Canada Rigs",
-                "urls": [
-                    "ca.bloc.herominers.com:10432"
-                ]
-            },
-            {
-                "geo": "Canada NiceHash",
-                "urls": [
-                    "ca.bloc.herominers.com:10433"
-                ]
-            },
-            {
-                "geo": "Canada CPU",
-                "ssl_urls": [
-                    "ca.bloc.herominers.com:10434"
-                ]
-            },
-            {
-                "geo": "Canada GPU",
-                "ssl_urls": [
-                    "ca.bloc.herominers.com:10435"
-                ]
-            },
-            {
-                "geo": "Canada Rigs",
-                "ssl_urls": [
-                    "ca.bloc.herominers.com:10436"
-                ]
-            },
-            {
-                "geo": "HongKong CPU",
-                "urls": [
-                    "hk.bloc.herominers.com:10430"
-                ]
-            },
-            {
-                "geo": "HongKong GPU",
-                "urls": [
-                    "hk.bloc.herominers.com:10431"
-                ]
-            },
-            {
-                "geo": "HongKong Rigs",
-                "urls": [
-                    "hk.bloc.herominers.com:10432"
-                ]
-            },
-            {
-                "geo": "HongKong NiceHash",
-                "urls": [
-                    "hk.bloc.herominers.com:10433"
-                ]
-            },
-            {
-                "geo": "HongKong CPU",
-                "ssl_urls": [
-                    "hk.bloc.herominers.com:10434"
-                ]
-            },
-            {
-                "geo": "HongKong GPU",
-                "ssl_urls": [
-                    "hk.bloc.herominers.com:10435"
-                ]
-            },
-            {
-                "geo": "HongKong Rigs",
-                "ssl_urls": [
-                    "hk.bloc.herominers.com:10436"
-                ]
-            },
-            {
-                "geo": "Singapore CPU",
-                "urls": [
-                    "sg.bloc.herominers.com:10430"
-                ]
-            },
-            {
-                "geo": "Singapore GPU",
-                "urls": [
-                    "sg.bloc.herominers.com:10431"
-                ]
-            },
-            {
-                "geo": "Singapore Rigs",
-                "urls": [
-                    "sg.bloc.herominers.com:10432"
-                ]
-            },
-            {
-                "geo": "Singapore NiceHash",
-                "urls": [
-                    "sg.bloc.herominers.com:10433"
-                ]
-            },
-            {
-                "geo": "Singapore CPU",
-                "ssl_urls": [
-                    "sg.bloc.herominers.com:10434"
-                ]
-            },
-            {
-                "geo": "Singapore GPU",
-                "ssl_urls": [
-                    "sg.bloc.herominers.com:10435"
-                ]
-            },
-            {
-                "geo": "Singapore Rigs",
-                "ssl_urls": [
-                    "sg.bloc.herominers.com:10436"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig-new": {
-                "url": "%URL%",
-                "algo": "cn-heavy/xhv",
-                "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
-            },
-            "teamredminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cn_haven"
-            },
-            "cryptodredge": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cryptonight-xhv"
             }
         }
     },
