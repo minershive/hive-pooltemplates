@@ -3,7 +3,7 @@
 *   NanoMiner v3.1.1 (minor fixes)
 *   T-Rex 0.18.11 (bug fixes: can't pair device with KEY error; display GPU names when NVML library can't be loaded or disabled)
 *   NBMiner v33.5 (improved hashrate: +90% on 16 20 30 series Nvidia GPUs, at least +100% on all other GPUs)
-*   NBMiner v33.6 (improved octopus hashrate: +10% on 16 20 30 series Nvidia GPUs, 27.5M on 1660s; `Note`: to get best results on octopus since this version, GPUs that has higher core performance than memory performance, need to overclock memory to get higher hashrate, e.g. 2080, 3070)
+*   NBMiner v33.6 (improved octopus hashrate: +10% on 16 20 30 series Nvidia GPUs, 27.5M on 1660s; *Notes: to get best results on octopus since this version, GPUs that has higher core performance than memory performance, need to overclock memory to get higher hashrate, e.g. 2080, 3070*)
 
 ##### 0.6-175@201120 2020-11-20
 *   NanoMiner v3.1.0 (performance improvements of Octopus algorithm on Nvidia GPUs, approx.: +4% on 10xx series, +18% on 16xx and 20xx series, +24% on 30xx series; added Verushash algorithm for VerusCoin support on CPUs with PCLMUL, AES and AVX hardware instructions; added initial support for new AMD RX 6800, 6800 XT and 6900 XT GPUs on Ethash and KawPoW algorithms)
