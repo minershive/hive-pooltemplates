@@ -5,7 +5,7 @@
 *   SGMiner-fancyIX v5.6.1.3.b7b - 0.7.1 release (added optimized binary kernels for rx 580 and Vega cards, 30% ~ 37% faster; added GCN cross lane instructions in Navi kernel, over 3x faster)
 *   XMRig (new) v6.6.0 (improved miner benchmark mode)
 *   PhoenixMiner v5.2e (fixed some problems with using 8GB AMD cards; fixed some problems with 4GB AMD cards when mining ETH or ETC)
-*   lolMiner v1.16a (added initial support of Ethash and Beam Hash III for RX 6000 generation of GPUs, all supported algorithms now show the share difficulty and have best share statistics, many other new features and bug fixes [here](https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.16))
+*   lolMiner v1.16a (added initial support of Ethash and Beam Hash III for RX 6000 generation of GPUs, all supported algorithms now show the share difficulty and have best share statistics, many other new features and bug fixes: [more info here](https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.16))
 
 ##### 0.6-176@201121 2020-11-21
 *   Updated system tools for upcoming support AMD RX 6800/6900 series
