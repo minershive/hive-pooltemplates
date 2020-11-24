@@ -1,5 +1,6 @@
 ##### 0.6-177@201123 2020-11-23
-*   Updated some system tools (improved `hpkg`: new options to check and fix broken packages, improved `hugepages`: added Zen3 MSR mod)
+*   Improved `hpkg` tool (new options to check and fix broken packages)
+*   Improved `hugepages` tool (added Zen3 MSR mod)
 *   PhoenixMiner v5.2e (fixed some problems with using 8GB AMD cards; fixed some problems with 4GB AMD cards when mining ETH or ETC)
 *   lolMiner v1.16a (added initial support of Ethash and Beam Hash III for RX 6000 generation of GPUs, all supported algorithms now show the share difficulty and have best share statistics, many other new features and bug fixes)
 *   NBMiner v33.7 (add an option `-no-interrupt`, set this option will disable miner interrupting current GPU jobs when a new job coming from pool, will cause less power supply issue, but might lead to a bit higher stale ratio and reject shares; add efficiency display in console, showing hashrate per watt for each GPU)
