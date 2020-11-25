@@ -1,5 +1,5 @@
 ##### 0.6-177@201124 2020-11-24
-*   TeamRedMiner v0.7.18 (added etchash support, see algo etchash and '--eth_variant_mode'; added dag cache support, mostly intended for eth+zil mining, see `--eth_dag_cache`; fixed hex char parsing in enable/disable submenu, can now work with >= 10 gpus; changed the default for ethash ramp-up and staggering to false, see '--eth_ramp_up' and '--eth_stagger')
+*   TeamRedMiner v0.7.18 (added `etchash` support, see algo etchash and `--eth_variant_mode`; added dag cache support, mostly intended for eth+zil mining, see `--eth_dag_cache`; fixed hex char parsing in enable/disable submenu, can now work with >= 10 gpus; changed the default for ethash ramp-up and staggering to false, see '--eth_ramp_up' and '--eth_stagger')
 *   **NEW** VioletMiner v0.2.2 (official Nvidia GPU miner from devs for chukwav2 / TurtleCoin; miner will be available to selection in web interface after planned Web GUI update 2020/11/25)
 
 ##### 0.6-177@201123 2020-11-23
