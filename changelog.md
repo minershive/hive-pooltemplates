@@ -1,6 +1,6 @@
 ##### 0.6-178@201126 2020-11-26
 *   Gminer v2.32 (fixed "out of memory" error for Ethash on Nvidia rigs)
-*   SRBMiner-Multi v0.5.7 (added algorithm 'curvehash' (Curvehashcoin) for CPU mining, fee 0.85%; removed 'm7mv2' algorithm; small fixes)
+*   SRBMiner-Multi v0.5.7 (added algorithm 'curvehash' / CurvehashCoin for CPU mining, fee 0.85%; removed 'm7mv2' algorithm; small fixes)
 
 ##### 0.6-178@201125 2020-11-25
 *   Improvements and fixes for `hive-replace` tool (restore session on reconnect; fixed support for local XZ images; local images can be specified without full path)
