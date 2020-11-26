@@ -1,3 +1,10 @@
+##### 0.6-178@201125 2020-11-25
+*   Improvements and fixes for `hive-replace` tool (restore session on reconnect; fixed support for local XZ images; local images can be specified without full path)
+*   NBMiner v33.8 (added support mining 'octopus' also on NiceHash)
+*   Gminer v2.31 (fixed bug due miner sent stale shares on all algorithms (this fix should significantly decrease stale share percentage on all algorithms; implemented unique mechanism that minimize stale shares on Ethash/Etchash algorithm, ~+1% accepted shares to total accepted share count; significant performance improvement for Ethash/Etchash algorithm on AMD cards in OC mode)
+*   XMRig v6.6.1 (fixed benchmarking mode)
+*   Fixed VioletMiner v0.2.2 package
+
 ##### 0.6-177@201124 2020-11-24
 *   TeamRedMiner v0.7.18 (added `etchash` support, see algo etchash and `--eth_variant_mode`; added dag cache support, mostly intended for eth+zil mining, see `--eth_dag_cache`; fixed hex char parsing in enable/disable submenu, can now work with >= 10 GPUs; changed the default for ethash ramp-up and staggering to false, see `--eth_ramp_up` and `--eth_stagger`)
 *   **NEW** VioletMiner v0.2.2 (official Nvidia GPU miner from devs for chukwav2 / TurtleCoin; miner will be available for selection in web interface after planned Web GUI update 2020/11/25)
