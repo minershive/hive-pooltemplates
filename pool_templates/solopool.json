@@ -22,9 +22,18 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
+            "lolminer": {
+                "algo": "ETHASH",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "t-rex": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
             },
             "ethminer": {
                 "server": "stratum1+tcp://%URL_HOST%",
@@ -106,60 +115,32 @@
             }
         ],
         "miners": {
-            "ethminer": {
-                "server": "stratum1+tcp://%URL_HOST%",
+            "lolminer": {
+                "algo": "ETCHASH",
+                "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "cuda": 1,
-                "opencl": 0
+                "pass": "x"
             },
-            "asicminer": {
+            "t-rex": {
+                "algo": "etchash",
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "coin = %COIN%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
             },
             "teamredminer": {
-                "algo": "ethash",
+                "algo": "etchash",
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
             },
             "gminer": {
-                "algo":"ethash",
+                "algo":"etchash",
                 "server":"%URL_HOST%",
                 "port":"%URL_PORT%",
                 "template":"%WAL%.%WORKER_NAME%",
                 "pass":"x",
                 "user_config":"--proto stratum"
-            },
-            "nanominer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "coin = %COIN%"
-            },
-            "nbminer": {
-                "algo": "ethash",
-                "url": "nicehash+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
             }
         }
     },
@@ -214,6 +195,19 @@
             }
         ],
         "miners": {
+            "lolminer": {
+                "algo": "ETHASH",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "t-rex": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
                 "claymore_user_config": "-allcoins 1\n-allpools 0"
@@ -298,6 +292,19 @@
             }
         ],
         "miners": {
+            "lolminer": {
+                "algo": "ETHASH",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "t-rex": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
                 "claymore_user_config": "-allcoins 1\n-allpools 0"
@@ -382,6 +389,19 @@
             }
         ],
         "miners": {
+            "lolminer": {
+                "algo": "ETHASH",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "t-rex": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
             "claymore": {
                 "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
                 "claymore_user_config": "-allcoins 1\n-allpools 0"
