@@ -1,3 +1,7 @@
+##### 0.6-178@201126 2020-11-26
+*   Gminer v2.32 (fixed "out of memory" error for Ethash on Nvidia rigs)
+*   SRBMiner-Multi v0.5.7 (fixed benchmarking mode)
+
 ##### 0.6-178@201125 2020-11-25
 *   Improvements and fixes for `hive-replace` tool (restore session on reconnect; fixed support for local XZ images; local images can be specified without full path)
 *   NBMiner v33.8 (added support mining 'octopus' also on NiceHash)
