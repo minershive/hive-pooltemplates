@@ -172,6 +172,12 @@
                 "template": "%WAL%",
                 "algo": "ethash"
             },
+            "t-rex": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -273,61 +279,38 @@
             }
         ],
         "miners": {
-            "ethminer": {
-                "ver":"0.18.0",
-                "cuda": 1,
-                "fork":"ethash",
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum2+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
             "phoenixminer": {
                 "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
             },
             "gminer": {
-                "algo":"ethash",
+                "algo":"etchash",
                 "pass":"x",
                 "port":"%URL_PORT%",
                 "server":"%URL_HOST%",
                 "template":"%WAL%.%WORKER_NAME%",
                 "user_config":"--proto stratum"
             },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethstratum",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            },
             "teamredminer": {
-                "algo": "ethash",
+                "algo": "etchash",
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
             },
             "nanominer": {
-                "algo": "ethash",
+                "algo": "etchash",
                 "url": "%URL%",
                 "template": "%WAL%",
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
             "nbminer": {
-                "algo": "ethash",
+                "algo": "etchash",
                 "url": "nicehash+tcp://%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "lolminer": {
-                "algo": "ETHASH",
+                "algo": "ETCHASH",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x",
@@ -337,11 +320,13 @@
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "algo": "ethash"
+                "algo": "etchash"
             },
-            "asicminer": {
+            "t-rex": {
+                "algo": "etchash",
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
             }
         }
     },
@@ -626,6 +611,12 @@
                 "template": "%WAL%",
                 "algo": "ethash"
             },
+            "t-rex": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -797,6 +788,12 @@
                 "template": "%WAL%",
                 "algo": "ethash"
             },
+            "t-rex": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
