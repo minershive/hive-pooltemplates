@@ -1,6 +1,10 @@
+##### 0.6-178@201127 2020-11-27
+*   PhoenixMiner 5.3b (added support for the new ETCHash algorithm that will be used by the ETC blockchain from Nov 28, 2020. If you want to mine ETC, it is recommended to add '-coin etc' to your Extra config arguments in miner settings which equivalent to command-line, or 'COIN: etc' to field 'Pool URL' in miner setting which equivalent to epools.txt config file)
+*   NanoMiner v3.1.2 (octopus algorithm performance improvements for Nvidia GPUs: +1% performance improvement on Pascal arch 10xx, +10% performance improvement on Turing arch 16xx and 20xx, +1.5% performance improvement on Ampere arch 30xx; Nicehash support was added for Octopus algorithm)
+
 ##### 0.6-178@201126 2020-11-26
 *   Gminer v2.32 (fixed "out of memory" error for Ethash on Nvidia rigs)
-*   SRBMiner-Multi v0.5.7 (fixed benchmarking mode)
+*   SRBMiner-Multi v0.5.7 (added algorithm 'curvehash' / CurvehashCoin for CPU mining, fee 0.85%; removed 'm7mv2' algorithm; small fixes)
 
 ##### 0.6-178@201125 2020-11-25
 *   Improvements and fixes for `hive-replace` tool (restore session on reconnect; fixed support for local XZ images; local images can be specified without full path)
