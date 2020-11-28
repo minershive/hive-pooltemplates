@@ -14,6 +14,63 @@
             "user_config": "coin = CFX\nrigName = %WORKER_NAME%"
         }
     },
+
+    "miners_etсhash": {
+        "phoenixminer": {
+            "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, COIN: etc"
+        },
+        "nanominer": {
+            "algo": "etchash",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        },
+        "nbminer": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "gminer": {
+            "algo": "etchash",
+            "server": "%URL_HOST%",
+            "port": "%URL_PORT%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "teamredminer": {
+            "algo": "ethash",
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x",
+            "user_config": "--eth_variant_mode=etchash"
+        },
+        "lolminer": {
+            "algo": "ETCHASH",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "etchash",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "--disable-cpu"
+        },
+        "t-rex": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME%",
+            "pass": "x",
+            "user_config": "\"coin\": \"%COIN%\"\n\"fork-at\": \"etchash=epoch:390\""
+        }
+    },
+
     "miners_ethash_4g": {
         "ethminer": {
             "cuda": 1,

@@ -114,21 +114,11 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_ethash_4g",
-            "tt-miner": {
-                "url": "stratum1+tcp://%URL%"
-            },
-            "bminer": {
-                "algo": "ethproxy"
-            },
+            "_prototype": "miners_etchash",
             "teamredminer":{
                 "template": "%WAL%",
                 "worker": "%WORKER_NAME%",
                 "user_config": "--eth_stratum_mode=ethproxy"
-            },
-            "lolminer":{
-                "template": "%WAL%",
-                "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
             }
         }
     }
