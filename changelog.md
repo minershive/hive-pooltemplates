@@ -1,3 +1,6 @@
+##### 0.6-178@201128-3 2020-11-28
+*   EthMiner v0.19.0.2 (added support EtcHash: use new option`--etchash`, also available option `--ecip1099 N` where N epoch number; default package build with CUDA 10.1, also available build CUDA 11.1 fro RTX 30xx)
+
 ##### 0.6-178@201128-2 2020-11-28
 *   NBMiner v34.1 (small fix for display ethash hashrate on some Nvidia configuration)
 
