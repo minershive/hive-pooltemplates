@@ -53,10 +53,10 @@
             },
             "phoenixminer": {
                 "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 4",
-                "user_config": "-coin %COIN%"
+                "user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
             },
             "finminer": {
-                "algo": "ethash",
+                "algo": "etchash",
                 "url": "%URL%",
                 "template": "%WAL%",
                 "pass": "x",
@@ -64,39 +64,39 @@
             },
             "bminer": {
                 "url": "%URL%",
-                "algo": "ethash",
+                "algo": "etchash",
                 "template": "%WAL%",
                 "pass": "x"
             },
             "nanominer": {
-                "algo": "ethash",
+                "algo": "etchash",
                 "url": "%URL%",
                 "template": "%WAL%",
                 "pass": "x",
                 "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
             },
 	    "teamredminer": {
-                "algo": "ethash",
+                "algo": "etchash",
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x",
-		"user_config": "--eth_stratum_mode=nicehash"
+		"user_config": "--eth_stratum_mode=nicehash --temp_limit=75 --temp_resume=65"
             },
 	    "tt-miner": {
                 "url": "%URL%",
-                "algo": "ETHASH",
+                "algo": "ETCHASH",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "-RH\n"
             },
             "nbminer": {
                 "url": "%URL%",
-                "algo": "ethash",
+                "algo": "etchash",
                 "pass": "x",
                 "template": "%WAL%"
             },
             "lolminer": {
-                "algo": "ETHASH",
+                "algo": "ETCHASH",
                 "template": "%WAL%.%WORKER_NAME%",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
@@ -155,7 +155,7 @@
             },
             "phoenixminer": {
                 "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 4",
-                "user_config": "-coin %COIN%"
+                "user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
             },
             "finminer": {
                 "algo": "ethash",
@@ -182,7 +182,7 @@
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x",
-		"user_config": "--eth_stratum_mode=nicehash"
+		"user_config": "--eth_stratum_mode=nicehash --temp_limit=75 --temp_resume=65"
             },
 	    "tt-miner": {
                 "url": "%URL%",
