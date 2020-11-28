@@ -1,3 +1,6 @@
+##### 0.6-178@201128-2 2020-11-28
+*   NBMiner v34.1 (small fix for display ethash hashrate on some Nvidia configuration)
+
 ##### 0.6-178@201128 2020-11-28
 *   Gminer v2.33 (fixed critical bug caused miner restarts when running under watchdog. This bug appears in v2.30 and v2.31)
 *   TT-Miner v6.1.0 (added support EtcHash for upcoming ETC hardfork, use `-coin ETC`)
