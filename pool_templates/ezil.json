@@ -123,6 +123,37 @@
         ],
         "miners": {
             "_prototype": "miners_ethash",
+            "phoenixminer": {
+              "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, COIN: etc"
+            },
+            "nanominer": {
+              "algo": "etchash",
+              "url": "%URL%",
+              "template": "%WAL%",
+              "pass": "x",
+              "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+              "url": "%URL%",
+              "algo": "etchash",
+              "pass": "x",
+              "template": "%WAL%.%WORKER_NAME%"
+            },
+            "gminer": {
+              "algo": "etchash",
+              "server": "%URL_HOST%",
+              "port": "%URL_PORT%",
+              "pass": "x",
+              "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+              "algo": "ethash",
+              "url": "%URL%",
+              "template": "%WAL%.%WORKER_NAME%",
+              "worker": "%WORKER_NAME%",
+              "pass": "x",
+              "user_config": "--eth_stratum_mode=ethproxy\n--eth_variant_mode=etchash"
+            },
             "tt-miner": {
                 "url": "stratum1+tcp://%URL%"
             },
@@ -130,11 +161,18 @@
                 "algo": "ethproxy"
             },
             "lolminer": {
-              "user_config": "--ethstratum ETHPROXY"
+              "algo": "ETCHASH"
+            },
+            "srbminer": {
+              "url": "%URL%",
+              "algo": "etchash",
+              "worker": "%WORKER_NAME%",
+              "template": "%WAL%",
+              "user_config": "--disable-cpu"
             },
             "t-rex": {
               "template": "%WAL%",
-              "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
+              "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"%COIN%\"\n\"fork-at\": \"etchash=epoch:390\""
             }
         }
     },
@@ -142,7 +180,7 @@
         "coin": "ZIL",
         "servers": [
             {
-                "geo": "Europe ETC",
+                "geo": "Europe ETC(You need to change algo in miner config)",
                 "urls": [
                     "eu.etc.ezil.me:4444",
                     "eu.etc.ezil.me:14444"
@@ -154,7 +192,7 @@
 
             },
             {
-                "geo": "Asia ETC",
+                "geo": "Asia ETC(You need to change algo in miner config)",
                 "urls": [
                     "asia.ezil.me:4444",
                     "asia.ezil.me:14444"
@@ -165,7 +203,7 @@
                 ]
             },
             {
-                "geo": "USA East ETC",
+                "geo": "USA East ETC(You need to change algo in miner config)",
                 "urls": [
                     "us-east.ezil.me:4444",
                     "us-east.ezil.me:14444"
@@ -176,7 +214,7 @@
                 ]
             },
             {
-                "geo": "USA West ETC",
+                "geo": "USA West ETC(You need to change algo in miner config)",
                 "urls": [
                     "us-west.ezil.me:4444",
                     "us-west.ezil.me:14444"
@@ -233,6 +271,9 @@
         ],
         "miners": {
           "_prototype": "miners_ethash",
+          "phoenixminer": {
+            "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, COIN: eth"
+          },
           "tt-miner": {
             "url": "stratum1+tcp://%URL%"
           },
