@@ -127,7 +127,7 @@
             },
             "nbminer": {
                "url": "%URL%",
-               "algo": "ethash",
+               "algo": "etchash",
                "pass": "x",
                "template": "%WAL%.%WORKER_NAME%"
            },
@@ -140,8 +140,9 @@
            },
            "teamredminer": {
                "algo": "ethash",
-               "url": "stratum+tcp://%URL%",
+               "url": "%URL%",
                "template": "%WAL%.%WORKER_NAME%",
+               "worker": "%WORKER_NAME%",
                "pass": "x",
                "user_config": "--eth_stratum_mode=ethproxy\n--eth_variant_mode=etchash"
            },
