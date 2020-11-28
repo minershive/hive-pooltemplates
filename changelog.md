@@ -1,3 +1,8 @@
+##### 0.6-178@201128 2020-11-28
+*   Gminer v2.33 (fixed critical bug caused miner restarts when running under watchdog. This bug appears in v2.30 and v2.31)
+*   TT-Miner v6.1.0 (added support EtcHash for upcoming ETC hardfork, use `-coin ETC`)
+*   NBMiner v34.0 (improved ethash hashrate on Nvidia 10 series GPUs，3% higher hashrate under same PowerLimit, or same hashrate with 5%-10% lower PowerLimit)
+
 ##### 0.6-178@201127 2020-11-27
 *   PhoenixMiner 5.3b (added support for the new ETCHash algorithm that will be used by the ETC blockchain from Nov 28, 2020. If you want to mine ETC, it is recommended to add '-coin etc' to your Extra config arguments in miner settings which equivalent to command-line, or 'COIN: etc' to field 'Pool URL' in miner setting which equivalent to epools.txt config file)
 *   NanoMiner v3.1.2 (octopus algorithm performance improvements for Nvidia GPUs: +1% performance improvement on Pascal arch 10xx, +10% performance improvement on Turing arch 16xx and 20xx, +1.5% performance improvement on Ampere arch 30xx; Nicehash support was added for Octopus algorithm)
