@@ -28,7 +28,7 @@
         },
         "nbminer": {
             "url": "%URL%",
-            "algo": "ethash",
+            "algo": "etchash",
             "pass": "x",
             "template": "%WAL%.%WORKER_NAME%"
         },
@@ -40,11 +40,11 @@
             "template": "%WAL%.%WORKER_NAME%"
         },
         "teamredminer": {
-            "algo": "ethash",
+            "algo": "etchash",
             "url": "stratum+tcp://%URL%",
             "template": "%WAL%.%WORKER_NAME%",
-            "pass": "x",
-            "user_config": "--eth_variant_mode=etchash"
+            "worker": "%WORKER_NAME%",
+            "pass": "x"
         },
         "lolminer": {
             "algo": "ETCHASH",
@@ -63,11 +63,11 @@
         },
         "t-rex": {
             "url": "%URL%",
-            "algo": "ethash",
+            "algo": "etchash",
             "template": "%WAL%",
             "worker": "%WORKER_NAME%",
             "pass": "x",
-            "user_config": "\"coin\": \"%COIN%\"\n\"fork-at\": \"etchash=epoch:390\""
+            "user_config": "\"coin\": \"%COIN%\""
         }
     },
 
