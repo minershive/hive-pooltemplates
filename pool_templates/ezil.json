@@ -126,15 +126,12 @@
             "tt-miner": {
                 "url": "stratum1+tcp://%URL%"
             },
-            "bminer": {
-                "algo": "ethproxy"
-            },
             "lolminer": {
               "user_config": "--ethstratum ETHPROXY"
             },
             "t-rex": {
               "template": "%WAL%",
-              "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
+              "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"%COIN%\"\n\"fork-at\": \"etchash=epoch:390\""
             }
         }
     },
@@ -142,7 +139,7 @@
         "coin": "ZIL",
         "servers": [
             {
-                "geo": "Europe ETC",
+                "geo": "Europe ETC(You need to change algo in miner config)",
                 "urls": [
                     "eu.etc.ezil.me:4444",
                     "eu.etc.ezil.me:14444"
@@ -154,7 +151,7 @@
 
             },
             {
-                "geo": "Asia ETC",
+                "geo": "Asia ETC(You need to change algo in miner config)",
                 "urls": [
                     "asia.ezil.me:4444",
                     "asia.ezil.me:14444"
@@ -165,7 +162,7 @@
                 ]
             },
             {
-                "geo": "USA East ETC",
+                "geo": "USA East ETC(You need to change algo in miner config)",
                 "urls": [
                     "us-east.ezil.me:4444",
                     "us-east.ezil.me:14444"
@@ -176,7 +173,7 @@
                 ]
             },
             {
-                "geo": "USA West ETC",
+                "geo": "USA West ETC(You need to change algo in miner config)",
                 "urls": [
                     "us-west.ezil.me:4444",
                     "us-west.ezil.me:14444"
@@ -233,6 +230,9 @@
         ],
         "miners": {
           "_prototype": "miners_ethash_4g",
+          "phoenixminer": {
+            "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, COIN: eth"
+          },
           "tt-miner": {
             "url": "stratum1+tcp://%URL%"
           },
