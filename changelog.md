@@ -1,5 +1,5 @@
 ##### 0.6-178@201129 2020-11-29
-*   ETHminer: fixed rejected shares on Nvidia GPUs on some pools
+*   ETHminer: fixed rejected shares 'low difficulty or invalid share' issue when mining on some pools with Nvidia GPUs
 
 ##### 0.6-178@201128-4 2020-11-28
 *   Fixed stats for EthMiner (reported Ethash instead EtcHash when mining ETC)
