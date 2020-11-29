@@ -579,9 +579,6 @@
             }
         ],
         "miners": {
-           "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3, ALLPOOLS: 1, ALLCOINS: 1"
-            },
             "phoenixminer": {
                 "url": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 4"
             },
@@ -2195,6 +2192,50 @@
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
+        }
+    },
+    {
+        "coin": "Nicehash-Octopus",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "octopus.eu.nicehash.com:3389"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "octopus.usa.nicehash.com:3389"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "octopus.hk.nicehash.com:3389"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "octopus.jp.nicehash.com:3389"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "octopus.br.nicehash.com:3389"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "octopus.in.nicehash.com:3389"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_octopus"
         }
     }
 ]

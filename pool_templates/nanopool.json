@@ -124,10 +124,7 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_ethash_slash_email",
-            "claymore": {
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            }
+            "_prototype": "miners_ethash_slash_email"
         }
     },
     {
@@ -357,63 +354,6 @@
         ],
         "miners": {
             "_prototype": "miners_randomx"
-        }
-    },
-    {
-        "coin": "PASC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "pasc-eu1.nanopool.org:15556",
-                    "pasc-eu2.nanopool.org:15556"
-                ]
-            },
-            {
-                "geo": "US East",
-                "urls": [
-                    "pasc-us-east1.nanopool.org:15556"
-                ]
-            },
-            {
-                "geo": "US West",
-                "urls": [
-                    "pasc-us-west1.nanopool.org:15556"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "pasc-asia1.nanopool.org:15556"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "pasc-jp1.nanopool.org:15556"
-                ]
-            },
-            {
-                "geo": "Australia",
-                "urls": [
-                    "pasc-au1.nanopool.org:15556"
-                ]
-            }
-        ],
-        "miners": {
-            "rhminer": {
-		"url": "%URL%",
-		"pass": "x",
-		"template": "%WAL%.%WORKER_NAME%",
-		"user_config": "-cputhreads 2"
-            },
-            "nanominer": {
-                "algo": "randomhash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "rigName = %WORKER_NAME%"
-            }
         }
     },
     {

@@ -20,5 +20,40 @@
         "miners": {
            "_prototype": "miners_kawpow"
         }
+    },
+    {
+        "coin": "CFX",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                   "cfx.666pool.cn:6655"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_octopus"
+        }
+    },
+    {
+        "coin": "PMEER",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                   "pmeer.666pool.cn:9966"
+                ],
+                "ssl_urls": [
+                   "pmeer.666pool.cn:9967"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"coin-type\": \"qitmeer\"\n\"freq\" : \"420\""
+            }
+        }
     }
 ]
