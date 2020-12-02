@@ -1,5 +1,5 @@
 ##### 0.6-178@201202 2020-12-02
-*   T-Rex 0.19.1 (minor performance improvements on octopus; *Notes: user reports that CUDA 10.0 build has better performance, this build is default for Hive users*)
+*   T-Rex 0.19.1 (minor performance improvements on octopus; *Notes: users report that CUDA 10.0 build has better performance, this build is the default for Hive users*)
 *   SRBMiner-Multi v0.5.8 (increased hashrate on 'curvehash' algorithm ~ 10-13%; added possibility to dual mine Ethash+Zil, Etchash+Zil; fixed some issues)
 *   CPUminer-Opt-rplant v4.5.20 (add x22 algo, blakestar2 coin)
 
