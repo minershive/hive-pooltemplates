@@ -1,3 +1,8 @@
+##### 0.6-178@201202 2020-12-02
+*   T-Rex 0.19.1 (minor performance improvements on octopus)
+*   SRBMiner-Multi v0.5.8 (increased hashrate on 'curvehash' algorithm ~ 10-13%; added possibility to dual mine Ethash+Zil, Etchash+Zil; fixed some issues)
+*   CPUminer-Opt-rplant v4.5.20 (add x22 algo, blakestar2 coin)
+
 ##### 0.6-178@201201 2020-12-01
 *   T-Rex 0.19.0 (added octopus algorithm with devfee 2%; reducing RAM footprint for non-ProgPoW based algorithms)
 *   NBMiner v34.4 (improved  octopus hashrate 1-5% on Nvidia 16, 20, 30 series GPUs, 29.2M on 1660s)
