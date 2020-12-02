@@ -1,3 +1,8 @@
+##### 0.6-178@201201 2020-12-01
+*   T-Rex 0.19.0 (added octopus algorithm with devfee 2%; reducing RAM footprint for non-ProgPoW based algorithms)
+*   NBMiner v34.4 (improved  octopus hashrate 1-5% on Nvidia 16, 20, 30 series GPUs, 29.2M on 1660s)
+*   XMRig v6.6.2 (optimized JIT compiler; fixed RandomX init when switching to other algo and back)
+
 ##### 0.6-178@201129 2020-11-29
 *   ETHminer: fixed rejected shares caused by 'low difficulty or invalid share' issue when mining EtcHash algorithm on some pools with Nvidia GPUs
 
