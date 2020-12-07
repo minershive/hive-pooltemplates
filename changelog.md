@@ -1,3 +1,16 @@
+##### 0.6-179@201206 2020-12-06
+*   Improved `agent` (prevent possible agent crashing on bad miner stats; optimized main loop for faster response; code cleanup)
+*   Improved `gpu-detect` (using `nvtool` which updated to v1.3.2 instead of nvidia-smi; added memory type and vendor detection on Nvidia; improved GPU naming with unloaded or unsupported drivers)
+*   Improved `nvidia-info` tool (added memory type and vendor info)
+*   Improved `nvidia-driver-update` tool (latest driver version now is installed by default; added option `-s` or `--stable` to install stable version; added version selection after the listings in interactive mode)
+*   Updated NVIDIA Firmware Update Utility `nvflash` to v5.666.0 (added support for NVIDIA GeForce 30 Ampere)
+*   Improved AMD overclocking for Polaris family (memory voltage can be set independently from core; added support for PowerLimit and so on)
+*   Improved `selfupgrade` and `miner-run` tools (try fix errors that occur on update and miner install)
+*   Improved `repomirror` package (added option to remove obsolete unreferenced packages `-r` or `--remove`; use disk-expand during install)
+*   Fixed support for some 3rd-party hardware (Coolbox: fixed autofan mode; fixed error on firmware update)
+*   NanoMiner v3.1.3 (ethash improvements on Nvidia GPUs: +1.7% on Turing 16xx, 20xx and +0.5% on Ampere 30xx; octopus improvements on Nvidia GPUs: +4% on Turing 16xx, 20xx and +2% on Ampere 30xx)
+*   NBMiner v34.5 (improved ethash hashrate 1% on certain Nvidia GPUs; minor octopus improvement on certain 20 & 30 series Nvidia GPUs; improved memory tweak efficiency and compatibility on Nvidia Pascal GPUs; fixed kawpow/progpow crash on certain AMD & Nvidia rigs)
+
 ##### 0.6-178@201202 2020-12-02
 *   T-Rex 0.19.1 (minor performance improvements on octopus; *Notes: users report that CUDA 10.0 build has better performance, this build is the default for Hive users*)
 *   SRBMiner-Multi v0.5.8 (increased hashrate on 'curvehash' algorithm ~ 10-13%; added possibility to dual mine Ethash+Zil, Etchash+Zil; fixed some issues)
