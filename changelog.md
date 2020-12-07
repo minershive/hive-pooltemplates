@@ -5,7 +5,7 @@
 *   Improved `nvidia-driver-update` tool (latest driver version now is installed by default; added option `-s` or `--stable` to install stable version; added version selection after listing drivers in interactive mode)
 *   Updated NVIDIA Firmware Update Utility `nvflash` to v5.666.0 (added support for NVIDIA GeForce 30 Ampere)
 *   Improved AMD overclocking for Polaris family (memory voltage can be set independently from core; added support for PowerLimit and so on)
-*   Added auto disabling AMD APU on boot (iGPU with codenames like RS880, Stoney, Wani, Picasso)
+*   Added auto disabling AMD APU (iGPU with codenames like RS880, Stoney, Wani, Picasso will be disabled on boot to exclude them from mining and prevent miner crush)
 *   Improved `selfupgrade` and `miner-run` tools (try fix errors that occur on update and miner install)
 *   Improved `sreboot` (improved compatibility with some motherboards)
 *   Improved `repomirror` package (added option to remove obsolete unreferenced packages `-r` or `--remove`; use disk-expand during install)
