@@ -6,7 +6,7 @@
 *   Updated NVIDIA Firmware Update Utility `nvflash` to v5.666.0 (added support for NVIDIA GeForce 30 Ampere)
 *   Improved AMD overclocking for Polaris family (memory voltage can be set independently from core; added support for PowerLimit and so on)
 *   Improved `selfupgrade` and `miner-run` tools (try fix errors that occur on update and miner install)
-*   Improved `sreboot` (improved compability with some motherboards)
+*   Improved `sreboot` (improved compatibility with some motherboards)
 *   Improved `repomirror` package (added option to remove obsolete unreferenced packages `-r` or `--remove`; use disk-expand during install)
 *   Fixed support for some 3rd-party hardware (Coolbox: fixed autofan mode; fixed error on firmware update)
 *   NanoMiner v3.1.3 (ethash improvements on Nvidia GPUs: +1.7% on Turing 16xx, 20xx and +0.5% on Ampere 30xx; octopus improvements on Nvidia GPUs: +4% on Turing 16xx, 20xx and +2% on Ampere 30xx)
