@@ -223,8 +223,8 @@
         "miners": {
             "t-rex": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "phi2",
-                "pass": "c=GEX",
+                "algo": "megabtx",
+                "pass": "c=BTX",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
@@ -266,7 +266,51 @@
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             }
         }
-    },    
+    }, 
+    {   
+        "coin": "ZYON",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.mecrypto.club:3139"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.mecrypto.club:3139"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum.mecrypto.club:3139"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%",
+                "ccalgo": "x13",
+                "ccpass": "c=ZYON"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x13",
+                "pass": "c=ZYON",
+                "template": "%WAL%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x13",
+                "pass": "c=ZYON",
+                "template": "%WAL%.%WORKER_NAME%"
+            }        
+        }
+    },   
     {   
     "coin": "CANN",
     "servers": [
@@ -309,44 +353,6 @@
         }
     }
 }, 
-{   
-    "coin": "DVS",
-    "servers": [
-        {
-            "geo": "Europe",
-            "urls": [
-                "eu.mecrypto.club:7530"
-            ]
-        },
-        {
-            "geo": "Asia",
-            "urls": [
-                "asia.mecrypto.club:7530"
-            ]
-        },
-        {
-            "geo": "North America",
-            "urls": [
-                "stratum.mecrypto.club:7530"
-            ]
-        }
-    ],
-    "miners": {
-        "ccminer": {
-            "ccurl": "stratum+tcp://%URL%",
-            "ccuser": "%WAL%",
-            "ccalgo": "lyra2v2",
-            "ccpass": "c=DVS"
-        },
-        "sgminer-gm": {
-            "url": "stratum+tcp://%URL%",
-            "algo": "lyra2v2",
-            "pass": "c=DVS",
-            "template": "%WAL%",
-            "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-        }
-    }
-},
 {   
     "coin": "DEFIT",
     "servers": [
@@ -584,18 +590,11 @@
         }
     ],
     "miners": {
-        "ccminer": {
-            "ccurl": "stratum+tcp://%URL%",
-            "ccuser": "%WAL%",
-            "ccalgo": "yescryptR16",
-            "ccpass": "c=ELI"
-        },
-        "sgminer-gm": {
-            "url": "stratum+tcp://%URL%",
-            "algo": "yescryptR16",
+        "cpuminer-opt": {
+            "url": " stratum+tcp://%URL%",
+            "algo": "yescryptr16",
             "pass": "c=ELI",
-            "template": "%WAL%",
-            "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            "template": "%WAL%.%WORKER_NAME%"
         }
     }
 },
@@ -638,48 +637,6 @@
     }
 },
 {   
-    "coin": "F44R",
-    "servers": [
-        {
-            "geo": "Europe",
-            "urls": [
-                "eu.mecrypto.club:9752"
-            ]
-        },
-        {
-            "geo": "Asia",
-            "urls": [
-                "asia.mecrypto.club:9752"
-            ]
-        },
-        {
-            "geo": "North America",
-            "urls": [
-                "stratum.mecrypto.club:9752"
-            ]
-        }
-    ],
-    "miners": {
-        "asicminer": {
-            "url": "stratum+tcp://%URL%",
-            "template": "%WAL%.%WORKER_NAME%"
-        },        
-        "ccminer": {
-            "ccurl": "stratum+tcp://%URL%",
-            "ccuser": "%WAL%",
-            "ccalgo": "scrypt",
-            "ccpass": "c=F44R"
-        },
-        "sgminer-gm": {
-            "url": "stratum+tcp://%URL%",
-            "algo": "scrypt",
-            "pass": "c=F44R",
-            "template": "%WAL%",
-            "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-        }
-    }
-},
-{   
     "coin": "FOXD",
     "servers": [
         {
@@ -714,6 +671,37 @@
             "pass": "c=FOXD",
             "template": "%WAL%",
             "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+        }
+    }
+},
+{   
+    "coin": "GOLD",
+    "servers": [
+        {
+            "geo": "Europe",
+            "urls": [
+                "eu.mecrypto.club:7676"
+            ]
+        },
+        {
+            "geo": "Asia",
+            "urls": [
+                "asia.mecrypto.club:7676"
+            ]
+        },
+        {
+            "geo": "North America",
+            "urls": [
+                "stratum.mecrypto.club:7676"
+            ]
+        }
+    ],
+    "miners": {
+        "cpuminer-opt": {
+            "url": " stratum+tcp://%URL%",
+            "algo": "yescryptr16",
+            "pass": "c=GOLD",
+            "template": "%WAL%.%WORKER_NAME%"
         }
     }
 },
@@ -858,50 +846,6 @@
             "url": "stratum+tcp://%URL%",
             "algo": "neoscrypt",
             "pass": "c=GBX",
-            "template": "%WAL%.%WORKER_NAME%"
-        }        
-    }
-},
-{   
-    "coin": "GMC",
-    "servers": [
-        {
-            "geo": "Europe",
-            "urls": [
-                "eu.mecrypto.club:6805"
-            ]
-        },
-        {
-            "geo": "Asia",
-            "urls": [
-                "asia.mecrypto.club:6805"
-            ]
-        },
-        {
-            "geo": "North America",
-            "urls": [
-                "stratum.mecrypto.club:6805"
-            ]
-        }
-    ],
-    "miners": {
-        "ccminer": {
-            "ccurl": "stratum+tcp://%URL%",
-            "ccuser": "%WAL%",
-            "ccalgo": "neoscrypt",
-            "ccpass": "c=GMC"
-        },
-        "sgminer-gm": {
-            "url": "stratum+tcp://%URL%",
-            "algo": "neoscrypt",
-            "pass": "c=GMC",
-            "template": "%WAL%",
-            "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-        },
-        "cryptodredge": {
-            "url": "stratum+tcp://%URL%",
-            "algo": "neoscrypt",
-            "pass": "c=GMC",
             "template": "%WAL%.%WORKER_NAME%"
         }        
     }
@@ -1189,6 +1133,37 @@
     }
 },
 {   
+    "coin": "MEC",
+    "servers": [
+        {
+            "geo": "Europe",
+            "urls": [
+                "eu.mecrypto.club:8716"
+            ]
+        },
+        {
+            "geo": "Asia",
+            "urls": [
+                "asia.mecrypto.club:8716"
+            ]
+        },
+        {
+            "geo": "North America",
+            "urls": [
+                "stratum.mecrypto.club:8716"
+            ]
+        }
+    ],
+    "miners": {
+        "t-rex": {
+            "url": "stratum+tcp://%URL%",
+            "algo": "megamec",
+            "pass": "c=MEC",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
+    }
+},
+{   
     "coin": "MEK",
     "servers": [
         {
@@ -1221,6 +1196,44 @@
             "url": "stratum+tcp://%URL%",
             "algo": "x17",
             "pass": "c=MEK",
+            "template": "%WAL%",
+            "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+        }
+    }
+},
+{   
+    "coin": "MBGL",
+    "servers": [
+        {
+            "geo": "Europe",
+            "urls": [
+                "eu.mecrypto.club:8737"
+            ]
+        },
+        {
+            "geo": "Asia",
+            "urls": [
+                "asia.mecrypto.club:8737"
+            ]
+        },
+        {
+            "geo": "North America",
+            "urls": [
+                "stratum.mecrypto.club:8737"
+            ]
+        }
+    ],
+    "miners": {
+        "ccminer": {
+            "ccurl": "stratum+tcp://%URL%",
+            "ccuser": "%WAL%",
+            "ccalgo": "skunk",
+            "ccpass": "c=MBGL"
+        },
+        "sgminer-gm": {
+            "url": "stratum+tcp://%URL%",
+            "algo": "skunk",
+            "pass": "c=MBGL",
             "template": "%WAL%",
             "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
         }
@@ -1261,6 +1274,37 @@
             "pass": "c=MYNT",
             "template": "%WAL%",
             "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+        }
+    }
+},
+{   
+    "coin": "NOON",
+    "servers": [
+        {
+            "geo": "Europe",
+            "urls": [
+                "eu.mecrypto.club:7209"
+            ]
+        },
+        {
+            "geo": "Asia",
+            "urls": [
+                "asia.mecrypto.club:7209"
+            ]
+        },
+        {
+            "geo": "North America",
+            "urls": [
+                "stratum.mecrypto.club:7209"
+            ]
+        }
+    ],
+    "miners": {
+        "cpuminer-opt": {
+            "url": " stratum+tcp://%URL%",
+            "algo": "yescryptr16",
+            "pass": "c=NOON",
+            "template": "%WAL%.%WORKER_NAME%"
         }
     }
 },
@@ -1716,6 +1760,48 @@
         }
     }
 },
+{   
+    "coin": "SCC",
+    "servers": [
+        {
+            "geo": "Europe",
+            "urls": [
+                "eu.mecrypto.club:8661"
+            ]
+        },
+        {
+            "geo": "Asia",
+            "urls": [
+                "asia.mecrypto.club:8661"
+            ]
+        },
+        {
+            "geo": "North America",
+            "urls": [
+                "stratum.mecrypto.club:8661"
+            ]
+        }
+    ],
+    "miners": {
+        "ccminer": {
+            "ccurl": "stratum+tcp://%URL%",
+            "ccuser": "%WAL%",
+            "ccalgo": "x11",
+            "ccpass": "c=SCC"
+        },
+        "sgminer-gm": {
+            "url": "stratum+tcp://%URL%",
+            "algo": "x11",
+            "pass": "c=SCC",
+            "template": "%WAL%",
+            "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+        },
+        "asicminer": {
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
+    }
+}, 
 {   
     "coin": "SMN",
     "servers": [
