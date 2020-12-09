@@ -1,0 +1,65 @@
+[
+    {
+        "pool": {
+            "name": "DGB256.online",
+            "url": "https://hiveon.net",
+            "fee": 1,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "DGB",
+        "servers": [
+            {
+                "geo": "WW Balancer",
+                "urls": [
+                    "pool.dgb256.online:8083"
+                ]
+            },
+            {
+                "geo": "Europe\/France",
+                "urls": [
+                    "europe.dgb256.online:8083"
+                ]
+            },
+            {
+                "geo": "Canada\/Quebec",
+                "urls": [
+                    "canada.dgb256.online:8083"
+                ]
+            },
+            {
+                "geo": "N.America East",
+                "urls": [
+                    "usa-east.dgb256.online:8083"
+                ]
+            },
+            {
+                "geo": "N.America West",
+                "urls": [
+                    "usa-west.dgb256.online:8083"
+                ]
+            },
+            {
+                "geo": "Australia",
+                "urls": [
+                    "australia.dgb256.online:8083"
+                ]
+            },
+            {
+                "geo": "Asia\/Singapore",
+                "urls": [
+                    "singapore.dgb256.online:8083"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "d=0.25",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"coin-type\": \"odo\"\n\"freq\" : \"480\""
+            }
+        }
+    }
+]

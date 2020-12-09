@@ -1,5 +1,13 @@
 [
     {
+        "pool": {
+            "name": "FlyPool",
+            "url": "https://ravencoin.flypool.org",
+            "fee": 1,
+            "type": "PPLNS"
+        }
+    },
+    {
         "coin": "ZEC",
         "servers": [
             {
@@ -53,6 +61,29 @@
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "Worldwide",
+                "urls": [
+                    "stratum-ravencoin.flypool.org:3333"
+                ],
+                "ssl_urls": [
+                    "stratum-ravencoin.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "Worldwide alt",
+                "urls": [
+                    "stratum-ravencoin.flypool.org:13333"
+                ]
+            }
+        ],
+        "miners": {
+           "_prototype": "miners_kawpow"
         }
     }
 ]

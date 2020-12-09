@@ -3,26 +3,44 @@
         "coin": "RVN",
         "servers": [
             {
-                "geo": null,
+                "geo": "US vardiff",
                 "urls": [
-                    "pool.minermore.com:3636"
+                    "us.rvn.minermore.com:4501"
+                ]
+            },
+            {
+                "geo": "East US vardiff",
+                "urls": [
+                    "east.us.rvn.minermore.com:4501"
+                ]
+            },
+            {
+                "geo": "West US vardiff",
+                "urls": [
+                    "west.us.rvn.minermore.com:4501"
+                ]
+            },
+            {
+                "geo": "EU vardiff",
+                "urls": [
+                    "eu.rvn.minermore.com:4501"
+                ]
+            },
+            {
+                "geo": "Asia vardiff",
+                "urls": [
+                    "asia.rvn.minermore.com:4501"
+                ]
+            },
+            {
+                "geo": "Canada vardiff",
+                "urls": [
+                    "ca.rvn.minermore.com:4501"
                 ]
             }
         ],
         "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "x16r",
-                "ccpass": "c=RVN"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "c=RVN",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
+           "_prototype": "miners_kawpow"
         }
     },
     {

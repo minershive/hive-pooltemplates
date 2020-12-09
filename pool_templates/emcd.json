@@ -5,7 +5,8 @@
             {
                 "geo": "Russia",
                 "urls": [
-                    "gate.emcd.io:3333"
+                    "gate.emcd.io:3333",
+                    "gate.emcd.io:443"
                 ]
             },
             {
@@ -19,6 +20,30 @@
                 "geo": "China",
                 "urls": [
                     "cn.emcd.io:3333"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "usa.emcd.io:3333"
+                ]
+            },
+            {
+                "geo": "Iran",
+                "urls": [
+                    "ir.emcd.io:3333"
+                ]
+            },
+            {
+                "geo": "Kyrgyzstan",
+                "urls": [
+                    "kg.emcd.io:3333"
+                ]
+            },
+            {
+                "geo": "Kazakhstan",
+                "urls": [
+                    "kz.emcd.io:3333"
                 ]
             }
         ],
@@ -50,6 +75,30 @@
                 "urls": [
                     "cn.emcd.io:3434"
                 ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.emcd.io:3434"
+                ]
+            },
+            {
+                "geo": "Iran",
+                "urls": [
+                    "ir.emcd.io:3434"
+                ]
+            },
+            {
+                "geo": "Kyrgyzstan",
+                "urls": [
+                    "kg.emcd.io:3434"
+                ]
+            },
+            {
+                "geo": "Kazakhstan",
+                "urls": [
+                    "kz.emcd.io:3434"
+                ]
             }
         ],
         "miners": {
@@ -60,46 +109,375 @@
         }
     },
     {
-        "coin": "EMCD.IO-Ethash",
+        "coin": "DASH",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "Russia",
                 "urls": [
-                    "ethash.mine.emcd.io:8282"
+                    "gate.emcd.io:8888"
                 ]
             },
             {
-                "geo": "Europe 3GB cards",
+                "geo": "Europe",
                 "urls": [
-                    "ethash.mine.emcd.io:8283"
+                    "eu.emcd.io:8888",
+                    "eu2.emcd.io:8888"
+                ]
+            },
+            {
+                "geo": "China",
+                "urls": [
+                    "cn.emcd.io:8888"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "usa.emcd.io:8888"
+                ]
+            },
+            {
+                "geo": "Iran",
+                "urls": [
+                    "ir.emcd.io:8888"
+                ]
+            },
+            {
+                "geo": "Kyrgyzstan",
+                "urls": [
+                    "kg.emcd.io:8888"
+                ]
+            },
+            {
+                "geo": "Kazakhstan",
+                "urls": [
+                    "kz.emcd.io:8888"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ALLPOOLS: 1, ALLCOINS: -1"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "gate.emcd.io:5555"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.emcd.io:5555",
+                    "eu2.emcd.io:5555"
+                ]
+            },
+            {
+                "geo": "China",
+                "urls": [
+                    "cn.emcd.io:5555"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "usa.emcd.io:5555"
+                ]
+            },
+            {
+                "geo": "Iran",
+                "urls": [
+                    "ir.emcd.io:5555"
+                ]
+            },
+            {
+                "geo": "Kyrgyzstan",
+                "urls": [
+                    "kg.emcd.io:5555"
+                ]
+            },
+            {
+                "geo": "Kazakhstan",
+                "urls": [
+                    "kz.emcd.io:5555"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "BSV",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "gate.emcd.io:6666"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.emcd.io:6666",
+                    "eu2.emcd.io:6666"
+                ]
+            },
+            {
+                "geo": "China",
+                "urls": [
+                    "cn.emcd.io:6666"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "usa.emcd.io:6666"
+                ]
+            },
+            {
+                "geo": "Iran",
+                "urls": [
+                    "ir.emcd.io:6666"
+                ]
+            },
+            {
+                "geo": "Kyrgyzstan",
+                "urls": [
+                    "kg.emcd.io:6666"
+                ]
+            },
+            {
+                "geo": "Kazakhstan",
+                "urls": [
+                    "kz.emcd.io:6666"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "gate.emcd.io:7878"
+                ]
+            },
+            {
+                "geo": "China",
+                "urls": [
+                    "cn.emcd.io:7878"
+                ]
+            },
+            {
+                "geo": "Kyrgyzstan",
+                "urls": [
+                    "kg.emcd.io:7878"
+                ]
+            },
+            {
+                "geo": "Iran",
+                "urls": [
+                    "ir.emcd.io:7878"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.emcd.io:7878"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.emcd.io:7878"
+                ]
+            }
+        ],
+        "miners": {
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"etchash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
+            },
+            "teamredminer": {
+                "algo": "etchash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "etchash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "etchash",
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ETCHASH",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "etchash"
+            },
+             "t-rex": {
+                 "algo": "etchash",
+                 "url": "stratum+tcp://%URL%",
+                 "template": "%WAL%.%WORKER_NAME%",
+                 "pass": "x"
+            }
+        }
+    },
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "gate.emcd.io:7777"
+                ]
+            },
+            {
+                "geo": "China",
+                "urls": [
+                    "cn.emcd.io:7777"
+                ]
+            },
+            {
+                "geo": "Kyrgyzstan",
+                "urls": [
+                    "kg.emcd.io:7777"
+                ]
+            },
+            {
+                "geo": "Kazakhstan",
+                "urls": [
+                    "kz.emcd.io:7777"
+                ]
+            },
+            {
+                "geo": "Iran",
+                "urls": [
+                    "ir.emcd.io:7777"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "us.emcd.io:7777"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.emcd.io:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "lolminer": {
+                "algo": "ETHASH",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ethminer": {
+                "ver":"0.18.0",
+                "cuda": 1,
+                "fork":"ethash",
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
+                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+            },
+            "gminer": {
+                "algo":"ethash",
+                "pass":"x",
+                "port":"%URL_PORT%",
+                "server":"%URL_HOST%",
+                "template":"%WAL%.%WORKER_NAME%",
+                "user_config":"--proto stratum"
             },
             "finminer": {
                 "algo": "ethash",
                 "url": "%URL%",
                 "template": "%WAL%",
                 "pass": "x",
-                "user_config": "rigName = %WORKER_NAME%"
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethstratum",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }

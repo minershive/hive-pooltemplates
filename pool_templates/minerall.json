@@ -91,10 +91,6 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allpools 1"
-            },
             "phoenixminer": {
                 "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 4, COIN: %COIN%"
             },
@@ -111,38 +107,6 @@
             },
             "teamredminer": {
                 "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            }
-        }
-    },
-    {
-        "coin": "RVN",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "pool.minerall.io:4201"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "x16r",
-                "ccpass": "x"
-            },
-            "sgminer-gm-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "teamredminer": {
-                "algo": "x16rv2",
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
