@@ -1,3 +1,12 @@
+##### 0.6-180@201206 2020-12-08
+*   Improved `gpu-detect` (improved memory detection for Nvidia GPUs)
+*   Improved `amd-info` tool (added new metrics: SoC/MVDD_HBM voltage, PCI-E link speed/width)
+*   Fixed `amd-oc` (on some configuration OC incorrectly applied when MVDD set as 0 - now uses Core voltage)
+*   Fixed `nvidia-oc` (fixed applying pill for early revisions GTX 1080)
+*   Fixed `sreboot` (reboot didn't work in some cases e.g. on high LA)
+*   miniZ v1.6x (improved equihash 210/9 (Aion) up +8% depending on GPU; improved hashrate on equihash 144/5 for the RTX 30XX GPUs; fixed issues with --pers on MiningRigRentals; combined CUDA 8/10/11 versions into one (same) executable)
+*   T-Rex: improved stats (added stats from miner's API: rejected and invalid shares per GPU)
+
 ##### 0.6-179@201206 2020-12-06
 *   Improved `agent` (prevent possible agent crashing on bad miner stats; optimized main loop for faster response; code cleanup)
 *   Improved `gpu-detect` (using `nvtool` which updated to v1.3.2 instead of nvidia-smi; added memory type and vendor detection on Nvidia; improved GPU naming with unloaded or unsupported drivers)
