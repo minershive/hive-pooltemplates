@@ -1,4 +1,12 @@
-##### 0.6-180@201206 2020-12-08
+##### 0.6-181@201209 2020-12-09
+*   Improved `hello` command (added GPU redetect command)
+*   Improved `nvidia-driver-update` (call redetect GPU after driver installation)
+*   Improved `gpu-detect` (do not cache GPU detect results for Nvidia)
+*   Fixed `amd-info` (very long responce on some Navi boards)
+*   T-Rex: fix per GPU errors reporting (when used only specified devices)
+*   PhoenixMiner: fixed stats (fixed algo reporting when mined ETC)
+
+##### 0.6-180@201208 2020-12-08
 *   Improved `gpu-detect` (improved memory detection for Nvidia GPUs)
 *   Improved `amd-info` tool (added new metrics: SoC/MVDD_HBM voltage, PCI-E link speed/width)
 *   Fixed `amd-oc` (on some configuration OC incorrectly applied when MVDD set as 0 - now uses Core voltage)
