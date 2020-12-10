@@ -3,7 +3,7 @@
 *   Improved `nvidia-driver-update` (call redetect GPU after driver installation)
 *   Improved `gpu-detect` (do not cache GPU detect results for Nvidia)
 *   Fixed `amd-info` (very long responce on some Navi boards)
-*   TeamRedMiner v0.7.19 (rewritten miner GPU initialization procedure; reintroduced single DAG buffer support for recent drivers allowing large single allocations, see `--eth_dag_buf`; added high score list of the 15 highest value shares found since start, see `--high_score`; other small improvements & fixes)
+*   TeamRedMiner v0.7.19 (rewritten miner GPU initialization procedure; reintroduced single DAG buffer support for recent drivers allowing large single allocations, see `--eth_dag_buf`; added high score list of the 15 highest value shares found since start, see `--high_score`; other improvements and fixes in the miner changelog)
 *   T-Rex: fix per GPU errors reporting (when used only specified devices)
 *   PhoenixMiner: fixed stats (fixed algo reporting when mined ETC)
 
