@@ -1,7 +1,7 @@
 ##### 0.6-182@201214 2020-12-14
 *   Introduced auto-switching to Hive API servers (agent will try switch to mirrors when network errors occur; `net-test` updated to show current API server)
 *   Improved `selfupgrade` tool (added new option -g, --grub to update only grub config to add/remove custom options; do not start miner if it was not run before selfupgrade; show hello output only on error)
-*   Improved software watchdog (changed behavior on system with high LA; using fast reboot method on system with high LA;; fixed/disabled GPU check on maintenance mode)
+*   Improved software watchdog (changed behavior on system with high LA; using fast reboot method on system with high LA; fixed/disabled GPU check on maintenance mode)
 *   Improved `amd-info` tool (added memory type/vendor info)
 *   Fixed `sreboot` (use improved reboot on system with high LA)
 *   Fixed `amd-oc` (fixed errors on GPUs prior AMD Polaris)
@@ -12,7 +12,7 @@
 *   TeamRedMiner v0.7.20 (ethash: added default capped DAG allocation for 4GBs at 4072MB, see '--eth_4g_max_alloc'; ethash: bugfix for crashes using '--eth_dag_cache' on 4GB GPUs)
 *   NBMiner v35.0 (added statistics for invalid shares on ethash; added statistics for Health information of AMD GPU; more detailed error information of OpenCL API; reduced CPU usage)
 *   GMiner v2.34 (added DAG check after generation for Ethash and ProgPoW/KAWPOW algorithms, this feature help to detect overclock issues; decreased stale share percentage on ProgPoW/KAWPOW algorithms; improved AMD support)
-*   T-Rex v0.19.4 (changes for 0.19.3&0.19.4: improved octopus performance 1-2% on some configurations; reduced the amount of invalid shares on ethash and octopus; added `--no-hashrate-report` parameter to disable hashrate reporting to the mining pool; added `--keep-gpu-busy parameter` to continue mining even in case of connection loss: useful if pausing GPUs causes instability; added `--api-read-only` parameter to forbid applying config changes via API and web-monitoring page. Notes: Removed incorrect display of invalid shares because as it confuses users due contain not only invalid shares, until the moment when T-Rex will provide this functionality in the API. Users who want to see rejected shares in the context of the GPU can add the option `"report_rejected_per_gpu": true`)
+*   T-Rex v0.19.4 (changes for 0.19.3&0.19.4: improved octopus performance 1-2% on some configurations; reduced the amount of invalid shares on ethash and octopus; added `--no-hashrate-report` parameter to disable hashrate reporting to the mining pool; added `--keep-gpu-busy parameter` to continue mining even in case of connection loss: useful if pausing GPUs causes instability; added `--api-read-only` parameter to forbid applying config changes via API and web-monitoring page. *Notes: Removed incorrect display of invalid shares because as it confuses users due contain not only invalid shares, until the moment when T-Rex will provide this functionality in the API. Users who want to see rejected shares in the context of the GPU can add the option `"report_rejected_per_gpu": true`*)
 *   NanoMiner v3.1.4 (fixed stability issue with AMD RX 5700 mining Ethash)
 *   SRBMiner-Multi v0.5.9 (fixed a bug on 'randomx' algorithm that could cause miner to create invalid shares for some jobs; removed algorithms: 'cryptonight_bbc', 'cryptonight_catalans'; bug fixes)
 *   WildRig-Multi v0.28.2 (x11k algo will use the same algo for devfee, this should improve miner stability on some cards; option `--print-devices` now will print busID)
