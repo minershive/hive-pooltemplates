@@ -1,5 +1,5 @@
 ##### 0.6-182@201214 2020-12-14
-*   Introduced auto-switching to Hive API servers (agent will try switch to mirrors when network errors occur; `net-test` updated to show current API server)
+*   Introduced auto-switching between Hive API servers (agent will try switch to mirrors when network errors occur; `net-test` updated to show current API server)
 *   Improved `selfupgrade` tool (added new option -g, --grub to update only grub config to add/remove custom options; do not start miner if it was not run before selfupgrade; show hello output only on error)
 *   Improved software watchdog (changed behavior on system with high LA; using fast reboot method on system with high LA; fixed/disabled GPU check on maintenance mode)
 *   Improved `amd-info` tool (added memory type/vendor info)
