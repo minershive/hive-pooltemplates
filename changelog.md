@@ -1,3 +1,9 @@
+##### 0.6-183@201215 2020-12-15
+*   Fixed `selfupgrade` (miner will started after update and disabled in maintenance mode)
+*   Improvements and fixes for `hello` command (now shows server requests and responses only with 'verbose' option set; start/restart miners only if config is changed)
+*   Updated `hive-opt` package (Notes: AMD GPUs owners need restart rig for the changes to take effect)
+*   CPUminer-Opt-JayDDee v3.15.4 (fixed yescryptr16 broken in v3.15.3)
+
 ##### 0.6-182@201214 2020-12-14
 *   Introduced auto-switching between Hive API servers (agent will try switch to mirrors when network errors occur; `net-test` updated to show current API server)
 *   Improved `selfupgrade` tool (added new option `-g`, `--grub` to update only grub config to add/remove custom options; do not start miner if it was not run before selfupgrade; show hello output only on error)
