@@ -1,5 +1,5 @@
 ##### 0.6-183@201215 2020-12-15
-*   Fixed `selfupgrade` (miner will started after update and disabled in maintenance mode)
+*   Fixed `selfupgrade` (miner will started after update and disabled in maintenance mode; Notes: need restart miner(-s) manually after update)
 *   Improvements and fixes for `hello` command (now shows server requests and responses only with 'verbose' option set; start/restart miners only if config is changed)
 *   Updated `hive-opt` package (Notes: AMD GPUs owners need restart rig for the changes to take effect)
 *   CPUminer-Opt-JayDDee v3.15.4 (fixed yescryptr16 broken in v3.15.3)
