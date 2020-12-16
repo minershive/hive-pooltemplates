@@ -2,7 +2,6 @@
 *   NOTICE: For users who updating from v0.6-182 please select "Reboot after complete" option from "Upgrade or downgrade" menu OR update via command `selfupgrade && hello && miner restart` from dashboard
 *   Fixed `selfupgrade` (miner will started after update and disabled in maintenance mode)
 *   Improvements and fixes for `hello` command (now shows server requests and responses only with 'verbose' option set; start/restart miners only if config is changed)
-*   Updated `hive-opt` package (Notes: AMD GPUs owners need restart rig for the changes to take effect)
 *   CPUminer-Opt-JayDDee v3.15.4 (fixed yescryptr16 broken in v3.15.3)
 
 ##### 0.6-182@201214 2020-12-14
