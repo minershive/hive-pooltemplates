@@ -1,3 +1,10 @@
+##### 0.6-184@201217 2020-12-17
+*   Fixed `amd-info` tool (fix fo display type/vendor memory on mixed rigs and rigs with enabled iGPU; fixed PCIe display status)
+*   TeamRedMiner v0.7.21 (improved probability for high (4078-4080 MB) ethash 4GB capped allocation running stable over time that could fix crash after 5-10 mins)
+*   Gminer v2.35 (improved compatibility with some Ethash pools; added DAG check after generation for Ethash and ProgPoW/KAWPOW algorithms, this feature helps to detect overclock issues; improved AMD support that could fix "No device found" error on some system configurations; decreased stale share percentage on ProgPoW/KAWPOW algorithms; significantly performance improvements for KAWPOW/ProgPoW algorithms on mining edition GPUs; miner doesn't stop when DAG generation failed on some GPU and such GPU will be marked RED in statistics; removed algorithms: Eaglesong, Handshake, Kadena, BeamHashI, BeamHashII, Grimm, Cuckaroo29, Cuckaroom29, Equihash 96/5 that also helped significantly reduce binary size)
+*   lolMiner v1.17 (significantly reduced Ethash power draw on Navi GPUs; reduced number of stale shares on Cortex algorithm; added a basic temperature protection mechanism: `--tstop`, `--start` - stop/start mining operation on a GPU at the given temperature,`--tmode` edge/junction/memory to apply the scheme to Tedge/Tjunc/Tmem; Fixed bugs: Ethash Ethproxy stratum mode some times loosing worker name; Ethash & Beam not starting up on Radeon R9 380; Ethash not starting up on some 6G Nvidia cards)
+*   CPUminer-Opt by rplant v5.0.4 (added circcash algo for CIRC/CircCash; miner for all DNS requests use CloudFlare DoH)
+
 ##### 0.6-183@201215 2020-12-15
 *   IMPORTANT! For users who updating from v0.6-182 please select "Reboot after complete" option from "Upgrade or downgrade" menu OR update via command `selfupgrade && hello && miner restart` from dashboard
 *   Fixed `selfupgrade` (miner will started after update and disabled in maintenance mode; fixed error of sending status to the server about successful update)
