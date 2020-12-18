@@ -1,3 +1,6 @@
+##### 0.6-184@201218 2020-12-18
+*   Bminer v16.3.7 (added support NVIDIA 30 series GPUs; fixed crash in NVIDIA Etherum miner)
+
 ##### 0.6-184@201217 2020-12-17
 *   Fixed `amd-info` tool (fix fo display type/vendor memory on mixed rigs and rigs with enabled iGPU; fixed PCIe display status)
 *   TeamRedMiner v0.7.21 (improved probability for high (4078-4080 MB) ethash 4GB capped allocation running stable over time that could fix crash after 5-10 mins)
