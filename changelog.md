@@ -3,7 +3,7 @@
 *   Gminer v2.36 (support extra nonce length up to 6 bytes for Ethash/KAWPOW algorithms, now miner will works on f2pool, miningpoolhub and other pools; added display of fan speed, core clock, memory clock, DAG size, share difficulty for Ethash/KAWPOW algorithms; display power efficienty for cuckoo cycle algorithms in milliwatts; fixed bug with stale job logic on beam and cortex - it will increase hashrate on pool side; added option to enable/disable caching of dag file, enabled by default, --cache_dag 0/1; added option to enable/disable share check on CPU for Ethash/KAWPOW algorithms, enabled by default, --share_check 0/1)
 *   SRBMiner-Multi v0.6.0 (small performance increase on 'cryptonight_gpu', 'curvehash' algorithms; slow start (ramp up) of GPU's on miner start is now on by default; added parameter '--disable-workers-ramp-up'; removed 'tellor', 'rainforestv2' algorithms)
 *   CPUminer-Opt by rplant v5.0.5 (fixing a critical bug with "job not found" shares. on sugarchain, the update is mandatory, on other coins it is desirable)
-*   XLArig v5.2.0 (upstream to XMRig v6.3.4)
+*   XLArig v5.2.0 (as fork xmrig-new; upstream to XMRig v6.3.4)
 
 ##### 0.6-184@201218 2020-12-18
 *   Bminer v16.3.7 (added support NVIDIA 30 series GPUs; fixed crash mining Ethereum on NVIDIA)
