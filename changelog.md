@@ -1,3 +1,8 @@
+##### 0.6-184@201221 2020-12-21
+*   T-Rex 0.19.5 (octopus up to 20% performance improvements on most 20xx and 30xx series GPUs with low PL; added solo mining support for octopus)
+*   NBMiner v35.1 (ethash: more stable under high OC for Nvidia GPUs; octopus: improved hashrate 1-3% for 16, 20, 30 Nvidia GPUs)
+*   XMRig v6.7.0 (up to 20-30% faster RandomX dataset initialization with AVX2 on some CPUs; added VM detection; code cleanup and refactoring; fixed some errors found by static analysis)
+
 ##### 0.6-184@201220 2020-12-20
 *   PhoenixMiner v5.4c (validated support for Nvidia RTX 3090, 3080, 3070, and 3060Ti GPUs on current kernels and there are no speed increases from the previous miner release; added new kernels to allow mining on AMD Hawaii cards: R9 390, etc., with the current and future DAG epochs; added support for DAG epochs up to 500)
 *   Gminer v2.36 (support extra nonce length up to 6 bytes for Ethash/KAWPOW algorithms, now miner will works on f2pool, miningpoolhub and other pools; added display of fan speed, core clock, memory clock, DAG size, share difficulty for Ethash/KAWPOW algorithms; display power efficiency for cuckoo cycle algorithms in milliwatts; fixed bug with stale job logic on beam and cortex - it will increase hashrate on pool side; added option to enable/disable caching of DAG file, enabled by default, --cache_dag 0/1; added option to enable/disable share check on CPU for Ethash/KAWPOW algorithms, enabled by default, --share_check 0/1)
