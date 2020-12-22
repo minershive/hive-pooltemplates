@@ -1,3 +1,9 @@
+##### 0.6-184@201222 2020-12-22
+*   Gminer v2.37 (fixed bug with '--proto stratum' for ethash mining appeared in v2.36, this bug may lead to share rejects; fixed mining on kawpow algorithm with intensity; lowered fee on ethash to 0.65%, kawpow algorithm to 1%)
+*   NBMiner v35.2 (added DAG verification on ethash after creation, if miner showed log in red font: 'Verification failed, invalid 2.0%', please consider lower GPU overclock)
+*   CPUminer-Opt by rplant v5.0.7 (added dynamic US and RU2 stratums for sugarchain and microbitcoin; DoH switched to google, now miner starts faster; bug fixes)
+*   CPUminer-Opt-JayDDee v3.15.5 (fixed stratum jobs lost if 2 jobs received in less than one second)
+
 ##### 0.6-184@201221 2020-12-21
 *   T-Rex 0.19.5 (octopus up to 20% performance improvements on most 20xx and 30xx series GPUs with low PL; added solo mining support for octopus)
 *   NBMiner v35.1 (ethash: more stable under high OC for Nvidia GPUs; octopus: improved hashrate 1-3% for 16, 20, 30 Nvidia GPUs)
