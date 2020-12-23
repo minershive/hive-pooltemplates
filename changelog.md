@@ -1,3 +1,6 @@
+##### 0.6-186@201223-2 2020-12-23
+*   Fixed `autofan` issue introduced into v0.6-185 (setting fan speed on AMD GPUs was broken)
+
 ##### 0.6-185@201223 2020-12-23
 *   Improved `gpu-stats` (improved reading metrics from AMD GPUs)
 *   Improved API servers fallback (removed hardcoded API hosts; added repository URL to `net-test`)
