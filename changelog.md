@@ -2,7 +2,7 @@
 *   Improved `gpu-stats` (improved reading metrics from AMD GPUs)
 *   Improved API servers fallback (removed hardcoded API hosts; added repository URL to `net-test`)
 *   Improved `amd-oc` (added an alternative method that may help for some Polaris GPUs when core voltage stuck at 1000mV)
-*   Improved `nvidia-info` tool (added filtering by GPU index and bus id number)
+*   Improved `nvidia-info` tool (added filtering by GPU index and bus id number, so you can call it like `nvidia-info 4` for GPU4 or `nvidia-info 05:00` for GPU with bus ID 05:00)
 *   Fixed Nvidia GPUs VBIOS flashing (improved Nvidia driver unloading; fixed communication issues between `agent` and latest `nvflash`)
 *   Fixed empty hashrate on too small values (e.g. on cuckaroo32 algorithm)
 *   Fixed `autofan` (always set PWM mode before FAN speed which could fix for AMD R9 without FAN set in OC)
