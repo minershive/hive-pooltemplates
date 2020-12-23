@@ -1,3 +1,14 @@
+##### 0.6-185@201223 2020-12-23
+*   Improved `gpu-stats` (improved reading metrics from AMD GPUs)
+*   Improved API servers fallback (removed hardcoded API hosts; added repository URL to `net-test`)
+*   Improved `amd-oc` (may help for some Polaris GPUs when core voltage stuck at 1000mV)
+*   Improved `nvidia-info` tool (added filtering by GPU index and bus id number)
+*   Fixed Nvidia GPUs VBIOS flashing (improved Nvidia driver unloading; fixed communication `agent` and `nvflash`)
+*   Fixed empty hashrate on too small values (e.g. on cuckaroo32 algorithm)
+*   Fixed `autofan` (always set PWM mode before FAN speed which could fix for AMD R9 without FAN set in OC)
+*   Other small fixes
+*   TeamRedMiner v0.7.22 (rewrited ethash kernel for Navi, now should now be more stable and use less power; slightly reworked init procedure; added Claymore compatible API, see the '--cm_api_listen')
+
 ##### 0.6-184@201222 2020-12-22
 *   Gminer v2.37 (fixed bug with '--proto stratum' for ethash mining appeared in v2.36, this bug may lead to share rejects; fixed mining on kawpow algorithm with intensity; lowered fee on ethash to 0.65%, kawpow algorithm to 1%)
 *   NBMiner v35.2 (added DAG verification on ethash after creation, if miner showed log in red font: 'Verification failed, invalid 2.0%', please consider lower GPU overclock)
