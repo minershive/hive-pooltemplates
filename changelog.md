@@ -7,7 +7,7 @@
 *   Fixed empty hashrate on too small values (e.g. on cuckaroo32 algorithm)
 *   Fixed `autofan` (always set PWM mode before FAN speed which could fix for AMD R9 without FAN set in OC)
 *   Other small fixes
-*   TeamRedMiner v0.7.22 (rewrited ethash kernel for Navi, now should now be more stable and use less power; slightly reworked init procedure; added Claymore compatible API, see the '--cm_api_listen')
+*   TeamRedMiner v0.7.22 (rewritten ethash kernel for Navi, now should now be more stable and use less power; slightly reworked init procedure; added Claymore compatible API, see the '--cm_api_listen')
 
 ##### 0.6-184@201222 2020-12-22
 *   Gminer v2.37 (fixed bug with '--proto stratum' for ethash mining appeared in v2.36, this bug may lead to share rejects; fixed mining on kawpow algorithm with intensity; lowered fee on ethash to 0.65%, kawpow algorithm to 1%)
