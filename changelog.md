@@ -1,3 +1,8 @@
+##### 0.6-187@201224 2020-12-24
+*   Fixed `amd-oc` issue introduced into v0.6-185 (overclocking for some AMD GPUs worked incorrectly and mostly affected to Polaris RX 400-series)
+*   Fixed `gpu-fans-find` (minor fix)
+*   Bminer v16.4.0 (added support mining ETH on AMD 4G cards via the `-ethash-allocation` parameter)
+
 ##### 0.6-186@201223-2 2020-12-23
 *   Fixed `autofan` issue introduced into v0.6-185 (setting fan speed on AMD GPUs was broken)
 
