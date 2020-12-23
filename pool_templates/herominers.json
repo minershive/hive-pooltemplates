@@ -102,86 +102,7 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allpools 1"
-            },
-            "ethminer": {
-                "ver":"0.18.0",
-                "cuda": 1,
-                "fork":"ethash",
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum2+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
-            },
-            "gminer": {
-                "algo":"ethash",
-                "pass":"x",
-                "port":"%URL_PORT%",
-                "server":"%URL_HOST%",
-                "template":"%WAL%.%WORKER_NAME%",
-                "user_config":"--proto stratum"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethstratum",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            },
-            "teamredminer": {
-                "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "nanominer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "nbminer": {
-                "algo": "ethash",
-                "url": "nicehash+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "lolminer": {
-                "algo": "ETHASH",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "ethash"
-            },
-            "t-rex": {
-                "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_ethash_4g"
         }
     },
     {
@@ -279,55 +200,7 @@
             }
         ],
         "miners": {
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
-            },
-            "gminer": {
-                "algo":"etchash",
-                "pass":"x",
-                "port":"%URL_PORT%",
-                "server":"%URL_HOST%",
-                "template":"%WAL%.%WORKER_NAME%",
-                "user_config":"--proto stratum"
-            },
-            "teamredminer": {
-                "algo": "etchash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "nanominer": {
-                "algo": "etchash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "nbminer": {
-                "algo": "etchash",
-                "url": "nicehash+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "lolminer": {
-                "algo": "ETCHASH",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "etchash"
-            },
-            "t-rex": {
-                "algo": "etchash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            }
+            "_prototype": "miners_etchash"
         }
     },
     {
@@ -547,86 +420,7 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allpools 1"
-            },
-            "ethminer": {
-                "ver":"0.18.0",
-                "cuda": 1,
-                "fork":"ethash",
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum2+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
-            },
-            "gminer": {
-                "algo":"ethash",
-                "pass":"x",
-                "port":"%URL_PORT%",
-                "server":"%URL_HOST%",
-                "template":"%WAL%.%WORKER_NAME%",
-                "user_config":"--proto stratum"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethstratum",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            },
-            "teamredminer": {
-                "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "nanominer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "nbminer": {
-                "algo": "ethash",
-                "url": "nicehash+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "lolminer": {
-                "algo": "ETHASH",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "ethash"
-            },
-            "t-rex": {
-                "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_ethash"
         }
     },
     {
@@ -724,86 +518,7 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3",
-                "claymore_user_config": "-allpools 1"
-            },
-            "ethminer": {
-                "ver":"0.18.0",
-                "cuda": 1,
-                "fork":"ethash",
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum2+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
-            },
-            "gminer": {
-                "algo":"ethash",
-                "pass":"x",
-                "port":"%URL_PORT%",
-                "server":"%URL_HOST%",
-                "template":"%WAL%.%WORKER_NAME%",
-                "user_config":"--proto stratum"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethstratum",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            },
-            "teamredminer": {
-                "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "nanominer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "nbminer": {
-                "algo": "ethash",
-                "url": "nicehash+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "lolminer": {
-                "algo": "ETHASH",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "ethash"
-            },
-            "t-rex": {
-                "algo": "ethash",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_ethash"
         }
     },
     {
@@ -1983,35 +1698,7 @@
             }
         ],
         "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"rx/0\""
-            },
-            "xmrig-new": {
-                "cpu": "1",
-                "url": "%URL%",
-                "algo": "rx/0",
-                "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
-            },
-            "xmr-stak": {
-                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
-                "nvidia": "\"gpu_threads_conf\" : [],",
-                "url": "%URL%",
-                "fork": "randomx",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\":\"monero\""
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "randomx"
-            }
+            "_prototype": "miners_randomx"
         }
     },
 	{
@@ -3729,49 +3416,23 @@
             }
         ],
         "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cn\/ccx\""
-            },
-            "xmrig-new": {
-                "url": "%URL%",
-                "algo": "cn\/ccx",
-                "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
-            },
             "xmr-stak": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_conceal\""
-            },
-            "teamredminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cn_conceal"
+                "user_config": "\"currency\": \"cryptonight_gpu\""
             },
             "cryptodredge": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "algo": "cryptonight-ccx"
-            },
-            "xmrig": {
-                "fork": "xmrigcc",
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cryptonight\/conceal"
+                "algo": "cryptonight-gpu"
             },
             "srbminer": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "algo": "cryptonight_ccx"
+                "algo": "cryptonight_gpu"
             }
         }
     },
@@ -5322,6 +4983,104 @@
                 "template": "%WAL%",
                 "algo": "cryptonight_cache"
             }
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "Germany Low-End",
+                "urls": [
+                    "ravencoin.herominers.com:10240"
+                ]
+            },
+            {
+                "geo": "Germany Mid-Range",
+                "urls": [
+                    "ravencoin.herominers.com:10241"
+                ]
+            },
+            {
+                "geo": "Germany NiceHash",
+                "urls": [
+                    "ravencoin.herominers.com:10242"
+                ]
+            },
+            {
+                "geo": "Finland Low-End",
+                "urls": [
+                    "fi.ravencoin.herominers.com:10240"
+                ]
+            },
+            {
+                "geo": "Finland Mid-Range",
+                "urls": [
+                    "fi.ravencoin.herominers.com:10241"
+                ]
+            },
+            {
+                "geo": "Finland NiceHash",
+                "urls": [
+                    "fi.ravencoin.herominers.com:10242"
+                ]
+            },
+            {
+                "geo": "Canada Low-End",
+                "urls": [
+                    "ca.ravencoin.herominers.com:10240"
+                ]
+            },
+            {
+                "geo": "Canada Mid-Range",
+                "urls": [
+                    "ca.ravencoin.herominers.com:10241"
+                ]
+            },
+            {
+                "geo": "Canada NiceHash",
+                "urls": [
+                    "ca.ravencoin.herominers.com:10242"
+                ]
+            },
+            {
+                "geo": "HongKong Low-End",
+                "urls": [
+                    "hk.ravencoin.herominers.com:10240"
+                ]
+            },
+            {
+                "geo": "HongKong Mid-Range",
+                "urls": [
+                    "hk.ravencoin.herominers.com:10241"
+                ]
+            },
+            {
+                "geo": "HongKong NiceHash",
+                "urls": [
+                    "hk.ravencoin.herominers.com:10242"
+                ]
+            },
+            {
+                "geo": "Singapore Low-End",
+                "urls": [
+                    "sg.ravencoin.herominers.com:10240"
+                ]
+            },
+            {
+                "geo": "Singapore Mid-Range",
+                "urls": [
+                    "sg.ravencoin.herominers.com:10241"
+                ]
+            },
+            {
+                "geo": "Singapore NiceHash",
+                "urls": [
+                    "sg.ravencoin.herominers.com:10242"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
         }
     }
 ]
