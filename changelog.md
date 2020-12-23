@@ -1,7 +1,7 @@
 ##### 0.6-185@201223 2020-12-23
 *   Improved `gpu-stats` (improved reading metrics from AMD GPUs)
 *   Improved API servers fallback (removed hardcoded API hosts; added repository URL to `net-test`)
-*   Improved `amd-oc` (may help for some Polaris GPUs when core voltage stuck at 1000mV)
+*   Improved `amd-oc` (added an alternative method that may help for some Polaris GPUs when core voltage stuck at 1000mV)
 *   Improved `nvidia-info` tool (added filtering by GPU index and bus id number)
 *   Fixed Nvidia GPUs VBIOS flashing (improved Nvidia driver unloading; fixed communication issues between `agent` and latest `nvflash`)
 *   Fixed empty hashrate on too small values (e.g. on cuckaroo32 algorithm)
