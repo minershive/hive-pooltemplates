@@ -1,3 +1,9 @@
+##### 0.6-187@201229 2020-12-29
+*   Bminer v16.4.2 (fixed crash ETH mining om Nvidia cards; improved performance on mining ETH on AMD 4G cards)
+*   NBMiner v36.0 (fixed crashing when mining kawpow algo on some GPUs in versions 35.x; removed algos: eaglesong, eaglesong_ethash, trb, hns, sipc, cuckaroo, cuckaroo_swap and reducing binary size)
+*   SRBMiner-Multi v0.6.1 (added algorithm 'balloon_zentoshi' for Zentoshi coin for CPU mining, fee 0.85%; 'cryptonight_xhv' kernel small changes, pool side hashrate should be a little higher; auto setup for 'cryptonight_xhv' algorithm is a little more agressive now: if you experience some issues, use --gpu-auto-intensity 1 for lighter settings; removed parameter '--gpu-worksize')
+*   CPUminer-Opt-rplant v5.0.9 (improved auto-stratum connect; added new `balloon` algo: for Zentoshi coin mining)
+
 ##### 0.6-187@201224 2020-12-24
 *   Fixed `amd-oc` issue introduced into v0.6-185 (overclocking for some AMD GPUs worked incorrectly and mostly affected to Polaris RX 400-series)
 *   Fixed `gpu-fans-find` (minor fix)
