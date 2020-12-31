@@ -1,3 +1,15 @@
+##### 0.6-188@201230 2020-12-30
+*   General improvements (optimized boot sequence by using new hivex control; changed GPU audio disable to modules blacklisting; cleanup output to syslog by removing colors codes; added to exclusion list from mining more AMD APU/IGP; oher small fixes and improvements)
+*   Improved `nvidia-oc` (optimize Nvidia overclocking with delay: can be useful for Nvidia 30xx series memory OC and pill for Pascal with GDDR5X memory; OC log can be print with `nvidia-oc log`)
+*   Improved `amd-oc` (added SoC clock and voltage adjustment for Vega and Navi; slight code refactoring; OC log can be print with `amd-oc log`)
+*   Improved `hive-replace` tool (added option `--download=PATH` to download and save image to specified location without replacing; added option `--repo` to use custom repo, see `repomirror` for details)
+*   Improved `repomirror` package (new option `-g` or `--get` for downloading HiveOS images to repo mirror: can be used with `--stable` or `--beta` and afterall these images can be used by `hive-replace` with `--repo` option)
+*   Improved `net-test` tool (added DoH status reporting)
+*   Improved error reporting (added more info on reboot due high LA; added reporting Xid errors for Nvidia GPUs)
+*   Updated `nvtool` to v1.3.5 (minor fixes)
+*   Improved `wifi` (added support for open networks and connection to any network. ***Note: Be aware that it's unsecure, we don't recommend it!***)
+*   Gminer v2.39 (added kernel auto-tuning for KAWPOW algorithm, this feature improves hashrate up to 4% on some GPUs; fixed AMD GPUs detection: now miner detects Vega and Navi)
+
 ##### 0.6-187@201229 2020-12-29
 *   Bminer v16.4.2 (fixed crash ETH mining om Nvidia cards; improved performance on mining ETH on AMD 4G cards)
 *   NBMiner v36.0 (fixed crashing when mining kawpow algo on some GPUs in versions 35.x; removed algos: eaglesong, trb, hns, sipc, cuckaroo, cuckaroo_swap and reducing binary size)
