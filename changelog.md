@@ -1,5 +1,5 @@
 ##### 0.6-188@201230 2020-12-30
-*   General improvements (optimized boot sequence by using new `hivex` control; changed GPU audio disable to modules blacklisting; cleanup output to syslog by removing colors codes; added to exclusion list from mining more AMD APU/IGP; other small fixes and improvements)
+*   General improvements (optimized boot sequence by using new `hivex` control; cleanup output to syslog by removing colors codes; added to exclusion list from mining more AMD APU/IGP; other small fixes and improvements)
 *   Improved `nvidia-oc` (optimize Nvidia overclocking with delay: can be useful for Nvidia 30xx series memory OC and pill for Pascal with GDDR5X memory; OC log can be print with `nvidia-oc log`)
 *   Improved `amd-oc` (added SoC clock and voltage adjustment for Vega and Navi; slight code refactoring; OC log can be print with `amd-oc log`)
 *   Improved `hive-replace` tool (added option `--download=PATH` to download and save image to specified location without replacing; added option `--repo` to use custom repo, see `repomirror` for details)
