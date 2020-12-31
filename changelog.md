@@ -7,7 +7,7 @@
 *   Improved `net-test` tool (added DoH status reporting)
 *   Improved error reporting (added more info on reboot due high LA; added reporting Xid errors for Nvidia GPUs)
 *   Updated `nvtool` to v1.3.5 (minor fixes)
-*   Improved `wifi` (added support for open networks and connection to any network. ***Note: Be aware that it's unsecure, we don't recommend it!***)
+*   Improved `wifi` (added support for open networks and connection to any network. *Note: Be aware that it's unsecure, we don't recommend it!*)
 *   Gminer v2.39 (added kernel auto-tuning for KAWPOW algorithm, this feature improves hashrate up to 4% on some GPUs; fixed AMD GPUs detection: now miner detects Vega and Navi)
 
 ##### 0.6-187@201229 2020-12-29
