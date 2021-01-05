@@ -1,6 +1,5 @@
 ##### 0.6-189@210104 2021-01-04
-*   AMD owners rigs need a reboot after updating: use 'Reboot after complete' option from Update menu to do it
-*   Fixed `amd-oc` (OC not applied on some configurations; fixed applying Navi SoC Frequency/Voltage when it set as 0 and added checking for proper Navi SoC voltage range)
+*   Fixed `amd-oc` (OC not applied on some configurations; fixed applying Navi SoC Frequency/Voltage when it set as 0 and added checking for proper Navi SoC voltage range; *Notice: need a reboot after updating: use 'Reboot after complete' option from Update menu to do it!*)
 *   Fixed `selfupgrade` tool (grub config not updated in some cases)
 *   Fixed `hive-replace` (minor fix)
 *   Fixed Wi-Fi scanning (broken in v0.6-188)
