@@ -1,3 +1,15 @@
+##### 0.6-189@210104 2021-01-04
+*   This update requires a reboot, use 'Reboot after complete' option from Update menu
+*   Fixed `amd-oc` (OC not applied on some configurations; fixed applying Navi SoC Frequency/Voltage when it set as 0 and added checking for proper Navi SoC voltage range)
+*   Fixed `selfupgrade` tool (grub config not updated in some cases)
+*   Fixed `hive-replace` (minor fix)
+*   Fixed Wi-Fi scanning (broken in v0.6-188)
+*   CPUminer-Opt-rplant v5.0.10 (added phi5 algo for mining Combode coin)
+*   SRBMiner-Multi v0.6.2 (added algorithm 'circcash' for CPU mining Circcash coin, fee 0.85%; added algorithm 'phi5' for CPU mining Combode coin, fee 0.85%)
+*   SGminer-fancyIX v0.7.2-1 (added 35% faster optimized bin kernel for 'neoscrypt'; added 'neoscrypt-xaya' algo support; fixed global offset bug for 'yescrypt')
+*   WildRig v0.28.3 (added phi5 algo for mining Combode coin)
+*   XPMclient: fixed stats
+
 ##### 0.6-188@201230 2020-12-30
 *   General improvements (optimized boot sequence by using new `hivex` control; cleanup output to syslog by removing colors codes; added to exclusion list from mining more AMD APU/IGP; other small fixes and improvements)
 *   Improved `nvidia-oc` (optimize Nvidia overclocking with delay: can be useful for Nvidia 30xx series memory OC and pill for Pascal with GDDR5X memory; OC log can be print with `nvidia-oc log`)
