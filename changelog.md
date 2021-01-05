@@ -2,7 +2,7 @@
 *   Fixed `amd-oc` (OC not applied on some configurations; fixed applying Navi SoC Frequency/Voltage when it set as 0 and added checking for proper Navi SoC voltage range; *Notice: need a reboot after updating: use 'Reboot after complete' option from Update menu to do it!*)
 *   Fixed `selfupgrade` tool (grub config not updated in some cases)
 *   Fixed `hive-replace` (minor fix)
-*   Fixed Wi-Fi scanning (broken in v0.6-188)
+*   Fixed Wi-Fi scanning (was broken in v0.6-188 update)
 *   CPUminer-Opt-rplant v5.0.10 (added phi5 algo for mining Combode coin)
 *   SRBMiner-Multi v0.6.2 (added algorithm 'circcash' for CPU mining Circcash coin, fee 0.85%; added algorithm 'phi5' for CPU mining Combode coin, fee 0.85%)
 *   SGminer-fancyIX v0.7.2-1 (added 35% faster optimized bin kernel for 'neoscrypt'; added 'neoscrypt-xaya' algo support; fixed global offset bug for 'yescrypt')
