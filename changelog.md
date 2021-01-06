@@ -1,3 +1,13 @@
+##### 0.6-190@210106 2021-01-06
+*   Slightly refactoring `amd-info` tool (more GPU info; added unique id, more voltages, state and so on; added filtering by GPU index and bus id number)
+*   Minor fix for `nvidia-oc` (limit minimum OC delay to 30 sec)
+*   Fixed support some 3rd-party hardware (fixed octofan controller fan autodetection)
+*   Introduced auto selection CUDA11 builds as latest for some popular Nvidia miners (ethminer, nanominer, t-rex)
+*   Bminer v16.4.4 (fixed compatiblity issues with ETH pools that use the ethproxy protocols e.g. Sparkpool; fixed bugs that lead to high rejection rates on AMD GPUs ETH mining)
+*   CPUminer-Opt-rplant v5.0.11 (added yespowerTIDE algo for Tidecoin)
+*   Gminer v2.40 (significant performance improvements for KawPoW, especially on rigs with large number of GPUs; improved compatibility with Ravencoin pools; added option to control DAG buffering mode single or dual via option `--dag_mode`; added option to support "Zombie Mode" for Ethash, Etchash and KawPoW algortihms via option `--dag_limit`; improved detection of freezing AMD GPUs; fixed display of core and memory clocks; display GPU PCI index on miner startup; removed unpopular algorithms: sero, vprogpow, progpowz, cuckarood29, cuckarood29v)
+*   lolMiner v1.18a (improved Zombie mode power draw & speed Polaris GPUs: depending from config uses from 0.5 to 1W less energy and from 0.2 to 0.4 MH/s faster; added `--zombie-tune` parameter for Polaris GPUs this can increase the performance of zombie mode up to 15%; fixed: segmentation fault when the DNS resolve of a pool fails; fixed: miner does not restart after connection loss; applied potential fix for "address or port already in use" bug)
+
 ##### 0.6-189@210104 2021-01-04
 *   Fixed `amd-oc` (OC not applied on some configurations; fixed applying Navi SoC Frequency/Voltage when it set as 0 and added checking for proper Navi SoC voltage range; *Notice: need a reboot after updating: use 'Reboot after complete' option from Update menu to do it!*)
 *   Fixed `selfupgrade` tool (grub config not updated in some cases)
