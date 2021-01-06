@@ -1,5 +1,5 @@
 ##### 0.6-190@210106 2021-01-06
-*   Improved `amd-info` tool (slightly refactoring; more GPU info; added unique id, more voltages, state and so on; added filtering by GPU index and bus id number)
+*   Improved `amd-info` tool (slightly code refactoring; more GPU info; added unique id, more voltages, state and so on; added filtering by GPU index and bus id number)
 *   Minor fix for `nvidia-oc` (limit minimum OC delay to 30 sec)
 *   Fixed support some 3rd-party hardware (fixed octofan controller fan autodetection)
 *   Introduced auto selection CUDA11 builds as latest for some popular Nvidia miners (ethminer, nanominer, t-rex)
