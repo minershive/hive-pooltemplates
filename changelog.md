@@ -1,3 +1,23 @@
+##### 0.6-191@210109 2021-01-09
+*   Improved `nvidia-driver-update` tool (added support drivers 460.x series; added support CUDA 11.2; update supported kernels versions)
+*   Added CUDA RT v11.2 libraries
+*   Update PCI IDs database
+*   Improved `hive-replace` tool (sorting images when calling `hive-replace -l`: the top three are the latest Stable, Beta and Vega images, then other images by date; added hint to stop X server when running from X server console; added support for extended image descriptions)
+*   Improved `hpkg` command (added 'purge' option to remove all miners)
+*   Fixed hang `motd` in some cases (if wallet config was absent)
+*   Small improvement for `amd-oc` (show timestamp in `amd-oc log`)
+*   Small improvements and fixes for `nvidia-oc` (now OC delay isn't applied on 1080 when using Pill in special mode with negative delay; show timestamp in `nvidia-oc`; improved error handling)
+*   GMiner v2.41 (changed default `--dag_mode` values for polular AMD GPUs: will improve performance compared with previous version when no `--dag_mode` specified; display valid/stale/invalid shares for Ethash/Etchash and KAWPOW algorithms when solution check on CPU enabled: "stale_shares", "invalid_shares" in API response - added display invalid shares on Hive's dashboard: total and per GPUs)
+*   CryptoDredge v0.26.0 (added KawPow algorithm; added Chukwa-v2 algorithm; fixed MTP issue related to 'invalid device symbol'; added support NVIDIA Ampere RTX 30xx; added `--temperature-limit` and `--temperature-start` options; added off flag to Nimiq optimizer `--optimizer off`; removed some no longer supported algorithms; Notices: this build not supported Ubuntu 16.04 based images; requieres latest Nvidia drivers)
+
+##### LINUX IMAGE RELEASE 0.6-190 2021-01-08
+*   New Stable branch
+*   Hive Linux client: v0.6-190@201106
+*   Universal boot mode: BIOS | UEFI
+*   Linux kernel: v5.4.80-hiveos
+*   Drivers version: AMD v20.40, Nvidia: v455.45.01
+*   Universal image with "support from the box" AMD Polaris/Vega/Navi and Nvidia 10xx/16xx/20xx/30xx
+
 ##### 0.6-190@210106 2021-01-06
 *   Improved `amd-info` tool (slightly code refactoring; more GPU info; added unique id, more voltages, states, clocks and so on; added filtering by GPU index and bus id number)
 *   Minor fix for `nvidia-oc` (limit minimum OC delay to 30 sec)
