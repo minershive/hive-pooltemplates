@@ -8,7 +8,7 @@
 *   Small improvement for `amd-oc` (show timestamp in `amd-oc log`)
 *   Small improvements and fixes for `nvidia-oc` (now OC delay isn't applied on 1080 when using Pill in special mode with negative delay; show timestamp in `nvidia-oc log`; improved error handling)
 *   GMiner v2.41 (changed default `--dag_mode` values for polular AMD GPUs: will improve performance compared with previous version when no `--dag_mode` specified; display valid/stale/invalid shares for Ethash/Etchash and KAWPOW algorithms when solution check on CPU enabled: "stale_shares", "invalid_shares" in API response - added display invalid shares on Hive's dashboard: total and per GPUs)
-*   CryptoDredge v0.26.0 (added KawPow algorithm; added Chukwa-v2 algorithm; fixed MTP issue related to 'invalid device symbol'; added support NVIDIA Ampere RTX 30xx; added `--temperature-limit` and `--temperature-start` options; added off flag to Nimiq optimizer `--optimizer off`; removed some no longer supported algorithms; Notices: this build not supported Ubuntu 16.04 based images; requires latest Nvidia drivers)
+*   CryptoDredge v0.26.0 (added KawPow algorithm; added Chukwa-v2 algorithm; fixed MTP issue related to 'invalid device symbol'; added support NVIDIA Ampere RTX 30xx; added `--temperature-limit` and `--temperature-start` options; added off flag to Nimiq optimizer `--optimizer off`; removed some no longer supported algorithms; *Notices: this build not supported Ubuntu 16.04 based images; requires latest Nvidia drivers*)
 
 ##### LINUX IMAGE RELEASE 0.6-190 2021-01-08
 *   New Stable branch
