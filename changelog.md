@@ -3,7 +3,7 @@
 *   Added initial version of installation helper for 3G/4G modem (currently supports only Huawei E3372; could be found in `/hive/opt/3g4g-modem`)
 *   T-Rex v0.19.7 (improved stability for 30xx series GPUs on ethash/octopus/kawpow; verify OC stability on ethash after DAG rebuild 'Instability detected' message is printed in case there are issues; added `gpu-report-interval` parameter to control hashrate summary report frequency based on the number of share submissions; added feature to internal watchdog to display a list of GPUs caused miner restart with GPU is idle error)
 *   lolMiner v1.19 (added automatic tuning mode for `--zombie-tune` which on by default and running miner with option `--4g-alloc-size` set only will run the zombie mode automatic tuning, see details on miner manual; ethash stratum connection will now reconnect after three pool rejected shares in a row that did pass own CPU verify before)
-*   NBMiner v36.1 (lowered power comsumption for 20、30 series Nvidia GPU on octopus; improved hashrate 2% on 16 series Nvidia GPU on octopus; slightly reduced stale ratio on ethash; general improved overall stability, fixed a random crash; added detail datetime & cpu usage in summary log; ethash: if DAG verification failed, display corresponding GPU name in red in summary)
+*   NBMiner v36.1 (lowered power consumption for 20、30 series Nvidia GPU on octopus; improved hashrate 2% on 16 series Nvidia GPU on octopus; slightly reduced stale ratio on ethash; general improved overall stability, fixed a random crash; added detail datetime & cpu usage in summary log; ethash: if DAG verification failed, display corresponding GPU name in red in summary)
 *   XMRig v6.7.1 (fixed log initialization; fixed AstroBWT on OpenCL)
 
 ##### 0.6-191@210109 2021-01-09
