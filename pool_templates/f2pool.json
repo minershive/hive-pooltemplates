@@ -415,15 +415,24 @@
         "coin": "ETH",
         "servers": [
             {
-                "geo": "ASIA (Only username)",
+                "geo": "China",
                 "urls": [
-                    "eth.f2pool.com:6688"
+                    "eth.f2pool.com:6688",
+                    "eth-backup.f2pool.com:6688"
                 ]
             },
             {
-                "geo": "ASIA (Only wallet)",
+                "geo": "EU",
                 "urls": [
-                    "eth.f2pool.com:8008"
+                    "eth-eu.f2pool.com:6688",
+                    "eth-backup.f2pool.com:6688"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "eth-us.f2pool.com:6688",
+                    "eth-backup.f2pool.com:6688"
                 ]
             }
         ],
@@ -454,7 +463,7 @@
         }
     },
     {
-        "coin": "XZC",
+        "coin": "XFR",
         "servers": [
             {
                 "geo": "China",
@@ -650,33 +659,6 @@
             }
         ],
         "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "stratum://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -696,7 +678,7 @@
         "miners": {
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "skunk",
                 "ccpass": ""
             },
@@ -704,8 +686,15 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "skunk",
                 "pass": "",
-                "template": "%WAL%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "skunk",
+                "pass": "",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-launch\" : \"18×0\""
             }
         }
     },
