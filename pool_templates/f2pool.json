@@ -1049,15 +1049,15 @@
         "miners": {
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "blake2s",
-                "ccpass": "c=XVG"
+                "ccpass": ""
             },
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "blake2s",
-                "pass": "c=XVG",
-                "template": "%WAL%",
+                "pass": "",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             },
             "claymore": {
@@ -1097,15 +1097,15 @@
         "miners": {
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "myr-gr",
-                "ccpass": "c=BTC"
+                "ccpass": ""
             },
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "myr-gr",
-                "pass": "c=BTC",
-                "template": "%WAL%",
+                "algo": "myriadcoin-groestl",
+                "pass": "",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             }
         }
