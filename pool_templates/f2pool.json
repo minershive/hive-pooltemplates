@@ -417,21 +417,24 @@
             {
                 "geo": "China",
                 "urls": [
-                    "eth.f2pool.com:6688",
-                    "eth-backup.f2pool.com:6688"
+                    "eth.f2pool.com:6688"
                 ]
             },
             {
                 "geo": "EU",
                 "urls": [
-                    "eth-eu.f2pool.com:6688",
-                    "eth-backup.f2pool.com:6688"
+                    "eth-eu.f2pool.com:6688"
                 ]
             },
             {
                 "geo": "USA",
                 "urls": [
-                    "eth-us.f2pool.com:6688",
+                    "eth-us.f2pool.com:6688"
+                ]
+            },
+            {
+                "geo": "Backup",
+                "urls": [
                     "eth-backup.f2pool.com:6688"
                 ]
             }
@@ -464,6 +467,37 @@
     },
     {
         "coin": "XFR",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "xzc.f2pool.com:5780"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "mtp",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "mtp"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "mtp"
+            }
+        }
+    },
+    {
+        "coin": "FIRO",
         "servers": [
             {
                 "geo": "China",
@@ -856,11 +890,6 @@
             "smine": {
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "ckb"
             }
         }
     },
