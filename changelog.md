@@ -5,7 +5,7 @@
 *   Updated CUDA 11.1 RT libs from CUDA Toolkit v11.1.1 (build 105)
 *   PhoenixMiner v5.5b (updated kernels for AMD Polaris, Vega and Navi GPUs that are slightly faster and use less power than before when mining ETH automatically set `-ttli` instead of `-tmax` when the later is not supported by the driver. This will throttle down the GPUs when they reach the specified temperature to avoid overheating; added native kernels for AMD RX6800 and RX6900 GPUs. These are faster than the generic kernels and produce a lot less stale shares )
 *   Gminer v2.42 (fixed performance regression for Ethash/Etchash algorithm on Nvidia miding edition cards; added auto-tune for Ethash/Etchash algorithm on Nvidia cards, miner automatically select fastest kernel, also you can select specific kernel manually by using `--oc` flag, currently 3 kernels available, 0 means auto-tune by miner; added display of shares per minute; added option `--report_interval` to control hashrate report interval in seconds; removed cuckarooz29 algorithm due Grin will not support it after hardfork)
-*   XMRig v6.7.2 (fixed broken solo mining since v6.7.0)
+*   XMRig v6.7.2 (fixed broken since v6.7.0 solo mining)
 *   XLArig v5.2.1 (sync with XMRig v6.7.0 upstream)
 *   NanoMiner v3.1.5 (updated AMD Navi GPU Ethash kernels, new performance tuning applied)
 *   SRBMiner-Multi v0.6.3 (added algorithm 'phi5' (Combode) for GPU mining, fee 0.85%; added algorithm 'yespowertide' (Tidecoin) for CPU mining, fee 0.85%; fixed 'cryptonight_xhv', now it works on coins other than Haven; performance increase on 'phi5' algorithm on CPU; bug fixes)
