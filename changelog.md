@@ -1,5 +1,5 @@
 ##### 0.6-193@210115 2021-01-15
-*   Improved overclocking AMD Vega10 family GPUs: Vega 56/64/FE (reduced energy consumption; improve stability and allows you to reach higher memory clocks; fixed incorrect overclocking in some cases for Vega 64 and Vega FE)
+*   Improved overclocking AMD Vega10 family GPUs: Vega 56/64/FE (reduced power consumption; improved stability and allows you to reach higher memory clocks; fixed incorrect overclocking in some cases for Vega 64 and Vega FE)
 *   Fixed `nvidia-oc` (do not apply OC on miner start if no delay is set; apply OC on miner start if delay < 10s is set, but without this delay)
 *   Improved `sreboot` (improved disk remount which useful for slow flash drives)
 *   Updated CUDA 11.1 RT libs from CUDA Toolkit v11.1.1 (build 105)
