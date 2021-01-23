@@ -219,7 +219,7 @@
                 "algo": "bcd",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"opencl-threads\" : \"2\""
+                "user_config": "--opencl-threads=2"
             }
         }
     },
@@ -448,6 +448,9 @@
             "lolminer":{
                "template": "%WAL%",
                "worker": "%WORKER_NAME%"
+            },
+            "bminer":{
+               "algo": "ethproxy"
             }
         }
     },
@@ -595,7 +598,6 @@
         "miners": {
             "lolminer": {
                 "algo": "GRIN-C32",
-                "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -696,39 +698,6 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "HDAC",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                    "hdac.f2pool.com:5770"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "skunk",
-                "ccpass": ""
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "skunk",
-                "pass": "",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "skunk",
-                "pass": "",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"opencl-launch\" : \"18×0\""
             }
         }
     },
@@ -876,17 +845,6 @@
             }
         ],
         "miners": {
-            "gminer": {
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "eaglesong"
-            },
-            "nbminer": {
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "eaglesong"
-            },
             "smine": {
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -915,7 +873,7 @@
                 "algo": "x21s",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"opencl-threads\" : \"2\""
+                "user_config": "--opencl-threads=2"
             },
             "cryptodredge": {
                 "url": "stratum+tcp://%URL%",
@@ -1161,13 +1119,6 @@
           "pass": "x",
           "template": "%WAL%.%WORKER_NAME%"
         },
-        "wildrig-multi": {
-          "url": "stratum+tcp://%URL%",
-          "algo": "lyra2v3",
-          "pass": "x",
-          "template": "%WAL%.%WORKER_NAME%",
-          "user_config": "\"opencl-threads\" : \"2\""
-        },
         "teamredminer": {
           "url": "stratum+tcp://%URL%",
           "algo": "lyra2v3",
@@ -1187,29 +1138,21 @@
         }
       ],
       "miners": {
-        "ewbf": {
-          "algo": "192_7",
-          "fork": "zhash",
-          "zpass": "x",
-          "zport": "%URL_PORT%",
-          "zserver": "%URL_HOST%",
-          "ztemplate": "%WAL%.%WORKER_NAME%",
-          "user_config": "pers auto"
-        },
         "gminer": {
           "algo": "192_7",
           "server": "%URL_HOST%",
           "port": "%URL_PORT%",
           "pass": "x",
           "template": "%WAL%.%WORKER_NAME%",
-          "user_config": "--pers auto"
+          "user_config": "--pers ZcashPoW"
         },
         "lolminer": {
           "algo": "AUTO192_7",
           "pass": "x",
           "port": "%URL_PORT%",
           "server": "%URL_HOST%",
-          "template": "%WAL%.%WORKER_NAME%"
+          "template": "%WAL%.%WORKER_NAME%",
+          "user_config": "-overwritePersonal ZcashPoW"
         },
         "miniz": {
           "algo": "192,7",
