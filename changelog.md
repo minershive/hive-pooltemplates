@@ -1,5 +1,5 @@
 ##### 0.6-194@210126 2021-01-26
-*   Improved Vega10 OC/UV (removed dependency from 'Aggressive mode' switch; fixed accuracy when setting HBM voltage value)
+*   Improved OC/UV for AMD Vega10 family GPUs (removed dependency from 'Aggressive mode' switch; fixed accuracy when setting HBM voltage value)
 *   Updated PCI ID database (updated to version of 2021.01.11; changed some TM to pretty names)
 *   T-Rex v0.19.9 (added option dag-build-mode to fine tune DAG build mode, mostly to help with various stability issues, see miner manual for details; fixed stability regression for Pascal GPUs on ethash, kawpow, octopus; fixed summary report for displaying mining pool difficulty that isn't always updated; cosmetic changes: improve error descriptions, display block number when mining solo at some pools)
 *   lolMiner v1.20 (added new split & dual mining options - this allows more freedom or better latency and stability on ETH+ZIL dual mining as well as split mining, i.e. let some cards mine ETH while other (3 and 4G) cards mine ETC; significantly improved Ethash mining speed on R9 390 and Etchash speed on R9 290; fixed a bug with 4G cards crash on mining ETC when trying to falsely enter zombie-tune; fixed "Address already in use" API bug)
