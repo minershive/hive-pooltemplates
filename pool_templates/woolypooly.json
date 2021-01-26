@@ -1,367 +1,888 @@
 [
-	{
-		"coin": "SERO",
-		"servers": [
-			{
-				"geo": "Europe",
-				"urls": [
-					"sero.woolypooly.com:8008"
-				]
-			}
-		],
-		"miners": {
-			"ethminer": {
-				"fork": "serominer",
-				"cuda": 0,
-				"opencl": 1,
-				"pass": "x",
-				"port": "%URL_PORT%",
-				"server": "stratum1+tcp://%URL_HOST%",
-				"template": "%WAL%.%WORKER_NAME%"
-			},
-			"nbminer": {
-				"url": "%URL%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"algo": "progpow_sero"
-			},
-			"tt-miner": {
-				"url": "stratum1+tcp://%URL%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"algo": "progpow092",
-				"user_config": "-coin SERO"
-			}
-		}
-	},
-	{
-		"coin": "XWP",
-		"servers": [
-			{
-				"geo": "Europe",
-				"urls": [
-					"xwp.woolypooly.com:33044"
-				]
-			}
-		],
-		"miners": {
-			"gminer": {
-				"algo": "swap",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"template": "%WAL%",
-				"pass": "%WORKER_NAME%"
-			},
-			"nbminer": {
-				"algo": "cuckaroo_swap",
-				"url": "%URL%",
-				"template": "%WAL%",
-				"pass": "%WORKER_NAME%"
-			},
-			"grinprominer": {
-				"algo": "swap",
-				"url": "%URL%",
-				"template": "%WAL%",
-				"pass": "%WORKER_NAME%"
-			}
-		}
-	},
-	{
-		"coin": "AION",
-		"servers": [
-			{
-				"geo": "Europe",
-				"urls": [
-					"aion.woolypooly.com:33333"
-				]
-			},
-			{
-				"geo": "SOLO Europe",
-				"urls": [
-					"aion.woolypooly.com:33334"
-				]
-			},
-			{
-				"geo": "USA",
-				"urls": [
-					"aion.us.woolypooly.com:33333"
-				]
-			},
-			{
-				"geo": "SOLO USA",
-				"urls": [
-					"aion.us.woolypooly.com:33334"
-				]
-			}
-		],
-		"miners": {
-			"ewbf": {
-				"algo": "210_9",
-				"fork": "zhash",
-				"zserver": "%URL_HOST%",
-				"zport": "%URL_PORT%",
-				"zpass": "x",
-				"ztemplate": "%WAL%.%WORKER_NAME%",
-				"user_config": "pers AION0PoW"
-			},
-			"gminer": {
-				"algo": "210_9",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"user_config": "--pers AION0PoW"
-			},
-			"lolminer": {
-				"algo": "AION",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%"
-			},
-			"miniz": {
-				"url": "%URL%",
-				"algo": "210,9",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"user_config": "--pers AION0PoW"
-			}
-		}
-	},
-	{
-		"coin": "CTXC",
-		"servers": [
-			{
-				"geo": "Europe",
-				"urls": [
-					"cortex.woolypooly.com:40000"
-				]
-			},
-			{
-				"geo": "SOLO Europe",
-				"urls": [
-					"cortex.woolypooly.com:40001"
-				]
-			}
-		],
-		"miners": {
-			"gminer": {
-				"algo": "cortex",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"user_config": ""
-			},
-			"cortex-miner": {
-				"algo": "cuckoo",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"user_config": ""
-			},
-			"lolminer": {
-				"algo": "CTXC",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%"
-			}
-		}
-	},
-	{
-		"coin": "ETC",
-		"servers": [
-			{
-				"geo": "Europe",
-				"urls": [
-					"etc.woolypooly.com:35000"
-				]
-			}
-		],
-		"miners": {
-			"claymore": {
-				"epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-				"claymore_user_config": "-allcoins etc\n-allpools 0"
-			},
-			"ethminer": {
-				"cuda": 1,
-				"opencl": 0,
-				"pass": "x",
-				"port": "%URL_PORT%",
-				"server": "stratum1+tcp://%URL_HOST%",
-				"template": "%WAL%.%WORKER_NAME%"
-			},
-			"asicminer": {
-				"url": "stratum+tcp://%URL%",
-				"template": "%WAL%.%WORKER_NAME%"
-			},
-			"phoenixminer": {
-				"url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-			},
-			"finminer": {
-				"algo": "ethash",
-				"url": "%URL%",
-				"template": "%WAL%",
-				"pass": "x",
-				"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-			},
-			"bminer": {
-				"algo": "ethash",
-				"template": "%WAL%.%WORKER_NAME%",
-				"url": "%URL%",
-				"pass": "x"
-			},
-			"tt-miner": {
-				"url": "%URL%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"algo": "ethash",
-				"user_config": "-coin SERO"
-			}
-		}
-	},
-	{
-		"coin": "HNS",
-		"servers": [
-			{
-				"geo": "Europe",
-				"urls": [
-					"hns.woolypooly.com:36000"
-				]
-			}
-		],
-		"miners": {
-			"nbminer": {
-				"url": "%URL%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"algo": "hns"
-			},
-			"gminer": {
-				"algo": "handshake",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"template": "%WAL%.%WORKER_NAME%",
-				"pass": "x"
-			}
-		}
-	},
-	{
-		"coin": "AE",
-		"servers": [
-			{
-				"geo": "Europe",
-				"urls": [
-					"ae.woolypooly.com:20000"
-				]
-			}
-		],
-		"miners": {
-			"bminer": {
-				"algo": "aeternity",
-				"template": "%WAL%.%WORKER_NAME%",
-				"url": "%URL%"
-			},
-			"nbminer": {
-				"url": "%URL%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"algo": "aeternity"
-			},
-			"gminer": {
-				"algo": "aeternity",
-				"port": "%URL_PORT%",
-				"server": "%URL_HOST%",
-				"template": "%WAL%.%WORKER_NAME%"
-			}
-		}
-	},
-	{
-		"coin": "RVN",
-		"servers": [
-			{
-				"geo": "Europe",
-				"urls": [
-					"rvn.woolypooly.com:55555"
-				]
-			},
-			{
-				"geo": "SOLO Europe",
-				"urls": [
-					"rvn.woolypooly.com:55556"
-				]
-			},
-			{
-				"geo": "USA",
-				"urls": [
-					"rvn.us.woolypooly.com:55555"
-				]
-			},
-			{
-				"geo": "SOLO USA",
-				"urls": [
-					"rvn.us.woolypooly.com:55556"
-				]
-			}
-		],
-		"miners": {
-			"nbminer": {
-				"url": "%URL%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"algo": "kawpow"
-			},
-			"t-rex": {
-				"url": "%URL%",
-				"algo": "kawpow",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%"
-			},
-			"ethminer": {
-				"fork": "kawpowminer",
-				"cuda": 1,
-				"opencl": 0,
-				"pass": "x",
-				"port": "%URL_PORT%",
-				"server": "%URL_HOST%",
-				"template": "%WAL%.%WORKER_NAME%"
-			},
-			"ccminer": {
-				"fork": "enemy",
-				"ccurl": "stratum+tcp://%URL%",
-				"ccalgo": "kawpow",
-				"ccpass": "x",
-				"ccuser": "%WAL%.%WORKER_NAME%"
-			},
-			"nanominer": {
-				"algo": "kawpow",
-				"url": "%URL%",
-				"template": "%WAL%",
-				"pass": "x",
-                		"user_config": "coin=%COIN%\nrigName=%WORKER_NAME%"
-			},
-			"teamredminer": {
-				"algo": "kawpow",
-				"url": "stratum+tcp://%URL%",
-				"template": "%WAL%.%WORKER_NAME%",
-				"pass": "x"
-			},
-			"tt-miner": {
-				"url": "stratum1+tcp://%URL%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"algo": "kawpow",
-				"user_config": "-coin rvn"
-			},
-			"gminer": {
-				"algo": "kawpow",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%"
-			}
-		}
-	}
+   {
+      "coin":"ETH",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "eth.woolypooly.com:3096"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "eth.woolypooly.com:3097"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "eth.us.woolypooly.com:3096"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "eth.us.woolypooly.com:3097"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "eth.sg.woolypooly.com:3096"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "eth.sg.woolypooly.com:3097"
+            ]
+         }
+      ],
+      "miners":{
+         "phoenixminer":{
+            "url":"POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 3, COIN: %COIN%"
+         },
+         "asicminer":{
+            "url":"stratum+tcp://%URL%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "teamredminer":{
+            "algo":"ethash",
+            "url":"stratum+tcp://%URL%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "pass":"x"
+         },
+         "t-rex":{
+            "url":"%URL%",
+            "algo":"ethash",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         }
+      }
+   },
+   {
+      "coin":"ETC",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "etc.woolypooly.com:35000"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "etc.woolypooly.com:35001"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "etc.us.woolypooly.com:35000"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "etc.us.woolypooly.com:35001"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "etc.sg.woolypooly.com:35000"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "etc.sg.woolypooly.com:35001"
+            ]
+         }
+      ],
+      "miners":{
+         "phoenixminer":{
+            "url":"POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 3, COIN: %COIN%"
+         },
+
+         "teamredminer":{
+            "algo":"etchash",
+            "url":"stratum+tcp://%URL%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "pass":"x"
+         },
+         "t-rex":{
+            "url":"%URL%",
+            "algo":"etchash",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         }
+      }
+   },
+   {
+      "coin":"SERO",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "sero.woolypooly.com:8008"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "sero.woolypooly.com:8009"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "sero.us.woolypooly.com:8008"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "sero.us.woolypooly.com:8009"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "sero.sg.woolypooly.com:8008"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "sero.sg.woolypooly.com:8009"
+            ]
+         }
+      ],
+      "miners":{
+         "ethminer":{
+            "fork":"serominer",
+            "cuda":0,
+            "opencl":1,
+            "pass":"x",
+            "port":"%URL_PORT%",
+            "server":"stratum1+tcp://%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "t-rex":{
+            "url":"%URL%",
+            "algo":"progpow",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"progpow_sero"
+         },
+         "tt-miner":{
+            "url":"stratum1+tcp://%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"progpow092",
+            "user_config":"-coin SERO"
+         }
+      }
+   },
+   {
+      "coin":"VEIL",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "veil.woolypooly.com:3098"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "veil.woolypooly.com:3099"
+            ]
+         },
+{
+            "geo":"USA",
+            "urls":[
+               "veil.us.woolypooly.com:3098"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "veil.us.woolypooly.com:3099"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "veil.sg.woolypooly.com:3098"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "veil.sg.woolypooly.com:3099"
+            ]
+         }
+      ],
+      "miners":{
+         "t-rex":{
+            "url":"%URL%",
+            "algo":"progpow-veil",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "tt-miner":{
+            "url":"stratum1+tcp://%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"progpow092",
+            "user_config":"-coin VEIL"
+         },
+"wildrig-multi": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "algo": "progpow-veil",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+         }
+      }
+   },
+   {
+      "coin":"AION",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "aion.woolypooly.com:33333"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "aion.woolypooly.com:33334"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "aion.us.woolypooly.com:33333"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "aion.us.woolypooly.com:33334"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "aion.sg.woolypooly.com:33333"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "aion.sg.woolypooly.com:33333"
+            ]
+         }
+      ],
+      "miners":{
+         "ewbf":{
+            "algo":"210_9",
+            "fork":"zhash",
+            "zserver":"%URL_HOST%",
+            "zport":"%URL_PORT%",
+            "zpass":"x",
+            "ztemplate":"%WAL%.%WORKER_NAME%",
+            "user_config":"pers AION0PoW"
+         },
+         "gminer":{
+            "algo":"210_9",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":"--pers AION0PoW"
+         },
+         "lolminer":{
+            "algo":"AION",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "miniz":{
+            "url":"%URL%",
+            "algo":"210,9",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":"--pers AION0PoW"
+         }
+      }
+   },
+   {
+      "coin":"CTXC",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "cortex.woolypooly.com:40000"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "cortex.woolypooly.com:40001"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "cortex.us.woolypooly.com:40000"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "cortex.us.woolypooly.com:40001"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "cortex.sg.woolypooly.com:40000"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "cortex.sg.woolypooly.com:40001"
+            ]
+         }
+      ],
+      "miners":{
+         "gminer":{
+            "algo":"cortex",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":""
+         },
+         "cortex-miner":{
+            "algo":"cuckoo",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":""
+         },
+         "lolminer":{
+            "algo":"CTXC",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         }
+      }
+   },
+   {
+      "coin":"AE",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "ae.woolypooly.com:20000"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "ae.woolypooly.com:20001"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "ae.us.woolypooly.com:20000"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "ae.us.woolypooly.com:20001"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "ae.sg.woolypooly.com:20000"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "ae.sg.woolypooly.com:20001"
+            ]
+         }
+      ],
+      "miners":{
+         "bminer":{
+            "algo":"aeternity",
+            "template":"%WAL%.%WORKER_NAME%",
+            "url":"%URL%"
+         },
+         "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"aeternity"
+         },
+         "gminer":{
+            "algo":"aeternity",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         }
+      }
+   },
+   {
+      "coin":"RVN",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "rvn.woolypooly.com:55555"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "rvn.woolypooly.com:55556"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "rvn.us.woolypooly.com:55555"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "rvn.us.woolypooly.com:55556"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "rvn.sg.woolypooly.com:55555"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "rvn.sg.woolypooly.com:55556"
+            ]
+         }
+      ],
+      "miners":{
+         "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"kawpow"
+         },
+         "t-rex":{
+            "url":"%URL%",
+            "algo":"kawpow",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "ethminer":{
+            "fork":"kawpowminer",
+            "cuda":1,
+            "opencl":0,
+            "pass":"x",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "ccminer":{
+            "fork":"enemy",
+            "ccurl":"stratum+tcp://%URL%",
+            "ccalgo":"kawpow",
+            "ccpass":"x",
+            "ccuser":"%WAL%.%WORKER_NAME%"
+         },
+         "nanominer":{
+            "algo":"kawpow",
+            "url":"%URL%",
+            "template":"%WAL%",
+            "pass":"x",
+            "user_config":"coin=%COIN%\nrigName=%WORKER_NAME%"
+         },
+         "teamredminer":{
+            "algo":"kawpow",
+            "url":"stratum+tcp://%URL%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "pass":"x"
+         },
+         "tt-miner":{
+            "url":"stratum1+tcp://%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"kawpow",
+            "user_config":"-coin rvn"
+         },
+         "gminer":{
+            "algo":"kawpow",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         }
+      }
+   },
+   {
+      "coin":"MWC",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "mwc.woolypooly.com:11000"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "mwc.woolypooly.com:11001"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "mwc.us.woolypooly.com:11000"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "mwc.us.woolypooly.com:11001"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "mwc.sg.woolypooly.com:11000"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "mwc.sg.woolypooly.com:11001"
+            ]
+         }
+      ],
+      "miners":{
+         "gminer":{
+            "algo":"grin31",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "lolminer":{
+            "algo":"MWC-C31",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "bminer":{
+            "algo":"cuckatoo31",
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "nbminer":{
+            "url":"%URL%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"cuckatoo"
+         }
+      }
+   },
+   {
+      "coin":"GRIN",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "grin.woolypooly.com:12000"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "grin.woolypooly.com:12001"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "grin.us.woolypooly.com:12000"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "grin.us.woolypooly.com:12001"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "grin.sg.woolypooly.com:12000"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "grin.sg.woolypooly.com:12001"
+            ]
+         }
+      ],
+      "miners":{
+         "gminer":{
+            "algo":"grin32",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "lolminer":{
+            "algo":"GRIN-C32",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "bminer":{
+            "algo":"cuckatoo32",
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "nbminer":{
+            "url":"%URL%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"cuckatoo32"
+         }
+      }
+   },
+   {
+      "coin":"ZEL",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "zel.woolypooly.com:3092"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "zel.woolypooly.com:3093"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "zel.us.woolypooly.com:3092"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "zel.us.woolypooly.com:3093"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "zel.sg.woolypooly.com:3092"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "zel.sg.woolypooly.com:3093"
+            ]
+         }
+      ],
+      "miners":{
+         "gminer":{
+            "algo":"125_4",
+            "pass":"x",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":"--pers ZelProof"
+         },
+         "lolminer":{
+            "algo":"ZEL",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "miniz":{
+            "algo":"125_4",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":"pers ZelProof"
+         }
+      }
+   },
+   {
+      "coin":"BTG",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "btg.woolypooly.com:3090"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "btg.woolypooly.com:3091"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "btg.us.woolypooly.com:3090"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "btg.us.woolypooly.com:3091"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "btg.sg.woolypooly.com:3090"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "btg.sg.woolypooly.com:3091"
+            ]
+         }
+      ],
+      "miners":{
+         "ewbf":{
+            "algo":"144_5",
+            "fork":"zhash",
+            "zpass":"x",
+            "zport":"%URL_PORT%",
+            "zserver":"%URL_HOST%",
+            "ztemplate":"%WAL%.%WORKER_NAME%",
+            "user_config":"pers BgoldPoW"
+         },
+         "bminer":{
+            "algo":"zhash",
+            "url":"%URL%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "pass":"x"
+         },
+         "gminer":{
+            "algo":"144_5",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":"--pers BgoldPoW"
+         },
+         "lolminer":{
+            "algo":"BTG",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         }
+      }
+   },
+   {
+      "coin":"CFX",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "cfx.woolypooly.com:3094"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "cfx.woolypooly.com:3095"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "cfx.us.woolypooly.com:3094"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "cfx.us.woolypooly.com:3095"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "cfx.sg.woolypooly.com:3094"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "cfx.sg.woolypooly.com:3095"
+            ]
+         }
+      ],
+      "miners":{
+         "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"octopus"
+         },
+         "t-rex":{
+            "url":"%URL%",
+            "algo":"octopus",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "nanominer": {
+            "url": "%URL%",
+            "algo": "octopus",
+            "pass": "x",
+            "template": "%WAL%",
+            "user_config": "coin = CFX\nrigName = %WORKER_NAME%"
+         }
+      }
+   }
 ]

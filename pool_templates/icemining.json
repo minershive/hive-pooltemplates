@@ -29,7 +29,34 @@
                "algo": "argon2d-nim",
                "pass": "%WORKER_NAME%",
                "template": "%WAL%"
-            }
+            },
+            "teamredminer": {
+               "url": "stratum+tcp://%URL%",
+               "algo": "nimiq",
+               "worker": "%WORKER_NAME%",
+               "template": "%WAL%"
+           },
+           "nq-miner": {
+               "url": "%URL%",
+               "cuda": "1",
+               "worker": "%WORKER_NAME%",
+               "template": "%WAL%",
+               "user_config": "-m dumb"
+           },
+           "noncerpro-opencl": {
+               "port": "%URL_PORT%",
+               "server": "%URL_HOST%",
+               "worker": "%WORKER_NAME%",
+               "template": "%WAL%",
+               "user_config": "--mode=dumb\n"
+           },
+           "noncerpro-cuda": {
+               "port": "%URL_PORT%",
+               "server": "%URL_HOST%",
+               "worker": "%WORKER_NAME%",
+               "template": "%WAL%",
+               "user_config": "--mode=dumb"
+           }
         }
     }
 ]

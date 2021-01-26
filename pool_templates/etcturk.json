@@ -5,15 +5,11 @@
             {
                 "geo": "Turkey",
                 "urls": [
-                    "etcturk.sytes.net:8008"
+                    "etcturk.com:8008"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
             "ethminer": {
                 "cuda": 1,
                 "opencl": 0,
@@ -22,9 +18,9 @@
                 "server": "stratum1+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "lolminer":{
+                "template": "%WAL%",
+                "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
             },
             "phoenixminer": {
                 "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, COIN: %COIN%"

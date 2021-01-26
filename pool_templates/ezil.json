@@ -1,46 +1,137 @@
 [
     {
+        "pool": {
+            "name": "Ezil.me",
+            "url": "https://ezil.me",
+            "fee": 1.0,
+            "type": "PPS+"
+        }
+    },
+    {
         "coin": "ETH",
         "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "eu.ezil.me:5555"
-                ]
-            }
+          {
+            "geo": "Europe",
+            "urls": [
+              "eu.ezil.me:5555",
+              "eu.ezil.me:15555"
+            ],
+            "ssl_urls": [
+              "eu.ezil.me:25443",
+              "eu.ezil.me:35443"
+            ]
+          },
+          {
+            "geo": "Asia",
+            "urls": [
+              "asia.ezil.me:5555",
+              "asia.ezil.me:15555"
+            ],
+            "ssl_urls": [
+              "asia.ezil.me:25443",
+              "asia.ezil.me:35443"
+            ]
+          },
+          {
+            "geo": "USA East",
+            "urls": [
+              "us-east.ezil.me:5555",
+              "us-east.ezil.me:15555"
+            ],
+            "ssl_urls": [
+              "us-east.ezil.me:25443",
+              "us-east.ezil.me:35443"
+            ]
+          },
+          {
+            "geo": "USA West",
+            "urls": [
+              "us-west.ezil.me:5555",
+              "us-west.ezil.me:15555"
+            ],
+            "ssl_urls": [
+              "us-west.ezil.me:25443",
+              "us-west.ezil.me:35443"
+            ]
+          }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            "_prototype": "miners_ethash_4g",
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
             },
             "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
+                "algo": "ethproxy"
+            },
+            "lolminer": {
+              "user_config": "--ethstratum ETHPROXY"
+            },
+            "t-rex": {
+              "template": "%WAL%",
+              "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
+            }
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+          {
+            "geo": "Europe",
+            "urls": [
+              "eu.etc.ezil.me:4444",
+              "eu.etc.ezil.me:14444"
+            ],
+            "ssl_urls": [
+              "eu.etc.ezil.me:24443",
+              "eu.etc.ezil.me:34443"
+            ]
+
+          },
+          {
+            "geo": "Asia",
+            "urls": [
+              "asia.ezil.me:4444",
+              "asia.ezil.me:14444"
+            ],
+            "ssl_urls": [
+              "asia.ezil.me:24443",
+              "asia.ezil.me:34443"
+            ]
+          },
+          {
+            "geo": "USA East",
+            "urls": [
+              "us-east.ezil.me:4444",
+              "us-east.ezil.me:14444"
+            ],
+            "ssl_urls": [
+              "us-east.ezil.me:24443",
+              "us-east.ezil.me:34443"
+            ]
+          },
+          {
+            "geo": "USA West",
+            "urls": [
+              "us-west.ezil.me:4444",
+              "us-west.ezil.me:14444"
+            ],
+            "ssl_urls": [
+              "us-west.ezil.me:24443",
+              "us-west.ezil.me:34443"
+            ]
+          }
+        ],
+        "miners": {
+            "_prototype": "miners_etchash",
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
+            },
+            "lolminer": {
+              "user_config": "--ethstratum ETHPROXY"
+            },
+            "t-rex": {
+              "template": "%WAL%",
+              "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"%COIN%\"\n\"fork-at\": \"etchash=epoch:390\""
             }
         }
     },
@@ -48,45 +139,113 @@
         "coin": "ZIL",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "Europe ETC(You need to change algo in miner config)",
                 "urls": [
-                    "eu.ezil.me:5555"
+                    "eu.etc.ezil.me:4444",
+                    "eu.etc.ezil.me:14444"
+                ],
+                "ssl_urls": [
+                  "eu.etc.ezil.me:24443",
+                  "eu.etc.ezil.me:34443"
+                ]
+
+            },
+            {
+                "geo": "Asia ETC(You need to change algo in miner config)",
+                "urls": [
+                    "asia.ezil.me:4444",
+                    "asia.ezil.me:14444"
+                ],
+                "ssl_urls": [
+                  "asia.ezil.me:24443",
+                  "asia.ezil.me:34443"
+                ]
+            },
+            {
+                "geo": "USA East ETC(You need to change algo in miner config)",
+                "urls": [
+                    "us-east.ezil.me:4444",
+                    "us-east.ezil.me:14444"
+                ],
+                "ssl_urls": [
+                  "us-east.ezil.me:24443",
+                  "us-east.ezil.me:34443"
+                ]
+            },
+            {
+                "geo": "USA West ETC(You need to change algo in miner config)",
+                "urls": [
+                    "us-west.ezil.me:4444",
+                    "us-west.ezil.me:14444"
+                ],
+                "ssl_urls": [
+                  "us-west.ezil.me:24443",
+                  "us-west.ezil.me:34443"
+                ]
+            },
+            {
+                "geo": "Europe ETH",
+                "urls": [
+                    "eu.ezil.me:5555",
+                    "eu.ezil.me:15555"
+                ],
+                "ssl_urls": [
+                  "eu.ezil.me:25443",
+                  "eu.ezil.me:35443"
+                ]
+            },
+            {
+                "geo": "Asia ETH",
+                "urls": [
+                    "asia.ezil.me:5555",
+                    "asia.ezil.me:15555"
+                ],
+                "ssl_urls": [
+                  "asia.ezil.me:25443",
+                  "asia.ezil.me:35443"
+                ]
+            },
+            {
+                "geo": "USA East ETH",
+                "urls": [
+                    "us-east.ezil.me:5555",
+                    "us-east.ezil.me:15555"
+                ],
+                "ssl_urls": [
+                  "us-east.ezil.me:25443",
+                  "us-east.ezil.me:35443"
+                ]
+            },
+            {
+                "geo": "USA West ETH",
+                "urls": [
+                    "us-west.ezil.me:5555",
+                    "us-west.ezil.me:15555"
+                ],
+                "ssl_urls": [
+                  "us-west.ezil.me:25443",
+                  "us-west.ezil.me:35443"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: ETH"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            }
+          "_prototype": "miners_ethash_4g",
+          "phoenixminer": {
+            "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, COIN: eth"
+          },
+          "tt-miner": {
+            "url": "stratum1+tcp://%URL%"
+          },
+          "bminer": {
+            "algo": "ethproxy"
+          },
+          "lolminer": {
+            "user_config": "--ethstratum ETHPROXY"
+          },
+          "t-rex": {
+            "template": "%WAL%",
+            "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
+          }
         }
     }
 ]

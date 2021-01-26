@@ -11,31 +11,38 @@
         "coin": "ETH",
         "servers": [
             {
-                "geo": "Europe",
-                "urls": [
-                    "eu.sparkpool.com:3333",
-                    "eu.sparkpool.com:13333"
-                ]
-            },
-            {
-                "geo": "US West",
-                "urls": [
-                    "na-west.sparkpool.com:3333",
-                    "na-west.sparkpool.com:13333"
-                ]
-            },
-            {
-                "geo": "US East",
-                "urls": [
-                    "na-east.sparkpool.com:3333",
-                    "na-east.sparkpool.com:13333"
-                ]
-            },
-            {
-                "geo": "China",
+                "geo": "Mainland China",
                 "urls": [
                     "cn.sparkpool.com:3333",
                     "cn.sparkpool.com:13333"
+                ]
+            },
+            {
+                "geo": "Mainland China (backup)",
+                "urls": [
+                    "cn-backup.sparkpool.com:3333",
+                    "cn-backup.sparkpool.com:13333"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eth-eu.sparkpool.com:3333",
+                    "eth-eu.sparkpool.com:13333"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "eth-us.sparkpool.com:3333",
+                    "eth-us.sparkpool.com:13333"
+                ]
+            },
+            {
+                "geo": "Southeast Asia",
+                "urls": [
+                    "asia.sparkpool.com:3333",
+                    "asia.sparkpool.com:13333"
                 ]
             },
             {
@@ -51,54 +58,24 @@
                     "jp.sparkpool.com:3333",
                     "jp.sparkpool.com:13333"
                 ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash_4g",
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
             },
-            {
-                "geo": "Taiwan",
-                "urls": [
-                    "tw.sparkpool.com:3333",
-                    "tw.sparkpool.com:13333"
-                ]
+            "bminer": {
+               "algo": "ethproxy"
             },
-            {
-                "geo": "Southeast Asia",
-                "urls": [
-                    "asia.sparkpool.com:3333",
-                    "asia.sparkpool.com:13333"
-                ]
+            "teamredminer":{
+               "template": "%WAL%",
+               "worker": "%WORKER_NAME%"
+            },
+            "lolminer":{
+               "template": "%WAL%",
+               "worker": "%WORKER_NAME%"
             }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
-        "coin": "ETC",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                    "etc-cn.sparkpool.com:5555",
-                    "etc-cn.sparkpool.com:15555"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
-        "coin": "XMR",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                    "xmr-cn.sparkpool.com:11000",
-                    "xmr-cn.sparkpool.com:21000"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_cryptonight_r_hive"
         }
     },
     {
@@ -121,24 +98,29 @@
                 "urls": [
                     "beam-asia.sparkpool.com:2222"
                 ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "beam-us.sparkpool.com:2222"
+                ]
             }
         ],
         "miners": {
-            "beamcl": {
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%"
-            },
-            "beamcuda": {
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%"
-            },
             "bminer": {
                 "algo": "beam+ssl",
                 "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%"
+                "url": "%URL%",
+                "pass": "x"
+            },
+            "miniz": {
+                "algo": "144,5s",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "tls": "1"
             },
             "gminer": {
-                "algo": "150_5",
+                "algo": "beamhash",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x",
@@ -148,8 +130,9 @@
             "lolminer": {
                 "algo": "BEAM",
                 "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "ver": "0.7.a4"
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x"
             }
         }
     },
@@ -183,30 +166,55 @@
                     "grin-us.sparkpool.com:6666",
                     "grin-us.sparkpool.com:16666"
                 ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "cuckaroom29",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%"
             },
+            "bminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cuckaroo29m"
+            },
+            "lolminer": {
+                "algo": "GRIN-C29M",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "GRIN-C31",
+        "servers": [
             {
-                "geo": "C31 China",
+                "geo": "China",
                 "urls": [
                     "grin.sparkpool.com:6667",
                     "grin.sparkpool.com:16667"
                 ]
             },
             {
-                "geo": "C31 Asia",
+                "geo": "Asia",
                 "urls": [
                     "grin-asia.sparkpool.com:6667",
                     "grin-asia.sparkpool.com:16667"
                 ]
             },
             {
-                "geo": "C31 Europe",
+                "geo": "Europe",
                 "urls": [
                     "grin-eu.sparkpool.com:6667",
                     "grin-eu.sparkpool.com:16667"
                 ]
             },
             {
-                "geo": "C31 US",
+                "geo": "US",
                 "urls": [
                     "grin-us.sparkpool.com:6667",
                     "grin-us.sparkpool.com:16667"
@@ -214,34 +222,92 @@
             }
         ],
         "miners": {
-            "bminer": {
-                "algo": "cuckaroo29",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%"
-            },
-            "gminer": {
-                "algo": "grin29",
+            "lolminer": {
+                "algo": "C31",
+                "pass": "x",
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "grinminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%/%WORKER_NAME%"
+            "gminer": {
+                "algo": "grin31",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%"
             },
-            "gringoldminer": {
+            "bminer": {
                 "url": "%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "grinprominer": {
-                "url": "%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cuckatoo31"
             },
             "nbminer": {
                 "url": "%URL%",
-                "template": "%WAL%/%WORKER_NAME%",
-                "algo": "cuckaroo"
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cuckatoo"
+            },
+            "teamredminer": {
+                "algo": "cuckatoo31_grin",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
+    },
+    {
+        "coin": "GRIN-C32",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "grin.sparkpool.com:6665",
+                    "grin.sparkpool.com:16665"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "grin-asia.sparkpool.com:6665",
+                    "grin-asia.sparkpool.com:16665"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "grin-eu.sparkpool.com:6665",
+                    "grin-eu.sparkpool.com:16665"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "grin-us.sparkpool.com:6665",
+                    "grin-us.sparkpool.com:16665"
+                ]
+            }
+        ],
+        "miners": {
+            "lolminer": {
+                "algo": "GRIN-C32",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "gminer": {
+                "algo": "grin32",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cuckatoo32"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "cuckatoo32"
             }
         }
     },

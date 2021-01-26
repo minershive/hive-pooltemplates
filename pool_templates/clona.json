@@ -1,6 +1,6 @@
 [
     {
-        "coin": "UBIQ",
+        "coin": "UBQ",
         "servers": [
             {
                 "geo": "LOW Diff 2G",
@@ -10,13 +10,13 @@
                 ]
             },
             {
-                "geo": "MIDDLE Diff 3.5G",
+                "geo": "MIDDLE Diff 3G",
                 "urls": [
                     "ubiq.clona.ru:3071"
                 ]
             },
             {
-                "geo": "HIGH Diff 5G",
+                "geo": "HIGH Diff 4G",
                 "urls": [
                     "ubiq.clona.ru:3011"
                 ]
@@ -25,16 +25,9 @@
         "miners": {
             "phoenixminer": {
                 "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            
- "gminer": {
-                "algo": "ethash",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
             }
-
+            
+ 
         }
     },
    
@@ -70,10 +63,6 @@
         ],
        
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            },
             "ethminer": {
                 "cuda": 1,
                 "opencl": 0,
@@ -99,6 +88,9 @@
             "phoenixminer": {
                 "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
             },
+            
+            
+            
             "finminer": {
                 "algo": "ethash",
                 "url": "%URL%",
@@ -106,6 +98,16 @@
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
+            
+             "teamredminer": {
+                "algo": "ethash",
+                 "url":"%URL%",
+                "template":"%WAL%",
+                 "worker":"%WORKER_NAME%",
+                "pass": "x"
+            },
+            
+            
             "bminer": {
                 "algo": "ethash",
                 "template": "%WAL%.%WORKER_NAME%",
@@ -183,6 +185,16 @@
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
+              
+            "teamredminer": {
+                "algo": "ethash",
+                 "url":"%URL%",
+                "template":"%WAL%",
+                 "worker":"%WORKER_NAME%",
+                "pass": "x"
+            },
+            
+            
             "bminer": {
                 "algo": "ethash",
                 "template": "%WAL%.%WORKER_NAME%",
@@ -259,6 +271,16 @@
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
+            
+            "teamredminer": {
+                "algo": "ethash",
+                 "url":"%URL%",
+                "template":"%WAL%",
+                 "worker":"%WORKER_NAME%",
+                "pass": "x"
+            },
+            
+            
             "bminer": {
                 "algo": "ethash",
                 "template": "%WAL%.%WORKER_NAME%",
@@ -333,6 +355,16 @@
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
+            
+             "teamredminer": {
+                "algo": "ethash",
+                 "url":"%URL%",
+                "template":"%WAL%",
+                 "worker":"%WORKER_NAME%",
+                "pass": "x"
+            },
+            
+            
             "bminer": {
                 "algo": "ethash",
                 "template": "%WAL%.%WORKER_NAME%",
@@ -407,6 +439,15 @@
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
+            
+              "teamredminer": {
+                "algo": "ethash",
+                 "url":"%URL%",
+                "template":"%WAL%",
+                 "worker":"%WORKER_NAME%",
+                "pass": "x"
+            },
+            
             "bminer": {
                 "algo": "ethash",
                 "template": "%WAL%.%WORKER_NAME%",
@@ -481,6 +522,15 @@
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
+              "teamredminer": {
+                "algo": "ethash",
+                 "url":"%URL%",
+                "template":"%WAL%",
+                 "worker":"%WORKER_NAME%",
+                "pass": "x"
+            },
+            
+            
             "bminer": {
                 "algo": "ethash",
                 "template": "%WAL%.%WORKER_NAME%",
@@ -555,6 +605,16 @@
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
+            
+              "teamredminer": {
+                "algo": "ethash",
+                 "url":"%URL%",
+                "template":"%WAL%",
+                 "worker":"%WORKER_NAME%",
+                "pass": "x"
+            },
+            
+            
             "bminer": {
                 "algo": "ethash",
                 "template": "%WAL%.%WORKER_NAME%",
@@ -629,80 +689,16 @@
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
-            "bminer": {
+            
+              "teamredminer": {
                 "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
+                 "url":"%URL%",
+                "template":"%WAL%",
+                 "worker":"%WORKER_NAME%",
                 "pass": "x"
-            }
-        }
-    },
-    {
-        "coin": "ELLA",
-       "servers": [
-            {
-                "geo": "LOW Diff 2G",
-                "urls": [
-                    "ella.clona.ru:9009"
-                  
-                ]
-            },
-            {
-                "geo": "MIDDLE Diff 3G",
-                "urls": [
-                    "ella.clona.ru:9025"
-                ]
-            },
-            {
-                "geo": "HIGH Diff 4G",
-                "urls": [
-                    "ella.clona.ru:7021"
-                ]
-            },
-            {
-                "geo": "NiceHash 10G",
-                "urls": [
-                    "ella.clona.ru:9008"
-                ]
-            }
-
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
             },
             
- "gminer": {
-                "algo": "ethash",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
+            
             "bminer": {
                 "algo": "ethash",
                 "template": "%WAL%.%WORKER_NAME%",
@@ -711,81 +707,8 @@
             }
         }
     },
-    
-    
-
-    {
-        "coin": "REOSC",
-       "servers": [
-            {
-                "geo": "LOW Diff 2G",
-                "urls": [
-                    "reosc.clona.ru:9005"
-
-                ]
-            },
-            {
-                "geo": "MIDDLE Diff 3G",
-                "urls": [
-                    "reosc.clona.ru:9024"
-                ]
-            },
-            {
-                "geo": "HIGH Diff 4G",
-                "urls": [
-                    "reosc.clona.ru:7037"
-                ]
-            },
-            {
-                "geo": "NiceHash 10G",
-                "urls": [
-                    "reosc.clona.ru:9001"
-                ]
-            }
-
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-                "claymore_user_config": "-allcoins 1\n-allpools 0"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "gminer": {
-                "algo": "ethash",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            }
-        }
-    },
+   
+   
 
     {
         "coin": "AKA",
@@ -853,6 +776,16 @@
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
+            
+               "teamredminer": {
+                "algo": "ethash",
+                 "url":"%URL%",
+                "template":"%WAL%",
+                 "worker":"%WORKER_NAME%",
+                "pass": "x"
+            },
+            
+            
             "bminer": {
                 "algo": "ethash",
                 "template": "%WAL%.%WORKER_NAME%",
@@ -922,6 +855,15 @@
                 "pass": "x",
                 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
             },
+             "teamredminer": {
+                "algo": "ethash",
+                 "url":"%URL%",
+                "template":"%WAL%",
+                 "worker":"%WORKER_NAME%",
+                "pass": "x"
+            },
+            
+            
             "bminer": {
                 "algo": "ethash",
                 "template": "%WAL%.%WORKER_NAME%",

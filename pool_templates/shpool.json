@@ -24,10 +24,6 @@
 			}
 		],
 		"miners": {
-			"claymore": {
-				"epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-				"claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
-			},
 			"ethminer": {
 				"cuda": 1,
 				"opencl": 1,
@@ -46,18 +42,18 @@
 		}
 	},
 	{
-                "coin": "PRIL",
+                "coin": "PIRL",
                 "servers": [
                         {
-                                "geo": "SOLO EU 4G",
+                                "geo": "SOLO EU 3G",
                                 "urls": [
-                                        "eu.shpool.net:3104"
+                                        "eu.shpool.net:3103"
                                 ]
                         },
                         {
-                                "geo": "SOLO EU 64G",
+                                "geo": "SOLO EU 9G",
                                 "urls": [
-                                        "eu.shpool.net:4164"
+                                        "eu.shpool.net:4109"
                                 ]
                         }
                 ],
@@ -87,15 +83,15 @@
                 "coin": "EGEM",
                 "servers": [
                         {
-                                "geo": "SOLO EU 4G",
+                                "geo": "SOLO EU 3G",
                                 "urls": [
-                                        "eu.shpool.net:3204"
+                                        "eu.shpool.net:3203"
                                 ]
                         },
                         {
-                                "geo": "SOLO EU 64G",
+                                "geo": "SOLO EU 9G",
                                 "urls": [
-                                        "eu.shpool.net:4264"
+                                        "eu.shpool.net:4209"
                                 ]
                         }
                 ],
@@ -125,15 +121,15 @@
                 "coin": "ETHO",
                 "servers": [
                         {
-                                "geo": "SOLO EU 4G",
+                                "geo": "SOLO EU 3G",
                                 "urls": [
-                                        "eu.shpool.net:3304"
+                                        "eu.shpool.net:3303"
                                 ]
                         },
                         {
-                                "geo": "SOLO EU 64G",
+                                "geo": "SOLO EU 9G",
                                 "urls": [
-                                        "eu.shpool.net:4364"
+                                        "eu.shpool.net:4309"
                                 ]
                         }
                 ],
@@ -163,15 +159,167 @@
                 "coin": "EXP",
                 "servers": [
                         {
-                                "geo": "SOLO EU 4G",
+                                "geo": "SOLO EU 3G",
                                 "urls": [
-                                        "eu.shpool.net:3404"
+                                        "eu.shpool.net:3403"
                                 ]
                         },
                         {
-                                "geo": "SOLO EU 64G",
+                                "geo": "SOLO EU 9G",
                                 "urls": [
-                                        "eu.shpool.net:4464"
+                                        "eu.shpool.net:4409"
+                                ]
+                        }
+                ],
+                "miners": {
+                        "claymore": {
+                                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
+                        },
+                        "ethminer": {
+                                "cuda": 1,
+                                "opencl": 1,
+                                "pass": "x",
+                                "port": "%URL_PORT%",
+                                "server": "stratum1+tcp://%URL_HOST%",
+                                "template": "%WAL%.%WORKER_NAME%"
+                        },
+                        "asicminer": {
+                                "url": "stratum+tcp://%URL%",
+                                "template": "%WAL%"
+                        },
+                        "phoenixminer": {
+                                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, COIN: %COIN%, PROTO: 2"
+                        }
+                }
+        },
+	{
+                "coin": "ATH",
+                "servers": [
+                        {
+                                "geo": "SOLO EU 3G",
+                                "urls": [
+                                        "eu.shpool.net:3703"
+                                ]
+                        },
+                        {
+                                "geo": "SOLO EU 9G",
+                                "urls": [
+                                        "eu.shpool.net:4709"
+                                ]
+                        }
+                ],
+                "miners": {
+                        "claymore": {
+                                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
+                        },
+                        "ethminer": {
+                                "cuda": 1,
+                                "opencl": 1,
+                                "pass": "x",
+                                "port": "%URL_PORT%",
+                                "server": "stratum1+tcp://%URL_HOST%",
+                                "template": "%WAL%.%WORKER_NAME%"
+                        },
+                        "asicminer": {
+                                "url": "stratum+tcp://%URL%",
+                                "template": "%WAL%"
+                        },
+                        "phoenixminer": {
+                                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, COIN: %COIN%, PROTO: 2"
+                        }
+                }
+        },
+	{
+                "coin": "CLO",
+                "servers": [
+                        {
+                                "geo": "SOLO EU 3G",
+                                "urls": [
+                                        "eu.shpool.net:3603"
+                                ]
+                        },
+                        {
+                                "geo": "SOLO EU 9G",
+                                "urls": [
+                                        "eu.shpool.net:4609"
+                                ]
+                        }
+                ],
+                "miners": {
+                        "claymore": {
+                                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
+                        },
+                        "ethminer": {
+                                "cuda": 1,
+                                "opencl": 1,
+                                "pass": "x",
+                                "port": "%URL_PORT%",
+                                "server": "stratum1+tcp://%URL_HOST%",
+                                "template": "%WAL%.%WORKER_NAME%"
+                        },
+                        "asicminer": {
+                                "url": "stratum+tcp://%URL%",
+                                "template": "%WAL%"
+                        },
+                        "phoenixminer": {
+                                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, COIN: %COIN%, PROTO: 2"
+                        }
+                }
+        },
+	{
+                "coin": "MIX",
+                "servers": [
+                        {
+                                "geo": "SOLO EU 3G",
+                                "urls": [
+                                        "eu.shpool.net:3503"
+                                ]
+                        },
+                        {
+                                "geo": "SOLO EU 9G",
+                                "urls": [
+                                        "eu.shpool.net:4509"
+                                ]
+                        }
+                ],
+                "miners": {
+                        "claymore": {
+                                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                                "claymore_user_config": "-allcoins 1 -allpools 0 -esm 0"
+                        },
+                        "ethminer": {
+                                "cuda": 1,
+                                "opencl": 1,
+                                "pass": "x",
+                                "port": "%URL_PORT%",
+                                "server": "stratum1+tcp://%URL_HOST%",
+                                "template": "%WAL%.%WORKER_NAME%"
+                        },
+                        "asicminer": {
+                                "url": "stratum+tcp://%URL%",
+                                "template": "%WAL%"
+                        },
+                        "phoenixminer": {
+                                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, COIN: %COIN%, PROTO: 2"
+                        }
+                }
+        },
+	{
+                "coin": "ENIX",
+                "servers": [
+                        {
+                                "geo": "SOLO EU 3G",
+                                "urls": [
+                                        "eu.shpool.net:3803"
+                                ]
+                        },
+                        {
+                                "geo": "SOLO EU 9G",
+                                "urls": [
+                                        "eu.shpool.net:4809"
                                 ]
                         }
                 ],

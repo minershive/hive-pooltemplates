@@ -39,10 +39,20 @@
                 "ssl_urls": [
                     "naw-eth.hiveon.net:24443"
                 ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "aspac1-eth.hiveon.net:4444",
+                    "aspac1-eth.hiveon.net:14444"
+                ],
+                "ssl_urls": [
+                    "aspac1-eth.hiveon.net:24443"
+                ]
             }
         ],
         "miners": {
-            "_prototype": "miners_ethash",
+            "_prototype": "miners_ethash_4g",
             "tt-miner": {
                 "url": "stratum1+tcp://%URL%"
             },
@@ -52,7 +62,60 @@
             "teamredminer":{
                "template": "%WAL%",
                "worker": "%WORKER_NAME%"
+            },
+            "lolminer":{
+               "template": "%WAL%",
+               "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
             }
+        }
+    },
+
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "ru-etc.hiveon.net:8888",
+                    "ru-etc.hiveon.net:4444"
+                ],
+                "ssl_urls": [
+                    "ru-etc.hiveon.net:20443"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu-etc.hiveon.net:8888",
+                    "eu-etc.hiveon.net:4444"
+                ],
+                "ssl_urls": [
+                    "eu-etc.hiveon.net:20443"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "na-etc.hiveon.net:8888",
+                    "na-etc.hiveon.net:4444"
+                ],
+                "ssl_urls": [
+                    "na-etc.hiveon.net:20443"
+                ]
+            },
+            {
+                "geo": "Asia-Pacific",
+                "urls": [
+                    "aspac-etc.hiveon.net:8888",
+                    "aspac-etc.hiveon.net:4444"
+                ],
+                "ssl_urls": [
+                    "aspac-etc.hiveon.net:20443"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_etchash"
         }
     }
 ]
