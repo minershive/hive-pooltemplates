@@ -1,3 +1,8 @@
+##### 0.6-195@210127 2021-01-27
+*   Updated some system tools for AMD GPUs (amdmeminfo to v2.1.5 and amdmemtweak to v0.1.9.3-hiveos - added IDs for some Radeon Pro / FirePro GPUs)
+*   Fixed PCI ID database (abbreviated some long names)
+*   GMiner v2.44 (improved compatibility with Ethash pools; improved handling of device freezing; improved auto-tuning; added two kernels for Ethash, miner support 5 kernels for Nvidia GPUs, miner automatically select optimal kernel, also you can select specific kernel by `--oc`, see miner manual for details)
+
 ##### 0.6-194@210126 2021-01-26
 *   Improved OC/UV for AMD Vega10 family GPUs (removed dependency from 'Aggressive mode' switch; fixed accuracy when setting HBM voltage value)
 *   Updated PCI ID database (updated to version of 2021.01.11; changed some TM to pretty names)
