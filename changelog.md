@@ -2,7 +2,7 @@
 * Improved filesystem mounting/unmounting (fixes and improvements in `agent`, `sreboot`)
 * Improved support for hardware watchdogs (added support for yet another HL340 Chinese watchdog: Finedar; improved compatibility with Open-Dev watchdogs; stop pinging watchdog after 10 consecutive errors)
 * Improved e1000e package (improved Intel e1000e Ethernet driver stability)
-* Added exprerimental execution `motd watch` on boot (if monitor connected&detected)
+* Added experimental execution `motd watch` on boot (if monitor connected&detected)
 * Minor fix in `hive-replace` (fixed closing session on start on some cases)
 * Minor updates and fixes for some system tools (`nvtool` v1.3.6; `amdmeminfo` v2.1.6; upp v0.0.9; fixes for `nvstop`, `cache-hive-ip`, `gpu-detect`)
 * SRBMiner-Multi v0.6.4 (added algorithm 'autolykos2' Ergo coin for CPU/GPU mining, fee 1.25%; performance increase on 'phi5' algorithm on CPU's with AVX2; removed devfee for 'cryptonight_heavyx' algorithm; bug fixes)
