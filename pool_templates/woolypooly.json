@@ -105,7 +105,6 @@
          "phoenixminer":{
             "url":"POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 3, COIN: %COIN%"
          },
-
          "teamredminer":{
             "algo":"etchash",
             "url":"stratum+tcp://%URL%",
@@ -206,7 +205,7 @@
                "veil.woolypooly.com:3099"
             ]
          },
-{
+         {
             "geo":"USA",
             "urls":[
                "veil.us.woolypooly.com:3098"
@@ -245,11 +244,11 @@
             "algo":"progpow092",
             "user_config":"-coin VEIL"
          },
-"wildrig-multi": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "progpow-veil",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
+         "wildrig-multi":{
+            "url":"stratum+tcp:\/\/%URL%",
+            "algo":"progpow-veil",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
          }
       }
    },
@@ -876,12 +875,61 @@
             "pass":"x",
             "template":"%WAL%.%WORKER_NAME%"
          },
-         "nanominer": {
+"nanominer": {
             "url": "%URL%",
             "algo": "octopus",
             "pass": "x",
             "template": "%WAL%",
             "user_config": "coin = CFX\nrigName = %WORKER_NAME%"
+}
+      }
+   },
+   {
+      "coin":"ERGO",
+      "servers":[
+         {
+            "geo":"Europe",
+            "urls":[
+               "erg.woolypooly.com:3100"
+            ]
+         },
+         {
+            "geo":"SOLO Europe",
+            "urls":[
+               "erg.woolypooly.com:3101"
+            ]
+         },
+         {
+            "geo":"USA",
+            "urls":[
+               "erg.us.woolypooly.com:3100"
+            ]
+         },
+         {
+            "geo":"SOLO USA",
+            "urls":[
+               "erg.us.woolypooly.com:3101"
+            ]
+         },
+         {
+            "geo":"Singapore",
+            "urls":[
+               "erg.sg.woolypooly.com:3100"
+            ]
+         },
+         {
+            "geo":"SOLO Singapore",
+            "urls":[
+               "erg.sg.woolypooly.com:3101"
+            ]
+         }
+      ],
+      "miners":{
+         "srbminer":{
+            "url":"%URL%",
+            "pass":"%WORKER_NAME%",
+            "template":"%WAL%",
+            "algo":"autolykos2"
          }
       }
    }
