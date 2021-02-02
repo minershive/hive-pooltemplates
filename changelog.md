@@ -1,6 +1,6 @@
 ##### 0.6-196@210201 2021-02-02
 * Improved filesystem mounting/unmounting (fixes and improvements in `agent`, `sreboot`)
-* Improved support for hardware watchdogs (added support for yet another HL340 Chinese watchdog: Finedar; improved compatibilty with Open-Dev watchdogs; stop pinging watchdog after 10 consecutive errors)
+* Improved support for hardware watchdogs (added support for yet another HL340 Chinese watchdog: Finedar; improved compatibility with Open-Dev watchdogs; stop pinging watchdog after 10 consecutive errors)
 * Improved e1000e stability
 * Added exprerimental execution `motd watch` on boot (if monitor connected&detected)
 * Minor fix in `hive-replace` (fixed closing session on start on some cases)
