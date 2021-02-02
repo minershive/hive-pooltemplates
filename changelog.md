@@ -1,4 +1,4 @@
-##### 0.6-196@210201
+##### 0.6-196@210201 2021-02-02
 * Improved filesystem mounting/unmounting (fixes and improvements in `agent`, `sreboot`)
 * Improved support harware watchdogs (added support for yet another HL340 Chinese watchdog: Finedar; improved compatibilty with Open-Dev watchdogs; stop pinging watchdog after 10 consecutive errors)
 * Improved e1000e stability
