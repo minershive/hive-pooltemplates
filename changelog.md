@@ -1,5 +1,5 @@
 ##### 0.6-197@210205 2021-02-05
-*   Fixed freezing logs in `miner` command
+*   Fixed freezing logs in `miner` command (mostly was noticeable on a remote console if monitor or monitor emulator attached)
 *   XMRig v6.8.1 (fixed AMD GPUs health data readings; added support for flexible huge page sizes)
 *   TeamRedMiner v0.8.1 (added general support for RX 6000 series "Big Navi", currently supported only A-mode; ETH+ZIL mining: new pool strategy 'min_epoch' added for switching between plain ETH and ETH+ZIL pools; Ethash Navi display GPUs now using A-mode by default to prevent allocation issues, Navi GPUs without a monitor attached will continue to default to B-mode)
 *   lolMiner v1.22 (significantly improved the performance of zombie mode on RX 400 and RX 500 GPUs)
