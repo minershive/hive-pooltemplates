@@ -875,17 +875,17 @@
             "pass":"x",
             "template":"%WAL%.%WORKER_NAME%"
          },
-"nanominer": {
-            "url": "%URL%",
-            "algo": "octopus",
-            "pass": "x",
-            "template": "%WAL%",
-            "user_config": "coin = CFX\nrigName = %WORKER_NAME%"
-}
+         "nanominer":{
+            "url":"%URL%",
+            "algo":"octopus",
+            "pass":"x",
+            "template":"%WAL%",
+            "user_config":"coin = CFX\nrigName = %WORKER_NAME%"
+         }
       }
    },
    {
-      "coin":"ERGO",
+      "coin":"ERG",
       "servers":[
          {
             "geo":"Europe",
@@ -930,6 +930,13 @@
             "pass":"%WORKER_NAME%",
             "template":"%WAL%",
             "algo":"autolykos2"
+         },
+         "nanominer":{
+            "url":"%URL%",
+            "algo":"autolykos2",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":"coin = ERGO\nrigName = %WORKER_NAME%"
          }
       }
    }
