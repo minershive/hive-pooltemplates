@@ -1,3 +1,9 @@
+##### 0.6-198@210210 2021-02-10
+*   Improved software watchdog (add new option delay)
+*   SRBMiner-Multi v0.6.6 (performance increase on 'autolykos2' algorithm on GPU's; reduced power consumption on 'autolykos2' algorithm on GPU's; fixed miner crashing when creating dataset on 'autolykos2' algorithm)
+*   lolMiner v1.23 (reduced the amount of needed host memory when running many cards in zombie mode; slightly improved zombie mode performance on future epochs above 387)
+*   T-Rex v0.19.10 (added GPU PCI address to summary handler; fixed bug on ethash "GPU is idle" error when generating DAG)
+
 ##### 0.6-197@210205 2021-02-05
 *   Fixed freezing logs in `miner` command (mostly was noticeable on a remote console if monitor or monitor emulator attached)
 *   XMRig v6.8.1 (fixed AMD GPUs health data readings; added support for flexible huge page sizes)
