@@ -1,13 +1,27 @@
+##### 0.6-198@210210 2021-02-10
+*   Improved software watchdog (add new option delay)
+*   SRBMiner-Multi v0.6.6 (performance increase on 'autolykos2' algorithm on GPU's; reduced power consumption on 'autolykos2' algorithm on GPU's; fixed miner crashing when creating dataset on 'autolykos2' algorithm)
+*   lolMiner v1.23 (reduced the amount of needed host memory when running many cards in zombie mode; slightly improved zombie mode performance on future epochs above 387)
+*   T-Rex v0.19.10 (added GPU PCI address to summary handler; fixed bug on ethash "GPU is idle" error when generating DAG)
+
+##### 0.6-197@210205 2021-02-05
+*   Fixed freezing logs in `miner` command (mostly was noticeable on a remote console if monitor or monitor emulator attached)
+*   XMRig v6.8.1 (fixed AMD GPUs health data readings; added support for flexible huge page sizes)
+*   TeamRedMiner v0.8.1 (added general support for RX 6000 series "Big Navi", currently supported only A-mode; ETH+ZIL mining: new pool strategy 'min_epoch' added for switching between plain ETH and ETH+ZIL pools; Ethash Navi display GPUs now using A-mode by default to prevent allocation issues, Navi GPUs without a monitor attached will continue to default to B-mode)
+*   lolMiner v1.22 (significantly improved the performance of zombie mode on RX 400/500 GPUs)
+*   SRBMiner-Multi v0.6.5 (huge performance increase on 'autolykos2' algorithm on GPU's, up to ~600%; huge performance increase on 'autolykos2' algorithm on CPU's with AVX2, up to ~500%; added abort mechanism for 'autolykos2' dataset creation on CPU)
+*   NanoMiner v3.2.0 (added autolykos algorithm support for Ergo coin, it's available for 3GB on both AMD and Nvidia GPUs, devfee is 5%)
+
 ##### 0.6-196@210201 2021-02-02
-* Improved filesystem mounting/unmounting (fixes and improvements in `agent`, `sreboot`)
-* Improved support for hardware watchdogs (added support for yet another HL340 Chinese watchdog: Finedar; improved compatibility with Open-Dev watchdogs; stop pinging watchdog after 10 consecutive errors)
-* Improved e1000e package (improved Intel e1000e Ethernet driver stability)
-* Added experimental execution `motd watch` on boot (if monitor connected&detected)
-* Minor fix in `hive-replace` (fixed closing session on start on some cases)
-* Minor updates and fixes for some system tools (`nvtool` v1.3.6; `amdmeminfo` v2.1.6; upp v0.0.9; fixes for `nvstop`, `cache-hive-ip`, `gpu-detect`)
-* SRBMiner-Multi v0.6.4 (added algorithm 'autolykos2' Ergo coin for CPU/GPU mining, fee 1.25%; performance increase on 'phi5' algorithm on CPU's with AVX2; removed devfee for 'cryptonight_heavyx' algorithm; bug fixes)
-* XMRigCC v2.8.5 (as fork for XMRig for CPU; added parameter `"max-cpu-usage": 100` to throttle cpu usage without reducing the cores/threads; fixed Hashrate printout when hashrate is > 99999.9h/s)
-* Minor fixes for some miners packages (Gminer: fixed multiple pool hosts; XPMclient: fixed showing hashrate from hanged GPU)
+*   Improved filesystem mounting/unmounting (fixes and improvements in `agent`, `sreboot`)
+*   Improved support for hardware watchdogs (added support for yet another HL340 Chinese watchdog: Finedar; improved compatibility with Open-Dev watchdogs; stop pinging watchdog after 10 consecutive errors)
+*   Improved e1000e package (improved Intel e1000e Ethernet driver stability)
+*   Added experimental execution `motd watch` on boot (if monitor connected&detected)
+*   Minor fix in `hive-replace` (fixed closing session on start on some cases)
+*   Minor updates and fixes for some system tools (`nvtool` v1.3.6; `amdmeminfo` v2.1.6; upp v0.0.9; fixes for `nvstop`, `cache-hive-ip`, `gpu-detect`)
+*   SRBMiner-Multi v0.6.4 (added algorithm 'autolykos2' Ergo coin for CPU/GPU mining, fee 1.25%; performance increase on 'phi5' algorithm on CPU's with AVX2; removed devfee for 'cryptonight_heavyx' algorithm; bug fixes)
+*   XMRigCC v2.8.5 (as fork for XMRig for CPU; added parameter `"max-cpu-usage": 100` to throttle cpu usage without reducing the cores/threads; fixed Hashrate printout when hashrate is > 99999.9h/s)
+*   Minor fixes for some miners packages (Gminer: fixed multiple pool hosts; XPMclient: fixed showing hashrate from hanged GPU)
 
 ##### 0.6-195@210127 2021-01-27
 *   Updated some system tools for AMD GPUs (amdmeminfo to v2.1.5 and amdmemtweak to v0.1.9.3-hiveos - added IDs for some Radeon Pro / FirePro GPUs)
