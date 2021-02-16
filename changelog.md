@@ -11,14 +11,6 @@
 *   SGMiner-fancyIX v0.7.3 (added Navi support for neoscrypt_navi, neoscrypt-xaya_navi, ethash_navi, lyra2Z_navi, allium_navi, phi2_navi)
 *   CPUminer-Opt-JayDDee v3.15.6 (implemented keccak pre-hash optimization for x16-like algos, added test for share reject reason when solo mining)
 
-##### LINUX IMAGE RELEASE 0.6-198 2021-02-12
-*   Сumulative update with minor fixes
-*   Hive Linux client: v0.6-198@210210
-*   Universal boot mode: BIOS | UEFI
-*   Linux kernel: v5.4.80-hiveos
-*   Drivers version: AMD v20.40, Nvidia v460.32.03
-*   Universal image with "support from the box" AMD Polaris/Vega/Navi and Nvidia 10xx/16xx/20xx/30xx
-
 ##### 0.6-198@210210 2021-02-10
 *   Improved software watchdog (add new option delay)
 *   SRBMiner-Multi v0.6.6 (performance increase on 'autolykos2' algorithm on GPU's; reduced power consumption on 'autolykos2' algorithm on GPU's; fixed miner crashing when creating dataset on 'autolykos2' algorithm)
