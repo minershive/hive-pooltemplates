@@ -1,4 +1,4 @@
-##### 0.6-199@210215 2021-02-15
+##### 0.6-199@210216 2021-02-16
 *   Fixed `motd` (reduced resources usage in `motd watch` mode; if connection to API servers failed don't start watch mode)
 *   Fixed `hive-replace` (download option fix)
 *   Fixed `gpu-stats` (Nvidia GPU stats was not shown if last GPU produced errors)
