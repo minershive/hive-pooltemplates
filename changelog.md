@@ -3,13 +3,13 @@
 *   Fixed `hive-replace` (download option fix)
 *   Fixed `gpu-stats` (Nvidia GPU stats was not shown if last GPU produced errors)
 *   XMRig v6.8.2 (optimized CryptoNight-Heavy for Zen3, 7-8% speedup)
-*   SRBMiner-Multi v0.6.7 (performance increase on 'autolykos2' algorithm on GPU's, devfee increased from 1.25% to 2.00%; added 1 or 2 buffer mode for build DAG on ethash, see manual fro option `--gpu-ethash-mode`; minor bug fixes)
-*   NEW NSFMiner v1.3.4  (detected potential NVIDIA memory allocation failure, mostly on Windows desktop. *Notes from Hive: It's a fork of Ethminer and you can find it under Ethminer configuration as `nsfminer` fork. According to our tests, this miner is no better than the latest build of `ethminer` in terms of hashrate or power consumption, it also does not contain any optimizations for AMD cards Vega and later*)
+*   SRBMiner-Multi v0.6.7 (performance increase on 'autolykos2' algorithm on GPU's, devfee increased from 1.25% to 2.00%; added 1 or 2 buffer mode for build DAG on ethash, see manual for option `--gpu-ethash-mode`; minor bug fixes)
 *   lolMiner v1.24a (fixed a bug, that often caused the amdgpu driver to report a VM_CONTEXT1_PROTECTION_FAULT_STATUS on startup; fixed defect shares and wrong reported has hrate when started with fixed `--zombie-tune` parameters directly; added (tunable) zombie mode kernels for R9 290(x) and R9 295 GPUs; fixed a bug with Baffin RX 460/550/560 and Tonga R9 380 GPUs showing too high hashrate and producing invalids in 1.23 zombie mode; fixed a bug with ETC mining not starting up when more then two 4G GPUs in 1.23)
-*   NanoMiner v3.2.2 (fixed Autolykos for AMD Big Navi RX 6xxx; improved autolykos performance for AMD, 1-5% depending on GPU)
-*   SGMiner-fancyIX v0.7.3 (added Navi support for neoscrypt_navi, neoscrypt-xaya_navi, ethash_navi, lyra2Z_navi, allium_navi, phi2_navi)
 *   T-Rex v0.19.11 (security fix: bind API servers to 127.0.0.1 by default to prevent unauthorised access to the API)
-*   CPUminer-Opt-JayDDee v3.15.6 (implemented keccak pre-hash optimization for x16* algos, added test for share reject reason when solo mining, added support for floating point, as well as integer, "networkhasps" in RPC getmininginfo method)
+*   NanoMiner v3.2.2 (fixed Autolykos for AMD Big Navi RX 6xxx; improved autolykos performance for AMD, 1-5% depending on GPU)
+*   NEW NSFMiner v1.3.4  (detected potential NVIDIA memory allocation failure, mostly on Windows desktop. *Notes from Hive: It's a fork of Ethminer and you can find it under Ethminer configuration as `nsfminer` fork. According to our tests, this miner is no better than the latest build of `ethminer` in terms of hashrate or power consumption, it also does not contain any optimizations for AMD cards Vega and later*)
+*   SGMiner-fancyIX v0.7.3 (added Navi support for neoscrypt_navi, neoscrypt-xaya_navi, ethash_navi, lyra2Z_navi, allium_navi, phi2_navi)
+*   CPUminer-Opt-JayDDee v3.15.6 (implemented keccak pre-hash optimization for x16-like algos, added test for share reject reason when solo mining)
 
 ##### LINUX IMAGE RELEASE 0.6-198 2021-02-12
 *   Сumulative update with minor fixes
