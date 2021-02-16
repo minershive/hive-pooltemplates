@@ -16,7 +16,7 @@
 *   Hive Linux client: v0.6-198@210210
 *   Universal boot mode: BIOS | UEFI
 *   Linux kernel: v5.4.80-hiveos
-*   Drivers version: AMD v20.40, Nvidia v460.39
+*   Drivers version: AMD v20.40, Nvidia v460.32.03
 *   Universal image with "support from the box" AMD Polaris/Vega/Navi and Nvidia 10xx/16xx/20xx/30xx
 
 ##### 0.6-198@210210 2021-02-10
