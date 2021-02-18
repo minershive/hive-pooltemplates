@@ -1,3 +1,7 @@
+##### 0.6-199@210218 2021-02-18
+*   VerthashMiner v0.6.2 (open source miner for both AMD&Nvidia platforms for mining VTC/VertCoin on new algorithm 'verthash')
+*   NSFMiner v1.3.5  (allocate per GPU light cache to avoid potential GPU crash on rapid epoch transitions in stratum2; more details on GPU memory requirements; fix simulation and benchmark)
+
 ##### 0.6-199@210216 2021-02-16
 *   Fixed `motd` (reduced resources usage in `motd watch` mode; if connection to API servers failed don't start watch mode)
 *   Fixed `hive-replace` (download option fix)
