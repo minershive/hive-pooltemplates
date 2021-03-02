@@ -1,11 +1,11 @@
 ##### 0.6-200@210301 2021-03-01
 *   Fixed AMD OC errors on when applied on "Big Navi"
 *   Improved stability hive-replace on some 3rd party hardware (added watchdog-octofan to exclude list)
-*   Improved nvidia-driver-update (added new option --repo for custom repository; prefer Hive servers for download by default; skip 32bit libs installation; internal optimizations)
+*   Improved nvidia-driver-update (added new option `--repo` for custom repository; prefer Hive servers for download by default; skip 32bit libs installation; internal optimizations)
 *   Fixed memory usage by autofan
 *   VerthashMiner v0.7.0 (fixed a crash when receiving the first stratum job; miner will now instantly switch stratum jobs on mining.notify; removed PCIe bus ID configuration file format due to being not reliable; a full PCIe ID (bus:device:function) will now be displayed in the device list; added a new feature "Adaptive batch size", WorkSize = 0 and it's now used as default, instead of hardcoded 131072 WorkSize; added 2 new options "BatchTimeMs" and "OccupancyPct" to control "Adaptive batch size", see manual for details; added support for AMD GPU monitoring through SysFS API backend; added support for NVIDIA GPU monitoring through NVML backend;
  added new option GPUTemperatureLimit when GPU Monitoring is available; automatically transfer NVIDIA SM3.0 devices to the OpenCL backend if the miner was compiled with CUDA 11 or later; added extra config validation layers for device settings inside the configuration file and command line;
-misc fixes and code refactoring.)
+misc fixes and code refactoring)
 *   EthMiner-NSFMiner v1.3.7 (used board name rather than architecture for AMD; fixed skipping of 1st pool when connecting with multiple pools specified; fixed appearance of 'ghost' GPU metrics on epoch change)
 *   XMRig-XMRigCC v2.9.0 rebased latest RX and CN improvements from XMRig 6.8.2; fixed 1GB HugePages)
 *   XMRig v6.9.0 (fixed crash when GPU mining cn-heavy on Zen3 system)
