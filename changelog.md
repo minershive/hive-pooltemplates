@@ -6,13 +6,13 @@
 *   VerthashMiner v0.7.0 (fixed a crash when receiving the first stratum job; miner will now instantly switch stratum jobs on mining.notify; removed PCIe bus ID configuration file format due to being not reliable; a full PCIe ID (bus:device:function) will now be displayed in the device list; added a new feature "Adaptive batch size", WorkSize = 0 and it's now used as default, instead of hardcoded 131072 WorkSize; added 2 new options "BatchTimeMs" and "OccupancyPct" to control "Adaptive batch size", see manual for details; added support for AMD GPU monitoring through SysFS API backend; added support for NVIDIA GPU monitoring through NVML backend;
  added new option GPUTemperatureLimit when GPU Monitoring is available; automatically transfer NVIDIA SM3.0 devices to the OpenCL backend if the miner was compiled with CUDA 11 or later; added extra config validation layers for device settings inside the configuration file and command line;
 misc fixes and code refactoring.)
-*   NSFMiner v1.3.7 ethminer fork (used board name rather than architecture for AMD; fixed skipping of 1st pool when connecting with multiple pools specified; fixed appearance of 'ghost' GPU metrics on epoch change)
-*   XMRigCC v2.9.0 XMRig for CPU fork (rebased latest RX and CN improvements from XMRig 6.8.2; fixed 1GB HugePages)
+*   EthMiner-NSFMiner v1.3.7 (used board name rather than architecture for AMD; fixed skipping of 1st pool when connecting with multiple pools specified; fixed appearance of 'ghost' GPU metrics on epoch change)
+*   XMRig-XMRigCC v2.9.0 rebased latest RX and CN improvements from XMRig 6.8.2; fixed 1GB HugePages)
 *   XMRig v6.9.0 (fixed crash when GPU mining cn-heavy on Zen3 system)
 *   GMiner v2.45 (improved performance on Ethash for Nvidia and AMD GPUs; improved performance on KAWPOW for Nvidia GPUs; decreased stale shares rate on Nvidia GPUs for Ethash and KAWPOW algorithms; removed kernel #3 and added 2 energy efficiency kernels (#5 and #6) on Ethash for Nvidia GPUs; improved kernel auto-tuning, auto-tuning takes into account energy efficiency of kernels; optimized NVML polls to decrease memory leaks caused by recent Nvidia drivers, to exclude memory leaks completely use --pec 0 option)
 *   miniZ v1.73x3 latest stable (added support for ethash – ETH/ETC (beta), fee 0.75%; improved stale shares for all algos; added support with 1% fee for RVN, ZELS, SERO, ZANO, VEIL, VBK; fixed 192,7 mining; minor improvements for 210,9 and 96,5; removed support for 150,5,3; improved overall stability)
 *   miniz v1.73x4 beta (improved --quit-disconnect option)
-*   SRBMiner v0.6.8 (added algorithm 'rx2' for LUX/LuxCoin for CPU mining, 8GB Ram needed, fee 1.25%; performance increase on 'autolykos2' algorithm on Vega GPU's ~6-9% and ~3-5%on restж added abort mechanism for 'autolykos2' dataset creation on GPU)
+*   SRBMiner v0.6.8 (added algorithm 'rx2' for LUX/LuxCoin for CPU mining, 8GB Ram needed, fee 1.25%; performance increase on 'autolykos2' algorithm on Vega GPU's ~6-9% and ~3-5% on other; added abort mechanism for 'autolykos2' dataset creation on GPU)
 
 ##### 0.6-199@210218 2021-02-18
 *   **(NEW)** VerthashMiner v0.6.2 (open source miner for both AMD&Nvidia platforms for mining VTC/VertCoin on new algorithm 'verthash')
