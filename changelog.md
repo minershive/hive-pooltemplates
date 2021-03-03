@@ -1,3 +1,7 @@
+##### 0.6-200@210302 2021-03-02
+*   CPUminer-Opt-rplant v5.0.14 (add ghostrider algo 'gr' for coin Raptoreum; bug fixes)
+*   Verthasminer: fixed miner update report
+
 ##### 0.6-200@210301 2021-03-01
 *   Fixed AMD OC errors on when applied on "Big Navi"
 *   Improved stability hive-replace on some 3rd party hardware (added watchdog-octofan to exclude list)
