@@ -58,49 +58,149 @@
         }
     },
     {
-        "coin": "CSM",
+        "coin": "BLAS",
         "servers": [
             {
                 "geo": "Russia",
                 "urls": [
-                    "stratum+tcp://stratum-ru.rplant.xyz:7044"
+                    "stratum+tcp://stratum-ru.rplant.xyz:7065"
                 ],
                 "ssl_urls": [
-                    "stratum+tcps://stratum-ru.rplant.xyz:17044"
+                    "stratum+tcps://stratum-ru.rplant.xyz:17065"
                 ]
             },
             {
                 "geo": "Europe",
                 "urls": [
-                    "stratum+tcp://stratum-eu.rplant.xyz:7044"
+                    "stratum+tcp://stratum-eu.rplant.xyz:7065"
                 ],
                 "ssl_urls": [
-                    "stratum+tcps://stratum-eu.rplant.xyz:17044"
+                    "stratum+tcps://stratum-eu.rplant.xyz:17065"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "stratum+tcp://stratum-asia.rplant.xyz:7044"
+                    "stratum+tcp://stratum-asia.rplant.xyz:7065"
                 ],
                 "ssl_urls": [
-                    "stratum+tcps://stratum-asia.rplant.xyz:17044"
+                    "stratum+tcps://stratum-asia.rplant.xyz:17065"
                 ]
             },
             {
                 "geo": "North America",
                 "urls": [
-                    "stratum+tcp://stratum-na.rplant.xyz:7044"
+                    "stratum+tcp://stratum-na.rplant.xyz:7065"
                 ],
                 "ssl_urls": [
-                    "stratum+tcps://stratum-na.rplant.xyz:17044"
+                    "stratum+tcps://stratum-na.rplant.xyz:17065"
                 ]
             }
         ],
         "miners": {
             "cpuminer-opt": {
                 "url": "%URL%",
-                "algo": "sha256csm",
+                "algo": "x22",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
+            }
+        }
+    },
+    {
+        "coin": "BTX",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum-ru.rplant.xyz:7066"
+                ],
+                "ssl_urls": [
+                    "stratum-ru.rplant.xyz:17066"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum-eu.rplant.xyz:7066"
+                ],
+                "ssl_urls": [
+                    "stratum-eu.rplant.xyz:17066"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum-asia.rplant.xyz:7066"
+                ],
+                "ssl_urls": [
+                    "stratum-asia.rplant.xyz:17066"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum-na.rplant.xyz:7066"
+                ],
+                "ssl_urls": [
+                    "stratum-na.rplant.xyz:17066"
+                ]
+            }
+        ],
+        "miners": {
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "megabtx",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    },
+    {
+        "coin": "CIRC",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum+tcp://stratum-ru.rplant.xyz:7050"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-ru.rplant.xyz:17050"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum+tcp://stratum-eu.rplant.xyz:7050"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-eu.rplant.xyz:17050"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum+tcp://stratum-asia.rplant.xyz:7050"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-asia.rplant.xyz:17050"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum+tcp://stratum-na.rplant.xyz:7050"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-na.rplant.xyz:17050"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "%URL%",
+                "algo": "circcash",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "fork": "rplant"
@@ -151,6 +251,56 @@
             "cpuminer-opt": {
                 "url": "%URL%",
                 "algo": "cpupower",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
+            }
+        }
+    },
+    {
+        "coin": "CURVE",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum+tcp://stratum-ru.rplant.xyz:7058"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-ru.rplant.xyz:17058"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum+tcp://stratum-eu.rplant.xyz:7058"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-eu.rplant.xyz:17058"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum+tcp://stratum-asia.rplant.xyz:7058"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-asia.rplant.xyz:17058"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum+tcp://stratum-na.rplant.xyz:7058"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-na.rplant.xyz:17058"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "%URL%",
+                "algo": "curvehash",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "fork": "rplant"
@@ -258,6 +408,365 @@
         }
     },
     {
+        "coin": "GOLD",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum+tcp://stratum-ru.rplant.xyz:7057"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-ru.rplant.xyz:17057"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum+tcp://stratum-eu.rplant.xyz:7057"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-eu.rplant.xyz:17057"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum+tcp://stratum-asia.rplant.xyz:7057"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-asia.rplant.xyz:17057"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum+tcp://stratum-na.rplant.xyz:7057"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-na.rplant.xyz:17057"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "%URL%",
+                "algo": "yescryptr16",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
+            }
+        }
+    },
+    {
+        "coin": "KEVA",
+        "servers": [
+            {
+                "geo": "All location",
+                "urls": [
+                    "randomx.rplant.xyz:7061"
+                ],
+                "ssl_urls": [
+                    "randomx.rplant.xyz:17061"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_randomx"
+        }
+    },
+    {
+        "coin": "KYF",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum-ru.rplant.xyz:7049"
+                ],
+                "ssl_urls": [
+                    "stratum-ru.rplant.xyz:17049"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum-eu.rplant.xyz:7049"
+                ],
+                "ssl_urls": [
+                    "stratum-eu.rplant.xyz:17049"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum-asia.rplant.xyz:7049"
+                ],
+                "ssl_urls": [
+                    "stratum-asia.rplant.xyz:17049"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum-na.rplant.xyz:7049"
+                ],
+                "ssl_urls": [
+                    "stratum-na.rplant.xyz:17049"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "sha256d"
+            }
+        }
+    },
+    {
+        "coin": "PYRK-scrypt",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum-ru.rplant.xyz:7044"
+                ],
+                "ssl_urls": [
+                    "stratum-ru.rplant.xyz:17044"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum-eu.rplant.xyz:7044"
+                ],
+                "ssl_urls": [
+                    "stratum-eu.rplant.xyz:17044"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum-asia.rplant.xyz:7044"
+                ],
+                "ssl_urls": [
+                    "stratum-asia.rplant.xyz:17044"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum-na.rplant.xyz:7044"
+                ],
+                "ssl_urls": [
+                    "stratum-na.rplant.xyz:17044"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "scrypt"
+            }
+        }
+    },
+    {
+        "coin": "PYRK-sha256d",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum-ru.rplant.xyz:7031"
+                ],
+                "ssl_urls": [
+                    "stratum-ru.rplant.xyz:17031"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum-eu.rplant.xyz:7031"
+                ],
+                "ssl_urls": [
+                    "stratum-eu.rplant.xyz:17031"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum-asia.rplant.xyz:7031"
+                ],
+                "ssl_urls": [
+                    "stratum-asia.rplant.xyz:17031"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum-na.rplant.xyz:7031"
+                ],
+                "ssl_urls": [
+                    "stratum-na.rplant.xyz:17031"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "sha256d"
+            }
+        }
+    },
+    {
+        "coin": "PYRK-x11",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum-ru.rplant.xyz:7045"
+                ],
+                "ssl_urls": [
+                    "stratum-ru.rplant.xyz:17045"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum-eu.rplant.xyz:7045"
+                ],
+                "ssl_urls": [
+                    "stratum-eu.rplant.xyz:17045"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum-asia.rplant.xyz:7045"
+                ],
+                "ssl_urls": [
+                    "stratum-asia.rplant.xyz:17045"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum-na.rplant.xyz:7045"
+                ],
+                "ssl_urls": [
+                    "stratum-na.rplant.xyz:17045"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "x11"
+            }
+        }
+    },
+    {
+        "coin": "PYRK-yespower",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum+tcp://stratum-ru.rplant.xyz:7045"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-ru.rplant.xyz:17045"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum+tcp://stratum-eu.rplant.xyz:7045"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-eu.rplant.xyz:17045"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum+tcp://stratum-asia.rplant.xyz:7045"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-asia.rplant.xyz:17045"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum+tcp://stratum-na.rplant.xyz:7045"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-na.rplant.xyz:17045"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "%URL%",
+                "algo": "yespower",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
+            }
+        }
+    },
+    {
+        "coin": "PYRK-lyra2z330",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum+tcp://stratum-ru.rplant.xyz:7051"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-ru.rplant.xyz:17051"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum+tcp://stratum-eu.rplant.xyz:7051"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-eu.rplant.xyz:17051"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum+tcp://stratum-asia.rplant.xyz:7051"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-asia.rplant.xyz:17051"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum+tcp://stratum-na.rplant.xyz:7051"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-na.rplant.xyz:17051"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "%URL%",
+                "algo": "lyra2z330",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
+            }
+        }
+    },
+    {
         "coin": "GXX",
         "servers": [
             {
@@ -301,56 +810,6 @@
             "cpuminer-opt": {
                 "url": "%URL%",
                 "algo": "lyra2z330",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "fork": "rplant"
-            }
-        }
-    },
-    {
-        "coin": "IOTS",
-        "servers": [
-            {
-                "geo": "Russia",
-                "urls": [
-                    "stratum+tcp://stratum-ru.rplant.xyz:7028"
-                ],
-                "ssl_urls": [
-                    "stratum+tcps://stratum-ru.rplant.xyz:17028"
-                ]
-            },
-            {
-                "geo": "Europe",
-                "urls": [
-                    "stratum+tcp://stratum-eu.rplant.xyz:7028"
-                ],
-                "ssl_urls": [
-                    "stratum+tcps://stratum-eu.rplant.xyz:17028"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "stratum+tcp://stratum-asia.rplant.xyz:7028"
-                ],
-                "ssl_urls": [
-                    "stratum+tcps://stratum-asia.rplant.xyz:17028"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "stratum+tcp://stratum-na.rplant.xyz:7028"
-                ],
-                "ssl_urls": [
-                    "stratum+tcps://stratum-na.rplant.xyz:17028"
-                ]
-            }
-        ],
-        "miners": {
-            "cpuminer-opt": {
-                "url": "%URL%",
-                "algo": "yespoweriots",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "fork": "rplant"
@@ -508,56 +967,6 @@
         }
     },
     {
-        "coin": "LTFN",
-        "servers": [
-            {
-                "geo": "Russia",
-                "urls": [
-                    "stratum+tcp://stratum-ru.rplant.xyz:3385"
-                ],
-                "ssl_urls": [
-                    "stratum+tcps://stratum-ru.rplant.xyz:13385"
-                ]
-            },
-            {
-                "geo": "Europe",
-                "urls": [
-                    "stratum+tcp://stratum-eu.rplant.xyz:3385"
-                ],
-                "ssl_urls": [
-                    "stratum+tcps://stratum-eu.rplant.xyz:13385"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "stratum+tcp://stratum-asia.rplant.xyz:3385"
-                ],
-                "ssl_urls": [
-                    "stratum+tcps://stratum-asia.rplant.xyz:13385"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "stratum+tcp://stratum-na.rplant.xyz:3385"
-                ],
-                "ssl_urls": [
-                    "stratum+tcps://stratum-na.rplant.xyz:13385"
-                ]
-            }
-        ],
-        "miners": {
-            "cpuminer-opt": {
-                "url": "%URL%",
-                "algo": "yescryptr32",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "fork": "rplant"
-            }
-        }
-    },
-    {
         "coin": "MBC",
         "servers": [
             {
@@ -658,6 +1067,56 @@
         }
     },
     {
+        "coin": "RTM",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum+tcp://stratum-ru.rplant.xyz:7056"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-ru.rplant.xyz:17056"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum+tcp://stratum-eu.rplant.xyz:7056"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-eu.rplant.xyz:17056"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum+tcp://stratum-asia.rplant.xyz:7056"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-asia.rplant.xyz:17056"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum+tcp://stratum-na.rplant.xyz:7056"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-na.rplant.xyz:17056"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "%URL%",
+                "algo": "gr",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
+            }
+        }
+    },
+    {
         "coin": "RNG",
         "servers": [
             {
@@ -705,6 +1164,50 @@
                 "template": "%WAL%.%WORKER_NAME%",
                 "fork": "rplant"
             }
+        }
+    },
+    {
+        "coin": "SPLD",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum-ru.rplant.xyz:7028"
+                ],
+                "ssl_urls": [
+                    "stratum-ru.rplant.xyz:17028"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum-eu.rplant.xyz:7028"
+                ],
+                "ssl_urls": [
+                    "stratum-eu.rplant.xyz:17028"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum-asia.rplant.xyz:7028"
+                ],
+                "ssl_urls": [
+                    "stratum-asia.rplant.xyz:17028"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum-na.rplant.xyz:7028"
+                ],
+                "ssl_urls": [
+                    "stratum-na.rplant.xyz:17028"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
         }
     },
     {
@@ -813,44 +1316,44 @@
             {
                 "geo": "Russia",
                 "urls": [
-                    "stratum+tcp://stratum-ru.rplant.xyz:7047"
+                    "stratum+tcp://stratum-ru.rplant.xyz:7059"
                 ],
                 "ssl_urls": [
-                    "stratum+tcps://stratum-ru.rplant.xyz:17047"
+                    "stratum+tcps://stratum-ru.rplant.xyz:17059"
                 ]
             },
             {
                 "geo": "Europe",
                 "urls": [
-                    "stratum+tcp://stratum-eu.rplant.xyz:7047"
+                    "stratum+tcp://stratum-eu.rplant.xyz:7059"
                 ],
                 "ssl_urls": [
-                    "stratum+tcps://stratum-eu.rplant.xyz:17047"
+                    "stratum+tcps://stratum-eu.rplant.xyz:17059"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "stratum+tcp://stratum-asia.rplant.xyz:7047"
+                    "stratum+tcp://stratum-asia.rplant.xyz:7059"
                 ],
                 "ssl_urls": [
-                    "stratum+tcps://stratum-asia.rplant.xyz:17047"
+                    "stratum+tcps://stratum-asia.rplant.xyz:17059"
                 ]
             },
             {
                 "geo": "North America",
                 "urls": [
-                    "stratum+tcp://stratum-na.rplant.xyz:7047"
+                    "stratum+tcp://stratum-na.rplant.xyz:7059"
                 ],
                 "ssl_urls": [
-                    "stratum+tcps://stratum-na.rplant.xyz:17047"
+                    "stratum+tcps://stratum-na.rplant.xyz:17059"
                 ]
             }
         ],
         "miners": {
             "cpuminer-opt": {
                 "url": "%URL%",
-                "algo": "lyra2tdc",
+                "algo": "yespowertide",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "fork": "rplant"
@@ -958,6 +1461,47 @@
         }
     },
     {
+        "coin": "WSBC",
+        "servers": [
+            {
+                "geo": "All location",
+                "urls": [
+                    "randomx.rplant.xyz:7089"
+                ],
+                "ssl_urls": [
+                    "randomx.rplant.xyz:17089"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "randomarq",
+                "fork": "xmrig",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XOL",
+        "servers": [
+            {
+                "geo": "All location",
+                "urls": [
+                    "randomx.rplant.xyz:7068"
+                ],
+                "ssl_urls": [
+                    "randomx.rplant.xyz:17068"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_randomx"
+        }
+    },
+    {
         "coin": "YTN",
         "servers": [
             {
@@ -1001,6 +1545,56 @@
             "cpuminer-opt": {
                 "url": "%URL%",
                 "algo": "yespowerr16",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
+            }
+        }
+    },
+    {
+        "coin": "ZNY",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum+tcp://stratum-ru.rplant.xyz:7054"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-ru.rplant.xyz:17054"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum+tcp://stratum-eu.rplant.xyz:7054"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-eu.rplant.xyz:17054"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum+tcp://stratum-asia.rplant.xyz:7054"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-asia.rplant.xyz:17054"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum+tcp://stratum-na.rplant.xyz:7054"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-na.rplant.xyz:17054"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "%URL%",
+                "algo": "yescryptr8",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "fork": "rplant"
