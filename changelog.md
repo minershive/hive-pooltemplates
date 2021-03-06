@@ -1,4 +1,4 @@
-##### 0.6-200@210306 2021-03-06
+##### 0.6-201@210306 2021-03-06
 *   Minor selfupgrade improvements (added option -c | --consolefont to change default text console font to more suitable version with correct pseudographics; added exit codes output for each apt command in case of errors during update process)
 *   Minor agent improvement (skip miner stats if no miner is running)
 *   Updated hive-replace (due End-Of-Life of Vega Images removed Vega image options)
