@@ -1,3 +1,13 @@
+##### 0.6-200@210306 2021-03-06
+*   Minor selfupgrade improvements (added option -c | --consolefont to change default text console font to more suitable version with correct pseudographics; added exit codes output for each apt command in case of errors during update process)
+*   Minor agent improvement (skip miner stats if no miner is running)
+*   Updated hive-replace (due End-Of-Life of Vega Images removed Vega image options)
+*   Updated AMD GPUs tools (amdmemtweak v0.1.9.4-hiveos, amdmeminfo to v2.1.7 - added detection Navi22 "Navy Flounder")
+*   GMiner v2.46 (added memory tweaks for Nvidia GPUs with GDDR5X and GDDR5 memory by using new option --mt with value from 1 to 6; improved --api parameter, now you can bind ip address; added option to control watchdog restart delay by new option --watchdog_restart_delay; optimized memory usage while generating DAG which will able to run miner on 13 GPUs+ rigs with 4GB memory and without swap; improved kernel auto-tuning)
+*   SRBMiner-Multi v0.6.9 (added algorithm 'verthash' for CPU & GPU mining, fee 1.25%; performance increased ~1-6% on 'autolykos2' algorithm on GPU's; performance increased ~25% on 'autolykos2' algorithm on CPU's with AVX2; reduced power consumption on 'autolykos2' algorithm on Vega GPU's; small improvements on 'rx2' algorithm; minor bug fixes)
+*   Ethminer-NSFMiner v1.3.8 (lower compiler optimizations to safer level; effective hash rate (option -v4) calculations working for stratum2; use single DAG instead of split DAG on AMD drivers that allow greater than 4GB allocation; handle f2pool out-of-spec. messages)
+*   XMRig-XMRigCC v2.91 (added CRYPTO cn variant "superfast" algo 'cn/superfast')
+
 ##### 0.6-200@210302 2021-03-02
 *   CPUminer-Opt-rplant v5.0.14 (added 'gr' ghostrider algo for mining coin Raptoreum; bug fixes)
 *   Verthasminer fixes (fixed miner uptime report)
