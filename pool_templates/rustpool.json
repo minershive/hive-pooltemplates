@@ -1,0 +1,113 @@
+[
+  {
+    "pool": {
+      "name": "Rustpool",
+      "url": "https://zil.rustpool.xyz/",
+      "fee": 1.0,
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "ZIL",
+    "servers": [
+      {
+        "geo": "SG",
+        "urls": ["sg-zil.rustpool.xyz:8008"]
+      },
+      {
+        "geo": "SG Nicehash",
+        "urls": ["sg-zil.rustpool.xyz:9009"]
+      },
+      {
+        "geo": "EU1",
+        "urls": ["eu-zil.rustpool.xyz:8008"]
+      },
+      {
+        "geo": "EU1 Nicehash",
+        "urls": ["eu-zil.rustpool.xyz:9009"]
+      },
+      {
+        "geo": "EU2",
+        "urls": ["eu2-zil.rustpool.xyz:8008"]
+      },
+      {
+        "geo": "EU2 Nicehash",
+        "urls": ["eu2-zil.rustpool.xyz:9009"]
+      },
+      {
+        "geo": "US WEST",
+        "urls": ["us-zil.rustpool.xyz:8008"]
+      },
+      {
+        "geo": "US WEST Nicehash",
+        "urls": ["us-zil.rustpool.xyz:9009"]
+      },
+      {
+        "geo": "US EAST",
+        "urls": ["us2-zil.rustpool.xyz:8008"]
+      },
+      {
+        "geo": "US EAST Nicehash",
+        "urls": ["us2-zil.rustpool.xyz:9009"]
+      }
+    ],
+    "miners": {
+      "phoenixminer": {
+        "url": "POOL: %URL%, WALLET: %ETH_WAL%.%WORKER_NAME%, PSW: %WAL%@%ETH_URL%@4G@x",
+        "user_config": "-coin %COIN%"
+      },
+      "teamredminer": {
+        "algo": "ethash",
+        "url": "stratum+tcp://%URL%",
+        "template": "%ETH_WAL%.%WORKER_NAME%",
+        "pass": "%WAL%@%ETH_URL%@4G@x"
+    },
+      "tt-miner": {
+        "url": "%URL%",
+        "algo": "ETHASH",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "template": "%ETH_WAL%",
+        "user_config": "-worker %WORKER_NAME%"
+      },
+      "bminer": {
+        "algo": "ethproxy"
+      },
+      "lolminer": {
+        "algo": "ETHASH",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%ETH_WAL%",
+        "worker": "%WORKER_NAME%"
+      },
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "ethash",
+        "template": "%ETH_WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "user_config": "\"coin\": \"%COIN%\""
+      },
+      "nanominer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%ETH_WAL%",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+      },
+      "gminer": {
+        "algo": "ethash",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "algo": "ethash",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "template": "%ETH_WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]
