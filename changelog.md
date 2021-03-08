@@ -1,3 +1,8 @@
+##### 0.6-201@210307 2021-03-07
+*   CPUminer-Opt-Rplant v5.0.15 (fixed memory leak on 'gr' algo)
+*   VerthashMiner  v0.7.1 (changed "difficulty to target" formula to a more reliable one; miner will no longer load NVML and ADL libraries when they are not needed; OpenCL back-end will now report error codes along with messages; added GPU memory errors tracker: invalid shares will be discarded)
+*   XMRig v6.10.0 (fixed many new job messages when solo mining; fixed crash in cn-heavy on Zen3 with manual thread count; fixed possible out of order write to log file)
+
 ##### 0.6-201@210306 2021-03-06
 *   Minor selfupgrade improvements (added option -c | --consolefont to change default text console font to more suitable version with correct pseudographics; added exit codes output for each apt command in case of errors during update process)
 *   Minor agent improvement (skip miner stats if no miner is running)
