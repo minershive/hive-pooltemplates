@@ -53,14 +53,14 @@
     ],
     "miners": {
       "phoenixminer": {
-        "url": "POOL: %URL%, WALLET: %ETH_WAL%, PSW: %WAL%@%ETH_URL%@4G@x WORKER: %WORKER_NAME%",
-        "user_config": "-coin %COIN%"
+        "url": "POOL: %URL%, WALLET: %ETH_WAL%, PSW: %WAL%@%ETH_URL%@4G@x, WORKER: %WORKER_NAME%"
       },
       "teamredminer": {
         "algo": "ethash",
         "url": "stratum+tcp://%URL%",
         "template": "%ETH_WAL%.%WORKER_NAME%",
-        "pass": "%WAL%@%ETH_URL%@4G@x"
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "user_config": "--eth_stratum_mode=ethproxy --eth_dag_cache=0 --eth_worker"
     },
       "tt-miner": {
         "url": "%URL%",
@@ -90,7 +90,7 @@
         "url": "%URL%",
         "template": "%ETH_WAL%",
         "pass": "%WAL%@%ETH_URL%@4G@x",
-        "user_config": "coin=%COIN%\nrigName=%WORKER_NAME%"
+        "user_config": "rigName=%WORKER_NAME%"
       },
       "gminer": {
         "algo": "ethash",
