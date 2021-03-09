@@ -1,5 +1,5 @@
 ##### 0.6-201@210309 2021-03-09
-*   NanoMiner v3.3.0 (added mining mode ZIL/Zilliqa in dual for coins ETH,ETC,CFX,ERG; reduced dev fee on Ergo: 5% -> 2.5%; fixed memClocks and coreClocks on NVidia; removed support PSAC/Pascal Coin)
+*   NanoMiner v3.3.0 (added mining mode ZIL/Zilliqa in dual for coins ETH,ETC,CFX,ERG; reduced dev fee on Ergo: 5% -> 2.5%; fixed memClocks and coreClocks on NVidia; removed support PASC/Pascal Coin)
 *   GMiner v2.47 (fixed startup crash on some rigs; fixed bug with ignoring api parameter; improved stability)
 *   XLARig v5.2.2 (synced code with XMRig v6.8.1; full RandomX integration for Panthera)
 *   CPUminer-Opt-JayDDee v3.15.7 (added accepted/stale/rejected percentage to summary log report; added warning if share counters mismatch which could corrupt stats; CPU temperature reporting is more responsive to rising temperature; a few AVX2 & AVX512 tweaks; removed some dead code and other cleanup)
