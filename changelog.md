@@ -1,3 +1,6 @@
+##### 0.6-201@210316 2021-03-16
+*   NanoMiner v3.3.2 (performance improvements for 'autolykos' ~40% for AMD Vega family: Vega 56/64/VII)
+   
 ##### 0.6-201@210315 2021-03-15
 *   T-Rex v0.19.12 (add ethproxy (getwork) mode; bug fixes: "No connection error"; API security vulnerability that allows creating / modifying PC files when API is bound to 0.0.0.0 in read-only mode)
 
