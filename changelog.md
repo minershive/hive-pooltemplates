@@ -1,4 +1,7 @@
 ##### 0.6-201@210314 2021-03-14
+*   T-Rex v0.19.12 (add ethproxy (getwork) mode; bug fixes: "No connection error"; API security vulnerability that allows creating / modifying PC files when API is bound to 0.0.0.0 in read-only mode)
+
+##### 0.6-201@210314 2021-03-14
 *   NanoMiner v3.3.1 (added dual Raven + Zilliqa; fixed an issue with 2Miners pool)
 *   SRBMiner-Multi v0.7.0 (reduced power consumption on 'autolykos2' algorithm for Ellesmere GPU's ~2-3%; reduced power consumption on 'verthash' algorithm for Ellesmere GPU's ~5% and Vega ~10%; performance increase on 'verthash' algorithm for Vega GPU's ~3% and CPU ~7%; added parameter '--verthash-dat-path'; fixed 'verthash' algorithm stack smash issue; fixed watchdog not triggering on dead GPU issue; fixed crash on 'panthera' algorithm; removed parameters : --gpu-watchdog-disable-mode, --watchdog-rounds; fixed bugs)
 *   VerthashMiner v0.7.2 (fixed nonce range calculation)
