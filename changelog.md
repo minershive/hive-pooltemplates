@@ -1,4 +1,4 @@
-##### 0.6-201@210314 2021-03-14
+##### 0.6-201@210314 2021-03-15
 *   T-Rex v0.19.12 (add ethproxy (getwork) mode; bug fixes: "No connection error"; API security vulnerability that allows creating / modifying PC files when API is bound to 0.0.0.0 in read-only mode)
 
 ##### 0.6-201@210314 2021-03-14
