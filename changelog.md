@@ -1,3 +1,12 @@
+##### 0.6-201@210323 2021-03-23
+*   NBMiner v37.0 (added support mining Ergo coin on Nvidia GPUs; removed support bfc, cuckarood for Nvidia; removed support octopus for AMD; fixed octopus support CFX new address format; fixed 'clBuildProgram error' issue on Vega for v35.0..v36.1; disabled AMD iGPU by default; minor bug fix, improve overall stability)
+*   TeamRedMiner v0.8.1.1 (added support RX 6700 XT)
+*   SRBMiner-Multi v0.7.1 (added algorithm 'heavyhash' for CPU mining oBTC coin, fee 0.85%; added algorithm 'yespowermgpc' for CPU mining MGPC/MagPieCoin, fee 0.85%; small improvements on 'autolykos2' algorithm; fixed crash on 'panthera' algorithm on non-Ryzen CPUs; minor bug fixes)
+*   Ethminer-NSFminer v1.3.9 (small fixes)
+*   CPUminer-Opt-rplant v5.0.17 (added 'heavyhash' algo)
+*   CPUminer-Opt-JayDDee v3.16.0 (added 'verthash' algo)
+*   SGminer-fancyIX v0.7.4 (added Navi kernel for groestlcoin)
+
 ##### 0.6-201@210316 2021-03-16
 *   NanoMiner v3.3.2 (performance improvements for 'autolykos' ~40% for AMD Vega family: Vega 56/64/VII)
    
