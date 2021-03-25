@@ -1,3 +1,8 @@
+##### 0.6-201@210325 2021-03-25
+*   NBMiner v37.1 (fixed Ergo high reject ratio on 10 series Nvidia GPUs; fixed Ergo pool compatibility)
+*   NSFMiner v1.3.10 (fixed missed connection delay when `--retry-max` is 0; added `--seq` option to sequentially load DAG one GPU at a time; minor bug fixes)
+*   CPUminer-Opt-JayDDee v3.16.1 (small verthash performance improvement; added new options for verthash algo: `data-file` and `verify`; fixed detection of corrupt stats caused by networking issues)
+
 ##### 0.6-201@210323 2021-03-23
 *   NBMiner v37.0 (added support mining Ergo coin on Nvidia GPUs; removed support bfc, cuckarood for Nvidia; removed support octopus for AMD; fixed octopus support CFX new address format; fixed 'clBuildProgram error' issue on Vega for v35.0..v36.1; disabled AMD iGPU by default; minor bug fix, improve overall stability)
 *   TeamRedMiner v0.8.1.1 (added support RX 6700 XT)
