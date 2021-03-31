@@ -1,3 +1,19 @@
+##### 0.6-202@210331 2021-03-31
+*   Improved `agent` (introduced new command `tweakers` for testers; fixed VRAM size in VBIOS filenames)
+*   Improved support for 3rd-party hardware (added support for new Octofan controller)
+*   Updated Nvidia tools (Nvidia Flasher v5.692: adds RTX 3060 support, nvtool v1.4.0: added fixed core clocks option for Turing and Ampere)
+*   Updated AMD tools (amdmeminfo v2.1.8: adds Navi22 support RX 6700XT; amdmemtweak v0.1.9.6-hiveos: fixed behaviour on GDDR6 eqiupped GPUs on bulk operations; fixed error message on AMD OC on Big Navi)
+*   Updated kernel module k10temp (added support for Zen3 arch)
+*   Updated `net-test` command (uses all API hosts for test)
+*   Fixed `selfupgrade` command (in some cases miner was started in maintenance mode; removed common pciids update)
+*   Fixed `gpu-fans-find` command (start miner only if it was running)
+*   Fixed `hello` command (fixed formatting)
+*   Fixes for PXE images (added X.org support)
+*   T-Rex v0.19.14 (minor performance improvements on octopus for 16 series GPUs; for ethash and etchash added option `validate-shares` to enable share validation and display share difficulty; bug fixes: memory tweaks have no effect on some 1060 cards, invalid stats if power usage reporting is not supported)
+*   NSFMiner v1.3.12 (added option -F to load parameters from a file instead of on command line)
+*   Fixed config generation for TeamRedMiner SSL pools templates
+*   Fixed miner stats processing for RHminer (fixed miner hang when switching to fee)
+
 ##### 0.6-201@210327 2021-03-27
 *   GMiner v2.49 (improved DAG generation, now miner generates valid DAG in extremal OC modes with new option `--safe_dag`: 1 - fast mode, default for GTX GPUs, miner generates DAG as quickly as possible, DAG errors are possible at maximum OC and 2 - safe mode, default for RTX GPUs, miner generates DAG with error control, useful for RTX cards at maximum OC; improved memory tweaks: fixed problem with possibly broken DAG on epoch change)
 *   Ethminer-NSFMiner v1.3.11 (added timestamp to console log; added `--cl-split` option to force split DAG mode for AMD GPUs it's may improve performance on older GPUs; display GPU memory temperature if available; fixed simulation and benchmark for low epochs)
