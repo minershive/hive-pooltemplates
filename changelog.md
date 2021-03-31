@@ -2,7 +2,7 @@
 *   Improved `agent` (introduced new command `tweakers` for testers; fixed VRAM size in VBIOS filenames)
 *   Improved support for 3rd-party hardware (added support for new Octofan controller)
 *   Updated Nvidia tools (Nvidia Flasher v5.692: adds RTX 3060 support, nvtool v1.4.0: added fixed core clocks option for Turing and Ampere)
-*   Updated AMD tools (amdmeminfo v2.1.8: adds Navi22 support RX 6700XT; amdmemtweak v0.1.9.6-hiveos: fixed behaviour on GDDR6 eqiupped GPUs on bulk operations; fixed error message on AMD OC on Big Navi)
+*   Updated AMD tools (amdmeminfo v2.1.8: fixed detection RX 6700XT; amdmemtweak v0.1.9.6-hiveos: fixed behaviour on GDDR6 eqiupped GPUs on bulk operations; fixed error message on AMD OC on Big Navi)
 *   Updated kernel module k10temp (added support for Zen3 arch)
 *   Updated `net-test` command (uses all API hosts for test)
 *   Fixed `selfupgrade` command (in some cases miner was started in maintenance mode; removed common pciids update)
