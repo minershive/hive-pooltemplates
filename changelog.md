@@ -8,7 +8,7 @@
 *   Fixed `selfupgrade` command (in some cases miner was started in maintenance mode; removed common pciids update)
 *   Fixed `gpu-fans-find` command (start miner only if it was running)
 *   Fixed `hello` command (fixed formatting)
-*   Fixes for PXE images (added X.org support)
+*   Fixes for PXE images (added GUI support, added display in the drive name that it's PXE client and the IP address of the PXE server)
 *   T-Rex v0.19.14 (minor performance improvements on octopus for 16 series GPUs; for ethash and etchash added option `validate-shares` to enable share validation and display share difficulty; bug fixes: memory tweaks have no effect on some 1060 cards, invalid stats if power usage reporting is not supported)
 *   EthMiner-NSFMiner v1.3.12 (added option -F to load parameters from a file instead of on command line)
 *   Fixed config generation for TeamRedMiner SSL pools templates
