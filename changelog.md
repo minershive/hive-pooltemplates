@@ -3,8 +3,9 @@
 *   Hive Linux client: v0.6-202@210331
 *   Ubuntu v18.04 LTS based
 *   Linux kernel: v5.4.108
-*   Nvidia drivers: v460.67
-*   AMD OpenCL v20.40 with v5.9.0325 driver supporting the latest "Big Navi" GPUs including RX 6700XT/ 6800/ 6800XT/6900XT
+*   Nvidia driver: v460.67
+*   AMD driver: v5.9.0325 (supporting the latest "Big Navi" GPUs including RX 6700XT/ 6800/ 6800XT/6900XT)
+*   AMD OpenCL v20.40
 
 ##### 0.6-202@210331 2021-03-31
 *   Improved `agent` (introduced new command `tweakers` for testers; fixed VRAM size in VBIOS filenames)
