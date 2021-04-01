@@ -1,3 +1,6 @@
+##### 0.6-202@210401 2021-04-01
+*   NanoMiner v3.3.3 (faster dataset creation for Ergo coin/autolykos2 algo; added zombie mode for Ergo on 2 Gb GPUs both Nvidia and AMD; fixed issues with shardpool on Zilliqa)
+   
 ##### LINUX IMAGE RELEASE 0.6-202 2021-04-01
 *   Universal boot mode: BIOS | UEFI
 *   Hive Linux client: v0.6-202@210331
