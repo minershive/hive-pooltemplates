@@ -1,3 +1,11 @@
+##### LINUX IMAGE RELEASE 0.6-202 2021-04-01
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-202@210331
+*   Ubuntu v18.04 LTS based
+*   Linux kernel: v5.4.108
+*   Nvidia drivers: v460.67
+*   AMD OpenCL libraries v20.40 with AMD "Big Navi" support (RX 6700XT/ 6800/ 6800XT/6900XT)
+
 ##### 0.6-202@210331 2021-03-31
 *   Improved `agent` (introduced new command `tweakers` for testers; fixed VRAM size in VBIOS filenames)
 *   Improved support for 3rd-party hardware (added support for new Octofan controller)
