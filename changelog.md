@@ -4,7 +4,7 @@
 *   Ubuntu v18.04 LTS based
 *   Linux kernel: v5.4.108
 *   Nvidia driver: v460.67
-*   AMD driver: v5.9.0325 (supporting the latest "Big Navi" GPUs including RX 6700XT/ 6800/ 6800XT/6900XT)
+*   AMD driver: v5.9.0325 (supporting the latest "Big Navi" GPUs including RX 6700XT/ 6800/ 6800XT/ 6900XT)
 *   AMD OpenCL v20.40
 
 ##### 0.6-202@210331 2021-03-31
