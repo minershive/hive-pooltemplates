@@ -1,5 +1,5 @@
 ##### 0.6-203@210403 2021-04-03
-*   Hotfixes for v0.6-202 (fixed video output to monitor on Nvidia GPUs; fixed CPU temp display for Zen3 arch/Ryzen 5000 series CPUs; other minor fixes)
+*   Hotfixes for v0.6-202 (fixed lack of video output to monitor on Nvidia GPUs; fixed CPU temp display for Zen3 arch/Ryzen 5000 series CPUs; other minor fixes)
 *   GMiner v2.50 Beta (improved beamhash performance up to 2%; improved cuckatoo32 performance up to 5%; added display of GPU model in statistics table; added `--worker` parameter to specify worker name for ETH pools thats doesn't support wallet.worker notation; added option `--log_date` to display date in log; added option `--log_stratum` to log stratum; display epoch and block number on new job; uses `--proto stratum` for NiceHash by default; bug fixes and stability improvements;  *Notes: added for testing purposes - need select version manually in miner settings*)
 *   Fixed SRBMiner-Multi stats in some dual algo modes
 
@@ -10,7 +10,7 @@
 *   Universal boot mode: BIOS | UEFI
 *   Hive Linux client: v0.6-202@210331
 *   Ubuntu v18.04 LTS based
-*   Linux kernel: v5.4.108
+*   Linux kernel: v5.4.0-hiveos #108
 *   Nvidia driver: v460.67
 *   AMD driver: v5.9.0325 (supporting the latest "Big Navi" GPUs including RX 6700XT/ 6800/ 6800XT/ 6900XT)
 *   AMD OpenCL v20.40
