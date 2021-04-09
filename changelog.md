@@ -5,7 +5,7 @@
 *   Bminer v16.4.6 (improved performance for Conflux mining on the Turing / Ampere architecture; improved energy efficiency for Ethereum on the Polaris architecture)
 *   CPUminer-Opt-JayDDee v3.16.2 (midstate prehash optimization and AVX2 optimization for verthash algo; fixed integer overflow in time calculations)
 *   XMRig v6.11.1 (optimized cn-heavy algorithm; fixed mining job creation sequence)
-*   Fixed sgminer-fancyix v0.7.2.1-0.7.4 packages
+*   Fixed installation for sgminer-fancyix v0.7.2.1-0.7.4 packages
 
 ##### 0.6-203@210403 2021-04-03
 *   Hotfixes for v0.6-202 (fixed lack of video output to monitor on Nvidia GPUs; fixed CPU temp display for Zen3 arch/Ryzen 5000 series CPUs; other minor fixes)
