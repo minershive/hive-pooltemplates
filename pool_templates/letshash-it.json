@@ -40,21 +40,33 @@
         }
     },
     {
-        "coin": "CBE",
+        "coin": "NINJA",
         "servers": [
             {
-                "geo": "FIN - Starting Diff 0.001",
+                "geo": "FIN - Low End Starting Diff 50 000",
                 "urls": [
-                    "pool.letshash.it:9033"
+                    "pool.letshash.it:1533"
+               ]
+            },
+            {
+                "geo": "FIN - High End Starting Diff 200 000",
+                "urls": [
+                    "pool.letshash.it:1534"
+                ]
+            },
+            {
+                "geo": "FIN - Rig Rentals/NH Diff 500 000",
+                "urls": [
+                    "pool.letshash.it:1535"
                 ]
             }
         ],
         "miners": {
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "phi5",
-                "pass": "c=CBE",
-                "template": "%WAL%"
+            "srbminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "argon2id_ninja"
             }
         }
     },
@@ -219,44 +231,29 @@
         }
     },
     {
-        "coin": "NIMB",
+        "coin": "OBTC",
         "servers": [
             {
-                "geo": "FIN - Low End Diff 2500",
+                "geo": "FIN - Starting Diff 0.01",
                 "urls": [
-                    "pool.letshash.it:1715"
-                ]
-            },
-            {
-                "geo": "FIN - High End Diff 50 000",
-                "urls": [
-                    "pool.letshash.it:1716"
-                ]
-            },
-            {
-                "geo": "FIN - Mining Rigs/NH",
-                "urls": [
-                    "pool.letshash.it:1717"
-                ]
-            }
+                    "pool.letshash.it:3390"
         ],
         "miners": {
-            "xmrig-new": {
-                "url": "%URL%",
-                "algo": "cn-pico",
-                "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
+            "srbminer": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "c=OBTC",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "heavyhash"
            }
         }
     },
     {
-        "coin": "QAC",
+        "coin": "BCC",
         "servers": [
             {
-                "geo": "FIN - Starting Diff 1",
+                "geo": "FIN - Starting Diff 128",
                 "urls": [
-                    "pool.letshash.it:3433"
+                    "pool.letshash.it:3633"
                 ]
             }
         ],
@@ -268,8 +265,8 @@
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
                 "ccalgo": "scrypt",
-                "ccpass": "c=QAC",
-                "ccuser": "%WAL%"
+                "ccpass": "c=BCC",
+                "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -293,22 +290,25 @@
         }
     },
     {
-        "coin": "RTM",
+        "coin": "EHS",
         "servers": [
             {
-                "geo": "FIN - CPU Starting Diff 0.01",
+                "geo": "FIN - ASIC Starting Diff 32",
                 "urls": [
-                    "pool.letshash.it:8009"
+                    "pool.letshash.it:14433"
                 ]
             }
         ],
         "miners": {
-            "cpuminer-opt": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "gr",
-                "pass": "c=RTM",
-                "template": "%WAL%",
-                "fork": "rplant"
+            "asicminer": {
+                "url": "%URL%",
+                 "template": "%WAL%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "scrypt",
+                "ccpass": "c=EHS",
+                "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -435,19 +435,21 @@
         }
     },
     {
-        "coin": "UQB",
+        "coin": "PA",
         "servers": [
             {
-                "geo": "FIN - ASIC",
+                "geo": "FIN - GPU Starting Diff 0.01",
                 "urls": [
-                    "pool.letshash.it:3233"
+                    "pool.letshash.it:4833"
                 ]
             }
         ],
         "miners": {
-            "asicminer": {
-                "url": "%URL%",
-                "template": "%WAL%"
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256csm",
+                "pass": "c=PA",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -506,70 +508,22 @@
         }
     },
     {
-        "coin": "XEQ",
+        "coin": "TIDE",
         "servers": [
             {
-                "geo": "FIN - Low-End GPU",
+                "geo": "FIN - CPU Starting Diff 0.2",
                 "urls": [
-                    "pool.letshash.it:1543"
-                ]
-            },
-            {
-                "geo": "FIN - High-END GPU",
-                "urls": [
-                    "pool.letshash.it:1544"
-                ]
-            },
-            {
-                "geo": "FIN - Rig Rentals/NH",
-                "urls": [
-                    "pool.letshash.it:1545"
+                    "pool.letshash.it:9950"
                 ]
             }
         ],
         "miners": {
-            "xmrig": {
+            "cpuminer-opt": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cn/gpu\""
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cn/gpu\""
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cn/gpu\""
-            },
-            "xmrig-new": {
-                "url": "%URL%",
-                "algo": "cn/gpu",
-                "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_gpu\""
-            },
-            "cryptodredge": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cryptonight-gpu"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cryptonight_gpu"
+                "algo": "yespowertide",
+                "pass": "c=TIDE",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
             }
         }
     },
