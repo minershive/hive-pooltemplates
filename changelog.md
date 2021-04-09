@@ -1,3 +1,12 @@
+##### 0.6-203@210408 2021-04-08
+*   GMiner v2.50 (improved beamhash performance up to 2%; improved cuckatoo32 performance up to 5%; added display of GPU model in statistics table; added --worker parameter to specify worker name for ETH pools that's doesn't support wallet.worker notation; added option --log_date to display date in log; added option --log_stratum to log stratum; display epoch and block number on new job; uses --proto stratum for NiceHash by default; ;removed algorithms: VDS, BFC; bug fixes and stability improvements) 
+*   lolMiner v1.25 (implemented CUDA backend for Nvidia GPUs support on Ethash: supported from Maxwell to Ampere GPUs, reduced internal latency for less stale shares, reduced CPU load when mining with Nvidia cards, two different mining kernels: --mode a (faster) and --mode b (better energy efficiency) to select between the two use comma separated list; added Ethash, BeamHashIII & Cortex kernels for RX 6700; Ethash stratum interface will now try to run up to three attempts of reconnecting before switching the stratum mode; fixed "Warning: index out of bounds" error when switching from ETHPROXY to ETHV1 stratum mode. This might solve problems with some pools on connection loss) 
+*   NanoMiner v3.3.4 (faster dataset creation for Ergo on AMD RX 4xx and 5xx series)
+*   Bminer v16.4.6 (improved performance for Conflux mining on the Turing / Ampere architecture; improved energy efficiency for Ethereum on the Polaris architecture)
+*   CPUminer-Opt-JayDDee v3.16.2 (midstate prehash optimization and AVX2 optimization for verthash algo; fixed integer overflow in time calculations)
+*   XMRig v6.11.1 (optimized cn-heavy algorithm; fixed mining job creation sequence)
+*   Fixed sgminer-fancyix v0.7.2.1-0.7.4 packages
+
 ##### 0.6-203@210403 2021-04-03
 *   Hotfixes for v0.6-202 (fixed lack of video output to monitor on Nvidia GPUs; fixed CPU temp display for Zen3 arch/Ryzen 5000 series CPUs; other minor fixes)
 *   GMiner v2.50 Beta (improved beamhash performance up to 2%; improved cuckatoo32 performance up to 5%; added display of GPU model in statistics table; added `--worker` parameter to specify worker name for ETH pools thats doesn't support wallet.worker notation; added option `--log_date` to display date in log; added option `--log_stratum` to log stratum; display epoch and block number on new job; uses `--proto stratum` for NiceHash by default; bug fixes and stability improvements;  *Notes: added for testing purposes - need select version manually in miner settings*)
