@@ -1,6 +1,6 @@
 ##### 0.6-203@210409 2021-04-09
 *   GMiner v2.51 Beta (significant CPU usage reduction up x5; fixed bugs appeared in v2.50: with AE mining, with worker name)
-*   SRBMiner-Multi v0.7.2 (added support for GPU mining on 'heavyhash' algo with fee 2.5%; faster dataset creation for 'autolykos2' algo on 'Ellesmere' GPU's up to ~3%; reduced devfee on 'verthash' and 'rx2' to 1%; parameter '--disable-workers-ramp-up' changed back to '--enable-workers-ramp-up', so default value of ramp-up is now disabled; added parameter '--max-no-submit-responses'; minor bug fixes)
+*   SRBMiner-Multi v0.7.2 (added support for GPU mining on 'heavyhash' algo with fee 2.5%; faster dataset creation for 'autolykos2' algo on 'Ellesmere' GPU's up to ~3%; reduced devfee on 'verthash' and 'rx2' to 1%; parameter `--disable-workers-ramp-up` changed back to `--enable-workers-ramp-up`, so default value of ramp-up is now disabled; added parameter `--max-no-submit-responses`; minor bug fixes)
 
 ##### 0.6-203@210408 2021-04-08
 *   GMiner v2.50 (improved beamhash performance up to 2%; improved cuckatoo32 performance up to 5%; added display of GPU model in statistics table; added `--worker` parameter to specify worker name for ETH pools that's doesn't support wallet.worker notation; added option `--log_date` to display date in log; added option `--log_stratum` to log stratum; display epoch and block number on new job; uses `--proto stratum` for NiceHash by default; ;removed algorithms: VDS, BFC; bug fixes and stability improvements) 
