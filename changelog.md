@@ -1,5 +1,5 @@
 ##### 0.6-203@210409 2021-04-09
-*   GMiner v2.50 Beta (significant CPU usage reduction up x5; fixed bugs appeared in v2.50: with AE mining, with worker name)
+*   GMiner v2.51 Beta (significant CPU usage reduction up x5; fixed bugs appeared in v2.50: with AE mining, with worker name)
 *   SRBMiner-Multi v0.7.2 (added support for GPU mining on 'heavyhash' algo with fee 2.5%; faster dataset creation for 'autolykos2' algo on 'Ellesmere' GPU's up to ~3%; reduced devfee on 'verthash' and 'rx2' to 1%; parameter '--disable-workers-ramp-up' changed back to '--enable-workers-ramp-up', so default value of ramp-up is now disabled; added parameter '--max-no-submit-responses'; minor bug fixes)
 
 ##### 0.6-203@210408 2021-04-08
