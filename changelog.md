@@ -1,5 +1,5 @@
 ##### 0.6-203@210410 2021-04-10
-*   T-Rex v0.20.0 (combine all CUDA builds into a single binary; removed old and rarely used algorithms if you need it than use older miner version; bug fixes: inconsistent GPU ordering in API when `"pci-indexing"` is set; various stability issues)
+*   T-Rex v0.20.0 (combine all CUDA builds into a single binary; removed support for old and rarely used algorithms, if you need something of them, you can use the previous versions of the miner; bug fixes: inconsistent GPU ordering in API when `"pci-indexing"` is set; various stability issues)
 *   
 ##### 0.6-203@210409 2021-04-09
 *   GMiner v2.51 Beta (significant up to x5 times CPU usage reduction; fixed bugs appeared in v2.50: with AE mining, with worker name)
