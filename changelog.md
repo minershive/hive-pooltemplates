@@ -1,6 +1,6 @@
 ##### 0.6-203@210410 2021-04-10
 *   T-Rex v0.20.0 (combine all CUDA builds into a single binary; removed support for old and rarely used algorithms, if you need something of them, you can use the previous versions of the miner; bug fixes: inconsistent GPU ordering in API when `"pci-indexing"` is set; various stability issues)
-*   
+   
 ##### 0.6-203@210409 2021-04-09
 *   GMiner v2.51 Beta (significant up to x5 times CPU usage reduction; fixed bugs appeared in v2.50: with AE mining, with worker name)
 *   SRBMiner-Multi v0.7.2 (added support for GPU mining on 'heavyhash' algo with fee 2.5%; faster dataset creation for 'autolykos2' algo on 'Ellesmere' GPU's up to ~3%; reduced devfee on 'verthash' and 'rx2' to 1%; parameter `--disable-workers-ramp-up` changed back to `--enable-workers-ramp-up`, so default value of ramp-up is now disabled; added parameter `--max-no-submit-responses`; minor bug fixes)
