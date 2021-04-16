@@ -1,5 +1,5 @@
 ##### 0.6-203@210415 2021-04-15
-*   T-Rex v0.20.1 (option `"extra-dag-epoch can now be set per-GPU"` can now be set per-GPU; bug fixes: miner crashes when option `"validate-shares"` is set; incorrect share difficulty suffix when diff is greater than 1000G; manually selected kernel number is not displayed at start up; incorrect failover pool setup args parsing)
+*   T-Rex v0.20.1 (option `"extra-dag-epoch"` can now be set per-GPU; bug fixes: miner crashes when option `"validate-shares"` is set; incorrect share difficulty suffix when diff is greater than 1000G; manually selected kernel number is not displayed at start up; incorrect failover pool setup args parsing)
 *   CPUminer-Opt-rplant v5.0.21 (fixed avx2 on ghostrider algo)
 
 ##### 0.6-203@210414 2021-04-14
