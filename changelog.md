@@ -1,3 +1,7 @@
+##### 0.6-203@210415 2021-04-15
+*   T-Rex v0.20.1 (option `"extra-dag-epoch can now be set per-GPU"` can now be set per-GPU; bug fixes: miner crashes when option `"validate-shares"` is set; incorrect share difficulty suffix when diff is greater than 1000G; manually selected kernel number is not displayed at start up; incorrect failover pool setup args parsing)
+*   CPUminer-Opt-rplant v5.0.21 (fixed avx2 on ghostrider algo)
+
 ##### 0.6-203@210414 2021-04-14
 *   lolMiner v1.26 (slightly improved performance of Ethash on Pascal / Turing & Ampere GPUs, about +0.1 - 0.2 mh per card; further reduced internal latency in Ethash CUDA backend = less stale shares & CPU load; added experimental Grin-C32 kernel for Radeon 6700; fixed bugs: CUDA backend to crash with a segfault on Epoch change which introduced in v1.25, some (rare) potential faults in Beam stratum)
 *   XMRig v6.11.2 (fixed regression in HTTP parser)
