@@ -85,5 +85,51 @@
         "miners": {
            "_prototype": "miners_kawpow"
         }
+    },
+    {
+        "coin": "BEAM",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu1-beam.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us1-beam.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia1-beam.flypool.org:3443"
+                ]
+            }
+        ],
+        "miners": {
+            "bminer": {
+                "algo": "beam+ssl",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
+            },
+            "gminer": {
+                "algo": "beamhash",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "tls": "1"
+            },
+            "lolminer": {
+                "algo": "BEAM",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x"
+            }
+        }
     }
 ]
