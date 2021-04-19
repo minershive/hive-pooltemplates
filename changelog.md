@@ -1,5 +1,5 @@
 ##### 0.6-203@210419 2021-04-19
-*   Gminer v 2.53 (fixed miner crashes on DAG changes for ETH+ZIL mining; fixed DAG caching on 6GB cards)
+*   Gminer v2.53 (fixed miner crashes on DAG changes for ETH+ZIL mining; fixed DAG caching on 6GB cards)
 *   SRBMiner-Multi v0.7.3 (small improvement on `cryptonight_xhv` algorithm for some GPUs; fixed `--gpu-off-temperature` parameter; fixed bugs with 'dual' mining ZIL + any other algorithm; removed parameters `--gpu-target-temperature` and `--gpu-target-fan-speed` - use external application instead; minor bug fixes)
 *   PhoenixMiner v5.6a (added native kernels for AMD RX6700 cards; added new command-line parameters `-ttj` and `-ttmem`, allowing automatic fan speed control based on GPU hotspot (junction), and memory temperatures respectively; added new command-line parameters `-tmaxj` and `-tmaxmem`, allowing to decrease the GPU usage when the GPU hotspot (junction), or GPU memory temperatures are above the specified thresholds; increased the max supported DAG epoch to 550; turned off the zero fan feature on AMD cards whenever a fixed fan speed is used; see `ReleaseNotes.txt` file for full miner changes list; *Note: this is Beta release of miner and added for testing purposes - need select version manually in miner settings*)
 
