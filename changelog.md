@@ -1,5 +1,5 @@
 ##### 0.6-203@210420 2021-04-20
-*   XMRig v6.12.0 + CUDA 11.2 plugin v6.12.0 (added support for Uplexa; randomX: optimized IMUL_RCP instruction)
+*   XMRig v6.12.0 + CUDA 11.2 plugin v6.12.0 (added support for UPX/Uplexa - 'cn/upx2 algo; randomX: optimized IMUL_RCP instruction)
 *   Fixes for VerthashMiner (fixed config generator in part of platform selection; fixed config generator in part of platform selection; fixed some problems with displaying statistics when some GPUs hangs)
 *   Fixes for T-Rex (switched to HTTP API, fixed config issue)
 
