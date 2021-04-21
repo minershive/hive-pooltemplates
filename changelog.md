@@ -1,7 +1,7 @@
 ##### 0.6-203@210420 2021-04-20
 *   XMRig v6.12.0 + CUDA 11.2 plugin v6.12.0 (added support for Uplexa; randomX: optimized IMUL_RCP instruction)
 *   VertHashMiner: fixed config generator in part of platform selection and some stats issues
-*   T-Rex: switched to HTTP API
+*   T-Rex: switched to HTTP API, fixed config issue
 
 ##### 0.6-203@210419 2021-04-19
 *   Gminer v2.53 (fixed miner crashes on DAG changes for ETH+ZIL mining; fixed DAG caching on 6GB cards)
