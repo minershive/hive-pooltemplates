@@ -1,3 +1,6 @@
+##### 0.6-203@210421 2021-04-21
+*   TeamRedMiner v0.8.2 (added support for `verthash` algo; added support Tonga GPUs for ethash and kawpow; added sensor power, junction temp and mem temp to API; now displaying sensor power in the 30s stats output; better handling of driver issues related to gpu clocks/temps stats; other minor changes)
+
 ##### 0.6-203@210420 2021-04-20
 *   XMRig v6.12.0 + CUDA 11.2 plugin v6.12.0 (added support for UPX/Uplexa - 'cn/upx2 algo; randomX: optimized IMUL_RCP instruction)
 *   Fixes for VerthashMiner (fixed config generator in part of platform selection; fixed config generator in part of platform selection; fixed some problems with displaying statistics when some GPUs hangs)
