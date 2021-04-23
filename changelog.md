@@ -1,3 +1,6 @@
+##### 0.6-203@210422 2021-04-22
+*   EthMiner-NSFMiner v1.3.13 (dropped AMD binary kernel support; dropped effective hash rate calculator: not working in stratum v2; fixed API HTTP response RFC deviations; minor bug fixes)
+
 ##### 0.6-203@210421 2021-04-21
 *   TeamRedMiner v0.8.2 (added support for `verthash` algo; added support Tonga GPUs for ethash and kawpow; added sensor power, junction temp and mem temp to API; now displaying sensor power in the 30s stats output; better handling of driver issues related to gpu clocks/temps stats; other minor changes)
 
