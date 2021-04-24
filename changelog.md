@@ -1,3 +1,8 @@
+##### 0.6-203@210424 2021-04-24
+*   XMRig v6.12.1 (fixed Zen3 assembly code for `cn/upx2` algo)
+*   NBMiner v37.2 (minor ethash hashrate improvements on AMD RDNAs GPUs)
+*   T-Rex v0.20.3 (added share validation support via `validate-shares` parameter for `octopus` algo; enabled miner termination upon exceeding predefined maximum of total power consumption, please see `exit-on-high-power` in miner readme file; bug fixes: performance degradation on Pascal and Turing GPUs, miner fails to start if password isn't specified, minor cosmetic fixes)
+
 ##### 0.6-203@210422 2021-04-22
 *   EthMiner-NSFMiner v1.3.13 (dropped AMD binary kernel support; dropped effective hash rate calculator: not working in stratum v2; fixed API HTTP response RFC deviations; minor bug fixes)
 
