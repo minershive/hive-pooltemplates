@@ -1,3 +1,10 @@
+##### 0.6-203@210426 2021-04-26
+*   TeamRedMiner v0.8.2.1 (added `--verthash_max_uploads=N` to control the upload of the verthash table to GPUs at startup..
+  Some chipsets get issues running > 4 GPUs concurrently. Typical error is that multiple GPUs die immediately at startup when running the full rig, but work fine if you only run 3-4 GPUs; fixed support for 2GB GPUs on verthash)
+*   XMRig-XMRigCC v2.92 (sync code with upstream v6.12.1)
+*   NBMiner fixes (fixed issue with pool password in config generator for v37.2)
+*   TeamRedMiner fixes (improved error messages on GPU hang)
+
 ##### 0.6-203@210424 2021-04-24
 *   XMRig v6.12.1 (fixed Zen3 assembly code for `cn/upx2` algo)
 *   NBMiner v37.2 (minor ethash hashrate improvements on AMD RDNAs GPUs)
