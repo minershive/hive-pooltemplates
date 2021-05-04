@@ -1,3 +1,10 @@
+##### 0.6-203@210503 2021-05-03
+*   Gminer v2.54 (generates valid DAG on higher OC modes; improved up to 2x times speed of DAG generation)
+*   Nanominer v3.3.5 (fixed "Unknown GPU name" issue with new AMD drivers)
+*   PhoenixMiner v5.6b (added support latest drivers for Linux. *Notices: 1) this is Beta release of miner and added for testing purposes - need select version manually in miner settings 2) RX 6000 series "BigNavi" seems broken 5.5-5.6b*)
+*   XMRig-XMRigCC v2.93 (added support mining Yadacoin/YDA on RandomX variant `rx/yada`)
+*   Minor fixes (T-Rex: fixed displaying invalid  shares; NBMiner: fixed config generation for v37.2+ if no pool password set; TeamRedMiner: fix configuring worker name fo etchash algo)
+
 ##### 0.6-203@210426 2021-04-26
 *   TeamRedMiner v0.8.2.1 (added `--verthash_max_uploads=N` to control the upload of the verthash table to GPUs at startup: some chipsets get issues running > 4 GPUs concurrently. Typical error is that multiple GPUs die immediately at startup when running the full rig, but work fine if you only run 3-4 GPUs; fixed support for 2GB GPUs on verthash)
 *   XMRig-XMRigCC v2.92 (sync code with upstream v6.12.1)
