@@ -1,7 +1,7 @@
 ##### 0.6-203@210503 2021-05-03
 *   Gminer v2.54 (generates valid DAG on higher OC modes; improved up to 2x times speed of DAG generation)
 *   Nanominer v3.3.5 (fixed "Unknown GPU name" issue with new AMD drivers)
-*   PhoenixMiner v5.6b (added support latest drivers for Linux. *Notices: 1) this is Beta release of miner and added for testing purposes - need select version manually in miner settings 2) RX 6000 series "BigNavi" seems broken 5.5-5.6b*)
+*   PhoenixMiner v5.6b (added support latest drivers for Linux. *Notices: 1) this is Beta release of miner and added for testing purposes - need select version manually in miner settings 2) RX 6000 series "BigNavi" seems broken after epoch 412 in v5.5-5.6b: use v5.4c or other miners*)
 *   XMRig-XMRigCC v2.93 (added support mining Yadacoin/YDA on RandomX variant `rx/yada`)
 *   Minor fixes (T-Rex: fixed displaying invalid  shares; NBMiner: fixed config generation for v37.2+ if no pool password set; TeamRedMiner: fix configuring worker name fo etchash algo)
 
