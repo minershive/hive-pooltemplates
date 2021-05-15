@@ -1,6 +1,6 @@
 ##### 0.6-203@210515 2021-05-15
 *   lolMiner v1.29 (added the Nvidia 3060 "Unlocker" for Linux for using with Nvidia drivers from v455.45.01 and up to v460.39 (other driver version outside this range not supported). This new mode mode allows to mine at a speed about 3/4 of the maximum speed of this cards, allow use risers, allow multiple GPUs in one system.
-  To change version of your current driver you can use `nvidia-driver-upate` tool. Read more about new mode at https://github.com/Lolliedieb/lolMiner-releases/wiki/3060-Booster)
+  To change version of your current driver you can use `nvidia-driver-update` tool. Read more about new mode at https://github.com/Lolliedieb/lolMiner-releases/wiki/3060-Booster)
 
 ##### 0.6-203@210512 2021-05-12
 *   PhoenixMiner v5.6d (fixed problem with displaying GPU temperatures of some Nvidia GPUs; changes vs 5.6b: lower percent of rejected/stale shares when mining on Nicehash; fixed problem with reading GPU temperature with some AMD GPUs/drivers; other small fixes and improvements)
