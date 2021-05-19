@@ -1,3 +1,6 @@
+##### 0.6-203@210519 2021-05-19
+*   TeamRedMiner v0.8.3 (added Autolykos2 algo for ERGO (very good target for Vega 56/64, see the `AUTOLYKOS_TUNING.txt` guide; improved and simplified dual ZIL mining for ethash/kawpow/verthash/autolykos2, see the new `DUAL_ZIL_MINING.txt` guide)
+
 ##### 0.6-203@210517 2021-05-17
 *   SRBMiner-Multi v0.7.5 (dataset creation for 'autolykos2' algorithm faster; small improvements on 'ethash' algorithm; small improvements on 'etchash'; options `--gpu-tweak-profile` and `--gpu-boost` should now work with latest AMD drivers; added parameter `--gpu-buffer-mode`, can be used with ZIL dual mining please check miner's manual; added `--gpu-ethash-mode 3` for older cards, no DAG is created on Ethash, Etchash; changed the way how 'ignored jobs' are displayed. If you want to see 'ignored job' messages, you need to enable extended logging; more bug fixes with ZIL 'dual' mining; minor bug fixes)
 *   CPUminer-Opt-GR v1.1.5.1 (fixed rare problems with stratum switching that resulted in "low difficulty" shares; minimal tuning for Cryptonight 1-2% improvement)
