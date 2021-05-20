@@ -8,6 +8,44 @@
         }
     },
     {
+      "coin":"ERG",
+      "servers":[
+         {
+            "geo": "China",
+            "urls": [
+                "ergo.666pool.cn:9556"
+            ]
+         }
+      ],
+      "miners":{
+         "teamredminer":{
+            "algo":"autolykos2",
+            "url":"stratum+tcp://%URL%",
+            "template":"%WAL%.%WORKER_NAME%",
+            "pass":"x"
+         },
+         "srbminer":{
+            "url":"%URL%",
+            "pass":"%WORKER_NAME%",
+            "template":"%WAL%",
+            "algo":"autolykos2"
+         },
+         "nanominer":{
+            "url":"%URL%",
+            "algo":"autolykos2",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config":"coin = ERGO\nrigName = %WORKER_NAME%"
+         },
+         "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"autolykos2"
+         }
+      }
+    },
+    {
         "coin": "RVN",
         "servers": [
             {
@@ -53,6 +91,75 @@
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"coin-type\": \"qitmeer\"\n\"freq\" : \"420\""
+            }
+        }
+    },
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": "Chian",
+                "urls": [
+                    "eth.666pool.cn:8558"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash_4g",
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
+            },
+            "bminer": {
+               "algo": "ethproxy"
+            },
+            "teamredminer":{
+               "template": "%WAL%",
+               "worker": "%WORKER_NAME%"
+            },
+            "lolminer":{
+               "template": "%WAL%",
+               "worker": "%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "Chian",
+                "urls": [
+                    "etc.666pool.cn:8336"
+                ]
+            }
+        ],
+        "miners": {
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 0,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum1+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
             }
         }
     }
