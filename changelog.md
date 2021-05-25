@@ -1,3 +1,7 @@
+##### 0.6-203@210525 2021-05-25
+*   NBMiner v37.5 (added support mining ERGO for AMD GPU, can be faster with ETH mining timings; slightly improved ERGO mining on Nvidia GPUs; added options `--temperature-limit` & `--temperature-start` to protect GPU from overheat)
+*   Ethminer-KaWPowMiner v1.2.4 (added Nvidia Ampere - RTX 30xx support)
+
 ##### 0.6-203@210519 2021-05-19
 *   TeamRedMiner v0.8.3 (added `autolykos2` algo for ERGO and very good target for Vega 56/64, see the `AUTOLYKOS_TUNING.txt` guide; improved and simplified dual ZIL mining for ethash/kawpow/verthash/autolykos2, see the new `DUAL_ZIL_MINING.txt` guide)
 
