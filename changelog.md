@@ -1,3 +1,6 @@
+##### 0.6-203@210526 2021-05-26
+*   T-Rex v0.20.4 (added `lock-cclock` parameter to lock GPU core clock speed; reduced miner startup time; bug fixes: "T-Rex has a problem with GPU, terminating..." error when system time changes as a result of time synchronization, ethproxy mode is broken, GPUs keep consuming significant amount of power even after being disabled due to the temperature exceeding `temperature-limit`, miner fails to start with mt parameter specified if video drivers are older than 410.xx)
+
 ##### 0.6-203@210525 2021-05-25
 *   NBMiner v37.5 (added support mining ERGO for AMD GPUs, can be faster with ETH mining timings; slightly improved ERGO mining on Nvidia GPUs; added options `--temperature-limit` & `--temperature-start` to protect GPU from overheat)
 *   Ethminer-KaWPowMiner v1.2.4 (added Nvidia Ampere - RTX 30xx support)
