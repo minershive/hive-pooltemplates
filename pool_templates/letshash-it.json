@@ -8,65 +8,52 @@
         }
     },
     {
-        "coin": "AMX",
+        "coin": "ATMN",
         "servers": [
             {
-                "geo": "FIN - Low Diff 1000",
+                "geo": "DE - Starting Diff 0.016",
                 "urls": [
-                    "pool.letshash.it:7700"
+                    "eu.letshash.it:8927"
                 ]
             },
             {
-                "geo": "FIN - 15 000",
+                "geo": "Singapore - Starting Diff 0.016",
                 "urls": [
-                    "pool.letshash.it:7771"
-                ]
-            },
-            {
-                "geo": "FIN - High Diff 25 000",
-                "urls": [
-                    "pool.letshash.it:7772"
+                    "asia.letshash.it:8927"
                 ]
             }
         ],
         "miners": {
-            "xmrig-new": {
-                "url": "%URL%",
-                "algo": "cn/zls",
-                "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "phi1612",
+                "ccpass": "c=ATMN",
+                "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
     },
     {
-        "coin": "NINJA",
+        "coin": "CRIBS",
         "servers": [
             {
-                "geo": "FIN - Low End Starting Diff 50 000",
+                "geo": "DE - Starting Diff 1",
                 "urls": [
-                    "pool.letshash.it:1533"
+                    "eu.letshash.it:8924"
                ]
             },
             {
-                "geo": "FIN - High End Starting Diff 200 000",
+                "geo": "Singapore - Starting Diff 1",
                 "urls": [
-                    "pool.letshash.it:1534"
-                ]
-            },
-            {
-                "geo": "FIN - Rig Rentals/NH Diff 500 000",
-                "urls": [
-                    "pool.letshash.it:1535"
+                    "asia.letshash.it:8924"
                 ]
             }
         ],
         "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "argon2id_ninja"
+            "cryptodredge": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "argon2d4096",
+                "pass": "c=CRIBS",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -76,16 +63,22 @@
             {
                 "geo": "FIN - Starting Diff 1",
                 "urls": [
-                    "pool.letshash.it:4350"
+                    "eu.letshash.it:4450"
+                ]
+            },
+            {
+                "geo": "Singapore - Starting Diff 1",
+                "urls": [
+                    "asia.letshash.it:4450"
                 ]
             }
         ],
         "miners":{
             "cpuminer-opt": {
-                "url": "stratum+tcp://%URL%%URL%",
+                "url": "stratum+tcp://%URL%",
                 "algo": "cpupower",
                 "pass": "c=CPU",
-                "template": "%WAL%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "fork": "rkz"
             }
         }
@@ -94,21 +87,15 @@
         "coin": "CRYPTO",
         "servers": [
             {
-                "geo": "FIN - Diff 2000",
+                "geo": "DE - Starting Diff 2000",
                 "urls": [
-                    "pool.letshash.it:8008"
+                    "eu.letshash.it:8008"
                 ]
             },
             {
-                "geo": "FIN - Diff 50 000",
+                "geo": "Singapore - Starting Diff 2000",
                 "urls": [
-                    "pool.letshash.it:8018"
-                ]
-            },
-            {
-                "geo": "FIN - Diff 250 000",
-                "urls": [
-                    "pool.letshash.it:8028"
+                    "asia.letshash.it:8008"
                 ]
             }
         ],
@@ -126,21 +113,21 @@
         "coin": "ETHO",
         "servers": [
             {
-                "geo": "FIN - Single GPU",
+                "geo": "DE - Single GPU",
                 "urls": [
-                    "stratum+tcp://pool.letshash.it:1144"
+                    "stratum+tcp://eu.letshash.it:1144"
                 ]
             },
             {
-                "geo": "FIN - More GPUs",
+                "geo": "DE - Multiple GPUs",
                 "urls": [
-                    "stratum+tcp://pool.letshash.it:1145"
+                    "stratum+tcp://eu.letshash.it:1154"
                 ]
             },
             {
-                "geo": "FIN - Mining Rigs/NH",
+                "geo": "DE - Mining Rigs/NH",
                 "urls": [
-                    "stratum+tcp://pool.letshash.it:1146"
+                    "stratum+tcp://eu.letshash.it:1146"
                 ]
             }
         ],
@@ -168,27 +155,25 @@
         }
     },
     {
-        "coin": "FOXD",
+        "coin": "XRG",
         "servers": [
             {
-                "geo": "FIN - Starting Diff 0.5",
+                "geo": "DE - Starting Diff 32",
                 "urls": [
-                    "pool.letshash.it:3637"
+                    "eu.letshash.it:13391"
+                ]
+            },
+            {
+                "geo": "Singapore - Starting Diff 32",
+                "urls": [
+                    "asia.letshash.it:13391"
                 ]
             }
         ],
         "miners":{
-            "t-rex": {
+            "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x16rv2",
-                "pass": "c=FOXD",
-                "template": "%WAL%"
-            },
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16rv2",
-                "pass": "c=FOXD",
-                "template": "%WAL%"
+                 "template": "%WAL%"
             }
         }
     },
@@ -196,9 +181,15 @@
         "coin": "KYAN",
         "servers": [
             {
-                "geo": "FIN - Starting Diff 1",
+                "geo": "DE - Starting Diff 1",
                 "urls": [
-                    "pool.letshash.it:3534"
+                    "eu.letshash.it:3534"
+                ]
+            },
+            {
+                "geo": "Singapore - Starting Diff 1",
+                "urls": [
+                    "asia.letshash.it:3534"
                 ]
             }
         ],
@@ -207,7 +198,7 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "x11k",
                 "pass": "c=KYAN",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -215,9 +206,15 @@
         "coin": "LUX",
         "servers": [
             {
-                "geo": "FIN - CPU and GPU Diff 0.0001",
+                "geo": "DE - CPU and GPU Diff 0.0001",
                 "urls": [
-                    "pool.letshash.it:9009"
+                    "eu.letshash.it:9009"
+                ]
+            },
+            {
+                "geo": "Singapore - Starting Diff 0.0001",
+                "urls": [
+                    "asia.letshash.it:9009"
                 ]
             }
         ],
@@ -225,50 +222,60 @@
             "srbminer": {
                 "url": "stratum+tcp://%URL%",
                 "pass": "c=LUX",
-                "template": "%WAL%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "algo": "rx2"
             }
         }
     },
     {
-        "coin": "OBTC",
+        "coin": "LTFN",
         "servers": [
             {
-                "geo": "FIN - Starting Diff 0.01",
+                "geo": "DE - Starting Diff 1",
                 "urls": [
-                    "pool.letshash.it:3390"
+                    "eu.letshash.it:6236"
+                ]
+            },
+            {
+                "geo": "Singapore - Starting Diff 1",
+                "urls": [
+                    "asia.letshash.it:6236"
                 ]
             }
         ],
         "miners": {
-            "srbminer": {
-                "url": "stratum+tcp://%URL%",
-                "pass": "c=OBTC",
+            "cpuminer-opt": {
+                "url": "%URL%",
+                "algo": "yespowerr16",
+                "pass": "c=LTFN",
                 "template": "%WAL%.%WORKER_NAME%",
-                "algo": "heavyhash"
+                "fork": "rplant"
            }
         }
     },
     {
-        "coin": "BCC",
+        "coin": "MGPC",
         "servers": [
             {
-                "geo": "FIN - Starting Diff 128",
+                "geo": "DE - Starting Diff 0.5",
                 "urls": [
-                    "pool.letshash.it:3633"
-                ]
+                    "eu.letshash.it:6234"
+                 ]
+            },
+            {
+                "geo": "Singapore - Starting Diff 0.5",
+                "urls": [
+                    "asia.letshash.it:6234"
+                 ]
             }
         ],
         "miners": {
-            "asicminer": {
+            "cpuminer-opt": {
                 "url": "%URL%",
-                 "template": "%WAL%"
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "scrypt",
-                "ccpass": "c=BCC",
-                "ccuser": "%WAL%.%WORKER_NAME%"
+                "algo": "yespower",
+                "pass": "c=MGPC",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
             }
         }
     },
@@ -276,9 +283,15 @@
         "coin": "RLC",
         "servers": [
             {
-                "geo": "FIN - GPU Starting Diff 0.01",
+                "geo": "DE - GPU Starting Diff 0.01",
                 "urls": [
-                    "pool.letshash.it:4033"
+                    "eu.letshash.it:4033"
+                ]
+            },
+            {
+                "geo": "Singapore - GPU Starting Diff 0.01",
+                "urls": [
+                    "asia.letshash.it:4033"
                 ]
             }
         ],
@@ -287,30 +300,7 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "sha256csm",
                 "pass": "c=RLC",
-                "template": "%WAL%"
-            }
-        }
-    },
-    {
-        "coin": "EHS",
-        "servers": [
-            {
-                "geo": "FIN - ASIC Starting Diff 32",
-                "urls": [
-                    "pool.letshash.it:14433"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "%URL%",
-                 "template": "%WAL%"
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "scrypt",
-                "ccpass": "c=EHS",
-                "ccuser": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -318,21 +308,15 @@
         "coin": "XLA",
         "servers": [
             {
-                "geo": "FIN - Low-End CPU",
+                "geo": "DE - Low-End CPU",
                 "urls": [
-                    "pool.letshash.it:1559"
+                    "eu.letshash.it:1559"
                 ]
             },
             {
-                "geo": "FIN - High-End CPU",
+                "geo": "Singapore - Low-End CPU",
                 "urls": [
-                    "pool.letshash.it:1560"
-                ]
-            },
-            {
-                "geo": "FIN - CPU Rigs/Rentals",
-                "urls": [
-                    "pool.letshash.it:1561"
+                    "asia.letshash.it:1559"
                 ]
             }
         ],
@@ -356,9 +340,15 @@
         "coin": "SUGAR",
         "servers": [
             {
-                "geo": "FIN - CPUs Starting Diff 1",
+                "geo": "DE - CPU Starting Diff 1",
                 "urls": [
-                    "pool.letshash.it:6238"
+                    "eu.letshash.it:6238"
+                ]
+            },
+            {
+                "geo": "Singapore - CPU Starting Diff 1",
+                "urls": [
+                    "asia.letshash.it:6238"
                 ]
             }
         ],
@@ -373,7 +363,7 @@
             "srbminer": {
                 "url": "stratum+tcp://%URL%",
                 "pass": "c=SUGAR",
-                "template": "%WAL%",
+                "template": "%WAL%.%WORKER_NAME%",
                 "algo": "yespowersugar"
             }
         }
@@ -382,21 +372,15 @@
         "coin": "UPX",
         "servers": [
             {
-                "geo": "FIN - Low-End GPU/CPU",
+                "geo": "DE - Low-End GPU/CPU",
                 "urls": [
-                    "pool.letshash.it:1809"
+                    "eu.letshash.it:1809"
                 ]
             },
             {
-                "geo": "FIN - High-End GPU/CPU",
+                "geo": "Singapore - Low-End GPU/CPU",
                 "urls": [
-                    "pool.letshash.it:1810"
-                ]
-            },
-            {
-                "geo": "FIN - Rig Rentals/NH",
-                "urls": [
-                    "pool.letshash.it:1811"
+                    "asia.letshash.it:1809"
                 ]
             }
         ],
@@ -440,9 +424,15 @@
         "coin": "PA",
         "servers": [
             {
-                "geo": "FIN - GPU Starting Diff 0.01",
+                "geo": "DE - GPU Starting Diff 0.01",
                 "urls": [
-                    "pool.letshash.it:4833"
+                    "eu.letshash.it:4833"
+                ]
+            },
+            {
+                "geo": "Singapore - GPU Starting Diff 0.01",
+                "urls": [
+                    "asia.letshash.it:4833"
                 ]
             }
         ],
@@ -459,21 +449,15 @@
         "coin": "WSBC",
         "servers": [
             {
-                "geo": "FIN - Low-End CPU/GPU",
+                "geo": "DE - Low-End CPU/GPU",
                 "urls": [
                     "pool.letshash.it:1815"
                 ]
             },
             {
-                "geo": "FIN - High-End CPU/GPU",
+                "geo": "Singapore - Low-End CPU/GPU",
                 "urls": [
-                    "pool.letshash.it:1816"
-                ]
-            },
-            {
-                "geo": "FIN - Rig Rentals/NH",
-                "urls": [
-                    "pool.letshash.it:1817"
+                    "eu.letshash.it:1815"
                 ]
             }
         ],
@@ -513,9 +497,15 @@
         "coin": "TIDE",
         "servers": [
             {
-                "geo": "FIN - CPU Starting Diff 0.2",
+                "geo": "DE - CPU Starting Diff 0.2",
                 "urls": [
-                    "pool.letshash.it:9950"
+                    "eu.letshash.it:9950"
+                ]
+            },
+            {
+                "geo": "Singapore - CPU Starting Diff 0.2",
+                "urls": [
+                    "asia.letshash.it:9950"
                 ]
             }
         ],
@@ -526,85 +516,6 @@
                 "pass": "c=TIDE",
                 "template": "%WAL%.%WORKER_NAME%",
                 "fork": "rplant"
-            }
-        }
-    },
-    {
-        "coin": "XFG",
-        "servers": [
-            {
-                "geo": "FIN - Low-End CPU/GPU",
-                "urls": [
-                    "pool.letshash.it:1546"
-                ]
-            },
-            {
-                "geo": "FIN - High-End CPU/GPU",
-                "urls": [
-                    "pool.letshash.it:1547"
-                ]
-            },
-            {
-                "geo": "FIN - Rig Rentals",
-                "urls": [
-                    "pool.letshash.it:1548"
-                ]
-            }
-        ],
-        "miners": {
-            "xmr-stak": {
-                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
-                "nvidia": "\"gpu_threads_conf\" : [],",
-                "url": "%URL%",
-                "fork": "fireice-uk",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\":\"cryptonight_v8\""
-            }
-        }
-    },
-    {
-        "coin": "XOL",
-        "servers": [
-            {
-                "geo": "FIN - Low-End CPU",
-                "urls": [
-                    "pool.letshash.it:1565"
-                ]
-            },
-            {
-                "geo": "FIN - High-End CPU",
-                "urls": [
-                    "pool.letshash.it:1566"
-                ]
-            },
-            {
-                "geo": "Rig Rentals/NH",
-                "urls": [
-                    "pool.letshash.it:1567"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "fork": "xmrig",
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "randomx"
-            },
-            "xmr-stak": {
-                "fork": "uplexa",
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "fork" : "randomx"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "randomx"
             }
         }
     }
