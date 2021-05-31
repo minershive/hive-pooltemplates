@@ -1,3 +1,8 @@
+##### 0.6-203@210531 2021-05-31
+*   SRBMiner-Multi v0.7.6 (fixed auto-tune option for 'autolykos2' algorithm that broke in previous version; fixed hashrate regression on 'autolykos2' algorithm for Baffin, Hawaii, Tonga, Fiji cards; small improvements on 'ethash' and 'etchash' algorithms; minor bug fixes)
+*   XMRig v6.12.2 (improved MSR compatibility with recent Linux kernels; GPU backends are now disabled in benchmark mode; fixed CL code for KawPow where it assumes everything is AMD; RandomX optimizations: enabled IMUL_RCP optimization for light mode mining; added BMI2 version for scratchpad prefetch; rewrote dataset read code)
+*   Fixed stats issues with invalid/rejected shares displaying for T-Rex, GMiner
+
 ##### 0.6-203@210526 2021-05-26
 *   T-Rex v0.20.4 (added `lock-cclock` parameter to lock GPU core clock speed; reduced miner startup time; bug fixes: "T-Rex has a problem with GPU, terminating..." error when system time changes as a result of time synchronization, ethproxy mode is broken, GPUs keep consuming significant amount of power even after being disabled due to the temperature exceeding `temperature-limit`, miner fails to start with mt parameter specified if video drivers are older than 410.xx)
 
