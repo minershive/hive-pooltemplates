@@ -90,6 +90,15 @@
 *   XMRig v6.11.1 (optimized cn-heavy algorithm; fixed mining job creation sequence)
 *   Fixed installation for sgminer-fancyix v0.7.2.1-0.7.4 packages
 
+##### LINUX IMAGE RELEASE 0.6-203 2021-04-03
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-202@210403
+*   Ubuntu v18.04 LTS based
+*   Linux kernel: v5.4.0-hiveos #108
+*   Nvidia driver: v460.67
+*   AMD driver: v5.9.0325 (supporting the latest "Big Navi" GPUs including RX 6700XT/ 6800/ 6800XT/ 6900XT)
+*   AMD OpenCL v20.40
+
 ##### 0.6-203@210403 2021-04-03
 *   Hotfixes for v0.6-202 (fixed lack of video output to monitor on Nvidia GPUs; fixed CPU temp display for Zen3 arch/Ryzen 5000 series CPUs; other minor fixes)
 *   GMiner v2.50 Beta (improved beamhash performance up to 2%; improved cuckatoo32 performance up to 5%; added display of GPU model in statistics table; added `--worker` parameter to specify worker name for ETH pools thats doesn't support wallet.worker notation; added option `--log_date` to display date in log; added option `--log_stratum` to log stratum; display epoch and block number on new job; uses `--proto stratum` for NiceHash by default; bug fixes and stability improvements;  *Notes: added for testing purposes - need select version manually in miner settings*)
@@ -98,15 +107,6 @@
 ##### 0.6-202@210401 2021-04-01
 *   NanoMiner v3.3.3 (faster dataset creation for Ergo coin/autolykos2 algo; added zombie mode for Ergo on 2 Gb GPUs both Nvidia and AMD; fixed issues with shardpool on Zilliqa)
    
-##### LINUX IMAGE RELEASE 0.6-202 2021-04-01
-*   Universal boot mode: BIOS | UEFI
-*   Hive Linux client: v0.6-202@210331
-*   Ubuntu v18.04 LTS based
-*   Linux kernel: v5.4.0-hiveos #108
-*   Nvidia driver: v460.67
-*   AMD driver: v5.9.0325 (supporting the latest "Big Navi" GPUs including RX 6700XT/ 6800/ 6800XT/ 6900XT)
-*   AMD OpenCL v20.40
-
 ##### 0.6-202@210331 2021-03-31
 *   Improved `agent` (introduced new command `tweakers` for testers; fixed VRAM size in VBIOS filenames)
 *   Improved support for 3rd-party hardware (added support for new Octofan controller)
@@ -1396,6 +1396,13 @@ NanoMiner v1.7.1 (added Ethash support for AMD Navi 12 and Navi 14 GPUs includin
 *   Fixed CPU threads output: CKB-miner, FinMiner/NanoMiner
 *   NoncerPro Kadena Miner: fixed config generation if user extra config not empty
 
+
+##### LINUX IMAGE RELEASE 0.6-97 2019-11-28
+*   Hive Linux client image: 0.6-97@191128 (new stable branch based on Ubuntu 18.04)
+*   Universal boot mode: BIOS | UEFI
+*   Linux kernel: 5.0.21
+*   Drivers version: AMD v19.20, Nvidia: v440.31
+
 ##### 0.6-97@191128 2019-11-28
 *   Improved support for some third-party hardware
 *   NEW NoncerPro Kadena v1.3.1 (OpenCL / CUDA GPU miner for KDA/Kadena, will be added to interface later today)
@@ -1406,12 +1413,6 @@ NanoMiner v1.7.1 (added Ethash support for AMD Navi 12 and Navi 14 GPUs includin
 
 ##### 0.6-96@191126 2019-11-26
 *   Gminer v1.80 Beta (added support mining CTXC/Cortex coin: requires 8G+ cards, devfee 5%, choose version in miner settings)
-
-##### LINUX IMAGE RELEASE 0.6-96 2019-11-25
-*   Hive Linux client image: 0.6-96@191125 (new stable branch based on Ubuntu 18.04)
-*   Universal boot mode: BIOS | UEFI
-*   Linux kernel: 5.0.21
-*   Drivers version: AMD v19.20, Nvidia: v440.31
 
 ##### 0.6-96@191125 2019-11-25
 *   Improved `selfupgrade` command and miners installation procedure
@@ -3052,7 +3053,7 @@ maybe you will need to add "-allpools 1" to user config in Flightsheet if you us
 ##### 0.5-32 2018-02-28
 
 *   nForce IGPU fix
-*   Calymore Dual 11.1
+*   Claymore Dual 11.1
 
 ##### 0.5-31 2018-02-26
 
