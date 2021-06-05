@@ -1,6 +1,6 @@
 ##### 0.6-203@210604 2021-06-04
 *   NBMiner v37.6 (fixed option `--enable-dag-cache` which caused crash on AMD GPUs when switch DAG file; fixed `ergo` support on AMD Vega GPUs)
-*   Gminer v2.55 (added option `--lock_cclock` for lock core clock feature for Nvidia GPUs; miner now resolve domain names even with broken system DNS settings; added support SOCKS5 proxy with option `--proxy host:port`)
+*   Gminer v2.55 (added option `--lock_cclock` for lock core clock feature for Nvidia GPUs; miner now resolve domain names even with broken system DNS settings; added support SOCKS5 proxy with option `--proxy host:port`; Notice: miner not work old Ubuntu 16.04 based images)
   
 ##### 0.6-203@210531 2021-05-31
 *   SRBMiner-Multi v0.7.6 (fixed auto-tune option for 'autolykos2' algorithm that broke in previous version; fixed hashrate regression on 'autolykos2' algorithm for Baffin, Hawaii, Tonga, Fiji cards; small improvements on 'ethash' and 'etchash' algorithms; minor bug fixes)
