@@ -1,5 +1,5 @@
 ##### 0.6-203@210604 2021-06-04
-*   NBMiner v37.6 (fixed option `--enable-dag-cache` which causec crash on AMD GPUs when switch DAG file; fixed `ergo` support on AMD Vega GPUs)
+*   NBMiner v37.6 (fixed option `--enable-dag-cache` which caused crash on AMD GPUs when switch DAG file; fixed `ergo` support on AMD Vega GPUs)
 *   Gminer v2.55 (added option `--lock_cclock` for lock core clock feature for Nvidia GPUs; miner now resolve domain names even with broken system DNS settings; added support SOCKS5 proxy with option `--proxy host:port`)
   
 ##### 0.6-203@210531 2021-05-31
