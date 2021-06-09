@@ -1,6 +1,6 @@
 ##### 0.6-204@210608 2021-06-08
 *   Improved Nvidia OC (improved memory clock setting; added checks for `nvidia-settings` errors)
-*   Added amdgpu kernel driver display
+*   Added amdgpu version kernel driver display
 *   Updated some system tools (amdmeminfo, amdmemtweak, hugepages)
 *   Updated PCI IDs database to 2021.05.31
 *   Improved support for 3rd party hardware (Octofan: updated CLI version, added support GPUs with memory temp reporting; Ykeda-autofan: add support of Ykeda Fan Controller used in Donnager cases)
