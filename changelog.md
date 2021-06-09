@@ -1,3 +1,18 @@
+##### 0.6-204@210608 2021-06-08
+*   Improved Nvidia OC (improved memory clock setting; added checks for `nvidia-settings` errors)
+*   Improved support for 3rd party hardware (Octofan: updated CLI version, added support GPUs with memory temp reporting; Ykeda-autofan: add support of Ykeda Fan Controller used in Donnager cases)
+*   Added amdgpu kernel driver display
+*   Updated some system tools (amdmeminfo, amdmemtweak, hugepages)
+*   Updated PCI IDs database to 2021.05.31
+*   Fixed reporting zero temperature for old Intel CPUs
+*   Fixed startup sequence in some cases leads to the inability to start X server
+*   Fixed errors caused by wrong exit codes after commands execution
+*   Fixed `hive-replace` tool (farm hash was ignored if rig.conf was present)
+*   Fixed time bug in `agent` (most happens if user switch between Hive and Windows; `agent` now not rely on system clock)
+*   Fixed math errors if user changed Linux locale settings 
+*   Fixed `nvidia-info` tool (show measured fan speed)
+*   CPUminer-Opt-GR v1.1.6 (tuning available on all instruction sets and now also improves performance in AVX and non-AES versions of the miner and enabled by default; other fixes & improvements)
+
 ##### 0.6-203@210604 2021-06-04
 *   NBMiner v37.6 (fixed option `--enable-dag-cache` which caused crash on AMD GPUs when switch DAG file; fixed `ergo` support on AMD Vega GPUs)
 *   Gminer v2.55 (added option `--lock_cclock` for lock core clock feature for Nvidia GPUs; miner now resolve domain names even with broken system DNS settings; added support SOCKS5 proxy with option `--proxy host:port`; *Notice: miner not work on old Ubuntu 16.04 based images - use the previous version of the miner or update the image*)
