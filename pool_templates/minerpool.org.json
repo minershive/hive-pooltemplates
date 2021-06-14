@@ -1,0 +1,99 @@
+[{
+        "pool": {
+            "name": "Minerpool",
+            "url": "https://minerpool.org",
+            "fee": 1,
+            "type": "PPTS / PPLNT"
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [{
+                "geo": "EU Vardiff",
+                "urls": [
+                    "eu.minerpool.org:16059"
+                ]
+            },
+            {
+                "geo": "US-NA Vardiff",
+                "urls": [
+                    "na.minerpool.org:16059"
+                ]
+            },
+            {
+                "geo": "ASIA Vardiff",
+                "urls": [
+                    "asia.minerpool.org:16059"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "FLUX",
+        "servers": [{
+                "geo": "EU Low diff",
+                "urls": [
+                    "eu.minerpool.org:2032"
+                ]
+            },
+            {
+                "geo": "EU Vardiff",
+                "urls": [
+                    "eu.minerpool.org:2033"
+                ]
+            },
+            {
+                "geo": "US-NA Low diff",
+                "urls": [
+                    "na.minerpool.org:2032"
+                ]
+            },
+            {
+                "geo": "US-NA Vardiff",
+                "urls": [
+                    "na.minerpool.org:2033"
+                ]
+            },
+            {
+                "geo": "ASIA Low diff",
+                "urls": [
+                    "asia.minerpool.org:2032"
+                ]
+            },
+            {
+
+                "geo": "ASIA Vardiff",
+                "urls": [
+                    "asia.minerpool.org:2033"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "125_4",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers auto"
+            },
+            "lolminer": {
+                "algo": "ZEL",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "125,4",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers auto"
+            }
+        }
+    }
+]
