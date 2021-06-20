@@ -1,5 +1,13 @@
 [
     {
+        "pool": {
+            "name": "Hashcity",
+            "url": "https://hashcity.org",
+            "fee": 1,
+            "type": "FPPS"
+        }
+    },
+    {
         "coin": "ETH",
         "servers": [
             {
@@ -10,8 +18,13 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_ethash_4g"
-        }
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+		}
     },
     {
         "coin": "ETC",
@@ -24,8 +37,13 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_ethash_4g"
-        }
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+		}
     },
     {
         "coin": "CLO",
@@ -34,23 +52,6 @@
                 "geo": "EU",
                 "urls": [
                     "clo.hashcity.org:6666"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash",
-            "claymore": {
-                "claymore_user_config": "-allcoins -1\n-allpools 1"
-            }
-        }
-    },
-    {
-        "coin": "MOAC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "moac.hashcity.org:5555"
                 ]
             }
         ],
@@ -76,20 +77,6 @@
             "claymore": {
                 "claymore_user_config": "-allcoins -1\n-allpools 1"
             }
-        }
-    },
-    {
-        "coin": "LTHN",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "lthn.hashcity.org:4545"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_cryptonight_r"
         }
     },
     {
@@ -278,6 +265,39 @@
         ],
         "miners": {
             "_prototype": "miners_randomx"
+        }
+    },
+	{
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "rvn.hashcity.org:8080"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+		}
+    },
+	{
+        "coin": "EXP",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "exp.hashcity.org:9999"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash"
         }
     }
 ]
