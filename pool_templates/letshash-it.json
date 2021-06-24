@@ -33,53 +33,58 @@
         }
     },
     {
-        "coin": "CRIBS",
+        "coin": "ESP",
         "servers": [
             {
-                "geo": "DE - Starting Diff 1",
+                "geo": "DE - Starting Diff 250",
                 "urls": [
-                    "eu.letshash.it:8924"
+                    "eu.letshash.it:7933"
                ]
             },
             {
-                "geo": "Singapore - Starting Diff 1",
+                "geo": "Singapore - Starting Diff 250",
                 "urls": [
-                    "asia.letshash.it:8924"
+                    "asia.letshash.it:7933"
                 ]
             }
         ],
         "miners": {
-            "cryptodredge": {
+            "wildrig-multi": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "argon2d4096",
-                "pass": "c=CRIBS",
+                "algo": "hmq1725",
+                "pass": "c=ESP",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
     {
-        "coin": "CPU",
+        "coin": "XDN",
         "servers": [
             {
-                "geo": "FIN - Starting Diff 1",
+                "geo": "DE - GPU Starting Diff 256",
                 "urls": [
-                    "eu.letshash.it:4450"
+                    "eu.letshash.it:5787"
                 ]
             },
             {
-                "geo": "Singapore - Starting Diff 1",
+                "geo": "Singapore - GPU Starting Diff 256",
                 "urls": [
-                    "asia.letshash.it:4450"
+                    "asia.letshash.it:5787"
                 ]
             }
         ],
         "miners":{
-            "cpuminer-opt": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "bmw512",
+                "ccpass": "c=XDN",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "cpupower",
-                "pass": "c=CPU",
-                "template": "%WAL%.%WORKER_NAME%",
-                "fork": "rkz"
+                "algo": "bmw512",
+                "pass": "c=XDN",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -254,28 +259,33 @@
         }
     },
     {
-        "coin": "MGPC",
+        "coin": "TTN",
         "servers": [
             {
-                "geo": "DE - Starting Diff 0.5",
+                "geo": "DE - Starting Diff 1",
                 "urls": [
-                    "eu.letshash.it:6234"
+                    "eu.letshash.it:5897"
                  ]
             },
             {
-                "geo": "Singapore - Starting Diff 0.5",
+                "geo": "Singapore - Starting Diff 1",
                 "urls": [
-                    "asia.letshash.it:6234"
+                    "asia.letshash.it:5897"
                  ]
             }
         ],
         "miners": {
-            "cpuminer-opt": {
-                "url": "%URL%",
-                "algo": "yespower",
-                "pass": "c=MGPC",
-                "template": "%WAL%.%WORKER_NAME%",
-                "fork": "rplant"
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x21s",
+                "pass": "c=TTN",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "x21s",
+				"pass": "c=TTN",
+				"template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -337,34 +347,28 @@
         }
     },
     {
-        "coin": "SUGAR",
+        "coin": "YADA",
         "servers": [
             {
-                "geo": "DE - CPU Starting Diff 1",
+                "geo": "DE - CPU",
                 "urls": [
-                    "eu.letshash.it:6238"
+                    "eu.letshash.it:6666"
                 ]
             },
             {
-                "geo": "Singapore - CPU Starting Diff 1",
+                "geo": "Singapore - CPU",
                 "urls": [
-                    "asia.letshash.it:6238"
+                    "asia.letshash.it:6666"
                 ]
             }
         ],
         "miners": {
-            "cpuminer-opt": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "yespowersugar",
-                "pass": "c=SUGAR",
+            "xmrig": {
+                "fork": "xmrigcc",
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "fork": "rkz"
-            },
-            "srbminer": {
-                "url": "stratum+tcp://%URL%",
-                "pass": "c=SUGAR",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "yespowersugar"
+                "algo": "rx/yada"
             }
         }
     },
@@ -451,13 +455,13 @@
             {
                 "geo": "DE - Low-End CPU/GPU",
                 "urls": [
-                    "pool.letshash.it:1815"
+                    "eu.letshash.it:1815"
                 ]
             },
             {
                 "geo": "Singapore - Low-End CPU/GPU",
                 "urls": [
-                    "eu.letshash.it:1815"
+                    "asia.letshash.it:1815"
                 ]
             }
         ],
@@ -494,28 +498,33 @@
         }
     },
     {
-        "coin": "TIDE",
+        "coin": "ZANO",
         "servers": [
             {
-                "geo": "DE - CPU Starting Diff 0.2",
+                "geo": "DE - Single GPU - Diff 50 000 000",
                 "urls": [
-                    "eu.letshash.it:9950"
+                    "eu.letshash.it:6555"
                 ]
             },
             {
-                "geo": "Singapore - CPU Starting Diff 0.2",
+                "geo": "Singapore - Single GPU - Diff 50 000 000",
                 "urls": [
-                    "asia.letshash.it:9950"
+                    "asia.letshash.it:6555"
                 ]
             }
         ],
         "miners": {
-            "cpuminer-opt": {
-                "url": "%URL%",
-                "algo": "yespowertide",
-                "pass": "c=TIDE",
-                "template": "%WAL%.%WORKER_NAME%",
-                "fork": "rplant"
+			"t-rex": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "progpowz",
+				"pass": "x",
+				"template": "%WAL%"
+			},
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "progpowz",
+				"pass": "x",
+				"template": "%WAL%",
             }
         }
     }
