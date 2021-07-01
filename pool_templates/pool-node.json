@@ -8,6 +8,19 @@
                "eth-solo.pool-node.com:5000"
             ]
          },
+          {
+            "geo":"SOLO DIFF 5G",
+            "urls":[
+               "eth-solo.pool-node.com:5005"
+            ]
+         },
+          {
+            "geo":"SOLO DIFF 10G",
+            "urls":[
+               "eth-solo.pool-node.com:5006"
+            ]
+         },
+            
          {
             "geo":"SOLO DIFF 17.45G",
             "urls":[
@@ -89,6 +102,15 @@
             "pass": "x",
             "template": "%WAL%.%WORKER_NAME%"
          },
+         
+          "lolminer": {
+            "algo": "ethash",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+          },
+            
          "t-rex":{
             "url":"%URL%",
             "algo":"ethash",
@@ -113,7 +135,7 @@
             ]
          },
          {
-            "geo":"SOLO EU DIFF 69.81G",
+            "geo":"SOLO DIFF 69.81G",
             "urls":[
                "etc-solo.pool-node.com:7002"
             ]
@@ -129,9 +151,7 @@
          "phoenixminer":{
             "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
          },
-        "phoenixminer": {
-            "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-        },
+    
         "gminer": {
             "algo":"etchash",
             "pass":"x",
@@ -153,6 +173,15 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
+            
+            "lolminer": {
+                "algo": "etchash",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+          },
+            
          "t-rex":{
             "url":"%URL%",
             "algo":"etchash",
