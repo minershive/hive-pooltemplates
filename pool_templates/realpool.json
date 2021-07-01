@@ -11,11 +11,30 @@
         "coin": "ETH",
         "servers": [
 			{
-                "geo": "BR",
+                "geo": "BR 3072",
                 "urls": [
-                    "eth.realpool.com.br:3072",
-                    "eth.realpool.com.br:3073",
+                    "eth.realpool.com.br:3072"
+                ],
+		"ssl_urls": [
+                    "eth.realpool.com.br:3082"
+                ]
+            },
+			{
+                "geo": "BR 3073",
+                "urls": [
+                    "eth.realpool.com.br:3073"
+                ],
+		"ssl_urls": [
+                    "eth.realpool.com.br:3083"
+                ]
+            },	
+			{
+                "geo": "BR 3074",
+                "urls": [
                     "eth.realpool.com.br:3074"
+                ],
+		"ssl_urls": [
+                    "eth.realpool.com.br:3084"
                 ]
             }
         ],
@@ -89,10 +108,10 @@
 				"user_config": "--ethstratum=ETHV1"
             },
 	    "t-rex":{
-                "algo":"ethash",
-                "template":"%WAL%.%WORKER_NAME%",
-                "server":"stratum2+tcp://%URL%",
-                "pass":"x"
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "stratum2+tcp://%URL%",
+                "pass": "x"
             }
         }
     }
