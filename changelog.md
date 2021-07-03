@@ -8,8 +8,8 @@
 *   NSFMiner v1.3.14 (added to log difficulty of solutions)
 *   XMRig v6.13.0 (added support for solo mining with miner signatures for the upcoming Wownero fork)
 *   CPUminer-Opt-JayDDee v3.16.5 (fixed GBT incorrect target diff in stats)
-*   CPUminer-Opt-GR v1.1.7 (added additional tuning for AVX2+ instruction sets; detected multiple NUMA nodes on the system and allocate Large Pages to individual nodes; fixed stratum reconnection problems if users were not able to reconnect within the 60-120s; fixed problems with displayed share ping. It could be wrong if some stale shares were skipped; properly detect problems with Large Pages set up)
-*   CPUminer-Opt-rplant v5.0.22 (add `yespowerarwn` algo)
+*   CPUminer-Opt-GR v1.1.7 (added additional tuning for AVX2+ instruction sets; detected multiple NUMA nodes on the system and allocate Large Pages to individual nodes; fixed stratum reconnection problems if users were not able to reconnect within the 60-120s; fixed problems with displayed share ping; properly detect problems with Large Pages set up)
+*   CPUminer-Opt-rplant v5.0.22 (added `yespowerarwn` algo)
 *   XMRigCC v2.94 (improved hashrate on RX based algorithms: synced improvements with v6.12.2; fixed invalid shared on panthera algo)
 
 ##### 0.6-204@210608 2021-06-08
