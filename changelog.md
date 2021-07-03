@@ -1,4 +1,4 @@
-##### 0.6-204@210702 2021-07-02
+##### 0.6-204@210703 2021-07-03
 *   lolMiner v1.30 (added Autolykos V2 mining ERGO; improved performance and reduced power draw of RTX 3060 semi-unlocker; significantly reduced RAM usage for Nvidia cards on ethash; significantly improved DAG repair process on all Nvidia GPUs; fixed a bug with 3060 semi-unlocker not unlocking after DAG rebuild; fixed a bug in Ethash stratum when mining with Nicehash protocol on some pools not sticking 100% close to protocol; some minor fixes)
 *   GMiner v2.59 (display pool hashrate for all supported algorithms; added CPU share check for all supported algorithms; removed algorithms: BitTube, Swap)
 *   SRBMiner-Multi v0.7.7 (added algorithm `lyra2v2_webchain`: MINTME - MintMe.com coin for CPU/GPU mining, fee 2%; added algorithm `ghostrider`: RTM - Raptoreum for CPU mining, fee 0.85%; added algorithm `cryptonight_turtle` for CPU/GPU mining, fee 0.85%; added algorithm `randomyada`: YDA - Yada coin for CPU mining, fee 0.85%; added algorithm `yespowerarwn`: ARWN - Arowana coin for CPU mining, fee 0.85%; better auto setup for 'yespower' algorithms; removed devfee for 'cryptonight_cache' algorithm; DevFee for 'heavyhash' algorithm lowered to 1%)
@@ -6,7 +6,7 @@
 *   nanominer v3.3.6 (added option `maxRejectedShares`: set the maximum amount of rejected shares before restarting miner process/rebooting the rig)
 *   miniZ v1.8y2 (improvements for Flux, on RTX 30XX; fixed invalid shares on Flux, and ETH; fixed kernel for 1650 Ti, RTX 3060, and Quadro T1000 on Beam; added algo and pers details to Telemetry; improved stale shares; fixed some issues)
 *   NSFMiner v1.3.14 (added to log difficulty of solutions)
-*   XMRig v6.13.0 (added support for solo mining with miner signatures for the upcoming Wownero fork)
+*   XMRig v6.13.1 (added support for solo mining with miner signatures for the upcoming Wownero fork)
 *   CPUminer-Opt-JayDDee v3.16.5 (fixed GBT incorrect target diff in stats)
 *   CPUminer-Opt-GR v1.1.7 (added additional tuning for AVX2+ instruction sets; detected multiple NUMA nodes on the system and allocate Large Pages to individual nodes; fixed stratum reconnection problems if users were not able to reconnect within the 60-120s; fixed problems with displayed share ping; properly detect problems with Large Pages set up)
 *   CPUminer-Opt-rplant v5.0.22 (added `yespowerarwn` algo)
