@@ -1,3 +1,7 @@
+##### 0.6-204@210704 2021-07-04
+*   T-Rex v0.21.0 (added `autolykos2` algorithm for ERGO mining, dev fee 2%; fixed reporting of total power consumption when some GPUs not report it)
+*   lolMiner: fixed config generation for autolykos2 algo
+
 ##### 0.6-204@210703 2021-07-03
 *   lolMiner v1.30 (added Autolykos V2 mining ERGO; improved performance and reduced power draw of RTX 3060 semi-unlocker; significantly reduced RAM usage for Nvidia cards on ethash; significantly improved DAG repair process on all Nvidia GPUs; fixed a bug with 3060 semi-unlocker not unlocking after DAG rebuild; fixed a bug in Ethash stratum when mining with Nicehash protocol on some pools not sticking 100% close to protocol; some minor fixes)
 *   GMiner v2.59 (display pool hashrate for all supported algorithms; added CPU share check for all supported algorithms; removed algorithms: BitTube, Swap)
