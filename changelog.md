@@ -1,3 +1,10 @@
+##### 0.6-204@210710 2021-07-10
+*   NanoMiner v3.3.7 (improved network stability)
+*   lolMiner v1.31 (fixed a bug with Ethash Nicehash protocol reporting "conversion of data to type 'b' failed" on new jobs; slightly adjusted parameters for RTX 3060 (LHR V1) semi-unlock to be more resilient over different configurations)
+*   Gminer v2.60 (fixed support RX6700/6800/6900: miner failed to start with error "OpenCL initialization failed")
+*   T-Rex v0.21.2 (fixed high CPU usage on some configurations; fixed low pool side hashrate caused by invalid shares and unnecessary dataset creations)
+*   lolMiner: fixed stats issues (fixed units on some algos; fixed displaying Autolykos2 algo on dashboard)
+
 ##### 0.6-204@210704 2021-07-04
 *   T-Rex v0.21.0 (added `autolykos2` algorithm for ERGO mining, dev fee 2%; fixed reporting of total power consumption when some GPUs not report it)
 *   lolMiner: fixed config generation for autolykos2 algo
