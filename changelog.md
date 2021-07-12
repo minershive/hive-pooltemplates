@@ -1,3 +1,6 @@
+##### 0.6-204@210711 2021-07-11
+*   CPUminer-Opt-GR v1.1.8 (added `force-tune` option which forces tuning regardless if the tune_config file is present; increased the performance of 2 Cryptonight variants and some general Cryptonight changes in GR algo 5-9%: re-tuning of the miner is recommended; tuning process now provide better info; fixed rare cases of Low Difficulty share stream after lost connection; check for the `max-temp` with every submitted share and ~20s: previously was ~60s and with new block/job; now properly calculate real current, min/max/avg hashrate: hashes done by the miner)
+   
 ##### 0.6-204@210710 2021-07-10
 *   NanoMiner v3.3.7 (improved network stability)
 *   lolMiner v1.31 (fixed a bug with Ethash Nicehash protocol reporting "conversion of data to type 'b' failed" on new jobs; slightly adjusted parameters for RTX 3060 (LHR V1) semi-unlock to be more resilient over different configurations)
