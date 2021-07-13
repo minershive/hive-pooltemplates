@@ -1,0 +1,42 @@
+[
+  {
+    "pool": {
+      "name": "BBQDroid",
+      "url": "https://bbqdroid.org",
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "VTC",
+    "servers": [
+      {
+        "geo": "Canada (EAST)",
+        "urls": ["stratum+tcp://bbqdroid.org:10001"]
+      },
+      {
+        "geo": "Canada (EAST) - SOLO",
+        "urls": ["stratum+tcp://bbqdroid.org:20001"]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "verthash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "verthashminer": {
+        "url": "%URL%",
+        "algo": "verthash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "teamredminer": {
+        "url": "%URL%",
+        "algo": "verthash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]
