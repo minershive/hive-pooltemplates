@@ -1,5 +1,5 @@
 ##### 0.6-204@210712 2021-07-12
-*   T-Rex v0.21.2 (fixed high CPU usage on some configurations; fixed low pool side hashrate caused by invalid shares and unnecessary dataset creations)
+*   T-Rex v0.21.3 (fixed low pool side hashrate when mining ERGO at Nanopool)
 *   Gminer: removed tracking for option `--pec` in config generator
  
 ##### 0.6-204@210711 2021-07-11
