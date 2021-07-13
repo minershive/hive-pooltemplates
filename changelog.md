@@ -1,3 +1,7 @@
+##### 0.6-204@210712 2021-07-12
+*   T-Rex v0.21.2 (fixed high CPU usage on some configurations; fixed low pool side hashrate caused by invalid shares and unnecessary dataset creations)
+*   Gminer: removed tracking for option `--pec` in config generator
+ 
 ##### 0.6-204@210711 2021-07-11
 *   CPUminer-Opt-GR v1.1.8 (added `force-tune` option which forces tuning regardless if the tune_config file is present; increased the performance of 2 Cryptonight variants and some general Cryptonight changes in GR algo 5-9%: re-tuning of the miner is recommended; tuning process now provide better info; fixed rare cases of Low Difficulty share stream after lost connection; check for the `max-temp` with every submitted share and ~20s: previously was ~60s and with new block/job; now properly calculate real current, min/max/avg hashrate: hashes done by the miner)
    
