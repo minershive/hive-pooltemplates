@@ -1882,105 +1882,6 @@
             }
         }
     },
-	{
-        "coin": "WOW",
-        "servers": [
-            {
-                "geo": "Germany",
-                "urls": [
-                    "wownero.herominers.com:10660"
-                ],
-                "ssl_urls": [
-                    "wownero.herominers.com:10660"
-                ]
-            },
-            {
-                "geo": "Finland",
-                "urls": [
-                    "fi.wownero.herominers.com:10660"
-                ],
-                "ssl_urls": [
-                    "fi.wownero.herominers.com:10660"
-                ]
-            },
-            {
-                "geo": "Canada (East)",
-                "urls": [
-                    "ca.wownero.herominers.com:10660"
-                ],
-                "ssl_urls": [
-                    "ca.wownero.herominers.com:10660"
-                ]
-            },
-            {
-                "geo": "USA (West)",
-                "urls": [
-                    "us.wownero.herominers.com:10660"
-                ],
-                "ssl_urls": [
-                    "us.wownero.herominers.com:10660"
-                ]
-            },
-            {
-                "geo": "HongKong",
-                "urls": [
-                    "hk.wownero.herominers.com:10660"
-                ],
-                "ssl_urls": [
-                    "hk.wownero.herominers.com:10660"
-                ]
-            },
-            {
-                "geo": "Singapore",
-                "urls": [
-                    "sg.wownero.herominers.com:10660"
-                ],
-                "ssl_urls": [
-                    "sg.wownero.herominers.com:10660"
-                ]
-            },
-            {
-                "geo": "Turkey",
-                "urls": [
-                    "tr.wownero.herominers.com:10660"
-                ],
-                "ssl_urls": [
-                    "tr.wownero.herominers.com:10660"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"rx/wow\""
-            },
-            "xmrig-new": {
-                "cpu": "1",
-                "url": "%URL%",
-                "algo": "rx/wow",
-                "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
-            },
-            "xmr-stak": {
-                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
-                "nvidia": "\"gpu_threads_conf\" : [],",
-                "url": "%URL%",
-                "fork": "randomx",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\":\"wownero\""
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "randomwow"
-            }
-        }
-    },
     {
         "coin": "XWP",
         "servers": [
@@ -2282,14 +2183,14 @@
             "srbminer": {
                 "url": "%URL%",
                 "algo": "autolykos2",
-                "pass": "%WORKER_NAME%",
+                "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "--disable-cpu"
             },
             "nanominer": {
                 "url": "%URL%",
 				"algo": "autolykos2",
-				"pass": "%WORKER_NAME%",
+				"pass": "x",
                 "template": "%WAL%",
                 "user_config":"coin = ERGO\nrigName = %WORKER_NAME%"
             },
@@ -2298,6 +2199,25 @@
                 "algo": "autolykos2",
                 "template":"%WAL%.%WORKER_NAME%",
                 "pass":"x"
+            },
+            "lolminer": {
+                "algo": "autolykos2",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer":{
+                "url":"%URL%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%",
+                "algo":"autolykos2"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "autolykos2",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
             }
         }
     },
