@@ -1,3 +1,16 @@
+##### 0.6-205@210715 2021-07-15
+*   reworked overclocking procedure for AMD Vega20/Navi/BigNavi GPUs (extends acceptable limits for clocks and voltages, reworked BigNavi OC - need AMD kernel module v5.9.0501 or later, added software unlock to support OC/UV for Radeon Pro W5x00 GPUs, fixed bugs)
+*   updated `nvtool` to v1.5.0 (added option `--forcestate` to support for P0 state forcing; web interface integration will be added soon)
+*   updated CUDA RT libs up to CUDA v11.3 (updated definitions for `nvidia-driver-update`; updated CUDA RT libs from CUDA Toolkit v11.2.2, added CUDA RT libs from CUDA Toolkit v11.3.1)
+*   fixed hashrate watchdog (in some cases it was not working when option " Don't reboot if the internet is lost" was enabled)
+*   improved `autofan` (added additional details for the "GPU driver error, no temps" error message, which will possibly help determine the exact source of the issue)
+*   improved settings reading for opendev watchdog
+*   updated PCI IDs to 2021-07-05
+*   updated `cpu-temp` (added support to  old CPUs, based on AMD K8 platform)
+*   various fixes and improvements
+*   miniZ v1.8y3 (added support for Ethash mining locked GPUs RTX 3060 LHR v1 with Nvidia driver 460.39 for best performance; added DAG verification on ETH; improvements for 150,5 algorithm on RTX 30XX up to 8%; added options `--mt-auto`, `--mt-dump`, and `--mt` to adjust memory timings on Pascal GPUs)
+*   XMRig-XMRigCC v2.9.5 (upstream with XMRig v6.13.1: added WOWnero solo mining support)
+
 ##### 0.6-204@210712 2021-07-12
 *   T-Rex v0.21.3 (fixed low pool side hashrate when mining ERGO at Nanopool)
 *   Gminer: removed tracking for option `--pec` in config generator
