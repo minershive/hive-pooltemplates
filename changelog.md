@@ -8,7 +8,7 @@
 *   updated PCI IDs to 2021-07-05
 *   updated `cpu-temp` (added support to  old CPUs, based on AMD K8 platform)
 *   various fixes and improvements
-*   miniZ v1.8y3 (added support for Ethash mining locked GPUs RTX 3060 LHR v1 with Nvidia driver 460.39 for best performance; added DAG verification on ETH; improvements for 150,5 algorithm on RTX 30XX up to 8%; added options `--mt-auto`, `--mt-dump`, and `--mt` to adjust memory timings on Pascal GPUs)
+*   miniZ v1.8y3 (added support for Ethash mining locked GPUs RTX 3060 LHR v1 /partial unlocking/ use Nvidia driver 460.39 for best performance; added DAG verification on ETH; improvements for 150,5 algorithm on RTX 30XX up to 8%; added options `--mt-auto`, `--mt-dump`, and `--mt` to adjust memory timings on Pascal GPUs)
 *   XMRig-XMRigCC v2.9.5 (upstream with XMRig v6.13.1: added WOWnero solo mining support)
 
 ##### 0.6-204@210712 2021-07-12
