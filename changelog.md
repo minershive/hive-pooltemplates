@@ -1,6 +1,15 @@
+##### LINUX IMAGE RELEASE 0.6-205 2021-07-15
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-205@210715
+*   Ubuntu v18.04 LTS based
+*   Linux kernel: v5.4.0-hiveos #132
+*   Nvidia driver: v460.84 
+*   AMD driver: v5.11.0701 (supporting the latest "Big Navi" GPUs including RX 6700XT/ 6800/ 6800XT/ 6900XT)
+*   AMD OpenCL v20.40
+   
 ##### 0.6-205@210715 2021-07-15
 *   reworked overclocking procedure for AMD Vega20/Navi/BigNavi GPUs (extends acceptable limits for clocks and voltages, reworked BigNavi OC - need AMD kernel module v5.9.0501 or later, added software unlock to support OC/UV for Radeon Pro W5x00 GPUs, fixed bugs)
-*   updated `nvtool` to v1.5.0 (added option `--forcestate` to support for P0 state forcing; web interface integration will be added soon)
+*   updated `nvtool` to v1.5.0 (added option `--forcestate n` to support for P0 state forcing; web interface integration will be added soon)
 *   updated CUDA RT libs up to CUDA v11.3 (updated CUDA libs/driver version definition for `nvidia-driver-update`; updated CUDA RT libs from CUDA Toolkit v11.2.2, added CUDA RT libs from CUDA Toolkit v11.3.1)
 *   fixed hashrate watchdog (in some cases it was not working when option " Don't reboot if the internet is lost" was enabled)
 *   improved `autofan` (added additional details for the "GPU driver error, no temps" error message, which will possibly help determine the exact source of the issue)
