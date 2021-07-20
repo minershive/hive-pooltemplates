@@ -1,7 +1,7 @@
 ##### 0.6-205@210719 2021-07-19
 *   T-Rex v0.21.4 (minor performance improvements, mainly Pascal GPUs; fixed invalid shares when mining ERGO at NiceHash; fixed `mtp` algo: ntime out of range and Low difficulty share errors)
 *   CPUminer-Opt-JayDDee v3.17.0 (AVX512 optimized using ternary logic instructions; faster sha256t implementation on all CPU architectures: AVX512 +30%, SHA +30%, AVX2 +9%)
-*   CPUminer-Opt-GR v1.1.9 (fixeg miner stop/start with `max-temp` flag; revert some changes so the miner is not so memory sensitive: should be close to how 1.1.7 was; include some VAES optimizations for Cryptonight: +2-4%; optimizations for Cryptonight init/finish: up to +2%)
+*   CPUminer-Opt-GR v1.1.9 (fixed miner stop/start with `max-temp` flag; revert some changes so the miner is not so memory sensitive: should be close to how 1.1.7 was; include some VAES optimizations for Cryptonight: +2-4%; optimizations for Cryptonight init/finish: up to +2%)
 *   Gminer v2.61 (Contest version: use GMiner and win ETH)
 
 ##### LINUX IMAGE RELEASE 0.6-205 2021-07-15
