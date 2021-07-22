@@ -1,3 +1,7 @@
+##### 0.6-205@210721 2021-07-21
+*   TeamRedMiner v0.8.4 (emergency patch: fixed XHV/Haven mining generating mostly hw errs after the recent hard fork)
+*   Gminer v2.62 (fixed performance degradation vs v2.61 on mining edition Nvidia GPUs when using memory tweaks)
+
 ##### 0.6-205@210719 2021-07-19
 *   T-Rex v0.21.4 (minor performance improvements on `autolykos2`, mainly Pascal GPUs; fixed invalid shares when mining ERGO at NiceHash; fixed `mtp` algo: ntime out of range and Low difficulty share errors)
 *   CPUminer-Opt-JayDDee v3.17.0 (AVX512 optimized using ternary logic instructions; faster sha256t implementation on all CPU architectures: AVX512 +30%, SHA +30%, AVX2 +9%)
