@@ -1,9 +1,9 @@
 ##### 0.6-206@210722 2021-07-22
 *   Updated `nvtool` to v1.5.2 (improves compatibility with Linux kernel 5.10 which is used on Latest Beta Image; fixed crash under X server terminal)
 *   Minor improvements for `sreboot` command (reboot immediately if root filesystem is already read-only; prevent hang on unmounting; fail safe reboot after 90 sec)
-*   Fixed some confirmed `amd-oc` bugs on Vega20/Navi10/Navi20 (fixed setting core voltage on some RX 6800; fixed reducing performance for Radeon VII with some user's OC settings; fixed processing OC user's settings which out of range)
+*   Fixed some confirmed `amd-oc` bugs on Vega20/Navi10/Navi20 (fixed setting core voltage on some RX 6800; fixed reducing performance for Radeon VII with some user's OC settings; fixed processing OC user's settings which is out of range)
 *   miniZ v1.8y4rc1 (improved stability for mining locked GPUs while mining ETH; fixed rejected shares on 3060s; if you get many invalid shares, and are overclocking, it may be usefull to use the option `--dag-fix`)
-*   Gminer: fixed installing v2.62 as latest instead v2.61 on Ubuntu 18.04 Images
+*   Gminer: fixed installation of v2.62 as the latest version at the moment instead of v2.61 on Images based on Ubuntu 18.04 (all images released after May 2019)
 
 ##### 0.6-205@210721 2021-07-21
 *   TeamRedMiner v0.8.4 (emergency patch: fixed XHV/Haven mining generating mostly hw errs after the recent hard fork)
