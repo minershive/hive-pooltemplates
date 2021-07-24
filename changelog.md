@@ -1,3 +1,6 @@
+##### 0.6-206@210723 2021-07-23
+*   Gminer v2.63 (fixed periodic miner restarts)
+
 ##### 0.6-206@210722 2021-07-22
 *   Updated `nvtool` to v1.5.2 (improves compatibility with Linux kernel 5.10 which is used on Latest Beta Image; fixed crash under X server terminal)
 *   Minor improvements for `sreboot` command (reboot immediately if root filesystem is already read-only; prevent hang on unmounting; fail safe reboot after 90 sec)
