@@ -1,3 +1,9 @@
+##### 0.6-206@210801 2021-08-01
+*   SRBMiner-Multi v0.7.9 (added algorithm 'cosa' COSA/Cosanta coin for CPU mining, fee 2.0%; fixed hashrate regression on 'heavyhash' algorithm for Navi cards)
+*   CPUminer-Opt-JayDDee v3.17.1 (more ternary logic optimizations for AVX512, AVX512+VAES, and AVX512+AES; fixed `my-gr` algo for VAES)
+*   T-Rex v0.21.5 (fixed duplicate share issue on `autolykos` algo; added GPU power limit management support, see `pl` parameter for details)
+*   SRBMiner-Multi v0.7.8 (added algorithm 'circcash' for GPU mining, fee 0.85%; performance increase on 'heavyhash' algorithm on GPU's ~15-25%; performance increase on 'verushash' algorithm on CPU's supporting SSE4.2 and AES ~4%; added parameter '--gpu-manual-tuning' for real time editing of memory timings, see miner's manual for details; fixed auto setup on Ethash algorithm for Navi/Navi2 cards that broke in previous version; removed devfee for algoritms: 'randomwow', 'bl2bsha3', 'eaglesong', 'k12', 'kadena', 'minotaur'; minor bug fixes)
+
 ##### 0.6-206@210723 2021-07-23
 *   Gminer v2.63 (fixed periodic miner restarts)
 
