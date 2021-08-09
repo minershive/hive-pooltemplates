@@ -1,3 +1,11 @@
+##### 0.6-207@210808 2021-08-08
+*   updated `nvtool` to v1.5.4 (fixed memory detection for some GPU)
+*   updated PCI IDs definitions to v2021-07-30 (added Nvidia CMP 170HX)
+*   updated `amdmeminfo` to v2.1.10 (added FirePro S7150; minor fixes)
+*   fixed Nvidia OC (improved support for fanless GPUs)
+*   fixed AMD OC (improved hashrate stability for some RX 6x00 GPUs)
+*   fixed octofan (fix for fanless GPUs)
+
 ##### 0.6-206@210807 2021-08-07
 *   PhoenixMiner 5.7b (implemented new "turbo" kernels for AMD Polaris cards `-clkernel 3` that can work with the current DAG sizes over 4 GB; increased the maximum supported DAG epoch to 600 aprox until about Sep 2023; implemented full hardware control for AMD RX6900/6800/6700 cards; added ROCr kernels for Vega, Radeon VII and Navi cards; fixed an issue causing crashing with some RX6900/6800/6700 cards under Linux and there is no need to run these cards with `-clkernel 0` anymore; added support for AMD Linux drivers up to 21.20, note: for Vega or Radeon VII cards use old drivers as they will not work with 21.20; numerous other fixes and small improvements; see Release Notes for details)
 *   Gminer v2.64 (performance improvements for Ethash on Nvidia GPUs on RTX 20xx and 30xx series; fixed zombie mode for Ravencoin)
