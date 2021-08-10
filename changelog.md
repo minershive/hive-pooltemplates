@@ -1,6 +1,6 @@
 ##### 0.6-207@210810 2021-08-10
 *   XMRig v6.14.0 (added ZeroMQ support for solo mining; fixed crash in DMI memory reader)
-*   T-Rex v0.21.6 (added timestamp in API of the last submitted share; improved compatibility with mining pools on `autolykos` algo; fixed functionality of option "`fork-at`")
+*   T-Rex v0.21.6 (added last submitted share timestamp in API; improved compatibility with mining pools on `autolykos` algo; fixed "`fork-at`" option functionality)
 
 ##### 0.6-207@210808 2021-08-08
 *   updated `nvtool` to v1.5.4 (fixed memory detection for some GPU)
