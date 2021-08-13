@@ -1,4 +1,7 @@
 ##### 0.6-207@210810 2021-08-10
+*   NanoMiner v3.3.8 (fixed KawPoW for some users; fixed incorrect shares on some XMR jobs due to wrong blob length)
+
+##### 0.6-207@210810 2021-08-10
 *   XMRig v6.14.0 (added ZeroMQ support for solo mining; fixed crash in DMI memory reader)
 *   T-Rex v0.21.6 (added last submitted share timestamp in API; improved compatibility with mining pools on `autolykos` algo; fixed "`fork-at`" option functionality)
 
