@@ -1,6 +1,6 @@
 ##### 0.6-207@210815 2021-08-15
 *   NBMiner v39.0 (implemented LHR mode for ETH mining on RTX 30 series LHR GPUs, able to get ~70% of maximum unlocked hashrate. Notes about LHR mode:  `"lhr": "value"`or `"lhr": "value0,value1,...,valueN" for GPU0, GPU1,...,GPUN respectively where value can be set from -1 to 100: -1 means turn off LHR mode, 0 it's default and means auto LHR mode with value 68 will be applied to LHR GPUs if certain GPUs are detected)
-*   XMRig v6.14.0 (code refactoring and bug fixes)
+*   XMRig v6.14.1 (code refactoring and bug fixes)
 
 ##### 0.6-207@210812 2021-08-12
 *   NanoMiner v3.3.8 (fixed KawPoW for some users; fixed incorrect shares on some XMR jobs due to wrong blob length)
