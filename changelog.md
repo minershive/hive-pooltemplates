@@ -1,6 +1,6 @@
  ##### 0.6-208@210818 2021-08-18
 *   Fixed `agent` (in some cases overall rig stats was broken)
-*   Improvements and fixes for AMD GPUs overclocking (fixed OC for Tonga families GPUs, ex. FirePro S7150; added support OC/UV for "Navi23" RX 6600 series. Notes about RX 6600 series support: currently requires Beta image. Stable image will be updated in next several hours)
+*   Improvements and fixes for AMD GPUs overclocking (fixed OC for Tonga families GPUs, ex. FirePro S7150; added support OC/UV for "Navi23" RX 6600 series. Notes about RX 6600 series support: currently requires Beta image. Support will be added to the updated Stable image which will be uploaded in the next several hours)
    
  ##### 0.6-207@210815 2021-08-15
 *   NBMiner v39.0 (implemented LHR mode for ETH mining on RTX 30 series LHR GPUs, able to get ~70% of maximum unlocked hashrate. Notes about LHR mode: add to miner extra config options  `"lhr": "value"` or `"lhr": "value0,value1,...,valueN"` for GPU0, GPU1,...,GPUN respectively where value can be set from -1 to 100: -1 means turn off LHR mode, 0 it's default and means auto LHR mode with value 68 will be applied to LHR GPUs if certain GPUs are detected)
