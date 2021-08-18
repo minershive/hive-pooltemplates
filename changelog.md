@@ -1,3 +1,7 @@
+##### 0.6-209@210819 2021-08-19
+*   Fixed AMD OC (fixed setting memory clock for "Navi23" higher then 1075MHz)
+*   Gminer v2.65 (fixed floating hashrate reporting, appeared in v2.64)
+   
 ##### LINUX IMAGE RELEASE 0.6-208 2021-08-18
 *   Universal boot mode: BIOS | UEFI
 *   Hive Linux client: v0.6-208@210818
