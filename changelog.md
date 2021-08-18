@@ -4,7 +4,8 @@
 *   Ubuntu v18.04 LTS based
 *   Linux kernel: v5.4.140
 *   Nvidia drivers: v460.91.03
-*   AMD OpenCL v20.40 with kernel driver v5.11.0701 supporting the latest GPUs including AMD RX 6600 series
+*   AMD OpenCL v20.40
+*   AMD kernel driver v5.11.0701 with supporting the latest GPUs including AMD RX 6600 series
 
 ##### 0.6-208@210818 2021-08-18
 *   Fixed `agent` (in some cases overall rig stats was broken)
