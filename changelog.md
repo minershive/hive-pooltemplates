@@ -1,5 +1,5 @@
 ##### 0.6-209@210819 2021-08-19
-*   Fixed AMD OC (fixed setting memory clock for "Navi23" higher then 1075MHz)
+*   Small fix in OC AMD GPUs (fixed memory clock setting for "Navi23" RX 6600 series >1075MHz)
 *   Gminer v2.65 (fixed floating hashrate reporting, appeared in v2.64)
    
 ##### LINUX IMAGE RELEASE 0.6-208 2021-08-18
