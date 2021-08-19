@@ -1,0 +1,33 @@
+[
+  {
+    "pool": {
+      "name": "Hashalot - SOLO",
+      "url": "https://hashalot.net",
+      "fee": 2,
+      "type": "SOLO"
+    }
+  },
+  {
+    "coin": "VTC",
+    "servers": [
+      {
+        "geo": "US",
+        "urls": ["stratum+tcp://mining.hashalot.net:3955"]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "verthash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "verthashminer": {
+        "url": "%URL%",
+        "algo": "verthash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]

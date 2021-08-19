@@ -3,33 +3,15 @@
       "coin":"ETH",
       "servers":[
          {
-            "geo":"SOLO EU DIFF 4G",
+            "geo":"SOLO Low",
             "urls":[
-               "eth-solo.pool-node.com:9004"
+               "eth-solo.pool-node.com:5000"
             ]
          },
-         {
-            "geo":"SOLO EU DIFF 8.58G",
+          {
+            "geo":"SOLO High",
             "urls":[
-               "eth-solo.pool-node.com:9008"
-            ]
-         },
-         {
-            "geo":"SOLO EU DIFF 10G",
-            "urls":[
-               "eth-solo.pool-node.com:9010"
-            ]
-         },
-         {
-            "geo":"SOLO EU DIFF 18G",
-            "urls":[
-               "eth-solo.pool-node.com:9016"
-            ]
-         },
-         {
-            "geo":"SOLO EU DIFF 70G",
-            "urls":[
-               "eth-solo.pool-node.com:9064"
+               "eth-solo.pool-node.com:5001"
             ]
          }
       ],
@@ -95,6 +77,15 @@
             "pass": "x",
             "template": "%WAL%.%WORKER_NAME%"
          },
+         
+          "lolminer": {
+            "algo": "ethash",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+          },
+            
          "t-rex":{
             "url":"%URL%",
             "algo":"ethash",
@@ -107,33 +98,15 @@
       "coin":"ETC",
       "servers":[
          {
-            "geo":"SOLO EU DIFF 4G",
+            "geo":"SOLO Low",
             "urls":[
-               "etc-solo.pool-node.com:8004"
+               "etc-solo.pool-node.com:7000"
             ]
          },
          {
-            "geo":"SOLO EU DIFF 8.58G",
+            "geo":"SOLO High",
             "urls":[
-               "etc-solo.pool-node.com:8008"
-            ]
-         },
-         {
-            "geo":"SOLO EU DIFF 10G",
-            "urls":[
-               "etc-solo.pool-node.com:8010"
-            ]
-         },
-          {
-            "geo":"SOLO EU DIFF 17.18G",
-            "urls":[
-               "etc-solo.pool-node.com:8016"
-            ]
-         },
-          {
-            "geo":"SOLO EU DIFF 68.72G",
-            "urls":[
-               "etc-solo.pool-node.com:8064"
+               "etc-solo.pool-node.com:7001"
             ]
          }
       ],
@@ -141,9 +114,7 @@
          "phoenixminer":{
             "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
          },
-        "phoenixminer": {
-            "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-        },
+    
         "gminer": {
             "algo":"etchash",
             "pass":"x",
@@ -165,6 +136,15 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
+            
+            "lolminer": {
+                "algo": "etchash",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+          },
+            
          "t-rex":{
             "url":"%URL%",
             "algo":"etchash",

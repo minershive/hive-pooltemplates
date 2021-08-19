@@ -1,284 +1,306 @@
 [
-    {
-        "coin": "ETH",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "eth.hashcity.org:7777"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash_4g"
-        }
-    },
-    {
-        "coin": "ETC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "etc.hashcity.org:8888"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash_4g"
-        }
-    },
-    {
-        "coin": "CLO",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "clo.hashcity.org:6666"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash",
-            "claymore": {
-                "claymore_user_config": "-allcoins -1\n-allpools 1"
-            }
-        }
-    },
-    {
-        "coin": "MOAC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "moac.hashcity.org:5555"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash",
-            "claymore": {
-                "claymore_user_config": "-allcoins -1\n-allpools 1"
-            }
-        }
-    },
-    {
-        "coin": "DBIX",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "dbix.hashcity.org:4646"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash",
-            "claymore": {
-                "claymore_user_config": "-allcoins -1\n-allpools 1"
-            }
-        }
-    },
-    {
-        "coin": "LTHN",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "lthn.hashcity.org:4545"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_cryptonight_r"
-        }
-    },
-    {
-        "coin": "BTG",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "btg.hashcity.org:4040"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_zhash_btg"
-        }
-    },
-    {
-        "coin": "ZEC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "zec.hashcity.org:3030"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "stratum://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%"
-            },
-			"gminer": {
-				"algo": "192_7",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"user_config": "--pers ZcashPoW"
-			},
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "BCN",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "bcn.hashcity.org:5454"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-		}
-    },
-    {
-        "coin": "BTC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "btc.hashcity.org:3333"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-		}
-    },
-    {
-        "coin": "BCH",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "bch.hashcity.org:2222"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-		}
-    },
-    {
-        "coin": "BSV",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "bsv.hashcity.org:5000"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-		}
-    },
-    {
-        "coin": "LTC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "ltc.hashcity.org:3000"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-		}
-    },
-    {
-        "coin": "DASH",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "dash.hashcity.org:4000"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-		}
-    },
-    {
-        "coin": "XMR",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "xmr.hashcity.org:4444"
-                ]
-            },
-            {
-                "geo": "Low Diff EU",
-                "urls": [
-                    "xmr.hashcity.org:3100"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_randomx"
-        }
+  {
+    "pool": {
+      "name": "Hashcity",
+      "url": "https://hashcity.org",
+      "fee": 1,
+      "type": "FPPS"
     }
+  },
+  {
+    "coin": "ETH",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "eth.hashcity.org:7777"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ethash",
+      "t-rex": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "ethash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "ETC",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "etc.hashcity.org:8888"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_etchash",
+      "t-rex": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "ethash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "CLO",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "clo.hashcity.org:6666"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ethash",
+      "claymore": {
+        "claymore_user_config": "-allcoins -1\n-allpools 1"
+      }
+    }
+  },
+  {
+    "coin": "DBIX",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "dbix.hashcity.org:4646"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ethash",
+      "claymore": {
+        "claymore_user_config": "-allcoins -1\n-allpools 1"
+      }
+    }
+  },
+  {
+    "coin": "BTG",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "btg.hashcity.org:4040"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_zhash_btg"
+    }
+  },
+  {
+    "coin": "ZEC",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "zec.hashcity.org:3030"
+        ]
+      }
+    ],
+    "miners": {
+      "dstm": {
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "ewbf": {
+        "zpass": "x",
+        "zport": "%URL_PORT%",
+        "zserver": "%URL_HOST%",
+        "ztemplate": "%WAL%.%WORKER_NAME%"
+      },
+      "bminer": {
+        "url": "stratum://%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "claymore-z": {
+        "zpools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%"
+      },
+      "gminer": {
+        "algo": "192_7",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--pers ZcashPoW"
+      },
+      "sgminer-gm": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "equihash",
+        "fork": "gm",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "BCN",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "bcn.hashcity.org:5454"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "BTC",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "btc.hashcity.org:3333"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "BCH",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "bch.hashcity.org:2222"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "BSV",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "bsv.hashcity.org:5000"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "LTC",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "ltc.hashcity.org:3000"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "DASH",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "dash.hashcity.org:4000"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "XMR",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "xmr.hashcity.org:4444"
+        ]
+      },
+      {
+        "geo": "Low Diff EU",
+        "urls": [
+          "xmr.hashcity.org:3100"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_randomx"
+    }
+  },
+  {
+    "coin": "RVN",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "rvn.hashcity.org:8080"
+        ]
+      }
+    ],
+    "miners": {
+      "t-rex": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "EXP",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "exp.hashcity.org:9999"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ethash"
+    }
+  }
 ]
 

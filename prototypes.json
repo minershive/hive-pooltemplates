@@ -21,6 +21,34 @@
         }
     },
 
+    "miners_autolykos2": {
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "autolykos",
+            "pass": "x",
+            "template": "%WAL%",
+            "user_config": "coin = ERG\nrigName = %WORKER_NAME%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "autolykos2",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "--disable-cpu"
+        },
+        "teamredminer": {
+            "url": "%URL%",
+            "algo": "autolykos2",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+	"lolMiner": {
+	    "algo": "AUTOLYKOS2",
+	    "port": "%URL_PORT%",
+	    "server": "%URL_HOST%",
+	    "template": "%WAL%.%WORKER_NAME%"
+	}
+    },
+
     "miners_etchash": {
         "phoenixminer": {
             "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, COIN: etc"
