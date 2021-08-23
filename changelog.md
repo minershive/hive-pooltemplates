@@ -1,5 +1,5 @@
 ##### 0.6-209@210822 2021-08-22
-*   NBMiner v39.1 (improved `ethash` hashrate of LHR mode 1-2%，default value of lhr mode changed from 68 to 69，manually set to 70 is also very promising; fixed `kawpow` issue appeared in v39.0)
+*   NBMiner v39.1 (improved `ethash` hashrate of LHR mode 1-2%, default value of lhr mode changed from 68 to 69，manually set to 70 is also very promising; fixed `kawpow` issue appeared in v39.0)
    
 ##### 0.6-209@210819 2021-08-19
 *   Fixes in OC AMD GPUs (fixed memory clock setting for "Navi23" RX 6600 series >1075MHz; fixed issue with Vega FE appeared with recent updates)
