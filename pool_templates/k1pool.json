@@ -366,13 +366,7 @@
       }
     ],
     "miners": {
-      "_prototype": "miners_kawpow",
-      "nanominer": {
-        "user_config": "coin = RVN\nrigName = %WORKER_NAME%"
-      },
-      "tt-miner":{
-        "user_config": "-coin RVN"
-      }
+      "_prototype": "miners_kawpow"
     }
   },
   {
@@ -1482,12 +1476,92 @@
       }
     ],
     "miners": {
-      "_prototype": "miners_kawpow",
-      "nanominer": {
-        "user_config": "coin = RVN\nrigName = %WORKER_NAME%"
+      "_prototype": "miners_kawpow"
+    }
+  },
+  {
+    "coin": "ERG",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.erg.k1pool.com:3746"
+        ]
       },
-      "tt-miner":{
-        "user_config": "-coin RVN"
+      {
+        "geo": "Europe HiDiff",
+        "urls": [
+          "eu.erg.k1pool.com:3747"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+          "us.erg.k1pool.com:3746"
+        ]
+      },
+      {
+        "geo": "USA HiDiff",
+        "urls": [
+          "us.erg.k1pool.com:3747"
+        ]
+      },
+      {
+        "geo": "China",
+        "urls": [
+          "cn.erg.k1pool.com:3746"
+        ]
+      },
+      {
+        "geo": "China HiDiff",
+        "urls": [
+          "cn.erg.k1pool.com:3747"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.ergsolo.k1pool.com:3748"
+        ]
+      },
+      {
+        "geo": "Europe SOLO HiDiff",
+        "urls": [
+          "eu.ergsolo.k1pool.com:3749"
+        ]
+      },
+      {
+        "geo": "USA SOLO",
+        "urls": [
+          "us.ergsolo.k1pool.com:3748"
+        ]
+      },
+      {
+        "geo": "USA SOLO HiDiff",
+        "urls": [
+          "us.ergsolo.k1pool.com:3749"
+        ]
+      },
+      {
+        "geo": "China SOLO",
+        "urls": [
+          "cn.ergsolo.k1pool.com:3748"
+        ]
+      },
+      {
+        "geo": "China SOLO HiDiff",
+        "urls": [
+          "cn.ergsolo.k1pool.com:3749"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_autolykos2",
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "autolykos2",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
       }
     }
   }
