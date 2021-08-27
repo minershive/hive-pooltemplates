@@ -1,7 +1,7 @@
 ##### 0.6-209@210826 2021-08-26
 *   Gminer v2.66 (improved `KawPoW` algorithm performance on Nvidia GPUs; added AMD implementation for `KawPoW`; improved compatibility with Ethash pools)
 *   SRBMiner-Multi v0.8.0 (added algorithm `randomgrft` for CPU mining GRFT/Graft coin with devfee 0.85%; performance increase on `ethash`, `etchash`, `ubqhash`, `verthash`, `heavyhash` algorithms for RX6800/6900 GPUs; performance increase on `autolykos2` algorithm on ZEN2+ AMD CPU's up to ~90%; fixed `cryptonight_gpu` and `cryptonight_xhv` algorithm for RDNA/RDNA2 GPUs; added GPU power consumption details to stats & API; minor bug fixes)
-*   XMRigCC v2.9.6 (added rx variant `rx/graft` for mining GRAFT)
+*   XMRigCC v2.9.6 (added rx variant `rx/graft` for mining GRFT/Graft coin)
 
 ##### 0.6-209@210822 2021-08-22
 *   NBMiner v39.1 (improved `ethash` hashrate of LHR mode 1-2%, default value of lhr mode changed from 68 to 69，manually set to 70 is also very promising; fixed `kawpow` issue appeared in v39.0)
