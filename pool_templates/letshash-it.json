@@ -115,47 +115,34 @@
         }
     },
     {
-        "coin": "ETHO",
+        "coin": "COSA",
         "servers": [
             {
-                "geo": "DE - Single GPU",
+                "geo": "DE - CPU - Starting Diff 0.001",
                 "urls": [
-                    "stratum+tcp://eu.letshash.it:1144"
+                    "eu.letshash.it:4433"
                 ]
             },
             {
-                "geo": "DE - Multiple GPUs",
+                "geo": "Singapore - CPU - Starting Diff 0.001",
                 "urls": [
-                    "stratum+tcp://eu.letshash.it:1154"
+                    "eu.letshash.it:4433"
                 ]
             },
             {
-                "geo": "DE - Mining Rigs/NH",
+                "geo": "US - CPU - Starting Diff 0.001",
                 "urls": [
-                    "stratum+tcp://eu.letshash.it:1146"
+                    "us.letshash.it:4433"
                 ]
             }
         ],
         "miners": {
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "server": "%URL%",
-                "template": "%WAL%"
-            },
-            "asicminer": {
-                "url": "%URL%",
-                "template": "%WAL%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%",
-                "url": "%URL%",
-                "pass": "x"
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "cosa",
+                "pass": "c=COSA",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
             }
         }
     },
@@ -250,7 +237,7 @@
         ],
         "miners": {
             "cpuminer-opt": {
-                "url": "%URL%",
+                "url": "stratum+tcp://%URL%",
                 "algo": "yespowerr16",
                 "pass": "c=LTFN",
                 "template": "%WAL%.%WORKER_NAME%",
@@ -425,27 +412,28 @@
         }
     },
     {
-        "coin": "PA",
+        "coin": "WATC",
         "servers": [
             {
-                "geo": "DE - GPU Starting Diff 0.01",
+                "geo": "DE - CPU Starting Diff 0.05",
                 "urls": [
-                    "eu.letshash.it:4833"
+                    "eu.letshash.it:8088"
                 ]
             },
             {
-                "geo": "Singapore - GPU Starting Diff 0.01",
+                "geo": "Singapore - CPU Starting Diff 0.05",
                 "urls": [
-                    "asia.letshash.it:4833"
+                    "asia.letshash.it:8088
                 ]
             }
         ],
         "miners": {
-            "wildrig-multi": {
+            "cpuminer-opt": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "sha256csm",
-                "pass": "c=PA",
-                "template": "%WAL%.%WORKER_NAME%"
+                "algo": "gr",
+                "pass": "c=WATC",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
             }
         }
     },
