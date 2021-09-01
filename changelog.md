@@ -1,6 +1,6 @@
 ##### 0.6-209@210831 2021-08-31
 *   NBMiner v39.2 (added LHR lock detection on `ethash` and recovery in LHR mode; more robust protocol handle for ERGO mining)
-*   XMRig v6.15.0 (added new algorithm `rx/graft` RandomX Graft; added AVX2 Salsa20 implementationfor AstroBWT)
+*   XMRig v6.15.0 (added new algorithm `rx/graft` RandomX Graft; added AVX2 Salsa20 implementation for AstroBWT)
 
 ##### 0.6-209@210826 2021-08-26
 *   Gminer v2.66 (improved `KawPoW` algorithm performance on Nvidia GPUs; added AMD implementation for `KawPoW`; improved compatibility with Ethash pools)
