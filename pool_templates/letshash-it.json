@@ -170,27 +170,59 @@
         }
     },
     {
-        "coin": "KYAN",
+        "coin": "RVL",
         "servers": [
             {
-                "geo": "DE - Starting Diff 1",
+                "geo": "DE - Starting Diff 0.025",
                 "urls": [
-                    "eu.letshash.it:3534"
+                    "eu.letshash.it:9636"
                 ]
             },
             {
-                "geo": "Singapore - Starting Diff 1",
+                "geo": "USA - Starting Diff 0.025",
                 "urls": [
-                    "asia.letshash.it:3534"
+                    "us.letshash.it:9636"
+		]
+            },
+            {
+                "geo": "Singapore - Starting Diff 0.025",
+                "urls": [
+                    "asia.letshash.it:9636"
                 ]
             }
         ],
         "miners":{
-            "wildrig-multi": {
+            "ccminer": {
+                "fork": "enemy",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "x16r",
+                "ccpass": "c=RVL",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "t-rex": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x11k",
-                "pass": "c=KYAN",
+                "algo": "x16r",
+                "pass": "c=RVL",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16r",
+                "pass": "c=RVL",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "c=RVL",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "x16r"
+            },
+            "wildrig-multi": {
+		"url": "stratum+tcp://%URL%",
+		"algo": "x16r",
+		"pass": "c=RVL",
+		"template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -269,10 +301,10 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "t-rex": {
-				"url": "stratum+tcp://%URL%",
-				"algo": "x21s",
-				"pass": "c=TTN",
-				"template": "%WAL%.%WORKER_NAME%"
+		"url": "stratum+tcp://%URL%",
+		"algo": "x21s",
+		"pass": "c=TTN",
+		"template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
