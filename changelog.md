@@ -1,3 +1,8 @@
+##### 0.6-209@210906 2021-09-06
+*   TeamRedMiner v0.8.5 (added mem temp limits, see options `--mem_temp_limit` and `--mem_temp_resume`; added support for forcing ethash pool hashrate reports, see `--eth_hash_report`; fixed hashrate reports for ethash Crazypool when using failover pools; added extranonce subscription support to `autolykos2` algorithm for e.g. Nicehash)
+*   XMRig-mo v6.15.0 (MoneroOcean pool fork synced to upstream version)
+*   Fixed stats for some miners (fixed incorrect displaying invalid/rejected shares for Gminer and T-Rex; fixed incorrect displaying CPU threads on Nanominer)
+
 ##### 0.6-209@210831 2021-08-31
 *   NBMiner v39.2 (added LHR lock detection on `ethash` and recovery in LHR mode; more robust protocol handle for ERGO mining)
 *   XMRig v6.15.0 (added new algorithm `rx/graft` RandomX Graft; added AVX2 Salsa20 implementation for AstroBWT)
