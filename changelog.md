@@ -1,3 +1,11 @@
+##### 0.6-210@210909 2021-09-09
+*   Improved Nvidia OC (improved support of fanless and mobile GPUs; updated nvtool to v1.5.5)
+*   Added support for AMD RX 6900 XT Ultimate (added definitions for AMD RX 6900 XTX/W6900X/RX 6700M/RX 6600M; added OC support for RX 6900 XTX known as Ultimate; fixed displaying RX 6700 XT with ASIC NAVI22 XTLH)
+*   Improved update process (added GPUs re-detection after update; added attempt to fix broken packages)
+*   Improved stratum latency checker (more accurate data)
+*   Fixed `autofan` (fixed critical temp action)
+*   Fixed flashing NVidia GPUs in force mode
+
 ##### 0.6-209@210906 2021-09-06
 *   TeamRedMiner v0.8.5 (added mem temp limits, see options `--mem_temp_limit` and `--mem_temp_resume`; added support for forcing ethash pool hashrate reports, see `--eth_hash_report`; fixed hashrate reports for ethash Crazypool when using failover pools; added extranonce subscription support to `autolykos2` algorithm for e.g. Nicehash)
 *   XMRig-mo v6.15.0 (MoneroOcean pool fork synced to upstream version)
