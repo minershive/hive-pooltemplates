@@ -1,6 +1,6 @@
 ##### 0.6-210@210909 2021-09-09
 *   Improved Nvidia OC (improved support of fanless and mobile GPUs; updated nvtool to v1.5.5)
-*   Added support for AMD RX 6900 XT Ultimate (added definitions for AMD RX 6900 XTX/W6900X/RX 6700M/RX 6600M; added OC support for RX 6900 XTX known as Ultimate; fixed displaying RX 6700 XT with ASIC NAVI22 XTLH)
+*   Added support for AMD RX 6900 XT Ultimate (added definitions for AMD RX 6900 XTX/W6900X/RX 6700M/RX 6600M; added OC support for RX 6900 XTX known as Ultimate; fixed displaying name for RX 6700 XT with ASIC NAVI22 XTLH)
 *   Improved update process (added GPUs re-detection after update; added attempt to fix broken packages)
 *   Improved stratum latency checker (more accurate data)
 *   Fixed `autofan` (fixed critical temp action)
