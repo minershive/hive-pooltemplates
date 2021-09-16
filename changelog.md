@@ -1,3 +1,7 @@
+##### 0.6-210@210915 2021-09-15
+*   Gminer v2.68 (detect lock of LHR GPUs, automacally unlock and continue mining; display of miner restart count by watchdog)
+*   NanoMiner v3.3.10 (fixed invalid shares issue on KawPoW for some Nvidia RTX 30xx GPUs; fixed ETH performance tuning issue for some Nvidia RTX 30xx GPUs)
+*   
 ##### 0.6-210@210913 2021-09-13
 *   lolMiner v1.32a (fixed `--mode LHR1` not starting in unlocked state on many systems; fixed 3060 LHR V1 not starting in semi-unlock when the right drivers are detected)
 
