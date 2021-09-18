@@ -1,3 +1,6 @@
+##### 0.6-210@210917 2021-09-17
+*   NanoMiner v3.3.11 (fixed invalid ETH shares issue on some Nvidia RTX30xx)
+
 ##### 0.6-210@210915 2021-09-15
 *   Gminer v2.68 (detect lock of LHR GPUs, automacally unlock and continue mining; display of miner restart count by watchdog)
 *   NanoMiner v3.3.10 (fixed invalid shares issue on KawPoW for some Nvidia RTX 30xx GPUs; fixed ETH performance tuning issue for some Nvidia RTX 30xx GPUs)
