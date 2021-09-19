@@ -1,0 +1,674 @@
+[
+  {
+  "coin":"ETH",
+  "servers":[
+     {
+        "geo":"UA DIFF 2G",
+        "urls":[
+           "eth.ua-mining.com:8502"
+        ]
+     },
+      {
+        "geo":"UA DIFF 4G",
+        "urls":[
+           "eth.ua-mining.com:8504"
+        ]
+     },
+      {
+        "geo":"UA DIFF 4G",
+        "urls":[
+           "ssl://eth.ua-mining.com:8514"
+        ]
+     },
+     {
+        "geo":"UA DIFF 9G",
+        "urls":[
+           "eth.ua-mining.com:8509"
+        ]
+     }
+  ],
+  "miners":{
+     "claymore":{
+        "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+        "claymore_user_config":"-allpools 1"
+     },
+     "asicminer":{
+        "url":"stratum+tcp://%URL%",
+        "template":"%WAL%"
+     },
+     "ethminer": {
+        "ver":"0.18.0",
+        "cuda": 1,
+        "fork":"ethash",
+        "opencl": 0,
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "stratum2+tcp://%URL_HOST%",
+        "template": "%WAL%"
+     },
+     "phoenixminer": {
+        "url": "POOL: %URL%, WALLET: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+     },
+     "gminer": {
+        "algo":"ethash",
+        "pass":"x",
+        "port":"%URL_PORT%",
+        "server":"%URL_HOST%",
+        "template":"%WAL%",
+        "user_config":"--proto stratum"
+     },
+     "finminer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+     },
+     "bminer": {
+        "algo": "ethstratum",
+        "template": "%WAL%",
+        "url": "%URL%",
+        "pass": "x"
+     },
+     "teamredminer": {
+        "algo": "ethash",
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+     },
+     "nanominer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+     },
+     "nbminer": {
+        "algo": "ethash",
+        "url": "nicehash+tcp://%URL%",
+        "pass": "x",
+        "template": "%WAL%"
+     },
+     
+      "lolminer": {
+        "algo": "ethash",
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%",
+        "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
+      },
+        
+     "t-rex":{
+        "url":"%URL%",
+        "algo":"ethash",
+        "pass":"x",
+        "template":"%WAL%%",
+        "worker": "%WORKER_NAME%"
+     }
+  }
+},
+{
+  "coin":"ETC",
+  "servers":[
+     {
+        "geo":"UA DIFF 1G",
+        "urls":[
+           "etc.ua-mining.com:9001"
+        ]
+     },
+     {
+        "geo":"UA DIFF 2G",
+        "urls":[
+           "etc.ua-mining.com:9002"
+        ]
+     },
+     {
+        "geo":"UA DIFF 4G",
+        "urls":[
+           "etc.ua-mining.com:9004"
+        ]
+     },
+     {
+        "geo":"UA DIFF 9G",
+        "urls":[
+           "etc.ua-mining.com:9009"
+        ]
+     }
+  ],
+  "miners":{
+   "claymore":{
+      "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+      "claymore_user_config":"-allpools 1"
+   },
+   "asicminer":{
+      "url":"stratum+tcp://%URL%",
+      "template":"%WAL%"
+   },
+   "ethminer": {
+      "ver":"0.18.0",
+      "cuda": 1,
+      "fork":"etchash",
+      "opencl": 0,
+      "pass": "x",
+      "port": "%URL_PORT%",
+      "server": "stratum2+tcp://%URL_HOST%",
+      "template": "%WAL%"
+   },
+   "phoenixminer": {
+      "url": "POOL: %URL%, WALLET: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+   },
+   "gminer": {
+      "algo":"etchash",
+      "pass":"x",
+      "port":"%URL_PORT%",
+      "server":"%URL_HOST%",
+      "template":"%WAL%",
+      "user_config":"--proto stratum"
+   },
+   "finminer": {
+      "algo": "etchash",
+      "url": "%URL%",
+      "template": "%WAL%",
+      "pass": "x",
+      "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+   },
+   "teamredminer": {
+      "algo": "etchash",
+      "url": "stratum+tcp://%URL%",
+      "template": "%WAL%",
+      "worker": "%WORKER_NAME%",
+      "pass": "x"
+   },
+   "nanominer": {
+      "algo": "etchash",
+      "url": "%URL%",
+      "template": "%WAL%",
+      "pass": "x",
+      "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+   },
+   "nbminer": {
+      "algo": "etchash",
+      "url": "nicehash+tcp://%URL%",
+      "pass": "x",
+      "template": "%WAL%"
+   },
+   "lolminer": {
+      "algo": "etchash",
+      "pass": "x",
+      "port": "%URL_PORT%",
+      "server": "%URL_HOST%",
+      "template": "%WAL%",
+      "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
+    },
+  "t-rex":{
+      "url":"%URL%",
+      "algo":"etchash",
+      "pass":"x",
+      "template":"%WAL%",
+      "worker": "%WORKER_NAME%"
+    }
+  }
+},
+{
+  "coin":"CLO",
+  "servers":[
+     {
+        "geo":"UA DIFF 1G",
+        "urls":[
+           "clo.ua-mining.com:8001"
+        ]
+     },
+     {
+        "geo":"UA DIFF 2G",
+        "urls":[
+           "clo.ua-mining.com:8002"
+        ]
+     },
+     {
+        "geo":"UA DIFF 4G",
+        "urls":[
+           "clo.ua-mining.com:8004"
+        ]
+     },
+     {
+        "geo":"UA DIFF 9G",
+        "urls":[
+           "clo.ua-mining.com:8009"
+        ]
+     }
+  ],
+  "miners":{
+   "claymore":{
+      "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+      "claymore_user_config":"-allpools 1"
+   },
+   "asicminer":{
+      "url":"stratum+tcp://%URL%",
+      "template":"%WAL%"
+   },
+   "ethminer": {
+      "ver":"0.18.0",
+      "cuda": 1,
+      "fork":"ethash",
+      "opencl": 0,
+      "pass": "x",
+      "port": "%URL_PORT%",
+      "server": "stratum2+tcp://%URL_HOST%",
+      "template": "%WAL%"
+   },
+   "phoenixminer": {
+      "url": "POOL: %URL%, WALLET: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+   },
+   "gminer": {
+      "algo":"ethash",
+      "pass":"x",
+      "port":"%URL_PORT%",
+      "server":"%URL_HOST%",
+      "template":"%WAL%",
+      "user_config":"--proto stratum"
+   },
+   "finminer": {
+      "algo": "ethash",
+      "url": "%URL%",
+      "template": "%WAL%",
+      "pass": "x",
+      "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+   },
+   "bminer": {
+      "algo": "ethstratum",
+      "template": "%WAL%",
+      "url": "%URL%",
+      "pass": "x"
+   },
+   "teamredminer": {
+      "algo": "ethash",
+      "url": "stratum+tcp://%URL%",
+      "template": "%WAL%",
+      "worker": "%WORKER_NAME%",
+      "pass": "x"
+   },
+   "nanominer": {
+      "algo": "ethash",
+      "url": "%URL%",
+      "template": "%WAL%",
+      "pass": "x",
+      "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+   },
+   "nbminer": {
+      "algo": "ethash",
+      "url": "nicehash+tcp://%URL%",
+      "pass": "x",
+      "template": "%WAL%"
+   },
+   
+    "lolminer": {
+      "algo": "ethash",
+      "pass": "x",
+      "port": "%URL_PORT%",
+      "server": "%URL_HOST%",
+      "template": "%WAL%",
+      "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
+    },
+      
+   "t-rex":{
+      "url":"%URL%",
+      "algo":"ethash",
+      "pass":"x",
+      "template":"%WAL%",
+      "worker": "%WORKER_NAME%"
+    }
+  }
+},
+{
+  "coin":"PRKL",
+  "servers":[
+     {
+        "geo":"UA DIFF 1G",
+        "urls":[
+           "prkl.ua-mining.com:8201"
+        ]
+     },
+     {
+        "geo":"UA DIFF 2G",
+        "urls":[
+           "prkl.ua-mining.com:8202"
+        ]
+     },
+     {
+        "geo":"UA DIFF 4G",
+        "urls":[
+           "prkl.ua-mining.com:8204"
+        ]
+     }
+  ],
+  "miners":{
+   "claymore":{
+      "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+      "claymore_user_config":"-allpools 1"
+   },
+   "asicminer":{
+      "url":"stratum+tcp://%URL%",
+      "template":"%WAL%"
+   },
+   "ethminer": {
+      "ver":"0.18.0",
+      "cuda": 1,
+      "fork":"ethash",
+      "opencl": 0,
+      "pass": "x",
+      "port": "%URL_PORT%",
+      "server": "stratum2+tcp://%URL_HOST%",
+      "template": "%WAL%"
+   },
+   "phoenixminer": {
+      "url": "POOL: %URL%, WALLET: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+   },
+   "gminer": {
+      "algo":"ethash",
+      "pass":"x",
+      "port":"%URL_PORT%",
+      "server":"%URL_HOST%",
+      "template":"%WAL%",
+      "user_config":"--proto stratum"
+   },
+   "finminer": {
+      "algo": "ethash",
+      "url": "%URL%",
+      "template": "%WAL%",
+      "pass": "x",
+      "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+   },
+   "bminer": {
+      "algo": "ethstratum",
+      "template": "%WAL%",
+      "url": "%URL%",
+      "pass": "x"
+   },
+   "teamredminer": {
+      "algo": "ethash",
+      "url": "stratum+tcp://%URL%",
+      "template": "%WAL%",
+      "worker": "%WORKER_NAME%",
+      "pass": "x"
+   },
+   "nanominer": {
+      "algo": "ethash",
+      "url": "%URL%",
+      "template": "%WAL%",
+      "pass": "x",
+      "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+   },
+   "nbminer": {
+      "algo": "ethash",
+      "url": "nicehash+tcp://%URL%",
+      "pass": "x",
+      "template": "%WAL%"
+   },
+   
+    "lolminer": {
+      "algo": "ethash",
+      "pass": "x",
+      "port": "%URL_PORT%",
+      "server": "%URL_HOST%",
+      "template": "%WAL%",
+      "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
+    },
+      
+   "t-rex":{
+      "url":"%URL%",
+      "algo":"ethash",
+      "pass":"x",
+      "template":"%WAL%",
+      "worker": "%WORKER_NAME%"
+    }
+  }
+},
+{
+  "coin":"ETHO",
+  "servers":[
+     {
+        "geo":"UA DIFF 1G",
+        "urls":[
+           "etho.ua-mining.com:8401"
+        ]
+     },
+     {
+        "geo":"UA DIFF 2G",
+        "urls":[
+           "etho.ua-mining.com:8402"
+        ]
+     },
+     {
+        "geo":"UA DIFF 4G",
+        "urls":[
+           "etho.ua-mining.com:8404"
+        ]
+     },
+     {
+        "geo":"UA DIFF 9G",
+        "urls":[
+           "etho.ua-mining.com:8409"
+        ]
+     }
+  ],
+  "miners":{
+   "claymore":{
+      "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+      "claymore_user_config":"-allpools 1"
+   },
+   "asicminer":{
+      "url":"stratum+tcp://%URL%",
+      "template":"%WAL%"
+   },
+   "ethminer": {
+      "ver":"0.18.0",
+      "cuda": 1,
+      "fork":"ethash",
+      "opencl": 0,
+      "pass": "x",
+      "port": "%URL_PORT%",
+      "server": "stratum2+tcp://%URL_HOST%",
+      "template": "%WAL%"
+   },
+   "phoenixminer": {
+      "url": "POOL: %URL%, WALLET: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+   },
+   "gminer": {
+      "algo":"ethash",
+      "pass":"x",
+      "port":"%URL_PORT%",
+      "server":"%URL_HOST%",
+      "template":"%WAL%",
+      "user_config":"--proto stratum"
+   },
+   "finminer": {
+      "algo": "ethash",
+      "url": "%URL%",
+      "template": "%WAL%",
+      "pass": "x",
+      "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+   },
+   "bminer": {
+      "algo": "ethstratum",
+      "template": "%WAL%",
+      "url": "%URL%",
+      "pass": "x"
+   },
+   "teamredminer": {
+      "algo": "ethash",
+      "url": "stratum+tcp://%URL%",
+      "template": "%WAL%",
+      "worker": "%WORKER_NAME%",
+      "pass": "x"
+   },
+   "nanominer": {
+      "algo": "ethash",
+      "url": "%URL%",
+      "template": "%WAL%",
+      "pass": "x",
+      "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+   },
+   "nbminer": {
+      "algo": "ethash",
+      "url": "nicehash+tcp://%URL%",
+      "pass": "x",
+      "template": "%WAL%"
+   },
+   
+    "lolminer": {
+      "algo": "ethash",
+      "pass": "x",
+      "port": "%URL_PORT%",
+      "server": "%URL_HOST%",
+      "template": "%WAL%",
+      "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
+    },
+      
+   "t-rex":{
+      "url":"%URL%",
+      "algo":"ethash",
+      "pass":"x",
+      "template":"%WAL%",
+      "worker": "%WORKER_NAME%"
+    } 
+  }
+},
+{
+  "coin":"DBIX",
+  "servers":[
+     {
+        "geo":"UA DIFF 1G",
+        "urls":[
+           "dbix.ua-mining.com:8701"
+        ]
+     },
+     {
+        "geo":"UA DIFF 2G",
+        "urls":[
+           "dbix.ua-mining.com:8702"
+        ]
+     },
+     {
+        "geo":"UA DIFF 4G",
+        "urls":[
+           "dbix.ua-mining.com:8704"
+        ]
+     }
+  ],
+  "miners":{
+   "claymore":{
+      "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+      "claymore_user_config":"-allpools 1"
+   },
+   "asicminer":{
+      "url":"stratum+tcp://%URL%",
+      "template":"%WAL%"
+   },
+   "ethminer": {
+      "ver":"0.18.0",
+      "cuda": 1,
+      "fork":"ethash",
+      "opencl": 0,
+      "pass": "x",
+      "port": "%URL_PORT%",
+      "server": "stratum2+tcp://%URL_HOST%",
+      "template": "%WAL%"
+   },
+   "phoenixminer": {
+      "url": "POOL: %URL%, WALLET: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+   },
+   "gminer": {
+      "algo":"ethash",
+      "pass":"x",
+      "port":"%URL_PORT%",
+      "server":"%URL_HOST%",
+      "template":"%WAL%",
+      "user_config":"--proto stratum"
+   },
+   "finminer": {
+      "algo": "ethash",
+      "url": "%URL%",
+      "template": "%WAL%",
+      "pass": "x",
+      "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+   },
+   "bminer": {
+      "algo": "ethstratum",
+      "template": "%WAL%",
+      "url": "%URL%",
+      "pass": "x"
+   },
+   "teamredminer": {
+      "algo": "ethash",
+      "url": "stratum+tcp://%URL%",
+      "template": "%WAL%",
+      "worker": "%WORKER_NAME%",
+      "pass": "x"
+   },
+   "nanominer": {
+      "algo": "ethash",
+      "url": "%URL%",
+      "template": "%WAL%",
+      "pass": "x",
+      "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+   },
+   "nbminer": {
+      "algo": "ethash",
+      "url": "nicehash+tcp://%URL%",
+      "pass": "x",
+      "template": "%WAL%"
+   },
+   
+    "lolminer": {
+      "algo": "ethash",
+      "pass": "x",
+      "port": "%URL_PORT%",
+      "server": "%URL_HOST%",
+      "template": "%WAL%",
+      "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
+    },
+      
+   "t-rex":{
+      "url":"%URL%",
+      "algo":"ethash",
+      "pass":"x",
+      "template":"%WAL%",
+      "worker": "%WORKER_NAME%"
+    }
+  }
+},
+{
+   "coin":"Ubiq",
+   "servers":[
+      {
+         "geo":"UA DIFF 2G",
+         "urls":[
+            "ubiq.ua-mining.com:7802"
+         ]
+      },
+      {
+         "geo":"UA DIFF 4G",
+         "urls":[
+            "ubiq.ua-mining.com:7804"
+         ]
+      },
+      {
+         "geo":"UA DIFF 9G",
+         "urls":[
+            "ubiq.ua-mining.com:7809"
+         ]
+      }
+   ],
+   "miners":{
+    "asicminer":{
+       "url":"stratum+tcp://%URL%",
+       "template":"%WAL%"
+    },
+    "phoenixminer": {
+       "url": "POOL: %URL%, WALLET: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
+     }
+   }
+ }
+]
