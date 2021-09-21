@@ -1,3 +1,7 @@
+##### 0.6-210@210921 2021-09-21
+*   NBMiner v39.4 (fixed hashrate issues on `octopus` algo)
+*   Fixed stats for lolMiner (temp and fan data were processed incorrectly in the case of selective use of cards)
+
 ##### 0.6-210@210920 2021-09-20
 *   T-Rex v0.22.1 (added partial LHR unlock functionality for 30xx cards for `ethash` algorithm; added `firopow` algorithm for upcoming FIRO hard fork; added CPU share validation functionality for `kawpow` all progpow-like algorithms; bug fixes: fixed broken CFX mining in 0.22.0; fixed CPU share validation on `autolykos2`; fixed switching to failover pools: it takes too long; fixed some stability issues)
 *   XMRig CUDA plugin v6.15.1 (added support for `rx/graft`; bug fixes; included to XMRig v6.15.0 package)
