@@ -188,7 +188,7 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_kawpow",
+            "_prototype": "miners_kawpow_slash_email",
             "nanominer": {
                 "algo": "kawpow",
                 "url": "%URL%",
@@ -353,7 +353,7 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_randomx"
+            "_prototype": "miners_randomx_slash_email"
         }
     },
     {
@@ -510,12 +510,12 @@
                 "algo": "autolykos",
                 "pass": "x",
                 "template": "%WAL%",
-                "user_config": "coin = ERG\nrigName = %WORKER_NAME%"
+                "user_config": "coin = ERG\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
             },
             "srbminer": {
                 "url": "%URL%",
                 "algo": "autolykos2",
-                "worker": "%WORKER_NAME%",
+                "worker": "%WORKER_NAME%/%EMAIL%",
                 "template": "%WAL%",
                 "user_config": "--disable-cpu"
             }
