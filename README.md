@@ -171,8 +171,11 @@ for_amd | `boolean` | `false` | Is suitable for AMD GPUs.
 for_nvidia | `boolean` | `false` | Is suitable for Nvidia GPUs.
 for_cpu | `boolean` | `false` | Is suitable for CPUs.
 for_asic | `boolean` | `false` | Is suitable for ASICs.
+dual | `boolean` | `false` | Supports dual mining.
 default_algo | `string` |  | Algorithm to use if not reported by miner.<br>This is useful for single-algo miners.
 default_fork | `string` |  | Fork to use if not configured in flight sheet.
+default_units | `string` | `"khs"` | Default hashrate units if not reported.
+ssl_prefix | `string` |  | .
 algos | `string[]` or `object` |  | Supported algorithms list.<br>This can be either a simple array of strings or an object where keys are algos and values are display names.
 dalgos | `string[]` or `object` |  | Supported algorithms list for dual mining.<br>This can be either a simple array of strings or an object where keys are algos and values are display names.
 forks | `string[]` or `object` |  | Available forks list.<br>This can be either a simple array of strings or an object where keys are forks and values are display names.
