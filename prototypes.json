@@ -41,12 +41,40 @@
             "algo": "autolykos2",
             "template": "%WAL%.%WORKER_NAME%"
         },
-	"lolMiner": {
-	    "algo": "AUTOLYKOS2",
-	    "port": "%URL_PORT%",
-	    "server": "%URL_HOST%",
-	    "template": "%WAL%.%WORKER_NAME%"
-	}
+        "lolMiner": {
+            "algo": "AUTOLYKOS2",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
+    },
+
+    "miners_autolykos2_slash_email": {
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "autolykos",
+            "pass": "x",
+            "template": "%WAL%",
+            "user_config": "coin = ERG\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "autolykos2",
+            "worker": "%WORKER_NAME%/%EMAIL%",
+            "template": "%WAL%",
+            "user_config": "--disable-cpu"
+        },
+        "teamredminer": {
+            "url": "%URL%",
+            "algo": "autolykos2",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
+        "lolMiner": {
+            "algo": "AUTOLYKOS2",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        }
     },
 
     "miners_etchash": {
@@ -333,10 +361,10 @@
             "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
         },
         "t-rex": {
-	          "url": "%URL%",
-	          "algo": "ethash",
-	          "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
-	      },
+            "url": "%URL%",
+            "algo": "ethash",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
         "gminer":{
             "algo":"ethash",
             "server":"%URL_HOST%",
@@ -345,6 +373,7 @@
             "template":"%WAL%.%WORKER_NAME%/%EMAIL%"
         }
     },
+
     "miners_cryptonight_v8": {
         "xmr-stak": {
             "url": "%URL%",
@@ -516,6 +545,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
         }
     },
+
     "miners_randomx": {
         "xmrig": {
             "url": "%URL%",
@@ -549,6 +579,7 @@
             "user_config": "rigName=%WORKER_NAME%"
         }
     },
+
     "miners_randomx_plus": {
         "xmrig": {
             "url": "%URL%",
@@ -582,6 +613,7 @@
             "user_config": "rigName=%WORKER_NAME%"
         }
     },
+
     "miners_randomx_worker": {
         "xmrig": {
             "url": "%URL%",
@@ -614,6 +646,7 @@
             "template": "%WAL%"
         }
     },
+
     "miners_randomx_w_worker": {
         "xmrig": {
             "url": "%URL%",
@@ -646,6 +679,7 @@
             "template": "%WAL%"
         }
     },
+
     "miners_randomx_slash_email": {
         "xmrig": {
             "url": "%URL%",
@@ -679,6 +713,7 @@
             "user_config": "rigName=%WORKER_NAME%\nemail = %EMAIL%"
         }
     },
+
    "miners_kawpow": {
         "ethminer":{
             "fork":"kawpowminer",
@@ -754,6 +789,7 @@
             "user_config": "--opencl-threads=2"
         }
     },
+
     "miners_kawpow_slash_email": {
         "ethminer":{
             "fork":"kawpowminer",
@@ -829,6 +865,7 @@
             "user_config": "--opencl-threads=2"
         }
     },
+
     "miners_randomhash2_with_email": {
         "rhminer": {
             "url": "%URL%",
