@@ -420,7 +420,7 @@
             "nbminer":{
                 "url":"%URL%",
                 "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%",
+                "template":"%WAL%/%WORKER_NAME%/%EMAIL%",
                 "algo":"octopus"
             },
             "nanominer": {
@@ -428,18 +428,18 @@
                 "algo": "octopus",
                 "pass": "x",
                 "template": "%WAL%",
-                "user_config": "coin = CFX\nrigName = %WORKER_NAME%"
+                "user_config": "coin = CFX\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
             },
             "bminer": {
                 "algo": "conflux",
-                "template": "%WAL%.%WORKER_NAME%",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
                 "url": "%URL%",
                 "pass": "x"
             },
             "t-rex": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "octopus",
-                "template": "%WAL%.%WORKER_NAME%",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
                 "pass": "x"
             }
         }
