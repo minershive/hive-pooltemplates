@@ -2,8 +2,8 @@
 *   T-Rex v0.23.1 (removed telnet API; multiple bug fixes)
 *   GMiner v2.69 (added auto-tune for LHR GPUs: enabled by default, to disable pass `--lhr_autotune 0`; increased reconnect tries on connection loss `--reconnect_count`)
 *   NanoMiner v3.3.12 (added support `verthash` for AMD GPUs; fixed issues on `kawpow` with Nvidia driver v470.57; reduced stale shares on `kawpow`; fixed miner crush when started with some AMD GCN3 and older GPUs)
-*   NBMiner v39.5 (added ability mining ergo LHR mode for mining ERGO, enable it by manually adding `lhr` option; optimizized power consumption on Nvidia GPUs while mining ERGO)
-*   XMRig v6.15.0 (minor fixes)
+*   NBMiner v39.5 (added ability mining ergo LHR mode for mining ERGO, enable it by manually adding `lhr` option, ergo LHR mode similar to ethash LHR mode see miner manual for details; optimizized power consumption on Nvidia GPUs while mining ERGO)
+*   XMRig v6.15.1 (minor fixes)
 
 ##### 0.6-210@210921 2021-09-21
 *   NBMiner v39.4 (fixed hashrate issues on `octopus` algo)
