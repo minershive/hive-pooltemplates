@@ -1,3 +1,6 @@
+##### 0.6-210@210928 2021-09-28
+*   T-Rex v0.23.2 (fixed issue with CPU validation incorrectly detects invalid shares after epoch change on `octopus` algo; fixed issue caused miner crush sometimes when `validate-shares` is enabled on `autolykos2` algo)
+
 ##### 0.6-210@210925 2021-09-25
 *   T-Rex v0.23.1 (removed telnet API; multiple bug fixes)
 *   GMiner v2.69 (added auto-tune for LHR GPUs: enabled by default, to disable pass `--lhr_autotune 0`; increased reconnect tries on connection loss `--reconnect_count`)
