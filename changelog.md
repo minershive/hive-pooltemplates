@@ -1,7 +1,7 @@
 ##### 0.6-210@211002 2021-10-02
 *   Gminer v2.70 (improved auto-tune for LHR GPUs, now miner speedup performance when GPU is steady; removed `--lhr_tune1` / `--lhr_tune2` parameters, use `--lhr_tune` to tune LHR GPUs: value range is -10..10, old parameters ignored for compatibility; display current `--lhr_tune` value and current kernel in statistics table)
 *   lolMiner v1.33 (complete rework of LHR semi-unlock feature: better performance of LHR semi-unlock, automatically detected LHR GPUs option `--mode` not needed anymore, `--lhrtune` has now default value of `auto` for an automatic tuning; other changes and bug fixes, see miner release notes for full details)
-*   CPUminer-Opt-JayDDee v3.18.0 (complete rewrite of Scrypt code: up to 50% increase in hashrate, support AVX512 & SHA support for SHA25; improved stale share handling for all algorithms; other improvements and bug fixes)
+*   CPUminer-Opt-JayDDee v3.18.0 (complete rewrite of Scrypt code: up to 50% increase in hashrate, support AVX512 & SHA support for SHA256; improved stale share handling for all algorithms; other improvements and bug fixes)
 
 ##### 0.6-210@210928 2021-09-28
 *   T-Rex v0.23.2 (fixed issue with CPU validation incorrectly detects invalid shares after epoch change on `octopus` algo; fixed issue caused miner crush sometimes when `validate-shares` is enabled on `autolykos2` algo)
