@@ -1,6 +1,6 @@
 ##### 0.6-210@211010 2021-10-10
-*   BzMiner v4.2 (stabilized hashrate; fixed issues for AMD cards)
 *   T-Rex v0.24.2 (enabled LHR unlock functionality for `autolykos2` algo; added LHR unlock "auto-tune" functionality for `ethash` and `autolykos2` algo, see option `lhr-autotune-mode` for details; added ETH+ZIL mining mode with an arbitrary ETH pool; fixed hashrate degradation on `kawpow` in version 0.24.0 on some configurations)
+*   BzMiner v4.2 (stabilized hashrate; fixed issues for AMD cards)
 
 ##### 0.6-210@211007 2021-10-07
 *   T-Rex v0.24.0 (introduced alternative unlocking mode for LHR GPUs: "LHR unlock dual mining mode". You can now mine ETH (~30% of full speed) and other coins (~70%) simultaneously with LHR cards using their full potential. Available modes: ETH+ERGO, ETH+RVN (both needs 8+GB GPUs and ETH+CFX (need 10+ GB GPUs); Improved "standard" LHR unlock mode: automatically detect LHR cards even if `lhr-tune` is not specified; add new parameter `lhr-low-power` reduces power consumption in LHR mode at a cost of a slightly lower hashrate))
