@@ -87,7 +87,7 @@
 *   Fixes in OC AMD GPUs (fixed memory clock setting for "Navi23" RX 6600 series >1075MHz; fixed issue with Vega FE appeared with recent updates)
 *   Gminer v2.65 (fixed floating hashrate reporting, appeared in v2.64)
    
-##### LINUX IMAGE RELEASE 0.6-208 2021-08-18
+##### LINUX IMAGE RELEASE BETA 0.6-208 2021-08-18
 *   Universal boot mode: BIOS | UEFI
 *   Hive Linux client: v0.6-208@210818
 *   Ubuntu v18.04 LTS based
