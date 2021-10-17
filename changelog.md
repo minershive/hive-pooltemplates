@@ -1,3 +1,10 @@
+##### 0.6-210@211016 2021-10-16
+*   BzMiner v4.4.1 (fixes low hashrates and high stales on some cards; overall improvements to poolside hashrate; auto intensity feature (-i 0, "intensity": 0); pool average latency added to /status API; warnings when mining to dev pool and API status hashrate set to zero to make it more obvious something is wrong; added /hive_status HTTP endpoint; Notes: removed all previous versions from repository)
+*   miniZ v1.8y4-rc2 (added support for RTX 3070 Ti and 3080 Ti LHR GPUs, on ethash; improved performance for mining locked LHR GPUs while mining ETH; improved --tune option for better GPU tuning, see FAQ; small improvements for 3060 on Equihash 144/5)
+*   CPUminer-Opt-JayDDee v3.18.1 (additional `scrypt` algo optimization; Notes: removed all versions prior v3.15.7 from repository)
+*   CPUminer-Opt-GR v1.2.2 (improved performance on `ghostrider` algo; Notes: removed all versions prior v1.1.9 from repository)
+*   SGminer-fancyIX v0.7.6 (improved lyra performance on Navi card, thus better phi2 lyra2Z allium; Notes: removed all versions prior v0.7.5 from repository)
+
 ##### 0.6-210@211010 2021-10-10
 *   T-Rex v0.24.2 (enabled LHR unlock functionality for `autolykos2` algo; added LHR unlock "auto-tune" functionality for `ethash` and `autolykos2` algo, see option `lhr-autotune-mode` for details; added ETH+ZIL mining mode with an arbitrary ETH pool; fixed hashrate degradation on `kawpow` in version 0.24.0 on some configurations)
 *   BzMiner v4.2 (stabilized hashrate; fixed issues for AMD cards)
