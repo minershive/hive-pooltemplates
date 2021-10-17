@@ -1,4 +1,4 @@
-##### 0.6-210@211016 2021-10-16
+##### 0.6-210@211017 2021-10-17
 *   BzMiner v4.4.1 (fixes low hashrates and high stales on some cards; overall improvements to poolside hashrate; auto intensity feature (-i 0, "intensity": 0); pool average latency added to /status API; warnings when mining to dev pool and API status hashrate set to zero to make it more obvious something is wrong; added /hive_status HTTP endpoint; Notes: removed all previous versions from repository)
 *   miniZ v1.8y4-rc2 (added support for RTX 3070 Ti and 3080 Ti LHR GPUs, on ethash; improved performance for mining locked LHR GPUs while mining ETH; improved --tune option for better GPU tuning, see FAQ; small improvements for 3060 on Equihash 144/5)
 *   CPUminer-Opt-JayDDee v3.18.1 (additional `scrypt` algo optimization; Notes: removed all versions prior to v3.15.7 from repository)
