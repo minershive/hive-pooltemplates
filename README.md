@@ -32,7 +32,7 @@ Available miners:
 - claymore-x - Claymore's Cryptonote AMD GPU miner
 - claymore-z - Claymore's AMD GPU ZCash miner
 - cortex-miner - Cortex CUDA miner 
-- cpuminer-opt - cpuminer-opt CPU miner (forks: JayDDee, cpupower, rkz, rplant)
+- cpuminer-opt - cpuminer-opt CPU miner (forks: JayDDee, cpupower, rkz, rplant, gr)
 - cryptodredge - multi algo CUDA miner (NVidia)
 - damominer - multi algo CUDA miner (NVidia)
 - dstm - legacy 0.3.4b and new zhash
