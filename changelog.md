@@ -1,3 +1,7 @@
+##### 0.6-210@211018-2 2021-10-18
+*   PhoenixMiner v5.8b (implemented optimized kernels for AMD RX6600XT cards; added support for the latest AMD Linux drivers; kernels for AMD Polaris changed to support latest drivers: it's very small speed improvement < 0.1% on average; other fixes and small improvements)
+*   miniZ: split v1.8y4 to v1.8y4rc1 and v1.8y4rc2
+
 ##### 0.6-210@211018 2021-10-18
 *   TeamRedMiner v0.8.6.2 (added a synthetic algo `mtp_firopow` that will use the correct algo given the system time and shut down the miner at the time of the Firo fork on Oct 26, 2021; split the `ethash` and `progpow` algos into separate binaries, mainly for some Vegas that ran into stability issues going from 0.8.5 to 0.8.6; added support `autolykos2` for Tonga GPUs; changed the default SSL behavior to not provide a SNI hostname during handshake: this simplifies running tunnels against TLS/SSL ports on public pools)
 *   lolMiner v1.34 (rework of LHR semi-unlocker: improved performance of RTX 3060 and RTX 3060 Ti by up to 2%, generally allowing a bit less core clock; auto tuning will now be quicker to reasonable hashrates; improved stability on found parameters; added support of RTX A6000 / RTX A5000 / RTX A4000 (and future RTX A2000) Nvidia workstation GPUs; reduced RAM usage of Nvidia Ethash solver; other improvements and minor bug fixes: see [full miner's changelog](https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.34) )
