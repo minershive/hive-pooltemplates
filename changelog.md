@@ -2,7 +2,6 @@
 *   BzMiner v4.5 (improved hashrate on some AMD cards, specifically 4Gb cards; bug fixes: auto protocol detection fixed, corrected hashrate output)
 *   CPUminer-Opt-JayDDee v3.18.2 (minor fixes)
 *   XMRig-MO v6.15.2-mo2 (added `algo-min-time` option)
-*   T-Rex: added dual stats support for dashboard
 
 ##### 0.6-210@211018-2 2021-10-18
 *   PhoenixMiner v5.8b (implemented optimized kernels for AMD RX6600XT cards; added support for the latest AMD Linux drivers; kernels for AMD Polaris changed to support latest drivers: it's very small speed improvement < 0.1% on average; other fixes and small improvements)
