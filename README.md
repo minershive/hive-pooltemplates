@@ -67,6 +67,7 @@ Available miners:
 - sushi-miner-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
 - sushi-miner-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
 - t-rex - T-Rex multi algo CUDA miner (NVidia)
+- teamblackminer - CUDA/OpenCL miner for mining Ethereum, Ethereum Classic and Zilliqa
 - teamredminer - lyra2z/lyra2v3/phi2/cryptonight-r/v7/v8/half/double/rwz/trtl/x16r/x16rv2 OpenCL miner (AMD)
 - tt-miner - Ethash/Ubqhash/ProgPoW with variants/TEthashV1/MTP/Lyra2rev3 CUDA miner
 - verthashminer - open-source Verthash CUDA/OpenCL miner
