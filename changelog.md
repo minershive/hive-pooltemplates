@@ -1,6 +1,6 @@
 ##### 0.6-210@211021 2021-10-21
 *   **NEW** TeamBlackMiner v1.16 (CUDA/OpenCL miner for mining Ethereum, Ethereum Classic, Zilliqa)
-*   T-Rex: added support for dual modes (introduced v0.24.0) configuration and stats 
+*   T-Rex: added support configuration and stats for dual modes (introduced since v0.24.0)
    
 ##### 0.6-210@211020 2021-10-20
 *   BzMiner v4.5 (improved hashrate on some AMD cards, specifically 4Gb cards; bug fixes: auto protocol detection fixed, corrected hashrate output)
