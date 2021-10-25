@@ -1,0 +1,51 @@
+[
+	{
+		"pool": {
+			"name": "Flux Pools Solo",
+			"url": "https://fluxpools.net/coins/solo-flux",
+			"fee": 1,
+			"type": "SOLO"
+		}
+	},
+	{
+		"coin": "FLUX",
+		"servers": [
+			{
+				"geo": "US SOLO",
+				"urls": [
+					"us-solo-flux.fluxpools.net:7201"
+				]
+			},
+			{
+				"geo": "EU SOLO",
+				"urls": [
+					"eu-solo-flux.fluxpools.net:7201"
+				]
+			}
+		],
+		"miners": {
+			"gminer": {
+				"algo": "125_4",
+				"server": "%URL_HOST%",
+				"port": "%URL_PORT%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "--pers auto"
+			},
+			"lolminer": {
+				"algo": "ZEL",
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "%URL_HOST%",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"miniz": {
+				"algo": "125,4",
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "--pers auto"
+			}
+		}
+	}
+]
