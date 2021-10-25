@@ -1,3 +1,10 @@
+##### 0.6-210@211024 2021-10-24
+*   T-Rex v0.24.5 (introduced double-buffer feature for `autolykos2` which increase pool-side hashrate by 1-4%: if GPU memory is enough to hold two memory buffers miner now generates the dataset for the next ERGO block before it arrives; added hashrate reporting on `kawpow`, `firopow` to the mining pool; added `devices-info` parameter to list available CUDA devices; bug fixes)
+*   PhoenixMiner v5.8c (fixed crash when mining on AMD RX 6x00 series cards; removed error messages when mining on fanless Nvidia cards)
+*   TeamBlackMiner v1.19 (fixed NVIDIA stats; core clock and mem clock are reset while generating the DAG file; pool hashrate disabled for Vardiff pools; reduced stale shares nvidia with '--xintensity 160'; added a 9th nvidia cuda kernel that can give a small speedup; fixed a bug in the Autotune: the kernel selector should be more accurate now; removed crashed OpenCL cards from the hashrate statistics)
+*   BzMiner v4.6 (minor non CLI updates)
+*   CPUminer-Opt-GR v1.2.3 (new rplant protocol disabled by default: it's can be enabled with confirm-block option but currently due bug on rplant pool it's lead to lower payouts/hashrate on the pool; add info if the user is trying to use SSL protocol for non-SSL stratum when  miner is not able to connect to the pool's stratum;  minor output changes; `tune_config` file now stores by default in miner fork directory instead with version number directory which will eliminate the need for re-tuning in subsequent updates of the miner)
+
 ##### 0.6-210@211021 2021-10-21
 *   **NEW** TeamBlackMiner v1.16 (CUDA/OpenCL miner for mining Ethereum, Ethereum Classic, Zilliqa)
 *   T-Rex: added support configuration and stats for dual modes (introduced since v0.24.0)
