@@ -1,3 +1,7 @@
+##### 0.6-210@211025 2021-10-25
+*   NanoMiner v3.4.0 (added firopow algo support for upcoming FIRO hardfork)
+*   XMRig-MO v6.15.2-mo3 (minor bug fixed)
+
 ##### 0.6-210@211024 2021-10-24
 *   T-Rex v0.24.5 (introduced double-buffer feature for `autolykos2` which increase pool-side hashrate by 1-4%: if GPU memory is enough to hold two memory buffers miner now generates the dataset for the next ERGO block before it arrives; added hashrate reporting on `kawpow`, `firopow` to the mining pool; added `devices-info` parameter to list available CUDA devices; bug fixes)
 *   PhoenixMiner v5.8c (fixed crash when mining on AMD RX 6x00 series cards; removed error messages when mining on fanless Nvidia cards)
