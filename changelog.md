@@ -1,4 +1,4 @@
-##### 0.6-210@211027 2021-10-27-2
+##### 0.6-210@211027-2 2021-10-27
 *   Emergency bug fix for no stats in dashboard appeared with TeamBlackMiner v1.20
 
 ##### 0.6-210@211027 2021-10-27
