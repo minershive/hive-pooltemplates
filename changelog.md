@@ -1,3 +1,9 @@
+##### 0.6-210@211027 2021-10-27
+*   NBMiner v39.6 (significant improvement `ethash` LHR mode: higher hashrate, more stable LHR unlocking, default LHR mode changes to lhr-mode 1 for LHR GPUs, default values of LHR mode increased, lhr-mode 1 -> 74, lhr-mode 2 -> 71, added 3 new options for LHR auto-tuning control: `lhr-reduce-value`, `lhr-reduce-time`, `lhr-reduce-limit` at most cases you don't need to change it see miner's manual for details; adapted for `ergo`  the 3 new LHR options as for `ethash`; disabled SNI extension for ssl connections by default, can be enabled with `enable-sni` option; removed support `cuckatoo` & `cuckatoo32` algos; )
+*   NanoMiner v3.4.1 (added support zombie mode on `firopow` for AMD GPUs, for Nvidia GPUs it was inroduced in v3.4.0)
+*   TeamBlackMiner v1.20 (removed unwanted debug output for AMD/OpenCL; removed cost from console status if watt reading is null; added mutex lock to average solution time to avoid thread race condition; avoid GPU timouts at startup on rigs with more than 12 cards; improved staleshare checker less stales reported; increased default nvidia `xintensity` to 225 to improve the poolsite hashrate; added `dagintensity` 0-9 setting for Nvidia GPUs to prevent crash on high oc RTX cards; fixed reported hashrate on some pools with high case workernames)
+*   lolMiner v1.34 (bug fixes: added further epochs to the DAG correction detection/table: this can resolve issues with defect shares that appeared in 1.34 or earlier with the start of epoch 450; slightly changed internal LHR parameters of 3070 ti & 3080 that can impact to improve stability by this plus a small speedup)
+  
 ##### 0.6-210@211025 2021-10-25
 *   NanoMiner v3.4.0 (added firopow algo support for upcoming FIRO hardfork)
 *   XMRig-MO v6.15.2-mo3 (minor bug fixed)
