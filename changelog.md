@@ -1,3 +1,6 @@
+##### 0.6-210@211027 2021-10-27-2
+*   Emergency bug fix for no stats in dashboard appeared with TeamBlackMiner v1.20
+
 ##### 0.6-210@211027 2021-10-27
 *   NBMiner v39.6 (significant improvement `ethash` LHR mode: higher hashrate, more stable LHR unlocking, default LHR mode changes to lhr-mode 1 for LHR GPUs, default values of LHR mode increased, lhr-mode 1 -> 74, lhr-mode 2 -> 71, added 3 new options for LHR auto-tuning control: `lhr-reduce-value`, `lhr-reduce-time`, `lhr-reduce-limit` in most cases you do not need to change them, see the miner's manual for details; adapted for `ergo`  the 3 new LHR options as for `ethash`; disabled SNI extension for SSL connections by default, can be enabled with `enable-sni` option; removed support `cuckatoo` & `cuckatoo32` algos)
 *   NanoMiner v3.4.1 (added support zombie mode on `firopow` for AMD GPUs, for Nvidia GPUs it was introduced in v3.4.0)
