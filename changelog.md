@@ -1,3 +1,6 @@
+##### 0.6-210@211028 2021-10-28
+*   TeamBlackMiner v1.21 (fixed short option for `--api` for enabling API; fix overflow bug in average solution time output to the console; SSL is not working 100% so we have disabled it for now; reset gpu-memclock has been disabled on dag generation: use the `--dagintensity` option instead; other minor changes)
+
 ##### 0.6-210@211027-2 2021-10-27
 *   Emergency bug fix for no stats in dashboard appeared with TeamBlackMiner v1.20
 
