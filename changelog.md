@@ -1,3 +1,12 @@
+##### 0.6-211@211029 2021-10-29
+*   Reduced power usage on AMD RDNA2 RX 6x00 series (Recommended SoC ranges to reduce power usage: clock: 800-960MHz, voltage: 800-900mV. **WARNING** Only change these settings if you know what you're doing!)
+*   Added OC support for AMD Radeon PRO cards: PRO VII (Vega20), V320 (Navi12), W6600 (Navi23)
+*   Fixed issue with fluctuating hashrate on some AMD RX 6800 (not XT)
+*   Updated CUDA RT libs up to latest v11.5
+*   Added support to `nvidia-driver-update` CUDA libraries v11.4 (470 driver series) and v11.5 (495 driver series)
+*   Updated `nvtool` to v1.5.6 (added throttle reasons --throttle option)
+*   Updated PCI IDs to version 2021-10-19
+
 ##### 0.6-210@211028 2021-10-28
 *   TeamBlackMiner v1.21 (fixed short option for `--api` for enabling API; fix overflow bug in average solution time output to the console; SSL is not working 100% so we have disabled it for now; reset gpu-memclock has been disabled on dag generation: use the `--dagintensity` option instead; other minor changes)
 
