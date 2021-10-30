@@ -1,6 +1,6 @@
 ##### 0.6-211@211029 2021-10-29
 *   Reduced power usage on AMD RDNA2 RX 6x00 series (Recommended SoC ranges to reduce power usage: clock: 800-960MHz, voltage: 800-900mV. **WARNING** Only change these settings if you know what you're doing!)
-*   Added OC support for AMD Radeon PRO cards: PRO VII (Vega20), V320 (Navi12), W6600 (Navi23)
+*   Added OC support for AMD Radeon PRO cards: PRO VII (Vega20), V520 (Navi12), W6600 (Navi23)
 *   Fixed issue with fluctuating hashrate on some AMD RX 6800 (not XT)
 *   Updated CUDA RT libs up to latest v11.5
 *   Added support to `nvidia-driver-update` CUDA libraries v11.4 (470 driver series) and v11.5 (495 driver series)
