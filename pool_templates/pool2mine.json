@@ -69,7 +69,13 @@
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--proto stratum"
+                "user_config": "--proto stratum --proto stratum --cuda 1 --opencl 1"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
             },
             "tt-miner": {
                 "url": "stratum+tcp://%URL%",
