@@ -1,6 +1,6 @@
 ##### 0.6-211@211030 2021-10-30
 *   Bminer v16.4.8 (fixed some compatibility issues)
-*   NBMiner v39.7 (added LHR mode support for new GA104 version of RTX 3060; turn on LHR mode on ethash by default for 3060 v1; fixed detection LHR lock on certain situation; fixed Nvidia GPU power consumption issue on certain rig config; removed support for mining `sero`)
+*   NBMiner v39.7 (added LHR mode support for new GA104 version of RTX 3060; fixed detection LHR lock on certain situation; fixed Nvidia GPU power consumption issue on certain rig config; removed support for mining `sero`)
 
 ##### 0.6-211@211029 2021-10-29
 *   Reduced power usage on AMD RDNA2 RX 6x00 series (Recommended SoC ranges to reduce power usage: clock: 800-960MHz, voltage: 800-900mV. **WARNING** Only change these settings if you know what you're doing!)
