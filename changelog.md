@@ -1,3 +1,7 @@
+##### 0.6-211@211031 2021-10-31
+*   TeamBlackMiner v1.22 (added `--dagintensity` support for AMD cards; fixed a print bug for CUDA showing 0GB memory for cards; fixed `--cl-devices []` for multicard rigs AMD/NVIDIA; fixed index bug in stats when using `--cu-devices`; added more pools)
+*   WildRig-Multi v0.30.0 (implemented support `ghostrider` algo; fixed support different drivers for RDNA/RDNA2 GPUs)
+
 ##### 0.6-211@211030 2021-10-30
 *   Bminer v16.4.8 (fixed some compatibility issues)
 *   NBMiner v39.7 (added LHR mode support for new GA104 version of RTX 3060; fixed detection LHR lock on certain situation; fixed Nvidia GPU power consumption issue on certain rig config; removed support for mining `sero`)
