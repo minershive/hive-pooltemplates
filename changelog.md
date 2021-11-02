@@ -1,7 +1,7 @@
 ##### 0.6-211@211102 2021-11-02
 *   WildRig-Multu v0.30.1 (fixed rejects on `ghostrider`; lowered devfee to 1% on `ghostrider`)
 *   lolMiner: improved error reporting when some GPU hangs
-*   TBMiner: fixed version v1.22 package
+*   TBMiner: fixed package v1.22
 *   NanoMiner: fixed broken installation appeared on previous update
 
 ##### 0.6-211@211101 2021-11-01
