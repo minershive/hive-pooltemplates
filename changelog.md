@@ -1,6 +1,6 @@
 ##### 0.6-211@211101 2021-11-01
 *   NanoMiner v3.4.2 (significantly improved Ergo mining `autolykos2` performance, up to 60%, on AMD Vega family: RX Vega 56/64, Radeon VII; slightly improved Ergo mining `autolykos2` performance on AMD Polaris family: RX 4xx/5xx)
-*   SRBMiner-Multi v0.8.2 (added possibility to preload dataset/s on `autolykos2` algorithm with `--gpu-autolykos2-preload` parameter; little faster dataset creation on some GPUs; job notifications are now displayed in console less frequently, unless extended log is enabled; reverted `autolykos2` kernels for Hawaii, Tonga and Fiji to the ones from v0.7.3; bug fixes in algorithm switching mode `--multi-algorithm-job-mode 3`)
+*   SRBMiner-Multi v0.8.2 (added possibility to preload dataset/s on `autolykos2` algorithm with `--gpu-autolykos2-preload` parameter; little faster dataset creation on some GPUs; job notifications are now displayed in console less frequently, unless extended log is enabled; reverted `autolykos2` kernels for Hawaii, Tonga and Fiji to the ones from v0.7.3)
 *   XMRig v6.15.3 (AstroBWT speedup up to +35%; OpenCL fixes for non-AMD platforms)
 *   XMRig-MO v6.15.3-mo1 (MoneroOcean pool fork synced to v6.15.3)
  
