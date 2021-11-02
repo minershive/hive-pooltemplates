@@ -2,7 +2,7 @@
 *   WildRig-Multu v0.30.1 (fixed rejects on `ghostrider`; lowered devfee to 1% on `ghostrider`)
 *   lolMiner: improved error reporting when some GPU hangs
 *   TBMiner: fixed package v1.22
-*   NanoMiner: fixed broken installation appeared on previous update
+*   NanoMiner: fixed broken installation appeared with previous update
 
 ##### 0.6-211@211101 2021-11-01
 *   NanoMiner v3.4.2 (significantly improved Ergo mining `autolykos2` performance, up to 60%, on AMD Vega family: RX Vega 56/64, Radeon VII; slightly improved Ergo mining `autolykos2` performance on AMD Polaris family: RX 4xx/5xx)
