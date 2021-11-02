@@ -1,3 +1,9 @@
+##### 0.6-211@211102 2021-11-02
+*   WildRig-Multu v0.30.1 (fixed rejects on `ghostrider`; lowered devfee to 1% on `ghostrider`)
+*   lolMiner: improved error reporting when some GPU hangs
+*   TBMiner: fixed version v1.22 package
+*   NanoMiner: fixed broken installation appeared on previous update
+
 ##### 0.6-211@211101 2021-11-01
 *   NanoMiner v3.4.2 (significantly improved Ergo mining `autolykos2` performance, up to 60%, on AMD Vega family: RX Vega 56/64, Radeon VII; slightly improved Ergo mining `autolykos2` performance on AMD Polaris family: RX 4xx/5xx)
 *   SRBMiner-Multi v0.8.2 (added possibility to preload dataset/s on `autolykos2` algorithm with `--gpu-autolykos2-preload` parameter; little faster dataset creation on some GPUs; job notifications are now displayed in console less frequently, unless extended log is enabled; reverted `autolykos2` kernels for Hawaii, Tonga and Fiji to the ones from v0.7.3)
