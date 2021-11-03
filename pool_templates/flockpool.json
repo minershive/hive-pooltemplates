@@ -1,0 +1,60 @@
+[
+  {
+    "pool": {
+      "name": "Flockpool",
+      "url": "https://flockpool.com",
+      "fee": 1,
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "RTM",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "stratum+tcp://eu.flockpool.com:4444"
+        ],
+        "ssl_urls": [
+          "stratum+tcps://eu.flockpool.com:5555"
+        ]
+      },
+      {
+        "geo": "USA-Central",
+        "urls": [
+          "stratum+tcp://us.flockpool.com:4444"
+        ],
+        "ssl_urls": [
+          "stratum+tcps://us.flockpool.com:5555"
+        ]
+      },
+      {
+        "geo": "USA-West",
+        "urls": [
+          "stratum+tcp://us-west.flockpool.com:4444"
+        ],
+        "ssl_urls": [
+          "stratum+tcps://us-west.flockpool.com:5555"
+        ]
+      },
+      {
+        "geo": "Asia",
+        "urls": [
+          "stratum+tcp://asia.flockpool.com:4444"
+        ],
+        "ssl_urls": [
+          "stratum+tcps://asia.flockpool.com:5555"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "%URL%",
+        "algo": "gr",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "fork": "gr"
+      }
+    }
+  }
+]

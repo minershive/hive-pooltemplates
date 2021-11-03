@@ -1,0 +1,390 @@
+[
+  {
+    "pool": {
+      "name": "fastpool.xyz",
+      "url": "https://fastpool.xyz",
+      "fee": 1,
+      "type": "PROP, SOLO"
+    }
+  },
+  {
+    "coin": "DMCH",
+    "servers": [
+      {
+        "geo": "Nicehash - diff: 12 000 000",
+        "urls": ["fastpool.xyz:10148"]
+      },
+      {
+        "geo": "X3 - diff: 9 000 000",
+        "urls": ["fastpool.xyz:10147"]
+      },
+      {
+        "geo": "A8 >150K & < 200K - diff: 1 800 000",
+        "urls": ["fastpool.xyz:10146"]
+      },
+      {
+        "geo": "BaikalN+, RR2XX - diff: 200 000",
+        "urls": ["fastpool.xyz:10145"]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%@%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "QWC",
+    "servers": [
+      {
+        "geo": "Nicehash - diff: 12 000 000",
+        "urls": ["fastpool.xyz:10198"]
+      },
+      {
+        "geo": "X3 - diff: 9 000 000",
+        "urls": ["fastpool.xyz:10197"]
+      },
+      {
+        "geo": "A8 >150K & < 200K - diff: 1 800 000",
+        "urls": ["fastpool.xyz:10196"]
+      },
+      {
+        "geo": "BaikalN+, RR2XX - diff: 200 000",
+        "urls": ["fastpool.xyz:10201"]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%@%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "DERO",
+    "servers": [
+      {
+        "geo": "SSL/Nicehash - diff: 60 000",
+        "ssl_urls": ["fastpool.xyz:10114"]
+      },
+      {
+        "geo": "High CPU - diff: 15 000",
+        "urls": ["fastpool.xyz:10113"]
+      },
+      {
+        "geo": "Medium CPU - diff: 5 000",
+        "urls": ["fastpool.xyz:10112"]
+      }
+    ],
+    "miners": {
+      "xmrig": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "user_config": "\"algo\": \"astrobwt\""
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "algo": "astrobwt",
+        "fork": "xmrig",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "xmrig": {
+        "fork": "xmrigcc",
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "algo": "astrobwt"
+      }
+    }
+  },
+  {
+    "coin": "RVN",
+    "servers": [
+      {
+        "geo": "SSL Mid range hardware/SSL - diff: 0.025",
+        "ssl_urls": ["fastpool.xyz:4044"]
+      },
+      {
+        "geo": "High end hardware/Nicehash - diff: 4.1",
+        "urls": ["fastpool.xyz:4043"]
+      },
+      {
+        "geo": "High range hardware - diff: 2.5",
+        "urls": ["fastpool.xyz:4042"]
+      },
+      {
+        "geo": "Mid end hardware - diff: 1",
+        "urls": ["fastpool.xyz:4041"]
+      },
+      {
+        "geo": "Low end hardware - diff: 0.025",
+        "urls": ["fastpool.xyz:4040"]
+      }
+    ],
+    "miners_kawpow": {
+      "ethminer": {
+        "fork": "kawpowminer",
+        "cuda": 1,
+        "opencl": 0,
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "algo": "kawpow"
+      },
+      "nanominer": {
+        "algo": "kawpow",
+        "url": "%URL%",
+        "template": "%WAL%@%WORKER_NAME%",
+        "pass": "x",
+        "user_config": "coin = %COIN%"
+      },
+      "ccminer": {
+        "fork": "enemy",
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "kawpow",
+        "ccpass": "x",
+        "ccuser": "%WAL%@%WORKER_NAME%"
+      },
+      "gminer": {
+        "algo": "kawpow",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "bminer": {
+        "url": "%URL%",
+        "algo": "raven",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "tt-miner": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "algo": "kawpow",
+        "user_config": "-coin %COIN%"
+      },
+      "damominer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "rvn",
+        "worker": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "teamredminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "user_config": "--opencl-threads=2"
+      }
+    }
+  },
+  {
+    "coin": "SATO",
+    "servers": [
+      {
+        "geo": "SSL Mid range hardware/SSL - diff: 0.025",
+        "ssl_urls": ["fastpool.xyz:4055"]
+      },
+      {
+        "geo": "High end hardware/Nicehash - diff: 4.1",
+        "urls": ["fastpool.xyz:4054"]
+      },
+      {
+        "geo": "High range hardware - diff: 2.5",
+        "urls": ["fastpool.xyz:4053"]
+      },
+      {
+        "geo": "Mid end hardware - diff: 1",
+        "urls": ["fastpool.xyz:4052"]
+      },
+      {
+        "geo": "Low end hardware - diff: 0.025",
+        "urls": ["fastpool.xyz:4051"]
+      }
+    ],
+    "miners_kawpow": {
+      "ethminer": {
+        "fork": "kawpowminer",
+        "cuda": 1,
+        "opencl": 0,
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "algo": "kawpow"
+      },
+      "nanominer": {
+        "algo": "kawpow",
+        "url": "%URL%",
+        "template": "%WAL%@%WORKER_NAME%",
+        "pass": "x",
+        "user_config": "coin = %COIN%"
+      },
+      "ccminer": {
+        "fork": "enemy",
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "kawpow",
+        "ccpass": "x",
+        "ccuser": "%WAL%@%WORKER_NAME%"
+      },
+      "gminer": {
+        "algo": "kawpow",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "bminer": {
+        "url": "%URL%",
+        "algo": "raven",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "tt-miner": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "algo": "kawpow",
+        "user_config": "-coin %COIN%"
+      },
+      "damominer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "rvn",
+        "worker": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "teamredminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "user_config": "--opencl-threads=2"
+      }
+    }
+  },
+  {
+    "coin": "ARQ",
+    "servers": [
+      {
+        "geo": "High end CPU - diff: 100 000",
+        "urls": ["fastpool.xyz:6361"]
+      },
+      {
+        "geo": "Low hardware - diff: 15 000",
+        "urls": ["fastpool.xyz:6360"]
+      }
+    ],
+    "miners": {
+      "xmrig": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "user_config": "\"algo\": \"rx/arq\""
+      },
+      "xmrig-new": {
+        "cpu": "1",
+        "url": "%URL%",
+        "algo": "rx/arq",
+        "fork": "xmrig",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "xmr-stak": {
+        "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+        "nvidia": "\"gpu_threads_conf\" : [],",
+        "url": "%URL%",
+        "fork": "randomx",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "user_config": "\"currency\":\"randomx_arqma\""
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "algo": "randomarq"
+      }
+    }
+  },
+  {
+    "coin": "GRFT",
+    "servers": [
+      {
+        "geo": "SSL - diff: 15 000",
+        "ssl_urls": ["fastpool.xyz:10278"]
+      },
+      {
+        "geo": "High-End Hardware/Nicehash - diff: 300 000",
+        "urls": ["fastpool.xyz:10277"]
+      },
+      {
+        "geo": "Mid hardware - diff: 15 000",
+        "urls": ["fastpool.xyz:10276"]
+      },
+      {
+        "geo": "Low hardware - diff: 5 000",
+        "urls": ["fastpool.xyz:10275"]
+      }
+    ],
+    "miners": {
+      "xmrig": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "user_config": "\"algo\": \"rx/graft\""
+      },
+      "xmrig-new": {
+        "cpu": "1",
+        "url": "%URL%",
+        "algo": "rx/graft",
+        "fork": "xmrig",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "algo": "randomgrft"
+      }
+    }
+  }
+]

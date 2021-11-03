@@ -87,31 +87,25 @@
             }
         ],
         "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"argon2/chukwa\""
-            },
             "xmrig-new": {
                 "url": "%URL%",
                 "cpu": "1",
-                "algo": "argon2/chukwa",
+                "algo": "argon2/chukwav2",
                 "fork": "xmrig",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%"
             },
-              "cryptodredge": {
+            "srbminer": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "algo": "chukwa"
+                "algo": "argon2id_chukwa2"
             },
             "teamredminer": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "algo": "trtl_chukwa"
+                "algo": "trtl_chukwa2"
             }
         }
     },
@@ -165,83 +159,6 @@
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "algo": "cn_haven"
-            }
-        }
-    },
-    {
-        "coin": "GRFT",
-        "servers": [
-            {
-                "geo": "Low-End",
-                "urls": [
-                    "pool.hashvault.pro:3333"
-                ],
-                "ssl_urls": [
-                    "pool.hashvault.pro:3333"
-                ]
-            },
-            {
-                "geo": "Mid-End",
-                "urls": [
-                    "pool.hashvault.pro:5555"
-                ],
-                "ssl_urls": [
-                    "pool.hashvault.pro:5555"
-                ]
-            },
-            {
-                "geo": "High-End",
-                "urls": [
-                    "pool.hashvault.pro:7777"
-                ],
-                "ssl_urls": [
-                    "pool.hashvault.pro:7777"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cn/rwz\""
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cn/rwz\""
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cn/rwz\""
-            },
-            "xmrig-new": {
-                "url": "%URL%",
-                "algo": "cn/rwz",
-                "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"graft\""
-            },
-            "teamredminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cnv8_rwz"
-            },
-            "nanominer": {
-                "algo": "CryptoNightReverseWaltz",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "%WORKER_NAME%"
             }
         }
     },
@@ -325,77 +242,6 @@
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "algo": "cnv8_half"
-            }
-        }
-    },
-    {
-        "coin": "RYO",
-        "servers": [
-            {
-                "geo": "Low-End",
-                "urls": [
-                    "pool.hashvault.pro:3333"
-                ],
-                "ssl_urls": [
-                    "pool.hashvault.pro:3333"
-                ]
-            },
-            {
-                "geo": "Mid-End",
-                "urls": [
-                    "pool.hashvault.pro:5555"
-                ],
-                "ssl_urls": [
-                    "pool.hashvault.pro:5555"
-                ]
-            },
-            {
-                "geo": "High-End",
-                "urls": [
-                    "pool.hashvault.pro:7777"
-                ],
-                "ssl_urls": [
-                    "pool.hashvault.pro:7777"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cn/gpu\""
-            },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_gpu\""
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cn/gpu\""
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cn/gpu\""
-            },
-            "xmrig-new": {
-                "url": "%URL%",
-                "algo": "cn/gpu",
-                "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
-            },
-            "cryptodredge": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cryptonight-gpu"
             }
         }
     },
@@ -508,7 +354,7 @@
             }
         ],
         "miners": {
-            "SRBMiner-MULTI": {
+            "srbminer": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
@@ -706,16 +552,16 @@
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_conceal\""
+                "user_config": "\"currency\": \"cryptonight_gpu\""
             },
-            "teamredminer": {
+            "cryptodredge": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "algo": "cn_conceal"
+                "algo": "cryptonight-gpu"
             }
         }
-	},
+    },
     {
         "coin": "WOW",
         "servers": [
@@ -748,7 +594,7 @@
             }
         ],
         "miners": {
-            "SRBMiner-MULTI": {
+            "srbminer": {
                 "url": "%URL%",
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",

@@ -1,0 +1,101 @@
+[
+	{
+		"pool": {
+			"name": "Minerpool SOLO",
+			"url": "https://minerpool.org",
+			"fee": 1,
+			"type": "SOLO"
+		}
+	},
+	{
+		"coin": "RVN",
+		"servers": [
+			{
+				"geo": "SOLO EU Vardiff",
+				"urls": [
+					"eu.minerpool.org:16069"
+				]
+			},
+			{
+				"geo": "SOLO US-NA Vardiff",
+				"urls": [
+					"na.minerpool.org:16069"
+				]
+			},
+			{
+				"geo": "SOLO ASIA Vardiff",
+				"urls": [
+					"asia.minerpool.org:16069"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_kawpow"
+		}
+	},
+	{
+		"coin": "FLUX",
+		"servers": [
+			{
+				"geo": "EU Low diff",
+				"urls": [
+					"eu.minerpool.org:2057"
+				]
+			},
+			{
+				"geo": "EU Vardiff",
+				"urls": [
+					"eu.minerpool.org:2058"
+				]
+			},
+			{
+				"geo": "US-NA Low diff",
+				"urls": [
+					"na.minerpool.org:2057"
+				]
+			},
+			{
+				"geo": "US-NA Vardiff",
+				"urls": [
+					"na.minerpool.org:2058"
+				]
+			},
+			{
+				"geo": "ASIA Low diff",
+				"urls": [
+					"asia.minerpool.org:2057"
+				]
+			},
+			{
+				"geo": "ASIA Vardiff",
+				"urls": [
+					"asia.minerpool.org:2058"
+				]
+			}
+		],
+		"miners": {
+			"gminer": {
+				"algo": "125_4",
+				"server": "%URL_HOST%",
+				"port": "%URL_PORT%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "--pers auto"
+			},
+			"lolminer": {
+				"algo": "ZEL",
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "%URL_HOST%",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"miniz": {
+				"algo": "125,4",
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "--pers auto"
+			}
+		}
+	}
+]

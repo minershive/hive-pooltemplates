@@ -579,9 +579,6 @@
             }
         ],
         "miners": {
-           "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3, ALLPOOLS: 1, ALLCOINS: 1"
-            },
             "phoenixminer": {
                 "url": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 4"
             },
@@ -1893,7 +1890,7 @@
                 "algo": "bl2bsha3",
                 "pass": "x",
                 "worker": "%WORKER_NAME%",
-                "template": "%WAL%.%WORKER_NAME%",
+                "template": "%WAL%",
                 "user_config": "--disable-cpu"
             },
             "nbminer": {
@@ -2195,6 +2192,82 @@
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
+        }
+    },
+    {
+        "coin": "Nicehash-Octopus",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "octopus.eu.nicehash.com:3389"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "octopus.usa.nicehash.com:3389"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "octopus.hk.nicehash.com:3389"
+                ]
+            },
+            {
+                "geo": "Japan",
+                "urls": [
+                    "octopus.jp.nicehash.com:3389"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "octopus.br.nicehash.com:3389"
+                ]
+            },
+            {
+                "geo": "India",
+                "urls": [
+                    "octopus.in.nicehash.com:3389"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_octopus"
+        }
+    },
+    {
+        "coin": "Nicehash-Autolykos",
+        "servers": [
+            {
+                "geo": "Europe West",
+                "urls": [
+                    "autolykos.eu-west.nicehash.com:3390"
+                ]
+            },
+            {
+                "geo": "Europe North",
+                "urls": [
+                    "autolykos.eu-north.nicehash.com:3390"
+                ]
+            },
+            {
+                "geo": "USA West",
+                "urls": [
+                    "autolykos.usa-west.nicehash.com:3390"
+                ]
+            },
+            {
+                "geo": "USA East",
+                "urls": [
+                    "autolykos.usa-east.nicehash.com:3390"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_autolykos2"
         }
     }
 ]

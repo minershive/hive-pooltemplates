@@ -1,4 +1,277 @@
 {
+    "miners_octopus": {
+        "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "algo":"octopus"
+        },
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "octopus",
+            "pass": "x",
+            "template": "%WAL%",
+            "user_config": "coin = CFX\nrigName = %WORKER_NAME%"
+        },
+        "t-rex": {
+            "url": "%URL%",
+            "algo": "octopus",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
+        }
+    },
+
+    "miners_autolykos2": {
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "autolykos",
+            "pass": "x",
+            "template": "%WAL%",
+            "user_config": "coin = ERG\nrigName = %WORKER_NAME%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "autolykos2",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "--disable-cpu"
+        },
+        "teamredminer": {
+            "url": "%URL%",
+            "algo": "autolykos2",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "lolminer": {
+            "algo": "AUTOLYKOS2",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "t-rex": {
+            "url": "%URL%",
+            "algo": "autolykos2",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "nbminer": {
+            "url": "%URL%",
+            "algo": "ergo",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
+    },
+
+    "miners_autolykos2_slash_email": {
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "autolykos",
+            "pass": "x",
+            "template": "%WAL%",
+            "user_config": "coin = ERG\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "autolykos2",
+            "worker": "%WORKER_NAME%/%EMAIL%",
+            "template": "%WAL%",
+            "user_config": "--disable-cpu"
+        },
+        "teamredminer": {
+            "url": "%URL%",
+            "algo": "autolykos2",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
+        "lolminer": {
+            "algo": "AUTOLYKOS2",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
+        "t-rex": {
+            "url": "%URL%",
+            "algo": "autolykos2",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
+        "nbminer": {
+            "url": "%URL%",
+            "algo": "ergo",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        }
+    },
+
+    "miners_etchash": {
+        "phoenixminer": {
+            "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, COIN: etc"
+        },
+        "nanominer": {
+            "algo": "etchash",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        },
+        "nbminer": {
+            "url": "%URL%",
+            "algo": "etchash",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "gminer": {
+            "algo": "etchash",
+            "server": "%URL_HOST%",
+            "port": "%URL_PORT%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "teamredminer": {
+            "algo": "etchash",
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME%",
+            "pass": "x"
+        },
+        "lolminer": {
+            "algo": "ETCHASH",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "etchash",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "--disable-cpu"
+        },
+        "t-rex": {
+            "url": "%URL%",
+            "algo": "etchash",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME%",
+            "pass": "x",
+            "user_config": "\"coin\": \"%COIN%\""
+        },
+        "bzminer": {
+            "algo": "etchash",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME%",
+            "url": "%URL%",
+            "pass": "x"
+        },
+        "teamblackminer": {
+            "algo": "etсhash",
+            "host": "%URL_HOST%",
+            "port": "%URL_PORT%",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%"
+        }
+    },
+
+    "miners_etchash_notest": {
+        "ethminer": {
+            "cuda": 1,
+            "opencl": 1,
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "stratum1+tcp://%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--etchash"
+        }
+    },
+
+    "miners_ethash_4g": {
+        "ethminer": {
+            "cuda": 1,
+            "opencl": 1,
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "stratum1+tcp://%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "asicminer": {
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "phoenixminer": {
+            "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+            "user_config": "-coin %COIN%"
+        },
+        "bminer": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
+        },
+        "nanominer": {
+            "algo": "ethash",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+        },
+        "nbminer": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "tt-miner": {
+            "url": "%URL%",
+            "algo": "ETHASH",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "-RH\n"
+        },
+        "gminer": {
+            "algo": "ethash",
+            "server": "%URL_HOST%",
+            "port": "%URL_PORT%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "teamredminer": {
+            "algo": "ethash",
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
+        },
+        "lolminer": {
+            "algo": "ETHASH",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "--disable-cpu"
+        },
+        "t-rex": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME%"
+        },
+        "bzminer": {
+            "algo": "ethash",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME%",
+            "url": "%URL%",
+            "pass": "x"
+        },
+        "teamblackminer": {
+            "algo": "ethash",
+            "host": "%URL_HOST%",
+            "port": "%URL_PORT%",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%"
+        }
+    },
 
     "miners_ethash": {
         "claymore": {
@@ -19,13 +292,6 @@
         "phoenixminer": {
             "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
             "user_config": "-coin %COIN%"
-        },
-        "finminer": {
-            "algo": "ethash",
-            "url": "%URL%",
-            "template": "%WAL%",
-            "pass": "x",
-            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
         },
         "bminer": {
             "url": "%URL%",
@@ -79,13 +345,23 @@
             "worker": "%WORKER_NAME%",
             "template": "%WAL%",
             "user_config": "--disable-cpu"
+        },
+        "t-rex": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "template": "%WAL%",
+            "user_config": "\"worker\": \"%WORKER_NAME%\""
+        },
+        "bzminer": {
+            "algo": "ethash",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME%",
+            "url": "%URL%",
+            "pass": "x"
         }
     },
 
     "miners_ethash_slash_email": {
-        "claymore": {
-            "epools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%/%EMAIL%, PSW: x"
-        },
         "ethminer": {
             "cuda": 1,
             "opencl": 1,
@@ -106,19 +382,6 @@
             "algo": "ethash",
             "template": "%WAL%/%WORKER_NAME%/%EMAIL%",
             "url": "%URL%",
-            "pass": "x"
-        },
-        "finminer": {
-            "algo": "ethash",
-            "url": "%URL%",
-            "template": "%WAL%",
-            "pass": "x",
-            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
-        },
-        "bminer": {
-            "url": "%URL%",
-            "algo": "ethash",
-            "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
             "pass": "x"
         },
         "nanominer": {
@@ -153,9 +416,27 @@
             "port": "%URL_PORT%",
             "server": "%URL_HOST%",
             "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
+        "t-rex": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
+        "gminer":{
+            "algo":"ethash",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
+        "bzminer": {
+            "algo": "ethash",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME/%EMAIL%",
+            "url": "%URL%",
+            "pass": "x"
         }
     },
-
 
     "miners_cryptonight_v8": {
         "xmr-stak": {
@@ -328,6 +609,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
         }
     },
+
     "miners_randomx": {
         "xmrig": {
             "url": "%URL%",
@@ -361,6 +643,7 @@
             "user_config": "rigName=%WORKER_NAME%"
         }
     },
+
     "miners_randomx_plus": {
         "xmrig": {
             "url": "%URL%",
@@ -394,6 +677,7 @@
             "user_config": "rigName=%WORKER_NAME%"
         }
     },
+
     "miners_randomx_worker": {
         "xmrig": {
             "url": "%URL%",
@@ -426,6 +710,7 @@
             "template": "%WAL%"
         }
     },
+
     "miners_randomx_w_worker": {
         "xmrig": {
             "url": "%URL%",
@@ -458,7 +743,42 @@
             "template": "%WAL%"
         }
     },
-    "miners_kawpow": {
+
+    "miners_randomx_slash_email": {
+        "xmrig": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+            "user_config": "\"algo\": \"rx/0\"\n\"donate-level\": 1\n\"donate-over-proxy\": 1"
+        },
+        "xmr-stak": {
+            "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+            "url": "%URL%",
+            "fork": "randomx",
+            "pass": "x",
+            "nvidia": "\"gpu_threads_conf\" : [],",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+            "user_config": "\"currency\":\"randomx\""
+        },
+        "xmrig-new": {
+            "cpu": "1",
+            "url": "%URL%",
+            "algo": "rx/0",
+            "fork": "xmrig",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+            "user_config": "\"donate-level\": 1"
+        },
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "randomx",
+            "pass": "x",
+            "template": "%WAL%",
+            "user_config": "rigName=%WORKER_NAME%\nemail = %EMAIL%"
+        }
+    },
+
+   "miners_kawpow": {
         "ethminer":{
             "fork":"kawpowminer",
             "cuda":1,
@@ -524,13 +844,112 @@
             "algo": "kawpow",
             "pass": "x",
             "template": "%WAL%.%WORKER_NAME%"
-        }, 
+        },
         "wildrig-multi": {
             "url": "stratum+tcp:\/\/%URL%",
             "algo": "kawpow",
             "pass": "x",
             "template": "%WAL%.%WORKER_NAME%",
-            "user_config": "\"opencl-threads\" : \"2\""
+            "user_config": "--opencl-threads=2"
+        }
+    },
+
+    "miners_kawpow_slash_email": {
+        "ethminer":{
+            "fork":"kawpowminer",
+            "cuda":1,
+            "opencl":0,
+            "pass":"x",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+        },
+        "t-rex": {
+            "url": "%URL%",
+            "algo": "kawpow",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
+        "nbminer":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%/%EMAIL%",
+            "algo":"kawpow"
+         },
+        "nanominer": {
+            "algo": "kawpow",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%%\nemail = %EMAIL%"
+        },
+        "ccminer": {
+            "fork": "enemy",
+            "ccurl": "stratum+tcp:\/\/%URL%",
+            "ccalgo": "kawpow",
+            "ccpass": "x",
+            "ccuser": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
+        "gminer":{
+            "algo":"kawpow",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
+        "bminer": {
+            "url": "%URL%",
+            "algo": "raven",
+            "template": "%WAL%/%WORKER_NAME%/%EMAIL%"
+        },
+        "tt-miner":{
+            "url":"%URL%",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%/%EMAIL%",
+            "algo":"kawpow",
+            "user_config":"-coin %COIN%"
+        },
+        "damominer": {
+            "url": "stratum+tcp://%URL%",
+            "algo": "rvn",
+            "worker": "%WORKER_NAME%/%EMAIL%",
+            "template": "%WAL%"
+        },
+        "teamredminer": {
+            "url": "stratum+tcp:\/\/%URL%",
+            "algo": "kawpow",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
+        "wildrig-multi": {
+            "url": "stratum+tcp:\/\/%URL%",
+            "algo": "kawpow",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+            "user_config": "--opencl-threads=2"
+        }
+    },
+
+    "miners_randomhash2_with_email": {
+        "rhminer": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+            "user_config": "-cputhreads 2"
+        },
+        "nanominer": {
+            "algo": "randomhash2",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "rigName = %WORKER_NAME%\nemail=%EMAIL%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "randomhash2",
+            "worker": "%WORKER_NAME%/%EMAIL%",
+            "template": "%WAL%",
+            "user_config": "--disable-gpu"
         }
     }
 }

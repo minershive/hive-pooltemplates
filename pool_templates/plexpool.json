@@ -1,0 +1,72 @@
+[
+    {
+        "pool":{
+            "name":"Plexpool",
+            "url":"https://plexpool.com",
+            "fee":1,
+            "type":"PPS+"
+        }
+    },
+    {
+        "coin":"ETH",
+        "servers":[
+            {
+                "geo":"Europe",
+                "urls":[
+                    "eu-eth.plexpool.com:8008"
+                ]
+            },
+            {
+                "geo":"North America",
+                "urls":[
+                    "na-eth.plexpool.com:8008"
+                ]
+            },
+            {
+                "geo":"Asia",
+                "urls":[
+                    "asia-eth.plexpool.com:8008"
+                ]
+            },
+			{
+                "geo":"Australia",
+                "urls":[
+                    "au-eth.plexpool.com:8008"
+                ]
+            }
+        ],
+        "miners":{
+            "claymore":{
+                "epools_tpl":"POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "claymore_user_config":"-allpools 0"
+            },
+            "phoenixminer":{
+                "url":"POOL: %URL%, WAL: %WAL%, WORKER: %WORKER_NAME%, PASS: x"
+            },
+            "ethminer":{
+                "fork":"ethash",
+                "template":"%WAL%.%WORKER_NAME%",
+                "server":"stratum1+tcp://%URL_HOST%",
+                "port":"%URL_PORT%",
+                "pass":"x",
+                "cuda":1,
+                "opencl":1,
+				"user_config": "-G -R"
+            },
+            "teamredminer":{
+                "algo":"ethash",
+                "template":"%WAL%",
+                "server":"stratum+tcp://%URL%",
+                "pass":"x",
+				"user_config": "--nimiq_worker=%WORKER_NAME%"
+            },
+            "lolminer":{
+                "algo":"ETHASH",
+                "template":"%WAL%.%WORKER_NAME%",
+                "server":"stratum+tcp://%URL_HOST%",
+                "port":"%URL_PORT%",
+                "pass":"x"
+            }
+        }
+    }
+]

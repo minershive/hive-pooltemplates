@@ -253,6 +253,40 @@
              }
         }
     },
+
+    {
+        "coin": "Zerg-etchash",
+        "servers": [
+            {
+                "geo": "Anycast",
+                "urls": [
+                    "etchash.mine.zergpool.com:9997"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "etchash.eu.mine.zergpool.com:9997"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "etchash.na.mine.zergpool.com:9997"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "etchash.asia.mine.zergpool.com:9997"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_etchash"
+        }
+    },
+
     {
         "coin": "Zerg-ethash",
         "servers": [
@@ -315,6 +349,56 @@
         ],
         "miners": {
            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "Zerg-verthash",
+        "servers": [
+            {
+                "geo": "Geo IP",
+                "urls": [
+                    "verthash.mine.zergpool.com:4534"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "verthash.na.mine.zergpool.com:4534"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "verthash.eu.mine.zergpool.com:4534"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "verthash.asia.mine.zergpool.com:4534"
+                ]
+            }
+        ],
+        "miners": {
+        }
+    },
+    {
+        "coin": "Zerg-yespower",
+        "servers": [
+            {
+                "geo": "USA",
+                "urls": [
+                    "yespower.mine.zergpool.com:6533"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": " stratum+tcp://%URL%",
+                "algo": "yespower",
+                "pass": "c=BTC",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
         }
     }
 ]
