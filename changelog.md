@@ -1,6 +1,6 @@
 ##### LINUX IMAGE RELEASE 0.6-211 2021-11-04
 *   Universal boot mode: BIOS | UEFI
-*   Hive Linux client: v0.6-211@211104
+*   Hive Linux client: v0.6-211@211102
 *   Ubuntu v18.04.6 LTS based
 *   Linux kernel: v5.10.72
 *   Nvidia drivers: v470.82.00
