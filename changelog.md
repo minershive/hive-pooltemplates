@@ -1,3 +1,12 @@
+##### LINUX IMAGE RELEASE 0.6-211 2021-11-04
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-211@211104
+*   Ubuntu v18.04.6 LTS based
+*   Linux kernel: v5.10.72
+*   Nvidia drivers: v470.82.00
+*   AMD driver v5.11.1001
+*   AMD OpenCL v20.40
+
 ##### 0.6-211@211102 2021-11-02
 *   WildRig-Multu v0.30.1 (fixed rejects on `ghostrider`; lowered devfee to 1% on `ghostrider`)
 *   TBMiner: fixed package v1.22
