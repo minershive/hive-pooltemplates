@@ -1,3 +1,6 @@
+##### 0.6-211@211107 2021-11-07
+*   TeamBlackMiner v1.23 (tiny speedup on Nvidia GPUs; more accurate kernel autotune; reduced stales on ethermine.org, flexpool.org, crazypool and nicehash on AMD, default `--xintensity 24`; console stats are rewritten to work with all terminals)
+
 ##### 0.6-211@211106 2021-11-06
 *   BzMiner v4.7 (removed "thrash" and "stales_ok" params; bug fixes)
 *   TeamRedMiner v0.8.6.3 (emergency release to support ERGO hardfork on Nov 7th, need update miner to this version to continue mining ERGO; added argument `--autolykos_ignore_diff` for certain pools that aren't compatible with the ERGO reference miner pool implementation)
