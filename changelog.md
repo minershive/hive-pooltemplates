@@ -1,3 +1,7 @@
+##### 0.6-211@211110 2021-11-10
+*   GMiner v2.71 (improved LHR performance, added two modes `--lhr_mode N` where N can be 0 or 1, 0 - energy save mode, 1 - maximal performance mode, it's default mode; miner display LHR unlock percentage in statistics table on LHR row, you can adjust it by `--lhr_tune` option; now `--lhr_tune` meaning GPU unlock percentage, for compatibility lhr tunes below 10 mapped to new default values; if LHR auto-tune `--lhr_autotune` enabled miner tries increase LHR unlock percentage while mining; improved RavenCoin performance, fixed floating hashrate; display maximum difficulty of shares for each GPU)
+*   CPUminer-Opt-GR v1.2.4.1 (added improvements for Alder Lake tuning up to ~6%; fixed problem with miner reconnecting after donation to the same pool; fixed problem with Large Pages, AVX, or below while `tune-full` was set to `true`)
+
 ##### 0.6-211@211107 2021-11-07
 *   TeamBlackMiner v1.23 (tiny speedup on Nvidia GPUs; more accurate kernel autotune; reduced stales on ethermine.org, flexpool.org, crazypool and nicehash on AMD, default `--xintensity 24`; console stats are rewritten to work with all terminals)
 *   BMiner v16.4.9 (improved performance of Ethereum mining on Ampere GPUs)
