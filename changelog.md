@@ -1,4 +1,4 @@
-##### 0.6-211@211107 2021-11-07
+##### 0.6-211@211111 2021-11-11
 *   T-Rex v0.24.6 (improved `ethash` LHR unlocker, LHR tune value increased from 71 to 74 by default; added new parameters `lhr-autotune-step-size` and `lhr-autotune-interval` parameters for finer control of LHR unlock behaviour on `ethash` and `autolykos2`; added `ETH+FIRO` dual mining, use the same OC settings as ETH+RVN; added new `autolykos2` parameter `dataset-mode` parameter to enable/disable double buffer mode: 1 - single buffer mode, 2 - double buffer mode, default; added SOCKS5 proxy support, see `proxy` parameter; Bug fixes: RTX 3060 GA104 is not recognized as an LHR card on `ethash`. mining `veriblock` is broken since v0.24.2)
 *   TeamBlackMiner v1.24 (fixed issue with multiple set core, mem, power; fixed issue with DAG cache when switching back from ZIL pow, also fixing problems at Nicehash; always verify DAG on regeneration, not only on the first run; log date time format is now DD:HH:MM)
 *   NanoMiner v3.4.3 (improved performance `kawpow` and `firopow` on Nvidia GPUs up to 3% depends on GPU model)
