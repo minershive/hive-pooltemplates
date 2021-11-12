@@ -85,5 +85,112 @@
         "miners": {
            "_prototype": "miners_kawpow"
         }
+    },
+    {
+        "coin": "BEAM",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu1-beam.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us1-beam.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia1-beam.flypool.org:3443"
+                ]
+            }
+        ],
+        "miners": {
+            "bminer": {
+                "algo": "beam+ssl",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "%URL%",
+                "pass": "x"
+            },
+            "gminer": {
+                "algo": "beamhash",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "tls": "1"
+            },
+            "lolminer": {
+                "algo": "BEAM",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x"
+            }
+        }
+    },
+    {
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "Worldwide",
+                "urls": [
+                    "stratum-ergo.flypool.org:3333"
+                ],
+                "ssl_urls": [
+                    "stratum-ergo.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "Worldwide alt",
+                "urls": [
+                    "stratum-ergo.flypool.org:13333"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "autolykos2",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            },
+            "nanominer": {
+                "url": "%URL%",
+                "algo": "autolykos2",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config":"coin = ERGO\nrigName = %WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "algo": "autolykos2",
+                "template":"%WAL%.%WORKER_NAME%",
+                "pass":"x"
+            },
+            "lolminer": {
+                "algo": "autolykos2",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer":{
+                "url":"%URL%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%",
+                "algo":"autolykos2"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "autolykos2",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
     }
 ]

@@ -434,14 +434,6 @@
         ],
         "miners": {
             "_prototype": "miners_ethash_4g",
-            "teamredminer":{
-               "template": "%WAL%",
-               "worker": "%WORKER_NAME%"
-            },
-            "lolminer":{
-               "template": "%WAL%",
-               "worker": "%WORKER_NAME%"
-            },
             "bminer":{
                "algo": "ethproxy"
             }
@@ -458,7 +450,7 @@
             }
         ],
         "miners": {
-                "_prototype": "miners_etchash"
+            "_prototype": "miners_etchash"
         }
     },
     {
@@ -1091,6 +1083,20 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             }
+        }
+    },
+    {
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "stratum+tcp://erg.f2pool.com:7200"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_autolykos2"
         }
     }
 ]

@@ -1,0 +1,69 @@
+[
+  {
+    "pool": {
+      "name": "TurtleTurtle.Club",
+      "url": "http://pond.turtleturtle.club/",
+      "fee": 0.25,
+      "type": "PROP"
+    }
+  },
+  {
+    "coin": "TRTL",
+    "servers": [
+      {
+        "geo": "Tortoise (CPUs)",
+        "urls": ["pond.turtleturtle.club:3333"]
+      },
+      {
+        "geo": "Swimming Leatherback (Mid GPUs)",
+        "urls": ["pond.turtleturtle.club:5555"]
+      },
+      {
+        "geo": "Turtle Low Earth Orbit (High GPUs)",
+        "urls": ["pond.turtleturtle.club:7777"]
+      },
+      {
+        "geo": "Jet Turtle (Super GPUs)",
+        "urls": ["pond.turtleturtle.club:8888"]
+      },
+      {
+        "geo": "Secure Turtle (TLS)",
+        "ssl_urls": ["pond.turtleturtle.club:9999"]
+      }
+    ],
+    "miners": {
+      "xmrig-new": {
+        "url": "%URL%",
+        "cpu": "1",
+        "algo": "argon2/chukwav2",
+        "fork": "xmrig",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%"
+      },
+      "cryptodredge": {
+        "url": "%URL%",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "algo": "chukwa2"
+      },
+      "violetminer": {
+        "url": "%URL%",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "algo": "chukwa_v2"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "algo": "argon2id_chukwa2"
+      },
+      "teamredminer": {
+        "url": "%URL%",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "algo": "trtl_chukwa2"
+      }
+    }
+  }
+]

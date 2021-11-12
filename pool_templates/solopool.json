@@ -266,6 +266,32 @@
         }
     },
     {
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "EU Low Diff",
+                "urls": [
+                    "s3.solopool.org:8001"
+                ]
+            },
+            {
+                "geo": "EU Mid Diff",
+                "urls": [
+                    "s3.solopool.org:7001"
+                ]
+            },
+            {
+                "geo": "EU High Diff",
+                "urls": [
+                    "s3.solopool.org:9001"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_autolykos2"
+        }
+    },
+    {
         "coin": "BEAM",
         "servers": [
             {
@@ -650,66 +676,6 @@
         }
     },
     {
-        "coin": "XSG",
-        "servers": [
-            {
-                "geo": "EU Low Diff",
-                "urls": [
-                    "s4.solopool.org:8005"
-                ]
-            },
-            {
-                "geo": "EU Mid Diff",
-                "urls": [
-                    "s4.solopool.org:7005"
-                ]
-            },
-            {
-                "geo": "EU High Diff",
-                "urls": [
-                    "s4.solopool.org:9005"
-                ]
-            },
-            {
-                "geo": "US Low Diff",
-                "urls": [
-                    "us-s4.solopool.org:8005"
-                ]
-            },
-            {
-                "geo": "US Mid Diff",
-                "urls": [
-                    "us-s4.solopool.org:7005"
-                ]
-            },
-            {
-                "geo": "US High Diff",
-                "urls": [
-                    "us-s4.solopool.org:9005"
-                ]
-            }
-        ],
-        "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zserver": "%URL_HOST%",
-                "zport": "%URL_PORT%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "zpass": "x",
-                "user_config": "pers sngemPoW"
-            },
-            "gminer": {
-                "algo": "144_5",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "--pers sngemPoW"
-            }
-        }
-    },
-    {
         "coin": "BTG",
         "servers": [
             {
@@ -754,7 +720,7 @@
         }
     },
     {
-        "coin": "ZEL",
+        "coin": "FLUX",
         "servers": [
             {
                 "geo": "EU Low Diff",
@@ -801,108 +767,6 @@
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x",
                 "user_config": "--pers ZelProof"
-            }
-        }
-    },
-    {
-        "coin": "ZCL",
-        "servers": [
-            {
-                "geo": "EU Low Diff",
-                "urls": [
-                    "s4.solopool.org:8004"
-                ]
-            },
-            {
-                "geo": "EU Mid Diff",
-                "urls": [
-                    "s4.solopool.org:7004"
-                ]
-            },
-            {
-                "geo": "EU High Diff",
-                "urls": [
-                    "s4.solopool.org:9004"
-                ]
-            },
-            {
-                "geo": "US Low Diff",
-                "urls": [
-                    "us-s4.solopool.org:8004"
-                ]
-            },
-            {
-                "geo": "US Mid Diff",
-                "urls": [
-                    "us-s4.solopool.org:7004"
-                ]
-            },
-            {
-                "geo": "US High Diff",
-                "urls": [
-                    "us-s4.solopool.org:9004"
-                ]
-            }
-        ],
-        "miners": {
-            "ewbf": {
-                "algo": "192_7",
-                "fork": "zhash",
-                "zserver": "%URL_HOST%",
-                "zport": "%URL_PORT%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "zpass": "x",
-                "user_config": "pers ZcashPoW"
-            },
-            "gminer": {
-                "algo": "192_7",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "--pers ZcashPoW"
-            }
-        }
-    },
-    {
-        "coin": "SAFE",
-        "servers": [
-            {
-                "geo": "EU Low Diff",
-                "urls": [
-                    "s4.solopool.org:8013"
-                ]
-            },
-            {
-                "geo": "EU Mid Diff",
-                "urls": [
-                    "s4.solopool.org:7013"
-                ]
-            },
-            {
-                "geo": "EU High Diff",
-                "urls": [
-                    "s4.solopool.org:9013"
-                ]
-            }
-        ],
-        "miners": {
-            "ewbf": {
-                "algo": "192_7",
-                "fork": "zhash",
-                "zserver": "%URL_HOST%",
-                "zport": "%URL_PORT%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "zpass": "x",
-                "user_config": "pers Safecoin"
-            },
-            "gminer": {
-                "algo": "192_7",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "--pers Safecoin"
             }
         }
     },
@@ -1072,6 +936,24 @@
                 "urls": [
                     "s3.solopool.org:9013"
                 ]
+            },
+            {
+                "geo": "US Low Diff",
+                "urls": [
+                    "us-s3.solopool.org:8013"
+                ]
+            },
+            {
+                "geo": "US Mid Diff",
+                "urls": [
+                    "us-s3.solopool.org:7013"
+                ]
+            },
+            {
+                "geo": "US High Diff",
+                "urls": [
+                    "us-s3.solopool.org:9013"
+                ]
             }
         ],
         "miners": {
@@ -1098,23 +980,35 @@
                 "urls": [
                     "s3.solopool.org:9014"
                 ]
+            },
+            {
+                "geo": "US Low Diff",
+                "urls": [
+                    "us-s3.solopool.org:8014"
+                ]
+            },
+            {
+                "geo": "US Mid Diff",
+                "urls": [
+                    "us-s3.solopool.org:7014"
+                ]
+            },
+            {
+                "geo": "US High Diff",
+                "urls": [
+                    "us-s3.solopool.org:9014"
+                ]
             }
         ],
         "miners": {
-            "cryptodredge": {
-                "algo": "mtp",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
             "t-rex": {
-                "algo": "mtp",
+                "algo": "firopow",
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
             },
             "teamredminer": {
-                "algo": "mtp",
+                "algo": "firopow",
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
@@ -1140,6 +1034,24 @@
                 "geo": "EU High Diff",
                 "urls": [
                     "s3.solopool.org:9009"
+                ]
+            },
+            {
+                "geo": "US Low Diff",
+                "urls": [
+                    "us-s3.solopool.org:8009"
+                ]
+            },
+            {
+                "geo": "US Mid Diff",
+                "urls": [
+                    "us-s3.solopool.org:7009"
+                ]
+            },
+            {
+                "geo": "US High Diff",
+                "urls": [
+                    "us-s3.solopool.org:9009"
                 ]
             }
         ],
@@ -1170,6 +1082,24 @@
                 "urls": [
                     "s3.solopool.org:9003"
                 ]
+            },
+            {
+                "geo": "US Low Diff",
+                "urls": [
+                    "us-s3.solopool.org:8003"
+                ]
+            },
+            {
+                "geo": "US Mid Diff",
+                "urls": [
+                    "us-s3.solopool.org:7003"
+                ]
+            },
+            {
+                "geo": "US High Diff",
+                "urls": [
+                    "us-s3.solopool.org:9003"
+                ]
             }
         ],
         "miners": {
@@ -1198,6 +1128,24 @@
                 "geo": "EU High Diff",
                 "urls": [
                     "s3.solopool.org:9004"
+                ]
+            },
+            {
+                "geo": "US Low Diff",
+                "urls": [
+                    "us-s3.solopool.org:8004"
+                ]
+            },
+            {
+                "geo": "US Mid Diff",
+                "urls": [
+                    "us-s3.solopool.org:7004"
+                ]
+            },
+            {
+                "geo": "US High Diff",
+                "urls": [
+                    "us-s3.solopool.org:9004"
                 ]
             }
         ],

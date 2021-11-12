@@ -1,0 +1,33 @@
+[
+  {
+    "pool": {
+      "name": "Hashalot",
+      "url": "https://hashalot.net",
+      "fee": 1,
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "VTC",
+    "servers": [
+      {
+        "geo": "US",
+        "urls": ["stratum+tcp://mining.hashalot.net:3950"]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "verthash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "verthashminer": {
+        "url": "%URL%",
+        "algo": "verthash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]

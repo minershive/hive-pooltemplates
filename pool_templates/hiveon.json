@@ -31,7 +31,27 @@
                 ]
             },
             {
-                "geo": "N.America West",
+                "geo": "US East",
+                "urls": [
+                    "use-eth.hiveon.net:4444",
+                    "use-eth.hiveon.net:14444"
+                ],
+                "ssl_urls": [
+                    "use-eth.hiveon.net:24443"
+                ]
+            },
+            {
+                "geo": "US West",
+                "urls": [
+                    "usw-eth.hiveon.net:4444",
+                    "usw-eth.hiveon.net:14444"
+                ],
+                "ssl_urls": [
+                    "usw-eth.hiveon.net:24443"
+                ]
+            },
+            {
+                "geo": "N.America (Canada)",
                 "urls": [
                     "naw-eth.hiveon.net:4444",
                     "naw-eth.hiveon.net:14444"
@@ -41,13 +61,33 @@
                 ]
             },
             {
-                "geo": "Asia",
+                "geo": "Asia Pacific",
                 "urls": [
                     "aspac1-eth.hiveon.net:4444",
                     "aspac1-eth.hiveon.net:14444"
                 ],
                 "ssl_urls": [
                     "aspac1-eth.hiveon.net:24443"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "hk-eth.hiveon.net:14444",
+                    "hk-eth.hiveon.net:8080"
+                ],
+                "ssl_urls": [
+                    "hk-eth.hiveon.net:24443"
+                ]
+            },
+            {
+                "geo": "S.America (Brazil)",
+                "urls": [
+                    "sa-eth.hiveon.net:4444",
+                    "sa-eth.hiveon.net:14444"
+                ],
+                "ssl_urls": [
+                    "sa-eth.hiveon.net:24443"
                 ]
             }
         ],
@@ -66,8 +106,12 @@
             "lolminer":{
                "template": "%WAL%",
                "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
+            },
+            "bzminer": {
+              "url": "ethproxy+tcp://%URL%"
             }
-        }
+        },
+        "stratum_ping": true
     },
 
     {
@@ -115,7 +159,11 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_etchash"
-        }
+            "_prototype": "miners_etchash",
+            "bzminer": {
+              "url": "ethproxy+tcp://%URL%"
+            }
+        },
+        "stratum_ping": true
     }
 ]
