@@ -1,3 +1,9 @@
+##### 0.6-211@211116 2021-11-16
+*   lolMiner v1.36a (improved `ethash` & `etchash` performance on all Nvidia Turing & Ampere GPUs by 0.3 to 0.7%; decreased rate of stales on Nvidia Turing & Ampere GPUs; modified LHR auto tuning to use finer steps: 0.2 instead of 1; new option `--lhrwait n` will set the miner to wait n seconds, until the LHR detection and calibration gets active; fixed a potential crash on switching between cached Eth and Zil DAG on Nvidia cards; fixed lost empty worker name on ezil pool; fixed a bug causing rare defect shares on LHR GPUs)
+*   TeamBlackMiner v1.25 (added stats for AMD GPUs; don't add hashrate when validating DAG on AMD GPUs; tiny speedup on NVIDIA cards; default `xintensity` on `Hiveon` and Binance pools changed to 24 to reduce stales on AMD GPUs)
+*   WildRig-Multi v0.30.2 (added support SSL; slightly faster `ghostrider` ~1-2%)
+*   PhoenixMiner v5.9b BETA (show the GPU vendor name in the list of GPUs to make it easier to identify the GPUs; added support for the latest official AMD Linux drivers 21.40.1; fixed issues with AMD Vega, Radeon VII, RX6700XT cards with the latest AMD drivers; fixed crash with very old Nvidia drivers; *Notes: added for testing purposes - need select version manually in miner settings*)
+
 ##### 0.6-211@211112 2021-11-12
 *   T-Rex v0.24.7 (bug fix: some options set in config file not processed, e.g. `lhr-autotune-step-size`; removed `"hashrate-avr": 30` from global config to use miner default option and get smoother graph particularly on LHR GPUs)
 
