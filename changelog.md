@@ -1,3 +1,7 @@
+##### 0.6-211@211117 2021-11-17
+*   GMiner v2.72 (fixed memory leaks on AMD GPUs; fixed compatibility with latest linux distributions; fixed crashes appeared in v2.71)
+*   SRBMiner-Multi v0.8.3 (performance increased on 'heavyhash' algorithm for GPU's: up to ~20% on some cards; fixed issue with recognising some GPU's on newer drivers: broken since v0.8.1; reworked hashrate reporting/stats - now reporting average for 1 min / 1 hr / 6 hr / 12 hr)
+
 ##### 0.6-211@211116 2021-11-16
 *   lolMiner v1.36a (improved `ethash` & `etchash` performance on all Nvidia Turing & Ampere GPUs by 0.3 to 0.7%; decreased rate of stales on Nvidia Turing & Ampere GPUs; modified LHR auto tuning to use finer steps: 0.2 instead of 1; new option `--lhrwait n` will set the miner to wait n seconds, until the LHR detection and calibration gets active; fixed a potential crash on switching between cached Eth and Zil DAG on Nvidia cards; fixed lost empty worker name on ezil pool; fixed a bug causing rare defect shares on LHR GPUs)
 *   TeamBlackMiner v1.25 (added stats for AMD GPUs; don't add hashrate when validating DAG on AMD GPUs; tiny speedup on NVIDIA cards; default `xintensity` on `Hiveon` and Binance pools changed to 24 to reduce stales on AMD GPUs)
