@@ -1,0 +1,89 @@
+[
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": "PPS - EU",
+                "urls": [
+                    "pps-eth-eu.adaminers.com:3333"
+                ]
+            },
+            {
+                "geo": "SOLO - EU",
+                "urls": [
+                    "solo-eth-eu.adaminers.com:3030"
+                ]
+            },
+            {
+                "geo": "PPS - TURKEY",
+                "urls": [
+                    "pps-eth-tr.adaminers.com:3333"
+                ]
+            },
+            {
+                "geo": "SOLO - TURKEY",
+                "urls": [
+                    "solo-eth-tr.adaminers.com:3030"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3, ALLCOINS: eth, ALLPOOLS: 0"
+            },
+            "ethminer": {
+                "cuda": 0,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4"
+            }
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "PPS - EU",
+                "urls": [
+                    "pps-etc-eu.adaminers.com:2222"
+                ]
+            },
+            {
+                "geo": "SOLO - EU",
+                "urls": [
+                    "solo-etc-eu.adaminers.com:2020"
+                ]
+            },
+            {
+                "geo": "PPS - TURKEY",
+                "urls": [
+                    "pps-etc-tr.adaminers.com:2222"
+                ]
+            },
+            {
+                "geo": "SOLO - TURKEY",
+                "urls": [
+                    "solo-etc-tr.adaminers.com:2020"
+                ]
+            }
+        ],
+        "miners": {
+            "ethminer": {
+                "cuda": 0,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4"
+            }
+        }
+    }
+]
