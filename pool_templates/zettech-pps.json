@@ -1,10 +1,10 @@
 [
     {
         "pool": {
-            "name": "Żet Mining Pool",
+            "name": "Żet Mining Pool PPS",
             "url": "https://www.zetpool.org",
             "fee": 0.5,
-            "type": "PPLNS"
+            "type": "PPS"
         }
     },
     {
@@ -13,11 +13,8 @@
             {
                 "geo": "Europe",
                 "urls": [
-                    "eth.zetpool.org:8005"
-                ],
-		"ssl_urls": [
-		    "eth.zetpool.org:8805"
-		]
+                    "eth-pps.zetpool.org:8005"
+                ]
             }
         ],
         "miners": {
@@ -30,10 +27,6 @@
 		    "pass": "x",
 		    "port": "%URL_PORT%",
 		    "server": "stratum1+tcp://%URL_HOST%",
-		    "template": "%WAL%.%WORKER_NAME%"
-		},
-		"asicminer": {
-		    "url": "stratum+tcp://%URL_HOST%:9005",
 		    "template": "%WAL%.%WORKER_NAME%"
 		},
 		"phoenixminer": {
@@ -106,20 +99,6 @@
 		    "url": "%URL%",
 		    "pass": "x"
 		}
-        }
-    },
-    {
-        "coin": "ETC",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "etc.zetpool.org:8008"
-                ]
-            }
-        ],
-        "miners": {
-		"_prototype": "miners_etchash"
         }
     }
 ]
