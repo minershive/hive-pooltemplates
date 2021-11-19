@@ -1,3 +1,7 @@
+##### 0.6-211@211118 2021-11-18
+*   TeamBlackMiner v1.26 (added `--lhr-unlock` option that can give a +20% boost on LHR cards Nvidia with lower power; reduced duplicate shares on hiveon pool and possibly other ethereum stratum 1.0 pools; faster reconnect to pool if pool does not resolve or is not available; set `--xintensity 24` default on ethermine for AMD cards; fixed memleak in the DAG cache code when mining)
+*   WildRig-Multi v0.30.3 (fixed broken support since v0.30.2 of AMD RX 5500/5600/5700 GPUs; implemented heavyhash, optimization for Nvidia GPUs expected with next release)
+
 ##### 0.6-211@211117 2021-11-17
 *   GMiner v2.72 (fixed memory leaks on AMD GPUs; fixed compatibility with latest Linux distributions; fixed crashes appeared in v2.71)
 *   SRBMiner-Multi v0.8.3 (performance increased on 'heavyhash' algorithm for GPU's: up to ~20% on some cards; fixed issue with recognizing some GPU's on newer drivers: broken since v0.8.1; reworked hashrate reporting/stats - now reporting average for 1 min / 1 hr / 6 hr / 12 hr)
