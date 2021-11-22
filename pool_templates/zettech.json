@@ -21,29 +21,28 @@
             }
         ],
         "miners": {
-		"claymore": {
-		    "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
-		},
 		"ethminer": {
 		    "cuda": 1,
 		    "opencl": 1,
 		    "pass": "x",
 		    "port": "%URL_PORT%",
 		    "server": "stratum1+tcp://%URL_HOST%",
-		    "template": "%WAL%.%WORKER_NAME%"
+		    "template": "%WAL%",
+		    "worker": "%WORKER_NAME%"
 		},
 		"asicminer": {
 		    "url": "stratum+tcp://%URL_HOST%:9005",
 		    "template": "%WAL%.%WORKER_NAME%"
 		},
 		"phoenixminer": {
-		    "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
-		    "user_config": "-coin %COIN%"
+		    "url": "POOL: %URL%, WALLET: %WAL% WORKER: %WORKER_NAME%, PSW: x",
+		    "user_config": "-coin %COIN% -stales 0"
 		},
 		"bminer": {
 		    "url": "%URL%",
 		    "algo": "ethash",
-		    "template": "%WAL%.%WORKER_NAME%",
+		    "template": "%WAL%",
+		    "worker": "%WORKER_NAME%",
 		    "pass": "x"
 		},
 		"nanominer": {
@@ -63,7 +62,8 @@
 		    "url": "%URL%",
 		    "algo": "ETHASH",
 		    "pass": "x",
-		    "template": "%WAL%.%WORKER_NAME%",
+		    "template": "%WAL%",
+		    "worker": "%WORKER_NAME%",
 		    "user_config": "-RH\n"
 		},
 		"gminer": {
@@ -71,12 +71,14 @@
 		        "server": "%URL_HOST%",
 		        "port": "%URL_PORT%",
 		        "pass": "x",
-		        "template": "%WAL%.%WORKER_NAME%"
+		        "template": "%WAL%",
+		        "worker": "%WORKER_NAME%"
 		},
 		"teamredminer": {
 		    "algo": "ethash",
 		    "url": "stratum+tcp://%URL%",
-		    "template": "%WAL%.%WORKER_NAME%",
+		    "template": "%WAL%",
+		    "worker": "%WORKER_NAME%",
 		    "pass": "x"
 		},
 		"lolminer": {
@@ -119,7 +121,89 @@
             }
         ],
         "miners": {
-		"_prototype": "miners_etchash"
+		"ethminer": {
+		    "cuda": 1,
+		    "opencl": 1,
+		    "pass": "x",
+		    "port": "%URL_PORT%",
+		    "server": "stratum1+tcp://%URL_HOST%",
+		    "template": "%WAL%",
+		    "worker": "%WORKER_NAME%"
+		},
+		"phoenixminer": {
+		    "url": "POOL: %URL%, WALLET: %WAL% WORKER: %WORKER_NAME%, PSW: x",
+		    "user_config": "-coin %COIN% -stales 0"
+		},
+		"bminer": {
+		    "url": "%URL%",
+		    "algo": "etchash",
+		    "template": "%WAL%",
+		    "worker": "%WORKER_NAME%",
+		    "pass": "x"
+		},
+		"nanominer": {
+		    "algo": "etchash",
+		    "url": "%URL%",
+		    "template": "%WAL%",
+		    "pass": "x",
+		    "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+		},
+		"nbminer": {
+		    "url": "%URL%",
+		    "algo": "etchash",
+		    "pass": "x",
+		    "template": "%WAL%.%WORKER_NAME%"
+		},
+		"tt-miner": {
+		    "url": "%URL%",
+		    "algo": "ETCHASH",
+		    "pass": "x",
+		    "template": "%WAL%",
+		    "worker": "%WORKER_NAME%",
+		    "user_config": "-RH\n"
+		},
+		"gminer": {
+		        "algo": "etchash",
+		        "server": "%URL_HOST%",
+		        "port": "%URL_PORT%",
+		        "pass": "x",
+		        "template": "%WAL%",
+		        "worker": "%WORKER_NAME%"
+		},
+		"teamredminer": {
+		    "algo": "etchash",
+		    "url": "stratum+tcp://%URL%",
+		    "template": "%WAL%",
+		    "worker": "%WORKER_NAME%",
+		    "pass": "x"
+		},
+		"lolminer": {
+		    "algo": "ETCHASH",
+		    "pass": "x",
+		    "port": "%URL_PORT%",
+		    "server": "%URL_HOST%",
+		    "template": "%WAL%.%WORKER_NAME%"
+		},
+		"srbminer": {
+		    "url": "%URL%",
+		    "algo": "etchash",
+		    "worker": "%WORKER_NAME%",
+		    "template": "%WAL%",
+		    "user_config": "--disable-cpu"
+		},
+		"t-rex": {
+		    "url": "%URL%",
+		    "algo": "etchash",
+		    "template": "%WAL%",
+		    "user_config": "\"worker\": \"%WORKER_NAME%\""
+		},
+		"bzminer": {
+		    "algo": "etchash",
+		    "template": "%WAL%",
+		    "worker": "%WORKER_NAME%",
+		    "url": "%URL%",
+		    "pass": "x"
+		}
         }
     }
 ]
