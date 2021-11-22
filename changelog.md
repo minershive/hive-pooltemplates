@@ -1,3 +1,10 @@
+##### 0.6-211@211121 2021-11-21
+*   TeamBlackMiner v1.27 (removed OpenCL support for Nvidia devices; uptime minutes is now accurate; stratum connect rewritten to solve libcurl error)
+*   WildRig-Multi v0.30.5 (improved `heavyhash`: Polaris/Vega up to 10%, RDNA/RDNA2 ~10-12%, Pascal ~90%, Turing/Ampere ~25%)
+*   CPUminer-Opt-JayDDee v3.19.1 (minor bug fixes)
+*   XLArig v5.2.3 XMRig fork (rebase code to XMRig v6.10.0; removed code for GPU's: OpenCL/CUDA; removed non-randomx algos)
+*   SRBMiner: stats fix (fixed total hashrate stats broken since v0.8.3 due changes in miner's API)
+
 ##### 0.6-211@211118 2021-11-18
 *   TeamBlackMiner v1.26 (added `--lhr-unlock` option that can give a +20% boost on LHR cards Nvidia with lower power; reduced duplicate shares on hiveon pool and possibly other ethereum stratum 1.0 pools; faster reconnect to pool if pool does not resolve or is not available; set `--xintensity 24` default on ethermine for AMD cards; fixed memleak in the DAG cache code when mining)
 *   WildRig-Multi v0.30.3 (fixed broken support since v0.30.2 of AMD RX 5500/5600/5700 GPUs; implemented heavyhash, optimization for Nvidia GPUs expected with next release)
