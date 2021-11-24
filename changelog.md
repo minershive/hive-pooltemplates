@@ -1,3 +1,7 @@
+##### 0.6-212@211125 2021-11-25
+*   PhoenixMiner v5.9c Release Candidate (fixed some pool connection issues)
+*   CPUMiner-Opt: fixed dashboard stats broken in previous update.
+
 ##### 0.6-212@211124 2021-11-24
 *   Added display temperature of memory for Nvidia GPUs equipped with HBM/HBM2 memory e.g. A100, CMP 170HX, etc
 *   Updated `nvtool` to v1.57 (added memory temperature reporting using option `--memtemp` for GPUs with HBM/HBM2 memory; added option `--throttle` to show throttle reason which also reported by `nvidia-info` tool, so you can look all info using it)
