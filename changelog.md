@@ -1,5 +1,5 @@
 ##### 0.6-212@211124 2021-11-24
-*   Added display temperature of memory for Nvidia GPUs equipped with HBM/HBM2 memory e.g. A100, CMP 170HX etc
+*   Added display temperature of memory for Nvidia GPUs equipped with HBM/HBM2 memory e.g. A100, CMP 170HX, etc
 *   Updated `nvtool` to v1.57 (added memory temperature reporting for GPUs with HBM/HBM2 memory; added throttle reason which also reported by `nvidia-info` tool)
 *   Updated PCI IDs to v2021-11-20
 *   Updated `amdmeminfo` tool to v2.1.16 (added new & fixed some AMD GPUs names)
