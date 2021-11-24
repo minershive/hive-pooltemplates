@@ -1,3 +1,16 @@
+##### 0.6-212@211124 2021-11-24
+*   Added display temperature of memory for Nvidia GPUs equipped with HBM/HBM2 memory e.g. A100, CMP 170HX etc
+*   Updated `nvtool` to v1.57 (added memory temperature reporting for GPUs with HBM/HBM2 memory; added throttle reason which also reported by `nvidia-info` tool)
+*   Updated devices list (updated PCI IDs to v2021-11-20, amdmeminfo v2.1.16 - added and corrected some AMD GPUs names)
+*   Fixed GPU detection on some server motherboards
+*   Minor fix for `sreboot` command
+*   Fixed bug with CPU-only rigs when there is no GPU in the system at all
+*   NBMiner v40.1 (added support future LHR GPU models; display current LHR value in console summary table; option `proxy` now support username & password for SOCKS5 proxy, format: `"proxy": "user:pass@host:port"`; CPU share validation processed into independent thread; fixed LHR lock detection failure on some cases)
+*   NanoMiner v3.4.4 (improved performance of RandomX)
+*   WildRig-Multi v0.30.6 (one more round of `heavyhash` optimizations, up to 10% on some GPUs; fixed duplicate Nvidia gpu's on some systems)
+*   lolMiner: more clearer message when the GPU fails
+*   CPUMiner-Opt: fixed hashrate units
+   
 ##### 0.6-211@211121 2021-11-21
 *   TeamBlackMiner v1.27 (removed OpenCL support for Nvidia devices; uptime minutes is now accurate; stratum connect rewritten to solve libcurl error)
 *   WildRig-Multi v0.30.5 (improved `heavyhash`: Polaris/Vega up to 10%, RDNA/RDNA2 ~10-12%, Pascal ~90%, Turing/Ampere ~25%)
