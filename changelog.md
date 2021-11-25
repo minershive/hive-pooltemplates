@@ -1,5 +1,6 @@
 ##### 0.6-212@211125 2021-11-25
 *   PhoenixMiner v5.9c Release Candidate (fixed some pool connection issues)
+*   Fixed XLArig v5.2.3 package
 *   CPUMiner-Opt: fixed display of statistics on the dashboard, broken in previous update
 
 ##### 0.6-212@211124 2021-11-24
