@@ -13,47 +13,62 @@
       {
         "geo": "Europe",
         "urls": [
-          "stratum+tcp://eu.flockpool.com:4444"
+          "eu.flockpool.com:4444"
         ],
         "ssl_urls": [
-          "stratum+tcps://eu.flockpool.com:5555"
+          "eu.flockpool.com:5555"
         ]
       },
       {
         "geo": "USA-Central",
         "urls": [
-          "stratum+tcp://us.flockpool.com:4444"
+          "us.flockpool.com:4444"
         ],
         "ssl_urls": [
-          "stratum+tcps://us.flockpool.com:5555"
+          "us.flockpool.com:5555"
         ]
       },
       {
         "geo": "USA-West",
         "urls": [
-          "stratum+tcp://us-west.flockpool.com:4444"
+          "us-west.flockpool.com:4444"
         ],
         "ssl_urls": [
-          "stratum+tcps://us-west.flockpool.com:5555"
+          "us-west.flockpool.com:5555"
         ]
       },
       {
         "geo": "Asia",
         "urls": [
-          "stratum+tcp://asia.flockpool.com:4444"
+          "asia.flockpool.com:4444"
         ],
         "ssl_urls": [
-          "stratum+tcps://asia.flockpool.com:5555"
+          "asia.flockpool.com:5555"
         ]
       }
     ],
     "miners": {
       "cpuminer-opt": {
-        "url": "%URL%",
+        "url": "stratum+tcps://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
         "algo": "gr",
         "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
+        "max-temp": 0,
         "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
       }
     }
   }
