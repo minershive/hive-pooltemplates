@@ -1,3 +1,9 @@
+##### 0.6-212@211127 2021-11-27
+*   GMiner v2.73 (added LHR mode support for RTX 3060 GA104; added option `--lhr_autotune_step` to control LHR tune step size; added option `--dag_gen_limit` to control maximal number of parallel DAG generations; display IP address of pool in statistics report; restore overclocking after stopping of mining)
+*   SRBMiner-Multi v0.8.4 (performance increase on `heavyhash` algorithm for GPU's; fixed display of hashrate while doing GPU auto tune process; changed GPU temperature to show 'edge' value instead of 'hotspot')
+*   XMRig v6.16.0 (added `gr` (GhostRider) algorithm support for RTM/Raptoreum mining)
+*   WildRig-Multi v0.30.9 (fixed low hashrate on `heavyhash` for AMD GPUs with old drivers; added default parameters for NVIDIA RTX A2000, A3000 and A4000)
+
 ##### 0.6-212@211125 2021-11-25
 *   PhoenixMiner v5.9c Release Candidate (fixed some pool connection issues)
 *   Fixed XLArig v5.2.3 package (miner couldn't start due missed libs)
