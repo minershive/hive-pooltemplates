@@ -1,7 +1,12 @@
+##### 0.6-212@211128 2021-11-28
+*   TeamBlackMiner v1.28 (improved performance for AMD cards on ETH+ZIL (dagger cache), +1-2%; added the possibility to mine to ip adresses directly instead of hostnames; disable cpu verification with `--no-cpu` option; fixed Hashrate/W in the stats for OpenCL rigs; slower DAG generation on `--dagintensity 1` to be stable on higher clocks; reduced rejected/invalid shares on the ezil.me and the `Hiveon` pool +1-4%)
+*   PhoenixMiner v5.9d (fixed issues with AMD RX6700XT with older drivers; other small fixes)
+*   XMRig-MO v6.16.0-mo1 (added `gr` "GhostRider" algorithm support for RTM/Raptoreum mining; synced code with XMRig v6.16.0)
+
 ##### 0.6-212@211127 2021-11-27
 *   GMiner v2.73 (added LHR mode support for RTX 3060 GA104; added option `--lhr_autotune_step` to control LHR tune step size; added option `--dag_gen_limit` to control maximal number of parallel DAG generations; display IP address of pool in statistics report; restore overclocking after stopping of mining)
 *   SRBMiner-Multi v0.8.4 (performance increase on `heavyhash` algorithm for GPU's; fixed display of hashrate while doing GPU auto tune process; changed GPU temperature to show 'edge' value instead of 'hotspot')
-*   XMRig v6.16.0 (added `gr` (GhostRider) algorithm support for RTM/Raptoreum mining)
+*   XMRig v6.16.0 (added `gr` "GhostRider" algorithm support for RTM/Raptoreum mining)
 *   WildRig-Multi v0.30.9 (fixed low hashrate on `heavyhash` for AMD GPUs with old drivers; added default parameters for NVIDIA RTX A2000, A3000 and A4000)
 
 ##### 0.6-212@211125 2021-11-25
