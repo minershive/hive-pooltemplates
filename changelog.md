@@ -77,7 +77,7 @@
 *   Hive Linux client: v0.6-211@211102
 *   Ubuntu v18.04.6 LTS based
 *   Linux kernel: v5.10.72
-*   Nvidia drivers: v470.82.00
+*   Nvidia driver: v470.82.00
 *   AMD driver v5.11.1001
 *   AMD OpenCL v20.40
 
@@ -252,7 +252,7 @@
 *   Hive Linux client: v0.6-208@210818
 *   Ubuntu v18.04 LTS based
 *   Linux kernel: v5.4.140
-*   Nvidia drivers: v460.91.03
+*   Nvidia driver: v460.91.03
 *   AMD OpenCL v20.40
 *   AMD kernel driver v5.11.0701 with supporting the latest GPUs including AMD RX 6600 series
 
@@ -2420,7 +2420,7 @@ NanoMiner v1.7.1 (added Ethash support for AMD Navi 12 and Navi 14 GPUs includin
 
 ##### LINUX IMAGE RELEASE 0.6-39 2019-05-03
 *   Release of stable branch with updating system packages, etc 
-*   Updated Nvidia drivers to v418.56
+*   Updated Nvidia driver to v418.56
 
 ##### 0.6-39@190501 2019-05-01
 *   fixed wifi startup
