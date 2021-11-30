@@ -1,0 +1,37 @@
+[
+    {
+        "coin": "FIRO",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "firo-eu1.picopool.org:22222"
+                ],
+                "ssl_urls": [
+                    "firo-eu1.picopool.org:22443"
+                ]
+            }
+        ],
+        "miners": {
+            "teamredminer": {
+               "algo":"firopow",
+               "url":"stratum+tcp://%URL%",
+               "template":"%WAL%.%WORKER_NAME%",
+               "pass":"x"
+            },
+            "t-rex": {
+               "url":"%URL%",
+               "algo":"firopow",
+               "pass":"x",
+               "template":"%WAL%.%WORKER_NAME%"
+            },
+            "nanominer": {
+               "url":"%URL%",
+               "algo":"firopow",
+               "pass":"x",
+               "template":"%WAL%",
+               "user_config":"coin = FIRO\nrigName = %WORKER_NAME%"
+            }
+        }
+    }
+]
