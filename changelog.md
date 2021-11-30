@@ -1,3 +1,11 @@
+##### 0.6-212@211130 2021-11-30
+*   lolMiner v1.37 (improved `ethash` performance on Nvidia Turing by about 0.4 to 0.7%; improvement of `ethash` performance on Nvidia Maxwell/Pascal up to 1%; changed LHR tuning algorithm to minimize the number of locks & time for finding a stable value; improved LHR performance for 3060 V1 on driver v460.39 and earlier; added ergo kernel for AMD RX 6600XT/6700XT; a lot of improvements in terms of displaying information in the miner's log; various bug fixes; see all changes in full changelog)
+*   TeamBlackMiner v1.29 pre-release (display difficulty change in the miner window; use ETH+ZIL shares when calculating pool speed and shares per minute; stratum change to avoid rejected shares on ezil.me and `hiveon.net` pools; the default --xintensity changed to 144 on NVIDIA to reduce stale/rejected on Hiveon, crazypool, flexpool, etheremine and binance pools)
+*   WildRig-Multi v0.31.1 (improved `heavyhash` up to 80% on Nvidia Pascal/Turing/Ampere; added default parameters for CMP 40/50/70/90/170 HX and RTX A4500/5000/6000; improved `heavyhash` up to 32% vs v0.30.9 on AMD RDNA/RDNA2 GPUs with less power consumption; fixed power jumps on NVIDIA GPUs; devfee set to 2% on `heavyhash` for Nvidia rigs)
+*   XMRig v6.16.1 (fixes for GhostRider: added average hashrate display, fixed the number of threads shown at startup; added VAES support for Cryptonight variants: up to +4% speedup on Zen3)
+*   XMRig-MO v6.16.1-mo1 (synced code with XMRig v6.16.1)
+*   SGminer-fancyIX v0.8.0 (start supporting `heavyhash` for oBTC)
+
 ##### 0.6-212@211128 2021-11-28
 *   TeamBlackMiner v1.28 (improved performance for AMD cards on ETH+ZIL (dagger cache), +1-2%; added the possibility to mine to ip adresses directly instead of hostnames; disable cpu verification with `--no-cpu` option; fixed Hashrate/W in the stats for OpenCL rigs; slower DAG generation on `--dagintensity 1` to be stable on higher clocks; reduced rejected/invalid shares on the ezil.me and the `Hiveon` pool +1-4%)
 *   PhoenixMiner v5.9d (fixed issues with AMD RX6700XT with older drivers; other small fixes)
