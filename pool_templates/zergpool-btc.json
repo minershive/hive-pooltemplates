@@ -400,5 +400,42 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "Zerg-heavyhash",
+        "servers": [
+            {
+                "geo": "Anycast",
+                "urls": [
+                    "heavyhash.mine.zergpool.com:5137"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "heavyhash.eu.mine.zergpool.com:5137"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "heavyhash.eu.mine.zergpool.com:5137"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "heavyhash.asia.mine.zergpool.com:5137"
+                ]
+            }
+        ],
+        "miners": {
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "heavyhash",
+                "pass": "c=BTC",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
