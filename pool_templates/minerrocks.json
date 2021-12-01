@@ -2,89 +2,166 @@
   {
     "coin": "DERO",
     "servers": [
-      {
-        "geo": "Europe",
-        "urls": [
-            "dero.miner.rocks:30182"
-        ],
-        "ssl_urls": [
-            "dero.miner.rocks:30182"
-        ]
-      },
-      {
-        "geo": "Asia",
-        "urls": [
-            "sg.dero.miner.rocks:30182"
-        ],
-        "ssl_urls": [
-            "sg.dero.miner.rocks:30182"
-        ]
-      }
+        {
+            "geo": "Europe low-end CPU",
+            "urls": [
+                "dero.miner.rocks:30181"
+            ],
+            "ssl_urls": [
+                "dero.miner.rocks:30181"
+            ],
+            "geo": "Europe modern CPU",
+            "urls": [
+                "dero.miner.rocks:30182"
+            ],
+            "ssl_urls": [
+                "dero.miner.rocks:30182"
+            ],
+            "geo": "Europe farms",
+            "urls": [
+                "dero.miner.rocks:30183"
+            ],
+            "ssl_urls": [
+                "dero.miner.rocks:30183"
+            ]
+        },
+        {
+            "geo": "Asia low-end CPU",
+            "urls": [
+                "sg.miner.rocks:30181"
+            ],
+            "ssl_urls": [
+                "sg.miner.rocks:30181"
+            ],
+             "geo": "Asia modern CPU",
+            "urls": [
+                "sg.miner.rocks:30182"
+            ],
+            "ssl_urls": [
+                "sg.miner.rocks:30182"
+            ],
+             "geo": "Asia farms",
+            "urls": [
+                "sg.miner.rocks:30183"
+            ],
+            "ssl_urls": [
+                "sg.miner.rocks:30183"
+            ],
+        }
     ],
     "miners": {
-        "_prototype": "miners_astrobwt_w"
+       "_prototype:": "miners_astrobwt"
     }
   },
 
   {
     "coin": "SUMO",
     "servers": [
-      {
-        "geo": null,
-        "urls": ["sumokoin.miner.rocks:5555"]
-      }
+        {
+            "geo": "CPU",
+            "urls": [
+                "sumokoin.miner.rocks:30151"
+            ],
+            "ssl_urls": [
+                "sumokoin.miner.rocks:30151"
+            ]
+        },
+        {
+            "geo": "GPU",
+            "urls": [
+                "sumokoin.miner.rocks:30152"
+            ],
+            "ssl_urls": [
+                "sumokoin.miner.rocks:30152"
+            ]
+        },
+        {
+            "geo": "RIG",
+            "urls": [
+                "sumokoin.miner.rocks:30153"
+            ],
+            "ssl_urls": [
+                "sumokoin.miner.rocks:30153"
+            ]
+        },
+        {
+            "geo": "Nicehash only",
+            "urls": [
+                "sumokoin.miner.rocks:30154"
+            ]
+        }
     ],
     "miners": {
-      "claymore-x": {
-        "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: w=%WORKER_NAME%"
-      },
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"cryptonight\""
-      },
-      "asicminer": {
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
-    }
-  },
-  {
-    "coin": "ETN",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": ["etn.miner.rocks:5551"]
-      },
-      {
-        "geo": "Asia",
-        "urls": ["sg.etn.miner.rocks:5551"]
-      }
-    ],
-    "miners": {
-      "claymore-x": {
-        "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: w=%WORKER_NAME%"
-      },
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"cryptonight\""
-      },
-      "asicminer": {
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
+        "xmrig": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"cn/r\""
+        },
+        "xmr-stak": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"currency\": \"cryptonight_r\""
+        },
+        "xmrig-amd": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"cn/r\""
+        },
+        "xmrig-nvidia": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"cn/r\""
+        },
+        "xmrig-new": {
+            "url": "%URL%",
+            "algo": "cn/r",
+            "fork": "xmrig",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%"
+        },
+        "teamredminer": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cnr"
+        },
+        "nanominer": {
+            "algo": "CryptoNightR",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "%WORKER_NAME%"
+        }
     }
   },
   {
     "coin": "KRB",
     "servers": [
-      {
-        "geo": "Europe",
-        "urls": ["krb.miner.rocks:4444"]
-      }
+        {
+            "geo": "ASICs",
+            "urls": [
+                "krb.miner.rocks:30191",
+                "krb.miner.rocks:30192",
+                "krb.miner.rocks:30193"
+            ],
+            "ssl_urls": [
+                "krb.miner.rocks:30191",
+                "krb.miner.rocks:30192",
+                "krb.miner.rocks:30193"
+            ]
+        },
+        {
+            "geo": "Nicehash only",
+            "urls": [
+                "krb.miner.rocks:30194"
+            ],
+            "ssl_urls": [
+                "krb.miner.rocks:30194"
+            ]
+        }
     ],
     "miners": {
       "claymore-x": {
@@ -99,73 +176,39 @@
       "asicminer": {
         "url": "stratum+tcp://%URL%",
         "template": "%WAL%.%WORKER_NAME%"
-      }
-    }
-  },
-  {
-    "coin": "GRFT",
-    "servers": [
-      {
-        "geo": "GPU Rig",
-        "urls": ["graft.miner.rocks:5555"]
-      },
-      {
-        "geo": "CPU",
-        "urls": ["graft.miner.rocks:3333"]
-      }
-    ],
-    "miners": {
-      "xmrig": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight/rwz\""
-      },
-      "xmrig-amd": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight/rwz\""
-      },
-      "xmrig-nvidia": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight/rwz\""
-      },
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"graft\""
-      },
-      "teamredminer": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "algo": "cnv8_rwz"
       }
     }
   },
   {
     "coin": "MSR",
     "servers": [
-      {
-        "geo": "Europe",
-        "urls": ["masari.miner.rocks:5005"]
-      },
-      {
-        "geo": "Asia",
-        "urls": ["sg.masari.miner.rocks:5005"]
-      },
-      {
-        "geo": "Europe CPU",
-        "urls": ["masari.miner.rocks:5003"]
-      },
-      {
-        "geo": "Asia CPU",
-        "urls": ["sg.masari.miner.rocks:5003"]
-      }
+        {
+            "geo": "low-end CPUand GPU",
+            "urls": [
+                "masari.miner.rocks:30161"
+            ],
+            "ssl_urls": [
+                "masari.miner.rocks:30161"
+            ]
+        },
+        {
+            "geo": "modern CPU and GPU",
+            "urls": [
+                "masari.miner.rocks:30162"
+            ],
+            "ssl_urls": [
+                "masari.miner.rocks:30162"
+            ]
+        },
+        {
+            "geo": "multi-GPU rigs and higher",
+            "urls": [
+                "masari.miner.rocks:30163"
+            ],
+            "ssl_urls": [
+                "masari.miner.rocks:30163"
+            ]
+        }
     ],
     "miners": {
       "xmr-stak": {
@@ -207,75 +250,35 @@
     }
   },
   {
-    "coin": "XTL",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": ["stellite.miner.rocks:5005"]
-      },
-      {
-        "geo": "Asia",
-        "urls": ["sg.stellite.miner.rocks:5005"]
-      },
-      {
-        "geo": "Europe - CPU",
-        "urls": ["stellite.miner.rocks:5003"]
-      },
-      {
-        "geo": "Asia - CPU",
-        "urls": ["sg.stellite.miner.rocks:5003"]
-      }
-    ],
-    "miners": {
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"stellite\""
-      },
-      "xmrig": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cn/half\""
-      },
-      "xmrig-amd": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cn/half\""
-      },
-      "xmrig-nvidia": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cn/half\""
-      },
-      "teamredminer": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "algo": "cnv8_half"
-      },
-      "cryptodredge": {
-        "algo": "cryptonight-fast-v8",
-        "url": "%URL%",
-        "template": "%WAL%",
-        "pass": "w=%WORKER_NAME%"
-      }
-    }
-  },
-  {
     "coin": "RYO",
     "servers": [
-      {
-        "geo": "GPU",
-        "urls": ["ryo.miner.rocks:5555"]
-      },
-      {
-        "geo": "CPU",
-        "urls": ["ryo.miner.rocks:3333"]
-      }
+        {
+            "geo": "low-end CPU and GPU",
+            "urls": [
+                "ryo.miner.rocks:30171"
+            ],
+            "ssl_urls": [
+                "ryo.miner.rocks:30171"
+            ]
+        },
+        {
+            "geo": "modern CPU and GPU",
+            "urls": [
+                "ryo.miner.rocks:30172"
+            ],
+            "ssl_urls": [
+                "ryo.miner.rocks:30172"
+            ]
+        },
+        {
+            "geo": "multi-GPU rigs and higher",
+            "urls": [
+                "ryo.miner.rocks:30173"
+            ],
+            "ssl_urls": [
+                "ryo.miner.rocks:30173"
+            ]
+        }
     ],
     "miners": {
       "xmrig": {
@@ -311,87 +314,95 @@
     }
   },
   {
-    "coin": "LOKI",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": ["loki.miner.rocks:4005"]
-      },
-      {
-        "geo": "Canada",
-        "urls": ["ca.loki.miner.rocks:4005"]
-      },
-      {
-        "geo": "Asia",
-        "urls": ["sg.loki.miner.rocks:4005"]
-      },
-      {
-        "geo": "Europe CPU",
-        "urls": ["loki.miner.rocks:4003"]
-      },
-      {
-        "geo": "Canada CPU",
-        "urls": ["ca.loki.miner.rocks:4003"]
-      },
-      {
-        "geo": "Asia CPU",
-        "urls": ["sg.loki.miner.rocks:4003"]
-      }
-    ],
-    "miners": {
-      "xmrig": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-turtle\""
-      },
-      "xmrig-amd": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-turtle\""
-      },
-      "xmrig-nvidia": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-turtle\""
-      },
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"cryptonight_turtle\""
-      },
-      "cast-xmr": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "algo": "cryptonight-trtl"
-      },
-      "teamredminer": {
-        "url": "%URL%",
-        "algo": "cnv8_trtl",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%"
-      }
-    }
-  },
-  {
     "coin": "XHV",
     "servers": [
-      {
-        "geo": "Europe",
-        "urls": ["haven.miner.rocks:4005"]
-      },
-      {
-        "geo": "Canada",
-        "urls": ["ca.haven.miner.rocks:4005"]
-      },
-      {
-        "geo": "Asia",
-        "urls": ["sg.haven.miner.rocks:4005"]
-      }
+        {
+            "geo": "Europe low-end CPU and GPU",
+            "urls": [
+                "haven.miner.rocks:4003"
+            ],
+            "ssl_urls": [
+                "haven.miner.rocks:4003"
+            ]
+        },
+        {
+            "geo": "Canada low-end CPU and GPU",
+            "urls": [
+                "ca.haven.miner.rocks:4003"
+            ],
+            "ssl_urls": [
+                "ca.haven.miner.rocks:4003"
+            ]
+        },
+        {
+            "geo": "Asia low-end CPU and GPU",
+            "urls": [
+                "sg.haven.miner.rocks:4003"
+            ],
+            "ssl_urls": [
+                "sg.haven.miner.rocks:4003"
+            ]
+        },
+        {
+            "geo": "Europe modern CPU and GPU",
+            "urls": [
+                "haven.miner.rocks:4005"
+            ],
+            "ssl_urls": [
+                "haven.miner.rocks:4005"
+            ]
+        },
+        {
+            "geo": "Canada modern CPU and GPU",
+            "urls": [
+                "ca.haven.miner.rocks:4005"
+            ],
+            "ssl_urls": [
+                "ca.haven.miner.rocks:4005"
+            ]
+        },
+        {
+            "geo": "Asia modern CPU and GPU",
+            "urls": [
+                "sg.haven.miner.rocks:4005"
+            ],
+            "ssl_urls": [
+                "sg.haven.miner.rocks:4005"
+            ]
+        },
+        {
+            "geo": "Europe multi-GPU rigs and higher",
+            "urls": [
+                "haven.miner.rocks:4007"
+            ],
+            "ssl_urls": [
+                "haven.miner.rocks:4007"
+            ]
+        },
+        {
+            "geo": "Canada multi-GPU rigs and higher",
+            "urls": [
+                "ca.haven.miner.rocks:4007"
+            ],
+            "ssl_urls": [
+                "ca.haven.miner.rocks:4007"
+            ]
+        },
+        {
+            "geo": "Asia multi-GPU rigs and higher",
+            "urls": [
+                "sg.haven.miner.rocks:4007"
+            ],
+            "ssl_urls": [
+                "sg.haven.miner.rocks:4007"
+            ]
+        },
+        {
+            "geo": "Remote",
+            "urls": [
+                "remote.haven.miner.rocks:17750"
+            ]
+        }
     ],
     "miners": {
       "xmrig": {
@@ -427,228 +438,91 @@
     }
   },
   {
-    "coin": "XRN",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": ["saronite.miner.rocks:5555"]
-      },
-      {
-        "geo": "Asia",
-        "urls": ["sg.saronite.miner.rocks:5555"]
-      },
-      {
-        "geo": "Europe CPU",
-        "urls": ["saronite.miner.rocks:3333"]
-      },
-      {
-        "geo": "Asia CPU",
-        "urls": ["sg.saronite.miner.rocks:3333"]
-      }
-    ],
-    "miners": {
-      "xmrig": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
-      },
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"cryptonight_haven\""
-      },
-      "xmrig-amd": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
-      },
-      "xmrig-nvidia": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-heavy/xhv\""
-      },
-      "cryptodredge": {
-        "algo": "cryptonight-xhv",
-        "url": "%URL%",
-        "template": "%WAL%",
-        "pass": "w=%WORKER_NAME%"
-      }
-    }
-  },
-  {
     "coin": "TUBE",
     "servers": [
-      {
-        "geo": "Europe",
-        "urls": ["bittube.miner.rocks:5555"]
-      },
-      {
-        "geo": "Canada",
-        "urls": ["ca.bittube.miner.rocks:5555"]
-      },
-      {
-        "geo": "Asia",
-        "urls": ["sg.bittube.miner.rocks:5555"]
-      },
-      {
-        "geo": "Europe CPU",
-        "urls": ["bittube.miner.rocks:3333"]
-      },
-      {
-        "geo": "Canada CPU",
-        "urls": ["ca.bittube.miner.rocks:3333"]
-      },
-      {
-        "geo": "Asia CPU",
-        "urls": ["sg.bittube.miner.rocks:3333"]
-      }
+        {
+            "geo": "Europe low-end GPU",
+            "urls": [
+                "bittubecash.miner.rocks:30211"
+            ],
+            "ssl_urls": [
+                "bittubecash.miner.rocks:30211"
+            ]
+        },
+        {
+            "geo": "Europe modern GPU",
+            "urls": [
+                "bittubecash.miner.rocks:30212"
+            ],
+            "ssl_urls": [
+                "bittubecash.miner.rocks:30212"
+            ]
+        },
+        {
+            "geo": "Europe multi-GPU rigs and higher",
+            "urls": [
+                "bittubecash.miner.rocks:30213"
+            ],
+            "ssl_urls": [
+                "bittubecash.miner.rocks:30213"
+            ]
+        }
     ],
     "miners": {
-      "xmrig": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-heavy/tube\""
-      },
-      "xmrig-amd": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-heavy/tube\""
-      },
-      "xmrig-nvidia": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-heavy/tube\""
-      },
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"cryptonight_bittube2\""
-      },
-      "cryptodredge": {
-        "algo": "cryptonight-saber",
-        "url": "%URL%",
-        "template": "%WAL%",
-        "pass": "w=%WORKER_NAME%"
-      }
+        "gminer": {
+            "algo": "cuckaroo29b",
+            "server": "%URL_HOST%",
+            "port": "%URL_PORT%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
+        },
+        "lolminer": {
+            "algo": "CR29-40",
+            "server": "%URL_HOST%",
+            "port": "%URL_PORT%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
     }
   },
   {
     "coin": "AEON",
     "servers": [
-      {
-        "geo": "Rig PPLNS",
-        "urls": ["aeon.miner.rocks:5555"]
-      },
-      {
-        "geo": "Rig PPS",
-        "urls": ["aeon.miner.rocks:5551"]
-      },
-      {
-        "geo": "CPU PPLNS",
-        "urls": ["aeon.miner.rocks:3333"]
-      },
-      {
-        "geo": "CPU PPS",
-        "urls": ["aeon.miner.rocks:3331"]
-      }
+        {
+            "geo": "CPU",
+            "urls": [
+                "aeon.miner.rocks:30111"
+            ],
+            "ssl_urls": [
+                "aeon.miner.rocks:30111"
+            ]
+        },
+        {
+            "geo": "GPU",
+            "urls": [
+                "aeon.miner.rocks:30112"
+            ],
+            "ssl_urls": [
+                "aeon.miner.rocks:30112"
+            ]
+        },
+        {
+            "geo": "multi-GPU rigs and higher",
+            "urls": [
+                "aeon.miner.rocks:30113"
+            ],
+            "ssl_urls": [
+                "aeon.miner.rocks:30113"
+            ]
+        }
     ],
     "miners": {
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"cryptonight_lite_v7\""
-      },
-      "xmrig": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-lite/1\""
-      },
-      "xmrig-amd": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-lite/1\""
-      },
-      "xmrig-nvidia": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-lite/1\""
-      },
-      "cast-xmr": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "algo": "cryptonight-lite-v7"
-      },
-      "cryptodredge": {
-        "url": "%URL%",
-        "algo": "cryptonight-lite-v7",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%"
-      }
-    }
-  },
-  {
-    "coin": "XMR",
-    "servers": [
-      {
-        "geo": "GPU",
-        "urls": ["monero.miner.rocks:5551"]
-      },
-      {
-        "geo": "CPU",
-        "urls": ["monero.miner.rocks:3331"]
-      }
-    ],
-    "miners": {
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"cryptonight_r\""
-      },
-      "xmrig": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cn/r\""
-      },
-      "xmrig-amd": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cn/r\""
-      },
-      "xmrig-nvidia": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cn/r\""
-      },
-      "teamredminer": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "algo": "cnr"
-      },
-      "nanominer": {
-        "algo": "cryptonightr",
-        "url": "%URL%",
-        "template": "%WAL%",
-        "pass": "w=%WORKER_NAME%",
-        "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-      }
+        "srbminer": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "k12"
+        }
     }
   }
 ]
