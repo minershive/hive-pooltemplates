@@ -3,46 +3,54 @@
     "coin": "DERO",
     "servers": [
         {
-            "geo": "Europe",
+            "geo": "Europe low-end CPU",
             "urls": [
-                "dero.miner.rocks:30181",
-                "dero.miner.rocks:30182",
+                "dero.miner.rocks:30181"
+            ],
+            "ssl_urls": [
+                "dero.miner.rocks:30181"
+            ],
+            "geo": "Europe modern CPU",
+            "urls": [
+                "dero.miner.rocks:30182"
+            ],
+            "ssl_urls": [
+                "dero.miner.rocks:30182"
+            ],
+            "geo": "Europe farms",
+            "urls": [
                 "dero.miner.rocks:30183"
             ],
             "ssl_urls": [
-                "dero.miner.rocks:30181",
-                "dero.miner.rocks:30182",
                 "dero.miner.rocks:30183"
             ]
         },
         {
-            "geo": "Asia",
+            "geo": "Asia low-end CPU",
             "urls": [
-                "sg.miner.rocks:30181",
-                "sg.miner.rocks:30182",
+                "sg.miner.rocks:30181"
+            ],
+            "ssl_urls": [
+                "sg.miner.rocks:30181"
+            ],
+             "geo": "Asia modern CPU",
+            "urls": [
+                "sg.miner.rocks:30182"
+            ],
+            "ssl_urls": [
+                "sg.miner.rocks:30182"
+            ],
+             "geo": "Asia farms",
+            "urls": [
                 "sg.miner.rocks:30183"
             ],
             "ssl_urls": [
-                "sg.miner.rocks:30181",
-                "sg.miner.rocks:30182",
                 "sg.miner.rocks:30183"
-            ]
+            ],
         }
     ],
     "miners": {
-      "claymore-x": {
-        "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: w=%WORKER_NAME%"
-      },
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"cryptonight\""
-      },
-      "asicminer": {
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
+       "_prototype:": "miners_astrobwt"
     }
   },
   {
@@ -83,19 +91,49 @@
         }
     ],
     "miners": {
-      "claymore-x": {
-        "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: w=%WORKER_NAME%"
-      },
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"cryptonight\""
-      },
-      "asicminer": {
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
+        "xmrig": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"cn/r\""
+        },
+        "xmr-stak": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"currency\": \"cryptonight_r\""
+        },
+        "xmrig-amd": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"cn/r\""
+        },
+        "xmrig-nvidia": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "\"algo\": \"cn/r\""
+        },
+        "xmrig-new": {
+            "url": "%URL%",
+            "algo": "cn/r",
+            "fork": "xmrig",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%"
+        },
+        "teamredminer": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "cnr"
+        },
+        "nanominer": {
+            "algo": "CryptoNightR",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "%WORKER_NAME%"
+        }
     }
   },
   {
@@ -430,36 +468,20 @@
         }
     ],
     "miners": {
-      "xmrig": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-heavy/tube\""
-      },
-      "xmrig-amd": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-heavy/tube\""
-      },
-      "xmrig-nvidia": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-heavy/tube\""
-      },
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"cryptonight_bittube2\""
-      },
-      "cryptodredge": {
-        "algo": "cryptonight-saber",
-        "url": "%URL%",
-        "template": "%WAL%",
-        "pass": "w=%WORKER_NAME%"
-      }
+        "gminer": {
+            "algo": "cuckaroo29b",
+            "server": "%URL_HOST%",
+            "port": "%URL_PORT%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
+        },
+        "lolminer": {
+            "algo": "CR29-40",
+            "server": "%URL_HOST%",
+            "port": "%URL_PORT%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
     }
   },
   {
@@ -494,42 +516,12 @@
         }
     ],
     "miners": {
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"cryptonight_lite_v7\""
-      },
-      "xmrig": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-lite/1\""
-      },
-      "xmrig-amd": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-lite/1\""
-      },
-      "xmrig-nvidia": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"algo\": \"cryptonight-lite/1\""
-      },
-      "cast-xmr": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "algo": "cryptonight-lite-v7"
-      },
-      "cryptodredge": {
-        "url": "%URL%",
-        "algo": "cryptonight-lite-v7",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%"
-      }
+        "srbminer": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "algo": "k12"
+        }
     }
   }
 ]
