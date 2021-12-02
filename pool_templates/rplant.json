@@ -202,8 +202,7 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "megabtx",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"opencl-threads\" : \"2\""
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -972,8 +971,7 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "heavyhash",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"opencl-threads\" : \"2\""
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1037,8 +1035,7 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "ghostrider",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"opencl-threads\" : \"2\""
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1094,8 +1091,7 @@
                 "url": "stratum+tcp://%URL%",
                 "algo": "minotaur",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"opencl-threads\" : \"2\""
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1544,6 +1540,154 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "fork": "rplant"
+            }
+        }
+    },
+    {
+        "coin": "GALE",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum-ru.rplant.xyz:7065"
+                ],
+                "ssl_urls": [
+                    "stratum-ru.rplant.xyz:17065"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum-eu.rplant.xyz:7065"
+                ],
+                "ssl_urls": [
+                    "stratum-eu.rplant.xyz:17065"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum-asia.rplant.xyz:7065"
+                ],
+                "ssl_urls": [
+                    "stratum-asia.rplant.xyz:17065"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum-na.rplant.xyz:7065"
+                ],
+                "ssl_urls": [
+                    "stratum-na.rplant.xyz:17065"
+                ]
+            }
+        ],
+        "miners": {
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256csm",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "AVN-minotaurx",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum+tcp://stratum-ru.rplant.xyz:7068"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-ru.rplant.xyz:17068"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum+tcp://stratum-eu.rplant.xyz:7068"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-eu.rplant.xyz:17068"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum+tcp://stratum-asia.rplant.xyz:7068"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-asia.rplant.xyz:17068"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum+tcp://stratum-na.rplant.xyz:7068"
+                ],
+                "ssl_urls": [
+                    "stratum+tcps://stratum-na.rplant.xyz:17068"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "%URL%",
+                "algo": "minotaurx",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
+            }
+        }
+    },
+    {
+        "coin": "AVN-x16rt",
+        "servers": [
+            {
+                "geo": "Russia",
+                "urls": [
+                    "stratum-ru.rplant.xyz:7067"
+                ],
+                "ssl_urls": [
+                    "stratum-ru.rplant.xyz:17067"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "stratum-eu.rplant.xyz:7067"
+                ],
+                "ssl_urls": [
+                    "stratum-eu.rplant.xyz:17067"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "stratum-asia.rplant.xyz:7067"
+                ],
+                "ssl_urls": [
+                    "stratum-asia.rplant.xyz:17067"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "stratum-na.rplant.xyz:7067"
+                ],
+                "ssl_urls": [
+                    "stratum-na.rplant.xyz:17067"
+                ]
+            }
+        ],
+        "miners": {
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16rt",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }
