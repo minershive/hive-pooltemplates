@@ -1,3 +1,12 @@
+##### LINUX IMAGE RELEASE 0.6-212 2021-12-01
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-212
+*   Ubuntu v18.04.6 LTS based
+*   Linux kernel: v5.10.83
+*   Nvidia driver: v470.86
+*   AMD driver v5.11.1001
+*   AMD OpenCL v20.40
+
 ##### 0.6-212@211130 2021-11-30
 *   lolMiner v1.37 (improved `ethash` performance on Nvidia Turing by about 0.4 to 0.7%; improvement of `ethash` performance on Nvidia Maxwell/Pascal up to 1%; changed LHR tuning algorithm to minimize the number of locks & time for finding a stable value; improved LHR performance for 3060 V1 on driver v460.39 and earlier; added ergo kernel for AMD RX 6600XT/6700XT; a lot of improvements in terms of displaying information in the miner's log; various bug fixes; see all changes in full changelog)
 *   TeamBlackMiner v1.29 pre-release (display difficulty change in the miner window; use ETH+ZIL shares when calculating pool speed and shares per minute; stratum change to avoid rejected shares on ezil.me and `hiveon.net` pools; the default --xintensity changed to 144 on NVIDIA to reduce stale/rejected on Hiveon, crazypool, flexpool, etheremine and binance pools)
