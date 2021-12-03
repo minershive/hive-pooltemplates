@@ -43,13 +43,13 @@
                 "algo": "autolykos2",
                 "pass": "x",
                 "template": "%WAL%",
-                "user_config":"coin = ERGO\nrigName = %WORKER_NAME%"
+                "user_config": "coin = ERGO\nrigName = %WORKER_NAME%"
             },
             "teamredminer": {
                 "url": "%URL%",
                 "algo": "autolykos2",
-                "template":"%WAL%.%WORKER_NAME%",
-                "pass":"x"
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
             },
             "lolminer": {
                 "algo": "autolykos2",
@@ -58,17 +58,52 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "nbminer":{
-                "url":"%URL%",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%",
-                "algo":"autolykos2"
+            "nbminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "autolykos2"
             },
             "t-rex": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "autolykos2",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
+            }
+        }
+    },
+    {
+        "coin": "FLUX",
+        "servers": [
+            {
+                "geo": "GLOBAL",
+                "urls": [
+                    "flux.stratum.enigmapool.com:5001"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "125_4",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers auto"
+            },
+            "lolminer": {
+                "algo": "ZEL",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "125,4",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers auto"
             }
         }
     }
