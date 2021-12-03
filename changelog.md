@@ -6,6 +6,7 @@
 *   Nvidia driver: v470.86
 *   AMD driver v5.11.1001
 *   AMD OpenCL v20.40
+*   MD5: a5caeec48bbd1a7870713da81c55857b
 
 ##### 0.6-212@211130 2021-11-30
 *   lolMiner v1.37 (improved `ethash` performance on Nvidia Turing by about 0.4 to 0.7%; improvement of `ethash` performance on Nvidia Maxwell/Pascal up to 1%; changed LHR tuning algorithm to minimize the number of locks & time for finding a stable value; improved LHR performance for 3060 V1 on driver v460.39 and earlier; added ergo kernel for AMD RX 6600XT/6700XT; a lot of improvements in terms of displaying information in the miner's log; various bug fixes; see all changes in full changelog)
