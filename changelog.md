@@ -1,6 +1,6 @@
 ##### 0.6-212@211203 2021-12-03
 *   lolMiner v1.38 (added DNS over HTTPS name resolving for establishing your pool connection: control by new option `--dns-over-https` where value 0 turns DNS over HTTPS off; 1: DNS over HTTPS is enabled, fallback to normal DNS resolving is possible default behaviour; updated internal libraries for TLS connection handling; moved more fee pools to use TLS connection; changed LHR kernel defaults for RTX 3060 and RTX 3070, because the default ones had an issue with defect shares at high OC)
-*   SRBMiner-Multi v0.8.5 (performance increase on heavyhash algorithm for VEGA/RDNA/RDNA2 GPUs; fixed verushash algorithm 'invalid solution version' error)
+*   SRBMiner-Multi v0.8.5 (performance increase on `heavyhash` algorithm for VEGA/RDNA/RDNA2 GPUs; fixed `verushash` algorithm 'invalid solution version' error)
 *   XMRig v6.16.2 (fixed VAES support)
 *   XMRig-MO v6.16.2-mo2 (fixed VAES support, disabled VAES for `cn-gpu` algo; synced code with XMRig v6.16.2)
 *   SGminer-fancyIX v0.8.0-3 (fixed performance issues with `heavyhash`)
