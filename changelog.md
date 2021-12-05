@@ -1,3 +1,6 @@
+##### 0.6-212@211205 2021-12-05
+*   TeamBlackMiner v1.30 (implemented partial LHR unlock for all drivers and models could be enabled with `--lhr-unlock` option. Notice: LHR detector not implemented yet miner will reset the device every hour just in case; removed vardiff in the display when pool has static diff; reduced memory usage; improved the stratum code: more compatible and should give less rejected shares)
+
 ##### 0.6-212@211203 2021-12-03
 *   lolMiner v1.38 (added DNS over HTTPS name resolving for establishing your pool connection: control by new option `--dns-over-https` where value 0 turns DNS over HTTPS off; 1: DNS over HTTPS is enabled, fallback to normal DNS resolving is possible default behaviour; updated internal libraries for TLS connection handling; moved more fee pools to use TLS connection; changed LHR kernel defaults for RTX 3060 and RTX 3070, because the default ones had an issue with defect shares at high OC)
 *   SRBMiner-Multi v0.8.5 (performance increase on `heavyhash` algorithm for VEGA/RDNA/RDNA2 GPUs; fixed `verushash` algorithm 'invalid solution version' error)
