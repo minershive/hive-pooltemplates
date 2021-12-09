@@ -1047,5 +1047,43 @@
             "template": "%WAL%",
             "user_config": "--disable-gpu"
         }
+    },
+    
+    "miners_firopow": {
+        "t-rex": {
+            "url": "stratum+tcp://%URL%",
+            "algo": "firopow",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "teamredminer": {
+            "url": "stratum+tcp://%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "algo": "firopow"
+        },
+         "nanominer": {
+            "url":"%URL%",
+            "algo":"firopow",
+            "pass":"x",
+            "template":"%WAL%",
+            "user_config":"coin = FIRO\nrigName = %WORKER_NAME%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "algo": "firopow"
+        },
+        "ethminer": {
+            "fork":"firominer",
+            "cuda":1,
+            "opencl":0,
+            "pass":"x",
+            "port":"%URL_PORT%",
+            "server":"%URL_HOST%",
+            "template":"%WAL%.%WORKER_NAME%"
+        }
+    
     }
 }

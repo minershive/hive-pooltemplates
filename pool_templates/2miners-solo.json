@@ -135,12 +135,57 @@
         "coin": "ERG",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "SOLO EU",
                 "urls": [
                     "solo-erg.2miners.com:9999"
                 ],
                 "ssl_urls": [
                     "solo-erg.2miners.com:19999"
+                ]
+            },
+            {
+                "geo": "SOLO EU HiDIFF",
+                "urls": [
+                    "solo-erg.2miners.com:9898"
+                ],
+                "ssl_urls": [
+                    "solo-erg.2miners.com:19898"
+                ]
+            },
+            {
+                "geo": "SOLO US",
+                "urls": [
+                    "us-solo-erg.2miners.com:9999"
+                ],
+                "ssl_urls": [
+                    "us-solo-erg.2miners.com:19999"
+                ]
+            },
+            {
+                "geo": "SOLO US HiDIFF",
+                "urls": [
+                    "us-solo-erg.2miners.com:9898"
+                ],
+                "ssl_urls": [
+                    "us-solo-erg.2miners.com:19898"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA",
+                "urls": [
+                    "asia-solo-erg.2miners.com:9999"
+                ],
+                "ssl_urls": [
+                    "asia-solo-erg.2miners.com:19999"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA HiDIFF",
+                "urls": [
+                    "asia-solo-erg.2miners.com:9898"
+                ],
+                "ssl_urls": [
+                    "asia-solo-erg.2miners.com:19898"
                 ]
             }
         ],
@@ -521,6 +566,24 @@
                 "ssl_urls": [
                     "solo-grin.2miners.com:14040"
                 ]
+            },
+            {
+                "geo": "SOLO US",
+                "urls": [
+                    "us-solo-grin.2miners.com:4040"
+                ],
+                "ssl_urls": [
+                    "us-solo-grin.2miners.com:14040"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA",
+                "urls": [
+                    "asia-solo-grin.2miners.com:4040"
+                ],
+                "ssl_urls": [
+                    "asia-solo-grin.2miners.com:14040"
+                ]
             }
         ],
         "miners": {
@@ -735,18 +798,7 @@
             }
         ],
         "miners": {
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "firopow",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "teamredminer": {
-                "url": "stratum+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "firopow"
-            }
+            "_prototype": "miners_firopow"
         }
     },
     {
@@ -858,38 +910,56 @@
         "servers": [
             {
                 "geo": "SOLO EU",
-                "urls": [
+                "ssl_urls": [
                     "solo-beam.2miners.com:5454"
                 ]
             },
             {
-                "geo": "SOLO EU HiDIFF",
-                "urls": [
+                "geo": "SOLO EU MedDIFF",
+                "ssl_urls": [
                     "solo-beam.2miners.com:5555"
                 ]
             },
             {
+                "geo": "SOLO EU HiDIFF",
+                "ssl_urls": [
+                    "solo-beam.2miners.com:5656"
+                ]
+            },
+            {
                 "geo": "SOLO US",
-                "urls": [
+                "ssl_urls": [
                     "us-solo-beam.2miners.com:5454"
                 ]
             },
             {
-                "geo": "SOLO US HiDIFF",
-                "urls": [
+                "geo": "SOLO US MedDIFF",
+                "ssl_urls": [
                     "us-solo-beam.2miners.com:5555"
                 ]
             },
             {
+                "geo": "SOLO US HiDIFF",
+                "ssl_urls": [
+                    "us-solo-beam.2miners.com:5656"
+                ]
+            },
+            {
                 "geo": "SOLO ASIA",
-                "urls": [
+                "ssl_urls": [
                     "asia-solo-beam.2miners.com:5454"
                 ]
             },
             {
-                "geo": "SOLO ASIA HiDIFF",
-                "urls": [
+                "geo": "SOLO ASIA MedDIFF",
+                "ssl_urls": [
                     "asia-solo-beam.2miners.com:5555"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA HiDIFF",
+                "ssl_urls": [
+                    "asia-solo-beam.2miners.com:5656"
                 ]
             }
         ],
