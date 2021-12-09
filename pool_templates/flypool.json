@@ -14,18 +14,45 @@
                 "geo": "EU",
                 "urls": [
                     "eu1-zcash.flypool.org:3333"
+                ],
+                "ssl_urls": [
+                    "eu1-zcash.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "EU Alt",
+                "urls": [
+                    "eu1-zcash.flypool.org:13333"
                 ]
             },
             {
                 "geo": "US",
                 "urls": [
                     "us1-zcash.flypool.org:3333"
+                ],
+                "ssl_urls": [
+                    "us1-zcash.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "US Alt",
+                "urls": [
+                    "us1-zcash.flypool.org:13333"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
                     "asia1-zcash.flypool.org:3333"
+                ],
+                "ssl_urls": [
+                    "asia1-zcash.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "Asia Alt",
+                "urls": [
+                    "asia1-zcash.flypool.org:13333"
                 ]
             }
         ],
@@ -92,19 +119,46 @@
             {
                 "geo": "EU",
                 "urls": [
+                    "eu1-beam.flypool.org:3333"
+                ],
+                 "ssl_urls": [
                     "eu1-beam.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "EU alt",
+                "urls": [
+                    "eu1-beam.flypool.org:13333"
                 ]
             },
             {
                 "geo": "US",
                 "urls": [
+                    "us1-beam.flypool.org:3333"
+                ],
+                "ssl_urls": [
                     "us1-beam.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "US alt",
+                "urls": [
+                    "us1-beam.flypool.org:13333"
                 ]
             },
             {
                 "geo": "ASIA",
                 "urls": [
+                    "asia1-beam.flypool.org:3333"
+                ],
+                "ssl_urls": [
                     "asia1-beam.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "ASIA alt",
+                "urls": [
+                    "asia1-beam.flypool.org:13333"
                 ]
             }
         ],
@@ -152,45 +206,7 @@
             }
         ],
         "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "autolykos2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--disable-cpu"
-            },
-            "nanominer": {
-                "url": "%URL%",
-                "algo": "autolykos2",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config":"coin = ERGO\nrigName = %WORKER_NAME%"
-            },
-            "teamredminer": {
-                "url": "%URL%",
-                "algo": "autolykos2",
-                "template":"%WAL%.%WORKER_NAME%",
-                "pass":"x"
-            },
-            "lolminer": {
-                "algo": "autolykos2",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "nbminer":{
-                "url":"%URL%",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%",
-                "algo":"autolykos2"
-            },
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "autolykos2",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            }
+            "_prototype": "miners_autolykos2"
         }
     }
 ]
