@@ -1100,7 +1100,8 @@
              "url":"%URL%",
              "algo":"progpow",
              "pass":"x",
-             "template":"%WAL%.%WORKER_NAME%"
+             "template":"%WAL%.%WORKER_NAME%",
+             "user_config": "\"coin\": \"sero\""
           },
           "nbminer":{
              "url":"%URL%",
@@ -1116,11 +1117,53 @@
              "template":"%WAL%.%WORKER_NAME%",
              "user_config":"-coin SERO"
           },
+          "miniz": {
+               "url": "%URL%",
+               "algo": "progpow",
+               "template": "%WAL%.%WORKER_NAME%",
+               "user_config": "--pers sero"
+          },
           "wildrig-multi": {
 	     "url": "%URL%",
 	     "algo": "progpow-sero",
 	     "template": "%WAL%",
 	     "user_config": "--worker=%WORKER_NAME%"
 	  }
+    },
+    "miners_progpow_zano": {
+          "ethminer":{
+             "fork":"progpowz",
+             "cuda":1,
+             "opencl":0,
+             "pass":"x",
+             "port":"%URL_PORT%",
+             "server":"stratum1+tcp://%URL_HOST%",
+             "template":"%WAL%.%WORKER_NAME%"
+          },
+          "t-rex":{
+             "url":"%URL%",
+             "algo":"progpowz",
+             "pass":"x",
+             "template":"%WAL%.%WORKER_NAME%"
+          },
+          "tt-miner":{
+             "url":"stratum1+tcp://%URL%",
+             "algo":"PROGPOW092",
+             "pass":"x",
+             "template":"%WAL%.%WORKER_NAME%",
+             "user_config":"-coin ZANO"
+          },
+          "miniz": {
+               "url": "%URL%",
+               "algo": "progpowz",
+               "template": "%WAL%.%WORKER_NAME%",
+               "user_config": "--pers zano"
+          },
+          "wildrig-multi": {
+               "url": "%URL%",
+               "algo": "progpowz",
+               "template": "%WAL%",
+               "user_config": "--worker=%WORKER_NAME%"
+          }
     }
 }
