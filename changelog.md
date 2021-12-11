@@ -1,3 +1,8 @@
+##### 0.6-212@211211 2021-12-11
+*   TeamRedMiner v0.8.7 (added offline benchmark mode for (almost) all algos, see `--benchmark`; improved situations with the "Dev pool failed to connect." error message appearing; users in China should preferably run with `--dev_location=cn`; added experimental support for DNS-over-HTTPS, see `--dns_https` and `--dns_https_sni`)
+*   T-Rex v0.24.8 (added DNS-over-HTTPS support when resolving mining pool domain names, see `dns-https-server` for details; added an option not to set mining pool domain name in SNI header for SSL connections, see `no-sni`; resolve domain names through SOCKS5 proxy if `proxy` is set; display mining pool IP address in console; bug fixes)
+*   TeamBlackMiner v1.32 (fixed CPU validation error on ethproxy pools that caused rejects/skipping valid work; added LHR detector and reset the device if detected, removed behavior which reset GPUs every hour which was in v1.30-v1.31; removed some LHR code for non LHR cards; CUDA devices that are busy/unavailable will be skipped instead of program exit; reduced the use of stack, also reduced the overall memory needed; removed memleak in `--list-devices` and `--version`)
+
 ##### 0.6-212@211208 2021-12-08
 *   GMiner v2.74 (improved stability for LHR mining; improved LHR auto-tune; now `--proxy` option using for user and dev fee connections; added option to disable non ssl dev fee connections, using `--dev_fee_ssl 0`; contest with prizes: 25 x 0.2 ETH, read rules at https://github.com/develsoftware/GMinerRelease/releases/tag/2.74)
 
