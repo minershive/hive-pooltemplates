@@ -1,0 +1,66 @@
+[
+  {
+    "pool": {
+      "name": "RTM BugMiner 0 fee",
+      "url": "http://bugminer.org",
+      "fee": 0,
+      "type": "PROP"
+    }
+  },
+  {
+    "coin": "RTM",
+    "servers": [
+      {
+        "dif": "Low dif",
+        "urls": [
+          "my.bugminer.org:3008"
+        ],
+        "ssl_urls": [
+          "my.bugminer.org:4008"
+        ]
+      },
+      {
+        "dif": "Medium Dif",
+        "urls": [
+          "my.bugminer.org:3032"
+        ],
+        "ssl_urls": [
+          "my.bugminer.org:4032"
+        ]
+      },
+      {
+        "dif": "High Dif",
+        "urls": [
+          "my.bugminer.org:3256"
+        ],
+        "ssl_urls": [
+          "us-west.flockpool.com:4256"
+        ]
+      },
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "x",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
+      }
+    }
+  }
+]
