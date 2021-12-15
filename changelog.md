@@ -6,8 +6,8 @@
 *   BzMiner v5.0 (added `kawpow` support; bug fixes)
 *   CCminer-fancyIX v0.3.0 (ccminer fork with `heavyhash` support - not so good as WildRig-Multi)
 *   SGminer-fancyIX v0.8.1 (improved `heavyhash` performance)
-*   XMPclient OpenCL v10.5-beta3 (added support Radeon 5xxx/6xxx RDNA & RDNA2 GPUs support; added support hardware monitoring with amdgpu-pro driver)
-*   XMPclient CUDA v10.5-beta2 (added Ampere support)
+*   XPMclient OpenCL v10.5-beta3 (added support Radeon 5xxx/6xxx RDNA & RDNA2 GPUs support; added support hardware monitoring with amdgpu-pro driver)
+*   XPMclient CUDA v10.5-beta2 (added Ampere support)
 
 ##### 0.6-212@211211 2021-12-11
 *   TeamRedMiner v0.8.7 (added offline benchmark mode for (almost) all algos, see `--benchmark`; improved situations with the "Dev pool failed to connect." error message appearing; users in China should preferably run with `--dev_location=cn`; added experimental support for DNS-over-HTTPS, see `--dns_https` and `--dns_https_sni`)
