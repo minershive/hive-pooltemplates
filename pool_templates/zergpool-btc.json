@@ -437,5 +437,43 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "Zerg-allium",
+        "servers": [
+            {
+                "geo": "Anycast",
+                "urls": [
+                    "allium.mine.zergpool.com:6433"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "allium.eu.mine.zergpool.com:6433"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "allium.na.mine.zergpool.com:6433"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "allium.asia.mine.zergpool.com:6433"
+                ]
+            }
+        ],
+        "miners": {
+           "sgminer": {
+	      "url": "%URL%",
+	      "algo": "allium",
+	      "fork": "fancyix",
+	      "pass": "c=BTC",
+	      "template": "%WAL%.%WORKER_NAME%"
+	   }
+        }
     }
 ]
