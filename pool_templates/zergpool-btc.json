@@ -475,5 +475,43 @@
 	      "template": "%WAL%.%WORKER_NAME%"
 	   }
         }
+    },
+    {
+        "coin": "Zerg-neoscrypt",
+        "servers": [
+            {
+                "geo": "Anycast",
+                "urls": [
+                    "neoscrypt.mine.zergpool.com:4233"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "allium.eu.mine.zergpool.com:4233"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "allium.na.mine.zergpool.com:4233"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "allium.asia.mine.zergpool.com:4233"
+                ]
+            }
+        ],
+        "miners": {
+           "sgminer": {
+	      "url": "%URL%",
+	      "algo": "neoscrypt",
+	      "fork": "fancyix",
+	      "pass": "c=BTC",
+	      "template": "%WAL%.%WORKER_NAME%"
+	   }
+        }
     }
 ]
