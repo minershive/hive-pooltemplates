@@ -257,31 +257,30 @@
         "urls": ["ergo-us.cruxpool.com:4444"]
       }
     ],
-
     "miners": {
       "lolminer": {
-        "algo": "AUTOLYKOS2",
+        "algo": "autolykos2",
         "template": "%WAL%.%WORKER_NAME%",
         "server": "%URL_HOST%",
         "port": "%URL_PORT%",
         "pass": "x"
       },
       "nbminer": {
-        "algo": "ergo",
+        "algo": "autolykos2",
         "template": "%WAL%.%WORKER_NAME%",
-        "server": "%URL%",
+        "url": "%URL%",
         "pass": "x"
       },
       "teamredminer": {
         "algo": "autolykos2",
         "template": "%WAL%.%WORKER_NAME%",
-        "server": "stratum+tcp://%URL%",
+        "url": "stratum+tcp://%URL%",
         "pass": "x"
       },
       "t-rex": {
         "algo": "autolykos2",
         "template": "%WAL%.%WORKER_NAME%",
-        "server": "stratum+tcp://%URL%",
+        "url": "stratum+tcp://%URL%",
         "pass": "x"
       }
     }
