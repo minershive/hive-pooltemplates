@@ -1,3 +1,6 @@
+##### 0.6-213@211220 2021-12-20
+*   NanoMiner v3.5.2 (fixed issue occured on OpenCL 20.40 that led to impossible make binaries for gfx103x - AMD RX 6xxx series GPUs; fixed crashes and restarts on Nvidia 10xx series and 20xx series, fixed in v3.5.1)
+
 ##### 0.6-212@211215 2021-12-15
 *   TeamRedMiner v0.9.0 (added initial FPGA ethash support)
 *   NanoMiner v3.5.0 (implemented ETH unlocker: automatic LHR detection by default; added configuration parameter `lhr` for manual unlock percentage selection, -1 - disable, 0 - auto, e.g lhr=71.5,-1,0)
