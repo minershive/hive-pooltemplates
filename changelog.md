@@ -1,3 +1,6 @@
+##### 0.6-213@211221 2021-12-21
+*   TeamBlackMiner v1.35 (improved LHR unlock)
+
 ##### 0.6-213@211220 2021-12-20
 *   NanoMiner v3.5.2 (fixed issue occured on OpenCL 20.40 that led to impossible make binaries for gfx103x - AMD RX 6xxx series GPUs; fixed crashes and restarts on Nvidia 10xx series and 20xx series, fixed in v3.5.1)
 
