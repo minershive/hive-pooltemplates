@@ -1,3 +1,7 @@
+##### 0.6-213@211223 2021-12-23
+*   DanilaMiner v2.2.1 (improved stability)
+*   BzMiner v5.1 (improved LHR detection and dual coin mining)
+
 ##### 0.6-213@211221 2021-12-21
 *   TeamBlackMiner v1.35 (improved LHR unlock)
 
