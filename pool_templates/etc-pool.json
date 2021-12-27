@@ -4,7 +4,7 @@
             "name": "etc-pool.com",        	
             "url": "https://etc-pool.com",	
             "fee": 1,                   	
-            "type": "DPPLNS"			
+            "type": "PPLNS"			
         }
    },
    {
@@ -29,6 +29,27 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%"
+            },
+	    "bminer": {
+                "url": "%URL%",
+                "algo": "etchash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "gminer": {
+                "algo": "etchash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%",
+		"worker":"%WORKER_NAME%",
+                "user_config": "--proto stratum"
+            }
+            "nanominer": {
+                "algo": "etchash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
             },
             "phoenixminer": {
                 "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
