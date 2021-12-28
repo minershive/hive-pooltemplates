@@ -1,3 +1,9 @@
+##### 0.6-213@211227 2021-12-27
+*   Danila-Miner v2.2.2 (minor fixes)
+*   NEW olminer v0.20.0 (ethminer fork for mining OL/Overline; only CUDA/Nvidia devices supported)
+*   NEW TON-pool-miner v0.3.4 (ignore CPUs by default; try to show the name of AMD GPUs; minor fixes)
+*   BzMiner: added support for setting dual-mining via dashboard
+   
 ##### 0.6-213@211223 2021-12-23
 *   DanilaMiner v2.2.1 (improved stability)
 *   BzMiner v5.1 (improved LHR detection and dual coin mining)
