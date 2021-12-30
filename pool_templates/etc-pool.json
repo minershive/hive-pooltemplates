@@ -1,0 +1,47 @@
+[
+   {
+        "pool": {
+            "name": "etc-pool.com",        	
+            "url": "https://etc-pool.com",	
+            "fee": 1,                   	
+            "type": "PPLNS"			
+        }
+   },
+   {
+        "coin": "ETC",
+        "servers": [
+	    {
+                "geo": "EU",
+                "urls": [
+                    "eu.etc-pool.com:4444"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+	    "teamredminer": {
+                "algo": "etchash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+		"worker": "%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ETCHASH",
+                "template": "%WAL%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+		"worker": "%WORKER_NAME%",
+		"user_config": "--ethstratum=ETHV1"
+            }
+        }
+   }
+]
