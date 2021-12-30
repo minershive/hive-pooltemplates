@@ -14,18 +14,45 @@
                 "geo": "EU",
                 "urls": [
                     "eu1-zcash.flypool.org:3333"
+                ],
+                "ssl_urls": [
+                    "eu1-zcash.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "EU Alt",
+                "urls": [
+                    "eu1-zcash.flypool.org:13333"
                 ]
             },
             {
                 "geo": "US",
                 "urls": [
                     "us1-zcash.flypool.org:3333"
+                ],
+                "ssl_urls": [
+                    "us1-zcash.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "US Alt",
+                "urls": [
+                    "us1-zcash.flypool.org:13333"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
                     "asia1-zcash.flypool.org:3333"
+                ],
+                "ssl_urls": [
+                    "asia1-zcash.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "Asia Alt",
+                "urls": [
+                    "asia1-zcash.flypool.org:13333"
                 ]
             }
         ],
@@ -92,44 +119,74 @@
             {
                 "geo": "EU",
                 "urls": [
+                    "eu1-beam.flypool.org:3333"
+                ],
+                 "ssl_urls": [
                     "eu1-beam.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "EU alt",
+                "urls": [
+                    "eu1-beam.flypool.org:13333"
                 ]
             },
             {
                 "geo": "US",
                 "urls": [
+                    "us1-beam.flypool.org:3333"
+                ],
+                "ssl_urls": [
                     "us1-beam.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "US alt",
+                "urls": [
+                    "us1-beam.flypool.org:13333"
                 ]
             },
             {
                 "geo": "ASIA",
                 "urls": [
+                    "asia1-beam.flypool.org:3333"
+                ],
+                "ssl_urls": [
                     "asia1-beam.flypool.org:3443"
+                ]
+            },
+            {
+                "geo": "ASIA alt",
+                "urls": [
+                    "asia1-beam.flypool.org:13333"
                 ]
             }
         ],
         "miners": {
-            "bminer": {
-                "algo": "beam+ssl",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
+           "_prototype": "miners_beamhash"
+        }
+    },
+    {
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "Worldwide",
+                "urls": [
+                    "stratum-ergo.flypool.org:3333"
+                ],
+                "ssl_urls": [
+                    "stratum-ergo.flypool.org:3443"
+                ]
             },
-            "gminer": {
-                "algo": "beamhash",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "tls": "1"
-            },
-            "lolminer": {
-                "algo": "BEAM",
-                "template": "%WAL%.%WORKER_NAME%",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x"
+            {
+                "geo": "Worldwide alt",
+                "urls": [
+                    "stratum-ergo.flypool.org:13333"
+                ]
             }
+        ],
+        "miners": {
+            "_prototype": "miners_autolykos2"
         }
     }
 ]

@@ -1,0 +1,120 @@
+ [
+    {
+        "pool": {
+            "name": "GetBlok.io",
+            "url": "https://ergo.getblok.io",
+            "fee": 1,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "ERG",
+		"servers": [
+ {
+                "geo": "Global",
+                "urls": [
+                    "ergo.getblok.io:3056"
+ 		],
+                "ssl_urls": [
+                    "stratum+ssl://ergo.getblok.io:4056"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "ergo-euwest.getblok.io:3056"
+		],
+                "ssl_urls": [
+                    "stratum+ssl://ergo-euwest.getblok.io:4056"
+                ]
+            },
+			{
+                "geo": "US-West",
+                "urls": [
+                    "ergo-westus.getblok.io:3056"
+		],
+                "ssl_urls": [
+                    "stratum+ssl://ergo-westus.getblok.io:4056"
+                ]
+            },
+            {
+                "geo": "US-East",
+                "urls": [
+                    "ergo-eastus.getblok.io:3056"
+		],
+                "ssl_urls": [
+                    "stratum+ssl://ergo-eastus.getblok.io:4056"
+                ]
+            },
+		{
+                "geo": "Brazil",
+                "urls": [
+                    "ergo-br.getblok.io:3056"
+		],
+                "ssl_urls": [
+                    "stratum+ssl://ergo-br.getblok.io:4056"
+                ]
+            },
+		{
+                "geo": "Middle-East",
+                "urls": [
+                    "ergo-meast.getblok.io:3056"
+		],
+                "ssl_urls": [
+                    "stratum+ssl://ergo-meast.getblok.io:4056"
+                ]
+            },
+
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "ergo-apac.getblok.io:3056"
+		],
+                "ssl_urls": [
+                    "stratum+ssl://ergo-apac.getblok.io:4056"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "autolykos2",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            },
+            "nanominer": {
+                "url": "%URL%",
+                "algo": "autolykos2",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config":"coin = ERGO\nrigName = %WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "algo": "autolykos2",
+                "template":"%WAL%.%WORKER_NAME%",
+                "pass":"x"
+            },
+            "lolminer": {
+                "algo": "autolykos2",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer":{
+                "url":"%URL%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%",
+                "algo":"autolykos2"
+            },
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "autolykos2",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
+    }
+]

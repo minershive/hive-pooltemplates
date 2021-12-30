@@ -266,6 +266,32 @@
         }
     },
     {
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "EU Low Diff",
+                "urls": [
+                    "s3.solopool.org:8001"
+                ]
+            },
+            {
+                "geo": "EU Mid Diff",
+                "urls": [
+                    "s3.solopool.org:7001"
+                ]
+            },
+            {
+                "geo": "EU High Diff",
+                "urls": [
+                    "s3.solopool.org:9001"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_autolykos2"
+        }
+    },
+    {
         "coin": "BEAM",
         "servers": [
             {
@@ -975,20 +1001,14 @@
             }
         ],
         "miners": {
-            "cryptodredge": {
-                "algo": "mtp",
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
             "t-rex": {
-                "algo": "mtp",
+                "algo": "firopow",
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
             },
             "teamredminer": {
-                "algo": "mtp",
+                "algo": "firopow",
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
