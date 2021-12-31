@@ -5,7 +5,7 @@
 *   Danila-Miner: minor stats fixes
 *   TON-pool-miner: minor stats fixes
 *   TeamRedMiner: stats fix (fixed very rare error caused by consecutive unsuccessful attempts to initialize the GPU)
-*   
+   
 ##### 0.6-213@211227 2021-12-27
 *   Danila-Miner v2.2.2 (minor fixes)
 *   NEW olminer v0.20.0 (ethminer fork for mining OL/Overline; only CUDA/Nvidia devices supported)
