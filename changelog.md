@@ -1,3 +1,11 @@
+##### 0.6-213@211231 2021-12-31
+*   lolMiner v1.39 (added support for mining `TON`/`Toncoin`, devfee is 1.5%, AMD cards since GCN1 via OpenCL and Nvidia cards since Maxwell and newer generation via CUDA are supported; added support for mining `UBQ`/`Ubiq`, devfee is 0.7% as with all Ethash based coins; added support for routing your stratum traffic through a socks5 proxy server, use `--socks5` to enable it; FIXES: added a timeout for DOH requests, so they can no longer hang indefinitely; fixed ethash support for RX 5500 series GPUs on more recent drivers)
+*   BzMiner v6.0 (added support `olhash` algorithm)
+*   CPUminer-Opt-JayDDee v3.19.2 (avx2 & avx512 improvements; bug fixes)
+*   Danila-Miner: minor stats fixes
+*   TON-pool-miner: minor stats fixes
+*   TeamRedMiner: stats fix (fixed very rare error caused by consecutive unsuccessful attempts to initialize the GPU)
+*   
 ##### 0.6-213@211227 2021-12-27
 *   Danila-Miner v2.2.2 (minor fixes)
 *   NEW olminer v0.20.0 (ethminer fork for mining OL/Overline; only CUDA/Nvidia devices supported)
