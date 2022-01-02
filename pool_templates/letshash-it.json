@@ -8,25 +8,6 @@
         }
     },
     {
-        "coin": "ATMN",
-        "servers": [
-            {
-                "geo": "DE - Starting Diff 0.016",
-                "urls": [
-                    "eu.letshash.it:8927"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "phi1612",
-                "ccpass": "c=ATMN",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "ESP",
         "servers": [
             {
@@ -71,62 +52,27 @@
         }
     },
     {
-        "coin": "iBTC",
+        "coin": "pBTC",
         "servers": [
             {
-                "geo": "DE - Starting Diff 32",
+                "geo": "DE - GPU Starting Diff 0.2",
                 "urls": [
-                    "eu.letshash.it:9869"
-                ]
-            }
-        ],
-        "miners":{
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "COSA",
-        "servers": [
-            {
-                "geo": "DE - CPU - Starting Diff 0.001",
-                "urls": [
-                    "eu.letshash.it:4433"
+                    "eu.letshash.it:3333"
                 ]
             }
         ],
         "miners": {
-            "cpuminer-opt": {
+            "wildrig-multi": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "cosa",
-                "pass": "c=COSA",
-                "template": "%WAL%.%WORKER_NAME%",
-                "fork": "rplant"
+                "algo": "heavyhash",
+                "pass": "c=pBTC",
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "srbminer": {
                 "url": "%URL%",
-                "pass": "c=COSA",
+                "pass": "c=pBTC",
                 "template": "%WAL%.%WORKER_NAME%",
-                "algo": "cosa"
-            }
-        }
-    },
-    {
-        "coin": "XRG",
-        "servers": [
-            {
-                "geo": "DE - Starting Diff 32",
-                "urls": [
-                    "eu.letshash.it:13391"
-                ]
-            }
-        ],
-        "miners":{
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                 "template": "%WAL%"
+                "algo": "heavyhash"
             }
         }
     },
@@ -146,116 +92,6 @@
                 "pass": "c=LUX",
                 "template": "%WAL%.%WORKER_NAME%",
                 "algo": "rx2"
-            }
-        }
-    },
-    {
-        "coin": "TTN",
-        "servers": [
-            {
-                "geo": "DE - Starting Diff 1",
-                "urls": [
-                    "eu.letshash.it:5897"
-                 ]
-            }
-        ],
-        "miners": {
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x21s",
-                "pass": "c=TTN",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "RLC",
-        "servers": [
-            {
-                "geo": "DE - GPU Starting Diff 0.01",
-                "urls": [
-                    "eu.letshash.it:4033"
-                ]
-            }
-        ],
-        "miners": {
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "sha256csm",
-                "pass": "c=RLC",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "XLA",
-        "servers": [
-            {
-                "geo": "DE - Low-End CPU",
-                "urls": [
-                    "eu.letshash.it:1559"
-                ]
-            }
-        ],
-        "miners": {
-            "xmrig-new": {
-                "url": "%URL%",
-                "algo": "panthera",
-                "fork": "xlarig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "panthera"
-            }
-        }
-    },
-    {
-        "coin": "UPX",
-        "servers": [
-            {
-                "geo": "DE - Low-End GPU/CPU",
-                "urls": [
-                    "eu.letshash.it:1809"
-                ]
-            }
-        ],
-        "miners": {
-            "teamredminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cnv8_upx2"
-            },
-            "xmrig": {
-                "fork": "xmrigcc",
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cryptonight-extremelite\/upx2"
-            },
-            "xmrig-amd": {
-                "fork": "xmrigcc",
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cryptonight-extremelite\/upx2"
-            },
-            "xmr-stak": {
-                "fork": "uplexa",
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_upx2\""
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "algo": "cryptonight_upx"
             }
         }
     },
