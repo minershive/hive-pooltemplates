@@ -1,31 +1,49 @@
 [
     {
-	"pool": {
-	    "name": "Leafpool",
-	    "url": "https://www.leafpool.com/",
-	    "fee": 0.5,
-	    "type": "PPLNT"
-	}
+        "pool": {
+            "name": "Leafpool",
+            "url": "https://www.leafpool.com",
+            "fee": 0.5,
+            "type": "PPLNT"
+        }
     },
     {
         "coin": "ZP",
         "servers": [
             {
-                "geo": "USA",
+                "geo": "USA GPU Mining",
                 "urls": [
                     "zp-us-east.leafpool.com:8811"
                 ]
             },
             {
-                "geo": "EU",
+                "geo": "USA Rigs/Mining Farm",
+                "urls": [
+                    "zp-us-east.leafpool.com:8822"
+                ]
+            },
+            {
+                "geo": "EU GPU Mining",
                 "urls": [
                     "zp-eu.leafpool.com:8811"
                 ]
             },
             {
-                "geo": "Asia",
+                "geo": "EU Rigs/Mining Farm",
+                "urls": [
+                    "zp-eu.leafpool.com:8822"
+                ]
+            },
+            {
+                "geo": "Asia GPU Mining",
                 "urls": [
                     "zp-asia.leafpool.com:8811"
+                ]
+            },
+            {
+                "geo": "Asia Rigs/Mining Farm",
+                "urls": [
+                    "zp-asia.leafpool.com:8822"
                 ]
             }
         ],
@@ -42,74 +60,84 @@
         "coin": "BEAM",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "EU GPU Mining",
                 "urls": [
-                    "beam-eu.leafpool.com:4444"
-                ],
-                "ssl_urls": [
+                    "beam-eu.leafpool.com:3333"
+                ]
+            },
+            {
+                "geo": "EU Mining Rigs",
+                "urls": [
                     "beam-eu.leafpool.com:4444"
                 ]
             },
             {
-                "geo": "US",
+                "geo": "EU Nicehash ",
                 "urls": [
-                    "beam-us.leafpool.com:4444"
-                ],
-                "ssl_urls": [
+                    "beam-eu.leafpool.com:5555"
+                ]
+            },
+            {
+                "geo": "US GPU Mining",
+                "urls": [
+                    "beam-us.leafpool.com:3333"
+                ]
+            },
+            {
+                "geo": "US Mining Rigs",
+                "urls": [
                     "beam-us.leafpool.com:4444"
                 ]
             },
             {
-                "geo": "Asia",
+                "geo": "US Nicehash ",
+                "urls": [
+                    "beam-us.leafpool.com:5555"
+                ]
+            },
+            {
+                "geo": "Asia GPU Mining",
+                "urls": [
+                    "beam-asia.leafpool.com:3333"
+                ]
+            },
+            {
+                "geo": "Asia Mining Rigs",
                 "urls": [
                     "beam-asia.leafpool.com:4444"
-                ],
-                "ssl_urls": [
-                    "beam-asia.leafpool.com:4444"
                 ]
-            }
+            },
+            {
+                "geo": "Asia Nicehash ",
+                "urls": [
+                    "beam-asia.leafpool.com:5555"
+                ]
+            },
         ],
         "miners": {
-            "lolminer": {
-                "algo": "BEAM",
-                "template": "%WAL%.%WORKER_NAME%",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x"
-            },
-            "bminer": {
-                "algo": "beam+ssl",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            },
-            "gminer": {
-                "algo": "beamhash",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "tls": "1"
-            },
-            "miniz": {
-                "algo": "beam3",
-                "tls": "1",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "nbminer":{
-                "algo":"beamv3",
-                "url":"%URL%",
-                "template":"%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_beamhash"
         }
     },
     {
         "coin": "ERG",
         "servers": [
             {
-                "geo": "US-Dallas",
+                "geo": "Low US Randomly choose",
+                "urls": [
+                    "ergo-us.leafpool.com:1111"
+                ],
+                "ssl_urls": [
+                    "ergo-us.leafpool.com:2288"
+                ]
+            },
+            {
+                "geo": "High US Randomly choose",
+                "urls": [
+                    "ergo-us.leafpool.com:2233"
+                ]
+            },
+            {
+                "geo": "Low US-Dallas",
                 "urls": [
                     "ergo-us-central.leafpool.com:1111"
                 ],
@@ -118,7 +146,13 @@
                 ]
             },
             {
-                "geo": "US-Los-Angeles",
+                "geo": "High US-Dallas",
+                "urls": [
+                    "ergo-us-central.leafpool.com:2233"
+                ]
+            },
+            {
+                "geo": "Low US-Los-Angeles",
                 "urls": [
                     "ergo-us-west.leafpool.com:1111"
                 ],
@@ -127,7 +161,13 @@
                 ]
             },
             {
-                "geo": "EU",
+                "geo": "High US-Los-Angeles",
+                "urls": [
+                    "ergo-us-west.leafpool.com:2233"
+                ]
+            },
+            {
+                "geo": "Low EU",
                 "urls": [
                     "ergo-eu.leafpool.com:1111"
                 ],
@@ -136,55 +176,29 @@
                 ]
             },
             {
-                "geo": "Asia",
+                "geo": "High EU",
+                "urls": [
+                    "ergo-eu.leafpool.com:2233"
+                ]
+            },
+            {
+                "geo": "Low Asia",
                 "urls": [
                     "ergo-asia.leafpool.com:1111"
                 ],
                 "ssl_urls": [
                     "ergo-asia.leafpool.com:2288"
                 ]
+            },
+            {
+                "geo": "High Asia",
+                "urls": [
+                    "ergo-asia.leafpool.com:2233"
+                ]
             }            
         ],
         "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "autolykos2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--disable-cpu"
-            },
-            "nanominer": {
-                "url": "%URL%",
-		        "algo": "autolykos2",
-		        "pass": "x",
-                "template": "%WAL%",
-                "user_config":"coin = ERGO\nrigName = %WORKER_NAME%"
-            },
-            "teamredminer": {
-                "url": "%URL%",
-                "algo": "autolykos2",
-                "template":"%WAL%.%WORKER_NAME%",
-                "pass":"x"
-            },
-            "lolminer": {
-                "algo": "autolykos2",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "nbminer":{
-                "url":"%URL%",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%",
-                "algo":"autolykos2"
-            },
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "autolykos2",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            }
+            "_prototype": "miners_autolykos2"
         }
     }
 ]
