@@ -8,48 +8,21 @@
         }
     },
     {
-      "coin":"ERG",
-      "servers":[
-         {
-            "geo": "China",
-            "urls": [
-                "ergo.666pool.com:9556"
-            ],
-			"ssl_urls":[
-			    "ergo.666pool.com:9558"
-			]
-         }
-      ],
-      "miners":{
-         "teamredminer":{
-            "algo":"autolykos2",
-            "url":"stratum+tcp://%URL%",
-            "template":"%WAL%.%WORKER_NAME%",
-            "pass":"x"
-         },
-         "lolminer": {
-            "algo":"autolykos2"
-         },
-         "srbminer":{
-            "url":"%URL%",
-            "pass":"%WORKER_NAME%",
-            "template":"%WAL%",
-            "algo":"autolykos2"
-         },
-         "nanominer":{
-            "url":"%URL%",
-            "algo":"autolykos2",
-            "pass":"x",
-            "template":"%WAL%.%WORKER_NAME%",
-            "user_config":"coin = ERGO\nrigName = %WORKER_NAME%"
-         },
-         "nbminer":{
-            "url":"%URL%",
-            "pass":"x",
-            "template":"%WAL%.%WORKER_NAME%",
-            "algo":"autolykos2"
-         }
-      }
+        "coin":"ERG",
+        "servers":[
+            {
+                "geo": "China",
+                "urls": [
+                    "ergo.666pool.com:9556"
+                ],
+                "ssl_urls":[
+                    "ergo.666pool.com:9558"
+                ]
+            }
+        ],
+        "miners":{
+            "_prototype": "miners_autolykos2"
+        }
     },
     {
         "coin": "RVN",
