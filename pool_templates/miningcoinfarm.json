@@ -1,0 +1,42 @@
+[
+  {
+    "pool": {
+      "name": "MiningCoin.Farm",
+      "url": "https://miningcoin.farm",
+      "fee": 0,
+      "type": "PROP"
+    }
+  },
+  {
+    "coin": "AVN",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.miningcoin.farm:7220"
+        ]
+      },
+      {
+        "geo": "Central America",
+        "urls": [
+          "us.miningcoin.farm:7220"
+        ]
+      }
+    ],
+    "miners": {
+      "t-rex": {
+        "ver": "0.19.14-cuda111",
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "x16rt",
+        "pass": "x"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "x16rt",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]

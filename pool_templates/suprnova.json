@@ -61,6 +61,13 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "fork": "rplant"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "heavyhash",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "fork": "suprminer"
             }
         }
     },
@@ -71,6 +78,12 @@
                 "geo": "Europe",
                 "urls": [
                     "stratum+tcp://obtc.suprnova.cc:4074"
+                ]
+            },
+            {
+                "geo": "Europe GPU",
+                "urls": [
+                    "stratum+tcp://obtc.suprnova.cc:4075"
                 ]
             }
         ],

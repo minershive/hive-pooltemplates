@@ -528,39 +528,7 @@
             }
         ],
         "miners": {
-            "bminer": {
-                "algo": "beam+ssl",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            },
-            "gminer": {
-                "algo": "beamhash",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "tls": "1"
-            },
-            "lolminer": {
-                "algo": "BEAM",
-                "template": "%WAL%.%WORKER_NAME%",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x"
-            },
-            "miniz": {
-                "algo": "beam3",
-                "tls": "1",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "nbminer":{
-                "algo":"beamv3",
-                "url":"%URL%",
-                "template":"%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_beamhash"
         }
     },
     {
@@ -2306,6 +2274,98 @@
                 "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
                 "algo": "cryptonight_gpu"
+            }
+        }
+    },
+    {
+        "coin": "FLUX",
+        "servers": [
+            {
+                "geo": "Germany",
+                "urls": [
+                    "de.flux.herominers.com:1200"
+                ],
+                "ssl_urls": [
+                    "de.flux.herominers.com:1200"
+                ]
+            },
+            {
+                "geo": "Finland",
+                "urls": [
+                    "fi.flux.herominers.com:1200"
+                ],
+                "ssl_urls": [
+                    "fi.flux.herominers.com:1200"
+                ]
+            },
+            {
+                "geo": "Canada (East)",
+                "urls": [
+                    "ca.flux.herominers.com:1200"
+                ],
+                "ssl_urls": [
+                    "ca.flux.herominers.com:1200"
+                ]
+            },
+            {
+                "geo": "USA (West)",
+                "urls": [
+                    "us.flux.herominers.com:1200"
+                ],
+                "ssl_urls": [
+                    "us.flux.herominers.com:1200"
+                ]
+            },
+            {
+                "geo": "HongKong",
+                "urls": [
+                    "hk.flux.herominers.com:1200"
+                ],
+                "ssl_urls": [
+                    "hk.flux.herominers.com:1200"
+                ]
+            },
+            {
+                "geo": "Singapore",
+                "urls": [
+                    "sg.flux.herominers.com:1200"
+                ],
+                "ssl_urls": [
+                    "sg.flux.herominers.com:1200"
+                ]
+            },
+            {
+                "geo": "Turkey",
+                "urls": [
+                    "tr.flux.herominers.com:1200"
+                ],
+                "ssl_urls": [
+                    "tr.flux.herominers.com:1200"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "125_4",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers auto"
+            },
+            "lolminer": {
+                "algo": "ZEL",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "125,4",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers auto"
             }
         }
     }
