@@ -1,7 +1,7 @@
 ##### 0.6-213@220110 2022-01-10
 *   lolMiner v1.42 (reduced TON pool job polling intervals by default, this will reduce stales and rejected on pool; added TON solo mining mode, use `--pool SOLO` or `--ton-mode 5` to use it; added ability to lock the memory clock on Nvidia RTX 3000 series, use parameter `--mclk` and read more at https://github.com/Lolliedieb/lolMiner-releases/wiki/mclk-Parameter-and-use-(TON-Recommended) ; Read full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.42)
 *   Danila-Miner v2.3.1 (perfomance increase +10% comparing with 2.2.2; small bugfixes)
-*   TeamBlackMiner v1.38 CUDA 11.5 build
+*   TeamBlackMiner v1.38 CUDA 11.5 build (Major changes vs v1.35: improved the LHR detection; improved the default xintensities; improved DAG creation parallelization on Nvidia multicard rigs; removed invalid shares on the Hiveon pool; fixed invalid shares after re-connecting to pool; other improvements and bug fixes)
 *   CPUMiner-Opt-JayDDee v3.19.3 (faster verthash (+25%), scryptn2 (+2%) when huge pages are available; small speed up for Hamsi AVX2 & AVX512, Keccak AVX512)
 
 ##### 0.6-213@220107 2022-01-07
