@@ -1,3 +1,9 @@
+##### 0.6-213@220110 2022-01-10
+*   lolMiner v1.42 (reduced TON pool job polling intervals by default, this will reduce stales and rejected on pool; added TON solo mining mode, use `--pool SOLO` or `--ton-mode 5` to use it; added ability to lock the memory clock on Nvidia RTX 3000 series, use parameter `--mclk` and read more at https://github.com/Lolliedieb/lolMiner-releases/wiki/mclk-Parameter-and-use-(TON-Recommended) ; Read full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.42)
+*   Danila-Miner v2.3.1 (perfomance increase +10% comparing with 2.2.2; small bugfixes)
+*   TeamBlackMiner v1.38 CUDA 11.5 build
+*   CPUMiner-Opt-JayDDee v3.19.3 (faster verthash (+25%), scryptn2 (+2%) when huge pages are available; small speed up for Hamsi AVX2 & AVX512, Keccak AVX512)
+
 ##### 0.6-213@220107 2022-01-07
 *   lolMiner v1.41b (re-wrote the complete HTTPS connection stack in the TON pool connector, so the connections can be reused for a significant lower load on the pools; improved performance of Nvidia TON kernels, especially significant on Turing based GPUs; added experimental TON kernels for Nvidia Fermi and first generation Kepler GPUs; altered fee pools of TON to distribute better to different mirrors to reduce load on single ones; implemented a system that can detect connection blocking in TON and will automatically choose alternative mirrors for the known TON pools in case of problems; users on toncoinpool.io stratum mode `--ton-mode 3` can now specify a worker name via `--worker` or by adding a worker name to their wallet separated by a dot. Other TON mining pool protocols will ignore both, because most pools do not accept worker names send; several bugs fixed. NOTE: please also read message from lolMiner developer and a read complete changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.41)
 
