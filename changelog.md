@@ -1,3 +1,8 @@
+##### 0.6-213@220114 2022-01-14
+*   TeamBlackMiner v1.39 (improved Stale checker/estimates AMD; fixed reject bug on ethproxy pools; fixed ETH+ZIL on LHR rigs)
+*   BzMiner v7.1.1 (new algo: `alph` for Alephium coin mining with 1% devfee; improved `olhash` hashrate; bugs fixes and improvements)
+*   CPUminer-Opt-JayDDee v3.19.4 (added new option `stratum-keepalive` which prevent disconnects when difficulty is too high; fixed `verthash` memory allocation for non-hugepages, broken in v3.19.3)
+
 ##### 0.6-213@220110 2022-01-10
 *   lolMiner v1.42 (reduced TON pool job polling intervals by default, this will reduce stales and rejected on pool; added TON solo mining mode, use `--pool SOLO` or `--ton-mode 5` to use it; added ability to lock the memory clock on Nvidia RTX 3000 series, use parameter `--mclk` and read more at https://github.com/Lolliedieb/lolMiner-releases/wiki/mclk-Parameter-and-use-(TON-Recommended) ; Read full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.42)
 *   Danila-Miner v2.3.1 (performance increase +10% comparing with 2.2.2; small bugfixes)
