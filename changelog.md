@@ -1,3 +1,7 @@
+##### 0.6-213@220116 2022-01-16
+*   TeamBlackMiner v1.40 (fixed build issue on AMD rigs; tiny improvement in the CUDA kernel)
+*   BzMiner v7.1.3 (added mining.authorize request to stratum; fixed difficulty != 1 bug causing high hashrate and invalid shares; stability updates related to pool reconnecting: no more hung main thread issue, or crashing; displaying wallet addresses on connection; fixed auto protocol detection for Alephium; bugs fixes and improvements)
+
 ##### 0.6-213@220114 2022-01-14
 *   TeamBlackMiner v1.39 (improved Stale checker/estimates AMD; fixed reject bug on ethproxy pools; fixed ETH+ZIL on LHR rigs)
 *   BzMiner v7.1.1 (new algo: `alph` for Alephium coin mining with 1% devfee; improved `olhash` hashrate; bugs fixes and improvements)
