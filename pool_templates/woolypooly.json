@@ -545,37 +545,7 @@
             }
         ],
         "miners":{
-            "teamredminer":{
-                "algo":"autolykos2",
-                "url":"stratum+tcp://%URL%",
-                "template":"%WAL%.%WORKER_NAME%",
-                "pass":"x"
-            },
-            "t-rex":{
-                "url":"%URL%",
-                "algo":"autolykos2",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%"
-            },
-            "srbminer":{
-                "url":"%URL%",
-                "pass":"%WORKER_NAME%",
-                "template":"%WAL%",
-                "algo":"autolykos2"
-            },
-            "nanominer":{
-                "url":"%URL%",
-                "algo":"autolykos2",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%",
-                "user_config":"coin = ERGO\nrigName = %WORKER_NAME%"
-            },
-            "nbminer":{
-                "url":"%URL%",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%",
-                "algo":"autolykos2"
-            }
+            "_prototype": "miners_autolykos2"
         }
     },
     {
@@ -601,181 +571,38 @@
             }
         ],
         "miners":{
-            "srbminer":{
-                "url":"%URL%",
-                "algo":"verthash",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%"
-            },
-            "verthashminer":{
-                "url":"%URL%",
-                "algo":"verthash",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%"
-            },
-            "teamredminer":{
-                "url":"%URL%",
-                "algo":"verthash",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_verthash"
         }
     },
     {
         "coin":"ALPH",
         "servers":[
-        {
-            "geo":"World Auto PPLNS",
-            "urls":[
-               "pool.woolypooly.com:3106"
-            ],
-            "ssl_urls":[
-               "pool.woolypooly.com:3106"
-            ]
-         },
-         {
-            "geo":"World Auto SOLO",
-            "urls":[
-               "pool.woolypooly.com:3107"
-            ],
-            "ssl_urls":[
-               "pool.woolypooly.com:3107"
-            ]
-         },
-         {
-            "geo":"Europe PPLNS",
-            "urls":[
-               "pool.eu.woolypooly.com:3106"
-            ],
-            "ssl_urls":[
-               "pool.eu.woolypooly.com:3106"
-            ]
-         },
-         {
-            "geo":"Europe SOLO",
-            "urls":[
-               "pool.eu.woolypooly.com:3107"
-            ],
-            "ssl_urls":[
-               "pool.eu.woolypooly.com:3107"
-            ]
-         },
-         {
-            "geo":"US PPLNS",
-            "urls":[
-               "pool.us.woolypooly.com:3106"
-            ],
-            "ssl_urls":[
-               "pool.us.woolypooly.com:3106"
-            ]
-         },
-         {
-            "geo":"US SOLO",
-            "urls":[
-               "pool.us.woolypooly.com:3107"
-            ],
-            "ssl_urls":[
-               "pool.us.woolypooly.com:3107"
-            ]
-         },
-         {
-            "geo":"China PPLNS",
-            "urls":[
-               "pool.zh.woolypooly.com:3106"
-            ],
-            "ssl_urls":[
-               "pool.zh.woolypooly.com:3106"
-            ]
-         },
-         {
-            "geo":"China SOLO",
-            "urls":[
-               "pool.zh.woolypooly.com:3107"
-            ],
-            "ssl_urls":[
-               "pool.zh.woolypooly.com:3107"
-            ]
-         },
-         {
-            "geo":"Brazil PPLNS",
-            "urls":[
-               "pool.br.woolypooly.com:3106"
-            ],
-            "ssl_urls":[
-               "pool.br.woolypooly.com:3106"
-            ]
-         },
-         {
-            "geo":"Brazil SOLO",
-            "urls":[
-               "pool.br.woolypooly.com:3107"
-            ],
-            "ssl_urls":[
-               "pool.br.woolypooly.com:3107"
-            ]
-         },
-         {
-            "geo":"Russia PPLNS",
-            "urls":[
-               "pool.ru.woolypooly.com:3106"
-            ],
-            "ssl_urls":[
-               "pool.ru.woolypooly.com:3106"
-            ]
-         },
-         {
-            "geo":"Russia SOLO",
-            "urls":[
-               "pool.ru.woolypooly.com:3107"
-            ],
-            "ssl_urls":[
-               "pool.ru.woolypooly.com:3107"
-            ]
-         },
-         {
-            "geo":"Australia PPLNS",
-            "urls":[
-               "pool.au.woolypooly.com:3106"
-            ],
-            "ssl_urls":[
-               "pool.au.woolypooly.com:3106"
-            ]
-         },
-         {
-            "geo":"Australia SOLO",
-            "urls":[
-               "pool.au.woolypooly.com:3107"
-            ],
-            "ssl_urls":[
-               "pool.au.woolypooly.com:3107"
-            ]
-         },
-         {
-            "geo":"Singapore PPLNS",
-            "urls":[
-               "pool.sg.woolypooly.com:3106"
-            ],
-            "ssl_urls":[
-               "pool.sg.woolypooly.com:3106"
-            ]
-         },
-         {
-            "geo":"Singapore SOLO",
-            "urls":[
-               "pool.sg.woolypooly.com:3107"
-            ],
-            "ssl_urls":[
-               "pool.sg.woolypooly.com:3107"
-            ]
-         }
-      ],
-      "miners":{
-         "bzminer":{
-            "url":"%URL%",
-            "algo":"alph",
-            "pass":"x",
-            "template":"%WAL%.%WORKER_NAME%"
-         }
-      }
-   }
+            {
+                "geo":"World Auto PPLNS",
+                "urls":[
+                    "pool.woolypooly.com:3106"
+                ],
+                "ssl_urls":[
+                    "pool.woolypooly.com:3106"
+                ]
+            },
+            {
+                "geo":"World Auto SOLO",
+                "urls":[
+                    "pool.woolypooly.com:3107"
+                ],
+                "ssl_urls":[
+                    "pool.woolypooly.com:3107"
+                ]
+            }
+        ],
+        "miners":{
+            "bzminer":{
+                "url":"%URL%",
+                "algo":"alph",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
 ]
