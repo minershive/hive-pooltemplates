@@ -1,3 +1,7 @@
+##### 0.6-213@220118 2022-01-18
+*   TeamBlackMiner v1.42 (fixed GPU timeouts on AMD rigs; fixed disconnect problem at nanopool.org and crazypool; fixed crash in `--list-devices` on OpenCL; flipped the GPU order for AMD GPUs; fixed an issue with BTC and Nano payouts on 2miners pool; added more pools)
+*   BzMiner v7.1.4 (support extra nonce from pool; fixed unsupported message from pool considered as rejected)
+
 ##### 0.6-213@220116 2022-01-16
 *   TeamBlackMiner v1.40 (fixed build issue on AMD rigs; tiny improvement in the CUDA kernel)
 *   BzMiner v7.1.3 (added mining.authorize request to stratum; fixed difficulty != 1 bug causing high hashrate and invalid shares; stability updates related to pool reconnecting: no more hung main thread issue, or crashing; displaying wallet addresses on connection; fixed auto protocol detection for Alephium; bugs fixes and improvements)
