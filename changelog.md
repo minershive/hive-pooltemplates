@@ -1,3 +1,6 @@
+##### 0.6-213@220119 2022-01-19
+*   BzMiner v7.1.4 (network stability updates; correction to Alephium mining algorithm caused some invalid solutions; showing pool latency for rejected shares; fixed sort order of GPUs)
+
 ##### 0.6-213@220118 2022-01-18
 *   TeamBlackMiner v1.42 (fixed GPU timeouts on AMD rigs; fixed disconnect problem at nanopool.org and crazypool; fixed crash in `--list-devices` on OpenCL; flipped the GPU order for AMD GPUs; fixed an issue with BTC and Nano payouts on 2miners pool; added more pools)
 *   BzMiner v7.1.4 (support extra nonce from pool; fixed unsupported message from pool considered as rejected)
