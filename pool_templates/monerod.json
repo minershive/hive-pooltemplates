@@ -1,0 +1,37 @@
+[
+	{
+        "pool": {
+            "name": "Monerod",
+            "url": "https://monerod.org",
+            "fee": 0,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": Global,
+                "urls": [
+                    "mine.monerod.org:5555"
+                ]
+            },
+            {
+                "geo": Global,
+                "ssl_urls": [
+                    "mine.monerod.org:4444"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/0",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+    }
+]
