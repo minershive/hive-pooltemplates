@@ -1,3 +1,6 @@
+##### 0.6-213@220120 2022-01-20
+*   BzMiner v7.1.6 (added seconds to date/time output; added ability to change pool reconnect delay, see new config option `delay_before_connection_retry`; added ability call optional startup script, see new config option `start_script`)
+
 ##### 0.6-213@220119 2022-01-19
 *   BzMiner v7.1.5 (network stability updates; correction to Alephium mining algorithm caused some invalid solutions; showing pool latency for rejected shares; fixed sort order of GPUs)
 
