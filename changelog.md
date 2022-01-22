@@ -1,7 +1,7 @@
 ##### 0.6-213@220121 2022-01-21
 *   GMiner v2.75 (major performance improvement for LHR GPUs on Ethash algorithm; improved auto-tuning for LHR GPUs; devfee increased from 0.65% to 1% on Ethash algorithm as on all major Ethash miners)
 *   TeamBlackMiner v1.43 (fixed fan speed percent and missing stats for some cards on AMD; added 7 new CUDA kernels that can give a speedup on some cards)
-*   TeamRedMiner v0.9.1 (added `--eth_ignore_abort_fail` to disable intensity adjustment due to failed aborts; added better handling of dead GPU logging in corner cases that previously didn't mention a specific GPU; added further FPGA support devices and voltage tuning support, see full miner's changelog)
+*   TeamRedMiner v0.9.1 (added `--eth_ignore_abort_fail` to disable intensity adjustment due to failed aborts; added better handling of dead GPU logging in corner cases that previously didn't mention a specific GPU; added further support for FPGA devices and voltage tuning support, see full miner's changelog)
 *   BzMiner v7.2.0 (fixed "Out of Memory" ethash/etchash bug on Nvidia cards with 8GB or less; fixed unstable network issues causing BzMiner to crash or freeze; fixed Alephium auto protocol detection; now by default BzMiner uses protocol "stratum+tcp" if not specified; LHR detection disabled for core only algos; added `no_work_timeout` and `test_iteration_ms` to pool configs; logs now rotate when BzMiner starts by default, set `clear_log_file` to true to overwrite log file on startup; added new column "%", showing percent of accepted shares; fixed GPU sort order for pool table; showing "--" for pool latency when no submitted share response has yet been received)
 
 ##### 0.6-213@220120 2022-01-20
