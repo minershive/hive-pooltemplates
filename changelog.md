@@ -1,3 +1,7 @@
+##### 0.6-213@220123 2022-01-23
+*   TeamBlackMiner v1.44 (speedup RTX 3xxx series, NON-LHR/LHR +1-2%; rewrote the DAG generator to work better on high oc e.g. 3060ti/3070; fixed empty CUDA stats when running with a selection of the GPUs; fixed a bug in the dag validation code for CUDA)
+*   BzMiner v7.2.1 (fixed reconnect loop for some Alephium pools; fixed log rotation bug)
+
 ##### 0.6-213@220121 2022-01-21
 *   GMiner v2.75 (major performance improvement for LHR GPUs on Ethash algorithm; improved auto-tuning for LHR GPUs; devfee increased from 0.65% to 1% on Ethash algorithm as on all major Ethash miners)
 *   TeamBlackMiner v1.43 (fixed fan speed percent and missing stats for some cards on AMD; added 7 new CUDA kernels that can give a speedup on some cards)
