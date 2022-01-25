@@ -1,6 +1,6 @@
 ##### 0.6-213@220125 2022-01-25
 *   TeamBlackMiner v1.45 (fixed CUDA stats in mixed card rig and missing stats in AMD; fixed bug in th LHR detector, sometimes the program didn't detect correctly; fixed AMD rig fail to start appeared in v1.44; improved default setting for the LHR mode)
-*   CMiner v21.12.15 NEW (supported ETH, ETC; beta support for Geforce LHR graphic cards unlocking; devfee 1%)
+*   CMiner v21.12.15 NEW (supported ETH, ETC; beta support for Nvidia LHR graphic cards unlocking; devfee 1%)
  
 ##### 0.6-213@220123 2022-01-23
 *   TeamBlackMiner v1.44 (speedup RTX 3xxx series, NON-LHR/LHR +1-2%; rewrote the DAG generator to work better on high oc e.g. 3060ti/3070; fixed empty CUDA stats when running with a selection of the GPUs; fixed a bug in the dag validation code for CUDA)
