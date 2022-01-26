@@ -1,6 +1,14 @@
 [
     {
-        "coin": "ARG",
+        "pool": {
+            "name": "NLPOOL",
+            "url": "https://nlpool.nl/",
+            "fee": 0.5,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "BSTY",
         "servers": [
             {
                 "geo": null,
@@ -14,50 +22,12 @@
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%.%WORKER_NAME%",
                 "ccalgo": "yescrypt",
-                "ccpass": "c=ARG"
+                "ccpass": "c=BSTY"
             }
         }
     },
     {
-        "coin": "XMY",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:6233"
-                ]
-            }
-        ],
-        "miners": {
-            "cpuminer-opt": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "yescrypt",
-                "ccpass": "c=XMY"
-            }
-        }
-    },
-    {
-        "coin": "BTM",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:6233"
-                ]
-            }
-        ],
-        "miners": {
-            "cpuminer-opt": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "yescrypt",
-                "ccpass": "c=BTM"
-            }
-        }
-    },
-    {
-        "coin": "GLD",
+        "coin": "DOGE",
         "servers": [
             {
                 "geo": null,
@@ -70,20 +40,20 @@
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "scrypt",
-                "pass": "c=NLG",
+                "pass": "c=DOGE",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             },
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
                 "ccalgo": "scrypt",
-                "ccpass": "c=NLG",
+                "ccpass": "c=DOGE",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
     },
     {
-        "coin": "MNC",
+        "coin": "LTC",
         "servers": [
             {
                 "geo": null,
@@ -96,1113 +66,20 @@
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "scrypt",
-                "pass": "c=MNC",
+                "pass": "c=LTC",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
             },
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
                 "ccalgo": "scrypt",
-                "ccpass": "c=MNC",
+                "ccpass": "c=LTC",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             }
         }
     },
     {
-        "coin": "BTM",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:3433"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "scrypt",
-                "pass": "c=BTM",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "scrypt",
-                "ccpass": "c=BTM",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "BTM",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:3433"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "scrypt",
-                "pass": "c=BTM",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "scrypt",
-                "ccpass": "c=BTM",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "CREA",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:5134"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "keccakc",
-                "ccpass": "c=CREA"
-            },
-            "sgminer-gm-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "keccakc",
-                "pass": "c=CREA",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "MAX",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:5133"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "keccak",
-                "ccpass": "c=MAX",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "keccak",
-                "pass": "c=MAX",
-                "template": "%WAL%.%WORKER_NAME% PSW: x",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            },
-            "claymore": {
-                "dcri": "6",
-                "dcoin": "keccak",
-                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, PSW: c=MAX"
-            }
-        }
-    },
-    {
-        "coin": "SMART",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:5133"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "keccak",
-                "ccpass": "c=SMART",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "keccak",
-                "pass": "c=SMART",
-                "template": "%WAL%.%WORKER_NAME% PSW: x",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            },
-            "claymore": {
-                "dcri": "6",
-                "dcoin": "keccak",
-                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, PSW: c=SMART"
-            }
-        }
-    },
-    {
-        "coin": "IFX",
-        "servers": [
-            {
-                "geo": "null",
-                "urls": [
-                    "mine.nlpool.nl:4553"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2z",
-                "pass": "c=IFX",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2z",
-                "ccpass": "c=IFX",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "MCT",
-        "servers": [
-            {
-                "geo": "null",
-                "urls": [
-                    "mine.nlpool.nl:4553"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2z",
-                "pass": "c=MCT",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2z",
-                "ccpass": "c=MCT",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "VTL",
-        "servers": [
-            {
-                "geo": "null",
-                "urls": [
-                    "mine.nlpool.nl:4553"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2z",
-                "pass": "c=VTL",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2z",
-                "ccpass": "c=VTL",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "GTM",
-        "servers": [
-            {
-                "geo": "null",
-                "urls": [
-                    "mine.nlpool.nl:4553"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2z",
-                "pass": "c=GTM",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2z",
-                "ccpass": "c=GTM",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "GIN",
-        "servers": [
-            {
-                "geo": "null",
-                "urls": [
-                    "mine.nlpool.nl:4553"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2z",
-                "pass": "c=GIN",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2z",
-                "ccpass": "c=GIN",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "MANO",
-        "servers": [
-            {
-                "geo": "null",
-                "urls": [
-                    "mine.nlpool.nl:4553"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2z",
-                "pass": "c=MANO",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2z",
-                "ccpass": "c=MANO",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "ZCR",
-        "servers": [
-            {
-                "geo": "null",
-                "urls": [
-                    "mine.nlpool.nl:4553"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2z",
-                "pass": "c=ZCR",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2z",
-                "ccpass": "c=ZCR",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "BSD",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:3739"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "xevan",
-                "ccpass": "c=BSD"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "xevan",
-                "pass": "c=BSD",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "ELLI",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:3739"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "xevan",
-                "ccpass": "c=ELLI"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "xevan",
-                "pass": "c=ELLI",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "HASH",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:3739"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "xevan",
-                "ccpass": "c=HASH"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "xevan",
-                "pass": "c=HASH",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "LUX",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:8332"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "phi2",
-                "ccpass": "c=LUX"
-            }
-        }
-    },
-    {
-        "coin": "XDNA",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:5035"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16m",
-                "pass": "c=XDNA",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"xintensity\" : \"256\""
-            },
-            "ccminer": {
-                "fork": "enemy",
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "hex",
-                "ccpass": "c=XDNA",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "HTH",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:3636"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "x16r",
-                "ccpass": "c=HTH"
-            },
-            "sgminer-sg": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "c=HTH",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "MDEX",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:3636"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "x16r",
-                "ccpass": "c=MDEX"
-            },
-            "sgminer-sg": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "c=MDEX",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "GRV",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:3636"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "x16r",
-                "ccpass": "c=GRV"
-            },
-            "sgminer-sg": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "c=GRV",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "XMN",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:3636"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "x16r",
-                "ccpass": "c=XMN"
-            },
-            "sgminer-sg": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "c=XMN",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "HLX",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:3636"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "x16r",
-                "ccpass": "c=HLX"
-            },
-            "sgminer-sg": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "c=HLX",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "STONE",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:3636"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "x16r",
-                "ccpass": "c=STONE"
-            },
-            "sgminer-sg": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "c=STONE",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "XVG",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:5766"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "blake2s",
-                "ccpass": "c=XVG"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "blake2s",
-                "pass": "c=XVG",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "claymore": {
-                "dcri": "40",
-                "dcoin": "blake2s",
-                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, PSW: c=XVG"
-            }
-        }
-    },
-    {
-        "coin": "XSH",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:5766"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "blake2s",
-                "ccpass": "c=XSH"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "blake2s",
-                "pass": "c=XSH",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "claymore": {
-                "dcri": "40",
-                "dcoin": "blake2s",
-                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, PSW: c=XSH"
-            }
-        }
-    },
-    {
-        "coin": "NEVA",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:5766"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "blake2s",
-                "ccpass": "c=NEVA"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "blake2s",
-                "pass": "c=NEVA",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "claymore": {
-                "dcri": "40",
-                "dcoin": "blake2s",
-                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%, PSW: c=NEVA"
-            }
-        }
-    },
-    {
-        "coin": "XSH",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:3663"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "x16s",
-                "ccpass": "c=REDN"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16s",
-                "pass": "c=REDN",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "FLM",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:833"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "phi",
-                "ccpass": "c=FLM"
-            },
-            "sgminer-sg": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "phi",
-                "pass": "c=FLM",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "FNO",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:833"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "phi",
-                "ccpass": "c=FNO"
-            },
-            "sgminer-sg": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "phi",
-                "pass": "c=FNO",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "MONA",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:4533"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "lyra2v2",
-                "ccpass": "c=MONA"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=MONA",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "cpuminer-opt": {
-                "url": " stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=MONA",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=MONA",
-                "miner": "cryptodredge",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
-            }
-        }
-    },
-    {
-        "coin": "XVG",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:4533"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "lyra2v2",
-                "ccpass": "c=XVG"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=XVG",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "cpuminer-opt": {
-                "url": " stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=XVG",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=XVG",
-                "miner": "cryptodredge",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
-            }
-        }
-    },
-    {
-        "coin": "VTC",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:4533"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "lyra2v2",
-                "ccpass": "c=VTC"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=VTC",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "cpuminer-opt": {
-                "url": " stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=VTC",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=VTC",
-                "miner": "cryptodredge",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
-            }
-        }
-    },
-    {
-        "coin": "XSH",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:4533"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "lyra2v2",
-                "ccpass": "c=XSH"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=XSH",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "cpuminer-opt": {
-                "url": " stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=XSH",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=XSH",
-                "miner": "cryptodredge",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
-            }
-        }
-    },
-    {
-        "coin": "ORE",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:4533"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "lyra2v2",
-                "ccpass": "c=ORE"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=ORE",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "cpuminer-opt": {
-                "url": " stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=ORE",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=ORE",
-                "miner": "cryptodredge",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
-            }
-        }
-    },
-    {
-        "coin": "DVS",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:4533"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "lyra2v2",
-                "ccpass": "c=DVS"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=DVS",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "cpuminer-opt": {
-                "url": " stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=DVS",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=DVS",
-                "miner": "cryptodredge",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
-            }
-        }
-    },
-    {
-        "coin": "STAK",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:4533"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "lyra2v2",
-                "ccpass": "c=STAK"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=STAK",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "cpuminer-opt": {
-                "url": " stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=STAK",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=STAK",
-                "miner": "cryptodredge",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
-            }
-        }
-    },
-    {
-        "coin": "KREDS",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mine.nlpool.nl:4533"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccalgo": "lyra2v2",
-                "ccpass": "c=KREDS"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=KREDS",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "cpuminer-opt": {
-                "url": " stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=KREDS",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2v2",
-                "pass": "c=KREDS",
-                "miner": "cryptodredge",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/cryptodredge-0.8.3.tar.gz"
-            }
-        }
-    },
-    {
-        "coin": "WAVI",
+        "coin": "DMS",
         "servers": [
             {
                 "geo": null,
@@ -1224,6 +101,368 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+    {
+        "coin": "FLUX",
+        "servers": [
+            {
+                "geo": "null",
+                "urls": [
+                    "mine.nlpool.nl:2149"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "125_4",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers auto"
+            },
+            "miniz": {
+                "algo": "125,4",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers auto"
+            }
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "null",
+                "urls": [
+                    "mine.nlpool.nl:3033"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "ARW",
+        "servers": [
+            {
+                "geo": "null",
+                "urls": [
+                    "mine.nlpool.nl:2144"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "pass": "x",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            }
+        }
+    },
+    {
+        "coin": "YEC",
+        "servers": [
+            {
+                "geo": "null",
+                "urls": [
+                    "mine.nlpool.nl:2144"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "pass": "x",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            },
+            "lolminer": {
+                "algo": "YEC",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ZER",
+        "servers": [
+            {
+                "geo": "null",
+                "urls": [
+                    "mine.nlpool.nl:801"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "pass": "x",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            }
+        }
+    },
+    {
+        "coin": "PYRK",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "mine.nlpool.nl:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "sha256",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
+        "coin": "LCC",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "mine.nlpool.nl:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "sha256",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
+        "coin": "DGB",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "mine.nlpool.nl:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "sha256",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
+        "coin": "DVT",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "mine.nlpool.nl:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "sha256",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "mine.nlpool.nl:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "sha256",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
+        "coin": "ZCH",
+        "servers": [
+            {
+                "geo": "null",
+                "urls": [
+                    "mine.nlpool.nl:2146"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_zhash_btg"
+        }
+    },
+    {
+        "coin": "TENT",
+        "servers": [
+            {
+                "geo": "null",
+                "urls": [
+                    "mine.nlpool.nl:2146"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_zhash_btg"
+        }
+    },
+    {
+        "coin": "LTZ",
+        "servers": [
+            {
+                "geo": "null",
+                "urls": [
+                    "mine.nlpool.nl:2146"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_zhash_btg"
+        }
+    },
+	{
+        "coin": "CRP",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "cpu-pool.com:6234"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": " stratum+tcp://%URL%",
+                "algo": "yespower",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
+        "coin": "VECO",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "cpu-pool.com:6234"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": " stratum+tcp://%URL%",
+                "algo": "yespower",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+	{
+        "coin": "BELL",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "cpu-pool.com:6234"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": " stratum+tcp://%URL%",
+                "algo": "yespower",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }
