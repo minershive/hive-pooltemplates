@@ -1,186 +1,327 @@
 [
-	{
-	"pool": {
-			"name": "CoinMinerz.Com",
-			"url": "https://coinminerz.com",
-			"fee": 0.5,
-			"type": "SOLO"
-		}
-	},
-	{
-	"coin": "AVN-MinotaurX",
-	"servers": [
-			{
-			"geo": "EU Var Diff 3375",
-			"urls": [
-			"stratum.coinminerz.com:3375"
-				],
-			"ssl_urls": [
-			"stratum.coinminerz.com:3475"
-				]
-			},
-			{
-			"geo": "US Var Diff 3375",
-			"urls": [
-			"us-stratum.coinminerz.com:3375"
-				],
-			"ssl_urls": [
-			"us-stratum.coinminerz.com:3475"
-				]
-			},
-			{
-			"geo": "SG Var Diff 3375",
-			"urls": [
-			"sg-stratum.coinminerz.com:3375"
-				],
-			"ssl_urls": [
-			"sg-tratum.coinminerz.com:3475"
-				]
-			}
-		],
-        	"miners": {
-			"cpuminer-opt": {
-                	"url": "%URL%",
-                	"algo": "minotaurx",
-                	"pass": "YourRandomPassword,m=solo",
-                	"template": "%WAL%.%WORKER_NAME%",
-                	"fork": "rplant"
+    {
+        "pool": {
+            "name": "CoinMinerz.Com",
+            "url": "https://coinminerz.com",
+            "fee": 0.5,
+            "type": "SOLO"
+        }
+    },
+    {
+        "coin": "DEM",
+        "servers": [
+            {
+                "geo": "EU Normal ASIC",
+                "urls": [
+                    "stratum.coinminerz.com:3339"
+                ],
+                "ssl_urls": [
+                    "stratum.coinminerz.com:3439"
+                ]
+            },
+            {
+                "geo": "EU Hash Rental",
+                "urls": [
+                    "stratum.coinminerz.com:3539"
+                ]
+            },
+            {
+                "geo": "US Normal ASIC",
+                "urls": [
+                    "us-stratum.coinminerz.com:3339"
+                ],
+                "ssl_urls": [
+                    "us-stratum.coinminerz.com:3439"
+                ]
+            },
+            {
+                "geo": "US Hash Rental",
+                "urls": [
+                    "us-stratum.coinminerz.com:3539"
+                ]
+            },
+            {
+                "geo": "SG Normal ASIC",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3339"
+                ],
+                "ssl_urls": [
+                    "sg-tratum.coinminerz.com:3439"
+                ]
+            },
+            {
+                "geo": "SG Hash Rental",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3539"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "sha256d",
+                "ccpass": "YourRandomPassword,m=solo",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256",
+                "pass": "YourRandomPassword,m=solo",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
             }
         }
-	},
-	{
-	"coin": "AVN-X16RT",
-		"servers": [
-			{
-			"geo": "EU Var Diff 3374",
-			"urls": [
-			"stratum.coinminerz.com:3374"
-				],
-			"ssl_urls": [
-			"stratum.coinminerz.com:3474"
-				]
-			},
-			{
-			"geo": "US Var Diff 3374",
-			"urls": [
-			"us-stratum.coinminerz.com:3374"
-				],
-			"ssl_urls": [
-			"us-stratum.coinminerz.com:3474"
-				]
-			},
-			{
-			"geo": "SG Var Diff 3374",
-			"urls": [
-			"sg-stratum.coinminerz.com:3374"
-				],
-			"ssl_urls": [
-			"sg-stratum.coinminerz.com:3474"
-				]
-			}
-		],
-		"miners": {
-			"t-rex": {
-        			"ver": "0.19.14-cuda111",
-        			"url": "%URL%",
-        			"template": "%WAL%.%WORKER_NAME%",
-        			"algo": "x16rt",
-        			"pass": "YourRandomPassword,m=solo"
-      				},
-      			"wildrig-multi": {
-        			"url": "stratum+tcp://%URL%",
-        			"algo": "x16rt",
-        			"pass": "YourRandomPassword,m=solo",
-        			"template": "%WAL%.%WORKER_NAME%"
-      				}
-    			}
-	},
-	{
+    },
+    {
+        "coin": "AVN-MinotaurX",
+        "servers": [
+            {
+                "geo": "EU Normal CPU",
+                "urls": [
+                    "stratum.coinminerz.com:3375"
+                ],
+                "ssl_urls": [
+                    "stratum.coinminerz.com:3475"
+                ]
+            },
+            {
+                "geo": "EU Hash Rental CPU",
+                "urls": [
+                    "stratum.coinminerz.com:3575"
+                ]
+            },
+            {
+                "geo": "US Normal CPU",
+                "urls": [
+                    "us-stratum.coinminerz.com:3375"
+                ],
+                "ssl_urls": [
+                    "us-stratum.coinminerz.com:3475"
+                ]
+            },
+            {
+                "geo": "US Hash Rental CPU",
+                "urls": [
+                    "us-stratum.coinminerz.com:3575"
+                ]
+            },
+            {
+                "geo": "SG Normal CPU",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3375"
+                ],
+                "ssl_urls": [
+                    "sg-tratum.coinminerz.com:3475"
+                ]
+            },
+            {
+                "geo": "SG Hash Rental CPU",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3575"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "%URL%",
+                "algo": "minotaurx",
+                "pass": "YourRandomPassword,m=solo",
+                "template": "%WAL%.%WORKER_NAME%",
+                "fork": "rplant"
+            }
+        }
+    },
+    {
+        "coin": "AVN-X16RT",
+        "servers": [
+            {
+                "geo": "EU Normal GPU RIG",
+                "urls": [
+                    "stratum.coinminerz.com:3374"
+                ],
+                "ssl_urls": [
+                    "stratum.coinminerz.com:3474"
+                ]
+            },
+            {
+                "geo": "EU High Power GPU",
+                "urls": [
+                    "stratum.coinminerz.com:3574"
+                ]
+            },
+            {
+                "geo": "US Normal GPU RIG",
+                "urls": [
+                    "us-stratum.coinminerz.com:3374"
+                ],
+                "ssl_urls": [
+                    "us-stratum.coinminerz.com:3474"
+                ]
+            },
+            {
+                "geo": "US High Power GPU",
+                "urls": [
+                    "us-stratum.coinminerz.com:3574"
+                ]
+            },
+            {
+                "geo": "SG Normal GPU RIG",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3374"
+                ],
+                "ssl_urls": [
+                    "sg-stratum.coinminerz.com:3474"
+                ]
+            },
+            {
+                "geo": "SG High Power GPU",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3574"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "ver": "0.19.14-cuda111",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "x16rt",
+                "pass": "YourRandomPassword,m=solo"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16rt",
+                "pass": "YourRandomPassword,m=solo",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "RTM",
         "servers": [
-			{
-			"geo": "EU Var Diff 3399",
-			"urls": [
-			"stratum.coinminerz.com:3399"
-				],
-			"ssl_urls": [
-			"stratum.coinminerz.com:3499"
-				]
-			},
-			{
-			"geo": "US Var Diff 3399",
-			"urls": [
-			"us-stratum.coinminerz.com:3399"
-				],
-			"ssl_urls": [
-			"us-stratum.coinminerz.com:3499"
-				]
-			},
-			{
-			"geo": "SG Var Diff 3399",
-			"urls": [
-			"sg-stratum.coinminerz.com:3399"
-				],
-			"ssl_urls": [
-			"sg-stratum.coinminerz.com:3499"
-				]
-			}
+            {
+                "geo": "EU Normal GPU RIG",
+                "urls": [
+                    "stratum.coinminerz.com:3399"
+                ],
+                "ssl_urls": [
+                    "stratum.coinminerz.com:3499"
+                ]
+            },
+            {
+                "geo": "EU High Power GPU",
+                "urls": [
+                    "stratum.coinminerz.com:3599"
+                ]
+            },
+            {
+                "geo": "US Normal GPU RIG",
+                "urls": [
+                    "us-stratum.coinminerz.com:3399"
+                ],
+                "ssl_urls": [
+                    "us-stratum.coinminerz.com:3499"
+                ]
+            },
+            {
+                "geo": "US High Power GPU",
+                "urls": [
+                    "us-stratum.coinminerz.com:3599"
+                ]
+            },
+            {
+                "geo": "SG Normal GPU RIG",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3399"
+                ],
+                "ssl_urls": [
+                    "sg-stratum.coinminerz.com:3499"
+                ]
+            },
+            {
+                "geo": "SG High Power GPU",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3599"
+                ]
+            }
         ],
-    "miners": {
-      "cpuminer-opt": {
-        "url": "stratum+tcps://%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "gr",
-        "pass": "YourRandomPassword,m=solo",
-        "max-temp": 0,
-        "fork": "gr"
-      },
-      "xmrig-new": {
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "ghostrider",
-        "pass": "YourRandomPassword,m=solo",
-        "cpu": "1",
-        "fork": "xmrig"
-      },
-      "wildrig-multi": {
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "ghostrider",
-        "pass": "YourRandomPassword,m=solo"
-      }
-    }
+        "miners": {
+            "cpuminer-opt": {
+                "url": "stratum+tcps://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "gr",
+                "pass": "YourRandomPassword,m=solo",
+                "max-temp": 0,
+                "fork": "gr"
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "ghostrider",
+                "pass": "YourRandomPassword,m=solo",
+                "cpu": "1",
+                "fork": "xmrig"
+            },
+            "wildrig-multi": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "ghostrider",
+                "pass": "YourRandomPassword,m=solo"
+            }
+        }
     },
-	{
+    {
         "coin": "RNG",
         "servers": [
-			{
-			"geo": "EU Var Diff 3347",
-			"urls": [
-			"stratum.coinminerz.com:3347"
-				],
-			"ssl_urls": [
-			"stratum.coinminerz.com:3447"
-				]
-			},
-			{
-			"geo": "US Var Diff 3347",
-			"urls": [
-			"us-stratum.coinminerz.com:3347"
-				],
-			"ssl_urls": [
-			"us-stratum.coinminerz.com:3447"
-				]
-			},
-			{
-			"geo": "SG Var Diff 3347",
-			"urls": [
-			"sg-stratum.coinminerz.com:3347"
-				],
-			"ssl_urls": [
-			"sg-stratum.coinminerz.com:3447"
-				]
-			}
+            {
+                "geo": "EU Normal CPU/GPU RIG",
+                "urls": [
+                    "stratum.coinminerz.com:3347"
+                ],
+                "ssl_urls": [
+                    "stratum.coinminerz.com:3447"
+                ]
+            },
+            {
+                "geo": "EU Hash Rental CPU/GPU",
+                "urls": [
+                    "stratum.coinminerz.com:3547"
+                ]
+            },
+            {
+                "geo": "US Normal CPU/GPU RIG",
+                "urls": [
+                    "us-stratum.coinminerz.com:3347"
+                ],
+                "ssl_urls": [
+                    "us-stratum.coinminerz.com:3447"
+                ]
+            },
+            {
+                "geo": "US Hash Rental CPU/GPU",
+                "urls": [
+                    "us-stratum.coinminerz.com:3547"
+                ]
+            },
+            {
+                "geo": "SG Normal CPU/GPU RIG",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3347"
+                ],
+                "ssl_urls": [
+                    "sg-stratum.coinminerz.com:3447"
+                ]
+            },
+            {
+                "geo": "SG Hash Rental CPU/GPU",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3547"
+                ]
+            }
         ],
         "miners": {
             "cpuminer-opt": {
@@ -192,91 +333,127 @@
             }
         }
     },
-	{
+    {
         "coin": "RVN",
         "servers": [
-			{
-			"geo": "EU Var Diff 3365",
-			"urls": [
-			"stratum.coinminerz.com:3365"
-				],
-			"ssl_urls": [
-			"stratum.coinminerz.com:3465"
-				]
-			},
-			{
-			"geo": "US Var Diff 3365",
-			"urls": [
-			"us-stratum.coinminerz.com:3365"
-				],
-			"ssl_urls": [
-			"us-stratum.coinminerz.com:3465"
-				]
-			},
-			{
-			"geo": "SG Var Diff 3365",
-			"urls": [
-			"sg-stratum.coinminerz.com:3365"
-				],
-			"ssl_urls": [
-			"sg-stratum.coinminerz.com:3465"
-				]
-			}
+            {
+                "geo": "EU Normal GPU RIG",
+                "urls": [
+                    "stratum.coinminerz.com:3365"
+                ],
+                "ssl_urls": [
+                    "stratum.coinminerz.com:3465"
+                ]
+            },
+            {
+                "geo": "EU Hash Rental GPU",
+                "urls": [
+                    "stratum.coinminerz.com:3565"
+                ]
+            },
+            {
+                "geo": "US Normal GPU RIG",
+                "urls": [
+                    "us-stratum.coinminerz.com:3365"
+                ],
+                "ssl_urls": [
+                    "us-stratum.coinminerz.com:3465"
+                ]
+            },
+            {
+                "geo": "US Hash Rental GPU",
+                "urls": [
+                    "us-stratum.coinminerz.com:3565"
+                ]
+            },
+            {
+                "geo": "SG Normal GPU RIG",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3365"
+                ],
+                "ssl_urls": [
+                    "sg-stratum.coinminerz.com:3465"
+                ]
+            },
+            {
+                "geo": "SG Hash Rental GPU",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3565"
+                ]
+            }
         ],
         "miners": {
             "_prototype": "miners_kawpow"
         }
     },
-	{
+    {
         "coin": "VTC",
         "servers": [
-			{
-			"geo": "EU Var Diff 3364",
-			"urls": [
-			"stratum.coinminerz.com:3364"
-				],
-			"ssl_urls": [
-			"stratum.coinminerz.com:3464"
-				]
-			},
-			{
-			"geo": "US Var Diff 3364",
-			"urls": [
-			"us-stratum.coinminerz.com:3364"
-				],
-			"ssl_urls": [
-			"us-stratum.coinminerz.com:3464"
-				]
-			},
-			{
-			"geo": "SG Var Diff 3364",
-			"urls": [
-			"sg-stratum.coinminerz.com:3364"
-				],
-			"ssl_urls": [
-			"sg-stratum.coinminerz.com:3464"
-				]
-			}
+             {
+                "geo": "EU Normal GPU RIG",
+                "urls": [
+                    "stratum.coinminerz.com:3364"
+                ],
+                "ssl_urls": [
+                    "stratum.coinminerz.com:3464"
+                ]
+            },
+            {
+                "geo": "EU Hash Rental GPU",
+                "urls": [
+                    "stratum.coinminerz.com:3564"
+                ]
+            },
+            {
+                "geo": "US Normal GPU RIG",
+                "urls": [
+                    "us-stratum.coinminerz.com:3364"
+                ],
+                "ssl_urls": [
+                    "us-stratum.coinminerz.com:3464"
+                ]
+            },
+            {
+                "geo": "US Hash Rental GPU",
+                "urls": [
+                    "us-stratum.coinminerz.com:3564"
+                ]
+            },
+            {
+                "geo": "SG Normal GPU RIG",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3364"
+                ],
+                "ssl_urls": [
+                    "sg-stratum.coinminerz.com:3464"
+                ]
+            },
+            {
+                "geo": "SG Hash Rental GPU",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3564"
+                ]
+            }
         ],
-      "miners": {
-        "srbminer": {
-          "url": "%URL%",
-          "algo": "verthash",
-          "pass": "YourRandomPassword,m=solo",
-          "template": "%WAL%.%WORKER_NAME%"
-        },
-        "verthashminer": {
-          "url": "%URL%",
-          "algo": "verthash",
-          "pass": "YourRandomPassword,m=solo",
-          "template": "%WAL%.%WORKER_NAME%"
-        },
-        "teamredminer": {
-          "url": "%URL%",
-          "algo": "verthash",
-          "pass": "YourRandomPassword,m=solo",
-          "template": "%WAL%.%WORKER_NAME%"
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "verthash",
+                "pass": "YourRandomPassword,m=solo",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "verthashminer": {
+                "url": "%URL%",
+                "algo": "verthash",
+                "pass": "YourRandomPassword,m=solo",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "algo": "verthash",
+                "pass": "YourRandomPassword,m=solo",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
         }
-      }
     }
 ]
