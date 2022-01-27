@@ -13,62 +13,82 @@
             {
                 "geo": "EU",
                 "urls": [
-                    "amsterdam-ergo.enigmapool.com:5000"
+                    "amsterdam.stratum.enigmapool.com:5000"
                 ]
             },
             {
-                "geo": "USA",
+                "geo": "USA_EAST",
                 "urls": [
-                    "la-ergo.enigmapool.com:5000",
-                    "nyc-ergo.enigmapool.com:5000"
+                    "na-east.stratum.enigmapool.com:5000"
+                ]
+            },
+            {
+                "geo": "USA_WEST",
+                "urls": [
+                    "na-west.stratum.enigmapool.com:5000"
                 ]
             },
             {
                 "geo": "ASIA",
                 "urls": [
-                    "singapore-ergo.enigmapool.com:5000"
+                    "singapore.stratum.enigmapool.com:5000"
                 ]
             }
         ],
         "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "autolykos2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--disable-cpu"
+            "_prototype": "miners_autolykos2"
+        }
+    },
+    {
+        "coin": "FLUX",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "amsterdam.stratum.enigmapool.com:5001"
+                ]
             },
-            "nanominer": {
-                "url": "%URL%",
-                "algo": "autolykos2",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config":"coin = ERGO\nrigName = %WORKER_NAME%"
+            {
+                "geo": "USA_EAST",
+                "urls": [
+                    "na-east.stratum.enigmapool.com:5001"
+                ]
             },
-            "teamredminer": {
-                "url": "%URL%",
-                "algo": "autolykos2",
-                "template":"%WAL%.%WORKER_NAME%",
-                "pass":"x"
+            {
+                "geo": "USA_WEST",
+                "urls": [
+                    "na-west.stratum.enigmapool.com:5001"
+                ]
             },
-            "lolminer": {
-                "algo": "autolykos2",
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "singapore.stratum.enigmapool.com:5001"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "125_4",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers auto"
+            },
+            "lolminer": {
+                "algo": "ZEL",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "nbminer":{
-                "url":"%URL%",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%",
-                "algo":"autolykos2"
-            },
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "autolykos2",
+            "miniz": {
+                "algo": "125,4",
+                "url": "%URL%",
+                "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
+                "user_config": "--pers auto"
             }
         }
     }

@@ -1,19 +1,10 @@
 [
     {
-        "coin": "ADZ",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "hub.miningpoolhub.com:20529"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+        "pool": {
+            "name": "miningpoolhub",
+            "url": "miningpoolhub.com",
+            "fee": 0.9,
+            "type": "PPLNS"
         }
     },
     {
@@ -46,7 +37,7 @@
         "coin": "BTG",
         "servers": [
             {
-                "geo": "USA",
+                "geo": "US",
                 "urls": [
                     "us-east.equihash-hub.miningpoolhub.com:20595"
                 ]
@@ -82,32 +73,6 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "DGB",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "hub.miningpoolhub.com:20499"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "groestl",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "groestlcoin",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME% PSW: x",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
             }
         }
     },
@@ -190,48 +155,6 @@
         }
     },
     {
-        "coin": "ETN",
-        "servers": [
-            {
-                "geo": "USA (east)",
-                "urls": [
-                    "us-east.cryptonight-hub.miningpoolhub.com:20596"
-                ]
-            },
-            {
-                "geo": "Europe",
-                "urls": [
-                    "europe.cryptonight-hub.miningpoolhub.com:20596"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia.cryptonight-hub.miningpoolhub.com:20596"
-                ]
-            }
-        ],
-        "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-x": {
-                "xpools_tpl": "POOL: ssl://%URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ALLPOOLS: 1"
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "MPH-Ethash",
         "servers": [
             {
@@ -292,6 +215,12 @@
                 "urls": [
                     "europe.ethash-hub.miningpoolhub.com:20535"
                 ]
+            },
+            {
+                "geo": "nicehash",
+                "urls": [
+                    "nicehash.ethash-hub.miningpoolhub.com:20535"
+                ]
             }
         ],
         "miners": {
@@ -318,19 +247,25 @@
             {
                 "geo": "USA (east)",
                 "urls": [
-                    "us-east.ethash-hub.miningpoolhub.com:20555"
+                    "us-east.ethash-hub.miningpoolhub.com:20615"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "asia.ethash-hub.miningpoolhub.com:20555"
+                    "asia.ethash-hub.miningpoolhub.com:20615"
                 ]
             },
             {
                 "geo": "Europe",
                 "urls": [
-                    "europe.ethash-hub.miningpoolhub.com:20555"
+                    "europe.ethash-hub.miningpoolhub.com:20615"
+                ]
+            },
+            {
+                "geo": "nicehash",
+                "urls": [
+                    "nicehash.etchash-hub.miningpoolhub.com:20615"
                 ]
             }
         ],
@@ -368,6 +303,12 @@
                 "geo": "Europe",
                 "urls": [
                     "europe.ethash-hub.miningpoolhub.com:20565"
+                ]
+            },
+            {
+                "geo": "nicehash",
+                "urls": [
+                    "nicehash.ethash-hub.miningpoolhub.com:20565"
                 ]
             }
         ],
@@ -413,23 +354,6 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "GAME",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "hub.miningpoolhub.com:20576"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -592,65 +516,24 @@
             {
                 "geo": "USA (east)",
                 "urls": [
-                    "us-east.cryptonight-hub.miningpoolhub.com:20580"
+                    " us-east.randomx-hub.miningpoolhub.com:20580"
                 ]
             },
             {
                 "geo": "Europe",
                 "urls": [
-                    "europe.cryptonight-hub.miningpoolhub.com:20580"
+                    "europe.randomx-hub.miningpoolhub.com:20580"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "asia.cryptonight-hub.miningpoolhub.com:20580"
+                    "asia.randomx-hub.miningpoolhub.com:20580"
                 ]
             }
         ],
         "miners": {
             "_prototype": "miners_randomx"
-        }
-    },
-    {
-        "coin": "MUSIC",
-        "servers": [
-            {
-                "geo": "USA (east)",
-                "urls": [
-                    "us-east.ethash-hub.miningpoolhub.com:20585"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia.ethash-hub.miningpoolhub.com:20585"
-                ]
-            },
-            {
-                "geo": "Europe",
-                "urls": [
-                    "europe.ethash-hub.miningpoolhub.com:20585"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, WORKER: %WAL%.%WORKER_NAME%, ESM: 2, PSW: x",
-                "claymore_user_config": "-allcoins 1"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum2+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
         }
     },
     {
@@ -685,32 +568,6 @@
             {
                 "geo": null,
                 "urls": [
-                    "hub.miningpoolhub.com:20528"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "skein",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "skein",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME% PSW: x",
-                "user_config": "-I 21 \n-w 64 \n-g 2"
-            }
-        }
-    },
-    {
-        "coin": "XMY",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
                     "hub.miningpoolhub.com:20577"
                 ]
             }
@@ -732,45 +589,6 @@
         }
     },
     {
-        "coin": "SXC",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "hub.miningpoolhub.com:20463"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "SC",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "hub.miningpoolhub.com:20550"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "dcri": "15",
-                "dcoin": "sia",
-                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "START",
         "servers": [
             {
@@ -788,46 +606,17 @@
         }
     },
     {
-        "coin": "XVG",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "hub.miningpoolhub.com:20523"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "VTC",
         "servers": [
             {
                 "geo": null,
                 "urls": [
-                    "hub.miningpoolhub.com:20507"
+                    " hub.miningpoolhub.com:20534"
                 ]
             }
         ],
         "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2v2",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2rev2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"256\"\n\"intensity\": \"21\""
-            }
+            "_prototype": "miners_verthash"
         }
     },
     {
@@ -887,80 +676,24 @@
         }
     },
     {
-        "coin": "ZEC",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "europe.equihash-hub.miningpoolhub.com:20570"
-                ]
-            },
-            {
-                "geo": "USA (east)",
-                "urls": [
-                    "us-east.equihash-hub.miningpoolhub.com:20570"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "asia.equihash-hub.miningpoolhub.com:20570"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "ZCL",
         "servers": [
             {
                 "geo": "Europe",
                 "urls": [
-                    "europe.equihash-hub.miningpoolhub.com:20575"
+                    "europe.equihash-hub.miningpoolhub.com:20574"
                 ]
             },
             {
                 "geo": "USA (east)",
                 "urls": [
-                    "us-east.equihash-hub.miningpoolhub.com:20575"
+                    "us-east.equihash-hub.miningpoolhub.com:20574"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "asia.equihash-hub.miningpoolhub.com:20575"
+                    "asia.equihash-hub.miningpoolhub.com:20574"
                 ]
             }
         ],
@@ -1058,7 +791,7 @@
         "coin": "ESN",
         "servers": [
             {
-                "geo": "U.S.",
+                "geo": "US",
                 "urls": [
                     "us-east.ethash-hub.miningpoolhub.com:20605"
                 ]
@@ -1073,6 +806,12 @@
                 "geo": "Europe",
                 "urls": [
                     "europe.ethash-hub.miningpoolhub.com:20605"
+                ]
+            },
+            {
+                "geo": "Nicehash",
+                "urls": [
+                    "nicehash.ethash-hub.miningpoolhub.com:20605"
                 ]
             }
         ],
@@ -1093,6 +832,32 @@
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "us-east.kawpow-hub.miningpoolhub.com:20611"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.kawpow-hub.miningpoolhub.com:20611"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "europe.kawpow-hub.miningpoolhub.com:20611"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
         }
     }
 ]
