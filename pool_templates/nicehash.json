@@ -1348,7 +1348,7 @@
         ],
         "miners": {
             "miniz": {
-                "algo": "144,5s",
+                "algo": "beam3",
                 "template": "%WAL%.%WORKER_NAME%",
                 "url": "%URL%"
             },
@@ -1365,7 +1365,12 @@
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "--tls 0"
-            }
+            },
+            "bminer": {
+		"url": "%URL%",
+		"algo": "beamhash3",
+		"template": "%WAL%.%WORKER_NAME%"
+	    }
         }
     },
     {
