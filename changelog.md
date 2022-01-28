@@ -1,3 +1,7 @@
+##### 0.6-213@220128 2022-01-28
+*   TeamBlackMiner v1.46 (Nvidia: if DAG verification fails, copy a verified DAG from another GPU; RTX 3070/3060ti stable on +300mz memclock, when the DAG is created on another GPU)
+*   Fixed XMRig v3.0 stats issue
+
 ##### 0.6-213@220127 2022-01-27
 *   BzMiner v7.2.3 (improvement to Alephium CPU usage; added ability to lock core and memory clocks on 30 series Nvidia cards; fixed network stability issues; improved Alephium hashrate on AMD GPUs; fixed Alephium duplicate shares when pool sends single job; see full changelog at: https://github.com/bzminer/bzminer/releases/tag/v7.2.3)
 *   SRBMiner-Multi v0.8.9 (added algorithm `randoml`: LOZZ - Lozzax coin for CPU mining, fee 0.85%; performance increase on `ghostrider` algorithm with dynamic thread management; performance increase on `verushash` algorithm for CPU's with AES; performance increase on `scryptn2` algorithm; MSR tweaks are now allowed for every CPU mineable algorithm; reworked dataset creation for `autolykos2` algorithm; removed support for algorithms: `eaglesong`, `kadena`, `bl2bsha3`, `phi5`, `cryptonight_cache`, `cryptonight_heavyx`; minor bug fixes)
