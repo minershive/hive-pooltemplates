@@ -1,3 +1,6 @@
+##### 0.6-213@220129 2022-01-29
+*   TeamBlackMiner v1.47 (fixed DAG verification copy on mixed cards rig AMD/NVIDIA; fixed AMD timeouts on high intensity; removed "No GPU devices available on platform" error message on startup)
+
 ##### 0.6-213@220128 2022-01-28
 *   TeamBlackMiner v1.46 (Nvidia: if DAG verification fails, copy a verified DAG from another GPU; RTX 3070/3060ti stable on +300mz memclock, when the DAG is created on another GPU)
 *   Fixed XMRigCC v3.0 stats issue
