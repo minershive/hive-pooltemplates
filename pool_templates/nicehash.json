@@ -374,7 +374,7 @@
         }
     },
     {
-        "coin": "Nicehash-Daggerhashimoto",
+        "coin": "Nicehash-Ethash",
         "servers": [
             {
                 "geo": "Europe - West",
@@ -463,6 +463,20 @@
                 "algo": "ethash",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
+            },
+            "cminer": {
+                "url": "%URL%",
+                "algo": "eth",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "--nicehash"
+            },
+            "teamblackminer": {
+                "algo": "ethash",
+                "host": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
