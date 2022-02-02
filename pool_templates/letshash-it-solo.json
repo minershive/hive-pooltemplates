@@ -3,8 +3,8 @@
         "pool": {
            "name": "letshash.it",
            "url": "https://letshash.it",
-           "fee": 0.5,
-           "type": "PROP"
+           "fee": 2,
+           "type": "SOLO"
         }
     },
     {
@@ -21,7 +21,7 @@
             "wildrig-multi": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "hmq1725",
-                "pass": "c=ESP",
+                "pass": "c=ESP,m=solo",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
@@ -40,13 +40,13 @@
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
                 "ccalgo": "bmw512",
-                "ccpass": "c=XDN",
+                "ccpass": "c=XDN,m=solo",
                 "ccuser": "%WAL%.%WORKER_NAME%"
             },
             "wildrig-multi": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "bmw512",
-                "pass": "c=XDN",
+                "pass": "c=XDN,m=solo",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
@@ -65,12 +65,12 @@
             "wildrig-multi": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "heavyhash",
-                "pass": "c=pBTC",
+                "pass": "c=pBTC,m=solo",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "srbminer": {
                 "url": "%URL%",
-                "pass": "c=pBTC",
+                "pass": "c=pBTC,m=solo",
                 "template": "%WAL%.%WORKER_NAME%",
                 "algo": "heavyhash"
             }
@@ -89,36 +89,10 @@
         "miners": {
             "srbminer": {
                 "url": "stratum+tcp://%URL%",
-                "pass": "c=LUX",
+                "pass": "c=LUX,m=solo",
                 "template": "%WAL%.%WORKER_NAME%",
                 "algo": "rx2"
             }
-        }
-    },
-    {
-        "coin": "ZANO",
-        "servers": [
-            {
-                "geo": "EU - Single GPU - Diff 50 000 000",
-                "urls": [
-                    "eu.letshash.it:6555"
-                ]
-            },
-            {
-                "geo": "EU - More GPU - Diff 1000 000 000",
-                "urls": [
-                    "eu.letshash.it:6556"
-                ]
-            },
-            {
-                "geo": "EU - GPU Rigs - Diff 5000 000 000",
-                "urls": [
-                    "eu.letshash.it:6557"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_progpow_zano"
         }
     },
     {
@@ -134,7 +108,7 @@
         "miners": {
             "srbminer": {
                 "url": "stratum+tcp://%URL%",
-                "pass": "c=ADOT",
+                "pass": "c=ADOT,m=solo",
                 "template": "%WAL%.%WORKER_NAME%",
                 "algo": "argon2d_16000"
             }
