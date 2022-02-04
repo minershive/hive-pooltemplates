@@ -1,3 +1,7 @@
+##### 0.6-213@220205 2022-02-05
+*   TeamBlackMiner v1.51 (Fixed LHR GPU unlocking; Fixed missing AMD cards when rig contains multiple AMD OpenCL platforms)
+*   XMRig-MO v6.16.4-mo1 MoneroOcean fork (synced with XMRig v6.16.4)
+
 ##### 0.6-213@220204 2022-02-04
 *   lolMiner v1.43 (Added support for real dual mine Ethash/Etchash/Ubiqhash + Ton on Nvidia Turing & Ampere GPUs as well as AMD Fury & AMD RX 400 series and newer with fee 1%; Added parameter `--maxdualimpact` to limit the impact of dual mining to the hashrate of the primary algrorithm. Can be a comma separated list of values, * can be used to skip over a card; Reworked Beam kernel for all (Big) Navi GPUs to be compatible with current driver lineup; Added Etchash, Ubiqhash (both + Ton) and Beam support for new RX 6400 + 6500 GPUs; Added LHR detection & unlocking support for new RTX 3050 cards; Slightly changes LHR calibration to produce more consistent values; Few bugs fixed; Please see full changelog and many useful information at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.43)
 *   XMRig v6.16.4 (Fixed unaligned memory accesses; Fixed donation for GhostRider/RTM)
