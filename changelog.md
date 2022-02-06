@@ -1,3 +1,6 @@
+##### 0.6-213@220205-2 2022-02-05
+*   TeamBlackMiner v1.52 (Removed rejected shares on ethermine appeared since v1.48; Minor ethproxy protocol change)
+
 ##### 0.6-213@220205 2022-02-05
 *   TeamBlackMiner v1.51 (Fixed LHR GPU unlocking; Fixed missing AMD cards when rig contains multiple AMD OpenCL platforms)
 *   XMRig-MO v6.16.4-mo1 MoneroOcean fork (synced with XMRig v6.16.4)
