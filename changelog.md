@@ -1,5 +1,5 @@
 ##### 0.6-213@220206 2022-02-06
-*   SRBMiner-Multi v0.9.0 (Added algorithm `blake3_alephium` for mining ALPH/Alephium coin on CPU/GPU with devfee 1%. You can mining ALPH in dual mode and good choice are ETH/ETC+ALPH, use `--gpu-intensity` for best results; Added algorithm `xdag` for mining XDAG/Dagger coin on CPU with devfee 1%; Fixed broken `yespower` algorithms which broken in v0.8.9; Removed algorithm `rx2`; Bug fixes)
+*   SRBMiner-Multi v0.9.0 (Added algorithm `blake3_alephium` for mining ALPH/Alephium coin on CPU/GPU with devfee 1%. You can mining ALPH in dual mode and good choice will be ETH/ETC+ALPH, use `--gpu-intensity` for best results; Added algorithm `xdag` for mining XDAG/Dagger coin on CPU with devfee 1%; Fixed broken `yespower` algorithms which broken in v0.8.9; Removed algorithm `rx2`; Bug fixes)
 
 ##### 0.6-213@220205-2 2022-02-05
 *   TeamBlackMiner v1.52 (Removed rejected shares on ethermine appeared since v1.48; Minor ethproxy protocol change)
