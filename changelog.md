@@ -1,3 +1,6 @@
+##### 0.6-213@220208 2022-02-08
+*   lolMiner v1.44 (Added experimental Ethash + Ton dual mining kernels for Nvidia Pascal generation GPUs; Setting the parameter `--maxdualimpact 0` will now completely disable dual mining on this card; Setting the parameter `--dualdevices` can now be used to make GPUs mine Ton only in Eth+Ton dual mode; Automatic tuning for dual mining will now always make sure the parameter is adjusted so the GPUs start on both algorithms if `--maxdualimpact` isn't set; Bugs fixed: Fixed a bug that might cause a SIGSEV or SIGPIPE crash in some cases; Fixed a bug that caused the miner to enter re-connect routine when one endpoint of a Ton - pool did not work, although other endpoints did connect well; Fixed a bug with icemining.ca Ton stratum not sending correct job id when dual mining on AMD cards; Known issues: Temporarily disabled the ZIL cache function on AMD GPUs, because it sometimes did not swap clearly. Read full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.44)
+
 ##### 0.6-213@220207 2022-02-07
 *   TeamBlackMiner v1.54 (Autotune LHR unlock implemented. If the LHR unlock autotune fail after 50 adjustments, select the best tuning for the rest of the period; Added support for negative tweak to tune the LHR unlock; Ethermine and Flexpool over to a different stratum implementation)
 
