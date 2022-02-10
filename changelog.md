@@ -1,5 +1,5 @@
 ##### 0.6-213@220209 2022-02-09
-*   GMiner v2.76 (used DNS over HTTPS for domain name resolving; used only SSL devfee pools; used proxy settings for all internet connections; added energy save mode for Ethash on LHR cards: `--lhr_mode 0`, removed in v2.75; removed support of `Equihash 192/7`)
+*   GMiner v2.76 (uses DoH (DNS over HTTPS) to resolve domain names; only SSL is used for devfee pools; used proxy settings for all internet connections; added energy save mode for Ethash on LHR cards: `--lhr_mode 0`, removed in v2.75; removed support of Equihash 192/7 algorithm)
 *   TeamBlackMiner v1.55 (Fixed LHR aututune; Added config option to enable all CL platforms: `-O` or `--all-platforms`; Simplified `--lock-cclock` and `--lock-mlock`: now one value, not min/max)
 
 ##### 0.6-213@220208 2022-02-08
