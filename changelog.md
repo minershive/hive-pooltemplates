@@ -1,3 +1,9 @@
+##### 0.6-213@220211 2022-02-11
+*   TeamRedMiner v0.9.2.1 (Fixed a critical bug for Polaris and Vega family GPUs in single algo TON mining sometimes only reaching 50% poolside hashrate; Added support for selecting dual algo devices using a "-d x,y,z,..." argument inside the --ton .. -ton_end clause)
+*   TeamRedMiner: Implemented display stats for second algo in dual mining mode
+*   GMiner v2.78 (added unlock for RTX 3050 on Ethash, default lhr tune for this card is 58%)
+*   T-Rex: fixed potential bug with empty "lhr-tune" in config generation
+
 ##### 0.6-213@220210 2022-02-10
 *   TeamRedMiner v0.9.2 (Added support for TON in single algo mining on all GPU generations; Added dual ETH+TON mining for Navi and Big Navi GPUs, support for Vega and Polaris upcoming shortly; TON pool support is limited to Icemining and Toncoinpool; Added dual mining tuner based on scoring weights, see `--dual_tuner_weights`; Faster initial ethash tuning on startup; Hive Notes: stats for second algo not supported yet)
 *   GMiner v2.77 (fixed DNS name resolving over HTTPS: "host not found" error message which appeared in v2.76 and this version is removed from repository due this bug; added option to enable unsecure DNS name resolving, use `--secure_dns 0`)
