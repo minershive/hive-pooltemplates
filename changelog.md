@@ -1,3 +1,6 @@
+##### 0.6-213@220218 2022-02-18
+*   T-Rex v0.25.8 (Improved ETH+ALPH dual mining performance for LHR cards: high power limit / core clock is important to get high ALPH hashrate; Parameter `lhr-algo` is deprecated and is now an alias for `dual-algo`; Fixed bug when miner uses incorrect worker name for the secondary algorithm if `worker2` is set)
+
 ##### 0.6-213@220215 2022-02-15
 *   lolMiner v1.45 (Added Ethash + Alephium dual mining mode, supported GPUs: Nvidia Turing & Ampere, AMD Polaris, Navi and Big Navi; Full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.45)
 *   T-Rex v0.25.6 (added ETH+ALPH dual mining mode for non-LHR cards, see https://github.com/trexminer/T-Rex/wiki/Dual-mining for more details)
