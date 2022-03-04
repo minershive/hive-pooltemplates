@@ -1,6 +1,8 @@
+##### 0.6-213@220303 2022-03-03
+*   BzMiner v8.0 (Added support for mining Kaspa with experimental pool support; Lower Alephium devfee to 0.5%; Higher Alephium effective hashrate; New Dual mine options: parallel, alternating, dag only; Bug fixes)
+
 ##### 0.6-213@220302 2022-03-02
 *   GMiner v2.83 (Added wss protocol support for TON mining, now miner support all major mining pools: ton-pool.com, tonwhales.com and icemining.ca; Fixed miner crash on TON connection loss in dual mining)
-
 
 ##### 0.6-213@220301 2022-03-01
 *   TeamRedMiner v0.9.4 (Rewrite code for Navi/Big Navi for eth+ton, increased hashrates on both algos and more stable setup; Rewrite code for Navi/Big Navi for eth+ton rigs with stale eth issues should be fixed; Pool outage for dual algo now results in eth mining only instead of pausing - this will reduce crashes; Fixed a potential deadlock when mining eth+ton. Rigs that have gotten strange "crashes" should upgrade, especially when coupled with a network or pool outage; Added `--dual_tuner_step` and `--dual_tuner_period` to configure the dual tuner accuracy; Fixed race bug for ethash where gpus could accidentally build a dag for epoch 0 at startup)
