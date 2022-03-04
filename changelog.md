@@ -1,5 +1,5 @@
 ##### 0.6-213@220303 2022-03-03
-*   BzMiner v8.0 (Added support for mining Kaspa with experimental pool support; Lower Alephium devfee to 0.5%; Higher Alephium effective hashrate; New Dual mine options: parallel, alternating, dag only; Bug fixes)
+*   BzMiner v8.00 (Added support for mining Kaspa with experimental pool support; Lower Alephium devfee to 0.5%; Higher Alephium effective hashrate; New Dual mine options: parallel, alternating, dag only; Bug fixes)
 
 ##### 0.6-213@220302 2022-03-02
 *   GMiner v2.83 (Added wss protocol support for TON mining, now miner support all major mining pools: ton-pool.com, tonwhales.com and icemining.ca; Fixed miner crash on TON connection loss in dual mining)
