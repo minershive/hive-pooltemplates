@@ -192,25 +192,7 @@
          }
       ],
       "miners":{
-         "phoenixminer":{
-            "url":"POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 3, COIN: %COIN%"
-         },
-         "asicminer":{
-            "url":"stratum+tcp://%URL%",
-            "template":"%WAL%.%WORKER_NAME%"
-         },
-         "teamredminer":{
-            "algo":"ethash",
-            "url":"stratum+tcp://%URL%",
-            "template":"%WAL%.%WORKER_NAME%",
-            "pass":"x"
-         },
-         "t-rex":{
-            "url":"%URL%",
-            "algo":"ethash",
-            "pass":"x",
-            "template":"%WAL%.%WORKER_NAME%"
-         }
+         "_prototype":"miners_ethash"
       }
    },
    {
@@ -398,21 +380,7 @@
          }
       ],
       "miners":{
-         "phoenixminer":{
-            "url":"POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 3, COIN: %COIN%"
-         },
-         "teamredminer":{
-            "algo":"etchash",
-            "url":"stratum+tcp://%URL%",
-            "template":"%WAL%.%WORKER_NAME%",
-            "pass":"x"
-         },
-         "t-rex":{
-            "url":"%URL%",
-            "algo":"etchash",
-            "pass":"x",
-            "template":"%WAL%.%WORKER_NAME%"
-         }
+         "_prototype":"miners_etchash"
       }
    },
    {
@@ -2424,25 +2392,7 @@
          }
       ],
       "miners":{
-         "nbminer":{
-            "url":"%URL%",
-            "pass":"x",
-            "template":"%WAL%.%WORKER_NAME%",
-            "algo":"octopus"
-         },
-         "t-rex":{
-            "url":"%URL%",
-            "algo":"octopus",
-            "pass":"x",
-            "template":"%WAL%.%WORKER_NAME%"
-         },
-         "nanominer":{
-            "url":"%URL%",
-            "algo":"octopus",
-            "pass":"x",
-            "template":"%WAL%",
-            "user_config":"coin = CFX\nrigName = %WORKER_NAME%"
-         }
+         "_prototype":"miners_octopus"
       }
    },
    {
