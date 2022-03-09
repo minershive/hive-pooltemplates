@@ -1,3 +1,8 @@
+##### 0.6-213@220309 2022-03-09
+*   PhoenixMiner v6.0c (Added support for new AMD Linux drivers up to version 21.50; Other small fixes)
+*   TeamBlackMiner v1.58 (Improved the GPU timout check code and preventing timeouts; Exit if too many rejected shares)
+*   TeamRedMiner v0.9.4.2 (Fixed eth+ton issue that could lead to a higher eth shares stale rate. Primarily for large GPUs (6800/6900XT) with aggressive tuning; Internal split of binaries helping some Vegas and Navis with crash issues on ethash from 0.9.2 and forward)
+
 ##### 0.6-213@220306 2022-03-06
 *   GMiner v2.85 (Added toncoinpool.io support; Fixed compatibility with ton-pool.com over wss protocol)
 *   BMiner v16.4.10 (Improve the performance of ETH mining in LHR mode; Fixed bugs in LHR mode)
