@@ -1,3 +1,7 @@
+##### 0.6-213@220310 2022-03-10
+*   GMiner v2.86 (Tor Network support, to enable pass `--tor`, also you can specify exit node via `--tor_exit_node` parameter; Support Ton dual mining on RTX 3050 and RTX 3080 12GB)
+*   TeamBlackMiner v1.59 (Exit if DAG validation fails many times; Removed VARDIFF in the display for Non VARDIFF pools; New try to prevent timeouts with debug output)
+
 ##### 0.6-213@220309 2022-03-09
 *   TeamRedMiner v0.9.4.2 (Fixed eth+ton issue that could lead to a higher eth shares stale rate. Primarily for large GPUs (6800/6900XT) with aggressive tuning; Internal split of binaries helping some Vegas and Navis with crash issues on ethash from 0.9.2 and forward)
 *   PhoenixMiner v6.0c (Added support for new AMD Linux drivers up to version 21.50; Other small fixes)
