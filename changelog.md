@@ -1,4 +1,4 @@
-##### 0.6-213@220310 2022-03-10
+##### 0.6-213@220313 2022-03-13
 *   GMiner v2.88 (Added support for display memory temperature under Linux for Nvidia GPUs with GDDR6X memory)
 
 ##### 0.6-213@220312 2022-03-12
