@@ -28,7 +28,6 @@
     {
         "coin": "RTM",
         "servers": [
-
             {
                 "geo": "Europe",
                 "urls": [
@@ -71,7 +70,7 @@
             }
         }
     },
-      {
+    {
         "coin": "OBTC",
         "servers": [
             {
@@ -97,10 +96,9 @@
             }
         }
     },
-  {
+    {
         "coin": "YTN",
         "servers": [
-
             {
                 "geo": "Europe",
                 "urls": [
@@ -121,14 +119,13 @@
     {
         "coin": "VTC",
         "servers": [
-
             {
                 "geo": "Europe",
                 "urls": [
                     "stratum+tcp://vtc.suprnova.cc:1777"
                 ]
             },
-              {
+            {
                 "geo": "East US",
                 "urls": [
                     "stratum+tcp://stratum.us-ny1.suprnova.cc:1777"
@@ -136,18 +133,12 @@
             }
         ],
         "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "verthash",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_verthash"
         }
     },
-     {
+    {
         "coin": "DYN",
         "servers": [
-
             {
                 "geo": "Europe",
                 "urls": [
@@ -216,15 +207,7 @@
             }
         ],
         "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers BgoldPoW"
-            }
+            "_prototype": "miners_zhash_btg"
         }
     },
     {
@@ -306,9 +289,9 @@
         "coin": "LBRY",
         "servers": [
             {
-                "geo": null,
+                "geo": "Nicehash & ASICs",
                 "urls": [
-                    ""
+                    " lbry.suprnova.cc:6257"
                 ]
             }
         ],
@@ -436,7 +419,7 @@
             }
         }
     },
-        {
+    {
         "coin": "DASH",
         "servers": [
             {
@@ -479,7 +462,7 @@
             }
         }
     },
-      {
+    {
         "coin": "DGB-Skein",
         "servers": [
             {

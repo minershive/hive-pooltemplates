@@ -1,38 +1,24 @@
 [
     {
-      "pool": {
-        "name": "Acidpool.co.uk",
-        "url": "http://acidpool.co.uk",
-        "type": "PPLNS"
-      }
+        "pool": {
+            "name": "Acidpool",
+            "url": "http://acidpool.co.uk",
+            "fee": 0.69,
+            "type": "PPLNS"
+        }
     },
     {
-      "coin": "VTC",
-      "servers": [
-        {
-          "geo": "United Kingdom",
-          "urls": ["stratum+tcp://vtc.acidpool.co.uk:3052"]
+        "coin": "VTC",
+        "servers": [
+            {
+                "geo": "United Kingdom",
+                "urls": [
+                    "stratum+tcp://vtc.acidpool.co.uk:3052"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_verthash"
         }
-      ],
-      "miners": {
-        "srbminer": {
-          "url": "%URL%",
-          "algo": "verthash",
-          "pass": "x",
-          "template": "%WAL%.%WORKER_NAME%"
-        },
-        "verthashminer": {
-          "url": "%URL%",
-          "algo": "verthash",
-          "pass": "x",
-          "template": "%WAL%.%WORKER_NAME%"
-        },
-        "teamredminer": {
-          "url": "%URL%",
-          "algo": "verthash",
-          "pass": "x",
-          "template": "%WAL%.%WORKER_NAME%"
-        }
-      }
     }
-  ]
+]
