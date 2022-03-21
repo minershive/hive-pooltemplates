@@ -1,3 +1,11 @@
+##### 0.6-213@220320 2022-03-20
+*   T-Rex v0.25.9 (Allow setting "LHR dual ratio" parameter for ETH+ALPH dual mining, e.g. "dual-algo-mode": `"a12:r10:lr12"` which mean dual ratio 10, LHR dual ratio 12; Added display memory temperature for GPUs with GDDR6X memory type; Bug fixes: miner frequently disconnects from the pool when mining SERO)
+*   GMiner v2.89 (Added display unpaid balance on ethash pool, currently supported pools: ethermine, hiveon, 2miners, f2pool, nanopool)
+*   BzMiner v8.1.0 (Added Nvidia GPU memory temperature monitoring for Linux; Slight improvement to Ethereum and Ethereum Classic hashrate; Improved ethash DAG generation for high overclocked cards)
+*   TeamBlackMiner v1.61 (Fixed rejected shares after pool disconnection and reconnection on some pools)
+*   CCminer-fancyix v0.5.0 (Added `0x10` support for CHOX/Chainox; Much faster allium on RTX 30xx cards v0.4.0)
+*   SGminer-fancyIX v0.9.0 (Initial support `chainox` and `chainox_navi`)
+
 ##### 0.6-213@220313 2022-03-13
 *   GMiner v2.88 (Added support for display memory temperature under Linux for Nvidia GPUs with GDDR6X memory)
 
