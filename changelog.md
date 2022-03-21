@@ -3,8 +3,8 @@
 *   GMiner v2.89 (Added display unpaid balance on ethash pool, currently supported pools: ethermine, hiveon, 2miners, f2pool, nanopool)
 *   BzMiner v8.1.0 (Added Nvidia GPU memory temperature monitoring for Linux; Slight improvement to Ethereum and Ethereum Classic hashrate; Improved ethash DAG generation for high overclocked cards)
 *   TeamBlackMiner v1.61 (Fixed rejected shares after pool disconnection and reconnection on some pools)
-*   CCminer-fancyIX v0.5.0 (Added `0x10` support for CHOX/Chainox; Much faster allium on RTX 30xx cards v0.4.0)
-*   SGminer-fancyIX v0.9.0 (Initial kernels support for `chainox` and `chainox_navi`)
+*   CCminer-fancyIX v0.5.0 (Added `0x10` algorithm support for CHOX/Chainox; Much faster allium on RTX 30xx cards v0.4.0)
+*   SGminer-fancyIX v0.9.0 (Initial `0x10` algorithm support with kernels `chainox` and `chainox_navi`)
 
 ##### 0.6-213@220313 2022-03-13
 *   GMiner v2.88 (Added support for display memory temperature under Linux for Nvidia GPUs with GDDR6X memory)
