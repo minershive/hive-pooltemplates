@@ -1,3 +1,7 @@
+##### 0.6-213@220322 2022-03-22
+*   BzMiner v8.1.1 (Accurate LHR detection; Showing CUDA, Nvidia Driver, and AMD Driver version; Notify of unsupported Nvidia Driver; Distinguish between Hung GPU (overclock) and CUDA/AMD errors; Fixed intensity priority order; Only connect to failsafe pool on reconnect if current pool was not already connected; Bug Fixes: Fixed auto protocol detection bug; EthProxy not connecting to some pools; EthStratum extra nonce)
+*   Fixed CCminer-fancyIX v0.5.0 (fixed package installation; rebuild from sources with CUDA Toolkit v11.2 under Ubuntu v16.04)
+
 ##### 0.6-213@220320 2022-03-20
 *   T-Rex v0.25.9 (Allow setting "LHR dual ratio" parameter for ETH+ALPH dual mining, e.g. "dual-algo-mode": `"a12:r10:lr12"` which mean dual ratio 10, LHR dual ratio 12; Added display memory temperature for GPUs with GDDR6X memory type; Bug fixes: miner frequently disconnects from the pool when mining SERO)
 *   GMiner v2.89 (Added display unpaid balance on ethash pool, currently supported pools: ethermine, hiveon, 2miners, f2pool, nanopool)
