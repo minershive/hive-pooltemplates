@@ -1,3 +1,8 @@
+##### 0.6-213@220325 2022-03-25
+*   lolMiner v1.47 (improved ETH solver with up to 78% unlock; parameter `--lhrtune` now takes absolute % values to fix a certain percentage of unlocking; reduced Ton & Alephium fee in Eth+Ton / Ethash+Alephium dual mining to 0%; new `--silence` parameter controls the amount of information the miner will print during its work; added Nvidia memory junction temperature readings on cards that support this; fixed a bug with dual mining on LHR cards where the dual algorithm was mined with reduced rate after Ethash epoch change; fixed a bug with --compactaccept not showing the * sign on short statistics. NOTE: for more info on this update, check here: https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.47)
+*   GMiner v2.90 (improved performance for Ethash+TON dual mining; improved TON performance; added ETC+TON dual mining support; added RTX 3060 Ti [2414] support; improved pool balance reporting, supported pools and coins)
+*   SGminer-fancyIX v0.9.1 (improved `chainox` and `chainox_navi` kernels up to 10% faster)
+
 ##### 0.6-213@220322 2022-03-22
 *   BzMiner v8.1.1 (Accurate LHR detection; Showing CUDA, Nvidia Driver, and AMD Driver version; Notify of unsupported Nvidia Driver; Distinguish between Hung GPU (overclock) and CUDA/AMD errors; Fixed intensity priority order; Only connect to failsafe pool on reconnect if current pool was not already connected; Bug Fixes: Fixed auto protocol detection bug; EthProxy not connecting to some pools; EthStratum extra nonce)
 *   Fixed CCminer-fancyIX v0.5.0 (fixed package installation; rebuild from sources with CUDA Toolkit v11.2 under Ubuntu v16.04)
