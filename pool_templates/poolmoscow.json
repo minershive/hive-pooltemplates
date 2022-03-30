@@ -1,16 +1,87 @@
 [
     {
+        "pool": {
+            "name": "pool-moscow",
+            "url": "https://pool-moscow.ru",
+            "type": "PPLNS / SOLO / PPS"
+        }
+    },
+    {
         "coin": "XMR",
         "servers": [
             {
-                "geo": null,
+                "geo": "PPLNS RU",
                 "urls": [
-                    "mine.monero.pool-moscow.ru:8888"
+                    "xmrmaine.pool-moscow.ru:8888"
+                ]
+            },
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "xmrmaine.pool-moscow.ru:6666"
+                ]
+            },
+            {
+                "geo": "SOLO RU",
+                "urls": [
+                    "xmrmaine.pool-moscow.ru:7777"
+                ]
+            },
+            {
+                "geo": "PPS RU",
+                "urls": [
+                    "xmrmaine.pool-moscow.ru:5555"
                 ]
             }
         ],
         "miners": {
             "_prototype": "miners_randomx_worker"
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "etc.pool-moscow.ru:9009"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_etchash"
+        }
+    },
+    {
+        "coin": "ETH",
+        "servers": [
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "eth.pool-moscow.ru:9008"
+                ]
+            },
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "moscow1-eth.pool-moscow.ru:9008"
+                ]
+            },
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "moscow2-eth.pool-moscow.ru:9008"
+                ]
+            },
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "ekt.pool-moscow.ru:9008"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash_4g"
         }
     }
 ]
