@@ -93,7 +93,33 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_ethash_4g"
+            "_prototype": "miners_ethash_4g",
+            "gminer": {
+                "algo": "eth",
+                "template": "%WAL%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "server": "stratum+ssl://%URL%",
+                "pass": "x"
+            },
+            "lolminer": {
+                "algo": "ETHASH",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "user_config": "--ethstratum ETHPROXY"
+            },
+            "phoenixminer": {
+                "url": "POOL: ssl://%URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: ETH"
+            }
         }
     }
 ]
