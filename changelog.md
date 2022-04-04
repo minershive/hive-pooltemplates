@@ -1,4 +1,4 @@
-##### 0.6-214@220331 2022-04-03
+##### 0.6-214@220403 2022-04-03
 *   lolMiner v1.48 (slightly improved initial speed after startup on 510.x drivers allowing to reach best performance faster; made the LHR unlocker more robust against small changes in work load; option `--lhrtune 0` is now semantically identical to `--lhrtune off`; Bug fixes: fixed a bug causing RTX 3050 & RTX 3080 12GB to have extremely low Ethash performance when dual mining; fixed a bug causing dual mining hashrate on FHR cards not showing up during dual mine calibration in 1.47; fixed a bug causing `--lhrtune off` occasionally not to work in 1.47; See full changelog: https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.48)
 *   CryptoDredge v0.27.0 (added support `ethash` and `firopow` algo; added support `--worker` option; removed some outdated and unused algos)
 *   Bminer v16.4.11 (support Ethereum mining on AMD RDNA2 GPUs)
