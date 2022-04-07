@@ -1,0 +1,48 @@
+[
+  {
+    "pool": {
+      "name": "MinaFacil",
+      "url": "https://pool.minafacil.com/",
+      "fee": 0,
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "RTM",
+    "servers": [
+      {
+        "geo": "North-America",
+        "urls": [
+          "pool.minafacil.com:4000"
+        ],
+        "ssl_urls": [
+          "pool.minafacil.com:5555"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcps://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "x",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
+      }
+    }
+  }
+]

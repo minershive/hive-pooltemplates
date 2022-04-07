@@ -178,50 +178,6 @@
         }
     },
     {
-        "coin": "MOAC",
-        "servers": [
-            {
-                "geo": "EU Low Diff",
-                "urls": [
-                    "s1.solopool.org:8007"
-                ]
-            },
-            {
-                "geo": "EU Mid Diff",
-                "urls": [
-                    "s1.solopool.org:7007"
-                ]
-            },
-            {
-                "geo": "EU High Diff",
-                "urls": [
-                    "s1.solopool.org:9007"
-                ]
-            },
-            {
-                "geo": "US Low Diff",
-                "urls": [
-                    "us-s1.solopool.org:8007"
-                ]
-            },
-            {
-                "geo": "US Mid Diff",
-                "urls": [
-                    "us-s1.solopool.org:7007"
-                ]
-            },
-            {
-                "geo": "US High Diff",
-                "urls": [
-                    "us-s1.solopool.org:9007"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
         "coin": "CLO",
         "servers": [
             {
@@ -289,6 +245,32 @@
         ],
         "miners": {
             "_prototype": "miners_autolykos2"
+        }
+    },
+    {
+        "coin": "ALPH",
+        "servers": [
+            {
+                "geo": "EU Low Diff",
+                "urls": [
+                    "s3.solopool.org:8002"
+                ]
+            },
+            {
+                "geo": "EU Mid Diff",
+                "urls": [
+                    "s3.solopool.org:7002"
+                ]
+            },
+            {
+                "geo": "EU High Diff",
+                "urls": [
+                    "s3.solopool.org:9002"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_alephium"
         }
     },
     {
@@ -740,14 +722,7 @@
             }
         ],
         "miners": {
-            "gminer": {
-                "algo": "125_4",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "--pers ZelProof"
-            }
+            "_prototype": "miners_zelhash"
         }
     },
     {
@@ -799,14 +774,6 @@
                 "ztemplate": "%WAL%.%WORKER_NAME%",
                 "zpass": "x",
                 "user_config": "pers ZcashPoW"
-            },
-            "gminer": {
-                "algo": "192_7",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "--pers ZcashPoW"
             }
         }
     },
@@ -859,14 +826,6 @@
                 "ztemplate": "%WAL%.%WORKER_NAME%",
                 "zpass": "x",
                 "user_config": "pers ZERO_PoW"
-            },
-            "gminer": {
-                "algo": "192_7",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "user_config": "--pers ZERO_PoW"
             }
         }
     },

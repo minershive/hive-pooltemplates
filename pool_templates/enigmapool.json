@@ -68,28 +68,39 @@
             }
         ],
         "miners": {
-            "gminer": {
-                "algo": "125_4",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers auto"
+            "_prototype": "miners_zelhash"
+        }
+    },
+	{
+        "coin": "ALPH",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "amsterdam.stratum.enigmapool.com:5002"
+                ]
             },
-            "lolminer": {
-                "algo": "ZEL",
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
+            {
+                "geo": "USA_EAST",
+                "urls": [
+                    "na-east.stratum.enigmapool.com:5002"
+                ]
             },
-            "miniz": {
-                "algo": "125,4",
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers auto"
+            {
+                "geo": "USA_WEST",
+                "urls": [
+                    "na-west.stratum.enigmapool.com:5002"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "singapore.stratum.enigmapool.com:5002"
+                ]
             }
+        ],
+        "miners": {
+            "_prototype": "miners_alephium"
         }
     }
 ]

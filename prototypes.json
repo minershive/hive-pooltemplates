@@ -49,6 +49,26 @@
         }
     },
 
+    "miners_alephium": {
+        "bzminer":{
+            "url":"%URL%",
+            "algo":"alph",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+        },
+        "t-rex": {
+            "url": "%URL%",
+            "algo": "blake3",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "blake3_alephium",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--disable-cpu"
+        }
+    },
+
     "miners_octopus": {
         "nbminer":{
             "url":"%URL%",
@@ -216,6 +236,12 @@
             "port": "%URL_PORT%",
             "worker": "%WORKER_NAME%",
             "template": "%WAL%"
+        },
+        "cminer": {
+            "url": "%URL%",
+            "algo": "etc",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%"
         }
     },
 
@@ -320,6 +346,17 @@
             "port": "%URL_PORT%",
             "worker": "%WORKER_NAME%",
             "template": "%WAL%"
+        },
+        "cminer": {
+            "url": "%URL%",
+            "algo": "eth",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%"
+        },
+        "cryptodredge": {
+            "url": "%URL%",
+            "algo": "ethash",
+            "template": "%WAL%.%WORKER_NAME%"
         }
     },
 
@@ -738,6 +775,13 @@
             "port": "%URL_PORT%",
             "pass": "x",
             "template": "%WAL%.%WORKER_NAME%"
+        },
+        "miniz": {
+            "algo": "144,5",
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--pers auto"
         }
     },
 
@@ -1118,6 +1162,11 @@
             "port":"%URL_PORT%",
             "server":"%URL_HOST%",
             "template":"%WAL%.%WORKER_NAME%"
+        },
+        "cryptodredge": {
+            "url": "%URL%",
+            "algo": "firopow",
+            "template": "%WAL%.%WORKER_NAME%"
         }
     },
 
@@ -1307,6 +1356,31 @@
             "algo":"verthash",
             "pass":"x",
             "template":"%WAL%.%WORKER_NAME%"
+        }
+    },
+	
+	"miners_zelhash": {
+        "gminer": {
+            "algo": "125_4",
+            "server": "%URL_HOST%",
+            "port": "%URL_PORT%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--pers auto"
+        },
+        "lolminer": {
+            "algo": "ZEL",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "miniz": {
+            "algo": "125,4",
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--pers auto"
         }
     }
 }

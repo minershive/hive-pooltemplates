@@ -99,54 +99,7 @@
       }
     ],
     "miners": {
-      "phoenixminer": {
-        "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%"
-      },
-      "ethminer": {
-        "fork": "ethash",
-        "template": "%WAL%.%WORKER_NAME%",
-        "server": "stratum1+tcp://%URL_HOST%",
-        "port": "%URL_PORT%",
-        "pass": "x",
-        "cuda": 1,
-        "opencl": 1
-      },
-      "gminer": {
-        "algo": "eth",
-        "template": "%WAL%.%WORKER_NAME%",
-        "server": "%URL_HOST%",
-        "port": "%URL_PORT%",
-        "pass": "x"
-      },
-      "teamredminer": {
-        "algo": "ethash",
-        "template": "%WAL%.%WORKER_NAME%",
-        "server": "stratum+tcp://%URL%",
-        "pass": "x"
-      },
-      "t-rex": {
-        "algo": "ethash",
-        "template": "%WAL%.%WORKER_NAME%",
-        "server": "stratum+tcp://%URL%",
-        "pass": "x"
-      },
-      "bminer": {
-        "algo": "ethstratum",
-        "template": "%WAL%.%WORKER_NAME%",
-        "url": "%URL%",
-        "pass": "x"
-      },
-      "lolminer": {
-        "algo": "ETHASH",
-        "template": "%WAL%.%WORKER_NAME%",
-        "server": "%URL_HOST%",
-        "port": "%URL_PORT%",
-        "pass": "x"
-      },
-      "asicminer": {
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
+      "_prototype": "miners_etchash"
     }
   },
   {
@@ -282,6 +235,25 @@
         "template": "%WAL%.%WORKER_NAME%",
         "url": "stratum+tcp://%URL%",
         "pass": "x"
+      }
+    }
+  },
+  {
+    "coin": "BTC",
+    "servers": [
+      {
+        "geo": "Worldwide / Auto-geoloc",
+        "urls": ["btc.cruxpool.com:1111"]
+      },
+      {
+        "geo": "Europe",
+        "urls": ["btc-eu.cruxpool.com:1111"]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
       }
     }
   }
