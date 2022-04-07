@@ -1,6 +1,6 @@
 ##### 0.6-214@220406 2022-04-06
-*   SRBMiner-Multi v0.9.4 (added `sha3d`, `0x10` algorithms, performance increase on `curvehash` algorithm, removed `astrobwt` algorithm, removed `--gpu-cn-mode` parameter)
-*   BzMiner v8.1.4 (LHR engaged notification, notify of unsupported Nvidia driver,bug fixes)
+*   SRBMiner-Multi v0.9.4 (added `sha3d`, `0x10` algorithms; performance increase on `curvehash` algorithm; removed `astrobwt` algorithm; removed `--gpu-cn-mode` parameter)
+*   BzMiner v8.1.4 (LHR engaged notification; notify of unsupported Nvidia driver; added support for Kaspa node >=11.15 protocol; bug fixes)
 *   XMRig v6.17.0 (added Dero HE fork support `astrobwt/v2` algorithm CPU/OpenCL/CUDA)
 *   SGminer-fancyIX v0.9.2 (added `yescryptr16` and `yescryptr16_navi` support)
 
