@@ -1,3 +1,6 @@
+##### 0.6-214@220407 2022-04-07
+*   TeamBlackMiner v1.62 (improved the rejected check before exit; fixed device order when using the `--cl-devices` to select GPUs; removed rejected shares at the `Hiveon` pool)
+ 
 ##### 0.6-214@220406 2022-04-06
 *   SRBMiner-Multi v0.9.4 (added `sha3d`, `0x10` algorithms; performance increase on `curvehash` algorithm; removed `astrobwt` algorithm; removed `--gpu-cn-mode` parameter)
 *   BzMiner v8.1.4 (LHR engaged notification; notify of unsupported Nvidia driver; added support for Kaspa node >=11.15 protocol; bug fixes)
