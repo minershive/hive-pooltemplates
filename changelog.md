@@ -1,3 +1,10 @@
+##### 0.6-215@220409 2022-04-09
+*   Updated `nvtool` to v1.6.2 (improved memory temperature reporting for GDDR6X memory; mem temp now reports by default from command line if sensor available)
+*   Added OC support for AMD BC-250 board (need new AMD driver)
+*   Updated CUDA RTL to v11.6.2
+*   Updated devices IDs databases
+*   Misc fixes and improvements (fixed `pool-test` command; improved GPU driver errors info; slight improvements for `amd-info` and `nvidia-info` commands)
+ 
 ##### 0.6-214@220407 2022-04-07
 *   TeamBlackMiner v1.62 (improved the rejected check before exit; fixed device order when using the `--cl-devices` to select GPUs; removed rejected shares at the `Hiveon` pool)
  
