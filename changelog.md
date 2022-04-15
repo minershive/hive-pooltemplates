@@ -1,3 +1,8 @@
+##### 0.6-215@220415 2022-04-15
+*   T-Rex v0.25.12 (Improved  LHR unlock functionality on ethash, dual modes and autolykos2 LHR performance is unchanged. Expected about 78-79% in normal mode, and 75% in low power mode, see description for option `lhr-low-power` in miner manual; Changed default value of `lhr-autotune-mode` parameter; Fixed memory temperature displaying on some GDDR6X cards)
+*   NanoMiner v3.6.1 (Fixed crash during XMR mining on some old CPUs; Improved LHR unlocker stability for some Nvidia driver versions)
+*   PhoenixMiner 6.1b (Fixed an issue with expired SSL certificate that led to "certificate verify failed" errors; Now the miner will send SSL SNI host name which may be needed by some pools for SSL certificate validation. To go back to the old behavior (no SNI host name), use the new command-line parameter `-nosni`; Other small fixes; *Note: Beta version for testing purposes you should select version manually in miner settings*)
+
 ##### 0.6-215@220409 2022-04-09
 *   Updated `nvtool` to v1.6.2 (improved memory temperature reporting for GDDR6X memory; mem temp now reports by default from command line if sensor available)
 *   Added OC support for AMD BC-250 board (need new AMD driver)
