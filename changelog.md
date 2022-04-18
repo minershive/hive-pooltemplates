@@ -1,3 +1,6 @@
+##### 0.6-215@220417 2022-04-17
+*   SGminer-fancyIX v0.9.3 (fixed `yescryptr16` invalid shares problem)
+
 ##### 0.6-215@220415 2022-04-15
 *   T-Rex v0.25.12 (Improved  LHR unlock functionality on ethash, dual modes and autolykos2 LHR performance is unchanged. Expected about 78-79% in normal mode, and 75% in low power mode, see description for option `lhr-low-power` in miner manual; Changed default value of `lhr-autotune-mode` parameter; Fixed memory temperature displaying on some GDDR6X cards)
 *   NanoMiner v3.6.1 (Fixed crash during XMR mining on some old CPUs; Improved LHR unlocker stability for some Nvidia driver versions)
