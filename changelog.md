@@ -1,5 +1,5 @@
 ##### 0.6-216@220418 2022-04-18
-*   Small improvements (Minor changes to ensure compatibility with newer Linux kernels and future OS Images; Reworked miner installation and update procedure)
+*   Small improvements (minor changes to ensure compatibility with newer Linux kernels and future OS Images; reworked miner installation and update procedure)
 *   Minor bug fixes
 
 ##### 0.6-215@220417 2022-04-17
