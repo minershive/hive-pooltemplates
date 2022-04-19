@@ -4,7 +4,7 @@
 *   Ubuntu v18.04.6 LTS based
 *   Linux kernel: v5.10.110
 *   Nvidia driver: v510.60.02
-*   AMD driver v5.13.0201
+*   AMD driver v5.13.0201 incl. BC-250 board and Navi24 based GPUs support
 *   AMD OpenCL v21.50.2
 *   md5sum 70c3a93c76436fd08853a8734d79377d
 
