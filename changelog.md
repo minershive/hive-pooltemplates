@@ -1,3 +1,13 @@
+##### LINUX IMAGE RELEASE 0.6-216 2022-04-19
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-216
+*   Ubuntu v18.04.6 LTS based
+*   Linux kernel: v5.10.110
+*   Nvidia driver: v510.60.02
+*   AMD driver v5.13.0201
+*   AMD OpenCL v21.50.2
+*   md5sum 70c3a93c76436fd08853a8734d79377d
+
 ##### 0.6-216@220418 2022-04-18
 *   Small improvements (minor changes to ensure compatibility with newer Linux kernels and future OS Images; reworked miner installation and update procedure)
 *   Minor bug fixes
