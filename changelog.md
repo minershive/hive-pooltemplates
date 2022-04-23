@@ -1,3 +1,9 @@
+##### 0.6-217@220422 2022-04-22
+*   Updated PCI IDs to v2022.04.16 (added IDs for Nvidia RTX 3090 Ti, A4000H)
+*   Fixed bug: AMD OC applied incorrectly for Radeon Pro VII and Radeon Pro W5700
+*   NanoMiner v3.6.2 (significantly reduced stale Ethash shares on Nvidia GPUs)
+*   XMRigCC v3.2.1 XMRig fork (rebase upstream 6.17.1-dev; integrated XDagger Randomx variant `rx/xdag`; fixed Yadacoin `rx/yada` mining)
+   
 ##### 0.6-216@220418 2022-04-18
 *   Small improvements (minor changes to ensure compatibility with newer Linux kernels and future OS Images; reworked miner installation and update procedure)
 *   Minor bug fixes
