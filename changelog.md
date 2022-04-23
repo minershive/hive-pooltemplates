@@ -1,3 +1,13 @@
+##### LINUX IMAGE RELEASE 0.6-217 2022-04-23
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-217
+*   Ubuntu v18.04.6 LTS based
+*   Linux kernel: v5.10.110
+*   Nvidia driver: v510.60.02
+*   AMD driver v5.13.0201 incl. BC-250 board and Navi24 based GPUs support
+*   AMD OpenCL v21.40.1
+*   md5sum a9e813b7992deb9cb876eb25a04221ef
+
 ##### 0.6-217@220422 2022-04-22
 *   Fixed bug with AMD OC (overclocking for Radeon Pro VII and Radeon Pro W5700 applied incorrectly since the version v0.6-214)
 *   Minor system updates (updated PCI IDs to v2022.04.16: added new IDs eg. Nvidia RTX 3090 Ti, A4000H)
