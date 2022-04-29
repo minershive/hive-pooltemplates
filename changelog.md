@@ -1,7 +1,7 @@
 ##### 0.6-217@220428 2022-04-28
 *   BzMiner v9.0.0 (added support mining `IXI`/Ixian coin; many improvements & fixes for mining Kaspa; bug fixes)
 *   miniZ v1.8z (improved performance and stability for ETH for LHR GPUs; improved performance on `125,4` for RTX 30xx; added AMD Polaris support for `125,4`; added `FIRO` support; fixed issues with `SERO` and `192,7`; minor bug fixes)
-*   T-Rex v0.25.13 (extend the new LHR unlock functionality to `ETH+ALPH` dual mining, and `ERGO` single mode; LHR unlocker is more stable compared to 0.25.12, infinite LHR lock loops should be solved now; *Note: Beta version for testing purposes you should select version manually in miner settings*)
+*   T-Rex v0.25.13 TEST (extend the new LHR unlock functionality to `ETH+ALPH` dual mining, and `ERGO` single mode; LHR unlocker is more stable compared to 0.25.12, infinite LHR lock loops should be solved now; *Note: Beta version for testing purposes you should select version manually in miner settings*)
    
 ##### LINUX IMAGE RELEASE 0.6-217 2022-04-23
 *   Universal boot mode: BIOS | UEFI
