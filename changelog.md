@@ -1,3 +1,6 @@
+##### 0.6-217@220505 2022-05-05
+*   BzMiner v9.0.2 (GDDR5 Memory Tweak with `--oc_mem_tweak` option; memory timings table display; Bug Fixes: solution latency reporting slowly increasing; crash at startup in some cases; Ixian not submitting found solutions after some time)
+
 ##### 0.6-217@220504 2022-05-04
 *   TeamBlackMiner v1.63 (added support for SSL mining/anonymous mining; reduced GPU memory requirements in copy DAG mode to extend the life of low memory cards; new fix for GPU timeout on AMD cards with high intensity; some short options changed names)
 
