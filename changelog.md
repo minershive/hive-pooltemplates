@@ -1,5 +1,5 @@
 ##### 0.6-217@220509 2022-05-09
-*   NBMiner v41.1 BETA (improved LHR unlock stability)
+*   NBMiner v41.3 (improved `ethash` LHR unlock stability; fixed crash on AMD GPUs; improved compatibility on rigs with small system memory)
 *   T-Rex v0.26.0 BETA (introduced LHR 100% unlock, except 3080 12GB and 3050, ETH+ALPH should also work; *Notes: this is test version, to test it you need select version 0.26.0 in miner settings*)
 
 ##### 0.6-217@220508 2022-05-08
