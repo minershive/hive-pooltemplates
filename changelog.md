@@ -1,7 +1,7 @@
 ##### 0.6-217@220510-2 2022-05-10
 *   miniZ v1.8z2 (Experemental `ethash` LHR unlocker for RTX 3080 12G and RTX 3050 only, expected hashrate: 3080 12G - 100MH/s, 3050 - 27MH/s)
 *   TeamRedMiner v0.9.4.7 *BETA* (fixed issues with hashrate drop on Navi GPUs in R-mode; *Note: Beta version for testing purposes you should select version manually in miner settings*)
-*   NBMiner v41.4 (experemental `ethash` LHR unlocker ONLY for RTX 3080 12G and RTX 3050, expected hashrate: 3080 12G - 100MH/s, 3050 - 27MH/s; *Note: Beta version for testing purposes you should select version manually in miner settings*)
+*   NBMiner v41.4 TEST (experemental `ethash` LHR unlocker ONLY for RTX 3080 12G and RTX 3050, expected hashrate: 3080 12G - 100MH/s, 3050 - 27MH/s; *Note: Beta version for testing purposes you should select version manually in miner settings*)
 
 ##### 0.6-217@220510 2022-05-10
 *   NBMiner v41.3 (improved `ethash` LHR unlock stability; fixed crash on AMD GPUs; improved compatibility on rigs with small system memory)
