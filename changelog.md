@@ -1,3 +1,6 @@
+##### 0.6-217@220513 2022-05-13
+*   GMiner v2.94 (improved performance for LHRv3 GPUs: RTX 3050 and RTX 3080 12GB)
+
 ##### 0.6-217@220512 2022-05-12
 *   GMiner v2.93 (fixed performance degradation on FHR cards, appeared in v2.92)
 *   NBMiner v41.5 (added `ethash` 90% LHR unlocker for 3080 12G & 3050; added `ergo` LHR unlocker support; improved `ethash` LHR unlocker stability)
