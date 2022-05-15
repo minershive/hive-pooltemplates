@@ -1,3 +1,7 @@
+##### 0.6-217@220514 2022-05-14
+*   lolMiner v1.50 RELEASE (100% LHR unlock for all LHR affected algorithms on LHR v1 and v2 GPUs; Added experimental LHR v3 unlock to ~90% (3050) and ~92% on 3080 12G, enable by default, use --lhrv3boost 0 to disable the mode and fall back to ~65% unlock; If the pool connection gets lost on the dual mining algorithm, the miner will now stop the dual mining to save the energy and continues in Ethash only mode until the connection is re-established; Fixed a bug in v1.49 causing Ergo mining not to start on Nvidia GPUs)
+⛏ BzMiner v9.1.3 (uch more stable 100% LHR Unlock v1, supported on drivers 465+; LHR Unlock stability adjuster with option --lhr_stability, lower value is more stable
+
 ##### 0.6-217@220513 2022-05-13
 *   GMiner v2.94 (improved performance for LHRv3 GPUs: RTX 3050 and RTX 3080 12GB)
 
