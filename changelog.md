@@ -1,3 +1,8 @@
+##### 0.6-217@220518 2022-05-18
+*   GMiner v2.96 ()
+*   TeamRedMiner v0.10.0 ()
+*   T-Rex v0.26.3 BETA ()
+   
 ##### 0.6-217@220516 2022-05-16
 *   GMiner v2.95 (90% LHR unlock for LHRv3 GPUs; reduced binary size by removing AE/Aeternity algorithm support and Tor support)
 
