@@ -1,3 +1,7 @@
+##### 0.6-217@220523 2022-05-23
+*   NBMiner v42.0 (Extended `ethash` LHR unlocker work with old driver versions, before v515.x; Improved `ethash` LHR unlocker stability; Small `ethash` hashrate improvement on Nvidia GPUs; Added GDDR6X memory temp in summary table; Added GPU RAM type and GPU RAM vendor in log; Added Nvidia driver version in summary table)
+*   SRBMiner-Multi v0.9.5 (Added algorithm `yescryptr8`, `yescryptr16`, `yescryptr32` for GPU mining, fee 0.85%; Added algorithm `frkhash` next algo for EXP/Expanse for CPU/GPU mining, fee 0.85%; Lowered devfee: for `autolykos2` to 1.5%, `blake3_alephium` to 0.85%; Small performance increase on 'autolykos2' algorithm for RDNA2 GPU's; Small performance increase on 'dynamo' algorithm for GPU's; A little bit faster dataset creation on 'autolykos2' algorithm for some GPU's; A little bit lower power consumption on 'autolykos2' algorithm for Ellesmere GPU's; A little bit lower power consumption on 'ethash' and 'etchash' algorithm for RDNA2 GPU's; Other improvements & bug fixes)
+
 ##### 0.6-217@220522 2022-05-22
 *   T-Rex v0.26.4 (Implemented 90% LHR unlocker for Nvidia LHRv3 GPUs: RTX 3080 12GB and RTX 3050; Bug fix: miner sometimes takes too long to shut down on multi-GPU rigs)
 
