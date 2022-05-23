@@ -1,3 +1,6 @@
+##### 0.6-217@220522 2022-05-22
+*   T-Rex v0.26.4 (Implemented 90% LHR unlocker for Nvidia LHRv3 GPUs: RTX 3080 12GB and RTX 3050; Bug fix: miner sometimes takes too long to shut down on multi-GPU rigs)
+
 ##### 0.6-217@220521 2022-05-21
 *   lolMiner v1.51a (slight improvements and fixes)
 *   NanoMiner v3.6.3 (100% LHR unlock for Nvidia LHR v1 and LHR v2 GPUs, recommended Nvidia drivers v510 series)
