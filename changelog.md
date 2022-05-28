@@ -1,3 +1,8 @@
+##### 0.6-217@220528 2022-05-28
+*   NBMiner v42.2 (Add a new option lhr-mode to select ethash LHR unlock mode: "lhr-mode": "1" is the default mode and is the same as which in v41.5, try to use "lhr-mode": "2" if stability issue encountered in mode 1, LHR v3 GPUs can only use mode 1)
+*   GMiner v2.98 (Optimized RavenCoin mining; Removed BeamHash algorithm and decreased miner size -30 MB)
+*   CPUminer-Opt-JayDDee v3.19.8 (Small improvements)
+
 ##### 0.6-217@220524 2022-05-24
 *   NBMiner v42.1 (Fixed `ethash` LHR unlocker: it couldn't unlock certain GPUs)
 
