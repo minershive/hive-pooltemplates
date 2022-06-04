@@ -1,11 +1,29 @@
 [
     {
+        "pool": {
+            "name": "ViaBTC",
+            "url": "https://www.viabtc.net"
+        }
+    },
+    {
         "coin": "BTC",
         "servers": [
             {
                 "geo": null,
                 "urls": [
-                    "btc.viabtc.com:3333"
+                    "btc.viabtc.io:3333"
+                ]
+            },
+            {
+                "geo": null,
+                "urls": [
+                    "btc.viabtc.io:25"
+                ]
+            },
+            {
+                "geo": null,
+                "urls": [
+                    "btc.viabtc.io:443"
                 ]
             }
         ],
@@ -22,7 +40,19 @@
             {
                 "geo": null,
                 "urls": [
-                    "bch.viabtc.com:3333"
+                    "bch.viabtc.io:3333"
+                ]
+            },
+            {
+                "geo": null,
+                "urls": [
+                    "bch.viabtc.io:25"
+                ]
+            },
+            {
+                "geo": null,
+                "urls": [
+                    "bch.viabtc.io:443"
                 ]
             }
         ],
@@ -39,7 +69,19 @@
             {
                 "geo": null,
                 "urls": [
-                    "ltc.viabtc.com:3333"
+                    "ltc.viabtc.io:3333"
+                ]
+            },
+            {
+                "geo": null,
+                "urls": [
+                    "ltc.viabtc.io:25"
+                ]
+            },
+            {
+                "geo": null,
+                "urls": [
+                    "ltc.viabtc.io:443"
                 ]
             }
         ],
@@ -56,26 +98,24 @@
             {
                 "geo": null,
                 "urls": [
-                    "ethereum.viabtc.com:3333"
+                    "eth.viabtc.io:3333"
+                ]
+            },
+            {
+                "geo": null,
+                "urls": [
+                    "eth.viabtc.io:25"
+                ]
+            },
+            {
+                "geo": null,
+                "urls": [
+                    "eth.viabtc.io:443"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_ethash_4g"
         }
     },
     {
@@ -84,23 +124,12 @@
             {
                 "geo": null,
                 "urls": [
-                    "ethereum.viabtc.com:3333"
+                    "mining.viabtc.io:3010"
                 ]
             }
         ],
         "miners": {
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_etchash"
         }
     },
     {
@@ -109,7 +138,13 @@
             {
                 "geo": null,
                 "urls": [
-                    "zec.viabtc.com:3333"
+                    "mining.viabtc.io:3002"
+                ]
+            },
+            {
+                "geo": null,
+                "urls": [
+                    "mining.viabtc.io:302"
                 ]
             }
         ],
@@ -126,7 +161,36 @@
             {
                 "geo": null,
                 "urls": [
-                    "dash.viabtc.com:3333"
+                    "mining.viabtc.io:3004"
+                ]
+            },
+            {
+                "geo": null,
+                "urls": [
+                    "mining.viabtc.io:304"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "DCR",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "mining.viabtc.io:3009"
+                ]
+            },
+            {
+                "geo": null,
+                "urls": [
+                    "mining.viabtc.io:309"
                 ]
             }
         ],

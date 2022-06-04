@@ -3,128 +3,19 @@
         "pool": {
             "name": "f2pool",
             "url": "https://f2pool.io",
-            "fee": "1-5",
-            "type": "PPS|PPS+"
-        }
-    },
-    {
-        "coin": "AION",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                    "aion.f2pool.com:6677"
-                ]
-            }
-        ],
-        "miners": {
-            "gminer": {
-                "algo": "210_9",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers AION0PoW"
-            },
-            "lolminer": {
-                "algo": "AION",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "miniz": {
-                "url": "%URL%",
-                "algo": "210,9",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers AION0PoW\n--mode 7"
-            }
-        }
-    },
-    {
-        "coin": "BEAM",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                    "beam.f2pool.com:5000"
-                ]
-            }
-        ],
-        "miners": {
-            "bminer": {
-                "algo": "beam+ssl",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            },
-            "miniz": {
-                "algo": "144,5s",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "tls": "1"
-            },
-            "gminer": {
-                "algo": "beamhash",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "tls": "1"
-            },
-            "lolminer": {
-                "algo": "BEAM",
-                "template": "%WAL%.%WORKER_NAME%",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x"
-            }
+            "fee": "3",
+            "type": "PPS/PPS+"
         }
     },
     {
         "coin": "BTC",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "btc.f2pool.com:1314",
                     "btc.f2pool.com:3333",
                     "btc.f2pool.com:25"
-                ]
-            },
-            {
-                "geo": "Hong Kong",
-                "urls": [
-                    "btc-hk.f2pool.com:3333"
-                ]
-            },
-            {
-                "geo": "Singapore",
-                "urls": [
-                    "btc-sg.f2pool.com:3333"
-                ]
-            },
-            {
-                "geo": "EU",
-                "urls": [
-                    "btc-eu.f2pool.com:3333",
-                    "btc-eu.f2pool.com:25",
-                    "btc-eu.f2pool.com:1314"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "btc-us.f2pool.com:3333",
-                    "btc-us.f2pool.com:25",
-                    "btc-us.f2pool.com:1314"
-                ]
-            },
-            {
-                "geo": "Russian Federation",
-                "urls": [
-                    "btc-mow.f2pool.com:3333"
                 ]
             }
         ],
@@ -136,10 +27,10 @@
         }
     },
     {
-        "coin": "BCHN",
+        "coin": "BCH",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "b4c.f2pool.com:1228"
                 ]
@@ -153,119 +44,24 @@
         }
     },
     {
-        "coin": "BCD",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                    "bcd.f2pool.com:5610"
-                ]
-            }
-        ],
-        "miners": {
-            "t-rex": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "bcd",
-                "pass": "x",
-                "template": "%WAL%"
-            },
-            "wildrig-multi": {
-                "url": "stratum+tcp:\/\/%URL%",
-                "algo": "bcd",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "--opencl-threads=2"
-            }
-        }
-    },
-    {
-        "coin": "BSV",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                    "b3v.f2pool.com:1328"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-          }
-    },
-    {
-        "coin": "CLO",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "clo.f2pool.com:8018"
-                ]
-            }
-        ],
-        "miners": {
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "nbminer": {
-                "url": "%URL%",
-                "algo": "ethash",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "tt-miner": {
-                "url": "%URL%",
-                "algo": "ETHASH",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "-RH\n"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "ethash",
-                "worker": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "--disable-cpu"
-            },
-            "t-rex": {
-                "url": "%URL%",
-                "algo": "ethash",
-                "template": "%WAL%",
-                "user_config": "\"worker\": \"%WORKER_NAME%\""
-            }
-
-        }
-    },
-    {
         "coin":"CFX",
         "servers":[
             {
-                "geo":"China",
+                "geo": null,
                 "urls": [
-                        "cfx.f2pool.com:6800"
+                    "cfx.f2pool.com:6800"
                 ]
             }
         ],
         "miners": {
             "_prototype": "miners_octopus"
-          }
+        }
     },
     {
         "coin": "DASH",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "dash.f2pool.com:5588"
                 ]
@@ -282,7 +78,7 @@
         "coin": "DCR",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "dcr.f2pool.com:5730"
                 ]
@@ -304,7 +100,7 @@
         "coin": "DGB-Sha256d",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "dgb-sha256d.f2pool.com:11110"
                 ]
@@ -321,7 +117,7 @@
         "coin": "DGB-Scrypt",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "dgb-scrypt.f2pool.com:11111"
                 ]
@@ -338,7 +134,7 @@
         "coin": "DGB-Skein",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "dgb-groestl.f2pool.com:11113"
                 ]
@@ -364,7 +160,7 @@
         "coin": "DGB-Qubit",
         "servers": [
             {
-              "geo": "China",
+              "geo": null,
               "urls": [
                   "dgb-groestl.f2pool.com:11114"
                 ]
@@ -390,7 +186,7 @@
         "coin": "DGB-Odocrypt",
         "servers": [
             {
-              "geo": "China",
+              "geo": null,
               "urls": [
                   "dgb-groestl.f2pool.com:11115"
                 ]
@@ -408,21 +204,9 @@
         "coin": "ETH",
         "servers": [
             {
-                "geo": "China",
+                "geo": "Main",
                 "urls": [
                     "eth.f2pool.com:6688"
-                ]
-            },
-            {
-                "geo": "EU",
-                "urls": [
-                    "eth-eu.f2pool.com:6688"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "eth-na.f2pool.com:6688"
                 ]
             },
             {
@@ -434,14 +218,6 @@
         ],
         "miners": {
             "_prototype": "miners_ethash_4g",
-            "teamredminer":{
-               "template": "%WAL%",
-               "worker": "%WORKER_NAME%"
-            },
-            "lolminer":{
-               "template": "%WAL%",
-               "worker": "%WORKER_NAME%"
-            },
             "bminer":{
                "algo": "ethproxy"
             }
@@ -451,132 +227,37 @@
         "coin": "ETC",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "etc.f2pool.com:8118"
                 ]
             }
         ],
         "miners": {
-                "_prototype": "miners_etchash"
-        }
-    },
-    {
-        "coin": "XFR",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                    "xzc.f2pool.com:5780"
-                ]
-            }
-        ],
-        "miners": {
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "mtp",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "cryptodredge": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "mtp"
-            },
-            "teamredminer": {
-                "url": "stratum+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "mtp"
-            }
+            "_prototype": "miners_etchash"
         }
     },
     {
         "coin": "FIRO",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
-                    "xzc.f2pool.com:5780"
+                    "firo.f2pool.com:5790"
                 ]
             }
         ],
         "miners": {
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "mtp",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "cryptodredge": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "mtp"
-            },
-            "teamredminer": {
-                "url": "stratum+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "mtp"
-            }
-        }
-    },
-    {
-        "coin": "GRIN",
-        "servers": [
-          {
-              "geo": "China",
-              "urls": [
-                  "grin32.f2pool.com:13654"
-              ]
-          },
-          {
-              "geo": "EU",
-              "urls": [
-                  "grin32-eu.f2pool.com:13654"
-              ]
-          },
-          {
-              "geo": "USA",
-              "urls": [
-                  "grin32-us.f2pool.com:13654"
-              ]
-          }
-        ],
-        "miners": {
-            "lolminer": {
-                "algo": "GRIN-C32",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "gminer": {
-                "algo": "grin32",
-                "template": "%WAL%.%WORKER_NAME%",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%"
-            },
-            "bminer": {
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "cuckatoo32"
-            },
-            "nbminer": {
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "cuckatoo32"
-            }
+            "_prototype": "miners_firopow"
         }
     },
     {
         "coin": "ZEN",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
-                    "zen.f2pool.com:3377"
+                    "zencash.f2pool.com:3377"
                 ]
             }
         ],
@@ -585,99 +266,17 @@
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
-        }
-    },
-    {
-        "coin": "HYC",
-        "servers": [
-            {
-                "geo": "China (mainland)",
-                "urls": [
-                    "hyc.f2pool.com:9081"
-                ]
-            }
-        ],
-        "miners": {
-                "xmr-stak": {
-                    "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
-                    "url": "%URL%",
-                    "pass": "x",
-                    "nvidia": "\"gpu_threads_conf\" : [],",
-                    "template": "%WAL%.%WORKER_NAME%",
-                    "user_config": "\"currency\":\"cryptonight_v7\""
-                },
-                "xmrig-new": {
-                    "cpu": "1",
-                    "url": "%URL%",
-                    "algo": "cn/1",
-                    "fork": "xmrig",
-                    "pass": "x",
-                    "template": "%WAL%.%WORKER_NAME%",
-                    "user_config": "\"donate-level\": 1"
-                }
-        }
-    },
-    {
-        "coin": "HC",
-        "servers": [
-            {
-              "geo": "China",
-              "urls": [
-                  "hc.f2pool.com:5760"
-                ]
-            }
-        ],
-        "miners": {
-           "asicminer": {
-              "url": "stratum+tcp://%URL%",
-              "template": "%WAL%.%WORKER_NAME%",
-              "pass": ""
-           }
-        }
-    },
-    {
-        "coin": "IMG",
-        "servers": [
-            {
-              "geo": "China",
-              "urls": [
-                  "img.f2pool.com:4400"
-                ]
-            }
-        ],
-        "miners": {
-           "asicminer": {
-              "url": "stratum+tcp://%URL%",
-              "template": "%WAL%.%WORKER_NAME%",
-              "pass": ""
-           }
         }
     },
     {
         "coin": "LTC",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "ltc.f2pool.com:8888",
                     "ltc.f2pool.com:5200",
                     "ltc.f2pool.com:3335"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "ltc-us.f2pool.com:8888",
-                    "ltc-us.f2pool.com:5200",
-                    "ltc-us.f2pool.com:3335"
-                ]
-            },
-            {
-                "geo": "EU",
-                "urls": [
-                    "ltc-eu.f2pool.com:8888",
-                    "ltc-eu.f2pool.com:5200",
-                    "ltc-eu.f2pool.com:3335"
                 ]
             }
         ],
@@ -689,48 +288,33 @@
         }
     },
     {
-        "coin": "MONA",
-        "servers": [
-            {
-              "geo": "China",
-              "urls": [
-                  "mona.f2pool.com:20593"
-                ]
-            }
-        ],
-        "miners": {
-           "asicminer": {
-              "url": "stratum+tcp://%URL%",
-              "template": "%WAL%.%WORKER_NAME%",
-              "pass": ""
-           }
-        }
-    },
-    {
-        "coin": "XMR",
-        "servers": [
-            {
-                "geo": "China (mainland)",
-                "urls": [
-                    "xmr.f2pool.com:13531"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_randomx"
-        }
-    },
-    {
         "coin": "CKB",
         "servers": [
             {
-                "geo": "China (mainland)",
+                "geo": null,
                 "urls": [
                     "ckb.f2pool.com:4300"
                 ]
             }
         ],
         "miners": {
+            "gminer": {
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "eaglesong"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "eaglesong"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x",
+                "algo": "ckb"
+            },
             "smine": {
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -738,81 +322,10 @@
         }
     },
     {
-        "coin": "PGN",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                    "pigeon.f2pool.com:5750"
-                ]
-            }
-        ],
-        "miners": {
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x21s",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x21s",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--opencl-threads=2"
-            },
-            "cryptodredge": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x21s",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "RVC",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                    "rvc.f2pool.com:4800"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "fork": "enemy",
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "x16r",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            },
-            "teamredminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "x16r"
-            }
-        }
-    },
-    {
         "coin": "RVN",
         "servers": [
             {
-                "geo": "China (mainland)",
+                "geo": null,
                 "urls": [
                     "raven.f2pool.com:3636"
                 ]
@@ -826,9 +339,9 @@
         "coin": "SC",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
-                    "sc.f2pool.com:7778"
+                    "sc.f2pool.com:7788"
                 ]
             }
         ],
@@ -840,51 +353,10 @@
         }
     },
     {
-       "coin":"SERO",
-       "servers":[
-          {
-             "geo":"China",
-             "urls":[
-                "sero.f2pool.com:4200"
-             ]
-          }
-       ],
-       "miners":{
-          "ethminer":{
-             "fork":"serominer",
-             "cuda":0,
-             "opencl":1,
-             "pass":"x",
-             "port":"%URL_PORT%",
-             "server":"stratum1+tcp://%URL_HOST%",
-             "template":"%WAL%.%WORKER_NAME%"
-          },
-          "t-rex":{
-             "url":"%URL%",
-             "algo":"progpow",
-             "pass":"x",
-             "template":"%WAL%.%WORKER_NAME%"
-          },
-          "nbminer":{
-             "url":"%URL%",
-             "pass":"x",
-             "template":"%WAL%.%WORKER_NAME%",
-             "algo":"progpow_sero"
-          },
-          "tt-miner":{
-             "url":"stratum1+tcp://%URL%",
-             "algo":"PROGPOW092",
-             "pass":"x",
-             "template":"%WAL%.%WORKER_NAME%",
-             "user_config":"-coin SERO"
-          }
-       }
-    },
-    {
         "coin": "XVG-Blake2s",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "xvg-blake2s.f2pool.com:9008"
                 ]
@@ -915,7 +387,7 @@
         "coin": "XVG-X17",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "xvg-x17.f2pool.com:9010"
                 ]
@@ -932,7 +404,7 @@
         "coin": "XVG-Myriad-Groestl",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "xvg-groestl.f2pool.com:9011 "
                 ]
@@ -958,7 +430,7 @@
         "coin": "XVG-Lyra2REv2",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "xvg-lyra.f2pool.com:9012"
                 ]
@@ -975,7 +447,7 @@
         "coin": "XVG-Scrypt",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "xvg-scrypt.f2pool.com:9009"
                 ]
@@ -989,71 +461,10 @@
         }
     },
     {
-      "coin": "VTC",
-      "servers": [
-        {
-          "geo": "China",
-          "urls": [
-            "vtc.f2pool.com:5810"
-          ]
-        }
-      ],
-      "miners": {
-        "cryptodredge": {
-          "url": "stratum+tcp://%URL%",
-          "algo": "lyra2v3",
-          "pass": "x",
-          "template": "%WAL%.%WORKER_NAME%"
-        },
-        "teamredminer": {
-          "url": "stratum+tcp://%URL%",
-          "algo": "lyra2v3",
-          "pass": "x",
-          "template": "%WAL%.%WORKER_NAME%"
-        }
-      }
-    },
-    {
-      "coin": "YEC",
-      "servers": [
-        {
-          "geo": "China",
-          "urls": [
-            "yec.f2pool.com:4500"
-          ]
-        }
-      ],
-      "miners": {
-        "gminer": {
-          "algo": "192_7",
-          "server": "%URL_HOST%",
-          "port": "%URL_PORT%",
-          "pass": "x",
-          "template": "%WAL%.%WORKER_NAME%",
-          "user_config": "--pers ZcashPoW"
-        },
-        "lolminer": {
-          "algo": "AUTO192_7",
-          "pass": "x",
-          "port": "%URL_PORT%",
-          "server": "%URL_HOST%",
-          "template": "%WAL%.%WORKER_NAME%",
-          "user_config": "-overwritePersonal ZcashPoW"
-        },
-        "miniz": {
-          "algo": "192,7",
-          "url": "%URL%",
-          "pass": "x",
-          "template": "%WAL%.%WORKER_NAME%",
-          "user_config": "--pers auto"
-        }
-      }
-    },
-    {
         "coin": "ZEC",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
                     "zec.f2pool.com:3357"
                 ]
@@ -1067,28 +478,49 @@
         }
     },
     {
-        "coin": "ZEL",
+        "coin": "ERG",
         "servers": [
             {
-                "geo": "China",
+                "geo": null,
                 "urls": [
-                    "zel.f2pool.com:3800"
+                    "erg.f2pool.com:7200"
                 ]
             }
         ],
         "miners": {
+            "_prototype": "miners_autolykos2"
+        }
+    },
+    {
+        "coin": "HNS",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    " hns.f2pool.com:6000"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "bl2bsha3",
+                "pass": "x",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "--disable-cpu"
+            },
             "gminer": {
-                "algo": "125_4",
+                "algo": "handshake",
+                "pass": "x",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
-                "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "lolminer": {
-                "algo": "ZEL",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
+            "nbminer": {
+                "algo": "hns",
                 "pass": "x",
+                "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
