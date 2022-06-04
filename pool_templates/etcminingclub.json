@@ -26,31 +26,34 @@
                 "algo":"etchash",
                 "template":"%WAL%",
                 "server":"stratum+tcp://%URL%",
-                "pass":"x",
-				"worker":"%WORKER_NAME%"
-            },
+                "pass":"x"
+	    },
             "lolminer":{
-                "algo":"ETCHASH",
-                "template":"%WAL%.%WORKER_NAME%",
+                "algo":"etchash",
+                "template":"%WAL%",
                 "server":"stratum+tcp://%URL_HOST%",
                 "port":"%URL_PORT%",
                 "pass":"x"
             },
-			"t-rex":{
+	    "t-rex":{
                 "algo":"etchash",
                 "template":"%WAL%",
-                "server":"stratum+tcp://%URL%",
-                "pass":"x",
-				"worker":"%WORKER_NAME%"
-            },
-			"nanominer": {
-                "algo":"etchash",
-                "url":"%URL%",
-                "template":"%WAL%",
-                "pass":"x",
-				"worker":"%WORKER_NAME%",
-                "user_config":"coin = %COIN%"
-            }
+                "server":"%URL%",
+                "pass":"x"
+	    },
+	    "nbminer": {
+                "algo": "etchash",
+                "url": "stratum+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%"  
+           },
+           "srbminer": {
+                "algo": "etchash",
+		"url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+               
+	  }
         }
     }
 ]
