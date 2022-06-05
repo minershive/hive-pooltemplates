@@ -1,6 +1,6 @@
 ##### 0.6-217@220604 2022-06-04
 *   GMiner v2.99 (changed display of job/share difficulty to match mining pools, e.g. for solo mining)
-*   SRBMiner-Multi v0.9.6 (Added algorithm 'kaspa' KAS/Kaspa coin for CPU/GPU mining, fee 1%; Small performance increase and lower power consumption on `heavyhash` algorithm for RDNA2 GPUs; Minor bug fixes)
+*   SRBMiner-Multi v0.9.6 (Added algorithm `kaspa` for CPU/GPU mining KAS/Kaspa coin, devfee 1%; Small performance increase and lower power consumption on `heavyhash` algorithm for RDNA2 GPUs; Minor bug fixes)
 
 ##### 0.6-217@220528 2022-05-28
 *   NBMiner v42.2 (Add a new option `lhr-mode` to select ethash LHR unlock mode: `"lhr-mode": "1"` is the default mode and is the same as which in v41.5, try to use `"lhr-mode": "2"` if stability issue encountered in mode 1, LHR v3 GPUs can only use mode 1)
