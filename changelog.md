@@ -1,3 +1,7 @@
+##### 0.6-217@220609 2022-06-09
+*   NanoMiner v3.6.4 (Improved LHR unlock stability on old drivers)
+*   miniZ v1.8z3 (Added support for AMD GPUs RX 6600/6800/6900,  RX 590; Reduced stale shares on `Aion`;  Improved stability; Minor bug fixes)
+   
 ##### 0.6-217@220604 2022-06-04
 *   GMiner v2.99 (changed display of job/share difficulty to match mining pools, e.g. for solo mining)
 *   SRBMiner-Multi v0.9.6 (Added algorithm `kaspa` for CPU/GPU mining KAS/Kaspa coin, devfee 1%; Small performance increase and lower power consumption on `heavyhash` algorithm for RDNA2 GPUs; Minor bug fixes)
