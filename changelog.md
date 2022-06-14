@@ -1,3 +1,9 @@
+##### 0.6-217@220613 2022-06-13
+*   TeamRedMiner v0.10.1 (Reworked smooth power for improved stability, primarily on Polaris and Vega GPUs; Added `--eth_smooth_power` to control the smooth power scheduling feature; Fixed bug causing `Autolykos` hashrate drop on VIIs)
+*   NanoMiner v3.6.5 (90% LHR unlock for Nvidia RTX 3050 & RTX 3080 12G; *Note: Recommended drivers for Nvidia LHR GPUs v510 series*)
+*   SRBMiner-Multi v0.9.7 (Performance increase on `kaspa` and `heavyhash` algos for RDNA2 GPUs;  Lower power consumption on `kaspa` and `heavyhash` algos for RDNA2 GPUs; Added limited support for some algorithms on Vega's for drivers newer than 20.40; Other improvements and bug fixes)
+*   BzMiner v9.2.1 (Optimized dual mining for `eth/etc + kaspa` & `eth/etc + alph`; Fixed LHR issue when mining non-LHR algos `kaspa`/`alph`; Can mine `ZIL` with any algo; Other improvements and bug fixes)
+
 ##### 0.6-217@220609 2022-06-09
 *   NanoMiner v3.6.4 (Improved LHR unlock stability on old drivers)
 *   miniZ v1.8z3 (Added support for AMD GPUs RX 6600/6800/6900,  RX 590; Reduced stale shares on `Aion`;  Improved stability; Minor bug fixes)
