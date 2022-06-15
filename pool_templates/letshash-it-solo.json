@@ -4,75 +4,32 @@
            "name": "letshash.it",
            "url": "https://letshash.it",
            "fee": 2,
-           "type": "SOLO"
+           "type": "PROP"
         }
     },
     {
-        "coin": "ESP",
+        "coin": "KCN",
         "servers": [
             {
-                "geo": "EU - Starting Diff 250",
+                "geo": "EU - Starting Diff 2",
                 "urls": [
-                    "eu.letshash.it:7933"
+                    "eu.letshash.it:8569"
                 ]
             }
         ],
         "miners": {
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "hmq1725",
-                "pass": "c=ESP,m=solo",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "XDN",
-        "servers": [
-            {
-                "geo": "EU - GPU Starting Diff 256",
-                "urls": [
-                    "eu.letshash.it:5787"
-                ]
-            }
-        ],
-        "miners":{
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "bmw512",
-                "ccpass": "c=XDN,m=solo",
+                "ccalgo": "sha3d",
+                "ccpass": "c=KCN,m=solo",
                 "ccuser": "%WAL%.%WORKER_NAME%"
+                "fork": "bsha3"
             },
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "bmw512",
-                "pass": "c=XDN,m=solo",
+            "cpuminer-opt": {
+                "url": " stratum+tcp://%URL%",
+                "algo": "sha3d",
+                "pass": "c=KCN,m=solo",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "pBTC",
-        "servers": [
-            {
-                "geo": "EU - GPU Starting Diff 0.2",
-                "urls": [
-                    "eu.letshash.it:3333"
-                ]
-            }
-        ],
-        "miners": {
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "heavyhash",
-                "pass": "c=pBTC,m=solo",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "c=pBTC,m=solo",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "heavyhash"
             }
         }
     },
