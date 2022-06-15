@@ -3,7 +3,7 @@
 *   Updated `nvtool` to v1.6.6 (added LHR detection and indication sign to the dashboard - added LHR to the end of GPU name, e.g. "GeForce RTX 3080 Ti LHR"; minor bug fixes and improvements)
 *   Updated AMD GPU BIOS Flasher Utility to v4.100  (added support Navi23/Navi24 GPUs)
 *   Fixed some stats issues with hardware autofans (happened in some cases with 8mknet, octofan and coolbox boards)
-*   Added support for controlling login-screen mode from dashboard
+*   Added support to control login-screen mode from dashboard
 *   Minor bug fixes and improvements
 
 ##### 0.6-217@220613 2022-06-13
