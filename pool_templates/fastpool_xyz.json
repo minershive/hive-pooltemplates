@@ -8,41 +8,6 @@
         }
     },
     {
-        "coin": "DMCH",
-        "servers": [
-            {
-                "geo": "Cloud-mining / NiceHash",
-                "urls": [
-                    "fastpool.xyz:10148"
-                ]
-            },
-            {
-                "geo": "X3",
-                "urls": [
-                    "fastpool.xyz:10147"
-                ]
-            },
-            {
-                "geo": "A8 >150K & < 200K",
-                "urls": [
-                    "fastpool.xyz:10146"
-                ]
-            },
-            {
-                "geo": "BaikalN+, RR2XX",
-                "urls": [
-                    "fastpool.xyz:10145"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%@%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "QWC",
         "servers": [
             {
@@ -75,32 +40,6 @@
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%@%WORKER_NAME%"
             }
-        }
-    },
-    {
-        "coin": "DERO",
-        "servers": [
-            {
-                "geo": "Cloud-mining / NiceHash",
-                "ssl_urls": [
-                    "fastpool.xyz:10114"
-                ]
-            },
-            {
-                "geo": "High Mining",
-                "urls": [
-                    "fastpool.xyz:10113"
-                ]
-            },
-            {
-                "geo": "Medium CPU Mining",
-                "urls": [
-                    "fastpool.xyz:10112"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_astrobwt"
         }
     },
     {
@@ -186,6 +125,12 @@
                 "geo": "LOW CPU Mining",
                 "urls": [
                     "fastpool.xyz:6360"
+                ]
+            },
+			{
+                "geo": "SSL connection",
+                "ssl_urls": [
+                    "fastpool.xyz:6362"
                 ]
             }
         ],
@@ -313,13 +258,13 @@
             {
                 "geo": "High Mining",
                 "ssl_urls": [
-                    "xol.pool.gntl.co.uk:10210"
+                    "fastpool.xyz:10210"
                 ]
             },
             {
                 "geo": "Cloud-mining / NiceHash",
                 "ssl_urls": [
-                    "xol.pool.gntl.co.uk:10211"
+                    "fastpool.xyz:10211"
                 ]
             }
         ],
@@ -347,6 +292,12 @@
                 "urls": [
                     "fastpool.xyz:10168"
                 ]
+            },
+			{
+                "geo": "SSL connection",
+                "ssl_urls": [
+                    "fastpool.xyz:10160"
+                ]
             }
         ],
         "miners":{
@@ -366,6 +317,12 @@
                 "geo": "RIG Mining",
                 "urls": [
                     "fastpool.xyz:6266"
+                ]
+            },
+			{
+                "geo": "SSL connection",
+                "ssl_urls": [
+                    "fastpool.xyz:6267"
                 ]
             }
         ],
@@ -419,6 +376,12 @@
                 "urls": [
                     "fastpool.xyz:10080"
                 ]
+            },
+			{
+                "geo": "SSL connection",
+                "ssl_urls": [
+                    "fastpool.xyz:10054"
+                ]
             }
         ],
         "miners":{
@@ -456,5 +419,155 @@
         "miners":{
             "_prototype": "miners_ghostrider"
         } 
+    },
+	{
+    "coin": "XLA",
+    "servers": [
+      {
+        "geo": "SSL - diff: 50 000",
+        "ssl_urls": ["fastpool.xyz:10136"]
+      },
+      {
+        "geo": "High-End Hardware/Nicehash - diff: 800 000",
+        "urls": ["fastpool.xyz:10128"]
+      },
+      {
+        "geo": "Mid hardware - diff: 50 000",
+        "urls": ["fastpool.xyz:10127"]
+      },
+      {
+        "geo": "Low hardware - diff: 5 000",
+        "urls": ["fastpool.xyz:10126"]
+      },
+	   {
+        "geo": "SSL - diff: 50 000",
+        "ssl_urls": ["us.fastpool.xyz:10136"]
+      },
+      {
+        "geo": "High-End Hardware/Nicehash - diff: 800 000",
+        "urls": ["us.fastpool.xyz:10128"]
+      },
+      {
+        "geo": "Mid hardware - diff: 50 000",
+        "urls": ["us.fastpool.xyz:10127"]
+      },
+      {
+        "geo": "Low hardware - diff: 5 000",
+        "urls": ["us.fastpool.xyz:10126"]
+      },
+	  {
+        "geo": "SSL - diff: 50 000",
+        "ssl_urls": ["sg.fastpool.xyz:10136"]
+      },
+      {
+        "geo": "High-End Hardware/Nicehash - diff: 800 000",
+        "urls": ["sg.fastpool.xyz:10128"]
+      },
+      {
+        "geo": "Mid hardware - diff: 50 000",
+        "urls": ["sg.fastpool.xyz:10127"]
+      },
+      {
+        "geo": "Low hardware - diff: 5 000",
+        "urls": ["sg.fastpool.xyz:10126"]
+      }
+    ],
+    "miners": {
+      "xmrig": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "user_config": "\"algo\": \"panthera\""
+      },
+      "xmrig-new": {
+        "cpu": "1",
+        "url": "%URL%",
+        "algo": "panthera",
+        "fork": "xmrig",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "algo": "panthera"
+      }
     }
+  },
+  	{
+    "coin": "QRL",
+    "servers": [
+      {
+        "geo": "SSL - diff: 50 000",
+        "ssl_urls": ["fastpool.xyz:10106"]
+      },
+      {
+        "geo": "High-End Hardware/Nicehash - diff: 305 000",
+        "urls": ["fastpool.xyz:10109"]
+      },
+      {
+        "geo": "Mid hardware - diff: 30 000",
+        "urls": ["fastpool.xyz:10108"]
+      },
+      {
+        "geo": "Low hardware - diff: 5 000",
+        "urls": ["fastpool.xyz:10107"]
+      },
+      {
+        "geo": "SSL - diff: 50 000",
+        "ssl_urls": ["us.fastpool.xyz:10106"]
+      },
+      {
+        "geo": "High-End Hardware/Nicehash - diff: 305 000",
+        "urls": ["us.fastpool.xyz:10109"]
+      },
+      {
+        "geo": "Mid hardware - diff: 30 000",
+        "urls": ["us.fastpool.xyz:10108"]
+      },
+      {
+        "geo": "Low hardware - diff: 5 000",
+        "urls": ["us.fastpool.xyz:10107"]
+      },
+	  {
+        "geo": "SSL - diff: 50 000",
+        "ssl_urls": ["sg.fastpool.xyz:10106"]
+      },
+      {
+        "geo": "High-End Hardware/Nicehash - diff: 305 000",
+        "urls": ["sg.fastpool.xyz:10109"]
+      },
+      {
+        "geo": "Mid hardware - diff: 30 000",
+        "urls": ["sg.fastpool.xyz:10108"]
+      },
+      {
+        "geo": "Low hardware - diff: 5 000",
+        "urls": ["sg.fastpool.xyz:10107"]
+      }
+    ],
+    "miners": {
+      "xmrig": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "user_config": "\"algo\": \"rx/0\""
+      },
+      "xmrig-new": {
+        "cpu": "1",
+        "url": "%URL%",
+        "algo": "rx/0",
+        "fork": "xmrig",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "algo": "randomx"
+      }
+    }
+  }
 ]
