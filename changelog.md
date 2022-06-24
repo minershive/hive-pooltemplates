@@ -1,3 +1,11 @@
+##### 0.6-218@220623 2022-06-23
+*   TeamRedMiner v0.10.2 (Tweaked Polaris ethash tuning to work better with the new smooth-power setup; Fix for Autolykos crashing on Polaris and 4GB GPUs; Fix for ETH+TON dual mining crashes with new smooth-power setup)
+*   GMiner v3.01 (Fixed RavenCoin mining errors; Fixed displaying of pool hashrate for RavenCoin)
+*   lolMiner v1.52 (New memory management for Ergo on Nvidia GPUs; Added 2 more epochs on Ergo for 3G AMD GPUs; Slight changes to LHR unlocker to improve the unlocker stability; Removed: 2G zombie modes for Ergo on AMD cards; Removed: Support for mining Ton in single and dual mining modes; Bug fixes)
+*   TeamBlackMiner v1.64 (Added support verthash algo for VTC/Vertcoin mining for AMD and Nvidia GPUs; Fix issues in ZIL mining)
+*   XMRig v6.18.0 (Removed deprecated AstroBWTv1 and v2; Monero v15 network upgrade support; Fixed `cpu-priority` not working sometimes)
+*   XMRig-MO v6.18.0 MoneroOcean fork (Synced with XMRig v6.18.0)
+
 ##### 0.6-218@220615 2022-06-15
 *   Improved `hive-replace` tool (bumped to v2.0: greatly improved compatibility with Debian-based OS; HiveOS rig user password remains the same after replace; diagnostic msgs are sent to dashboard during replace; new option `--rigconf` to use supplied rig.conf for new image configuration; other minor improvements)
 *   Updated `nvtool` to v1.6.6 (added LHR detection and indication sign to the dashboard - added LHR to the end of GPU name, e.g. "GeForce RTX 3080 Ti LHR"; minor bug fixes and improvements)
