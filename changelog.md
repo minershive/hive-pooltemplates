@@ -1,3 +1,7 @@
+##### 0.6-218@220626 2022-06-26
+*   NanoMiner v3.6.6 (Fixed 90% LHR unlock for Nvidia RTX 3080 12 Gb)
+*   TeamBlackMiner v1.65 (Improved the speed for AMD in `verthash` algo; Added option `--verthash-data` to locate verthashdata file; Fixed the API hashrate for `verthash`)
+
 ##### 0.6-218@220623 2022-06-23
 *   TeamRedMiner v0.10.2 (Tweaked Polaris ethash tuning to work better with the new smooth-power setup; Fix for Autolykos crashing on Polaris and 4GB GPUs; Fix for ETH+TON dual mining crashes with new smooth-power setup)
 *   GMiner v3.01 (Fixed RavenCoin mining errors; Fixed displaying of pool hashrate for RavenCoin)
