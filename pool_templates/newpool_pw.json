@@ -838,6 +838,76 @@
 		}
 	},
 	{
+		"coin": "ZANO",
+		"servers": [
+			{
+				"geo": "SSL - CPU + Old graphics card - diff: 20 000 000",
+				"urls": [
+					"minenice.newpool.pw:1289"
+				]
+			},
+			{
+				"geo": "NiceHash/MRR or > 750 MH/s - diff: 5 000 000 000",
+				"urls": [
+					"minenice.newpool.pw:1288"
+				]
+			},
+			{
+				"geo": "High end graphics cards: AMD RX 470, 480, 570, 580, VEGA 56/64. NVIDIA 1070, 1070TI, 1080, 1080TI - diff: 500 000 000",
+				"urls": [
+					"minenice.newpool.pw:1287"
+				]
+			},
+			{
+				"geo": "Low end + Mid end graphics cards: AMD RX 460, 550, 560, NVIDIA 1050, 1050TI, 1060 - diff: 120 000 000",
+				"urls": [
+					"minenice.newpool.pw:1157"
+				]
+			},
+			{
+				"geo": "CPU + Old graphics card - diff: 20 000 000",
+				"urls": [
+					"minenice.newpool.pw:1156"
+				]
+			}
+		],
+		"miners_progpow_zano": {
+			"ethminer":{
+            "fork":"progpowz",
+            "cuda":1,
+            "opencl":0,
+            "pass":"x",
+            "port":"%URL_PORT%",
+            "server":"stratum1+tcp://%URL_HOST%",
+            "template":"%WAL%@%WORKER_NAME%"
+        },
+        "t-rex":{
+            "url":"%URL%",
+            "algo":"progpowz",
+            "pass":"x",
+            "template":"%WAL%@%WORKER_NAME%"
+        },
+        "tt-miner":{
+            "url":"stratum1+tcp://%URL%",
+            "algo":"PROGPOW092",
+            "pass":"x",
+            "template":"%WAL%@%WORKER_NAME%",
+            "user_config":"-coin ZANO"
+        },
+        "miniz": {
+            "url": "%URL%",
+            "algo": "progpowz",
+            "template": "%WAL%@%WORKER_NAME%",
+            "user_config": "--pers zano"
+        },
+        "wildrig-multi": {
+            "url": "%URL%",
+            "algo": "progpowz",
+            "template": "%WAL%@%WORKER_NAME%",
+        }
+		}
+	},
+	{
 		"coin": "ARQ",
 		"servers": [
 			{
