@@ -1,3 +1,7 @@
+##### 0.6-218@220629 2022-06-29
+*   lolMiner v1.52a (Fixed a bug that can sometimes cause the pool hash-rate to half after multiple reconnect attempts in a row; Adjusted behavior of LHR unlock function so solve issues with some configurations occurred in v1.52)
+*   NanoMiner v3.6.7 (Fixed bug: nanominer does not require `libcuda.so` on AMD rigs anymore)
+
 ##### 0.6-218@220626 2022-06-26
 *   NanoMiner v3.6.6 (Fixed 90% LHR unlock for Nvidia RTX 3080 12 Gb)
 *   TeamBlackMiner v1.65 (Improved the speed for AMD in `verthash` algo; Added option `--verthash-data` to locate verthashdata file; Fixed the API hashrate for `verthash`)
