@@ -1,4 +1,4 @@
-##### 0.6-218@220630 2022-06-30
+##### 0.6-218@220701 2022-07-01
 *   SRBMiner-Multi v0.9.8 (Added dual mining modes: ETH/ETC + KASPA and AUTOLYKOS2 + KASPA; Performance increase on `curvehash` algorithm for CPU up to ~40%; Added parameter `--gpu-dual-mode` which must be used to enable the new dual mining mode)
 *   WildRig-Multi v0.31.6 (Implemented `curvehash` algo on AMD and Nvidia GPUs)
 
