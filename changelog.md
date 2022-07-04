@@ -1,3 +1,7 @@
+##### 0.6-218@220704 2022-07-04
+*   GMiner v3.02 (fixed displaying of difficulty for RavenCoin to match network difficulty; removed TON support)
+*   WildRig-Multi v0.31.8 (Up to 3 times faster `curvehash` vs previous version)
+
 ##### 0.6-218@220702 2022-07-02
 *   WildRig-Multi v0.31.7 (Fixed known bugs with `curvehash` algo)
 
