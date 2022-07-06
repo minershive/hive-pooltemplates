@@ -1,3 +1,8 @@
+##### 0.6-218@220706 2022-07-06
+*   GMiner v3.03 (Improved stability of API server: fixed "too many open files" error)
+*   SRBMiner-Multi v0.9.9 (Improved performance of KASPA mining in dual mode for ETH/ETC+KASPA and AUTOLYKOS2+KASPA for some GPUs; Added algorithm `curvehash` for GPU mining; Fixed compatibility of KawPow with miningpoolhub pool)
+*   WildRig-Multi v0.32.0 (Slight improve `curvehash` for Polaris, RDNA, RDNA2 and NVIDIA GPUs; Fixed `curvehash` for Vega GPUs; Improved `curvehash` up to 1.5x vs v0.31.8)
+
 ##### 0.6-218@220704 2022-07-04
 *   GMiner v3.02 (fixed displaying of difficulty for RavenCoin to match network difficulty; removed TON support)
 *   WildRig-Multi v0.31.8 (Up to 3 times faster `curvehash` vs previous version)
