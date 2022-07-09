@@ -1,3 +1,19 @@
+##### 0.6-218@220706 2022-07-06
+*   GMiner v3.03 (Improved stability of API server: fixed "too many open files" error)
+*   SRBMiner-Multi v0.9.9 (Improved performance of KASPA mining in dual mode for ETH/ETC+KASPA and AUTOLYKOS2+KASPA for some GPUs; Added algorithm `curvehash` for GPU mining; Fixed compatibility of KawPow with miningpoolhub pool)
+*   WildRig-Multi v0.32.0 (Slight improve `curvehash` for Polaris, RDNA, RDNA2 and NVIDIA GPUs; Fixed `curvehash` for Vega GPUs; Improved `curvehash` up to 1.5x vs v0.31.8)
+
+##### 0.6-218@220704 2022-07-04
+*   GMiner v3.02 (fixed displaying of difficulty for RavenCoin to match network difficulty; removed TON support)
+*   WildRig-Multi v0.31.8 (Up to 3 times faster `curvehash` vs previous version)
+
+##### 0.6-218@220702 2022-07-02
+*   WildRig-Multi v0.31.7 (Fixed known bugs with `curvehash` algo)
+
+##### 0.6-218@220701 2022-07-01
+*   SRBMiner-Multi v0.9.8 (Added dual mining modes: ETH/ETC + KASPA and AUTOLYKOS2 + KASPA; Performance increase on `curvehash` algorithm for CPU up to ~40%; Added parameter `--gpu-dual-mode` which must be used to enable the new dual mining mode)
+*   WildRig-Multi v0.31.6 (Implemented `curvehash` algo on AMD and Nvidia GPUs)
+
 ##### 0.6-218@220629 2022-06-29
 *   lolMiner v1.52a (Fixed a bug that can sometimes cause the pool hashrate to half after multiple reconnect attempts in a row; Adjusted behavior of LHR unlock function so solve issues with some configurations occurred in v1.52)
 *   NanoMiner v3.6.7 (Fixed bug: nanominer does not require `libcuda.so` on AMD rigs anymore)
