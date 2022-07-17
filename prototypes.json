@@ -1353,11 +1353,10 @@
             "algo": "olhash",
             "template": "%WAL%",
             "worker": "%WORKER_NAME%"
-            
         }
     },
-	
-	"miners_verthash": {
+
+    "miners_verthash": {
         "srbminer":{
             "url":"%URL%",
             "algo":"verthash",
@@ -1377,8 +1376,8 @@
             "template":"%WAL%.%WORKER_NAME%"
         }
     },
-	
-	"miners_zelhash": {
+
+    "miners_zelhash": {
         "gminer": {
             "algo": "125_4",
             "server": "%URL_HOST%",
@@ -1400,6 +1399,22 @@
             "pass": "x",
             "template": "%WAL%.%WORKER_NAME%",
             "user_config": "--pers auto"
+        }
+    },
+
+    "miners_kaspa": {
+        "srbminer":{
+            "url":"%URL%",
+            "algo":"kaspa",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+        },
+        "bzminer": {
+            "tls": "0",
+            "url": "%URL%",
+            "algo": "kaspa",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME%"
         }
     }
 }
