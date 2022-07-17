@@ -1,0 +1,92 @@
+[
+   {
+        "pool": {
+            "name": "ArgenPool",        	
+            "url": "https://argenpool.org",	
+            "fee": 1,                   	
+            "type": "PPLNS"			
+        }
+    },
+	{
+        "coin": "ETC",
+        "servers": [
+			
+			{
+                "geo": "AR",
+                "urls":  [ "ar1.argenpool.org:8008" ],
+        }
+        ],
+        "miners": {
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum+tcp://%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, PSW: x, PROTO: 4",
+                "user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
+            },
+            "finminer": {
+                "algo": "etchash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "etchash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "etchash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+			"teamredminer": {
+                "algo": "etchash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+		"user_config": " --temp_limit=70 --temp_resume=65"
+
+            },
+            "nbminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "etchash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ETCHASH",
+                "template": "%WAL%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+		"user_config": ""
+            },
+		"t-rex":{
+                "algo":"etchash",
+                "template":"%WAL%",
+                "server":"stratum+tcp://%URL%",
+                "pass":"x"
+            },
+	    "gminer": {
+                "algo": "etchash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%",
+                "user_config": "--proto proxy"
+            }
+        }
+    },
