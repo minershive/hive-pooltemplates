@@ -7,14 +7,13 @@
             "type": "PPLNS"			
         }
     },
-	{
+    {
         "coin": "ETC",
         "servers": [
-			
-			{
+            {
                 "geo": "AR",
-                "urls":  [ "ar1.argenpool.org:8008" ],
-        }
+                "urls":  [ "ar1.argenpool.org:8008" ]
+            }
         ],
         "miners": {
             "ethminer": {
@@ -53,13 +52,12 @@
                 "pass": "x",
                 "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
             },
-			"teamredminer": {
+            "teamredminer": {
                 "algo": "etchash",
                 "url": "%URL%",
                 "template": "%WAL%",
                 "pass": "x",
-		"user_config": " --temp_limit=70 --temp_resume=65"
-
+                "user_config": " --temp_limit=70 --temp_resume=65"
             },
             "nbminer": {
                 "url": "stratum+tcp://%URL%",
@@ -89,4 +87,5 @@
                 "user_config": "--proto proxy"
             }
         }
-    },
+    }
+]
