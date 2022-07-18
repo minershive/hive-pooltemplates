@@ -1,3 +1,7 @@
+##### 0.6-218@220717 2022-07-17
+*   WildRig-Multi v0.32.1 (Implemented support `firopow` and `mike` algos; Implemented support for future DAG reduction of `progpow-veil`; Implemented background compilation of progpow kernels; Fixed support gfx1034 = AMD Radeon RX 6500 XT; Up to 10% faster `curvehash`)
+*   CPUminer-Opt-JayDDee v3.20.0 (Fixed segfault in algos using Groestl VAES due to use of uninitialized data)
+
 ##### 0.6-218@220715 2022-07-15
 *   NanoMiner v3.6.8 (Added support `octopus` algorithm for mining CFX/Conflux on AMD RDNA/RDNA2 GPUs RX 5xxx/6xxx)
 *   SRBMiner-Multi v1.0.2 (Added `ETHASH/ETCHASH + HEAVYHASH` (OBTC/PBTC) dual mining mode; Added `AUTOLYKOS2 + HEAVYHASH` dual mining mode; Faster DAG creation on RDNA2 GPUs)
