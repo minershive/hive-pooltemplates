@@ -1,3 +1,16 @@
+##### 0.6-218@220717 2022-07-17
+*   WildRig-Multi v0.32.1 (Implemented support `firopow` and `mike` algos; Implemented support for future DAG reduction of `progpow-veil`; Implemented background compilation of progpow kernels; Fixed support gfx1034 = AMD Radeon RX 6500 XT; Up to 10% faster `curvehash`)
+*   CPUminer-Opt-JayDDee v3.20.0 (Fixed segfault in algos using Groestl VAES due to use of uninitialized data)
+
+##### 0.6-218@220715 2022-07-15
+*   NanoMiner v3.6.8 (Added support `octopus` algorithm for mining CFX/Conflux on AMD RDNA/RDNA2 GPUs RX 5xxx/6xxx)
+*   SRBMiner-Multi v1.0.2 (Added `ETHASH/ETCHASH + HEAVYHASH` (OBTC/PBTC) dual mining mode; Added `AUTOLYKOS2 + HEAVYHASH` dual mining mode; Faster DAG creation on RDNA2 GPUs)
+*   CPUminer-Opt-JayDDee v3.19.9 (more Blake256, Blake512, Luffa & Cubehash prehash optimizations)
+*   CPUminer-Opt-Rplant v5.0.29 (added support `mike` algo for mining VKAX coin)
+
+##### 0.6-218@220709 2022-07-09
+*   SRBMiner-Multi v1.0.0 (Added `ETHASH/ETCHASH + BLAKE3_ALEPHIUM` dual mining mode; Added `AUTOLYKOS2 + BLAKE3_ALEPHIUM` dual mining mode; Fixed `ETHASH/ETCHASH + KASPA` mining on NiceHash; Added parameter `--gpu-table-slow-build` which slows down DAG/Datatable creation for ETHASH/ETCHASH/UBQHASH/PROGPOW/AUTOLYKOS2 algorithms)
+
 ##### 0.6-218@220706 2022-07-06
 *   GMiner v3.03 (Improved stability of API server: fixed "too many open files" error)
 *   SRBMiner-Multi v0.9.9 (Improved performance of KASPA mining in dual mode for ETH/ETC+KASPA and AUTOLYKOS2+KASPA for some GPUs; Added algorithm `curvehash` for GPU mining; Fixed compatibility of KawPow with miningpoolhub pool)
