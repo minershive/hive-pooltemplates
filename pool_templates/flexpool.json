@@ -1,110 +1,125 @@
 [
-    {
-        "pool": {
-            "name": "Flexpool.io",
-            "url": "https://flexpool.io",
-            "type": "PPLNS"
-        }
-    },
-    {
-        "coin": "ETH",
-        "servers": [
-            {
-                "geo": "United States (East)",
-                "urls": [
-                    "eth-us-east.flexpool.io:4444"
-                ],
-                "ssl_urls": [
-                    "eth-us-east.flexpool.io:5555"
-                ]
-            },
-            {
-                "geo": "United States (West)",
-                "urls": [
-                    "eth-us-west.flexpool.io:4444"
-                ],
-                "ssl_urls": [
-                    "eth-us-west.flexpool.io:5555"
-                ]
-            },
-            {
-                "geo": "Europe (Germany)",
-                "urls": [
-                    "eth-de.flexpool.io:4444"
-                ],
-                "ssl_urls": [
-                    "eth-de.flexpool.io:5555"
-                ]
-            },
-            {
-                "geo": "Europe (Sweden)",
-                "urls": [
-                    "eth-se.flexpool.io:4444"
-                ],
-                "ssl_urls": [
-                    "eth-se.flexpool.io:5555"
-                ]
-            },
-            {
-                "geo": "Singapore",
-                "urls": [
-                    "eth-sg.flexpool.io:4444"
-                ],
-                "ssl_urls": [
-                    "eth-sg.flexpool.io:5555"
-                ]
-            },
-            {
-                "geo": "Australia",
-                "urls": [
-                    "eth-au.flexpool.io:4444"
-                ],
-                "ssl_urls": [
-                    "eth-au.flexpool.io:5555"
-                ]
-            },
-            {
-                "geo": "South America (Brazil)",
-                "urls": [
-                    "eth-br.flexpool.io:4444"
-                ],
-                "ssl_urls": [
-                    "eth-br.flexpool.io:5555",
-                    "eth-br.flexpool.io:5556"
-                ]
-            },
-            {
-                "geo": "East Asia (South Korea)",
-                "urls": [
-                    "eth-kr.flexpool.io:4444"
-                ],
-                "ssl_urls": [
-                    "eth-kr.flexpool.io:5555"
-                ]
-            },
-                        {
-                "geo": "Hong Kong",
-                "urls": [
-                    "eth-hk.flexpool.io:4444"
-                ],
-                "ssl_urls": [
-                    "eth-hk.flexpool.io:5555"
-                ]
-            },
-            {
-                "geo": "Hong Kong (Optimized for China)",
-                "urls": [
-                    "eth-hke.flexpool.io:4444",
-                    "eth-hke.flexpool.io:8080"
-                ],
-                "ssl_urls": [
-                    "eth-hke.flexpool.io:5555",
-                    "eth-hke.flexpool.io:443"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash_4g"
-        }
+  {
+    "pool": {
+      "name": "Flexpool.io",
+      "url": "https://www.flexpool.io",
+      "type": "PPLNS"
     }
+  },
+  {
+    "coin": "ETH",
+    "servers": [
+      {
+        "geo": "United States (East)",
+        "urls": ["eth-us-east.flexpool.io:4444"],
+        "ssl_urls": ["eth-us-east.flexpool.io:5555"]
+      },
+      {
+        "geo": "United States (West)",
+        "urls": ["eth-us-west.flexpool.io:4444"],
+        "ssl_urls": ["eth-us-west.flexpool.io:5555"]
+      },
+      {
+        "geo": "Europe (Germany)",
+        "urls": ["eth-de.flexpool.io:4444"],
+        "ssl_urls": ["eth-de.flexpool.io:5555"]
+      },
+      {
+        "geo": "Europe (Sweden)",
+        "urls": ["eth-se.flexpool.io:4444"],
+        "ssl_urls": ["eth-se.flexpool.io:5555"]
+      },
+      {
+        "geo": "Singapore",
+        "urls": ["eth-sg.flexpool.io:4444"],
+        "ssl_urls": ["eth-sg.flexpool.io:5555"]
+      },
+      {
+        "geo": "Australia",
+        "urls": ["eth-au.flexpool.io:4444"],
+        "ssl_urls": ["eth-au.flexpool.io:5555"]
+      },
+      {
+        "geo": "South America (Brazil)",
+        "urls": ["eth-br.flexpool.io:4444"],
+        "ssl_urls": ["eth-br.flexpool.io:5555", "eth-br.flexpool.io:5556"]
+      },
+      {
+        "geo": "East Asia (South Korea)",
+        "urls": ["eth-kr.flexpool.io:4444"],
+        "ssl_urls": ["eth-kr.flexpool.io:5555"]
+      },
+      {
+        "geo": "Hong Kong",
+        "urls": ["eth-hk.flexpool.io:4444"],
+        "ssl_urls": ["eth-hk.flexpool.io:5555"]
+      },
+      {
+        "geo": "Hong Kong/HKE (Optimized for China, Mirror #1)",
+        "urls": ["eth-hke.flexpool.io:4444", "eth-hke.flexpool.io:13271"],
+        "ssl_urls": ["eth-hke.flexpool.io:5555", "eth-hke.flexpool.io:22271"]
+      },
+      {
+        "geo": "Hong Kong/HKE (Optimized for China, Mirror #2)",
+        "urls": ["hke.fpmirror.com:4444", "hke.fpmirror.com:13271"],
+        "ssl_urls": ["hke.fpmirror.com:5555", "hke.fpmirror.com:22271"]
+      },
+      {
+        "geo": "Hong Kong/HKE (Optimized for China, Mirror #3)",
+        "urls": ["fmc.fp-gfw.net:38066"],
+        "ssl_urls": ["fmc.fp-gfw.net:48066"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ethash_4g",
+      "tt-miner": {
+        "url": "stratum1+tcp://%URL%"
+      },
+      "bminer": {
+        "algo": "ethproxy"
+      },
+      "teamredminer": {
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%"
+      },
+      "lolminer": {
+        "template": "%WAL%",
+        "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
+      },
+      "bzminer": {
+        "url": "ethproxy+tcp://%URL%"
+      }
+    }
+  },
+  {
+    "coin": "ETC",
+    "servers": [
+      {
+        "geo": "United States (East)",
+        "urls": ["etc-us-east.flexpool.io:4444"],
+        "ssl_urls": ["etc-us-east.flexpool.io:5555"]
+      },
+      {
+        "geo": "Europe (Germany)",
+        "urls": ["etc-de.flexpool.io:4444"],
+        "ssl_urls": ["etc-de.flexpool.io:5555"]
+      },
+      {
+        "geo": "Singapore",
+        "urls": ["etc-sg.flexpool.io:4444"],
+        "ssl_urls": ["etc-sg.flexpool.io:5555"]
+      },
+      {
+        "geo": "Singapore (Optimized for China, Mirror #1)",
+        "urls": ["sgeetc.gfwroute.co:48607"],
+        "ssl_urls": ["sgeetc.gfwroute.co:58607"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_etchash",
+      "bzminer": {
+        "url": "ethproxy+tcp://%URL%"
+      }
+    }
+  }
 ]

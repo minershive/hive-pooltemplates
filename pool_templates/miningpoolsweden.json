@@ -1,38 +1,44 @@
 [
     {
-      "pool": {
-        "name": "Miningpool Sweden",
-        "url": "https://www.miningpoolsweden.eu",
-        "type": "PPLNS"
-      }
+        "pool": {
+            "name": "Miningpool Sweden",
+            "url": "https://www.miningpoolsweden.eu",
+            "fee": 0.6,
+            "type": "PPLNS/SOLO"
+        }
     },
     {
-      "coin": "VTC",
-      "servers": [
-        {
-          "geo": "Sweden",
-          "urls": ["stratum+tcp://vtc.miningpoolsweden.eu:3052"]
+        "coin": "VTC",
+        "servers": [
+            {
+                "geo": "Sweden PPLNS",
+                "urls": [
+                    "stratum+tcp://vtc.miningpoolsweden.eu:3052"
+                ]
+            },
+            {
+                "geo": "Sweden SOLO",
+                "urls": [
+                    "stratum+tcp://vtc.miningpoolsweden.eu:3053"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_verthash"
         }
-      ],
-      "miners": {
-        "srbminer": {
-          "url": "%URL%",
-          "algo": "verthash",
-          "pass": "x",
-          "template": "%WAL%.%WORKER_NAME%"
-        },
-        "verthashminer": {
-          "url": "%URL%",
-          "algo": "verthash",
-          "pass": "x",
-          "template": "%WAL%.%WORKER_NAME%"
-        },
-        "teamredminer": {
-          "url": "%URL%",
-          "algo": "verthash",
-          "pass": "x",
-          "template": "%WAL%.%WORKER_NAME%"
+    },
+    {
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "Sweden PPLNS",
+                "urls": [
+                    "stratum+tcp://vtc.miningpoolsweden.eu:3194"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_autolykos2"
         }
-      }
     }
-  ]
+]

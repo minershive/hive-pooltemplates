@@ -1,317 +1,158 @@
 [
     {
+        "pool": {
+            "name": "COINBLOCKERS",
+            "url": "https://coinblockers.com/",
+            "fee": 1,
+            "type": "PPLNT"
+        }
+    },
+    {
         "coin": "BTG",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "EU Mid-range GPU CPU",
+                "urls": [
+                    "btg-eu.coinblockers.com:3333",
+                    "btg-eu2.coinblockers.com:3333"
+                ]
+            },
+            {
+                "geo": "US Mid-range GPU CPU",
+                "urls": [
+                    "btg-us.coinblockers.com:3333",
+                    "btg-us2.coinblockers.com:3333"
+                ]
+            },
+            {
+                "geo": "Asia Mid-range GPU CPU",
+                "urls": [
+                    "btg-asia.coinblockers.com:3333"
+                ]
+            },
+            {
+                "geo": "EU Modern High End Rigs",
                 "urls": [
                     "btg-eu.coinblockers.com:5555",
                     "btg-eu2.coinblockers.com:5555"
                 ]
             },
             {
-                "geo": "US",
+                "geo": "US Modern High End Rigs",
                 "urls": [
                     "btg-us.coinblockers.com:5555",
                     "btg-us2.coinblockers.com:5555"
                 ]
             },
             {
-                "geo": "Asia",
+                "geo": "Asia Modern High End Rigs",
                 "urls": [
                     "btg-asia.coinblockers.com:5555"
                 ]
+            },
+            {
+                "geo": "EU SSL Rigs",
+                "urls": [
+                    "btg-eu.coinblockers.com:8443",
+                    "btg-eu2.coinblockers.com:8443"
+                ]
+            },
+            {
+                "geo": "US SSL Rigs",
+                "urls": [
+                    "btg-us.coinblockers.com:8443",
+                    "btg-us2.coinblockers.com:8443"
+                ]
+            },
+            {
+                "geo": "Asia SSL Rigs",
+                "urls": [
+                    "btg-asia.coinblockers.com:8443"
+                ]
             }
         ],
         "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers BgoldPoW"
-            },
-            "bminer": {
-                "algo": "zhash",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "gminer": {
-                "algo": "144_5",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--pers BgoldPoW"
-            },
-            "lolminer": {
-                "algo": "BTG",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
+            "_prototype": "miners_zhash_btg"
+        }   
     },
     {
-        "coin": "CMM",
+        "coin": "FLUX",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "EU CPU, GPU, Rigs",
                 "urls": [
-                    "cmm-eu.coinblockers.com:3040",
-                    "cmm-eu2.coinblockers.com:3040"
+                    "flux-eu.coinblockers.com:4446"
                 ]
             },
             {
-                "geo": "US",
+                "geo": "US CPU, GPU, Rigs",
                 "urls": [
-                    "cmm-us.coinblockers.com:3040",
-                    "cmm-us2.coinblockers.com:3040"
+                    "flux-us.coinblockers.com:4446"
                 ]
             },
             {
-                "geo": "Asia",
+                "geo": "Asia CPU, GPU, Rigs",
                 "urls": [
-                    "cmm-asia.coinblockers.com:3040"
+                    "flux-asia.coinblockers.com:4446"
+                ]
+            },
+            {
+                "geo": "EU SSL Rigs",
+                "urls": [
+                    "flux-eu.coinblockers.com:4043"
+                ]
+            },
+            {
+                "geo": "US SSL Rigs",
+                "urls": [
+                    "flux-us.coinblockers.com:4043"
+                ]
+            },
+            {
+                "geo": "Asia SSL Rigs",
+                "urls": [
+                    "flux-asia.coinblockers.com:4043"
+                ]
+            },
+            {
+                "geo": "EU-Solo CPU, GPU, Rigs",
+                "urls": [
+                    "fluxsolo-eu.coinblockers.com:8648"
+                ]
+            },
+            {
+                "geo": "US-Solo CPU, GPU, Rigs",
+                "urls": [
+                    "fluxsolo-us.coinblockers.com:8648"
+                ]
+            },
+            {
+                "geo": "Asia-Solo CPU, GPU, Rigs",
+                "urls": [
+                    "fluxsolo-asia.coinblockers.com:8648"
+                ]
+            },
+            {
+                "geo": "EU-Solo SSL Rigs",
+                "urls": [
+                    "fluxsolo-eu.coinblockers.com:8544"
+                ]
+            },
+            {
+                "geo": "US-Solo SSL Rigs",
+                "urls": [
+                    "fluxsolo-us.coinblockers.com:8544"
+                ]
+            },
+            {
+                "geo": "Asia-Solo SSL Rigs",
+                "urls": [
+                    "fluxsolo-asia.coinblockers.com:8544"
                 ]
             }
-        ],
+        ],  
         "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_zelhash"
         }
-    },
-    {
-        "coin": "KMD",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "kmd-eu.coinblockers.com:4242",
-                    "kmd-eu2.coinblockers.com:4242"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "kmd-us.coinblockers.com:4242",
-                    "kmd-us2.coinblockers.com:4242"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "kmd-asia.coinblockers.com:4242"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "SAFE",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "safe-eu.coinblockers.com:4444",
-                    "safe-eu2.coinblockers.com:4444"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "safe-us.coinblockers.com:4444",
-                    "safe-us2.coinblockers.com:4444"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "safe-asia.coinblockers.com:4444"
-                ]
-            }
-        ],
-        "miners": {
-            "ewbf": {
-                "algo": "144_5",
-                "fork": "zhash",
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%",
-                "user_config": "pers Safecoin"
-            }
-        }
-    },
-    {
-        "coin": "ZEL",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "zel-eu.coinblockers.com:4446",
-                    "zel-eu2.coinblockers.com:4446"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "zel-us.coinblockers.com:4446",
-                    "zel-us2.coinblockers.com:4446"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "zel-asia.coinblockers.com:4446"
-                ]
-            },
-            {
-                "geo": "EU SOLO",
-                "urls": [
-                    "zelsolo-eu.coinblockers.com:8648"
-                ]
-            },
-            {
-                "geo": "US SOLO",
-                "urls": [
-                    "zelsolo-us.coinblockers.com:8648"
-                ]
-            },
-            {
-                "geo": "Asia SOLO",
-                "urls": [
-                    "zelsolo-asia.coinblockers.com:8648"
-                ]
-            },
-            {
-                "geo": "EU SOLO HiDIFF",
-                "urls": [
-                    "zelsolo-eu.coinblockers.com:8741"
-                ]
-            },
-            {
-                "geo": "US SOLO HiDIFF",
-                "urls": [
-                    "zelsolo-us.coinblockers.com:8741"
-                ]
-            },
-            {
-                "geo": "Asia SOLO HiDIFF",
-                "urls": [
-                    "zelsolo-asia.coinblockers.com:8741"
-                ]
-            }
-        ],
-        "miners": {
-            "gminer": {
-                "algo": "125_4",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "BCI",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "bci-eu.coinblockers.com:3910",
-                    "bci-eu2.coinblockers.com:3910"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "bci-us.coinblockers.com:3910",
-                    "bci-us2.coinblockers.com:3910"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "bci-asia.coinblockers.com:3910"
-                ]
-            }
-        ],
-        "miners": {
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "ver": "progpow",
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    }
+    }       
 ]

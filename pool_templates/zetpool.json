@@ -35,8 +35,8 @@
 		    "template": "%WAL%.%WORKER_NAME%"
 		},
 		"phoenixminer": {
-		    "url": "POOL: %URL%, WALLET: %WAL% WORKER: %WORKER_NAME%, PSW: x",
-		    "user_config": "-coin %COIN% -stales 0"
+		    "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+		    "user_config": "-coin %COIN% -stales 0 -clKernel 0"
 		},
 		"bminer": {
 		    "url": "%URL%",
@@ -72,7 +72,8 @@
 		        "port": "%URL_PORT%",
 		        "pass": "x",
 		        "template": "%WAL%",
-		        "worker": "%WORKER_NAME%"
+		        "worker": "%WORKER_NAME%",
+		        "user_config":"--worker %WORKER_NAME%"
 		},
 		"teamredminer": {
 		    "algo": "ethash",

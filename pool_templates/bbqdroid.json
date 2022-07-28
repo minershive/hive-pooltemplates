@@ -1,81 +1,58 @@
 [
-  {
-    "pool": {
-      "name": "BBQDroid",
-      "url": "https://bbqdroid.org",
-      "type": "PPNBH"
+    {
+        "pool": {
+            "name": "BBQDroid",
+            "url": "https://bbqpool.org",
+            "fee": 1,
+            "type": "PPLNT"
+        }
+    },
+    {
+        "coin": "VTC",
+        "servers": [
+            {
+                "geo": "NA / EU / Asia",
+                "urls": [
+                    "stratum+tcp://bbqpool.org:10001"
+                ]
+            },
+            {
+                "geo": "NA / EU / Asia - SOLO",
+                "urls": [
+                    "stratum+tcp://bbqpool.org:20001"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_verthash"
+        }
+    },
+    {     
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "NA / EU / Asia",
+                "urls": [
+                    "stratum+tcp://bbqpool.org:10003"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "RTM",
+        "servers": [
+            {
+                "geo": "NA / EU / Asia",
+                "urls": [
+                    "stratum+tcp://bbqpool.org:10002"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ghostrider"
+        }
     }
-  },
-  {
-    "coin": "VTC",
-    "servers": [
-      {
-        "geo": "NA / EU / Asia",
-        "urls": [
-			"stratum+tcp://mining.bbqdroid.org:10001"
-		]
-      },
-      {
-        "geo": "NA / EU / Asia - SOLO",
-        "urls": [
-			"stratum+tcp://mining.bbqdroid.org:20001"
-		]
-      }
-    ],
-    "miners": {
-      "srbminer": {
-        "url": "%URL%",
-        "algo": "verthash",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "verthashminer": {
-        "url": "%URL%",
-        "algo": "verthash",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "teamredminer": {
-        "url": "%URL%",
-        "algo": "verthash",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
-    }
-  },
-  {
-    "coin": "RTM",
-    "servers": [
-      {
-        "geo": "NA / EU / Asia",
-        "urls": [
-          "stratum+tcp://mining.bbqdroid.org:10002"
-        ]
-      }
-    ],
-    "miners": {
-      "cpuminer-opt": {
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "gr",
-        "pass": "x",
-        "max-temp": 0,
-        "fork": "gr"
-      },
-      "xmrig-new": {
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "ghostrider",
-        "pass": "x",
-        "cpu": "1",
-        "fork": "xmrig"
-      },
-      "wildrig-multi": {
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "ghostrider",
-        "pass": "x"
-      }
-    }
-  }
 ]

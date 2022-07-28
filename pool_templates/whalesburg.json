@@ -4,54 +4,139 @@
             "name": "Whalesburg",
             "url": "https://whalesburg.com",
             "fee": 1,
-            "type": "SMPPS+"
-        }
-    },
-    {
-        "coin": "Whalesburg-Ethash",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "eu1.whalesburg.com:8082",
-                    "eu2.whalesburg.com:8082"
-                ],
-                "ssl_urls": [
-                    "eu1.whalesburg.com:7777",
-                    "eu2.whalesburg.com:7777"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash",
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, ALLPOOLS: 1, ALLCOINS -1, -GSER 2"
-            },
-            "tt-miner": {
-                "url": "stratum1+tcp://%URL%"
-            }
+            "type": "PPLNS"
         }
     },
     {
         "coin": "ETH",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "World - GeoDNS routing",
                 "urls": [
-                    "eu1.whalesburg.com:8082",
-                    "eu2.whalesburg.com:8082"
+                    "pool.whalesburg.com:4000"
                 ],
                 "ssl_urls": [
-                    "eu1.whalesburg.com:7777",
-                    "eu2.whalesburg.com:7777"
+                    "pool.whalesburg.com:4000"
+                ]
+            },
+            {
+                "geo": "World - GeoDNS routing || lowDIFF",
+                "urls": [
+                    "pool.whalesburg.com:4001"
+                ],
+                "ssl_urls": [
+                    "pool.whalesburg.com:4001"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.whalesburg.com:4000"
+                ],
+                "ssl_urls": [
+                    "eu.whalesburg.com:4000"
+                ]
+            },
+            {
+                "geo": "EU || lowDIFF",
+                "urls": [
+                    "eu.whalesburg.com:4001"
+                ],
+                "ssl_urls": [
+                    "eu.whalesburg.com:4001"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia.whalesburg.com:4000"
+                ],
+                "ssl_urls": [
+                    "asia.whalesburg.com:4000"
+                ]
+            },
+            {
+                "geo": "ASIA || lowDIFF",
+                "urls": [
+                    "asia.whalesburg.com:4001"
+                ],
+                "ssl_urls": [
+                    "asia.whalesburg.com:4001"
                 ]
             }
         ],
         "miners": {
-            "_prototype": "miners_ethash_4g",
-            "tt-miner": {
-                "url": "stratum1+tcp://%URL%"
+            "_prototype": "miners_ethash"
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "World - GeoDNS routing",
+                "urls": [
+                    "pool.whalesburg.com:4100"
+                ],
+                "ssl_urls": [
+                    "pool.whalesburg.com:4100"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.whalesburg.com:4100"
+                ],
+                "ssl_urls": [
+                    "eu.whalesburg.com:4100"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia.whalesburg.com:4100"
+                ],
+                "ssl_urls": [
+                    "asia.whalesburg.com:4100"
+                ]
             }
+        ],
+        "miners": {
+            "_prototype": "miners_randomx"
+        }
+    },
+    {
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "World - GeoDNS routing",
+                "urls": [
+                    "pool.whalesburg.com:4200"
+                ],
+                "ssl_urls": [
+                    "pool.whalesburg.com:4200"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.whalesburg.com:4200"
+                ],
+                "ssl_urls": [
+                    "eu.whalesburg.com:4200"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia.whalesburg.com:4200"
+                ],
+                "ssl_urls": [
+                    "asia.whalesburg.com:4200"
+                ]
+            }
+        ],
+        "miners": {
+		    "_prototype": "miners_autolykos2"
         }
     }
 ]
