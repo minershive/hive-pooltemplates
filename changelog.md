@@ -1,6 +1,6 @@
 ##### 0.6-219@220802 2022-08-02
 *   Enhanced Web Console (improved color scheme; more convenient copy/paste functionality)
-*   Improved `hive-replace` tool (updated to v2.1: added new option `--select` for replacing image on non-system disks; fixed compatibility with old 4.x kernels)
+*   Improved `hive-replace` tool (updated to v2.1: added new option `--select` for interactive replacing image on non-system disks; fixed compatibility with old 4.x kernels)
 *   Fixed `amdvbflasher` v4.100 (in some cases tool couldn't flash modded/non-native VBIOS due RSA signature checking even in force mode)
 *   Updated `nvtool` to v1.6.9 (fixed false error reporting on Nvidia Mobile/Laptop GPUs)
 *   Various small changes (Fixed `hive-passwd` in case false error reporting on set pass; Added initial support for AMD Arcturus platform; Extended limits of clocks and voltages on AMD Vega2/Navi/BigNavi GPUs; Update devices IDs: `amdgpu.ids` to v2022.07.05, `pci.ids` to v2022.07.05)
