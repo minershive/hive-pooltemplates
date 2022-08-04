@@ -1,3 +1,8 @@
+##### 0.6-219@220803 2022-08-03
+*   BzMiner v10.0.1 (Improved `Kaspa` hashrate on Nvidia; Improved `Eth/Etc + Kaspa` hashrate on Nvidia; Fixed `Kawpow` crash bug)
+*   WildRig-Multi v0.32.1 (Improved `curvehash` up to 40% on RDNA/RDNA2 and up to x2 times on NVIDIA, Polaris/Vega not tested, can be better too; Implemented support of socks5 proxy, parameter `--proxy`)
+*   CPUminer-Opt-JayDDee v3.20.2 (Bit rotation optimizations in Blake* for SSE2 & AVX2; Code cleanup in yescrypt)
+
 ##### 0.6-219@220802 2022-08-02
 *   Enhanced Web Console (improved color scheme; more convenient copy/paste functionality)
 *   Improved `hive-replace` tool (updated to v2.1: added new option `--select` for interactive replacing image on non-system disks; fixed compatibility with old 4.x kernels)
@@ -9,15 +14,15 @@
 *   SRBMiner-Multi v1.0.3 (Added algorithm `mike` for CPU mining VKAX coin, fee 0.85%; Significantly improved performance on `curvehash` algorithm for GPUs; Reduced devfee for `kaspa` and `heavyhash` to 0.85%; Notes: See full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.0.3)
 
 ##### 0.6-218@220728 2022-07-28
-* lolMiner v1.53 (Changes v1.53 vs v1.53 beta3: Added the `--max-latency` parameter; Improved efficiency of the Nvidia Eth+Kaspa dual mining solvers; Changes v1.53 beta3 vs v1.52: Added Eth/Etc/Ubiq + Kaspa dual mining, fee is 1%+0%; Improved Alephium performance in the Eth + Aleph solver on RX 5000 and RX 6000 GPUs; Slightly reduced clock demand on Ethash only for RX 5000 GPUs; Full changelog: https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.53)
-* GMiner v3.0.5 (Fixed displaying of balance on 2miners pools, eg. ETH balance when mining on BTC wallet)
+*   lolMiner v1.53 (Changes v1.53 vs v1.53 beta3: Added the `--max-latency` parameter; Improved efficiency of the Nvidia Eth+Kaspa dual mining solvers; Changes v1.53 beta3 vs v1.52: Added Eth/Etc/Ubiq + Kaspa dual mining, fee is 1%+0%; Improved Alephium performance in the Eth + Aleph solver on RX 5000 and RX 6000 GPUs; Slightly reduced clock demand on Ethash only for RX 5000 GPUs; Full changelog: https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.53)
+*   GMiner v3.0.5 (Fixed displaying of balance on 2miners pools, eg. ETH balance when mining on BTC wallet)
 
 ##### 0.6-218@220726 2022-07-26
-* lolMiner v1.53-beta3 (Added Eth/Etc/Ubiq + Kaspa dual mining, fee is 1%+0%; Improved Alephium performance in the Eth + Aleph solver on RX 5000 and RX 6000 GPUs; Slightly reduced clock demand on Ethash only for RX 5000 GPUs; Full changelog: https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.53_beta_3)
-* GMiner v3.0.4 (Decreased network traffic by moving to new version of balance fetching API for 2miners pools)
-* BzMiner v10.0.1 (New coin for mining: Woodcoin. Dual mining: Fixed low hashrate for for LHR cards; Removed "empty package" errors; Fixed invalid ethash shares on some pools. Ixian mining changes: Fixed rejected shares issue; Fixed HTTPS issue. Zil: Fixed mining zil window with nicehash eth. Disabled Kaspa devteam fee by default. Full changelog: https://github.com/bzminer/bzminer/releases/tag/v10.0.1)
-* TeamBlackMiner v1.66 (Fixed SSL reconnect crash; Fixed stats hang; Added support for new pools)
-* CPUminer-Opt-JayDDee v3.20.1 (Optimized sph_blake2b function and power2b algo now uses it; Small optimization to Lyra2 SSE2; Small fixes to displaying hash and target difficulty in miner log)
+*   lolMiner v1.53-beta3 (Added Eth/Etc/Ubiq + Kaspa dual mining, fee is 1%+0%; Improved Alephium performance in the Eth + Aleph solver on RX 5000 and RX 6000 GPUs; Slightly reduced clock demand on Ethash only for RX 5000 GPUs; Full changelog: https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.53_beta_3)
+*   GMiner v3.0.4 (Decreased network traffic by moving to new version of balance fetching API for 2miners pools)
+*   BzMiner v10.0.1 (New coin for mining: Woodcoin. Dual mining: Fixed low hashrate for for LHR cards; Removed "empty package" errors; Fixed invalid ethash shares on some pools. Ixian mining changes: Fixed rejected shares issue; Fixed HTTPS issue. Zil: Fixed mining zil window with nicehash eth. Disabled Kaspa devteam fee by default. Full changelog: https://github.com/bzminer/bzminer/releases/tag/v10.0.1)
+*   TeamBlackMiner v1.66 (Fixed SSL reconnect crash; Fixed stats hang; Added support for new pools)
+*   CPUminer-Opt-JayDDee v3.20.1 (Optimized sph_blake2b function and power2b algo now uses it; Small optimization to Lyra2 SSE2; Small fixes to displaying hash and target difficulty in miner log)
 
 ##### 0.6-218@220717 2022-07-17
 *   WildRig-Multi v0.32.1 (Implemented support `firopow` and `mike` algos; Implemented support for future DAG reduction of `progpow-veil`; Implemented background compilation of progpow kernels; Fixed support gfx1034 = AMD Radeon RX 6500 XT; Up to 10% faster `curvehash`)
