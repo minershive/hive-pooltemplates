@@ -1,3 +1,6 @@
+##### 0.6-219@220811 2022-08-11
+*   lolMiner v1.54 (Fixed a bug sometimes causing duplicate send shares in Kaspa dual mining; Fixed a bug "Received a defect stratum message: conversion of data to type "b" failed" on new Kaspa pools and the solo mining adapters; Fixed a bug causing --dualworker not to work right with Kaspa dual mining)
+
 ##### 0.6-219@220806 2022-08-06
 *   SRBMiner-Multi v1.0.4 (Improved performance on all dual mineable algorithms for RDNA2 GPUs; Minor bug fixes)
 
