@@ -1,0 +1,66 @@
+[
+  {
+    "pool": {
+      "name": "Just4Miners",
+      "url": "https://just4miners.com",
+      "fee": 0,
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "RTM",
+    "servers": [
+	  {
+        "geo": "Automatic",
+        "urls": [
+          "strat.just4miners.com:3008"
+        ],
+        "ssl_urls": [
+          "strat.just4miners.com:3008"
+        ]
+      },
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu1.just4miners.com:3008"
+        ],
+        "ssl_urls": [
+          "eu1.just4miners.com:3008"
+        ]
+      },
+      {
+        "geo": "USA-Central",
+        "urls": [
+          "us1.just4miners.com:3008"
+        ],
+        "ssl_urls": [
+          "us1.just4miners.com:3008"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcps://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "x",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
+      }
+    }
+  }
+]
