@@ -1,3 +1,8 @@
+##### 0.6-219@220816 2022-08-16
+*   T-Rex v0.26.5 (Added LHR unlocker compatibility with old 470 drivers series)
+*   BzMiner v10.0.4 (Further improvements to `Eth/Etc + Kaspa` hashrate on Nvidia's GPUs; Fixed high stale count on some eth pools when dual eth + kas; Notes: See full changelog at https://github.com/bzminer/bzminer/releases/tag/v10.0.4)
+*   SRBMiner-Multi v1.0.5 (Added algorithm `sha512_256d_radiant` for CPU/GPU mining RAD/Radiant Layer One, fee 1%; Added `ETHASH/ETCHASH + SHA512_256D_RADIANT` dual mining mode; Added `AUTOLYKOS2 + SHA512_256D_RADIANT` dual mining mode; Fixed issue with dual mining ethash using nicehash mode; Notes: See full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.0.5)
+
 ##### 0.6-219@220811 2022-08-11
 *   lolMiner v1.54 (Fixed a bug sometimes causing duplicate send shares in Kaspa dual mining; Fixed a bug "Received a defect stratum message: conversion of data to type "b" failed" on new Kaspa pools and the solo mining adapters; Fixed a bug causing --dualworker not to work right with Kaspa dual mining)
 
