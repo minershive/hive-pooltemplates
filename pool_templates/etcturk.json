@@ -20,18 +20,18 @@
         "miners": {
             "lolminer": {
                 "algo": "ETCHASH",
-                "template": "%WAL%.%WORKER_NAME%",
+                "template": "%WAL%",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "x",
-				        "user_config": "--ethstratum=ETHV1"
+		"worker": "%WORKER_NAME%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 4",
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
                 "user_config": "-coin %COIN%"
             },
             "bminer": {
@@ -50,35 +50,33 @@
 			      "teamredminer": {
                 "algo": "etchash",
                 "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
+                "template": "%WAL%",
                 "pass": "x",
-				        "user_config": "--eth_stratum_mode=nicehash --temp_limit=75 --temp_resume=65"
+		"worker": "%WORKER_NAME%"
             },
-			      "tt-miner": {
-                "url": "%URL%",
-                "algo": "ETCHASH",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "-RH\n"
-            },
+			      
             "nbminer": {
-                "url": "nicehash+tcp://%URL%",
+                "url": "%URL%",
                 "algo": "etchash",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%",
+		"worker": "%WORKER_NAME%"
             },
-			      "t-rex":{
-                "algo":"etchash",
-                "template":"%WAL%.%WORKER_NAME%",
-                "server":"stratum2+tcp://%URL%",
-                "pass":"x"
-            },
-	          "gminer": {
-                "algo": "etchash",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--proto stratum"
+	    "t-rex": {
+		"url": "%URL%",
+		"algo": "etchash",
+		"template": "%WAL%",
+		"worker": "%WORKER_NAME%",
+		"pass": "x",
+		"user_config": "\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"%COIN%\""
+	    },
+	    "gminer": {
+                 "algo": "etchash",
+		 "server": "%URL_HOST%",
+		 "port": "%URL_PORT%",
+		 "pass": "x",
+		 "template": "%WAL%",
+		 "worker": "%WORKER_NAME%"
             }
         }
     }
