@@ -1,5 +1,5 @@
 ##### 0.6-219@220828 2022-08-28
-*   SRBMiner-Multi v1.0.6 (Added algorithm 'pufferfish2bmb' for CPU mining BMB/Bamboo coin, fee 1%; Algorithm `xdag` is now compatible with the new XDAGj network protocol)
+*   SRBMiner-Multi v1.0.6 (Added algorithm `pufferfish2bmb` for CPU mining BMB/Bamboo coin, fee 1%; Algorithm `xdag` is now compatible with the new XDAGj network protocol)
 *   NanoMiner v3.7.0 (Added automatic switch with config option `switchToEtc` from ETH to ETC when ETH moves to PoS)
 *   XMRigCC v3.3.0 as fork xmrig-new (Rebased on xmrig-6.18.1-dev branch: Removed Dero /AstroBWT/v2 support; Small improvements/cleaup; Monero v15 network upgrade support)
 
