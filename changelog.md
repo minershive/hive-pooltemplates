@@ -1,3 +1,8 @@
+##### 0.6-219@220828 2022-08-28
+*   SRBMiner-Multi v1.0.6 (Added algorithm 'pufferfish2bmb' for CPU mining BMB/Bamboo coin, fee 1%; Algorithm `xdag` is now compatible with the new XDAGj network protocol)
+*   NanoMiner v3.7.0 (Added automatic switch with config option `switchToEtc` from ETH to ETC when ETH moves to PoS)
+*   XMRigCC v3.3.0 as fork xmrig-new (Rebased on xmrig-6.18.1-dev branch: Removed Dero /AstroBWT/v2 support; Small improvements/cleaup; Monero v15 network upgrade support)
+
 ##### 0.6-219@220816 2022-08-16
 *   T-Rex v0.26.5 (Added LHR unlocker compatibility with old 470 drivers series)
 *   BzMiner v10.0.4 (Further improvements to `Eth/Etc + Kaspa` hashrate on Nvidia's GPUs; Fixed high stale count on some eth pools when dual eth + kas; Notes: See full changelog at https://github.com/bzminer/bzminer/releases/tag/v10.0.4)
