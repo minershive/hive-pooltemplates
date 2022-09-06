@@ -48,6 +48,16 @@
         "coin": "ETC",
         "servers": [
             {
+                "geo": "AUTO",
+                "urls": [
+                    "etc.hiveon.com:8888",
+                    "etc.hiveon.com:4444"
+                ],
+                "ssl_urls": [
+                    "etc.hiveon.com:20443"
+                ]
+            },
+            {
                 "geo": "Russia",
                 "urls": [
                     "ru-etc.hiveon.net:8888",
@@ -95,5 +105,25 @@
             }
         },
         "stratum_ping": true
+    },
+
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "rvn.hiveon.com:8888",
+                    "rvn.hiveon.com:9999"
+                ],
+                "ssl_urls": [
+                    "rvn.hiveon.com:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        },
+        "stratum_ping": false
     }
 ]
