@@ -286,6 +286,26 @@
     }
   },
   {
+    "coin": "K1Pool-Equihash125",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.equihash1254.k1pool.com:4200"
+        ]
+      },
+      {
+        "geo": "Europe HiDiff",
+        "urls": [
+          "eu.equihash1254.k1pool.com:4201"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_zelhash"
+    }
+  },
+  {
     "coin": "K1Pool-Kawpow",
     "servers": [
       {
@@ -1241,75 +1261,6 @@
     }
   },
   {
-    "coin": "XSG",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": [
-          "eu.tent.k1pool.com:9741"
-        ]
-      },
-      {
-        "geo": "Europe HiDiff",
-        "urls": [
-          "eu.tent.k1pool.com:9742"
-        ]
-      },
-      {
-        "geo": "Europe SOLO",
-        "urls": [
-          "eu.tentsolo.k1pool.com:9743"
-        ]
-      },
-      {
-        "geo": "Europe SOLO HiDiff",
-        "urls": [
-          "eu.tentsolo.k1pool.com:9744"
-        ]
-      }
-    ],
-    "miners": {
-      "ewbf": {
-        "algo": "144_5",
-        "fork": "zhash",
-        "zpass": "x",
-        "zport": "%URL_PORT%",
-        "zserver": "%URL_HOST%",
-        "ztemplate": "%WAL%.%WORKER_NAME%",
-        "user_config": "pers auto"
-      },
-      "bminer": {
-        "algo": "zhash",
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "pass": "x"
-      },
-      "gminer": {
-        "algo": "144_5",
-        "server": "%URL_HOST%",
-        "port": "%URL_PORT%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "--pers auto"
-      },
-      "lolminer": {
-        "algo": "EQUI144_5",
-        "server": "%URL_HOST%",
-        "port": "%URL_PORT%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "--pers AUTO"
-      },
-      "miniz": {
-        "algo": "144,5",
-        "url": "%URL%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "--pers auto"
-      }
-    }
-  },
-  {
     "coin": "RVN",
     "servers": [
       {
@@ -1387,6 +1338,38 @@
     ],
     "miners": {
       "_prototype": "miners_kawpow"
+    }
+  },
+    {
+    "coin": "FLUX",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.flux.k1pool.com:9351"
+        ]
+      },
+      {
+        "geo": "Europe HiDiff",
+        "urls": [
+          "eu.flux.k1pool.com:9352"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.fluxsolo.k1pool.com:9353"
+        ]
+      },
+      {
+        "geo": "Europe SOLO HiDiff",
+        "urls": [
+          "eu.fluxsolo.k1pool.com:9354"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_zelhash"
     }
   },
   {
