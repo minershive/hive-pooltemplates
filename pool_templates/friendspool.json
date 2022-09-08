@@ -4,7 +4,7 @@
             "name": "Friendspool",        	
             "url": "http://etc.friendspool.net",	
             "fee": 0.5,                   	
-            "type": "PROP"			
+            "type": "PROP/PPLNS"			
         }
     },
     {
@@ -86,6 +86,24 @@
                 "template": "%WAL%",
                 "user_config": "--worker %WORKER_NAME%"
             }
+        }
+    },
+{
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "BR - Main",
+                "urls":  [ "etc.friendspool.net:41423" ]
+				"geo": "BR - Main HiDIFF",
+                "urls":  [ "etc.friendspool.net:41424" ]
+				"geo": "BR - Backup",
+                "urls":  [ "etc.friendspool.club:41423" ]
+				"geo": "BR - Backup HiDIFF",
+                "urls":  [ "etc.friendspool.club:41424" ]
+	    }
+        ],
+        "miners": {
+            "_prototype": "miners_autolykos2"
         }
     }
 ]
