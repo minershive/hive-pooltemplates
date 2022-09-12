@@ -1,3 +1,9 @@
+##### 0.6-219@220911 2022-09-11
+*   miniZ v1.9z2 (Performance improvements for some AMD GPUs, on FLUX. Major improvement for the RX 6800 XT; Fixed issue interfering with Zano mining; Full changelog at https://miniz.ch/2022/09/09/miniz-v19z2-is-out/)
+*   NanoMiner v3.7.1 (Automatic switch to ETC is off by default; Added the option `walletEtc` to specify ETC wallet after switching; Full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.7.1)
+*   SRBMiner-Multi v1.0.7 (Added algorithm `pufferfish2bm1` for GPU mining BMB/Bamboo on RDNA2 cards, fee 1%; Small performance increase on `pufferfish2bmb` algorithm for CPUs; Reduced devfee for `autolykovs2` for mining Ergo to 1%; Full changelog: https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.0.7)
+*   BzMiner v11.0.3 (New coin: Ergo, devfee 0.5%; New coin: Neoxa, devfee 0.5%; New dual: Ergo + Kaspa on Nvidia GPUs only; Improved Kaspa AMD performance; Improved Overall AMD performance on all algos; Full changelog: https://github.com/bzminer/bzminer/releases/tag/v11.0.3)
+
 ##### 0.6-219@220906 2022-09-06
 *   lolMiner v1.55a (Significantly improved Flux mining performance on AMD RX 5000 +10% on 5700, and AMD RX 6000 based GPUs +15-22%; Added ETH / ETC + Kaspa code for Nvidia Pascal based GPUs; Fixed a bug causing Ergo mining not to startup on some Nvidia rigs; Fixed a bug causing Flux mining not to startup on some Rigs with RX 400/500 GPUs; Notes: See full changelog at: https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.55)
 *   NBMiner v42.3 (Added support for NiceHash ETC pool)
