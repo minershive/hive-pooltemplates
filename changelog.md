@@ -1,3 +1,6 @@
+##### 0.6-219@220913 2022-09-13
+*   lolMiner v1.56 (Significantly improved performance `FLUX` and `BEAM` mining on Nvidia Ampere GPUs; Mining Flux and Beam on all Nvidia GPUs now uses CUDA instead of OpenCL; Slight performance improvements for Flux mining on AMD GPUs RX 5xx, RX 5xxx and RX 6xxx series; Note: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.56)
+
 ##### 0.6-219@220911 2022-09-11
 *   miniZ v1.9z2 (Performance improvements for some AMD GPUs, on FLUX. Major improvement for the RX 6800 XT; Fixed issue interfering with Zano mining; Full changelog at https://miniz.ch/2022/09/09/miniz-v19z2-is-out/)
 *   NanoMiner v3.7.1 (Automatic switch to ETC is off by default; Added the option `walletEtc` to specify ETC wallet after switching; Full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.7.1)
