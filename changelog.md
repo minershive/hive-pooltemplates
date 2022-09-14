@@ -1,3 +1,6 @@
+##### 0.6-219@220914 2022-09-14
+*   lolMiner v1.57 (Performance improvement of `FLUX` mining on Ampere based GPUs up to 1.5-3.5% vs previous version depending on GPU and OC settings; Fixed a bug causing some `ERGO` pools to disconnect the miner frequently)
+
 ##### 0.6-219@220913 2022-09-13
 *   lolMiner v1.56 (Significantly improved performance `FLUX` and `BEAM` mining on Nvidia Ampere GPUs; Mining Flux and Beam on all Nvidia GPUs now uses CUDA instead of OpenCL; Slight performance improvements for Flux mining on AMD GPUs RX 5xx, RX 5xxx and RX 6xxx series; Note: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.56)
 
