@@ -1,33 +1,5 @@
 [
-    {
-        "coin": "ETH",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "eth.pool.minergate.com:45791"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
-                "claymore_user_config": "-allpools 1"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
+
     {
         "coin": "ETC",
         "servers": [
