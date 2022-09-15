@@ -1,18 +1,22 @@
 [
    {
         "pool": {
-            "name": "Friendspool",        	
-            "url": "http://etc.friendspool.net",	
-            "fee": 0.5,                   	
-            "type": "PROP"			
+            "name": "Friendspool",
+            "url": "http://etc.friendspool.net",
+            "fee": 0.5,
+            "type": "PROP/PPLNS"
         }
     },
     {
         "coin": "ETC",
         "servers": [
             {
-                "geo": "BR",
+                "geo": "BR Main",
                 "urls":  [ "etc.friendspool.net:8008" ]
+            },
+            {
+		"geo": "BR Backup",
+                "urls":  [ "etc.friendspool.club:8008" ]
             }
         ],
         "miners": {
@@ -86,6 +90,38 @@
                 "template": "%WAL%",
                 "user_config": "--worker %WORKER_NAME%"
             }
+        }
+    },
+{
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "BR Main",
+                "urls":  [ 
+                    "ergo.friendspool.net:41423" 
+                ]
+            },
+            {
+                "geo": "BR Main HiDIFF",
+                "urls":  [ 
+                    "ergo.friendspool.net:41424" 
+                ]
+            },
+            {
+                "geo": "BR Backup",
+                "urls":  [ 
+                    "ergo.friendspool.club:41423" 
+                ]
+            },
+            {
+                "geo": "BR Backup HiDIFF",
+                "urls":  [ 
+                    "ergo.friendspool.club:41424" 
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_autolykos2"
         }
     }
 ]
