@@ -7,42 +7,6 @@
             "type": "PPS+"
         }
     },
-    {
-        "coin": "ETH",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "eth.hiveon.com:4444",
-                    "eth.hiveon.com:14444"
-                ],
-                "ssl_urls": [
-                    "eth.hiveon.com:24443"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash_4g",
-            "tt-miner": {
-                "url": "stratum1+tcp://%URL%"
-            },
-            "bminer": {
-               "algo": "ethproxy"
-            },
-            "teamredminer":{
-               "template": "%WAL%",
-               "worker": "%WORKER_NAME%"
-            },
-            "lolminer":{
-               "template": "%WAL%",
-               "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
-            },
-            "bzminer": {
-              "url": "ethproxy+tcp://%URL%"
-            }
-        },
-        "stratum_ping": true
-    },
 
     {
         "coin": "ETC",
