@@ -1,18 +1,13 @@
 [
     {
-        "coin": "ETH",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "eth.hashcity.org:7777"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash_4g"
+        "pool": {
+            "name": "HashCity",
+            "url": "https://hashcity.org",
+            "fee": 1,
+            "type": "PPS"
         }
     },
+
     {
         "coin": "ETC",
         "servers": [
@@ -24,7 +19,7 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_ethash_4g"
+            "_prototype": "miners_etchash"
         }
     },
     {
@@ -38,27 +33,7 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_ethash",
-            "claymore": {
-                "claymore_user_config": "-allcoins -1\n-allpools 1"
-            }
-        }
-    },
-    {
-        "coin": "MOAC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "moac.hashcity.org:5555"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash",
-            "claymore": {
-                "claymore_user_config": "-allcoins -1\n-allpools 1"
-            }
+            "_prototype": "miners_ethash"
         }
     },
     {
@@ -72,24 +47,7 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_ethash",
-            "claymore": {
-                "claymore_user_config": "-allcoins -1\n-allpools 1"
-            }
-        }
-    },
-    {
-        "coin": "LTHN",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "lthn.hashcity.org:4545"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_cryptonight_r"
+            "_prototype": "miners_ethash"
         }
     },
     {
@@ -102,7 +60,7 @@
                 ]
             }
         ],
-        "miners": {
+         "miners": {
             "_prototype": "miners_zhash_btg"
         }
     },
@@ -137,14 +95,14 @@
             "claymore-z": {
                 "zpools_tpl": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%"
             },
-			"gminer": {
-				"algo": "192_7",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%",
-				"user_config": "--pers ZcashPoW"
-			},
+            "gminer": {
+                "algo": "192_7",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            },
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "equihash",
@@ -157,23 +115,6 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
-    },
-    {
-        "coin": "BCN",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "bcn.hashcity.org:5454"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-		}
     },
     {
         "coin": "BTC",
@@ -190,7 +131,7 @@
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
-		}
+        }
     },
     {
         "coin": "BCH",
@@ -207,24 +148,7 @@
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
-		}
-    },
-    {
-        "coin": "BSV",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "bsv.hashcity.org:5000"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-		}
+        }
     },
     {
         "coin": "LTC",
@@ -240,8 +164,22 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "scrypt",
+                "ccpass": "x",
+                "ccuser": "%WAL%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "scrypt",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
             }
-		}
+        }
     },
     {
         "coin": "DASH",
@@ -258,7 +196,7 @@
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
-		}
+        }
     },
     {
         "coin": "XMR",
@@ -270,14 +208,59 @@
                 ]
             },
             {
-                "geo": "Low Diff EU",
+                "geo": "nicehash",
                 "urls": [
-                    "xmr.hashcity.org:3100"
+                    "xmr.hashcity.org:4445"
                 ]
             }
         ],
         "miners": {
             "_prototype": "miners_randomx"
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "rvn.hashcity.org:8080"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "EXP",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "exp.hashcity.org:9999"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash"
+        }
+    },
+    {
+        "coin": "XEC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "xec.hashcity.org:5000"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
         }
     }
 ]

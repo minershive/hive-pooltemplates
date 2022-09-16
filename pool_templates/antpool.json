@@ -53,35 +53,7 @@
             }
         }
     },
-    {
-        "coin": "ETH",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "stratum-eth.antpool.com:8008",
-                    "stratum-eth.antpool.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
+
     {
         "coin": "ETC",
         "servers": [

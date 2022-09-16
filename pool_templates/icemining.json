@@ -58,5 +58,32 @@
                "user_config": "--mode=dumb"
            }
         }
+    },
+    {
+        "coin": "TON",
+        "servers": [
+            {
+                "geo": "Low Diff (<13 GH)",
+                "urls": [
+                    "ton.hashrate.to:4003"
+                ]
+            },
+            {
+                "geo": "GPU Rig/FPGA (13+ GH)",
+                "urls": [
+                    "ton.hashrate.to:4002"
+                ]
+            }
+        ],
+        "miners": {
+           "teamredminer": {
+               "url": "stratum+tcp://%URL%",
+               "algo": "ton",
+               "worker": "%WORKER_NAME%",
+               "template": "%WAL%",
+               "pass": "x",
+               "user_config": "--ton_pool_mode=icemining"
+           }
+        }
     }
 ]

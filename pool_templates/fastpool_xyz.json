@@ -1,0 +1,713 @@
+[
+    {
+        "pool": {
+            "name": "fastpool.xyz",
+            "url": "https://fastpool.xyz",
+            "fee": 1,
+            "type": "PROP, SOLO"
+        }
+    },
+    {
+        "coin": "QWC",
+        "servers": [
+            {
+                "geo": "Cloud-mining / NiceHash",
+                "urls": [
+                    "fastpool.xyz:10198"
+                ]
+            },
+            {
+                "geo": "X3",
+                "urls": [
+                    "fastpool.xyz:10197"
+                ]
+            },
+            {
+                "geo": "A8 >150K & < 200K",
+                "urls": [
+                    "fastpool.xyz:10196"
+                ]
+            },
+            {
+                "geo": "BaikalN+, RR2XX",
+                "urls": [
+                    "fastpool.xyz:10201"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%@%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "fastpool.xyz:4040",
+                    "fastpool.xyz:4041",
+                    "fastpool.xyz:4042",
+                    "fastpool.xyz:4043"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:4044"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:4040",
+                    "us.fastpool.xyz:4041",
+                    "us.fastpool.xyz:4042",
+                    "us.fastpool.xyz:4043"
+                ],
+                "ssl_urls": [
+                    "us.fastpool.xyz:4044"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "sg.fastpool.xyz:4040",
+                    "sg.fastpool.xyz:4041",
+                    "sg.fastpool.xyz:4042",
+                    "sg.fastpool.xyz:4043"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:4044"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "NEOX",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "fastpool.xyz:4060",
+                    "fastpool.xyz:4061",
+                    "fastpool.xyz:4062",
+                    "fastpool.xyz:4063"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:4064"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:4060",
+                    "us.fastpool.xyz:4061",
+                    "us.fastpool.xyz:4062",
+                    "us.fastpool.xyz:4063"
+                ],
+                "ssl_urls": [
+                    "us.fastpool.xyz:4064"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "sg.fastpool.xyz:4060",
+                    "sg.fastpool.xyz:4061",
+                    "sg.fastpool.xyz:4062",
+                    "sg.fastpool.xyz:4063"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:4064"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "SATO",
+        "servers": [
+            {
+                "geo": "Low end hardware",
+                "urls": [
+                    "fastpool.xyz:4051"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:4055"
+                ]
+            },
+            {
+                "geo": "middle end hardware",
+                "urls": [
+                    "fastpool.xyz:4052"
+                ]
+            },
+            {
+                "geo": "High end hardware",
+                "urls": [
+                    "fastpool.xyz:4053"
+                ]
+            },
+            {
+                "geo": "Cloud-mining / NiceHash",
+                "urls": [
+                    "fastpool.xyz:4054"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "ARQ",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "fastpool.xyz:6360",
+                    "fastpool.xyz:6361"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:6362"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:6360",
+                    "us.fastpool.xyz:6361"
+                ],
+                "ssl_urls": [
+                    "us.fastpool.xyz:6362"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "sg.fastpool.xyz:6360",
+                    "sg.fastpool.xyz:6361"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:6362"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%@%WORKER_NAME%",
+                "user_config": "\"algo\": \"rx/arq\""
+            },
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/arq",
+                "fork": "xmrig",
+                "pass": "x",
+                "template": "%WAL%@%WORKER_NAME%"
+            },
+            "xmr-stak": {
+                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+                "nvidia": "\"gpu_threads_conf\" : [],",
+                "url": "%URL%",
+                "fork": "randomx",
+                "pass": "x",
+                "template": "%WAL%@%WORKER_NAME%",
+                "user_config": "\"currency\":\"randomx_arqma\""
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%@%WORKER_NAME%",
+                "algo": "randomarq"
+            }
+        }
+    },
+    {
+        "coin": "GRFT",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "fastpool.xyz:10275",
+                    "fastpool.xyz:10276",
+                    "fastpool.xyz:10277"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:10278"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:10275",
+                    "us.fastpool.xyz:10276",
+                    "us.fastpool.xyz:10277"
+                ],
+                "ssl_urls": [
+                    "us.fastpool.xyz:10278"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "sg.fastpool.xyz:10275",
+                    "sg.fastpool.xyz:10276",
+                    "sg.fastpool.xyz:10277"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:10278"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%@%WORKER_NAME%",
+                "user_config": "\"algo\": \"rx/graft\""
+            },
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/graft",
+                "fork": "xmrig",
+                "pass": "x",
+                "template": "%WAL%@%WORKER_NAME%"
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%@%WORKER_NAME%",
+                "algo": "randomgrft"
+            }
+        }
+    },
+    {
+        "coin": "PASC",
+        "servers": [
+            {
+                "geo": "Variable difficulty (50000 H/s)",
+                "urls": [
+                    "fastpool.xyz:3336",
+                    "fastpool.xyz:10096"
+                ]
+            },
+            {
+                "geo": "Variable difficulty (100000 H/s)",
+                "urls": [
+                    "fastpool.xyz:3337",
+                    "fastpool.xyz:10097"
+                ]
+            },
+            {
+                "geo": "Variable difficulty (200000 H/s or greater)",
+                "urls": [
+                    "fastpool.xyz:3338",
+                    "fastpool.xyz:10098"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_randomhash2_with_email"
+        }
+    },
+    {
+        "coin": "XOL",
+        "servers": [
+            {
+                "geo": "Medium CPU Mining",
+                "urls": [
+                    "fastpool.xyz:10209"
+                ]
+            },
+            {
+                "geo": "High Mining",
+                "ssl_urls": [
+                    "fastpool.xyz:10210"
+                ]
+            },
+            {
+                "geo": "Cloud-mining / NiceHash",
+                "ssl_urls": [
+                    "fastpool.xyz:10211"
+                ]
+            }
+        ],
+        "miners":{
+            "_prototype": "miners_randomx"
+        }   
+    },
+    {
+        "coin": "CCX",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "fastpool.xyz:10166",
+                    "fastpool.xyz:10167",
+                    "fastpool.xyz:10168"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:10160"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:10166",
+                    "us.fastpool.xyz:10167",
+                    "us.fastpool.xyz:10168"
+                ],
+                "ssl_urls": [
+                    "us.fastpool.xyz:10160"
+                ]
+            },
+            {
+                "geo": "SG",
+                "urls": [
+                    "sg.fastpool.xyz:10166",
+                    "sg.fastpool.xyz:10167",
+                    "sg.fastpool.xyz:10168"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:10160"
+                ]
+            }
+        ],
+        "miners":{
+            "_prototype": "miners_cryptonight_gpu"
+        }
+    },
+    {
+        "coin": "XEQ",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "fastpool.xyz:6265",
+                    "fastpool.xyz:6266"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:6267"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:6265",
+                    "us.fastpool.xyz:6266"
+                ],
+                "ssl_urls": [
+                    "us.fastpool.xyz:6267"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "sg.fastpool.xyz:6265",
+                    "sg.fastpool.xyz:6266"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:6267"
+                ]
+            }
+        ],
+        "miners":{
+            "_prototype": "miners_cryptonight_gpu"
+        } 
+    },
+    {
+        "coin": "XHV",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "fastpool.xyz:10176",
+                    "fastpool.xyz:10177",
+                    "fastpool.xyz:10178"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:10181"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:10176",
+                    "us.fastpool.xyz:10177",
+                    "us.fastpool.xyz:10178"
+                ],
+                "ssl_urls": [
+                    "us.fastpool.xyz:10181"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "sg.fastpool.xyz:10176",
+                    "sg.fastpool.xyz:10177",
+                    "sg.fastpool.xyz:10178"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:10181"
+                ]
+            }
+        ],
+        "miners":{
+            "_prototype": "miners_cryptonight_xhv"
+        } 
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "fastpool.xyz:10055",
+                    "fastpool.xyz:10056",
+                    "fastpool.xyz:10080"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:10054"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:10055",
+                    "us.fastpool.xyz:10056",
+                    "us.fastpool.xyz:10080"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:10054"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "sg.fastpool.xyz:10055",
+                    "sg.fastpool.xyz:10056",
+                    "sg.fastpool.xyz:10080"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:10054"
+                ]
+            }
+        ],
+        "miners":{
+            "_prototype": "miners_randomx"
+        } 
+    },
+    {
+        "coin": "RTM",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "fastpool.xyz:4140",
+                    "fastpool.xyz:4141",
+                    "fastpool.xyz:4142"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:4143"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:4140",
+                    "us.fastpool.xyz:4141",
+                    "us.fastpool.xyz:4142"
+                ],
+                "ssl_urls": [
+                    "us.fastpool.xyz:4143"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "sg.fastpool.xyz:4140",
+                    "sg.fastpool.xyz:4141",
+                    "sg.fastpool.xyz:4142"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:4143"
+                ]
+            }
+        ],
+        "miners":{
+            "_prototype": "miners_ghostrider"
+        } 
+    },
+    {
+        "coin": "BTM",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "fastpool.xyz:4170",
+                    "fastpool.xyz:4171",
+                    "fastpool.xyz:4172"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:4173"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:4170",
+                    "us.fastpool.xyz:4171",
+                    "us.fastpool.xyz:4172"
+                ],
+                "ssl_urls": [
+                    "us.fastpool.xyz:4173"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "sg.fastpool.xyz:4170",
+                    "sg.fastpool.xyz:4171",
+                    "sg.fastpool.xyz:4172"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:4173"
+                ]
+            }
+        ],
+        "miners":{
+            "_prototype": "miners_ghostrider"
+        } 
+    },
+    {
+    "coin": "XLA",
+    "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "fastpool.xyz:10126",
+                    "fastpool.xyz:10127",
+                    "fastpool.xyz:10128"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:10136"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:10126",
+                    "us.fastpool.xyz:10127",
+                    "us.fastpool.xyz:10128"
+                ],
+                "ssl_urls": [
+                    "us.fastpool.xyz:10136"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "sg.fastpool.xyz:10126",
+                    "sg.fastpool.xyz:10127",
+                    "sg.fastpool.xyz:10128"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:10136"
+                ]
+            }
+    ],
+    "miners": {
+      "xmrig": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "user_config": "\"algo\": \"panthera\""
+      },
+      "xmrig-new": {
+        "cpu": "1",
+        "url": "%URL%",
+        "algo": "panthera",
+        "fork": "xmrig",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "algo": "panthera"
+      }
+    }
+  },
+
+  {
+    "coin": "QRL",
+    "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                     "fastpool.xyz:10107",
+                     "fastpool.xyz:10108",
+                     "fastpool.xyz:10109"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:10106"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:10107",
+                    "us.fastpool.xyz:10108",
+                    "us.fastpool.xyz:10109"
+                ],
+                "ssl_urls": [
+                    "us.fastpool.xyz:10106"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "sg.fastpool.xyz:10107",
+                    "sg.fastpool.xyz:10108",
+                    "sg.fastpool.xyz:10109"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:10106"
+                ]
+            }
+    ],
+    "miners": {
+      "xmrig": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "user_config": "\"algo\": \"rx/0\""
+      },
+      "xmrig-new": {
+        "cpu": "1",
+        "url": "%URL%",
+        "algo": "rx/0",
+        "fork": "xmrig",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%@%WORKER_NAME%",
+        "algo": "randomx"
+      }
+    }
+  }
+]

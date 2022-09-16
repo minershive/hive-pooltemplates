@@ -1,0 +1,203 @@
+[
+    {"pool": {
+            "name": "Prohashing",
+            "url": "https://prohashing.com/",  
+            "fee": 3.99,
+            "type": "FPPS|PPLNS|SOLO"               
+        }
+    },
+
+    {
+        "coin": "EXP",
+        "servers": [    
+            {   
+                "geo": "US", 
+                "urls": [
+                    "prohashing.com:3358"
+                ]
+            },
+            {   
+                "geo": "EU", 
+                "urls": [
+                    "eu.prohashing.com:3358"
+                ]
+            }
+        ],
+        "miners": { 
+            "gminer": {
+                "algo": "ethash-lowmemory",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "n=%WORKER_NAME%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [    
+            {   
+                "geo": "US", 
+                "urls": [
+                    "prohashing.com:3357"
+                ]
+            },
+            {   
+                "geo": "EU", 
+                "urls": [
+                    "eu.prohashing.com:3357"
+                ]
+            }
+        ],
+        "miners": { 
+            "gminer": {
+                "algo": "etchash",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "n=%WORKER_NAME%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "BTG",
+        "servers": [    
+            {   
+                "geo": "US", 
+                "urls": [
+                    "prohashing.com:3345"
+                ]
+            },
+            {   
+                "geo": "EU", 
+                "urls": [
+                    "eu.prohashing.com:3345"
+                ]
+            }
+        ],
+        "miners": { 
+            "gminer": {
+                "algo": "equihash-144_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "n=%WORKER_NAME%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [    
+            {   
+                "geo": "US", 
+                "urls": [
+                    "prohashing.com:3335"
+                ]
+            },
+            {   
+                "geo": "EU", 
+                "urls": [
+                    "eu.prohashing.com:3335"
+                ]
+            }
+        ],
+        "miners": { 
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "LTC",
+        "servers": [    
+            {   
+                "geo": "US", 
+                "urls": [
+                    "prohashing.com:3333"
+                ]
+            },
+            {   
+                "geo": "EU", 
+                "urls": [
+                    "eu.prohashing.com:3333"
+                ]
+            }
+        ],
+        "miners": { 
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "MONA",
+        "servers": [    
+            {   
+                "geo": "US", 
+                "urls": [
+                    "prohashing.com:3337"
+                ]
+            },
+            {   
+                "geo": "EU", 
+                "urls": [
+                    "eu.prohashing.com:3337"
+                ]
+            }
+        ],
+        "miners": { 
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ZEC",
+        "servers": [    
+            {   
+                "geo": "US", 
+                "urls": [
+                    "prohashing.com:3336"
+                ]
+            },
+            {   
+                "geo": "EU", 
+                "urls": [
+                    "eu.prohashing.com:3336"
+                ]
+            }
+        ],
+        "miners": { 
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "DGB",
+        "servers": [    
+            {   
+                "geo": "US", 
+                "urls": [
+                    "prohashing.com:3349"
+                ]
+            },
+            {   
+                "geo": "EU", 
+                "urls": [
+                    "eu.prohashing.com:3349"
+                ]
+            }
+        ],
+        "miners": { 
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%.%WORKER_NAME%"
+            }
+        }
+    }
+]

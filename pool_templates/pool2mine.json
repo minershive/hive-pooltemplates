@@ -1,0 +1,134 @@
+[
+    {
+        "pool": {
+            "name": "pool2mine",
+            "url": "https://pool2mine.net",
+            "fee": 1,
+            "type": "PROP"
+        }
+    },
+
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "USA-EAST",
+                "urls": [
+                    "etc-us.pool2mine.net:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_etchash"
+        }
+    },
+    {
+        "coin": "QRL",
+        "servers": [
+            {
+                "geo": "USA-EAST Low End",
+                "urls": [
+                    "qrl-us.pool2mine.net:3333"
+                ]
+            },
+            {
+                "geo": "USA-EAST Mid Range",
+                "urls": [
+                    "qrl-us.pool2mine.net:4444"
+                ]
+            },
+            {
+                "geo": "USA-EAST High End",
+                "urls": [
+                    "qrl-us.pool2mine.net:5555"
+                ]
+            },
+            {
+                "geo": "NiceHash",
+                "urls": [
+                    "qrl-us.pool2mine.net:7777"
+                ],
+                "ssl_urls": [
+                    "qrl-us.pool2mine.net:9999"
+                ]
+            }
+         ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "@%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"rx/0\""
+            },
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/0",
+                "fork": "xmrig",
+                "pass": "@%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "xmr-stak": {
+                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+                "nvidia": "\"gpu_threads_conf\" : [],",
+                "url": "%URL%",
+                "fork": "randomx",
+                "pass": "@%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\":\"monero\""
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "pass": "@%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "randomx"
+            }
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+         {
+            "geo":"US-EAST 1-3 GPU",
+            "urls":[
+               "rvn-us.pool2mine.net:7773"
+            ]
+         },
+         {
+            "geo":"US-EAST 3-4 GPU",
+            "urls":[
+               "rvn-us.pool2mine.net:7774"
+            ]
+         },
+         {
+            "geo":"US-EAST 5+ GPU",
+            "urls":[
+               "rvn-us.pool2mine.net:7775"
+            ]
+         }
+      ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "Mid range",
+                "urls": [
+                    "xmr-us.pool2mine.net:7778"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "urls": [
+                    "xmr-us.pool2mine.net:7779"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_randomx_worker"
+        }
+    }
+]

@@ -7,41 +7,7 @@
             "type": "PPLNS"
         }
     },
-    {
-        "coin": "ETH",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "eth.2miners.com:2020"
-                ],
-                "ssl_urls": [
-                    "eth.2miners.com:12020"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "us-eth.2miners.com:2020"
-                ],
-                "ssl_urls": [
-                    "us-eth.2miners.com:12020"
-                ]
-            },
-            {
-                "geo": "ASIA",
-                "urls": [
-                    "asia-eth.2miners.com:2020"
-                ],
-                "ssl_urls": [
-                    "asia-eth.2miners.com:12020"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
+
     {
         "coin": "ETC",
         "servers": [
@@ -75,6 +41,41 @@
         ],
         "miners": {
             "_prototype": "miners_etchash"
+        }
+    },
+    {
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "erg.2miners.com:8888"
+                ],
+                "ssl_urls": [
+                    "erg.2miners.com:18888"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us-erg.2miners.com:8888"
+                ],
+                "ssl_urls": [
+                    "us-erg.2miners.com:18888"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia-erg.2miners.com:8888"
+                ],
+                "ssl_urls": [
+                    "asia-erg.2miners.com:18888"
+                ]
+            }
+        ],
+        "miners": {
+		    "_prototype": "miners_autolykos2"
         }
     },
     {
@@ -358,6 +359,24 @@
                 "ssl_urls": [
                     "grin.2miners.com:13030"
                 ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us-grin.2miners.com:3030"
+                ],
+                "ssl_urls": [
+                    "us-grin.2miners.com:13030"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "asia-grin.2miners.com:3030"
+                ],
+                "ssl_urls": [
+                    "asia-grin.2miners.com:13030"
+                ]
             }
         ],
         "miners": {
@@ -447,26 +466,20 @@
         }
     },
     {
-        "coin": "ZEL",
+        "coin": "FLUX",
         "servers": [
             {
                 "geo": "EU",
                 "urls": [
-                    "zel.2miners.com:9090"
+                    "flux.2miners.com:9090"
                 ],
                 "ssl_urls": [
-                    "zel.2miners.com:19090"
+                    "flux.2miners.com:19090"
                 ]
             }
         ],
         "miners": {
-            "gminer": {
-                "algo": "125_4",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_zelhash"
         }
     },
     {
@@ -496,161 +509,65 @@
         }
     },
     {
-        "coin": "XZC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "xzc.2miners.com:8080"
-                ],
-                "ssl_urls": [
-                    "xzc.2miners.com:18080"
-                ]
-            },
-            {
-                "geo": "EU HiDIFF",
-                "urls": [
-                    "xzc.2miners.com:8008"
-                ],
-                "ssl_urls": [
-                    "xzc.2miners.com:18008"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "us-xzc.2miners.com:8080"
-                ],
-                "ssl_urls": [
-                    "us-xzc.2miners.com:18080"
-                ]
-            },
-            {
-                "geo": "US HiDIFF",
-                "urls": [
-                    "us-xzc.2miners.com:8008"
-                ],
-                "ssl_urls": [
-                    "us-xzc.2miners.com:18008"
-                ]
-            },
-            {
-                "geo": "ASIA",
-                "urls": [
-                    "asia-xzc.2miners.com:8080"
-                ],
-                "ssl_urls": [
-                    "asia-xzc.2miners.com:18080"
-                ]
-            },
-            {
-                "geo": "ASIA HiDIFF",
-                "urls": [
-                    "asia-xzc.2miners.com:8008"
-                ],
-                "ssl_urls": [
-                    "asia-xzc.2miners.com:18008"
-                ]
-            }
-        ],
-        "miners": {
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "mtp",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "cryptodredge": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "mtp"
-            },
-            "teamredminer": {
-                "url": "stratum+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "mtp"
-            }
-        }
-    },
-    {
         "coin": "FIRO",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "EU for GPU",
                 "urls": [
-                    "xzc.2miners.com:8080"
+                    "firo.2miners.com:8181"
                 ],
                 "ssl_urls": [
-                    "xzc.2miners.com:18080"
+                    "firo.2miners.com:18181"
                 ]
             },
             {
-                "geo": "EU HiDIFF",
+                "geo": "EU for MRR",
                 "urls": [
-                    "xzc.2miners.com:8008"
+                    "firo.2miners.com:8008"
                 ],
                 "ssl_urls": [
-                    "xzc.2miners.com:18008"
+                    "firo.2miners.com:18008"
                 ]
             },
             {
-                "geo": "US",
+                "geo": "US for GPU",
                 "urls": [
-                    "us-xzc.2miners.com:8080"
+                    "us-firo.2miners.com:8181"
                 ],
                 "ssl_urls": [
-                    "us-xzc.2miners.com:18080"
+                    "us-firo.2miners.com:18181"
                 ]
             },
             {
-                "geo": "US HiDIFF",
+                "geo": "US for MRR",
                 "urls": [
-                    "us-xzc.2miners.com:8008"
+                    "us-firo.2miners.com:8008"
                 ],
                 "ssl_urls": [
-                    "us-xzc.2miners.com:18008"
+                    "us-firo.2miners.com:18008"
                 ]
             },
             {
-                "geo": "ASIA",
+                "geo": "ASIA for GPU",
                 "urls": [
-                    "asia-xzc.2miners.com:8080"
+                    "asia-firo.2miners.com:8181"
                 ],
                 "ssl_urls": [
-                    "asia-xzc.2miners.com:18080"
+                    "asia-firo.2miners.com:18181"
                 ]
             },
             {
-                "geo": "ASIA HiDIFF",
+                "geo": "ASIA for MRR",
                 "urls": [
-                    "asia-xzc.2miners.com:8008"
+                    "asia-firo.2miners.com:8008"
                 ],
                 "ssl_urls": [
-                    "asia-xzc.2miners.com:18008"
+                    "asia-firo.2miners.com:18008"
                 ]
             }
         ],
         "miners": {
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "mtp",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "cryptodredge": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "mtp"
-            },
-            "teamredminer": {
-                "url": "stratum+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "mtp"
-            }
+            "_prototype": "miners_firopow"
         }
     },
     {
@@ -716,6 +633,32 @@
         }
     },
     {
+        "coin": "NEOX",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "neox.2miners.com:4040"
+                ],
+                "ssl_urls": [
+                    "neox.2miners.com:14040"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "neox.2miners.com:4141"
+                ],
+                "ssl_urls": [
+                    "neox.2miners.com:14141"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
         "coin": "AE",
         "servers": [
             {
@@ -762,63 +705,43 @@
         "servers": [
             {
                 "geo": "EU",
-                "urls": [
+                "ssl_urls": [
                     "beam.2miners.com:5252"
                 ]
             },
             {
                 "geo": "EU HiDIFF",
-                "urls": [
+                "ssl_urls": [
                     "beam.2miners.com:5353"
                 ]
             },
             {
                 "geo": "US",
-                "urls": [
+                "ssl_urls": [
                     "us-beam.2miners.com:5252"
                 ]
             },
             {
                 "geo": "US HiDIFF",
-                "urls": [
+                "ssl_urls": [
                     "us-beam.2miners.com:5353"
                 ]
             },
             {
                 "geo": "ASIA",
-                "urls": [
+                "ssl_urls": [
                     "asia-beam.2miners.com:5252"
                 ]
             },
             {
                 "geo": "ASIA HiDIFF",
-                "urls": [
+                "ssl_urls": [
                     "asia-beam.2miners.com:5353"
                 ]
             }
         ],
         "miners": {
-            "bminer": {
-                "algo": "beam+ssl",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            },
-            "gminer": {
-                "algo": "beamhash",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "tls": "1"
-            },
-            "lolminer": {
-                "algo": "BEAM",
-                "template": "%WAL%.%WORKER_NAME%",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x"
-            }
+            "_prototype": "miners_beamhash"
         }
     },
     {

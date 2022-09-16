@@ -1,45 +1,83 @@
-[    
-    {
+[
+   {
+        "pool": {
+            "name": "ETCTürk",        	
+            "url": "http://etcturk.sytes.net",	
+            "fee": 1,                   	
+            "type": "PPLNS"			
+        }
+    },
+	{
         "coin": "ETC",
         "servers": [
-            {
+			{
                 "geo": "Turkey",
                 "urls": [
-                    "etcturk.com:8008"
+                    "etcturk.sytes.net:8008"
                 ]
             }
         ],
         "miners": {
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "lolminer":{
+            "lolminer": {
+                "algo": "ETCHASH",
                 "template": "%WAL%",
-                "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+		"worker": "%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
             },
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, COIN: %COIN%"
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN%"
             },
-            "finminer": {
-                "algo": "ethash",
+            "bminer": {
+                "url": "%URL%",
+                "algo": "etchash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "etchash",
                 "url": "%URL%",
                 "template": "%WAL%",
                 "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
             },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
+			      "teamredminer": {
+                "algo": "etchash",
                 "url": "%URL%",
-                "pass": "x"
+                "template": "%WAL%",
+                "pass": "x",
+		"worker": "%WORKER_NAME%"
+            },
+			      
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "etchash",
+                "pass": "x",
+                "template": "%WAL%",
+		"worker": "%WORKER_NAME%"
+            },
+	    "t-rex": {
+		"url": "%URL%",
+		"algo": "etchash",
+		"template": "%WAL%",
+		"worker": "%WORKER_NAME%",
+		"pass": "x",
+		"user_config": "\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"%COIN%\""
+	    },
+	    "gminer": {
+                 "algo": "etchash",
+		 "server": "%URL_HOST%",
+		 "port": "%URL_PORT%",
+		 "pass": "x",
+		 "template": "%WAL%",
+		 "worker": "%WORKER_NAME%"
             }
         }
     }
-   
-   
 ]

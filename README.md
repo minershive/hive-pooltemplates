@@ -24,7 +24,8 @@ If you want your pool to be listed here then create yourpool.json and push it, w
 Available miners:
 - beamcl - open source BEAM OpenCL miner
 - beamcuda - open source BEAM CUDA miner
-- bminer - ethash/tensority/equihash variants/Grin PoW miner 
+- bminer - ethash/tensority/equihash variants/Grin PoW miner
+- bzminer - ethash/etchash miner 
 - cast-xmr - cryptonight variants (AMD)
 - ccminer - ccminer & forks (ccminer forks available: alexis, allium, bcd, djm34, enemy, klaust, klaust-yescrypt, nanashi, nevermore, nevermore-x16s, phi-anxmod, rvn, sp-mod, suprminer, suprminer-spmod, tecracoin, tpruvot, vertminer, verus, xaya, xevan, zp)
 - ckb-miner - CKB (Nervos Network) wallet CPU/OpenCL/CUDA miner
@@ -32,12 +33,12 @@ Available miners:
 - claymore-x - Claymore's Cryptonote AMD GPU miner
 - claymore-z - Claymore's AMD GPU ZCash miner
 - cortex-miner - Cortex CUDA miner 
-- cpuminer-opt - cpuminer-opt CPU miner (forks: JayDDee, cpupower, rkz, rplant)
+- cpuminer-opt - cpuminer-opt CPU miner (forks: JayDDee, cpupower, rkz, rplant, gr)
 - cryptodredge - multi algo CUDA miner (NVidia)
 - damominer - multi algo CUDA miner (NVidia)
 - dstm - legacy 0.3.4b and new zhash
 - eggminergpu - CUDA/OpenCL miner for BIS - Bismuth coin on Eggpool (AMD/Nvidia)
-- ethminer - ethminer (forks available - ethash, ethercore, kawpowminer, progpow, ubiqhash, zilminer)
+- ethminer - ethminer (forks available - ethash, ethercore, firominer, kawpowminer, nsfminer, quarkchain, progpow, teominer, ubiqhash, zilminer)
 - ewbf - ewbf for equihash and new for equihash algo variants miner
 - finminer - ethash, randomhash miner (AMD/NVidia/CPU)
 - gminer - equihash variants CUDA miner
@@ -66,8 +67,11 @@ Available miners:
 - sushi-miner-cuda - CUDA miner for NIM - Nimiq coin (Nvidia)
 - sushi-miner-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
 - t-rex - T-Rex multi algo CUDA miner (NVidia)
+- teamblackminer - CUDA/OpenCL miner for mining Ethereum, Ethereum Classic and Zilliqa
 - teamredminer - lyra2z/lyra2v3/phi2/cryptonight-r/v7/v8/half/double/rwz/trtl/x16r/x16rv2 OpenCL miner (AMD)
 - tt-miner - Ethash/Ubqhash/ProgPoW with variants/TEthashV1/MTP/Lyra2rev3 CUDA miner
+- verthashminer - open-source Verthash CUDA/OpenCL miner
+- violetminer - CUDA chuckwa/chukwav2 miner
 - wildrig-multi - multi-algo OpenCL miner (AMD)
 - xmr-stak - XMR-Stak (AMD,NVidia,CPU cryptonight variants algo with forks arto, alloy, b2n, mox, marketcash, randomx, uplexa)
 - xmrig - XMRig (CPU cryptonight variants miner with forks: bigbangcore, xmrigcc, hycon, xlarig)
@@ -171,8 +175,11 @@ for_amd | `boolean` | `false` | Is suitable for AMD GPUs.
 for_nvidia | `boolean` | `false` | Is suitable for Nvidia GPUs.
 for_cpu | `boolean` | `false` | Is suitable for CPUs.
 for_asic | `boolean` | `false` | Is suitable for ASICs.
+dual | `boolean` | `false` | Supports dual mining.
 default_algo | `string` |  | Algorithm to use if not reported by miner.<br>This is useful for single-algo miners.
 default_fork | `string` |  | Fork to use if not configured in flight sheet.
+default_units | `string` | `"khs"` | Default hashrate units if not reported.
+ssl_prefix | `string` |  | .
 algos | `string[]` or `object` |  | Supported algorithms list.<br>This can be either a simple array of strings or an object where keys are algos and values are display names.
 dalgos | `string[]` or `object` |  | Supported algorithms list for dual mining.<br>This can be either a simple array of strings or an object where keys are algos and values are display names.
 forks | `string[]` or `object` |  | Available forks list.<br>This can be either a simple array of strings or an object where keys are forks and values are display names.

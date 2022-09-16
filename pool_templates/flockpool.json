@@ -1,0 +1,75 @@
+[
+  {
+    "pool": {
+      "name": "Flockpool",
+      "url": "https://flockpool.com",
+      "fee": 1,
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "RTM",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.flockpool.com:4444"
+        ],
+        "ssl_urls": [
+          "eu.flockpool.com:5555"
+        ]
+      },
+      {
+        "geo": "USA-Central",
+        "urls": [
+          "us.flockpool.com:4444"
+        ],
+        "ssl_urls": [
+          "us.flockpool.com:5555"
+        ]
+      },
+      {
+        "geo": "USA-West",
+        "urls": [
+          "us-west.flockpool.com:4444"
+        ],
+        "ssl_urls": [
+          "us-west.flockpool.com:5555"
+        ]
+      },
+      {
+        "geo": "Asia",
+        "urls": [
+          "asia.flockpool.com:4444"
+        ],
+        "ssl_urls": [
+          "asia.flockpool.com:5555"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcps://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "x",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
+      }
+    }
+  }
+]

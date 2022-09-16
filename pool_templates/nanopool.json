@@ -1,68 +1,5 @@
 [
-    {
-        "coin": "ETH",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "eth-eu1.nanopool.org:9999",
-                    "eth-eu2.nanopool.org:9999"
-                ],
-                "ssl_urls": [
-                    "eth-eu1.nanopool.org:9433",
-                    "eth-eu2.nanopool.org:9433"
-                ]
-            },
-            {
-                "geo": "US East",
-                "urls": [
-                    "eth-us-east1.nanopool.org:9999"
-                ],
-                "ssl_urls": [
-                    "eth-us-east1.nanopool.org:9433"
-                ]
-            },
-            {
-                "geo": "US West",
-                "urls": [
-                    "eth-us-west1.nanopool.org:9999"
-                ],
-                "ssl_urls": [
-                    "eth-us-west1.nanopool.org:9433"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "eth-asia1.nanopool.org:9999"
-                ],
-                "ssl_urls": [
-                    "eth-asia1.nanopool.org:9433"
-                ]
-            },
-            {
-                "geo": "Japan",
-                "urls": [
-                    "eth-jp1.nanopool.org:9999"
-                ],
-                "ssl_urls": [
-                    "eth-jp1.nanopool.org:9433"
-                ]
-            },
-            {
-                "geo": "Australia",
-                "urls": [
-                    "eth-au1.nanopool.org:9999"
-                ],
-                "ssl_urls": [
-                    "eth-au1.nanopool.org:9433"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash_slash_email"
-        }
-    },
+
     {
         "coin": "ETC",
         "servers": [
@@ -188,7 +125,7 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_kawpow",
+            "_prototype": "miners_kawpow_slash_email",
             "nanominer": {
                 "algo": "kawpow",
                 "url": "%URL%",
@@ -353,7 +290,7 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_randomx"
+            "_prototype": "miners_randomx_slash_email"
         }
     },
     {
@@ -420,7 +357,7 @@
             "nbminer":{
                 "url":"%URL%",
                 "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%",
+                "template":"%WAL%/%WORKER_NAME%/%EMAIL%",
                 "algo":"octopus"
             },
             "nanominer": {
@@ -428,18 +365,18 @@
                 "algo": "octopus",
                 "pass": "x",
                 "template": "%WAL%",
-                "user_config": "coin = CFX\nrigName = %WORKER_NAME%"
+                "user_config": "coin = CFX\nrigName = %WORKER_NAME%\nemail = %EMAIL%"
             },
             "bminer": {
                 "algo": "conflux",
-                "template": "%WAL%.%WORKER_NAME%",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
                 "url": "%URL%",
                 "pass": "x"
             },
             "t-rex": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "octopus",
-                "template": "%WAL%.%WORKER_NAME%",
+                "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
                 "pass": "x"
             }
         }
@@ -505,20 +442,7 @@
             }
         ],
         "miners": {
-            "nanominer": {
-                "url": "%URL%",
-                "algo": "autolykos",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "coin = ERG\nrigName = %WORKER_NAME%"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "autolykos2",
-                "worker": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "--disable-cpu"
-            }
+            "_prototype": "miners_autolykos2_slash_email"
         }
     }
 ]
