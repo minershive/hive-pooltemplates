@@ -1,3 +1,7 @@
+##### 0.6-219@220918 2022-09-18
+*   TeamRedMiner v0.10.3.1 (Added next height pad prebuild for Ergo/Autolykos2 to raise effective hashrate over time; Better execution of R/B/C modes for ethash with dual zil mining; Added R-mode zil cache support with `--eth_dag_cache=0`; Note: changelog highlights major changes for v0.10.3, see full cchangelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.3.1)
+*   BzMiner v11.1.0 (New coin: ZIL, 0% dev fee; Dual Mining with ZIL + any algo, using flexpool's ZMP protocol; Fixed duplicate shares on large rigs; Minor Kaspa improvements for AMD GPUs; Full changelog: https://github.com/bzminer/bzminer/releases/tag/v11.1.0)
+
 ##### 0.6-219@220914 2022-09-14
 *   lolMiner v1.57 (Performance improvement of `FLUX` mining on Ampere based GPUs up to 1.5-3.5% vs previous version depending on GPU and OC settings; Fixed a bug causing some `ERGO` pools to disconnect the miner frequently)
 
