@@ -8,6 +8,78 @@
         }
     },
     {
+        "coin": "Zerg-sha25",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "sha256.mine.zergpool.com:3333"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "sha256.eu.mine.zergpool.com:3333"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "sha256.na.mine.zergpool.com:3333"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "sha256.asia.mine.zergpool.com:3333"
+                ]
+            }
+        ],
+        "miners": {
+           "asicminer": {
+              "url": "stratum+tcp://%URL%",
+              "template": "%WAL%",
+              "pass": "c=BTC,ID=%WORKER_NAME%"
+           }
+        }
+    },
+    {
+        "coin": "Zerg-scrypt",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "scrypt.mine.zergpool.com:3433"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "scrypt.eu.mine.zergpool.com:3433"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "scrypt.na.mine.zergpool.com:3433"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "scrypt.asia.mine.zergpool.com:3433"
+                ]
+            }
+        ],
+        "miners": {
+           "asicminer": {
+              "url": "stratum+tcp://%URL%",
+              "template": "%WAL%",
+              "pass": "c=BTC,ID=%WORKER_NAME%"
+           }
+        }
+    },
+    {
         "coin": "Zerg-m7m",
         "servers": [
             {
@@ -289,24 +361,7 @@
             "_prototype": "miners_ethash"
         }
     },
-    {
-        "coin": "Zerg-odocrypt",
-        "servers": [
-            {
-                "geo": "USA",
-                "urls": [
-                    "odocrypt.mine.zergpool.com:3336"
-                ]
-            }
-        ],
-        "miners": {
-           "asicminer": {
-              "url": "stratum+tcp://%URL%",
-              "template": "%WAL%.%WORKER_NAME%",
-              "pass": "c=BTC"
-           }
-        }
-    },
+
     {
         "coin": "Zerg-k12",
         "servers": [
