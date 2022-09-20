@@ -1,5 +1,6 @@
 ##### 0.6-219@220918 2022-09-19
 *   TeamBlackMiner v1.67 (Improved performance Vertcoin Nvidia and AMD; Fixed crash on exit; Added ETHW pools support; Reduced CPU memory usage for Vertcoin)
+*   **NEW** CCminer-Radiator v1.0.0 (ccminer for mining RXD/Radiant coin on Nvidia GPUs)
 
 ##### 0.6-219@220918 2022-09-18
 *   TeamRedMiner v0.10.3.1 (Added next height pad prebuild for Ergo/Autolykos2 to raise effective hashrate over time; Better execution of R/B/C modes for ethash with dual zil mining; Added R-mode zil cache support with `--eth_dag_cache=0`; Note: changelog highlights major changes for v0.10.3, see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.3.1)
