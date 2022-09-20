@@ -448,6 +448,50 @@
         }
     },
 
+    "miners_ubqhash": {
+        "ethminer": {
+            "cuda": 1,
+            "opencl": 1,
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "stratum1+tcp://%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "fork": "ubqminer"
+        },
+        "phoenixminer": {
+            "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+            "user_config": "-coin %COIN%"
+        },
+        "nanominer": {
+            "algo": "ubqhash",
+            "url": "%URL%",
+            "template": "%WAL%",
+            "pass": "x",
+            "user_config": "coin = UBQ\nrigName = %WORKER_NAME%"
+        },
+        "tt-miner": {
+            "url": "%URL%",
+            "algo": "UBQHASH",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "-RH\n"
+        },
+        "lolminer": {
+            "algo": "UBQHASH",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "ubqhash",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "--disable-cpu"
+        }
+    },
+
     "miners_ethash_slash_email": {
         "ethminer": {
             "cuda": 1,
