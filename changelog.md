@@ -1,4 +1,8 @@
-##### 0.6-219@220918 2022-09-19
+##### 0.6-219@220920 2022-09-20
+*   TeamBlackMiner v1.68 (Intensity rewrite/improvement for `verthash` abit more stable and faster; Removed duplicate job id in console for `verthash`; Fixed hashrate units in console bug on AMD / total hash in `verthash`)
+*   SRBMiner-Multi v1.0.8 (Added algorithm `blake3_ironfish` (IRONFISH coin) for CPU/GPU mining, fee 0.85%; Added dual mining modes: ETHASH/ETCHASH + BLAKE3_IRONFISH and AUTOLYKOS2 + BLAKE3_IRONFISH; Added support mining algorithm `pufferfish2bmb` for RDNA RX 5000 GPUs; Performance increase on `autolykos2` algorithm for RX5700/XT GPUs; Small performance increase on `kaspa` algorithm for RDNA RX 5000 GPUs; Various bug fixes; Notes: Full changelog at: https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.0.8)
+
+##### 0.6-219@220919 2022-09-19
 *   TeamBlackMiner v1.67 (Improved performance Vertcoin Nvidia and AMD; Fixed crash on exit; Added ETHW pools support; Reduced CPU memory usage for Vertcoin)
 *   **NEW** CCminer-Radiator v1.0.0 (ccminer for mining RXD/Radiant coin on Nvidia GPUs)
 
