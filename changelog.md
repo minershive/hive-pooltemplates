@@ -1,3 +1,6 @@
+##### 0.6-219@220923 2022-09-23
+*   lolMiner v1.59 (Significantly improved `Kaspa` performance and efficiency on Nvidia Turing and Ampere GPUs; Slightly improved Kaspa performance and efficiency on AMD Navi and Big Navi GPUs; Kaspa performance statistics should now be a bit more smooth)
+
 ##### 0.6-219@220922 2022-09-22
 *   TeamBlackMiner v1.69 (Removed duplicate share rejects on `vertcoin` vardiff pools)
 *   lolMiner v1.58 (Added `Kaspa` only mining mode for Nvidia Pascal and new and AMD Polaris, Navi and Big Navi, use algo `KASPA` to mine it, fee is 0.75%)
