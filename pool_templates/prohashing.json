@@ -29,7 +29,7 @@
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "n=%WORKER_NAME%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%"
             }
         }
     },
@@ -55,10 +55,103 @@
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
                 "pass": "n=%WORKER_NAME%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WAL%"
             }
         }
     },
+    {
+        "coin": "RVN",
+        "servers": [    
+            {   
+                "geo": "US", 
+                "urls": [
+                    "prohashing.com:3361"
+                ]
+            },
+            {   
+                "geo": "EU", 
+                "urls": [
+                    "eu.prohashing.com:3361"
+                ]
+            }
+        ],
+        "miners": { 
+            "gminer": {
+                "algo": "kawpow",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "n=%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+    },    
+    {
+        "coin": "CFX",
+        "servers": [    
+            {   
+                "geo": "US", 
+                "urls": [
+                    "prohashing.com:3363"
+                ]
+            },
+            {   
+                "geo": "EU", 
+                "urls": [
+                    "eu.prohashing.com:3363"
+                ]
+            }
+        ],
+        "miners": { 
+            "t-rex": {
+                "algo": "octopus",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "n=%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "nanominer": {
+                "url": "%URL_HOST%",
+                "algo": "octopus",
+                "pass": "n=prohashingMiner",
+                "template": "%WAL%",
+                "user_config": "coin = CFX\nrigPassword = n=prohashingMiner"
+            }
+        }
+    },  
+    {
+        "coin": "ERG",
+        "servers": [    
+            {   
+                "geo": "US", 
+                "urls": [
+                    "prohashing.com:3364"
+                ]
+            },
+            {   
+                "geo": "EU", 
+                "urls": [
+                    "eu.prohashing.com:3364"
+                ]
+            }
+        ],
+        "miners": { 
+            "t-rex": {
+                "algo": "autolykos2",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "n=%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            { 
+            "lolminer": {
+                "algo": "autolykos2",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "n=%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+    },        
     {
         "coin": "BTG",
         "servers": [    
