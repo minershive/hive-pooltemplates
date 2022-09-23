@@ -1,3 +1,6 @@
+##### 0.6-219@220923-3 2022-09-23
+*   lolMiner v1.59a (fixed defect shares on acc-pool bug that appeared in v1.59) 
+  
 ##### 0.6-219@220923-2 2022-09-23
 *   lolMiner: fixed config generation for single KASPA mining mode
 
