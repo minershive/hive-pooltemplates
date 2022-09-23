@@ -1,3 +1,6 @@
+##### 0.6-219@220923-2 2022-09-23
+*   lolMiner: fixed config generation for single KASPA mining mode
+
 ##### 0.6-219@220923 2022-09-23
 *   lolMiner v1.59 (Significantly improved `Kaspa` performance and efficiency on Nvidia Turing and Ampere GPUs; Slightly improved Kaspa performance and efficiency on AMD Navi and Big Navi GPUs; Kaspa performance statistics should now be a bit more smooth)
 
