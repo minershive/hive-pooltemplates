@@ -1,0 +1,172 @@
+[
+    {
+        "pool": {
+            "name": "Kryptex Pool",
+            "url": "https://kryptex.network/",
+            "fee": 1,
+            "type": "PPS+"
+        }
+    },
+    {
+        "coin": "ETHW",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "ethw.kryptex.network:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "ethash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ethash",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "t-rex": {
+                "algo": "ethash",
+                "template": "%WAL%/%WORKER_NAME%",
+                "server": "%URL%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%/%WORKER_NAME%%"
+            }
+        }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "etc.kryptex.network:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "etсhash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "etсhash",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "etсhash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+            "teamredminer": {
+                "algo": "etсhash",
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "t-rex": {
+                "algo": "etсhash",
+                "template": "%WAL%/%WORKER_NAME%",
+                "server": "%URL%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%/%WORKER_NAME%%"
+            }
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "rvn.kryptex.network:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "kawpow",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "kawpow",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "algo": "kawpow",
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "t-rex": {
+                "algo": "kawpow",
+                "template": "%WAL%/%WORKER_NAME%",
+                "server": "%URL%"
+            }
+        }
+    },
+    {
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "erg.kryptex.network:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "nbminer": {
+                "algo": "autolykos2",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "algo": "autolykos2",
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "t-rex": {
+                "algo": "autolykos2",
+                "template": "%WAL%/%WORKER_NAME%",
+                "server": "%URL%"
+            }
+        }
+    }
+]
