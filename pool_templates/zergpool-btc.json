@@ -98,6 +98,59 @@
             }
         }
     },
+
+    {
+        "coin": "Zerg-equihash144",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "equihash144.mine.zergpool.com:2146"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "equihash144.eu.mine.zergpool.com:2146"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "equihash144.na.mine.zergpool.com:2146"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "equihash144.asia.mine.zergpool.com:2146"
+                ]
+            }
+        ],
+        "miners": {
+             "lolminer": {
+                 "algo": "AUTO144_5",
+                 "pass": "c=BTC,ID=%WORKER_NAME%",
+                 "port": "%URL_PORT%",
+                 "server": "%URL_HOST%",
+                 "template": "%WAL%"
+             },
+             "gminer": {
+                 "algo": "144_5",
+                 "pass": "c=BTC,ID=%WORKER_NAME%",
+                 "port": "%URL_PORT%",
+                 "server": "%URL_HOST%",
+                 "template": "%WAL%"
+             },
+             "miniz": {
+                 "url": "%URL%",
+                 "algo": "144,5",
+                 "pass": "c=BTC,ID=%WORKER_NAME%",
+                 "template": "%WAL%"
+             }
+        }
+    },
+
     {
         "coin": "Zerg-equihash192",
         "servers": [
