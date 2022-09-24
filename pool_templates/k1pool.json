@@ -709,21 +709,21 @@
     "coin": "ZIL",
     "servers": [
       {
-        "geo": "ETH+ZIL Europe",
+        "geo": "ETHW+ZIL Europe",
         "urls": [
-          "eu.eth.k1pool.com:3840"
+          "eu.ethw.k1pool.com:7691"
         ]
       },
       {
-        "geo": "ETH+ZIL USA",
+        "geo": "ETHW+ZIL USA",
         "urls": [
-          "us.eth.k1pool.com:3840"
+          "us.ethw.k1pool.com:7691"
         ]
       },
       {
-        "geo": "ETH+ZIL China",
+        "geo": "ETHW+ZIL China",
         "urls": [
-          "cn.eth.k1pool.com:3840"
+          "cn.ethw.k1pool.com:7691"
         ]
       },
       {
@@ -776,10 +776,10 @@
       },
       "gminer": {
         "algo": "eth",
-        "user_config": "--proto stratum"
+        "user_config": "--proto stratum --cache_dag 1"
       },
       "lolminer": {
-        "user_config": "--ethstratum ETHV1"
+        "user_config": "--ethstratum ETHV1 --enablezilcache"
       },
       "t-rex": {
         "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
@@ -1334,7 +1334,7 @@
       "_prototype": "miners_kawpow"
     }
   },
-    {
+  {
     "coin": "FLUX",
     "servers": [
       {
