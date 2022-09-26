@@ -1,5 +1,5 @@
 ##### 0.6-219@220925 2022-09-25
-*   T-Rex v0.26.6 (Add `ETC+ALPH` dual mining support; Support upcoming Veil fork; Bug fix: Invalid extranonce2 size error when mining to Nicehash)
+*   T-Rex v0.26.6 (Add `ETC+ALPH` dual mining support; Implemented support for upcoming `Veil` fork; Bug fix: Invalid extranonce2 size error when mining to Nicehash)
 
 ##### 0.6-219@220923-3 2022-09-23
 *   lolMiner v1.59a (fixed defect shares on acc-pool bug that appeared in v1.59) 
