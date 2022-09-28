@@ -1,3 +1,9 @@
+##### 0.6-219@220928 2022-09-28
+*   SRBMiner-Multi v1.0.9 (Added support algorithm `pufferfish2bmb` for Polaris/Vega cards; Performance increase on `sha512_256d_radiant` algorithm for GPUs; Reworked ZIL mining modes; Added nicehash compatibility for algorithm `verushash`; Notes: Full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.0.9)
+*   WildRig-Multi v0.32.4 (Improved `sha512256d` up to 12% on AMD and 2% on NVIDIA vs v0.32.3; Better intensity parameters for `ghostrider`)
+*   GMiner v3.06 (Added `autolykos2` (Ergo) algorithm for Nvidia GPUs; Fixed memory leaks on Ravencoin)
+*   ccMiner-Radiator v1.0.0 (replaced binary with NOVO/Supernovo coin mining support and cleaner console from unnecessary log messages)
+
 ##### 0.6-219@220925 2022-09-25
 *   T-Rex v0.26.6 (Add `ETC+ALPH` dual mining support; Implemented support for upcoming `Veil` fork; Bug fix: Invalid extranonce2 size error when mining to Nicehash)
 
