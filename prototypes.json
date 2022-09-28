@@ -1459,5 +1459,37 @@
             "template": "%WAL%",
             "worker": "%WORKER_NAME%"
         }
+    },
+
+    "miners_verushash": {
+	"ccminer": {
+	    "fork": "verus",
+	    "ccurl": "stratum+tcp://%URL%",
+	    "ccalgo": "verus",
+	    "ccpass": "x",
+	    "ccuser": "%WAL%.%WORKER_NAME%",
+	    "ccextra": "\"intensity\": \"23\""
+	},
+
+	"nanominer": {
+	    "url": "%URL%",
+	    "algo": "verushash",
+	    "pass": "x",
+	    "template": "%WAL%",
+	    "user_config": "rigName=%WORKER_NAME%"
+	},
+
+	"nheqminer": {
+	    "url": "%URL%",
+	    "fork": "verushash",
+	    "pass": "x",
+	    "template": "%WAL%.%WORKER_NAME%"
+	},
+
+	"hellminer": {
+	    "url": "%URL%",
+	    "algo": "verushash",
+	    "template": "%WAL%.%WORKER_NAME%"
+	}
     }
 }
