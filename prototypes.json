@@ -1499,5 +1499,41 @@
 	    "worker": "%WORKER_NAME%",
 	    "template": "%WAL%.%WORKER_NAME%"
 	}
+    },
+
+    "miners_minotaurx_jiimp": {
+	"srbminer": {
+	    "url": "%URL%",
+	    "algo": "minotaurx",
+	    "pass": "ID=%WORKER_NAME%",
+	    "template": "%WAL%",
+	    "user_config": "--disable-gpu"
+	},
+
+	"cpuminer-opt": {
+	    "url": "stratum+tcp://%URL%",
+	    "algo": "minotaurx",
+	    "fork": "rplant",
+	    "pass": "ID=%WORKER_NAME%",
+	    "template": "%WAL%"
+	}
+    },
+
+    "miners_minotaurx": {
+	"srbminer": {
+	    "url": "%URL%",
+	    "algo": "minotaurx",
+	    "pass": "x",
+	    "template": "%WAL%.%WORKER_NAME%",
+	    "user_config": "--disable-gpu"
+	},
+
+	"cpuminer-opt": {
+	    "url": "%URL%",
+	    "algo": "minotaurx",
+	    "fork": "rplant",
+	    "pass": "x",
+	    "template": "%WAL%.%WORKER_NAME%"
+	}
     }
 }
