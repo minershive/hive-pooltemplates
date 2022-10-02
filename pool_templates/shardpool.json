@@ -11,7 +11,7 @@
         "coin": "ZIL",
         "servers": [
             {
-                "geo": "US America West SSL and Non SSL Ports (Using Bzminer None SSL Port, change zmp+ssl:// to zmp+tcp://)",
+                "geo": "US America West SSL and Non SSL Ports",
                 "urls": [
                                  
                     "us1-zil.shardpool.io:3333"
@@ -21,7 +21,7 @@
                 ]
             },
             {
-                "geo": "US America East SSL and Non SSL Ports  (Using Bzminer None SSL Port, change zmp+ssl:// to zmp+tcp://)",
+                "geo": "US America East SSL and Non SSL Ports",
                 "urls": [
                     "us2-zil.shardpool.io:3333"          
 
@@ -31,7 +31,7 @@
                 ]
             },
             {
-                "geo": "Eu Germany SSL and Non SSL Ports (Using Bzminer None SSL Port, change zmp+ssl:// to zmp+tcp://)",
+                "geo": "Eu Germany SSL and Non SSL Ports",
                 "urls": [           
                     "eu1-zil.shardpool.io:3333"
                 ],
@@ -40,7 +40,7 @@
                 ]
             },
             {
-                "geo": "Asia 1 SSL and Non SSL Ports (Using Bzminer None SSL Port, change zmp+ssl:// to zmp+tcp://)",
+                "geo": "Asia 1 SSL and Non SSL Ports",
                 "urls": [             
                     "as1-zil.shardpool.io:3333"
                 ],
@@ -49,12 +49,21 @@
                 ]
             },
             {
-                "geo": "Asia 2 SSL and Non SSL Ports (Using Bzminer None SSL Port, change zmp+ssl:// to zmp+tcp://)",
+                "geo": "Asia 2 SSL and Non SSL Ports",
                 "urls": [          
                     "as2-zil.shardpool.io:3333"
                 ],
                 "ssl_urls": [
                     "as2-zil.shardpool.io:5555"
+                ]
+            },
+            {
+                "geo": "South America SSL and Non SSL Ports",
+                "urls": [          
+                    "sa1-zil.shardpool.io:3333"
+                ],
+                "ssl_urls": [
+                    "sa1-zil.shardpool.io:5555"
                 ]
             },
             {
@@ -95,12 +104,18 @@
                     "as1-zil.shardpool.io:5000/api",
                     "as2-zil.shardpool.io:5000/api"
                 ]
+            },
+            {
+                "geo": "South America (Use Zilminer with this connection)",
+                "urls": [
+                    "sa1-zil.shardpool.io:5000/api"
+                ]
             }
         ],
         "miners": 
         {
             "bzminer": {
-                "server": "zmp+ssl://%URL_HOST%",
+                "url": "zmp+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"force_algo\" = \"zil\""
             },
