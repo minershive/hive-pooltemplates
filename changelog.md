@@ -1,3 +1,7 @@
+##### 0.6-219@221003 2022-10-03
+*   GMiner v3.0.7 (Decreased power consumption on `Autolykos2` algorithm)
+*   SRBMiner: fix dashboard stats issue on 10+ GPUs rigs
+
 ##### 0.6-219@221002 2022-10-02
 *   WildRig-Multi v0.32.5 (Improved `sha512256d` up to 2% on Polaris/Vega; Decreased possibility of stales on `ghostrider`)
 *   NanoMiner v3.7.3 (Fixed bug in authorizing wallet + ID in some VerusCoin pools)
