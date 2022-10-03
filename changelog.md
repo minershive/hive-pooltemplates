@@ -1,3 +1,7 @@
+##### 0.6-219@221002 2022-10-02
+*   WildRig-Multi v0.32.5 (Improved `sha512256d` up to 2% on Polaris/Vega; Decreased possibility of stales on `ghostrider`)
+*   NanoMiner v3.7.3 (Fixed bug in authorizing wallet + ID in some VerusCoin pools)
+
 ##### 0.6-219@220928 2022-09-28
 *   SRBMiner-Multi v1.0.9 (Added support algorithm `pufferfish2bmb` for Polaris/Vega cards; Performance increase on `sha512_256d_radiant` algorithm for GPUs; Reworked ZIL mining modes; Added nicehash compatibility for algorithm `verushash`; Notes: Full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.0.9)
 *   WildRig-Multi v0.32.4 (Improved `sha512256d` up to 12% on AMD and 2% on NVIDIA vs v0.32.3; Better intensity parameters for `ghostrider`)
