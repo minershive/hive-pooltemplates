@@ -1,3 +1,6 @@
+##### 0.6-219@221004 2022-10-04
+*   TeamRedMiner v0.10.4 (Added `kas` for single algo `Kaspa` mining, fee 1.0%; Added simpler way of forcing hashrate reports for `kawpow`/`firopow`, use `--prog_hash_report` option; Fixed missing hashrate reports in some cases for `kawpow`/`firopow` with multiple pools)
+
 ##### 0.6-219@221003 2022-10-03
 *   GMiner v3.07 (Decreased power consumption on `Autolykos2` algorithm)
 *   SRBMiner: fix dashboard stats issue on 10+ GPUs rigs
