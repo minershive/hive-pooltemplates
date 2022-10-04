@@ -1,5 +1,5 @@
 ##### 0.6-219@221003 2022-10-03
-*   GMiner v3.0.7 (Decreased power consumption on `Autolykos2` algorithm)
+*   GMiner v3.07 (Decreased power consumption on `Autolykos2` algorithm)
 *   SRBMiner: fix dashboard stats issue on 10+ GPUs rigs
 
 ##### 0.6-219@221002 2022-10-02
