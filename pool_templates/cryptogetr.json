@@ -1,0 +1,55 @@
+[
+    {
+        "pool": {
+            "name": "CryptoGetr pool",
+            "url": "https://cryptogetr.com",
+            "fee": 0.35,
+            "type": "PROP"
+        }
+    },
+    {
+        "coin": "APX",
+        "servers": [
+            {
+                "geo": "US-Central",
+                "urls": [
+                    "us-central.cryptogetr.com:6974"
+                ]
+            },
+            {
+                "geo": "US-East",
+                "urls": [
+                    "us-east.cryptogetr.com:6974"
+                ]
+            },
+            {
+                "geo": "US-West",
+                "urls": [
+                    "us-west.cryptogetr.com:6974"
+                ]
+            },
+            {
+                "geo": "Canada",
+                "urls": [
+                    "can.cryptogetr.com:6974"
+                ]
+            }
+        ],
+        "miners": {
+            "teamredminer":{
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16rv2",
+                "pass": "c=APX",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x16rv2",
+                "pass": "c=APX",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"opencl-threads\" : \"2\""
+            }
+        }
+    }
+
+]
