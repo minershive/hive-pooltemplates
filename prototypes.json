@@ -134,6 +134,12 @@
 	    "port": "%URL_PORT%",
 	    "server": "%URL_HOST%",
 	    "template": "%WAL%.%WORKER_NAME%"
+	},
+
+	"bzminer": {
+	    "url": "%URL%",
+	    "algo": "ergo",
+	    "template": "%WAL%.%WORKER_NAME%"
 	}
     },
 
@@ -1549,6 +1555,31 @@
 	    "fork": "rplant",
 	    "pass": "x",
 	    "template": "%WAL%.%WORKER_NAME%"
+	}
+    },
+
+    "miners_sha512256d": {
+	"srbminer": {
+	    "url": "%URL%",
+	    "algo": "sha512_256d_radiant",
+	    "pass": "x",
+	    "template": "%WAL%.%WORKER_NAME%",
+	    "user_config": "--disable-gpu"
+	},
+
+	"wildrig-multi": {
+	    "url": "%URL%",
+	    "algo": "sha512256d",
+	    "pass": "x",
+	    "template": "%WAL%.%WORKER_NAME%"
+	},
+
+	"ccminer": {
+	    "fork": "radiator",
+	    "ccurl": "%URL%",
+	    "ccalgo": "rad",
+	    "ccpass": "x",
+	    "ccuser": "%WAL%.%WORKER_NAME%"
 	}
     }
 }
