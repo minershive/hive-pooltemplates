@@ -1,3 +1,18 @@
+##### LINUX IMAGE RELEASE 0.6-219 2022-10-06
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-219
+*   Ubuntu v18.04.6 LTS based
+*   Linux kernel: v5.10.110
+*   Nvidia driver: v510.73.05
+*   AMD driver v5.13.0822
+*   AMD OpenCL v21.40.1
+*   md5sum 114a49fc9b98048e04075c5f480bb912
+
+##### 0.6-219@221005 2022-10-05
+*   lolMiner v1.60 (Significantly improved performance on Flux for Nvidia Turing & Ampere and AMD RX 5000 based GPUs; Equihash 125/4 (Flux), 144/5 and 192/7 stratum can now distinguish between stale shares and other rejected)
+*   SRBMiner-Multi v1.1.0 (Performance increase on `sha512_256d_radiant` algorithm for GPUs; Small performance increase on `sha512_256d_radiant` algorithm in DUAL mining modes: ethash/etchash/autolykos2)
+*   Custom miner: package management improvements (fixed downgrade issue: miner was not installed if archive was already downloaded; added check for broken archives)
+
 ##### 0.6-219@221004 2022-10-04
 *   TeamRedMiner v0.10.4 (Added `kas` for single algo `Kaspa` mining, fee 1.0%; Added simpler way of forcing hashrate reports for `kawpow`/`firopow`, use `--prog_hash_report` option; Fixed missing hashrate reports in some cases for `kawpow`/`firopow` with multiple pools)
 
