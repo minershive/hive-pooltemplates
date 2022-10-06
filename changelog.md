@@ -9,7 +9,7 @@
 *   md5sum 114a49fc9b98048e04075c5f480bb912
 
 ##### 0.6-219@221005 2022-10-05
-*   lolMiner v1.60 (Significantly improved performance on Flux for Nvidia Turing & Ampere and AMD RX 5000 based GPUs; Equihash 125/4 (Flux), 144/5 and 192/7 stratum can now distinguish between stale shares and other rejected)
+*   lolMiner v1.60 (Significantly improved performance on `Flux` for Nvidia Turing & Ampere and AMD RX 5000 based GPUs; Equihash 125/4 (Flux), 144/5 and 192/7 stratum can now distinguish between stale shares and other rejected)
 *   SRBMiner-Multi v1.1.0 (Performance increase on `sha512_256d_radiant` algorithm for GPUs; Small performance increase on `sha512_256d_radiant` algorithm in DUAL mining modes: ethash/etchash/autolykos2)
 *   Custom miner: package management improvements (fixed downgrade issue: miner was not installed if archive was already downloaded; added check for broken archives)
 
