@@ -53,12 +53,13 @@
                 "url": "stratum1+tcp://%URL%"
             },
             "lolminer": {
-              "template": "%WAL%",  
+              "template": "%WAL%",
+	      "worker": "%WORKER_NAME%",   
               "user_config": "--ethstratum ETHPROXY"
             },
             "t-rex": {
               "template": "%WAL%",
-              "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"%COIN%\""
+              "user_config": "\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"%COIN%\""
             }
         }
     },
@@ -108,12 +109,13 @@
                 "url": "stratum1+tcp://%URL%"
             },
             "lolminer": {
-              "template": "%WAL%",  
+              "template": "%WAL%",
+	      "worker": "%WORKER_NAME%",
               "user_config": "--ethstratum ETHPROXY"
             },
             "t-rex": {
               "template": "%WAL%",
-              "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"%COIN%\""
+              "user_config": "\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"%COIN%\""
             }
         }
     },
@@ -288,11 +290,12 @@
             },
             "lolminer": {
               "template": "%WAL%",  
+	      "worker": "%WORKER_NAME%",
               "user_config": "--ethstratum ETHPROXY"
             },
             "t-rex": {
               "template": "%WAL%",
-              "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"%COIN%\""
+              "user_config": "\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"%COIN%\""
             }
         }
     }   
