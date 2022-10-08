@@ -1,3 +1,9 @@
+##### 0.6-219@221008 2022-10-08
+*   TeamRedMiner v0.10.4.1 (Fixed Kaspa kernels for BC-160 (gfx1011) and Radeon VII family on older PAL drivers; Fixed rare cases of ethash false alerts of dead GPUSs)
+*   WildRig-Multi v0.33.1 (slightly improved `sha512256d` on AMD GPUs; implemented `pufferfish2` algo)
+*   miniZ v1.9z3 (Improved invalid/stale shares on progpow/ethash/octopus; Fixed issues with KawPow mining; Fixed AMD fan display; Improved stability)
+*   NoncerPro Nimiq CUDA miner v3.4.0 (added support RTX 30xx)
+
 ##### 0.6-219@221005 2022-10-05
 *   lolMiner v1.60 (Significantly improved performance on `Flux` for Nvidia Turing & Ampere and AMD RX 5000 based GPUs; Equihash 125/4 (Flux), 144/5 and 192/7 stratum can now distinguish between stale shares and other rejected)
 *   SRBMiner-Multi v1.1.0 (Performance increase on `sha512_256d_radiant` algorithm for GPUs; Small performance increase on `sha512_256d_radiant` algorithm in DUAL mining modes: ethash/etchash/autolykos2)
