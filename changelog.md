@@ -1,3 +1,6 @@
+##### 0.6-219@221009 2022-10-09
+*   TeamBlackMiner v1.70 (Implemented support for `kawpow` algo; Restored Zil Single mining; New dual mining mode `ethash+zil` and `etchash+zil`; Fixed poolspeed in the console for static diff pools for Vertcoin)
+
 ##### 0.6-219@221008 2022-10-08
 *   TeamRedMiner v0.10.4.1 (Fixed Kaspa kernels for BC-160 (gfx1011) and Radeon VII family on older PAL drivers; Fixed rare cases of ethash false alerts of dead GPUSs)
 *   WildRig-Multi v0.33.1 (slightly improved `sha512256d` on AMD GPUs; implemented `pufferfish2` algo)
