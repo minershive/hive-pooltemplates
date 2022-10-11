@@ -11,7 +11,7 @@
         "coin": "ETHW",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "Global",
                 "urls": [
                     "ethw.kryptex.network:7777"
                 ]
@@ -32,8 +32,7 @@
             },
             "nbminer": {
                 "algo": "ethash",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
+                "url": "%URL%",
                 "template": "%WAL%/%WORKER_NAME%"
             },
             "phoenixminer": {
@@ -48,11 +47,11 @@
             "t-rex": {
                 "algo": "ethash",
                 "template": "%WAL%/%WORKER_NAME%",
-                "server": "%URL%"
+                "url": "%URL%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%/%WORKER_NAME%%"
+                "template": "%WAL%/%WORKER_NAME%"
             }
         }
     },
@@ -60,7 +59,7 @@
         "coin": "ETC",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "Global",
                 "urls": [
                     "etc.kryptex.network:7777"
                 ]
@@ -81,8 +80,7 @@
             },
             "nbminer": {
                 "algo": "etсhash",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
+                "url": "%URL%",
                 "template": "%WAL%/%WORKER_NAME%"
             },
             "phoenixminer": {
@@ -97,11 +95,11 @@
             "t-rex": {
                 "algo": "etсhash",
                 "template": "%WAL%/%WORKER_NAME%",
-                "server": "%URL%"
+                "url": "%URL%"
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%/%WORKER_NAME%%"
+                "template": "%WAL%/%WORKER_NAME%"
             }
         }
     },
@@ -109,7 +107,7 @@
         "coin": "RVN",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "Global",
                 "urls": [
                     "rvn.kryptex.network:7777"
                 ]
@@ -124,8 +122,7 @@
             },
             "nbminer": {
                 "algo": "kawpow",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
+                "url": "%URL%",
                 "template": "%WAL%/%WORKER_NAME%"
             },
             "teamredminer": {
@@ -136,7 +133,7 @@
             "t-rex": {
                 "algo": "kawpow",
                 "template": "%WAL%/%WORKER_NAME%",
-                "server": "%URL%"
+                "url": "%URL%"
             }
         }
     },
@@ -144,17 +141,22 @@
         "coin": "ERG",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "Global",
                 "urls": [
                     "erg.kryptex.network:7777"
                 ]
             }
         ],
         "miners": {
-            "nbminer": {
+            "gminer": {
                 "algo": "autolykos2",
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "nbminer": {
+                "algo": "autolykos2",
+                "url": "%URL%",
                 "template": "%WAL%/%WORKER_NAME%"
             },
             "teamredminer": {
@@ -165,7 +167,7 @@
             "t-rex": {
                 "algo": "autolykos2",
                 "template": "%WAL%/%WORKER_NAME%",
-                "server": "%URL%"
+                "url": "%URL%"
             }
         }
     }
