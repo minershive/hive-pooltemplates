@@ -18,7 +18,7 @@
 *   Ubuntu v18.04.6 LTS based
 *   Linux kernel: v5.10.110
 *   Nvidia driver: v510.73.05
-*   AMD driver v5.13.0822
+*   AMD driver v5.13.2208
 *   AMD OpenCL v21.40.1
 *   md5sum 114a49fc9b98048e04075c5f480bb912
 
