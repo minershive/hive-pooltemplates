@@ -1,3 +1,9 @@
+##### 0.6-219@221012 2022-10-12
+*   lolMiner v1.61 (Slightly improved performance of Flux mining on Nvidia Ampere and Turing cards, approx 1.5-2.5% vs v1.60; Fixed a bug causing Flux mining on Nvidia Pascal GPUs not working; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.61)
+*   GMiner v3.08 (added `kheavyhash` algorithm for mining Kaspa on Nvidia GPUs)
+*   BzMiner v12.0.2 (Added support for mining ETHW, fee 0.5%; Added support for mining NEOW, MEWC, fee 0.5%; Added support for mining RXD, fee 1.0%; Added support for new dual mining modes; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v12.0.2)
+*   **NEW** Dero-Stratum-Miner v1.0.3 (CPU miner for mining DERO on Whalesburg pool via their stratum implementation)
+
 ##### 0.6-219@221009 2022-10-09
 *   TeamBlackMiner v1.70 (Implemented support for `kawpow` algo; Restored Zil Single mining; New dual mining mode `ethash+zil` and `etchash+zil`; Fixed poolspeed in the console for static diff pools for Vertcoin)
 
