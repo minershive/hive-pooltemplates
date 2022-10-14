@@ -579,6 +579,75 @@
         }
     },
     {
+        "coin": "LTC",
+        "servers": [
+            {
+                "geo": "EU Normal ASIC",
+                "urls": [
+                    "stratum.coinminerz.com:3320"
+                ],
+                "ssl_urls": [
+                    "stratum.coinminerz.com:3420"
+                ]
+            },
+            {
+                "geo": "EU High Power ASIC",
+                "urls": [
+                    "stratum.coinminerz.com:3720"
+                ]
+            },
+            {
+                "geo": "US Normal ASIC",
+                "urls": [
+                    "us-stratum.coinminerz.com:3320"
+                ],
+                "ssl_urls": [
+                    "us-stratum.coinminerz.com:3420"
+                ]
+            },
+            {
+                "geo": "US High Power ASIC",
+                "urls": [
+                    "us-stratum.coinminerz.com:3720"
+                ]
+            },
+            {
+                "geo": "SG Normal ASIC",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3320"
+                ],
+                "ssl_urls": [
+                    "sg-stratum.coinminerz.com:3420"
+                ]
+            },
+            {
+                "geo": "SG High Power ASIC",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3720"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "algo": "scrypt",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp:\/\/%URL%",
+                "ccalgo": "scrypt",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "LCC-MinotaurX",
         "servers": [
             {
