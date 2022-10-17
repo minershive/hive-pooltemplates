@@ -1,3 +1,8 @@
+##### 0.6-219@221016 2022-10-16
+*   GMiner v3.09 (Added `ETC+KASPA`, `ETHW+KASPA`, `ERGO+KASPA` dual solver for Nvidia GPUs; Improved KASPA mining performance on GTX 10x0 GPUs)
+*   T-Rex v0.26.8 (Add support for Nvidia RTX 40xx GPUs; Handle v520+ drivers correctly)
+*   WildRig-Multi v0.33.3 (Fix `ghostrider` for Nvidia GPUs; Improved `pufferfish2` on RDNA2 GPUs up to 20%; Added default intensity values for RTX 4090; Reverted `curvehash` changes for Nvidia, so it should be same as v0.32.2)
+
 ##### 0.6-219@221012 2022-10-12
 *   lolMiner v1.61 (Slightly improved performance of Flux mining on Nvidia Ampere and Turing cards, approx 1.5-2.5% vs v1.60; Fixed a bug causing Flux mining on Nvidia Pascal GPUs not working; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.61)
 *   GMiner v3.08 (added `kheavyhash` algorithm for mining Kaspa on Nvidia GPUs)
