@@ -1,3 +1,9 @@
+##### 0.6-219@221019 2022-10-19
+*   TeamRedMiner v0.10.5 (Added `Ethash+Kaspa` dual mining mode; Kaspa single algo mining rewritten for minimal latency, optimizing for the Kaspa 1 sec block time)
+
+##### 0.6-219@221017 2022-10-17
+*   TeamRedMiner v0.10.5-RC2 (Added `Ethash+Kaspa` dual mining mode; Kaspa single algo mining rewritten for minimal latency, optimizing for the Kaspa 1 sec block time; *Notes: Public Beta version for testing purposes you should select version manually in miner settings*)
+
 ##### 0.6-219@221016 2022-10-16
 *   GMiner v3.09 (Added `ETC+KASPA`, `ETHW+KASPA`, `ERGO+KASPA` dual solver for Nvidia GPUs; Improved KASPA mining performance on GTX 10x0 GPUs)
 *   T-Rex v0.26.8 (Add support for Nvidia RTX 40xx GPUs; Handle v520+ drivers correctly)
