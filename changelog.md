@@ -1,6 +1,6 @@
 ##### 0.6-219@221020 2022-10-20
 *   TeamRedMiner v0.10.5.1 (Fixed Kaspa mining critical bug: sometimes delaying shares, resulting in pool rejects; Fixed Kaspa solo mining against the Kaspa stratum bridge or other setups with no extranonce sent)
-*   GMiner v3.10 (Added support of Nvidia RTX 40xx GPUs; Fixed display memory temperature under Linux on latest Nvidia drivers; Reverted support `Aeternity` mining on Nvidia GPUs; Improved Ergo compatibility with mining pools; Improved balance displaying)
+*   GMiner v3.10 (Added support of Nvidia RTX 40xx GPUs; Fixed display memory temperature under Linux on latest Nvidia drivers; Added support `Aeternity` mining on Nvidia GPUs; Improved Ergo compatibility with mining pools; Improved balance displaying)
 
 ##### 0.6-219@221019 2022-10-19
 *   TeamRedMiner v0.10.5 (Added `Ethash+Kaspa` dual mining mode; Kaspa single algo mining rewritten for minimal latency, optimizing for the Kaspa 1 sec block time)
