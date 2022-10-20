@@ -48,8 +48,48 @@
                 "pass": "c=APX",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"opencl-threads\" : \"2\""
+            },
+            "t-rex":{
+                "algo":"x16rv2",
+                "template":"%WAL%.%WORKER_NAME%",
+                "server":"stratum+tcp://%URL%",
+                "pass":"c=APX",
+                "ver": "0.19.14-cuda111"
             }
         }
+    },
+    {
+        "coin": "RXD",
+        "servers": [
+            {
+                "geo": "US-Central",
+                "urls": [
+                    "us-central.cryptogetr.com:3093"
+                ]
+            },
+            {
+                "geo": "US-East",
+                "urls": [
+                    "us-east.cryptogetr.com:3093"
+                ]
+            },
+            {
+                "geo": "US-West",
+                "urls": [
+                    "us-west.cryptogetr.com:3093"
+                ]
+            },
+            {
+                "geo": "Canada",
+                "urls": [
+                    "can.cryptogetr.com:3093"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_sha512256d"
+        }
     }
+
 
 ]
