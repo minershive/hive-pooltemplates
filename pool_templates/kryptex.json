@@ -170,5 +170,32 @@
                 "url": "%URL%"
             }
         }
+    }, 
+    {
+        "coin": "UBQ",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "ubq.kryptex.network:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "lolminer": {
+                "algo": "ubqhash",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%",
+                "user_config": "-coin %COIN%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            }
+        }
     }
 ]
