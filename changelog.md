@@ -1,5 +1,5 @@
 ##### 0.6-219@221023 2022-10-23
-*   miniZ v1.9z4 (Performance improvements for `125,4` on all GPUs, up to 20%; Performance improvements for 150,5 on all GPUs; Added `ubqhash` algorithm for UBQ/Ubiq mining; Added AMD support for all progpow algos; Added support for Nvidia RTX 40xx GPUs; Notes: see full changelog at https://miniz.ch/2022/10/22/miniz-v19z4-is-out/)
+*   miniZ v1.9z4 (Performance improvements for `125,4` on all GPUs, up to 20%; Performance improvements for `150,5` on all GPUs; Added `ubqhash` algorithm for UBQ/Ubiq mining; Added AMD support for all progpow algos; Added support for Nvidia RTX 40xx GPUs; Notes: see full changelog at https://miniz.ch/2022/10/22/miniz-v19z4-is-out/)
 *   NoncerPro Nimiq CUDA miner v3.4.1 (A more robust parameters optimizer; Fixed 100% CPU usage on some GPUs; Reduced the default memory allocation which could decrease the number of rejected shares; Notes: see full changelog at https://github.com/NoncerPro/noncerpro-nimiq-cuda/releases/tag/v3.4.1)
 *   XMRig v6.18.1 (Small optimization & fixes, see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.18.1)
 *   CPUminer-Opt-JayDDee v3.20.3 (Faster `c11`, `anime`, `hmq1725` algos depending on CPU; Notes: full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.20.3)
