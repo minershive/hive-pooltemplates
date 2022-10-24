@@ -8,6 +8,78 @@
         }
     },
     {
+        "coin": "Zerg-sha25",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "sha256.mine.zergpool.com:3333"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "sha256.eu.mine.zergpool.com:3333"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "sha256.na.mine.zergpool.com:3333"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "sha256.asia.mine.zergpool.com:3333"
+                ]
+            }
+        ],
+        "miners": {
+           "asicminer": {
+              "url": "stratum+tcp://%URL%",
+              "template": "%WAL%",
+              "pass": "c=BTC,ID=%WORKER_NAME%"
+           }
+        }
+    },
+    {
+        "coin": "Zerg-scrypt",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "scrypt.mine.zergpool.com:3433"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "scrypt.eu.mine.zergpool.com:3433"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "scrypt.na.mine.zergpool.com:3433"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "scrypt.asia.mine.zergpool.com:3433"
+                ]
+            }
+        ],
+        "miners": {
+           "asicminer": {
+              "url": "stratum+tcp://%URL%",
+              "template": "%WAL%",
+              "pass": "c=BTC,ID=%WORKER_NAME%"
+           }
+        }
+    },
+    {
         "coin": "Zerg-m7m",
         "servers": [
             {
@@ -26,11 +98,64 @@
             }
         }
     },
+
+    {
+        "coin": "Zerg-equihash144",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "equihash144.mine.zergpool.com:2146"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "equihash144.eu.mine.zergpool.com:2146"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "equihash144.na.mine.zergpool.com:2146"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "equihash144.asia.mine.zergpool.com:2146"
+                ]
+            }
+        ],
+        "miners": {
+             "lolminer": {
+                 "algo": "AUTO144_5",
+                 "pass": "c=BTC,ID=%WORKER_NAME%",
+                 "port": "%URL_PORT%",
+                 "server": "%URL_HOST%",
+                 "template": "%WAL%"
+             },
+             "gminer": {
+                 "algo": "144_5",
+                 "pass": "c=BTC,ID=%WORKER_NAME%",
+                 "port": "%URL_PORT%",
+                 "server": "%URL_HOST%",
+                 "template": "%WAL%"
+             },
+             "miniz": {
+                 "url": "%URL%",
+                 "algo": "144,5",
+                 "pass": "c=BTC,ID=%WORKER_NAME%",
+                 "template": "%WAL%"
+             }
+        }
+    },
+
     {
         "coin": "Zerg-equihash192",
         "servers": [
             {
-                "geo": "USA",
+                "geo": "AUTO",
                 "urls": [
                     "equihash192.mine.zergpool.com:2144"
                 ]
@@ -129,19 +254,7 @@
         "miners": {
         }
     },
-    {
-        "coin": "Zerg-cryptonight_gpu",
-        "servers": [
-            {
-                "geo": "USA",
-                "urls": [
-                    "cryptonight_gpu.mine.zergpool.com:4445"
-                ]
-            }
-        ],
-        "miners": {
-        }
-    },
+
     {
         "coin": "Zerg-mtp",
         "servers": [
@@ -255,6 +368,39 @@
     },
 
     {
+        "coin": "Zerg-ubqhash",
+        "servers": [
+            {
+                "geo": "Anycast",
+                "urls": [
+                    "ubqhash.mine.zergpool.com:9998"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "ubqhash.eu.mine.zergpool.com:9998"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "ubqhash.na.mine.zergpool.com:9998"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "ubqhash.asia.mine.zergpool.com:9998"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ubqhash"
+        }
+    },
+
+    {
         "coin": "Zerg-etchash",
         "servers": [
             {
@@ -301,24 +447,7 @@
             "_prototype": "miners_ethash"
         }
     },
-    {
-        "coin": "Zerg-odocrypt",
-        "servers": [
-            {
-                "geo": "USA",
-                "urls": [
-                    "odocrypt.mine.zergpool.com:3336"
-                ]
-            }
-        ],
-        "miners": {
-           "asicminer": {
-              "url": "stratum+tcp://%URL%",
-              "template": "%WAL%.%WORKER_NAME%",
-              "pass": "c=BTC"
-           }
-        }
-    },
+
     {
         "coin": "Zerg-k12",
         "servers": [
@@ -349,6 +478,38 @@
         ],
         "miners": {
            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "Zerg-cryptonight_gpu",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "cryptonight_gpu.mine.zergpool.com:4445"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "cryptonight_gpu.na.mine.zergpool.com:4445"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "cryptonight_gpu.eu.mine.zergpool.com:4445"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "cryptonight_gpu.asia.mine.zergpool.com:4445"
+                ]
+            }
+        ],
+        "miners": {
+           "_prototype": "miners_cryptonight_gpu"
         }
     },
     {
@@ -488,19 +649,19 @@
             {
                 "geo": "EU",
                 "urls": [
-                    "allium.eu.mine.zergpool.com:4233"
+                    "neoscrypt.eu.mine.zergpool.com:4233"
                 ]
             },
             {
                 "geo": "N.America",
                 "urls": [
-                    "allium.na.mine.zergpool.com:4233"
+                    "neoscrypt.na.mine.zergpool.com:4233"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "allium.asia.mine.zergpool.com:4233"
+                    "neoscrypt.asia.mine.zergpool.com:4233"
                 ]
             }
         ],
@@ -512,6 +673,168 @@
 	      "pass": "c=BTC",
 	      "template": "%WAL%.%WORKER_NAME%"
 	   }
+        }
+    },
+    {
+        "coin": "Zerg-x16rt",
+        "servers": [
+            {
+                "geo": "Anycast",
+                "urls": [
+                    "x16rt.mine.zergpool.com:3696"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "x16rt.eu.mine.zergpool.com:3696"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "x16rt.na.mine.zergpool.com:3696"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "x16rt.asia.mine.zergpool.com:3696"
+                ]
+            }
+        ],
+        "miners": {
+        }
+    },
+
+    {
+        "coin": "Zerg-minotaurx",
+        "servers": [
+            {
+                "geo": "Anycast",
+                "urls": [
+                    "minotaurx.mine.zergpool.com:7019"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "minotaurx.eu.mine.zergpool.com:7019"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "minotaurx.na.mine.zergpool.com:7019"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "minotaurx.asia.mine.zergpool.com:7019"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_minotaurx_jiimp"
+        }
+    },
+
+    {
+        "coin": "Zerg-cpupower",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "cpupower.mine.zergpool.com:4250"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "cpupower.eu.mine.zergpool.com:4250"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "cpupower.na.mine.zergpool.com:4250"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "cpupower.asia.mine.zergpool.com:4250"
+                ]
+            }
+        ],
+        "miners": {
+        }
+    },
+
+    {
+        "coin": "Zerg-hmq1725",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "hmq1725.mine.zergpool.com:3747"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "hmq1725.eu.mine.zergpool.com:3747"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "hmq1725.na.mine.zergpool.com:3747"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "hmq1725.asia.mine.zergpool.com:3747"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_hmq1725"
+        }
+    },
+
+    {
+        "coin": "Zerg-sha512256d",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "sha512256d.mine.zergpool.com:7086"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "sha512256d.eu.mine.zergpool.com:7086"
+                ]
+            },
+            {
+                "geo": "N.America",
+                "urls": [
+                    "sha512256d.na.mine.zergpool.com:7086"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "sha512256d.asia.mine.zergpool.com:7086"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_sha512256d"
         }
     }
 ]

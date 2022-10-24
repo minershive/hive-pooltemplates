@@ -1,39 +1,5 @@
 [
     {
-        "coin": "ETH",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "eth.coinmine.pl:4000"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "ethash",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"worksize\": \"192\"\n\"gpu-threads\": \"1\"\n\"xintensity\": \"1024\""
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "ETC",
         "servers": [
             {

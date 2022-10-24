@@ -1,3 +1,345 @@
+##### 0.6-219@221023 2022-10-23
+*   miniZ v1.9z4 (Performance improvements for `125,4` on all GPUs, up to 20%; Performance improvements for `150,5` on all GPUs; Added `ubqhash` algorithm for UBQ/Ubiq mining; Added AMD support for all progpow algos; Added support for Nvidia RTX 40xx GPUs; Notes: see full changelog at https://miniz.ch/2022/10/22/miniz-v19z4-is-out/)
+*   NoncerPro Nimiq CUDA miner v3.4.1 (A more robust parameters optimizer; Fixed 100% CPU usage on some GPUs; Reduced the default memory allocation which could decrease the number of rejected shares; Notes: see full changelog at https://github.com/NoncerPro/noncerpro-nimiq-cuda/releases/tag/v3.4.1)
+*   XMRig v6.18.1 (Small optimization & fixes, see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.18.1)
+*   CPUminer-Opt-JayDDee v3.20.3 (Faster `c11`, `anime`, `hmq1725` algos depending on CPU; Notes: full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.20.3)
+*   Misc fixes (fixed Gminer config generator; fixed VertHashMiner stats issue)
+
+##### 0.6-219@221020 2022-10-20
+*   TeamRedMiner v0.10.5.1 (Fixed Kaspa mining critical bug: sometimes delaying shares, resulting in pool rejects; Fixed Kaspa solo mining against the Kaspa stratum bridge or other setups with no extranonce sent)
+*   GMiner v3.10 (Added support of Nvidia RTX 40xx GPUs; Fixed display memory temperature under latest Nvidia drivers; Added support `Aeternity` mining on Nvidia GPUs; Improved Ergo compatibility with mining pools)
+
+##### 0.6-219@221019 2022-10-19
+*   TeamRedMiner v0.10.5 (Added `Ethash+Kaspa` dual mining mode; Kaspa single algo mining rewritten for minimal latency, optimizing for the Kaspa 1 sec block time)
+
+##### 0.6-219@221017 2022-10-17
+*   TeamRedMiner v0.10.5-RC2 (Added `Ethash+Kaspa` dual mining mode; Kaspa single algo mining rewritten for minimal latency, optimizing for the Kaspa 1 sec block time; *Notes: Public Beta version for testing purposes you should select version manually in miner settings*)
+
+##### 0.6-219@221016 2022-10-16
+*   GMiner v3.09 (Added `ETC+KASPA`, `ETHW+KASPA`, `ERGO+KASPA` dual solver for Nvidia GPUs; Improved KASPA mining performance on GTX 10x0 GPUs)
+*   T-Rex v0.26.8 (Add support for Nvidia RTX 40xx GPUs; Handle v520+ drivers correctly)
+*   WildRig-Multi v0.33.3 (Fix `ghostrider` for Nvidia GPUs; Improved `pufferfish2` on RDNA2 GPUs up to 20%; Added default intensity values for RTX 4090; Reverted `curvehash` changes for Nvidia, so it should be same as v0.32.2)
+
+##### 0.6-219@221012 2022-10-12
+*   lolMiner v1.61 (Slightly improved performance of Flux mining on Nvidia Ampere and Turing cards, approx 1.5-2.5% vs v1.60; Fixed a bug causing Flux mining on Nvidia Pascal GPUs not working; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.61)
+*   GMiner v3.08 (added `kheavyhash` algorithm for mining Kaspa on Nvidia GPUs)
+*   BzMiner v12.0.2 (Added support for mining ETHW, fee 0.5%; Added support for mining NEOX, MEWC, fee 0.5%; Added support for mining RXD, fee 1.0%; Added support for new dual mining modes; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v12.0.2)
+*   **NEW** Dero-Stratum-Miner v1.0.3 (CPU miner for mining DERO on Whalesburg pool via their stratum implementation)
+
+##### 0.6-219@221009 2022-10-09
+*   TeamBlackMiner v1.70 (Implemented support for `kawpow` algo; Restored Zil Single mining; New dual mining mode `ethash+zil` and `etchash+zil`; Fixed poolspeed in the console for static diff pools for Vertcoin)
+
+##### 0.6-219@221008 2022-10-08
+*   TeamRedMiner v0.10.4.1 (Fixed Kaspa kernels for BC-160 (gfx1011) and Radeon VII family on older PAL drivers; Fixed rare cases of ethash false alerts of dead GPUSs)
+*   WildRig-Multi v0.33.1 (slightly improved `sha512256d` on AMD GPUs; implemented `pufferfish2` algo)
+*   miniZ v1.9z3 (Improved invalid/stale shares on progpow/ethash/octopus; Fixed issues with KawPow mining; Fixed AMD fan display; Improved stability)
+*   NoncerPro Nimiq CUDA miner v3.4.0 (added support RTX 30xx)
+
+##### 0.6-219@221005 2022-10-05
+*   lolMiner v1.60 (Significantly improved performance on `Flux` for Nvidia Turing & Ampere and AMD RX 5000 based GPUs; Equihash 125/4 (Flux), 144/5 and 192/7 stratum can now distinguish between stale shares and other rejected)
+*   SRBMiner-Multi v1.1.0 (Performance increase on `sha512_256d_radiant` algorithm for GPUs; Small performance increase on `sha512_256d_radiant` algorithm in DUAL mining modes: ethash/etchash/autolykos2)
+*   Custom miner: package management improvements (fixed downgrade issue: miner was not installed if archive was already downloaded; added check for broken archives)
+
+##### LINUX IMAGE RELEASE 0.6-219 2022-10-05
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-219
+*   Ubuntu v18.04.6 LTS based
+*   Linux kernel: v5.10.110
+*   Nvidia driver: v510.73.05
+*   AMD driver v5.13.2208
+*   AMD OpenCL v21.40.1
+*   md5sum 114a49fc9b98048e04075c5f480bb912
+
+##### 0.6-219@221004 2022-10-04
+*   TeamRedMiner v0.10.4 (Added `kas` for single algo `Kaspa` mining, fee 1.0%; Added simpler way of forcing hashrate reports for `kawpow`/`firopow`, use `--prog_hash_report` option; Fixed missing hashrate reports in some cases for `kawpow`/`firopow` with multiple pools)
+
+##### 0.6-219@221003 2022-10-03
+*   GMiner v3.07 (Decreased power consumption on `Autolykos2` algorithm)
+*   SRBMiner: fix dashboard stats issue on 10+ GPUs rigs
+
+##### 0.6-219@221002 2022-10-02
+*   WildRig-Multi v0.32.5 (Improved `sha512256d` up to 2% on Polaris/Vega; Decreased possibility of stales on `ghostrider`)
+*   NanoMiner v3.7.3 (Fixed bug in authorizing wallet + ID in some VerusCoin pools)
+
+##### 0.6-219@220928 2022-09-28
+*   SRBMiner-Multi v1.0.9 (Added support algorithm `pufferfish2bmb` for Polaris/Vega cards; Performance increase on `sha512_256d_radiant` algorithm for GPUs; Reworked ZIL mining modes; Added nicehash compatibility for algorithm `verushash`; Notes: Full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.0.9)
+*   WildRig-Multi v0.32.4 (Improved `sha512256d` up to 12% on AMD and 2% on NVIDIA vs v0.32.3; Better intensity parameters for `ghostrider`)
+*   GMiner v3.06 (Added `autolykos2` (Ergo) algorithm for Nvidia GPUs; Fixed memory leaks on Ravencoin)
+*   ccMiner-Radiator v1.0.0 (replaced binary with NOVO/Supernovo coin mining support and cleaner console from unnecessary log messages)
+
+##### 0.6-219@220925 2022-09-25
+*   T-Rex v0.26.6 (Add `ETC+ALPH` dual mining support; Implemented support for upcoming `Veil` fork; Bug fix: Invalid extranonce2 size error when mining to Nicehash)
+
+##### 0.6-219@220923-3 2022-09-23
+*   lolMiner v1.59a (fixed defect shares on acc-pool bug that appeared in v1.59) 
+  
+##### 0.6-219@220923-2 2022-09-23
+*   lolMiner: fixed config generation for single KASPA mining mode
+
+##### 0.6-219@220923 2022-09-23
+*   lolMiner v1.59 (Significantly improved `Kaspa` performance and efficiency on Nvidia Turing and Ampere GPUs; Slightly improved Kaspa performance and efficiency on AMD Navi and Big Navi GPUs; Kaspa performance statistics should now be a bit more smooth)
+
+##### 0.6-219@220922 2022-09-22
+*   TeamBlackMiner v1.69 (Removed duplicate share rejects on `vertcoin` vardiff pools)
+*   lolMiner v1.58 (Added `Kaspa` only mining mode for Nvidia Pascal and new and AMD Polaris, Navi and Big Navi, use algo `KASPA` to mine it, fee is 0.75%)
+*   NanoMiner v3.7.2 (Fixed several ZIL issues; Changed default coin to ETC; Removed automatic switch from ETH to ETC)
+
+##### 0.6-219@220920 2022-09-20
+*   TeamBlackMiner v1.68 (Intensity rewrite/improvement for `verthash` abit more stable and faster; Removed duplicate job id in console for `verthash`; Fixed hashrate units in console bug on AMD / total hash in `verthash`)
+*   SRBMiner-Multi v1.0.8 (Added algorithm `blake3_ironfish` (IRONFISH coin) for CPU/GPU mining, fee 0.85%; Added dual mining modes: ETHASH/ETCHASH + BLAKE3_IRONFISH and AUTOLYKOS2 + BLAKE3_IRONFISH; Added support mining algorithm `pufferfish2bmb` for RDNA RX 5000 GPUs; Performance increase on `autolykos2` algorithm for RX5700/XT GPUs; Small performance increase on `kaspa` algorithm for RDNA RX 5000 GPUs; Various bug fixes; Notes: Full changelog at: https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.0.8)
+*   CCminer-KlausT v8.26.1 (slight RTX optimization and bug fixes on old algos; *Notes: available builds with CUDA 11.2/Ubuntu 16.04 and CUDA 11.6 whish set as latest version for this fork*)
+
+##### 0.6-219@220919 2022-09-19
+*   TeamBlackMiner v1.67 (Improved performance Vertcoin Nvidia and AMD; Fixed crash on exit; Added ETHW pools support; Reduced CPU memory usage for Vertcoin)
+*   **NEW** CCminer-Radiator v1.0.0 (ccminer for mining RXD/Radiant coin on Nvidia GPUs)
+
+##### 0.6-219@220918 2022-09-18
+*   TeamRedMiner v0.10.3.1 (Added next height pad prebuild for Ergo/Autolykos2 to raise effective hashrate over time; Better execution of R/B/C modes for ethash with dual zil mining; Added R-mode zil cache support with `--eth_dag_cache=0`; Note: changelog highlights major changes for v0.10.3, see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.3.1)
+*   BzMiner v11.1.0 (New coin: ZIL, 0% dev fee; Dual Mining with ZIL + any algo, using flexpool's ZMP protocol; Fixed duplicate shares on large rigs; Minor Kaspa improvements for AMD GPUs; Full changelog: https://github.com/bzminer/bzminer/releases/tag/v11.1.0)
+
+##### 0.6-219@220914 2022-09-14
+*   lolMiner v1.57 (Performance improvement of `FLUX` mining on Ampere based GPUs up to 1.5-3.5% vs previous version depending on GPU and OC settings; Fixed a bug causing some `ERGO` pools to disconnect the miner frequently)
+
+##### 0.6-219@220913 2022-09-13
+*   lolMiner v1.56 (Significantly improved performance `FLUX` and `BEAM` mining on Nvidia Ampere GPUs; Mining Flux and Beam on all Nvidia GPUs now uses CUDA instead of OpenCL; Slight performance improvements for Flux mining on AMD GPUs RX 5xx, RX 5xxx and RX 6xxx series; Note: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.56)
+
+##### 0.6-219@220911 2022-09-11
+*   miniZ v1.9z2 (Performance improvements for some AMD GPUs, on FLUX. Major improvement for the RX 6800 XT; Fixed issue interfering with Zano mining; Full changelog at https://miniz.ch/2022/09/09/miniz-v19z2-is-out/)
+*   NanoMiner v3.7.1 (Automatic switch to ETC is off by default; Added the option `walletEtc` to specify ETC wallet after switching; Full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.7.1)
+*   SRBMiner-Multi v1.0.7 (Added algorithm `pufferfish2bmb` for GPU mining BMB/Bamboo on RDNA2 cards, fee 1%; Small performance increase on `pufferfish2bmb` algorithm for CPUs; Reduced devfee for `autolykos2` for mining Ergo to 1%; Full changelog: https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.0.7)
+*   BzMiner v11.0.3 (New coin: Ergo, devfee 0.5%; New coin: Neoxa, devfee 0.5%; New dual: Ergo + Kaspa on Nvidia GPUs only; Improved Kaspa AMD performance; Improved Overall AMD performance on all algos; Full changelog: https://github.com/bzminer/bzminer/releases/tag/v11.0.3)
+
+##### 0.6-219@220906 2022-09-06
+*   lolMiner v1.55a (Significantly improved Flux mining performance on AMD RX 5000 +10% on 5700, and AMD RX 6000 based GPUs +15-22%; Added ETH / ETC + Kaspa code for Nvidia Pascal based GPUs; Fixed a bug causing Ergo mining not to startup on some Nvidia rigs; Fixed a bug causing Flux mining not to startup on some Rigs with RX 400/500 GPUs; Notes: See full changelog at: https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.55)
+*   NBMiner v42.3 (Added support for NiceHash ETC pool)
+*   miniZ v1.9z (Added support `octopus` algorithm for mining CFX/Conflux coin on NVIDIA GPUs; Improved support for AMD GPUs; Minor bug fixes; Notes: See full changelog at: https://miniz.ch/2022/09/04/miniz-v19z-is-out/)
+*   XMRigCC v3.3.1 (Integrated VKAX Ghostrider variant `mike`; RandomX Blake2 AVX2 version +0.1% speedup on AMD Zen2/Zen3 and Intel CPUs which support AVX2;  Notes: See full changelog at: https://github.com/Bendr0id/xmrigCC/releases/tag/3.3.1)
+
+##### 0.6-219@220828 2022-08-28
+*   SRBMiner-Multi v1.0.6 (Added algorithm `pufferfish2bmb` for CPU mining BMB/Bamboo coin, fee 1%; Algorithm `xdag` is now compatible with the new XDAGj network protocol)
+*   NanoMiner v3.7.0 (Added automatic switch with config option `switchToEtc` from ETH to ETC when ETH moves to PoS)
+*   XMRigCC v3.3.0 as fork xmrig-new (Rebased on xmrig-6.18.1-dev branch: Removed Dero /AstroBWT/v2 support; Small improvements/cleanup; Monero v15 network upgrade support)
+
+##### 0.6-219@220816 2022-08-16
+*   T-Rex v0.26.5 (Added LHR unlocker compatibility with old 470 drivers series)
+*   BzMiner v10.0.4 (Further improvements to `Eth/Etc + Kaspa` hashrate on Nvidia's GPUs; Fixed high stale count on some eth pools when dual eth + kas; Notes: See full changelog at https://github.com/bzminer/bzminer/releases/tag/v10.0.4)
+*   SRBMiner-Multi v1.0.5 (Added algorithm `sha512_256d_radiant` for CPU/GPU mining RAD/Radiant Layer One, fee 1%; Added `ETHASH/ETCHASH + SHA512_256D_RADIANT` dual mining mode; Added `AUTOLYKOS2 + SHA512_256D_RADIANT` dual mining mode; Fixed issue with dual mining ethash using nicehash mode; Notes: See full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.0.5)
+
+##### 0.6-219@220811 2022-08-11
+*   lolMiner v1.54 (Fixed a bug sometimes causing duplicate send shares in Kaspa dual mining; Fixed a bug "Received a defect stratum message: conversion of data to type "b" failed" on new Kaspa pools and the solo mining adapters; Fixed a bug causing --dualworker not to work right with Kaspa dual mining)
+
+##### 0.6-219@220806 2022-08-06
+*   SRBMiner-Multi v1.0.4 (Improved performance on all dual mineable algorithms for RDNA2 GPUs; Minor bug fixes)
+
+##### 0.6-219@220803 2022-08-03
+*   BzMiner v10.0.1 (Improved `Kaspa` hashrate on Nvidia; Improved `Eth/Etc + Kaspa` hashrate on Nvidia; Fixed `Kawpow` crash bug)
+*   WildRig-Multi v0.32.1 (Improved `curvehash` up to 40% on RDNA/RDNA2 and up to x2 times on NVIDIA, Polaris/Vega not tested, can be better too; Implemented support of socks5 proxy, parameter `--proxy`)
+*   CPUminer-Opt-JayDDee v3.20.2 (Bit rotation optimizations in Blake* for SSE2 & AVX2; Code cleanup in yescrypt)
+
+##### 0.6-219@220802 2022-08-02
+*   Enhanced Web Console (improved color scheme; more convenient copy/paste functionality)
+*   Improved `hive-replace` tool (updated to v2.1: added new option `--select` for interactive replacing image on non-system disks; fixed compatibility with old 4.x kernels)
+*   Fixed `amdvbflasher` v4.100 (in some cases tool couldn't flash modded/non-native VBIOS due RSA signature checking even in force mode)
+*   Updated `nvtool` to v1.6.9 (fixed false error reporting on Nvidia Mobile/Laptop GPUs)
+*   Various small changes (Fixed `hive-passwd` in case false error reporting on set pass; Added initial support for AMD Arcturus platform; Extended limits of clocks and voltages on AMD Vega2/Navi/BigNavi GPUs; Update devices IDs: `amdgpu.ids` to v2022.07.05, `pci.ids` to v2022.07.05)
+
+##### 0.6-218@220731 2022-07-31
+*   SRBMiner-Multi v1.0.3 (Added algorithm `mike` for CPU mining VKAX coin, fee 0.85%; Significantly improved performance on `curvehash` algorithm for GPUs; Reduced devfee for `kaspa` and `heavyhash` to 0.85%; Notes: See full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.0.3)
+
+##### 0.6-218@220728 2022-07-28
+*   lolMiner v1.53 (Changes v1.53 vs v1.53 beta3: Added the `--max-latency` parameter; Improved efficiency of the Nvidia Eth+Kaspa dual mining solvers; Changes v1.53 beta3 vs v1.52: Added Eth/Etc/Ubiq + Kaspa dual mining, fee is 1%+0%; Improved Alephium performance in the Eth + Aleph solver on RX 5000 and RX 6000 GPUs; Slightly reduced clock demand on Ethash only for RX 5000 GPUs; Full changelog: https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.53)
+*   GMiner v3.0.5 (Fixed displaying of balance on 2miners pools, eg. ETH balance when mining on BTC wallet)
+
+##### 0.6-218@220726 2022-07-26
+*   lolMiner v1.53-beta3 (Added Eth/Etc/Ubiq + Kaspa dual mining, fee is 1%+0%; Improved Alephium performance in the Eth + Aleph solver on RX 5000 and RX 6000 GPUs; Slightly reduced clock demand on Ethash only for RX 5000 GPUs; Full changelog: https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.53_beta_3)
+*   GMiner v3.0.4 (Decreased network traffic by moving to new version of balance fetching API for 2miners pools)
+*   BzMiner v10.0.1 (New coin for mining: Woodcoin. Dual mining: Fixed low hashrate for for LHR cards; Removed "empty package" errors; Fixed invalid ethash shares on some pools. Ixian mining changes: Fixed rejected shares issue; Fixed HTTPS issue. Zil: Fixed mining zil window with nicehash eth. Disabled Kaspa devteam fee by default. Full changelog: https://github.com/bzminer/bzminer/releases/tag/v10.0.1)
+*   TeamBlackMiner v1.66 (Fixed SSL reconnect crash; Fixed stats hang; Added support for new pools)
+*   CPUminer-Opt-JayDDee v3.20.1 (Optimized sph_blake2b function and power2b algo now uses it; Small optimization to Lyra2 SSE2; Small fixes to displaying hash and target difficulty in miner log)
+
+##### 0.6-218@220717 2022-07-17
+*   WildRig-Multi v0.32.1 (Implemented support `firopow` and `mike` algos; Implemented support for future DAG reduction of `progpow-veil`; Implemented background compilation of progpow kernels; Fixed support gfx1034 = AMD Radeon RX 6500 XT; Up to 10% faster `curvehash`)
+*   CPUminer-Opt-JayDDee v3.20.0 (Fixed segfault in algos using Groestl VAES due to use of uninitialized data)
+
+##### 0.6-218@220715 2022-07-15
+*   NanoMiner v3.6.8 (Added support `octopus` algorithm for mining CFX/Conflux on AMD RDNA/RDNA2 GPUs RX 5xxx/6xxx)
+*   SRBMiner-Multi v1.0.2 (Added `ETHASH/ETCHASH + HEAVYHASH` (OBTC/PBTC) dual mining mode; Added `AUTOLYKOS2 + HEAVYHASH` dual mining mode; Faster DAG creation on RDNA2 GPUs)
+*   CPUminer-Opt-JayDDee v3.19.9 (more Blake256, Blake512, Luffa & Cubehash prehash optimizations)
+*   CPUminer-Opt-Rplant v5.0.29 (added support `mike` algo for mining VKAX coin)
+
+##### 0.6-218@220709 2022-07-09
+*   SRBMiner-Multi v1.0.0 (Added `ETHASH/ETCHASH + BLAKE3_ALEPHIUM` dual mining mode; Added `AUTOLYKOS2 + BLAKE3_ALEPHIUM` dual mining mode; Fixed `ETHASH/ETCHASH + KASPA` mining on NiceHash; Added parameter `--gpu-table-slow-build` which slows down DAG/Datatable creation for ETHASH/ETCHASH/UBQHASH/PROGPOW/AUTOLYKOS2 algorithms)
+
+##### 0.6-218@220706 2022-07-06
+*   GMiner v3.03 (Improved stability of API server: fixed "too many open files" error)
+*   SRBMiner-Multi v0.9.9 (Improved performance of KASPA mining in dual mode for ETH/ETC+KASPA and AUTOLYKOS2+KASPA for some GPUs; Added algorithm `curvehash` for GPU mining; Fixed compatibility of KawPow with miningpoolhub pool)
+*   WildRig-Multi v0.32.0 (Slight improve `curvehash` for Polaris, RDNA, RDNA2 and NVIDIA GPUs; Fixed `curvehash` for Vega GPUs; Improved `curvehash` up to 1.5x vs v0.31.8)
+
+##### 0.6-218@220704 2022-07-04
+*   GMiner v3.02 (fixed displaying of difficulty for RavenCoin to match network difficulty; removed TON support)
+*   WildRig-Multi v0.31.8 (Up to 3 times faster `curvehash` vs previous version)
+
+##### 0.6-218@220702 2022-07-02
+*   WildRig-Multi v0.31.7 (Fixed known bugs with `curvehash` algo)
+
+##### 0.6-218@220701 2022-07-01
+*   SRBMiner-Multi v0.9.8 (Added dual mining modes: ETH/ETC + KASPA and AUTOLYKOS2 + KASPA; Performance increase on `curvehash` algorithm for CPU up to ~40%; Added parameter `--gpu-dual-mode` which must be used to enable the new dual mining mode)
+*   WildRig-Multi v0.31.6 (Implemented `curvehash` algo on AMD and Nvidia GPUs)
+
+##### 0.6-218@220629 2022-06-29
+*   lolMiner v1.52a (Fixed a bug that can sometimes cause the pool hashrate to half after multiple reconnect attempts in a row; Adjusted behavior of LHR unlock function so solve issues with some configurations occurred in v1.52)
+*   NanoMiner v3.6.7 (Fixed bug: nanominer does not require `libcuda.so` on AMD rigs anymore)
+
+##### 0.6-218@220626 2022-06-26
+*   NanoMiner v3.6.6 (Fixed 90% LHR unlock for Nvidia RTX 3080 12 Gb)
+*   TeamBlackMiner v1.65 (Improved the speed for AMD in `verthash` algo; Added option `--verthash-data` to locate verthashdata file; Fixed the API hashrate for `verthash`)
+
+##### 0.6-218@220623 2022-06-23
+*   TeamRedMiner v0.10.2 (Tweaked Polaris ethash tuning to work better with the new smooth-power setup; Fix for Autolykos crashing on Polaris and 4GB GPUs; Fix for ETH+TON dual mining crashes with new smooth-power setup)
+*   GMiner v3.01 (Fixed RavenCoin mining errors; Fixed displaying of pool hashrate for RavenCoin)
+*   lolMiner v1.52 (New memory management for Ergo on Nvidia GPUs; Added 2 more epochs on Ergo for 3G AMD GPUs; Slight changes to LHR unlocker to improve the unlocker stability; Removed: 2G zombie modes for Ergo on AMD cards; Removed: Support for mining Ton in single and dual mining modes; Bug fixes)
+*   TeamBlackMiner v1.64 (Added support verthash algo for VTC/Vertcoin mining for AMD and Nvidia GPUs; Fix issues in ZIL mining)
+*   XMRig v6.18.0 (Removed deprecated AstroBWTv1 and v2; Monero v15 network upgrade support; Fixed `cpu-priority` not working sometimes)
+*   XMRig-MO v6.18.0 MoneroOcean fork (Synced with XMRig v6.18.0)
+
+##### 0.6-218@220615 2022-06-15
+*   Improved `hive-replace` tool (bumped to v2.0: greatly improved compatibility with Debian-based OS; HiveOS rig user password remains the same after replace; diagnostic msgs are sent to dashboard during replace; new option `--rigconf` to use supplied rig.conf for new image configuration; other minor improvements)
+*   Updated `nvtool` to v1.6.6 (added LHR detection and indication sign to the dashboard - added LHR to the end of GPU name, e.g. "GeForce RTX 3080 Ti LHR"; minor bug fixes and improvements)
+*   Updated AMD GPU BIOS Flasher Utility to v4.100  (added support Navi23/Navi24 GPUs)
+*   Fixed some stats issues with hardware autofans (happened in some cases with 8mknet, octofan and coolbox boards)
+*   Added support to control login-screen mode from dashboard
+*   Minor bug fixes and improvements
+
+##### 0.6-217@220613 2022-06-13
+*   TeamRedMiner v0.10.1 (Reworked smooth power for improved stability, primarily on Polaris and Vega GPUs; Added `--eth_smooth_power` to control the smooth power scheduling feature; Fixed bug causing `Autolykos` hashrate drop on VIIs)
+*   NanoMiner v3.6.5 (90% LHR unlock for Nvidia RTX 3050 & RTX 3080 12G; *Note: Recommended drivers for Nvidia LHR GPUs v510 series*)
+*   SRBMiner-Multi v0.9.7 (Performance increase on `kaspa` and `heavyhash` algos for RDNA2 GPUs;  Lower power consumption on `kaspa` and `heavyhash` algos for RDNA2 GPUs; Added limited support for some algorithms on Vega's for drivers newer than 20.40; Other improvements and bug fixes)
+*   BzMiner v9.2.1 (Optimized dual mining for `eth/etc + kaspa` & `eth/etc + alph`; Fixed LHR issue when mining non-LHR algos `kaspa`/`alph`; Can mine `ZIL` with any algo; Other improvements and bug fixes)
+
+##### 0.6-217@220609 2022-06-09
+*   NanoMiner v3.6.4 (Improved LHR unlock stability on old drivers)
+*   miniZ v1.8z3 (Added support for AMD GPUs RX 6600/6800/6900,  RX 590; Reduced stale shares on `Aion`;  Improved stability; Minor bug fixes)
+   
+##### 0.6-217@220604 2022-06-04
+*   GMiner v2.99 (changed display of job/share difficulty to match mining pools, e.g. for solo mining)
+*   SRBMiner-Multi v0.9.6 (Added algorithm `kaspa` for CPU/GPU mining `KAS`/`Kaspa coin`, devfee 1%; Small performance increase and lower power consumption on `heavyhash` algorithm for RDNA2 GPUs; Minor bug fixes)
+
+##### 0.6-217@220528 2022-05-28
+*   NBMiner v42.2 (Add a new option `lhr-mode` to select ethash LHR unlock mode: `"lhr-mode": "1"` is the default mode and is the same as which in v41.5, try to use `"lhr-mode": "2"` if stability issue encountered in mode 1, LHR v3 GPUs can only use mode 1)
+*   GMiner v2.98 (Optimized `RavenCoin` mining; Removed `BeamHash` algorithm and decreased miner size -30 MB)
+*   CPUminer-Opt-JayDDee v3.19.8 (Small improvements)
+
+##### 0.6-217@220524 2022-05-24
+*   NBMiner v42.1 (Fixed `ethash` LHR unlocker: it couldn't unlock certain GPUs)
+
+##### 0.6-217@220523 2022-05-23
+*   NBMiner v42.0 (Extended `ethash` LHR unlocker work with old driver versions, before v515.x; Improved `ethash` LHR unlocker stability; Small `ethash` hashrate improvement on Nvidia GPUs; Added GDDR6X memory temp in summary table; Added GPU RAM type and GPU RAM vendor in log; Added Nvidia driver version in summary table)
+*   SRBMiner-Multi v0.9.5 (Added algorithm `yescryptr8`, `yescryptr16`, `yescryptr32` for GPU mining, fee 0.85%; Added algorithm `frkhash` next algo for EXP/Expanse for CPU/GPU mining, fee 0.85%; Lowered devfee: for `autolykos2` to 1.5%, `blake3_alephium` to 0.85%; Small performance increase on 'autolykos2' algorithm for RDNA2 GPU's; Small performance increase on 'dynamo' algorithm for GPU's; A little bit faster dataset creation on 'autolykos2' algorithm for some GPU's; A little bit lower power consumption on 'autolykos2' algorithm for Ellesmere GPU's; A little bit lower power consumption on 'ethash' and 'etchash' algorithm for RDNA2 GPU's; Other improvements & bug fixes)
+
+##### 0.6-217@220522 2022-05-22
+*   T-Rex v0.26.4 (Implemented 90% LHR unlocker for Nvidia LHRv3 GPUs: RTX 3080 12GB and RTX 3050; Bug fix: miner sometimes takes too long to shut down on multi-GPU rigs)
+
+##### 0.6-217@220521 2022-05-21
+*   lolMiner v1.51a (slight improvements and fixes)
+*   NanoMiner v3.6.3 (100% LHR unlock for Nvidia LHR v1 and LHR v2 GPUs, recommended Nvidia drivers v510 series)
+
+##### 0.6-217@220519 2022-05-19
+*   lolMiner v1.51 (Extended working range of 100% LHR unlocker to 470 series drivers. Please do not use the new 515.x drivers - the unlock currently does not work on them; New parameter for dualmining: `--dualfactor`, default "auto"; Fixed a bug causing the Zombie mode on 5G Pascal GPUs 1060 5G, P2000 not to work; Minor LHR unlocker stability improvements)
+*   BzMiner v9.1.4 (Fixed 100% LHR Unlock v1 not working on older Linux Nvidia drivers; Added --cache_dag option for ETH+ZIL mining; Fixed ezil protocol; Other small improvements and bug fixes, see full changelog)
+
+##### 0.6-217@220518 2022-05-18
+*   GMiner v2.96 (LHR unlock for older drivers: fixed "LHR unlock failed" error on old drivers)
+*   TeamRedMiner v0.10.0 (Introduced R-mode: applicable for Vegas/VIIs/Navi10/Big Navi, see separate miner documentation for details; smooth power transitions for ethash family algos; added argument `--gpu_sdma=on|off` for special situations, e.g. BC-250 needs `--gpu_sdma=off`)
+*   T-Rex v0.26.3 BETA (Improved LHR unlocker stability; Notes: *This is a beta version, to test it you need to manually select this version in miner settings*)
+   
+##### 0.6-217@220516 2022-05-16
+*   GMiner v2.95 (90% LHR unlock for LHRv3 GPUs; reduced binary size by removing AE/Aeternity algorithm support and Tor support)
+
+##### 0.6-217@220515 2022-05-15
+*   lolMiner v1.50 RELEASE (100% LHR unlock for all LHR affected algorithms on LHR v1 and v2 GPUs; Added experimental LHR v3 unlock to ~90% (3050) and ~92% on 3080 12G, enable by default, use --lhrv3boost 0 to disable the mode and fall back to ~65% unlock; If the pool connection gets lost on the dual mining algorithm, the miner will now stop the dual mining to save the energy and continues in Ethash only mode until the connection is re-established; Fixed a bug in v1.49 causing Ergo mining not to start on Nvidia GPUs)
+*   BzMiner v9.1.3 (much more stable 100% LHR Unlock v1, supported on drivers 465+; LHR Unlock stability adjuster with option --lhr_stability, lower value is more stable
+
+##### 0.6-217@220513 2022-05-13
+*   GMiner v2.94 (improved performance for LHRv3 GPUs: RTX 3050 and RTX 3080 12GB)
+
+##### 0.6-217@220512 2022-05-12
+*   GMiner v2.93 (fixed performance degradation on FHR cards, appeared in v2.92)
+*   NBMiner v41.5 (added `ethash` 90% LHR unlocker for 3080 12G & 3050; added `ergo` LHR unlocker support; improved `ethash` LHR unlocker stability)
+
+##### 0.6-217@220511 2022-05-11
+*   GMiner v2.92 (LHR 100% Unlock; *Note: LHR unlocker required Nvidia drivers 510 series*)
+*   lolMiner v1.50 BETA (100% LHR unlock for all LHR affected algorithms on LHR v1 and v2 GPUs; *Notes: Beta version for testing purposes you should select version manually in miner settings. LHR unlocker required drivers: 510.60.02 or 510.68*)
+*   BzMiner v9.1.0 (unstable/experimental 100% LHR Unlock v1; LHR Unlock stability adjuster `--lhr_stability`; GDDR5 `--oc_mem_tweak` option)
+*   T-Rex: v0.26.1 now set as latest
+
+##### 0.6-217@220510-2 2022-05-10
+*   miniZ v1.8z2 (added support for `144,5` and `ethash` for AMD Polaris and gfx1071 / RX 6700 XT; fixed issues with AMD support `125,4` / Flux)
+*   TeamRedMiner v0.9.4.7 *BETA* (fixed issues with hashrate drop on Navi GPUs in R-mode; *Note: Beta version for testing purposes you should select version manually in miner settings*)
+*   NBMiner v41.4 TEST (experemental `ethash` LHR unlocker ONLY for RTX 3080 12G and RTX 3050, expected hashrate: 3080 12G - 100MH/s, 3050 - 27MH/s; *Note: Beta version for testing purposes you should select version manually in miner settings*)
+
+##### 0.6-217@220510 2022-05-10
+*   NBMiner v41.3 (improved `ethash` LHR unlock stability; fixed crash on AMD GPUs; improved compatibility on rigs with small system memory)
+*   T-Rex v0.26.1 BETA (introduced LHR 100% unlock, except 3080 12GB and 3050, ETH+ALPH should also work; *Notes: this is test version, to test it you need select version 0.26.1 in miner settings*)
+
+##### 0.6-217@220508 2022-05-08
+*   NBMiner v41.0 (Introduced 100% LHR unlocker for ethash. *Tested and verified on drivers v510.60. If you run into issues change driver to 510 series using nvidia-driver-update command, set your memclock 100-200 MHz lower that previous LHR partial unlock*)
+*   lolMiner v1.49 (Improved performance of Nvidia LHR V2 cards in Ethash to 79 - 79.5% (86.5 - 87 % on RTX 3060 V1 and 460.39 driver). Note that dual mode codes remain unchanged. Added an experimental zombie mode for Nvidia Pascal generation 5GB cards, allowing them to continue mining Ethash after epoch 492; Reduced fee for LHR unlocker back to 0.7%; LHR cards that have memory junction temperature sensors will automatically throttle LHR unlock by ~0.4 - 0.5% when hitting 106° C memory clock to prevent unneeded locks; LHR calibration on startup now taking approx 2 minutes instead of 4; Extended CRC table for Ethash up until epoch 550; Changed default behavior for "." signs in wallet address when Ton or Aleph dual mining. These will now automatically separate the string at the given position, so the thing after a . is treated as worker name)
+*   TeamRedMiner v0.9.4.6 *BETA* (Introduced R-mode: applicable for Vegas/VIIs/Navi10/Big Navi, see separate miner documentation; Smooth power transitions for ethash family algos. *To test new R-mode you need latest Stable Image with OpenCL 21.40+, select miner version manually in miner settings and for enabling R-mode you should follow TeamRedMiner devs manual (https://github.com/todxx/teamredminer/blob/master/doc/ETHASH_TUNING_GUIDE_RMODE.txt) or use following command: `echo -e "amdgpu.vm_block_size=11\namdgpu.vm_size=2048" > /hive/etc/grub.custom && selfupgrade -g && sreboot`)
+
+##### 0.6-217@220505 2022-05-05
+*   BzMiner v9.0.2 (GDDR5 Memory Tweak with `--oc_mem_tweak` option; memory timings table display; Bug Fixes: solution latency reporting slowly increasing; crash at startup in some cases; Ixian not submitting found solutions after some time)
+
+##### 0.6-217@220504 2022-05-04
+*   TeamBlackMiner v1.63 (added support for SSL mining/anonymous mining; reduced GPU memory requirements in copy DAG mode to extend the life of low memory cards; new fix for GPU timeout on AMD cards with high intensity; some short options changed names)
+
+##### 0.6-217@220503 2022-05-03
+*   T-Rex v0.25.15 (extend the new LHR unlock functionality to `ETH+ALPH` dual mining, and `ERGO` single mode; allow LHR setting "up" and "down" auto-tune intervals separately: e.g. `"lhr-autotune-interval": "5:120"`, meaning that in `lhr-autotune-mode` full mode the miner will be increasing LHR tune value every 5 minutes, and decreasing it as soon as it starts tripping LHR more frequently than once every 2 hours; changed `lhr-autotune-step-size` default value to 0.1 from previously 0.5; LHR low power mode can now be set for GPUs individually, e.g. `"lhr-low-power": "0,1,1,0"` - the second and third GPUs will be working in low power mode; Bug fixes: LHR unlocker is more stable compared to 0.25.12, infinite LHR lock loops should be solved now; fixed  "Duplicate share" issue on `ethash` and `blake3` algos. IMPORTANT: LHR unlocker requires 510 series drivers and it will not work properly with older drivers)
+*   PhoenixMiner v6.2c (using newer AMD RX470/480/570/580 kernels even on older drivers e.g. 19.10, older kernels on these drivers, use the new command line parameter `-clabi 1`; added a workaround for the SSL pools with self-signed or expired SSL certificate: you can use the new command-line parameter `-weakssl` (for the pool specified by -pool), or the new `WEAKSSL: 1` option for the pools in epools.txt; fixed a crash with Nvidia cards on some older drivers, if PhoenixMiner crashes or exits while showing "Initializing NVML..." try the new command line parameter `-nvmalt`; other small fixes)
+*   SGMiner-fancyIX v0.9.4 (auto detect Navi cards and use navi algorithm name; fixed regression on `neoscrypt` algo)
+
+##### 0.6-217@220428 2022-04-28
+*   BzMiner v9.0.0 (added support mining `IXI`/Ixian coin; many improvements & fixes for mining Kaspa; bug fixes)
+*   miniZ v1.8z (improved performance and stability for ETH for LHR GPUs; improved performance on `125,4` for RTX 30xx; added AMD Polaris support for `125,4`; added `FIRO` support; fixed issues with `SERO` and `192,7`; minor bug fixes)
+*   T-Rex v0.25.13 TEST (extend the new LHR unlock functionality to `ETH+ALPH` dual mining, and `ERGO` single mode; LHR unlocker is more stable compared to 0.25.12, infinite LHR lock loops should be solved now; *Note: Beta version for testing purposes you should select version manually in miner settings*)
+   
+##### LINUX IMAGE RELEASE 0.6-217 2022-04-23
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-217
+*   Ubuntu v18.04.6 LTS based
+*   Linux kernel: v5.10.110
+*   Nvidia driver: v510.60.02
+*   AMD driver v5.13.0201 incl. BC-250 board and Navi24 based GPUs support
+*   AMD OpenCL v21.40.1
+*   md5sum a9e813b7992deb9cb876eb25a04221ef
+
+##### 0.6-217@220422 2022-04-22
+*   Fixed bug with AMD OC (overclocking for Radeon Pro VII and Radeon Pro W5700 applied incorrectly since the version v0.6-214)
+*   Minor system updates (updated PCI IDs to v2022.04.16: added new IDs eg. Nvidia RTX 3090 Ti, A4000H)
+*   NanoMiner v3.6.2 (significantly reduced stale Ethash shares on Nvidia GPUs)
+*   XMRigCC v3.2.1 XMRig fork (rebase upstream 6.17.1-dev; integrated XDagger Randomx variant `rx/xdag`; fixed Yadacoin `rx/yada` mining)
+   
+##### 0.6-216@220418 2022-04-18
+*   Small improvements (minor changes to ensure compatibility with newer Linux kernels and future OS Images; reworked miner installation and update procedure)
+*   Minor bug fixes
+
+##### 0.6-215@220417 2022-04-17
+*   SGminer-fancyIX v0.9.3 (fixed `yescryptr16` invalid shares problem)
+
+##### 0.6-215@220415 2022-04-15
+*   T-Rex v0.25.12 (Improved  LHR unlock functionality on ethash, dual modes and autolykos2 LHR performance is unchanged. Expected about 78-79% in normal mode, and 75% in low power mode, see description for option `lhr-low-power` in miner manual; Changed default value of `lhr-autotune-mode` parameter; Fixed memory temperature displaying on some GDDR6X cards)
+*   NanoMiner v3.6.1 (Fixed crash during XMR mining on some old CPUs; Improved LHR unlocker stability for some Nvidia driver versions)
+*   PhoenixMiner 6.1b (Fixed an issue with expired SSL certificate that led to "certificate verify failed" errors; Now the miner will send SSL SNI host name which may be needed by some pools for SSL certificate validation. To go back to the old behavior (no SNI host name), use the new command-line parameter `-nosni`; Other small fixes; *Note: Beta version for testing purposes you should select version manually in miner settings*)
+
+##### 0.6-215@220409 2022-04-09
+*   Updated `nvtool` to v1.6.1 (improved memory temperature reporting for GDDR6X memory; mem temp now reports by default from command line if sensor available)
+*   Added OC support for AMD BC-250 board (need new AMD driver)
+*   Updated CUDA RTL to v11.6.2
+*   Updated devices IDs databases (PCIID v2022.03.22; AMDGPU v2022.03.22; USBID v2022.04.02; updated related tools)
+*   Misc improvements and fixes (fixed `pool-test` command; improved GPU driver errors info; slight improvements for `amd-info` and `nvidia-info` commands)
+ 
+##### 0.6-214@220407 2022-04-07
+*   TeamBlackMiner v1.62 (improved the rejected check before exit; fixed device order when using the `--cl-devices` to select GPUs; removed rejected shares at the `Hiveon` pool)
+ 
 ##### 0.6-214@220406 2022-04-06
 *   SRBMiner-Multi v0.9.4 (added `sha3d`, `0x10` algorithms; performance increase on `curvehash` algorithm; removed `astrobwt` algorithm; removed `--gpu-cn-mode` parameter)
 *   BzMiner v8.1.4 (LHR engaged notification; notify of unsupported Nvidia driver; added support for Kaspa node >=11.15 protocol; bug fixes)
