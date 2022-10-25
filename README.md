@@ -25,7 +25,7 @@ Available miners:
 - beamcl - open source BEAM OpenCL miner
 - beamcuda - open source BEAM CUDA miner
 - bminer - ethash/tensority/equihash variants/Grin PoW miner
-- bzminer - ethash/etchash miner 
+- bzminer - ethash/etchash/kawpow miner 
 - cast-xmr - cryptonight variants (AMD)
 - ccminer - ccminer & forks (ccminer forks available: alexis, allium, bcd, djm34, enemy, klaust, klaust-yescrypt, nanashi, nevermore, nevermore-x16s, phi-anxmod, rvn, sp-mod, suprminer, suprminer-spmod, tecracoin, tpruvot, vertminer, verus, xaya, xevan, zp)
 - ckb-miner - CKB (Nervos Network) wallet CPU/OpenCL/CUDA miner
