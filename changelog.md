@@ -1,3 +1,7 @@
+##### 0.6-219@221027 2022-10-27
+*   WildRig-Multi v0.33.4 (Implemented `evrprogpow` for mining EVR/Evrmore)
+*   TeamBlackMiner v1.72 (Faster `kawpow` on Nvidia cards; Fixed a rare crash in ETH+ZIL dual mining)
+
 ##### 0.6-219@221025 2022-10-25
 *   GMiner v3.11 (Fixed miner restarts on `Ergo` + `Kaspa`)
 *   NanoMiner v3.7.4 (Removed LHR unlocker for new Nvidia drivers)
