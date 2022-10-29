@@ -1,3 +1,6 @@
+##### 0.6-219@221028 2022-10-28
+*   GMiner v3.12 (Added `cuckatoo32` algorithm; Added `vds` algorithm for mining Vollar; Fixed display of difficulty for equihash algorithms)
+
 ##### 0.6-219@221027 2022-10-27
 *   WildRig-Multi v0.33.4 (Implemented `evrprogpow` for mining EVR/Evrmore)
 *   TeamBlackMiner v1.72 (Faster `kawpow` on Nvidia cards; Fixed a rare crash in ETH+ZIL dual mining)
