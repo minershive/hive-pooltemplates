@@ -1,3 +1,7 @@
+##### 0.6-219@221101 2022-11-01
+*   miniZ v1.9z5 (AMD improvements Equihash 125/4 and 144/5 up to 10%, depending on GPUs and OCs; Notes: full changelog at https://miniz.ch/2022/10/31/miniz-v19z5-is-out/)
+*   WildRig-Multi v0.33.5 (Improved performance for progpow family algorithms on RDNA and RDNA2 GPUs on newer drivers; Fixed `evrprogpow` for Polaris/Vega)
+
 ##### 0.6-219@221028 2022-10-28
 *   GMiner v3.12 (Added `cuckatoo32` | `grin32` algorithm; Added `vds` algorithm for mining Vollar; Fixed display of difficulty for equihash algorithms)
 
