@@ -1,5 +1,5 @@
 ##### 0.6-219@221101 2022-11-01
-*   miniZ v1.9z5 (AMD improvements Equihash 125/4 and 144/5 up to 10%, depending on GPUs and OCs; Notes: full changelog at https://miniz.ch/2022/10/31/miniz-v19z5-is-out/)
+*   miniZ v1.9z5 (AMD improvements Equihash 125/4 and 144/5 up to 10%, depending on GPUs and OCs; Notes: a) users report stability degradation in this version latest version is set to v1.9z4 and for using v1.9z5 please select it manually b) see full changelog at https://miniz.ch/2022/10/31/miniz-v19z5-is-out/)
 *   WildRig-Multi v0.33.5 (Improved performance for progpow family algorithms on RDNA and RDNA2 GPUs on newer drivers; Fixed `evrprogpow` for Polaris/Vega)
 
 ##### 0.6-219@221028 2022-10-28
