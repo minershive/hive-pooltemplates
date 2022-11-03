@@ -1,3 +1,9 @@
+##### 0.6-219@221102 2022-11-02
+*   SRBMiner-Multi v1.1.1 (Added algorithm `evrprogpow` for CPU/GPU mining, fee 0.85%; Performance increase on `cryptonight_gpu` algorithm for RDNA/RDNA2 GPUs; Performance increase on `sha512_256d_radiant` algorithm for RDNA2 GPUs; Performance increase on `lyra2v2_webchain` algorithm for GPUs
+; Note: see full changelog: https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.1.1)
+*   WildRig-Multi v0.33.6 (Fixed rejects on `evrprogpow` and other progpow variants for NVIDIA GPUs; Fixed possible crash while compiling kernel for progpow family algorithms)
+*   BzMiner v12.1.0 (Fixed main algo not pausing immediately on ZIL window start; Radiant optimized for AMD; Fixed crash on non <520 nvidia drivers; Note: see full changelog https://github.com/bzminer/bzminer/releases/tag/v12.1.0)
+
 ##### 0.6-219@221101 2022-11-01
 *   miniZ v1.9z5 (AMD improvements Equihash 125/4 and 144/5 up to 10%, depending on GPUs and OCs; Notes: a) users report stability degradation in this version in this case latest version is set to v1.9z4 and for using v1.9z5 please select it manually b) see full changelog at https://miniz.ch/2022/10/31/miniz-v19z5-is-out/)
 *   WildRig-Multi v0.33.5 (Improved performance for progpow family algorithms on RDNA and RDNA2 GPUs on newer drivers; Fixed `evrprogpow` for Polaris/Vega)
