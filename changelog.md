@@ -1,3 +1,6 @@
+##### 0.6-219@221104 2022-11-04
+*   miniZ v1.9z5b (Bug fix release for v1.9z5)
+
 ##### 0.6-219@221102 2022-11-02
 *   SRBMiner-Multi v1.1.1 (Added algorithm `evrprogpow` for CPU/GPU mining, fee 0.85%; Performance increase on `cryptonight_gpu` algorithm for RDNA/RDNA2 GPUs; Performance increase on `sha512_256d_radiant` algorithm for RDNA2 GPUs; Performance increase on `lyra2v2_webchain` algorithm for GPUs
 ; Note: see full changelog: https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.1.1)
