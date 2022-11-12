@@ -1,3 +1,10 @@
+##### 0.6-219@221111 2022-11-11
+*   WildRig-Multi v0.33.8 (Improved `sha512256d` performance; Fixed hashrate fluctuation on progpow's; Slight hashrate increase on progpow's for NVIDIA Turing+ GPUs and AMD RDNA2)
+*   lolMiner v1.62 (Added support for mining Alephium in non-dual mode for Nvidia Pascal GPUs and newer, fee is 0.75%; Slight performance improvement for Kaspa non-dual on Nvidia GPUs; Added Aeternity `Cuckoo29` & Grin `Cuckatoo32` kernels for RX 6600 and RX 6700 series GPUs; Added reading of Tjunc and Tmem for Nvidia GPUs for drivers 515+; Note: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.62)
+*   TeamBlackMiner v1.74 (Removed rejected shares bug on ethproxy pools; Fixed a bug in poolspeed on ethproxy and vardiff pools; Fixed the zil dagcache for AMD; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.74)
+*   nanoMiner v3.7.5 (Changelog at https://github.com/nanopool/nanominer/releases/tag/v3.7.5)
+*   TeamRedMiner: fixed miner config generation in case of incorrect setting of worker name for second coin on dual mining mode
+
 ##### 0.6-219@221104 2022-11-04
 *   miniZ v1.9z5b (Bug fix release: all the new features and improvements of version v1.9z5 + review of all kernels for all algorithms)
 
