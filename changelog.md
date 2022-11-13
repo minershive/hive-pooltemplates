@@ -1,3 +1,6 @@
+##### 0.6-219@221112 2022-11-12
+*   WildRig-Multi v0.33.9 (Bug-fix release, see changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.33.9)
+
 ##### 0.6-219@221111 2022-11-11
 *   WildRig-Multi v0.33.8 (Improved `sha512256d` performance; Fixed hashrate fluctuation on progpow's; Slight hashrate increase on progpow's for NVIDIA Turing+ GPUs and AMD RDNA2)
 *   lolMiner v1.62 (Added support for mining Alephium in non-dual mode for Nvidia Pascal GPUs and newer, fee is 0.75%; Slight performance improvement for Kaspa non-dual on Nvidia GPUs; Added Aeternity `Cuckoo29` & Grin `Cuckatoo32` kernels for RX 6600 and RX 6700 series GPUs; Added reading of Tjunc and Tmem for Nvidia GPUs for drivers 515+; Note: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.62)
