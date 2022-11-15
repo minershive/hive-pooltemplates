@@ -1,5 +1,5 @@
 ##### 0.6-219@221115 2022-11-15
-*   GMiner v3.13 (Significantly improved efficiency "hashrate on pool" for `Kaspa` on single and dual mining modes; Added `BeamHash` algorithm for Nvidia GPUs)
+*   GMiner v3.13 (Significantly improved efficiency "hashrate on pool" for `Kaspa` in single and dual mining modes; Added `BeamHash` algorithm for Nvidia GPUs)
 
 ##### 0.6-219@221114 2022-11-14
 *   WildRig-Multi v0.34.0 (Bug-fix release, see changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.34.0)
