@@ -1,6 +1,10 @@
+##### 0.6-219@221114 2022-11-14
+*   WildRig-Multi v0.34.0 (Bug-fix release, see changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.34.0)
+*   BzMiner v12.1.1 (Fixed Nicehash pool connection for `kaspa`; Fixed some bugs `radiant` mining; Note: see changelog at https://github.com/bzminer/bzminer/releases/tag/v12.1.1)
+
 ##### 0.6-219@221112-2 2022-11-12
 *   WildRig-Multi v0.33.9 (Bug-fix release, see changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.33.9)
-*   lolMiner: fixed config generation for non-dual `ALEPH`/Alephium mining 
+*   lolMiner: fixed config generation for non-dual `ALEPH`/Alephium mining
 
 ##### 0.6-219@221111 2022-11-11
 *   WildRig-Multi v0.33.8 (Improved `sha512256d` performance; Fixed hashrate fluctuation on progpow family algos; Slight hashrate increase on progpow family algos for Nvidia Turing+ GPUs and AMD RDNA2)
