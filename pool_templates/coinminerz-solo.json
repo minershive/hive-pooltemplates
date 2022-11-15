@@ -526,6 +526,65 @@
             }
     },
     {
+        "coin":"EVR",
+        "servers":[
+            {
+                "geo": "EU Normal GPU",
+                "urls": [
+                    "stratum.coinminerz.com:3521"
+                ],
+                "ssl_urls": [
+                    "stratum.coinminerz.com:3621"
+                ]
+            },
+            {
+                "geo": "EU High Power GPU",
+                "urls": [
+                    "stratum.coinminerz.com:3821"
+                ]
+            },
+            {
+                "geo": "US Normal GPU",
+                "urls": [
+                    "us-stratum.coinminerz.com:3521"
+                ],
+                "ssl_urls": [
+                    "us-stratum.coinminerz.com:3621"
+                ]
+            },
+            {
+                "geo": "US High Power GPU",
+                "urls": [
+                    "us-stratum.coinminerz.com:3821"
+                ]
+            },
+            {
+                "geo": "SG Normal GPU",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3521"
+                ],
+                "ssl_urls": [
+                    "sg-stratum.coinminerz.com:3621"
+                ]
+            },
+            {
+                "geo": "SG High Power GPU",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3821"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype":"miners_evrprogpow",
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "evrprogpow",
+                "pass": "YourRandomPassword",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin":"FIRO",
         "servers":[
             {
@@ -1001,6 +1060,59 @@
         ],
         "miners": {
             "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin":"SCC",
+        "servers":[
+            {
+                "geo": "EU Normal GPU",
+                "urls": [
+                    "stratum.coinminerz.com:3515"
+                ],
+                "ssl_urls": [
+                    "stratum.coinminerz.com:3615"
+                ]
+            },
+            {
+                "geo": "EU High Power GPU",
+                "urls": [
+                    "stratum.coinminerz.com:3815"
+                ]
+            },
+            {
+                "geo": "US Normal GPU",
+                "urls": [
+                    "us-stratum.coinminerz.com:3515"
+                ],
+                "ssl_urls": [
+                    "us-stratum.coinminerz.com:3615"
+                ]
+            },
+            {
+                "geo": "US High Power GPU",
+                "urls": [
+                    "us-stratum.coinminerz.com:3815"
+                ]
+            },
+            {
+                "geo": "SG Normal GPU",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3515"
+                ],
+                "ssl_urls": [
+                    "sg-stratum.coinminerz.com:3615"
+                ]
+            },
+            {
+                "geo": "SG High Power GPU",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3815"
+                ]
+            }
+        ],
+        "miners":{
+           "_prototype":"miners_firopow"
         }
     },
     {

@@ -25,17 +25,19 @@ Available miners:
 - beamcl - open source BEAM OpenCL miner
 - beamcuda - open source BEAM CUDA miner
 - bminer - ethash/tensority/equihash variants/Grin PoW miner
-- bzminer - ethash/etchash miner 
+- bzminer - ethash/etchash/kawpow miner 
 - cast-xmr - cryptonight variants (AMD)
 - ccminer - ccminer & forks (ccminer forks available: alexis, allium, bcd, djm34, enemy, klaust, klaust-yescrypt, nanashi, nevermore, nevermore-x16s, phi-anxmod, rvn, sp-mod, suprminer, suprminer-spmod, tecracoin, tpruvot, vertminer, verus, xaya, xevan, zp)
 - ckb-miner - CKB (Nervos Network) wallet CPU/OpenCL/CUDA miner
 - claymore - Claymore's DUAL ETH GPU AMD&NVidia miner
 - claymore-x - Claymore's Cryptonote AMD GPU miner
 - claymore-z - Claymore's AMD GPU ZCash miner
+- cminer - ethash miner for Nvidia
 - cortex-miner - Cortex CUDA miner 
 - cpuminer-opt - cpuminer-opt CPU miner (forks: JayDDee, cpupower, rkz, rplant, gr)
 - cryptodredge - multi algo CUDA miner (NVidia)
 - damominer - multi algo CUDA miner (NVidia)
+- dero-stratum-miner - AstroBWTv3 miner for CPU
 - dstm - legacy 0.3.4b and new zhash
 - eggminergpu - CUDA/OpenCL miner for BIS - Bismuth coin on Eggpool (AMD/Nvidia)
 - ethminer - ethminer (forks available - ethash, ethercore, firominer, kawpowminer, nsfminer, quarkchain, progpow, teominer, ubiqhash, zilminer)

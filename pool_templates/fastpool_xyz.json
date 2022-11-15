@@ -542,6 +542,52 @@
             "_prototype": "miners_randomx"
         } 
     },
+        {
+        "coin": "VRSC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "fastpool.xyz:6065"
+                ],
+                "ssl_urls": [
+                    "fastpool.xyz:6066"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.fastpool.xyz:6065"
+                ],
+                "ssl_urls": [
+                    "us.fastpool.xyz:6066"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "sg.fastpool.xyz:6065"
+                ],
+                "ssl_urls": [
+                    "sg.fastpool.xyz:6066"
+                ]
+            }
+        ],
+        "miners": {
+            "hellminer": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nheqminer": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
     {
         "coin": "RTM",
         "servers": [
