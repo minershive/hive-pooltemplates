@@ -4,7 +4,7 @@
 *  SRBMiner-Multi v1.1.2 (Added algorithm `sha256dt` for CPU/GPU mining NOVO coin, fee 0.85%; Added ETHASH/ETCHASH/AUTOLYKOS2 + SHA256DT dual mining mode; Reworked auto-tune procedure for GPU; Note: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.1.2)
 *  TeamBlackMiner v1.75 (Removed 2 bugs in verthash mining; Reduced the rejected shares and improved the poolspeed in ETHW/ETC; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.75)
 *  Dero-Stratum-Miner v1.0.4 (bug fixes; Note: see full changelog at https://github.com/whalesburg/dero-stratum-miner/releases/tag/v1.0.4)
-*  XMRig-Veil v6.17.0 (XMRig fork for mining Veil on mod of RandomX algo for Veil Project; Based on XMRig fork https://github.com/us77ipis/xmrig-veil)
+*  XMRig-Veil v6.17.0 (XMRig fork for mining Veil on mod of RandomX algo for Veil Project; Based on XMRig fork at https://github.com/us77ipis/xmrig-veil)
 
 ##### 0.6-219@221115 2022-11-15
 *   GMiner v3.13 (Significantly improved efficiency "hashrate on pool" for `Kaspa` in single and dual mining modes; Added `BeamHash` algorithm for Nvidia GPUs)
