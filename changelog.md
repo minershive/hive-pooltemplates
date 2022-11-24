@@ -1,3 +1,11 @@
+##### 0.6-219@221124 2022-11-24
+*  TeamRedMiner v0.10.6 (Added fix for Kaspa mining on MiningRigRentals)
+*  lolMiner v1.63 (Improved the Kaspa only mining performance on Nvidia Turing, Ampere and Ada GPUs by about 3.5%; Significantly improved the Kaspa only mining energy efficiency on Nvidia Turing, Ampere and Ada GPUs by 7-11% depending on the actual model)
+*  SRBMiner-Multi v1.1.2 (Added algorithm `sha256dt` for CPU/GPU mining NOVO coin, fee 0.85%; Added ETHASH/ETCHASH/AUTOLYKOS2 + SHA256DT dual mining mode; Reworked auto-tune procedure for GPU)
+*  TeamBlackMiner v1.75 (Removed 2 bugs in verthash mining; Reduced the rejected shares and improved the poolspeed in ETHW/ETC)
+*  Dero-Stratum-Miner v1.0.4 (bug fixes)
+*  XMRig-Veil v6.17.0 (XMRig fork for mining Veil on mod of RandomX algo for Veil Project)
+
 ##### 0.6-219@221115 2022-11-15
 *   GMiner v3.13 (Significantly improved efficiency "hashrate on pool" for `Kaspa` in single and dual mining modes; Added `BeamHash` algorithm for Nvidia GPUs)
 
