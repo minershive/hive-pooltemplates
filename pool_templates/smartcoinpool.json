@@ -1,0 +1,37 @@
+[
+   {
+      "pool":{
+         "name":"SmartCoinPool",
+         "url":"https://veil.smartcoinpool.net",
+         "fee": 1,
+         "type":"PPLNS/SOLO"
+      }
+   },
+   {
+      "coin":"VEIL",
+      "servers":[
+         {
+            "geo":"Low-End PPLNS",
+            "urls":[
+               "veil.smartcoinpool.net:10115"
+            ]
+         },
+         {
+            "geo":"Middle-End PPLNS",
+            "urls":[
+               "veil.smartcoinpool.net:10116"
+            ]
+         }
+      ],
+      "miners":{
+          "xmrig-new": {
+              "cpu": "1",
+              "url": "%URL%",
+              "algo": "rx/veil",
+              "fork": "veil",
+              "pass": "%WORKER_NAME%",
+              "template": "%WAL%"
+          }
+      }
+   }
+]
