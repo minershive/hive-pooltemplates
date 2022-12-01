@@ -1,16 +1,96 @@
 [
     {
+        "pool": {
+            "name": "pool-moscow",
+            "url": "https://pool-moscow.ru",
+            "type": "PPLNS / SOLO / PPS"
+        }
+    },
+    {
         "coin": "XMR",
         "servers": [
             {
-                "geo": null,
+                "geo": "PPLNS RU",
                 "urls": [
-                    "mine.monero.pool-moscow.ru:8888"
+                    "xmrmaine.pool-moscow.ru:8888"
+                ]
+            },
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "xmrmaine.pool-moscow.ru:6666"
+                ]
+            },
+            {
+                "geo": "SOLO RU",
+                "urls": [
+                    "xmrmaine.pool-moscow.ru:7777"
+                ]
+            },
+            {
+                "geo": "PPS RU",
+                "urls": [
+                    "xmrmaine.pool-moscow.ru:5555"
                 ]
             }
         ],
         "miners": {
             "_prototype": "miners_randomx_worker"
         }
+    },
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "etc.pool-moscow.ru:9009"
+                ]
+            },
+            {
+                "geo": "SOLO RU",
+                "urls": [
+                    "soloetc.pool-moscow.ru:8008"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_etchash",
+            "gminer": {
+                "algo": "etchash",
+                "template": "%WAL%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "user_config": "--worker rigName"
+            },
+            "teamredminer": {
+                "algo": "etchash",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "server": "stratum+ssl://%URL%",
+                "pass": "x"
+            },
+            "lolminer": {
+                "algo": "ETCHASH",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "user_config": "--ethstratum=ETHV1"
+            },
+            "phoenixminer": {
+                "url": "POOL: ssl://%URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: ETC"
+            },
+            "t-rex": {
+                "algo": "etchash",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "server": "%URL%",
+                "pass": "x"
+            }
+        }
     }
+
 ]

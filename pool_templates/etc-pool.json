@@ -1,0 +1,84 @@
+[
+   {
+        "pool": {
+            "name": "etc-pool.com",        	
+            "url": "https://etc-pool.com",	
+            "fee": 1,                   	
+            "type": "PPLNS"			
+        }
+   },
+   {
+        "coin": "ETC",
+        "servers": [
+	    {
+                "geo": "EU",
+                "urls": [
+                    "eu.etc-pool.com:4444"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN% -stales 0"
+            },
+	    "nbminer": {
+                "url": "%URL%",
+                "algo": "etchash",
+                "pass": "x",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "nanominer": {
+		 "algo": "etchash",
+		 "url": "%URL%",
+		 "template": "%WAL%",
+		 "pass": "x",
+		 "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+	    },
+	    "gminer": {
+                 "algo": "etchash",
+		 "server": "%URL_HOST%",
+		 "port": "%URL_PORT%",
+		 "pass": "x",
+		 "template": "%WAL%",
+		 "worker": "%WORKER_NAME%"
+	    },
+	    "teamredminer": {
+                "algo": "etchash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+		"worker": "%WORKER_NAME%"
+            },
+	    "t-rex": {
+		"url": "%URL%",
+		"algo": "etchash",
+		"template": "%WAL%",
+		"worker": "%WORKER_NAME%",
+		"pass": "x",
+		"user_config": "\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"%COIN%\""
+		},
+	    "bzminer": {
+		"algo": "etchash",
+		"template": "%WAL%",
+		"worker": "%WORKER_NAME%",
+		"url": "%URL%",
+		"pass": "x"
+		},
+            "lolminer": {
+                "algo": "ETCHASH",
+                "template": "%WAL%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+		"worker": "%WORKER_NAME%",
+		"user_config": "--ethstratum=ETHV1"
+            }
+        }
+   }
+]

@@ -1133,6 +1133,44 @@
             }
         }
     },
+        {
+        "coin": "Zpool-x25x",
+        "servers": [
+            {
+                "geo": "USA",
+                "urls": [
+                    "x25x.mine.zpool.ca:3423"
+                ]
+            }
+        ],
+        "miners": {
+             "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x25x",
+                "pass": "%WORKER_NAME%,c=BTC",
+                "template": "%WAL%"
+            },
+             "cryptodredge": {
+                "algo": "x25x",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%,c=BTC"
+            },
+             "t-rex": {
+                "algo": "x25x",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%,c=BTC"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "x25x",
+                "pass": "%WORKER_NAME%,c=BTC",
+                "template": "%WAL%",
+                "user_config": "--opencl-threads auto\n--opencl-launch auto"
+            }
+        }
+    },
     {
         "coin": "Zpool-argon2d-dyn",
         "servers": [

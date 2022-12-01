@@ -1,5 +1,13 @@
 [
     {
+        "pool": {
+            "name": "Binance Pool",
+            "url": "https://pool.binance.com",
+            "fee": 0,
+            "type": "FPPS+"
+        }
+    },
+    {
         "coin": "BTC",
         "servers": [
             {
@@ -43,6 +51,48 @@
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "AUTO (port 1800)",
+                "urls": [
+                    "etc.poolbinance.com:1800"
+                ]
+            },
+            {
+                "geo": "AUTO (port 3333)",
+                "urls": [
+                    "etc.poolbinance.com:3333"
+                ]
+            },
+            {
+                "geo": "AUTO (port 8888)",
+                "urls": [
+                    "etc.poolbinance.com:8888"
+                ]
+            },
+            {
+                "geo": "AUTO (port HTTPS)",
+                "urls": [
+                    "etc.poolbinance.com:443"
+                ]
+            },
+            {
+                "geo": "AUTO (port SMTP)",
+                "urls": [
+                    "etc.poolbinance.com:25"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_etchash",
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
             }
         }
     }

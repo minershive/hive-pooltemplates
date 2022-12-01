@@ -8,44 +8,56 @@
         }
     },
     {
-        "coin": "XZC",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "zcoin.mintpond.com:3000"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccalgo": "mtp",
-                "fork": "djm34",
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "ccpass": "x",
-                "ccextra": "\"devices\": \"0\""
-            }
-        }
-    },
-    {
         "coin": "RVN",
         "servers": [
             {
                 "geo": "GPU rigs",
                 "urls": [
                     "ravencoin.mintpond.com:3010"
+                ],
+                "ssl_urls": [
+                    "ravencoin.mintpond.com:3015"
                 ]
             },
             {
                 "geo": "High diff",
                 "urls": [
                     "ravencoin.mintpond.com:3011"
+                ],
+                 "geo": "High diff",
+                "ssl_urls": [
+                    "ravencoin.mintpond.com:3016"
                 ]
             }
         ],
         "miners": {
-           "_prototype": "miners_kawpow"
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "FIRO",
+        "servers": [
+            {
+                "geo": "GPU rigs",
+                "urls": [
+                    "firo.mintpond.com:3000"
+                ],
+                "ssl_urls": [
+                    "firo.mintpond.com:3005"
+                ]
+            },
+            {
+                "geo": "High diff",
+                "urls": [
+                    "firo.mintpond.com:3001"
+                ],
+                "ssl_urls": [
+                    "firo.mintpond.com:3006"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_firopow"
         }
     }
 ]

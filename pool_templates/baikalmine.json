@@ -1,34 +1,92 @@
 [
+
     {
-        "coin": "ETH",
+        "coin": "ETC",
         "servers": [
             {
                 "geo": "SOLO EU 9G",
                 "urls": [
-                    "eth-solo.baikalmine.com:1145"
-                ]
-            },
-            {
-                "geo": "SOLO EU 64G",
-                "urls": [
-                    "eth-solo.baikalmine.com:1146"
+                    "etc-solo.baikalmine.com:1444"
                 ]
             },
             {
                 "geo": "PPLNS EU 4G",
                 "urls": [
-                    "eth.baikalmine.com:5050"
+                    "etc.baikalmine.com:8008"
                 ]
             },
             {
                 "geo": "PPLNS EU 9G",
                 "urls": [
-                    "eth.baikalmine.com:5055"
+                    "etc.baikalmine.com:8018"
+                ]
+            },
+            {
+                "geo": "PPS+ EU 4G",
+                "urls": [
+                    "etc-pps.baikalmine.com:3030"
                 ]
             }
         ],
         "miners": {
-            "_prototype": "miners_ethash"
+            "_prototype": "miners_etchash"
+        }
+    },
+    {
+        "coin":"ETHW",
+        "servers":[
+            {
+                "geo": "PPLNS 4G",
+                "urls": [
+                    "ethw.baikalmine.com:1515"
+                ]
+            },
+            {
+                "geo": "PPLNS 9G",
+                "urls": [
+                    "ethw.baikalmine.com:1514"
+                ]
+             },
+	     {
+                "geo": "PPS+ 4G",
+                "urls": [
+                    "ethw-pps.baikalmine.com:1616"
+                ],
+                "ssl_urls": [
+                    "ethw-pps.baikalmine.com:1615"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash_4g"
+        }
+    },
+    {
+        "coin":"DAE",
+        "servers":[
+            {
+                "geo": "4G",
+                "urls": [
+                    "dae.baikalmine.com:7070"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash_4g"
+        }
+    },
+    {
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "ergo.baikalmine.com:1212"
+                ]
+            }
+        ],
+        "miners": {
+		    "_prototype": "miners_autolykos2"
         }
     },
     {
@@ -44,75 +102,6 @@
                 "geo": "SOLO EU",
                 "urls": [
                     "clo-solo.baikalmine.com:4433"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash",
-            "claymore": {
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            }
-        }
-    },
-    {
-        "coin": "EXP",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "exp.baikalmine.com:7171"
-                ]
-            },
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "exp-solo.baikalmine.com:7175"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash",
-            "claymore": {
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            }
-        }
-    },
-    {
-        "coin": "PIRL",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "pirl.baikalmine.com:8181"
-                ]
-            },
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "pirl-solo.baikalmine.com:8185"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash",
-            "claymore": {
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            }
-        }
-    },
-    {
-        "coin": "ELLA",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "ell.baikalmine.com:1010"
-                ]
-            },
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "ell-solo.baikalmine.com:1015"
                 ]
             }
         ],

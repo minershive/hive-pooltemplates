@@ -1,0 +1,57 @@
+[
+  {
+    "pool": {
+      "name": "MiningCoin.Farm",
+      "url": "https://miningcoin.farm",
+      "fee": 0,
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "BUTK",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.miningcoin.farm:3637"
+        ]
+      },
+      {
+        "geo": "Central America",
+        "urls": [
+          "us.miningcoin.farm:3637"
+        ]
+      }
+    ],
+      "miners": {
+         "cpuminer-opt": {
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "algo": "gr",
+            "pass": "x",
+            "max-temp": 0,
+            "fork": "gr"
+         },
+         "xmrig-new": {
+            "url": "%URL%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "algo": "ghostrider",
+            "pass": "x",
+            "cpu": "1",
+            "fork": "xmrig"
+         },
+         "wildrig-multi": {
+            "url": "%URL%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "algo": "ghostrider",
+            "pass": "x"
+         },
+         "srbminer": {
+            "url": "%URL%",
+            "algo": "ghostrider",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--disable-gpu"
+      }
+    }
+  }
+]

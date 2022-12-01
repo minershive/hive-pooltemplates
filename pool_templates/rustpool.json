@@ -1,0 +1,127 @@
+[
+  {
+    "pool": {
+      "name": "Rustpool",
+      "url": "https://zil.rustpool.xyz/",
+      "fee": 1.0,
+      "type": "PPLNS/ merge mining"
+    }
+  },
+  {
+    "coin": "ZIL",
+    "servers": [
+      {
+        "geo": "SG",
+        "urls": ["sg-zil.rustpool.xyz:8008"]
+      },
+      {
+        "geo": "SG Nicehash",
+        "urls": ["sg-zil.rustpool.xyz:9009"]
+      },
+      {
+        "geo": "KR",
+        "urls": ["kr-zil.rustpool.xyz:8008"]
+      },
+      {
+        "geo": "KR Nicehash",
+        "urls": ["kr-zil.rustpool.xyz:9009"]
+      },
+      {
+        "geo": "EU1",
+        "urls": ["eu-zil.rustpool.xyz:8008"]
+      },
+      {
+        "geo": "EU1 Nicehash",
+        "urls": ["eu-zil.rustpool.xyz:9009"]
+      },
+      {
+        "geo": "EU2",
+        "urls": ["eu2-zil.rustpool.xyz:8008"]
+      },
+      {
+        "geo": "EU2 Nicehash",
+        "urls": ["eu2-zil.rustpool.xyz:9009"]
+      },
+      {
+        "geo": "EU3",
+        "urls": ["eu3-zil.rustpool.xyz:8008"]
+      },
+      {
+        "geo": "EU3 Nicehash",
+        "urls": ["eu3-zil.rustpool.xyz:9009"]
+      },
+      {
+        "geo": "US WEST",
+        "urls": ["us-zil.rustpool.xyz:8008"]
+      },
+      {
+        "geo": "US WEST Nicehash",
+        "urls": ["us-zil.rustpool.xyz:9009"]
+      },
+      {
+        "geo": "US EAST",
+        "urls": ["us2-zil.rustpool.xyz:8008"]
+      },
+      {
+        "geo": "US EAST Nicehash",
+        "urls": ["us2-zil.rustpool.xyz:9009"]
+      }
+    ],
+    "miners": {
+      "phoenixminer": {
+        "url": "POOL: %URL%, WALLET: %ETH_WAL%, PSW: %WAL%@%ETH_URL%@4G@x, WORKER: %WORKER_NAME%"
+      },
+      "teamredminer": {
+        "algo": "ethash",
+        "url": "stratum+tcp://%URL%",
+        "template": "%ETH_WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "user_config": "--eth_stratum_mode=ethproxy --eth_dag_cache=0 --eth_worker"
+    },
+      "tt-miner": {
+        "url": "%URL%",
+        "algo": "ETHASH",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "template": "%ETH_WAL%",
+        "user_config": "-worker %WORKER_NAME%"
+      },
+      "lolminer": {
+        "algo": "ETHASH",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%ETH_WAL%",
+        "worker": "%WORKER_NAME%"
+      },
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "ethash",
+        "template": "%ETH_WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "user_config": "\"extra-dag-epoch\": 0"
+      },
+      "nanominer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%ETH_WAL%",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "user_config": "rigName=%WORKER_NAME%"
+      },
+      "gminer": {
+        "algo": "ethash",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "algo": "ethash",
+        "pass": "%WAL%@%ETH_URL%@4G@x",
+        "template": "%ETH_WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]

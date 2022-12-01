@@ -1,0 +1,66 @@
+[
+    {
+        "pool":{
+            "name":"etcminingclub",
+            "url":"https://etcmining.club",
+            "fee":1,
+            "type":"PROP"
+        }
+    },
+    {
+        "coin":"ETC",
+        "servers":[
+            {
+                "geo":"Global",
+                "urls":[
+                    "etcmining.club:8008"
+                ]
+            }
+        ],
+        "miners":{
+            "phoenixminer":{
+                "url":"POOL: %URL%, WAL: %WAL%, PASS: x"
+            },
+            "teamredminer":{
+                "algo":"etchash",
+                "template":"%WAL%",
+                "server":"stratum+tcp://%URL%",
+                "pass":"x"
+	          },
+            "lolminer":{
+                "algo":"etchash",
+                "template":"%WAL%",
+                "server":"stratum+tcp://%URL_HOST%",
+                "port":"%URL_PORT%",
+                "pass":"x"
+            },
+	          "t-rex":{
+                "algo":"etchash",
+                "template":"%WAL%",
+                "server":"%URL%",
+                "pass":"x"
+	          },
+	          "nbminer": {
+                "algo": "etchash",
+                "url": "stratum+tcp://%URL%",
+                "pass": "x",
+                "template": "%WAL%"  
+           },
+           "srbminer": {
+                "algo": "etchash",
+	            	"url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "nanominer": {
+                "algo":"etchash",
+                "url":"%URL%",
+                "template":"%WAL%",
+                "pass":"x",
+                "worker":"%WORKER_NAME%",
+                "user_config":"coin = %COIN%"
+            }
+
+        }
+    }
+]
