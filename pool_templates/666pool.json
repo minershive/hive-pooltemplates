@@ -11,12 +11,12 @@
         "coin":"ERG",
         "servers":[
             {
-                "geo": "China",
+                "geo": "HongKong",
                 "urls": [
                     "ergo.666pool.com:9556"
                 ],
                 "ssl_urls":[
-                    "ergo.666pool.com:9558"
+                    "ergo.666pool.info:9558"
                 ]
             }
         ],
@@ -28,9 +28,12 @@
         "coin": "RVN",
         "servers": [
             {
-                "geo": "China",
+                "geo": "HongKong",
                 "urls": [
                     "rvn.666pool.com:6688"
+                ],
+	 "ssl_urls":[
+                    "rvn.666pool.info:6689"
                 ]
             }
         ],
@@ -42,9 +45,12 @@
         "coin": "CFX",
         "servers": [
             {
-                "geo": "China",
+                "geo": "HongKong",
                 "urls": [
                    "cfx.666pool.com:6655"
+                ],
+	 "ssl_urls":[
+                    "cfx.666pool.info:6656"
                 ]
             }
         ],
@@ -52,64 +58,75 @@
             "_prototype": "miners_octopus"
         }
     },
+
     {
-        "coin": "MEER",
-        "servers": [
-            {
-                "geo": "China",
-                "urls": [
-                   "meer.666pool.com:9866"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"coin-type\": \"qitmeer\"\n\"freq\" : \"420\""
-            }
-        }
-    },
+      "coin":"ETHW",
+      "servers":[
+         {
+            "geo":"HongKong",
+            "urls":[
+               "ethw.666pool.com:8558"
+            ],
+            "ssl_urls":[
+               "ethw.666pool.info:8559"
+            ]
+         }
+      ],
+      "miners":{
+         "_prototype":"miners_ethash"
+      }
+   },
+   {
+      "coin":"KAS",
+      "servers":[
+         {
+            "geo":"HongKong",
+            "urls":[
+               "kas.666pool.com:5566"
+            ],
+            "ssl_urls":[
+               "kas.666pool.info:5567"
+            ]
+         }
+      ],
+      "miners":{
+         "_prototype":"miners_kaspa"
+      }
+   },
+   
+    {
+      "coin":"POM",
+      "servers":[
+         {
+            "geo":"HongKong",
+            "urls":[
+               "pom.666pool.com:7556"
+            ],
+            "ssl_urls":[
+               "pom.666pool.info:7557"
+            ]
+         }
+      ],
+      "miners":{
+         "_prototype":"miners_ethash"
+      }
+   },
 
     {
         "coin": "ETC",
         "servers": [
             {
-                "geo": "Chian",
+                "geo": "HongKong",
                 "urls": [
                     "etc.666pool.com:8336"
+                ],
+	"ssl_urls":[
+                    "etc.666pool.info:8337"
                 ]
             }
         ],
-        "miners": {
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 0,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-            },
-            "finminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "x",
-                "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "ethash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "url": "%URL%",
-                "pass": "x"
-            }
-        }
+        "miners":{
+         "_prototype":"miners_etchash"
+      }
     }
 ]
