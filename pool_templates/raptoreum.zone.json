@@ -1,0 +1,93 @@
+[
+  {
+    "pool": {
+      "url": "https://raptoreum.zone",
+      "name": "Raptoreum.zone",
+      "fee": 0.75,
+      "type": "PPLNT"
+    }
+  },
+  {
+    "coin": "RTM",
+    "servers": [
+      {
+        "geo": "Europe-1 (Germany)",
+        "urls": [
+          "europe-1.raptoreum.zone:3333"
+        ],
+        "ssl_urls": [
+          "europe-1.raptoreum.zone:4444"
+        ]
+      },
+      {
+        "geo": "Europe-2 (Germany)",
+        "urls": [
+          "europe-2.raptoreum.zone:3333"
+        ],
+        "ssl_urls": [
+          "europe-2.raptoreum.zone:4444"
+        ]
+      },
+      {
+        "geo": "USA-1 (East Coast)",
+        "urls": [
+          "usa-east-1.raptoreum.zone:3333"
+        ],
+        "ssl_urls": [
+          "usa-east-1.raptoreum.zone:4444"
+        ]
+      },
+      {
+        "geo": "USA-2 (East Coast)",
+        "urls": [
+          "usa-east-2.raptoreum.zone:3333"
+        ],
+        "ssl_urls": [
+          "usa-east-2.raptoreum.zone:4444"
+        ]
+      },
+	  {
+        "geo": "USA-3 (West Coast)",
+        "urls": [
+          "usa-west.raptoreum.zone:3333"
+        ],
+        "ssl_urls": [
+          "usa-west.raptoreum.zone:4444"
+        ]
+      },
+	  {
+        "geo": "Asia (Singapore)",
+        "urls": [
+          "asia.raptoreum.zone:3333"
+        ],
+        "ssl_urls": [
+          "asia.raptoreum.zone:4444"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcps://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "x",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
+      }
+    }
+  }
+]
