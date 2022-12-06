@@ -1,8 +1,8 @@
 [
    {
         "pool": {
-            "name": "ArgenPool",        	
-            "url": "https://argenpool.org",	
+            "name": "etc.argenpool.org",        	
+            "url": "https://etc.argenpool.org",	
             "fee": 1,                   	
             "type": "PPLNS"			
         }
@@ -21,7 +21,7 @@
                 "opencl": 1,
                 "pass": "x",
                 "port": "%URL_PORT%",
-                "server": "stratum+tcp://%URL_HOST%",
+                "server": "%URL_HOST%",
                 "template": "%WAL%"
             },
             "asicminer": {
@@ -57,13 +57,13 @@
                 "url": "%URL%",
                 "template": "%WAL%",
                 "pass": "x",
-                "user_config": " --temp_limit=70 --temp_resume=65"
+                "user_config": " --temp_limit=68 --temp_resume=64"
             },
             "nbminer": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "etchash",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
+                "template": "%WORKER_NAME%"
             },
             "lolminer": {
                 "algo": "ETCHASH",
@@ -76,7 +76,7 @@
 		"t-rex":{
                 "algo":"etchash",
                 "template":"%WAL%",
-                "server":"%URL%",
+                "server":"%URL_HOST%:%URL_PORT%",
                 "pass":"x"
             },
 	    "gminer": {
