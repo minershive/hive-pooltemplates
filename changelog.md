@@ -1,3 +1,10 @@
+##### 0.6-219@221205 2022-12-05
+*   lolMiner v1.64 (Improved `Kaspa` only mining performance: speed increase is about 8-8.5% on Nvidia Pascal GPUs, 4.5-5% on Nvidia Turing and Ampere GPUs and 3-4% on AMD Navi and Big Navi GPUs; Notes: See full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.64)
+*   GMiner v3.15 (Improved `Kaspa`, `Etc+kaspa`, `Ergo+Kaspa` mining performance on Turing, Ampere and Ada architecture, also decreased power usage; Fixed bug with stale shares for `Kaspa`, `Etc+Kaspa`, `Ergo+Kaspa`, this fix will significantly increase pool hashrate; Added ability to lock memory clock on Ampere and newest GPUs using option `--lock_mclock`, useful to decrease power usage in Kaspa only mining mode; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.15)
+*   SRBMiner-Multi v1.1.3 (Fixed miner crashing on ETHASH/ETCHASH + KASPA/HEAVYHASH dual mining options that appeared in previous v1.1.2; Notes: Full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.1.3)
+*   NanoMiner v3.7.6 (Added ability to mine EVR coin; Notes: Full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.7.6)
+*   miniZ v2.0a (Fixed most progpow/ethash issues; Improved invalid shares on CFX; Improved stability; Notes: Full changelog at https://miniz.ch/2022/12/02/miniz-v20a-is-out)
+
 ##### 0.6-219@221124 2022-11-24
 *  TeamRedMiner v0.10.6 (Added fix for `Kaspa` mining on MiningRigRentals; Notes: Full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.6)
 *  lolMiner v1.63 (Improved the `Kaspa` only mining performance on Nvidia Turing, Ampere and Ada GPUs by about 3.5%; Significantly improved the Kaspa only mining energy efficiency on Nvidia Turing, Ampere and Ada GPUs by 7-11% depending on the actual model; Note: full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.63)
