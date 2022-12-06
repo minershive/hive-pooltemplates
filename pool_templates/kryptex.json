@@ -170,7 +170,7 @@
                 "url": "%URL%"
             }
         }
-    }, 
+    },
     {
         "coin": "UBQ",
         "servers": [
@@ -194,6 +194,26 @@
             },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "xmr.kryptex.network:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "rx\/0",
+                "fork": "xmrig",
+                "cpu": "1",
                 "template": "%WAL%/%WORKER_NAME%"
             }
         }
