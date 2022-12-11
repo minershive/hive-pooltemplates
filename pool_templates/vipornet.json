@@ -42,32 +42,19 @@
       },
       {
         "geo": "South America",
-        "urls": ["sp.vipor.net:5067"],
+        "urls": ["sa.vipor.net:5067"],
         "ssl_urls": ["sp.vipor.net:5167"]
       },
       {
         "geo": "South America SOLO",
-        "urls": ["sp.vipor.net:5068"],
+        "urls": ["sa.vipor.net:5068"],
         "ssl_urls": ["sp.vipor.net:5168"]
       }
 
     ],
     "miners": {
-      "_prototype": "miners_radiant",
-      "bzminer": {
-         "algo": "radiant",
-         "template": "%WAL%",
-         "worker": "%WORKER_NAME%",
-         "url": "%URL%"
-      },
-      "srbminer": {
-         "algo": "radiant",
-         "template": "%WAL%",
-         "worker": "%WORKER_NAME%",
-         "url": "%URL%"
-      }
+      "_prototype": "miners_radiant"
     }
-
   },
   {
     "coin": "ERGO",
@@ -89,25 +76,13 @@
       },
       {
         "geo": "South America",
-        "urls": ["sp.vipor.net:5070"],
-        "ssl_urls": ["sp.vipor.net:5170"]
+        "urls": ["sa.vipor.net:5070"],
+        "ssl_urls": ["sa.vipor.net:5170"]
       }
 
     ],
     "miners": {
-      "_prototype": "miners_ergo",
-      "lolminer": {
-         "algo": "autolykos2",
-         "template": "%WAL%.%WORKER_NAME%",
-         "server": "%URL_HOST%",
-         "port": "%URL_PORT%"
-      },
-      "teamredminer": {
-         "algo": "autolykos2",
-         "template": "%WAL%.%WORKER_NAME%",
-         "url": "%URL%"
-      }
-
+      "_prototype": "miners_autolykos2"
     }
   }
 
