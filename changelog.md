@@ -1,8 +1,8 @@
 ##### 0.6-219@221211 2022-12-11
-*   GMiner v3.16 (Improved mining performance on `Kaspa`, `ETC+Kaspa`, `Ergo+Kaspa`; Fixed invalid shares on `Kaspa`, `ETC+Kaspa`, `Ergo+Kaspa` https://github.com/develsoftware/GMinerRelease/releases/tag/3.16)
-*   BzMiner v12.2.0 (Improved `Kaspa` hashrate; Improved `Ergo+Kaspa` hashrate; Note: see fullchangelog at https://github.com/bzminer/bzminer/releases/tag/v12.2.0)
-*   WildRig-Multi v0.35.1b2 (Implemented support for `nexapow` algo, fee 5%; Faster initialization for Nvidia; Fixed one more memory leak for progpows family; Note: see changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.35.1b)
-*   TeamBlackMiner v1.76 (Improved the the stratum implementation for ezil.me, hiveon.com and others; Faster Verthash mining; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.76)
+*   GMiner v3.16 (Improved mining performance on `Kaspa`, `ETC+Kaspa`, `Ergo+Kaspa`; Fixed invalid shares on `Kaspa`, `ETC+Kaspa`, `Ergo+Kaspa`; Note see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.16)
+*   BzMiner v12.2.0 (Improved `Kaspa` hashrate; Improved `Ergo+Kaspa` hashrate; Note: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v12.2.0)
+*   WildRig-Multi v0.35.1b2 (Implemented support for `nexapow` algo, fee 5%; Faster initialization for Nvidia; Fixed one more memory leak for progpows family; Note: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.35.1b)
+*   TeamBlackMiner v1.76 (Improved the the stratum implementation for ezil.me, hiveon.com and others; Faster `verthash` mining; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.76)
 *   XMRigCC v3.3.3 (Rebase latest xmrig-6.18.2-dev changes: more optimizations for Zen3/Zen4 CPUs)
 
 ##### 0.6-219@221205 2022-12-05
