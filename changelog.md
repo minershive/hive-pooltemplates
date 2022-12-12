@@ -1,3 +1,10 @@
+##### 0.6-219@221211 2022-12-11
+*   GMiner v3.16 (Improved mining performance on `Kaspa`, `ETC+Kaspa`, `Ergo+Kaspa`; Fixed invalid shares on `Kaspa`, `ETC+Kaspa`, `Ergo+Kaspa` https://github.com/develsoftware/GMinerRelease/releases/tag/3.16)
+*   BzMiner v12.2.0 (Improved `Kaspa` hashrate; Improved `Ergo+Kaspa` hashrate; Note: see fullchangelog at https://github.com/bzminer/bzminer/releases/tag/v12.2.0)
+*   WildRig-Multi v0.35.1b2 (Implemented support for `nexapow` algo, fee 5%; Faster initialization for Nvidia; Fixed one more memory leak for progpows family; Note: see changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.35.1b)
+*   TeamBlackMiner v1.76 (Improved the the stratum implementation for ezil.me, hiveon.com and others; Faster Verthash mining; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.76)
+*   XMRigCC v3.3.3 (Rebase latest xmrig-6.18.2-dev changes: more optimizations for Zen3/Zen4 CPUs)
+
 ##### 0.6-219@221205 2022-12-05
 *   lolMiner v1.64 (Improved `Kaspa` only mining performance: speed increase is about 8-8.5% on Nvidia Pascal GPUs, 4.5-5% on Nvidia Turing and Ampere GPUs and 3-4% on AMD Navi and Big Navi GPUs; Notes: See full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.64)
 *   GMiner v3.15 (Improved `Kaspa`, `Etc+kaspa`, `Ergo+Kaspa` mining performance on Turing, Ampere and Ada architecture, also decreased power usage; Fixed bug with stale shares for `Kaspa`, `Etc+Kaspa`, `Ergo+Kaspa`, this fix will significantly increase pool hashrate; Added ability to lock memory clock on Ampere and newest GPUs using option `--lock_mclock`, useful to decrease power usage in Kaspa only mining mode; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.15)
