@@ -1,5 +1,5 @@
 ##### 0.6-219@221213 2022-12-13
-*   GMiner v3.17 (Improved 5-7% Kaspa hashrate in single mining mode; Improved Kaspa hashrate in dual mining mode up to +10%)
+*   GMiner v3.17 (Improved 5-7% `Kaspa` hashrate in single mining mode; Improved `Kaspa` hashrate in dual mining mode up to +10%)
 
 ##### 0.6-219@221212 2022-12-12
 *   TeamBlackMiner v1.77 (Improved the the stratum implementation for ezil.me, hiveon.com and others; Faster `verthash` mining; Reduced stale shares; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.77)
