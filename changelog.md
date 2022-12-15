@@ -1,3 +1,6 @@
+##### 0.6-219@221215 2022-12-15
+*   WildRig-Multi v0.35.3 (Improved `nexapow` up to 40% depends on GPU)
+
 ##### 0.6-219@221214 2022-12-14
 *   WildRig-Multi v0.35.2 (Implemented `skydoge`; Improved devfee logic for `nexapow`, now it should restart the miner if it can't connect at all; Slight performance increase on `nexapow` up to 1%; Note: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.35.2)
    
