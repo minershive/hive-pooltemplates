@@ -1,6 +1,6 @@
 ##### 0.6-219@221214 2022-12-14
 *   WildRig-Multi v0.35.2 (Implemented `skydoge`; Improved devfee logic for `nexapow`, now it should restart the miner if it can't connect at all; Slight performance increase on `nexapow` up to 1%; Note: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.35.2)
-*   
+   
 ##### 0.6-219@221213 2022-12-13
 *   GMiner v3.17 (Improved 5-7% `Kaspa` hashrate in single mining mode; Improved `Kaspa` hashrate in dual mining mode up to +10%)
 
