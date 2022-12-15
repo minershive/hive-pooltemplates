@@ -11,7 +11,7 @@
 *   GMiner v3.16 (Improved mining performance on `Kaspa`, `ETC+Kaspa`, `Ergo+Kaspa`; Fixed invalid shares on `Kaspa`, `ETC+Kaspa`, `Ergo+Kaspa`; Note see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.16)
 *   BzMiner v12.2.0 (Improved `Kaspa` hashrate; Improved `Ergo+Kaspa` hashrate; Note: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v12.2.0)
 *   WildRig-Multi v0.35.1b2 (Implemented support for `nexapow` algo, fee 5%; Faster initialization for Nvidia; Fixed one more memory leak for progpows family; Note: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.35.1b)
-*   XMRigCC v3.3.3 (Rebase latest xmrig-6.18.2-dev changes: more optimizations for Zen3/Zen4 CPUs)
+*   XMRigCC v3.3.2 (Rebase latest xmrig-6.18.2-dev changes: more optimizations for Zen3/Zen4 CPUs)
 
 ##### 0.6-219@221205 2022-12-05
 *   lolMiner v1.64 (Improved `Kaspa` only mining performance: speed increase is about 8-8.5% on Nvidia Pascal GPUs, 4.5-5% on Nvidia Turing and Ampere GPUs and 3-4% on AMD Navi and Big Navi GPUs; Notes: See full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.64)
