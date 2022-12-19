@@ -1,3 +1,6 @@
+##### 0.6-219@221218 2022-12-18
+*   SRBMiner-Multi v1.1.4 (Fixed hashrate regression on `autolykos2` algorithm for Vega and Ellesmere GPUs that was introduced unintentionally in an earlier version; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.1.4)
+
 ##### 0.6-219@221215 2022-12-15
 *   WildRig-Multi v0.35.3 (Improved `nexapow` up to 40% depends on GPU)
 
