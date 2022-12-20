@@ -1,3 +1,6 @@
+##### 0.6-219@221220 2022-12-20
+*   GMiner v3.18 (Improved hashrate for `Kaspa`, `ETC+Kaspa` and `Ergo+Kaspa`; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.18)
+
 ##### 0.6-219@221218 2022-12-18
 *   SRBMiner-Multi v1.1.4 (Fixed hashrate regression on `autolykos2` algorithm for Vega and Ellesmere GPUs that was introduced unintentionally in an earlier version; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.1.4)
 
