@@ -1,12 +1,10 @@
 ##### 0.6-220@221221 2022-12-21
-*   Nvidia GPUs support changes:
-     -   Updated `nvtool` to v1.7.8 (Implemented Nvidia CMP idle mode; Added support for Locked Core Clock for Pascal GPUs; Added support for Locked Memory Clock for Pascal and newer GPUs. Notes: If memory overclocking doesn't affect hashrate i.e. mining Kaspa then user can set MemClk offset as '-3000 MHz', as result memory clock will actually set to 810MHz with a significant reduction in energy consumption.  Experimental usage until dashboard is updated)
-      -   Updated `NVFlash` to v5.792.0
-      -   Updated `nvidia-info`
-      -   Updated `nvidia-driver-update` (Added support up to CUDA v11.8 and latest drivers)
-*   AMD GPUs support changes:
-       -   Added new 0 mem state feature (Notes: If memory overclocking doesn't affect hashrate i.e. mining Kaspa then user can set MemClk to '1 MHz', as result memory clock will drop to 0 memory state, e.g. for BigNavi it's equal to 96MHz with a significant reduction in energy consumption.  Experimental usage until dashboard is updated)
-       -   Add new experimental command `amd-ocl-install` (Notes: User can now change pre-installed OpenCL libraries to available versions of amdgpu and rocm from Hive OS repository)
+*   Updated `nvtool` to v1.7.8 (Implemented Nvidia CMP idle mode; Added support for Locked Core Clock for Pascal GPUs; Added support for Locked Memory Clock for Pascal and newer GPUs. Notes: If memory overclocking doesn't affect hashrate i.e. mining Kaspa then user can set MemClk offset as '-3000 MHz', as result memory clock will actually set to 810MHz with a significant reduction in energy consumption.  Experimental usage until dashboard is updated)
+*   Updated `NVFlash` to v5.792.0
+*   Updated `nvidia-info`
+*   Updated `nvidia-driver-update` (Added support up to CUDA v11.8 and latest drivers)
+*   AMD GPUs: Added new 0 mem state feature (Notes: If memory overclocking doesn't affect hashrate i.e. mining Kaspa then user can set MemClk to '1 MHz', as result memory clock will drop to 0 memory state, e.g. for BigNavi it's equal to 96MHz with a significant reduction in energy consumption.  Experimental usage until dashboard is updated)
+*   Add new experimental command `amd-ocl-install` (Notes: User can now change pre-installed OpenCL libraries to available versions of amdgpu and rocm from Hive OS repository)
  *   Improved first run procedure (Improved password input checking; Improved rig password setting sequence; Reversed `disk-expand` behavior on first boot, now runs if rig.conf doesn't exists)
  *   Updated `autofan` to v3.18.
  *   Updated Web shell (`ttyd` v1.7.2).
