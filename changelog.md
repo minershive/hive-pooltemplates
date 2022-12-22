@@ -1,3 +1,9 @@
+##### 0.6-220@221222 2022-12-22
+*   lolMiner v1.65 (Improved `Kaspa` performance in ETC/ETHW dual mining by about 6-7% on AMD (Big) Navi GPUs and 10-12% on Nvidia Turing and Ampere, measured at the same Ethash speed and in Kaspa only mining mode by 0.6% to 1.2% on Nvidia GPUs and 0.4-0.5% on AMD (Big) Navi GPUs at approximately same power draw; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.65)
+*   miniZ v2.0b (Fixed issues with invalid shares)
+*   Dero-Stratum-Miner v1.0.5 (Small fixes)
+*   cpuMiner-Opt-JayDDee v3.21.0 (Added `minotaurx` algo for stratum only; Prehash optimised 'blake256' & 'sha256' to ignore zero-padded data for AVX2 & AVX512; Other small improvements)
+
 ##### 0.6-220@221221 2022-12-21
 *   Updated `nvtool` to v1.7.8 (Implemented Nvidia CMP idle mode; Added support for Locked Core Clock for Pascal GPUs; Added support for Locked Memory Clock for Pascal and newer GPUs. Notes: If memory overclocking doesn't affect hashrate i.e. mining Kaspa then user can set MemClk offset as '-3000 MHz', as result memory clock will actually set to 810MHz with a significant reduction in energy consumption.  Experimental usage until dashboard is updated)
 *   Updated `NVFlash` to v5.792.0
