@@ -1,3 +1,8 @@
+##### 0.6-220@221223 2022-12-23
+*   lolMiner v1.65 (Fixed a bug causing sometimes high number of duplicate shares on Kaspa when dual mining with ETC; Changed Kaspa stratum behavior: Kaspa mining will now start only after the pool did send an authorization message, this prevents rejected shares at startup; Slightly changed dual mining tuning behavior to a mode a bit slower, but less likely to hang up the GPUs at startup; Note: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.65a)
+*   GMiner v3.19 (Improved DUAL mining: `ETC+KASPA`, `Ergo+KASPA`; Improved `Ergo` mining hashrate in single mining mode for 10xx and 20xx Nvidia GPUs; Note: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.19)
+*   TeamRedMiner v0.10.7 (Added dual `ERG+KAS` mining support for all supported GPUs; Fixed semi-broken dual zil mining for older algos, e.g. Nimiq, Argon2, x16r, and others; Note: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.7)
+
 ##### 0.6-220@221222 2022-12-22
 *   lolMiner v1.65 (Improved `Kaspa` performance in ETC/ETHW dual mining by about 6-7% on AMD (Big) Navi GPUs and 10-12% on Nvidia Turing and Ampere, measured at the same Ethash speed and in Kaspa only mining mode by 0.6% to 1.2% on Nvidia GPUs and 0.4-0.5% on AMD (Big) Navi GPUs at approximately same power draw; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.65)
 *   miniZ v2.0b (Fixed issues with invalid shares)
