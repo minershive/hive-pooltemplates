@@ -1,3 +1,6 @@
+##### 0.6-220@221229 2022-12-29
+*   GMiner v3.20 (Improved compatibility with Kaspa pools, supports KStratum to support mining on Kaspa Node; Improved Kaspa, ETC+Kaspa, Ergo+Kaspa mining performance for GTX 10xx GPUs, up to +5% in single mining mode)
+
 ##### 0.6-220@221223 2022-12-23
 *   lolMiner v1.65a (Fixed a bug causing sometimes high number of duplicate shares on Kaspa when dual mining with ETC; Changed Kaspa stratum behavior: Kaspa mining will now start only after the pool did send an authorization message, this prevents rejected shares at startup; Slightly changed dual mining tuning behavior to a mode a bit slower, but less likely to hang up the GPUs at startup; Note: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.65a)
 *   GMiner v3.19 (Improved DUAL mining: `ETC+KASPA`, `Ergo+KASPA`; Improved `Ergo` mining hashrate in single mining mode for 10xx and 20xx Nvidia GPUs; Note: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.19)
