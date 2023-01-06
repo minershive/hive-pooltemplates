@@ -1,3 +1,9 @@
+##### 0.6-220@230105 2023-01-05
+*   GMiner v3.23 (Add support ZIL mining via ZMP protocol: single/dual/triple modes, to enable dual/triple ZIL mining you need specify ZIL server and ZIL wallet via `--zilserver` and `--ziluser` parameters; Add custom OC settings for ZIL round: `--zilcclock`, `--zilmclock`, `--zilpl`, `--zillock_cclock`, `--zillock_mclock`; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.23)
+*   SRBMiner-Multi v2.0.0 (Added support for NVIDIA architectures : Pascal, Turing, Ampere, Ada Lovelace; Added parameters `--disable-gpu-amd`, `--disable-gpu-nvidia`; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.0.0)
+*   WildRig-Multi v0.36.1 (Improved `nexapow` up to 10% depends on GPU; Improved `pufferfish2` for RDNA/RDNA2; Removed some algos for dead coins; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.1)
+*   TeamBlackMiner v1.79 (Improved default xintensity `kawpow`; Fixed rejected shares `kawpow`; Reduced stale shares on `verthash`; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.79)
+
 ##### 0.6-220@221229 2022-12-29
 *   GMiner v3.20 (Improved compatibility with Kaspa pools, supports KStratum to support mining on Kaspa Node; Improved Kaspa, ETC+Kaspa, Ergo+Kaspa mining performance for GTX 10xx GPUs, up to +5% in single mining mode)
 
