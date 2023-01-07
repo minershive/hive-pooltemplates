@@ -1,3 +1,7 @@
+##### 0.6-220@230107 2023-01-07
+*   GMiner v3.24 (Add support ZIL mining without ZMP protocol; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.24)
+*   SRBMiner-Multi v2.0.1 (Added support for NVIDIA architectures: Hopper; Fixed detection of NVIDIA GPUs; Various fixes for mining on Nicehash; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.0.1)
+
 ##### 0.6-220@230105 2023-01-05
 *   GMiner v3.23 (Add support ZIL mining via ZMP protocol: single/dual/triple modes, to enable dual/triple ZIL mining you need specify ZIL server and ZIL wallet via `--zilserver` and `--ziluser` parameters; Add custom OC settings for ZIL round: `--zilcclock`, `--zilmclock`, `--zilpl`, `--zillock_cclock`, `--zillock_mclock`; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.23)
 *   SRBMiner-Multi v2.0.0 (Added support for NVIDIA architectures : Pascal, Turing, Ampere, Ada Lovelace; Added parameters `--disable-gpu-amd`, `--disable-gpu-nvidia`; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.0.0)
