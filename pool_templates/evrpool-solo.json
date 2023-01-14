@@ -1,0 +1,42 @@
+[
+    {
+        "pool": {
+            "name": "EVRpool.com",
+            "url": "https://EVRpool.com",
+            "fee": 0,
+            "type": "SOLO"
+        }
+    },
+    {
+        "coin":"EVR",
+        "servers":[
+            {
+                "geo": "US",
+                "urls": [
+                    "us.evrpool.com:5010"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "ap.evrpool.com:5010"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.evrpool.com:5010"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype":"miners_evrprogpow",
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "evrprogpow",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
