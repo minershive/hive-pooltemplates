@@ -1,3 +1,7 @@
+##### 0.6-220@230113 2023-01-13
+*   WildRig-Multi v0.36.2 (Improved `nexapow` up to 10-20% depends on GPU; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.2b)
+*   ccMiner-fancyIX v0.5.1 (Added support for NVIDIA RTX 40xx series; Notes: see full changelog at https://github.com/fancyIX/ccminer/releases/tag/0.5.1)
+
 ##### 0.6-220@230107 2023-01-07
 *   GMiner v3.24 (Add support ZIL mining without ZMP protocol; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.24)
 *   SRBMiner-Multi v2.0.1 (Added support for NVIDIA architectures: Hopper; Fixed detection of NVIDIA GPUs; Various fixes for mining on Nicehash; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.0.1)
