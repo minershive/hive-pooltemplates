@@ -1,3 +1,6 @@
+##### 0.6-220@230114 2023-01-14
+*   GMiner v3.26 (Added `FIRO` coin support for Nvidia GPUs; Added `SERO` coin support for Nvidia GPUs; Optimized memory usage for ZIL dual or triple mining; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.26)
+
 ##### 0.6-220@230113 2023-01-13
 *   WildRig-Multi v0.36.2 (Improved `nexapow` up to 10-20% depends on GPU; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.2b)
 *   ccMiner-fancyIX v0.5.1 (Added support for NVIDIA RTX 40xx series; Notes: see full changelog at https://github.com/fancyIX/ccminer/releases/tag/0.5.1)
