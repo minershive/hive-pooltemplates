@@ -1,6 +1,6 @@
 ##### 0.6-220@230119 2023-01-19
-*   SRBMiner-Multi v2.0.2 (Improved mining performance on sha512_256d_radiant for AMD RDNA/RDNA2 GPUs and Nvidia Ampere GPUs; Improved mining performance on dual etchash/ethash+sha512_256d_radiant for AMD RDNA2 GPUs; Note: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.0.2)
-*   BzMiner v13.0.1b7 BETA (Added mining NEXA support on Nvidia only for now; Notes:  This is a beta release and needs to be manually selected "13.0.1" via "Version" in miner config. See full changelog at https://discord.gg/NRty3PCVdB on beta-realeses channel)
+*   SRBMiner-Multi v2.0.2 (Improved mining performance on `sha512_256d_radiant` for AMD RDNA/RDNA2 GPUs and Nvidia Ampere GPUs; Improved mining performance on dual `etchash`/`ethash`+`sha512_256d_radiant` for AMD RDNA2 GPUs; Note: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.0.2)
+*   BzMiner v13.0.1b7 BETA (Added mining `NEXA` support on Nvidia only for now; Notes:  This is a beta release and needs to be manually selected "13.0.1" via "Version" in miner config. See full changelog at https://discord.gg/NRty3PCVdB on beta-realeses channel)
 *   WildRig-Multi v0.36.3 (Support more pools for nexapow; Fixed curvehash for Nvidia and RDNA+ GPUs. Notes: Full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.3b)
 *   TeamBlackMiner v1.80 (Added support for triple mining VTC+ETC+ZIL, needed 6+GB GPU memory; Remove rejects during zil switch; Remove rejects on verthash. Notes: See full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.80)
 
