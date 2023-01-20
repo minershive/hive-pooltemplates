@@ -1,5 +1,5 @@
 ##### 0.6-220@230120 2023-01-20
-*   BzMiner v13.0.1 (Add support mining NEXA coin on Nvidia GPUs, devfee 3%; Faster startup times for larger rigs; Showing difficulty change message; Notes: see full changelog https://github.com/bzminer/bzminer/releases/tag/v13.0.1; Final release "v13.0.1" replaces "v13.0.1b7" (Beta package) version number)
+*   BzMiner v13.0.1 (Add support mining NEXA coin on Nvidia GPUs, devfee 3%; Faster startup times for larger rigs; Showing difficulty change message; Notes: see full changelog https://github.com/bzminer/bzminer/releases/tag/v13.0.1; Final release "v13.0.1" now set as latest and replaces "v13.0.1b7" Beta package)
 
 ##### 0.6-220@230119 2023-01-19
 *   SRBMiner-Multi v2.0.2 (Improved mining performance on `sha512_256d_radiant` for AMD RDNA/RDNA2 GPUs and Nvidia Ampere GPUs; Improved mining performance on dual `etchash`/`ethash`+`sha512_256d_radiant` for AMD RDNA2 GPUs; Note: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.0.2)
