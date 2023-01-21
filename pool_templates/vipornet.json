@@ -12,7 +12,7 @@
     "servers": [
       {
         "geo": "United States (East)",
-        "urls": ["us.vipor.net:5067"],
+        "urls": ["us.vipor.net:5084"],
         "ssl_urls": ["us.vipor.net:5167"]
       },
       {
@@ -22,7 +22,7 @@
       },
       {
         "geo": "Asia",
-        "urls": ["ap.vipor.net:5067"],
+        "urls": ["ap.vipor.net:5084"],
         "ssl_urls": ["ap.vipor.net:5167"]
       },
       {
@@ -32,7 +32,7 @@
       },
       {
         "geo": "Europe",
-        "urls": ["eu.vipor.net:5067"],
+        "urls": ["eu.vipor.net:5084"],
         "ssl_urls": ["eu.vipor.net:5167"]
       },
       {
@@ -42,18 +42,78 @@
       },
       {
         "geo": "South America",
-        "urls": ["sa.vipor.net:5067"],
-        "ssl_urls": ["sp.vipor.net:5167"]
+        "urls": ["sa.vipor.net:5084"],
+        "ssl_urls": ["sa.vipor.net:5167"]
       },
       {
         "geo": "South America SOLO",
         "urls": ["sa.vipor.net:5068"],
-        "ssl_urls": ["sp.vipor.net:5168"]
+        "ssl_urls": ["sa.vipor.net:5168"]
       }
 
     ],
     "miners": {
       "_prototype": "miners_radiant"
+    }
+  },
+  {
+    "coin": "NEXA",
+    "servers": [
+      {
+        "geo": "United States (East)",
+        "urls": ["us.vipor.net:5084"],
+        "ssl_urls": ["us.vipor.net:5184"]
+      },
+      {
+        "geo": "United States (East) SOLO",
+        "urls": ["us.vipor.net:5085"],
+        "ssl_urls": ["us.vipor.net:5185"]
+      },
+      {
+        "geo": "Asia",
+        "urls": ["ap.vipor.net:5084"],
+        "ssl_urls": ["ap.vipor.net:5184"]
+      },
+      {
+        "geo": "Asia SOLO",
+        "urls": ["ap.vipor.net:5085"],
+        "ssl_urls": ["ap.vipor.net:5185"]
+      },
+      {
+        "geo": "Europe",
+        "urls": ["eu.vipor.net:5084"],
+        "ssl_urls": ["eu.vipor.net:5184"]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": ["eu.vipor.net:5085"],
+        "ssl_urls": ["eu.vipor.net:5185"]
+      },
+      {
+        "geo": "South America",
+        "urls": ["sa.vipor.net:5084"],
+        "ssl_urls": ["sa.vipor.net:5184"]
+      },
+      {
+        "geo": "South America SOLO",
+        "urls": ["sa.vipor.net:5085"],
+        "ssl_urls": ["sa.vipor.net:5185"]
+      }
+
+    ],
+    "miners": {
+      "wildrig-multi": {
+        "url": "%URL%",
+        "algo": "nexapow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "bzminer": {
+        "url": "%URL%",
+        "algo": "nexapow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
     }
   },
   {
