@@ -10,40 +10,90 @@
                 ]
             },
             {
+                "geo": "Russia Low-Diff",
+                "urls": [
+                    "gate.emcd.io:3339"
+                ]
+            },
+            {
                 "geo": "Europe",
                 "urls": [
                     "eu.emcd.io:3333",
-                    "eu2.emcd.io:3333"
+                    "eu.emcd.io:443",
+                    "eu2.emcd.io:3333",
+                    "eu2.emcd.io:443"
                 ]
             },
             {
-                "geo": "China",
+                "geo": "Europe Low-Diff",
                 "urls": [
-                    "cn.emcd.io:3333"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "usa.emcd.io:3333"
+                    "eu.emcd.io:3339",
+                    "eu2.emcd.io:3339"
                 ]
             },
             {
                 "geo": "Iran",
                 "urls": [
-                    "ir.emcd.io:3333"
+                    "ir.emcd.io:3333",
+                    "ir.emcd.io:443"
+                ]
+            },
+            {
+                "geo": "Iran Low-Diff",
+                "urls": [
+                    "ir.emcd.io:3339"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "usa.emcd.io:3333",
+                    "usa.emcd.io:443"
+                ]
+            },
+            {
+                "geo": "USA Low-Diff",
+                "urls": [
+                    "usa.emcd.io:3339"
+                ]
+            },
+            {
+                "geo": "China",
+                "urls": [
+                    "cn.emcd.io:3333",
+                    "cn.emcd.io:443"
+                ]
+            },
+            {
+                "geo": "China Low-Diff",
+                "urls": [
+                    "cn.emcd.io:3339"
                 ]
             },
             {
                 "geo": "Kyrgyzstan",
                 "urls": [
-                    "kg.emcd.io:3333"
+                    "kg.emcd.io:3333",
+                    "kg.emcd.io:443"
+                ]
+            },
+            {
+                "geo": "Kyrgyzstan Low-Diff",
+                "urls": [
+                    "kg.emcd.io:3339"
                 ]
             },
             {
                 "geo": "Kazakhstan",
                 "urls": [
-                    "kz.emcd.io:3333"
+                    "kz.emcd.io:3333",
+                    "kz.emcd.io:443"
+                ]
+            },
+            {
+                "geo": "Kazakhstan Low-Diff",
+                "urls": [
+                    "kz.emcd.io:3339"
                 ]
             }
         ],
@@ -217,60 +267,6 @@
         }
     },
     {
-        "coin": "BSV",
-        "servers": [
-            {
-                "geo": "Russia",
-                "urls": [
-                    "gate.emcd.io:6666"
-                ]
-            },
-            {
-                "geo": "Europe",
-                "urls": [
-                    "eu.emcd.io:6666",
-                    "eu2.emcd.io:6666"
-                ]
-            },
-            {
-                "geo": "China",
-                "urls": [
-                    "cn.emcd.io:6666"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "usa.emcd.io:6666"
-                ]
-            },
-            {
-                "geo": "Iran",
-                "urls": [
-                    "ir.emcd.io:6666"
-                ]
-            },
-            {
-                "geo": "Kyrgyzstan",
-                "urls": [
-                    "kg.emcd.io:6666"
-                ]
-            },
-            {
-                "geo": "Kazakhstan",
-                "urls": [
-                    "kz.emcd.io:6666"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "ETC",
         "servers": [
             {
@@ -312,15 +308,14 @@
         ],
         "miners": {
             "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4, COIN: %COIN%"
+                "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, COIN: %COIN%"
             },
             "gminer": {
                 "algo":"etchash",
                 "pass":"x",
                 "port":"%URL_PORT%",
                 "server":"%URL_HOST%",
-                "template":"%WAL%.%WORKER_NAME%",
-                "user_config":"--proto stratum"
+                "template":"%WAL%.%WORKER_NAME%"
             },
             "teamredminer": {
                 "algo": "etchash",
@@ -337,7 +332,7 @@
             },
             "nbminer": {
                 "algo": "etchash",
-                "url": "nicehash+tcp://%URL%",
+                "url": "stratum+tcp://%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
