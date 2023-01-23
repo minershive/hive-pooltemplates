@@ -1,3 +1,8 @@
+##### 0.6-220@230122 2023-01-22
+*   GMiner v3.27 (Improved memory management for mining with ZIL; Added option `--dataset_mode` to control dataset management for Ergo; Fixed bug with displaying memory temperature on GPUs that doesn't have this sensor; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.27)
+*   WildRig-Multi v0.36.4 (Improved `nexapow` up to 8% for NVIDIA GPUs; Slightly improved nexapow for AMD GPUs; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.4b)
+*   TeamBlackMiner v1.81 (Added support for `VTC+ZIL` dual mining; Notes: see fullchagelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.81)
+
 ##### 0.6-220@230120 2023-01-20
 *   BzMiner v13.0.1 (Add support mining NEXA coin on Nvidia GPUs, devfee 3%; Faster startup times for larger rigs; Showing difficulty change message; Notes: see full changelog https://github.com/bzminer/bzminer/releases/tag/v13.0.1; Final release "v13.0.1" now set as latest and replaces "v13.0.1b7" Beta package)
 
