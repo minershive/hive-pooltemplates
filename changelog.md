@@ -1,3 +1,6 @@
+##### 0.6-220@230123 2023-01-23
+*   WildRig-Multi v0.36.5 (Hot-fix to v0.36.4: fixed devfee when mining on rplant pool, it was still 5% instead of 2%; Improved `nexapow` up to 8% for NVIDIA GPUs; Slightly improved nexapow for AMD GPUs; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.5b)
+
 ##### 0.6-220@230122 2023-01-22
 *   GMiner v3.27 (Improved memory management for mining with ZIL; Added option `--dataset_mode` to control dataset management for Ergo; Fixed bug with displaying memory temperature on GPUs that doesn't have this sensor; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.27)
 *   WildRig-Multi v0.36.4 (Improved `nexapow` up to 8% for NVIDIA GPUs; Slightly improved nexapow for AMD GPUs; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.4b)
