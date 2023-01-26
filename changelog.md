@@ -1,5 +1,5 @@
 ##### 0.6-220@230125 2023-01-25
-*   TeamBlackMiner v1.82 (Fixed issue with high cpu load introduced in v1.81; Fixed issue in VTC+ZIL; Several small improvements; Notes: Notes: see fullchagelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.82)
+*   TeamBlackMiner v1.82 (Fixed issue with high CPU load introduced in v1.81; Fixed issue in `VTC+ZIL`; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.82)
 
 ##### 0.6-220@230123 2023-01-23
 *   WildRig-Multi v0.36.5 (Hot-fix to v0.36.4: fixed devfee when mining on rplant pool, it was still 5% instead of 2%; Improved `nexapow` up to 8% for NVIDIA GPUs; Slightly improved nexapow for AMD GPUs; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.5b)
