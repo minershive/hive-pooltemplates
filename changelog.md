@@ -1,3 +1,7 @@
+##### 0.6-220@230126 2023-01-26
+*   lolMiner v1.66 (Added support for mining Nexa on Nvidia Pascal or newer generation GPUs, devfee 2%; Notes: See full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.66)
+*   miniZ v2.0c (Added support for ZIL single and dual mining: ZIL with ETC/ETH/UBQ; Added DAG cache for ethash, and progpow algorithms; Improvements for 192,7 on RTX 30XX GPUs; Added `--show-diff` option to show job, and network difficulty for equihash only; Fixed Beam stale/invalid shares; Notes: Full changelog for https://miniz.ch/2023/01/26/miniz-v20c-is-out)
+   
 ##### 0.6-220@230125 2023-01-25
 *   TeamBlackMiner v1.82 (Fixed issue with high CPU load introduced in v1.81; Fixed issue in `VTC+ZIL`; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.82)
 
