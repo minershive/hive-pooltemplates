@@ -1,3 +1,6 @@
+##### 0.6-220@230127 2023-01-27
+*   TeamRedMiner v0.10.8 (Extended to epoch 369 for `kawpow` on Polaris 4GB GPUs, aprox. end of April'23; Tiny `Kaspa` GPU hashrate boost across all GPUs, aprox. +0.1%; Added triple `ERG+KAS+ZIL` and `ETH+KAS+ZIL` mining support, add both `--kas` and `--zil` sections to enable; R-mode support in dual/triple ZIL mining, specify --eth_config=R inside `--zil` ... `--zil_end` to enable; Notes: see all changes at https://github.com/todxx/teamredminer/releases/tag/v0.10.8)
+
 ##### 0.6-220@230126 2023-01-26
 *   lolMiner v1.66 (Added support for mining `Nexa` on Nvidia Pascal or newer generation GPUs, devfee 2%; Notes: See full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.66)
 *   miniZ v2.0c (Added support for ZIL single and dual mining: ZIL with ETC/ETH/UBQ; Added DAG cache for `ethash`, and `progpow` algorithms; Improvements for 192,7 on RTX 30XX GPUs; Added `--show-diff` option to show job, and network difficulty for equihash only; Fixed Beam stale/invalid shares; Notes: Full changelog for https://miniz.ch/2023/01/26/miniz-v20c-is-out)
