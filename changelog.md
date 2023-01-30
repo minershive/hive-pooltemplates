@@ -1,3 +1,8 @@
+##### 0.6-220@230130 2023-01-30
+*   [NEW] Rigel Miner v1.3.4 (Nvidia GPUs CUDA miner supporting ethash/etchash/kheavyhash/nexapow algos; Notes: miner's GitHub page https://github.com/rigelminer/rigel)
+*   BzMiner v13.0.3 (Slight improvement on `nexapow` efficiency/hashrate, mainly for Nvidia 20 series GPUs; Nexa devfee reduced to 2%; Fixed AMD issues on all algos, except nexapow; Possible slight auto intensity improvement across all algos for both Nvidia and AMD GPUs; Fixed high diff issue on ZIL; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.0.3)
+*   SRBMiner-Multi v2.1.0 (ZIL is now mineable in any single/dual modes: add additional mining and OC parameters; Added auto buffer mode for ZIL mining; Added `--esm 2` which indicates that 'EthereumStratum/1.0.0' + nicehash mode is used for communication with the pool; Allowed separator ',' (comma) which can be used as an alternative for the current '!' separator in all parameters except in '--password'; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.1.0)  
+
 ##### 0.6-220@230127 2023-01-27
 *   TeamRedMiner v0.10.8 (Extended to epoch 369 for `kawpow` on Polaris 4GB GPUs, aprox. end of April'23; Tiny `Kaspa` GPU hashrate boost across all GPUs, aprox. +0.1%; Added triple `ERG+KAS+ZIL` and `ETH+KAS+ZIL` mining support, add both `--kas` and `--zil` sections to enable; R-mode support in dual/triple ZIL mining, specify --eth_config=R inside `--zil` ... `--zil_end` to enable; Notes: see all changes at https://github.com/todxx/teamredminer/releases/tag/v0.10.8)
 
