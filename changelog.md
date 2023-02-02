@@ -1,3 +1,7 @@
+##### 0.6-220@230202 2023-02-02
+*   WildRig-Multi v0.36.6 (Fixed random hashrate drop for `nexapow`; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.6b)
+*   XMRig v6.19.0 (Slight improvemnets and bug fixes; Notes: see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.19.0)
+
 ##### 0.6-220@230130 2023-01-30
 *   [NEW] Rigel Miner v1.3.4 (Nvidia GPUs CUDA miner supporting ethash/etchash/kheavyhash/nexapow algos; Notes: miner's GitHub page https://github.com/rigelminer/rigel)
 *   BzMiner v13.0.3 (Slight improvement on `nexapow` efficiency/hashrate, mainly for Nvidia 20 series GPUs; Nexa devfee reduced to 2%; Fixed AMD issues on all algos, except nexapow; Possible slight auto intensity improvement across all algos for both Nvidia and AMD GPUs; Fixed high diff issue on ZIL; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.0.3)
