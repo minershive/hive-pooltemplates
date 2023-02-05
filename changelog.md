@@ -1,3 +1,7 @@
+##### 0.6-220@230205 2023-02-05
+*   GMiner v3.28 (Improved overclocking subsystem: fixes bugs with OC switching while ZIL mining round; Improved hashrate reporting while ZIL mining round; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.28)
+*   TeamBlackMiner v1.84 (Fixed `verthash` standalone for AMD; Improved switching code between algos VTC/ZIL; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.84)
+
 ##### 0.6-220@230202 2023-02-02
 *   WildRig-Multi v0.36.6 (Fixed random hashrate drop for `nexapow`; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.6b)
 *   XMRig v6.19.0 (Slight improvemnets and bug fixes; Notes: see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.19.0)
