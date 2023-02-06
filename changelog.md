@@ -1,3 +1,7 @@
+##### 0.6-220@230206 2023-02-06
+*   lolMiner v1.67 (Improved `nexapow` performance on Nvidia Turing, Ampere & Ada based GPUs; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.67)
+*   Rigel v1.3.5 (Performance/efficiency improvements on `nexapow`; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.5)
+
 ##### 0.6-220@230205 2023-02-05
 *   GMiner v3.28 (Improved overclocking subsystem: fixes bugs with OC switching while ZIL mining round; Improved hashrate reporting while ZIL mining round; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.28)
 *   TeamBlackMiner v1.84 (Fixed `verthash` standalone for AMD; Improved switching code between algos VTC/ZIL; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.84)
