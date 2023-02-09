@@ -1,3 +1,6 @@
+##### 0.6-220@230208 2023-02-08
+*   Rigel Miner v1.3.6 (Minor performance improvements on `nexapow`; Fix performance regression for 40xx GPUs on `nexapow`; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.6)
+   
 ##### 0.6-220@230206 2023-02-06
 *   lolMiner v1.67 (Improved `nexapow` performance on Nvidia Turing, Ampere & Ada based GPUs; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.67)
 *   Rigel Miner v1.3.5 (Performance/efficiency improvements on `nexapow`; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.5)
