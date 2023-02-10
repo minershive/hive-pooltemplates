@@ -350,75 +350,150 @@
     }
   },
   {
-    "coin": "ETH",
+    "coin": "ETHW",
     "servers": [
       {
         "geo": "Europe",
         "urls": [
-          "eu.eth.k1pool.com:3840"
+          "eu.ethw.k1pool.com:7691"
         ],
         "ssl_urls": [
-          "eu.eth.k1pool.com:3850"
+          "eu.ethw.k1pool.com:7689"
         ]
       },
       {
         "geo": "USA",
         "urls": [
-          "us.eth.k1pool.com:3840"
+          "us.ethw.k1pool.com:7691"
         ],
         "ssl_urls": [
-          "us.eth.k1pool.com:3850"
+          "us.ethw.k1pool.com:7689"
         ]
       },
       {
         "geo": "China",
         "urls": [
-          "cn.eth.k1pool.com:3840"
+          "cn.ethw.k1pool.com:7691"
         ],
         "ssl_urls": [
-          "cn.eth.k1pool.com:3850"
+          "cn.ethw.k1pool.com:7689"
         ]
       },
       {
         "geo": "Europe SOLO",
         "urls": [
-          "eu.ethsolo.k1pool.com:3843"
+          "eu.ethwsolo.k1pool.com:7693"
         ]
       },
       {
         "geo": "Europe SOLO HiDiff",
         "urls": [
-          "eu.ethsolo.k1pool.com:3842"
+          "eu.ethwsolo.k1pool.com:7694"
         ]
       },
       {
         "geo": "USA SOLO",
         "urls": [
-          "us.ethsolo.k1pool.com:3843"
+          "us.ethwsolo.k1pool.com:7693"
         ]
       },
       {
         "geo": "USA SOLO HiDiff",
         "urls": [
-          "us.ethsolo.k1pool.com:3842"
+          "us.ethwsolo.k1pool.com:7694"
         ]
       },
       {
         "geo": "China SOLO",
         "urls": [
-          "cn.ethsolo.k1pool.com:3843"
+          "cn.ethwsolo.k1pool.com:7693"
         ]
       },
       {
         "geo": "China SOLO HiDiff",
         "urls": [
-          "cn.ethsolo.k1pool.com:3842"
+          "cn.ethwsolo.k1pool.com:7694"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ethash",
+      "phoenixminer": {
+        "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4"
+      },
+      "gminer": {
+        "algo": "eth",
+        "user_config": "--proto stratum"
+      },
+      "lolminer": {
+        "user_config": "--ethstratum ETHV1"
+      },
+      "t-rex": {
+        "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
+      }
+    }
+  },
+  {
+    "coin": "ETHF",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.ethf.k1pool.com:3831"
+        ],
+        "ssl_urls": [
+          "eu.ethf.k1pool.com:13831"
         ]
       },
       {
-        "geo": "Kroxy Ethereum Europe",
+        "geo": "Europe HiDiff",
         "urls": [
-          "eu.kroxy.k1pool.com:4444"
+          "eu.ethf.k1pool.com:3833"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+          "us.ethf.k1pool.com:3831"
+        ],
+        "ssl_urls": [
+          "us.ethf.k1pool.com:13831"
+        ]
+      },
+      {
+        "geo": "USA HiDiff",
+        "urls": [
+          "us.ethf.k1pool.com:3833"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.ethfsolo.k1pool.com:3832"
+        ],
+        "ssl_urls": [
+          "eu.ethf.k1pool.com:13832"
+        ]
+      },
+      {
+        "geo": "Europe SOLO HiDiff",
+        "urls": [
+          "eu.ethfsolo.k1pool.com:3834"
+        ]
+      },
+      {
+        "geo": "USA SOLO",
+        "urls": [
+          "us.ethfsolo.k1pool.com:3832"
+        ],
+        "ssl_urls": [
+          "us.ethf.k1pool.com:13832"
+        ]
+      },
+      {
+        "geo": "USA SOLO HiDiff",
+        "urls": [
+          "us.ethfsolo.k1pool.com:3834"
         ]
       }
     ],
@@ -590,146 +665,36 @@
     }
   },
   {
-    "coin": "EXP",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": [
-          "eu.exp.k1pool.com:3972"
-        ]
-      },
-      {
-        "geo": "Europe HiDiff",
-        "urls": [
-          "eu.exp.k1pool.com:3974"
-        ]
-      },
-      {
-        "geo": "Europe SOLO",
-        "urls": [
-          "eu.expsolo.k1pool.com:3976"
-        ]
-      },
-      {
-        "geo": "Europe SOLO HiDiff",
-        "urls": [
-          "eu.expsolo.k1pool.com:3978"
-        ]
-      }
-    ],
-    "miners": {
-      "_prototype": "miners_ethash",
-      "claymore": {
-        "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
-        "claymore_user_config": "-allcoins 1\n-allpools 1"
-      },
-      "phoenixminer": {
-        "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4"
-      },
-      "gminer": {
-        "algo": "eth",
-        "user_config": "--proto stratum"
-      },
-      "lolminer": {
-        "user_config": "--ethstratum ETHV1"
-      },
-      "t-rex": {
-        "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
-      }
-    }
-  },
-  {
-    "coin": "ETP",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": [
-          "eu.etp.k1pool.com:8008"
-        ]
-      },
-      {
-        "geo": "Europe HiDiff",
-        "urls": [
-          "eu.etp.k1pool.com:8009"
-        ]
-      },
-      {
-        "geo": "China",
-        "urls": [
-          "cn.etp.k1pool.com:8008"
-        ]
-      },
-      {
-        "geo": "China HiDiff",
-        "urls": [
-          "cn.etp.k1pool.com:8009"
-        ]
-      },
-      {
-        "geo": "Europe SOLO",
-        "urls": [
-          "eu.etpsolo.k1pool.com:3871"
-        ]
-      },
-      {
-        "geo": "Europe SOLO HiDiff",
-        "urls": [
-          "eu.etpsolo.k1pool.com:3873"
-        ]
-      },
-      {
-        "geo": "China SOLO",
-        "urls": [
-          "cn.etpsolo.k1pool.com:3871"
-        ]
-      },
-      {
-        "geo": "China SOLO HiDiff",
-        "urls": [
-          "cn.etpsolo.k1pool.com:3873"
-        ]
-      }
-    ],
-    "miners": {
-      "_prototype": "miners_ethash",
-      "claymore": {
-        "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x, ESM: 3",
-        "claymore_user_config": "-allcoins 1\n-allpools 1"
-      },
-      "phoenixminer": {
-        "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4"
-      },
-      "gminer": {
-        "algo": "eth",
-        "user_config": "--proto stratum"
-      },
-      "lolminer": {
-        "user_config": "--ethstratum ETHV1"
-      },
-      "t-rex": {
-        "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
-      }
-    }
-  },
-  {
     "coin": "ZIL",
     "servers": [
       {
-        "geo": "ETH+ZIL Europe",
+        "geo": "ETHW+ZIL Europe",
         "urls": [
-          "eu.eth.k1pool.com:3840"
+          "eu.ethw.k1pool.com:7691"
         ]
       },
       {
-        "geo": "ETH+ZIL USA",
+        "geo": "ETHW+ZIL USA",
         "urls": [
-          "us.eth.k1pool.com:3840"
+          "us.ethw.k1pool.com:7691"
         ]
       },
       {
-        "geo": "ETH+ZIL China",
+        "geo": "ETHW+ZIL China",
         "urls": [
-          "cn.eth.k1pool.com:3840"
+          "cn.ethw.k1pool.com:7691"
+        ]
+      },
+      {
+        "geo": "ETHF+ZIL Europe",
+        "urls": [
+          "eu.ethf.k1pool.com:3831"
+        ]
+      },
+      {
+        "geo": "ETHF+ZIL USA",
+        "urls": [
+          "us.ethf.k1pool.com:3831"
         ]
       },
       {
@@ -755,24 +720,6 @@
         "urls": [
           "eu.clo.k1pool.com:2561"
         ]
-      },
-      {
-        "geo": "EXP+ZIL Europe",
-        "urls": [
-          "eu.exp.k1pool.com:3972"
-        ]
-      },
-      {
-        "geo": "ETP+ZIL Europe",
-        "urls": [
-          "eu.etp.k1pool.com:8008"
-        ]
-      },
-      {
-        "geo": "ETP+ZIL China",
-        "urls": [
-          "cn.etp.k1pool.com:8008"
-        ]
       }
     ],
     "miners": {
@@ -782,233 +729,13 @@
       },
       "gminer": {
         "algo": "eth",
-        "user_config": "--proto stratum"
+        "user_config": "--proto stratum --cache_dag 1"
       },
       "lolminer": {
-        "user_config": "--ethstratum ETHV1"
+        "user_config": "--ethstratum ETHV1 --enablezilcache"
       },
       "t-rex": {
         "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
-      }
-    }
-  },
-  {
-    "coin": "ZEC",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": [
-          "eu.zec.k1pool.com:2142"
-        ]
-      },
-      {
-        "geo": "Europe HiDiff",
-        "urls": [
-          "eu.zec.k1pool.com:2143"
-        ]
-      },
-      {
-        "geo": "USA",
-        "urls": [
-          "us.zec.k1pool.com:2142"
-        ]
-      },
-      {
-        "geo": "USA HiDiff",
-        "urls": [
-          "us.zec.k1pool.com:2143"
-        ]
-      },
-      {
-        "geo": "China",
-        "urls": [
-          "cn.zec.k1pool.com:2142"
-        ]
-      },
-      {
-        "geo": "China HiDiff",
-        "urls": [
-          "cn.zec.k1pool.com:2143"
-        ]
-      },
-      {
-        "geo": "Europe SOLO",
-        "urls": [
-          "eu.zecsolo.k1pool.com:2144"
-        ]
-      },
-      {
-        "geo": "Europe SOLO HiDiff",
-        "urls": [
-          "eu.zecsolo.k1pool.com:2145"
-        ]
-      },
-      {
-        "geo": "USA SOLO",
-        "urls": [
-          "us.zecsolo.k1pool.com:2144"
-        ]
-      },
-      {
-        "geo": "USA SOLO HiDiff",
-        "urls": [
-          "us.zecsolo.k1pool.com:2145"
-        ]
-      },
-      {
-        "geo": "China SOLO",
-        "urls": [
-          "cn.zecsolo.k1pool.com:2144"
-        ]
-      },
-      {
-        "geo": "China SOLO HiDiff",
-        "urls": [
-          "cn.zecsolo.k1pool.com:2145"
-        ]
-      }
-    ],
-    "miners": {
-      "dstm": {
-        "pass": "x",
-        "port": "%URL_PORT%",
-        "server": "%URL_HOST%",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "ewbf": {
-        "zpass": "x",
-        "zport": "%URL_PORT%",
-        "zserver": "%URL_HOST%",
-        "ztemplate": "%WAL%.%WORKER_NAME%"
-      },
-      "bminer": {
-        "url": "%URL%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "claymore-z": {
-        "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-      },
-      "sgminer-gm": {
-        "url": "%URL%",
-        "algo": "equihash",
-        "fork": "gm",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "asicminer": {
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
-    }
-  },
-  {
-    "coin": "ZEN",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": [
-          "eu.zen.k1pool.com:9009"
-        ]
-      },
-      {
-        "geo": "Europe HiDiff",
-        "urls": [
-          "eu.zen.k1pool.com:9010"
-        ]
-      },
-      {
-        "geo": "USA",
-        "urls": [
-          "us.zen.k1pool.com:9009"
-        ]
-      },
-      {
-        "geo": "USA HiDiff",
-        "urls": [
-          "us.zen.k1pool.com:9010"
-        ]
-      },
-      {
-        "geo": "China",
-        "urls": [
-          "cn.zen.k1pool.com:9009"
-        ]
-      },
-      {
-        "geo": "China HiDiff",
-        "urls": [
-          "cn.zen.k1pool.com:9010"
-        ]
-      },
-      {
-        "geo": "Europe SOLO",
-        "urls": [
-          "eu.zensolo.k1pool.com:9011"
-        ]
-      },
-      {
-        "geo": "Europe SOLO HiDiff",
-        "urls": [
-          "eu.zensolo.k1pool.com:9012"
-        ]
-      },
-      {
-        "geo": "USA SOLO",
-        "urls": [
-          "us.zensolo.k1pool.com:9011"
-        ]
-      },
-      {
-        "geo": "USA SOLO HiDiff",
-        "urls": [
-          "us.zensolo.k1pool.com:9012"
-        ]
-      },
-      {
-        "geo": "China SOLO",
-        "urls": [
-          "cn.zensolo.k1pool.com:9011"
-        ]
-      },
-      {
-        "geo": "China SOLO HiDiff",
-        "urls": [
-          "cn.zensolo.k1pool.com:9012"
-        ]
-      }
-    ],
-    "miners": {
-      "dstm": {
-        "pass": "x",
-        "port": "%URL_PORT%",
-        "server": "%URL_HOST%",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "ewbf": {
-        "zpass": "x",
-        "zport": "%URL_PORT%",
-        "zserver": "%URL_HOST%",
-        "ztemplate": "%WAL%.%WORKER_NAME%"
-      },
-      "bminer": {
-        "url": "%URL%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "claymore-z": {
-        "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-      },
-      "sgminer-gm": {
-        "url": "%URL%",
-        "algo": "equihash",
-        "fork": "gm",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "asicminer": {
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%"
       }
     }
   },
@@ -1340,7 +1067,7 @@
       "_prototype": "miners_kawpow"
     }
   },
-    {
+  {
     "coin": "FLUX",
     "servers": [
       {
@@ -1456,6 +1183,94 @@
         "pass": "x",
         "template": "%WAL%.%WORKER_NAME%"
       }
+    }
+  },
+  {
+    "coin": "FIRO",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.firo.k1pool.com:3476"
+        ]
+      },
+      {
+        "geo": "Europe HiDiff",
+        "urls": [
+          "eu.firo.k1pool.com:3477"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+          "us.firo.k1pool.com:3476"
+        ]
+      },
+      {
+        "geo": "USA HiDiff",
+        "urls": [
+          "us.firo.k1pool.com:3477"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.firosolo.k1pool.com:3478"
+        ]
+      },
+      {
+        "geo": "Europe SOLO HiDiff",
+        "urls": [
+          "eu.firosolo.k1pool.com:3479"
+        ]
+      },
+      {
+        "geo": "USA SOLO",
+        "urls": [
+          "us.firosolo.k1pool.com:3478"
+        ]
+      },
+      {
+        "geo": "USA SOLO HiDiff",
+        "urls": [
+          "us.firosolo.k1pool.com:3479"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_firopow"
+    }
+  },
+  {
+    "coin": "KAS",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.kaspa.k1pool.com:3112"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+          "us.kaspa.k1pool.com:3112"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.kaspasolo.k1pool.com:3114"
+        ]
+      },
+      {
+        "geo": "USA SOLO",
+        "urls": [
+          "us.kaspasolo.k1pool.com:3114"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kaspa"
     }
   }
 ]
