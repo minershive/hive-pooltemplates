@@ -58,7 +58,7 @@
         }
     },
     {
-        "coin": "NEOXA",
+        "coin": "NEOX",
         "servers": [
             {
                 "geo": "BR",
@@ -72,7 +72,7 @@
         }
     },
     {
-        "coin": "HIVECOIN",
+        "coin": "HVQ",
         "servers": [
             {
                 "geo": "BR",
@@ -96,9 +96,14 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_radiant"
-        }
-      },
+            "srbminer": {
+              "url": "%URL%",
+              "pass": "%WORKER_NAME%",
+              "template": "%WAL%",
+              "algo": "sha512_256d_radiant"
+            }
+          }
+        },
       {
         "coin": "NOVO",
         "servers": [
@@ -106,6 +111,12 @@
                 "geo": "BR",
                 "urls": [
                     "pool.gopool.cash:3035"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "uspool.gopool.cash:3035"
                 ]
             }
         ],
@@ -133,5 +144,104 @@
         "miners": {
             "_prototype": "miners_autolykos2"
         }
-    }
+    },
+    {
+        "coin":"YERB",
+        "servers": [
+            {
+                "geo": "BR",
+                "urls": [
+                    "pool.gopool.cash:3030"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "uspool.gopool.cash:4130"
+                ]
+            }
+        ],
+        "miners":{
+            "_prototype": "miners_ghostrider"
+        }
+    },
+    {
+		"coin": "OBTC",
+		"servers": [
+			{
+				"geo": "BR",
+				"urls": [
+					"pool.gopool.cash:3130"
+				]
+			}
+		],
+		"miners": {
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "heavyhash",
+				"pass": "c=OBTC",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"srbminer": {
+				"url": "%URL%",
+				"pass": "c=OBTC",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "heavyhash"
+			}
+		}
+	},
+    {
+		"coin": "FLR",
+		"servers": [
+			{
+				"geo": "BR",
+				"urls": [
+					"pool.gopool.cash:4073"
+				]
+			},
+            {
+				"geo": "SOLO BR",
+				"urls": [
+					"pool.gopool.cash:4075"
+				]
+			}
+		],
+        "miners": {
+            "_prototype": "miners_ethash"
+        }
+	},
+    {
+        "coin": "BBC",
+        "servers": [
+          {
+            "geo": "BR",
+            "urls": [
+              "pool.gopool.cash:3230"
+            ]
+          }
+        ],
+        "miners": {
+          "cpuminer-opt": {
+            "url": "%URL%",
+            "algo": "gr",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+            
+          },
+          "xmrig-new": {
+            "cpu": "1",
+            "url": "%URL%",
+            "algo": "ghostrider",
+            "fork": "xmrig",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+          },
+          "wildrig-multi": {
+            "url": "stratum+tcp://%URL%",
+            "algo": "ghostrider",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+          }
+        }
+      }
 ]
