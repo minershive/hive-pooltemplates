@@ -1,6 +1,8 @@
+##### 0.6-220@230211 2023-02-11
+*   TeamBlackMiner v1.86 (Added dual and tripple mining for ravencoin RVN+ZIL, RVN+ETC+ZIL on Nvidia GPUs; Improved switching code for `kawpow` with less rejected shares; Reduced stale shares; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.86)
+
 ##### 0.6-220@230210 2023-02-10
 *   BzMiner v13.1.1 (Improved Nexa hashrate/efficiency; Improved main algo hashrate when mining +zil; Improved mining startup time; Note: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.1.1)
-*   TeamBlackMiner v1.85 (Added dual and tripple mining for ravencoin RVN+ZIL, RVN+ETC+ZIL on Nvidia GPUs; Improved switching code for `kawpow` with less rejected shares; Reduced stale shares; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.85)
 *   CPUminer-Opt-JayDDee v3.21.1 (Fixed a segfault in some obsolete algos; Small optimizations to Hamsi & Shabal AVX2 & AVX512; Note: see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.21.1)
 
 ##### 0.6-220@230208 2023-02-08
