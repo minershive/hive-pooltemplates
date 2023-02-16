@@ -1,3 +1,8 @@
+##### 0.6-220@230215 2023-02-15
+*   miniZ v2.0c3 (Fixed issue with invalid shares with v2.0c2; Note: see full changelog at https://miniz.cc/2023/02/15/miniz-v20c3-is-out)
+*   XMRig-MO v6.19.0-mo1 (Synced with XMRig v6.19.0; Note: see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.19.0-mo1)
+*   TeamBlackMiner v1.87 (Added support for dual and tripple mining on ETHPROXY pools; Improved the Kawpow code, less rejects; Fixed `--cl-devices` when the `--amd-only` flag was set; Fixed `--nvidia-devices` when the `--nvidia-only` flag was set; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.87)
+
 ##### 0.6-220@230213 2023-02-13
 *   TeamRedMiner v0.10.9 (Added initial support for RDNA3 - 7900XT GPUs for `ethash`, `autolykos2`, `kaspa`, `verthash` incl. dual combos; Notes: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.9)
 *   miniZ v2.0c2 (Added support for Zilliqa + all miniZ algos mining; Fixed progpow issues with Polaris GPUs; Added support for RX 6500 XT; Notes: see full changelog at https://miniz.cc/2023/02/13/miniz-v20c2-is-out)
