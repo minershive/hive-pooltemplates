@@ -1,3 +1,9 @@
+##### 0.6-221@230220 2023-02-20
+*   Added CUDA v12 support (add CUDA RT libs v12.0.1; updated `nvidia-driver-update` tool)
+*   Updated PCI/USB devices IDs
+*   Fixed Nvidia driver support on laptop GPUs
+*   Minor slight fixes
+
 ##### 0.6-220@230215 2023-02-15
 *   miniZ v2.0c3 (Fixed issue with invalid shares with v2.0c2; Note: see full changelog at https://miniz.cc/2023/02/15/miniz-v20c3-is-out)
 *   XMRig-MO v6.19.0-mo1 (Synced with XMRig v6.19.0; Note: see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.19.0-mo1)
