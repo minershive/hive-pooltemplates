@@ -1,7 +1,10 @@
+##### 0.6-221@230222-2 2023-02-22
+*   BzMiner v13.2.0 (Improved `Nexa` hashrate/efficiency; Fixed +ZIL not mining issue; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.2.0)
+
 ##### 0.6-221@230222 2023-02-22
-*   lolMiner v1.68 (Significantly improved Nexa mining performance on supported GPUs, e.g. up to +25% on 8G Ampere GPUs; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.68)
+*   lolMiner v1.68 (Significantly improved `Nexa` mining performance on supported GPUs, e.g. up to +25% on 8G Ampere GPUs; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.68)
 *   Rigel Miner v1.3.7 (Minor performance improvements on `nexapow`; Fixed bug with lock core/memory clocks; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.7)
-*   TeamBlackMiner v1.91 (Added support for ETH+RVN, ETH+VTC dual and tripple mining with zil; Bug fixes; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.91)
+*   TeamBlackMiner v1.91 (Added support for `ETH+RVN`, `ETH+VTC` dual and tripple mining with zil; Bug fixes; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.91)
 
 ##### 0.6-221@230220 2023-02-20
 *   Added CUDA v12 support (add CUDA RT libs v12.0.1; updated `nvidia-driver-update` tool)
