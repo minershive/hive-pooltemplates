@@ -1,3 +1,6 @@
+##### 0.6-221@230223 2023-02-23
+*   BzMiner v13.2.1 (Fixed ZIL window not mining; Fixed NEXA 8GB cards; Fixed some rejects on some nexa pools; Other bug fixes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.2.1)
+
 ##### 0.6-221@230222-2 2023-02-22
 *   BzMiner v13.2.0 (Improved `Nexa` hashrate/efficiency; Fixed +ZIL not mining issue; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.2.0)
 
