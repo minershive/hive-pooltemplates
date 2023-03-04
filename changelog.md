@@ -1,3 +1,12 @@
+##### 0.6-221@230303 2023-03-03
+*   lolMiner v1.69 (Added NEXA mining support for AMD Vega and newer GPUs; Option `--keepfree` is now working for each GPU separately using comma separated syntax; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.69)
+*   BzMiner v13.3.0 (Added support NEXA mining on AMD GPUs; Fixed +zil on AMD; Improved dual mining switching; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.3.0)
+*   Rigel Miner v1.3.8 (Performance improvements on `nexapow` mainly Turing, high-end Ampere, and Ada GPUs; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.8)
+*   NanoMiner v3.7.7 (See full changelog: https://github.com/nanopool/nanominer/releases/tag/v3.7.7)
+*   HellMiner v0.57 (Allow mining to other pools, enables devfee 2%, no dev fee on luckpool; Removed need to specify `--cpu`, by default it will use auto mode max-1 threads; Notes: currently used old stats module, so some visual artifacts are possible)
+*   TeamBlackMiner v1.92 (Added `--verthash-xintensity` and `--kawpow-xintensity` to set intensity for the dual mining mode; Improved performance Verthash algo on Nvidia GPUs, aprox. up to +5%; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.92)
+*   cpuMiner-Opt-JayDDee v3.21.2 (See full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.21.2)
+
 ##### 0.6-221@230223 2023-02-23
 *   BzMiner v13.2.1 (Fixed ZIL window not mining; Fixed NEXA 8GB cards; Fixed some rejects on some nexa pools; Other bug fixes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.2.1)
 
