@@ -1,3 +1,6 @@
+##### 0.6-221@230304 2023-03-04
+*   Reuploaded broken lolMiner v1.69 package
+
 ##### 0.6-221@230303 2023-03-03
 *   lolMiner v1.69 (Added `NEXA` mining support for AMD Vega and newer GPUs; Option `--keepfree` is now working for each GPU separately using comma separated syntax; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.69)
 *   BzMiner v13.3.0 (Added support `NEXA` mining on AMD GPUs; Fixed +zil on AMD; Improved dual mining switching; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.3.0)
