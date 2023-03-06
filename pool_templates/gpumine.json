@@ -1,0 +1,53 @@
+[
+    {
+        "pool": {
+            "name": "GPUmine",
+            "url": "https://gpumine.org",
+            "fee": 1,
+            "type": "PPS+"
+        }
+    },
+
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "etc.gpumine.org:1610",
+                    "etc2.gpumine.org:1610"
+                ],
+                "ssl_urls": [
+                    "etc.gpumine.org:1620",
+                    "etc2.gpumine.org:1620"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_etchash",
+            "bzminer": {
+              "url": "ethproxy+tcp://%URL%"
+            }
+        }
+    },
+
+    {
+        "coin": "KAS",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "kas.gpumine.org:2610",
+                    "kas2.gpumine.org:2610"
+                ],
+                "ssl_urls": [
+                    "kas.gpumine.org:2620",
+                    "kas2.gpumine.org:2620"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kaspa"
+        }
+    }
+]
