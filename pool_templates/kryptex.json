@@ -217,5 +217,35 @@
                 "template": "%WAL%/%WORKER_NAME%"
             }
         }
+    },    
+    {
+        "coin": "KAS",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "kas.kryptex.network:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "kheavyhash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "kaspa",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "algo": "kas",
+                "url": "%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
+            }
+        }
     }
 ]
