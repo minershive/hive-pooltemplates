@@ -1,3 +1,6 @@
+##### 0.6-221@230315 2023-03-15
+*   SRBMiner v2.2.2 (Better CPU utilization on `dynexsolve` algorithm; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.2)
+
 ##### LINUX IMAGE RELEASE 0.6-221 2023-03-15
 *   Universal boot mode: BIOS | UEFI
 *   Hive Linux client: v0.6-221
