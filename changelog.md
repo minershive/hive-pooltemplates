@@ -1,3 +1,13 @@
+##### LINUX IMAGE RELEASE 0.6-221 2023-03-15
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-221
+*   Ubuntu v18.04.6 LTS based
+*   Linux kernel: v5.15.96
+*   Nvidia driver: v525.89.02
+*   AMD driver v5.18.2301
+*   AMD OpenCL v21.40.2 | ROCm v5.0.2
+*   md5sum 7d2338e3d5cdbee0113b98ed85f0e46f
+
 ##### 0.6-221@230312 2023-03-12
 *   SRBMiner v2.2.0 & v2.2.1 (Add `dynexsolve` support for DNX/Dynex coin mining; Many fixes & improvements: read more at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   Rigel v1.3.9 (Add `--kernel` parameter to switch between different `nexapow` implementations; Notes: read more at https://github.com/rigelminer/rigel/releases/tag/1.3.9)
