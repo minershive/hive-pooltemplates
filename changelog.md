@@ -9,7 +9,7 @@
 *   Nvidia driver: v525.89.02
 *   AMD driver v5.18.2301
 *   AMD OpenCL v21.50.2 | ROCm v5.0.2
-*   md5sum 7d2338e3d5cdbee0113b98ed85f0e46f
+*   md5sum 7661f9dab61e1f6596e9cf8ee240abda
 
 ##### 0.6-221@230312 2023-03-12
 *   SRBMiner v2.2.0 & v2.2.1 (Add `dynexsolve` support for DNX/Dynex coin mining; Many fixes & improvements: read more at https://github.com/doktor83/SRBMiner-Multi/releases)
