@@ -8,7 +8,7 @@
 *   Linux kernel: v5.15.96
 *   Nvidia driver: v525.89.02
 *   AMD driver v5.18.2301
-*   AMD OpenCL v21.40.2 | ROCm v5.0.2
+*   AMD OpenCL v21.50.2 | ROCm v5.0.2
 *   md5sum 7d2338e3d5cdbee0113b98ed85f0e46f
 
 ##### 0.6-221@230312 2023-03-12
