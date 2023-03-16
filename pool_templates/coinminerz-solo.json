@@ -247,6 +247,75 @@
         }
     },
     {
+        "coin": "DEM",
+        "servers": [
+            {
+                "geo": "EU ASIC - Recommended",
+                "urls": [
+                    "stratum.coinminerz.com:3528"
+                ],
+                "ssl_urls": [
+                    "stratum.coinminerz.com:3628"
+                ]
+            },
+            {
+                "geo": "EU ASIC Farm - High Power",
+                "urls": [
+                    "stratum.coinminerz.com:3828"
+                ]
+            },
+            {
+                "geo": "US ASIC - Recommended",
+                "urls": [
+                    "us-stratum.coinminerz.com:3528"
+                ],
+                "ssl_urls": [
+                    "us-stratum.coinminerz.com:3628"
+                ]
+            },
+            {
+                "geo": "US ASIC Farm - High Power",
+                "urls": [
+                    "us-stratum.coinminerz.com:3828"
+                ]
+            },
+            {
+                "geo": "SG ASIC - Recommended",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3528"
+                ],
+                "ssl_urls": [
+                    "sg-stratum.coinminerz.com:3628"
+                ]
+            },
+            {
+                "geo": "SG ASIC Farm - High Power",
+                "urls": [
+                    "sg-stratum.coinminerz.com:3828"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "sha256",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-I 21 \n-w 64 \n-g 2"
+            }
+        }
+    },
+    {
         "coin": "DGB-QUBIT",
         "servers": [
             {
