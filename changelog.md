@@ -1,3 +1,8 @@
+##### 0.6-221@230319 2023-03-19
+*   lolMiner v1.71 (Added support for mining `Kaspa` on AMD RX Vega using ROCm based drivers; Added support for mining `Nexa` on AMD "Polaris" RX 4xx/5xx series GPUs; Improved Nexa mining performance on AMD Vega 56/64 based GPUs by 45% and up to 60% on Radeon VII; Improved Nexa mining performance on all other supported AMD & Nvidia Turing and Ampere GPUs by 1.5-3% depending on model; Notes: see full changelog&notes to release at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.71)
+*   cpuMiner-Opt-JayDDee v3.21.5 (Small fixes & optimizations; Notes: see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.21.5)
+*   Rigel miner: slight config generation fix
+
 ##### 0.6-221@230315 2023-03-15
 *   SRBMiner v2.2.2 (Better CPU utilization on `dynexsolve` algorithm; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.2)
 
