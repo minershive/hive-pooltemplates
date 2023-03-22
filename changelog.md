@@ -1,6 +1,6 @@
 ##### 0.6-221@230321 2023-03-21
 *   BzMiner v14.0.2 (Improved `nexapow` hashrate; Added nexa support for AMD "Polaris" RX 400/500 GPUs; Added support mining `ironfish`; dded dual modes: `etc + ironfish` and `ethw + ironfish`; A lot of bugs fixed, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.0.2)
-*   GMiner v3.30 (Add support `octopus` algorithm for mining Conflux on Nvidia GPUs; Add dual mode Conflux+Kaspa and tripple with Zilliqa; Added support Nicehash mining for Conflux; See full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.30)
+*   GMiner v3.30 (Add support `octopus` algorithm for mining Conflux on Nvidia GPUs; Add dual mode `Conflux+Kaspa` and tripple with Zilliqa; Added support Nicehash mining for Conflux; See full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.30)
 *   SRBMiner-Multi v2.2.3 (Improved mining performance on algorithm `dynex` for AMD/NVIDIA; Added support for gfx900 on ROCm drivers for algorithm `dynex`; Minor bug fixes; Full changelog & release notes: https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.3)
 *   CPUminer-Opt-JayDDee v3.22.0 (Faster netdiff calculation; Full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.0)
 *   Rigel miner: fix stats issue when not all GPUs used by miner
