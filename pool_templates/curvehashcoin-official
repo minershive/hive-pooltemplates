@@ -1,0 +1,35 @@
+[
+   {
+      "pool": {
+         "name": "curvehashcoin-official",
+         "url": "https://pow.curvehashcoin.com",
+         "fee": 0.1,
+         "type": "PROP"
+      }
+   },
+   {
+      "coin": "CURVE",
+      "servers": [
+         {
+            "geo": "Europe",
+            "urls": [
+               "pow.curvehashcoin.com:3343"
+            ]
+         }
+      ],
+      "miners": {
+         "wildrig-multi": {
+            "url": "%URL%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "algo": "curvehash",
+            "pass": "c=CURVE"
+         },
+         "srbminer": {
+            "url": "%URL%",
+            "algo": "curvehash",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "c=CURVE"
+         }
+      }
+   }
+]
