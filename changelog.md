@@ -1,3 +1,13 @@
+##### 0.6-221@230326 2023-03-26
+*   GMiner v3.31 (Increased hashrate for Conflux, Conflux+Kaspa and Conflux+Kaspa+Zil)
+*   lolMiner v1.72 (Improved `NEXA` mining performance by 4% on AMD Vega, Navi and Big Navi GPUs and by 2-3% on Nvidia Turing and Ampere GPUs)
+*   BzMiner v14.1.0 (Slight improvement to Kaspa hashrate/efficiency; Fixed duplicates on algos nexa, ironfish, zil; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.1.0)
+*   Rigel miner v1.3.10 (Performance/efficiency improvements on `NEXA` mining; Notes: see full release changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.10)
+*   XMRig v6.19.1 (Slight bug fixes)
+*   XMRig-MO v6.19.1-mo1 (synced with XMRig v6.19.1 origin)
+*   cpuMiner-Opt-JayDDee v3.22.1 (Slight bug fixes; See full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.1)
+*   HellMiner: fixed stats issues on v0.57+
+  
 ##### 0.6-221@230321 2023-03-21
 *   BzMiner v14.0.2 (Improved `nexapow` hashrate; Added nexa support for AMD "Polaris" RX 400/500 GPUs; Added support mining `ironfish`; dded dual modes: `etc + ironfish` and `ethw + ironfish`; A lot of bugs fixed, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.0.2)
 *   GMiner v3.30 (Add support `octopus` algorithm for mining Conflux on Nvidia GPUs; Add dual mode `Conflux+Kaspa` and tripple with Zilliqa; Added support Nicehash mining for Conflux; See full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.30)
