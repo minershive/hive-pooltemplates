@@ -1,5 +1,5 @@
 ##### 0.6-221@230326 2023-03-26
-*   GMiner v3.31 (Increased hashrate mining `Conflux` on single, dual `Conflux+Kaspa` and tripple mode `Conflux+Kaspa+Zil`)
+*   GMiner v3.31 (Increased hashrate mining `Conflux` in single mode, dual mode `Conflux+Kaspa` and tripple mode `Conflux+Kaspa+Zil`)
 *   lolMiner v1.72 (Improved `NEXA` mining performance by 4% on AMD Vega, Navi and Big Navi GPUs and by 2-3% on Nvidia Turing and Ampere GPUs)
 *   BzMiner v14.1.0 (Slight improvement to `Kaspa` hashrate/efficiency; Fixed duplicates on algos nexa, ironfish, zil; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.1.0)
 *   Rigel miner v1.3.10 (Performance/efficiency improvements on `NEXA` mining; Notes: see full release changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.10)
