@@ -1,3 +1,6 @@
+##### 0.6-221@230330 2023-03-30
+*   BzMiner v14.1.1 (Significantly improved `Kaspa` hashrate&efficiency, Improved `Nexa` and `Radiant` hashrate&efficiency; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.1.1)
+
 ##### 0.6-221@230326 2023-03-26
 *   GMiner v3.31 (Increased hashrate mining `Conflux` in single mode, dual mode `Conflux+Kaspa` and tripple mode `Conflux+Kaspa+Zil`)
 *   lolMiner v1.72 (Improved `NEXA` mining performance by 4% on AMD Vega, Navi and Big Navi GPUs and by 2-3% on Nvidia Turing and Ampere GPUs)
