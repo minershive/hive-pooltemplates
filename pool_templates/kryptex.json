@@ -217,7 +217,7 @@
                 "template": "%WAL%/%WORKER_NAME%"
             }
         }
-    },    
+    },
     {
         "coin": "KAS",
         "servers": [
@@ -229,23 +229,21 @@
             }
         ],
         "miners": {
-            "gminer": {
-                "algo": "kheavyhash",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "lolminer": {
-                "algo": "kaspa",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "teamredminer": {
-                "algo": "kas",
-                "url": "%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
+            "_prototype": "miners_kaspa"
+        }
+    },
+    {
+        "coin": "NEXA",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "nexa.kryptex.network:7777"
+                ]
             }
+        ],
+        "miners": {
+            "_prototype": "miners_nexapow"
         }
     }
 ]
