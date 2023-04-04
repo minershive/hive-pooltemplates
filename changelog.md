@@ -1,3 +1,11 @@
+##### 0.6-222@230404 2023-04-04
+*   Updated `nvtool` v1.8.0 (add PCI-E utilization along with output this info by `nvidia-info` tool)
+*   Improvements and fixes for `amd-ocl-install` tool
+*   Fixed `disk-expand` on calculation size of partition to expand
+*   Fixed remote connections management (in many cases setting reset after reboot)
+*   Fixed `repomirror` in case of subfolder sync
+*   Implemented batch of changes for the upcoming Beta Image Release
+
 ##### 0.6-221@230403 2023-04-03
 *   XMRig v6.19.2 (Slight bug fixes; Note see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.19.2)
 
