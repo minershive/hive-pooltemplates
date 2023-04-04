@@ -1,3 +1,6 @@
+##### 0.6-221@230403 2023-04-03
+*   XMRig v6.19.2 (Slight bug fixes; Note see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.19.2)
+
 ##### 0.6-221@230402 2023-04-02
 *   Rigel miner v1.3.11 (Minor performance/efficiency improvements on `NEXA` mining; Notes: see full release changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.11)
 
@@ -12,7 +15,7 @@
 *   lolMiner v1.72 (Improved `NEXA` mining performance by 4% on AMD Vega, Navi and Big Navi GPUs and by 2-3% on Nvidia Turing and Ampere GPUs)
 *   BzMiner v14.1.0 (Slight improvement to `Kaspa` hashrate/efficiency; Fixed duplicates on algos nexa, ironfish, zil; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.1.0)
 *   Rigel miner v1.3.10 (Performance/efficiency improvements on `NEXA` mining; Notes: see full release changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.10)
-*   XMRig v6.19.1 (Slight bug fixes)
+*   XMRig v6.19.1 (Slight bug fixes; https://github.com/xmrig/xmrig/releases/tag/v6.19.1)
 *   XMRig-MO v6.19.1-mo1 (synced with XMRig v6.19.1 origin)
 *   cpuMiner-Opt-JayDDee v3.22.1 (Slight bug fixes; See full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.1)
 *   HellMiner: fixed stats issues on v0.57+
