@@ -1,6 +1,6 @@
 ##### 0.6-222@230404 2023-04-04
 *   Updated `nvtool` v1.8.0 (add PCI-E utilization along with output this info by `nvidia-info` tool)
-*   Improvements and fixes for `amd-ocl-install` tool
+*   Improvements and fixes for `amd-ocl-install` tool (Please note tool still experimental so use at your own risk!)
 *   Fixed `disk-expand` on calculation size of partition to expand
 *   Fixed remote connections management (in many cases setting reset after reboot)
 *   Fixed `repomirror` in case of subfolder sync
