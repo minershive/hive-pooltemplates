@@ -1,3 +1,40 @@
+##### 0.6-222@230404 2023-04-04
+*   Updated `nvtool` v1.8.0 (add PCI-E utilization along with output this info by `nvidia-info` tool)
+*   Improvements and fixes for `amd-ocl-install` tool (Please note tool still experimental so use at your own risk!)
+*   Fixed `disk-expand` on calculation size of partition to expand
+*   Fixed remote connections management (in many cases setting reset after reboot)
+*   Fixed `repomirror` in case of subfolder sync
+*   Implemented batch of changes for the upcoming Beta Image Release
+
+##### 0.6-221@230403 2023-04-03
+*   XMRig v6.19.2 (Slight bug fixes; Note see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.19.2)
+
+##### 0.6-221@230402 2023-04-02
+*   Rigel miner v1.3.11 (Minor performance/efficiency improvements on `NEXA` mining; Notes: see full release changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.11)
+
+##### 0.6-221@230401 2023-04-01
+*   SRBMiner v2.2.4 (Improved mining performance on algorithm 'dynex' for AMD/Nvidia; Lowered devfee for algorithm 'dynex' to 2.5%; Small hashrate improvements on algorithms 'blake3_alephium' & 'blake3_ironfish' & lower power consumption; Notes: see full chagelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.4)
+
+##### 0.6-221@230330 2023-03-30
+*   BzMiner v14.1.1 (Significantly improved `Kaspa` hashrate&efficiency, Improved `Nexa` and `Radiant` hashrate&efficiency; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.1.1)
+
+##### 0.6-221@230326 2023-03-26
+*   GMiner v3.31 (Increased hashrate mining `Conflux` in single mode, dual mode `Conflux+Kaspa` and tripple mode `Conflux+Kaspa+Zil`)
+*   lolMiner v1.72 (Improved `NEXA` mining performance by 4% on AMD Vega, Navi and Big Navi GPUs and by 2-3% on Nvidia Turing and Ampere GPUs)
+*   BzMiner v14.1.0 (Slight improvement to `Kaspa` hashrate/efficiency; Fixed duplicates on algos nexa, ironfish, zil; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.1.0)
+*   Rigel miner v1.3.10 (Performance/efficiency improvements on `NEXA` mining; Notes: see full release changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.10)
+*   XMRig v6.19.1 (Slight bug fixes; https://github.com/xmrig/xmrig/releases/tag/v6.19.1)
+*   XMRig-MO v6.19.1-mo1 (synced with XMRig v6.19.1 origin)
+*   cpuMiner-Opt-JayDDee v3.22.1 (Slight bug fixes; See full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.1)
+*   HellMiner: fixed stats issues on v0.57+
+  
+##### 0.6-221@230321 2023-03-21
+*   BzMiner v14.0.2 (Improved `nexapow` hashrate; Added nexa support for AMD "Polaris" RX 400/500 GPUs; Added support mining `ironfish`; dded dual modes: `etc + ironfish` and `ethw + ironfish`; A lot of bugs fixed, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.0.2)
+*   GMiner v3.30 (Add support `octopus` algorithm for mining Conflux on Nvidia GPUs; Add dual mode `Conflux+Kaspa` and tripple with Zilliqa; Added support Nicehash mining for Conflux; See full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.30)
+*   SRBMiner-Multi v2.2.3 (Improved mining performance on algorithm `dynex` for AMD/NVIDIA; Added support for gfx900 on ROCm drivers for algorithm `dynex`; Minor bug fixes; Full changelog & release notes: https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.3)
+*   CPUminer-Opt-JayDDee v3.22.0 (Faster netdiff calculation; Full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.0)
+*   Rigel miner: fix stats issue when not all GPUs used by miner
+
 ##### 0.6-221@230319 2023-03-19
 *   lolMiner v1.71 (Added support for mining `Kaspa` on AMD RX Vega using ROCm based drivers; Added support for mining `Nexa` on AMD "Polaris" RX 4xx/5xx series GPUs; Improved Nexa mining performance on AMD Vega 56/64 based GPUs by 45% and up to 60% on Radeon VII; Improved Nexa mining performance on all other supported AMD & Nvidia Turing and Ampere GPUs by 1.5-3% depending on model; Notes: see full changelog&notes to release at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.71)
 *   cpuMiner-Opt-JayDDee v3.21.5 (Small fixes & optimizations; Notes: see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.21.5)
