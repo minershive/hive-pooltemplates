@@ -1,3 +1,7 @@
+##### 0.6-222@230413 2023-04-13
+*   GMiner v3.32 (Fixed Kaspa hashrate dip while Zil mining round; Improved Kaspa hashrate for single mining mode - up to +1% dependent on GPU & lowered power usage; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.32)
+*   TeamBlackMiner v1.93 (Improved `verthash` startup time; Removed low difficulty rejects on startup in `verthash`; NOTES: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.93)
+
 ##### 0.6-222@230411 2023-04-11
 *   Rigel miner v1.3.12 (Add support for mining Octa.Space coin, use `octa` algo instead ethash to prevent the miner rebuilding DAG for dev fee; Fixed duplicate shares on Kaspa, ETC when mining to Flexpool, K1, 2miners and some other pools; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.12)
 *   miniZ v2.0c5 (Fixed `gpuoffset`/`memoffset`/`power` options that were not working properly; Fixed `gpuoffset2`/`memoffset2`/`power2` options for dual mining; NOTES: see full changelog at Full changelog for https://miniz.cc/2023/04/06/miniz-v20c5-is-out)
