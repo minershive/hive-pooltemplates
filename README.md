@@ -62,6 +62,7 @@ Available miners:
 - noncerpro-kadena - CUDA/OpenCL miner for KDA - Kadena (Nvidia/AMD)
 - nq-miner - Nimiq GPU OpenCL/CUDA miner (Nvidia/AMD)
 - phoenixminer - ethash miner (AMD/NVidia)
+- rigel - ethash/etchash/kheavyhash/nexapow (Nvidia)
 - rhminer - randomhash CPU miner (CPU)
 - sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi, tecracoin)
 - smine - CKB Spark Miner (AMD)
@@ -184,6 +185,7 @@ default_units | `string` | `"khs"` | Default hashrate units if not reported.
 ssl_prefix | `string` |  | .
 algos | `string[]` or `object` |  | Supported algorithms list.<br>This can be either a simple array of strings or an object where keys are algos and values are display names.
 dalgos | `string[]` or `object` |  | Supported algorithms list for dual mining.<br>This can be either a simple array of strings or an object where keys are algos and values are display names.
+dual_modes | `Map<string,string[]>` |  | Allowed algo combinations for dual mining.<br>This is a hashmap where keys are primary algos and values are arrays of allowed secondary algos.<br/>Omitting this field means no restrictions at all.<br/>If main algo is not present in this field - no dual algos are allowed.<br/>If an empty array is set for main algo - no restrictions for this algo.
 forks | `string[]` or `object` |  | Available forks list.<br>This can be either a simple array of strings or an object where keys are forks and values are display names.
 algomap | `object` |  | Algorithms matching.<br>Keys are miner's algos and values are Hive's algos.
 fork_algo| `object` |  | Algorithms for forks.<br>Keys are fork names, values are algos.

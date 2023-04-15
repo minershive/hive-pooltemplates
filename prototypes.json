@@ -88,6 +88,12 @@
             "algo": "octopus",
             "template": "%WAL%.%WORKER_NAME%",
             "pass": "x"
+        },
+        "gminer": {
+            "url": "%URL%",
+            "algo": "octopus",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
         }
     },
 
@@ -255,7 +261,13 @@
             "algo": "etc",
             "worker": "%WORKER_NAME%",
             "template": "%WAL%"
-        }
+        },
+	"rigel": {
+	    "url": "%URL%",
+	    "algo": "etchash",
+            "worker": "%WORKER_NAME%",
+	    "template": "%WAL%"
+	}
     },
 
     "miners_etchash_notest": {
@@ -370,7 +382,13 @@
             "url": "%URL%",
             "algo": "ethash",
             "template": "%WAL%.%WORKER_NAME%"
-        }
+        },
+	"rigel": {
+	    "url": "%URL%",
+	    "algo": "ethash",
+            "worker": "%WORKER_NAME%",
+	    "template": "%WAL%"
+	}
     },
 
     "miners_ethash": {
@@ -1508,6 +1526,12 @@
 	    "port": "%URL_PORT%",
 	    "server": "%URL_HOST%",
 	    "template": "%WAL%.%WORKER_NAME%"
+	},
+
+	"rigel": {
+	    "url": "%URL%",
+	    "algo": "kheavyhash",
+	    "template": "%WAL%.%WORKER_NAME%"
 	}
     },
 
@@ -1630,6 +1654,32 @@
 	    "algo": "radiant",
 	    "worker": "%WORKER_NAME%",
 	    "template": "%WAL%"
+	}
+    },
+
+   "miners_nexapow": {
+        "wildrig-multi": {
+            "url": "%URL%",
+            "algo": "nexapow",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+	"lolminer": {
+	    "algo": "NEXA",
+	    "pass": "x",
+	    "port": "%URL_PORT%",
+	    "server": "%URL_HOST%",
+	    "template": "%WAL%.%WORKER_NAME%"
+	},
+	"bzminer": {
+	    "url": "%URL%",
+	    "algo": "nexa",
+	    "template": "%WAL%.%WORKER_NAME%"
+	},
+	"rigel": {
+	    "url": "%URL%",
+	    "algo": "nexapow",
+	    "template": "%WAL%.%WORKER_NAME%"
 	}
     }
 }

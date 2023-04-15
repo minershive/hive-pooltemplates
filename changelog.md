@@ -1,3 +1,291 @@
+##### 0.6-222@230413 2023-04-13
+*   GMiner v3.32 (Fixed Kaspa hashrate dip while Zil mining round; Improved Kaspa hashrate for single mining mode - up to +1% dependent on GPU & lowered power usage; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.32)
+*   TeamBlackMiner v1.93 (Improved `verthash` startup time; Removed low difficulty rejects on startup in `verthash`; NOTES: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.93)
+
+##### 0.6-222@230411 2023-04-11
+*   Rigel miner v1.3.12 (Add support for mining Octa.Space coin, use `octa` algo instead ethash to prevent the miner rebuilding DAG for dev fee; Fixed duplicate shares on Kaspa, ETC when mining to Flexpool, K1, 2miners and some other pools; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.12)
+*   miniZ v2.0c5 (Fixed `gpuoffset`/`memoffset`/`power` options that were not working properly; Fixed `gpuoffset2`/`memoffset2`/`power2` options for dual mining; NOTES: see full changelog at Full changelog for https://miniz.cc/2023/04/06/miniz-v20c5-is-out)
+*   XMRig-MO v6.19.2-mo1 (XMRig MoneroOcean fork synced to v6.19.2 of original XMRig)
+*   cpuMiner-Opt-JayDDee v3.22.2 (Added `sha512256d` & `sha256dt` algos; NOTES: see full changelog at Full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.2)
+
+##### 0.6-222@230404 2023-04-04
+*   Updated `nvtool` v1.8.0 (add PCI-E utilization along with output this info by `nvidia-info` tool)
+*   Improvements and fixes for `amd-ocl-install` tool (Please note tool still experimental so use at your own risk!)
+*   Fixed `disk-expand` on calculation size of partition to expand
+*   Fixed remote connections management (in many cases setting reset after reboot)
+*   Fixed `repomirror` in case of subfolder sync
+*   Implemented batch of changes for the upcoming Beta Image Release
+
+##### 0.6-221@230403 2023-04-03
+*   XMRig v6.19.2 (Slight bug fixes; Note see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.19.2)
+
+##### 0.6-221@230402 2023-04-02
+*   Rigel miner v1.3.11 (Minor performance/efficiency improvements on `NEXA` mining; Notes: see full release changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.11)
+
+##### 0.6-221@230401 2023-04-01
+*   SRBMiner v2.2.4 (Improved mining performance on algorithm 'dynex' for AMD/Nvidia; Lowered devfee for algorithm 'dynex' to 2.5%; Small hashrate improvements on algorithms 'blake3_alephium' & 'blake3_ironfish' & lower power consumption; Notes: see full chagelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.4)
+
+##### 0.6-221@230330 2023-03-30
+*   BzMiner v14.1.1 (Significantly improved `Kaspa` hashrate&efficiency, Improved `Nexa` and `Radiant` hashrate&efficiency; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.1.1)
+
+##### 0.6-221@230326 2023-03-26
+*   GMiner v3.31 (Increased hashrate mining `Conflux` in single mode, dual mode `Conflux+Kaspa` and tripple mode `Conflux+Kaspa+Zil`)
+*   lolMiner v1.72 (Improved `NEXA` mining performance by 4% on AMD Vega, Navi and Big Navi GPUs and by 2-3% on Nvidia Turing and Ampere GPUs)
+*   BzMiner v14.1.0 (Slight improvement to `Kaspa` hashrate/efficiency; Fixed duplicates on algos nexa, ironfish, zil; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.1.0)
+*   Rigel miner v1.3.10 (Performance/efficiency improvements on `NEXA` mining; Notes: see full release changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.10)
+*   XMRig v6.19.1 (Slight bug fixes; https://github.com/xmrig/xmrig/releases/tag/v6.19.1)
+*   XMRig-MO v6.19.1-mo1 (synced with XMRig v6.19.1 origin)
+*   cpuMiner-Opt-JayDDee v3.22.1 (Slight bug fixes; See full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.1)
+*   HellMiner: fixed stats issues on v0.57+
+  
+##### 0.6-221@230321 2023-03-21
+*   BzMiner v14.0.2 (Improved `nexapow` hashrate; Added nexa support for AMD "Polaris" RX 400/500 GPUs; Added support mining `ironfish`; dded dual modes: `etc + ironfish` and `ethw + ironfish`; A lot of bugs fixed, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.0.2)
+*   GMiner v3.30 (Add support `octopus` algorithm for mining Conflux on Nvidia GPUs; Add dual mode `Conflux+Kaspa` and tripple with Zilliqa; Added support Nicehash mining for Conflux; See full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.30)
+*   SRBMiner-Multi v2.2.3 (Improved mining performance on algorithm `dynex` for AMD/NVIDIA; Added support for gfx900 on ROCm drivers for algorithm `dynex`; Minor bug fixes; Full changelog & release notes: https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.3)
+*   CPUminer-Opt-JayDDee v3.22.0 (Faster netdiff calculation; Full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.0)
+*   Rigel miner: fix stats issue when not all GPUs used by miner
+
+##### 0.6-221@230319 2023-03-19
+*   lolMiner v1.71 (Added support for mining `Kaspa` on AMD RX Vega using ROCm based drivers; Added support for mining `Nexa` on AMD "Polaris" RX 4xx/5xx series GPUs; Improved Nexa mining performance on AMD Vega 56/64 based GPUs by 45% and up to 60% on Radeon VII; Improved Nexa mining performance on all other supported AMD & Nvidia Turing and Ampere GPUs by 1.5-3% depending on model; Notes: see full changelog&notes to release at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.71)
+*   cpuMiner-Opt-JayDDee v3.21.5 (Small fixes & optimizations; Notes: see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.21.5)
+*   Rigel miner: slight config generation fix
+
+##### 0.6-221@230315 2023-03-15
+*   SRBMiner v2.2.2 (Better CPU utilization on `dynexsolve` algorithm; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.2)
+
+##### LINUX IMAGE RELEASE 0.6-221 2023-03-15
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-221
+*   Ubuntu v18.04.6 LTS based
+*   Linux kernel: v5.15.96
+*   Nvidia driver: v525.89.02
+*   AMD driver v5.18.2301
+*   AMD OpenCL v21.50.2 | ROCm v5.0.2
+*   md5sum 7661f9dab61e1f6596e9cf8ee240abda
+
+##### 0.6-221@230312 2023-03-12
+*   SRBMiner v2.2.0 & v2.2.1 (Add `dynexsolve` support for DNX/Dynex coin mining; Many fixes & improvements: read more at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   Rigel v1.3.9 (Add `--kernel` parameter to switch between different `nexapow` implementations; Notes: read more at https://github.com/rigelminer/rigel/releases/tag/1.3.9)
+*   lolMiner v1.70 (Improved Nexa mining performance by 6-8% on all supported GPUs, except AMD Vega / VII; Improved power efficiency of Nexa mining; Notes: See full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.70)
+*   BzMiner v13.4.0 (Improved `NEXA` hashrate/efficiency; Fixes for Nexa, Radiant, Ergo mining; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.4.0 )
+*   cpuMiner-Opt-JayDDee v3.21.4 (Small fixes & optimizations; Notes: see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.21.4)
+*   miniZ v2.0c4 (Added support for ZMP protocol; Added `--memoffset2`, `--coreoffset2`, and `--power2` options for setting OCs for ZIL dual mining; Notes: full changelog can be found at https://miniz.cc/2023/03/08/miniz-v20c4-is-out/)
+*   Fixed TeamBlackMiner stats issue
+
+##### 0.6-221@230304 2023-03-04
+*   Reuploaded broken lolMiner v1.69 package
+
+##### 0.6-221@230303 2023-03-03
+*   lolMiner v1.69 (Added `NEXA` mining support for AMD Vega and newer GPUs; Option `--keepfree` is now working for each GPU separately using comma separated syntax; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.69)
+*   BzMiner v13.3.0 (Added support `NEXA` mining on AMD GPUs; Fixed +zil on AMD; Improved dual mining switching; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.3.0)
+*   Rigel Miner v1.3.8 (Performance improvements on `nexapow` mainly Turing, high-end Ampere, and Ada GPUs; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.8)
+*   NanoMiner v3.7.7 (See full changelog: https://github.com/nanopool/nanominer/releases/tag/v3.7.7)
+*   HellMiner v0.57 (Allow mining to other pools, enables devfee 2%, no dev fee on luckpool; Removed need to specify `--cpu`, by default it will use auto mode max-1 threads; Notes: currently used old stats module, so some visual artifacts are possible)
+*   TeamBlackMiner v1.92 (Added `--verthash-xintensity` and `--kawpow-xintensity` to set intensity for the dual mining mode; Improved performance Verthash algo on Nvidia GPUs, aprox. up to +5%; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.92)
+*   cpuMiner-Opt-JayDDee v3.21.2 (See full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.21.2)
+
+##### 0.6-221@230223 2023-02-23
+*   BzMiner v13.2.1 (Fixed ZIL window not mining; Fixed NEXA 8GB cards; Fixed some rejects on some nexa pools; Other bug fixes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.2.1)
+
+##### 0.6-221@230222-2 2023-02-22
+*   BzMiner v13.2.0 (Improved `Nexa` hashrate/efficiency; Fixed +ZIL not mining issue; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.2.0)
+
+##### 0.6-221@230222 2023-02-22
+*   lolMiner v1.68 (Significantly improved `Nexa` mining performance on supported GPUs, e.g. up to +25% on 8G Ampere GPUs; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.68)
+*   Rigel Miner v1.3.7 (Minor performance improvements on `nexapow`; Fixed bug with lock core/memory clocks; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.7)
+*   TeamBlackMiner v1.91 (Added support for `ETH+RVN`, `ETH+VTC` dual and tripple mining with zil; Bug fixes; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.91)
+
+##### 0.6-221@230220 2023-02-20
+*   Added CUDA v12 support (add CUDA RT libs v12.0.1; updated `nvidia-driver-update` tool)
+*   Updated PCI/USB devices IDs
+*   Fixed Nvidia driver support on laptop GPUs
+*   Minor slight fixes
+
+##### 0.6-220@230215 2023-02-15
+*   miniZ v2.0c3 (Fixed issue with invalid shares with v2.0c2; Note: see full changelog at https://miniz.cc/2023/02/15/miniz-v20c3-is-out)
+*   XMRig-MO v6.19.0-mo1 (Synced with XMRig v6.19.0; Note: see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.19.0-mo1)
+*   TeamBlackMiner v1.87 (Added support for dual and tripple mining on ETHPROXY pools; Improved the Kawpow code, less rejects; Fixed `--cl-devices` when the `--amd-only` flag was set; Fixed `--nvidia-devices` when the `--nvidia-only` flag was set; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.87)
+
+##### 0.6-220@230213 2023-02-13
+*   TeamRedMiner v0.10.9 (Added initial support for RDNA3 - 7900XT GPUs for `ethash`, `autolykos2`, `kaspa`, `verthash` incl. dual combos; Notes: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.9)
+*   miniZ v2.0c2 (Added support for Zilliqa + all miniZ algos mining; Fixed progpow issues with Polaris GPUs; Added support for RX 6500 XT; Notes: see full changelog at https://miniz.cc/2023/02/13/miniz-v20c2-is-out)
+
+##### 0.6-220@230211 2023-02-11
+*   TeamBlackMiner v1.86 (Added dual and tripple mining for ravencoin RVN+ZIL, RVN+ETC+ZIL on Nvidia GPUs; Improved switching code for `kawpow` with less rejected shares; Reduced stale shares; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.86)
+
+##### 0.6-220@230210 2023-02-10
+*   BzMiner v13.1.1 (Improved Nexa hashrate/efficiency; Improved main algo hashrate when mining +zil; Improved mining startup time; Note: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.1.1)
+*   CPUminer-Opt-JayDDee v3.21.1 (Fixed a segfault in some obsolete algos; Small optimizations to Hamsi & Shabal AVX2 & AVX512; Note: see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.21.1)
+
+##### 0.6-220@230208 2023-02-08
+*   Rigel Miner v1.3.6 (Minor performance improvements on `nexapow`; Fix performance regression for 40xx GPUs on `nexapow`; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.6)
+   
+##### 0.6-220@230206 2023-02-06
+*   lolMiner v1.67 (Improved `nexapow` performance on Nvidia Turing, Ampere & Ada based GPUs; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.67)
+*   Rigel Miner v1.3.5 (Performance/efficiency improvements on `nexapow`; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.5)
+
+##### 0.6-220@230205 2023-02-05
+*   GMiner v3.28 (Improved overclocking subsystem: fixes bugs with OC switching while ZIL mining round; Improved hashrate reporting while ZIL mining round; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.28)
+*   TeamBlackMiner v1.84 (Fixed `verthash` standalone for AMD; Improved switching code between algos VTC/ZIL; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.84)
+
+##### 0.6-220@230202 2023-02-02
+*   WildRig-Multi v0.36.6 (Fixed random hashrate drop for `nexapow`; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.6b)
+*   XMRig v6.19.0 (Slight improvemnets and bug fixes; Notes: see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.19.0)
+
+##### 0.6-220@230130 2023-01-30
+*   [NEW] Rigel Miner v1.3.4 (Nvidia GPUs CUDA miner supporting ethash/etchash/kheavyhash/nexapow algos; Notes: miner's GitHub page https://github.com/rigelminer/rigel)
+*   BzMiner v13.0.3 (Slight improvement on `nexapow` efficiency/hashrate, mainly for Nvidia 20 series GPUs; Nexa devfee reduced to 2%; Fixed AMD issues on all algos, except nexapow; Possible slight auto intensity improvement across all algos for both Nvidia and AMD GPUs; Fixed high diff issue on ZIL; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v13.0.3)
+*   SRBMiner-Multi v2.1.0 (ZIL is now mineable in any single/dual modes: add additional mining and OC parameters; Added auto buffer mode for ZIL mining; Added `--esm 2` which indicates that 'EthereumStratum/1.0.0' + nicehash mode is used for communication with the pool; Allowed separator ',' (comma) which can be used as an alternative for the current '!' separator in all parameters except in '--password'; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.1.0)  
+
+##### 0.6-220@230127 2023-01-27
+*   TeamRedMiner v0.10.8 (Extended to epoch 369 for `kawpow` on Polaris 4GB GPUs, aprox. end of April'23; Tiny `Kaspa` GPU hashrate boost across all GPUs, aprox. +0.1%; Added triple `ERG+KAS+ZIL` and `ETH+KAS+ZIL` mining support, add both `--kas` and `--zil` sections to enable; R-mode support in dual/triple ZIL mining, specify --eth_config=R inside `--zil` ... `--zil_end` to enable; Notes: see all changes at https://github.com/todxx/teamredminer/releases/tag/v0.10.8)
+
+##### 0.6-220@230126 2023-01-26
+*   lolMiner v1.66 (Added support for mining `Nexa` on Nvidia Pascal or newer generation GPUs, devfee 2%; Notes: See full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.66)
+*   miniZ v2.0c (Added support for ZIL single and dual mining: ZIL with ETC/ETH/UBQ; Added DAG cache for `ethash`, and `progpow` algorithms; Improvements for 192,7 on RTX 30XX GPUs; Added `--show-diff` option to show job, and network difficulty for equihash only; Fixed Beam stale/invalid shares; Notes: Full changelog for https://miniz.ch/2023/01/26/miniz-v20c-is-out)
+   
+##### 0.6-220@230125 2023-01-25
+*   TeamBlackMiner v1.82 (Fixed issue with high CPU load introduced in v1.81; Fixed issue in `VTC+ZIL`; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.82)
+
+##### 0.6-220@230123 2023-01-23
+*   WildRig-Multi v0.36.5 (Hot-fix to v0.36.4: fixed devfee when mining on rplant pool, it was still 5% instead of 2%; Improved `nexapow` up to 8% for NVIDIA GPUs; Slightly improved nexapow for AMD GPUs; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.5b)
+
+##### 0.6-220@230122 2023-01-22
+*   GMiner v3.27 (Improved memory management for mining with ZIL; Added option `--dataset_mode` to control dataset management for Ergo; Fixed bug with displaying memory temperature on GPUs that doesn't have this sensor; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.27)
+*   WildRig-Multi v0.36.4 (Improved `nexapow` up to 8% for NVIDIA GPUs; Slightly improved nexapow for AMD GPUs; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.4b)
+*   TeamBlackMiner v1.81 (Added support for `VTC+ZIL` dual mining; Notes: see fullchagelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.81)
+
+##### 0.6-220@230120 2023-01-20
+*   BzMiner v13.0.1 (Add support mining NEXA coin on Nvidia GPUs, devfee 3%; Faster startup times for larger rigs; Showing difficulty change message; Notes: see full changelog https://github.com/bzminer/bzminer/releases/tag/v13.0.1; Final release "v13.0.1" now set as latest and replaces "v13.0.1b7" Beta package)
+
+##### 0.6-220@230119 2023-01-19
+*   SRBMiner-Multi v2.0.2 (Improved mining performance on `sha512_256d_radiant` for AMD RDNA/RDNA2 GPUs and Nvidia Ampere GPUs; Improved mining performance on dual `etchash`/`ethash`+`sha512_256d_radiant` for AMD RDNA2 GPUs; Note: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.0.2)
+*   BzMiner v13.0.1b7 BETA (Added mining `NEXA` support on Nvidia only for now; Notes:  This is a beta release and needs to be manually selected "13.0.1" via "Version" in miner config. See full changelog at https://discord.gg/NRty3PCVdB on beta-realeses channel)
+*   WildRig-Multi v0.36.3 (Support more pools for nexapow; Fixed curvehash for Nvidia and RDNA+ GPUs. Notes: Full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.3b)
+*   TeamBlackMiner v1.80 (Added support for triple mining VTC+ETC+ZIL, needed 6+GB GPU memory; Remove rejects during zil switch; Remove rejects on verthash. Notes: See full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.80)
+
+##### 0.6-220@230114 2023-01-14
+*   GMiner v3.26 (Added `FIRO` coin support for Nvidia GPUs; Added `SERO` coin support for Nvidia GPUs; Optimized memory usage for ZIL dual or triple mining; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.26)
+
+##### 0.6-220@230113 2023-01-13
+*   WildRig-Multi v0.36.2 (Improved `nexapow` up to 10-20% depends on GPU; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.2b)
+*   ccMiner-fancyIX v0.5.1 (Added support for NVIDIA RTX 40xx series; Notes: see full changelog at https://github.com/fancyIX/ccminer/releases/tag/0.5.1)
+
+##### 0.6-220@230107 2023-01-07
+*   GMiner v3.24 (Add support ZIL mining without ZMP protocol; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.24)
+*   SRBMiner-Multi v2.0.1 (Added support for NVIDIA architectures: Hopper; Fixed detection of NVIDIA GPUs; Various fixes for mining on Nicehash; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.0.1)
+
+##### 0.6-220@230105 2023-01-05
+*   GMiner v3.23 (Add support ZIL mining via ZMP protocol: single/dual/triple modes, to enable dual/triple ZIL mining you need specify ZIL server and ZIL wallet via `--zilserver` and `--ziluser` parameters; Add custom OC settings for ZIL round: `--zilcclock`, `--zilmclock`, `--zilpl`, `--zillock_cclock`, `--zillock_mclock`; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.23)
+*   SRBMiner-Multi v2.0.0 (Added support for NVIDIA architectures : Pascal, Turing, Ampere, Ada Lovelace; Added parameters `--disable-gpu-amd`, `--disable-gpu-nvidia`; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.0.0)
+*   WildRig-Multi v0.36.1 (Improved `nexapow` up to 10% depends on GPU; Improved `pufferfish2` for RDNA/RDNA2; Removed some algos for dead coins; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.1)
+*   TeamBlackMiner v1.79 (Improved default xintensity `kawpow`; Fixed rejected shares `kawpow`; Reduced stale shares on `verthash`; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.79)
+
+##### 0.6-220@221229 2022-12-29
+*   GMiner v3.20 (Improved compatibility with Kaspa pools, supports KStratum to support mining on Kaspa Node; Improved Kaspa, ETC+Kaspa, Ergo+Kaspa mining performance for GTX 10xx GPUs, up to +5% in single mining mode)
+
+##### 0.6-220@221223 2022-12-23
+*   lolMiner v1.65a (Fixed a bug causing sometimes high number of duplicate shares on Kaspa when dual mining with ETC; Changed Kaspa stratum behavior: Kaspa mining will now start only after the pool did send an authorization message, this prevents rejected shares at startup; Slightly changed dual mining tuning behavior to a mode a bit slower, but less likely to hang up the GPUs at startup; Note: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.65a)
+*   GMiner v3.19 (Improved DUAL mining: `ETC+KASPA`, `Ergo+KASPA`; Improved `Ergo` mining hashrate in single mining mode for 10xx and 20xx Nvidia GPUs; Note: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.19)
+*   TeamRedMiner v0.10.7 (Added dual `ERG+KAS` mining support for all supported GPUs; Fixed semi-broken dual zil mining for older algos, e.g. Nimiq, Argon2, x16r, and others; Note: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.7)
+
+##### 0.6-220@221222 2022-12-22
+*   lolMiner v1.65 (Improved `Kaspa` performance in ETC/ETHW dual mining by about 6-7% on AMD (Big) Navi GPUs and 10-12% on Nvidia Turing and Ampere, measured at the same Ethash speed and in Kaspa only mining mode by 0.6% to 1.2% on Nvidia GPUs and 0.4-0.5% on AMD (Big) Navi GPUs at approximately same power draw; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.65)
+*   miniZ v2.0b (Fixed issues with invalid shares)
+*   Dero-Stratum-Miner v1.0.5 (Small fixes)
+*   cpuMiner-Opt-JayDDee v3.21.0 (Added `minotaurx` algo for stratum only; Prehash optimised 'blake256' & 'sha256' to ignore zero-padded data for AVX2 & AVX512; Other small improvements)
+
+##### 0.6-220@221221 2022-12-21
+*   Updated `nvtool` to v1.7.8 (Implemented Nvidia CMP idle mode; Added support for Locked Core Clock for Pascal GPUs; Added support for Locked Memory Clock for Pascal and newer GPUs. Notes: If memory overclocking doesn't affect hashrate i.e. mining Kaspa then user can set MemClk offset as '-3000 MHz', as result memory clock will actually set to 810MHz with a significant reduction in energy consumption.  Experimental usage until dashboard is updated)
+*   Updated `NVFlash` to v5.792.0
+*   Updated `nvidia-info`
+*   Updated `nvidia-driver-update` (Added support up to CUDA v11.8 and latest drivers)
+*   AMD GPUs: Added new 0 mem state feature (Notes: If memory overclocking doesn't affect hashrate i.e. mining Kaspa then user can set MemClk to '1 MHz', as result memory clock will drop to 0 memory state, e.g. for BigNavi it's equal to 96MHz with a significant reduction in energy consumption.  Experimental usage until dashboard is updated)
+*   Add new experimental command `amd-ocl-install` (Notes: User can now change pre-installed OpenCL libraries to available versions of amdgpu and rocm from Hive OS repository)
+ *   Improved first run procedure (Improved password input checking; Improved rig password setting sequence; Reversed `disk-expand` behavior on first boot, now runs if rig.conf doesn't exists)
+ *   Updated `autofan` to v3.18.
+ *   Updated Web shell (`ttyd` v1.7.2).
+ *   Built-in-CPU graphics now always the first in GPUs list.
+ *   Update Devices IDs.
+ *   Various other fixes.
+
+##### 0.6-219@221220 2022-12-20
+*   GMiner v3.18 (Improved hashrate for `Kaspa`, `ETC+Kaspa` and `Ergo+Kaspa`; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.18)
+
+##### 0.6-219@221218 2022-12-18
+*   SRBMiner-Multi v1.1.4 (Fixed hashrate regression on `autolykos2` algorithm for Vega and Ellesmere GPUs that was introduced unintentionally in an earlier version; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.1.4)
+
+##### 0.6-219@221215 2022-12-15
+*   WildRig-Multi v0.35.3 (Improved `nexapow` up to 40% depends on GPU)
+
+##### 0.6-219@221214 2022-12-14
+*   WildRig-Multi v0.35.2 (Implemented `skydoge`; Improved devfee logic for `nexapow`, now it should restart the miner if it can't connect at all; Slight performance increase on `nexapow` up to 1%; Note: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.35.2)
+   
+##### 0.6-219@221213 2022-12-13
+*   GMiner v3.17 (Improved 5-7% `Kaspa` hashrate in single mining mode; Improved `Kaspa` hashrate in dual mining mode up to +10%)
+
+##### 0.6-219@221212 2022-12-12
+*   TeamBlackMiner v1.77 (Improved the the stratum implementation for ezil.me, hiveon.com and others; Faster `verthash` mining; Reduced stale shares; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.77)
+
+##### 0.6-219@221211 2022-12-11
+*   GMiner v3.16 (Improved mining performance on `Kaspa`, `ETC+Kaspa`, `Ergo+Kaspa`; Fixed invalid shares on `Kaspa`, `ETC+Kaspa`, `Ergo+Kaspa`; Note see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.16)
+*   BzMiner v12.2.0 (Improved `Kaspa` hashrate; Improved `Ergo+Kaspa` hashrate; Note: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v12.2.0)
+*   WildRig-Multi v0.35.1b2 (Implemented support for `nexapow` algo, fee 5%; Faster initialization for Nvidia; Fixed one more memory leak for progpows family; Note: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.35.1b)
+*   XMRigCC v3.3.2 (Rebase latest xmrig-6.18.2-dev changes: more optimizations for Zen3/Zen4 CPUs)
+
+##### 0.6-219@221205 2022-12-05
+*   lolMiner v1.64 (Improved `Kaspa` only mining performance: speed increase is about 8-8.5% on Nvidia Pascal GPUs, 4.5-5% on Nvidia Turing and Ampere GPUs and 3-4% on AMD Navi and Big Navi GPUs; Notes: See full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.64)
+*   GMiner v3.15 (Improved `Kaspa`, `Etc+kaspa`, `Ergo+Kaspa` mining performance on Turing, Ampere and Ada architecture, also decreased power usage; Fixed bug with stale shares for `Kaspa`, `Etc+Kaspa`, `Ergo+Kaspa`, this fix will significantly increase pool hashrate; Added ability to lock memory clock on Ampere and newest GPUs using option `--lock_mclock`, useful to decrease power usage in Kaspa only mining mode; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.15)
+*   SRBMiner-Multi v1.1.3 (Fixed miner crashing on ETHASH/ETCHASH + KASPA/HEAVYHASH dual mining options that appeared in previous v1.1.2; Notes: Full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.1.3)
+*   NanoMiner v3.7.6 (Added ability to mine EVR coin; Notes: Full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.7.6)
+*   miniZ v2.0a (Fixed most progpow/ethash issues; Improved invalid shares on CFX; Improved stability; Notes: Full changelog at https://miniz.ch/2022/12/02/miniz-v20a-is-out)
+
+##### 0.6-219@221124 2022-11-24
+*  TeamRedMiner v0.10.6 (Added fix for `Kaspa` mining on MiningRigRentals; Notes: Full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.6)
+*  lolMiner v1.63 (Improved the `Kaspa` only mining performance on Nvidia Turing, Ampere and Ada GPUs by about 3.5%; Significantly improved the Kaspa only mining energy efficiency on Nvidia Turing, Ampere and Ada GPUs by 7-11% depending on the actual model; Note: full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.63)
+*  SRBMiner-Multi v1.1.2 (Added algorithm `sha256dt` for CPU/GPU mining NOVO coin, fee 0.85%; Added ETHASH/ETCHASH/AUTOLYKOS2 + SHA256DT dual mining mode; Reworked auto-tune procedure for GPU; Note: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.1.2)
+*  TeamBlackMiner v1.75 (Removed 2 bugs in verthash mining; Reduced the rejected shares and improved the poolspeed in ETHW/ETC; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.75)
+*  Dero-Stratum-Miner v1.0.4 (bug fixes; Note: see full changelog at https://github.com/whalesburg/dero-stratum-miner/releases/tag/v1.0.4)
+*  XMRig-Veil v6.17.0 (XMRig fork for mining Veil on mod of RandomX algo for Veil Project; Based on XMRig fork at https://github.com/us77ipis/xmrig-veil)
+
+##### 0.6-219@221115 2022-11-15
+*   GMiner v3.13 (Significantly improved efficiency "hashrate on pool" for `Kaspa` in single and dual mining modes; Added `BeamHash` algorithm for Nvidia GPUs)
+
+##### 0.6-219@221114 2022-11-14
+*   WildRig-Multi v0.34.0 (Bug-fix release, see changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.34.0)
+*   BzMiner v12.1.1 (Fixed Nicehash pool connection for `kaspa`; Fixed some bugs `radiant` mining; Note: see changelog at https://github.com/bzminer/bzminer/releases/tag/v12.1.1)
+
+##### 0.6-219@221112-2 2022-11-12
+*   WildRig-Multi v0.33.9 (Bug-fix release, see changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.33.9)
+*   lolMiner: fixed config generation for non-dual `ALEPH`/Alephium mining
+
+##### 0.6-219@221111 2022-11-11
+*   WildRig-Multi v0.33.8 (Improved `sha512256d` performance; Fixed hashrate fluctuation on progpow family algos; Slight hashrate increase on progpow family algos for Nvidia Turing+ GPUs and AMD RDNA2)
+*   lolMiner v1.62 (Added support for mining `ALEPH`/Alephium mining in non-dual mode for Nvidia Pascal GPUs and newer, fee is 0.75%; Slight performance improvement for Kaspa non-dual on Nvidia GPUs; Added Aeternity `Cuckoo29` & Grin `Cuckatoo32` kernels for AMD RX 6600 and RX 6700 series GPUs; Added reading of Tjunc and Tmem for Nvidia GPUs for drivers 515+; Note: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.62)
+*   TeamBlackMiner v1.74 (Removed rejected shares bug on ethproxy pools; Fixed a bug in poolspeed on ethproxy and vardiff pools; Fixed the zil dagcache for AMD; Note: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.74)
+*   nanoMiner v3.7.5 (Changelog at https://github.com/nanopool/nanominer/releases/tag/v3.7.5)
+*   TeamRedMiner: fixed miner config generation in case of incorrect setting of worker name on dual mining mode for ZIL pools
+
+##### 0.6-219@221104 2022-11-04
+*   miniZ v1.9z5b (Bug fix release: all the new features and improvements of version v1.9z5 + review of all kernels for all algorithms)
+
+##### 0.6-219@221102 2022-11-02
+*   SRBMiner-Multi v1.1.1 (Added algorithm `evrprogpow` for CPU/GPU mining, fee 0.85%; Performance increase on `cryptonight_gpu` algorithm for RDNA/RDNA2 GPUs; Performance increase on `sha512_256d_radiant` algorithm for RDNA2 GPUs; Performance increase on `lyra2v2_webchain` algorithm for GPUs
+; Note: see full changelog: https://github.com/doktor83/SRBMiner-Multi/releases/tag/1.1.1)
+*   WildRig-Multi v0.33.6 (Fixed rejects on `evrprogpow` and other progpow variants for NVIDIA GPUs; Fixed possible crash while compiling kernel for progpow family algorithms)
+*   BzMiner v12.1.0 (Fixed main algo not pausing immediately on ZIL window start; Radiant optimized for AMD; Fixed crash on non <520 nvidia drivers; Note: see full changelog https://github.com/bzminer/bzminer/releases/tag/v12.1.0)
+
+##### 0.6-219@221101 2022-11-01
+*   miniZ v1.9z5 (AMD improvements Equihash 125/4 and 144/5 up to 10%, depending on GPUs and OCs; Notes: a) users report stability degradation in this version in this case latest version is set to v1.9z4 and for using v1.9z5 please select it manually b) see full changelog at https://miniz.ch/2022/10/31/miniz-v19z5-is-out/)
+*   WildRig-Multi v0.33.5 (Improved performance for progpow family algorithms on RDNA and RDNA2 GPUs on newer drivers; Fixed `evrprogpow` for Polaris/Vega)
+
+##### 0.6-219@221028 2022-10-28
+*   GMiner v3.12 (Added `cuckatoo32` | `grin32` algorithm; Added `vds` algorithm for mining Vollar; Fixed display of difficulty for equihash algorithms)
+
+##### 0.6-219@221027 2022-10-27
+*   WildRig-Multi v0.33.4 (Implemented `evrprogpow` for mining EVR/Evrmore)
+*   TeamBlackMiner v1.72 (Faster `kawpow` on Nvidia cards; Fixed a rare crash in ETH+ZIL dual mining)
+
 ##### 0.6-219@221025 2022-10-25
 *   GMiner v3.11 (Fixed miner restarts on `Ergo` + `Kaspa`)
 *   NanoMiner v3.7.4 (Removed LHR unlocker for new Nvidia drivers)
