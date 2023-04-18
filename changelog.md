@@ -1,3 +1,7 @@
+##### 0.6-222@230417 2023-04-17
+*   GMiner v3.33 (Fixed bug with invalid shares while ZIL mining round; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.33)
+*   Rigel miner v1.4.1 (Improve compatibility with Ironfish mining pools - flexpool, herominers, kryptex; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.1)
+
 ##### 0.6-222@230415 2023-04-15
 *   lolMiner v1.73 (Improved Kaspa mining: efficiency and performance on Nvidia Turing and newer by 0.2-1% depending on model; Improved Nexa mining: performance on Nvidia Turing and newer by 2-5% and on AMD by 0.5-1.5% depending on model; NOTES: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.73)
 *   Rigel miner v1.4.0 (Add support for mining Alephium `alephium` and IronFish `ironfish`, dev fee 0.7%; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.0)
