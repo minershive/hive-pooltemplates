@@ -1,3 +1,7 @@
+##### 0.6-222@230418 2023-04-18
+*   BzMiner v14.2.0 (Significantly improved `Ironfish` hashrate/efficiency; Significantly improved `Kaspa` hashrate&efficiency, Improved `Nexa` and `Radiant` hashrate&efficiency; dd support mining Octa coin and dual mining Octa + Ironfish, Octa + Kaspa, Octa + Radiant, Octa + Alph
+; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.2.0)
+
 ##### 0.6-222@230417 2023-04-17
 *   GMiner v3.33 (Fixed bug with invalid shares while ZIL mining round; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.33)
 *   Rigel miner v1.4.1 (Improve compatibility with Ironfish mining pools - flexpool, herominers, kryptex; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.1)
