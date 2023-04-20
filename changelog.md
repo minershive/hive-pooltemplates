@@ -1,3 +1,34 @@
+##### 0.6-222@230418 2023-04-18
+*   BzMiner v14.2.0 (Significantly improved `Ironfish` hashrate/efficiency; Significantly improved `Kaspa` hashrate&efficiency, Improved `Nexa` and `Radiant` hashrate&efficiency; dd support mining Octa coin and dual mining Octa + Ironfish, Octa + Kaspa, Octa + Radiant, Octa + Alph
+; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.2.0)
+
+##### 0.6-222@230417 2023-04-17
+*   GMiner v3.33 (Fixed bug with invalid shares while ZIL mining round; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.33)
+*   Rigel miner v1.4.1 (Improve compatibility with Ironfish mining pools - flexpool, herominers, kryptex; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.1)
+
+##### 0.6-222@230415 2023-04-15
+*   lolMiner v1.73 (Improved Kaspa mining: efficiency and performance on Nvidia Turing and newer by 0.2-1% depending on model; Improved Nexa mining: performance on Nvidia Turing and newer by 2-5% and on AMD by 0.5-1.5% depending on model; NOTES: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.73)
+*   Rigel miner v1.4.0 (Add support for mining Alephium `alephium` and IronFish `ironfish`, dev fee 0.7%; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.0)
+*   TeamBlackMiner v1.94 (Fixed pool authorization problem if username and wallet pools where combined in dual and tripple mining; Removed crash at startup at some pools; NOTES: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.94)
+
+##### 0.6-222@230413 2023-04-13
+*   GMiner v3.32 (Fixed Kaspa hashrate dip while Zil mining round; Improved Kaspa hashrate for single mining mode - up to +1% dependent on GPU & lowered power usage; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.32)
+*   TeamBlackMiner v1.93 (Improved `verthash` startup time; Removed low difficulty rejects on startup in `verthash`; NOTES: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.93)
+
+##### 0.6-222@230411 2023-04-11
+*   Rigel miner v1.3.12 (Add support for mining Octa.Space coin, use `octa` algo instead ethash to prevent the miner rebuilding DAG for dev fee; Fixed duplicate shares on Kaspa, ETC when mining to Flexpool, K1, 2miners and some other pools; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.3.12)
+*   miniZ v2.0c5 (Fixed `gpuoffset`/`memoffset`/`power` options that were not working properly; Fixed `gpuoffset2`/`memoffset2`/`power2` options for dual mining; NOTES: see full changelog at Full changelog for https://miniz.cc/2023/04/06/miniz-v20c5-is-out)
+*   XMRig-MO v6.19.2-mo1 (XMRig MoneroOcean fork synced to v6.19.2 of original XMRig)
+*   cpuMiner-Opt-JayDDee v3.22.2 (Added `sha512256d` & `sha256dt` algos; NOTES: see full changelog at Full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.2)
+
+##### 0.6-222@230404 2023-04-04
+*   Updated `nvtool` v1.8.0 (add PCI-E utilization along with output this info by `nvidia-info` tool)
+*   Improvements and fixes for `amd-ocl-install` tool (Please note tool still experimental so use at your own risk!)
+*   Fixed `disk-expand` on calculation size of partition to expand
+*   Fixed remote connections management (in many cases setting reset after reboot)
+*   Fixed `repomirror` in case of subfolder sync
+*   Implemented batch of changes for the upcoming Beta Image Release
+
 ##### 0.6-221@230403 2023-04-03
 *   XMRig v6.19.2 (Slight bug fixes; Note see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.19.2)
 
