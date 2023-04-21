@@ -1,3 +1,9 @@
+##### 0.6-222@230420 2023-04-20
+*   TeamRedMiner v0.10.10 (Added support for `ironfish`, only the fast stratum protocol v2 supported including dual mining support with autolykos and ethash algos; NOTES: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.10)
+*   lolMiner v1.74 (Added support for `Ironfish` mining for Nvidia Pascal and newer and AMD Vega and newer GPUs using fast stratum protocol v2, devfee is 0.75%; Slight improved performance and reduction of stales for Alephium mining on Nvidia GPUs; NOTES: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.74)
+*   Rigel miner v1.4.3 (Minor performance/efficiency improvements on `ironfish`; Added support for stratum v2 for major `ironfish` pools, hashrate increase; Fixed bug with OC settings fail to apply on drivers older than v515; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.3)
+*   BzMiner v14.2.2 (Improved `Ironfish` hashrate; Improved dual Octa + Ironfish hashrate; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.2.2)
+
 ##### 0.6-222@230418 2023-04-18
 *   BzMiner v14.2.0 (Significantly improved `Ironfish` hashrate/efficiency; Significantly improved `Kaspa` hashrate&efficiency, Improved `Nexa` and `Radiant` hashrate&efficiency; dd support mining Octa coin and dual mining Octa + Ironfish, Octa + Kaspa, Octa + Radiant, Octa + Alph
 ; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.2.0)
