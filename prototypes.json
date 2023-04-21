@@ -1631,7 +1631,7 @@
 	    "algo": "sha512_256d_radiant",
 	    "pass": "x",
 	    "template": "%WAL%.%WORKER_NAME%",
-	    "user_config": "--disable-gpu"
+	    "user_config": "--disable-cpu"
 	},
 
 	"wildrig-multi": {
@@ -1650,6 +1650,13 @@
 	},
 
 	"bzminer": {
+	    "url": "%URL%",
+	    "algo": "radiant",
+	    "worker": "%WORKER_NAME%",
+	    "template": "%WAL%"
+	},
+
+	"gminer": {
 	    "url": "%URL%",
 	    "algo": "radiant",
 	    "worker": "%WORKER_NAME%",
@@ -1679,6 +1686,42 @@
 	"rigel": {
 	    "url": "%URL%",
 	    "algo": "nexapow",
+	    "template": "%WAL%.%WORKER_NAME%"
+	}
+    },
+
+   "miners_ironfish": {
+	"lolminer": {
+	    "algo": "IRONFISH",
+	    "pass": "x",
+	    "port": "%URL_PORT%",
+	    "server": "%URL_HOST%",
+	    "template": "%WAL%.%WORKER_NAME%"
+	},
+
+	"bzminer": {
+	    "url": "%URL%",
+	    "algo": "ironfish",
+	    "template": "%WAL%.%WORKER_NAME%"
+	},
+
+	"rigel": {
+	    "url": "%URL%",
+	    "algo": "ironfish",
+	    "template": "%WAL%.%WORKER_NAME%"
+	},
+
+	"srbminer": {
+	    "url": "%URL%",
+	    "algo": "blake3_ironfish",
+	    "pass": "x",
+	    "template": "%WAL%.%WORKER_NAME%",
+	    "user_config": "--disable-cpu"
+	},
+
+	"teamredminer": {
+	    "url": "%URL%",
+	    "algo": "ironfish",
 	    "template": "%WAL%.%WORKER_NAME%"
 	}
     }
