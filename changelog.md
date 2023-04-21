@@ -1,5 +1,5 @@
 ##### 0.6-222@230421 2023-04-21
-*   GMiner v3.34 (Added support mining Radiant algo sha512_256d for Nvidia GPUs; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.34)
+*   GMiner v3.34 (Added support mining Radiant algo `sha512_256d` for Nvidia GPUs; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.34)
 
 ##### 0.6-222@230420 2023-04-20
 *   TeamRedMiner v0.10.10 (Added support for `ironfish`, only the fast stratum protocol v2 supported including dual mining support with autolykos and ethash algos; NOTES: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.10)
