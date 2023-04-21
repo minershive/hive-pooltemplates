@@ -1,3 +1,22 @@
+##### 0.6-222@230420 2023-04-20
+*   TeamRedMiner v0.10.10 (Added support for `ironfish`, only the fast stratum protocol v2 supported including dual mining support with autolykos and ethash algos; NOTES: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.10)
+*   lolMiner v1.74 (Added support for `Ironfish` mining for Nvidia Pascal and newer and AMD Vega and newer GPUs using fast stratum protocol v2, devfee is 0.75%; Slight improved performance and reduction of stales for Alephium mining on Nvidia GPUs; NOTES: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.74)
+*   Rigel miner v1.4.3 (Minor performance/efficiency improvements on `ironfish`; Added support for stratum v2 for major `ironfish` pools, hashrate increase; Fixed bug with OC settings fail to apply on drivers older than v515; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.3)
+*   BzMiner v14.2.2 (Improved `Ironfish` hashrate; Improved dual Octa + Ironfish hashrate; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.2.2)
+
+##### 0.6-222@230418 2023-04-18
+*   BzMiner v14.2.0 (Significantly improved `Ironfish` hashrate/efficiency; Significantly improved `Kaspa` hashrate&efficiency, Improved `Nexa` and `Radiant` hashrate&efficiency; dd support mining Octa coin and dual mining Octa + Ironfish, Octa + Kaspa, Octa + Radiant, Octa + Alph
+; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.2.0)
+
+##### 0.6-222@230417 2023-04-17
+*   GMiner v3.33 (Fixed bug with invalid shares while ZIL mining round; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.33)
+*   Rigel miner v1.4.1 (Improve compatibility with Ironfish mining pools - flexpool, herominers, kryptex; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.1)
+
+##### 0.6-222@230415 2023-04-15
+*   lolMiner v1.73 (Improved Kaspa mining: efficiency and performance on Nvidia Turing and newer by 0.2-1% depending on model; Improved Nexa mining: performance on Nvidia Turing and newer by 2-5% and on AMD by 0.5-1.5% depending on model; NOTES: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.73)
+*   Rigel miner v1.4.0 (Add support for mining Alephium `alephium` and IronFish `ironfish`, dev fee 0.7%; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.0)
+*   TeamBlackMiner v1.94 (Fixed pool authorization problem if username and wallet pools where combined in dual and tripple mining; Removed crash at startup at some pools; NOTES: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.94)
+
 ##### 0.6-222@230413 2023-04-13
 *   GMiner v3.32 (Fixed Kaspa hashrate dip while Zil mining round; Improved Kaspa hashrate for single mining mode - up to +1% dependent on GPU & lowered power usage; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.32)
 *   TeamBlackMiner v1.93 (Improved `verthash` startup time; Removed low difficulty rejects on startup in `verthash`; NOTES: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.93)

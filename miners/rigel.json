@@ -10,25 +10,33 @@
     "default_fork": null,
     "default_units": "khs",
     "algos": [
+        "alephium",
         "etchash",
         "ethash",
+        "ironfish",
         "kheavyhash",
         "nexapow",
         "octa",
         "zil"
     ],
     "dalgos": [
+        "alephium",
+        "ironfish",
         "kheavyhash",
         "zil"
     ],
     "dual_modes": {
-        "etchash": ["kheavyhash","zil"],
-        "ethash": ["kheavyhash", "zil"],
+        "alephium":   ["zil"],
+        "etchash":    ["alephium", "ironfish", "kheavyhash","zil"],
+        "ethash":     ["alephium", "ironfish", "kheavyhash", "zil"],
+        "ironfish":   ["zil"],
         "kheavyhash": ["zil"],
-        "nexapow": ["zil"],
-        "octa":  ["kheavyhash","zil"]
+        "nexapow":    ["zil"],
+        "octa":       ["alephium", "ironfish", "kheavyhash","zil"]
     },
     "algomap": {
+        "alephium": "blake3-alph",
+        "ironfish": "blake3-iron",
         "kheavyhash": "kaspa",
         "octa": "ethash",
         "zil": "ethash"

@@ -142,5 +142,37 @@
       "miners":{
          "_prototype":"miners_nexapow"
         }
+    },
+	{
+        "coin": "IRON",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "iron.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "iron.kryptex.network:8888"
+                ]
+            }
+          ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "blake3_ironfish",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            },
+            "bzminer": {
+                "url": "%URL%",
+                "algo": "ironfish",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "rigel": {
+                "url": "%URL%",
+                "algo": "ironfish",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
