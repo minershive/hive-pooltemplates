@@ -1,3 +1,7 @@
+##### 0.6-222@230422 2023-04-22
+*   TeamRedMiner v0.10.11 (Small improvements for `ironfish` hashrate/efficiency on all GPUs; Automatic handling of `ironfish` worker name when specified as wallet.worker; NOTES: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.11)
+*   Rigel miner v1.4.4 (Minor performance improvements on `ironfish`; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.3)
+
 ##### 0.6-222@230421 2023-04-21
 *   GMiner v3.34 (Added support mining Radiant algo `sha512_256d` for Nvidia GPUs; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.34)
 
