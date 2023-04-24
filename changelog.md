@@ -1,3 +1,6 @@
+##### 0.6-222@230423 2023-04-23
+*   BzMiner v14.3.0 (Improved `Ironfish` hashrate; Fixed larger rigs not sending up all shares; Fixed worker name in wallet not getting passed to the pool; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.3.0)
+
 ##### 0.6-222@230422 2023-04-22
 *   TeamRedMiner v0.10.11 (Small improvements for `ironfish` hashrate/efficiency on all GPUs; Automatic handling of `ironfish` worker name when specified as wallet.worker; NOTES: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.11)
 *   Rigel miner v1.4.4 (Minor performance improvements on `ironfish`; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.4)
