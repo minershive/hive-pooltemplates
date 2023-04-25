@@ -62,7 +62,7 @@ Available miners:
 - noncerpro-kadena - CUDA/OpenCL miner for KDA - Kadena (Nvidia/AMD)
 - nq-miner - Nimiq GPU OpenCL/CUDA miner (Nvidia/AMD)
 - phoenixminer - ethash miner (AMD/NVidia)
-- rigel - ethash/etchash/kheavyhash/nexapow (Nvidia)
+- rigel - ethash/etchash/kheavyhash/nexapow/blake3 variants for Alephium and Ironfish (Nvidia)
 - rhminer - randomhash CPU miner (CPU)
 - sgminer - sgminer forks (avermore, djm34, fancyix, gatelessgate, gm, gm-nicehash, kl, phi, tecracoin)
 - smine - CKB Spark Miner (AMD)
