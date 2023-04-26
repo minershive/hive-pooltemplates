@@ -1,3 +1,7 @@
+##### 0.6-222@230426 2023-04-26
+*   lolMiner v1.75 (Improved Ironfish mining speed by 4-5% on all supported GPUs; Added support to mine Alephium on AMD RX 400/500-series and newer GPUs; NOTES: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.75)
+*   BzMiner v14.3.1 (Improved Ironfish hashrate; Fixed high cpu usage; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.3.1)
+
 ##### 0.6-222@230423 2023-04-23
 *   BzMiner v14.3.0 (Improved `Ironfish` hashrate; Fixed larger rigs not sending up all shares; Fixed worker name in wallet not getting passed to the pool; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.3.0)
 
