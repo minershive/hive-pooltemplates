@@ -1,3 +1,8 @@
+
+##### 0.6-222@230427 2023-04-27
+*   GMiner v3.35 (Improved Radiant hashrate for RTX 20X0 GPUs; Added dual mining Ergo/ETC/Conflux+Radiant and triple with ZIL; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.35)
+*   Rigel miner v1.4.5 (Minor performance improvements on `ironfish` for 30xx series GPUs; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.5)
+
 ##### 0.6-222@230426 2023-04-26
 *   lolMiner v1.75 (Improved Ironfish mining speed by 4-5% on all supported GPUs; Added support to mine Alephium on AMD RX 400/500-series and newer GPUs; NOTES: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.75)
 *   BzMiner v14.3.1 (Improved Ironfish hashrate; Fixed high cpu usage; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.3.1)
