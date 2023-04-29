@@ -1,5 +1,6 @@
 ##### 0.6-222@230429 2023-04-29
 *   GMiner v3.37 (Fixed performance degradation appeared in v3.36; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.37)
+*   SRBMiner-Multi v2.2.5 (Significantly improved mining performance on algorithm `dynex` for AMD/Nvidia/Intel; Improved mining performance on algorithm `blake3_ironfish` for AMD/Nvidia/Intel; Added support for algorithm `sha3d` on Nvidia/Intel; NOTES: See full chagelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.5)
 
 ##### 0.6-222@230428 2023-04-28
 *   TeamRedMiner v0.10.12 (Improved `ironfish` hashrate: up to +10-11% for Polaris and up to +5-6% on all the rest GPUs; Fixed broken dual zil mining for some older algos, e.g. Nimiq; NOTES: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.12)
