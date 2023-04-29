@@ -1,4 +1,4 @@
-##### 0.6-222@230428 2023-04-28
+##### 0.6-222@230429 2023-04-29
 *   GMiner v3.37 (Fixed performance degradation appeared in v3.36; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.37)
 
 ##### 0.6-222@230428 2023-04-28
