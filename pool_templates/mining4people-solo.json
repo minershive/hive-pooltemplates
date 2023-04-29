@@ -611,6 +611,132 @@
     }
   },
   {
+    "coin": "TAFT",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:4165"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:24165"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:14165"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:34165"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:4165"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:24165"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:14165"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:34165"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:4165"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:24165"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:14165"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:34165"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:4165"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:24165"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:14165"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:34165"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:4165"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:24165"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:14165"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:34165"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ghostrider",
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "x",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-gpu"
+      }
+    }
+  },
+  {
     "coin": "OCV",
     "servers": [
       {
