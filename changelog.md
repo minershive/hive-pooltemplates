@@ -1,4 +1,7 @@
 ##### 0.6-222@230428 2023-04-28
+*   GMiner v3.37 (Fixed performance degradation appeared in v3.36; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.37)
+
+##### 0.6-222@230428 2023-04-28
 *   TeamRedMiner v0.10.12 (Improved `ironfish` hashrate: up to +10-11% for Polaris and up to +5-6% on all the rest GPUs; Fixed broken dual zil mining for some older algos, e.g. Nimiq; NOTES: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.12)
 *   GMiner v3.36 (Significant hashrate improvement on `Radiant` and dual mining modes: ETC+Radiant, Conflux+Radiant, and Ergo+Radiant for GTX 10xx series GPUs; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.36)
 
