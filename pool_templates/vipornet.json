@@ -703,11 +703,27 @@
     "miners": {
       "_prototype": "miners_ethash",
       "lolminer": {
-        "template": "%WAL%.%WORKER_NAME%"
+        "template": "%WAL%.%WORKER_NAME%",
+        "url": "%URL%",
+        "user_config": "--ethstratum=ETHV1"
       },
       "rigel": {
         "algo": "octa",
-        "user_config": "--no-tui"
+        "url": "ethstratum+tcp://%URL%"
+      },
+      "bzminer": {
+        "algo": "octa",
+        "url": "ethstratum+tcp://%URL%"
+      },
+      "t-rex": {
+        "algo": "ethash",
+        "url": "ethstratum+tcp://%URL%"
+      },
+      "teamredminer": {
+        "algo": "ethash",
+        "url": "ethstratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "x"
       }
     }
   }
