@@ -1,6 +1,6 @@
 ##### 0.6-222@230506 2023-05-06
 *   GMiner v3.38 (Added `IronFish` mining support; Added IronFish dual mining with ETC/ERG/CFX and also triple with ZIL; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.38)
-*   BzMiner v14.3.2 (Added Kylacoin mining supported; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.3.2)
+*   BzMiner v14.3.2 (Added KCN/`Kylacoin` mining supported; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.3.2)
 
 ##### 0.6-222@230429 2023-04-29
 *   GMiner v3.37 (Fixed performance degradation appeared in v3.36; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.37)
