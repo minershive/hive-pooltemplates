@@ -155,5 +155,41 @@
         "miners": {
             "_prototype": "miners_kawpow"
         }
+    },
+    {
+        "coin": "IRON",
+        "servers": [
+          {
+            "geo": "AUTO",
+            "urls": [
+                "stratum.tw-pool.com:60001",
+                "stratum2.tw-pool.com:60001"
+            ],
+            "ssl_urls": [
+                "stratum.tw-pool.com:60001",
+                "stratum2.tw-pool.com:60001"
+            ]
+          }
+        ],
+        "miners": {
+          "srbminer": {
+            "url": "%URL%",
+            "algo": "blake3_ironfish",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--disable-cpu"
+          },
+          "bzminer": {
+            "url": "%URL%",
+            "algo": "ironfish",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+          },
+          "rigel": {
+            "url": "%URL%",
+            "algo": "ironfish",
+            "template": "%WAL%.%WORKER_NAME%"
+          }
+        }
     }
 ]

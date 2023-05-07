@@ -1,3 +1,43 @@
+##### 0.6-222@230506 2023-05-06
+*   GMiner v3.38 (Added `IronFish` mining support; Added IronFish dual mining with ETC/ERG/CFX and also triple with ZIL; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.38)
+*   BzMiner v14.3.2 (Added KCN/`Kylacoin` mining supported; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.3.2)
+
+##### 0.6-222@230429 2023-04-29
+*   GMiner v3.37 (Fixed performance degradation appeared in v3.36; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.37)
+*   SRBMiner-Multi v2.2.5 (Significantly improved mining performance on algorithm `dynex` for AMD/Nvidia/Intel; Improved mining performance on algorithm `blake3_ironfish` for AMD/Nvidia/Intel; Added support for algorithm `sha3d` on Nvidia/Intel; NOTES: See full chagelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.5)
+
+##### 0.6-222@230428 2023-04-28
+*   TeamRedMiner v0.10.12 (Improved `ironfish` hashrate: up to +10-11% for Polaris and up to +5-6% on all the rest GPUs; Fixed broken dual zil mining for some older algos, e.g. Nimiq; NOTES: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.12)
+*   GMiner v3.36 (Significant hashrate improvement on `Radiant` and dual mining modes: ETC+Radiant, Conflux+Radiant, and Ergo+Radiant for GTX 10xx series GPUs; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.36)
+
+##### 0.6-222@230427 2023-04-27
+*   GMiner v3.35 (Improved Radiant hashrate for RTX 20X0 GPUs; Added dual mining Ergo/ETC/Conflux+Radiant and triple with ZIL; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.35)
+*   Rigel miner v1.4.5 (Minor performance improvements on `ironfish` for 30xx series GPUs; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.5)
+
+##### 0.6-222@230426 2023-04-26
+*   lolMiner v1.75 (Improved Ironfish mining speed by 4-5% on all supported GPUs; Added support to mine Alephium on AMD RX 400/500-series and newer GPUs; NOTES: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.75)
+*   BzMiner v14.3.1 (Improved Ironfish hashrate; Fixed high cpu usage; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.3.1)
+
+##### 0.6-222@230423 2023-04-23
+*   BzMiner v14.3.0 (Improved `Ironfish` hashrate; Fixed larger rigs not sending up all shares; Fixed worker name in wallet not getting passed to the pool; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.3.0)
+
+##### 0.6-222@230422 2023-04-22
+*   TeamRedMiner v0.10.11 (Small improvements for `ironfish` hashrate/efficiency on all GPUs; Automatic handling of `ironfish` worker name when specified as wallet.worker; NOTES: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.11)
+*   Rigel miner v1.4.4 (Minor performance improvements on `ironfish`; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.4)
+
+##### 0.6-222@230421 2023-04-21
+*   GMiner v3.34 (Added support mining Radiant algo `sha512_256d` for Nvidia GPUs; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.34)
+
+##### 0.6-222@230420 2023-04-20
+*   TeamRedMiner v0.10.10 (Added support for `ironfish`, only the fast stratum protocol v2 supported including dual mining support with autolykos and ethash algos; NOTES: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.10)
+*   lolMiner v1.74 (Added support for `Ironfish` mining for Nvidia Pascal and newer and AMD Vega and newer GPUs using fast stratum protocol v2, devfee is 0.75%; Slight improved performance and reduction of stales for Alephium mining on Nvidia GPUs; NOTES: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.74)
+*   Rigel miner v1.4.3 (Minor performance/efficiency improvements on `ironfish`; Added support for stratum v2 for major `ironfish` pools, hashrate increase; Fixed bug with OC settings fail to apply on drivers older than v515; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.3)
+*   BzMiner v14.2.2 (Improved `Ironfish` hashrate; Improved dual Octa + Ironfish hashrate; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.2.2)
+
+##### 0.6-222@230418 2023-04-18
+*   BzMiner v14.2.0 (Significantly improved `Ironfish` hashrate/efficiency; Significantly improved `Kaspa` hashrate&efficiency, Improved `Nexa` and `Radiant` hashrate&efficiency; dd support mining Octa coin and dual mining Octa + Ironfish, Octa + Kaspa, Octa + Radiant, Octa + Alph
+; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.2.0)
+
 ##### 0.6-222@230417 2023-04-17
 *   GMiner v3.33 (Fixed bug with invalid shares while ZIL mining round; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.33)
 *   Rigel miner v1.4.1 (Improve compatibility with Ironfish mining pools - flexpool, herominers, kryptex; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.1)
