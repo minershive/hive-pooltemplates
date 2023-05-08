@@ -5,6 +5,17 @@
 *   GMiner v3.38 (Added `IronFish` mining support; Added IronFish dual mining with ETC/ERG/CFX and also triple with ZIL; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.38)
 *   BzMiner v14.3.2 (Added KCN/`Kylacoin` mining supported; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.3.2)
 
+##### LINUX IMAGE RELEASE 0.6-222 2023-05-05
+*   Universal boot mode: BIOS | UEFI
+*   Reuploaded updated legacy Stable Image
+*   Hive Linux client: v0.6-222
+*   Ubuntu v18.04.6 LTS based
+*   Linux kernel: v5.10.110
+*   Nvidia driver: v525.105.17
+*   AMD driver v5.13.2208
+*   AMD OpenCL v22.20.5 | ROCm v5.2.3
+*   md5sum 765a4897e70f477b4166e7691b443ae9
+
 ##### 0.6-222@230429 2023-04-29
 *   GMiner v3.37 (Fixed performance degradation appeared in v3.36; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.37)
 *   SRBMiner-Multi v2.2.5 (Significantly improved mining performance on algorithm `dynex` for AMD/Nvidia/Intel; Improved mining performance on algorithm `blake3_ironfish` for AMD/Nvidia/Intel; Added support for algorithm `sha3d` on Nvidia/Intel; NOTES: See full chagelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.5)
