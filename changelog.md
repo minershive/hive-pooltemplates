@@ -1,3 +1,6 @@
+##### 0.6-222@230508 2023-05-08
+*   GMiner v3.39 (Fixed miner crashes on `IronFish+ZIL`, `ETC+IronFish+ZIL`, `Ergo+IronFish+ZIL` and `Conflux+IronFish+ZIL` when ZIL dual intensity is -1, `-zildi -1`; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.39)
+
 ##### 0.6-222@230507 2023-05-07
 *   Rigel miner v1.4.6 (Minor performance improvements on `nexapow`; Fixed low pool hashrate when mining Alephium to certain pools; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.6)
 
