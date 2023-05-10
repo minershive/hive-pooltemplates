@@ -1,3 +1,14 @@
+##### LINUX IMAGE RELEASE 0.6-222 2023-05-10
+*   Updated Stable Image 5.15-U18 branch
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-222
+*   Ubuntu v18.04.6 LTS based
+*   Linux kernel: v5.15.110
+*   Nvidia driver: v525.116.03
+*   AMD driver v5.18.2301
+*   AMD OpenCL v22.20.5 | ROCm v5.2.3
+*   md5sum f256e8579a249429012f5d366ef6639e
+   
 ##### 0.6-222@230508 2023-05-08
 *   GMiner v3.39 (Fixed miner crashes on `IronFish+ZIL`, `ETC+IronFish+ZIL`, `Ergo+IronFish+ZIL` and `Conflux+IronFish+ZIL` when ZIL dual intensity is -1, `-zildi -1`; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.39)
 
