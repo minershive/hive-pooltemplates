@@ -3,7 +3,7 @@
 *   GMiner v3.40 (Significant up to +10% hashrate improvements on `IronFish` mining; Added ability configure ZIL as second coin via Hive Web UI; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.40)
 *   Rigel miner v1.4.7 (Performance improvements on `ironfish` for Turing and Ampere GPUs; Fixed Alephium performance regression; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.7)
 *   BzMiner v15.0.0 (Added `Novo` coin mining support; Fixed Kylacoin pool integration issues lead to no worker name; NOTES: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.0.0)
-   
+
 ##### LINUX IMAGE RELEASE 0.6-222 2023-05-10
 *   Updated Stable Image 5.15-U18 branch
 *   Universal boot mode: BIOS | UEFI
@@ -14,7 +14,7 @@
 *   AMD driver v5.18.2301
 *   AMD OpenCL v22.20.5 | ROCm v5.2.3
 *   md5sum f256e8579a249429012f5d366ef6639e
-   
+
 ##### 0.6-222@230508 2023-05-08
 *   GMiner v3.39 (Fixed miner crashes on `IronFish+ZIL`, `ETC+IronFish+ZIL`, `Ergo+IronFish+ZIL` and `Conflux+IronFish+ZIL` when ZIL dual intensity is -1, `-zildi -1`; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.39)
 
