@@ -86,6 +86,26 @@
         }
     },
     {
+        "coin": "KCN",
+        "servers": [
+            {
+                "geo": "BR",
+                "urls": [
+                    "br2.gopool.cash:4788"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+              "url": "%URL%",
+              "pass": "x",
+              "template": "%WAL%.%WORKER_NAME%",
+              "algo": "sha3d",
+              "user_config": "--disable-cpu"
+            }
+          }
+    },
+    {
         "coin": "RXD",
         "servers": [
             {
@@ -98,13 +118,132 @@
         "miners": {
             "srbminer": {
               "url": "%URL%",
-              "pass": "%WORKER_NAME%",
-              "template": "%WAL%",
+              "pass": "x",
+              "template": "%WAL%.%WORKER_NAME%",
               "algo": "sha512_256d_radiant"
             }
           }
-        },
-      {
+    },
+    {
+        "coin": "DNX",
+        "servers": [
+            {
+                "geo": "BR",
+                "urls": [
+                    "dnx.gopool.cash:3333"
+                ]
+                }
+            ],
+            "miners": {
+                "srbminer": {
+                  "url": "%URL%",
+                  "pass": "%WORKER_NAME%",
+                  "template": "%WAL%",
+                  "algo": "dynex",
+                  "user_config": "--disable-cpu --mallob-endpoint https://mallob.gopool.cash"
+                }
+              }
+            },
+    {
+        "coin": "CHN",
+        "servers": [
+            {
+                "geo": "BR",
+                "urls": [
+                    "chn.gopool.cash:3333"
+                ]
+                }
+            ],
+            "miners": {
+                "wildrig-multi": {
+                  "url": "stratum+tcp://%URL%",
+                   "algo": "progpowz",
+                   "pass": "%WORKER_NAME%",
+                   "template": "%WAL%"
+                }
+              }
+            },
+            {
+                "coin": "BTSC",
+                "servers": [
+                    {
+                        "geo": "BR",
+                        "urls": [
+                            "poolbr.gopool.cash:5035"
+                        ]
+                        }
+                    ],
+                    "miners": {
+                        "wildrig-multi": {
+                          "url": "%URL%",
+                           "algo": "ghostrider",
+                           "pass": "x",
+                           "template": "%WAL%.%WORKER_NAME%"
+                        }
+                      }
+    },
+    {
+        "coin": "LTRM",
+        "servers": [
+            {
+                "geo": "BR",
+                "urls": [
+                    "poolbr.gopool.cash:5060"
+                ]
+                }
+            ],
+            "miners": {
+                "wildrig-multi": {
+                  "url": "%URL%",
+                   "algo": "ghostrider",
+                   "pass": "x",
+                   "template": "%WAL%.%WORKER_NAME%"
+                }
+              }
+    },
+    {
+        "coin": "RTM",
+        "servers": [
+            {
+                "geo": "BR",
+                "urls": [
+                    "poolbr.gopool.cash:5040"
+                ]
+                }
+            ],
+            "miners": {
+                "_prototype": "miners_ghostrider"
+            }
+    },
+    {
+        "coin": "CLORE",
+        "servers": [
+            {
+                "geo": "BR",
+                "urls": [
+                    "stratum.gopool.cash:3493"
+                ]
+                }
+            ],
+            "miners": {
+                "_prototype": "miners_kawpow"
+            }
+    },
+    {
+        "coin": "PAPRY",
+        "servers": [
+            {
+                "geo": "BR",
+                "urls": [
+                    "stratum.gopool.cash:3432"
+                ]
+                }
+            ],
+            "miners": {
+                "_prototype": "miners_kawpow"
+            }
+    },
+    {
         "coin": "NOVO",
         "servers": [
             {
