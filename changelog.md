@@ -20,8 +20,8 @@
 *   BzMiner v14.3.2 (Added KCN/`Kylacoin` mining supported; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.3.2)
 
 ##### LINUX IMAGE RELEASE 0.6-222 2023-05-05
+*   Legacy Stable Image 5.10-U18 branch (reuploaded & updated)
 *   Universal boot mode: BIOS | UEFI
-*   Reuploaded updated legacy Stable Image
 *   Hive Linux client: v0.6-222
 *   Ubuntu v18.04.6 LTS based
 *   Linux kernel: v5.10.110
