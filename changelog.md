@@ -1,3 +1,9 @@
+##### 0.6-222@230510 2023-05-10
+*   lolMiner v1.76 (Improved mining performance on Nvidia Turing and newer cards on `Blake3-Alephium` by 15-18% and on `Blake3-Ironfish` by 9-11%; Other slight improvemnents & bug fixes: please see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.76)
+*   GMiner v3.40 (Significant up to +10% hashrate improvements on `IronFish` mining; Added ability configure ZIL as second coin via Hive Web UI; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.40)
+*   Rigel miner v1.4.7 (Performance improvements on `ironfish` for Turing and Ampere GPUs; Fixed Alephium performance regression; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.7)
+*   BzMiner v15.0.0 (Added `Novo` coin mining support; Fixed Kylacoin pool integration issues lead to no worker name; NOTES: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.0.0)
+   
 ##### LINUX IMAGE RELEASE 0.6-222 2023-05-10
 *   Updated Stable Image 5.15-U18 branch
 *   Universal boot mode: BIOS | UEFI
@@ -52,8 +58,7 @@
 *   BzMiner v14.2.2 (Improved `Ironfish` hashrate; Improved dual Octa + Ironfish hashrate; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.2.2)
 
 ##### 0.6-222@230418 2023-04-18
-*   BzMiner v14.2.0 (Significantly improved `Ironfish` hashrate/efficiency; Significantly improved `Kaspa` hashrate&efficiency, Improved `Nexa` and `Radiant` hashrate&efficiency; dd support mining Octa coin and dual mining Octa + Ironfish, Octa + Kaspa, Octa + Radiant, Octa + Alph
-; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.2.0)
+*   BzMiner v14.2.0 (Significantly improved `Ironfish` hashrate/efficiency; Significantly improved `Kaspa` hashrate&efficiency, Improved `Nexa` and `Radiant` hashrate&efficiency; dd support mining Octa coin and dual mining Octa + Ironfish, Octa + Kaspa, Octa + Radiant, Octa + Alph; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v14.2.0)
 
 ##### 0.6-222@230417 2023-04-17
 *   GMiner v3.33 (Fixed bug with invalid shares while ZIL mining round; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.33)
