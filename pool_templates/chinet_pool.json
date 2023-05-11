@@ -1,0 +1,55 @@
+[
+    {
+        "pool": {
+            "name": "Chinet pool",
+            "url": "https://chinet-pool.ddns.net",
+            "fee": 0.85,
+            "type": "PROP"
+        }
+    },
+    {
+        "coin": "CHN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "chinet-pool.ddns.net:3337"
+                ]
+            },
+            {
+                "geo": "US/Asia",
+                "urls": [
+                    "chinet-china.ddns.net:3337"
+                ]
+            },
+            {
+                "geo": "Singapore",
+                "urls": [
+                    "chinet-singapore.ddns.net:3337"
+                ]
+            },
+            {
+                "geo": "Russia",
+                "urls": [
+                    "chinet-russia.ddns.net:3337"
+                ]
+            }
+        ],
+        "miners": {
+           "t-rex":{
+                "algo":"progpowz",
+                "template":"%WAL%",
+                "server":"stratum+tcp://%URL%",
+                "pass":"@%WORKER_NAME%"
+		},
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "progpowz",
+                "pass": "@%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+    }
+
+
+]
