@@ -1,3 +1,6 @@
+##### 0.6-222@230511 2023-05-11
+*   SRBMiner-Multi v2.2.6 (Improved mining performance on algorithms: `blake3_alephium`, `sha256dt`, `dynex` on AMD/NVIDIA GPUs; Improved mining performance on algorithms `sha512_256d_radiant` on NVIDIA Pascal/Turing and AMD RX 7900 XT/XTX; Improved mining performance on algorithm `sha3d` on NVIDIA GPUs; Better auto tune for algorithm `dynex`; NOTES: See full chagelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.6)
+
 ##### 0.6-222@230510 2023-05-10
 *   lolMiner v1.76 (Improved mining performance on Nvidia Turing and newer GPUs on `Blake3-Alephium` by 15-18% and on `Blake3-Ironfish` by 9-11%; Other slight improvemnents & bug fixes: please see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.76)
 *   GMiner v3.40 (Significant up to +10% hashrate improvements on `IronFish` mining; Added ability configure ZIL as second coin via Hive Web UI; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.40)
