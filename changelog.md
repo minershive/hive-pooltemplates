@@ -79,7 +79,7 @@
 *   XMRig-MO v6.19.2-mo1 (XMRig MoneroOcean fork synced to v6.19.2 of original XMRig)
 *   cpuMiner-Opt-JayDDee v3.22.2 (Added `sha512256d` & `sha256dt` algos; NOTES: see full changelog at Full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.2)
 
-##### LINUX IMAGE RELEASE 0.6-222@230408 2023-04-08
+##### LINUX IMAGE RELEASE 0.6-222_5.10u18 2023-04-08
 *   Legacy Stable Image 5.10-U18 branch (reuploaded & updated)
 *   Universal boot mode: BIOS | UEFI
 *   Hive Linux client: v0.6-222
