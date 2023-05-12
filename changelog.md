@@ -1,3 +1,17 @@
+##### 0.6-222@230512 2023-05-12
+*   NanoMiner v3.8.0 (Added Kaspa mining support; See full changelog: https://github.com/nanopool/nanominer/releases/tag/v3.8.0)
+
+##### LINUX IMAGE RELEASE 0.6-222_5.15u18 2023-05-12
+*   Updated Stable Image 5.15-U18 branch
+*   Universal boot mode: BIOS | UEFI
+*   Hive Linux client: v0.6-222
+*   Ubuntu v18.04.6 LTS based
+*   Linux kernel: v5.15.110
+*   Nvidia driver: v525.116.04
+*   AMD driver v5.18.2301
+*   AMD OpenCL v22.20.5 | ROCm v5.2.3
+*   md5sum d45e396bdbda45655feadc6024e15eb4
+
 ##### 0.6-222@230511 2023-05-11
 *   SRBMiner-Multi v2.2.6 (Improved mining performance on algorithms: `blake3_alephium`, `sha256dt`, `dynex` on AMD/NVIDIA GPUs; Improved mining performance on algorithms `sha512_256d_radiant` on NVIDIA Pascal/Turing and AMD RX 7900 XT/XTX; Improved mining performance on algorithm `sha3d` on NVIDIA GPUs; Better auto tune for algorithm `dynex`; NOTES: See full chagelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.6)
 
@@ -6,17 +20,6 @@
 *   GMiner v3.40 (Significant up to +10% hashrate improvements on `IronFish` mining; Added ability configure ZIL as second coin via Hive Web UI; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.40)
 *   Rigel miner v1.4.7 (Performance improvements on `ironfish` for Turing and Ampere GPUs; Fixed Alephium performance regression; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.7)
 *   BzMiner v15.0.0 (Added `Novo` coin mining support; Fixed Kylacoin pool integration issues lead to no worker name; NOTES: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.0.0)
-
-##### LINUX IMAGE RELEASE 0.6-222_5.15u18 2023-05-10
-*   Updated Stable Image 5.15-U18 branch
-*   Universal boot mode: BIOS | UEFI
-*   Hive Linux client: v0.6-222
-*   Ubuntu v18.04.6 LTS based
-*   Linux kernel: v5.15.110
-*   Nvidia driver: v525.116.03
-*   AMD driver v5.18.2301
-*   AMD OpenCL v22.20.5 | ROCm v5.2.3
-*   md5sum f256e8579a249429012f5d366ef6639e
 
 ##### 0.6-222@230508 2023-05-08
 *   GMiner v3.39 (Fixed miner crashes on `IronFish+ZIL`, `ETC+IronFish+ZIL`, `Ergo+IronFish+ZIL` and `Conflux+IronFish+ZIL` when ZIL dual intensity is -1, `-zildi -1`; NOTES: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.39)
