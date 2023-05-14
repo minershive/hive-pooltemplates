@@ -402,9 +402,6 @@
       "_prototype": "miners_nexapow",
       "lolminer": {
         "template": "%WAL%.%WORKER_NAME%"
-      },
-      "rigel": {
-        "user_config": "--no-tui"
       }
     }
   },
@@ -521,43 +518,35 @@
     "servers": [
       {
         "geo": "USA (North East)",
-        "urls": ["us.vipor.net:5004"],
-        "ssl_urls": ["us.vipor.net:5104"]
+        "urls": ["us.vipor.net:5004"]
       },
       {
         "geo": "USA (South East)",
-        "urls": ["usse.vipor.net:5004"],
-        "ssl_urls": ["usse.vipor.net:5104"]
+        "urls": ["usse.vipor.net:5004"]
       },
       {
         "geo": "USA (Mid West)",
-        "urls": ["usmw.vipor.net:5004"],
-        "ssl_urls": ["usmw.vipor.net:5104"]
+        "urls": ["usmw.vipor.net:5004"]
       },
       {
         "geo": "USA (West)",
-        "urls": ["usw.vipor.net:5004"],
-        "ssl_urls": ["usw.vipor.net:5104"]
+        "urls": ["usw.vipor.net:5004"]
       },
       {
         "geo": "Canada",
-        "urls": ["ca.vipor.net:5004"],
-        "ssl_urls": ["ca.vipor.net:5104"]
+        "urls": ["ca.vipor.net:5004"]
       },
       {
         "geo": "China (Hong Kong)",
-        "urls": ["cn.vipor.net:5004"],
-        "ssl_urls": ["cn.vipor.net:5104"]
+        "urls": ["cn.vipor.net:5004"]
       },
       {
         "geo": "Finland",
-        "urls": ["fi.vipor.net:5004"],
-        "ssl_urls": ["fi.vipor.net:5104"]
+        "urls": ["fi.vipor.net:5004"]
       },
       {
         "geo": "France",
-        "urls": ["fr.vipor.net:5004"],
-        "ssl_urls": ["fr.vipor.net:5104"]
+        "urls": ["fr.vipor.net:5004"]
       },
       {
         "geo": "Germany",
@@ -703,11 +692,233 @@
     "miners": {
       "_prototype": "miners_ethash",
       "lolminer": {
-        "template": "%WAL%.%WORKER_NAME%"
+        "template": "%WAL%.%WORKER_NAME%",
+        "url": "%URL%",
+        "user_config": "--ethstratum=ETHV1"
       },
       "rigel": {
         "algo": "octa",
-        "user_config": "--no-tui"
+        "url": "ethstratum+tcp://%URL%"
+      },
+      "bzminer": {
+        "algo": "octa",
+        "url": "ethstratum+tcp://%URL%"
+      },
+      "t-rex": {
+        "algo": "ethash",
+        "url": "ethstratum+tcp://%URL%"
+      },
+      "teamredminer": {
+        "algo": "ethash",
+        "url": "ethstratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "x"
+      }
+    }
+  },
+  {
+    "coin": "KCN",
+    "servers": [
+      {
+        "geo": "USA (North East)",
+        "urls": ["us.vipor.net:5020"],
+        "ssl_urls": ["us.vipor.net:5120"]
+      },
+      {
+        "geo": "USA (South East)",
+        "urls": ["usse.vipor.net:5020"],
+        "ssl_urls": ["usse.vipor.net:5120"]
+      },
+      {
+        "geo": "USA (Mid West)",
+        "urls": ["usmw.vipor.net:5020"],
+        "ssl_urls": ["usmw.vipor.net:5120"]
+      },
+      {
+        "geo": "USA (West)",
+        "urls": ["usw.vipor.net:5020"],
+        "ssl_urls": ["usw.vipor.net:5120"]
+      },
+      {
+        "geo": "Canada",
+        "urls": ["ca.vipor.net:5020"],
+        "ssl_urls": ["ca.vipor.net:5120"]
+      },
+      {
+        "geo": "China (Hong Kong)",
+        "urls": ["cn.vipor.net:5020"],
+        "ssl_urls": ["cn.vipor.net:5120"]
+      },
+      {
+        "geo": "Finland",
+        "urls": ["fi.vipor.net:5020"],
+        "ssl_urls": ["fi.vipor.net:5120"]
+      },
+      {
+        "geo": "France",
+        "urls": ["fr.vipor.net:5020"],
+        "ssl_urls": ["fr.vipor.net:5120"]
+      },
+      {
+        "geo": "Germany",
+        "urls": ["eu.vipor.net:5020"],
+        "ssl_urls": ["eu.vipor.net:5120"]
+      },
+      {
+        "geo": "Kazakhstan",
+        "urls": ["kz.vipor.net:5020"],
+        "ssl_urls": ["kz.vipor.net:5120"]
+      },
+      {
+        "geo": "Korea",
+        "urls": ["ap.vipor.net:5020"],
+        "ssl_urls": ["ap.vipor.net:5120"]
+      },
+      {
+        "geo": "Poland",
+        "urls": ["pl.vipor.net:5020"],
+        "ssl_urls": ["pl.vipor.net:5120"]
+      },
+      {
+        "geo": "Romania",
+        "urls": ["ro.vipor.net:5020"],
+        "ssl_urls": ["ro.vipor.net:5120"]
+      },
+      {
+        "geo": "Russia",
+        "urls": ["ru.vipor.net:5020"],
+        "ssl_urls": ["ru.vipor.net:5120"]
+      },
+      {
+        "geo": "Singapore",
+        "urls": ["sg.vipor.net:5020"],
+        "ssl_urls": ["sg.vipor.net:5120"]
+      },
+      {
+        "geo": "South America",
+        "urls": ["sa.vipor.net:5020"],
+        "ssl_urls": ["sa.vipor.net:5120"]
+      },
+      {
+        "geo": "Turkey",
+        "urls": ["tr.vipor.net:5020"],
+        "ssl_urls": ["tr.vipor.net:5120"]
+      },
+      {
+        "geo": "Ukraine",
+        "urls": ["ua.vipor.net:5020"],
+        "ssl_urls": ["ua.vipor.net:5120"]
+      },
+      {
+        "geo": "USA (North East) SOLO",
+        "urls": ["us.vipor.net:5025"],
+        "ssl_urls": ["us.vipor.net:5125"]
+      },
+      {
+        "geo": "USA (South East) SOLO",
+        "urls": ["usse.vipor.net:5025"],
+        "ssl_urls": ["usse.vipor.net:5125"]
+      },
+      {
+        "geo": "USA (Mid West) SOLO",
+        "urls": ["usmw.vipor.net:5025"],
+        "ssl_urls": ["usmw.vipor.net:5125"]
+      },
+      {
+        "geo": "USA (West) SOLO",
+        "urls": ["usw.vipor.net:5025"],
+        "ssl_urls": ["usw.vipor.net:5125"]
+      },
+      {
+        "geo": "Canada SOLO",
+        "urls": ["ca.vipor.net:5025"],
+        "ssl_urls": ["ca.vipor.net:5125"]
+      },
+      {
+        "geo": "China (Hong Kong) SOLO",
+        "urls": ["cn.vipor.net:5025"],
+        "ssl_urls": ["cn.vipor.net:5125"]
+      },
+      {
+        "geo": "Finland SOLO",
+        "urls": ["fi.vipor.net:5025"],
+        "ssl_urls": ["fi.vipor.net:5125"]
+      },
+      {
+        "geo": "France SOLO",
+        "urls": ["fr.vipor.net:5025"],
+        "ssl_urls": ["fr.vipor.net:5125"]
+      },
+      {
+        "geo": "Germany SOLO",
+        "urls": ["eu.vipor.net:5025"],
+        "ssl_urls": ["eu.vipor.net:5125"]
+      },
+      {
+        "geo": "Kazakhstan SOLO",
+        "urls": ["kz.vipor.net:5025"],
+        "ssl_urls": ["kz.vipor.net:5125"]
+      },
+      {
+        "geo": "Korea SOLO",
+        "urls": ["ap.vipor.net:5025"],
+        "ssl_urls": ["ap.vipor.net:5125"]
+      },
+      {
+        "geo": "Poland SOLO",
+        "urls": ["pl.vipor.net:5025"],
+        "ssl_urls": ["pl.vipor.net:5125"]
+      },
+      {
+        "geo": "Romania SOLO",
+        "urls": ["ro.vipor.net:5025"],
+        "ssl_urls": ["ro.vipor.net:5125"]
+      },
+      {
+        "geo": "Russia SOLO",
+        "urls": ["ru.vipor.net:5025"],
+        "ssl_urls": ["ru.vipor.net:5125"]
+      },
+      {
+        "geo": "Singapore SOLO",
+        "urls": ["sg.vipor.net:5025"],
+        "ssl_urls": ["sg.vipor.net:5125"]
+      },
+      {
+        "geo": "South America SOLO",
+        "urls": ["sa.vipor.net:5025"],
+        "ssl_urls": ["sa.vipor.net:5125"]
+      },
+      {
+        "geo": "Turkey SOLO",
+        "urls": ["tr.vipor.net:5025"],
+        "ssl_urls": ["tr.vipor.net:5125"]
+      },
+      {
+        "geo": "Ukraine SOLO",
+        "urls": ["ua.vipor.net:5025"],
+        "ssl_urls": ["ua.vipor.net:5125"]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccuser": "%WAL%",
+        "ccalgo": "sha3d",
+        "ccpass": "x",
+        "fork": "bsha3"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha3d",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "bzminer": {
+        "url": "%URL%",
+        "algo": "kylacoin",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
       }
     }
   }
