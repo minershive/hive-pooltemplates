@@ -1,0 +1,204 @@
+[
+	{
+		"pool": {
+			"name": "GoGPool",
+			"url": "https://gogpool.eu",
+			"type": "PPLNS SOLO"
+		}
+	},
+    {
+        "coin": "NEOX",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "neoxa.gogpool.eu:4602"
+                ]
+            }
+        ],
+		"miners": {
+		  "_prototype": "miners_kawpow"
+		}
+    },
+    {
+        "coin": "NEOX SOLO",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "neoxa.gogpool.eu:46021"
+                ]
+            }
+        ],
+		"miners": {
+		  "_prototype": "miners_kawpow"
+		}
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "rvn.gogpool.eu:4601"
+                ]
+            }
+        ],
+		"miners": {
+		  "_prototype": "miners_kawpow"
+		}
+    },
+    {
+        "coin": "OCTA",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "octa.gogpool.eu:4606"
+                ]
+            }
+        ],
+		"miners": {
+		  "_prototype": "miners_ethash",
+		  "lolminer": {
+			"template": "%WAL%.%WORKER_NAME%",
+			"url": "%URL%",
+			"user_config": "--ethstratum=ETHV1"
+		  },
+		  "rigel": {
+			"algo": "octa",
+			"url": "ethstratum+tcp://%URL%"
+		  },
+		  "bzminer": {
+			"algo": "octa",
+			"url": "ethstratum+tcp://%URL%"
+		  },
+		  "t-rex": {
+			"algo": "ethash",
+			"url": "ethstratum+tcp://%URL%"
+		  },
+		  "teamredminer": {
+			"algo": "ethash",
+			"url": "ethstratum+tcp://%URL%",
+			"template": "%WAL%.%WORKER_NAME%",
+			"pass": "x"
+		  }
+		}
+    },
+    {
+        "coin": "OCTA SOLO",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "octa.gogpool.eu:46061"
+                ]
+            }
+        ],
+		"miners": {
+		  "_prototype": "miners_ethash",
+		  "lolminer": {
+			"template": "%WAL%.%WORKER_NAME%",
+			"url": "%URL%",
+			"user_config": "--ethstratum=ETHV1"
+		  },
+		  "rigel": {
+			"algo": "octa",
+			"url": "ethstratum+tcp://%URL%"
+		  },
+		  "bzminer": {
+			"algo": "octa",
+			"url": "ethstratum+tcp://%URL%"
+		  },
+		  "t-rex": {
+			"algo": "ethash",
+			"url": "ethstratum+tcp://%URL%"
+		  },
+		  "teamredminer": {
+			"algo": "ethash",
+			"url": "ethstratum+tcp://%URL%",
+			"template": "%WAL%.%WORKER_NAME%",
+			"pass": "x"
+		  }
+		}
+    },
+    {
+        "coin": "RXD",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "rxd.gogpool.eu:4605"
+                ]
+            }
+            
+        ],
+		"miners": {
+		  "_prototype": "miners_radiant"
+		}
+    },
+    {
+        "coin": "KCN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "kcn.gogpool.eu:4610"
+                ]
+            }
+        ],
+		"miners": {
+		  "ccminer": {
+			"ccurl": "stratum+tcp://%URL%",
+			"ccuser": "%WAL%",
+			"ccalgo": "sha3d",
+			"ccpass": "x",
+			"fork": "bsha3"
+		  },
+		  "srbminer": {
+			"url": "%URL%",
+			"algo": "sha3d",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%"
+		  },
+		  "bzminer": {
+			"url": "%URL%",
+			"algo": "kylacoin",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%"
+		  }
+		}
+    },
+    {
+        "coin": "KCN SOLO",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "kcn.gogpool.eu:46101"
+                ]
+            }
+        ],
+		"miners": {
+		  "ccminer": {
+			"ccurl": "stratum+tcp://%URL%",
+			"ccuser": "%WAL%",
+			"ccalgo": "sha3d",
+			"ccpass": "x",
+			"fork": "bsha3"
+		  },
+		  "srbminer": {
+			"url": "%URL%",
+			"algo": "sha3d",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%"
+		  },
+		  "bzminer": {
+			"url": "%URL%",
+			"algo": "kylacoin",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%"
+		  }
+		}
+    }
+]
