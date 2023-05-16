@@ -1,3 +1,6 @@
+##### 0.6-222@230515 2023-05-15
+*   NanoMiner v3.8.1 (Fixed some issues; See full changelog: https://github.com/nanopool/nanominer/releases/tag/v3.8.1)
+
 ##### 0.6-222@230512 2023-05-12
 *   NanoMiner v3.8.0 (Added Kaspa mining support; See full changelog: https://github.com/nanopool/nanominer/releases/tag/v3.8.0)
 
