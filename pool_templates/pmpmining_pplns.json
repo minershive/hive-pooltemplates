@@ -92,8 +92,7 @@
     "miners": {
       "_prototype": "miners_ghostrider"
     }
-  },
-  
+  },  
     {
     "coin": "DGB-Sha256d",
     "servers": [
@@ -166,8 +165,70 @@
 		"pass": "x",
                 "worker": "%WORKER_NAME%",
                 "template": "%WAL%"
-	    }
+	    },  
+    {
+    "coin": "GOLD",
+    "servers": [
+      {
+        "geo": "Melbourne, AU CPU/GPU",
+        "urls": ["au.pmpmining.com:5078"]
+      },
+      {
+        "geo": "Sao Paulo, BR CPU/GPU",
+        "urls": ["br.pmpmining.com:5078"]
+      },
+      {
+        "geo": "Frankfurt, GE CPU/GPU",
+        "urls": ["de.pmpmining.com:5078"]
+      },
+      {
+        "geo": "Virginia, USA CPU/GPU",
+        "urls": ["us-east.pmpmining.com:5078"]
+      },
+      {
+        "geo": "Singapore, SG CPU/GPU",
+        "urls": ["sg.pmpmining.com:5078"]
+      }
+
+    ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "yescryptr16",
+                "pass": "x",
+                "worker": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "--disable-cpu"
+            }
        }
-  }
+  },
+
+  {
+    "coin": "YERB",
+    "servers": [
+      {
+        "geo": "Melbourne, AU GPU/CPU",
+        "urls": ["au.pmpmining.com:5035"]
+      },
+      {
+        "geo": "Sao Paulo, BR GPU/CPU",
+        "urls": ["br.pmpmining.com:5035"]
+      },
+      {
+        "geo": "Frankfurt, GE GPU/CPU",
+        "urls": ["de.pmpmining.com:5035"]
+      },
+      {
+        "geo": "Virginia, USA GPU/CPU",
+        "urls": ["us-east.pmpmining.com:5035"]
+      },
+      {
+        "geo": "Singapore, SG GPU/CPU",
+        "urls": ["sg.pmpmining.com:5035"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ghostrider"
+    }
 
 ]
