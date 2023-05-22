@@ -6,7 +6,6 @@
       "type": "PPLNS"
     }
   },
-
   {
     "coin": "BBC",
     "servers": [
@@ -35,7 +34,6 @@
       "_prototype": "miners_ghostrider"
     }
   },
-  
   {
     "coin": "BTG",
     "servers": [
@@ -64,8 +62,7 @@
       "_prototype": "miners_zhash_btg"
     }
   },
- 
-    {
+  {
     "coin": "BTRM",
     "servers": [
       {
@@ -92,8 +89,8 @@
     "miners": {
       "_prototype": "miners_ghostrider"
     }
-  },  
-    {
+  },
+  {
     "coin": "DGB-Sha256d",
     "servers": [
       {
@@ -116,16 +113,15 @@
         "geo": "Singapore, SG ASIC Hi",
         "urls": ["sg.pmpmining.com:4008"]
       }
-
     ],
     "miners": {
-        "asicminer": {
-            "url": "stratum+tcp://%URL%",
-            "template": "%WAL%"
-            }
-        }
-    },  
-    {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%"
+      }
+    }
+  },
+  {
     "coin": "NOVO",
     "servers": [
       {
@@ -148,26 +144,27 @@
         "geo": "Singapore, SG GPU",
         "urls": ["sg.pmpmining.com:5084"]
       }
-
     ],
-        "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "sha256dt",
-                "pass": "x",
-                "worker": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "--disable-cpu"
-            },
-            "bzminer": {
-                "url": "stratum+tcp://%URL%",	        
-                "algo": "novo",
-		"pass": "x",
-                "worker": "%WORKER_NAME%",
-                "template": "%WAL%"
-	    },  
-	    
-	"coin": "GOLD",
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha256dt",
+        "pass": "x",
+        "worker": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "user_config": "--disable-cpu"
+      },
+      "bzminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "novo",
+        "pass": "x",
+        "worker": "%WORKER_NAME%",
+        "template": "%WAL%"
+      }
+    }
+  },
+  {
+    "coin": "GOLD",
     "servers": [
       {
         "geo": "Melbourne, AU CPU/GPU",
@@ -189,47 +186,44 @@
         "geo": "Singapore, SG CPU/GPU",
         "urls": ["sg.pmpmining.com:5078"]
       }
-
     ],
-        "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "yescryptr16",
-                "pass": "x",
-                "worker": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "--disable-cpu"
-            }
-       }
-  },
-
-   
-    "coin": "YERB",
-        "servers": [
-            {
-                "geo": "Melbourne, AU GPU/CPU",
-                "urls": ["au.pmpmining.com:5035"]
-            },
-            {
-                "geo": "Sao Paulo, BR GPU/CPU",
-                "urls": ["br.pmpmining.com:5035"]
-            },
-            {
-                "geo": "Frankfurt, GE GPU/CPU",
-                "urls": ["de.pmpmining.com:5035"]
-            },
-            {
-                "geo": "Virginia, USA GPU/CPU",
-                "urls": ["us-east.pmpmining.com:5035"]
-            },
-            {
-                "geo": "Singapore, SG GPU/CPU",
-                "urls": ["sg.pmpmining.com:5035"]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ghostrider"
-        }
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "yescryptr16",
+        "pass": "x",
+        "worker": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "user_config": "--disable-cpu"
+      }
     }
+  },
+  {
+    "coin": "YERB",
+    "servers": [
+      {
+        "geo": "Melbourne, AU GPU/CPU",
+        "urls": ["au.pmpmining.com:5035"]
+      },
+      {
+        "geo": "Sao Paulo, BR GPU/CPU",
+        "urls": ["br.pmpmining.com:5035"]
+      },
+      {
+        "geo": "Frankfurt, GE GPU/CPU",
+        "urls": ["de.pmpmining.com:5035"]
+      },
+      {
+        "geo": "Virginia, USA GPU/CPU",
+        "urls": ["us-east.pmpmining.com:5035"]
+      },
+      {
+        "geo": "Singapore, SG GPU/CPU",
+        "urls": ["sg.pmpmining.com:5035"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ghostrider"
+    }
+  }
 ]
-    
