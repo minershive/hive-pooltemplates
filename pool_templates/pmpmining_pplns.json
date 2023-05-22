@@ -119,9 +119,8 @@
         "url": "stratum+tcp://%URL%",
         "template": "%WAL%"
       }
-    }
-  },
-  {
+    },
+    { 
     "coin": "NOVO",
     "servers": [
       {
@@ -161,9 +160,8 @@
         "worker": "%WORKER_NAME%",
         "template": "%WAL%"
       }
-    }
-  },
-  {
+    },
+    {
     "coin": "GOLD",
     "servers": [
       {
@@ -196,9 +194,8 @@
         "template": "%WAL%",
         "user_config": "--disable-cpu"
       }
-    }
-  },
-  {
+    },
+    {
     "coin": "YERB",
     "servers": [
       {
@@ -225,5 +222,39 @@
     "miners": {
       "_prototype": "miners_ghostrider"
     }
-  }
+  },
+  {
+    "coin": "FNNC",
+    "servers": [
+      {
+        "geo": "Melbourne, AU CPU/GPU",
+        "urls": ["au.pmpmining.com:5080"]
+      },
+      {
+        "geo": "Sao Paulo, BR CPU/GPU",
+        "urls": ["br.pmpmining.com:5080"]
+      },
+      {
+        "geo": "Frankfurt, GE CPU/GPU",
+        "urls": ["de.pmpmining.com:5080"]
+      },
+      {
+        "geo": "Virginia, USA CPU/GPU",
+        "urls": ["us-east.pmpmining.com:5080"]
+      },
+      {
+        "geo": "Singapore, SG CPU/GPU",
+        "urls": ["sg.pmpmining.com:5080"]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "yescryptr16",
+        "pass": "x",
+        "worker": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "user_config": "--disable-cpu"
+      }
+    }
 ]
