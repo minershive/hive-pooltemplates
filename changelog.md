@@ -4,8 +4,7 @@
 *   HellMiner v0.58 (Required update to continue mining after upcoming PBaaS activation and merged mining; NOTES: See full changelog at https://github.com/hellcatz/hminer/releases/tag/v0.58)
 *   XMRigCC v3.3.3 *XMRig fork* (Sync with latest xmrig-6.19.2; NOTES: See full changelog at https://github.com/Bendr0id/xmrigCC/releases/tag/3.3.3)
 
-##### 0.6-222@230515 2023-05-15[
-](https://github.com/Bendr0id/xmrigCC/releases/tag/3.3.3)
+##### 0.6-222@230515 2023-05-15
 *   NanoMiner v3.8.1 (Fixed some issues; See full changelog: https://github.com/nanopool/nanominer/releases/tag/v3.8.1)
 
 ##### 0.6-222@230512 2023-05-12
