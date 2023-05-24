@@ -1,3 +1,6 @@
+##### 0.6-222@230523 2023-05-23
+*   SRBMiner-Multi v2.2.8 (Added algorithm `memehash` for CPU/GPU mining PEPEPOW coin, fee 2%; Minor improvement for algorithm `dynex` in dual mining mode; NOTES: See full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.8)
+
 ##### 0.6-222@230521 2023-05-21
 *   SRBMiner-Multi v2.2.7 (Significantly improved mining performance of dual kernels for algorithm 'dynex'; Fixed algorithms 'sha256dt', 'dynamo' broken in previous versions; Fixed algorithm 'autolykos2' in dual mining for Nvidia Turing GPUs broken in previous version; NOTES: See full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.7)
 *   BzMiner v15.1.0 (Optimized mining radiant, ironfish, nexa, novo and alph; Stabilized hashrate/auto intensity; NOTES: See full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.1.0)
