@@ -1,6 +1,6 @@
 ##### 0.6-222@230527 2023-05-27
 *   BzMiner v15.2.0 (Improved Ironfish efficiency on Nvidia GPUs; Improved Radiant efficiency on Nvidia & AMD GPUs; NOTES: See full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.2.0)
-*   [NEW] XMRig-4-XDAG v6.19.2 (As xmrig-new fork `xdag`)
+*   **NEW** XMRig-4-XDAG v6.19.2 (As xmrig-new fork `xdag`)
 
 ##### 0.6-222@230524 2023-05-24
 *   Rigel miner v1.4.8 (Minor performance `IronFish` improvements; Performance `Alephium` improvements for Turing GPUs and newer; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.8)
