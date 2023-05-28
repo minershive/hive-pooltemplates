@@ -1,0 +1,283 @@
+[
+  {
+    "pool": {
+      "name": "Pool.Coin-Miners.info",
+      "url": "https://pool.coin-miners.info",
+      "fee": 0.5,
+      "type": "PROP"
+    }
+  },
+  {
+    "coin": "PEPEW",
+    "servers": [
+      {
+        "geo": "USA EAST",
+        "urls": [
+          "us-east.coin-miners.info:5001"
+        ]
+      },
+      {
+        "geo": "EU",
+        "urls": [
+          "eu.coin-miners.info:5001"
+        ]
+      },
+      {
+        "geo": "EU2",
+        "urls": [
+          "eu2.coin-miners.info:5001"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "memehash",
+        "pass": "c=PEPEW",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+    {
+    "coin": "RXD",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "eu.coin-miners.info:7086"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_radiant",
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha512_256d_radiant",
+        "pass": "c=RXD",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-cpu"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "algo": "sha512256d",
+        "pass": "c=RXD",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "ccminer": {
+        "fork": "radiator",
+        "ccurl": "%URL%",
+        "ccalgo": "rad",
+        "ccpass": "c=RXD",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "bzminer": {
+        "url": "%URL%",
+        "algo": "radiant",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+      {
+    "coin": "RTM",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "eu.coin-miners.info:6514"
+        ]
+      }
+    ],    "miners": {
+      "_prototype": "miners_ghostrider",
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "c=RTM",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "c=RTM",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "c=RTM"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-gpu"
+      }
+    }
+  },
+        {
+    "coin": "TAFT",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "eu.coin-miners.info:6511"
+        ]
+      }
+    ],    "miners": {
+      "_prototype": "miners_ghostrider",
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "c=TAFT",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "c=TAFT",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "c=TAFT"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-gpu"
+      }
+    }
+  },
+          {
+    "coin": "BTRM",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "eu.coin-miners.info:6515"
+        ]
+      }
+    ],    "miners": {
+      "_prototype": "miners_ghostrider",
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "c=BTRM",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "c=BTRM",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "c=BTRM"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-gpu"
+      }
+    }
+  },
+            {
+    "coin": "FSC",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "eu.coin-miners.info:6516"
+        ]
+      }
+    ],    "miners": {
+      "_prototype": "miners_ghostrider",
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "c=FSC",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "c=FSC",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "c=FSC"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-gpu"
+      }
+    }
+  },
+              {
+    "coin": "CRNC",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "eu.coin-miners.info:7646"
+        ]
+      }
+    ]
+  },
+              {
+    "coin": "NOVO",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+          "eu.coin-miners.info:5511"
+        ]
+      }
+    ]
+    },
+        {
+        "coin": "DOGE",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.coin-miners.info:4688"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+    ]
