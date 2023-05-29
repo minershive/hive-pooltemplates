@@ -1,3 +1,6 @@
+##### 0.6-222@230529 2023-05-29
+*   HellMiner v0.59.1 (Fixed appling new share target and/or extranonce when receive another job from pool; NOTES: See full changelog at https://github.com/hellcatz/hminer/releases/tag/v0.59.1)
+
 ##### 0.6-222@230527 2023-05-27
 *   BzMiner v15.2.0 (Improved Ironfish efficiency on Nvidia GPUs; Improved Radiant efficiency on Nvidia & AMD GPUs; NOTES: See full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.2.0)
 *   **NEW** XMRig-4-XDAG v6.19.2 (As xmrig-new fork `xdag`)
