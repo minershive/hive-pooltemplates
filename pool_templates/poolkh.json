@@ -37,7 +37,21 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_novo"
+            "_prototype": "miners_novo",
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "sha256dt",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            
+            },
+             "bzminer": {
+                "url": "%URL%",
+                "algo": "novo",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
         }
     },
     {
