@@ -1,3 +1,6 @@
+##### 0.6-222@230602 2023-06-02
+*   NanoMiner v3.8.2 (Added support for latest `Verus` coin mainnet changes; Notes: see full changelog: https://github.com/nanopool/nanominer/releases/tag/v3.8.2)
+
 ##### 0.6-222@230529 2023-05-29
 *   HellMiner v0.59.1 (Fixed appling new share target and/or extranonce when receive another job from pool; NOTES: See full changelog at https://github.com/hellcatz/hminer/releases/tag/v0.59.1)
 
