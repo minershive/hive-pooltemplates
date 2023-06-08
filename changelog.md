@@ -1,3 +1,9 @@
+##### 0.6-222@230607 2023-06-07
+*   SRBMiner-Multi v2.2.9 (Improved mining performance on algorithm `memehash` for AMD/Nvidia/Intel GPUs; Added VerusCoin PBAAS support; NOTES: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.9)
+*   Rigel miner v1.5.0 (Add support for mining Radiant algiritahm `sha512256d`, devfee 1.0%; Tiny performance improvements on Kaspa mining; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.5.0)
+*   TeamRedMiner v0.10.13 (Added zil switch handler script for mem states, add `--use_distro_features` to enable; NOTES: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.13)
+*   XMRig-4-XDAG v6.19.3 (XMRig XDAG fork synced to v6.19.3 of original XMRig)
+
 ##### 0.6-222@230603 2023-06-03
 *   XMRig v6.19.3 (Tweaked auto-tuning for Intel CPUs; Optimization & fixes for RandomX based algos; Notes: see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.19.3)
 *   XMRig-MO v6.19.3-mo1 (XMRig MoneroOcean fork synced to v6.19.3 of original XMRig)
