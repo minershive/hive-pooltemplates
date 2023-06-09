@@ -1523,6 +1523,7 @@
 
 	"lolminer": {
 	    "algo": "KASPA",
+	    "dalgo": "KASPADUAL",
 	    "pass": "x",
 	    "port": "%URL_PORT%",
 	    "server": "%URL_HOST%",
@@ -1532,6 +1533,7 @@
 	"teamredminer": {
 	    "url": "%URL%",
 	    "algo": "kas",
+	    "dalgo": "kas",
 	    "template": "%WAL%.%WORKER_NAME%"
 	},
 
@@ -1823,5 +1825,22 @@
          "pass": "x",
          "user_config": "\"coin-type\":\"sha3d\"\n\"freq\":\"380\""
       }
-   }
+   },
+
+    "miners_randomx_xdag": {
+	"xmrig-new": {
+	    "cpu": "1",
+	    "url": "%URL%",
+	    "algo": "rx/xdag",
+	    "fork": "xdag",
+	    "pass": "%WORKER_NAME%",
+	    "template": "%WAL%"
+	},
+	"srbminer": {
+	    "url": "%URL%",
+	    "algo": "xdag",
+	    "pass": "%WORKER_NAME%",
+	    "template": "%WAL%"
+	}
+    }
 }

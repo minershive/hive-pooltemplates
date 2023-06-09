@@ -1,3 +1,38 @@
+##### 0.6-222@230607 2023-06-07
+*   SRBMiner-Multi v2.2.9 (Improved mining performance on algorithm `memehash` for AMD/Nvidia/Intel GPUs; Added VerusCoin PBAAS support; NOTES: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.9)
+*   Rigel miner v1.5.0 (Add support for mining Radiant algiritahm `sha512256d`, devfee 1.0%; Tiny performance improvements on Kaspa mining; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.5.0)
+*   TeamRedMiner v0.10.13 (Added zil switch handler script for mem states, add `--use_distro_features` to enable; NOTES: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.13)
+*   XMRig-4-XDAG v6.19.3 (XMRig XDAG fork synced to v6.19.3 of original XMRig)
+
+##### 0.6-222@230603 2023-06-03
+*   XMRig v6.19.3 (Tweaked auto-tuning for Intel CPUs; Optimization & fixes for RandomX based algos; Notes: see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.19.3)
+*   XMRig-MO v6.19.3-mo1 (XMRig MoneroOcean fork synced to v6.19.3 of original XMRig)
+
+##### 0.6-222@230602 2023-06-02
+*   NanoMiner v3.8.2 (Added support for latest `Verus` coin mainnet changes; Notes: see full changelog: https://github.com/nanopool/nanominer/releases/tag/v3.8.2)
+
+##### 0.6-222@230529 2023-05-29
+*   HellMiner v0.59.1 (Fixed appling new share target and/or extranonce when receive another job from pool; NOTES: See full changelog at https://github.com/hellcatz/hminer/releases/tag/v0.59.1)
+
+##### 0.6-222@230527 2023-05-27
+*   BzMiner v15.2.0 (Improved Ironfish efficiency on Nvidia GPUs; Improved Radiant efficiency on Nvidia & AMD GPUs; NOTES: See full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.2.0)
+*   **NEW** XMRig-4-XDAG v6.19.2 (As xmrig-new fork `xdag`)
+
+##### 0.6-222@230524 2023-05-24
+*   Rigel miner v1.4.8 (Minor performance `IronFish` improvements; Performance `Alephium` improvements for Turing GPUs and newer; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.4.8)
+
+##### 0.6-222@230523 2023-05-23
+*   SRBMiner-Multi v2.2.8 (Added algorithm `memehash` for CPU/GPU mining PEPEPOW coin, fee 2%; Minor improvement for algorithm `dynex` in dual mining mode; NOTES: See full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.8)
+
+##### 0.6-222@230521 2023-05-21
+*   SRBMiner-Multi v2.2.7 (Significantly improved mining performance of dual kernels for algorithm 'dynex'; Fixed algorithms 'sha256dt', 'dynamo' broken in previous versions; Fixed algorithm 'autolykos2' in dual mining for Nvidia Turing GPUs broken in previous version; NOTES: See full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.7)
+*   BzMiner v15.1.0 (Optimized mining radiant, ironfish, nexa, novo and alph; Stabilized hashrate/auto intensity; NOTES: See full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.1.0)
+*   HellMiner v0.58 (Required update to continue mining after upcoming PBaaS activation and merged mining; NOTES: See full changelog at https://github.com/hellcatz/hminer/releases/tag/v0.58)
+*   XMRigCC v3.3.3 *XMRig fork* (Sync with latest xmrig-6.19.2; NOTES: See full changelog at https://github.com/Bendr0id/xmrigCC/releases/tag/3.3.3)
+
+##### 0.6-222@230515 2023-05-15
+*   NanoMiner v3.8.1 (Fixed some issues; See full changelog: https://github.com/nanopool/nanominer/releases/tag/v3.8.1)
+
 ##### 0.6-222@230512 2023-05-12
 *   NanoMiner v3.8.0 (Added Kaspa mining support; See full changelog: https://github.com/nanopool/nanominer/releases/tag/v3.8.0)
 
