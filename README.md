@@ -164,6 +164,50 @@ If your pool contains SSL ports on the same domains then you can add special sec
         ]
 }
 ```
+Available such prototypes:
+Prototype | Algorithm | Notes |
+--------- | ----------| ----- |
+miners_alephium | alephium |  | 
+miners_astrobwt | astrobwt |  | 
+miners_autolykos2 | autolykos2 |  | 
+miners_autolykos2_slash_email | autolykos2_slash_email | Nanopool format | 
+miners_beamhash | beamhash |  | 
+miners_cryptonight_gpu | cryptonight_gpu |  | 
+miners_cryptonight_r | cryptonight_r |  | 
+miners_cryptonight_v8 | cryptonight_v8 |  | 
+miners_cryptonight_xhv | cryptonight_xhv |  | 
+miners_dynexsolve | dynexsolve |  | 
+miners_etchash | etchash |  | 
+miners_ethash | ethash |  | 
+miners_ethash_4g | ethash_4g |  | 
+miners_ethash_slash_email | ethash_slash_email | Nanopool format | 
+miners_firopow | firopow |  | 
+miners_ghostrider | ghostrider |  | 
+miners_hmq1725 | hmq1725 |  | 
+miners_ironfish | ironfish |  | 
+miners_kaspa | kaspa |  | 
+miners_kawpow | kawpow |  | 
+miners_kawpow_slash_email | kawpow_slash_email | Nanopool format | 
+miners_minotaurx | minotaurx |  | 
+miners_minotaurx_jiimp | minotaurx_jiimp | JIIMP format | 
+miners_nexapow | nexapow |  | 
+miners_octopus | octopus |  | 
+miners_olhash | olhash |  | 
+miners_progpow_sero | progpow_sero |  | 
+miners_progpow_zano | progpow_zano |  | 
+miners_radiant | radiant |  | 
+miners_radiant_wpass | radiant_wpass |  | 
+miners_randomhash2_with_email | randomhash2_with_email | Nanopool format | 
+miners_randomx | randomx |  | 
+miners_randomx_plus | randomx_plus |  | 
+miners_randomx_slash_email | randomx_slash_email | Nanopool format | 
+miners_randomx_worker | randomx_worker |  | 
+miners_randomx_xdag | randomx_xdag |  | 
+miners_sha3d | sha3d |  | 
+miners_ubqhash | ubqhash |  | 
+miners_verthash | verthash |  | 
+miners_verushash | verushash |  | 
+miners_zelhash | zelhash |  | 
 
 
 # Miners definitions for Hive 2.0
@@ -192,7 +236,7 @@ forks | `string[]` or `object` |  | Available forks list.<br>This can be either 
 algomap | `object` |  | Algorithms matching.<br>Keys are miner's algos and values are Hive's algos.
 fork_algo| `object` |  | Algorithms for forks.<br>Keys are fork names, values are algos.
 
-# Using prototypes
+# Using miners prototypes
 To simplify, reducing JSON size and centrally add new miners to mine a particular coin, you can use "miners prototypes"
 For example adding miners for `kawpow` algorithm vs adding all miners one-by-one it's can be done as described below:
 ```
@@ -209,6 +253,7 @@ If some miner need to override some miner option it can be done
     }
 }
 ```
+
 
 # Changelog for Hive 2.0
 
