@@ -1523,6 +1523,7 @@
 
 	"lolminer": {
 	    "algo": "KASPA",
+	    "dalgo": "KASPADUAL",
 	    "pass": "x",
 	    "port": "%URL_PORT%",
 	    "server": "%URL_HOST%",
@@ -1532,6 +1533,7 @@
 	"teamredminer": {
 	    "url": "%URL%",
 	    "algo": "kas",
+	    "dalgo": "kas",
 	    "template": "%WAL%.%WORKER_NAME%"
 	},
 
@@ -1546,7 +1548,13 @@
 	    "url": "%URL%",
 	    "algo": "kheavyhash",
 	    "template": "%WAL%.%WORKER_NAME%"
-	}
+	},
+
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "heavyhash",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
     },
 
     "miners_verushash": {
@@ -1778,6 +1786,61 @@
 	    "url": "%URL%",
 	    "algo": "ironfish",
 	    "template": "%WAL%.%WORKER_NAME%"
+	},
+
+        "gminer": {
+	    "algo": "ironfish",
+	    "port": "%URL_PORT%",
+	    "server": "%URL_HOST%",
+	    "template": "%WAL%.%WORKER_NAME%"
+	}
+    },
+
+    "miners_sha3d": {
+        "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccuser": "%WAL%",
+        "ccalgo": "sha3d",
+        "ccpass": "x",
+        "fork": "bsha3"
+      },
+
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha3d",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+
+      "bzminer": {
+        "url": "%URL%",
+        "algo": "kylacoin",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+
+      "asicminer": {
+         "url": "stratum+tcp://%URL%",
+         "template": "%WAL%.%WORKER_NAME%",
+         "pass": "x",
+         "user_config": "\"coin-type\":\"sha3d\"\n\"freq\":\"380\""
+      }
+   },
+
+    "miners_randomx_xdag": {
+	"xmrig-new": {
+	    "cpu": "1",
+	    "url": "%URL%",
+	    "algo": "rx/xdag",
+	    "fork": "xdag",
+	    "pass": "%WORKER_NAME%",
+	    "template": "%WAL%"
+	},
+	"srbminer": {
+	    "url": "%URL%",
+	    "algo": "xdag",
+	    "pass": "%WORKER_NAME%",
+	    "template": "%WAL%"
 	}
     }
 }
