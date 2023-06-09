@@ -198,10 +198,10 @@ miners_progpow_zano | progpow_zano |  |
 miners_radiant | radiant |  | 
 miners_radiant_wpass | radiant_wpass |  | 
 miners_randomhash2_with_email | randomhash2_with_email | Nanopool format | 
-miners_randomx | randomx |  | 
-miners_randomx_plus | randomx_plus |  | 
+miners_randomx | randomx | Nicehash format "wallet.worker" | 
+miners_randomx_plus | randomx_plus | xmrpool format "wallet+worker" | 
 miners_randomx_slash_email | randomx_slash_email | Nanopool format | 
-miners_randomx_worker | randomx_worker |  | 
+miners_randomx_worker | randomx_worker | worker name in password | 
 miners_randomx_xdag | randomx_xdag |  | 
 miners_sha3d | sha3d |  | 
 miners_ubqhash | ubqhash |  | 
