@@ -194,7 +194,7 @@ fork_algo| `object` |  | Algorithms for forks.<br>Keys are fork names, values ar
 
 # Using miners prototypes
 To simplify, reducing JSON size and centrally add new miners to mine a particular coin, you can use "miners prototypes"
-For example adding miners for `kawpow` algorithm vs adding all miners one-by-one it's can be done as described below:
+For example: for adding all miners which supports `kawpow` algorithm vs adding all miners one-by-one it's can be done by addind only one string `"_prototype": "miners_kawpow"` as described below:
 ```
 "miners": {
     "_prototype": "miners_kawpow"
