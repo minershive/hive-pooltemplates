@@ -49,12 +49,12 @@
             }
         ],
         "miners": {
+            "_prototype": "miners_dynexsolve",
             "srbminer": {
-                "url": "%URL%",
-                "algo": "dynex",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
                 "user_config": "--disable-cpu\n--mallob-endpoint https://mallob.eu.neuropool.net:8081"
+            },
+            "onezerominer": {
+                "user_config": "--mallob-endpoint mallob.eu.neuropool.net:8081,mallob.us.neuropool.net:8081"
             }
         }
     }
