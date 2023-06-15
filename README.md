@@ -213,7 +213,7 @@ Available such prototypes:
 Prototype | Algorithm | Notes |
 --------- | ----------| ----- |
 miners_alephium | alephium |  | 
-miners_astrobwt | astrobwt |  | 
+miners_astrobwt | astrobwt | V3 implementation | 
 miners_autolykos2 | autolykos2 |  | 
 miners_autolykos2_slash_email | autolykos2_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
 miners_beamhash | beamhash |  | 
