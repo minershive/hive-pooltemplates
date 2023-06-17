@@ -1,62 +1,7 @@
 [
-  {
-    "coin": "DERO",
-    "servers": [
-        {
-            "geo": "Europe low-end CPU",
-            "urls": [
-                "dero.miner.rocks:30181"
-            ],
-            "ssl_urls": [
-                "dero.miner.rocks:30181"
-            ],
-            "geo": "Europe modern CPU",
-            "urls": [
-                "dero.miner.rocks:30182"
-            ],
-            "ssl_urls": [
-                "dero.miner.rocks:30182"
-            ],
-            "geo": "Europe farms",
-            "urls": [
-                "dero.miner.rocks:30183"
-            ],
-            "ssl_urls": [
-                "dero.miner.rocks:30183"
-            ]
-        },
-        {
-            "geo": "Asia low-end CPU",
-            "urls": [
-                "sg.miner.rocks:30181"
-            ],
-            "ssl_urls": [
-                "sg.miner.rocks:30181"
-            ],
-            "geo": "Asia modern CPU",
-            "urls": [
-                "sg.miner.rocks:30182"
-            ],
-            "ssl_urls": [
-                "sg.miner.rocks:30182"
-            ],
-             "geo": "Asia farms",
-            "urls": [
-                "sg.miner.rocks:30183"
-            ],
-            "ssl_urls": [
-                "sg.miner.rocks:30183"
-            ]
-        }
-    ],
-    "miners": {
-       "_prototype:": "miners_astrobwt_w"
-    }
-  },
-
-  {
-    "coin": "SUMO",
-    "servers": [
+   {
+      "coin": "SUMO",
+        "servers": [
         {
             "geo": "CPU",
             "urls": [
@@ -137,53 +82,12 @@
         }
     }
   },
-  {
-    "coin": "KRB",
-    "servers": [
-        {
-            "geo": "ASICs",
-            "urls": [
-                "krb.miner.rocks:30191",
-                "krb.miner.rocks:30192",
-                "krb.miner.rocks:30193"
-            ],
-            "ssl_urls": [
-                "krb.miner.rocks:30191",
-                "krb.miner.rocks:30192",
-                "krb.miner.rocks:30193"
-            ]
-        },
-        {
-            "geo": "Nicehash only",
-            "urls": [
-                "krb.miner.rocks:30194"
-            ],
-            "ssl_urls": [
-                "krb.miner.rocks:30194"
-            ]
-        }
-    ],
-    "miners": {
-      "claymore-x": {
-        "xpools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: w=%WORKER_NAME%"
-      },
-      "xmr-stak": {
-        "url": "%URL%",
-        "pass": "w=%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "\"currency\": \"cryptonight\""
-      },
-      "asicminer": {
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
-    }
-  },
+
   {
     "coin": "MSR",
     "servers": [
         {
-            "geo": "low-end CPUand GPU",
+            "geo": "low-end CPU and GPU",
             "urls": [
                 "masari.miner.rocks:30161"
             ],
@@ -249,6 +153,7 @@
       }
     }
   },
+
   {
     "coin": "RYO",
     "servers": [
@@ -437,54 +342,7 @@
       }
     }
   },
-  {
-    "coin": "TUBE",
-    "servers": [
-        {
-            "geo": "Europe low-end GPU",
-            "urls": [
-                "bittubecash.miner.rocks:30211"
-            ],
-            "ssl_urls": [
-                "bittubecash.miner.rocks:30211"
-            ]
-        },
-        {
-            "geo": "Europe modern GPU",
-            "urls": [
-                "bittubecash.miner.rocks:30212"
-            ],
-            "ssl_urls": [
-                "bittubecash.miner.rocks:30212"
-            ]
-        },
-        {
-            "geo": "Europe multi-GPU rigs and higher",
-            "urls": [
-                "bittubecash.miner.rocks:30213"
-            ],
-            "ssl_urls": [
-                "bittubecash.miner.rocks:30213"
-            ]
-        }
-    ],
-    "miners": {
-        "gminer": {
-            "algo": "cuckaroo29b",
-            "server": "%URL_HOST%",
-            "port": "%URL_PORT%",
-            "template": "%WAL%.%WORKER_NAME%",
-            "pass": "x"
-        },
-        "lolminer": {
-            "algo": "CR29-40",
-            "server": "%URL_HOST%",
-            "port": "%URL_PORT%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%"
-        }
-    }
-  },
+
   {
     "coin": "AEON",
     "servers": [

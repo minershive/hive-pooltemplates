@@ -124,6 +124,7 @@
             }
           }
     },
+
     {
         "coin": "DNX",
         "servers": [
@@ -132,18 +133,19 @@
                 "urls": [
                     "dnx.gopool.cash:3333"
                 ]
-                }
-            ],
-            "miners": {
-                "srbminer": {
-                  "url": "%URL%",
-                  "pass": "%WORKER_NAME%",
-                  "template": "%WAL%",
-                  "algo": "dynex",
-                  "user_config": "--disable-cpu --mallob-endpoint https://mallob.gopool.cash"
-                }
-              }
-            },
+            }
+        ],
+        "miners": {
+             "_prototype": "miners_dynexsolve",
+             "srbminer": {
+                "user_config": "--disable-cpu\n--mallob-endpoint https://mallob.gopool.cash"
+             },
+             "onezerominer": {
+                "user_config": "--mallob-endpoint mallob.gopool.cash"
+             }
+        }
+    },
+
     {
         "coin": "CHN",
         "servers": [
