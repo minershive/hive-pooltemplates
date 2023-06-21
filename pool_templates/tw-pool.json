@@ -30,6 +30,17 @@
                     "stratum.tw-pool.com:10011",
                     "stratum2.tw-pool.com:10011"
                 ]
+            },
+            {
+                "geo": "ASIC/FPGA",
+                "urls": [
+                    "stratum.tw-pool.com:10005",
+                    "stratum2.tw-pool.com:10005"
+                ],
+                "ssl_urls": [
+                    "stratum.tw-pool.com:10005",
+                    "stratum2.tw-pool.com:10005"
+                ]
             }
         ],
         "miners": {
@@ -48,17 +59,6 @@
                 "ssl_urls": [
                     "stratum.tw-pool.com:20001",
                     "stratum2.tw-pool.com:20001"
-                ]
-            },
-            {
-                "geo": "AUTO (SOLO)",
-                "urls": [
-                    "stratum.tw-pool.com:20011",
-                    "stratum2.tw-pool.com:20011"
-                ],
-                "ssl_urls": [
-                    "stratum.tw-pool.com:20011",
-                    "stratum2.tw-pool.com:20011"
                 ]
             }
         ],
@@ -190,6 +190,73 @@
             "algo": "ironfish",
             "template": "%WAL%.%WORKER_NAME%"
           }
+        }
+    },
+    {
+        "coin": "OCTA",
+        "servers": [
+          {
+            "geo": "AUTO",
+            "urls": [
+                "eth.tw-pool.com:51001",
+                "eth2.tw-pool.com:51001"
+            ],
+            "ssl_urls": [
+                "eth.tw-pool.com:51001",
+                "eth2.tw-pool.com:51001"
+            ]
+          }
+        ],
+        "miners": {
+          "_prototype": "miners_ethash",
+          "lolminer": {
+            "template": "%WAL%.%WORKER_NAME%",
+            "url": "%URL%",
+            "user_config": "--ethstratum=ETHV1"
+          },
+          "rigel": {
+            "algo": "octa",
+            "url": "ethstratum+tcp://%URL%"
+          },
+          "bzminer": {
+            "algo": "octa",
+            "url": "ethstratum+tcp://%URL%"
+          },
+          "t-rex": {
+            "algo": "ethash",
+            "url": "ethstratum+tcp://%URL%"
+          },
+          "teamredminer": {
+            "algo": "ethash",
+            "url": "ethstratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
+          }
+        }
+    },
+    {
+        "coin": "PEPEW",
+        "servers": [
+          {
+            "geo": "AUTO(SOLO)",
+            "urls": [
+                "stratum.tw-pool.com:31011",
+                "stratum2.tw-pool.com:31011"
+            ],
+            "ssl_urls": [
+                "stratum.tw-pool.com:31011",
+                "stratum2.tw-pool.com:31011"
+            ]
+          }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "memehash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            }
         }
     }
 ]

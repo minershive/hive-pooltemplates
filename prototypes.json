@@ -1,51 +1,9 @@
 {
     "miners_astrobwt": {
-        "xmrig": {
-            "fork": "xmrigcc",
+        "astrominer": {
             "url": "%URL%",
-            "pass": "%WORKER_NAME%",
-            "template": "%WAL%",
-            "algo": "astrobwt"
-        },
-        "xmrig-new": {
-            "cpu": "1",
-            "url": "%URL%",
-            "algo": "astrobwt",
-            "fork": "xmrig",
-            "pass": "%WORKER_NAME%",
-            "template": "%WAL%"
-        },
-        "srbminer": {
-            "url": "%URL%",
-            "algo": "astrobwt",
-            "pass": "%WORKER_NAME%",
-            "worker": "",
-            "template": "%WAL%"
-        }
-    },
-
-    "miners_astrobwt_w": {
-        "xmrig": {
-            "fork": "xmrigcc",
-            "url": "%URL%",
-            "pass": "w=%WORKER_NAME%",
-            "template": "%WAL%",
-            "algo": "astrobwt"
-        },
-        "xmrig-new": {
-            "cpu": "1",
-            "url": "%URL%",
-            "algo": "astrobwt",
-            "fork": "xmrig",
-            "pass": "w=%WORKER_NAME%",
-            "template": "%WAL%"
-        },
-        "srbminer": {
-            "url": "%URL%",
-            "algo": "astrobwt",
-            "pass": "w=%WORKER_NAME%",
-            "worker": "",
-            "template": "%WAL%"
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "-report-realtime-hashrate"
         }
     },
 
@@ -103,7 +61,8 @@
             "pass": "x"
         },
         "gminer": {
-            "url": "%URL%",
+            "server": "%URL_HOST%",
+            "port": "%URL_PORT%",
             "algo": "octopus",
             "template": "%WAL%.%WORKER_NAME%",
             "pass": "x"
@@ -281,18 +240,6 @@
             "worker": "%WORKER_NAME%",
 	    "template": "%WAL%"
 	}
-    },
-
-    "miners_etchash_notest": {
-        "ethminer": {
-            "cuda": 1,
-            "opencl": 1,
-            "pass": "x",
-            "port": "%URL_PORT%",
-            "server": "stratum1+tcp://%URL_HOST%",
-            "template": "%WAL%.%WORKER_NAME%",
-            "user_config": "--etchash"
-        }
     },
 
     "miners_ethash_4g": {
@@ -677,46 +624,6 @@
         }
     },
 
-    "miners_cryptonight_r_hive": {
-        "xmr-stak": {
-            "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
-            "user_config": "\"currency\": \"cryptonight_r\""
-        },
-        "xmrig": {
-            "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
-            "user_config": "\"algo\": \"cn/r\""
-        },
-        "xmrig-amd": {
-            "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
-            "user_config": "\"algo\": \"cn/r\""
-        },
-        "xmrig-nvidia": {
-            "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
-            "user_config": "\"algo\": \"cn/r\""
-        },
-        "teamredminer": {
-            "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
-            "algo": "cnr"
-        },
-        "nanominer": {
-            "algo": "cryptonightr",
-            "url": "%URL%",
-            "template": "%WAL%",
-            "pass": "x",
-            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-        }
-    },
-
     "miners_cryptonight_r": {
         "xmr-stak": {
             "url": "%URL%",
@@ -975,39 +882,6 @@
             "url": "%URL%",
             "algo": "randomx",
             "pass": "%WORKER_NAME%",
-            "template": "%WAL%"
-        }
-    },
-
-    "miners_randomx_w_worker": {
-        "xmrig": {
-            "url": "%URL%",
-            "pass": "%WORKER_NAME%",
-            "template": "%WAL%",
-            "user_config": "\"algo\": \"rx/0\"\n\"donate-level\": 1\n\"donate-over-proxy\": 1"
-        },
-        "xmr-stak": {
-            "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
-            "url": "%URL%",
-            "fork": "randomx",
-            "pass": "w=%WORKER_NAME%",
-            "nvidia": "\"gpu_threads_conf\" : [],",
-            "template": "%WAL%",
-            "user_config": "\"currency\":\"randomx\""
-        },
-        "xmrig-new": {
-            "cpu": "1",
-            "url": "%URL%",
-            "algo": "rx/0",
-            "fork": "xmrig",
-            "pass": "w=%WORKER_NAME%",
-            "template": "%WAL%",
-            "user_config": "\"donate-level\": 1"
-        },
-        "nanominer": {
-            "url": "%URL%",
-            "algo": "randomx",
-            "pass": "w=%WORKER_NAME%",
             "template": "%WAL%"
         }
     },
@@ -1522,6 +1396,7 @@
 
 	"lolminer": {
 	    "algo": "KASPA",
+	    "dalgo": "KASPADUAL",
 	    "pass": "x",
 	    "port": "%URL_PORT%",
 	    "server": "%URL_HOST%",
@@ -1531,6 +1406,7 @@
 	"teamredminer": {
 	    "url": "%URL%",
 	    "algo": "kas",
+	    "dalgo": "kas",
 	    "template": "%WAL%.%WORKER_NAME%"
 	},
 
@@ -1545,7 +1421,13 @@
 	    "url": "%URL%",
 	    "algo": "kheavyhash",
 	    "template": "%WAL%.%WORKER_NAME%"
-	}
+	},
+
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "heavyhash",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
     },
 
     "miners_verushash": {
@@ -1638,7 +1520,7 @@
 	}
     },
 
-    "miners_sha512256d": {
+    "miners_radiant": {
 	"srbminer": {
 	    "url": "%URL%",
 	    "algo": "sha512_256d_radiant",
@@ -1670,7 +1552,48 @@
 	},
 
 	"gminer": {
+            "server": "%URL_HOST%",
+            "port": "%URL_PORT%",
+	    "algo": "radiant",
+	    "worker": "%WORKER_NAME%",
+	    "template": "%WAL%"
+	}
+    },
+
+    "miners_radiant_wpass": {
+	"srbminer": {
 	    "url": "%URL%",
+	    "algo": "sha512_256d_radiant",
+	    "pass": "%WORKER_NAME%",
+	    "template": "%WAL%",
+	    "user_config": "--disable-cpu"
+	},
+
+	"wildrig-multi": {
+	    "url": "%URL%",
+	    "algo": "sha512256d",
+	    "pass": "%WORKER_NAME%",
+	    "template": "%WAL%"
+	},
+
+	"ccminer": {
+	    "fork": "radiator",
+	    "ccurl": "%URL%",
+	    "ccalgo": "rad",
+	    "ccpass": "%WORKER_NAME%",
+	    "ccuser": "%WAL%"
+	},
+
+	"bzminer": {
+	    "url": "%URL%",
+	    "algo": "radiant",
+	    "worker": "%WORKER_NAME%",
+	    "template": "%WAL%"
+	},
+
+	"gminer": {
+            "server": "%URL_HOST%",
+            "port": "%URL_PORT%",
 	    "algo": "radiant",
 	    "worker": "%WORKER_NAME%",
 	    "template": "%WAL%"
@@ -1736,6 +1659,77 @@
 	    "url": "%URL%",
 	    "algo": "ironfish",
 	    "template": "%WAL%.%WORKER_NAME%"
+	},
+
+        "gminer": {
+	    "algo": "ironfish",
+	    "port": "%URL_PORT%",
+	    "server": "%URL_HOST%",
+	    "template": "%WAL%.%WORKER_NAME%"
 	}
+    },
+
+    "miners_sha3d": {
+        "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccuser": "%WAL%",
+        "ccalgo": "sha3d",
+        "ccpass": "x",
+        "fork": "bsha3"
+      },
+
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha3d",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+
+      "bzminer": {
+        "url": "%URL%",
+        "algo": "kylacoin",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+
+      "asicminer": {
+         "url": "stratum+tcp://%URL%",
+         "template": "%WAL%.%WORKER_NAME%",
+         "pass": "x",
+         "user_config": "\"coin-type\":\"sha3d\"\n\"freq\":\"380\""
+      }
+   },
+
+    "miners_randomx_xdag": {
+	"xmrig-new": {
+	    "cpu": "1",
+	    "url": "%URL%",
+	    "algo": "rx/xdag",
+	    "fork": "xdag",
+	    "pass": "%WORKER_NAME%",
+	    "template": "%WAL%"
+	},
+	"srbminer": {
+	    "url": "%URL%",
+	    "algo": "xdag",
+	    "pass": "%WORKER_NAME%",
+	    "template": "%WAL%"
+	}
+    },
+
+    "miners_dynexsolve": {
+        "onezerominer": {
+            "url": "%URL%",
+            "algo": "dynex",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "dynex",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "--disable-cpu"
+        }
     }
 }

@@ -1,0 +1,62 @@
+[
+    {
+        "pool": {
+            "name": "NeuroPool",
+            "url": "https://dynex.neuropool.net",
+            "fee": 1,
+            "type": "PROP"
+        }
+    },
+
+    {
+        "coin": "DNX",
+        "servers": [
+            {
+                "geo": "EU/Frankfurt",
+                "urls": [
+                    "dnx.eu.neuropool.net:19331"
+                ]
+            },
+            {
+                "geo": "US/Chicago",
+                "urls": [
+                    "dnx.us.neuropool.net:19331"
+                ]
+            },
+            {
+                "geo": "CA/Toronto",
+                "urls": [
+                    "dnx.ca.neuropool.net:19331"
+                ]
+            },
+            {
+                "geo": "IN/Mumbai",
+                "urls": [
+                    "dnx.in.neuropool.net:19331"
+                ]
+            },
+            {
+                "geo": "AS/Singapore",
+                "urls": [
+                    "dnx.as.neuropool.net:19331"
+                ]
+            },
+            {
+                "geo": "AU/Melbourne",
+                "urls": [
+                    "dnx.au.neuropool.net:19331"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_dynexsolve",
+            "srbminer": {
+                "user_config": "--disable-cpu\n--mallob-endpoint https://mallob.eu.neuropool.net:8081"
+            },
+            "onezerominer": {
+                "user_config": "--mallob-endpoint mallob.eu.neuropool.net:8081,mallob.us.neuropool.net:8081"
+            }
+        }
+    }
+
+]
