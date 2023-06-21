@@ -113,17 +113,25 @@
                 "urls": [
                     "pool.gopool.cash:3023"
                 ]
-            }
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "uspool.gopool.cash:3023"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "eupool.gopool.cash:3323"
+                ]
+            }                        
         ],
-        "miners": {
-            "srbminer": {
-              "url": "%URL%",
-              "pass": "x",
-              "template": "%WAL%.%WORKER_NAME%",
-              "algo": "sha512_256d_radiant"
-            }
+		"miners": {
+            "_prototype": "miners_radiant"
           }
     },
+
     {
         "coin": "DNX",
         "servers": [
@@ -132,18 +140,19 @@
                 "urls": [
                     "dnx.gopool.cash:3333"
                 ]
-                }
-            ],
-            "miners": {
-                "srbminer": {
-                  "url": "%URL%",
-                  "pass": "%WORKER_NAME%",
-                  "template": "%WAL%",
-                  "algo": "dynex",
-                  "user_config": "--disable-cpu --mallob-endpoint https://mallob.gopool.cash"
-                }
-              }
-            },
+            }
+        ],
+        "miners": {
+             "_prototype": "miners_dynexsolve",
+             "srbminer": {
+                "user_config": "--disable-cpu\n--mallob-endpoint https://mallob.gopool.cash"
+             },
+             "onezerominer": {
+                "user_config": "--mallob-endpoint mallob.gopool.cash"
+             }
+        }
+    },
+
     {
         "coin": "CHN",
         "servers": [
@@ -257,32 +266,29 @@
                 "urls": [
                     "uspool.gopool.cash:3035"
                 ]
-            }
-        ],
-        "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "sha256dt",
-                "pass": "x",
-                "worker": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "--disable-cpu"
-            }
-       }
-     },
-    {
-        "coin": "ERG",
-        "servers": [
+            },
             {
-                "geo": "BR",
-                "urls":  [ 
-                    "pool.gopool.cash:3025" 
+                "geo": "US",
+                "urls": [
+                    "eupool.gopool.cash:3735"
                 ]
             }            
         ],
         "miners": {
-            "_prototype": "miners_autolykos2"
-        }
+            "srbminer": {
+              "url": "%URL%",
+              "algo": "sha256dt",
+              "pass": "x",
+              "template": "%WAL%.%WORKER_NAME%",
+              "user_config": "--disable-cpu"
+            },
+            "bzminer": {
+              "url": "%URL%",
+              "algo": "novo",
+              "pass": "x",
+              "template": "%WAL%.%WORKER_NAME%"
+            }
+          }
     },
     {
         "coin":"YERB",

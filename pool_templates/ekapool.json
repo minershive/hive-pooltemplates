@@ -49,12 +49,12 @@
             }
         ],
         "miners": {
+            "_prototype": "miners_dynexsolve",
             "srbminer": {
-                "url": "%URL%",
-                "algo": "dynex",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
                 "user_config": "--disable-cpu\n--mallob-endpoint https://dnx.eu.ekapool.com"
+            },
+            "onezerominer": {
+                "user_config": "--mallob-endpoint dnx.eu.ekapool.com,dnx.us.ekapool.com"
             }
         }
     },

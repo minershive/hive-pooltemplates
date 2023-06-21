@@ -1,3 +1,9 @@
+##### 0.6-222@230609 2023-06-09
+*   BzMiner v15.2.1 (Significant `Ergo` efficiency improvement on Nvidia GPUs; Significant hashrate/efficiency improvement to: `ergo+radiant` and `ergo+kaspa`; Minor improvement to `Nexa` hashrate on Nvidia GPUs; Improved overall dual+ mining stability; NOTES: See full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.2.1)
+*   Rigel miner v1.5.2 (The miner crashes or produces very low hashrate when switching to ZIL mining; Fixed some `nexapow` performance regression; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.5.2)
+*   NanoMiner v3.8.3 (Improved `Kaspa` performance on RDNA3 GPUs up to 10%; Added AMD RX 7600 and others based on gfx1102 support; Fixed VerusCoin mining protocol issue; Notes: see full changelog: https://github.com/nanopool/nanominer/releases/tag/v3.8.3)
+*   XMRig-4-XDAG: fix missed CPU temp
+
 ##### 0.6-222@230607 2023-06-07
 *   SRBMiner-Multi v2.2.9 (Improved mining performance on algorithm `memehash` for AMD/Nvidia/Intel GPUs; Added VerusCoin PBAAS support; NOTES: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.2.9)
 *   Rigel miner v1.5.0 (Add support for mining Radiant algiritahm `sha512256d`, devfee 1.0%; Tiny performance improvements on Kaspa mining; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.5.0)
