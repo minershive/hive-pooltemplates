@@ -1,3 +1,7 @@
+##### 0.6-222@230621 2023-06-21
+*   Rigel miner v1.5.3 (Improve stability when switching OC in dual/triple mining for ZIL PoW window; Fixed invalid shares when mining `nexapow` on Nicehash; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.5.3)
+*   cpuMiner-Opt-JayDDee v3.22.3 (Some code optimization for AVX2, AVX512' Notes: see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.3)
+
 ##### 0.6-222@230609 2023-06-09
 *   BzMiner v15.2.1 (Significant `Ergo` efficiency improvement on Nvidia GPUs; Significant hashrate/efficiency improvement to: `ergo+radiant` and `ergo+kaspa`; Minor improvement to `Nexa` hashrate on Nvidia GPUs; Improved overall dual+ mining stability; NOTES: See full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.2.1)
 *   Rigel miner v1.5.2 (The miner crashes or produces very low hashrate when switching to ZIL mining; Fixed some `nexapow` performance regression; NOTES: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.5.2)
