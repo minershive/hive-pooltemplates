@@ -1,0 +1,70 @@
+[{
+		"pool": {
+			"name": "EVRpool.ninja",
+			"url": "https://EVRpool.ninja",
+			"fee": 1,
+			"type": "PPLNT/SOLO"
+		}
+	},
+	{
+		"coin": "EVR",
+		"servers": [{
+				"geo": "Pool USA-East:",
+				"urls": [
+					"us-east.evrpool.ninja:3333"
+				]
+			},
+			{
+				"geo": "Solo USA-East:",
+				"urls": [
+					"solo.us-east.evrpool.ninja:5555"
+				]
+			},
+			{
+				"geo": "Pool USA-West:",
+				"urls": [
+					"us-west.evrpool.ninja:3030"
+				]
+			},
+			{
+				"geo": "Solo USA-West:",
+				"urls": [
+					"solo.us-west.evrpool.ninja:5050"
+				]
+			},
+			{
+				"geo": "Pool Europe:",
+				"urls": [
+					"eu.evrpool.ninja:4040"
+				]
+			},
+			{
+				"geo": "Solo Europe:",
+				"urls": [
+					"solo.eu.evrpool.ninja:6060"
+				]
+			},
+			{
+				"geo": "Pool Asia:",
+				"urls": [
+					"asia.evrpool.ninja:7070"
+				]
+			},
+			{
+				"geo": "Solo Asia:",
+				"urls": [
+					"solo.asia.evrpool.ninja:9090"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_evrprogpow",
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "evrprogpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	}
+]

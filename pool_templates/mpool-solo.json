@@ -1,0 +1,167 @@
+[
+    {
+        "pool": {
+            "name": "MPool",
+            "url": "https://mpool.live",
+            "fee": 1,
+            "type": "SOLO"
+        }
+    },
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.mpool.live:5205"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256d",
+                "pass": "c=BTC,s=hiveos,m=solo",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "sha256d",
+                "ccpass": "c=BTC,s=hiveos,m=solo"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.mpool.live:5426"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256d",
+                "pass": "c=BCH,s=hiveos,m=solo",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "sha256d",
+                "ccpass": "c=BCH,s=hiveos,m=solo"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "LTC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.mpool.live:5167"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "scrypt",
+                "pass": "c=LTC,s=hiveos,m=solo",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "scrypt",
+                "ccpass": "c=LTC,s=hiveos,m=solo"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XEC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.mpool.live:5136"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256d",
+                "pass": "c=XEC,s=hiveos,m=solo",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "sha256d",
+                "ccpass": "c=XEC,s=hiveos,m=solo"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "KCN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.mpool.live:5271"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha3d",
+                "pass": "c=KCN,s=hiveos,m=solo",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%",
+                "ccalgo": "sha3d",
+                "ccpass": "c=KCN,s=hiveos,m=solo"
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "sha3d",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            },
+            "bzminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kylacoin",
+                "pass": "c=KCN,s=hiveos,m=solo",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

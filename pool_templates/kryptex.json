@@ -14,45 +14,14 @@
                 "geo": "Global",
                 "urls": [
                     "ethw.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "ethw.kryptex.network:8888"
                 ]
             }
         ],
-        "miners": {
-            "gminer": {
-                "algo": "ethash",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "lolminer": {
-                "algo": "ethash",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "nbminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%",
-                "user_config": "-coin %COIN%"
-            },
-            "teamredminer": {
-                "algo": "ethash",
-                "url": "%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "t-rex": {
-                "algo": "ethash",
-                "template": "%WAL%/%WORKER_NAME%",
-                "url": "%URL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
-            }
+      "miners":{
+         "_prototype":"miners_ethash"
         }
     },
     {
@@ -62,45 +31,14 @@
                 "geo": "Global",
                 "urls": [
                     "etc.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "etc.kryptex.network:8888"
                 ]
             }
         ],
-        "miners": {
-            "gminer": {
-                "algo": "etсhash",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "lolminer": {
-                "algo": "etсhash",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "nbminer": {
-                "algo": "etсhash",
-                "url": "%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%",
-                "user_config": "-coin %COIN%"
-            },
-            "teamredminer": {
-                "algo": "etсhash",
-                "url": "%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "t-rex": {
-                "algo": "etсhash",
-                "template": "%WAL%/%WORKER_NAME%",
-                "url": "%URL%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
-            }
+      "miners":{
+         "_prototype":"miners_etchash"
         }
     },
     {
@@ -110,31 +48,14 @@
                 "geo": "Global",
                 "urls": [
                     "rvn.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "rvn.kryptex.network:8888"
                 ]
             }
         ],
-        "miners": {
-            "gminer": {
-                "algo": "kawpow",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "nbminer": {
-                "algo": "kawpow",
-                "url": "%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "teamredminer": {
-                "algo": "kawpow",
-                "url": "%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "t-rex": {
-                "algo": "kawpow",
-                "template": "%WAL%/%WORKER_NAME%",
-                "url": "%URL%"
-            }
+      "miners":{
+         "_prototype":"miners_kawpow"
         }
     },
     {
@@ -144,33 +65,16 @@
                 "geo": "Global",
                 "urls": [
                     "erg.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "erg.kryptex.network:8888"
                 ]
             }
         ],
-        "miners": {
-            "gminer": {
-                "algo": "autolykos2",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "nbminer": {
-                "algo": "autolykos2",
-                "url": "%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "teamredminer": {
-                "algo": "autolykos2",
-                "url": "%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "t-rex": {
-                "algo": "autolykos2",
-                "template": "%WAL%/%WORKER_NAME%",
-                "url": "%URL%"
-            }
+      "miners":{
+         "_prototype":"miners_autolykos2"
         }
-    }, 
+    },
     {
         "coin": "UBQ",
         "servers": [
@@ -178,24 +82,99 @@
                 "geo": "Global",
                 "urls": [
                     "ubq.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "ubq.kryptex.network:8888"
+                ]
+            }
+        ],
+      "miners":{
+         "_prototype":"miners_ubqhash"
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "xmr.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "xmr.kryptex.network:8888"
+                ]
+            }
+        ],
+      "miners":{
+         "_prototype":"miners_randomx"
+        }
+    },
+    {
+        "coin": "KAS",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "kas.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "kas.kryptex.network:8888"
+                ]
+            }
+        ],
+      "miners":{
+         "_prototype":"miners_kaspa"
+        }
+    },
+    {
+        "coin": "NEXA",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "nexa.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "nexa.kryptex.network:8888"
+                ]
+            }
+        ],
+      "miners":{
+         "_prototype":"miners_nexapow"
+        }
+    },
+    {
+        "coin": "IRON",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "iron.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "iron.kryptex.network:8888"
                 ]
             }
         ],
         "miners": {
-            "lolminer": {
-                "algo": "ubqhash",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WALLET: %WAL%/%WORKER_NAME%",
-                "user_config": "-coin %COIN%"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%/%WORKER_NAME%"
-            }
+            "_prototype": "miners_ironfish"
         }
-    }
+    },
+    {
+        "coin": "CFX",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "cfx.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "cfx.kryptex.network:8888"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_octopus"
+        }
+    }    
 ]

@@ -1,0 +1,75 @@
+[
+  {
+    "pool": {
+      "url": "https://raptoreum.zone",
+      "name": "Raptoreum.zone",
+      "fee": 0.75,
+      "type": "PPLNT, SOLO"
+    }
+  },
+  {
+    "coin": "RTM",
+    "servers": [
+      {
+        "geo": "Europe (Germany)",
+        "urls": [
+          "europe.raptoreum.zone:3333"
+        ],
+        "ssl_urls": [
+          "europe.raptoreum.zone:4444"
+        ]
+      },
+      {
+        "geo": "USA-1 (East Coast)",
+        "urls": [
+          "usa-east.raptoreum.zone:3333"
+        ],
+        "ssl_urls": [
+          "usa-east.raptoreum.zone:4444"
+        ]
+      },
+      {
+        "geo": "USA-2 (West Coast)",
+        "urls": [
+          "usa-west.raptoreum.zone:3333"
+        ],
+        "ssl_urls": [
+          "usa-west.raptoreum.zone:4444"
+        ]
+      },
+      {
+        "geo": "Asia (Singapore)",
+        "urls": [
+          "asia.raptoreum.zone:3333"
+        ],
+        "ssl_urls": [
+          "asia.raptoreum.zone:4444"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcps://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "x",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
+      }
+    }
+  }
+]

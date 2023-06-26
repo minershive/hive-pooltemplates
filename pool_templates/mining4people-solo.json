@@ -1,0 +1,1653 @@
+[
+  {
+    "pool": {
+      "name": "Mining4people.com",
+      "url": "https://mining4people.com",
+      "type": "SOLO"
+    }
+  },
+  {
+    "coin": "ALT",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:3435"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:23435"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:13435"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:33435"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:3435"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:23435"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:13435"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:33435"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:3435"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:23435"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:13435"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:33435"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:3435"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:23435"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:13435"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:33435"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:3435"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:23435"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:13435"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:33435"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ethash",
+      "claymore": {
+        "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+        "claymore_user_config": "-allcoins %COIN% -allpools 0 -showdiff 1"
+      },
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%"
+      },
+      "phoenixminer": {
+        "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+        "user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
+      },
+      "finminer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+      },
+      "bminer": {
+        "url": "%URL%",
+        "algo": "ethash",
+        "template": "%WAL%",
+        "pass": "x"
+      },
+      "nanominer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+      },
+      "teamredminer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "x",
+        "user_config": "--temp_limit=75 --temp_resume=65"
+      },
+      "tt-miner": {
+        "url": "%URL%",
+        "algo": "ETHASH",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "-RH\n"
+      },
+      "lolminer": {
+        "algo": "ETHASH",
+        "template": "%WAL%.%WORKER_NAME%",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "user_config": ""
+      },
+      "t-rex": {
+        "algo": "ethash",
+        "template": "%WAL%.%WORKER_NAME%",
+        "server": "%URL%",
+        "pass": "x"
+      },
+      "gminer": {
+        "algo": "ethash",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": ""
+      }
+    }
+  },
+  {
+    "coin": "BCDX",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:3315"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:23315"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:13315"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:33315"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:3315"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:23315"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:13315"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:33315"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:3315"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:23315"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:13315"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:33315"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:3315"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:23315"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:13315"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:33315"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:3315"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:23315"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:13315"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:33315"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "BZX",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:3374"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:23374"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:13374"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:33374"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:3374"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:23374"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:13374"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:33374"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:3374"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:23374"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:13374"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:33374"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:3374"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:23374"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:13374"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:33374"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:3374"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:23374"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:13374"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:33374"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccuser": "%WAL%",
+        "ccalgo": "lyra2z",
+        "ccpass": "x"
+      },
+      "sgminer-gm": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "lyra2z",
+        "pass": "x",
+        "template": "%WAL%",
+        "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
+      },
+      "TeamRedMiner": {
+        "url": "%URL%",
+        "algo": "lyra2z",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "T-Rex Miner": {
+        "ver": "0.19.14-cuda111",
+        "url": "%URL%",
+        "algo": "lyra2z",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "CCC",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:3452"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:23452"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:13452"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:33452"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:3452"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:23452"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:13452"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:33452"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:3452"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:23452"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:13452"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:33452"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:3452"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:23452"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:13452"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:33452"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:3452"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:23452"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:13452"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:33452"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow",
+      "ethminer": {
+        "fork": "kawpowminer",
+        "cuda": 1,
+        "opencl": 0,
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "kawpow"
+      },
+      "nanominer": {
+        "algo": "kawpow",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+      },
+      "ccminer": {
+        "fork": "enemy",
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "kawpow",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "gminer": {
+        "algo": "kawpow",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "bminer": {
+        "url": "%URL%",
+        "algo": "raven",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "tt-miner": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "kawpow",
+        "user_config": "-coin %COIN%"
+      },
+      "damominer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "rvn",
+        "worker": "%WORKER_NAME%",
+        "template": "%WAL%"
+      },
+      "teamredminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": ""
+      },
+      "miniz": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "CHTA",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:3372"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:23372"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:13372"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:33372"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:3372"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:23372"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:13372"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:33372"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:3372"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:23372"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:13372"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:33372"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:3372"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:23372"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:13372"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:33372"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:3372"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:23372"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:13372"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:33372"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "TAFT",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:4165"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:24165"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:14165"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:34165"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:4165"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:24165"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:14165"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:34165"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:4165"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:24165"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:14165"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:34165"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:4165"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:24165"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:14165"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:34165"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:4165"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:24165"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:14165"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:34165"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ghostrider",
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "x",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-gpu"
+      }
+    }
+  },
+  {
+    "coin": "Elh",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:4172"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:24172"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:14172"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:34172"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:4172"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:24172"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:14172"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:34172"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:4172"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:24172"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:14172"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:34172"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:4172"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:24172"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:14172"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:34172"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:4172"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:24172"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:14172"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:34172"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ethash",
+      "claymore": {
+        "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+        "claymore_user_config": "-allcoins %COIN% -allpools 0 -showdiff 1"
+      },
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%"
+      },
+      "phoenixminer": {
+        "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+        "user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
+      },
+      "finminer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+      },
+      "bminer": {
+        "url": "%URL%",
+        "algo": "ethash",
+        "template": "%WAL%",
+        "pass": "x"
+      },
+      "nanominer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+      },
+      "teamredminer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "x",
+        "user_config": "--temp_limit=75 --temp_resume=65"
+      },
+      "tt-miner": {
+        "url": "%URL%",
+        "algo": "ETHASH",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "-RH\n"
+      },
+      "lolminer": {
+        "algo": "ETHASH",
+        "template": "%WAL%.%WORKER_NAME%",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "user_config": ""
+      },
+      "t-rex": {
+        "algo": "ethash",
+        "template": "%WAL%.%WORKER_NAME%",
+        "server": "%URL%",
+        "pass": "x"
+      },
+      "gminer": {
+        "algo": "ethash",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": ""
+      }
+    }
+  },
+  {
+    "coin": "OCV",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:3379"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:23379"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:13379"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:33379"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:3379"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:23379"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:13379"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:33379"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:3379"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:23379"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:13379"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:33379"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:3379"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:23379"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:13379"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:33379"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:3379"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:23379"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:13379"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:33379"
+        ]
+      }
+    ]
+  },
+  {
+    "coin": "OBTC",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:3728"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:23728"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:13728"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:33728"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:3728"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:23728"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:13728"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:33728"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:3728"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:23728"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:13728"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:33728"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:3728"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:23728"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:13728"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:33728"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:3728"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:23728"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:13728"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:33728"
+        ]
+      }
+    ],
+    "miners": {
+      "cryptodredge": {
+        "url": "%URL%",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "algo": "heavyhash"
+      },
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "heavyhash",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%",
+        "fork": "suprminer"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "heavyhash",
+        "pass": "x"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "heavyhash",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "x"
+      }
+    }
+  },
+  {
+    "coin": "GRAMS",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:4075"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:24075"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:14075"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:34075"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:4075"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:24075"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:14075"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:34075"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:4075"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:24075"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:14075"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:34075"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:4075"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:24075"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:14075"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:34075"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:4075"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:24075"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:14075"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:34075"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ethash",
+      "claymore": {
+        "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+        "claymore_user_config": "-allcoins %COIN% -allpools 0 -showdiff 1"
+      },
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%"
+      },
+      "phoenixminer": {
+        "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+        "user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
+      },
+      "finminer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+      },
+      "bminer": {
+        "url": "%URL%",
+        "algo": "ethash",
+        "template": "%WAL%",
+        "pass": "x"
+      },
+      "nanominer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+      },
+      "teamredminer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "x",
+        "user_config": "--temp_limit=75 --temp_resume=65"
+      },
+      "tt-miner": {
+        "url": "%URL%",
+        "algo": "ETHASH",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "-RH\n"
+      },
+      "lolminer": {
+        "algo": "ETHASH",
+        "template": "%WAL%.%WORKER_NAME%",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "user_config": ""
+      },
+      "t-rex": {
+        "algo": "ethash",
+        "template": "%WAL%.%WORKER_NAME%",
+        "server": "%URL%",
+        "pass": "x"
+      },
+      "gminer": {
+        "algo": "ethash",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": ""
+      }
+    }
+  },
+  {
+    "coin": "PPC",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:3533"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:23533"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:13533"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:33533"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:3533"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:23533"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:13533"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:33533"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:3533"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:23533"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:13533"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:33533"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:3533"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:23533"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:13533"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:33533"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:3533"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:23533"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:13533"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:33533"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "PEPEW",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:4178"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:24178"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:14178"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:34178"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:4178"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:24178"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:14178"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:34178"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:4178"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:24178"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:14178"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:34178"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:4178"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:24178"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:14178"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:34178"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:4178"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:24178"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:14178"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:34178"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "memehash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "RBL",
+    "servers": [
+      {
+        "geo": "USA SOLO LOW vardiff start",
+        "urls": [
+          "us.mining4people.com:4182"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:24182"
+        ]
+      },
+      {
+        "geo": "USA SOLO HIGH vardiff start",
+        "urls": [
+          "us.mining4people.com:14182"
+        ],
+        "ssl_urls": [
+          "us.mining4people.com:34182"
+        ]
+      },
+      {
+        "geo": "Germany SOLO LOW vardiff start",
+        "urls": [
+          "de.mining4people.com:4182"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:24182"
+        ]
+      },
+      {
+        "geo": "Germany SOLO HIGH vardiff start",
+        "urls": [
+          "de.mining4people.com:14182"
+        ],
+        "ssl_urls": [
+          "de.mining4people.com:34182"
+        ]
+      },
+      {
+        "geo": "Finland SOLO LOW vardiff start",
+        "urls": [
+          "fi.mining4people.com:4182"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:24182"
+        ]
+      },
+      {
+        "geo": "Finland SOLO HIGH vardiff start",
+        "urls": [
+          "fi.mining4people.com:14182"
+        ],
+        "ssl_urls": [
+          "fi.mining4people.com:34182"
+        ]
+      },
+      {
+        "geo": "Australia SOLO LOW vardiff start",
+        "urls": [
+          "au.mining4people.com:4182"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:24182"
+        ]
+      },
+      {
+        "geo": "Australia SOLO HIGH vardiff start",
+        "urls": [
+          "au.mining4people.com:14182"
+        ],
+        "ssl_urls": [
+          "au.mining4people.com:34182"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO LOW vardiff start",
+        "urls": [
+          "br.mining4people.com:4182"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:24182"
+        ]
+      },
+      {
+        "geo": "Brazil SOLO HIGH vardiff start",
+        "urls": [
+          "br.mining4people.com:14182"
+        ],
+        "ssl_urls": [
+          "br.mining4people.com:34182"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "pool": {
+            "name": "DeepMinerz",
+            "url": "https://pool.deepminerz.com/",
+            "fee": 1,
+            "type": "PROP"
+        }
+    },
+
+    {
+        "coin": "DNX",
+        "servers": [
+            {
+                "geo": "UK/London, Low diff",
+                "urls": [
+                    "pool.deepminerz.com:3333"
+                ],
+                "ssl_urls": [
+                    "pool.deepminerz.com:9850"
+                ]
+            },
+            {
+                "geo": "UK/London, Mid diff",
+                "urls": [
+                    "pool.deepminerz.com:4444"
+                ],
+                "ssl_urls": [
+                    "pool.deepminerz.com:9850"
+                ]
+            },
+            {
+                "geo": "UK/London, High diff",
+                "urls": [
+                    "pool.deepminerz.com:5555"
+                ],
+                "ssl_urls": [
+                    "pool.deepminerz.com:9850"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_dynexsolve",
+            "srbminer": {
+                "user_config": "--disable-cpu\n--mallob-endpoint mallob.deepminerz.com:9000"
+            },
+            "onezerominer": {
+                "user_config": "--mallob-endpoint mallob.deepminerz.com:9000"
+            }
+        }
+    }
+]
