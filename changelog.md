@@ -1,3 +1,9 @@
+##### 0.6-222@230626 2023-06-26
+*   SRBMiner-Multi v2.3.0 (Improved performance on mining Dynex coin for AMD/NVIDIA/INTEL GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.0)
+*   BzMiner v15.3.0 (Significant improvement to +ZIL stability; Improved overall stability for multi mining; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.3.0)
+*   TT-Miner v2023.2.2 (Added ZIL mining; Added ALPH/Blake3; Notes: see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2023.2.2)
+*   AstroMiner v1.9.2.R4 (Improved the hashrate by 2-2.5%; Notes: see full changelog at https://github.com/dero-am/astrobwt-miner/releases/tag/V1.9.2.R4)
+
 ##### 0.6-222@230621 2023-06-21
 *   Rigel miner v1.5.3 (Improve stability when switching OC in dual/triple mining for ZIL PoW window; Fixed invalid shares when mining `nexapow` on Nicehash; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.5.3)
 *   cpuMiner-Opt-JayDDee v3.22.3 (Some code optimization for AVX2, AVX512' Notes: see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.3)
