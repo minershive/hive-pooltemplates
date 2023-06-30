@@ -1,3 +1,8 @@
+##### 0.6-222@230630 2023-06-30
+*   BzMiner v15.4.0 (Added support mining XNA/Neurai and CLORE coins; Fixed low ZIL/ETC/ETHW/OCTA hashrate; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.4.0)
+*   Rigel miner v1.6.0 (Add `autolykos2` algorithm with supporting dual ERG+RXD and triple ERG+RXD+ZIL mining modes, devfee 1.0%; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.0)
+*   AstroMiner v1.9.2.R5 (Introducing fine-tune engine 3 with param `-ft 3` improves performance on some chips; Notes: see full changelog at https://github.com/dero-am/astrobwt-miner/releases/tag/V1.9.2.R5)
+
 ##### 0.6-222@230626 2023-06-26
 *   SRBMiner-Multi v2.3.0 (Improved performance on mining Dynex coin for AMD/NVIDIA/INTEL GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.0)
 *   BzMiner v15.3.0 (Significant improvement to +ZIL stability; Improved overall stability for multi mining; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.3.0)
