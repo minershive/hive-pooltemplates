@@ -1,3 +1,10 @@
+##### 0.6-222@230704 2023-07-04
+*   Rigel miner v1.6.1 (Added dual mining mode `ERG+KAS` and triple `ERG+KAS+ZIL` mining support; Added `--autolykos2-prebuild` parameter to enable/disable dataset prebuild; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.1)
+*   NanoMiner v3.8.4 (Fixed DAG-based algorithms on AMD RX 7600; Notes: see full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.8.4)
+*   XMRig v6.20.0 (Added API rebind polling; Added Zephyr coin support for solo mining; Notes: see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.20.0)
+*   XMRig-MO v6.20.0-mo1 (Synced with XMRig v6.20.0 code; Notes: see full changelog at ttps://github.com/MoneroOcean/xmrig/releases/tag/v6.20.0-mo1)
+*   cpuMiner-Opt-rplant v5.0.33a (Add `memehashv2` algo; Notes: see full changelog at https://github.com/rplant8/cpuminer-opt-rplant/releases/tag/5.0.33a)
+
 ##### 0.6-222@230630 2023-06-30
 *   BzMiner v15.4.0 (Added support mining XNA/Neurai and CLORE coins; Fixed low ZIL/ETC/ETHW/OCTA hashrate; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.4.0)
 *   Rigel miner v1.6.0 (Add `autolykos2` algorithm with supporting dual ERG+RXD and triple ERG+RXD+ZIL mining modes, devfee 1.0%; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.0)
