@@ -3,27 +3,27 @@
     "pool": {
       "name": "Pool.Coin-Miners.info",
       "url": "https://pool.coin-miners.info",
-      "fee": 0.5,
-      "type": "SOLO"
+      "fee": 1,
+      "type": "PROP"
     }
   },
   {
     "coin": "PEPEW",
     "servers": [
       {
-        "geo": "USA EAST",
+        "geo": "North America",
         "urls": [
-          "us-east.coin-miners.info:5001"
+          "na.coin-miners.info:5001"
         ]
       },
       {
-        "geo": "EU",
+        "geo": "Europe",
         "urls": [
           "eu.coin-miners.info:5001"
         ]
       },
       {
-        "geo": "EU2",
+        "geo": "Europe2",
         "urls": [
           "eu2.coin-miners.info:5001"
         ]
@@ -31,18 +31,24 @@
     ],
     "miners": {
       "srbminer": {
-        "url": "%URL%",
+        "url": "stratum+tcp://%URL%",
         "algo": "memehash",
-        "pass": "c=PEPEW,m=solo",
+        "pass": "m=solo",
         "template": "%WAL%.%WORKER_NAME%"
       }
     }
   },
-    {
+  {
     "coin": "RXD",
     "servers": [
       {
-        "geo": "EU",
+        "geo": "North America",
+        "urls": [
+          "na.coin-miners.info:7086"
+        ]
+      },
+      {
+        "geo": "Europe",
         "urls": [
           "eu.coin-miners.info:7086"
         ]
@@ -51,250 +57,259 @@
     "miners": {
       "_prototype": "miners_radiant",
       "srbminer": {
-        "url": "%URL%",
+        "url": "stratum+tcp://%URL%",
         "algo": "sha512_256d_radiant",
-        "pass": "c=RXD,m=solo",
+        "pass": "m=solo",
         "template": "%WAL%.%WORKER_NAME%",
         "user_config": "--disable-cpu"
       },
       "wildrig-multi": {
-        "url": "%URL%",
+        "url": "stratum+tcp://%URL%",
         "algo": "sha512256d",
-        "pass": "c=RXD,m=solo",
+        "pass": "m=solo",
         "template": "%WAL%.%WORKER_NAME%"
       },
       "ccminer": {
         "fork": "radiator",
-        "ccurl": "%URL%",
+        "ccurl": "stratum+tcp://%URL%",
         "ccalgo": "rad",
-        "ccpass": "c=RXD,m=solo",
+        "ccpass": "m=solo",
         "ccuser": "%WAL%.%WORKER_NAME%"
       },
       "bzminer": {
-        "url": "%URL%",
+        "url": "stratum+tcp://%URL%",
         "algo": "radiant",
-        "pass": "c=RXD,m=solo",
-        "template": "%WAL%.%WORKER_NAME%"
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "m=solo"
       }
     }
   },
-      {
+  {
     "coin": "RTM",
     "servers": [
       {
-        "geo": "EU",
+        "geo": "Europe",
         "urls": [
           "eu.coin-miners.info:6514"
         ]
       }
-    ],    "miners": {
+    ],
+    "miners": {
       "_prototype": "miners_ghostrider",
       "cpuminer-opt": {
         "url": "stratum+tcp://%URL%",
         "template": "%WAL%.%WORKER_NAME%",
         "algo": "gr",
-        "pass": "c=RTM,m=solo",
+        "pass": "m=solo",
         "max-temp": 0,
         "fork": "gr"
       },
       "xmrig-new": {
-        "url": "%URL%",
+        "url": "stratum+tcp://%URL%",
         "template": "%WAL%.%WORKER_NAME%",
         "algo": "ghostrider",
-        "pass": "c=RTM,m=solo",
+        "pass": "m=solo",
         "cpu": "1",
         "fork": "xmrig"
       },
       "wildrig-multi": {
-        "url": "%URL%",
+        "url": "stratum+tcp://%URL%",
         "template": "%WAL%.%WORKER_NAME%",
         "algo": "ghostrider",
-        "pass": "c=RTM,m=solo"
+        "pass": "m=solo"
       },
       "srbminer": {
-        "url": "%URL%",
+        "url": "stratum+tcp://%URL%",
         "algo": "ghostrider",
-        "pass": "c=RTM,m=solo",
         "template": "%WAL%.%WORKER_NAME%",
+        "pass": "m=solo",
         "user_config": "--disable-gpu"
       }
     }
   },
-        {
-    "coin": "TAFT",
+  {
+    "coin": "PEPE2",
     "servers": [
       {
-        "geo": "EU",
+        "geo": "Singapore",
         "urls": [
-          "eu.coin-miners.info:6511"
+          "sg.coin-miners.info:5001"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "na.coin-miners.info:4200"
+        ]
+      },
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.coin-miners.info:4200"
         ]
       }
-    ],    "miners": {
-      "_prototype": "miners_ghostrider",
+    ],
+    "miners": {
       "cpuminer-opt": {
         "url": "stratum+tcp://%URL%",
         "template": "%WAL%.%WORKER_NAME%",
-        "algo": "gr",
-        "pass": "c=TAFT,m=solo",
-        "max-temp": 0,
-        "fork": "gr"
+        "algo": "memehashv2",
+        "pass": "m=solo",
+        "fork": "rplant"
       },
-      "xmrig-new": {
-        "url": "%URL%",
+      "custom": {
+        "url": "stratum+tcp://%URL%",
+        "miner": "wildrig-multi",
         "template": "%WAL%.%WORKER_NAME%",
-        "algo": "ghostrider",
-        "pass": "c=TAFT,m=solo",
-        "cpu": "1",
-        "fork": "xmrig"
-      },
-      "wildrig-multi": {
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "ghostrider",
-        "pass": "c=TAFT,m=solo"
-      },
-      "srbminer": {
-        "url": "%URL%",
-        "algo": "ghostrider",
-        "pass" : "c=TAFT,m=solo",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "--disable-gpu"
+        "algo": "memehashv2",
+        "pass": "m=solo",
+        "install_url": "https://github.com/andru-kun/wildrig-multi/releases/download/0.36.7/custom-raveos-wildrig-0.36.7.zip"
       }
     }
   },
-          {
+  {
     "coin": "BTRM",
     "servers": [
       {
-        "geo": "EU",
+        "geo": "North America",
+        "urls": [
+          "na.coin-miners.info:6515"
+        ]
+      },
+      {
+        "geo": "Europe",
         "urls": [
           "eu.coin-miners.info:6515"
         ]
       }
-    ],    "miners": {
-      "_prototype": "miners_ghostrider",
+    ],
+    "miners": {
       "cpuminer-opt": {
         "url": "stratum+tcp://%URL%",
         "template": "%WAL%.%WORKER_NAME%",
         "algo": "gr",
-        "pass": "c=BTRM,m=solo",
+        "pass": "m=solo",
         "max-temp": 0,
         "fork": "gr"
       },
       "xmrig-new": {
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "ghostrider",
-        "pass": "c=BTRM,m=solo",
-        "cpu": "1",
-        "fork": "xmrig"
-      },
-      "wildrig-multi": {
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "ghostrider",
-        "pass": "c=BTRM,m=solo"
-      },
-      "srbminer": {
-        "url": "%URL%",
-        "algo": "ghostrider",
-        "pass": "c=BTRM,m=solo",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "--disable-gpu"
-      }
-    }
-  },
-            {
-    "coin": "FSC",
-    "servers": [
-      {
-        "geo": "EU",
-        "urls": [
-          "eu.coin-miners.info:6516"
-        ]
-      }
-    ],    "miners": {
-      "_prototype": "miners_ghostrider",
-      "cpuminer-opt": {
         "url": "stratum+tcp://%URL%",
         "template": "%WAL%.%WORKER_NAME%",
-        "algo": "gr",
-        "pass": "c=FSC,m=solo",
-        "max-temp": 0,
-        "fork": "gr"
-      },
-      "xmrig-new": {
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
         "algo": "ghostrider",
-        "pass": "c=FSC,m=solo",
+        "pass": "m=solo",
         "cpu": "1",
         "fork": "xmrig"
       },
       "wildrig-multi": {
-        "url": "%URL%",
+        "url": "stratum+tcp://%URL%",
         "template": "%WAL%.%WORKER_NAME%",
         "algo": "ghostrider",
-        "pass": "c=FSC,m=solo"
+        "pass": "m=solo"
       },
       "srbminer": {
-        "url": "%URL%",
+        "url": "stratum+tcp://%URL%",
         "algo": "ghostrider",
-        "pass": "c=FSC,m=solo",
         "template": "%WAL%.%WORKER_NAME%",
+        "pass": "m=solo",
         "user_config": "--disable-gpu"
       }
     }
   },
-              {
+  {
     "coin": "CRNC",
     "servers": [
       {
-        "geo": "EU",
+        "geo": "North America",
+        "urls": [
+          "na.coin-miners.info:7646"
+        ]
+      },
+      {
+        "geo": "Europe",
         "urls": [
           "eu.coin-miners.info:7646"
         ]
       }
-    ], 
-       "miners": {
-	        "_prototype": "miners_yespowerLTNCG",
-         "pass" : "c=CRNC,m=solo",
-         "template": "%WAL%.%WORKER_NAME%"
-            }
+    ],
+      "srbminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "yespowerltncg",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "m=solo",
+        "user_config": "--disable-gpu"
+      }
   },
-              {
+  {
     "coin": "NOVO",
     "servers": [
       {
-        "geo": "EU",
+        "geo": "North America",
+        "urls": [
+          "na.coin-miners.info:5511"
+        ]
+      },
+      {
+        "geo": "Europe",
         "urls": [
           "eu.coin-miners.info:5511"
         ]
       }
     ],
-    
-        "miners": {
-	 "_prototype": "miners_sha256dt",
-         "pass" : "c=NOVO,m=solo",
-         "template": "%WAL%.%WORKER_NAME%"
-            }
-    },
-        {
-        "coin": "DOGE",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "eu.coin-miners.info:4688"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "pass" : "c=DOGE,m=solo",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
+      "srbminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "sha256dt",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "m=solo",
+        "user_config": "--disable-gpu"
+      }
+  },
+  {
+    "coin": "SKY",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.coin-miners.info:5100"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "urls": [
+          "sg.coin-miners.info:5100"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "na.coin-miners.info:5100"
+        ]
+      }
+    ],
+    "miners": {
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "skydoge",
+        "pass": "m=solo",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
     }
-    ]
+  },
+  {
+    "coin": "DOGE",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.coin-miners.info:4688"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "m=solo"
+      }
+    }
+  }
+]
