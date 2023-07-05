@@ -1,3 +1,7 @@
+##### 0.6-222@230705 2023-07-05
+*   WildRig-Multi v0.36.7 (Added `memehashv2` algo support; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.7)
+*   TT-Miner: fixed config generator
+
 ##### 0.6-222@230704 2023-07-04
 *   Rigel miner v1.6.1 (Added dual mining mode `ERG+KAS` and triple `ERG+KAS+ZIL` mining support; Added `--autolykos2-prebuild` parameter to enable/disable dataset prebuild; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.1)
 *   NanoMiner v3.8.4 (Fixed DAG-based algorithms on AMD RX 7600; Notes: see full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.8.4)
