@@ -1,3 +1,8 @@
+##### 0.6-222@230706 2023-07-06
+*   XMRig-XDAG v6.20.0 (merge code with original master XMRig v6.20.0)
+*   XMRig-MO v6.20.0-mo1a (Workaround for "Segmentation fault" error on algo benchmarking appeared in v6.20.0-mo1)
+*   Rigel miner: fixed stats issue
+
 ##### 0.6-222@230705 2023-07-05
 *   WildRig-Multi v0.36.7 (Added `memehashv2` algo support; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.7)
 *   TT-Miner: fixed config generator
