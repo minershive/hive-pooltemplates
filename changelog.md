@@ -1,6 +1,5 @@
 ##### 0.6-222@230705 2023-07-05
 *   WildRig-Multi v0.36.7 (Added `memehashv2` algo support; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.7)
-*   Rigel miner: fixed some stats issues
 *   TT-Miner: fixed config generator
 
 ##### 0.6-222@230704 2023-07-04
