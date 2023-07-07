@@ -1,3 +1,8 @@
+##### 0.6-222@230707 2023-07-07
+*   GMiner v3.41 (Add support ZIL mining on epoch #1 for non ZMP protocol)
+*   Rigel miner v1.6.2 (Cache DAG for epoch 1, following ZIL epoch change; Add `--nexapow-small-lut` `on`/`off` parameter to enforce using small lookup tables; Fixed `unexpected EOF` error when mining ETC on Nicehash; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.2)
+*   WildRig-Multi v0.36.8 (Improved `memehashv2` algo support for AMD RDNA3 and Nvidia GPUs)
+
 ##### 0.6-222@230706 2023-07-06
 *   XMRig-XDAG v6.20.0 (merge code with original master XMRig v6.20.0)
 *   XMRig-MO v6.20.0-mo1a (Workaround for "Segmentation fault" error on algo benchmarking appeared in v6.20.0-mo1)
