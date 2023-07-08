@@ -1,3 +1,8 @@
+##### 0.6-222@230708 2023-07-08
+*   BzMiner v15.4.1 (Fixes ZIL epoch 1 issue; Improved time to ZIL window status; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.4.1)
+*   TeamRedMiner v0.10.14 (Fixed ZIL mining on epoch 1; Notes: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.14)
+*   WildRig-Multi v0.36.10 (Improved `memehashv2` on Nvidia GPUs and AMD Polaris/Vega GPUs; Fixed low hashrate of `memehashv2` on AMD RDNA GPUs; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.10)
+
 ##### 0.6-222@230707 2023-07-07
 *   GMiner v3.41 (Add support ZIL mining on epoch #1 for non ZMP protocol)
 *   Rigel miner v1.6.2 (Cache DAG for epoch 1, following ZIL epoch change; Add `--nexapow-small-lut` `on`/`off` parameter to enforce using small lookup tables; Fixed `unexpected EOF` error when mining ETC on Nicehash; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.2)
