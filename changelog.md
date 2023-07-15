@@ -1,3 +1,44 @@
+##### 0.6-222@230711 2023-07-11
+*   lolMiner v1.76a (Fixed some bugs related to ZIL mining; NOTES: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.76a)
+*   TeamBlackMiner v1.95 (Added support for ZIL epoch change; NOTES: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.95)
+
+##### 0.6-222@230708 2023-07-08
+*   BzMiner v15.4.1 (Fixes ZIL epoch 1 issue; Improved time to ZIL window status; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.4.1)
+*   TeamRedMiner v0.10.14 (Fixed ZIL mining on epoch 1; Notes: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.14)
+*   WildRig-Multi v0.36.10 (Improved `memehashv2` on Nvidia GPUs and AMD Polaris/Vega GPUs; Fixed low hashrate of `memehashv2` on AMD RDNA GPUs; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.10)
+
+##### 0.6-222@230707 2023-07-07
+*   GMiner v3.41 (Add support ZIL mining on epoch #1 for non ZMP protocol)
+*   Rigel miner v1.6.2 (Cache DAG for epoch 1, following ZIL epoch change; Add `--nexapow-small-lut` `on`/`off` parameter to enforce using small lookup tables; Fixed `unexpected EOF` error when mining ETC on Nicehash; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.2)
+*   WildRig-Multi v0.36.8 (Improved `memehashv2` algo support for AMD RDNA3 and Nvidia GPUs)
+
+##### 0.6-222@230706 2023-07-06
+*   XMRig-XDAG v6.20.0 (merge code with original master XMRig v6.20.0)
+*   XMRig-MO v6.20.0-mo1a (Workaround for "Segmentation fault" error on algo benchmarking appeared in v6.20.0-mo1)
+*   Rigel miner: fixed stats issue
+
+##### 0.6-222@230705 2023-07-05
+*   WildRig-Multi v0.36.7 (Added `memehashv2` algo support; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.36.7)
+*   TT-Miner: fixed config generator
+
+##### 0.6-222@230704 2023-07-04
+*   Rigel miner v1.6.1 (Added dual mining mode `ERG+KAS` and triple `ERG+KAS+ZIL` mining support; Added `--autolykos2-prebuild` parameter to enable/disable dataset prebuild; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.1)
+*   NanoMiner v3.8.4 (Fixed DAG-based algorithms on AMD RX 7600; Notes: see full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.8.4)
+*   XMRig v6.20.0 (Added API rebind polling; Added Zephyr coin support for solo mining; Notes: see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.20.0)
+*   XMRig-MO v6.20.0-mo1 (Synced with XMRig v6.20.0 code; Notes: see full changelog at ttps://github.com/MoneroOcean/xmrig/releases/tag/v6.20.0-mo1)
+*   cpuMiner-Opt-rplant v5.0.33a (Add `memehashv2` algo; Notes: see full changelog at https://github.com/rplant8/cpuminer-opt-rplant/releases/tag/5.0.33a)
+
+##### 0.6-222@230630 2023-06-30
+*   BzMiner v15.4.0 (Added support mining XNA/Neurai and CLORE coins; Fixed low ZIL/ETC/ETHW/OCTA hashrate; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.4.0)
+*   Rigel miner v1.6.0 (Add `autolykos2` algorithm with supporting dual ERG+RXD and triple ERG+RXD+ZIL mining modes, devfee 1.0%; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.0)
+*   AstroMiner v1.9.2.R5 (Introducing fine-tune engine 3 with param `-ft 3` improves performance on some chips; Notes: see full changelog at https://github.com/dero-am/astrobwt-miner/releases/tag/V1.9.2.R5)
+
+##### 0.6-222@230626 2023-06-26
+*   SRBMiner-Multi v2.3.0 (Improved performance on mining Dynex coin for AMD/NVIDIA/INTEL GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.0)
+*   BzMiner v15.3.0 (Significant improvement to +ZIL stability; Improved overall stability for multi mining; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.3.0)
+*   TT-Miner v2023.2.2 (Added ZIL mining; Added ALPH/Blake3; Notes: see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2023.2.2)
+*   AstroMiner v1.9.2.R4 (Improved the hashrate by 2-2.5%; Notes: see full changelog at https://github.com/dero-am/astrobwt-miner/releases/tag/V1.9.2.R4)
+
 ##### 0.6-222@230621 2023-06-21
 *   Rigel miner v1.5.3 (Improve stability when switching OC in dual/triple mining for ZIL PoW window; Fixed invalid shares when mining `nexapow` on Nicehash; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.5.3)
 *   cpuMiner-Opt-JayDDee v3.22.3 (Some code optimization for AVX2, AVX512' Notes: see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.22.3)
