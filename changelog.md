@@ -1,3 +1,7 @@
+##### 0.6-222@230711 2023-07-11
+*   lolMiner v1.76a (Fixed some bugs related to ZIL mining; NOTES: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.76a)
+*   TeamBlackMiner v1.95 (Added support for ZIL epoch change; NOTES: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.95)
+
 ##### 0.6-222@230708 2023-07-08
 *   BzMiner v15.4.1 (Fixes ZIL epoch 1 issue; Improved time to ZIL window status; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v15.4.1)
 *   TeamRedMiner v0.10.14 (Fixed ZIL mining on epoch 1; Notes: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.14)
