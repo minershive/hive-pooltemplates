@@ -302,10 +302,34 @@
                 "ssl_urls": [
                     "dnx.us.p1pool.com:4221"
                 ]
+            },
+            {
+                "geo": "RU PPLNS",
+                "urls": [
+                    "dnx.ru.p1pool.com:4111"
+                ],
+                "ssl_urls": [
+                    "dnx.ru.p1pool.com:4121"
+                ]
+            },
+            {
+                "geo": "RU SOLO",
+                "urls": [
+                    "dnx.ru.p1pool.com:4211"
+                ],
+                "ssl_urls": [
+                    "dnx.ru.p1pool.com:4221"
+                ]
             }
         ],
         "miners": {
-            "_prototype": "miners_dynexsolve"
+            "_prototype": "miners_dynexsolve",
+            "srbminer": {
+                "user_config": "--disable-cpu\n--mallob-endpoint mallob.dnx.p1pool.com:8025,mallob.dnx.p1pool.com:8023"
+            },
+            "onezerominer": {
+                "user_config": "--mallob-endpoint mallob.dnx.p1pool.com:8025,mallob.dnx.p1pool.com:8023"
+            }
         }
     }
 ]
