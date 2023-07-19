@@ -1,3 +1,10 @@
+##### 0.6-222@230719 2023-07-19
+*   BzMiner v15.4.2 (Further optimized CPU usage; Added `zil_gpus` option: list of gpu indexes for which gpus to mine zil on, if not specified all gpus will mine zil; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v15.4.2)
+*   Rigel miner v1.6.3 (Add `--zil-cache-dag on/off` parameter to enable/disable ZIL DAG caching which can increase Nexa hashrate on 8GB cards, by default on; Add `--zil on/off` parameter to enable/disable ZIL mining per GPU individually, by default - on; Add `--zil on/off` parameter to enable/disable ZIL mining per GPU individually, by default - on; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.3 )
+*   OneZeroMiner v1.2.0 (This release is support upcoming upgrade dynexsolve to v2.3.0; Notes: The hashrates of this version is significantly lower than v1.1.3 see details at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.0)
+*   miniZ v2.1c (Added support for `kHeavyHash` algorithm for mining Kaspa, fee 0.8%; Added support for new ZIL epoch #1; Improvements for CFX, for some NVIDIA GPUs; Notes: see full changelog at https://miniz.cc/2023/07/14/miniz-v21c-is-out)
+*   TT-Miner v2023.3.0 (for ZIL epoch change; NOTES: see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2023.3.0)
+
 ##### 0.6-222@230711 2023-07-11
 *   lolMiner v1.76a (Fixed some bugs related to ZIL mining; NOTES: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.76a)
 *   TeamBlackMiner v1.95 (Added support for ZIL epoch change; NOTES: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.95)
