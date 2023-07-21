@@ -62,18 +62,53 @@
     {
         "coin": "KAS",
         "servers": [
-          {
-            "geo": "EU",
-            "urls": [
-                "kas.2miners.com:2020"
-            ],
-            "ssl_urls": [
-                "kas.2miners.com:12020"
-            ]
-          }
+            {
+                "geo": "EU",
+                "urls": [
+                    "kas.2miners.com:2020"
+                ],
+                "ssl_urls": [
+                    "kas.2miners.com:12020"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us-kas.2miners.com:2020"
+                ],
+                "ssl_urls": [
+                    "us-kas.2miners.com:12020"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia-kas.2miners.com:2020"
+                ],
+                "ssl_urls": [
+                    "asia-kas.2miners.com:12020"
+                ]
+            }
         ],
         "miners": {
           "_prototype": "miners_kaspa"
+        }
+    },
+    {
+        "coin": "NEXA",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "nexa.2miners.com:5050"
+                ],
+                "ssl_urls": [
+                    "nexa.2miners.com:15050"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_nexapow"
         }
     },
     {
@@ -121,40 +156,6 @@
                 ],
                 "ssl_urls": [
                     "clo.2miners.com:13030"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
-        "coin": "EXP",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "exp.2miners.com:3030"
-                ],
-                "ssl_urls": [
-                    "exp.2miners.com:13030"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
-        "coin": "ETP",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "etp.2miners.com:9292"
-                ],
-                "ssl_urls": [
-                    "etp.2miners.com:19292"
                 ]
             }
         ],
@@ -440,41 +441,6 @@
                 "algo": "CTXC",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "MWC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "mwc.2miners.com:1111"
-                ],
-                "ssl_urls": [
-                    "mwc.2miners.com:11111"
-                ]
-            }
-        ],
-        "miners": {
-            "gminer": {
-                "algo": "cuckarood29",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "lolminer": {
-                "algo": "MWC-C29D",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "cuckaroo29d",
-                "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             }
