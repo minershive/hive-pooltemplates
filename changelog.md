@@ -1,3 +1,7 @@
+##### 0.6-222@230724 2023-07-24
+*   Rigel v1.6.4 (Add ERG+ALPH and ERG+ALPH+ZIL mining support; Fixed frequently reconnects when mining IronFish to NiceHash; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.4)
+*   SRBMiner-Muilti v2.3.1 (Updated algorithm 'dynex' to support dynexsolve 2.3.0; Removed support for Intel GPUs and temporary for Nvidia GPUs on algorithm 'dynex'; Fixed dual ERG/ETC/ETH + SHA256DT kernels on some GPU's broken since v2.2.6; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.1)
+
 ##### 0.6-222@230719 2023-07-19
 *   BzMiner v15.4.2 (Further optimized CPU usage; Added `zil_gpus` option: list of gpu indexes for which gpus to mine zil on, if not specified all gpus will mine zil; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v15.4.2)
 *   Rigel miner v1.6.3 (Add `--zil-cache-dag on/off` parameter to enable/disable ZIL DAG caching which can increase Nexa hashrate on 8GB cards, by default on; Add `--zil on/off` parameter to enable/disable ZIL mining per GPU individually, by default - on; Add `--zil on/off` parameter to enable/disable ZIL mining per GPU individually, by default - on; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.3 )
