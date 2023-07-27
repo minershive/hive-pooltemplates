@@ -1,3 +1,9 @@
+##### 0.6-222@230726 2023-07-26
+*   OneZeroMiner v1.2.1 (Hashrate improvement mostly on 20xx and 30xx GPUs series; Notes: see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.1)
+*   To the attention of Dynex Coin (DNX) miners: Network of DNX upgraded! To mine DNX please use OneZeroMiner v1.2.0+ (for Nvidia GPUs) or SRBMiner v2.3.1+ (for AMD GPUs, Nvidia GPUs haven't supported new Dynex on v2.3.1 yet). 
+    Don't forget to check the new mallob-endpont for your Dynex pool in the appropriate section of your pool settings and, if necessary, make changes to the miner settings in the Flight Sheet.
+    Also, please note that hashrate on OneZeroMiner v1.2.0+ vs 1.3.3 and SRBMiner v2.3.1+ vs v2.3.0 now lower due using FP64 math vs FP32.
+
 ##### 0.6-222@230724 2023-07-24
 *   Rigel v1.6.4 (Add ERG+ALPH and ERG+ALPH+ZIL mining support; Fixed frequently reconnects when mining IronFish to NiceHash; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.6.4)
 *   SRBMiner-Muilti v2.3.1 (Updated algorithm 'dynex' to support dynexsolve 2.3.0; Removed support for Intel GPUs and temporary for Nvidia GPUs on algorithm 'dynex'; Fixed dual ERG/ETC/ETH + SHA256DT kernels on some GPU's broken since v2.2.6; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.1)
