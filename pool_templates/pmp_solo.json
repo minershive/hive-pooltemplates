@@ -26,12 +26,44 @@
         "urls": ["us-east.pmpmining.com:5038"]
       },
       {
+        "geo": "St Louis, USA GPU/CPU",
+        "urls": ["us-central.pmpmining.com:5038"]
+      },
+      {
         "geo": "Singapore, SG GPU/CPU",
         "urls": ["sg.pmpmining.com:5038"]
       }
     ],
     "miners": {
-      "_prototype": "miners_ghostrider"
+      "_prototype": "miners_ghostrider",
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "x",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-gpu"
+      }
     }
   },
   {
@@ -54,6 +86,10 @@
         "urls": ["us-east.pmpmining.com:5052"]
       },
       {
+        "geo": "St Louis, USA GPU",
+        "urls": ["us-central.pmpmining.com:5052"]
+      },
+      {
         "geo": "Singapore, SG GPU",
         "urls": ["sg.pmpmining.com:5052"]
       }
@@ -66,15 +102,15 @@
     "coin": "BTRM",
     "servers": [
       {
-        "geo": "Melbourne, AU CPU/GPU",
+        "geo": "Melbourne, AU GPU",
         "urls": ["au.pmpmining.com:5016"]
       },
       {
-        "geo": "Sao Paulo, BR CPU/GPU",
+        "geo": "Sao Paulo, BR GPU",
         "urls": ["br.pmpmining.com:5016"]
       },
       {
-        "geo": "Frankfurt, GE CPU/GPU",
+        "geo": "Frankfurt, GE GPU",
         "urls": ["de.pmpmining.com:5016"]
       },
       {
@@ -82,36 +118,72 @@
         "urls": ["us-east.pmpmining.com:5016"]
       },
       {
-        "geo": "Singapore, SG CPU/GPU",
+        "geo": "St Louis, USA GPU",
+        "urls": ["us-central.pmpmining.com:5016"]
+      },
+      {
+        "geo": "Singapore, SG GPU",
         "urls": ["sg.pmpmining.com:5016"]
       }
     ],
     "miners": {
-      "_prototype": "miners_ghostrider"
+      "_prototype": "miners_ghostrider",
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "x",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-gpu"
+      }
     }
   },
   {
-	"coin": "DGB-Sha256d",
+    "coin": "DGB-Sha256d",
     "servers": [
       {
-        "geo": "Melbourne, AU ASIC",
-        "urls": ["au.pmpmining.com:5010"]
+        "geo": "Melbourne, AU ASIC Hi",
+        "urls": ["au.pmpmining.com:5008"]
       },
       {
-        "geo": "Sao Paulo, BR ASIC",
-        "urls": ["br.pmpmining.com:5010"]
+        "geo": "Sao Paulo, BR ASIC Hi",
+        "urls": ["br.pmpmining.com:5008"]
       },
       {
-        "geo": "Frankfurt, GE ASIC",
-        "urls": ["de.pmpmining.com:5010"]
+        "geo": "Frankfurt, GE ASIC Hi",
+        "urls": ["de.pmpmining.com:5008"]
       },
       {
-        "geo": "Virginia, USA ASIC",
-        "urls": ["us-east.pmpmining.com:5010"]
+        "geo": "Virginia, USA ASIC Hi",
+        "urls": ["us-east.pmpmining.com:5008"]
       },
       {
-        "geo": "Singapore, SG ASIC",
-        "urls": ["sg.pmpmining.com:5010"]
+        "geo": "St Louis, USA ASIC Hi",
+        "urls": ["us-central.pmpmining.com:5008"]
+      },
+      {
+        "geo": "Singapore, SG ASIC Hi",
+        "urls": ["sg.pmpmining.com:5008"]
       }
     ],
     "miners": {
@@ -119,9 +191,9 @@
         "url": "stratum+tcp://%URL%",
         "template": "%WAL%"
       }
-	}
+    }
   },
-  { 
+  {
     "coin": "NOVO",
     "servers": [
       {
@@ -139,6 +211,10 @@
       {
         "geo": "Virginia, USA GPU",
         "urls": ["us-east.pmpmining.com:5086"]
+      },
+      {
+        "geo": "St Louis, USA GPU",
+        "urls": ["us-central.pmpmining.com:5086"]
       },
       {
         "geo": "Singapore, SG GPU",
@@ -183,6 +259,10 @@
         "urls": ["us-east.pmpmining.com:5079"]
       },
       {
+        "geo": "St Louis, USA CPU/GPU",
+        "urls": ["us-central.pmpmining.com:5079"]
+      },
+      {
         "geo": "Singapore, SG CPU/GPU",
         "urls": ["sg.pmpmining.com:5079"]
       }
@@ -197,7 +277,7 @@
         "user_config": "--disable-cpu"
       }
     }
-  },	
+  },
   {
     "coin": "YERB",
     "servers": [
@@ -218,12 +298,44 @@
         "urls": ["us-east.pmpmining.com:5036"]
       },
       {
+        "geo": "St Louis, USA GPU/CPU",
+        "urls": ["us-central.pmpmining.com:5036"]
+      },
+      {
         "geo": "Singapore, SG GPU/CPU",
         "urls": ["sg.pmpmining.com:5036"]
       }
     ],
     "miners": {
-      "_prototype": "miners_ghostrider"
+      "_prototype": "miners_ghostrider",
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "x",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-gpu"
+      }
     }
   },
   {
@@ -246,6 +358,10 @@
         "urls": ["us-east.pmpmining.com:5081"]
       },
       {
+        "geo": "St Louis, USA CPU/GPU",
+        "urls": ["us-central.pmpmining.com:5081"]
+      },
+      {
         "geo": "Singapore, SG CPU/GPU",
         "urls": ["sg.pmpmining.com:5081"]
       }
@@ -257,9 +373,16 @@
         "pass": "x",
         "worker": "%WORKER_NAME%",
         "template": "%WAL%",
-        "user_config": "--disable-cpu"
+        "user_config": "--disable-gpu"
+      },
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccuser": "%WAL%",
+        "ccalgo": "yescryptr16",
+        "ccpass": "x",
+        "fork": "klaust-yescrypt"
       }
-	}
+    }
   },
   {
     "coin": "MAZA-Sha256d",
@@ -277,8 +400,12 @@
         "urls": ["de.pmpmining.com:3086"]
       },
       {
-        "geo": "Virginia, USA-EAST ASIC ",
+        "geo": "Virginia, USA ASIC ",
         "urls": ["us-east.pmpmining.com:3086"]
+      },
+      {
+        "geo": "St Louis, USA ASIC",
+        "urls": ["us-central.pmpmining.com:3086"]
       },
       {
         "geo": "Singapore, SG ASIC ",
@@ -289,31 +416,35 @@
       "asicminer": {
         "url": "stratum+tcp://%URL%",
         "template": "%WAL%"
-	  }
-	}
+      }
+    }
   },
   {
     "coin": "QOGE",
     "servers": [
       {
         "geo": "Melbourne, AU CPU/GPU",
-        "urls": ["au.pmpmining.com:5089"]
+        "urls": ["au.pmpmining.com:5090"]
       },
       {
         "geo": "Sao Paulo, BR CPU/GPU",
-        "urls": ["br.pmpmining.com:5089"]
+        "urls": ["br.pmpmining.com:5090"]
       },
       {
         "geo": "Frankfurt, GE CPU/GPU",
-        "urls": ["de.pmpmining.com:5089"]
+        "urls": ["de.pmpmining.com:5090"]
       },
       {
         "geo": "Virginia, USA CPU/GPU",
-        "urls": ["us-east.pmpmining.com:5089"]
+        "urls": ["us-east.pmpmining.com:5090"]
+      },
+      {
+        "geo": "St Louis, USA CPU/GPU",
+        "urls": ["us-central.pmpmining.com:5090"]
       },
       {
         "geo": "Singapore, SG CPU/GPU",
-        "urls": ["sg.pmpmining.com:5089"]
+        "urls": ["sg.pmpmining.com:5090"]
       }
     ],
     "miners": {
@@ -324,6 +455,805 @@
         "worker": "%WORKER_NAME%",
         "template": "%WAL%",
         "user_config": "--disable-cpu"
+      }
+    }
+  },
+  {
+    "coin": "HVQ",
+    "servers": [
+      {
+        "geo": "Melbourne, AU",
+        "urls": ["au.pmpmining.com:1880"]
+      },
+      {
+        "geo": "Sao Paulo, BR",
+        "urls": ["br.pmpmining.com:1880"]
+      },
+      {
+        "geo": "Frankfurt, GE",
+        "urls": ["de.pmpmining.com:1880"]
+      },
+      {
+        "geo": "Virginia, USA",
+        "urls": ["us-east.pmpmining.com:1880"]
+      },
+      {
+        "geo": "St Louis, USA",
+        "urls": ["us-central.pmpmining.com:1880"]
+      },
+      {
+        "geo": "Singapore, SG",
+        "urls": ["sg.pmpmining.com:1880"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow",
+      "ethminer": {
+        "fork": "kawpowminer",
+        "cuda": 1,
+        "opencl": 0,
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "kawpow"
+      },
+      "nanominer": {
+        "algo": "kawpow",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+      },
+      "ccminer": {
+        "fork": "enemy",
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "kawpow",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "gminer": {
+        "algo": "kawpow",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "bminer": {
+        "url": "%URL%",
+        "algo": "raven",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "tt-miner": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "kawpow",
+        "user_config": "-coin %COIN%"
+      },
+      "damominer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "rvn",
+        "worker": "%WORKER_NAME%",
+        "template": "%WAL%"
+      },
+      "teamredminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": ""
+      },
+      "miniz": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "RVN",
+    "servers": [
+      {
+        "geo": "Melbourne, AU",
+        "urls": ["au.pmpmining.com:9083"]
+      },
+      {
+        "geo": "Sao Paulo, BR",
+        "urls": ["br.pmpmining.com:9083"]
+      },
+      {
+        "geo": "Frankfurt, GE",
+        "urls": ["de.pmpmining.com:9083"]
+      },
+      {
+        "geo": "Virginia, USA",
+        "urls": ["us-east.pmpmining.com:9083"]
+      },
+      {
+        "geo": "St Louis, USA",
+        "urls": ["us-central.pmpmining.com:9083"]
+      },
+      {
+        "geo": "Singapore, SG",
+        "urls": ["sg.pmpmining.com:9083"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow",
+      "ethminer": {
+        "fork": "kawpowminer",
+        "cuda": 1,
+        "opencl": 0,
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "kawpow"
+      },
+      "nanominer": {
+        "algo": "kawpow",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+      },
+      "ccminer": {
+        "fork": "enemy",
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "kawpow",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "gminer": {
+        "algo": "kawpow",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "bminer": {
+        "url": "%URL%",
+        "algo": "raven",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "tt-miner": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "kawpow",
+        "user_config": "-coin %COIN%"
+      },
+      "damominer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "rvn",
+        "worker": "%WORKER_NAME%",
+        "template": "%WAL%"
+      },
+      "teamredminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": ""
+      },
+      "miniz": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "NEOX",
+    "servers": [
+      {
+        "geo": "Melbourne, AU",
+        "urls": ["au.pmpmining.com:9085"]
+      },
+      {
+        "geo": "Sao Paulo, BR",
+        "urls": ["br.pmpmining.com:9085"]
+      },
+      {
+        "geo": "Frankfurt, GE",
+        "urls": ["de.pmpmining.com:9085"]
+      },
+      {
+        "geo": "Virginia, USA",
+        "urls": ["us-east.pmpmining.com:9085"]
+      },
+      {
+        "geo": "St Louis, USA",
+        "urls": ["us-central.pmpmining.com:9085"]
+      },
+      {
+        "geo": "Singapore, SG",
+        "urls": ["sg.pmpmining.com:9085"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow",
+      "ethminer": {
+        "fork": "kawpowminer",
+        "cuda": 1,
+        "opencl": 0,
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "kawpow"
+      },
+      "nanominer": {
+        "algo": "kawpow",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+      },
+      "ccminer": {
+        "fork": "enemy",
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "kawpow",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "gminer": {
+        "algo": "kawpow",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "bminer": {
+        "url": "%URL%",
+        "algo": "raven",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "tt-miner": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "kawpow",
+        "user_config": "-coin %COIN%"
+      },
+      "damominer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "rvn",
+        "worker": "%WORKER_NAME%",
+        "template": "%WAL%"
+      },
+      "teamredminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": ""
+      },
+      "miniz": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "PAPRY",
+    "servers": [
+      {
+        "geo": "Melbourne, AU",
+        "urls": ["au.pmpmining.com:9187"]
+      },
+      {
+        "geo": "Sao Paulo, BR",
+        "urls": ["br.pmpmining.com:9187"]
+      },
+      {
+        "geo": "Frankfurt, GE",
+        "urls": ["de.pmpmining.com:9187"]
+      },
+      {
+        "geo": "Virginia, USA",
+        "urls": ["us-east.pmpmining.com:9187"]
+      },
+      {
+        "geo": "St Louis, USA",
+        "urls": ["us-central.pmpmining.com:9187"]
+      },
+      {
+        "geo": "Singapore, SG",
+        "urls": ["sg.pmpmining.com:9187"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow",
+      "ethminer": {
+        "fork": "kawpowminer",
+        "cuda": 1,
+        "opencl": 0,
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "kawpow"
+      },
+      "nanominer": {
+        "algo": "kawpow",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+      },
+      "ccminer": {
+        "fork": "enemy",
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "kawpow",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "gminer": {
+        "algo": "kawpow",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "bminer": {
+        "url": "%URL%",
+        "algo": "raven",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "tt-miner": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "kawpow",
+        "user_config": "-coin %COIN%"
+      },
+      "damominer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "rvn",
+        "worker": "%WORKER_NAME%",
+        "template": "%WAL%"
+      },
+      "teamredminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": ""
+      },
+      "miniz": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "MEWC",
+    "servers": [
+      {
+        "geo": "Melbourne, AU",
+        "urls": ["au.pmpmining.com:9087"]
+      },
+      {
+        "geo": "Sao Paulo, BR",
+        "urls": ["br.pmpmining.com:9087"]
+      },
+      {
+        "geo": "Frankfurt, GE",
+        "urls": ["de.pmpmining.com:9087"]
+      },
+      {
+        "geo": "Virginia, USA",
+        "urls": ["us-east.pmpmining.com:9087"]
+      },
+      {
+        "geo": "St Louis, USA",
+        "urls": ["us-central.pmpmining.com:9087"]
+      },
+      {
+        "geo": "Singapore, SG",
+        "urls": ["sg.pmpmining.com:9087"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow",
+      "ethminer": {
+        "fork": "kawpowminer",
+        "cuda": 1,
+        "opencl": 0,
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "kawpow"
+      },
+      "nanominer": {
+        "algo": "kawpow",
+        "url": "%URL%",
+        "template": "%WAL%",
+        "pass": "x",
+        "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+      },
+      "ccminer": {
+        "fork": "enemy",
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "kawpow",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "gminer": {
+        "algo": "kawpow",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "bminer": {
+        "url": "%URL%",
+        "algo": "raven",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "tt-miner": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "kawpow",
+        "user_config": "-coin %COIN%"
+      },
+      "damominer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "rvn",
+        "worker": "%WORKER_NAME%",
+        "template": "%WAL%"
+      },
+      "teamredminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": ""
+      },
+      "miniz": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "OBTC",
+    "servers": [
+      {
+        "geo": "Melbourne, AU Low Diff",
+        "urls": ["au.pmpmining.com:5072"]
+      },
+      {
+        "geo": "Sao Paulo, BR Low Diff",
+        "urls": ["br.pmpmining.com:5072"]
+      },
+      {
+        "geo": "Frankfurt, GE Low Diff",
+        "urls": ["de.pmpmining.com:5072"]
+      },
+      {
+        "geo": "Virginia, USA Low Diff",
+        "urls": ["us-east.pmpmining.com:5072"]
+      },
+      {
+        "geo": "St Louis, USA Low Diff",
+        "urls": ["us-central.pmpmining.com:5072"]
+      },
+      {
+        "geo": "Singapore, SG Low Diff",
+        "urls": ["sg.pmpmining.com:5072"]
+      },
+      {
+        "geo": "Melbourne, AU Hi Diff",
+        "urls": ["au.pmpmining.com:5073"]
+      },
+      {
+        "geo": "Sao Paulo, BR Hi Diff",
+        "urls": ["br.pmpmining.com:5073"]
+      },
+      {
+        "geo": "Frankfurt, GE Hi Diff",
+        "urls": ["de.pmpmining.com:5073"]
+      },
+      {
+        "geo": "Virginia, USA Hi Diff",
+        "urls": ["us-east.pmpmining.com:5073"]
+      },
+      {
+        "geo": "St Louis, USA Hi Diff",
+        "urls": ["us-central.pmpmining.com:5073"]
+      },
+      {
+        "geo": "Singapore, SG Hi Diff",
+        "urls": ["sg.pmpmining.com:5073"]
+      }
+    ],
+    "miners": {
+      "cryptodredge": {
+        "url": "%URL%",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "algo": "heavyhash"
+      },
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "heavyhash",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%",
+        "fork": "suprminer"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "heavyhash",
+        "pass": "x"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "heavyhash",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "x"
+      }
+    }
+  },
+  {
+    "coin": "TDC-tide",
+    "servers": [
+      {
+        "geo": "Melbourne, AU",
+        "urls": ["au.pmpmining.com:7349"]
+      },
+      {
+        "geo": "Sao Paulo, BR",
+        "urls": ["br.pmpmining.com:7349"]
+      },
+      {
+        "geo": "Frankfurt, GE",
+        "urls": ["de.pmpmining.com:7349"]
+      },
+      {
+        "geo": "Virginia, USA",
+        "urls": ["us-east.pmpmining.com:7349"]
+      },
+      {
+        "geo": "St Louis, USA",
+        "urls": ["us-central.pmpmining.com:7349"]
+      },
+      {
+        "geo": "Singapore, SG",
+        "urls": ["sg.pmpmining.com:7349"]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "yespowertide",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "x"
+      }
+    }
+  },
+  {
+    "coin": "RXD",
+    "servers": [
+      {
+        "geo": "Melbourne, AU",
+        "urls": ["au.pmpmining.com:3088"]
+      },
+      {
+        "geo": "Sao Paulo, BR",
+        "urls": ["br.pmpmining.com:3088"]
+      },
+      {
+        "geo": "Frankfurt, GE",
+        "urls": ["de.pmpmining.com:3088"]
+      },
+      {
+        "geo": "Virginia, USA",
+        "urls": ["us-east.pmpmining.com:3088"]
+      },
+      {
+        "geo": "St Louis, USA",
+        "urls": ["us-central.pmpmining.com:3088"]
+      },
+      {
+        "geo": "Singapore, SG",
+        "urls": ["sg.pmpmining.com:3088"]
+      },
+      {
+        "geo": "Melbourne, AU Nicehash",
+        "urls": ["au.pmpmining.com:3089"]
+      },
+      {
+        "geo": "Sao Paulo, BR Nicehash",
+        "urls": ["br.pmpmining.com:3089"]
+      },
+      {
+        "geo": "Frankfurt, GE Nicehash",
+        "urls": ["de.pmpmining.com:3089"]
+      },
+      {
+        "geo": "Virginia, USA Nicehash",
+        "urls": ["us-east.pmpmining.com:3089"]
+      },
+      {
+        "geo": "St Louis, USA Nicehash",
+        "urls": ["us-central.pmpmining.com:3089"]
+      },
+      {
+        "geo": "Singapore, SG Nicehash",
+        "urls": ["sg.pmpmining.com:3089"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_radiant",
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha512_256d_radiant",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-gpu"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "algo": "sha512256d",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "ccminer": {
+        "fork": "radiator",
+        "ccurl": "%URL%",
+        "ccalgo": "rad",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "bzminer": {
+        "url": "%URL%",
+        "algo": "radiant",
+        "worker": "%WORKER_NAME%",
+        "template": "%WAL%"
+      }
+    }
+  },
+  {
+    "coin": "VTC",
+    "servers": [
+      {
+        "geo": "Melbourne, AU",
+        "urls": ["au.pmpmining.com:5094"]
+      },
+      {
+        "geo": "Sao Paulo, BR",
+        "urls": ["br.pmpmining.com:5094"]
+      },
+      {
+        "geo": "Frankfurt, GE",
+        "urls": ["de.pmpmining.com:5094"]
+      },
+      {
+        "geo": "Virginia, USA",
+        "urls": ["us-east.pmpmining.com:5094"]
+      },
+      {
+        "geo": "St Louis, USA",
+        "urls": ["us-central.pmpmining.com:5094"]
+      },
+      {
+        "geo": "Singapore, SG",
+        "urls": ["sg.pmpmining.com:5094"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_verthash",
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "verthash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "verthashminer": {
+        "url": "%URL%",
+        "algo": "verthash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "teamredminer": {
+        "url": "%URL%",
+        "algo": "verthash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
       }
     }
   }
