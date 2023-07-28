@@ -1429,5 +1429,95 @@
         "user_config": "--pers sngemPoW"
       }
     }
+  },
+  {
+    "coin": "ZANO",
+    "servers": [
+      {
+        "geo": "Virginia, USA Low Diff",
+        "urls": ["zano.pmpmining.com:7336"]
+      },
+      {
+        "geo": "Virginia, USA Mid Diff",
+        "urls": ["zano.pmpmining.com:7337"]
+      },
+      {
+        "geo": "Virginia, USA Hi Diff",
+        "urls": ["zano.pmpmining.com:7338"]
+      }
+    ],
+    "miners_progpow_zano": {
+      "ethminer": {
+        "fork": "progpowz",
+        "cuda": 1,
+        "opencl": 0,
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "stratum1+tcp://%URL_HOST%",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "progpowz",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "tt-miner": {
+        "url": "stratum1+tcp://%URL%",
+        "algo": "PROGPOW092",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "-coin ZANO"
+      },
+      "miniz": {
+        "url": "%URL%",
+        "algo": "progpowz",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--pers zano"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "algo": "progpowz",
+        "template": "%WAL%",
+        "user_config": "--worker=%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "LOG",
+    "servers": [
+      {
+        "geo": "Melbourne, AU GPU",
+        "urls": ["au.pmpmining.com:4935"]
+      },
+      {
+        "geo": "Sao Paulo, BR GPU",
+        "urls": ["br.pmpmining.com:4935"]
+      },
+      {
+        "geo": "Frankfurt, GE GPU",
+        "urls": ["de.pmpmining.com:4935"]
+      },
+      {
+        "geo": "Virginia, USA GPU",
+        "urls": ["us-east.pmpmining.com:4935"]
+      },
+      {
+        "geo": "St Louis, USA GPU",
+        "urls": ["us-central.pmpmining.com:4935"]
+      },
+      {
+        "geo": "Singapore, SG GPU",
+        "urls": ["sg.pmpmining.com:4935"]
+      }
+    ],
+    "miners_woodcoin": {
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "skein2",
+        "pass": "x"
+      }
+    }
   }
 ]
