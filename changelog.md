@@ -1,3 +1,7 @@
+##### 0.6-222@230731 2023-07-31
+*   OneZeroMiner v1.2.2 (Minor hashrate improvement ~5% on some GPUs; Fixed an issue that could result in 414 errors on mallob re-connection; Improved overall stability on mallob re-connection; Notes: see full changelog and details at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.2)
+*   BzMiner v15.4.3 (New coin: `gamepass`; Improved hashrate on kawpow coins on both Nvidia and AMD GPUs; Fixed ergo, rvn, xna, clore, meowcoin, neoxa out of memory bug; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v15.4.3)
+
 ##### 0.6-222@230726 2023-07-26
 *   OneZeroMiner v1.2.1 (Hashrate improvement mostly on 20xx and 30xx GPUs series; Notes: see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.1)
 *   To the attention of Dynex Coin (DNX) miners: Network of DNX upgraded! To mine DNX please use OneZeroMiner v1.2.0+ (for Nvidia GPUs) or SRBMiner v2.3.1+ (for AMD GPUs, Nvidia GPUs haven't supported new Dynex on v2.3.1 yet). 
