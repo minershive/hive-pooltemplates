@@ -1,5 +1,5 @@
 ##### 0.6-222@230806 2023-08-06
-*   SRBMiner-Muilti v2.3.2 (Performance improvement on algorithm 'dynex'; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.2)
+*   SRBMiner-Multi v2.3.2 (Performance improvement on algorithm `dynex`; Added option `--gpu-dynex-r` for performance tuning for algorithm 'dynex' - min 1, max 16; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.2)
 
 ##### 0.6-222@230731 2023-07-31
 *   OneZeroMiner v1.2.2 (Minor hashrate improvement ~5% on some GPUs; Fixed an issue that could result in 414 errors on mallob re-connection; Improved overall stability on mallob re-connection; Notes: see full changelog and details at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.2)
