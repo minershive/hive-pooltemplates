@@ -62,6 +62,26 @@
         }
     },
     {
+        "coin": "DNX",
+        "servers": [
+            {
+                "geo": "Moscow",
+                "urls": [
+                    "dnx.baikalmine.com:9090"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_dynexsolve",
+            "srbminer": {
+                "user_config": "--disable-cpu\n--mallob-endpoint https://dnx-mallob.baikalmine.com"
+            },
+            "onezerominer": {
+                "user_config": "--mallob-endpoint https://dnx-mallob.baikalmine.com"
+            }
+        }
+    },
+    {
         "coin": "ERG",
         "servers": [
             {
@@ -85,6 +105,26 @@
         ],
         "miners": {
 		    "_prototype": "miners_autolykos2"
+        }
+    },
+    {
+        "coin": "KAS",
+        "servers": [
+            {
+                "geo": "RU",
+                "urls": [
+                    "kaspa.baikalmine.com:2525"
+                ]
+            },
+	    {
+                "geo": "RU SOLO",
+                "urls": [
+                    "kaspa-solo.baikalmine.com:2535"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kaspa"
         }
     },
     {

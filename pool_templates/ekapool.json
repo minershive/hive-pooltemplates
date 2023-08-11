@@ -1,0 +1,124 @@
+[
+    {
+        "pool": {
+            "name": "EkaPool",
+            "url": "https://ekapool.com",
+            "fee": 1,
+            "type": "PROP"
+        }
+    },
+
+    {
+        "coin": "DNX",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "dnx.eu.ekapool.com:19666"
+                ],
+                "ssl_urls": [
+                    "dnx.eu.ekapool.com:10668"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "dnx.us.ekapool.com:19666"
+                ],
+                "ssl_urls": [
+                    "dnx.us.ekapool.com:10668"
+                ]
+            },
+            {
+                "geo": "Canada",
+                "urls": [
+                    "dnx.ca.ekapool.com:19666"
+                ],
+                "ssl_urls": [
+                    "dnx.ca.ekapool.com:10668"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "dnx.sg.ekapool.com:19666"
+                ],
+                "ssl_urls": [
+                    "dnx.sg.ekapool.com:10668"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_dynexsolve",
+            "srbminer": {
+                "user_config": "--disable-cpu\n--mallob-endpoint https://dnx.eu.ekapool.com,https://dnx.us.ekapool.com,https://dnx.ca.ekapool.com,https://dnx.sg.ekapool.com"
+            },
+            "onezerominer": {
+                "user_config": "--mallob-endpoint https://dnx.eu.ekapool.com,https://dnx.us.ekapool.com,https://dnx.ca.ekapool.com,https://dnx.sg.ekapool.com"
+            }
+        }
+    },
+
+    {
+        "coin": "CHN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "chn.eu.ekapool.com:19777"
+                ],
+                "ssl_urls": [
+                    "chn.eu.ekapool.com:19778"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "chn.us.ekapool.com:19777"
+                ],
+                "ssl_urls": [
+                    "chn.us.ekapool.com:19778"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "chn.sg.ekapool.com:19777"
+                ],
+                "ssl_urls": [
+                    "chn.sg.ekapool.com:19778"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_progpow_zano"
+        }
+    },
+
+    {
+        "coin": "ZEPH",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "zeph.eu.ekapool.com:15666"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "zeph.us.ekapool.com:15666"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "zeph.sg.ekapool.com:15666"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_randomx_worker"
+        }
+    }
+]
