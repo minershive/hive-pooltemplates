@@ -1,0 +1,81 @@
+[
+    {
+        "pool": {
+            "name": "Cloudiko.io",
+            "url": "https://www.cloudiko.io",
+            "fee": 0,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "VRSC",
+        "servers": [
+            {
+                "geo": "Europe - Germany",
+                "urls": [
+                    "eu.cloudiko.io:9999"
+                ]
+            },
+            {
+                "geo": "US - Midwest",
+                "urls": [
+                    "us.cloudiko.io:9999" 
+                ]
+            }
+        ],
+        "miners": {
+            "hellminer": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nheqminer": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "RTM",
+        "servers": [
+            {
+                "geo": "Europe - Germany",
+                "urls": [
+                    "eu.cloudiko.io:4600"
+                ]
+            },
+            {   
+                "geo": "US - Midwest",
+                "urls": [
+                    "us.cloudiko.io:4600"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "stratum+tcps://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "gr",
+                "pass": "x",
+                "fork": "gr"
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "ghostrider",
+                "pass": "x",
+                "cpu": "1",
+                "fork": "xmrig"
+            },
+                "wildrig-multi": {
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "ghostrider",
+                "pass": "x"
+            }
+        }
+    }
+]
