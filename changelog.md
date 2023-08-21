@@ -1,3 +1,9 @@
+##### 0.6-222@230820 2023-08-20
+*   RigelMiner v1.7.1 (Added `ethashb3` algorithm devfee 1%; Add RTH+RXD and RTH+RXD+ZIL mining support; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.7.1)
+*   BzMiner v16.0.0 (Added new coins: `rethereum` with 1% devfee and `canxium`, 0.5% devfee; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v16.0.0)
+*   TeamBlackMiner v1.96 (Fixed RVN mining on many pools; Reduced rejected shares mulitcoin RVN pools, e.g. Nicehash; Notes: see full changelog and details at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.96)
+*   cpuMiner-Opt-Rplant v5.0.34 (added `lyra2a40` algo for mining APPLE/Applecoin; Notes: see full changelog and details at https://github.com/rplant8/cpuminer-opt-rplant/releases/tag/5.0.34)
+
 ##### 0.6-222@230817 2023-08-17
 *   SRBMiner-Multi v2.3.4 (Added algorithm `ethashb3` support for Nvidia GPUs; Added support for dual mining `ethashb3 + sha512_256d` on Nvidia and AMD RDNA1/2/3 GPUs; Added Radeon VII binaries for algorithm 'dynex' on newer drivers, tested on 22.40.6; Fixed RX Vega 56/64 mining on algorithm 'dynex' broke in previous version; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.4)
    
