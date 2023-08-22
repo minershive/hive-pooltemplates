@@ -1,5 +1,5 @@
 ##### 0.6-222@230821 2023-08-21
-*   BzMiner v16.0.1 (Optimized Rethereum for Nvidia & AMD GPUs; Added Optimized Rethereum + Radiant; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v16.0.1)
+*   BzMiner v16.0.1 (Optimized Rethereum for Nvidia & AMD GPUs; Added optimized Rethereum + Radiant; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v16.0.1)
 
 ##### 0.6-222@230820 2023-08-20
 *   RigelMiner v1.7.1 (Added `ethashb3` algorithm devfee 1%; Add RTH+RXD and RTH+RXD+ZIL mining support; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.7.1)
