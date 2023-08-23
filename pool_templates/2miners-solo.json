@@ -98,18 +98,53 @@
     {
         "coin": "KAS",
         "servers": [
-          {
-            "geo": "EU",
-            "urls": [
-                "solo-kas.2miners.com:3030"
-            ],
-            "ssl_urls": [
-                "solo-kas.2miners.com:13030"
-            ]
-          }
+            {
+                "geo": "EU",
+                "urls": [
+                    "solo-kas.2miners.com:3030"
+                ],
+                "ssl_urls": [
+                    "solo-kas.2miners.com:13030"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us-solo-kas.2miners.com:3030"
+                ],
+                "ssl_urls": [
+                    "us-solo-kas.2miners.com:13030"
+                ]
+            },
+            {
+                "geo": "ASIA",
+                "urls": [
+                    "asia-solo-kas.2miners.com:3030"
+                ],
+                "ssl_urls": [
+                    "asia-solo-kas.2miners.com:13030"
+                ]
+            }
         ],
         "miners": {
           "_prototype": "miners_kaspa"
+        }
+    },
+    {
+        "coin": "NEXA",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "solo-nexa.2miners.com:7070"
+                ],
+                "ssl_urls": [
+                    "solo-nexa.2miners.com:17070"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_nexapow"
         }
     },
     {
@@ -193,58 +228,6 @@
                 ],
                 "ssl_urls": [
                     "solo-clo.2miners.com:13333"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
-        "coin": "EXP",
-        "servers": [
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "solo-exp.2miners.com:7070"
-                ],
-                "ssl_urls": [
-                    "solo-exp.2miners.com:17070"
-                ]
-            },
-            {
-                "geo": "SOLO EU HiDIFF",
-                "urls": [
-                    "solo-exp.2miners.com:7171"
-                ],
-                "ssl_urls": [
-                    "solo-exp.2miners.com:17171"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
-        "coin": "ETP",
-        "servers": [
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "solo-etp.2miners.com:9292"
-                ],
-                "ssl_urls": [
-                    "solo-etp.2miners.com:19292"
-                ]
-            },
-            {
-                "geo": "SOLO EU HiDIFF",
-                "urls": [
-                    "solo-etp.2miners.com:9595"
-                ],
-                "ssl_urls": [
-                    "solo-etp.2miners.com:19595"
                 ]
             }
         ],
@@ -566,41 +549,6 @@
                 "algo": "CTXC",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "MWC",
-        "servers": [
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "solo-mwc.2miners.com:2222"
-                ],
-                "ssl_urls": [
-                    "solo-mwc.2miners.com:12222"
-                ]
-            }
-        ],
-        "miners": {
-            "gminer": {
-                "algo": "cuckarood29",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "lolminer": {
-                "algo": "MWC-C29D",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "algo": "cuckaroo29d",
-                "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             }
