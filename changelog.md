@@ -1,3 +1,10 @@
+##### 0.6-222@230830 2023-08-30
+*   BzMiner v16.0.3 (Slight improvement to `rethereum` and dual `rethereum+radiant`; Fixed rethereum and rethereum+radiant hung GPU, crashing on Nvidia 10 and 20 series cards; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v16.0.3)
+*   SRBMiner-Multi v2.3.5 (Added support for dual mining `ETHASHB3/BLAKE3_ALEPHIUM` on Nvidia and AMD RDNA1/2/3 GPUs; Minor performance improvement on algorithm `ethashb3` and `dynex`; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.5)
+*   RigelMiner v1.7.2 (Add `RTH+ALPH` and `RTH+ALPH+ZIL` mining support; Improve `RTH+RXD` performance on 30xx and 40xx GPUs; Improve `ERG+RXD`, `ERG+ALPH`, `ERG+KAS` performance
+; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.7.2)
+*   TeamBlackMiner v1.99 (Added support for `ethashb3` on Nvidia with devfee 0.5%; Notes: see full changelog and details at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.99)
+
 ##### 0.6-222@230821 2023-08-21
 *   BzMiner v16.0.1 (Optimized Rethereum for Nvidia & AMD GPUs; Added optimized Rethereum + Radiant; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v16.0.1)
 
