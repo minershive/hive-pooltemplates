@@ -1,3 +1,11 @@
+##### 0.6-223@230903 2023-09-03
+*   Updated Devices IDs
+*   Fixed some issues cases for Nvidia GPUs
+*   Autofan v3.26: fixes & improvements
+*   Improved support related to the release further OS Images
+*   Update `amd-ocl-install` to support ROCm up to v5.6
+*   Misc fixes & improvements
+
 ##### 0.6-222@230831 2023-08-31
 *   BzMiner v16.0.5 (Added `rethereum + alph`; Fixed `rethereum + radiant` duplicate/rejected radiant shares; Reduced stales on `alph`; Fixed `rethereum + radiant` auto intensity; Fixed rethereum and rethereum+radiant hung GPU, crashing on Nvidia 10 and 20 series cards; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v16.0.5)
 *   cpuMiner-Opt-JayDDee v3.23.0 (Fixes & improvements, see detailed changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.23.0)
