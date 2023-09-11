@@ -1,4 +1,14 @@
-##### 0.6-223@230908 2023-09-08
+##### 0.6-224@230909 2023-09-09
+*   Updated misc devices IDs and related tools (USB, PCI-E, AMD GPUs)
+*   Add support Nvidia driver v535 series (updated `nvtool` to v1.8.1 which fixes temperature sensors reading)
+*   Added support CUDA RTL v12.2 (`nvidia-driver-install` tool updated, added RTL v12.2.2)
+*   Fixed static fan control on Vega2/Navi/Navi2 AMD GPUs appeared in previous v0.6-223 on some configuration
+*   Autofan v3.26: fixes & improvements
+*   Update `amd-ocl-install` to support ROCm up to v5.6.x
+*   Improved support related to the release further OS Images
+*   Other misc fixes & improvements
+
+##### 0.6-222@230908 2023-09-08
 *   OneZeroMiner v1.2.4 (Hashrate/Efficiency improvement; Added new tuning parameter `--nt`; Revised atomic update failures to allow 5 minutes of running with no atomic update; Notes: see full changelog and details at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.4)
 
 ##### 0.6-222@230831 2023-08-31
