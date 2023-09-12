@@ -14,12 +14,155 @@
             {
                 "geo": "USA-EAST",
                 "urls": [
-                    "etc-us.pool2mine.net:7777"
+                    "us.pool2mine.net:7777"
+                ],
+                "ssl_urls": [
+                    "us.pool2mine.net:7776"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "br.pool2mine.net:7777"
+                ],
+                "ssl_urls": [
+                    "br.pool2mine.net:7776"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.pool2mine.net:7777"
+                ],
+                "ssl_urls": [
+                    "eu.pool2mine.net:7776"
+                ]
+            },
+            {
+                "geo": "Venezuela",
+                "urls": [
+                    "ve.pool2mine.net:7777"
+                ],
+                "ssl_urls": [
+                    "ve.pool2mine.net:7776"
                 ]
             }
         ],
         "miners": {
-            "_prototype": "miners_etchash"
+            "phoenixminer": {
+                "url": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 4, COIN: etc"
+            },
+            "teamredminer": {
+                "algo": "etchash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+	        "t-rex":{
+                "algo": "etchash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "stratum2+tcp://%URL%",
+                "pass": "x"
+            },
+            "lolminer": {
+                "algo": "etchash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+		        "user_config": "--ethstratum=ETHV1"
+            },
+            "gminer": {
+                "algo": "etchash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "nbminer": {
+                "algo": "etchash",
+                "url": "nicehash+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
+    },
+	
+    {
+        "coin": "CLO",
+        "servers": [
+            {
+                "geo": "USA-EAST",
+                "urls": [
+                    "us.pool2mine.net:7767"
+                ],
+                "ssl_urls": [
+                    "us.pool2mine.net:7766"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "br.pool2mine.net:7767"
+                ],
+                "ssl_urls": [
+                    "br.pool2mine.net:7766"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.pool2mine.net:7767"
+                ],
+                "ssl_urls": [
+                    "eu.pool2mine.net:7766"
+                ]
+            },
+            {
+                "geo": "Venezuela",
+                "urls": [
+                    "ve.pool2mine.net:7767"
+                ],
+                "ssl_urls": [
+                    "ve.pool2mine.net:7766"
+                ]
+            }
+        ],
+        "miners": {
+            "phoenixminer": {
+                "url": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, PROTO: 4, COIN: clo"
+            },
+            "teamredminer": {
+                "algo": "ethash",
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+	        "t-rex":{
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "stratum2+tcp://%URL%",
+                "pass": "x"
+            },
+            "lolminer": {
+                "algo": "ethash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+		        "user_config": "--ethstratum=ETHV1"
+            },
+            "gminer": {
+                "algo": "ethash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%"
+            },
+            "nbminer": {
+                "algo": "ethash",
+                "url": "nicehash+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
         }
     },
     {

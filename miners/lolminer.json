@@ -10,6 +10,7 @@
     "default_fork": null,
     "default_units": "hs",
     "algos": [
+        "ALEPH",
         "AUTOLYKOS2",
         "AION",
         "AUTO144_5",
@@ -38,8 +39,11 @@
         "EXCC",
         "GRIN-C29M",
         "GRIN-C32",
+        "IRONFISH",
+        "KASPA",
         "MWC-C29D",
         "MWC-C31",
+        "NEXA",
         "TON",
         "UBQHASH",
         "XSG",
@@ -56,8 +60,16 @@
         "KASPADUAL",
         "TONDUAL"
     ],
+    "dual_modes": {
+        "AUTOLYKOS2": ["ALEPHDUAL", "KASPADUAL", "zil"],
+        "UBQHASH":    ["ALEPHDUAL", "KASPADUAL", "zil"],
+        "ETHASH":     ["ETCHASH", "ALEPHDUAL", "KASPADUAL", "zil"],
+        "ETCHASH":    ["ETHASH", "ALEPHDUAL", "KASPADUAL", "zil"],
+        "ETC":        ["ETHASH", "ALEPHDUAL", "KASPADUAL", "zil"]
+    },
     "algomap": {
         "autolykos v2 (ergo)": "autolykos2",
+        "ALEPH":"blake3-alph",
         "AION": "equihash 210\/9",
         "AUTO144_5": "equihash 144\/5",
         "EQUI144_5": "equihash 144\/5",
@@ -72,6 +84,7 @@
         "beamhash iii": "beamhashv3",
         "blake3-alephium": "blake3-alph",
         "Blake3-Alephium": "blake3-alph",
+        "blake3-ironfish": "blake3-iron",
         "BTCZ": "equihash 144\/5",
         "BTG": "equihash 144\/5",
         "CTXC": "cuckaroo30",
@@ -85,6 +98,7 @@
         "C29AE": "cuckoo cycle",
         "C29D": "cuckoo",
         "MWC-C31":   "cuckatoo31",
+        "NEXA": "nexapow",
         "Cuckaroo 29-40": "cuckatoo29b",
         "Cuckaroo 29-48": "cuckatoo29i",
         "Cuckaroo 29-32": "cuckatoo29s",

@@ -33,6 +33,122 @@
         }
     },
     {
+        "coin":"ETHW",
+        "servers":[
+            {
+                "geo": "PPLNS 4G",
+                "urls": [
+                    "ethw.baikalmine.com:1515"
+                ]
+            },
+            {
+                "geo": "PPLNS 9G",
+                "urls": [
+                    "ethw.baikalmine.com:1514"
+                ]
+             },
+	     {
+                "geo": "PPS+ 4G",
+                "urls": [
+                    "ethw-pps.baikalmine.com:1616"
+                ],
+                "ssl_urls": [
+                    "ethw-pps.baikalmine.com:1615"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash_4g"
+        }
+    },
+    {
+        "coin": "DNX",
+        "servers": [
+            {
+                "geo": "Moscow",
+                "urls": [
+                    "dnx.baikalmine.com:9090"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_dynexsolve",
+            "srbminer": {
+                "user_config": "--disable-cpu\n--mallob-endpoint https://dnx-mallob.baikalmine.com"
+            },
+            "onezerominer": {
+                "user_config": "--mallob-endpoint https://dnx-mallob.baikalmine.com"
+            }
+        }
+    },
+    {
+        "coin": "RTH",
+        "servers": [
+            {
+                "geo": "Moscow",
+                "urls": [
+                    "rth.baikalmine.com:1515"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethashb3",
+            "srbminer": {
+        "url": "%URL%",
+        "algo": "ethashb3",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-cpu"
+            }
+        }
+    },
+    {
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "EU PPS+",
+                "urls": [
+                    "ergo-pps.baikalmine.com:1516"
+                ]
+            },
+	    {
+                "geo": "EU PPLNS",
+                "urls": [
+                    "ergo.baikalmine.com:1212"
+                ]
+            },
+	    {
+                "geo": "EU SOLO",
+                "urls": [
+                    "ergo-solo.baikalmine.com:1214"
+                ]
+            }
+        ],
+        "miners": {
+		    "_prototype": "miners_autolykos2"
+        }
+    },
+    {
+        "coin": "KAS",
+        "servers": [
+            {
+                "geo": "RU",
+                "urls": [
+                    "kaspa.baikalmine.com:2525"
+                ]
+            },
+	    {
+                "geo": "RU SOLO",
+                "urls": [
+                    "kaspa-solo.baikalmine.com:2535"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kaspa"
+        }
+    },
+    {
         "coin": "CLO",
         "servers": [
             {
@@ -45,29 +161,6 @@
                 "geo": "SOLO EU",
                 "urls": [
                     "clo-solo.baikalmine.com:4433"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash",
-            "claymore": {
-                "claymore_user_config": "-allcoins etc\n-allpools 0"
-            }
-        }
-    },
-    {
-        "coin": "MOAC",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "moac.baikalmine.com:4444"
-                ]
-            },
-            {
-                "geo": "SOLO EU",
-                "urls": [
-                    "moac-solo.baikalmine.com:4545"
                 ]
             }
         ],

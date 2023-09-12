@@ -44,6 +44,58 @@
         }
     },
     {
+        "coin":"ETHF",
+        "servers":[
+            {
+                "geo": "Main",
+                "urls": [
+                    "etf.f2pool.com:6688"
+                ],
+                "ssl_urls": [
+                    "etfssl.f2pool.com:443"
+                ]
+            },
+            {
+                "geo": "Backup",
+                "urls": [
+                    "etf.f2pool.com:8008"
+                ],
+                "ssl_urls": [
+                    "etfssl.f2pool.com:3306"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash_4g"
+        }
+    },
+    {
+        "coin":"ETHW",
+        "servers":[
+            {
+                "geo": "Main",
+                "urls": [
+                    "ethw.f2pool.com:6688"
+                ],
+                "ssl_urls": [
+                    "ethwssl.f2pool.com:443"
+                ]
+            },
+            {
+                "geo": "Backup",
+                "urls": [
+                    "ethw.f2pool.com:8008"
+                ],
+                "ssl_urls": [
+                    "ethwssl.f2pool.com:3306"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash_4g"
+        }
+    },
+    {
         "coin":"CFX",
         "servers":[
             {
@@ -501,6 +553,76 @@
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
+        }
+    },
+    {
+        "coin": "KAS",
+        "servers": [
+          {
+            "geo": "Asia",
+            "urls": [
+                "kas-asia.f2pool.com:1400"
+            ],
+            "ssl_urls": [
+                "kasssl-asia.f2pool.com:1410"
+            ]
+          },
+          {
+            "geo": "N.America",
+            "urls": [
+                "kas-na.f2pool.com:1400"
+            ],
+            "ssl_urls": [
+                "kasssl-na.f2pool.com:1410"
+            ]
+          },
+          {
+            "geo": "Europe",
+            "urls": [
+                "kas-euro.f2pool.com:1400"
+            ],
+            "ssl_urls": [
+                "kasssl-euro.f2pool.com:1410"
+            ]
+          }
+        ],
+        "miners": {
+          "_prototype": "miners_kaspa"
+        }
+    },
+    {
+        "coin": "IRON",
+        "servers": [
+          {
+            "geo": "Asia",
+            "urls": [
+                "iron-asia.f2pool.com:1500"
+            ],
+            "ssl_urls": [
+                "ironssl-asia.f2pool.com:1510"
+            ]
+          },
+          {
+            "geo": "N.America",
+            "urls": [
+                "iron-na.f2pool.com:1500"
+            ],
+            "ssl_urls": [
+                "ironssl-na.f2pool.com:1510"
+            ]
+          },
+          {
+            "geo": "Europe",
+            "urls": [
+                "iron-euro.f2pool.com:1500"
+            ],
+            "ssl_urls": [
+                "ironssl-euro.f2pool.com:1510"
+            ]
+          }
+        ],
+        "miners": {
+          "_prototype": "miners_ironfish"
         }
     }
 ]
