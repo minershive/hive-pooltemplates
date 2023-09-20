@@ -441,12 +441,12 @@
 *   Updated `nvidia-driver-update` (Added support up to CUDA v11.8 and latest drivers)
 *   AMD GPUs: Added new 0 mem state feature (Notes: If memory overclocking doesn't affect hashrate i.e. mining Kaspa then user can set MemClk to '1 MHz', as result memory clock will drop to 0 memory state, e.g. for BigNavi it's equal to 96MHz with a significant reduction in energy consumption.  Experimental usage until dashboard is updated)
 *   Add new experimental command `amd-ocl-install` (Notes: User can now change pre-installed OpenCL libraries to available versions of amdgpu and rocm from Hive OS repository)
- *   Improved first run procedure (Improved password input checking; Improved rig password setting sequence; Reversed `disk-expand` behavior on first boot, now runs if rig.conf doesn't exists)
- *   Updated `autofan` to v3.18.
- *   Updated Web shell (`ttyd` v1.7.2).
- *   Built-in-CPU graphics now always the first in GPUs list.
- *   Update Devices IDs.
- *   Various other fixes.
+*   Improved first run procedure (Improved password input checking; Improved rig password setting sequence; Reversed `disk-expand` behavior on first boot, now runs if rig.conf doesn't exists)
+*   Updated `autofan` to v3.18.
+*   Updated Web shell (`ttyd` v1.7.2).
+*   Built-in-CPU graphics now always the first in GPUs list.
+*   Update Devices IDs.
+*   Various other fixes.
 
 ##### 0.6-219@221220 2022-12-20
 *   GMiner v3.18 (Improved hashrate for `Kaspa`, `ETC+Kaspa` and `Ergo+Kaspa`; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.18)
