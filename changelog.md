@@ -1,3 +1,10 @@
+##### 0.6-224@230920 2023-09-20
+*   Rigel miner v1.7.3 (Add dual modes `RTH+IRON` and `ERG+IRON`, also both can be used +ZIL; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.7.3)
+*   miniZ v2.2c (Added support for `ethashb3` and `evrprogpow` algorithms; Notes: see full changelog and details at https://miniz.cc/2023/09/20/miniz-v22c-is-out/)
+*   cpuMiner-Opt-JayDDee v3.23.1 (AVX2/AVX512 optimizations for sha256dt, blakecoin & vanilla; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.23.1)
+*   TeamBlackMiner v2.00 (Improved performance `ethashb3`; Notes: see full changelog and details at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.00)
+*   TT-Miner v2023.4.1 (See changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
+
 ##### 0.6-224@230909 2023-09-09
 *   Updated misc devices IDs and related tools (USB, PCI-E, AMD GPUs)
 *   Add support Nvidia driver v535 series (updated `nvtool` to v1.8.1 which fixes temperature sensors reading)
