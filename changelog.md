@@ -1,3 +1,7 @@
+##### 0.6-224@230924 2023-09-24
+*   Rigel miner v1.8.0 (Add mining support for the following `kawpow` coins: RVN, CLORE, XNA, dev fee 1%; Minor performance improvements for <algo>+ironfish dual modes; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.8.0)
+*   cpuMiner-Opt-JayDDee v3.23.2 (sha256dt, sha256t & sha256d +10% with SHA and small AVX2; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.23.2)
+
 ##### 0.6-224@230920 2023-09-20
 *   Rigel miner v1.7.3 (Add dual modes `RTH+IRON` and `ERG+IRON`, also both can be used +ZIL; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.7.3)
 *   miniZ v2.2c (Added support for `ethashb3` and `evrprogpow` algorithms; Notes: see full changelog and details at https://miniz.cc/2023/09/20/miniz-v22c-is-out/)
