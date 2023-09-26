@@ -1,3 +1,6 @@
+##### 0.6-224@230925 2023-09-25
+*   Rigel miner v1.8.1 (Add Neoxa mining support; Fixed compatibility issue with Hiveon RVN pool; Fixed invalid shares issue on ETC mining introduced in v1.8.0; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.8.1)
+
 ##### 0.6-224@230924 2023-09-24
 *   Rigel miner v1.8.0 (Add mining support for the following `kawpow` coins: RVN, CLORE, XNA, dev fee 1%; Minor performance improvements for <algo>+ironfish dual modes; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.8.0)
 *   cpuMiner-Opt-JayDDee v3.23.2 (sha256dt, sha256t & sha256d +10% with SHA and small AVX2; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.23.2)
