@@ -1,3 +1,6 @@
+##### 0.6-224@231003 2023-10-03
+*   SRBMiner-Multi v2.3.7 (Performance improvement on Dynex mining on AMD and NVIDIA GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.7)
+
 ##### 0.6-224@231002 2023-10-02
 *   Rigel miner v1.9.1 (Added `octopus` algorithm support, 2% devfee; Added dual mining modes: CFX+RXD, CFX+ALPH, OCTA+RXD and triple with ZIL; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.9.1)
 
