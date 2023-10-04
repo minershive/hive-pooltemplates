@@ -1,3 +1,29 @@
+##### 0.6-224@231003 2023-10-03
+*   SRBMiner-Multi v2.3.7 (Performance improvement on Dynex mining on AMD and NVIDIA GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.7)
+
+##### 0.6-224@231002 2023-10-02
+*   Rigel miner v1.9.1 (Added `octopus` algorithm support, 2% devfee; Added dual mining modes: CFX+RXD, CFX+ALPH, OCTA+RXD and triple with ZIL; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.9.1)
+
+##### 0.6-224@230930 2023-09-30
+*   OneZeroMiner v1.2.5 (Hashrate/Efficiency improvement; Notes: see full changelog and details at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.5)
+*   SRBMiner-Multi v2.3.6 (Added support for algorithm 'dynex' on NVIDIA GPUs; Performance improvement on algorithm 'dynex' on AMD GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.6)
+*   BzMiner v17.0.0 (Added `decred` mining; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v17.0.0)
+*   cpuMiner-Opt-JayDDee v3.23.3 (Full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.23.3) 
+
+##### 0.6-224@230925 2023-09-25
+*   Rigel miner v1.8.1 (Add Neoxa mining support; Fixed compatibility issue with Hiveon RVN pool; Fixed invalid shares issue on ETC mining introduced in v1.8.0; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.8.1)
+
+##### 0.6-224@230924 2023-09-24
+*   Rigel miner v1.8.0 (Add mining support for the following `kawpow` coins: RVN, CLORE, XNA, dev fee 1%; Minor performance improvements for <algo>+ironfish dual modes; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.8.0)
+*   cpuMiner-Opt-JayDDee v3.23.2 (sha256dt, sha256t & sha256d +10% with SHA and small AVX2; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.23.2)
+
+##### 0.6-224@230920 2023-09-20
+*   Rigel miner v1.7.3 (Add dual modes `RTH+IRON` and `ERG+IRON`, also both can be used +ZIL; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.7.3)
+*   miniZ v2.2c (Added support for `ethashb3` and `evrprogpow` algorithms; Notes: see full changelog and details at https://miniz.cc/2023/09/20/miniz-v22c-is-out/)
+*   cpuMiner-Opt-JayDDee v3.23.1 (AVX2/AVX512 optimizations for sha256dt, blakecoin & vanilla; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.23.1)
+*   TeamBlackMiner v2.00 (Improved performance `ethashb3`; Notes: see full changelog and details at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.00)
+*   TT-Miner v2023.4.1 (See changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
+
 ##### 0.6-224@230909 2023-09-09
 *   Updated misc devices IDs and related tools (USB, PCI-E, AMD GPUs)
 *   Add support Nvidia driver v535 series (updated `nvtool` to v1.8.1 which fixes temperature sensors reading)
@@ -441,12 +467,12 @@
 *   Updated `nvidia-driver-update` (Added support up to CUDA v11.8 and latest drivers)
 *   AMD GPUs: Added new 0 mem state feature (Notes: If memory overclocking doesn't affect hashrate i.e. mining Kaspa then user can set MemClk to '1 MHz', as result memory clock will drop to 0 memory state, e.g. for BigNavi it's equal to 96MHz with a significant reduction in energy consumption.  Experimental usage until dashboard is updated)
 *   Add new experimental command `amd-ocl-install` (Notes: User can now change pre-installed OpenCL libraries to available versions of amdgpu and rocm from Hive OS repository)
- *   Improved first run procedure (Improved password input checking; Improved rig password setting sequence; Reversed `disk-expand` behavior on first boot, now runs if rig.conf doesn't exists)
- *   Updated `autofan` to v3.18.
- *   Updated Web shell (`ttyd` v1.7.2).
- *   Built-in-CPU graphics now always the first in GPUs list.
- *   Update Devices IDs.
- *   Various other fixes.
+*   Improved first run procedure (Improved password input checking; Improved rig password setting sequence; Reversed `disk-expand` behavior on first boot, now runs if rig.conf doesn't exists)
+*   Updated `autofan` to v3.18.
+*   Updated Web shell (`ttyd` v1.7.2).
+*   Built-in-CPU graphics now always the first in GPUs list.
+*   Update Devices IDs.
+*   Various other fixes.
 
 ##### 0.6-219@221220 2022-12-20
 *   GMiner v3.18 (Improved hashrate for `Kaspa`, `ETC+Kaspa` and `Ergo+Kaspa`; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.18)

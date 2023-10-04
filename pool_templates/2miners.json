@@ -147,23 +147,6 @@
         }
     },
     {
-        "coin": "CLO",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "clo.2miners.com:3030"
-                ],
-                "ssl_urls": [
-                    "clo.2miners.com:13030"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
         "coin": "ZEC",
         "servers": [
             {
@@ -831,6 +814,44 @@
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
+            }
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "bch.2miners.com:7070"
+                ],
+                "ssl_urls": [
+                    "bch.2miners.com:17070"
+                ]
+            },
+            {
+                "geo": "EU MedDIFF",
+                "urls": [
+                    "bch.2miners.com:7171"
+                ],
+                "ssl_urls": [
+                    "bch.2miners.com:17171"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "bch.2miners.com:7272"
+                ],
+                "ssl_urls": [
+                    "bch.2miners.com:17272"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }
