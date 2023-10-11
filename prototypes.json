@@ -66,6 +66,12 @@
             "algo": "octopus",
             "template": "%WAL%.%WORKER_NAME%",
             "pass": "x"
+        },
+        "rigel": {
+            "url": "%URL%",
+            "algo": "octopus",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
         }
     },
 
@@ -118,7 +124,12 @@
 	    "url": "%URL%",
 	    "algo": "ergo",
 	    "template": "%WAL%.%WORKER_NAME%"
-	}
+	},
+        "rigel": {
+            "url": "%URL%",
+            "algo": "autolykos2",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
     },
 
     "miners_autolykos2_slash_email": {
@@ -239,7 +250,11 @@
 	    "algo": "etchash",
             "worker": "%WORKER_NAME%",
 	    "template": "%WAL%"
-	}
+	},
+        "asicminer": {
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
     },
 
     "miners_ethash_4g": {
@@ -816,6 +831,13 @@
             "pass": "x",
             "template": "%WAL%",
             "user_config": "rigName=%WORKER_NAME%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "randomx",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--disable-gpu"
         }
     },
 
@@ -850,6 +872,13 @@
             "pass": "x",
             "template": "%WAL%",
             "user_config": "rigName=%WORKER_NAME%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "randomx",
+            "pass": "x",
+            "template": "%WAL%+%WORKER_NAME%",
+            "user_config": "--disable-gpu"
         }
     },
 
@@ -883,6 +912,13 @@
             "algo": "randomx",
             "pass": "%WORKER_NAME%",
             "template": "%WAL%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "randomx",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "--disable-gpu"
         }
     },
 
@@ -917,6 +953,13 @@
             "pass": "x",
             "template": "%WAL%",
             "user_config": "rigName=%WORKER_NAME%\nemail = %EMAIL%"
+        },
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "randomx",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%",
+            "user_config": "--disable-gpu"
         }
     },
 
@@ -1379,6 +1422,11 @@
     },
 
     "miners_kaspa": {
+        "asicminer": {
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
         "srbminer":{
             "url":"%URL%",
             "algo":"kaspa",

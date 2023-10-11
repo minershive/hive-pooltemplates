@@ -51,10 +51,10 @@
         "miners": {
             "_prototype": "miners_dynexsolve",
             "srbminer": {
-                "user_config": "--disable-cpu\n--mallob-endpoint https://dnx.eu.ekapool.com"
+                "user_config": "--disable-cpu\n--mallob-endpoint https://dnx.eu.ekapool.com,https://dnx.us.ekapool.com,https://dnx.ca.ekapool.com,https://dnx.sg.ekapool.com"
             },
             "onezerominer": {
-                "user_config": "--mallob-endpoint dnx.eu.ekapool.com,dnx.us.ekapool.com"
+                "user_config": "--mallob-endpoint https://dnx.eu.ekapool.com,https://dnx.us.ekapool.com,https://dnx.ca.ekapool.com,https://dnx.sg.ekapool.com"
             }
         }
     },
@@ -92,6 +92,33 @@
         ],
         "miners": {
             "_prototype": "miners_progpow_zano"
+        }
+    },
+
+    {
+        "coin": "ZEPH",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "zeph.eu.ekapool.com:15666"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "zeph.us.ekapool.com:15666"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "zeph.sg.ekapool.com:15666"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_randomx_worker"
         }
     }
 ]
