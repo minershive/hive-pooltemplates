@@ -1,0 +1,61 @@
+[
+    {
+        "pool": {
+            "name": "MineNow",
+            "url": "https://dnx.minenow.space",
+            "fee": 0.1,
+            "type": "PPLNS"
+        }
+    },
+
+    {
+        "coin": "DNX",
+        "servers": [
+            {
+                "geo": "EU/Frankfurt",
+                "urls": [
+                    "eu.dnx.minenow.space:18000"
+                ],
+                "ssl_urls": [
+                    "eu.dnx.minenow.space:18443"
+                ]
+            },
+            {
+                "geo": "RU/Moscow",
+                "urls": [
+                    "ru.dnx.minenow.space:18000"
+                ],
+                "ssl_urls": [
+                    "ru.dnx.minenow.space:18443"
+                ]
+            },
+            {
+                "geo": "US/New York",
+                "urls": [
+                    "us-east.dnx.minenow.space:18000"
+                ],
+                "ssl_urls": [
+                    "us-east.dnx.minenow.space:18443"
+                ]
+            },
+            {
+                "geo": "ASIA/Singapore",
+                "urls": [
+                    "sg.dnx.minenow.space:18000"
+                ],
+                "ssl_urls": [
+                    "sg.dnx.minenow.space:18443"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_dynexsolve",
+            "srbminer": {
+                "user_config": "--disable-cpu\n--mallob-endpoint eu.dnx.minenow.space:8000"
+            },
+            "onezerominer": {
+                "user_config": "--mallob-endpoint eu.dnx.minenow.space:8000"
+            }
+        }
+    }
+]
