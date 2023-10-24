@@ -69,15 +69,21 @@
                 "urls": [
                     "dnx.baikalmine.com:9090"
                 ]
+            },
+	    {
+                "geo": "Frankfurt",
+                "urls": [
+                    "dnx-eu.baikalmine.com:9090"
+                ]
             }
         ],
         "miners": {
             "_prototype": "miners_dynexsolve",
             "srbminer": {
-                "user_config": "--disable-cpu\n--mallob-endpoint https://dnx-mallob.baikalmine.com"
+                "user_config": "--disable-cpu\n--mallob-endpoint https://eu-mallob.baikalmine.com,https://dnx-mallob.baikalmine.com"
             },
             "onezerominer": {
-                "user_config": "--mallob-endpoint https://dnx-mallob.baikalmine.com"
+                "user_config": "--mallob-endpoint https://eu-mallob.baikalmine.com,https://dnx-mallob.baikalmine.com"
             }
         }
     },
