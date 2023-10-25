@@ -1,3 +1,6 @@
+##### 0.6-224@231024 2023-10-24
+*   WildRig-Multi v0.37.2 (Fixed support of old drivers on Linux for RDNA GPUs; Significant hashrate improvements for RDNA3 on `skydoge` `rwahash`; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.37.2)
+   
 ##### 0.6-224@231022 2023-10-22
 *   WildRig-Multi v0.37.1 (Significant hashrate improvement for `rwahash` on Polaris/Vega GPUs vs v0.37.0; Fixed CPU usage on NVIDIA GPUs while mining `rwahash`; Removed `memehash` and `memehashv2`; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.37.1)
 
