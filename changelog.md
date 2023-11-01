@@ -1,3 +1,32 @@
+##### 0.6-224@231024 2023-10-24
+*   WildRig-Multi v0.37.2 (Fixed support of old drivers on Linux for RDNA GPUs; Significant hashrate improvements for RDNA3 on `skydoge` `rwahash`; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.37.2)
+   
+##### 0.6-224@231022 2023-10-22
+*   WildRig-Multi v0.37.1 (Significant hashrate improvement for `rwahash` on Polaris/Vega GPUs vs v0.37.0; Fixed CPU usage on NVIDIA GPUs while mining `rwahash`; Removed `memehash` and `memehashv2`; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.37.1)
+
+##### 0.6-224@231019 2023-10-19
+*   SRBMiner-Multi v2.3.9 (Fixed invalid shares issue on algorithm `dynex` appeared in v2.3.8; Performance improvement on algorithm 'dynex' for some GPUs. Reduced devfee for algorithm 'dynex' to 2.0%. Notes: 1) Miners which mine Dynex coin should switch to this version until Oct 21, 2023. 2) Full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.9)
+*   cpuMiner-Opt-Rplant v5.0.36 (Add `rwahash` algo fro mining GM/GoodMorning Network; Full changelog: https://github.com/rplant8/cpuminer-opt-rplant/releases/tag/5.0.36)
+
+##### 0.6-224@231003 2023-10-03
+*   SRBMiner-Multi v2.3.7 (Performance improvement on Dynex mining on AMD and NVIDIA GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.7)
+
+##### 0.6-224@231002 2023-10-02
+*   Rigel miner v1.9.1 (Added `octopus` algorithm support, 2% devfee; Added dual mining modes: CFX+RXD, CFX+ALPH, OCTA+RXD and triple with ZIL; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.9.1)
+
+##### 0.6-224@230930 2023-09-30
+*   OneZeroMiner v1.2.5 (Hashrate/Efficiency improvement; Notes: see full changelog and details at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.5)
+*   SRBMiner-Multi v2.3.6 (Added support for algorithm 'dynex' on NVIDIA GPUs; Performance improvement on algorithm 'dynex' on AMD GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.6)
+*   BzMiner v17.0.0 (Added `decred` mining; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v17.0.0)
+*   cpuMiner-Opt-JayDDee v3.23.3 (Full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.23.3) 
+
+##### 0.6-224@230925 2023-09-25
+*   Rigel miner v1.8.1 (Add Neoxa mining support; Fixed compatibility issue with Hiveon RVN pool; Fixed invalid shares issue on ETC mining introduced in v1.8.0; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.8.1)
+
+##### 0.6-224@230924 2023-09-24
+*   Rigel miner v1.8.0 (Add mining support for the following `kawpow` coins: RVN, CLORE, XNA, dev fee 1%; Minor performance improvements for <algo>+ironfish dual modes; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.8.0)
+*   cpuMiner-Opt-JayDDee v3.23.2 (sha256dt, sha256t & sha256d +10% with SHA and small AVX2; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v3.23.2)
+
 ##### 0.6-224@230920 2023-09-20
 *   Rigel miner v1.7.3 (Add dual modes `RTH+IRON` and `ERG+IRON`, also both can be used +ZIL; Notes: see full changelog and details at https://github.com/rigelminer/rigel/releases/tag/1.7.3)
 *   miniZ v2.2c (Added support for `ethashb3` and `evrprogpow` algorithms; Notes: see full changelog and details at https://miniz.cc/2023/09/20/miniz-v22c-is-out/)
