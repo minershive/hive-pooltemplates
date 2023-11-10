@@ -37,5 +37,30 @@
         "url": "ethproxy+tcp://%URL%"
       }
     }
+  },
+  {
+    "coin": "IRON",
+    "servers": [
+      {
+        "geo": "Worldwide",
+        "urls": ["iron.fpmp.net:8888"],
+        "ssl_urls": ["iron.fpmp.net:9999"]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "blake3_ironfish",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-cpu"
+      },
+      "bzminer": {
+        "url": "%URL%",
+        "algo": "ironfish",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
   }
 ]

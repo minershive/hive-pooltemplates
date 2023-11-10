@@ -1,0 +1,197 @@
+[
+    {
+        "pool": {
+            "name": "tw-pool",
+            "url": "https://www.tw-pool.com",
+            "type": "PPS+"
+        }
+    },
+    {
+        "coin": "KAS",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "stratum.tw-pool.com:10001",
+                    "stratum2.tw-pool.com:10001"
+                ],
+                "ssl_urls": [
+                    "stratum.tw-pool.com:10001",
+                    "stratum2.tw-pool.com:10001"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kaspa"
+        }
+    },
+    {
+        "coin": "NEXA",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "stratum.tw-pool.com:20001",
+                    "stratum2.tw-pool.com:20001"
+                ],
+                "ssl_urls": [
+                    "stratum.tw-pool.com:20001",
+                    "stratum2.tw-pool.com:20001"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_nexapow"
+        }
+    },
+    {
+        "coin": "RXD",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "stratum.tw-pool.com:30001",
+                    "stratum2.tw-pool.com:30001"
+                ],
+                "ssl_urls": [
+                    "stratum.tw-pool.com:30001",
+                    "stratum2.tw-pool.com:30001"
+                ]
+            },
+            {
+                "geo": "AUTO (SOLO)",
+                "urls": [
+                    "stratum.tw-pool.com:30011",
+                    "stratum2.tw-pool.com:30011"
+                ],
+                "ssl_urls": [
+                    "stratum.tw-pool.com:30011",
+                    "stratum2.tw-pool.com:30011"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_sha512256d"
+        }
+    },
+    {
+        "coin": "IRON",
+        "servers": [
+          {
+            "geo": "AUTO",
+            "urls": [
+                "stratum.tw-pool.com:60001",
+                "stratum2.tw-pool.com:60001"
+            ],
+            "ssl_urls": [
+                "stratum.tw-pool.com:60001",
+                "stratum2.tw-pool.com:60001"
+            ]
+          }
+        ],
+        "miners": {
+          "srbminer": {
+            "url": "%URL%",
+            "algo": "blake3_ironfish",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--disable-cpu"
+          },
+          "bzminer": {
+            "url": "%URL%",
+            "algo": "ironfish",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+          },
+          "rigel": {
+            "url": "%URL%",
+            "algo": "ironfish",
+            "template": "%WAL%.%WORKER_NAME%"
+          }
+        }
+    },
+    {
+        "coin": "OCTA",
+        "servers": [
+          {
+            "geo": "AUTO",
+            "urls": [
+                "eth.tw-pool.com:51001",
+                "eth2.tw-pool.com:51001"
+            ],
+            "ssl_urls": [
+                "eth.tw-pool.com:51001",
+                "eth2.tw-pool.com:51001"
+            ]
+          }
+        ],
+        "miners": {
+          "_prototype": "miners_ethash",
+          "lolminer": {
+            "template": "%WAL%.%WORKER_NAME%",
+            "url": "%URL%",
+            "user_config": "--ethstratum=ETHV1"
+          },
+          "rigel": {
+            "algo": "octa",
+            "url": "ethstratum+tcp://%URL%"
+          },
+          "bzminer": {
+            "algo": "octa",
+            "url": "ethstratum+tcp://%URL%"
+          },
+          "t-rex": {
+            "algo": "ethash",
+            "url": "ethstratum+tcp://%URL%"
+          },
+          "teamredminer": {
+            "algo": "ethash",
+            "url": "ethstratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
+          }
+        }
+    },
+    {
+        "coin": "PEPEW",
+        "servers": [
+          {
+            "geo": "AUTO(PPLNS)",
+            "urls": [
+                "stratum.tw-pool.com:31001",
+                "stratum2.tw-pool.com:31001"
+            ],
+            "ssl_urls": [
+                "stratum.tw-pool.com:31001",
+                "stratum2.tw-pool.com:31001"
+            ]
+          }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "memehash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            }
+        }
+    },
+    {
+        "coin": "ETHF",
+        "servers": [
+          {
+            "geo": "AUTO(PPLNS)",
+            "urls": [
+                "ethf.tw-pool.com:52001"
+            ],
+            "ssl_urls": [
+                "ethf.tw-pool.com:52001"
+            ]
+          }
+        ],
+        "miners": {
+            "_prototype":"miners_ethash"
+        }
+    }
+]

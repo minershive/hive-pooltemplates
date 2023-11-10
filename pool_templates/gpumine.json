@@ -1,0 +1,83 @@
+[
+    {
+        "pool": {
+            "name": "GPUMINE",
+            "url": "https://gpumine.org",
+            "fee": 1,
+            "type": "PPS+"
+        }
+    },
+
+    {
+        "coin": "ETC",
+        "servers": [
+            {
+                "geo": "GPU & ASIC",
+                "urls": [
+                    "etc.gpumine.org:1610",
+                    "etc2.gpumine.org:1610"
+                ],
+                "ssl_urls": [
+                    "etc.gpumine.org:1620",
+                    "etc2.gpumine.org:1620"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_etchash",
+            "bzminer": {
+              "url": "ethproxy+tcp://%URL%"
+            }
+        }
+    },
+
+    {
+        "coin": "KAS",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "kas.gpumine.org:2610",
+                    "kas2.gpumine.org:2610"
+                ],
+                "ssl_urls": [
+                    "kas.gpumine.org:2620",
+                    "kas2.gpumine.org:2620"
+                ]
+            },
+            {
+                "geo": "ASIC",
+                "urls": [
+                    "kas.gpumine.org:2618",
+                    "kas2.gpumine.org:2618"
+                ],
+                "ssl_urls": [
+                    "kas.gpumine.org:2628",
+                    "kas2.gpumine.org:2628"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kaspa"
+        }
+    },
+    {
+        "coin": "IRON",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "iron.gpumine.org:3610",
+                    "iron2.gpumine.org:3610"
+                ],
+                "ssl_urls": [
+                    "iron.gpumine.org:3620",
+                    "iron2.gpumine.org:3620"
+                ]
+            }
+        ],
+        "miners": {
+          "_prototype": "miners_ironfish"
+        }
+    }
+]
