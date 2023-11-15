@@ -70,7 +70,7 @@
         "user_config": "--proto stratum"
       },
       "t-rex": {
-        "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
+        "user_config": "\"extra-dag-epoch\": 1\n\"worker\": \"%WORKER_NAME%\""
       }
     }
   },
@@ -126,7 +126,7 @@
         "user_config": "--proto stratum"
       },
       "t-rex": {
-        "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"ETC\""
+        "user_config": "\"extra-dag-epoch\": 1\n\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"ETC\""
       }
     }
   },
@@ -428,7 +428,7 @@
         "user_config": "--ethstratum ETHV1"
       },
       "t-rex": {
-        "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
+        "user_config": "\"extra-dag-epoch\": 1\n\"worker\": \"%WORKER_NAME%\""
       }
     }
   },
@@ -511,7 +511,99 @@
         "user_config": "--ethstratum ETHV1"
       },
       "t-rex": {
-        "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
+        "user_config": "\"extra-dag-epoch\": 1\n\"worker\": \"%WORKER_NAME%\""
+      }
+    }
+  },
+  {
+    "coin": "XPB",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.xpb.k1pool.com:9722"
+        ],
+        "ssl_urls": [
+          "eu.xpb.k1pool.com:9720"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+          "us.xpb.k1pool.com:9722"
+        ],
+        "ssl_urls": [
+          "us.xpb.k1pool.com:9720"
+        ]
+      },
+      {
+        "geo": "China",
+        "urls": [
+          "cn.xpb.k1pool.com:9722"
+        ],
+        "ssl_urls": [
+          "cn.xpb.k1pool.com:9720"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.xpbsolo.k1pool.com:9724"
+        ],
+        "ssl_urls": [
+          "us.xpbsolo.k1pool.com:9724"
+        ]
+      },
+      {
+        "geo": "Europe SOLO HiDiff",
+        "urls": [
+          "eu.xpbsolo.k1pool.com:9725"
+        ]
+      },
+      {
+        "geo": "USA SOLO",
+        "urls": [
+          "us.xpbsolo.k1pool.com:9724"
+        ],
+        "ssl_urls": [
+          "us.xpbsolo.k1pool.com:9724"
+        ]
+      },
+      {
+        "geo": "USA SOLO HiDiff",
+        "urls": [
+          "us.xpbsolo.k1pool.com:9725"
+        ]
+      },
+      {
+        "geo": "China SOLO",
+        "urls": [
+          "cn.xpbsolo.k1pool.com:9724"
+        ],
+        "ssl_urls": [
+          "us.xpbsolo.k1pool.com:9724"
+        ]
+      },
+      {
+        "geo": "China SOLO HiDiff",
+        "urls": [
+          "cn.xpbsolo.k1pool.com:9725"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ethash",
+      "phoenixminer": {
+        "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, PROTO: 4"
+      },
+      "gminer": {
+        "user_config": "--proto stratum"
+      },
+      "lolminer": {
+        "user_config": "--ethstratum ETHV1"
+      },
+      "t-rex": {
+        "user_config": "\"extra-dag-epoch\": 1\n\"worker\": \"%WORKER_NAME%\""
       }
     }
   },
@@ -606,7 +698,7 @@
         "user_config": "--ethstratum ETHV1"
       },
       "t-rex": {
-        "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"ETC\""
+        "user_config": "\"extra-dag-epoch\": 1\n\"worker\": \"%WORKER_NAME%\"\n\"coin\": \"ETC\""
       }
     }
   },
@@ -698,7 +790,7 @@
         "user_config": "--ethstratum ETHV1 --enablezilcache"
       },
       "t-rex": {
-        "user_config": "\"extra-dag-epoch\": 0\n\"worker\": \"%WORKER_NAME%\""
+        "user_config": "\"extra-dag-epoch\": 1\n\"worker\": \"%WORKER_NAME%\""
       }
     }
   },
@@ -966,6 +1058,12 @@
         ]
       },
       {
+        "geo": "China",
+        "urls": [
+          "cn.rvn.k1pool.com:7861"
+        ]
+      },
+      {
         "geo": "Europe SOLO",
         "urls": [
           "eu.rvnsolo.k1pool.com:7863"
@@ -988,6 +1086,18 @@
         "urls": [
           "us.rvnsolo.k1pool.com:7864"
         ]
+      },
+      {
+        "geo": "China SOLO",
+        "urls": [
+          "cn.rvnsolo.k1pool.com:7863"
+        ]
+      },
+      {
+        "geo": "China SOLO HiDiff",
+        "urls": [
+          "cn.rvnsolo.k1pool.com:7864"
+        ]
       }
     ],
     "miners": {
@@ -1007,6 +1117,12 @@
         "geo": "USA",
         "urls": [
           "us.neox.k1pool.com:6361"
+        ]
+      },
+      {
+        "geo": "China",
+        "urls": [
+          "cn.neox.k1pool.com:6361"
         ]
       },
       {
@@ -1032,6 +1148,18 @@
         "urls": [
           "us.neoxsolo.k1pool.com:6364"
         ]
+      },
+      {
+        "geo": "China SOLO",
+        "urls": [
+          "cn.neoxsolo.k1pool.com:6363"
+        ]
+      },
+      {
+        "geo": "China SOLO HiDiff",
+        "urls": [
+          "cn.neoxsolo.k1pool.com:6364"
+        ]
       }
     ],
     "miners": {
@@ -1051,6 +1179,12 @@
         "geo": "USA",
         "urls": [
           "us.xna.k1pool.com:7029"
+        ]
+      },
+      {
+        "geo": "China",
+        "urls": [
+          "cn.xna.k1pool.com:7029"
         ]
       },
       {
@@ -1075,6 +1209,80 @@
         "geo": "USA SOLO HiDiff",
         "urls": [
           "us.xnasolo.k1pool.com:7032"
+        ]
+      },
+      {
+        "geo": "China SOLO",
+        "urls": [
+          "cn.xnasolo.k1pool.com:7031"
+        ]
+      },
+      {
+        "geo": "China SOLO HiDiff",
+        "urls": [
+          "cn.xnasolo.k1pool.com:7032"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow"
+    }
+  },
+  {
+    "coin": "CLORE",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.clore.k1pool.com:5030"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+          "us.clore.k1pool.com:5030"
+        ]
+      },
+      {
+        "geo": "China",
+        "urls": [
+          "cn.clore.k1pool.com:5030"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.cloresolo.k1pool.com:5032"
+        ]
+      },
+      {
+        "geo": "Europe SOLO HiDiff",
+        "urls": [
+          "eu.cloresolo.k1pool.com:5033"
+        ]
+      },
+      {
+        "geo": "USA SOLO",
+        "urls": [
+          "us.cloresolo.k1pool.com:5032"
+        ]
+      },
+      {
+        "geo": "USA SOLO HiDiff",
+        "urls": [
+          "us.cloresolo.k1pool.com:5033"
+        ]
+      },
+      {
+        "geo": "China SOLO",
+        "urls": [
+          "cn.xnasolo.k1pool.com:5032"
+        ]
+      },
+      {
+        "geo": "China SOLO HiDiff",
+        "urls": [
+          "cn.xnasolo.k1pool.com:5033"
         ]
       }
     ],
