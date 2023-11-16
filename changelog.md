@@ -1,3 +1,11 @@
+##### 0.6-224@231115 2023-11-15
+*   Rigel miner v1.9.2 (Add XPB/PowBlocks mining support; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.9.2)
+*   lolMiner v1.77b (Added support for `SHA512_256D` used for RXD/Radiant mining; Added support for `EthashB3` used for RETH/Rethereum mining; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.77b)
+*   GMiner v3.42 (Improved miner stability; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.42)
+*   OneZeroMiner v1.2.6 Beta (Add support for dynexsolve v2.3.5 and the new mallob behind the pool protocol; Deprecate `--mallob-endpoint` option; Notes: 1) It's Beta version so it's may contains bugs & you need manual selection in Miner settings section of Flight Sheet 2) See full changelog and details at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.6)
+*   WildRig-Multi v0.38.4 (Fixed progpow family algorithms on Nvidia non-RTX GPUs; Slightly improved sha512256d on Nvidia GPUs; Fixed default intensities for AMD Radeon RX 7600/7700 XT/7800 XT; Fixed support of Radeon VII; Implemented support in v0.38.0 for Intel GPUs on all algos except heavyhash; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.38.4)
+*   cpuMiner-Opt-JayDDee v23.10 (Optimization, code cleanup, etc ...; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v23.10)
+   
 ##### 0.6-224@231024 2023-10-24
 *   WildRig-Multi v0.37.2 (Fixed support of old drivers on Linux for RDNA GPUs; Significant hashrate improvements for RDNA3 on `skydoge` `rwahash`; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.37.2)
    
