@@ -1,23 +1,31 @@
 [
     {
         "pool": {
-            "name": "ŻET Mining Pool PPLNS",
+            "name": "ŻET Mining Pool",
             "url": "https://www.zetpool.org",
-            "fee": 0.5,
+            "fee": 0.9,
             "type": "PPLNS"
         }
+    },
+    {
+	    "coin": "DNX",
+	    "servers": [
+		    {
+		    	"geo": "EU",
+		    	"urls": ["dnx.zetpool.org:8003"]
+		    }
+	    ],
+	    "miners": {
+	            "_prototype": "miners_dynexsolve"
+	    }
     },
     {
         "coin": "ETC",
         "servers": [
             {
-                "geo": "Europe",
-                "urls": [
-                    "etc.zetpool.org:8008"
-                ],
-				"ssl_urls": [
-                    "etc.zetpool.org:8808"
-                ]
+                "geo": "EU",
+                "urls": ["etc.zetpool.org:8008"],
+		"ssl_urls": ["etc.zetpool.org:8808"]
             }
         ],
         "miners": {

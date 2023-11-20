@@ -147,23 +147,6 @@
         }
     },
     {
-        "coin": "CLO",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "clo.2miners.com:3030"
-                ],
-                "ssl_urls": [
-                    "clo.2miners.com:13030"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
         "coin": "ZEC",
         "servers": [
             {
@@ -640,6 +623,32 @@
         }
     },
     {
+        "coin": "XNA",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "xna.2miners.com:6060"
+                ],
+                "ssl_urls": [
+                    "xna.2miners.com:16060"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "xna.2miners.com:6161"
+                ],
+                "ssl_urls": [
+                    "xna.2miners.com:16161"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
         "coin": "AE",
         "servers": [
             {
@@ -805,6 +814,44 @@
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
+            }
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "bch.2miners.com:7070"
+                ],
+                "ssl_urls": [
+                    "bch.2miners.com:17070"
+                ]
+            },
+            {
+                "geo": "EU MedDIFF",
+                "urls": [
+                    "bch.2miners.com:7171"
+                ],
+                "ssl_urls": [
+                    "bch.2miners.com:17171"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "bch.2miners.com:7272"
+                ],
+                "ssl_urls": [
+                    "bch.2miners.com:17272"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }
