@@ -118,30 +118,18 @@
 		}
 	},
   {
-    "coin": "NEOX",
+    "coin": "FREN",
     "servers": [
       {
         "geo": "EU",
         "urls": [
-          "eu.xpool.pw:1202"
+          "eu.xpool.pw:20015"
         ]
       },
       {
         "geo": "Asia",
         "urls": [
-          "sg.xpool.pw:1202"
-        ]
-      },
-      {
-        "geo": "EU Nicehash",
-        "urls": [
-          "eu.xpool.pw:1203"
-        ]
-      },
-      {
-        "geo": "Asia Nicehash",
-        "urls": [
-          "sg.xpool.pw:1203"
+          "sg.xpool.pw:20015"
         ]
       }
     ],
@@ -420,162 +408,6 @@
         "url": "%URL%",
         "algo": "kawpow",
         "template": "%WAL%.%WORKER_NAME%"
-      }
-    }
-  },
-  {
-    "coin": "PAPRY",
-    "servers": [
-      {
-        "geo": "EU GPU",
-        "urls": [
-          "eu.xpool.pw:20022"
-        ]
-      },
-      {
-        "geo": "Asia GPU",
-        "urls": [
-          "sg.xpool.pw:20022"
-        ]
-      },
-      {
-        "geo": "EU Nicehash",
-        "urls": [
-          "eu.xpool.pw:20023"
-        ]
-      },
-      {
-        "geo": "Asia Nicehash",
-        "urls": [
-          "sg.xpool.pw:20023"
-        ]
-      }	    
-    ],
-    "miners": {
-      "_prototype": "miners_kawpow",
-      "ethminer": {
-        "fork": "kawpowminer",
-        "cuda": 1,
-        "opencl": 0,
-        "pass": "x",
-        "port": "%URL_PORT%",
-        "server": "%URL_HOST%",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "t-rex": {
-        "url": "%URL%",
-        "algo": "kawpow",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "nbminer": {
-        "url": "%URL%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "kawpow"
-      },
-      "nanominer": {
-        "algo": "kawpow",
-        "url": "%URL%",
-        "template": "%WAL%",
-        "pass": "x",
-        "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-      },
-      "ccminer": {
-        "fork": "enemy",
-        "ccurl": "stratum+tcp://%URL%",
-        "ccalgo": "kawpow",
-        "ccpass": "x",
-        "ccuser": "%WAL%.%WORKER_NAME%"
-      },
-      "gminer": {
-        "algo": "kawpow",
-        "server": "%URL_HOST%",
-        "port": "%URL_PORT%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "bminer": {
-        "url": "%URL%",
-        "algo": "raven",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "tt-miner": {
-        "url": "%URL%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "kawpow",
-        "user_config": "-coin %COIN%"
-      },
-      "damominer": {
-        "url": "stratum+tcp://%URL%",
-        "algo": "rvn",
-        "worker": "%WORKER_NAME%",
-        "template": "%WAL%"
-      },
-      "teamredminer": {
-        "url": "stratum+tcp://%URL%",
-        "algo": "kawpow",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "wildrig-multi": {
-        "url": "stratum+tcp://%URL%",
-        "algo": "kawpow",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": ""
-      },
-      "miniz": {
-        "url": "%URL%",
-        "algo": "kawpow",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
-    }
-  },	
-  {
-    "coin": "RXD",
-    "servers": [
-      {
-        "geo": "EU",
-        "urls": [
-          "eu.xpool.pw:20020"
-        ]
-      },
-      {
-        "geo": "Asia",
-        "urls": [
-          "sg.xpool.pw:20020"
-        ]
-      }
-    ],
-    "miners": {
-      "_prototype": "miners_radiant",
-      "srbminer": {
-        "url": "%URL%",
-        "algo": "sha512_256d_radiant",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "--disable-gpu"
-      },
-      "wildrig-multi": {
-        "url": "%URL%",
-        "algo": "sha512256d",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "ccminer": {
-        "fork": "radiator",
-        "ccurl": "%URL%",
-        "ccalgo": "rad",
-        "ccpass": "x",
-        "ccuser": "%WAL%.%WORKER_NAME%"
-      },
-      "bzminer": {
-        "url": "%URL%",
-        "algo": "radiant",
-        "worker": "%WORKER_NAME%",
-        "template": "%WAL%"
       }
     }
   },
