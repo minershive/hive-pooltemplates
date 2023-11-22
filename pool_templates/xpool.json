@@ -530,7 +530,7 @@
 					"zano.eu.xpool.pw:3338"
 				]
 			},
-      {
+     			 {
 				"geo": "Asia diff: 50 000 000",
 				"urls": [
 					"zano.sg.xpool.pw:3336"
@@ -550,8 +550,58 @@
 			}
 		],
         "miners": {
-            "_prototype": "miners_progpow_zano"
+            "_prototype": "miners_progpowz"
         }
+    },
+    {
+	    "coin": "EVOX",
+	    "servers": [
+		    {
+			    "geo": "EU Low diff: 50 000 000",
+			    "urls": [
+				    "evox.eu.xpool.pw:52600"
+			    ]
+		    },
+		    {
+			    "geo": "EU middle diff: 600 000 000",
+			    "urls": [
+				    "evox.eu.xpool.pw:52601"
+			    ]
+		    },
+		    {				
+			    "geo": "EU Nicehash diff: 5 000 000 000",
+			    "urls": [
+				    "evox.eu.xpool.pw:52602"
+			    ]
+		    },
+		    {
+			    "geo": "Asia diff: 50 000 000",
+			    "urls": [
+				    "evox.sg.xpool.pw:52600"
+			    ]
+		    },
+		    {
+			    "geo": "Asia middle diff: 600 000 000",
+			    "urls": [
+				    "evox.sg.xpool.pw:52601"
+			    ]
+		    },
+		    {				
+			    "geo": "Asia Nicehash, diff: 5 000 000 000",
+			    "urls": [
+				    "evox.sg.xpool.pw:52602"
+			    ]
+		    }
+	    ],
+	    "miners": {
+		    "_prototype": "miners_progpowz",
+		    "t-rex": {
+			    "algo": "progpowz",
+			    "template": "%WAL%",
+			    "server": "%URL%",
+			    "pass": "%WORKER_NAME%"
+		    }
+	    }
     },
     {
         "coin": "JBC",
