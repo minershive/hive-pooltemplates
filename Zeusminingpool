@@ -1,0 +1,167 @@
+[
+	{
+		"pool": 
+		{
+			"name": "ZeusMiningPool",
+			"url": "https://zeusminingpool.com",
+			"fee": 1.0,
+			"type": "PPLNS"
+		}
+	},
+	{
+		"coin": "VRSC",
+		"servers": 
+		[
+			{
+				"geo": "Europe",
+				"urls": 
+				[
+					"zeusminingpool.com:3092"
+				]
+			},
+			{
+				"geo": "USA",
+				"urls": 
+				[
+					"us.zeusminingpool.com:3092"
+				]
+			}
+		],
+		"miners": 
+		{
+			"ccminer": 
+			{
+				"ccurl": "stratum+tcp://%URL%",
+				"ccuser": "%WAL%",
+				"ccalgo": "verus",
+				"ccpass": "x",
+				"fork": "verus"
+			},
+			"srbminer": 
+			{
+				"url": "%URL%",
+				"algo": "verushash",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"hellminer": 
+			{
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "%URL_HOST%",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"nheqminer": 
+			{
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "%URL_HOST%",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
+		"coin": "ETC",
+		"servers": 
+		[
+			{
+				"geo": "Europe",
+				"urls": 
+				[
+					"zeusminingpool.com:4073"
+				]        
+			},
+			{
+				"geo": "USA",
+				"urls": 
+				[
+					"us.zeusminingpool.com:4073"
+				]
+			}
+		],
+		"miners": 
+		{
+			"_prototype": "miners_etchash"
+		}
+	},
+	{
+		"coin": "RTM",
+		"servers": 
+		[
+			{
+				"geo": "Europe",
+				"urls": 
+				[
+					"zeusminingpool.com:5093"
+				]        
+			}
+		],
+		"miners": 
+		{
+			"_prototype": "miners_ghostrider",
+			"cpuminer-opt": 
+			{
+				"url": "stratum+tcp://%URL%",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "gr",
+				"pass": "x",
+				"max-temp": 0,
+				"fork": "gr"
+			},
+			"xmrig-new": 
+			{
+				"url": "stratum+tcp://%URL%",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "ghostrider",
+				"pass": "x",
+				"cpu": "1",
+				"fork": "xmrig"
+			},
+			"wildrig-multi": 
+			{
+				"url": "stratum+tcp://%URL%",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "ghostrider",
+				"pass": "x"
+			},
+			"srbminer": 
+			{
+				"url": "stratum+tcp://%URL%",
+				"algo": "ghostrider",
+				"template": "%WAL%.%WORKER_NAME%",
+				"pass": "x",
+				"user_config": "--disable-gpu"
+			}
+		}
+	}
+	{
+		"coin": "SKYDOGE",
+		"servers": 
+		[
+			{
+				"geo": "Europe",
+				"urls": 
+				[
+					"zeusminingpool.com:3085"
+				]        
+			},
+			{
+				"geo": "USA",
+				"urls": 
+				[
+					"us.zeusminingpool.com:3085"
+				]
+			}
+		],
+		"miners": 
+		{
+			"wildrig-multi": 
+			{
+                "url": "%URL%",
+                "algo": "skydoge",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+		}
+	}
+]
