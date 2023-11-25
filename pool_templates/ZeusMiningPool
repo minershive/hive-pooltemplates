@@ -1,0 +1,58 @@
+[
+  {
+    "pool": {
+      "name": "ZeusMiningPool",
+      "url": "https://zeusminingpool.com",
+      "fee": 1.5,  // Adjust the fee percentage accordingly
+      "type": "PPS"
+    }
+  },
+  {
+    "coin": "VRSC",
+    "servers": [
+      {
+        "geo": "USA",
+        "urls": [
+          "us-verus.zeusminingpool.com:1234",
+          "us-verus.zeusminingpool.com:5678"
+        ],
+        "ssl_urls": [
+          "us-verus.zeusminingpool.com:9876"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "url": "stratum+tcp://us-verus.zeusminingpool.com:1234",
+        "user": "%WAL%.%WORKER_NAME%",
+        "pass": "x"
+      }
+      // Add additional miners as needed
+    }
+  },
+  {
+    "coin": "ETC",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu-etc.zeusminingpool.com:5555",
+          "eu-etc.zeusminingpool.com:6666"
+        ],
+        "ssl_urls": [
+          "eu-etc.zeusminingpool.com:7777"
+        ]
+      }
+    ],
+    "miners": {
+      "ethminer": {
+        "url": "stratum+tcp://eu-etc.zeusminingpool.com:5555",
+        "cuda": 1,
+        "opencl": 1,
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+      // Add additional miners as needed
+    }
+  }
+]
