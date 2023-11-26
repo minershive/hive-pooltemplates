@@ -1,5 +1,5 @@
 ##### 0.6-224@231125 2023-11-25
-*   SRBMiner-Multi v2.4.0 (Removed `dynex` algorithm support; Added support for algorithms `cryptonight_xhv` and `cryptonight_gpu` on NVIDIA GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.0)
+*   SRBMiner-Multi v2.4.0 (Warning: algorithm `dynex` removed; Added support for algorithms `cryptonight_xhv` and `cryptonight_gpu` on NVIDIA GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.0)
 *   WildRigMiner v0.39.4 (Improved `memehash`, `skydoge` and other x-like algorithms; Slightly improved `rwahash` on RDNA3; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases)
 *   TeamBlackMiner v2.0.9 (Faster `kawpow` on AMD; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.09)
 *   TT-Miner v2023.4.2 (Added new algo `SHA3SOLIDITY` for ming coin Etica using with option `-c ETI`; Notes: see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2023.4.2)
