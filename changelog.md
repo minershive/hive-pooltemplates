@@ -5,8 +5,8 @@
 *   TT-Miner v2023.4.2 (Added new algo `SHA3SOLIDITY` for ming coin Etica using with option `-c ETI`; Notes: see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2023.4.2)
 *   XMRig v6.21.0 (Added SNI option for TLS connections; Notes: see full changelog and details at https://github.com/xmrig/xmrig/releases)
 *   XMRig-MO v6.21.0-mo1 (MoneroOcean fork synced with xmrig v6.21.0)
-*   XMRig-NEVO v6.20.0 (XMRig fork supported NEVOcoin `rx/nevo` supported CPU & GPU; devfeee 3%)
-*   XMRig-Zephyr v6.20.0 (XMRig fork supported RandomX mining on CPU & GPU; devfeee 3%)
+*   XMRig-NEVO v6.20.0 (XMRig fork supported NEVOcoin `rx/nevo` supported CPU & GPU; devfee 3%)
+*   XMRig-Zephyr v6.20.0 (XMRig fork supported RandomX mining on CPU & GPU; devfee 3%)
 *   cpuMiner-Opt-JayDDee v23.13 (Add `x20r` algo support; Optimization, code cleanup, etc ...; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v23.13)
 
 ##### 0.6-224@231115 2023-11-15
