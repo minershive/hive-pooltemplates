@@ -1,3 +1,14 @@
+##### 0.6-224@231125 2023-11-25
+*   SRBMiner-Multi v2.4.0 (Removed `dynex` algorithm support; Added support for algorithms `cryptonight_xhv` and `cryptonight_gpu` on NVIDIA GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.0)
+*   WildRigMiner v0.39.4 (Improved `memehash`, `skydoge` and other x-like algorithms; Slightly improved `rwahash` on RDNA3; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases)
+*   TeamBlackMiner v2.0.9 (Faster `kawpow` on AMD; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.09)
+*   TT-Miner v2023.4.2 (Added new algo `SHA3SOLIDITY` for ming coin Etica using with option `-c ETI`; Notes: see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2023.4.2)
+*   XMRig v6.21.0 (Added SNI option for TLS connections; Notes: see full changelog and details at https://github.com/xmrig/xmrig/releases)
+*   XMRig-MO v6.21.0-mo1 (MoneroOcean fork synced with xmrig v6.21.0)
+*   XMRig-NEVO v6.20.0 (XMRig fork supported NEVOcoin `rx/nevo` supported CPU & GPU; devfeee 3%)
+*   XMRig-Zephyr v6.20.0 (XMRig fork supported RandomX mining on CPU & GPU; devfeee 3%)
+*   cpuMiner-Opt-JayDDee v23.13 (Add `x20r` algo support; Optimization, code cleanup, etc ...; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v23.13)
+
 ##### 0.6-224@231115 2023-11-15
 *   Rigel miner v1.9.2 (Add XPB/PowBlocks mining support; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.9.2)
 *   lolMiner v1.77b (Added support for `SHA512_256D` used for RXD/Radiant mining; Added support for `EthashB3` used for RETH/Rethereum mining; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.77b)
