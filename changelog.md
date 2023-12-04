@@ -1,3 +1,44 @@
+##### 0.6-224@231130 2023-11-30
+*   SRBMiner v2.4.2 (Minor performance improvement on algorithm `karlsenhash`; Added support for AMD Radeon VII GPUs on drivers > 22.40; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.2)
+*   WildRig-Multi v0.39.7.1 (Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.7)
+*   CPUMiner-Opt-JayDDee v23.15 (Fixed x11gost (sib) algo for all architectures, broken in v3.23.4; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v23.15)
+*   TT-Miner v2023.4.3 (Fixed fix: bug in `Sha256DT`; fix: bug in http protocol for Etica; new: coin EGAZ/Etica; Notes: see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2023.4.3)
+*   TeamBlackMiner v2.10 (Added fast `EthashB3` support for AMD; Faster `EthashB3` on Nvidia on lower power; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.10)
+
+##### 0.6-224@231127 2023-11-27
+*   SRBMiner-Multi v2.4.1 (Added algorithm `karlsenhash` for mining KLS/Karlsen Network coin on AMD/Nvidia/Intel GPUs, fee 1.0%; Added algorithm `randomnevo` for CPU mining NEVO/NevoCoin, fee 0.85%; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.1)
+*   WildRig-Multi v0.39.5 (Fixed `kawpow` and other progpows on pools with switching coins; Slightly, up to 1-2%, improved `ghostrider` for NVIDIA and Intel GPUs; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.5)
+*   NanoMiner v3.8.6 (Added `ethashb3` support for mining RTH; Notes: see full changelog and details at https://github.com/nanopool/nanominer/releases/tag/v3.8.6)
+
+##### 0.6-224@231125 2023-11-25
+*   SRBMiner-Multi v2.4.0 (Warning: algorithm `dynex` removed; Added support for algorithms `cryptonight_xhv` and `cryptonight_gpu` on NVIDIA GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.0)
+*   WildRig-Multi v0.39.4 (Improved `memehash`, `skydoge` and other x-like algorithms; Slightly improved `rwahash` on RDNA3; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases)
+*   TeamBlackMiner v2.0.9 (Faster `kawpow` on AMD; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.09)
+*   TT-Miner v2023.4.2 (Added new algo `SHA3SOLIDITY` for ming coin Etica using with option `-c ETI`; Notes: see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2023.4.2)
+*   XMRig v6.21.0 (Added SNI option for TLS connections; Notes: see full changelog and details at https://github.com/xmrig/xmrig/releases)
+*   XMRig-MO v6.21.0-mo1 (MoneroOcean fork synced with xmrig v6.21.0)
+*   XMRig-NEVO v6.20.0 (XMRig fork supported algo `rx/nevo` RandomX variant for mining NEVOcoin on CPU & GPU; devfee 3%)
+*   XMRig-Zephyr v6.20.0 (XMRig fork supported RandomX mining on CPU & GPU; devfee 3%)
+*   cpuMiner-Opt-JayDDee v23.13 (Add `x20r` algo support; Optimization, code cleanup, etc ...; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v23.13)
+
+##### 0.6-224@231115 2023-11-15
+*   Rigel miner v1.9.2 (Add XPB/PowBlocks mining support; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.9.2)
+*   lolMiner v1.77b (Added support for `SHA512_256D` used for RXD/Radiant mining; Added support for `EthashB3` used for RETH/Rethereum mining; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.77b)
+*   GMiner v3.42 (Improved miner stability; Notes: see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.42)
+*   OneZeroMiner v1.2.6 Beta (Add support for dynexsolve v2.3.5 and the new mallob behind the pool protocol; Deprecate `--mallob-endpoint` option; Notes: 1) It's Beta version so it's may contains bugs & you need manual selection in Miner settings section of Flight Sheet 2) See full changelog and details at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.6)
+*   WildRig-Multi v0.38.4 (Fixed progpow family algorithms on Nvidia non-RTX GPUs; Slightly improved sha512256d on Nvidia GPUs; Fixed default intensities for AMD Radeon RX 7600/7700 XT/7800 XT; Fixed support of Radeon VII; Implemented support in v0.38.0 for Intel GPUs on all algos except heavyhash; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.38.4)
+*   cpuMiner-Opt-JayDDee v23.10 (Optimization, code cleanup, etc ...; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v23.10)
+   
+##### 0.6-224@231024 2023-10-24
+*   WildRig-Multi v0.37.2 (Fixed support of old drivers on Linux for RDNA GPUs; Significant hashrate improvements for RDNA3 on `skydoge` `rwahash`; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.37.2)
+   
+##### 0.6-224@231022 2023-10-22
+*   WildRig-Multi v0.37.1 (Significant hashrate improvement for `rwahash` on Polaris/Vega GPUs vs v0.37.0; Fixed CPU usage on NVIDIA GPUs while mining `rwahash`; Removed `memehash` and `memehashv2`; Notes: see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.37.1)
+
+##### 0.6-224@231019 2023-10-19
+*   SRBMiner-Multi v2.3.9 (Fixed invalid shares issue on algorithm `dynex` appeared in v2.3.8; Performance improvement on algorithm 'dynex' for some GPUs. Reduced devfee for algorithm 'dynex' to 2.0%. Notes: 1) Miners which mine Dynex coin should switch to this version until Oct 21, 2023. 2) Full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.9)
+*   cpuMiner-Opt-Rplant v5.0.36 (Add `rwahash` algo fro mining GM/GoodMorning Network; Full changelog: https://github.com/rplant8/cpuminer-opt-rplant/releases/tag/5.0.36)
+
 ##### 0.6-224@231003 2023-10-03
 *   SRBMiner-Multi v2.3.7 (Performance improvement on Dynex mining on AMD and NVIDIA GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.3.7)
 

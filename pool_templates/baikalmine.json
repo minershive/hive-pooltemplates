@@ -62,6 +62,52 @@
         }
     },
     {
+        "coin":"NYC",
+        "servers":[
+            {
+                "geo": "PPLNS 4G",
+                "urls": [
+                    "nyc.baikalmine.com:8095"
+                ]
+            },
+            {
+                "geo": "PPLNS 32G",
+                "urls": [
+                    "nyc.baikalmine.com:8094"
+                ]
+            },
+            {
+                "geo": "SOLO",
+                "urls": [
+                    "nyc-solo.baikalmine.com:8093"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash_4g"
+        }
+    },
+    {
+        "coin":"XPB",
+        "servers":[
+            {
+                "geo": "8G Moscow",
+                "urls": [
+                    "xpb.baikalmine.com:9595"
+                ]
+            },
+            {
+                "geo": "32G Moscow",
+                "urls": [
+                    "xpb.baikalmine.com:9594"
+                ]
+             }
+	],
+        "miners": {
+            "_prototype": "miners_ethash_4g"
+        }
+    },
+    {
         "coin": "DNX",
         "servers": [
             {
@@ -69,15 +115,21 @@
                 "urls": [
                     "dnx.baikalmine.com:9090"
                 ]
+            },
+	    {
+                "geo": "Frankfurt",
+                "urls": [
+                    "dnx-eu.baikalmine.com:9090"
+                ]
             }
         ],
         "miners": {
             "_prototype": "miners_dynexsolve",
             "srbminer": {
-                "user_config": "--disable-cpu\n--mallob-endpoint https://dnx-mallob.baikalmine.com"
+                "user_config": "--disable-cpu\n--mallob-endpoint https://eu-mallob.baikalmine.com,https://dnx-mallob.baikalmine.com"
             },
             "onezerominer": {
-                "user_config": "--mallob-endpoint https://dnx-mallob.baikalmine.com"
+                "user_config": "--mallob-endpoint https://eu-mallob.baikalmine.com,https://dnx-mallob.baikalmine.com"
             }
         }
     },
@@ -146,6 +198,32 @@
         ],
         "miners": {
             "_prototype": "miners_kaspa"
+        }
+    },
+    {
+        "coin": "KLS",
+        "servers": [
+            {
+                "geo": "PPLNS",
+                "urls": [
+                    "kls.baikalmine.com:2626"
+                ]
+            },
+	    {
+                "geo": "SOLO",
+                "urls": [
+                    "kls-solo.baikalmine.com:2636"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_karlsenhash",
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "karlsenhash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
         }
     },
     {
