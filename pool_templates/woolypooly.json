@@ -2592,7 +2592,7 @@
          }
       ],
       "miners":{
-         "_prototype":"miners_sha512256d"
+         "_prototype":"miners_radiant"
       }
    },
    {
@@ -3276,6 +3276,13 @@
          "srbminer":{
             "url":"%URL%",
             "algo":"karlsenhash",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+         },
+         "lolminer":{
+            "algo":"KARLSEN",
+            "server":"%URL_HOST%",
+            "port":"%URL_PORT%",
             "pass":"x",
             "template":"%WAL%.%WORKER_NAME%"
          }
