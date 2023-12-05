@@ -1,3 +1,16 @@
+##### 0.6-224@231204 2023-12-04
+*   lolMiner v1.78 (Added support for BeamHashV3 on Nvidia RTX 4000 and AMD RX 7000 generation GPUs; Added support for mining `Karlsen` for Nvidia 10xx and newer and AMD RX 6xxx and newer GPUs; Added multiple dual mining options ALEPHDUAL/RXDDUAL/FISHDUAL/KARLSENDUAL for using with EthashB3 algorithm; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.78)
+*   BzMiner v18.0.0 (Add `dynex` for mining DNX/Dynex coin; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v18.0.0)
+*   WildRig-Multi v0.39.8 (Improved internal miner OC engine; Fixed `heavyhash` for Vega and Radeon VII; Fixed `x22i` and `x25x` for NVIDIA and AMD RDNA; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.7)
+*   TeamBlckMiner v2.12 (Fixed issues in Kawpow and +kawpow on AMD; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.12)
+
+##### 0.6-224@231130 2023-11-30
+*   SRBMiner v2.4.2 (Minor performance improvement on algorithm `karlsenhash`; Added support for AMD Radeon VII GPUs on drivers > 22.40; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.2)
+*   WildRig-Multi v0.39.7.1 (Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.7)
+*   CPUMiner-Opt-JayDDee v23.15 (Fixed x11gost (sib) algo for all architectures, broken in v3.23.4; Notes: see full changelog and details at https://github.com/JayDDee/cpuminer-opt/releases/tag/v23.15)
+*   TT-Miner v2023.4.3 (Fixed fix: bug in `Sha256DT`; fix: bug in http protocol for Etica; new: coin EGAZ/Etica; Notes: see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2023.4.3)
+*   TeamBlackMiner v2.10 (Added fast `EthashB3` support for AMD; Faster `EthashB3` on Nvidia on lower power; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.10)
+
 ##### 0.6-224@231127 2023-11-27
 *   SRBMiner-Multi v2.4.1 (Added algorithm `karlsenhash` for mining KLS/Karlsen Network coin on AMD/Nvidia/Intel GPUs, fee 1.0%; Added algorithm `randomnevo` for CPU mining NEVO/NevoCoin, fee 0.85%; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.1)
 *   WildRig-Multi v0.39.5 (Fixed `kawpow` and other progpows on pools with switching coins; Slightly, up to 1-2%, improved `ghostrider` for NVIDIA and Intel GPUs; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.5)
