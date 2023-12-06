@@ -230,6 +230,7 @@ miners_firopow | firopow |  |
 miners_ghostrider | ghostrider |  | 
 miners_hmq1725 | hmq1725 |  | 
 miners_ironfish | ironfish |  | 
+miners_karlsenhash | karlsenhash |  | 
 miners_kaspa | kaspa |  | 
 miners_kawpow | kawpow |  | 
 miners_kawpow_slash_email | kawpow_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
