@@ -66,6 +66,12 @@
             "algo": "octopus",
             "template": "%WAL%.%WORKER_NAME%",
             "pass": "x"
+        },
+        "rigel": {
+            "url": "%URL%",
+            "algo": "octopus",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
         }
     },
 
@@ -1415,7 +1421,36 @@
         }
     },
 
+    "miners_karlsenhash": {
+        "lolminer": {
+            "algo": "KARLSEN",
+            "dalgo": "KARLSENDUAL",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
+        "srbminer":{
+            "url":"%URL%",
+            "algo":"karlsenhash",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+        },
+
+        "rigel": {
+            "url": "%URL%",
+            "algo": "karlsenhash",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
+    },
+
     "miners_kaspa": {
+        "asicminer": {
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
         "srbminer":{
             "url":"%URL%",
             "algo":"kaspa",
