@@ -7,25 +7,6 @@
         }
     },
     {
-        "coin": "KAS",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "stratum.tw-pool.com:10001",
-                    "stratum2.tw-pool.com:10001"
-                ],
-                "ssl_urls": [
-                    "stratum.tw-pool.com:10001",
-                    "stratum2.tw-pool.com:10001"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_kaspa"
-        }
-    },
-    {
         "coin": "NEXA",
         "servers": [
             {
@@ -56,17 +37,6 @@
                 "ssl_urls": [
                     "stratum.tw-pool.com:30001",
                     "stratum2.tw-pool.com:30001"
-                ]
-            },
-            {
-                "geo": "AUTO (SOLO)",
-                "urls": [
-                    "stratum.tw-pool.com:30011",
-                    "stratum2.tw-pool.com:30011"
-                ],
-                "ssl_urls": [
-                    "stratum.tw-pool.com:30011",
-                    "stratum2.tw-pool.com:30011"
                 ]
             }
         ],
@@ -181,17 +151,49 @@
         "coin": "ETHF",
         "servers": [
           {
-            "geo": "AUTO(PPLNS)",
+            "geo": "AUTO(High Diff)",
             "urls": [
-                "ethf.tw-pool.com:52001"
+                "ethf.tw-pool.com:52002"
             ],
             "ssl_urls": [
-                "ethf.tw-pool.com:52001"
+                "ethf.tw-pool.com:52002"
+            ]
+          },
+          {
+            "geo": "AUTO(Low Diff)",
+            "urls": [
+                "ethf.tw-pool.com:52002"
+            ],
+            "ssl_urls": [
+                "ethf.tw-pool.com:52002"
             ]
           }
         ],
         "miners": {
             "_prototype":"miners_ethash"
+        }
+    },
+    {
+        "coin": "KLS",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "stratum.tw-pool.com:11001"
+                ],
+                "ssl_urls": [
+                    "stratum.tw-pool.com:11001"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_karlsenhash",
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "karlsenhash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
         }
     }
 ]
