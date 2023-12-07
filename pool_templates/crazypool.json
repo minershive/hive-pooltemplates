@@ -1054,5 +1054,106 @@
                 "user_config": ""
             }
         }
+    },
+	{
+        "coin": "KAS",
+        "servers": [
+			{
+                "geo": "SG",
+                "urls": [
+                    "kas-sg.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kas-sg.crazypool.org:5555"
+                ]
+            },
+			{
+                "geo": "US",
+                "urls": [
+                    "kas-us.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kas-us.crazypool.org:5555"
+                ]
+            },
+			{
+                "geo": "EU",
+                "urls": [
+                    "kas-eu.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kas-eu.crazypool.org:5555"
+                ]
+            },
+			{
+                "geo": "BR",
+                "urls": [
+                    "kas-br.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kas-br.crazypool.org:5555"
+                ]
+            }
+        ],
+        "miners":{
+			"_prototype":"miners_kaspa"
+		}
+    },
+	{
+        "coin": "KLS",
+        "servers": [
+			{
+                "geo": "SG",
+                "urls": [
+                    "kls-sg.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kls-sg.crazypool.org:5555"
+                ]
+            },
+			{
+                "geo": "US",
+                "urls": [
+                    "kls-us.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kls-us.crazypool.org:5555"
+                ]
+            },
+			{
+                "geo": "EU",
+                "urls": [
+                    "kls-eu.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kls-eu.crazypool.org:5555"
+                ]
+            },
+			{
+                "geo": "BR",
+                "urls": [
+                    "kls-br.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kls-br.crazypool.org:5555"
+                ]
+            }
+        ],
+        "miners":{
+			 "_prototype":"miners_karlsenhash",
+			 "srbminer":{
+				"url":"%URL%",
+				"algo":"karlsenhash",
+				"pass":"x",
+				"template":"%WAL%.%WORKER_NAME%"
+			 },
+			 "lolminer":{
+				"algo":"KARLSEN",
+				"server":"%URL_HOST%",
+				"port":"%URL_PORT%",
+				"pass":"x",
+				"template":"%WAL%.%WORKER_NAME%"
+			}
+		}
     }
 ]
