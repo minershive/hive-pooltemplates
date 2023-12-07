@@ -1,3 +1,6 @@
+##### 0.6-224@231207 2023-12-07
+*    lolMiner v1.79  (Added standalone-only solver for Karlsen for AMD RX 4xx/5xx, Vega's and Navi 1st gen/RX 5000 series; Slightly improved Karlsen solvers for Nvidia GPUs by approximately 0.5% on Ampere family and up to 3% on Pascal; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.79)
+
 ##### 0.6-224@231205 2023-12-05
 *   lolMiner v1.78a (Fixed some bugs over v1.78; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.78a)
 *   Rigel v1.10.0 (Add `karlsenhash` algorithm with devfee 1%, including modes RTH+KLS, ERG+KLS, ETC+KLS, +ZIL; Remove `kheavyhash` algorithm; https://github.com/rigelminer/rigel/releases/tag/1.10.0; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.10.0)
