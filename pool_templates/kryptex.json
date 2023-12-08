@@ -161,6 +161,42 @@
         }
     },
     {
+        "coin": "KLS",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "kls.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "kls.kryptex.network:8888"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_karlsenhash",
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "karlsenhash",
+                "pass": "x",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "KARLSEN",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "rigel": {
+                "url": "%URL%",
+                "algo": "karlsenhash",
+                "pass": "x",
+                "template": "%WAL%/%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "CFX",
         "servers": [
             {
