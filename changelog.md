@@ -1,3 +1,9 @@
+##### 0.6-224@231209 2023-12-09
+*   lolMiner v1.80  (Significant hashrate `Karlsen` mining performance improvement on AMD RX 400/500 up to +45% and AMD Vega 56/64 up to both +92%; Improved `Karlsen` mining performance up to +12% on AMD Radeon VII and AMD RX 5000 GPUs; Fixes Karlsen performance regression on GTX 16xx GPUs from v1.78 to v1.79; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.80)
+*   BzMiner v19.0.0 (Add support mining `Karlsen`; Notes: see full changelog and notes at https://github.com/bzminer/bzminer/releases/tag/v19.0.0)
+*   WildRig-Multi v0.39.9a (Removed `--opencl-launch`, now only possible to set intensity with -i or `--gpu-intensity`; Slightly better `memehash`, `skydoge` and other x-like algorithms; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.9a)
+*   TeamBlackMiner v2.13 (Reject shares fix in mixed cards rigs AMD+NVIDIA; Reject shares and crash fix in dual mode; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.13) 
+
 ##### 0.6-224@231208 2023-12-08
 *    GMiner v3.43  (Added `KarlsenHash` and `KarlsenHash+ZIL` support for Nvidia GPUs, dev fee 1%; Notes: see full changelog at Full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.43)
   
@@ -12,8 +18,8 @@
 ##### 0.6-224@231204 2023-12-04
 *   lolMiner v1.78 (Added support for BeamHashV3 on Nvidia RTX 4000 and AMD RX 7000 generation GPUs; Added support for mining `Karlsen` for Nvidia 10xx and newer and AMD RX 6xxx and newer GPUs; Added multiple dual mining options ALEPHDUAL/RXDDUAL/FISHDUAL/KARLSENDUAL for using with EthashB3 algorithm; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.78)
 *   BzMiner v18.0.0 (Add `dynex` for mining DNX/Dynex coin; Notes: see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v18.0.0)
-*   WildRig-Multi v0.39.8 (Improved internal miner OC engine; Fixed `heavyhash` for Vega and Radeon VII; Fixed `x22i` and `x25x` for NVIDIA and AMD RDNA; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.7)
-*   TeamBlckMiner v2.12 (Fixed issues in Kawpow and +kawpow on AMD; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.12)
+*   WildRig-Multi v0.39.8 (Improved internal miner OC engine; Fixed `heavyhash` for Vega and Radeon VII; Fixed `x22i` and `x25x` for NVIDIA and AMD RDNA; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.8)
+*   TeamBlackMiner v2.12 (Fixed issues in Kawpow and +kawpow on AMD; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.12)
 
 ##### 0.6-224@231130 2023-11-30
 *   SRBMiner v2.4.2 (Minor performance improvement on algorithm `karlsenhash`; Added support for AMD Radeon VII GPUs on drivers > 22.40; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.2)
