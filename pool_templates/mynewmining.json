@@ -1,0 +1,157 @@
+[
+  {
+    "pool": {
+      "name": "My New Mining",
+      "url": "https://pool.mynewmining.com/",
+      "type": "PPLNS SOLO"
+    }
+  },
+  {
+    "coin": "AVS",
+    "servers": [
+      {
+        "geo": "Germany",
+        "urls": ["pool.mynewmining.com:4073"],
+        "ssl_urls": ["pool.mynewmining.com:4074"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ethash"
+    }
+  },
+  {
+    "coin": "RXD",
+    "servers": [
+      {
+        "geo": "Germany",
+        "urls": ["pool.mynewmining.com:3081"],
+        "ssl_urls": ["pool.mynewmining.com:3082"]
+      },
+      {
+        "geo": "Germany SOLO",
+        "urls": ["pool.mynewmining.com:3083"],
+        "ssl_urls": ["pool.mynewmining.com:3084"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_radiant"
+    }
+  },
+  {
+    "coin": "NEOX",
+    "servers": [
+      {
+        "geo": "Germany",
+        "urls": ["pool.mynewmining.com::4025"]
+      },
+      {
+        "geo": "Germany SOLO",
+        "urls": ["pool.mynewmining.com:4027"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_nexapow"
+    }
+  },
+  {
+    "coin": "XNA",
+    "servers": [
+      {
+        "geo": "Germany",
+        "urls": ["pool.mynewmining.com:4035"]
+      },
+      {
+        "geo": "Germany SOLO",
+        "urls": ["pool.mynewmining.com:4037"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow"
+    }
+  },
+  {
+    "coin": "BTRM",
+    "servers": [
+      {
+        "geo": "Germany",
+        "urls": ["pool.mynewmining.com:3071"],
+        "ssl_urls": ["pool.mynewmining.com:3072"]
+      }
+    ],
+    "miners": {
+      "_prototype":"miners_ghostrider"
+    }
+  },
+  {
+    "coin": "BBC",
+    "servers": [
+      {
+        "geo": "Germany",
+        "urls": ["pool.mynewmining.com:4021"],
+        "ssl_urls": ["pool.mynewmining.com:4022"]
+      }
+    ],
+    "miners": {
+      "_prototype":"miners_ghostrider"
+    }
+  },
+  {
+    "coin": "GSPC",
+    "servers": [
+      {
+        "geo": "Germany",
+        "urls": ["pool.mynewmining.com:4001"],
+        "ssl_urls": ["pool.mynewmining.com:4002"]
+      }
+    ],
+    "miners": {
+      "_prototype":"miners_ghostrider"
+    }
+  },
+  {
+    "coin": "NOVO",
+    "servers": [
+      {
+        "geo": "Germany",
+        "urls": ["pool.mynewmining.com::3091"],
+        "ssl_urls": ["pool.mynewmining.com:3092"]
+      },
+      {
+        "geo": "Germany SOLO",
+        "urls": ["pool.mynewmining.com:3093"],
+        "ssl_urls": ["pool.mynewmining.com:3094"]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha256dt",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-cpu"
+      },
+      "bzminer": {
+        "url": "%URL%",
+        "algo": "novo",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "BTC",
+    "servers": [
+      {
+        "geo": "Germany",
+        "urls": ["pool.mynewmining.com::3043","pool.mynewmining.com::3044","pool.mynewmining.com::3045","pool.mynewmining.com::3046"]
+      },
+      {
+        "geo": "Germany SOLO",
+        "urls": ["pool.mynewmining.com:3033","pool.mynewmining.com:3034","pool.mynewmining.com:3035","pool.mynewmining.com:3036"]
+      }
+    ],
+    "miners": {
+      "_prototype":"miners_sha256d"
+    }
+  }
+]
