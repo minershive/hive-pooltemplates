@@ -1,3 +1,8 @@
+##### 0.6-224@231210 2023-12-10
+*   lolMiner v1.80a  (Added `Karlsen` support for AMD Vega and Radeon VII on PAL drivers; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.80a)
+*   WildRig-Multi v0.39.9b (Fixed hashrate regression of `skydoge` and other x-like algorithms on old AMD Polaris/Vega GPUs; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.9b)
+*   OneZeroMiner v1.2.7 (Add support dual mining `Dynex+ZIL`, devfee for ZIL 0%; Notes: see full changelog and details at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.7)
+
 ##### 0.6-224@231209 2023-12-09
 *   lolMiner v1.80  (Significant hashrate `Karlsen` mining performance improvement on AMD RX 400/500 up to +45% and AMD Vega 56/64 up to both +92%; Improved `Karlsen` mining performance up to +12% on AMD Radeon VII and AMD RX 5000 GPUs; Fixes Karlsen performance regression on GTX 16xx GPUs from v1.78 to v1.79; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.80)
 *   BzMiner v19.0.0 (Add support mining `Karlsen`; Notes: see full changelog and notes at https://github.com/bzminer/bzminer/releases/tag/v19.0.0)
