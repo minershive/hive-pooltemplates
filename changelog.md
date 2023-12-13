@@ -1,3 +1,11 @@
+##### 0.6-224@231212 2023-12-12
+*   lolMiner v1.81  (Added support to mine `PYRIN` on Nvidia Turing and newer / AMD Navi and newer, fee is 1%; Added support to dual mine EthashB3 and Pyrin on Nvidia Turing and newer / AMD Navi and newer, fee is 1% + 1%; Added support to dual mine EthashB3 and Karlsen on AMD RX 5000 series; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.81)
+*   SRBMiner v2.4.3 (Performance improvement on algorithm `karlsenhash` for some AMD GPUs and Intel Arc GPUs; Added support for dual mining Autolykos2+KarlsenHash on AMD RDNA/RDNA2/RDNA3 and Intel Arc GPUs; Added support for dual mining EthashB3+KarlsenHash on AMD Ellesmere, RDNA/RDNA2/RDNA3 and Intel Aarc GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.3)
+*   BzMiner v19.0.1 (Add support for Karlsen on Intel Arc GPUs; Fixed mining Karlsen on AMD GPUs; Notes: see full changelog and notes at https://github.com/bzminer/bzminer/releases/tag/v19.0.1)
+*   Rigel v1.10.1 (Add `CFX+KLS` and `CFX+KLS+ZIL` mining support; Add support for Volta architecture; Fixed bug on KLS mining "Unexpected EOF error" when mining to MRR; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.10.1)
+*   WildRig-Multi v0.39.9c (Fixed hang on "Start mining" message for some rigs; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.9c)
+*   TeamBlackMiner v2.14 (Added new mining algo `firopow` on AMD/Nvidia old and new cards; Added dual mining `ETH+FIRO`, `ETC+FIRO`, `ETHB3+FIRO; Fixed mining startup at some pools; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.13)
+
 ##### 0.6-224@231210 2023-12-10
 *   lolMiner v1.80a  (Added `Karlsen` support for AMD Vega and Radeon VII on PAL drivers; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.80a)
 *   WildRig-Multi v0.39.9b (Fixed hashrate regression of `skydoge` and other x-like algorithms on old AMD Polaris/Vega GPUs; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.9b)
@@ -17,7 +25,7 @@
 
 ##### 0.6-224@231205 2023-12-05
 *   lolMiner v1.78a (Fixed some bugs over v1.78; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.78a)
-*   Rigel v1.10.0 (Add `karlsenhash` algorithm with devfee 1%, including modes RTH+KLS, ERG+KLS, ETC+KLS, +ZIL; Remove `kheavyhash` algorithm; https://github.com/rigelminer/rigel/releases/tag/1.10.0; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.10.0)
+*   Rigel v1.10.0 (Add `karlsenhash` algorithm with devfee 1%, including modes `RTH+KLS`, `ERG+KLS`, `ETC+KLS`, +ZIL; Remove `kheavyhash` algorithm; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.10.0)
 *   XMRigCC v3.4.0 *xmrig-new fork** (Rebase on latest xmrig-6.21.0; Devfee has been reduced to default 3% default, can be reduced to 1% by `"donate-level": 1`; Notes: see full changelog at https://github.com/Bendr0id/xmrigCC/releases/tag/3.4.0)
   
 ##### 0.6-224@231204 2023-12-04
