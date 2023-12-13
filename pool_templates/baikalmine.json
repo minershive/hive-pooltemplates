@@ -239,6 +239,45 @@
         }
     },
     {
+        "coin": "PYI",
+        "servers": [
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "pyi.baikalmine.com:2727"
+                ]
+            },
+	    {
+                "geo": "SOLO RU",
+                "urls": [
+                    "pyi-solo.baikalmine.com:2737"
+                ]
+            },
+	    {
+                "geo": "PPLNS EU",
+                "urls": [
+                    "pyi-eu.baikalmine.com:2727"
+                ]
+            },
+	    {
+                "geo": "SOLO EU",
+                "urls": [
+                    "pyi-eu-solo.baikalmine.com:2737"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_pyrinhash",
+            "lolminer": {
+                "algo": "PYRIN",
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "CLO",
         "servers": [
             {
