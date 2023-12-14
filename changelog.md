@@ -1,3 +1,6 @@
+##### 0.6-224@231213 2023-12-13
+*   Rigel v1.11.0 (Add support `pyrinhash` algo, devfee 1%; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.11.0)
+
 ##### 0.6-224@231212 2023-12-12
 *   lolMiner v1.81  (Added support to mine `PYRIN` on Nvidia Turing and newer / AMD Navi and newer, fee is 1%; Added support to dual mine EthashB3 and Pyrin on Nvidia Turing and newer / AMD Navi and newer, fee is 1% + 1%; Added support to dual mine EthashB3 and Karlsen on AMD RX 5000 series; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.81)
 *   SRBMiner v2.4.3 (Performance improvement on algorithm `karlsenhash` for some AMD GPUs and Intel Arc GPUs; Added support for dual mining Autolykos2+KarlsenHash on AMD RDNA/RDNA2/RDNA3 and Intel Arc GPUs; Added support for dual mining EthashB3+KarlsenHash on AMD Ellesmere, RDNA/RDNA2/RDNA3 and Intel Aarc GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.3)
