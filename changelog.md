@@ -1,3 +1,6 @@
+##### 0.6-224@231217 2023-12-17
+*   WildRig-Multi v0.40.1a (Improved `memehash`, `skydoge` and other x-like algorithms on Nvidia GPUs; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.40.1a)
+
 ##### 0.6-224@231213 2023-12-13
 *   Rigel v1.11.0 (Add support `pyrinhash` algo, devfee 1%; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.11.0)
 
@@ -47,7 +50,7 @@
 ##### 0.6-224@231127 2023-11-27
 *   SRBMiner-Multi v2.4.1 (Added algorithm `karlsenhash` for mining KLS/Karlsen Network coin on AMD/Nvidia/Intel GPUs, fee 1.0%; Added algorithm `randomnevo` for CPU mining NEVO/NevoCoin, fee 0.85%; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.1)
 *   WildRig-Multi v0.39.5 (Fixed `kawpow` and other progpows on pools with switching coins; Slightly, up to 1-2%, improved `ghostrider` for NVIDIA and Intel GPUs; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.5)
-*   NanoMiner v3.8.6 (Added `ethashb3` support for mining RTH; Notes: see full changelog and details at https://github.com/nanopool/nanominer/releases/tag/v3.8.6)
+*   NanoMiner v3.8.6 (Added `ethashb3` support for mining RTH; Notes: 1) this version couldn't run on current Stable Image so latest version still is v3.8.5 2) see full changelog and details at https://github.com/nanopool/nanominer/releases/tag/v3.8.6)
 
 ##### 0.6-224@231125 2023-11-25
 *   SRBMiner-Multi v2.4.0 (Warning: algorithm `dynex` removed; Added support for algorithms `cryptonight_xhv` and `cryptonight_gpu` on NVIDIA GPUs; Notes: see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.0)
