@@ -241,6 +241,7 @@ miners_octopus | octopus |  |
 miners_olhash | olhash |  | 
 miners_progpow_sero | progpow_sero |  | 
 miners_progpow_zano | progpow_zano |  | 
+miners_pyrinhash | pyrinhash | HeavyHash variant Pyrin| 
 miners_radiant | radiant |  |  
 miners_randomhash2_with_email | randomhash2_with_email | Nanopool format "WALLET.WORKER/EMAIL" | 
 miners_randomx | randomx | Nicehash format "wallet.worker" | 
