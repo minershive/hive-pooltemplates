@@ -1,3 +1,9 @@
+##### 0.6-224@231220 2023-12-20
+*   SRBMiner-Multi v2.4.4 (Added algorithm `pyrinhash` for GPU mining PYI/Pyrin coin on AMD/Intel, fee 0.85%; Added algorithm `blake3_decred` for GPU mining DCR/Decred on AMD/Nvidia/Intel, fee 1%; Added support for dual mining `autolykos2+pyrinhash` on AMD RDNA/RDNA2/RDNA3 and Intel GPUs; Added support for dual mining `autolykos2+blake3_decred` on AMD/Nvidia/Intel GPUs; Added support for dual mining modes: `etchash/ethash/ethashb3+blake3_decred` on AMD/Nvidia/Intel GPUs; Improved efficiency on algorithm `blake3_alephium` for AMD RDNA2/RDNA3, Nvidia GPUs; Notes: see full changelog and details at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.4)
+*   WildRig-Multi v0.40.2a (Significant improvements of `memehash` and `skydoge` on AMD RDNA1 and RDNA2; Fixed some Nvidia errors while mining `memehash` and `skydoge`; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.40.2a)
+*   Fixed OneZeroMiner stats issue for DNX+ZIL mode
+*   TeamBlackMiner v2.16 (Bug fixes; Fixed mining startup at some pools; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.16)
+
 ##### 0.6-224@231217 2023-12-17
 *   WildRig-Multi v0.40.1a (Improved `memehash`, `skydoge` and other x-like algorithms on Nvidia GPUs; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.40.1a)
 
@@ -10,7 +16,7 @@
 *   BzMiner v19.0.1 (Add support for Karlsen on Intel Arc GPUs; Fixed mining Karlsen on AMD GPUs; Notes: see full changelog and notes at https://github.com/bzminer/bzminer/releases/tag/v19.0.1)
 *   Rigel v1.10.1 (Add `CFX+KLS` and `CFX+KLS+ZIL` mining support; Add support for Volta architecture; Fixed bug on KLS mining "Unexpected EOF error" when mining to MRR; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.10.1)
 *   WildRig-Multi v0.39.9c (Fixed hang on "Start mining" message for some rigs; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.39.9c)
-*   TeamBlackMiner v2.14 (Added new mining algo `firopow` on AMD/Nvidia old and new cards; Added dual mining `ETH+FIRO`, `ETC+FIRO`, `ETHB3+FIRO; Fixed mining startup at some pools; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.13)
+*   TeamBlackMiner v2.14 (Added new mining algo `firopow` on AMD/Nvidia old and new cards; Added dual mining `ETH+FIRO`, `ETC+FIRO`, `ETHB3+FIRO; Fixed mining startup at some pools; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.14)
 
 ##### 0.6-224@231210 2023-12-10
 *   lolMiner v1.80a  (Added `Karlsen` support for AMD Vega and Radeon VII on PAL drivers; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.80a)
