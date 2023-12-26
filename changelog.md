@@ -1,3 +1,7 @@
+##### 0.6-224@231225 2023-12-25
+*   Rigel v1.12.0 (Add `aipg` for mining AIPG / AI Power Grid, fee 1%; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.12.0)
+*   TeamRedMiner v0.10.15 (Fixed `kawpow` bug with 0 h/s for low epochs when dual mining ZIL; Notes: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.15)
+
 ##### 0.6-224@231224 2023-12-24
 *   Rigel v1.11.1 (Minor hashrate/efficiency improvements on `RXD/Radiant` mining; Add `RTH+PYI`, `ERG+PYI`, `CFX+PYI`, +ZIL mining support; Fixed extranonce parsing error when mining KLS and PYI to stratum bridges; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.11.1)
 *   OneZeroMiner v1.2.8 (Minor hashrate/efficiency improvement on Dynex; Fix an issue with Zilliqa that could result in duplicate shares; Overall improvements on the stability of Dynex; Notes: see full changelog and details at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.8)
