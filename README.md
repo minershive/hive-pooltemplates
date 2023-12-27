@@ -226,6 +226,7 @@ miners_etchash | etchash |  |
 miners_ethash | ethash |  | 
 miners_ethash_4g | ethash_4g |  | 
 miners_ethash_slash_email | ethash_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
+miners_ethashb3 | ethashb3 |  | 
 miners_firopow | firopow |  | 
 miners_ghostrider | ghostrider |  | 
 miners_hmq1725 | hmq1725 |  | 
