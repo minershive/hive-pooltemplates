@@ -1,6 +1,6 @@
 ##### 0.6-224@231228 2023-12-28
 *   lolMiner v1.82 (Added support to mine Heavyhash-Pyrin on AMD RX Fury, RX 400, RX 500 and Vega / VII series; Increased `PyrinHash` performance of Nvidia GTX 16 series GPUs by over 100%; Increased `PyrinHash` performance of AMD RX 5500 series and AMD 7000 series GPUs by over 60%; Increased `KarlsenHash` performance of AMD RX 5500 series and AMD 7000 series GPUs by over 15%; Increased `PyrinHash` performance of Nvidia Pascal GPUs by about 6+%; Slightly increased `KarlsenHash` performance on Nvidia Pascal series by 1.3%; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.82)
-*   BzMiner v19.2.0 (Significant Dynex hashrate improvements for most Nvidia and AMD GPUs; Fixed Nexa on Nvidia cards; Notes: please look to see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v19.2.0)
+*   BzMiner v19.2.0 (Significant `Dynex` hashrate improvements for most Nvidia and AMD GPUs; Fixed `Nexa` on Nvidia cards; Notes: please look to see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v19.2.0)
 *   WildRig-Multi v0.40.5 (Huge improvement of `memehash`, `skydoge` and other x-like algorithms on Intel GPUs; Fixed `kawpow` and other progpow-like algorithms for Intel GPUs; Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases/tag/0.40.5)
   
 ##### 0.6-224@231225 2023-12-25
