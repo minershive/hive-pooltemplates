@@ -1,7 +1,10 @@
+##### 0.6-224@231231 2023-12-31
+*   Rigel v1.12.2 (Improved hashrate on PYI mining for 16xx series GPUs; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.12.2)
+
 ##### 0.6-224@231230 2023-12-30
 *   lolMiner v1.82a (Improved `PyrinHash` performance on Nvidia 16xx series by ~25-30% and 10xx series GPUs by ~10%; Improved energy efficiency of `KarlsenHash` mining on GTX 16 series cards and slightly improved performance by ~1.5%; Fixed a bug causing ETH / ETC / Ubiq mining to sometimes crash with a segfault introduced in v1.82; Fixed the "submit not found" bug on Karlsen & Pyrin mining; Fixed reading memory temperatures on Nvidia RTX 4000 GPUs; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.82a)
 *   BzMiner v19.2.1 (Reduced rejected shares on Dynex; Updated `dynex_pow_ratio` to be more predictable; Notes: please look to see full changelog and details at https://github.com/bzminer/bzminer/releases/tag/v19.2.1)
-*   BzMiner v1.12.1 (Significant hashrate increase on PYI for 16xx series GPUs; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.12.1)
+*   Rigel v1.12.1 (Significant hashrate increase on PYI for 16xx series GPUs; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.12.1)
 
 ##### 0.6-224@231228 2023-12-28
 *   lolMiner v1.82 (Added support to mine `PyrinHash` on AMD RX Fury, RX 400/500 and Vega / VII series; Increased `PyrinHash` performance of Nvidia GTX 16 series GPUs by over 100%; Increased `PyrinHash` performance of AMD RX 5500 series and AMD 7000 series GPUs by over 60%; Increased `KarlsenHash` performance of AMD RX 5500 series and AMD 7000 series GPUs by over 15%; Increased `PyrinHash` performance of Nvidia Pascal GPUs by about 6+%; Slightly increased `KarlsenHash` performance on Nvidia Pascal series by 1.3%; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.82)
