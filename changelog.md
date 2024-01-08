@@ -1,3 +1,6 @@
+##### 0.6-224@240107 2024-01-07
+*   SRBMiner-Multi v2.4.5 (Minor performance improvement on algorithm `karlsenhash` for AMD RDNA2 GPUs; Minor performance improvement on algorithm `sha3d`; Notes: fixed some issues intoduced in previous version. removed some unpopular/dead/ASIC-friendly algos, see full changelog and details at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.5)
+
 ##### 0.6-224@231231 2023-12-31
 *   Rigel v1.12.2 (Improved hashrate on PYI mining for 16xx series GPUs; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.12.2)
 
