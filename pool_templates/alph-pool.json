@@ -1,18 +1,17 @@
-
 [
-    {
+	{
 		"pool": {
 			"name": "alph-pool.com",
 			"url": "alph-pool.com",
 			"fee": 0.9,
-			"type": "PPLNS"
+			"type": "PPS, SOLO"
 		}
 	},
 	{
 		"coin": "ALPH",
 		"servers": [
 			{
-				"geo": "Europe",
+				"geo": "Europe PPS",
 				"urls": [
 					"eu.alph-pool.com:20032"
 				],
@@ -21,7 +20,16 @@
 				]
 			},
 			{
-				"geo": "Asia",
+				"geo": "Europe SOLO",
+				"urls": [
+					"eu.alph-pool.com:20042"
+				],
+				"ssl_urls": [
+					"eu.alph-pool.com:20043"
+				]
+			},
+			{
+				"geo": "Asia PPS",
 				"urls": [
 					"as.alph-pool.com:20032"
 				],
@@ -30,7 +38,16 @@
 				]
 			},
 			{
-				"geo": "USA",
+				"geo": "Asia SOLO",
+				"urls": [
+					"as.alph-pool.com:20042"
+				],
+				"ssl_urls": [
+					"as.alph-pool.com:20043"
+				]
+			},
+			{
+				"geo": "USA PPS",
 				"urls": [
 					"us.alph-pool.com:20032"
 				],
@@ -39,17 +56,35 @@
 				]
 			},
 			{
-				"geo": "Russia",
+				"geo": "USA SOLO",
+				"urls": [
+					"us.alph-pool.com:20042"
+				],
+				"ssl_urls": [
+					"us.alph-pool.com:20043"
+				]
+			},
+			{
+				"geo": "Russia PPS",
 				"urls": [
 					"ru.alph-pool.com:20032"
 				],
 				"ssl_urls": [
 					"ru.alph-pool.com:20033"
 				]
+			},
+			{
+				"geo": "Russia SOLO",
+				"urls": [
+					"ru.alph-pool.com:20042"
+				],
+				"ssl_urls": [
+					"ru.alph-pool.com:20043"
+				]
 			}
 		],
 		"miners": {
-            "_prototype": "miners_alephium"
-       	}
+			"_prototype": "miners_alephium"
+		}
 	}
 ]

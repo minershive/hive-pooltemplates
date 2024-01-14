@@ -95,6 +95,23 @@
         }
     },
     {
+        "coin": "KLS",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "kls.2miners.com:2020"
+                ],
+                "ssl_urls": [
+                    "kls.2miners.com:12020"
+                ]
+            }
+        ],
+        "miners": {
+          "_prototype": "miners_karlsenhash"
+        }
+    },
+    {
         "coin": "NEXA",
         "servers": [
             {
@@ -144,23 +161,6 @@
         ],
         "miners": {
 		    "_prototype": "miners_autolykos2"
-        }
-    },
-    {
-        "coin": "CLO",
-        "servers": [
-            {
-                "geo": "EU",
-                "urls": [
-                    "clo.2miners.com:3030"
-                ],
-                "ssl_urls": [
-                    "clo.2miners.com:13030"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
         }
     },
     {
@@ -614,6 +614,32 @@
         }
     },
     {
+        "coin": "CLORE",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "clore.2miners.com:2020"
+                ],
+                "ssl_urls": [
+                    "clore.2miners.com:12020"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "clore.2miners.com:2121"
+                ],
+                "ssl_urls": [
+                    "clore.2miners.com:12121"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
         "coin": "NEOX",
         "servers": [
             {
@@ -632,6 +658,32 @@
                 ],
                 "ssl_urls": [
                     "neox.2miners.com:14141"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "XNA",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "xna.2miners.com:6060"
+                ],
+                "ssl_urls": [
+                    "xna.2miners.com:16060"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "xna.2miners.com:6161"
+                ],
+                "ssl_urls": [
+                    "xna.2miners.com:16161"
                 ]
             }
         ],
@@ -805,6 +857,44 @@
                 "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
+            }
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "bch.2miners.com:7070"
+                ],
+                "ssl_urls": [
+                    "bch.2miners.com:17070"
+                ]
+            },
+            {
+                "geo": "EU MedDIFF",
+                "urls": [
+                    "bch.2miners.com:7171"
+                ],
+                "ssl_urls": [
+                    "bch.2miners.com:17171"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "bch.2miners.com:7272"
+                ],
+                "ssl_urls": [
+                    "bch.2miners.com:17272"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }

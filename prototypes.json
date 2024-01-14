@@ -66,6 +66,12 @@
             "algo": "octopus",
             "template": "%WAL%.%WORKER_NAME%",
             "pass": "x"
+        },
+        "rigel": {
+            "url": "%URL%",
+            "algo": "octopus",
+            "template": "%WAL%.%WORKER_NAME%",
+            "pass": "x"
         }
     },
 
@@ -571,6 +577,36 @@
             "worker": "%WORKER_NAME/%EMAIL%",
             "url": "%URL%",
             "pass": "x"
+        }
+    },
+
+    "miners_ethashb3":{
+        "lolminer": {
+            "algo": "ETHASHB3",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "ethashb3",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--disable-cpu"
+        },
+
+        "rigel": {
+            "algo": "ethashb3",
+            "url": "ethstratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+      
+        "bzminer": {
+            "algo": "rethereum",
+            "url": "ethstratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%"
         }
     },
 
@@ -1415,7 +1451,68 @@
         }
     },
 
+    "miners_karlsenhash": {
+        "lolminer": {
+            "algo": "KARLSEN",
+            "dalgo": "KARLSENDUAL",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
+        "srbminer":{
+            "url":"%URL%",
+            "algo":"karlsenhash",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+        },
+
+        "rigel": {
+            "url": "%URL%",
+            "algo": "karlsenhash",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
+        "gminer": {
+            "algo": "karlsenhash",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
+        "bzminer": {
+            "tls": "0",
+            "url": "%URL%",
+            "algo": "karlsen",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME%"
+        }
+    },
+
+    "miners_pyrinhash": {
+        "lolminer": {
+            "algo": "PYRIN",
+            "dalgo": "PYRINDUAL",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
+        "rigel": {
+            "url": "%URL%",
+            "algo": "pyrinhash",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
+    },
+
     "miners_kaspa": {
+        "asicminer": {
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
         "srbminer":{
             "url":"%URL%",
             "algo":"kaspa",
@@ -1558,6 +1655,14 @@
     },
 
     "miners_radiant": {
+        "lolminer": {
+            "algo": "RADIANT",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
 	"srbminer": {
 	    "url": "%URL%",
 	    "algo": "sha512_256d_radiant",
@@ -1598,6 +1703,14 @@
     },
 
     "miners_radiant_wpass": {
+        "lolminer": {
+            "algo": "RADIANT",
+            "pass": "%WORKER_NAME%",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%"
+        },
+
 	"srbminer": {
 	    "url": "%URL%",
 	    "algo": "sha512_256d_radiant",

@@ -466,33 +466,6 @@
                 ]
             },
             {
-                "geo": "US PROP",
-                "urls": [
-                    "dnx.us.p1pool.com:4111"
-                ],
-                "ssl_urls": [
-                    "dnx.us.p1pool.com:4121"
-                ]
-            },
-            {
-                "geo": "US SOLO",
-                "urls": [
-                    "dnx.us.p1pool.com:4211"
-                ],
-                "ssl_urls": [
-                    "dnx.us.p1pool.com:4221"
-                ]
-            },
-            {
-                "geo": "US FPPS",
-                "urls": [
-                    "dnx.us.p1pool.com:4311"
-                ],
-                "ssl_urls": [
-                    "dnx.us.p1pool.com:4321"
-                ]
-            },
-            {
                 "geo": "RU PROP",
                 "urls": [
                     "dnx.ru.p1pool.com:4111"
@@ -521,7 +494,13 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_dynexsolve"
+            "_prototype": "miners_dynexsolve",
+            "srbminer": {
+                "user_config": "--disable-cpu\n--mallob-endpoint mallob.dnx.p1pool.com:8025,mallob.dnx.p1pool.com:8023"
+            },
+            "onezerominer": {
+                "user_config": "--mallob-endpoint mallob.dnx.p1pool.com:8025,mallob.dnx.p1pool.com:8023"
+            }
         }
     }
 ]

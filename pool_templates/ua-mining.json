@@ -3,27 +3,21 @@
       "coin": "ETHW",
       "servers": [
          {
-            "geo": "UA DIFF 4G PPLNS",
+            "geo": "UA PPLNS Pool",
             "urls": [
-               "ethw.ua-mining.com:8504"
+               "se1.ua-mining.com:8001"
             ]
          },
          {
-            "geo": "SSL UA DIFF 4G PPLNS",
+            "geo": "SSL UA PPLNS Pool",
             "ssl_urls": [
-               "ethw.ua-mining.com:8514"
+               "se1.ua-mining.com:8002"
             ]
          },
          {
-            "geo": "UA DIFF 4G SOLO",
+            "geo": "UA SOLO Pool",
             "urls": [
-               "solo-ethw.ua-mining.com:8604"
-            ]
-         },
-         {
-            "geo": "UA NiceHash 64G SOLO",
-            "urls": [
-               "solo-ethw.ua-mining.com:8664"
+               "se1.ua-mining.com:8005"
             ]
          }
       ],
@@ -32,30 +26,24 @@
       }
    },
    {
-      "coin": "ETHF",
+      "coin": "DIS",
       "servers": [
          {
-            "geo": "UA DIFF 4G PPLNS",
+            "geo": "UA PPLNS Pool",
             "urls": [
-               "ethf.ua-mining.com:7714"
+               "se1.ua-mining.com:8011"
             ]
          },
          {
-            "geo": "SSL UA DIFF 4G PPLNS",
+            "geo": "SSL UA PPLNS Pool",
             "ssl_urls": [
-               "ethf.ua-mining.com:7715"
+               "se1.ua-mining.com:8012"
             ]
          },
          {
-            "geo": "UA DIFF 4G SOLO",
+            "geo": "UA SOLO Pool",
             "urls": [
-               "solo-ethf.ua-mining.com:7774"
-            ]
-         },
-         {
-            "geo": "UA NiceHash 64G SOLO",
-            "urls": [
-               "solo-ethf.ua-mining.com:7764"
+               "se1.ua-mining.com:8015"
             ]
          }
       ],
@@ -67,110 +55,47 @@
       "coin": "ETC",
       "servers": [
          {
-            "geo": "UA DIFF 4G PPLNS",
+            "geo": "UA PPLNS Pool",
             "urls": [
-               "etc.ua-mining.com:9004"
+               "se1.ua-mining.com:8021"
             ]
          },
          {
-            "geo": "UA DIFF 4G SOLO",
+            "geo": "SSL UA PPLNS Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:8022"
+            ]
+         },
+         {
+            "geo": "UA SOLO Pool",
             "urls": [
-               "solo-etc.ua-mining.com:9204"
+               "se1.ua-mining.com:8025"
+            ]
+         },
+         {
+            "geo": "SSL UA SOLO Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:8026"
             ]
          }
       ],
       "miners": {
-         "claymore": {
-            "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-            "claymore_user_config": "-allpools 1"
-         },
-         "asicminer": {
-            "url": "stratum+tcp://%URL%",
-            "template": "%WAL%"
-         },
-         "ethminer": {
-            "ver": "0.18.0",
-            "cuda": 1,
-            "fork": "etchash",
-            "opencl": 1,
-            "pass": "x",
-            "port": "%URL_PORT%",
-            "server": "stratum1+tcp://%URL_HOST%",
-            "template": "%WAL%"
-         },
-         "phoenixminer": {
-            "url": "POOL: %URL%, WALLET: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-         },
-         "gminer": {
-            "algo": "etchash",
-            "pass": "x",
-            "port": "%URL_PORT%",
-            "server": "%URL_HOST%",
-            "template": "%WAL%"
-         },
-         "finminer": {
-            "algo": "etchash",
-            "url": "%URL%",
-            "template": "%WAL%",
-            "pass": "x",
-            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-         },
-         "teamredminer": {
-            "algo": "etchash",
-            "url": "stratum+tcp://%URL%",
-            "template": "%WAL%",
-            "worker": "%WORKER_NAME%",
-            "pass": "x"
-         },
-         "nanominer": {
-            "algo": "etchash",
-            "url": "%URL%",
-            "template": "%WAL%",
-            "pass": "x",
-            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-         },
-         "nbminer": {
-            "algo": "etchash",
-            "url": "nicehash+tcp://%URL%",
-            "pass": "x",
-            "template": "%WAL%"
-         },
-         "lolminer": {
-            "algo": "etchash",
-            "pass": "x",
-            "port": "%URL_PORT%",
-            "server": "%URL_HOST%",
-            "template": "%WAL%",
-            "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
-         },
-         "t-rex": {
-            "url": "stratum+tcp://%URL%",
-            "algo": "etchash",
-            "pass": "x",
-            "template": "%WAL%",
-            "worker": "%WORKER_NAME%"
-         }
+         "_prototype": "miners_etchash"
       }
    },
    {
       "coin": "CLO",
       "servers": [
          {
-            "geo": "UA DIFF 4G PPLNS",
+            "geo": "UA PPLNS Pool",
             "urls": [
-               "clo.ua-mining.com:8004"
+               "se1.ua-mining.com:8031"
             ]
          },
          {
-            "geo": "UA DIFF 4G SOLO",
+            "geo": "UA SOLO Pool",
             "urls": [
-               "solo-clo.ua-mining.com:8104"
-            ]
-         },
-         {
-            "geo": "UA NiceHash 64G SOLO",
-            "urls": [
-               "solo-clo.ua-mining.com:8110"
+               "se1.ua-mining.com:8035"
             ]
          }
       ],
@@ -179,113 +104,18 @@
       }
    },
    {
-      "coin": "TSF",
-      "servers": [
-         {
-            "geo": "UA DIFF 4G PPLNS",
-            "urls": [
-               "tsf.ua-mining.com:9114"
-            ]
-         },
-         {
-            "geo": "UA DIFF 4G SOLO",
-            "urls": [
-               "solo-tsf.ua-mining.com:9014"
-            ]
-         }
-      ],
-      "miners": {
-         "claymore": {
-            "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-            "claymore_user_config": "-allpools 1"
-         },
-         "asicminer": {
-            "url": "stratum+tcp://%URL%",
-            "template": "%WAL%"
-         },
-         "ethminer": {
-            "ver": "0.18.0",
-            "cuda": 1,
-            "fork": "ethash",
-            "opencl": 1,
-            "pass": "x",
-            "port": "%URL_PORT%",
-            "server": "stratum1+tcp://%URL_HOST%",
-            "template": "%WAL%"
-         },
-         "phoenixminer": {
-            "url": "POOL: %URL%, WALLET: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2"
-         },
-         "gminer": {
-            "algo": "ethash",
-            "pass": "x",
-            "port": "%URL_PORT%",
-            "server": "%URL_HOST%",
-            "template": "%WAL%"
-         },
-         "finminer": {
-            "algo": "ethash",
-            "url": "%URL%",
-            "template": "%WAL%",
-            "pass": "x",
-            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-         },
-         "bminer": {
-            "algo": "ethstratum",
-            "template": "%WAL%",
-            "url": "%URL%",
-            "pass": "x"
-         },
-         "teamredminer": {
-            "algo": "ethash",
-            "url": "stratum+tcp://%URL%",
-            "template": "%WAL%",
-            "worker": "%WORKER_NAME%",
-            "pass": "x"
-         },
-         "nanominer": {
-            "algo": "ethash",
-            "url": "%URL%",
-            "template": "%WAL%",
-            "pass": "x",
-            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-         },
-         "nbminer": {
-            "algo": "ethash",
-            "url": "nicehash+tcp://%URL%",
-            "pass": "x",
-            "template": "%WAL%"
-         },
-         "lolminer": {
-            "algo": "ethash",
-            "pass": "x",
-            "port": "%URL_PORT%",
-            "server": "%URL_HOST%",
-            "template": "%WAL%",
-            "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
-         },
-         "t-rex": {
-            "url": "stratum+tcp://%URL%",
-            "algo": "ethash",
-            "pass": "x",
-            "template": "%WAL%",
-            "worker": "%WORKER_NAME%"
-         }
-      }
-   },
-   {
       "coin": "AKA",
       "servers": [
          {
-            "geo": "UA DIFF 4G PPLNS",
+            "geo": "UA PPLNS Pool",
             "urls": [
-               "aka.ua-mining.com:9514"
+               "se1.ua-mining.com:8041"
             ]
          },
          {
-            "geo": "UA DIFF 4G SOLO",
+            "geo": "UA SOLO Pool",
             "urls": [
-               "solo-aka.ua-mining.com:9504"
+               "se1.ua-mining.com:8045"
             ]
          }
       ],
@@ -297,15 +127,15 @@
       "coin": "EXP",
       "servers": [
          {
-            "geo": "UA DIFF 4G PPLNS",
+            "geo": "UA PPLNS Pool",
             "urls": [
-               "exp.ua-mining.com:8224"
+               "se1.ua-mining.com:8051"
             ]
          },
          {
-            "geo": "UA DIFF 4G SOLO",
+            "geo": "UA SOLO Pool",
             "urls": [
-               "solo-exp.ua-mining.com:8234"
+               "se1.ua-mining.com:8055"
             ]
          }
       ],
@@ -317,77 +147,51 @@
       "coin": "OCTA",
       "servers": [
          {
-            "geo": "UA DIFF 4G PPLNS",
+            "geo": "UA PPLNS Pool",
             "urls": [
-               "octa.ua-mining.com:8134"
+               "se1.ua-mining.com:8061"
             ]
          },
          {
-            "geo": "SSL UA DIFF 4G PPLNS",
+            "geo": "SSL UA PPLNS Pool",
             "ssl_urls": [
-               "octa.ua-mining.com:8135"
+               "se1.ua-mining.com:8062"
             ]
          },
          {
-            "geo": "HK (Hong Kong) DIFF 4G PPLNS",
+            "geo": "HK (Hong Kong) PPLNS Pool",
             "urls": [
-               "hk.ua-mining.com:8134"
+               "hk.ua-mining.com:8061"
             ]
          },
          {
-            "geo": "SSL HK (Hong Kong) DIFF 4G PPLNS",
+            "geo": "SSL HK (Hong Kong) PPLNS Pool",
             "ssl_urls": [
-               "hk.ua-mining.com:8135"
+               "hk.ua-mining.com:8062"
             ]
          },
          {
-            "geo": "UA DIFF 4G SOLO",
+            "geo": "UA SOLO Pool",
             "urls": [
-               "solo-octa.ua-mining.com:8124"
+               "se1.ua-mining.com:8065"
             ]
          },
          {
-            "geo": "SSL UA DIFF 4G SOLO",
+            "geo": "SSL UA SOLO Pool",
             "ssl_urls": [
-               "solo-octa.ua-mining.com:8125"
+               "se1.ua-mining.com:8066"
             ]
          },
          {
-            "geo": "HK (Hong Kong) DIFF 4G SOLO",
+            "geo": "HK (Hong Kong) SOLO Pool",
             "urls": [
-               "solo-hk.ua-mining.com:8124"
+               "hk.ua-mining.com:8065"
             ]
          },
          {
-            "geo": "SSL HK (Hong Kong) DIFF 4G SOLO",
+            "geo": "SSL HK (Hong Kong) SOLO Pool",
             "ssl_urls": [
-               "solo-hk.ua-mining.com:8125"
-            ]
-         }
-      ],
-      "miners": {
-         "_prototype": "miners_ethash"
-      }
-   },
-   {
-      "coin": "FLR",
-      "servers": [
-         {
-            "geo": "UA DIFF 4G PPLNS",
-            "urls": [
-               "flr.ua-mining.com:9994"
-            ]
-         },
-         {
-            "geo": "HK (Hong Kong) DIFF 4G PPLNS",
-            "urls": [
-               "hk.ua-mining.com:9994"
-            ]
-         },
-         {
-            "geo": "UA DIFF 4G SOLO",
-            "urls": [
-               "solo-flr.ua-mining.com:9904"
+               "hk.ua-mining.com:8066"
             ]
          }
       ],
@@ -399,51 +203,51 @@
       "coin": "ELH",
       "servers": [
          {
-            "geo": "UA DIFF 4G PPLNS",
+            "geo": "UA PPLNS Pool",
             "urls": [
-               "elh.ua-mining.com:8222"
+               "se1.ua-mining.com:8071"
             ]
          },
          {
-            "geo": "SSL UA DIFF 4G PPLNS",
+            "geo": "SSL UA PPLNS Pool",
             "ssl_urls": [
-               "elh.ua-mining.com:8223"
+               "se1.ua-mining.com:8072"
             ]
          },
          {
-            "geo": "HK (Hong Kong) DIFF 4G PPLNS",
+            "geo": "HK (Hong Kong) PPLNS Pool",
             "urls": [
-               "hk.ua-mining.com:8222"
+               "hk.ua-mining.com:8071"
             ]
          },
          {
-            "geo": "SSL HK (Hong Kong) DIFF 4G PPLNS",
+            "geo": "SSL HK (Hong Kong) PPLNS Pool",
             "ssl_urls": [
-               "hk.ua-mining.com:8223"
+               "hk.ua-mining.com:8072"
             ]
          },
          {
-            "geo": "UA DIFF 4G SOLO",
+            "geo": "UA SOLO Pool",
             "urls": [
-               "solo-elh.ua-mining.com:8322"
+               "se1.ua-mining.com:8075"
             ]
          },
          {
-            "geo": "SSL UA DIFF 4G SOLO",
+            "geo": "SSL UA SOLO Pool",
             "ssl_urls": [
-               "solo-elh.ua-mining.com:8323"
+               "se1.ua-mining.com:8076"
             ]
          },
          {
-            "geo": "HK (Hong Kong) DIFF 4G SOLO",
+            "geo": "HK (Hong Kong) SOLO Pool",
             "urls": [
-               "solo-hk.ua-mining.com:8322"
+               "hk.ua-mining.com:8075"
             ]
          },
          {
-            "geo": "SSL HK (Hong Kong) DIFF 4G SOLO",
+            "geo": "SSL HK (Hong Kong) SOLO Pool",
             "ssl_urls": [
-               "solo-hk.ua-mining.com:8323"
+               "hk.ua-mining.com:8076"
             ]
          }
       ],
@@ -455,27 +259,169 @@
       "coin": "AVES",
       "servers": [
          {
-            "geo": "UA DIFF 4G PPLNS",
+            "geo": "UA PPLNS Pool",
             "urls": [
-               "aves.ua-mining.com:9010"
+               "se1.ua-mining.com:8081"
             ]
          },
          {
-            "geo": "SSL UA DIFF 4G PPLNS",
+            "geo": "SSL UA PPLNS Pool",
             "ssl_urls": [
-               "aves.ua-mining.com:9011"
+               "se1.ua-mining.com:8082"
             ]
          },
          {
-            "geo": "UA DIFF 4G SOLO",
+            "geo": "UA SOLO Pool",
             "urls": [
-               "solo-aves.ua-mining.com:9020"
+               "se1.ua-mining.com:8085"
             ]
          },
          {
-            "geo": "SSL UA DIFF 4G SOLO",
+            "geo": "SSL UA SOLO Pool",
             "ssl_urls": [
-               "solo-aves.ua-mining.com:9021"
+               "se1.ua-mining.com:8086"
+            ]
+         }
+      ],
+      "miners": {
+         "_prototype": "miners_ethash"
+      }
+   },
+   {
+      "coin": "PWR",
+      "servers": [
+         {
+            "geo": "UA PPLNS Pool",
+            "urls": [
+               "se1.ua-mining.com:8091"
+            ]
+         },
+         {
+            "geo": "SSL UA PPLNS Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:8092"
+            ]
+         },
+         {
+            "geo": "UA SOLO Pool",
+            "urls": [
+               "se1.ua-mining.com:8095"
+            ]
+         },
+         {
+            "geo": "SSL UA SOLO Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:8096"
+            ]
+         }
+      ],
+      "miners": {
+         "_prototype": "miners_ethash"
+      }
+   },
+   {
+      "coin": "HYP",
+      "servers": [
+         {
+            "geo": "UA PPLNS Pool",
+            "urls": [
+               "se1.ua-mining.com:9001"
+            ]
+         },
+         {
+            "geo": "SSL UA PPLNS Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:9002"
+            ]
+         },
+         {
+            "geo": "UA SOLO Pool",
+            "urls": [
+               "se1.ua-mining.com:9005"
+            ]
+         },
+         {
+            "geo": "SSL UA SOLO Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:9006"
+            ]
+         }
+      ],
+      "miners": {
+         "_prototype": "miners_ethashb3"
+      }
+   },
+   {
+      "coin": "XPB",
+      "servers": [
+         {
+            "geo": "UA PPLNS Pool",
+            "urls": [
+               "se1.ua-mining.com:9011"
+            ]
+         },
+         {
+            "geo": "SSL UA PPLNS Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:9012"
+            ]
+         },
+         {
+            "geo": "UA SOLO Pool",
+            "urls": [
+               "se1.ua-mining.com:9015"
+            ]
+         },
+         {
+            "geo": "SSL UA SOLO Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:9016"
+            ]
+         }
+      ],
+      "miners": {
+         "_prototype": "miners_ethash"
+      }
+   },
+   {
+      "coin": "REDEV2",
+      "servers": [
+         {
+            "geo": "UA SOLO Pool",
+            "urls": [
+               "se1.ua-mining.com:9025"
+            ]
+         }
+      ],
+      "miners": {
+         "_prototype": "miners_ethash"
+      }
+   },
+   {
+      "coin": "DOGETHER",
+      "servers": [
+         {
+            "geo": "UA PPLNS Pool",
+            "urls": [
+               "se1.ua-mining.com:9031"
+            ]
+         },
+         {
+            "geo": "SSL UA PPLNS Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:9032"
+            ]
+         },
+         {
+            "geo": "UA SOLO Pool",
+            "urls": [
+               "se1.ua-mining.com:9035"
+            ]
+         },
+         {
+            "geo": "SSL UA SOLO Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:9036"
             ]
          }
       ],
