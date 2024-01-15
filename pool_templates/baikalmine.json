@@ -117,29 +117,36 @@
                 ]
             },
 	    {
-                "geo": "Frankfurt",
+                "geo": "Netherlands",
                 "urls": [
                     "dnx-eu.baikalmine.com:9090"
                 ]
+            },
+	    {
+                "geo": "Moscow",
+                "urls": [
+                    "dnx-solo.baikalmine.com:9095"
+                ]
             }
+	    
         ],
         "miners": {
-            "_prototype": "miners_dynexsolve",
-            "srbminer": {
-                "user_config": "--disable-cpu\n--mallob-endpoint https://eu-mallob.baikalmine.com,https://dnx-mallob.baikalmine.com"
-            },
-            "onezerominer": {
-                "user_config": "--mallob-endpoint https://eu-mallob.baikalmine.com,https://dnx-mallob.baikalmine.com"
-            }
+            "_prototype": "miners_dynexsolve"
         }
     },
     {
-        "coin": "RTH",
+        "coin": "HYP",
         "servers": [
             {
                 "geo": "Moscow",
                 "urls": [
                     "rth.baikalmine.com:1515"
+                ]
+            },
+	    {
+                "geo": "Moscow SOLO",
+                "urls": [
+                    "rth.baikalmine.com:1520"
                 ]
             }
         ],
@@ -204,15 +211,27 @@
         "coin": "KLS",
         "servers": [
             {
-                "geo": "PPLNS",
+                "geo": "PPLNS RU",
                 "urls": [
                     "kls.baikalmine.com:2626"
                 ]
             },
 	    {
-                "geo": "SOLO",
+                "geo": "SOLO RU",
                 "urls": [
                     "kls-solo.baikalmine.com:2636"
+                ]
+            },
+	    {
+                "geo": "PPLNS EU",
+                "urls": [
+                    "kls-eu.baikalmine.com:2626"
+                ]
+            },
+	    {
+                "geo": "SOLO EU",
+                "urls": [
+                    "kls-eu-solo.baikalmine.com:2636"
                 ]
             }
         ],
@@ -224,6 +243,38 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             }
+        }
+    },
+    {
+        "coin": "PYI",
+        "servers": [
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "pyi.baikalmine.com:2727"
+                ]
+            },
+	    {
+                "geo": "SOLO RU",
+                "urls": [
+                    "pyi-solo.baikalmine.com:2737"
+                ]
+            },
+	    {
+                "geo": "PPLNS EU",
+                "urls": [
+                    "pyi-eu.baikalmine.com:2727"
+                ]
+            },
+	    {
+                "geo": "SOLO EU",
+                "urls": [
+                    "pyi-eu-solo.baikalmine.com:2737"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_pyrinhash"
         }
     },
     {

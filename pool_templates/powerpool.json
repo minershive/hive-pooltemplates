@@ -1,121 +1,104 @@
 [
     {
-        "coin": "PGN",
+        "coin": "BTC",
         "servers": [
             {
-                "geo": "North America",
+                "geo": null,
                 "urls": [
-                    "powerpool.money:3224"
+                    "sha256.stratum.powerpool.io:3333"
                 ]
             }
         ],
         "miners": {
-            "sgminer-gm": {
-                "fork": "avermore",
+            "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x21s",
-                "pass": "%WORKER_NAME% c=PGN",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "fork": "enemy",
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "x21s",
-                "ccpass": "%WORKER_NAME% c=PGN",
-                "ccuser": "%WAL%"
-            },
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x21s",
-                "pass": "%WORKER_NAME% c=PGN",
-                "template": "%WAL%"
-            },
-            "cryptodredge": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x21s",
-                "pass": "%WORKER_NAME% c=PGN",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
     {
-        "coin": "TUX",
+        "coin": "LTC",
         "servers": [
             {
-                "geo": "North America",
+                "geo": null,
                 "urls": [
-                    "powerpool.money:4443"
+                    "scrypt.stratum.powerpool.io:3333"
                 ]
             }
         ],
         "miners": {
-            "cryptodredge": {
+            "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "allium",
-                "pass": "%WORKER_NAME% c=TUX",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
     {
-        "coin": "GRLC",
+        "coin": "CKB",
         "servers": [
             {
-                "geo": "North America",
+                "geo": null,
                 "urls": [
-                    "powerpool.money:4443"
+                    "eaglesong.stratum.powerpool.io:3333"
                 ]
             }
         ],
         "miners": {
-            "cryptodredge": {
+            "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "allium",
-                "pass": "%WORKER_NAME% c=GRLC",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
     {
-        "coin": "QBS",
+        "coin": "KDA",
         "servers": [
             {
-                "geo": "North America",
+                "geo": null,
                 "urls": [
-                    "powerpool.money:3663"
+                    "blake2s.stratum.powerpool.io:3333"
                 ]
             }
         ],
         "miners": {
-            "sgminer-gm": {
-                "fork": "avermore",
+            "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x16s",
-                "pass": "%WORKER_NAME% c=QBS",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "fork": "enemy",
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "x16s",
-                "ccpass": "%WORKER_NAME% c=QBS",
-                "ccuser": "%WAL%"
-            },
-            "t-rex": {
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "DASH",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "x11.stratum.powerpool.io:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x16s",
-                "pass": "%WORKER_NAME% c=QBS",
-                "template": "%WAL%"
-            },
-            "cryptodredge": {
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "KAS",
+        "servers": [
+            {
+                "geo": null,
+                "urls": [
+                    "kheavyhash.stratum.powerpool.io:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "x16s",
-                "pass": "%WORKER_NAME% c=QBS",
-                "template": "%WAL%"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }
-
 ]

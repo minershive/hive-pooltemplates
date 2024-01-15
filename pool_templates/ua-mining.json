@@ -26,7 +26,7 @@
       }
    },
    {
-      "coin": "ETHF",
+      "coin": "DIS",
       "servers": [
          {
             "geo": "UA PPLNS Pool",
@@ -61,83 +61,26 @@
             ]
          },
          {
+            "geo": "SSL UA PPLNS Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:8022"
+            ]
+         },
+         {
             "geo": "UA SOLO Pool",
             "urls": [
                "se1.ua-mining.com:8025"
             ]
+         },
+         {
+            "geo": "SSL UA SOLO Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:8026"
+            ]
          }
       ],
       "miners": {
-         "claymore": {
-            "epools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x",
-            "claymore_user_config": "-allpools 1"
-         },
-         "asicminer": {
-            "url": "stratum+tcp://%URL%",
-            "template": "%WAL%"
-         },
-         "ethminer": {
-            "ver": "0.18.0",
-            "cuda": 1,
-            "fork": "etchash",
-            "opencl": 1,
-            "pass": "x",
-            "port": "%URL_PORT%",
-            "server": "stratum1+tcp://%URL_HOST%",
-            "template": "%WAL%"
-         },
-         "phoenixminer": {
-            "url": "POOL: %URL%, WALLET: %WAL%, PASS: x, WORKER: %WORKER_NAME%, PROTO: 2, COIN: %COIN%"
-         },
-         "gminer": {
-            "algo": "etchash",
-            "pass": "x",
-            "port": "%URL_PORT%",
-            "server": "%URL_HOST%",
-            "template": "%WAL%"
-         },
-         "finminer": {
-            "algo": "etchash",
-            "url": "%URL%",
-            "template": "%WAL%",
-            "pass": "x",
-            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-         },
-         "teamredminer": {
-            "algo": "etchash",
-            "url": "stratum+tcp://%URL%",
-            "template": "%WAL%",
-            "worker": "%WORKER_NAME%",
-            "pass": "x"
-         },
-         "nanominer": {
-            "algo": "etchash",
-            "url": "%URL%",
-            "template": "%WAL%",
-            "pass": "x",
-            "user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
-         },
-         "nbminer": {
-            "algo": "etchash",
-            "url": "nicehash+tcp://%URL%",
-            "pass": "x",
-            "template": "%WAL%"
-         },
-         "lolminer": {
-            "algo": "etchash",
-            "pass": "x",
-            "port": "%URL_PORT%",
-            "server": "%URL_HOST%",
-            "template": "%WAL%",
-            "user_config": "--worker %WORKER_NAME%\n--ethstratum ETHPROXY"
-         },
-         "t-rex": {
-            "url": "stratum+tcp://%URL%",
-            "algo": "etchash",
-            "pass": "x",
-            "template": "%WAL%",
-            "worker": "%WORKER_NAME%"
-         }
+         "_prototype": "miners_etchash"
       }
    },
    {
@@ -377,7 +320,7 @@
       }
    },
    {
-      "coin": "RTH",
+      "coin": "HYP",
       "servers": [
          {
             "geo": "UA PPLNS Pool",
@@ -447,6 +390,38 @@
             "geo": "UA SOLO Pool",
             "urls": [
                "se1.ua-mining.com:9025"
+            ]
+         }
+      ],
+      "miners": {
+         "_prototype": "miners_ethash"
+      }
+   },
+   {
+      "coin": "DOGETHER",
+      "servers": [
+         {
+            "geo": "UA PPLNS Pool",
+            "urls": [
+               "se1.ua-mining.com:9031"
+            ]
+         },
+         {
+            "geo": "SSL UA PPLNS Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:9032"
+            ]
+         },
+         {
+            "geo": "UA SOLO Pool",
+            "urls": [
+               "se1.ua-mining.com:9035"
+            ]
+         },
+         {
+            "geo": "SSL UA SOLO Pool",
+            "ssl_urls": [
+               "se1.ua-mining.com:9036"
             ]
          }
       ],
