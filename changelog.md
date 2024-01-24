@@ -1,3 +1,9 @@
+##### 0.6-224@240123 2024-01-23
+*   SRBMiner-Multi v2.4.6 (Added algorithm `aurum` for mining BitNet on CPU, fee 2%; Minor performance improvement on algorithm `blake3_alephium`; Added support for algorithm `cryptonight_turtle` on AMD gfx1100; Added Vega56/64 ROCm binary for algorithm `cryptonight_turtle`; Minor bug fixes; Notes: see full changelog and details at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.5)
+*   NanoMiner v3.8.11 (Added support `karlsenhash` on AMD GPUs; Notes: full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.8.11)
+*   XMRig-MO v6.21.0-mo2 (fixed segmentation fault on miner start; Notes: miner fork at https://github.com/MoneroOcean/xmrig)
+*   CPUminer-Opt-Aurum v3.23.1 (new fork of cpuminer-opt with `aurum` algo support for mining BIT/BitNet; Notes: moner fork at https://github.com/bitnet-io/cpuminer-opt-aurum)
+
 ##### 0.6-224@240121 2024-01-21
 *   BzMiner v19.2.4 (Improved `Dynex` hashrate on Nvidia & AMD GPUs; Many stability updates on Dynex mining; Fixed issue with AMD PCI bus id's over 127; Notes: see full changelog at https://github.com/bzminer/bzminer/releases/tag/v19.2.4)
 *   Rigel v1.13.2 (Add support for mining arbitrary KawPow since v1.13.0. Please update your flight sheet for using `kawpow` algo. Old coin-specific algorithms are obsolete and will be removed in one of the future releases; Set GPU memory clock offset to 0 when building DAG to prevent its corruption, added since v1.13.1; Fix performance regression when mining RXD on Pascal GPUs introduced in v1.11.1; Fixed issue if `--dns-over-https` is set miner fails to connect to a mining pool; Notes: https://github.com/rigelminer/rigel/releases/tag/1.13.2)
