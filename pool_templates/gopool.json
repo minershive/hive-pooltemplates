@@ -4,60 +4,9 @@
             "name": "Gopool Mining Pool",
             "url": "https://gopool.cash/",
             "fee": 1,
-            "type": "PPLNS + PPLNT"
+            "type": "PPLNS"
         }
     },
-    {
-        "coin": "FIRO",
-        "servers": [
-            {
-                "geo": "BR",
-                "urls": [
-                    "stratum.gopool.cash:3002"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_firopow"
-        }
-    },
-    {
-        "coin": "RVN",
-        "servers": [
-            {
-                "geo": "BR",
-                "urls": [
-                    "stratum.gopool.cash:3005"
-                ]
- 
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_kawpow"
-        }
-    },
-    {
-        "coin":"EVR",
-        "servers":[
-            {
-                "geo": "BR",
-                "urls": [
-                    "stratum.gopool.cash:3020"
-                ]
-
-            }
-        ],
-        "miners": {
-            "_prototype":"miners_evrprogpow",
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "evrprogpow",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
- 
     {
         "coin": "RXD",
         "servers": [
@@ -74,7 +23,7 @@
                 ]
             },
             {
-                "geo": "US",
+                "geo": "EU",
                 "urls": [
                     "eupool.gopool.cash:3323"
                 ]
@@ -83,78 +32,6 @@
 		"miners": {
             "_prototype": "miners_radiant"
           }
-    },
-
-    {
-        "coin": "DNX",
-        "servers": [
-            {
-                "geo": "BR",
-                "urls": [
-                    "dnx.gopool.cash:3333"
-                    
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "uspool.gopool.cash:3333"
-                ]
-            },
-            {
-                "geo": "US",
-                "urls": [
-                    "eupool.gopool.cash:3333"
-                ]
-            }                        
-        ],
-        
-        "miners": {
-             "_prototype": "miners_dynexsolve",
-             "srbminer": {
-                "url": "%URL%",
-                "algo": "dynex",
-                "pass": "",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--disable-cpu\n--mallob-endpoint https://mallob.gopool.cash"
-            },
-             "onezerominer": {
-                "url": "%URL%",
-                "algo": "dynex",
-                "pass": "",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--mallob-endpoint https://mallob.gopool.cash"
-            }
-        }
-    },
-
-    {
-        "coin": "CLORE",
-        "servers": [
-            {
-                "geo": "BR",
-                "urls": [
-                    "stratum.gopool.cash:3493"
-                ]
-                }
-            ],
-            "miners": {
-                "_prototype": "miners_kawpow"
-            }
-    },
-    {
-        "coin": "PAPRY",
-        "servers": [
-            {
-                "geo": "BR",
-                "urls": [
-                    "stratum.gopool.cash:3432"
-                ]
-                }
-            ],
-            "miners": {
-                "_prototype": "miners_kawpow"
-            }
     },
     {
         "coin": "NOVO",
@@ -172,7 +49,7 @@
                 ]
             },
             {
-                "geo": "US",
+                "geo": "EU",
                 "urls": [
                     "eupool.gopool.cash:3735"
                 ]
@@ -219,5 +96,87 @@
 				"algo": "heavyhash"
 			}
 		}
-	}
+	},
+    {
+        "coin": "KLS",
+        "servers": [
+            {
+                "geo": "BR",
+                "urls": [
+                    "br5.gopool.cash:4050"
+                ]
+            }                      
+        ],
+		"miners": {
+            "_prototype": "miners_karlsenhash"
+          }
+    },
+    {
+        "coin": "NEXA",
+        "servers": [
+            {
+                "geo": "BR",
+                "urls": [
+                    "poolbr.gopool.cash:4100"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_nexapow"
+        }
+    },
+    {
+        "coin": "PYI",
+        "servers": [
+            {
+                "geo": "BR",
+                "urls": [
+                    "br5.gopool.cash:4030"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_pyrinhash"
+        }
+    },
+    {
+		"coin": "ALPH",
+        "servers": [
+            {
+                "geo": "BR",
+                "urls": [
+                    "br5.gopool.cash:4060"
+                ]
+            }
+        ],
+		"miners": {
+            "_prototype": "miners_alephium"
+       	}
+    },
+    {
+        "coin": "KAS",
+        "servers": [
+            {
+                "geo": "BR GPU PORT",
+                "urls": [
+                    "poolbr.gopool.cash:4095"
+                ]                
+            },
+            {
+                "geo": "BR KS0 PORT",
+                "urls": [
+                    "poolbr.gopool.cash:4090"
+                ]
+            },
+            {
+                "geo": "BR KS1/KS3 PORT",
+                "urls": [
+                    "poolbr.gopool.cash:4091"
+                ]
+            }
+        ],
+        "miners": {
+          "_prototype": "miners_kaspa"
+        }
+    }
 ]
