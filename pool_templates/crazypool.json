@@ -1155,5 +1155,82 @@
 				"template":"%WAL%.%WORKER_NAME%"
 			}
 		}
+    },
+    {
+        "coin": "LRS",
+        "servers": [
+			{
+                "geo": "SG",
+                "urls": [
+                    "lrs-sg.crazypool.org:25001"
+                ],
+                "ssl_urls": [
+                    "lrs-sg.crazypool.org:26001"
+                ]
+            },
+			{
+                "geo": "US",
+                "urls": [
+                    "lrs-us.crazypool.org:25001"
+                ],
+                "ssl_urls": [
+                    "lrs-us.crazypool.org:26001"
+                ]
+            },
+			{
+                "geo": "EU",
+                "urls": [
+                    "lrs-eu.crazypool.org:25001"
+                ],
+                "ssl_urls": [
+                    "lrs-eu.crazypool.org:26001"
+                ]
+            }
+        ],
+        "miners": {
+		"_prototype": "miners_ethash",
+	
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins %COIN% -allpools 0 -showdiff 1"
+            },
+
+	"teamredminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x",
+				"user_config": "--temp_limit=75 --temp_resume=65"
+            },
+
+
+        "lolminer": {
+                "algo": "ETHASH",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+		"user_config": ""
+            },
+	"t-rex":{
+                "algo":"ethash",
+                "template":"%WAL%.%WORKER_NAME%",
+                "server":"%URL%",
+                "pass":"x"
+            },
+	"gminer": {
+                "algo": "ethash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": ""
+            },
+		"rigel": {
+			"algo": "ethash",
+			"url": "stratum+tcp://%URL%",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%"
+		},
+        }
     }
 ]
