@@ -1,3 +1,6 @@
+##### 0.6-224@240125 2024-01-25
+*   Rigel v1.14.0 (Add `abelian` algorithm for mining ABEL, dev fee 1%; Fixed memory tweaks to Pascal GPUs; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.14.0)
+
 ##### 0.6-224@240124 2024-01-24
 *   BzMiner v19.3.0 (Fixed high diff shares being discarded on Dynex mining; Fixed bz version not being sent to the pool on Dynex mining; Fixed extra nonce issue on woolypooly on Novo mining; Notes: full changelog at https://github.com/bzminer/bzminer/releases/tag/v19.3.0)
 
