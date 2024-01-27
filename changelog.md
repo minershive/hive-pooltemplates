@@ -1,3 +1,6 @@
+##### 0.6-224@240126 2024-01-26
+*   Rigel v1.14.1 (Add dual and triple mining support for ABEL with ALPH, IRON, KLS, PYI, and RXD; Fixed memory temperature displaying on Nvidia 550 series drivers; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.14.1)
+
 ##### 0.6-224@240125 2024-01-25
 *   Rigel v1.14.0 (Add `abelian` algorithm for mining ABEL, dev fee 1%; Fixed memory tweaks to Pascal GPUs; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.14.0)
 
