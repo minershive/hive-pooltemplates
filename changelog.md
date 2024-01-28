@@ -1,3 +1,6 @@
+##### 0.6-224@240128 2024-01-28
+*   Rigel v1.14.2 (Add GPU stats reporting when mining ABEL to AbelPool and zkProvers; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.14.2)
+
 ##### 0.6-224@240126 2024-01-26
 *   Rigel v1.14.1 (Add dual and triple mining support for ABEL with ALPH, IRON, KLS, PYI, and RXD; Fixed memory temperature displaying on Nvidia 550 series drivers; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.14.1)
 
