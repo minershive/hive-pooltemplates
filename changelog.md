@@ -1,3 +1,15 @@
+##### 0.6-225@240129 2024-01-29
+*   `HIVEON OS LINUX CLIENT v0.6-225`
+*   Update `nvtool` to v1.8.2 (Fixed memory temperature reporting on Nvidia v545 series driver)
+*   Improved AMD RDNA3 support (Add support for Navi32: RX 7700 XT/7800 XT and Navi33: RX 7600 (XT); Add fan control - static and by core target temperature, which requires OS Image with kernel v6.1.62+; Added possibility for voltage adjustment; Notes: some functionality will not available until UI update)
+*   Fixed power usage reporting for AMD Vega10/20 GPUs on latest drivers
+*   Improved Intel GPU support (Auto install Intel OpenCL libs on boot; Added pretty naming and basic info: BIOS version, power usage on dashboard and client, add new cli tool `intel-info`. Notes: requires OS Image with kernel v6.1.35+)
+*   Fixed hardware autofans e.g. coolbox, etc. on some configurations (appeared since adding Intel Arc GPU support and if Intel iGPU was present & enabled)
+*   Fixed reporting memory clock for 0 memory state on AMD overclocking log (always reported 1 instead real memory clock)
+*   Update devices IDs to latest (`amdgpu.ids` v2024.01.22: add Navi32/Navi33 based GPUs; `pci.ids` v2024.01.24: added latest Nvidia GPUs like RTX 4070 Super/4070 Ti Super; `usb.ids` v2024.01.20; `amdmeminfo` v2.1.34: add latest AMD Navi32/33 based GPUs, add some rare Polaris12 - RX 640/540X/550X)
+*   Improved `selfupgrade` in force mode by using option `-f` or `--force` (added attempt to fix installed packages status db)
+*   Other various fixes and improvements
+
 ##### 0.6-224@240128 2024-01-28
 *   Rigel v1.14.2 (Add GPU stats reporting when mining ABEL to AbelPool and zkProvers; Notes: see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.14.2)
 
