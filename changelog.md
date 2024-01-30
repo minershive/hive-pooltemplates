@@ -1,3 +1,8 @@
+##### 0.6-225@240130 2024-01-30
+*   TeamRedMiner v0.10.16 (Added support for mining `Karlsen`, `Pyrin` and `Abel`; Added `kawpow` support for RDNA3 GPUs; Notes: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.16)
+*   OneZeroMiner v1.2.9 (Add support for dynexsolve v2.3.5f protocol; Hashrate improvement on some cards; Fix a fallback pool issue when the primary server is SSL; Multiple fixes related to the reconnection for changing the jobs; Notes: please see full info about OC and pools at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.9)
+*   NanoMiner v3.8.12 (Fixed `kawpow` on some epochs; Notes: full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.8.12)
+
 ##### 0.6-225@240129 2024-01-29
 *   `HIVEON OS LINUX CLIENT v0.6-225`
 *   Update `nvtool` to v1.8.2 (Fixed memory temperature reporting on Nvidia v545 series driver)
