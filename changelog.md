@@ -1,3 +1,7 @@
+##### 0.6-225@240131 2024-01-31
+*   TeamRedMiner v0.10.17 (Added support for dual mining `ABEL` and KAS/IRON/KLS/PYI and triple with ZIL; Fixed Pyrin invalid/dup shares on large GPUs running high hashrates; Moved dual ZIL session to R-mode as the default choice when mined together with ethash or abel; Fixed some failed allocations for ABEL+ZIL; Fixed ABEL DAG allocation in R-mode on 6GB GPUs like the 5600XT; Notes: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.17)
+*   TeamBlackMiner v2.17 (Bug fixes; Fixed mining startup at some pools; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.17)
+
 ##### 0.6-225@240130 2024-01-30
 *   TeamRedMiner v0.10.16 (Added support for mining `Karlsen`, `Pyrin` and `Abel`; Added `kawpow` support for RDNA3 GPUs; Notes: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.16)
 *   OneZeroMiner v1.2.9 (Add support for dynexsolve v2.3.5f protocol; Hashrate improvement on some cards; Fix a fallback pool issue when the primary server is SSL; Multiple fixes related to the reconnection for changing the jobs; Notes: please see full info about OC and pools at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.2.9)
