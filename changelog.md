@@ -1,3 +1,6 @@
+##### 0.6-225@240209 2024-02-09
+*   BzMiner v19.3.1 (Updated Dynex to latest protocol; Dynex caching jobs are enabled by default; Notes: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v19.3.1)
+
 ##### 0.6-225@240207 2024-02-07
 *   SRBMiner-Multi v2.4.7 (Performance improvement on algorithm `aurum` for AVX2 supported CPUs; Fixed broken `yespower` algorithms; Fixed broken algorithm `blake3_decred`; Fixed broken `--gpu-coffset` and `--gpu-moffset` parameters; Notes: Please see full changelog and details at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.7)
 
