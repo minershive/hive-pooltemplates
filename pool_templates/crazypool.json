@@ -788,5 +788,449 @@
                 "user_config": ""
             }
         }
+    },
+	{
+        "coin": "XPB",
+        "servers": [
+			{
+                "geo": "SG",
+                "urls": [
+                    "sg.crazypool.org:4114"
+                ],
+                "ssl_urls": [
+                    "sg.crazypool.org:4224"
+                ]
+            },
+			{
+                "geo": "US",
+                "urls": [
+                    "us.crazypool.org:4114"
+                ],
+                "ssl_urls": [
+                    "us.crazypool.org:4224"
+                ]
+            },
+			{
+                "geo": "EU",
+                "urls": [
+                    "eu.crazypool.org:4114"
+                ],
+                "ssl_urls": [
+                    "eu.crazypool.org:4224"
+                ]
+            },
+			{
+                "geo": "AU",
+                "urls": [
+                    "au.crazypool.org:4114"
+                ],
+                "ssl_urls": [
+                    "au.crazypool.org:4224"
+                ]
+            },
+	    {
+                "geo": "BR",
+                "urls": [
+                    "br.crazypool.org:4114"
+                ],
+                "ssl_urls": [
+                    "br.crazypool.org:4224"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins %COIN% -allpools 0 -showdiff 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+	    "teamredminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x",
+				"user_config": "--temp_limit=75 --temp_resume=65"
+            },
+			"tt-miner": {
+                "url": "%URL%",
+                "algo": "ETHASH",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-RH\n"
+            },
+            "nbminer": {
+                "url": "nicehash+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ETHASH",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+		"user_config": ""
+            },
+	    "t-rex":{
+                "algo":"ethash",
+                "template":"%WAL%.%WORKER_NAME%",
+                "server":"%URL%",
+                "pass":"x"
+            },
+	    "gminer": {
+                "algo": "ethash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": ""
+            }
+        }
+    },
+	{
+        "coin": "CAU",
+        "servers": [
+			{
+                "geo": "SG",
+                "urls": [
+                    "sg.crazypool.org:3113"
+                ],
+                "ssl_urls": [
+                    "sg.crazypool.org:3223"
+                ]
+            },
+			{
+                "geo": "US",
+                "urls": [
+                    "us.crazypool.org:3113"
+                ],
+                "ssl_urls": [
+                    "us.crazypool.org:3223"
+                ]
+            },
+			{
+                "geo": "EU",
+                "urls": [
+                    "eu.crazypool.org:3113"
+                ],
+                "ssl_urls": [
+                    "eu.crazypool.org:3223"
+                ]
+            },
+			{
+                "geo": "AU",
+                "urls": [
+                    "au.crazypool.org:3113"
+                ],
+                "ssl_urls": [
+                    "au.crazypool.org:3223"
+                ]
+            },
+	    {
+                "geo": "BR",
+                "urls": [
+                    "br.crazypool.org:3113"
+                ],
+                "ssl_urls": [
+                    "br.crazypool.org:3223"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins %COIN% -allpools 0 -showdiff 1"
+            },
+            "ethminer": {
+                "cuda": 1,
+                "opencl": 1,
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "stratum2+tcp://%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%"
+            },
+            "phoenixminer": {
+                "url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
+            },
+            "finminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "ethash",
+                "template": "%WAL%",
+                "pass": "x"
+            },
+            "nanominer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "x",
+                "user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+            },
+	    "teamredminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x",
+				"user_config": "--temp_limit=75 --temp_resume=65"
+            },
+			"tt-miner": {
+                "url": "%URL%",
+                "algo": "ETHASH",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-RH\n"
+            },
+            "nbminer": {
+                "url": "nicehash+tcp://%URL%",
+                "algo": "ethash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ETHASH",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+		"user_config": ""
+            },
+	    "t-rex":{
+                "algo":"ethash",
+                "template":"%WAL%.%WORKER_NAME%",
+                "server":"%URL%",
+                "pass":"x"
+            },
+	    "gminer": {
+                "algo": "ethash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": ""
+            }
+        }
+    },
+	{
+        "coin": "KAS",
+        "servers": [
+			{
+                "geo": "SG",
+                "urls": [
+                    "kas-sg.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kas-sg.crazypool.org:5555"
+                ]
+            },
+			{
+                "geo": "US",
+                "urls": [
+                    "kas-us.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kas-us.crazypool.org:5555"
+                ]
+            },
+			{
+                "geo": "EU",
+                "urls": [
+                    "kas-eu.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kas-eu.crazypool.org:5555"
+                ]
+            },
+			{
+                "geo": "BR",
+                "urls": [
+                    "kas-br.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kas-br.crazypool.org:5555"
+                ]
+            }
+        ],
+        "miners":{
+			"_prototype":"miners_kaspa"
+		}
+    },
+	{
+        "coin": "KLS",
+        "servers": [
+			{
+                "geo": "SG",
+                "urls": [
+                    "kls-sg.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kls-sg.crazypool.org:5555"
+                ]
+            },
+			{
+                "geo": "US",
+                "urls": [
+                    "kls-us.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kls-us.crazypool.org:5555"
+                ]
+            },
+			{
+                "geo": "EU",
+                "urls": [
+                    "kls-eu.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kls-eu.crazypool.org:5555"
+                ]
+            },
+			{
+                "geo": "BR",
+                "urls": [
+                    "kls-br.crazypool.org:5555"
+                ],
+                "ssl_urls": [
+                    "kls-br.crazypool.org:5555"
+                ]
+            }
+        ],
+        "miners":{
+			 "_prototype":"miners_karlsenhash",
+			 "srbminer":{
+				"url":"%URL%",
+				"algo":"karlsenhash",
+				"pass":"x",
+				"template":"%WAL%.%WORKER_NAME%"
+			 },
+			 "lolminer":{
+				"algo":"KARLSEN",
+				"server":"%URL_HOST%",
+				"port":"%URL_PORT%",
+				"pass":"x",
+				"template":"%WAL%.%WORKER_NAME%"
+			}
+		}
+    },
+    {
+        "coin": "LRS",
+        "servers": [
+			{
+                "geo": "SG",
+                "urls": [
+                    "lrs-sg.crazypool.org:25001"
+                ],
+                "ssl_urls": [
+                    "lrs-sg.crazypool.org:26001"
+                ]
+            },
+			{
+                "geo": "US",
+                "urls": [
+                    "lrs-us.crazypool.org:25001"
+                ],
+                "ssl_urls": [
+                    "lrs-us.crazypool.org:26001"
+                ]
+            },
+			{
+                "geo": "EU",
+                "urls": [
+                    "lrs-eu.crazypool.org:25001"
+                ],
+                "ssl_urls": [
+                    "lrs-eu.crazypool.org:26001"
+                ]
+            }
+        ],
+        "miners": {
+		"_prototype": "miners_ethash",
+	
+            "claymore": {
+                "epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+                "claymore_user_config": "-allcoins %COIN% -allpools 0 -showdiff 1"
+            },
+
+	"teamredminer": {
+                "algo": "ethash",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x",
+				"user_config": "--temp_limit=75 --temp_resume=65"
+            },
+
+
+        "lolminer": {
+                "algo": "ETHASH",
+                "template": "%WAL%.%WORKER_NAME%",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+		"user_config": ""
+            },
+	"t-rex":{
+                "algo":"ethash",
+                "template":"%WAL%.%WORKER_NAME%",
+                "server":"%URL%",
+                "pass":"x"
+            },
+	"gminer": {
+                "algo": "ethash",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": ""
+            },
+		"rigel": {
+			"algo": "ethash",
+			"url": "stratum+tcp://%URL%",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%"
+		}
+        }
     }
 ]
