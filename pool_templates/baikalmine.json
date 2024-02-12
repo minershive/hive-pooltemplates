@@ -131,7 +131,12 @@
 	    
         ],
         "miners": {
-            "_prototype": "miners_dynexsolve"
+            "_prototype": "miners_dynexsolve",
+	    "bzminer" {
+	"url": "%URL%",
+	"algo": "dynex",
+	"worker": "%WORKER_NAME%",
+	"template": "%WAL%"
         }
     },
     {
@@ -159,32 +164,6 @@
         "template": "%WAL%.%WORKER_NAME%",
         "user_config": "--disable-cpu"
             }
-        }
-    },
-    {
-        "coin": "ERG",
-        "servers": [
-            {
-                "geo": "EU PPS+",
-                "urls": [
-                    "ergo-pps.baikalmine.com:1516"
-                ]
-            },
-	    {
-                "geo": "EU PPLNS",
-                "urls": [
-                    "ergo.baikalmine.com:1212"
-                ]
-            },
-	    {
-                "geo": "EU SOLO",
-                "urls": [
-                    "ergo-solo.baikalmine.com:1214"
-                ]
-            }
-        ],
-        "miners": {
-		    "_prototype": "miners_autolykos2"
         }
     },
     {
