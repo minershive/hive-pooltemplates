@@ -1,3 +1,12 @@
+##### 0.6-225@240209 2024-02-09
+*   BzMiner v19.3.1 (Updated Dynex to latest protocol; Dynex caching jobs are enabled by default; Notes: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v19.3.1)
+
+##### 0.6-225@240207 2024-02-07
+*   SRBMiner-Multi v2.4.7 (Performance improvement on algorithm `aurum` for AVX2 supported CPUs; Fixed broken `yespower` algorithms; Fixed broken algorithm `blake3_decred`; Fixed broken `--gpu-coffset` and `--gpu-moffset` parameters; Notes: Please see full changelog and details at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.7)
+
+##### 0.6-225@240204 2024-02-04
+*   OneZeroMiner v1.3.0 (Add ability to take a snapshot of the best found state which can improve the chance of solving SAT jobs and getting the reward; Notes: please see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.0)
+
 ##### 0.6-225@240131 2024-01-31
 *   TeamRedMiner v0.10.17 (Added support for dual mining `ABEL` and KAS/IRON/KLS/PYI and triple with ZIL; Fixed Pyrin invalid/dup shares on large GPUs running high hashrates; Moved dual ZIL session to R-mode as the default choice when mined together with ethash or abel; Fixed some failed allocations for ABEL+ZIL; Fixed ABEL DAG allocation in R-mode on 6GB GPUs like the 5600XT; Notes: see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.17)
 *   TeamBlackMiner v2.17 (Bug fixes; Fixed mining startup at some pools; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.17)
@@ -32,7 +41,7 @@
 *   BzMiner v19.3.0 (Fixed high diff shares being discarded on Dynex mining; Fixed bz version not being sent to the pool on Dynex mining; Fixed extra nonce issue on woolypooly on Novo mining; Notes: full changelog at https://github.com/bzminer/bzminer/releases/tag/v19.3.0)
 
 ##### 0.6-224@240123 2024-01-23
-*   SRBMiner-Multi v2.4.6 (Added algorithm `aurum` for mining BitNet on CPU, fee 2%; Minor performance improvement on algorithm `blake3_alephium`; Added support for algorithm `cryptonight_turtle` on AMD gfx1100; Added Vega56/64 ROCm binary for algorithm `cryptonight_turtle`; Minor bug fixes; Notes: see full changelog and details at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.5)
+*   SRBMiner-Multi v2.4.6 (Added algorithm `aurum` for mining BitNet on CPU, fee 2%; Minor performance improvement on algorithm `blake3_alephium`; Added support for algorithm `cryptonight_turtle` on AMD gfx1100; Added Vega56/64 ROCm binary for algorithm `cryptonight_turtle`; Minor bug fixes; Notes: see full changelog and details at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.6)
 *   NanoMiner v3.8.11 (Added support `karlsenhash` on AMD GPUs; Notes: full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.8.11)
 *   XMRig-MO v6.21.0-mo2 (fixed segmentation fault on miner start; Notes: miner fork at https://github.com/MoneroOcean/xmrig)
 *   CPUminer-Opt-Aurum v3.23.1 (new fork of cpuminer-opt with `aurum` algo support for mining BIT/BitNet; Notes: moner fork at https://github.com/bitnet-io/cpuminer-opt-aurum)
