@@ -1,3 +1,9 @@
+##### 0.6-225@240212 2024-02-12
+*   TeamRedMiner v0.10.18 (Added ability `GRAM` mining and many fixes, please see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.18)
+
+##### 0.6-225@240211 2024-02-11
+*   lolMiner v1.83 (Added GRAM mining support select `GRAM` to mine it; Ton / Gram pool connector now detects pools `lolminer.ton.ninja` and `gram.hashrate.to` correctly with `--ton-mode 6` and https://ninja.tonlens.com with `--ton-mode 4`; Added Ton/Gram support for Nvidia ADA and AMD RDNA3 generation of GPUs; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.83)
+
 ##### 0.6-225@240209 2024-02-09
 *   BzMiner v19.3.1 (Updated Dynex to latest protocol; Dynex caching jobs are enabled by default; Notes: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v19.3.1)
 
