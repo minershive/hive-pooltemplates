@@ -1,3 +1,6 @@
+##### 0.6-225@240214 2024-02-14
+*   lolMiner v1.84 (Improved Ton/Gram mining performance by 15-18% on AMD RDNA 1-3 and NVIDIA Pascal and newer GPUs; Added EthashB3 + Gram/Ton dual mining; Added support to mine Gram on gramcoin.org - the https endpoint `https://api-pool.gramcoin.org` will be detected automatically, but the mode also can be selected manually by using `--ton-mode 5`; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.84)
+
 ##### 0.6-225@240212 2024-02-12
 *   TeamRedMiner v0.10.18 (Added ability `GRAM` mining and many fixes, please see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.18)
 
