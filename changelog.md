@@ -1,3 +1,8 @@
+##### 0.6-225@240219 2024-02-19
+*   BzMiner v20.0.0 (Added pool support for `decred`;  Add support mining `nexellia` / Nexell-ia; Add support mining `dint` / Dinar Tether; Add support mining `larissa` / Larissa Coin; Notes: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v20.0.0)
+*   TT-Miner 2024.1.3 (Better performance for almost all other algos; Fixed memory leaks and smaller footprint; Add stratum support for ETI; Added support mining for VLC/Vultaic, KIIRO/Kiiro Coin & NIR/NiRmata coins; Notes: Please, see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2024.1.3)
+*   TeamBlackMiner v2.18 (Improved threads exit; Improved multithread code; Fixed bug in the miningtime option; Notes: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.18)
+
 ##### 0.6-225@240214 2024-02-14
 *   lolMiner v1.84 (Improved Ton/Gram mining performance by 15-18% on AMD RDNA 1-3 and NVIDIA Pascal and newer GPUs; Added EthashB3 + Gram/Ton dual mining; Added support to mine Gram on gramcoin.org - the https endpoint `https://api-pool.gramcoin.org` will be detected automatically, but the mode also can be selected manually by using `--ton-mode 5`; Notes: see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.84)
 
