@@ -1,3 +1,12 @@
+##### 0.6-225@240312 2024-03-12
+*   Rigel v1.15.0 (Add `fishhash` algorithm support, dev fee 1%; Add dual mining support `fishhash` with ALPH/KLS/PYI/RXD/ZIL; Notes: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.15.0)
+*   GMiner v3.44 (Added support DERO and DERO+ZIL mining on K1Pool pool for Nvidia's GPUs with 12GB+ VRAM; Notes: Please, see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.44)
+*   SRBMiner-MULTI v2.4.8 (Added support for mining PROGPOW algorithms on INTEL GPUs `kawpow`, `firopow`, `progpow_epic`, `progpow_zano`; Added support for GPU mining algorithm `aurum` on AMD/NVIDIA/INTEL GPUs; Performance improvement on PROGPOW algorithms on AMD/NVIDIA GPUs; Performance improvement on algorithm `aurum` for CPU; Notes: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.8)
+*   XMRig v6.21.1 (Added support for Monero fork "townforge"; Fixed Zephyr mining using OpenCL; Fixed segfault in HTTP API rebind; Notes: Please, see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.21.1)
+*   XMRig-MO v6.21.1 (MoneroOcean fork synced with XMRig v6.21.1)
+*   TeamBlackMiner v2.20 (Fixed issues on `kawpow`/`firopow` mining; Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.20)
+*   XLARig v5.2.4 (Miner won't try to mine Diardi's block; Please, see full changelog at https://github.com/scala-network/XLArig/releases/tag/v5.2.4)
+
 ##### 0.6-225@240219 2024-02-19
 *   BzMiner v20.0.0 (Added pool support for `decred`;  Add support mining `nexellia` / Nexell-ia; Add support mining `dint` / Dinar Tether; Add support mining `larissa` / Larissa Coin; Notes: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v20.0.0)
 *   TT-Miner 2024.1.3 (Better performance for almost all other algos; Fixed memory leaks and smaller footprint; Add stratum support for ETI; Added support mining for VLC/Vultaic, KIIRO/Kiiro Coin & NIR/NiRmata coins; Notes: Please, see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2024.1.3)
