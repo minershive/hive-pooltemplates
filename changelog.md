@@ -1,3 +1,6 @@
+##### 0.6-225@240313 2024-03-13
+*   Fixed incorrect "latest" version for XMRig to v6.21.1 (affected origin XMRig and MoneroOcean fork)
+
 ##### 0.6-225@240312 2024-03-12
 *   Rigel v1.15.0 (Add `fishhash` algorithm support, dev fee 1%; Add dual mining support `fishhash` with ALPH/KLS/PYI/RXD/ZIL; Notes: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.15.0)
 *   GMiner v3.44 (Added support DERO and DERO+ZIL mining on K1Pool pool for Nvidia's GPUs with 12GB+ VRAM; Notes: Please, see full changelog at https://github.com/develsoftware/GMinerRelease/releases/tag/3.44)
