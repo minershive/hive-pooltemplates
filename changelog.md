@@ -1,3 +1,9 @@
+##### 0.6-225@240318 2024-03-18
+*   SRBMiner v2.4.9 (Added support for `meowpow` algorithm for mining MEWC since hardfork on March 18, 2024; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.9)
+*   TT-Miner v2024.1.6 (Added support for `meowpow` algorithm for mining MEWC since hardfork on March 18, 2024; Improved hashrate for `ghostrider`; Added support for zkBTC coin; NOTES: Please, see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
+*   miniZ v2.3c (Added support for `KarlsenHash` algorithm for mining KLS/Karlsen, NXL/Nexell-ia, NTL/Nautilus with dual/tripple mining ability, fee: 0.8%; Added support for `PyrinHash` algorithm for mining Pyrin/PYI, HTN/Hoosat, CAS/Kaspa Classic with dual/tripple mining ability, fee: 0.8%; NOTES: Please, see full changelog at https://miniz.cc/2024/03/13/miniz-v23c-is-out/)
+*   TeamBlackMiner v2.21  Fixed rejected shares on startup `kawpow` / `firopow`; Fixed ZIL switch crash bug on multicard rigs; Fixed crash in the ZIL powerlimit setting; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.21)
+
 ##### 0.6-225@240313 2024-03-13
 *   Fixed incorrect "latest" version for XMRig to v6.21.1 (affected origin XMRig and MoneroOcean fork)
 
