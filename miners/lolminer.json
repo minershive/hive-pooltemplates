@@ -38,6 +38,7 @@
         "ETH",
         "ETHASH",
         "EXCC",
+        "GRAM",
         "GRIN-C29M",
         "GRIN-C32",
         "IRONFISH",
@@ -48,6 +49,7 @@
         "NEXA",
         "PYRIN",
         "RADIANT",
+        "TON",
         "UBQHASH",
         "XSG",
         "YEC",
@@ -64,15 +66,16 @@
         "KARLSENDUAL",
         "KASPADUAL",
         "PYRINDUAL",
-        "RXDDUAL"
+        "RXDDUAL",
+        "TONDUAL"
     ],
     "dual_modes": {
-        "AUTOLYKOS2": ["ALEPHDUAL", "KASPADUAL", "zil"],
-        "UBQHASH":    ["ALEPHDUAL", "KASPADUAL", "zil"],
-        "ETHASHB3":   ["ALEPHDUAL", "FISHDUAL", "KARLSENDUAL", "PYRINDUAL", "KASPADUAL", "RXDDUAL", "zil"],
-        "ETHASH":     ["ETCHASH", "ALEPHDUAL", "KASPADUAL", "zil"],
-        "ETCHASH":    ["ETHASH", "ALEPHDUAL", "KASPADUAL", "zil"],
-        "ETC":        ["ETHASH", "ALEPHDUAL", "KASPADUAL", "zil"]
+        "AUTOLYKOS2": ["ALEPHDUAL", "KASPADUAL", "TONDUAL", "zil"],
+        "UBQHASH":    ["ALEPHDUAL", "KASPADUAL", "TONDUAL", "zil"],
+        "ETHASHB3":   ["ALEPHDUAL", "FISHDUAL", "KARLSENDUAL", "PYRINDUAL", "KASPADUAL", "RXDDUAL", "TONDUAL", "zil"],
+        "ETHASH":     ["ETCHASH", "ALEPHDUAL", "KASPADUAL", "TONDUAL", "zil"],
+        "ETCHASH":    ["ETHASH", "ALEPHDUAL", "KASPADUAL", "TONDUAL", "zil"],
+        "ETC":        ["ETHASH", "ALEPHDUAL", "KASPADUAL", "TONDUAL", "zil"]
     },
     "algomap": {
         "autolykos v2 (ergo)": "autolykos2",
@@ -125,6 +128,11 @@
         "HeavyHash-Pyrin": "pyrinhash",
         "RADIANT": "sha512256d",
         "RXDDUAL": "sha512256d",
+        "GRAM": "sha256-ton",
+        "sha256-gram": "sha256-ton",
+        "TON":  "sha256-ton",
+        "sha512\/256d": "sha512256d",
+        "TONDUAL": "sha256-ton",
         "XSG": "equihash 144\/5",
         "YEC": "equihash 192\/7",
         "ZCL": "equihash 192\/7",

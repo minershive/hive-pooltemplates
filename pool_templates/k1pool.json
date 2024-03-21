@@ -131,181 +131,6 @@
     }
   },
   {
-    "coin": "K1Pool-Equihash",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": [
-          "eu.equihash.k1pool.com:4000"
-        ]
-      },
-      {
-        "geo": "Europe HiDiff",
-        "urls": [
-          "eu.equihash.k1pool.com:4001"
-        ]
-      },
-      {
-        "geo": "USA",
-        "urls": [
-          "us.equihash.k1pool.com:4000"
-        ]
-      },
-      {
-        "geo": "USA HiDiff",
-        "urls": [
-          "us.equihash.k1pool.com:4001"
-        ]
-      },
-      {
-        "geo": "China",
-        "urls": [
-          "cn.equihash.k1pool.com:4000"
-        ]
-      },
-      {
-        "geo": "China HiDiff",
-        "urls": [
-          "cn.equihash.k1pool.com:4001"
-        ]
-      }
-    ],
-    "miners": {
-      "dstm": {
-        "pass": "x",
-        "port": "%URL_PORT%",
-        "server": "%URL_HOST%",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "ewbf": {
-        "zpass": "x",
-        "zport": "%URL_PORT%",
-        "zserver": "%URL_HOST%",
-        "ztemplate": "%WAL%.%WORKER_NAME%"
-      },
-      "bminer": {
-        "url": "%URL%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "claymore-z": {
-        "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-      },
-      "sgminer-gm": {
-        "url": "%URL%",
-        "algo": "equihash",
-        "fork": "gm",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "asicminer": {
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
-    }
-  },
-  {
-    "coin": "K1Pool-Equihash144",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": [
-          "eu.equihash1445.k1pool.com:4100"
-        ]
-      },
-      {
-        "geo": "Europe HiDiff",
-        "urls": [
-          "eu.equihash1445.k1pool.com:4101"
-        ]
-      },
-      {
-        "geo": "USA",
-        "urls": [
-          "us.equihash1445.k1pool.com:4100"
-        ]
-      },
-      {
-        "geo": "USA HiDiff",
-        "urls": [
-          "us.equihash1445.k1pool.com:4101"
-        ]
-      },
-      {
-        "geo": "China",
-        "urls": [
-          "cn.equihash1445.k1pool.com:4100"
-        ]
-      },
-      {
-        "geo": "China HiDiff",
-        "urls": [
-          "cn.equihash1445.k1pool.com:4101"
-        ]
-      }
-    ],
-    "miners": {
-      "ewbf": {
-        "algo": "144_5",
-        "fork": "zhash",
-        "zpass": "x",
-        "zport": "%URL_PORT%",
-        "zserver": "%URL_HOST%",
-        "ztemplate": "%WAL%.%WORKER_NAME%",
-        "user_config": "pers auto"
-      },
-      "bminer": {
-        "algo": "zhash",
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "pass": "x"
-      },
-      "gminer": {
-        "algo": "144_5",
-        "server": "%URL_HOST%",
-        "port": "%URL_PORT%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "--pers auto"
-      },
-      "lolminer": {
-        "algo": "EQUI144_5",
-        "server": "%URL_HOST%",
-        "port": "%URL_PORT%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "--pers AUTO"
-      },
-      "miniz": {
-        "algo": "144,5",
-        "url": "%URL%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "--pers auto"
-      }
-    }
-  },
-  {
-    "coin": "K1Pool-Equihash125",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": [
-          "eu.equihash1254.k1pool.com:4200"
-        ]
-      },
-      {
-        "geo": "Europe HiDiff",
-        "urls": [
-          "eu.equihash1254.k1pool.com:4201"
-        ]
-      }
-    ],
-    "miners": {
-      "_prototype": "miners_zelhash"
-    }
-  },
-  {
     "coin": "K1Pool-Kawpow",
     "servers": [
       {
@@ -315,33 +140,15 @@
         ]
       },
       {
-        "geo": "Europe HiDiff",
-        "urls": [
-          "eu.kawpow.k1pool.com:5101"
-        ]
-      },
-      {
         "geo": "USA",
         "urls": [
           "us.kawpow.k1pool.com:5100"
         ]
       },
       {
-        "geo": "USA HiDiff",
-        "urls": [
-          "us.kawpow.k1pool.com:5101"
-        ]
-      },
-      {
         "geo": "China",
         "urls": [
           "cn.kawpow.k1pool.com:5100"
-        ]
-      },
-      {
-        "geo": "China HiDiff",
-        "urls": [
-          "cn.kawpow.k1pool.com:5101"
         ]
       }
     ],
@@ -893,17 +700,26 @@
         "geo": "ZIL Europe standalone",
         "urls": [
           "eu.zil.k1pool.com:1111"
+        ],
+        "ssl_urls": [
+          "eu.zil.k1pool.com:1111"
         ]
       },
       {
         "geo": "ZIL USA standalone",
         "urls": [
           "us.zil.k1pool.com:1111"
+        ],
+        "ssl_urls": [
+          "us.zil.k1pool.com:1111"
         ]
       },
       {
         "geo": "ZIL China standalone",
         "urls": [
+          "cn.zil.k1pool.com:1111"
+        ],
+        "ssl_urls": [
           "cn.zil.k1pool.com:1111"
         ]
       },
@@ -972,71 +788,6 @@
       },
       "lolminer": {
         "user_config": "--ethstratum ETHV1 --enablezilcache"
-      },
-      "t-rex": {
-        "user_config": "\"extra-dag-epoch\": 1\n\"worker\": \"%WORKER_NAME%\""
-      }
-    }
-  },
-  {
-    "coin": "KMD",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": [
-          "eu.kmd.k1pool.com:6250"
-        ]
-      },
-      {
-        "geo": "Europe HiDiff",
-        "urls": [
-          "eu.kmd.k1pool.com:6251"
-        ]
-      },
-      {
-        "geo": "Europe SOLO",
-        "urls": [
-          "eu.kmdsolo.k1pool.com:6252"
-        ]
-      },
-      {
-        "geo": "Europe SOLO HiDiff",
-        "urls": [
-          "eu.kmdsolo.k1pool.com:6253"
-        ]
-      }
-    ],
-    "miners": {
-      "dstm": {
-        "pass": "x",
-        "port": "%URL_PORT%",
-        "server": "%URL_HOST%",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "ewbf": {
-        "zpass": "x",
-        "zport": "%URL_PORT%",
-        "zserver": "%URL_HOST%",
-        "ztemplate": "%WAL%.%WORKER_NAME%"
-      },
-      "bminer": {
-        "url": "%URL%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "claymore-z": {
-        "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-      },
-      "sgminer-gm": {
-        "url": "%URL%",
-        "algo": "equihash",
-        "fork": "gm",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "asicminer": {
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%"
       }
     }
   },
@@ -1248,15 +999,36 @@
         ]
       },
       {
-        "geo": "Europe SOLO",
+        "geo": "EU KAWPOW Switcher",
         "urls": [
-          "eu.rvnsolo.k1pool.com:7863"
+          "eu.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "eu.kawpow.k1pool.com:5100"
         ]
       },
       {
-        "geo": "Europe SOLO HiDiff",
+        "geo": "USA KAWPOW Switcher",
         "urls": [
-          "eu.rvnsolo.k1pool.com:7864"
+          "us.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "us.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "China KAWPOW Switcher",
+        "urls": [
+          "cn.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "cn.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.rvnsolo.k1pool.com:7863"
         ]
       },
       {
@@ -1266,21 +1038,9 @@
         ]
       },
       {
-        "geo": "USA SOLO HiDiff",
-        "urls": [
-          "us.rvnsolo.k1pool.com:7864"
-        ]
-      },
-      {
         "geo": "China SOLO",
         "urls": [
           "cn.rvnsolo.k1pool.com:7863"
-        ]
-      },
-      {
-        "geo": "China SOLO HiDiff",
-        "urls": [
-          "cn.rvnsolo.k1pool.com:7864"
         ]
       }
     ],
@@ -1310,15 +1070,36 @@
         ]
       },
       {
-        "geo": "Europe SOLO",
+        "geo": "EU KAWPOW Switcher",
         "urls": [
-          "eu.neoxsolo.k1pool.com:6364"
+          "eu.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "eu.kawpow.k1pool.com:5100"
         ]
       },
       {
-        "geo": "Europe SOLO HiDiff",
+        "geo": "USA KAWPOW Switcher",
         "urls": [
-          "eu.neoxsolo.k1pool.com:7032"
+          "us.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "us.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "China KAWPOW Switcher",
+        "urls": [
+          "cn.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "cn.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.neoxsolo.k1pool.com:6364"
         ]
       },
       {
@@ -1328,21 +1109,9 @@
         ]
       },
       {
-        "geo": "USA SOLO HiDiff",
-        "urls": [
-          "us.neoxsolo.k1pool.com:6364"
-        ]
-      },
-      {
         "geo": "China SOLO",
         "urls": [
           "cn.neoxsolo.k1pool.com:6363"
-        ]
-      },
-      {
-        "geo": "China SOLO HiDiff",
-        "urls": [
-          "cn.neoxsolo.k1pool.com:6364"
         ]
       }
     ],
@@ -1372,15 +1141,36 @@
         ]
       },
       {
-        "geo": "Europe SOLO",
+        "geo": "EU KAWPOW Switcher",
         "urls": [
-          "eu.xnasolo.k1pool.com:7031"
+          "eu.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "eu.kawpow.k1pool.com:5100"
         ]
       },
       {
-        "geo": "Europe SOLO HiDiff",
+        "geo": "USA KAWPOW Switcher",
         "urls": [
-          "eu.xnasolo.k1pool.com:7032"
+          "us.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "us.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "China KAWPOW Switcher",
+        "urls": [
+          "cn.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "cn.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.xnasolo.k1pool.com:7031"
         ]
       },
       {
@@ -1390,21 +1180,9 @@
         ]
       },
       {
-        "geo": "USA SOLO HiDiff",
-        "urls": [
-          "us.xnasolo.k1pool.com:7032"
-        ]
-      },
-      {
         "geo": "China SOLO",
         "urls": [
           "cn.xnasolo.k1pool.com:7031"
-        ]
-      },
-      {
-        "geo": "China SOLO HiDiff",
-        "urls": [
-          "cn.xnasolo.k1pool.com:7032"
         ]
       }
     ],
@@ -1434,15 +1212,36 @@
         ]
       },
       {
-        "geo": "Europe SOLO",
+        "geo": "EU KAWPOW Switcher",
         "urls": [
-          "eu.cloresolo.k1pool.com:5032"
+          "eu.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "eu.kawpow.k1pool.com:5100"
         ]
       },
       {
-        "geo": "Europe SOLO HiDiff",
+        "geo": "USA KAWPOW Switcher",
         "urls": [
-          "eu.cloresolo.k1pool.com:5033"
+          "us.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "us.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "China KAWPOW Switcher",
+        "urls": [
+          "cn.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "cn.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.cloresolo.k1pool.com:5032"
         ]
       },
       {
@@ -1452,21 +1251,9 @@
         ]
       },
       {
-        "geo": "USA SOLO HiDiff",
-        "urls": [
-          "us.cloresolo.k1pool.com:5033"
-        ]
-      },
-      {
         "geo": "China SOLO",
         "urls": [
-          "cn.xnasolo.k1pool.com:5032"
-        ]
-      },
-      {
-        "geo": "China SOLO HiDiff",
-        "urls": [
-          "cn.xnasolo.k1pool.com:5033"
+          "cn.cloresolo.k1pool.com:5032"
         ]
       }
     ],
@@ -1475,35 +1262,145 @@
     }
   },
   {
-    "coin": "FLUX",
+    "coin": "AIPG",
     "servers": [
       {
         "geo": "Europe",
         "urls": [
-          "eu.flux.k1pool.com:9351"
+          "eu.aipg.k1pool.com:7105"
         ]
       },
       {
-        "geo": "Europe HiDiff",
+        "geo": "USA",
         "urls": [
-          "eu.flux.k1pool.com:9352"
+          "us.aipg.k1pool.com:7105"
+        ]
+      },
+      {
+        "geo": "China",
+        "urls": [
+          "cn.aipg.k1pool.com:7105"
+        ]
+      },
+      {
+        "geo": "EU KAWPOW Switcher",
+        "urls": [
+          "eu.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "eu.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "USA KAWPOW Switcher",
+        "urls": [
+          "us.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "us.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "China KAWPOW Switcher",
+        "urls": [
+          "cn.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "cn.kawpow.k1pool.com:5100"
         ]
       },
       {
         "geo": "Europe SOLO",
         "urls": [
-          "eu.fluxsolo.k1pool.com:9353"
+          "eu.aipgsolo.k1pool.com:7107"
         ]
       },
       {
-        "geo": "Europe SOLO HiDiff",
+        "geo": "USA SOLO",
         "urls": [
-          "eu.fluxsolo.k1pool.com:9354"
+          "us.aipgsolo.k1pool.com:7107"
+        ]
+      },
+      {
+        "geo": "China SOLO",
+        "urls": [
+          "cn.aipgsolo.k1pool.com:7107"
         ]
       }
     ],
     "miners": {
-      "_prototype": "miners_zelhash"
+      "_prototype": "miners_kawpow"
+    }
+  },
+  {
+    "coin": "VLC",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.vlc.k1pool.com:7113"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+          "us.vlc.k1pool.com:7113"
+        ]
+      },
+      {
+        "geo": "China",
+        "urls": [
+          "cn.vlc.k1pool.com:7113"
+        ]
+      },
+      {
+        "geo": "EU KAWPOW Switcher",
+        "urls": [
+          "eu.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "eu.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "USA KAWPOW Switcher",
+        "urls": [
+          "us.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "us.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "China KAWPOW Switcher",
+        "urls": [
+          "cn.kawpow.k1pool.com:5100"
+        ],
+        "ssl_urls": [
+          "cn.kawpow.k1pool.com:5100"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.vlcsolo.k1pool.com:7115"
+        ]
+      },
+      {
+        "geo": "USA SOLO",
+        "urls": [
+          "us.vlcsolo.k1pool.com:7115"
+        ]
+      },
+      {
+        "geo": "China SOLO",
+        "urls": [
+          "cn.vlcsolo.k1pool.com:7115"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow"
     }
   },
   {
@@ -1652,51 +1549,659 @@
     "coin": "KAS",
     "servers": [
       {
-        "geo": "Europe",
+        "geo": "Europe GPU/FPGA",
         "urls": [
           "eu.kaspa.k1pool.com:3112"
+        ],
+        "ssl_urls": [
+          "eu.kaspa.k1pool.com:13112"
         ]
       },
       {
-        "geo": "USA",
+        "geo": "Europe ASIC (KS0, KS0 Pro)",
         "urls": [
+          "eu.kaspa.k1pool.com:23102"
+        ],
+        "ssl_urls": [
+          "eu.kaspa.k1pool.com:23102"
+        ]
+      },
+      {
+        "geo": "Europe ASIC (KS1, KS2)",
+        "urls": [
+          "eu.kaspa.k1pool.com:23112"
+        ],
+        "ssl_urls": [
+          "eu.kaspa.k1pool.com:23112"
+        ]
+      },
+      {
+        "geo": "Europe ASIC (KS3L, KS3M)",
+        "urls": [
+          "eu.kaspa.k1pool.com:23122"
+        ],
+        "ssl_urls": [
+          "eu.kaspa.k1pool.com:23122"
+        ]
+      },
+      {
+        "geo": "Europe ASIC (KS3, KS5)",
+        "urls": [
+          "eu.kaspa.k1pool.com:23222"
+        ],
+        "ssl_urls": [
+          "eu.kaspa.k1pool.com:23222"
+        ]
+      },
+      {
+        "geo": "Europe ASIC (TheWindMiner K9, iBeLink BM-KS Max)",
+        "urls": [
+          "eu.kaspa.k1pool.com:23422"
+        ],
+        "ssl_urls": [
+          "eu.kaspa.k1pool.com:23422"
+        ]
+      },
+      {
+        "geo": "USA GPU/FPGA",
+        "urls": [
+          "us.kaspa.k1pool.com:3112"
+        ],
+        "ssl_urls": [
           "us.kaspa.k1pool.com:3112"
         ]
       },
       {
-        "geo": "China",
+        "geo": "USA ASIC (KS0, KS0 Pro)",
         "urls": [
+          "us.kaspa.k1pool.com:23102"
+        ],
+        "ssl_urls": [
+          "us.kaspa.k1pool.com:23102"
+        ]
+      },
+      {
+        "geo": "USA ASIC (KS1, KS2)",
+        "urls": [
+          "us.kaspa.k1pool.com:23112"
+        ],
+        "ssl_urls": [
+          "us.kaspa.k1pool.com:23112"
+        ]
+      },
+      {
+        "geo": "USA ASIC (KS3L, KS3M)",
+        "urls": [
+          "us.kaspa.k1pool.com:23122"
+        ],
+        "ssl_urls": [
+          "us.kaspa.k1pool.com:23122"
+        ]
+      },
+      {
+        "geo": "USA ASIC (KS3, KS5)",
+        "urls": [
+          "us.kaspa.k1pool.com:23222"
+        ],
+        "ssl_urls": [
+          "us.kaspa.k1pool.com:23222"
+        ]
+      },
+      {
+        "geo": "USA ASIC (TheWindMiner K9, iBeLink BM-KS Max)",
+        "urls": [
+          "us.kaspa.k1pool.com:23422"
+        ],
+        "ssl_urls": [
+          "us.kaspa.k1pool.com:23422"
+        ]
+      },
+      {
+        "geo": "China GPU/FPGA",
+        "urls": [
+          "cn.kaspa.k1pool.com:3112"
+        ],
+        "ssl_urls": [
           "cn.kaspa.k1pool.com:3112"
         ]
       },
       {
-        "geo": "China SSL",
+        "geo": "China ASIC (KS0, KS0 Pro)",
         "urls": [
-          "cn.kaspa.k1pool.com:3112"
+          "cn.kaspa.k1pool.com:23102"
+        ],
+        "ssl_urls": [
+          "cn.kaspa.k1pool.com:23102"
         ]
       },
       {
-        "geo": "Europe SOLO",
+        "geo": "China ASIC (KS1, KS2)",
         "urls": [
-          "eu.kaspasolo.k1pool.com:3114"
+          "cn.kaspa.k1pool.com:23112"
+        ],
+        "ssl_urls": [
+          "cn.kaspa.k1pool.com:23112"
         ]
       },
       {
-        "geo": "USA SOLO",
+        "geo": "China ASIC (KS3L, KS3M)",
         "urls": [
-          "us.kaspasolo.k1pool.com:3114"
+          "cn.kaspa.k1pool.com:23122"
+        ],
+        "ssl_urls": [
+          "cn.kaspa.k1pool.com:23122"
         ]
       },
       {
-        "geo": "China SOLO",
+        "geo": "China ASIC (KS3, KS5)",
         "urls": [
-          "cn.kaspasolo.k1pool.com:3114"
+          "cn.kaspa.k1pool.com:23222"
+        ],
+        "ssl_urls": [
+          "cn.kaspa.k1pool.com:23222"
         ]
       },
       {
-        "geo": "China SOLO SSL",
+        "geo": "China ASIC (TheWindMiner K9, iBeLink BM-KS Max)",
         "urls": [
-          "cn.kaspasolo.k1pool.com:3114"
+          "cn.kaspa.k1pool.com:23422"
+        ],
+        "ssl_urls": [
+          "cn.kaspa.k1pool.com:23422"
+        ]
+      },
+      {
+        "geo": "Europe Switcher GPU/FPGA",
+        "urls": [
+          "eu.kheavyhash.k1pool.com:5510"
+        ],
+        "ssl_urls": [
+          "eu.kheavyhash.k1pool.com:5510"
+        ]
+      },
+      {
+        "geo": "Europe Switcher ASIC (KS0, KS0 Pro)",
+        "urls": [
+          "eu.kheavyhash.k1pool.com:5500"
+        ],
+        "ssl_urls": [
+          "eu.kheavyhash.k1pool.com:5500"
+        ]
+      },
+      {
+        "geo": "Europe Switcher ASIC (KS1, KS2)",
+        "urls": [
+          "eu.kheavyhash.k1pool.com:5520"
+        ],
+        "ssl_urls": [
+          "eu.kheavyhash.k1pool.com:5520"
+        ]
+      },
+      {
+        "geo": "Europe Switcher ASIC (KS3L, KS3M)",
+        "urls": [
+          "eu.kheavyhash.k1pool.com:5530"
+        ],
+        "ssl_urls": [
+          "eu.kheavyhash.k1pool.com:5530"
+        ]
+      },
+      {
+        "geo": "Europe Switcher ASIC (KS3, KS5)",
+        "urls": [
+          "eu.kheavyhash.k1pool.com:5590"
+        ],
+        "ssl_urls": [
+          "eu.kheavyhash.k1pool.com:5590"
+        ]
+      },
+      {
+        "geo": "Europe Switcher ASIC (TheWindMiner K9, iBeLink BM-KS Max)",
+        "urls": [
+          "eu.kheavyhash.k1pool.com:5590"
+        ],
+        "ssl_urls": [
+          "eu.kheavyhash.k1pool.com:5590"
+        ]
+      },
+      {
+        "geo": "USA Switcher GPU/FPGA",
+        "urls": [
+          "us.kheavyhash.k1pool.com:5510"
+        ],
+        "ssl_urls": [
+          "us.kheavyhash.k1pool.com:5510"
+        ]
+      },
+      {
+        "geo": "USA Switcher ASIC (KS0, KS0 Pro)",
+        "urls": [
+          "us.kheavyhash.k1pool.com:5500"
+        ],
+        "ssl_urls": [
+          "us.kheavyhash.k1pool.com:5500"
+        ]
+      },
+      {
+        "geo": "USA Switcher ASIC (KS1, KS2)",
+        "urls": [
+          "us.kheavyhash.k1pool.com:5520"
+        ],
+        "ssl_urls": [
+          "us.kheavyhash.k1pool.com:5520"
+        ]
+      },
+      {
+        "geo": "USA Switcher ASIC (KS3L, KS3M)",
+        "urls": [
+          "us.kheavyhash.k1pool.com:5530"
+        ],
+        "ssl_urls": [
+          "us.kheavyhash.k1pool.com:5530"
+        ]
+      },
+      {
+        "geo": "USA Switcher ASIC (KS3, KS5)",
+        "urls": [
+          "us.kheavyhash.k1pool.com:5590"
+        ],
+        "ssl_urls": [
+          "us.kheavyhash.k1pool.com:5590"
+        ]
+      },
+      {
+        "geo": "USA Switcher ASIC (TheWindMiner K9, iBeLink BM-KS Max)",
+        "urls": [
+          "us.kheavyhash.k1pool.com:5590"
+        ],
+        "ssl_urls": [
+          "us.kheavyhash.k1pool.com:5590"
+        ]
+      },
+      {
+        "geo": "China Switcher GPU/FPGA",
+        "urls": [
+          "cn.kheavyhash.k1pool.com:5510"
+        ],
+        "ssl_urls": [
+          "cn.kheavyhash.k1pool.com:5510"
+        ]
+      },
+      {
+        "geo": "China Switcher ASIC (KS0, KS0 Pro)",
+        "urls": [
+          "cn.kheavyhash.k1pool.com:5500"
+        ],
+        "ssl_urls": [
+          "cn.kheavyhash.k1pool.com:5500"
+        ]
+      },
+      {
+        "geo": "China Switcher ASIC (KS1, KS2)",
+        "urls": [
+          "cn.kheavyhash.k1pool.com:5520"
+        ],
+        "ssl_urls": [
+          "cn.kheavyhash.k1pool.com:5520"
+        ]
+      },
+      {
+        "geo": "China Switcher ASIC (KS3L, KS3M)",
+        "urls": [
+          "cn.kheavyhash.k1pool.com:5530"
+        ],
+        "ssl_urls": [
+          "cn.kheavyhash.k1pool.com:5530"
+        ]
+      },
+      {
+        "geo": "China Switcher ASIC (KS3, KS5)",
+        "urls": [
+          "cn.kheavyhash.k1pool.com:5590"
+        ],
+        "ssl_urls": [
+          "cn.kheavyhash.k1pool.com:5590"
+        ]
+      },
+      {
+        "geo": "China Switcher ASIC (TheWindMiner K9, iBeLink BM-KS Max)",
+        "urls": [
+          "cn.kheavyhash.k1pool.com:5590"
+        ],
+        "ssl_urls": [
+          "cn.kheavyhash.k1pool.com:5590"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kaspa"
+    }
+  },
+  {
+    "coin": "SDR",
+    "servers": [
+      {
+        "geo": "Europe GPU/FPGA",
+        "urls": [
+          "eu.sedra.k1pool.com:4112"
+        ],
+        "ssl_urls": [
+          "eu.sedra.k1pool.com:4112"
+        ]
+      },
+      {
+        "geo": "Europe ASIC (KS0, KS0 Pro)",
+        "urls": [
+          "eu.sedra.k1pool.com:24102"
+        ],
+        "ssl_urls": [
+          "eu.sedra.k1pool.com:24102"
+        ]
+      },
+      {
+        "geo": "Europe ASIC (KS1, KS2)",
+        "urls": [
+          "eu.sedra.k1pool.com:24112"
+        ],
+        "ssl_urls": [
+          "eu.sedra.k1pool.com:24112"
+        ]
+      },
+      {
+        "geo": "Europe ASIC (KS3L, KS3M)",
+        "urls": [
+          "eu.sedra.k1pool.com:24122"
+        ],
+        "ssl_urls": [
+          "eu.sedra.k1pool.com:24122"
+        ]
+      },
+      {
+        "geo": "Europe ASIC (KS3, KS5)",
+        "urls": [
+          "eu.sedra.k1pool.com:24222"
+        ],
+        "ssl_urls": [
+          "eu.sedra.k1pool.com:24222"
+        ]
+      },
+      {
+        "geo": "Europe ASIC (TheWindMiner K9, iBeLink BM-KS Max)",
+        "urls": [
+          "eu.sedra.k1pool.com:24422"
+        ],
+        "ssl_urls": [
+          "eu.sedra.k1pool.com:24422"
+        ]
+      },
+      {
+        "geo": "USA GPU/FPGA",
+        "urls": [
+          "us.sedra.k1pool.com:4112"
+        ],
+        "ssl_urls": [
+          "us.sedra.k1pool.com:4112"
+        ]
+      },
+      {
+        "geo": "USA ASIC (KS0, KS0 Pro)",
+        "urls": [
+          "us.sedra.k1pool.com:24102"
+        ],
+        "ssl_urls": [
+          "us.sedra.k1pool.com:24102"
+        ]
+      },
+      {
+        "geo": "USA ASIC (KS1, KS2)",
+        "urls": [
+          "us.sedra.k1pool.com:24112"
+        ],
+        "ssl_urls": [
+          "us.sedra.k1pool.com:24112"
+        ]
+      },
+      {
+        "geo": "USA ASIC (KS3L, KS3M)",
+        "urls": [
+          "us.sedra.k1pool.com:24122"
+        ],
+        "ssl_urls": [
+          "us.sedra.k1pool.com:24122"
+        ]
+      },
+      {
+        "geo": "USA ASIC (KS3, KS5)",
+        "urls": [
+          "us.sedra.k1pool.com:24222"
+        ],
+        "ssl_urls": [
+          "us.sedra.k1pool.com:24222"
+        ]
+      },
+      {
+        "geo": "USA ASIC (TheWindMiner K9, iBeLink BM-KS Max)",
+        "urls": [
+          "us.sedra.k1pool.com:24422"
+        ],
+        "ssl_urls": [
+          "us.sedra.k1pool.com:24422"
+        ]
+      },
+      {
+        "geo": "China GPU/FPGA",
+        "urls": [
+          "cn.sedra.k1pool.com:4112"
+        ],
+        "ssl_urls": [
+          "cn.sedra.k1pool.com:4112"
+        ]
+      },
+      {
+        "geo": "China ASIC (KS0, KS0 Pro)",
+        "urls": [
+          "cn.sedra.k1pool.com:24102"
+        ],
+        "ssl_urls": [
+          "cn.sedra.k1pool.com:24102"
+        ]
+      },
+      {
+        "geo": "China ASIC (KS1, KS2)",
+        "urls": [
+          "cn.sedra.k1pool.com:24112"
+        ],
+        "ssl_urls": [
+          "cn.sedra.k1pool.com:24112"
+        ]
+      },
+      {
+        "geo": "China ASIC (KS3L, KS3M)",
+        "urls": [
+          "cn.sedra.k1pool.com:24122"
+        ],
+        "ssl_urls": [
+          "cn.sedra.k1pool.com:24122"
+        ]
+      },
+      {
+        "geo": "China ASIC (KS3, KS5)",
+        "urls": [
+          "cn.sedra.k1pool.com:24222"
+        ],
+        "ssl_urls": [
+          "cn.sedra.k1pool.com:24222"
+        ]
+      },
+      {
+        "geo": "China ASIC (TheWindMiner K9, iBeLink BM-KS Max)",
+        "urls": [
+          "cn.sedra.k1pool.com:24422"
+        ],
+        "ssl_urls": [
+          "cn.sedra.k1pool.com:24422"
+        ]
+      },
+      {
+        "geo": "Europe Switcher GPU/FPGA",
+        "urls": [
+          "eu.kheavyhash.k1pool.com:5510"
+        ],
+        "ssl_urls": [
+          "eu.kheavyhash.k1pool.com:5510"
+        ]
+      },
+      {
+        "geo": "Europe Switcher ASIC (KS0, KS0 Pro)",
+        "urls": [
+          "eu.kheavyhash.k1pool.com:5500"
+        ],
+        "ssl_urls": [
+          "eu.kheavyhash.k1pool.com:5500"
+        ]
+      },
+      {
+        "geo": "Europe Switcher ASIC (KS1, KS2)",
+        "urls": [
+          "eu.kheavyhash.k1pool.com:5520"
+        ],
+        "ssl_urls": [
+          "eu.kheavyhash.k1pool.com:5520"
+        ]
+      },
+      {
+        "geo": "Europe Switcher ASIC (KS3L, KS3M)",
+        "urls": [
+          "eu.kheavyhash.k1pool.com:5530"
+        ],
+        "ssl_urls": [
+          "eu.kheavyhash.k1pool.com:5530"
+        ]
+      },
+      {
+        "geo": "Europe Switcher ASIC (KS3, KS5)",
+        "urls": [
+          "eu.kheavyhash.k1pool.com:5590"
+        ],
+        "ssl_urls": [
+          "eu.kheavyhash.k1pool.com:5590"
+        ]
+      },
+      {
+        "geo": "Europe Switcher ASIC (TheWindMiner K9, iBeLink BM-KS Max)",
+        "urls": [
+          "eu.kheavyhash.k1pool.com:5590"
+        ],
+        "ssl_urls": [
+          "eu.kheavyhash.k1pool.com:5590"
+        ]
+      },
+      {
+        "geo": "USA Switcher GPU/FPGA",
+        "urls": [
+          "us.kheavyhash.k1pool.com:5510"
+        ],
+        "ssl_urls": [
+          "us.kheavyhash.k1pool.com:5510"
+        ]
+      },
+      {
+        "geo": "USA Switcher ASIC (KS0, KS0 Pro)",
+        "urls": [
+          "us.kheavyhash.k1pool.com:5500"
+        ],
+        "ssl_urls": [
+          "us.kheavyhash.k1pool.com:5500"
+        ]
+      },
+      {
+        "geo": "USA Switcher ASIC (KS1, KS2)",
+        "urls": [
+          "us.kheavyhash.k1pool.com:5520"
+        ],
+        "ssl_urls": [
+          "us.kheavyhash.k1pool.com:5520"
+        ]
+      },
+      {
+        "geo": "USA Switcher ASIC (KS3L, KS3M)",
+        "urls": [
+          "us.kheavyhash.k1pool.com:5530"
+        ],
+        "ssl_urls": [
+          "us.kheavyhash.k1pool.com:5530"
+        ]
+      },
+      {
+        "geo": "USA Switcher ASIC (KS3, KS5)",
+        "urls": [
+          "us.kheavyhash.k1pool.com:5590"
+        ],
+        "ssl_urls": [
+          "us.kheavyhash.k1pool.com:5590"
+        ]
+      },
+      {
+        "geo": "USA Switcher ASIC (TheWindMiner K9, iBeLink BM-KS Max)",
+        "urls": [
+          "us.kheavyhash.k1pool.com:5590"
+        ],
+        "ssl_urls": [
+          "us.kheavyhash.k1pool.com:5590"
+        ]
+      },
+      {
+        "geo": "China Switcher GPU/FPGA",
+        "urls": [
+          "cn.kheavyhash.k1pool.com:5510"
+        ],
+        "ssl_urls": [
+          "cn.kheavyhash.k1pool.com:5510"
+        ]
+      },
+      {
+        "geo": "China Switcher ASIC (KS0, KS0 Pro)",
+        "urls": [
+          "cn.kheavyhash.k1pool.com:5500"
+        ],
+        "ssl_urls": [
+          "cn.kheavyhash.k1pool.com:5500"
+        ]
+      },
+      {
+        "geo": "China Switcher ASIC (KS1, KS2)",
+        "urls": [
+          "cn.kheavyhash.k1pool.com:5520"
+        ],
+        "ssl_urls": [
+          "cn.kheavyhash.k1pool.com:5520"
+        ]
+      },
+      {
+        "geo": "China Switcher ASIC (KS3L, KS3M)",
+        "urls": [
+          "cn.kheavyhash.k1pool.com:5530"
+        ],
+        "ssl_urls": [
+          "cn.kheavyhash.k1pool.com:5530"
+        ]
+      },
+      {
+        "geo": "China Switcher ASIC (KS3, KS5)",
+        "urls": [
+          "cn.kheavyhash.k1pool.com:5590"
+        ],
+        "ssl_urls": [
+          "cn.kheavyhash.k1pool.com:5590"
+        ]
+      },
+      {
+        "geo": "China Switcher ASIC (TheWindMiner K9, iBeLink BM-KS Max)",
+        "urls": [
+          "cn.kheavyhash.k1pool.com:5590"
+        ],
+        "ssl_urls": [
+          "cn.kheavyhash.k1pool.com:5590"
         ]
       }
     ],
@@ -1759,6 +2264,68 @@
         ],
         "ssl_urls": [
           "cn.karlsensolo.k1pool.com:5214"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_karlsenhash"
+    }
+  },
+  {
+    "coin": "NXL",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.nxl.k1pool.com:1143"
+        ],
+        "ssl_urls": [
+          "eu.nxl.k1pool.com:1143"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+          "us.nxl.k1pool.com:1143"
+        ],
+        "ssl_urls": [
+          "us.nxl.k1pool.com:1143"
+        ]
+      },
+      {
+        "geo": "China",
+        "urls": [
+          "cn.nxl.k1pool.com:1143"
+        ],
+        "ssl_urls": [
+          "cn.nxl.k1pool.com:1143"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.nxlsolo.k1pool.com:1145"
+        ],
+        "ssl_urls": [
+          "eu.nxlsolo.k1pool.com:1145"
+        ]
+      },
+      {
+        "geo": "USA SOLO",
+        "urls": [
+          "us.nxlsolo.k1pool.com:1145"
+        ],
+        "ssl_urls": [
+          "us.nxlsolo.k1pool.com:1145"
+        ]
+      },
+      {
+        "geo": "China SOLO",
+        "urls": [
+          "cn.nxlsolo.k1pool.com:1145"
+        ],
+        "ssl_urls": [
+          "cn.nxlsolo.k1pool.com:1145"
         ]
       }
     ],
@@ -1835,6 +2402,9 @@
         "geo": "Europe",
         "urls": [
           "eu.rxd.k1pool.com:3122"
+        ],
+        "ssl_urls": [
+          "eu.rxd.k1pool.com:13122"
         ]
       },
       {
@@ -1861,12 +2431,43 @@
     }
   },
   {
+    "coin": "DERO",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.dero.k1pool.com:3376"
+        ],
+        "ssl_urls": [
+          "eu.dero.k1pool.com:13376"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+          "us.dero.k1pool.com:3376"
+        ]
+      }
+    ],
+    "miners": {
+      "gminer": {
+        "url": "%URL%",
+        "algo": "astrobwt",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--zilserver eu.zil.k1pool.com:1111 --ziluser %WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
     "coin": "NEXA",
     "servers": [
       {
         "geo": "Europe",
         "urls": [
           "eu.nexa.k1pool.com:6392"
+        ],
+        "ssl_urls": [
+          "eu.nexa.k1pool.com:16392"
         ]
       },
       {
@@ -1893,18 +2494,18 @@
     }
   },
   {
-    "coin": "RTH",
+    "coin": "HYP",
     "servers": [
       {
         "geo": "Europe",
         "urls": [
-          "eu.rth.k1pool.com:5070"
+          "eu.hyp.k1pool.com:5070"
         ]
       },
       {
         "geo": "Europe SOLO",
         "urls": [
-          "eu.rthsolo.k1pool.com:5072"
+          "eu.hypsolo.k1pool.com:5072"
         ]
       }
     ],
@@ -1948,17 +2549,11 @@
     ],
     "miners": {
       "_prototype": "miners_dynexsolve",
-      "srbminer": {
-        "url": "%URL%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "--disable-cpu\n--mallob-endpoint mallob-eu.dnx.k1pool.com:3691"
-      },
       "onezerominer": {
         "url": "%URL%",
-        "pass": "x",
+        "pass": "%WORKER_NAME%",
         "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "--mallob-endpoint mallob-eu.dnx.k1pool.com:3691"
+        "user_config": ""
       }
     }
   }

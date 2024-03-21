@@ -6,6 +6,221 @@
 			"type": "PPLNS"
 		}
 	},
+	{
+		"coin": "AIPG",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"aipg.eu.xpool.pw:20021"
+				]
+			},
+			{
+				"geo": "Asia",
+				"urls": [
+					"aipg.sg.xpool.pw:20021"
+				]
+			},
+			{
+				"geo": "USA",
+				"urls": [
+					"aipg.us.xpool.pw:20021"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_kawpow",
+			"ethminer": {
+				"fork": "kawpowminer",
+				"cuda": 1,
+				"opencl": 0,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "%URL_HOST%",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"t-rex": {
+				"url": "%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"nbminer": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "kawpow"
+			},
+			"nanominer": {
+				"algo": "kawpow",
+				"url": "%URL%",
+				"template": "%WAL%",
+				"pass": "x",
+				"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+			},
+			"ccminer": {
+				"fork": "enemy",
+				"ccurl": "stratum+tcp://%URL%",
+				"ccalgo": "kawpow",
+				"ccpass": "x",
+				"ccuser": "%WAL%.%WORKER_NAME%"
+			},
+			"gminer": {
+				"algo": "kawpow",
+				"server": "%URL_HOST%",
+				"port": "%URL_PORT%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"tt-miner": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "kawpow",
+				"user_config": "-coin %COIN%"
+			},
+			"damominer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "rvn",
+				"worker": "%WORKER_NAME%",
+				"template": "%WAL%"
+			},
+			"teamredminer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": ""
+			},
+			"miniz": {
+				"url": "%URL%",
+				"algo": "kawpow",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
+		"coin": "AITT",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"aitt.eu.xpool.pw:20023"
+				]
+			},
+			{
+				"geo": "Asia",
+				"urls": [
+					"aitt.sg.xpool.pw:20023"
+				]
+			},
+			{
+				"geo": "USA",
+				"urls": [
+					"aitt.us.xpool.pw:20023"
+				]
+			},			{
+				"geo": "SOLO EU",
+				"urls": [
+					"aitt.eu.xpool.pw:20025"
+				]
+			},
+			{
+				"geo": "SOLO Asia",
+				"urls": [
+					"aitt.sg.xpool.pw:20025"
+				]
+			},
+			{
+				"geo": "SOLO USA",
+				"urls": [
+					"aitt.us.xpool.pw:20025"
+				]
+			},
+		],
+		"miners": {
+			"_prototype": "miners_kawpow",
+			"ethminer": {
+				"fork": "kawpowminer",
+				"cuda": 1,
+				"opencl": 0,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "%URL_HOST%",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"t-rex": {
+				"url": "%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"nbminer": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "kawpow"
+			},
+			"nanominer": {
+				"algo": "kawpow",
+				"url": "%URL%",
+				"template": "%WAL%",
+				"pass": "x",
+				"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+			},
+			"ccminer": {
+				"fork": "enemy",
+				"ccurl": "stratum+tcp://%URL%",
+				"ccalgo": "kawpow",
+				"ccpass": "x",
+				"ccuser": "%WAL%.%WORKER_NAME%"
+			},
+			"gminer": {
+				"algo": "kawpow",
+				"server": "%URL_HOST%",
+				"port": "%URL_PORT%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"tt-miner": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "kawpow",
+				"user_config": "-coin %COIN%"
+			},
+			"damominer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "rvn",
+				"worker": "%WORKER_NAME%",
+				"template": "%WAL%"
+			},
+			"teamredminer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": ""
+			},
+			"miniz": {
+				"url": "%URL%",
+				"algo": "kawpow",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
     	{
 	        "coin": "CCX",
 	        "servers": [
@@ -67,73 +282,26 @@
 	        "miners":{
 	            "_prototype": "miners_cryptonight_gpu"
         	}
-    	},	
+    	},
 	{
-		"coin": "NOVO",
+		"coin": "CL",
 		"servers": [
 			{
 				"geo": "EU",
 				"urls": [
-					"eu.xpool.pw:18665"
+					"cl.eu.xpool.pw:20018"
 				]
 			},
 			{
 				"geo": "Asia",
 				"urls": [
-					"sg.xpool.pw:18665"
+					"cl.sg.xpool.pw:20018"
 				]
 			},
 			{
 				"geo": "USA",
 				"urls": [
-					"us.xpool.pw:18665"
-				]
-			}
-		],
-		"miners": {
-			"srbminer": {
-				"url": "%URL%",
-				"algo": "sha256dt",
-				"pass": "x",
-				"worker": "%WORKER_NAME%",
-				"template": "%WAL%",
-				"user_config": "--disable-cpu"
-			},
-			"bzminer": {
-				"url": "stratum+tcp://%URL%",
-				"algo": "novo",
-				"pass": "x",
-				"worker": "%WORKER_NAME%",
-				"template": "%WAL%"
-			},
-			"gminer": {
-				"algo": "novo",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%"
-			}
-		}
-	},
-  	{
-		"coin": "FREN",
-		"servers": [
-			{
-				"geo": "EU",
-				"urls": [
-					"eu.xpool.pw:20015"
-				]
-			},
-			{
-				"geo": "Asia",
-				"urls": [
-					"sg.xpool.pw:20015"
-				]
-			},
-			{
-				"geo": "USA",
-				"urls": [
-					"us.xpool.pw:20015"
+					"cl.us.xpool.pw:20018"
 				]
 			}
 		],
@@ -181,9 +349,269 @@
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
-			"bminer": {
+			"tt-miner": {
 				"url": "%URL%",
-				"algo": "raven",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "kawpow",
+				"user_config": "-coin %COIN%"
+			},
+			"damominer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "rvn",
+				"worker": "%WORKER_NAME%",
+				"template": "%WAL%"
+			},
+			"teamredminer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": ""
+			},
+			"miniz": {
+				"url": "%URL%",
+				"algo": "kawpow",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
+		"coin": "DINT",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"dint.eu.xpool.pw:20019"
+				]
+			},
+			{
+				"geo": "Asia",
+				"urls": [
+					"dint.sg.xpool.pw:20019"
+				]
+			},
+			{
+				"geo": "USA",
+				"urls": [
+					"dint.us.xpool.pw:20019"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_kawpow",
+			"ethminer": {
+				"fork": "kawpowminer",
+				"cuda": 1,
+				"opencl": 0,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "%URL_HOST%",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"t-rex": {
+				"url": "%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"nbminer": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "kawpow"
+			},
+			"nanominer": {
+				"algo": "kawpow",
+				"url": "%URL%",
+				"template": "%WAL%",
+				"pass": "x",
+				"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+			},
+			"ccminer": {
+				"fork": "enemy",
+				"ccurl": "stratum+tcp://%URL%",
+				"ccalgo": "kawpow",
+				"ccpass": "x",
+				"ccuser": "%WAL%.%WORKER_NAME%"
+			},
+			"gminer": {
+				"algo": "kawpow",
+				"server": "%URL_HOST%",
+				"port": "%URL_PORT%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"tt-miner": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "kawpow",
+				"user_config": "-coin %COIN%"
+			},
+			"damominer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "rvn",
+				"worker": "%WORKER_NAME%",
+				"template": "%WAL%"
+			},
+			"teamredminer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": ""
+			},
+			"miniz": {
+				"url": "%URL%",
+				"algo": "kawpow",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
+		"coin": "EVOX",
+		"servers": [
+			{
+				"geo": "EU Low diff: 50 000 000",
+				"urls": [
+					"evox.eu.xpool.pw:52600"
+				]
+			},
+			{
+				"geo": "EU middle diff: 600 000 000",
+				"urls": [
+					"evox.eu.xpool.pw:52601"
+				]
+			},
+			{				
+				"geo": "EU Nicehash diff: 5 000 000 000",
+				"urls": [
+					"evox.eu.xpool.pw:52602"
+				]
+			},
+			{
+				"geo": "Asia diff: 50 000 000",
+				"urls": [
+					"evox.sg.xpool.pw:52600"
+				]
+			},
+			{
+				"geo": "Asia middle diff: 600 000 000",
+				"urls": [
+					"evox.sg.xpool.pw:52601"
+				]
+			},
+			{				
+				"geo": "Asia Nicehash, diff: 5 000 000 000",
+				"urls": [
+					"evox.sg.xpool.pw:52602"
+				]
+			},
+			{
+				"geo": "USA diff: 50 000 000",
+				"urls": [
+					"evox.us.xpool.pw:52600"
+				]
+			},
+			{
+				"geo": "USA middle diff: 600 000 000",
+				"urls": [
+					"evox.us.xpool.pw:52601"
+				]
+			},
+			{				
+				"geo": "USA Nicehash, diff: 5 000 000 000",
+				"urls": [
+					"evox.us.xpool.pw:52602"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_progpowz",
+			"t-rex": {
+				"algo": "progpowz",
+				"template": "%WAL%",
+				"server": "%URL%",
+				"pass": "%WORKER_NAME%"
+			}
+		}
+	},
+  	{
+		"coin": "FREN",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"eu.xpool.pw:20015"
+				]
+			},
+			{
+				"geo": "Asia",
+				"urls": [
+					"sg.xpool.pw:20015"
+				]
+			},
+			{
+				"geo": "USA",
+				"urls": [
+					"us.xpool.pw:20015"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_kawpow",
+			"ethminer": {
+				"fork": "kawpowminer",
+				"cuda": 1,
+				"opencl": 0,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "%URL%",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"t-rex": {
+				"url": "%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"nbminer": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "kawpow"
+			},
+			"nanominer": {
+				"algo": "kawpow",
+				"url": "%URL%",
+				"template": "%WAL%",
+				"pass": "x",
+				"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+			},
+			"ccminer": {
+				"fork": "enemy",
+				"ccurl": "stratum+tcp://%URL%",
+				"ccalgo": "kawpow",
+				"ccpass": "x",
+				"ccuser": "%WAL%.%WORKER_NAME%"
+			},
+			"gminer": {
+				"algo": "kawpow",
+				"server": "%URL_HOST%",
+				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
 			"tt-miner": {
@@ -249,7 +677,7 @@
 				"opencl": 0,
 				"pass": "x",
 				"port": "%URL_PORT%",
-				"server": "%URL_HOST%",
+				"server": "%URL%",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
 			"t-rex": {
@@ -281,13 +709,7 @@
 			"gminer": {
 				"algo": "kawpow",
 				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
 				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%"
-			},
-			"bminer": {
-				"url": "%URL%",
-				"algo": "raven",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
 			"tt-miner": {
@@ -319,6 +741,53 @@
 			"miniz": {
 				"url": "%URL%",
 				"algo": "kawpow",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},	
+	{
+		"coin": "NOVO",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"eu.xpool.pw:18665"
+				]
+			},
+			{
+				"geo": "Asia",
+				"urls": [
+					"sg.xpool.pw:18665"
+				]
+			},
+			{
+				"geo": "USA",
+				"urls": [
+					"us.xpool.pw:18665"
+				]
+			}
+		],
+		"miners": {
+			"srbminer": {
+				"url": "%URL%",
+				"algo": "sha256dt",
+				"pass": "x",
+				"worker": "%WORKER_NAME%",
+				"template": "%WAL%",
+				"user_config": "--disable-cpu"
+			},
+			"bzminer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "novo",
+				"pass": "x",
+				"worker": "%WORKER_NAME%",
+				"template": "%WAL%"
+			},
+			"gminer": {
+				"algo": "novo",
+				"server": "%URL_HOST%",
+				"port": "%URL_PORT%",
+				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%"
 			}
 		}
@@ -389,9 +858,103 @@
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
-			"bminer": {
+			"tt-miner": {
 				"url": "%URL%",
-				"algo": "raven",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "kawpow",
+				"user_config": "-coin %COIN%"
+			},
+			"damominer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "rvn",
+				"worker": "%WORKER_NAME%",
+				"template": "%WAL%"
+			},
+			"teamredminer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": ""
+			},
+			"miniz": {
+				"url": "%URL%",
+				"algo": "kawpow",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
+		"coin": "VLC",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"vlc.eu.xpool.pw:20022"
+				]
+			},
+			{
+				"geo": "Asia",
+				"urls": [
+					"vlc.sg.xpool.pw:20022"
+				]
+			},
+			{
+				"geo": "USA",
+				"urls": [
+					"vlc.us.xpool.pw:20022"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_kawpow",
+			"ethminer": {
+				"fork": "kawpowminer",
+				"cuda": 1,
+				"opencl": 0,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "%URL_HOST%",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"t-rex": {
+				"url": "%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"nbminer": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "kawpow"
+			},
+			"nanominer": {
+				"algo": "kawpow",
+				"url": "%URL%",
+				"template": "%WAL%",
+				"pass": "x",
+				"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+			},
+			"ccminer": {
+				"fork": "enemy",
+				"ccurl": "stratum+tcp://%URL%",
+				"ccalgo": "kawpow",
+				"ccpass": "x",
+				"ccuser": "%WAL%.%WORKER_NAME%"
+			},
+			"gminer": {
+				"algo": "kawpow",
+				"server": "%URL_HOST%",
+				"port": "%URL_PORT%",
+				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%"
 			},
 			"tt-miner": {
@@ -427,6 +990,188 @@
 			}
 		}
 	},
+	{
+		"coin": "XNA",
+		"servers": [
+			{
+				"geo": "EU",
+				"urls": [
+					"xna.eu.xpool.pw:20014"
+				]
+			},
+			{
+				"geo": "Asia",
+				"urls": [
+					"xna.sg.xpool.pw:20014"
+				]
+			},
+			{
+				"geo": "USA",
+				"urls": [
+					"xna.us.xpool.pw:20014"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_kawpow",
+			"ethminer": {
+				"fork": "kawpowminer",
+				"cuda": 1,
+				"opencl": 0,
+				"pass": "x",
+				"port": "%URL_PORT%",
+				"server": "%URL_HOST%",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"t-rex": {
+				"url": "%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"nbminer": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "kawpow"
+			},
+			"nanominer": {
+				"algo": "kawpow",
+				"url": "%URL%",
+				"template": "%WAL%",
+				"pass": "x",
+				"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+			},
+			"ccminer": {
+				"fork": "enemy",
+				"ccurl": "stratum+tcp://%URL%",
+				"ccalgo": "kawpow",
+				"ccpass": "x",
+				"ccuser": "%WAL%.%WORKER_NAME%"
+			},
+			"gminer": {
+				"algo": "kawpow",
+				"server": "%URL_HOST%",
+				"port": "%URL_PORT%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"tt-miner": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"algo": "kawpow",
+				"user_config": "-coin %COIN%"
+			},
+			"damominer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "rvn",
+				"worker": "%WORKER_NAME%",
+				"template": "%WAL%"
+			},
+			"teamredminer": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%"
+			},
+			"wildrig-multi": {
+				"url": "stratum+tcp://%URL%",
+				"algo": "kawpow",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": ""
+			},
+			"miniz": {
+				"url": "%URL%",
+				"algo": "kawpow",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+    	{
+        	"coin": "QL",
+        	"servers": [
+	            {
+	                "geo": "ASICS ASIA",
+	                "urls": [
+	                    "ql.sg.xpool.pw:20016"
+	                ]
+	            },
+	            {
+	                "geo": "ASICS EU",
+	                "urls": [
+	                    "ql.eu.xpool.pw:20016"
+	                ]
+	            },
+	            {
+	                "geo": "ASICS USA",
+	                "urls": [
+	                    "ql.eu.xpool.pw:20016"
+	                ]
+	            },
+	            {
+	                "geo": "NICEHASH ASIA",
+	                "urls": [
+	                    "ql.sg.xpool.pw:20017"
+	                ]
+	            },
+	            {
+	                "geo": "NICEHASH EU",
+	                "urls": [
+	                    "ql.eu.xpool.pw:20017"
+	                ]
+	            },
+	            {
+	                "geo": "NICEHASH USA",
+	                "urls": [
+	                    "ql.us.xpool.pw:20017"
+	                ]
+	            },
+	            {
+	                "geo": "SOLO ASICS ASIA",
+	                "urls": [
+	                    "ql.sg.xpool.pw:20030"
+	                ]
+	            },
+	            {
+	                "geo": "SOLO ASICS EU",
+	                "urls": [
+	                    "ql.eu.xpool.pw:20030"
+	                ]
+	            },
+	            {
+	                "geo": "SOLO ASICS USA",
+	                "urls": [
+	                    "ql.eu.xpool.pw:20030"
+	                ]
+	            },
+	            {
+	                "geo": "SOLO NICEHASH ASIA",
+	                "urls": [
+	                    "ql.sg.xpool.pw:20031"
+	                ]
+	            },
+	            {
+	                "geo": "SOLO NICEHASH EU",
+	                "urls": [
+	                    "ql.eu.xpool.pw:20031"
+	                ]
+	            },
+	            {
+	                "geo": "SOLO NICEHASH USA",
+	                "urls": [
+	                    "ql.us.xpool.pw:20031"
+	                ]
+	            }				
+        ],
+	        "miners": {
+	            "asicminer": {
+	                "url": "stratum+tcp://%URL%",
+	                "template": "%WAL%.%WORKER_NAME%"
+	            }
+	        }
+    	},
 	{
 		"coin": "ZANO",
 		"servers": [
@@ -482,74 +1227,6 @@
 				"geo": "USA Nicehash, diff: 5 000 000 000",
 				"urls": [
 					"zano.us.xpool.pw:3338"
-				]
-			}
-		],
-		"miners": {
-			"_prototype": "miners_progpowz",
-			"t-rex": {
-				"algo": "progpowz",
-				"template": "%WAL%",
-				"server": "%URL%",
-				"pass": "%WORKER_NAME%"
-			}
-		}
-	},
-	{
-		"coin": "EVOX",
-		"servers": [
-			{
-				"geo": "EU Low diff: 50 000 000",
-				"urls": [
-					"evox.eu.xpool.pw:52600"
-				]
-			},
-			{
-				"geo": "EU middle diff: 600 000 000",
-				"urls": [
-					"evox.eu.xpool.pw:52601"
-				]
-			},
-			{				
-				"geo": "EU Nicehash diff: 5 000 000 000",
-				"urls": [
-					"evox.eu.xpool.pw:52602"
-				]
-			},
-			{
-				"geo": "Asia diff: 50 000 000",
-				"urls": [
-					"evox.sg.xpool.pw:52600"
-				]
-			},
-			{
-				"geo": "Asia middle diff: 600 000 000",
-				"urls": [
-					"evox.sg.xpool.pw:52601"
-				]
-			},
-			{				
-				"geo": "Asia Nicehash, diff: 5 000 000 000",
-				"urls": [
-					"evox.sg.xpool.pw:52602"
-				]
-			},
-			{
-				"geo": "USA diff: 50 000 000",
-				"urls": [
-					"evox.us.xpool.pw:52600"
-				]
-			},
-			{
-				"geo": "USA middle diff: 600 000 000",
-				"urls": [
-					"evox.us.xpool.pw:52601"
-				]
-			},
-			{				
-				"geo": "USA Nicehash, diff: 5 000 000 000",
-				"urls": [
-					"evox.us.xpool.pw:52602"
 				]
 			}
 		],
