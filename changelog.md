@@ -1,3 +1,8 @@
+##### 0.6-225@240322 2024-03-22
+*   lolMiner v1.85-beta (Significantly improved Gram hashrate on AMD RX 5000 and higher cards by almost 10%; Added support new algo `FISHHASH` for IRON/IronFish mining on Nvidia GTX 1000 series and newer, AMD RX 5000 series and new; Add support dual mining IronFish with Alephium, Gram and Radiant; Fixed a bug causing high amount of pool rejected shares with AMD cards and Gram mining; NOTES: 1) This version marked as beta you need to choose version in Miner config settings; 2) Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.85_beta)
+*   TT-Miner v2024.1.7 (Faster progpow code generation; Fixes some miner issues and typos; NOTES: Please, see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
+*   XMRig v6.21.2 (Fixed, the file log writer was not thread-safe; Update CUDA plugin to v6.21.1; NOTES: please, see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.21.2)
+
 ##### 0.6-225@240318 2024-03-18
 *   SRBMiner v2.4.9 (Added support for `meowpow` algorithm for mining MEWC since hardfork on March 18, 2024; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.9)
 *   TT-Miner v2024.1.6 (Added support for `meowpow` algorithm for mining MEWC since hardfork on March 18, 2024; Improved hashrate for `ghostrider`; Added support for zkBTC coin; NOTES: Please, see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
