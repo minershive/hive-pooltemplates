@@ -221,5 +221,37 @@
         "miners": {
           "_prototype": "miners_pyrinhash"
         }
-      }
+      },
+      {
+        "coin": "NXL",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "nxl.tw-pool.com:13001"
+                ],
+                "ssl_urls": [
+                    "nxl.tw-pool.com:13001"
+                ]
+            },
+            {
+                "geo": "AUTO SuperScalar K10",
+                "urls": [
+                    "nxl.tw-pool.com:13002"
+                ],
+                "ssl_urls": [
+                    "nxl.tw-pool.com:13002"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_karlsenhash",
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "karlsenhash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
 ]
