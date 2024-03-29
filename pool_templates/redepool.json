@@ -1,24 +1,72 @@
 [
-    {
-      "pool": {
-          "name": "REDEPool",
-          "url": "https://pool2.redecoin.eu",
-          "fee": 0.5,
-          "type": "PPLNS"
-      }
+  {
+    "pool": {
+      "name": "Redepool",
+      "url": "https://pool2.redecoin.eu",
+      "fee": 0.5,
+      "type": "PPLNS"
+    }
   },
   {
-      "coin": "REDE",
-      "servers": [
-          {
-              "geo": "EU",
-              "urls": [
-                  "eu.redecoin.eu:3131"
-              ]
-          }
-      ],
-      "miners": {
-          "_prototype": "miners_ethash"
+    "coin": "rede",
+    "servers": [
+      {
+        "geo": "EU",
+        "urls": ["eu.redecoin.eu:3131"]
       }
-  },
+    ],
+    "miners": {
+      "phoenixminer": {
+        "url": "POOL: %URL%, WALLET: %ETH_WAL%, PSW: %WAL%@%ETH_URL%@x, WORKER: %WORKER_NAME%",
+        "pass": "x"
+      },
+      "teamredminer": {
+        "algo": "ethash",
+        "url": "stratum+tcp://%URL%",
+        "template": "%ETH_WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+      },
+      "tt-miner": {
+        "url": "%URL%",
+        "algo": "ETHASH",
+        "pass": "x",
+        "template": "%ETH_WAL%"
+      },
+      "lolminer": {
+        "algo": "ETHASH",
+        "pass": "x",
+        "port": "%URL_PORT%",
+        "server": "%URL_HOST%",
+        "template": "%ETH_WAL%",
+        "worker": "%WORKER_NAME%"
+      },
+      "t-rex": {
+        "url": "%URL%",
+        "algo": "ethash",
+        "template": "%ETH_WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+      },
+      "nanominer": {
+        "algo": "ethash",
+        "url": "%URL%",
+        "template": "%ETH_WAL%",
+        "pass": "x"
+      },
+      "gminer": {
+        "algo": "ethash",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "algo": "ethash",
+        "pass": "x",
+        "template": "%ETH_WAL%.%WORKER_NAME%"
+      }
+    }
+  }
 ]
