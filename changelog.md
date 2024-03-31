@@ -1,3 +1,9 @@
+##### 0.6-225@240330 2024-03-30
+*   Rigel v1.15.1 (Add `ironfish` -> `fishhash` auto-switch; Report hashrate to RVN/Ravencoin mining pools; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.15.1)
+*   Nanominer v3.9.0 (Added support `IronFish` / `FishHash` on Nvidia and AMD GPUs; Added support new AMD GPUs on all algorithms; NOTES: https://github.com/nanopool/nanominer/releases/tag/v3.9.0)
+*   TT-Miner v2024.1.8 (Fixes a bug in Kawpow that causes 'Invalid Shares' in certain, rare conditions; Improved DAG management for mining ETHASH or KAWPOW on a coin-switching pool like NiceHash and Zergpool; Improved Hahsrate for ETHASH & ETHASHB3; NOTES: Please, see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
+*   XMRig-MO v6.21.2 (MoneroOcean fork synced with XMRig v6.21.2; NOTES: see changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.2-mo1)
+
 ##### 0.6-225@240323 2024-03-23
 *   lolMiner v1.85-beta (Significantly improved Gram hashrate on AMD RX 5000 and higher cards by almost 10%; Added support new algo `FISHHASH` for IRON/IronFish mining on Nvidia GTX 1000 series and newer, AMD RX 5000 series and new; Add support dual mining IronFish with Alephium, Gram and Radiant; Fixed a bug causing high amount of pool rejected shares with AMD cards and Gram mining; NOTES: 1) This version marked as beta you need to choose version in Miner config settings; 2) Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.85_beta)
 *   TT-Miner v2024.1.7 (Faster progpow code generation; Fixes some miner issues and typos; NOTES: Please, see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
