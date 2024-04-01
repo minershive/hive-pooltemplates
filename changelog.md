@@ -1,3 +1,6 @@
+##### 0.6-225@240331 2024-03-31
+*   SRBMiner v2.5.0 (Added `fishhash` algorithm and dual mining modes with Alephium and Decred variants Blake3/SHA512_256D/PyrinHash; Added support for mining `yescrypt` algorithms on AMD RDNA3; Fixed dual mining of `autolykos2 + pyrinhash` on Intel Arc GPUs; Removed support algorithms: `blake3_ironfish`, `xdag`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.0)
+
 ##### 0.6-225@240330 2024-03-30
 *   Rigel v1.15.1 (Add `ironfish` -> `fishhash` auto-switch; Report hashrate to RVN/Ravencoin mining pools; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.15.1)
 *   Nanominer v3.9.0 (Added support `IronFish` / `FishHash` on Nvidia and AMD GPUs; Added support new AMD GPUs on all algorithms; NOTES: https://github.com/nanopool/nanominer/releases/tag/v3.9.0)
