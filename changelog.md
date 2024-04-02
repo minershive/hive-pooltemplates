@@ -1,3 +1,6 @@
+##### 0.6-225@240402 2024-04-02
+*   lolMiner v1.86 (Added support for `FishHash` including dual mining codes; Significantly increased Ton / Gram mining performance on all supported AMD GPUs vs v1.84; NOTES: please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.86)
+
 ##### 0.6-225@240331 2024-03-31
 *   SRBMiner v2.5.0 (Added `fishhash` algorithm and dual mining modes with Alephium and Decred variants Blake3/SHA512_256D/PyrinHash; Added support for mining `yescrypt` algorithms on AMD RDNA3; Fixed dual mining of `autolykos2 + pyrinhash` on Intel Arc GPUs; Removed support algorithms: `blake3_ironfish`, `xdag`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.0)
 
