@@ -220,6 +220,60 @@
         }
     },
     {
+        "coin": "PEPEPRIVATE",
+        "servers": [
+            {
+                "geo": "Low-End",
+                "ssl_urls": [
+                    "pepe.gntl.uk:10003"
+                ]
+            },
+            {
+                "geo": "Mid-End",
+                "ssl_urls": [
+                    "pepe.gntl.uk:20003"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "ssl_urls": [
+                    "pepe.gntl.uk:30003"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"rx/arq\""
+            },
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/arq",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "xmr-stak": {
+                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+                "nvidia": "\"gpu_threads_conf\" : [],",
+                "url": "%URL%",
+                "fork": "randomx",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\":\"randomx_arqma\""
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "randomarq"
+            }
+        }
+    },
+    {
         "coin": "ZEPH",
         "servers": [
             {
