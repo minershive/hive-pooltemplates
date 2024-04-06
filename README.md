@@ -256,6 +256,7 @@ miners_sha3d | sha3d |  |
 miners_ubqhash | ubqhash |  | 
 miners_verthash | verthash |  | 
 miners_verushash | verushash |  | 
+miners_wrthash | wrthash | mining WART / Warthog coin | 
 miners_zelhash | zelhash |  | 
 
 

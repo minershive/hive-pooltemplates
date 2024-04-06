@@ -1,3 +1,7 @@
+##### 0.6-225@240404 2024-04-04
+*   BzMiner v21.0.3 (Add support mining `Warthog` coin; Add warthog specific options: `warthog_cpu_threads`, `warthog_max_ram_gb`, `warthog_verus_hr_target` see miner manual for details; NOTES: https://github.com/bzminer/bzminer/releases/tag/v21.0.3)
+*   Nanominer v3.9.1 (Fixed wrong reported hashrate ETC on some AMD GPUs; NOTES: https://github.com/nanopool/nanominer/releases/tag/v3.9.1)
+
 ##### 0.6-225@240403 2024-04-03
 *   SRBMiner v2.5.1 (Lowered devfee for `fishhash` algorithm to 0.85%; Added support for AMD BC-250 mining GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.1)
 *   TeamBlackMiner v2.22 (Fixed rejected shares on epoch change `kawpow` / `firopow` on AMD GPUs; Reduced rejected shares on fee thread changes 'kawpow' / 'firopow'; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.22)
