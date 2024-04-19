@@ -263,6 +263,45 @@
         }
     },
     {
+        "coin": "NIR",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "nir.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "nir.kryptex.network:8888"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "%URL%",
+                "algo": "progpowz",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "progpowz",
+                "template": "%WAL%/%WORKER_NAME%",
+                "user_config": ""
+            },
+            "tt-miner":{
+                "user_config":"-c ZANO -o %URL% -u %WAL%/%WORKER_NAME%"
+            },
+            "miniz": {
+                "user_config":"--par=ProgPowZ --server=%URL% --user=%WAL%/%WORKER_NAME%"
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "progpow_zano",
+                "template": "%WAL%/%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            }
+        }
+    },
+    {
         "coin": "BTC",
         "servers": [
             {
