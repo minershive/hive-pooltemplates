@@ -1,3 +1,13 @@
+##### 0.6-225@240420 2024-04-20
+*   lolMiner v1.88 (Significantly improved performance of GRAM/CHAPA mining on Nvidia Turing and newer GPUs:  Turing up to ~15%, Ampere up to ~22%; Significantly improved performance of dual mining `FISHHASH+GRAM` mining on Nvidia Turing and newer GPUs; Fixed a hashrate degradation on RDNA3 GPUs mining GRAM/CHAPA introduced in v1.86; Fixed a bug causing dual mining `fishhash` and GRAM/CHAPA not to work on AMD Vega and VII GPUs; NOTES: New Gram mining kernel also uses more energy, the old kernel is still available as an option by adding parameter `--mode a` and new kernel can be found via `--mode b` and is default; Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.88)
+*   Rigel v1.16.1 (Add `sha256ton` algorithm, dev fee 1%, including dual mining modes: ABEL+GRAM, ERG+GRAM, IRON+GRAM, HYP+GRAM, CFX+GRAM, +ZIL and only icemining pool supported at this time; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.16.1)
+*   BzMiner v21.1.1 (Added support `fishhash` to mining Ironfish; Improved mining `Warthog` hashrate; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.1)
+*   TT-Miner v2024.2.0 (Added `fishhash` algo support; Added support of AMD GPUs for all algos except "ghostrider"; NOTES: Please, see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
+*   TeamBlackMiner v2.23 (Added support for `evrprogpow` with dual mining modes; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.23)
+*   TeamRedMiner v0.10.20 (Small bugfix release for v0.10.19 which fixing some issues with FPGA; NOTES: Please see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.19)
+*   CPUminer-Opt-rplant v5.0.39 (Add `dpowhash` algo for mining DPC/Dpowcoin; NOTES: Please, see full changelog at https://github.com/rplant8/cpuminer-opt-rplant/releases/tag/5.0.39)
+*   CPUminer-Opt-JayDDee v24.1 (Faster 2-way interleaving; Minor fixes & improvements; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v24.1)
+
 ##### 0.6-225@240407 2024-04-07
 *   TeamRedMiner v0.10.19 (Added `alph` to support mining Alephium for all GPUs including dual/tripple mining as dual algo where primary is "autolykos2", "ethash", etchash"; NOTES: please see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.19)
 *   SRBMiner v2.5.2 (Added algorithm `randomscash` for CPU mining SCASH / Satoshi Cash coin, fee 1%; Performance improvement on algorithm `fishhash` for AMD RX 400/500 GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.2)
