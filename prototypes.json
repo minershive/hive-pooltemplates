@@ -14,6 +14,15 @@
         }
     },
 
+    "miners_warthog": {
+        "bzminer":{
+            "url":"%URL%",
+            "algo":"warthog",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%"
+        }
+    },
+
     "miners_alephium": {
         "bzminer":{
             "url":"%URL%",
@@ -44,7 +53,12 @@
 	    "port": "%URL_PORT%",
 	    "server": "%URL_HOST%",
 	    "template": "%WAL%.%WORKER_NAME%"
-	}
+	},
+        "teamredminer": {
+            "url": "%URL%",
+            "algo": "alph",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
     },
 
     "miners_octopus": {
@@ -1914,6 +1928,39 @@
 	    "server": "%URL_HOST%",
 	    "template": "%WAL%.%WORKER_NAME%"
 	}
+    },
+
+
+   "miners_fishhash": {
+	"lolminer": {
+	    "algo": "FISHHASH",
+	    "pass": "x",
+	    "port": "%URL_PORT%",
+	    "server": "%URL_HOST%",
+	    "template": "%WAL%.%WORKER_NAME%"
+	},
+
+	"rigel": {
+	    "url": "%URL%",
+	    "algo": "fishhash",
+	    "template": "%WAL%.%WORKER_NAME%"
+	},
+
+	"srbminer": {
+	    "url": "%URL%",
+	    "algo": "fishhash",
+	    "pass": "x",
+	    "template": "%WAL%.%WORKER_NAME%",
+	    "user_config": "--disable-cpu"
+	},
+
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "fishhash",
+            "pass": "x",
+            "template": "%WAL%",
+            "user_config": "coin = IRON\nrigName = %WORKER_NAME%"
+        }
     },
 
     "miners_sha3d": {

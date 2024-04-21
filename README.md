@@ -228,6 +228,7 @@ miners_ethash_4g | ethash_4g |  |
 miners_ethash_slash_email | ethash_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
 miners_ethashb3 | ethashb3 |  | 
 miners_firopow | firopow |  | 
+miners_fishhash | fishhash |  | 
 miners_ghostrider | ghostrider |  | 
 miners_hmq1725 | hmq1725 |  | 
 miners_ironfish | ironfish |  | 
@@ -255,6 +256,7 @@ miners_sha3d | sha3d |  |
 miners_ubqhash | ubqhash |  | 
 miners_verthash | verthash |  | 
 miners_verushash | verushash |  | 
+miners_warthog | warthog | PoBW, mining WART / Warthog coin | 
 miners_zelhash | zelhash |  | 
 
 

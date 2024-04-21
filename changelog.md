@@ -1,3 +1,28 @@
+##### 0.6-225@240420 2024-04-20
+*   lolMiner v1.88 (Significantly improved performance of GRAM/CHAPA mining on Nvidia Turing and newer GPUs:  Turing up to ~15%, Ampere up to ~22%; Significantly improved performance of dual mining `FISHHASH+GRAM` mining on Nvidia Turing and newer GPUs; Fixed a hashrate degradation on RDNA3 GPUs mining GRAM/CHAPA introduced in v1.86; Fixed a bug causing dual mining `fishhash` and GRAM/CHAPA not to work on AMD Vega and VII GPUs; NOTES: New Gram mining kernel also uses more energy, the old kernel is still available as an option by adding parameter `--mode a` and new kernel can be found via `--mode b` and is default; Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.88)
+*   Rigel v1.16.1 (Add `sha256ton` algorithm, dev fee 1%, including dual mining modes: ABEL+GRAM, ERG+GRAM, IRON+GRAM, HYP+GRAM, CFX+GRAM, +ZIL and only icemining pool supported at this time; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.16.1)
+*   BzMiner v21.1.1 (Added support `fishhash` to mining Ironfish; Improved mining `Warthog` hashrate; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.1)
+*   TT-Miner v2024.2.0 (Added `fishhash` algo support; Added support of AMD GPUs for all algos except "ghostrider"; NOTES: Please, see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
+*   TeamBlackMiner v2.23 (Added support for `evrprogpow` with dual mining modes; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.23)
+*   TeamRedMiner v0.10.20 (Small bugfix release for v0.10.19 which fixing some issues with FPGA; NOTES: Please see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.19)
+*   CPUminer-Opt-rplant v5.0.39 (Add `dpowhash` algo for mining DPC/Dpowcoin; NOTES: Please, see full changelog at https://github.com/rplant8/cpuminer-opt-rplant/releases/tag/5.0.39)
+*   CPUminer-Opt-JayDDee v24.1 (Faster 2-way interleaving; Minor fixes & improvements; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v24.1)
+
+##### 0.6-225@240407 2024-04-07
+*   TeamRedMiner v0.10.19 (Added `alph` to support mining Alephium for all GPUs including dual/tripple mining as dual algo where primary is "autolykos2", "ethash", etchash"; NOTES: please see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.19)
+*   SRBMiner v2.5.2 (Added algorithm `randomscash` for CPU mining SCASH / Satoshi Cash coin, fee 1%; Performance improvement on algorithm `fishhash` for AMD RX 400/500 GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.2)
+*   
+##### 0.6-225@240404 2024-04-04
+*   BzMiner v21.0.3 (Add support mining `Warthog` coin; Add warthog specific options: `warthog_cpu_threads`, `warthog_max_ram_gb`, `warthog_verus_hr_target` see miner manual for details; NOTES: https://github.com/bzminer/bzminer/releases/tag/v21.0.3)
+*   Nanominer v3.9.1 (Fixed wrong reported hashrate ETC on some AMD GPUs; NOTES: https://github.com/nanopool/nanominer/releases/tag/v3.9.1)
+
+##### 0.6-225@240403 2024-04-03
+*   SRBMiner v2.5.1 (Lowered devfee for `fishhash` algorithm to 0.85%; Added support for AMD BC-250 mining GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.1)
+*   TeamBlackMiner v2.22 (Fixed rejected shares on epoch change `kawpow` / `firopow` on AMD GPUs; Reduced rejected shares on fee thread changes 'kawpow' / 'firopow'; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.22)
+
+##### 0.6-225@240402 2024-04-02
+*   lolMiner v1.86 (Added support for `FishHash` including dual mining codes; Significantly increased Ton / Gram mining performance on all supported AMD GPUs vs v1.84; NOTES: please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.86)
+
 ##### 0.6-225@240331 2024-03-31
 *   SRBMiner v2.5.0 (Added `fishhash` algorithm and dual mining modes with Alephium and Decred variants Blake3/SHA512_256D/PyrinHash; Added support for mining `yescrypt` algorithms on AMD RDNA3; Fixed dual mining of `autolykos2 + pyrinhash` on Intel Arc GPUs; Removed support algorithms: `blake3_ironfish`, `xdag`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.0)
 
@@ -16,7 +41,7 @@
 *   SRBMiner v2.4.9 (Added support for `meowpow` algorithm for mining MEWC since hardfork on March 18, 2024; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.4.9)
 *   TT-Miner v2024.1.6 (Added support for `meowpow` algorithm for mining MEWC since hardfork on March 18, 2024; Improved hashrate for `ghostrider`; Added support for zkBTC coin; NOTES: Please, see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
 *   miniZ v2.3c (Added support for `KarlsenHash` algorithm for mining KLS/Karlsen, NXL/Nexell-ia, NTL/Nautilus with dual/tripple mining ability, fee: 0.8%; Added support for `PyrinHash` algorithm for mining Pyrin/PYI, HTN/Hoosat, CAS/Kaspa Classic with dual/tripple mining ability, fee: 0.8%; NOTES: Please, see full changelog at https://miniz.cc/2024/03/13/miniz-v23c-is-out/)
-*   TeamBlackMiner v2.21  Fixed rejected shares on startup `kawpow` / `firopow`; Fixed ZIL switch crash bug on multicard rigs; Fixed crash in the ZIL powerlimit setting; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.21)
+*   TeamBlackMiner v2.21 (Fixed rejected shares on startup `kawpow` / `firopow`; Fixed ZIL switch crash bug on multicard rigs; Fixed crash in the ZIL powerlimit setting; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.21)
 
 ##### 0.6-225@240313 2024-03-13
 *   Fixed incorrect "latest" version for XMRig to v6.21.1 (affected origin XMRig and MoneroOcean fork)
