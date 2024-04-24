@@ -1,3 +1,6 @@
+##### 0.6-225@240423 2024-04-23
+*   XMRig v6.21.3 (Correct memcpy size for JIT initialization on RandomX; NOTES: Please, see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.21.3)
+
 ##### 0.6-225@240422 2024-04-22
 *   Rigel v1.16.2 (Add a kernel switch `--kernel` for `sha256ton` algorithm, where using `--kernel 1` is default for better hashrate when higher power draw is not a concern and using `--kernel 2` when low power draw is preferred; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.16.2)
 *   CPUminer-Opt-rplant v5.0.40 (Fixed `dpowhash` algo; NOTES: Please, see full changelog at https://github.com/rplant8/cpuminer-opt-rplant/releases/tag/5.0.40)
