@@ -1,3 +1,8 @@
+##### 0.6-225@240426 2024-04-26
+*   BzMiner v21.1.3b3 (Optimized and fixed some stability issues on `Warthog` mining; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.3b3)
+*   XMRig-MO v6.21.3-mo1 (Synced with XMRig v6.21.3; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo1)
+*   XMRig v6.21.3 (Fixed issue broken miner's API v6.21.3 which lead to not showing up stats on dashboard for some time when the miner started)
+
 ##### 0.6-225@240423 2024-04-23
 *   XMRig v6.21.3 (Correct memcpy size for JIT initialization on RandomX; NOTES: Please, see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.21.3)
 
