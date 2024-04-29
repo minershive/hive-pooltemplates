@@ -1,3 +1,15 @@
+##### 0.6-225@240426 2024-04-26
+*   BzMiner v21.1.3b3 (Optimized and fixed some stability issues on `Warthog` mining; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.3b3)
+*   XMRig-MO v6.21.3-mo1 (Synced with XMRig v6.21.3; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo1)
+*   XMRig v6.21.3 (Fixed issue broken miner's API v6.21.3 which lead to not showing up stats on dashboard for some time when the miner started)
+
+##### 0.6-225@240423 2024-04-23
+*   XMRig v6.21.3 (Correct memcpy size for JIT initialization on RandomX; NOTES: Please, see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.21.3)
+
+##### 0.6-225@240422 2024-04-22
+*   Rigel v1.16.2 (Add a kernel switch `--kernel` for `sha256ton` algorithm, where using `--kernel 1` is default for better hashrate when higher power draw is not a concern and using `--kernel 2` when low power draw is preferred; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.16.2)
+*   CPUminer-Opt-rplant v5.0.40 (Fixed `dpowhash` algo; NOTES: Please, see full changelog at https://github.com/rplant8/cpuminer-opt-rplant/releases/tag/5.0.40)
+
 ##### 0.6-225@240420 2024-04-20
 *   lolMiner v1.88 & v1.87 (Significantly improved performance of GRAM/CHAPA mining on Nvidia Turing and newer GPUs:  Turing up to ~15%, Ampere up to ~22%; Significantly improved performance of dual mining `FISHHASH+GRAM` mining on Nvidia Turing and newer GPUs; Fixed a hashrate degradation on RDNA3 GPUs mining GRAM/CHAPA introduced in v1.86; Fixed a bug causing dual mining `fishhash` and GRAM/CHAPA not to work on AMD Vega and VII GPUs; v1.87: Significantly improved `fishhash` hashrate on AMD RX 4xx/5xx series ~30%, on Nvidia CMP 170HX ~9%; NOTES: New Gram mining kernel also uses more energy, the old kernel is still available as an option by adding parameter `--mode a` and new kernel can be found via `--mode b` and is default; Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases)
 *   Rigel v1.16.1 (Add `sha256ton` algorithm, dev fee 1%, including dual mining modes: ABEL+GRAM, ERG+GRAM, IRON+GRAM, HYP+GRAM, CFX+GRAM, +ZIL and only icemining pool supported at this time; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.16.1)
