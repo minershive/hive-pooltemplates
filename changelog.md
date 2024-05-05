@@ -1,3 +1,7 @@
+##### 0.6-225@240504 2024-05-04
+*   OneZeroMiner (Add `xelis` algo upport for mining XEL/Xelis in SOLO mode with ability using multiple nodes; Add dual mining mode XEL+ZIL; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.1)
+*   TeamBlackMiner v2.25 (Fixed `meowpow` hash; Added support for more meowpow pools; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.25)
+
 ##### 0.6-225@240426 2024-04-26
 *   BzMiner v21.1.3b3 (Optimized and fixed some stability issues on `Warthog` mining; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.3b3)
 *   XMRig-MO v6.21.3-mo1 (Synced with XMRig v6.21.3; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo1)
