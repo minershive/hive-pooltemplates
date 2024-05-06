@@ -1,3 +1,13 @@
+##### 0.6-226@240506 2024-05-06
+*   Update `nvtool` to v1.84 (Fixed memory temperature reporting on v550 driver series; Add reporting PCI replay error counter also report added to `nvidia-info` tool)
+*   Fixed Nvidia OC (Nvidia OC settings in UI - Core Clock Offset/Locked Core Clock and Memory Clock Offset/Locked Memory Clock fields now will work as expected)
+*   Update Nvidia Flasher Utility to v5.833.0 
+*   Update `nvidia-driver-update` (Add v550 driver series and CUDA RTL v12.4 support)
+*   Improved AMD GPUs support (Fixed install ROCm v5.7.3 by `amd-ocl-install`; Improved support OC for 6000/7000 series on latest AMD kernel modules) 
+*   Improved Intel dGPUs support (Update `intel-info` tool; Add Intel OC Linux client side support)
+*   Fixed some issues on Ubuntu 20.04+ based Images
+*   Small improvements and fixes on misc Hiveon OS client console tools
+  
 ##### 0.6-225@240505 2024-05-05
 *   OneZeroMiner v1.3.2 (Performance improvement on `Xelis` mining; Fix an important bug related to the watchdog; Multiple fixes with +ZIL; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.2)
 *   Rigel v1.16.3 (Minor performance improvements on `pyrinhash`, e.g. ~1%; Reduce the number of stale shares on `fishhash`; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.16.3)
