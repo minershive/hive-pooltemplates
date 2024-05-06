@@ -1,9 +1,14 @@
+##### 0.6-225@240505 2024-05-05
+*   OneZeroMiner v1.3.2 (Performance improvement on `Xelis` mining; Fix an important bug related to the watchdog; Multiple fixes with +ZIL; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.2)
+*   Rigel v1.16.3 (Minor performance improvements on `pyrinhash`, e.g. ~1%; Reduce the number of stale shares on `fishhash`; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.16.3)
+*   BzMiner v21.1.4b8 BETA! (Added `Warthog` node RPC support; Fixed crashing on `Warthog` mining from previous beta; Optimized and fixed some stability issues on `Warthog` mining; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.4b8)   
+  
 ##### 0.6-225@240504 2024-05-04
-*   OneZeroMiner (Add `xelis` algo upport for mining XEL/Xelis in SOLO mode with ability using multiple nodes; Add dual mining mode XEL+ZIL; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.1)
+*   OneZeroMiner v1.3.1 (Add `xelis` algo upport for mining XEL/Xelis in SOLO mode with ability using multiple nodes; Add dual mining mode XEL+ZIL; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.1)
 *   TeamBlackMiner v2.25 (Fixed `meowpow` hash; Added support for more meowpow pools; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.25)
 
 ##### 0.6-225@240426 2024-04-26
-*   BzMiner v21.1.3b3 (Optimized and fixed some stability issues on `Warthog` mining; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.3b3)
+*   BzMiner v21.1.3b3 BETA! (Optimized and fixed some stability issues on `Warthog` mining; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.3b3)
 *   XMRig-MO v6.21.3-mo1 (Synced with XMRig v6.21.3; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo1)
 *   XMRig v6.21.3 (Fixed issue broken miner's API v6.21.3 which lead to not showing up stats on dashboard for some time when the miner started)
 
