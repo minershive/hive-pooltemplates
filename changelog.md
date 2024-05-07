@@ -1,3 +1,7 @@
+##### 0.6-226@240507 2024-05-07
+*   TeamRedMiner v0.10.21 (Added `fishhash` support for Vega family, Navi10 and Navi20; NOTES: Please see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.21)
+*   BzMiner v21.1.5 (Add  `aidepin` and `aipg` mining support; Optimized `warthog` and fixed some stability issues; Fixed crashes on Dynex every hour or so; NOTES: Previous Beta v21.1.3b3/v21.1.4b8 will be removed; See full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.5)
+
 ##### 0.6-226@240506 2024-05-06
 *   Update `nvtool` to v1.84 (Fixed memory temperature reporting on v550 driver series; Add reporting PCI replay error counter also report added to `nvidia-info` tool)
 *   Fixed Nvidia OC (Nvidia OC settings in UI - Core Clock Offset/Locked Core Clock and Memory Clock Offset/Locked Memory Clock fields now will work as expected)
@@ -35,7 +39,7 @@
 *   BzMiner v21.1.1 (Added support `fishhash` to mining Ironfish; Improved mining `Warthog` hashrate; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.1)
 *   TT-Miner v2024.2.0 (Added `fishhash` algo support; Added support of AMD GPUs for all algos except "ghostrider"; NOTES: Please, see full changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
 *   TeamBlackMiner v2.24 & v2.23 (v2.24: Added support for `meowpow` with dual/tripple mining modes AMD/NVIDIA; v2.23: Added support for `evrprogpow` with dual mining modes; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases)
-*   TeamRedMiner v0.10.20 (Small bugfix release for v0.10.19 which fixing some issues with FPGA; NOTES: Please see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.19)
+*   TeamRedMiner v0.10.20 (Small bugfix release for v0.10.19 which fixing some issues with FPGA; NOTES: Please see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.20)
 *   CPUminer-Opt-rplant v5.0.39 (Add `dpowhash` algo for mining DPC/Dpowcoin; NOTES: Please, see full changelog at https://github.com/rplant8/cpuminer-opt-rplant/releases/tag/5.0.39)
 *   CPUminer-Opt-JayDDee v24.1 (Faster 2-way interleaving; Minor fixes & improvements; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v24.1)
 
