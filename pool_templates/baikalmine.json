@@ -76,14 +76,31 @@
              "urls": [
                 "xel.baikalmine.com:9030"
              ]
+          },
+	  {
+             "geo": "Moscow GetWork SOLO",
+             "urls": [
+                "xel-solo.baikalmine.com:9033"
+             ]
+          },
+	  {
+             "geo": "Moscow Stratum SOLO",
+             "urls": [
+                "xel-solo.baikalmine.com:9032"
+             ]
           }
        ],
        "miners": {
+	  "_prototype": "miners_xelishash",
           "onezerominer": {
              "url": "%URL%",
-             "template": "%WAL%.%WORKER_NAME%",
-             "_prototype": "miners_xelishash"
-          }
+             "template": "%WAL%.%WORKER_NAME%"
+          },
+	  "rigel": {
+	     "url": "%URL%",
+	     "algo": "xelishash",
+	     "template": "%WAL%.%WORKER%"
+	  }
        }
     },
 
