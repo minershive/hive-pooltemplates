@@ -1,3 +1,7 @@
+##### 0.6-226@240511 2024-05-11
+*   OneZeroMiner v1.3.3 (Add support for stratum protocol for `Xelis`; Add `--xelis-solo` option; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.3)
+*   Rigel v1.17.0 (Add `xelishash` algorithm for mining XEL/Xelis, devfee 3%, including +ZIL; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.17.0)
+
 ##### 0.6-226@240507 2024-05-07
 *   TeamRedMiner v0.10.21 (Added `fishhash` support for Vega family, Navi10 and Navi20; NOTES: Please see full changelog at https://github.com/todxx/teamredminer/releases/tag/v0.10.21)
 *   BzMiner v21.1.5 (Add  `aidepin` and `aipg` mining support; Optimized `warthog` and fixed some stability issues; Fixed crashes on Dynex every hour or so; NOTES: Previous Beta v21.1.3b3/v21.1.4b8 will be removed; See full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.5)
