@@ -1,3 +1,6 @@
+##### 0.6-226@240512 2024-05-12
+*   Fixed OneZeroMiner stats (Fixed reported algo)
+
 ##### 0.6-226@240511 2024-05-11
 *   OneZeroMiner v1.3.3 (Add support for stratum protocol for `Xelis`; Add `--xelis-solo` option; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.3)
 *   Rigel v1.17.0 (Add `xelishash` algorithm for mining XEL/Xelis, devfee 3%, including +ZIL; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.17.0)
