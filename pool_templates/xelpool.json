@@ -11,21 +11,21 @@
     "coin": "XEL",
     "servers": [
       {
-        "geo": "Auto Getwork",
+        "geo": "Auto Stratum",
         "urls": [
-          "auto.getwork.xelpool.com:2086"
+          "auto.pool.xelpool.com:9351"
         ]
       },
       {
-        "geo": "Europe Getwork",
+        "geo": "Europe Stratum",
         "urls": [
-          "de.getwork.xelpool.com:2086"
+          "de.pool.xelpool.com:9351"
         ]
       },
       {
-        "geo": "USA Getwork",
+        "geo": "USA Stratum",
         "urls": [
-          "us.getwork.xelpool.com:2086"
+          "us.pool.xelpool.com:9351"
         ]
       }
     ],
@@ -34,7 +34,14 @@
         "url": "%URL%",
         "pass": "%WORKER_NAME%",
         "template": "%WAL%",
-        "user_config": "--xelis-solo"
+        "user_config": ""
+      },
+      "rigel": {
+        "algo": "xelishash",
+        "url": "stratum+tcp://%URL%",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "user_config": ""
       }
     }
   }
