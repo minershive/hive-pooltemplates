@@ -257,6 +257,7 @@ miners_ubqhash | ubqhash |  |
 miners_verthash | verthash |  | 
 miners_verushash | verushash |  | 
 miners_warthog | warthog | PoBW, mining WART / Warthog coin | 
+miners_xelishash | xelishash | mining XEL / Xelis | 
 miners_zelhash | zelhash |  | 
 
 

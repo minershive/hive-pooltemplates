@@ -1,3 +1,13 @@
+##### 0.6-226@240517 2024-05-17
+*   Rigel v1.17.2 (Performance/efficiency improvements on `xelishash` up to ~10%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.17.2)
+
+##### 0.6-226@240515 2024-05-15
+*   SRBMiner v2.5.3 / v2.5.4 (Added algorithm `xelishash` for mining XEL/Xelis, fee 2% on GPU and 0.85% for CPU; Added algorithm `randomtuske` for CPU mining TSK / Tuske Network, fee 0.85%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.4)
+*   Rigel v1.17.1 (Performance/efficiency improvements on `xelishash`; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.17.1)
+
+##### 0.6-226@240512 2024-05-12
+*   Fixed OneZeroMiner stats (Fixed reported algo)
+
 ##### 0.6-226@240511 2024-05-11
 *   OneZeroMiner v1.3.3 (Add support for stratum protocol for `Xelis`; Add `--xelis-solo` option; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.3)
 *   Rigel v1.17.0 (Add `xelishash` algorithm for mining XEL/Xelis, devfee 3%, including +ZIL; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.17.0)
