@@ -96,29 +96,30 @@
     },
 
     {
-        "coin": "KAS",
+        "coin": "GRAM",
         "servers": [
             {
-                "geo": "ASIC - AUTO",
+                "geo": "AUTO",
                 "urls": [
-                    "kas.asic.hiveon.com:4444"
-                ]
-            },
-            {
-                "geo": "GPU - AUTO",
-                "urls": [
-                    "kas.hiveon.com:8888",
-                    "kas.hiveon.com:4444"
-                ],
-                "ssl_urls": [
-                    "kas.hiveon.com:20443"
+                    "gram.hiveon.com:443",
+                    "gram.hiveon.net:443"
                 ]
             }
         ],
         "miners": {
-            "_prototype": "miners_kaspa"
+            "lolminer": {
+                "algo": "GRAM",
+                "dalgo": "TONDUAL",
+                "pass": "",
+                "port": "%URL_PORT%",
+                "server": "https://%URL_HOST%",
+                "worker": "",
+                "template": "%WAL%+%WORKER_NAME%",
+                "user_config": "--ton-mode 5"
+            }
         },
         "stratum_ping": false,
         "account_mining": true
     }
+
 ]

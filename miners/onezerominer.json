@@ -4,22 +4,26 @@
     "for_nvidia": true,
     "for_cpu": false,
     "for_asic": false,
+    "for_intel": false,
     "dual": true,
     "ssl_prefix": "",
     "default_algo": "dynex",
     "default_fork": null,
     "default_units": "khs",
     "algos": [
-        "dynex"
+        "dynex",
+        "xelis"
     ],
     "dalgos": [
         "zil"
     ],
     "dual_modes": {
-        "dunex": ["zil"]
+        "dynex": ["zil"],
+        "xelis": ["zil"]
     },
     "algomap": {
         "dynex": "dynexsolve",
+        "xelis": "xelishash",
         "zil": "ethash"
     },
     "forks": []
