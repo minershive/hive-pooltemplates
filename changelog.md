@@ -3,7 +3,7 @@
 *   Rigel v1.17.3 (Performance / efficiency improvements on `xelishash` up to ~10%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.17.3)
 *   OneZeroMiner v1.3.4 (Add support for the new enhanced core algorithm for DNX/`Dynex`; Performance improvement on XEL/`Xelis` mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.4)
 *   XMRig-MO v6.21.3-mo5 (Improved MO benchmark logic; Added `RandomXEQ` algo support for XEQ/Equilibria coin; Add `Flex` algo for KCN/Kylacoin; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo5)
-*   XMRigCC v3.4.1 (Added `Tuske` RandomX variant; NOTES: Please, see full changelog at https://github.com/Bendr0id/xmrigCC/releases/tag/3.4.1)
+*   XMRigCC v3.4.1 (Added `Tuske` RandomX variant: `rx/tuske`; NOTES: Please, see full changelog at https://github.com/Bendr0id/xmrigCC/releases/tag/3.4.1)
 *   CPUminer-Opt-JayDDee v24.2 (Fixed `blakes2s` for AVX2 & AVX512, x25x for AVX512, broken in v3.23.4; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v24.2)
 
 ##### 0.6-226@240517 2024-05-17
