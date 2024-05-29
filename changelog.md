@@ -1,3 +1,8 @@
+##### 0.6-227@240529 2024-05-29
+*   Fix Nvidia OC issue on Beta Images based on Ubuntu 20.04 (overclocking e.g. Core Clock Offset not applied in some cases)
+*   Autofan v3.29 (fix some issues with default target temps)
+*   Other various fixes
+
 ##### 0.6-226@240528 2024-05-28
 *   XMRig-MO v6.21.3-mo8 (Improved Flex algo speed; Improve MO benchmark logic: no rerun bencmark on disabled backends; Fixed Flex algo multithread issue; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo8)
 *   XMRigCC v3.4.2 (Added XEQ/Equilibria RandomX varirant: `rx/xeq`; NOTES: Please, see full changelog at https://github.com/Bendr0id/xmrigCC/releases/tag/3.4.2)
