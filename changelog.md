@@ -1,3 +1,7 @@
+##### 0.6-226@240528 2024-05-28
+*   XMRig-MO v6.21.3-mo8 (Improved Flex algo speed; Improve MO benchmark logic: no rerun bencmark on disabled backends; Fixed Flex algo multithread issue; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo8)
+*   XMRigCC v3.4.2 (Added XEQ/Equilibria RandomX varirant: `rx/xeq`; NOTES: Please, see full changelog at https://github.com/Bendr0id/xmrigCC/releases/tag/3.4.2)
+
 ##### 0.6-226@240527 2024-05-27
 *   SRBMiner v2.5.5 (Performance improvement on algorithm `xelishash` for AMD GPUs and AVX2 CPUs, up to 13%; Added support for mining `xelishash` algorithm on Intel Arc GPUs; Added support for dual mining fishhash+karlsenhash on AMD RDNA/RDNA2/RDNA3 and Intel Arc GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.5)
 *   Rigel v1.17.3 (Performance / efficiency improvements on `xelishash` up to ~10%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.17.3)
