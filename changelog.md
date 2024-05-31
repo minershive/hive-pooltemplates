@@ -1,4 +1,15 @@
+##### LINUX IMAGE RELEASE 0.6-227 2024-05-30
+*   New Stable Image branch Ubuntu 20.04 LTS based
+*   Distro base: Ubuntu v20.04.6 LTS
+*   Linux kernel: v6.1.90
+*   Nvidia driver: v535.171.04
+*   AMD kernel module v6.7.2404.0
+*   AMD OpenCL ROCm v5.6.1
+*   Hive Linux client: v0.6-227
+*   md5sum 39b576f278ac555398c72e34a0021cb9
+
 ##### 0.6-227@240529 2024-05-29
+*   `HIVEON OS LINUX CLIENT v0.6-227`
 *   Fix Nvidia OC issue on Beta Images based on Ubuntu 20.04 (overclocking e.g. Core Clock Offset not applied in some cases)
 *   Autofan v3.29 (fix some issues with default target temps)
 *   Other various fixes
@@ -34,6 +45,7 @@
 *   BzMiner v21.1.5 (Add  `aidepin` and `aipg` mining support; Optimized `warthog` and fixed some stability issues; Fixed crashes on Dynex every hour or so; NOTES: Previous Beta v21.1.3b3/v21.1.4b8 will be removed; See full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.5)
 
 ##### 0.6-226@240506 2024-05-06
+*   `HIVEON OS LINUX CLIENT v0.6-226`
 *   Update `nvtool` to v1.84 (Fixed memory temperature reporting on v550 driver series; Add reporting PCI replay error counter also report added to `nvidia-info` tool)
 *   Fixed Nvidia OC (Nvidia OC settings in UI - Core Clock Offset/Locked Core Clock and Memory Clock Offset/Locked Memory Clock fields now will work as expected)
 *   Update Nvidia Flasher Utility to v5.833.0 
