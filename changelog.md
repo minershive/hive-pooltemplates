@@ -1,3 +1,8 @@
+##### 0.6-227@240531 2024-05-31
+*   BzMiner v21.2.0 (Updated Dynex for algo change; Updated Dynex auto chip tuning; See full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.2.0)
+*   XMRig-MO v6.21.3-mo13 (Various fixes mostly for `flex` algo; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo13)
+*   TeamRedMiner: config generator fix (Fixed worker name processing for Abelian pools)
+
 ##### LINUX IMAGE RELEASE 0.6-227 2024-05-30
 *   New Stable Image branch Ubuntu 20.04 LTS based
 *   Distro base: Ubuntu v20.04.6 LTS
