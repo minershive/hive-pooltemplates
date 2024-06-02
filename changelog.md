@@ -1,3 +1,7 @@
+##### 0.6-227@240601 2024-06-01
+*   Rigel v1.17.4 (Performance / efficiency improvements on `xelishash` up to ~5%; Add for `xelishash` option `--tune` to set tuning values manually for consistent hashrate across miner restarts; Fixed miner crashes if launched during a ZIL session in XEL+ZEL mode; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.17.4)
+*   XMRig-MO v6.21.3-mo15 (Various fixes for `flex` algo; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo15)
+  
 ##### 0.6-227@240531 2024-05-31
 *   BzMiner v21.2.0 (Updated Dynex for algo change; Updated Dynex auto chip tuning; See full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.2.0)
 *   XMRig-MO v6.21.3-mo13 (Various fixes mostly for `flex` algo; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo13)
