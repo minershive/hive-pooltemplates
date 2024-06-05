@@ -1,3 +1,7 @@
+##### 0.6-227@240604 2024-06-04
+*   SRBMiner v2.5.6 (Added algorithm `flex` for mining KCN/Kylacoin on CPU, fee 2%; Added algorithm `randomxeq` for mining XEQ/Equilibria coin on CPU, fee 0.85%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.6)
+*   Fixed run latest XMRig v6.21.3 on Ubuntu 20.04-based Images
+
 ##### 0.6-227@240601 2024-06-01
 *   Rigel v1.17.4 (Performance / efficiency improvements on `xelishash` up to ~5%; Add for `xelishash` option `--tune` to set tuning values manually for consistent hashrate across miner restarts; Fixed miner crashes if launched during a ZIL session in XEL+ZEL mode; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.17.4)
 *   XMRig-MO v6.21.3-mo15 (Various fixes for `flex` algo; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo15)
