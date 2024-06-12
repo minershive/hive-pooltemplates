@@ -4,6 +4,7 @@
     "for_nvidia": false,
     "for_cpu": false,
     "for_asic": false,
+    "for_intel": false,
     "dual": true,
     "ssl_prefix": "",
     "default_algo": null,
@@ -11,6 +12,7 @@
     "default_units": "khs",
     "algos": [
         "abel",
+        "alph",
         "autolykos2",
         "cnr",
         "cnv8",
@@ -28,6 +30,7 @@
         "etchash",
         "ethash",
         "firopow",
+        "fishhash",
         "ironfish",
         "karlsen",
         "kas",
@@ -48,6 +51,7 @@
         "x16s"
     ],
     "dalgos": [
+        "alph",
         "iron",
         "kas",
         "karlsen",
@@ -57,10 +61,12 @@
     ],
     "dual_modes": {
         "abel":      ["iron", "kas", "karlsen", "pyrin", "ton", "zil"],
-        "autolykos2":["iron", "kas", "karlsen", "pyrin", "ton", "zil"],
-        "etchash":   ["iron", "kas", "karlsen", "pyrin", "ton", "zil"],
-        "ethash":    ["iron", "kas", "karlsen", "pyrin", "ton", "zil"],
+        "alph":      ["zil"],
+        "autolykos2":["alph", "iron", "kas", "karlsen", "pyrin", "ton", "zil"],
+        "etchash":   ["alph", "iron", "kas", "karlsen", "pyrin", "ton", "zil"],
+        "ethash":    ["alph", "iron", "kas", "karlsen", "pyrin", "ton", "zil"],
         "firopow":   ["zil"],
+        "fishhash":  ["zil"],
         "karlsen":   ["zil"],
         "kas":       ["zil"],
         "kawpow":    ["zil"],
@@ -69,6 +75,7 @@
     },
     "algomap": {
         "abel": "abelian",
+        "alph": "blake3-alph",
         "cn_conceal": "cryptonight-ccx",
         "cn_haven": "cryptonight-xhv",
         "cn_heavy": "cryptonight-heavy",

@@ -1,0 +1,48 @@
+[
+  {
+    "pool": {
+      "name": "XelPool.com",
+      "url": "https://xelpool.com",
+      "fee": 0.9,
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "XEL",
+    "servers": [
+      {
+        "geo": "Auto Stratum",
+        "urls": [
+          "auto.pool.xelpool.com:9351"
+        ]
+      },
+      {
+        "geo": "Europe Stratum",
+        "urls": [
+          "de.pool.xelpool.com:9351"
+        ]
+      },
+      {
+        "geo": "USA Stratum",
+        "urls": [
+          "us.pool.xelpool.com:9351"
+        ]
+      }
+    ],
+    "miners": {
+      "onezerominer": {
+        "url": "%URL%",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "user_config": ""
+      },
+      "rigel": {
+        "algo": "xelishash",
+        "url": "stratum+tcp://%URL%",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "user_config": ""
+      }
+    }
+  }
+]
