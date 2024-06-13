@@ -101,25 +101,17 @@
             {
                 "geo": "AUTO",
                 "urls": [
-                    "gram.hiveon.com:443",
-                    "gram.hiveon.net:443"
+                    "gram.hiveon.com:8888"
+                ],
+                "ssl_urls": [
+                    "gram.hiveon.com:20443"
                 ]
             }
         ],
         "miners": {
-            "lolminer": {
-                "algo": "GRAM",
-                "dalgo": "TONDUAL",
-                "pass": "",
-                "port": "%URL_PORT%",
-                "server": "https://%URL_HOST%",
-                "worker": "",
-                "template": "%WAL%+%WORKER_NAME%",
-                "user_config": "--ton-mode 5"
-            }
+            "_prototype": "miners_gram_stratum"
         },
         "stratum_ping": false,
         "account_mining": true
     }
-
 ]
