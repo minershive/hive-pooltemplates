@@ -1,3 +1,7 @@
+##### 0.6-227@240617 2024-06-17
+*   SRBMiner v2.5.7 (Improved performance on algorithms `ghostrider` and `mike`; Improved performance on algorithm `flex` for AVX2 CPUs; Miner now automatically allocates the needed number of huge pages; Removed parameters: `--disable-cpu-optimisations`, `--disable-hw-aes`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.7)
+*   miniZ v2.4d (Improved hashrate for PyrinHash and KarlsenHash up to 7%;  Added support for PyrinHash algo for AMD, fee: 0.8%; Added support for KarlsenHash algo for AMD, fee: 0.8%; Added support for 192,7 algo, for AMD; NOTES: Please, see full changelog at https://miniz.cc/2024/06/15/miniz-v24d-is-out/)
+
 ##### 0.6-227@240604 2024-06-04
 *   SRBMiner v2.5.6 (Added algorithm `flex` for mining KCN/Kylacoin on CPU, fee 2%; Added algorithm `randomxeq` for mining XEQ/Equilibria coin on CPU, fee 0.85%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.6)
 *   Fixed run latest XMRig v6.21.3 on Ubuntu 20.04-based Images
