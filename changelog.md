@@ -1,3 +1,7 @@
+##### 0.6-227@240711 2024-07-11
+*   OneZeroMiner v1.3.5 (Add support for `xelishashv2` with 2% devfee and removed support of xelishash; Disable snapshot by default for Dynex for enabling use `--enable-snapshot` flag; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.5)
+*   TT-Miner v2024.3.2 (Add support `xelishashv2`; Add ability to join EPIC and any CPU algo; Fixed a bug with the extranonce for Spectre pools; NOTES: See full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2024.3.2)
+
 ##### 0.6-227@240709 2024-07-09
 *   Rigel v1.18.0 (Add `xelishashv2` algorithm for upcoming XLS/Xelis hardfork, devfee 2%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.18.0)
 *   SRBMiner v2.5.8 (Added algorithm `xelishashv2` / Xelis for CPU mining, fee 2%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.8)
