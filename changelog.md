@@ -1,3 +1,11 @@
+##### 0.6-227@240709 2024-07-09
+*   Rigel v1.18.0 (Add `xelishashv2` algorithm for upcoming XLS/Xelis hardfork, devfee 2%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.18.0)
+*   SRBMiner v2.5.8 (Added algorithm `xelishashv2` / Xelis for CPU mining, fee 2%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.8)
+*   TT-Miner v2024.3.1 (Add support of native CPU algos: `flex`, `spectrex`, `ghostrider`; NOTES: full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2024.3.1)
+*   NanoMiner v3.9.2 (Fixed ProgPOW-like algorithms `kawpow`, `firopow` on Nvidia GPUs; Added support mining Alephuim /`blake3` algo on AMD and Nvidia GPUs; Added support mining Pyrin on AMD GPUs; NOTES: Full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.9.2)
+*   BzMiner v21.4.0 (Updated Warthog to support upcoming verus 2.2 change; NOTES: full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.4.0)
+*   CPUminer-Opt-JayDDee v24.4 (Fixed some bugs appeared in v24.2 on some algos & AVX2; NOTES: full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v24.4)
+
 ##### 0.6-227@240617 2024-06-17
 *   SRBMiner v2.5.7 (Improved performance on algorithms `ghostrider` and `mike`; Improved performance on algorithm `flex` for AVX2 CPUs; Miner now automatically allocates the needed number of huge pages; Removed parameters: `--disable-cpu-optimisations`, `--disable-hw-aes`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.7)
 *   miniZ v2.4d (Improved hashrate for PyrinHash and KarlsenHash up to 7%;  Added support for PyrinHash algo for AMD, fee: 0.8%; Added support for KarlsenHash algo for AMD, fee: 0.8%; Added support for 192,7 algo, for AMD; NOTES: Please, see full changelog at https://miniz.cc/2024/06/15/miniz-v24d-is-out/)
