@@ -1,3 +1,7 @@
+##### 0.6-227@240712 2024-07-12
+*   OneZeroMiner v1.3.6 (Efficiency improvement on `xelishashv2`; Add new option `--xelis-solo` for support Xelis solo mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.6)
+*   SRBMiner v2.5.9 (Added AVX512 support for CPU algorithm `xelishashv2`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.9)
+
 ##### 0.6-227@240711 2024-07-11
 *   OneZeroMiner v1.3.5 (Add support for `xelishashv2` with 2% devfee and removed support of xelishash; Disable snapshot by default for Dynex for enabling use `--enable-snapshot` flag; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.5)
 *   TT-Miner v2024.3.2 (Add support `xelishashv2`; Add ability to join EPIC and any CPU algo; Fixed a bug with the extranonce for Spectre pools; NOTES: See full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2024.3.2)
