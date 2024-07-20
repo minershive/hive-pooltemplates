@@ -1,3 +1,6 @@
+##### 0.6-227@240719 2024-07-19
+*   Rigel v1.18.1 (Performance/efficiency improvements on `xelishashv2`; Fixed invalid shares when mining XEL/Xelis to a node; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.18.1)
+
 ##### 0.6-227@240716 2024-07-16
 *   OneZeroMiner v1.3.7 (Minor efficiency improvement on `xelishashv2` for some GPUs; Reduce the ZIL switching delay with applying the OC settings in parallel; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.7)
 
