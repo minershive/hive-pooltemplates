@@ -2631,6 +2631,95 @@
     }
   },
   {
+    "coin": "PUG",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.pugdag.k1pool.com:3416"
+        ],
+        "ssl_urls": [
+          "eu.pugdag.k1pool.com:3416"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+          "us.pugdag.k1pool.com:3416"
+        ],
+        "ssl_urls": [
+          "us.pugdag.k1pool.com:3416"
+        ]
+      },
+      {
+        "geo": "China",
+        "urls": [
+          "cn.pugdag.k1pool.com:3416"
+        ],
+        "ssl_urls": [
+          "cn.pugdag.k1pool.com:3416"
+        ]
+      },
+      {
+        "geo": "EU Karlsenhash Switcher",
+        "urls": [
+          "eu.karlsenhash.k1pool.com:5700"
+        ],
+        "ssl_urls": [
+          "eu.karlsenhash.k1pool.com:5700"
+        ]
+      },
+      {
+        "geo": "USA Karlsenhash Switcher",
+        "urls": [
+          "us.karlsenhash.k1pool.com:5700"
+        ],
+        "ssl_urls": [
+          "us.karlsenhash.k1pool.com:5700"
+        ]
+      },
+      {
+        "geo": "China Karlsenhash Switcher",
+        "urls": [
+          "cn.karlsenhash.k1pool.com:5700"
+        ],
+        "ssl_urls": [
+          "cn.karlsenhash.k1pool.com:5700"
+        ]
+      },
+      {
+        "geo": "Europe SOLO",
+        "urls": [
+          "eu.pugdag.k1pool.com:3418"
+        ],
+        "ssl_urls": [
+          "eu.pugdag.k1pool.com:3418"
+        ]
+      },
+      {
+        "geo": "USA SOLO",
+        "urls": [
+          "us.pugdag.k1pool.com:3418"
+        ],
+        "ssl_urls": [
+          "us.pugdag.k1pool.com:3418"
+        ]
+      },
+      {
+        "geo": "China SOLO",
+        "urls": [
+          "cn.pugdag.k1pool.com:3418"
+        ],
+        "ssl_urls": [
+          "cn.pugdag.k1pool.com:3418"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_karlsenhash"
+    }
+  },
+  {
     "coin": "NXL",
     "servers": [
       {
@@ -3198,10 +3287,20 @@
       }
     ],
     "miners": {
-        "_prototype": "miners_xelishash"
+      "onezerominer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "-a xelis"
+      },
+      "rigel": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "-a xelishashv2+zil -o [2]stratum+ssl://eu.zil.k1pool.com:1111 -u [2]%WAL%.%WORKER_NAME% --zil-countdown"
+      }
     }
   },
-
   {
     "coin": "DNX",
     "servers": [

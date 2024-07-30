@@ -1,3 +1,70 @@
+##### 0.6-227@240719 2024-07-19
+*   Rigel v1.18.1 (Performance/efficiency improvements on `xelishashv2`; Fixed invalid shares when mining XEL/Xelis to a node; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.18.1)
+
+##### 0.6-227@240716 2024-07-16
+*   OneZeroMiner v1.3.7 (Minor efficiency improvement on `xelishashv2` for some GPUs; Reduce the ZIL switching delay with applying the OC settings in parallel; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.7)
+
+##### 0.6-227@240712 2024-07-12
+*   OneZeroMiner v1.3.6 (Efficiency improvement on `xelishashv2`; Add new option `--xelis-solo` for support Xelis solo mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.6)
+*   SRBMiner v2.5.9 (Added AVX512 support for CPU algorithm `xelishashv2`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.9)
+
+##### 0.6-227@240711 2024-07-11
+*   OneZeroMiner v1.3.5 (Add support for `xelishashv2` with 2% devfee and removed support of xelishash; Disable snapshot by default for Dynex for enabling use `--enable-snapshot` flag; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.5)
+*   TT-Miner v2024.3.2 (Add support `xelishashv2`; Add ability to join EPIC and any CPU algo; Fixed a bug with the extranonce for Spectre pools; NOTES: See full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2024.3.2)
+
+##### 0.6-227@240709 2024-07-09
+*   Rigel v1.18.0 (Add `xelishashv2` algorithm for upcoming XLS/Xelis hardfork, devfee 2%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.18.0)
+*   SRBMiner v2.5.8 (Added algorithm `xelishashv2` / Xelis for CPU mining, fee 2%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.8)
+*   TT-Miner v2024.3.1 (Add support of native CPU algos: `flex`, `spectrex`, `ghostrider`; NOTES: full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2024.3.1)
+*   NanoMiner v3.9.2 (Fixed ProgPOW-like algorithms `kawpow`, `firopow` on Nvidia GPUs; Added support mining Alephuim /`blake3` algo on AMD and Nvidia GPUs; Added support mining Pyrin on AMD GPUs; NOTES: Full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.9.2)
+*   BzMiner v21.4.0 (Updated Warthog to support upcoming verus 2.2 change; NOTES: full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.4.0)
+*   CPUminer-Opt-JayDDee v24.4 (Fixed some bugs appeared in v24.2 on some algos & AVX2; NOTES: full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v24.4)
+
+##### 0.6-227@240617 2024-06-17
+*   SRBMiner v2.5.7 (Improved performance on algorithms `ghostrider` and `mike`; Improved performance on algorithm `flex` for AVX2 CPUs; Miner now automatically allocates the needed number of huge pages; Removed parameters: `--disable-cpu-optimisations`, `--disable-hw-aes`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.7)
+*   miniZ v2.4d (Improved hashrate for PyrinHash and KarlsenHash up to 7%;  Added support for PyrinHash algo for AMD, fee: 0.8%; Added support for KarlsenHash algo for AMD, fee: 0.8%; Added support for 192,7 algo, for AMD; NOTES: Please, see full changelog at https://miniz.cc/2024/06/15/miniz-v24d-is-out/)
+
+##### 0.6-227@240604 2024-06-04
+*   SRBMiner v2.5.6 (Added algorithm `flex` for mining KCN/Kylacoin on CPU, fee 2%; Added algorithm `randomxeq` for mining XEQ/Equilibria coin on CPU, fee 0.85%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.6)
+*   Fixed run latest XMRig v6.21.3 on Ubuntu 20.04-based Images
+
+##### 0.6-227@240601 2024-06-01
+*   Rigel v1.17.4 (Performance / efficiency improvements on `xelishash` up to ~5%; Add for `xelishash` option `--tune` to set tuning values manually for consistent hashrate across miner restarts; Fixed miner crashes if launched during a ZIL session in XEL+ZEL mode; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.17.4)
+*   XMRig-MO v6.21.3-mo15 (Various fixes for `flex` algo; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo15)
+  
+##### 0.6-227@240531 2024-05-31
+*   BzMiner v21.2.0 (Updated Dynex for algo change; Updated Dynex auto chip tuning; See full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.2.0)
+*   XMRig-MO v6.21.3-mo13 (Various fixes mostly for `flex` algo; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo13)
+*   TeamRedMiner: config generator fix (Fixed worker name processing for Abelian pools)
+
+##### LINUX IMAGE RELEASE 0.6-227 2024-05-30
+*   New Stable Image branch Ubuntu 20.04 LTS based
+*   Distro base: Ubuntu v20.04.6 LTS
+*   Linux kernel: v6.1.90
+*   Nvidia driver: v535.171.04
+*   AMD kernel module v6.7.2404.0
+*   AMD OpenCL ROCm v5.6.1
+*   Hive Linux client: v0.6-227
+*   md5sum 39b576f278ac555398c72e34a0021cb9
+
+##### 0.6-227@240529 2024-05-29
+*   `HIVEON OS LINUX CLIENT v0.6-227`
+*   Fix Nvidia OC issue on Beta Images based on Ubuntu 20.04 (overclocking e.g. Core Clock Offset not applied in some cases)
+*   Autofan v3.29 (fix some issues with default target temps)
+*   Other various fixes
+
+##### 0.6-226@240528 2024-05-28
+*   XMRig-MO v6.21.3-mo8 (Improved Flex algo speed; Improve MO benchmark logic: no rerun bencmark on disabled backends; Fixed Flex algo multithread issue; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo8)
+*   XMRigCC v3.4.2 (Added XEQ/Equilibria RandomX varirant: `rx/xeq`; NOTES: Please, see full changelog at https://github.com/Bendr0id/xmrigCC/releases/tag/3.4.2)
+
+##### 0.6-226@240527 2024-05-27
+*   SRBMiner v2.5.5 (Performance improvement on algorithm `xelishash` for AMD GPUs and AVX2 CPUs, up to 13%; Added support for mining `xelishash` algorithm on Intel Arc GPUs; Added support for dual mining fishhash+karlsenhash on AMD RDNA/RDNA2/RDNA3 and Intel Arc GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.5)
+*   Rigel v1.17.3 (Performance / efficiency improvements on `xelishash` up to ~10%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.17.3)
+*   OneZeroMiner v1.3.4 (Add support for the new enhanced core algorithm for DNX/`Dynex`; Performance improvement on XEL/`Xelis` mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.4)
+*   XMRig-MO v6.21.3-mo5 (Improved MO benchmark logic; Added `RandomXEQ` algo support for XEQ/Equilibria coin; Add `Flex` algo for KCN/Kylacoin; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo5)
+*   XMRigCC v3.4.1 (Added `Tuske` RandomX variant: `rx/tuske`; NOTES: Please, see full changelog at https://github.com/Bendr0id/xmrigCC/releases/tag/3.4.1)
+*   CPUminer-Opt-JayDDee v24.2 (Fixed `blakes2s` for AVX2 & AVX512, x25x for AVX512, broken in v3.23.4; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v24.2)
+
 ##### 0.6-226@240517 2024-05-17
 *   Rigel v1.17.2 (Performance/efficiency improvements on `xelishash` up to ~10%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.17.2)
 
@@ -17,6 +84,7 @@
 *   BzMiner v21.1.5 (Add  `aidepin` and `aipg` mining support; Optimized `warthog` and fixed some stability issues; Fixed crashes on Dynex every hour or so; NOTES: Previous Beta v21.1.3b3/v21.1.4b8 will be removed; See full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.1.5)
 
 ##### 0.6-226@240506 2024-05-06
+*   `HIVEON OS LINUX CLIENT v0.6-226`
 *   Update `nvtool` to v1.84 (Fixed memory temperature reporting on v550 driver series; Add reporting PCI replay error counter also report added to `nvidia-info` tool)
 *   Fixed Nvidia OC (Nvidia OC settings in UI - Core Clock Offset/Locked Core Clock and Memory Clock Offset/Locked Memory Clock fields now will work as expected)
 *   Update Nvidia Flasher Utility to v5.833.0 

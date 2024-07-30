@@ -58,6 +58,13 @@
             "url": "%URL%",
             "algo": "alph",
             "template": "%WAL%.%WORKER_NAME%"
+        },
+        "nanominer": {
+            "url": "%URL%",
+            "algo": "blake3",
+            "pass": "x",
+            "template": "%WAL%",
+            "user_config": "coin = ALEPHIUM\nrigName = %WORKER_NAME%\nsilence = 1"
         }
     },
 
@@ -2048,8 +2055,64 @@
 	"srbminer": {
 	    "url": "%URL%",
 	    "algo": "xelishash",
-	    "pass": "%WORKER_NAME%",
-	    "template": "%WAL%"
+	    "template": "%WAL%",
+	    "worker": "%WORKER_NAME%",
+	    "user_config": "--disable-cpu"
 	}
+    },
+
+    "miners_xelishashv2": {
+        "rigel": {
+            "url": "%URL%",
+            "algo": "xelishashv2",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%"
+        },
+        "onezerominer": {
+            "url": "%URL%",
+            "algo": "xelis",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+	"srbminer": {
+	    "url": "%URL%",
+	    "algo": "xelishashv2",
+	    "template": "%WAL%",
+	    "worker": "%WORKER_NAME%"
+	}
+    },
+
+   "miners_gram_stratum": {
+        "lolminer": {
+            "algo": "GRAM",
+            "dalgo": "TONDUAL",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--ton-mode 6"
+        },
+
+        "rigel": {
+            "url": "%URL%",
+            "algo": "sha256ton",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
+        "teamredminer": {
+               "url": "%URL%",
+               "algo": "ton",
+               "template": "%WAL%.%WORKER_NAME%",
+               "pass": "x",
+               "user_config": "--ton_pool_mode=icemining"
+        },
+
+        "gminer": {
+            "server": "%URL_HOST%",
+            "port": "%URL_PORT%",
+            "algo": "ton",
+            "template": "%WAL%.%WORKER_NAME%",
+            "ver": "2.99"
+        }
     }
 }
