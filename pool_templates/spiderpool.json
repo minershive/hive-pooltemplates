@@ -1,0 +1,57 @@
+[
+    {
+        "pool": {
+            "name": "spiderpool",
+            "url": "https://spiderpool.com",
+            "fee": "2",
+            "type": "FPPS"
+        }
+    },
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "Americas",
+                "urls": [
+                    "btc-us.spiderpool.com:2309",
+                    "btc-us.spiderpool.com:3333",
+                    "btc-us.spiderpool.com:1800",
+                    "btc-us.spiderpool.com:443"
+                ],
+                "ssl_urls": [
+                    "stratum+ssl://btc-us.spiderpool.com:2310"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "btc-as.spiderpool.com:2309",
+                    "btc-as.spiderpool.com:3333",
+                    "btc-as.spiderpool.com:1800",
+                    "btc-as.spiderpool.com:443"
+                ],
+                "ssl_urls": [
+                    "stratum+ssl://btc-as.spiderpool.com:2310"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "btc-eu.spiderpool.com:2309",
+                    "btc-eu.spiderpool.com:3333",
+                    "btc-eu.spiderpool.com:1800",
+                    "btc-eu.spiderpool.com:443"
+                ],
+                "ssl_urls": [
+                    "stratum+ssl://btc-eu.spiderpool.com:2310"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
