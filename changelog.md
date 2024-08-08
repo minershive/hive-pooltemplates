@@ -1,3 +1,8 @@
+##### 0.6-227@240807 2024-08-07
+*   SRBMiner v2.6.1 (Added algorithm `progpow_telestai` for GPU mining TLS/TelestAI cpon; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig-Multi v0.40.8 (Implemented support algos: `progpow-telestai`, `meowpow` and `x7` (hashx7); Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases)
+*   CPUMiner-Opt-Rplant v5.0.41 (Implemented support `hashx7` algo; NOTES: Please, see full changelog at https://github.com/rplant8/cpuminer-opt-rplant/releases)
+
 ##### 0.6-227@240719 2024-07-19
 *   Rigel v1.18.1 (Performance/efficiency improvements on `xelishashv2`; Fixed invalid shares when mining XEL/Xelis to a node; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.18.1)
 
