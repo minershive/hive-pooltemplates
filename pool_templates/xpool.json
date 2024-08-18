@@ -211,44 +211,48 @@
     "coin": "TLS",
     "servers": [
       {
-        "geo": "Europe [GPU]",
+        "geo": "Europe GPU",
         "urls": [
           "eu.xpool.pw:20070"
         ]
       },
       {
-        "geo": "Asia [GPU]",
+        "geo": "Asia GPU",
         "urls": [
           "sg.xpool.pw:20070"
         ]
       },
       {
-        "geo": "USA [GPU]",
+        "geo": "USA GPU",
         "urls": [
           "us.xpool.pw:20070"
         ]
-      },
-      {
-        "geo": "Europe [Nicehash]",
+      }      {
+        "geo": "Europe Nicehash",
         "urls": [
           "eu.xpool.pw:20071"
         ]
       },
       {
-        "geo": "Asia [Nicehash]",
+        "geo": "Asia Nicehash",
         "urls": [
           "sg.xpool.pw:20071"
         ]
       },
       {
-        "geo": "USA [Nicehash]",
+        "geo": "USA Nicehash",
         "urls": [
           "us.xpool.pw:20071"
         ]
-      }	    
+      }
     ],
     "miners": {
-    "_prototype": "miners_progpow_telestai"
+      "srbminer": {
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "progpow_telestai"
+      }
     }
   },	
   {
