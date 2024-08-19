@@ -1,3 +1,7 @@
+##### 0.6-227@240818 2024-08-18
+*   XMRig v6.22.0 (dded support `rx/yada` for mining YDA/YadaCoin; Added Zen5 detection; NOTES: Please, see full changelog at https://github.com/xmrig/xmrig-cuda/releases)
+*   XMRig-MO v6.22.0-mo3 (Synced with XMRig v6.22.0; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases)
+
 ##### 0.6-227@240807 2024-08-07
 *   SRBMiner v2.6.1 (Added algorithm `progpow_telestai` for GPU mining TLS/TelestAI cpon; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig-Multi v0.40.8 (Implemented support algos: `progpow-telestai`, `meowpow` and `x7` (hashx7); Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases)
