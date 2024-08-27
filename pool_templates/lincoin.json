@@ -1,0 +1,41 @@
+[
+    {
+        "pool": {
+            "name": "Lincoin",
+            "url": "https://lincoin.com",
+            "fee": 2,
+            "type": "FPPS"
+        }
+    },
+
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "North America",
+                "urls": [
+                    "NA.lincoin.com:3333"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "EU.lincoin.com:3333"
+                ]
+            },
+            {
+                "geo": "Latin America",
+                "urls": [
+                    "LatAm.lincoin.com:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "1"
+            }
+        }
+    }
+]
