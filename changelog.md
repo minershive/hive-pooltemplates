@@ -1,3 +1,6 @@
+##### 0.6-227@240903 2024-09-03
+*   Rigel v1.18.2) (Add support for mining BLOCX coin, please use `autolykos2` algo and mandatory option `--coin blocx`; Fixed performance regression on CMP 170HX cards on XEL mining; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.18.2)
+
 ##### 0.6-227@240902 2024-09-02
 *   SRBminer v2.6.3 (Add support `blocx_autolykos2` algorithm for mining BLOCX coin by AMD/Nvidia/Intel GPUs, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
