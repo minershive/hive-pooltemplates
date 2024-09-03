@@ -1,3 +1,6 @@
+##### 0.6-227@240902 2024-09-02
+*   SRBminer v2.6.3 (Add support `blocx_autolykos2` algorithm for mining BLOCX coin by AMD/Nvidia/Intel GPUs, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-227@240823 2024-08-23
 *   SRBminer v2.6.2 ( Added `xelishashv2_pepew` for CPU mining PEPEW coin, fee 1.5%; Improved hashrate for all progpow based algorithms on AMD Vega and RX 4xx/5xx; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   XMRig v6.22.0 (rebuilded with gcc v13 version with fixed broken dashboard stats on some cases
