@@ -216,6 +216,7 @@ miners_alephium | alephium |  |
 miners_astrobwt | astrobwt | V3 implementation | 
 miners_autolykos2 | autolykos2 |  | 
 miners_autolykos2_slash_email | autolykos2_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
+miners_autolykos2_blocx | autolykos2 | variant for mining BLOCX coin | 
 miners_beamhash | beamhash |  | 
 miners_cryptonight_gpu | cryptonight_gpu |  | 
 miners_cryptonight_r | cryptonight_r |  | 
