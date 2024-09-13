@@ -1,3 +1,6 @@
+##### 0.6-227@240912 2024-09-12
+*   lolMiner v1.89 (Added support to mine `KarlsenHashV2` on Nvidia Pascal and newer and AMD RX 5000 and newer, fee 1%; Added support to dual mine KarlsenHashV2 and Autolykos2 with TON/GRAM and similar; Added support to mine BLOCX. BLOCX mining uses Autolykos2; NOTES: Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases)
+
 ##### 0.6-227@240911 2024-09-11
 *   Rigel miner v1.19.0 (Add `karlsenhashv2` algorithm incl. dual/triple combos supported as the primary algorithm) with PYI/GRAM/ZIL; Add support `pyrinhashv2  algorithm incl. support dual/triple combos supported as the secondary algorithm with ABEL/ERGO/BLOCX/IRON/CFX/KLS/ZIL; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.19.0)
 *   SRBminer v2.6.4 (Added algorithm `pyrinhashv2` for Pyrin coin for GPU mining on AMD/Intel, fee 0.85%; Added support for dual mining `pyrinhashv2` as second algo with `karlsenhashv2`/`fishhash`/`autolykos2` on AMD RDNA* and Intel' GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
