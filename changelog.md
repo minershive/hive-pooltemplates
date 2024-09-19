@@ -1,3 +1,7 @@
+##### 0.6-227@240918 2024-09-18
+*   SRBminer v2.6.5 (Added algorithm `astrixhash` for GPU mining AIX/Astrix Network coin on AMD/Nvidia/Intel GPUs, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   Rigel miner v1.19.1 (Minor 2-3% performance improvements on `pyrinhashv2` for Ampere GPUs and newer; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.19.1)
+
 ##### 0.6-227@240916 2024-09-16
 *   lolMiner v1.90 (Added support to mine `PyrinHashV2` algo on Nvidia GTX 1000, AMD RX 5000 and newer GPUs, use `PYRINV2` to select the algorithm, fee is 1%; Added dual mining support PyrinHashV2 as second algo with Autolykos2/KarlsenHashV2/FishHash on Nvidia GTX 1000 and newer and AMD RX 6000 and newer GPUs; NOTES: See full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.90)
 *   OneZeroMiner v1.4.0b Beta (Add experimental support `xelishashv2` on AMD Vega and newer GPUs for mining XEL|Xelis coin, fee 3%; Add `--disable-amd` and `--disable-nvidia` flags; Notes: 1) It's Beta version so it's may contains bugs & you need manual selection in Miner settings section of Flight Sheet 2) See full changelog and details at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.4.0b)
