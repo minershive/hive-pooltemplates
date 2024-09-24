@@ -1,3 +1,6 @@
+##### 0.6-227@240923 2024-09-23
+*   lolMiner v1.91 (Added support to mine `autolykos2` and `karlsenhashv2` on AMD RX 400/500 series and experimental support AMD Vega 1st and 2nd generation, which also require updated OpenCL drivers; Added `autolykos2`, `karlsenhashv2` and `fishhash` dual mine capabilities with GRAM/TON for AMD RX 400/500 and Vega family GPUs; Improved performance `fishhash` on RX 400/500 series by about 3%; NOTES: See full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.91)
+
 ##### 0.6-227@240918 2024-09-18
 *   SRBminer v2.6.5 (Added algorithm `astrixhash` for GPU mining AIX/Astrix Network coin on AMD/Nvidia/Intel GPUs, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   Rigel miner v1.19.1 (Minor 2-3% performance improvements on `pyrinhashv2` for Ampere GPUs and newer; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.19.1)
