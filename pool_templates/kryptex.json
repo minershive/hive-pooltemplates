@@ -137,6 +137,33 @@
                 "ssl_urls": [
                     "kas.kryptex.network:8888"
                 ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "kas-sg.kryptex.network:7011"
+                ],
+                "ssl_urls": [
+                    "kas-sg.kryptex.network:8011"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "kas-us.kryptex.network:7011"
+                ],
+                "ssl_urls": [
+                    "kas-us.kryptex.network:8011"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "kas-br.kryptex.network:7011"
+                ],
+                "ssl_urls": [
+                    "kas-br.kryptex.network:8011"
+                ]
             }
         ],
         "miners": {
@@ -273,6 +300,33 @@
                 "ssl_urls": [
                     "alph.kryptex.network:8888"
                 ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "alph-sg.kryptex.network:7010"
+                ],
+                "ssl_urls": [
+                    "alph-sg.kryptex.network:8010"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "alph-us.kryptex.network:7010"
+                ],
+                "ssl_urls": [
+                    "alph-us.kryptex.network:8010"
+                ]
+            },
+            {
+                "geo": "Brazil",
+                "urls": [
+                    "alph-br.kryptex.network:7010"
+                ],
+                "ssl_urls": [
+                    "alph-br.kryptex.network:8010"
+                ]
             }
         ],
         "miners": {
@@ -291,32 +345,32 @@
                     "nir.kryptex.network:8888"
                 ]
             }
-		],
-		"miners": {
-			"t-rex": {
-				"url": "%URL%",
-				"algo": "progpowz",
-				"template": "%WAL%/%WORKER_NAME%"
-			},
-			"wildrig-multi": {
-				"url": "stratum+tcp://%URL%",
-				"algo": "progpowz",
-				"template": "%WAL%/%WORKER_NAME%",
-				"user_config": ""
-			},
-			"tt-miner":{
-				"user_config":"-c ZANO -o %URL% -u %WAL%/%WORKER_NAME%"
-			},
-			"miniz": {
-				"user_config":"--par=ProgPowZ --server=%URL% --user=%WAL%/%WORKER_NAME%"
-			},
-			"srbminer": {
-				"url": "%URL%",
-				"algo": "progpow_zano",
-				"template": "%WAL%/%WORKER_NAME%",
-				"user_config": "--disable-cpu"
-			}
-		}
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "%URL%",
+                "algo": "progpowz",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "progpowz",
+                "template": "%WAL%/%WORKER_NAME%",
+                "user_config": ""
+            },
+            "tt-miner":{
+                "user_config":"-c ZANO -o %URL% -u %WAL%/%WORKER_NAME%"
+            },
+            "miniz": {
+                "user_config":"--par=ProgPowZ --server=%URL% --user=%WAL%/%WORKER_NAME%"
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "progpow_zano",
+                "template": "%WAL%/%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            }
+        }
     },
     {
         "coin": "SDR",
@@ -367,6 +421,23 @@
         ],
         "miners": {
             "_prototype": "miners_ethash"
+        }
+    },
+    {
+        "coin": "RXD",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "rxd.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "rxd.kryptex.network:8888"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_radiant"
         }
     },
     {
