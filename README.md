@@ -232,6 +232,7 @@ miners_firopow | firopow |  |
 miners_fishhash | fishhash |  | 
 miners_ghostrider | ghostrider |  | 
 miners_hmq1725 | hmq1725 |  | 
+miners_hoohash | hoohash |  | 
 miners_ironfish | ironfish |  | 
 miners_karlsenhash | karlsenhash |  | 
 miners_karlsenhashv2 | karlsenhashv2 |  Karlsen post-HF algorithm v2| 

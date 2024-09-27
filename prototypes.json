@@ -1667,7 +1667,7 @@
         "srbminer": {
             "url": "%URL%",
             "algo": "pyrinhash",
-            "template": "%WAL%",
+            "template": "%WAL%.%WORKER_NAME%",
             "user_config": "--disable-cpu"
         }
     },
@@ -1693,6 +1693,15 @@
             "port": "%URL_PORT%",
             "server": "%URL_HOST%",
             "template": "%WAL%.%WORKER_NAME%"
+        }
+    },
+
+    "miners_hoohash": {
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "hoohash",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--disable-cpu"
         }
     },
 
