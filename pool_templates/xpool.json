@@ -58,44 +58,26 @@
     "miners": {
     "_prototype": "miners_kawpow"
     }
-  },
+  },	
   {
-    "coin": "CMS",
-    "servers": [
+     "coin": "BETG",
+     "servers": [
       {
-        "geo": "Europe Diff > 1",
+        "geo": "EU",
         "urls": [
-          "cms.eu.xpool.pw:20072"
+        "dint.eu.xpool.pw:20090"
         ]
       },
       {
-        "geo": "Europe Diff > 3",
+        "geo": "Asia",
         "urls": [
-          "cms.eu.xpool.pw:20073"
-        ]
-      },	    
-      {
-        "geo": "Asia Diff > 1",
-        "urls": [
-          "cms.sg.xpool.pw:20072"
-        ]
-      },	    
-      {
-        "geo": "Asia Diff > 3",
-        "urls": [
-          "cms.sg.xpool.pw:20073"
+        "dint.sg.xpool.pw:20090"
         ]
       },
       {
-        "geo": "USA Diff > 1",
+        "geo": "USA",
         "urls": [
-          "cms.us.xpool.pw:20072"
-        ]
-      },
-      {
-        "geo": "USA Diff > 3",
-        "urls": [
-          "cms.us.xpool.pw:20073"
+        "dint.us.xpool.pw:20090"
         ]
       }
      ],
@@ -154,26 +136,70 @@
     "miners": {
     "_prototype": "miners_kawpow"
     }
-  },
+  },  
   {
-     "coin": "GPN",
+     "coin": "BITS",
      "servers": [
       {
         "geo": "EU",
         "urls": [
-        "eu.xpool.pw:20011"
+        "eu.xpool.pw:8040"
+        ]
+      },
+      {
+        "geo": "EU dif 3",
+        "urls": [
+        "eu.xpool.pw:8041"
         ]
       },
       {
         "geo": "Asia",
         "urls": [
-        "sg.xpool.pw:20011"
+        "sg.xpool.pw:8040"
+        ]
+      },
+      {
+        "geo": "Asia dif 3",
+        "urls": [
+        "sg.xpool.pw:8041"
         ]
       },
       {
         "geo": "USA",
         "urls": [
-        "us.xpool.pw:20011"
+        "us.xpool.pw:8040"
+        ]
+      },
+      {
+        "geo": "USA dif 3",
+        "urls": [
+        "us.xpool.pw:8041"
+        ]
+      }
+     ],
+    "miners": {
+    "_prototype": "miners_ethash"
+    }
+  },
+  {
+     "coin": "RVH",
+     "servers": [
+      {
+        "geo": "EU",
+        "urls": [
+        "eu.xpool.pw:20080"
+        ]
+      },
+      {
+        "geo": "Asia",
+        "urls": [
+        "sg.xpool.pw:20080"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+        "us.xpool.pw:20080"
         ]
       }
       ],
@@ -383,6 +409,55 @@
         "rigel": {
            "url": "%URL%",
            "algo": "karlsenhash",
+           "pass": "x",
+           "template": "%WAL%.%WORKER_NAME%"
+        }
+    }
+  },
+  {
+     "coin": "KASV2",
+     "servers": [
+      {
+        "geo": "USA",
+        "urls": [
+        "us.xpool.pw:30050"
+        ]
+      },
+      {
+        "geo": "EU",
+        "urls": [
+        "eu.xpool.pw:30050"
+        ]
+      },
+      {
+        "geo": "ASIA",
+        "urls": [
+        "sg.xpool.pw:30050"
+        ]
+      },
+      {
+        "geo": "USA DIF 64",
+        "urls": [
+        "us.xpool.pw:30051"
+        ]
+      },
+      {
+        "geo": "EU DIF 64",
+        "urls": [
+        "eu.xpool.pw:30051"
+        ]
+      },
+      {
+        "geo": "ASIA DIF 64",
+        "urls": [
+        "sg.xpool.pw:30051"
+        ]
+      } 
+     ],
+    "miners": {
+        "rigel": {
+           "url": "%URL%",
+           "algo": "kaspa",
            "pass": "x",
            "template": "%WAL%.%WORKER_NAME%"
         }
