@@ -1,7 +1,10 @@
+##### 0.6-227@241017 2024-10-17
+*   SRBminer v2.6.9 (Added algorithm `walahash` for mining Waglayla coinon AMD/Nvidia/Intel GPUs, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-227@241015 2024-10-15
 *   OneZeroMiner v1.4.1 (Performance improvement for AMD RDNA GPUs on Xelis mining; Minor improvement for AMD VEGA GPUs on Xelis mining; Add AMD "Polaris" support for Xelis mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.4.1)
 *   BzMiner v21.5.1 (New dual modes: IRON/KLS +WART; Slightly improved Ironfish on Nvidia; Various bug fixes; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.5.1)
-*   SRBminer v2.6.8 (Added algorithm `nxlhash` for Nexell-AI coi) for  mining on AMD/Nvidia/Intel GPUs, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   SRBminer v2.6.8 (Added algorithm `nxlhash` for Nexell-AI coin for  mining on AMD/Nvidia/Intel GPUs, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   NanoMiner v3.9.3 (Added `karlsenhashv2` algo; NOTES: Please, see full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.9.3)
 *   TeamBlackMiner v2.27 (Up to 33% faster DAG on older Nvidia GPUs on progpow-like algos; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.27)
 
