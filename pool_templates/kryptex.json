@@ -222,23 +222,6 @@
         }
     },
     {
-        "coin": "PYI",
-        "servers": [
-            {
-                "geo": "Global",
-                "urls": [
-                    "pyi.kryptex.network:7777"
-                ],
-                "ssl_urls": [
-                    "pyi.kryptex.network:8888"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_pyrinhashv2"
-        }
-    },
-    {
         "coin": "XNA",
         "servers": [
             {
@@ -434,6 +417,33 @@
                 "ssl_urls": [
                     "rxd.kryptex.network:8888"
                 ]
+            },
+			{
+                "geo": "Asia",
+                "urls": [
+                    "rxd-sg.kryptex.network:7012"
+                ],
+                "ssl_urls": [
+                    "rxd-sg.kryptex.network:8012"
+                ]
+            },
+			{
+                "geo": "USA",
+                "urls": [
+                    "rxd-us.kryptex.network:7012"
+                ],
+                "ssl_urls": [
+                    "rxd-us.kryptex.network:8012"
+                ]
+            },
+			{
+                "geo": "Brazil",
+                "urls": [
+                    "rxd-br.kryptex.network:7012"
+                ],
+                "ssl_urls": [
+                    "rxd-br.kryptex.network:8012"
+                ]
             }
         ],
         "miners": {
@@ -464,6 +474,40 @@
                 "geo": "Global",
                 "urls": [
                     "btc.kryptex.network:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "bch.kryptex.network:7777"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "LTC",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "ltc.kryptex.network:7777"
                 ]
             }
         ],
