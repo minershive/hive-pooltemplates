@@ -1,3 +1,6 @@
+##### 0.6-227@241125 2024-11-25
+*   WildRig v0.41.2 (Add `phihash` algorithm; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-227@241122 2024-11-22
 *   lolMiner v1.92 (Added support `octopus` algo to mine Conflux on AMD Vega and newer GPUs; NOTES: Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.92)
 *   SRBMiner v2.7.1 (Updates dual modes for `hoohash`; Added algorithm `progpow_quai` for GPU mining, fee 0.85% NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
