@@ -1,4 +1,9 @@
-##### 0.6-227@240926 2024-09-26
+##### 0.6-227@241127 2024-11-27
+*   Rigel miner v1.19.3 (Fixed `kawpow` algorithm which is broken in v1.19.2; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+*   SRBMiner v2.7.2 ( Added algorithm `yespowerdogemone` for mining Dogemone coin on CPU, fee 0.85%; Added support for dual mining KARLSENHASHV2/BLAKE3_DECRED on AMD RDNA/RDNA2/RDNA3, Nvidia and Intels GPUs; Fixed broken progpow algorithms on AMD VEGA GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.41.4 (Fixed crash on big Nvidia rigs (8+ GPUs) for progpow family algorithms; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+  
+##### 0.6-227@241126 2024-11-26
 *   Rigel miner v1.19.2 (Improved performance `xelishashv2` for mining XEL/Xelis on Nvidia CMP 170HX up to ~17%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
 
 ##### 0.6-227@241125 2024-11-25
