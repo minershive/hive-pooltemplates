@@ -1,3 +1,7 @@
+##### 0.6-227@241210 2024-12-10
+*   OneZeroMiner v1.4.3 (Performance improvement on Nvidia cards on XEL/`Xelis` mining; Minor performance on XEL/`Xelis` mining mprovement on some AMD cards; Some bugs fixes on Dynex mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.4.3)
+*   miniZ v2.4d2 (Fixed memory leak on ProgPow family algorithms; Added support for `meowpow` algo for mining MEWC/MeowCoin, fee 1%; NOTES: Please, see full changelog at https://miniz.cc/2024/12/10/miniz-v24d2-is-out)
+
 ##### 0.6-227@241206 2024-12-06
 *   WildRig v0.41.5 (Fixed crash on mixed rigs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
   
