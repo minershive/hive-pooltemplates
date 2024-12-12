@@ -19,6 +19,28 @@
             }
         }
     },
+
+    {
+        "coin": "LTC",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "scrypt.auto.nicehash.com:9200"
+                ],
+                "ssl_urls": [
+                    "scrypt.auto.nicehash.com:443"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+
     {
         "coin": "Nicehash-SHA256",
         "servers": [
@@ -546,6 +568,7 @@
                 "algo": "x16r"
             }
         }
+
     },
     {
         "coin": "Nicehash-SHA256AsicBoost",
@@ -567,6 +590,28 @@
             }
         }
     },
+
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "sha256asicboost.auto.nicehash.com:9200"
+                ],
+                "ssl_urls": [
+                    "sha256asicboost.auto.nicehash.com:443"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+
     {
         "coin": "Nicehash-Zhash",
         "servers": [

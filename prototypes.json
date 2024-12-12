@@ -100,6 +100,13 @@
             "algo": "octopus",
             "template": "%WAL%.%WORKER_NAME%",
             "pass": "x"
+        },
+        "lolminer": {
+            "algo": "OCTOPUS",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
         }
     },
 
@@ -196,6 +203,28 @@
             "url": "%URL%",
             "algo": "ergo",
             "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        }
+    },
+
+    "miners_autolykos2_blocx": {
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "blocx_autolykos2",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%",
+            "user_config": "--disable-cpu"
+        },
+        "rigel": {
+            "url": "%URL%",
+            "algo": "autolykos2",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--coin blocx"
+        },
+        "lolminer": {
+            "algo": "AUTOLYKOS2",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
         }
     },
 
@@ -1581,6 +1610,31 @@
         }
     },
 
+
+    "miners_karlsenhashv2": {
+        "srbminer":{
+            "url":"%URL%",
+            "algo":"karlsenhashv2",
+            "pass":"x",
+            "template":"%WAL%.%WORKER_NAME%",
+            "user_config": "--disable-cpu"
+        },
+
+        "rigel": {
+            "url": "%URL%",
+            "algo": "karlsenhashv2",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
+        "lolminer": {
+            "algo": "KARLSENV2",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
+    },
+
     "miners_pyrinhash": {
         "lolminer": {
             "algo": "PYRIN",
@@ -1620,7 +1674,41 @@
         "srbminer": {
             "url": "%URL%",
             "algo": "pyrinhash",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "--disable-cpu"
+        }
+    },
+
+    "miners_pyrinhashv2": {
+        "rigel": {
+            "url": "%URL%",
+            "algo": "pyrinhashv2",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "pyrinhashv2",
             "template": "%WAL%",
+            "user_config": "--disable-cpu",
+            "ver": "2.6.8"
+        },
+
+        "lolminer": {
+            "algo": "PYRINV2",
+            "dalgo": "PYRINV2DUAL",
+            "pass": "x",
+            "port": "%URL_PORT%",
+            "server": "%URL_HOST%",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
+    },
+
+    "miners_hoohash": {
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "hoohash",
+            "template": "%WAL%.%WORKER_NAME%",
             "user_config": "--disable-cpu"
         }
     },

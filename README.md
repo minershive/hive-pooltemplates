@@ -216,6 +216,7 @@ miners_alephium | alephium |  |
 miners_astrobwt | astrobwt | V3 implementation | 
 miners_autolykos2 | autolykos2 |  | 
 miners_autolykos2_slash_email | autolykos2_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
+miners_autolykos2_blocx | autolykos2 | variant for mining BLOCX coin | 
 miners_beamhash | beamhash |  | 
 miners_cryptonight_gpu | cryptonight_gpu |  | 
 miners_cryptonight_r | cryptonight_r |  | 
@@ -231,8 +232,10 @@ miners_firopow | firopow |  |
 miners_fishhash | fishhash |  | 
 miners_ghostrider | ghostrider |  | 
 miners_hmq1725 | hmq1725 |  | 
+miners_hoohash | hoohash |  | 
 miners_ironfish | ironfish |  | 
 miners_karlsenhash | karlsenhash |  | 
+miners_karlsenhashv2 | karlsenhashv2 |  Karlsen post-HF algorithm v2| 
 miners_kaspa | kaspa |  | 
 miners_kawpow | kawpow |  | 
 miners_kawpow_slash_email | kawpow_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
@@ -245,6 +248,7 @@ miners_olhash | olhash |  |
 miners_progpow_sero | progpow_sero |  | 
 miners_progpow_zano | progpow_zano |  | 
 miners_pyrinhash | pyrinhash | HeavyHash variant Pyrin| 
+miners_pyrinhashv2 | pyrinhashv2 | Pyrin post-HF v2| 
 miners_radiant | radiant |  |  
 miners_randomhash2_with_email | randomhash2_with_email | Nanopool format "WALLET.WORKER/EMAIL" | 
 miners_randomx | randomx | Nicehash format "wallet.worker" | 
