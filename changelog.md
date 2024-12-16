@@ -1,3 +1,11 @@
+##### 0.6-228@241216 2024-12-16
+*   `HIVEON OS LINUX CLIENT v0.6-228`
+*   Update `nvtool` to v1.85 (add option `--maxtemp` to show max GPU temp)
+*   Small improvements and fixes on supporting Nvidia GPUs (Add display GPU max temp to `nvidia-info`; Add workaround to fix setting PL on laptop chips on the latest drivers)
+*   Small improvements and fixes on supporting AMD GPUs (Add support ROCm v6.0; Fixed some AMD GPUs reporting issues on latest drivers)
+*   Add support reporting temp & fan speed on Intel dGPUs on newer kernel modules
+*   Other minor improvements & fixes
+
 ##### 0.6-227@241210 2024-12-10
 *   OneZeroMiner v1.4.3 (Performance improvement on Nvidia cards on XEL/`Xelis` mining; Minor performance on XEL/`Xelis` mining mprovement on some AMD cards; Some bugs fixes on Dynex mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.4.3)
 *   miniZ v2.4d2 (Fixed memory leak on ProgPow family algorithms; Added support for `meowpow` algo for mining MEWC/MeowCoin, fee 1%; NOTES: Please, see full changelog at https://miniz.cc/2024/12/10/miniz-v24d2-is-out)
