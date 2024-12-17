@@ -1,0 +1,339 @@
+[
+  {
+    "pool": {
+      "name": "BlockMinerz.Com",
+      "url": "https://blockminerz.com",
+      "fee": 1,
+      "type": "SOLO"
+    }
+  },
+  {
+    "coin": "AVN-MinotaurX",
+    "servers": [
+      {
+        "geo": "EU CPU - Recommended",
+        "urls": ["eu-stratum.blockminerz.com:3505"],
+        "ssl_urls": ["eu-stratum.blockminerz.com:3605"]
+      },
+      {
+        "geo": "EU CPU Farm - High Power",
+        "urls": ["eu-stratum.blockminerz.com:3805"]
+      },
+      {
+        "geo": "CA CPU - Recommended",
+        "urls": ["ca-stratum.blockminerz.com:3505"],
+        "ssl_urls": ["ca-stratum.blockminerz.com:3605"]
+      },
+      {
+        "geo": "CA CPU Farm - High Power",
+        "urls": ["ca-stratum.blockminerz.com:3805"]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "%URL%",
+        "algo": "minotaurx",
+        "template": "%WAL%.%WORKER_NAME%",
+        "fork": "rplant"
+      }
+    }
+  },
+  {
+    "coin": "AVN-X16RT",
+    "servers": [
+      {
+        "geo": "EU GPU RIG - Recommended",
+        "urls": ["eu-stratum.blockminerz.com:3504"],
+        "ssl_urls": ["eu-stratum.blockminerz.com:3604"]
+      },
+      {
+        "geo": "EU GPU Farm - High Power",
+        "urls": ["eu-stratum.blockminerz.com:3804"]
+      },
+      {
+        "geo": "CA GPU RIG - Recommended",
+        "urls": ["ca-stratum.blockminerz.com:3504"],
+        "ssl_urls": ["ca-stratum.blockminerz.com:3604"]
+      },
+      {
+        "geo": "CA GPU Farm - High Power",
+        "urls": ["ca-stratum.blockminerz.com:3804"]
+      }
+    ],
+    "miners": {
+      "t-rex": {
+        "ver": "0.19.14-cuda111",
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "x16rt"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "x16rt",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "BLOCX",
+    "servers": [
+      {
+        "geo": "EU GPU - Recommended",
+        "urls": ["eu-stratum.blockminerz.com:3502"],
+        "ssl_urls": ["eu-stratum.blockminerz.com:3602"]
+      },
+      {
+        "geo": "EU GPU Farm - High Power",
+        "urls": ["eu-stratum.blockminerz.com:3802"]
+      },
+      {
+        "geo": "CA GPU - Recommended",
+        "urls": ["ca-stratum.blockminerz.com:3502"],
+        "ssl_urls": ["ca-stratum.blockminerz.com:3602"]
+      },
+      {
+        "geo": "CA GPU Farm - High Power",
+        "urls": ["ca-stratum.blockminerz.com:3802"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_autolykos2_blocx"
+    }
+  },
+  {
+    "coin": "DGB-SHA256",
+    "servers": [
+      {
+        "geo": "EU ASIC - Recommended",
+        "urls": ["eu-stratum.blockminerz.com:3511"],
+        "ssl_urls": ["eu-stratum.blockminerz.com:3611"]
+      },
+      {
+        "geo": "EU ASIC Farm - High Power",
+        "urls": ["eu-stratum.blockminerz.com:3811"]
+      },
+      {
+        "geo": "CA ASIC - Recommended",
+        "urls": ["ca-stratum.blockminerz.com:3511"],
+        "ssl_urls": ["ca-stratum.blockminerz.com:3611"]
+      },
+      {
+        "geo": "CA ASIC Farm - High Power",
+        "urls": ["ca-stratum.blockminerz.com:3811"]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "sha256",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "sgminer-gm": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "sha256",
+        "template": "%WAL%.%WORKER_NAME%",
+        "CAer_config": "-I 21 \n-w 64 \n-g 2"
+      }
+    }
+  },
+  {
+    "coin": "EVR",
+    "servers": [
+      {
+        "geo": "EU GPU - Recommended",
+        "urls": ["eu-stratum.blockminerz.com:3507"],
+        "ssl_urls": ["eu-stratum.blockminerz.com:3607"]
+      },
+      {
+        "geo": "EU GPU Farm - High Power",
+        "urls": ["eu-stratum.blockminerz.com:3807"]
+      },
+      {
+        "geo": "CA GPU - Recommended",
+        "urls": ["ca-stratum.blockminerz.com:3507"],
+        "ssl_urls": ["ca-stratum.blockminerz.com:3607"]
+      },
+      {
+        "geo": "CA GPU Farm - High Power",
+        "urls": ["ca-stratum.blockminerz.com:3807"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_evrprogpow",
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "evrprogpow",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "KCN",
+    "servers": [
+      {
+        "geo": "EU CPU - Recommended",
+        "urls": ["eu-stratum.blockminerz.com:3503"],
+        "ssl_urls": ["eu-stratum.blockminerz.com:3603"]
+      },
+      {
+        "geo": "EU CPU Farm - High Power",
+        "urls": ["eu-stratum.blockminerz.com:3803"]
+      },
+      {
+        "geo": "CA CPU - Recommended",
+        "urls": ["ca-stratum.blockminerz.com:3503"],
+        "ssl_urls": ["ca-stratum.blockminerz.com:3503"]
+      },
+      {
+        "geo": "CA CPU Farm - High Power",
+        "urls": ["ca-stratum.blockminerz.com:3803"]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "flex",
+        "pass": "LCN=lcn_wallet_address.worker_name",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "MEWC",
+    "servers": [
+      {
+        "geo": "EU GPU - Recommended",
+        "urls": ["eu-stratum.blockminerz.com:3508"],
+        "ssl_urls": ["eu-stratum.blockminerz.com:3608"]
+      },
+      {
+        "geo": "EU GPU Farm - High Power",
+        "urls": ["eu-stratum.blockminerz.com:3808"]
+      },
+      {
+        "geo": "CA GPU - Recommended",
+        "urls": ["ca-stratum.blockminerz.com:3508"],
+        "ssl_urls": ["ca-stratum.blockminerz.com:3608"]
+      },
+      {
+        "geo": "CA GPU Farm - High Power",
+        "urls": ["ca-stratum.blockminerz.com:3808"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_meowpow"
+    }
+  },
+  {
+    "coin": "RDX",
+    "servers": [
+      {
+        "geo": "EU GPU RIG - Recommended",
+        "urls": ["eu-stratum.blockminerz.com:3501"],
+        "ssl_urls": ["eu-stratum.blockminerz.com:3601"]
+      },
+      {
+        "geo": "EU GPU Farm - High Power",
+        "urls": ["eu-stratum.blockminerz.com:3801"]
+      },
+      {
+        "geo": "CA GPU RIG - Recommended",
+        "urls": ["ca-stratum.blockminerz.com:3501"],
+        "ssl_urls": ["ca-stratum.blockminerz.com:3601"]
+      },
+      {
+        "geo": "CA GPU Farm - High Power",
+        "urls": ["ca-stratum.blockminerz.com:3801"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_radiant"
+    }
+  },
+  {
+    "coin": "RTM",
+    "servers": [
+      {
+        "geo": "EU CPU GPU RIG - Recommended",
+        "urls": ["eu-stratum.blockminerz.com:3510"],
+        "ssl_urls": ["eu-stratum.blockminerz.com:3610"]
+      },
+      {
+        "geo": "EU CPU GPU Farm - High Power",
+        "urls": ["eu-stratum.blockminerz.com:3810"]
+      },
+      {
+        "geo": "CA CPU GPU RIG - Recommended",
+        "urls": ["ca-stratum.blockminerz.com:3510"],
+        "ssl_urls": ["ca-stratum.blockminerz.com:3610"]
+      },
+      {
+        "geo": "CA CPU GPU Farm - High Power",
+        "urls": ["ca-stratum.blockminerz.com:3810"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ghostrider"
+    }
+  },
+  {
+    "coin": "TLS",
+    "servers": [
+      {
+        "geo": "EU GPU - Recommended",
+        "urls": ["eu-stratum.blockminerz.com:3506"],
+        "ssl_urls": ["eu-stratum.blockminerz.com:3606"]
+      },
+      {
+        "geo": "EU GPU Farm - High Power",
+        "urls": ["eu-stratum.blockminerz.com:3806"]
+      },
+      {
+        "geo": "CA GPU - Recommended",
+        "urls": ["ca-stratum.blockminerz.com:3506"],
+        "ssl_urls": ["ca-stratum.blockminerz.com:3606"]
+      },
+      {
+        "geo": "CA GPU Farm - High Power",
+        "urls": ["ca-stratum.blockminerz.com:3806"]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "progpow_telestai"
+      }
+    }
+  },
+  {
+    "coin": "VTC",
+    "servers": [
+      {
+        "geo": "EU GPU RIG - Recommended",
+        "urls": ["eu-stratum.blockminerz.com:3509"],
+        "ssl_urls": ["eu-stratum.blockminerz.com:3609"]
+      },
+      {
+        "geo": "EU GPU Farm - High Power",
+        "urls": ["eu-stratum.blockminerz.com:3809"]
+      },
+      {
+        "geo": "CA GPU RIG - Recommended",
+        "urls": ["ca-stratum.blockminerz.com:3509"],
+        "ssl_urls": ["ca-stratum.blockminerz.com:3609"]
+      },
+      {
+        "geo": "CA GPU Farm - High Power",
+        "urls": ["ca-stratum.blockminerz.com:3809"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_verthash"
+    }
+  }
+]
