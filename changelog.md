@@ -1,3 +1,7 @@
+##### 0.6-228@241219 2024-12-19
+*   miniZ v2.4e (Added support for `fishhash` algo for AMD and NVIDIA GPUs, fee 1%; Added support for `meraki` algo for mining TLS/Telestai coin on AMD and and NVIDIA GPUs, fee 1%; Added support for `nxlhash` algo for mining NXL/Nexell-AI coin on AMD and and NVIDIA GPUs,fee 1%; Removed support for KarlsenHash and PyrinHash; NOTES: Please, see full changelog at https://miniz.cc/2024/12/15/miniz-v24e-is-out )
+*   WildRig v0.41.7 (Fixes & improvements on Intel GPUs support; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+  
 ##### 0.6-228@241216 2024-12-16
 *   `HIVEON OS LINUX CLIENT v0.6-228`
 *   Update `nvtool` to v1.85 (add option `--maxtemp` to show max GPU temp)
