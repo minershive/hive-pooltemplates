@@ -1,3 +1,8 @@
+##### 0.6-228@241223 2024-12-23
+*   SRBMiner v2.7.3 (Hashrate improvement for algorithms `walahash`/ `astrixhash`/ `nxlhash` on Nvidia CMP GPUs; Added support for 'hoohashv1' to mine coin PugDag; Various fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.41.8 (Slightly improved `phihash`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   BzMiner v22.0.0 (Add support mining `Blocx` coin; Add new dual modes: Ergo+Warthog and Blocx+Warthog on Nvidia GPUs; Bug fixes and optimizations, see details at https://github.com/bzminer/bzminer/releases)
+
 ##### 0.6-228@241219 2024-12-19
 *   miniZ v2.4e (Added support for `fishhash` algo for AMD and NVIDIA GPUs, fee 1%; Added support for `meraki` algo for mining TLS/Telestai coin on AMD and and NVIDIA GPUs, fee 1%; Added support for `nxlhash` algo for mining NXL/Nexell-AI coin on AMD and and NVIDIA GPUs,fee 1%; Removed support for KarlsenHash and PyrinHash; NOTES: Please, see full changelog at https://miniz.cc/2024/12/15/miniz-v24e-is-out )
 *   WildRig v0.41.7 (Fixes & improvements on Intel GPUs support; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
