@@ -1,3 +1,14 @@
+##### 0.6-229@241231 2024-12-31
+*   lolMiner v1.93 (Significantly improved core requirements and efficiency of AMD GPUs on mining `Conflux`; Added support to mine `Cortex` for AMD RX 7000 series; NOTES: Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.93)
+
+##### LINUX IMAGE RELEASE 0.6-229 2024-12-31
+*   Stable Image branch Ubuntu 22.04 LTS based ("jammy")
+*   Linux kernel: v6.6.60
+*   Nvidia driver: v550.142
+*   AMD OpenCL ROCm (kernel module):  v5.6.1 (v6.8.2411)
+*   Hive OS Linux GPU client: v0.6-229
+*   md5sum cc685377bf05f077336fb58b10798790
+
 ##### 0.6-229@241230 2024-12-30
 *   `HIVEON OS LINUX CLIENT v0.6-229`
 *   Minor improvements & fixes
