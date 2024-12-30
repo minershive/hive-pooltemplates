@@ -1,3 +1,7 @@
+##### 0.6-229@241230 2024-12-30
+*   `HIVEON OS LINUX CLIENT v0.6-229`
+*   Minor improvements & fixes
+
 ##### 0.6-228@241229 2024-12-29
 *   SRBMiner v2.7.4 (Added support for dual mining `fishahsh`+`walahash` on AMD RDNA and newer and Nvidia Turing and newer GPUs; Various fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig v0.41.9 (Stability fixes mainly for progpow family algorithms; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
