@@ -1,3 +1,6 @@
+##### 0.6-229@250105 2025-01-05
+*   Rigel miner v1.19.4 (Minor performance improvements on `xelishashv2` algorithm for Nvidia 30xx/40xx GPUs; Fixed extranonce error when mining `xelishashv2` on Nicehash; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+
 ##### 0.6-229@241231 2024-12-31
 *   lolMiner v1.93 (Significantly improved core requirements and efficiency of AMD GPUs on mining `Conflux`; Added support to mine `Cortex` for AMD RX 7000 series; NOTES: Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.93)
 
