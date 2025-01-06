@@ -151,7 +151,7 @@
 *   XMRig-MO v6.21.3-mo13 (Various fixes mostly for `flex` algo; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo13)
 *   TeamRedMiner: config generator fix (Fixed worker name processing for Abelian pools)
 
-##### LINUX IMAGE RELEASE 0.6-227 2024-05-30
+#####  ##### LINUX IMAGE RELEASE 0.6-227 2024-05-30
 *   New Stable Image branch Ubuntu 20.04 LTS based
 *   Distro base: Ubuntu v20.04.6 LTS
 *   Linux kernel: v6.1.90
@@ -494,6 +494,7 @@
 *   TT-Miner v2023.4.1 (See changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
 
 ##### 0.6-224@230909 2023-09-09
+*   `HIVEON OS LINUX CLIENT v0.6-224`
 *   Updated misc devices IDs and related tools (USB, PCI-E, AMD GPUs)
 *   Add support Nvidia driver v535 series (updated `nvtool` to v1.8.1 which fixes temperature sensors reading)
 *   Added support CUDA RTL v12.2 (`nvidia-driver-install` tool updated, added RTL v12.2.2)
@@ -743,6 +744,7 @@
 *   md5sum 765a4897e70f477b4166e7691b443ae9
 
 ##### 0.6-222@230404 2023-04-04
+*   `HIVEON OS LINUX CLIENT v0.6-222`
 *   Updated `nvtool` v1.8.0 (add PCI-E utilization along with output this info by `nvidia-info` tool)
 *   Improvements and fixes for `amd-ocl-install` tool (Please note tool still experimental so use at your own risk!)
 *   Fixed `disk-expand` on calculation size of partition to expand
@@ -830,6 +832,7 @@
 *   TeamBlackMiner v1.91 (Added support for `ETH+RVN`, `ETH+VTC` dual and tripple mining with zil; Bug fixes; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.91)
 
 ##### 0.6-221@230220 2023-02-20
+*   `HIVEON OS LINUX CLIENT v0.6-221`
 *   Added CUDA v12 support (add CUDA RT libs v12.0.1; updated `nvidia-driver-update` tool)
 *   Updated PCI/USB devices IDs
 *   Fixed Nvidia driver support on laptop GPUs
@@ -930,6 +933,7 @@
 *   cpuMiner-Opt-JayDDee v3.21.0 (Added `minotaurx` algo for stratum only; Prehash optimised 'blake256' & 'sha256' to ignore zero-padded data for AVX2 & AVX512; Other small improvements)
 
 ##### 0.6-220@221221 2022-12-21
+*   `HIVEON OS LINUX CLIENT v0.6-220`
 *   Updated `nvtool` to v1.7.8 (Implemented Nvidia CMP idle mode; Added support for Locked Core Clock for Pascal GPUs; Added support for Locked Memory Clock for Pascal and newer GPUs. Notes: If memory overclocking doesn't affect hashrate i.e. mining Kaspa then user can set MemClk offset as '-3000 MHz', as result memory clock will actually set to 810MHz with a significant reduction in energy consumption.  Experimental usage until dashboard is updated)
 *   Updated `NVFlash` to v5.792.0
 *   Updated `nvidia-info`
@@ -1164,6 +1168,7 @@
 *   CPUminer-Opt-JayDDee v3.20.2 (Bit rotation optimizations in Blake* for SSE2 & AVX2; Code cleanup in yescrypt)
 
 ##### 0.6-219@220802 2022-08-02
+*   `HIVEON OS LINUX CLIENT v0.6-219`
 *   Enhanced Web Console (improved color scheme; more convenient copy/paste functionality)
 *   Improved `hive-replace` tool (updated to v2.1: added new option `--select` for interactive replacing image on non-system disks; fixed compatibility with old 4.x kernels)
 *   Fixed `amdvbflasher` v4.100 (in some cases tool couldn't flash modded/non-native VBIOS due RSA signature checking even in force mode)
@@ -1230,6 +1235,7 @@
 *   XMRig-MO v6.18.0 MoneroOcean fork (Synced with XMRig v6.18.0)
 
 ##### 0.6-218@220615 2022-06-15
+*   `HIVEON OS LINUX CLIENT v0.6-218`
 *   Improved `hive-replace` tool (bumped to v2.0: greatly improved compatibility with Debian-based OS; HiveOS rig user password remains the same after replace; diagnostic msgs are sent to dashboard during replace; new option `--rigconf` to use supplied rig.conf for new image configuration; other minor improvements)
 *   Updated `nvtool` to v1.6.6 (added LHR detection and indication sign to the dashboard - added LHR to the end of GPU name, e.g. "GeForce RTX 3080 Ti LHR"; minor bug fixes and improvements)
 *   Updated AMD GPU BIOS Flasher Utility to v4.100  (added support Navi23/Navi24 GPUs)
@@ -1340,12 +1346,14 @@
 *   md5sum a9e813b7992deb9cb876eb25a04221ef
 
 ##### 0.6-217@220422 2022-04-22
+*   `HIVEON OS LINUX CLIENT v0.6-217`
 *   Fixed bug with AMD OC (overclocking for Radeon Pro VII and Radeon Pro W5700 applied incorrectly since the version v0.6-214)
 *   Minor system updates (updated PCI IDs to v2022.04.16: added new IDs eg. Nvidia RTX 3090 Ti, A4000H)
 *   NanoMiner v3.6.2 (significantly reduced stale Ethash shares on Nvidia GPUs)
 *   XMRigCC v3.2.1 XMRig fork (rebase upstream 6.17.1-dev; integrated XDagger Randomx variant `rx/xdag`; fixed Yadacoin `rx/yada` mining)
    
 ##### 0.6-216@220418 2022-04-18
+*   `HIVEON OS LINUX CLIENT v0.6-216`
 *   Small improvements (minor changes to ensure compatibility with newer Linux kernels and future OS Images; reworked miner installation and update procedure)
 *   Minor bug fixes
 
@@ -1358,6 +1366,7 @@
 *   PhoenixMiner 6.1b (Fixed an issue with expired SSL certificate that led to "certificate verify failed" errors; Now the miner will send SSL SNI host name which may be needed by some pools for SSL certificate validation. To go back to the old behavior (no SNI host name), use the new command-line parameter `-nosni`; Other small fixes; *Note: Beta version for testing purposes you should select version manually in miner settings*)
 
 ##### 0.6-215@220409 2022-04-09
+*   `HIVEON OS LINUX CLIENT v0.6-215`
 *   Updated `nvtool` to v1.6.1 (improved memory temperature reporting for GDDR6X memory; mem temp now reports by default from command line if sensor available)
 *   Added OC support for AMD BC-250 board (need new AMD driver)
 *   Updated CUDA RTL to v11.6.2
@@ -1382,6 +1391,7 @@
 *   XMRigCC v3.2 (rebase upstream 6.16.5-dev; added support mining DERO-HE: `astrobwt/v2` algorithm)
 
 ##### 0.6-214@220331 2022-03-31
+*   `HIVEON OS LINUX CLIENT v0.6-214`
 *   Improved Nvidia MEM Temp reporting (updated `nvtool` to v1.6.0: added memory temperature for GDDR6X; fixed vendor detection for HBM2 memory)
 *   Reworked GPU flashing procedure (updated `nvflash` to v5.728; reworked GPUs index mapping)
 *   Improved GPUs detection and overclocking (improved GPU detection; improved `amd-info` and `nvidia-info` tools: added ROM flashing support and disabled/mulfunction GPU info; now OC applies params per GPU without skipping disabled/missed/malfunction; Nvidia: disable P0 state forcing by default; AMD: small OC fixes/workarounds, added AMD Navi24 overclocking support /need new kernel driver/, updated amdgpu.ids to v2022.02.16, added support ASpeed onboard GPU used on some servers boards)
@@ -1668,6 +1678,7 @@
 *   CPUMiner-Opt: fixed display of statistics on the dashboard, broken in previous update
 
 ##### 0.6-212@211124 2021-11-24
+*   `HIVEON OS LINUX CLIENT v0.6-212`
 *   Added display temperature of memory for Nvidia GPUs equipped with HBM/HBM2 memory e.g. A100, CMP 170HX, etc
 *   Updated `nvtool` to v1.57 (added memory temperature reporting using option `--memtemp` for GPUs with HBM/HBM2 memory; added option `--throttle` to show throttle reason which also reported by `nvidia-info` tool, so you can look all info using it)
 *   Updated PCI IDs to v2021-11-20
@@ -1754,6 +1765,7 @@
 *   NBMiner v39.7 (added LHR mode support for new GA104 version of RTX 3060; fixed detection LHR lock on certain situation; fixed Nvidia GPU power consumption issue on certain rig config; removed support for mining `sero`)
 
 ##### 0.6-211@211029 2021-10-29
+*   `HIVEON OS LINUX CLIENT v0.6-211`
 *   Reduced power usage on AMD RDNA2 RX 6x00 series (Recommended SoC ranges to reduce power usage: clock: 800-960MHz, voltage: 800-900mV. **WARNING** Only change these settings if you know what you're doing!)
 *   Added OC support for AMD Radeon PRO cards: PRO VII (Vega20), V520 (Navi12), W6600 (Navi23)
 *   Fixed issue with fluctuating hashrate on some AMD RX 6800 (not XT)
@@ -1872,6 +1884,7 @@
 *   Gminer v2.67 BETA (partial LHR cards unlock without additional power consumption; use `--lhr 1` to force enable unlock for RTX 3060 V1; use `--lhr_tune1` / `lhr_tune2` to tune unlock parameters, positive values increase performance, negative values decrease probability of lock; *Note: added for testing purposes - need select version manually in miner settings while latest version is still v2.66*)
 
 ##### 0.6-210@210909 2021-09-09
+*   `HIVEON OS LINUX CLIENT v0.6-210`
 *   Improved Nvidia OC (improved support of fanless and mobile GPUs; updated nvtool to v1.5.5)
 *   Added support for AMD RX 6900 XT Ultimate (added definitions for AMD RX 6900 XTX/W6900X/RX 6700M/RX 6600M; added OC support for RX 6900 XTX known as Ultimate; fixed displaying name for RX 6700 XT with ASIC NAVI22 XTLH)
 *   Improved update process (added GPUs re-detection after update; added attempt to fix broken packages)
@@ -1910,6 +1923,7 @@
 *   AMD kernel driver v5.11.0701 with supporting the latest GPUs including AMD RX 6600 series
 
 ##### 0.6-208@210818 2021-08-18
+*   `HIVEON OS LINUX CLIENT v0.6-208`
 *   Fixed `agent` (in some cases overall rig stats was broken)
 *   Improvements and fixes for AMD GPUs overclocking (fixed OC for Tonga families GPUs, ex. FirePro S7150; added support OC/UV for "Navi23" RX 6600 series. *Notes about AMD RX 6600 series support: currently requires Beta image. Support will be added to the updated Stable image which will be uploaded in the next several hours*)
    
@@ -1925,6 +1939,7 @@
 *   T-Rex v0.21.6 (added last submitted share timestamp in API; improved compatibility with mining pools on `autolykos` algo; fixed "`fork-at`" option functionality)
 
 ##### 0.6-207@210808 2021-08-08
+*   `HIVEON OS LINUX CLIENT v0.6-207`
 *   updated `nvtool` to v1.5.4 (fixed memory detection for some GPU)
 *   updated PCI IDs definitions to v2021-07-30 (added Nvidia CMP 170HX)
 *   updated `amdmeminfo` to v2.1.10 (added FirePro S7150; minor fixes)
@@ -1946,6 +1961,7 @@
 *   Gminer v2.63 (fixed periodic miner restarts)
 
 ##### 0.6-206@210722 2021-07-22
+*   `HIVEON OS LINUX CLIENT v0.6-206`
 *   Updated `nvtool` to v1.5.2 (improves compatibility with Linux kernel 5.10 which is used on Latest Beta Image; fixed crash under X server terminal)
 *   Minor improvements for `sreboot` command (reboot immediately if root filesystem is already read-only; prevent hang on unmounting; fail safe reboot after 90 sec)
 *   Fixed some confirmed `amd-oc` bugs on Vega20/Navi10/Navi20 (fixed setting core voltage on some RX 6800; fixed reducing performance for Radeon VII with some user's OC settings; fixed processing OC user's settings which is out of range)
@@ -1972,6 +1988,7 @@
 *   AMD OpenCL v20.40
    
 ##### 0.6-205@210715 2021-07-15
+*   `HIVEON OS LINUX CLIENT v0.6-205`
 *   reworked overclocking procedure for AMD Vega20/Navi/BigNavi GPUs (extends acceptable limits for clocks and voltages, reworked BigNavi OC - need AMD kernel module v5.9.0501 or later, added software unlock to support OC/UV for Radeon Pro W5x00 GPUs, fixed bugs)
 *   updated `nvtool` to v1.5.0 (added option `--forcestate n` to support for P0 state forcing; web interface integration will be added soon)
 *   updated CUDA RT libs up to CUDA v11.3 (updated CUDA libs/driver version definition for `nvidia-driver-update`; updated CUDA RT libs from CUDA Toolkit v11.2.2, added CUDA RT libs from CUDA Toolkit v11.3.1)
@@ -2017,6 +2034,7 @@
 *   XMRigCC v2.94 (improved hashrate on RX based algorithms: synced improvements with v6.12.2; fixed invalid shared on panthera algo)
 
 ##### 0.6-204@210608 2021-06-08
+*   `HIVEON OS LINUX CLIENT v0.6-204`
 *   Improved Nvidia OC (improved memory clock setting; added checks for `nvidia-settings` errors)
 *   Added amdgpu version kernel driver display
 *   Updated some system tools (amdmeminfo, amdmemtweak, hugepages)
@@ -2137,6 +2155,7 @@
 *   AMD OpenCL v20.40
 
 ##### 0.6-203@210403 2021-04-03
+*   `HIVEON OS LINUX CLIENT v0.6-203`
 *   Hotfixes for v0.6-202 (fixed lack of video output to monitor on Nvidia GPUs; fixed CPU temp display for Zen3 arch/Ryzen 5000 series CPUs; other minor fixes)
 *   GMiner v2.50 Beta (improved beamhash performance up to 2%; improved cuckatoo32 performance up to 5%; added display of GPU model in statistics table; added `--worker` parameter to specify worker name for ETH pools thats doesn't support wallet.worker notation; added option `--log_date` to display date in log; added option `--log_stratum` to log stratum; display epoch and block number on new job; uses `--proto stratum` for NiceHash by default; bug fixes and stability improvements;  *Notes: added for testing purposes - need select version manually in miner settings*)
 *   Fixed SRBMiner-Multi stats in some dual algo modes
@@ -2145,6 +2164,7 @@
 *   NanoMiner v3.3.3 (faster dataset creation for Ergo coin/autolykos2 algo; added zombie mode for Ergo on 2 Gb GPUs both Nvidia and AMD; fixed issues with shardpool on Zilliqa)
    
 ##### 0.6-202@210331 2021-03-31
+*   `HIVEON OS LINUX CLIENT v0.6-202`
 *   Improved `agent` (introduced new command `tweakers` for testers; fixed VRAM size in VBIOS filenames)
 *   Improved support for 3rd-party hardware (added support for new Octofan controller)
 *   Updated Nvidia tools (Nvidia Flasher v5.692: adds RTX 3060 support, nvtool v1.4.0: added fixed core clocks option for Turing and Ampere)
@@ -2204,6 +2224,7 @@
 *   XMRig v6.10.0 (fixed many new job messages when solo mining; fixed crash in cn-heavy on Zen3 with manual thread count; fixed possible out of order write to log file)
 
 ##### 0.6-201@210306 2021-03-06
+*   `HIVEON OS LINUX CLIENT v0.6-201`
 *   Minor selfupgrade improvements (added option -c | --consolefont to change default text console font to more suitable version with correct pseudographics; added exit codes output for each apt command in case of errors during update process)
 *   Minor agent improvement (skip miner stats if no miner is running)
 *   Updated hive-replace (due End-Of-Life of Vega Images removed Vega image options)
@@ -2218,6 +2239,7 @@
 *   Verthasminer fixes (fixed miner uptime report)
 
 ##### 0.6-200@210301 2021-03-01
+*   `HIVEON OS LINUX CLIENT v0.6-200`
 *   Fixed AMD OC errors on when applied on "Big Navi"
 *   Improved stability hive-replace on some 3rd party hardware (added watchdog-octofan to exclude list)
 *   Improved nvidia-driver-update (added new option `--repo` for custom repository; prefer Hive servers for download by default; skip 32bit libs installation; internal optimizations)
