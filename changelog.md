@@ -1,3 +1,6 @@
+##### 0.6-229@250115 2025-01-15
+*   SRBMiner v2.7.5 (Added support for dual mining `autolykos2` + `walahash` on AMD RDNA and newer and Nvidia GPUs; Various fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250105 2025-01-05
 *   Rigel miner v1.19.4 (Minor performance improvements on `xelishashv2` algorithm for Nvidia 30xx/40xx GPUs; Fixed extranonce error when mining `xelishashv2` on Nicehash; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
 
