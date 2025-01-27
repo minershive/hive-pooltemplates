@@ -1,3 +1,8 @@
+##### 0.6-229@250126 2025-01-26
+*   lolMiner v1.94 (Added support `octopus` algo to mine CFX/Conflux on Nvidia GPUs; NOTES: Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.94)
+*   WildRig-Multi v0.42.0 (Initial support Nvidia Blackwell based GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   CPUminer-Opt-JayDDee v25.3 (Small bug fixes and code cleanups; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v25.3)
+
 ##### 0.6-229@250115 2025-01-15
 *   SRBMiner v2.7.5 (Added support for dual mining `autolykos2` + `walahash` on AMD RDNA and newer and Nvidia GPUs; Various fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
