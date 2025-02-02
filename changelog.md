@@ -1,3 +1,9 @@
+##### 0.6-229@250202 2025-02-02
+*   Rigel miner v1.20.0 (Add progpow's family alrorithm `quai` for mining QUAI/Quai Network, dev fee 1%; Fixed displayed memory temperatures on drivers 570+ series; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+*   SRBMiner v2.7.6 (Added algorithm `cryptixhash` for GPU mining CTYX/Cryptix Network on AMD, Nvidia & Intel GPUs, fee 1%; Added algorithm `phihash`  for GPU mining PHI/Phicoin on AMD&Nvidia, fee 0.85%; Updated algorithm `progpow_quai` to use mainnet parameters; Added support for Nvidia Blackwell architecture; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   lolMiner v1.94a (Fixed a bug causing CFX/Conflux mining to crash on some Nvidia GPUs e.g. Turing based GPUs; Fixed a bug causing Ethash / Etchash mining not to start on AMD Navi33 / gfx1102 GPUs e.g. RX 7600; NOTES: Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.94a)
+*   WildRig-Multi v0.42.2 (Fixed support Nvidia Blackwell based GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250126 2025-01-26
 *   lolMiner v1.94 (Added support `octopus` algo to mine CFX/Conflux on Nvidia GPUs; NOTES: Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.94)
 *   WildRig-Multi v0.42.0 (Initial support Nvidia Blackwell based GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
