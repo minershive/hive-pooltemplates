@@ -1,3 +1,6 @@
+##### 0.6-229@250203 2025-02-03
+*   Rigel miner v1.20.1 (Add RTX 50xx support; Fixed "failed to parse" stratum error on QUAI mining; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+
 ##### 0.6-229@250202 2025-02-02
 *   Rigel miner v1.20.0 (Add progpow's family alrorithm `quai` for mining QUAI/Quai Network, dev fee 1%; Fixed displayed memory temperatures on drivers 570+ series; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
 *   SRBMiner v2.7.6 (Added algorithm `cryptixhash` for GPU mining CTYX/Cryptix Network on AMD, Nvidia & Intel GPUs, fee 1%; Added algorithm `phihash`  for GPU mining PHI/Phicoin on AMD&Nvidia, fee 0.85%; Updated algorithm `progpow_quai` to use mainnet parameters; Added support for Nvidia Blackwell architecture; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
