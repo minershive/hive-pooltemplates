@@ -657,6 +657,53 @@
         }
     },
     {
+        "coin": "QUAI",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "quai.kryptex.network:7777"
+                ],
+                "ssl_urls": [
+                    "quai.kryptex.network:8888"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "quai-eu.kryptex.network:7035"
+                ],
+                "ssl_urls": [
+                    "quai-eu.kryptex.network:8035"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_progpow_quai",
+            "rigel": {
+            "algo": "quai",
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": "-a quai"
+            },
+            "srbminer": {
+            "algo": "progpow_quai",
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": ""
+            },
+            "wildrig": {
+            "algo": "progpow-quai",
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%",
+            "user_config": ""
+            }
+        }
+    },
+    {
         "coin": "BTC",
         "servers": [
             {
