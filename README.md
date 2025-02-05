@@ -218,6 +218,7 @@ miners_autolykos2 | autolykos2 |  |
 miners_autolykos2_slash_email | autolykos2_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
 miners_autolykos2_blocx | autolykos2 | variant for mining BLOCX coin | 
 miners_beamhash | beamhash |  | 
+miners_cryptixhash | cryptixhash |  | 
 miners_cryptonight_gpu | cryptonight_gpu |  | 
 miners_cryptonight_r | cryptonight_r |  | 
 miners_cryptonight_v8 | cryptonight_v8 |  | 
@@ -245,6 +246,7 @@ miners_minotaurx_jiimp | minotaurx_jiimp | JIIMP format |
 miners_nexapow | nexapow |  | 
 miners_octopus | octopus |  | 
 miners_olhash | olhash |  | 
+miners_progpow_quai | progpow_quai |  | 
 miners_progpow_sero | progpow_sero |  | 
 miners_progpow_zano | progpow_zano |  | 
 miners_pyrinhash | pyrinhash | HeavyHash variant Pyrin| 
