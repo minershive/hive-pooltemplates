@@ -245,6 +245,7 @@ miners_minotaurx_jiimp | minotaurx_jiimp | JIIMP format |
 miners_nexapow | nexapow |  | 
 miners_octopus | octopus |  | 
 miners_olhash | olhash |  | 
+miners_progpow_quai | progpow_quai |  | 
 miners_progpow_sero | progpow_sero |  | 
 miners_progpow_zano | progpow_zano |  | 
 miners_pyrinhash | pyrinhash | HeavyHash variant Pyrin| 
