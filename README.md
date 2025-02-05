@@ -218,6 +218,7 @@ miners_autolykos2 | autolykos2 |  |
 miners_autolykos2_slash_email | autolykos2_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
 miners_autolykos2_blocx | autolykos2 | variant for mining BLOCX coin | 
 miners_beamhash | beamhash |  | 
+miners_cryptixhash | cryptixhash |  | 
 miners_cryptonight_gpu | cryptonight_gpu |  | 
 miners_cryptonight_r | cryptonight_r |  | 
 miners_cryptonight_v8 | cryptonight_v8 |  | 
