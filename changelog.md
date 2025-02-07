@@ -1,3 +1,6 @@
+##### 0.6-229@250206 2025-02-06
+*   SRBMiner v2.7.7 (Added support for dual mining `fishhash`+`cryptixhash` on AMD RDNA/RDNA2/RDNA3, Nvidia Turing and newer; Added support for dual mining `autolykos2`/`blocx` + `crypixhash` on AMD RDNA/RDNA2/RDNA3, Nvidia GPUs; Minor performance improvement on NVIDIA 30xx series for algorithm `progpow_quai`; Sending stale shares on algorithm 'progpow_quai' is now enabled by default; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250203 2025-02-03
 *   Rigel miner v1.20.1 (Add RTX 50xx support; Fixed "failed to parse" stratum error on QUAI mining; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
 
