@@ -1,3 +1,6 @@
+##### 0.6-229@250218 2025-02-18
+*   SRBMiner v2.7.9 (Added algorithm `xehash` for mining XE / Xechain coin on AMD/Nvidia/Intel GPUs, fee 1%; Added algorithm `fphash` for mining Cyberchain coin on AMD/Nvidia/Intel GPUs, fee 1%; Added support for mining algorithm `cryptonight_gpu` on Intel GPUs; Fixes for AMD BC-250 on some algorithms incl. dual mining modes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250206 2025-02-06
 *   SRBMiner v2.7.7 (Added support for dual mining `fishhash`+`cryptixhash` on AMD RDNA/RDNA2/RDNA3, Nvidia Turing and newer; Added support for dual mining `autolykos2`/`blocx` + `crypixhash` on AMD RDNA/RDNA2/RDNA3, Nvidia GPUs; Minor performance improvement on NVIDIA 30xx series for algorithm `progpow_quai`; Sending stale shares on algorithm 'progpow_quai' is now enabled by default; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
