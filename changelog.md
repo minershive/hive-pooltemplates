@@ -1,3 +1,6 @@
+##### 0.6-229@250219 2025-02-19
+*   Rigel miner v1.21.0 (Add `progpowz` algorithm for mining ZANO, fee 1%; Improved performance `octopus` algorithm on mining CFX/Conflux for GPUs without tensor cores, e.g. Pascal, Volta, CMPs and minor efficiency improvements on the rest of the cards; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+
 ##### 0.6-229@250218 2025-02-18
 *   SRBMiner v2.7.9 (Added algorithm `xehash` for mining XE / Xechain coin on AMD/Nvidia/Intel GPUs, fee 1%; Added algorithm `fphash` for mining Cyberchain coin on AMD/Nvidia/Intel GPUs, fee 1%; Added support for mining algorithm `cryptonight_gpu` on Intel GPUs; Fixes for AMD BC-250 on some algorithms incl. dual mining modes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
