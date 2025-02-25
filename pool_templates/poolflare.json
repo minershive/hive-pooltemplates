@@ -1,5 +1,85 @@
 [
     {
+        "pool": {
+            "name": "Poolflare",
+            "url": "https://poolflare.net",
+            "fee": "2",
+            "type": "PPS/PPLNS/SOLO"
+        }
+    },
+
+    {
+        "coin": "KDA",
+        "servers": [
+            {
+                "geo": "Default",
+                "urls": [
+                    "kda.ss.poolflare.net:443"
+                ],
+                "geo": "Europe",
+                "urls": [
+                    "kda-eu.ss.poolflare.net:443"
+                ],
+                "geo": "Europe-2",
+                "urls": [
+                    "kda-eu2.ss.poolflare.net:443"
+                ],
+                "geo": "US",
+                "urls": [
+                    "kda-us.ss.poolflare.net:443"
+                ],
+                "geo": "US West",
+                "urls": [
+                    "kda-us-west.ss.poolflare.net:443"
+                ],
+                "geo": "US East",
+                "urls": [
+                    "kda-us-east.ss.poolflare.net:443"
+                ],
+                "geo": "Asia",
+                "urls": [
+                    "kda-asia.ss.poolflare.net:443"
+                ],
+
+                "geo": "Default (failover)",
+                "urls": [
+                    "kda.ss.poolflare.net:3333"
+                ],
+                "geo": "Europe (failover)",
+                "urls": [
+                    "kda-eu.ss.poolflare.net:3333"
+                ],
+                "geo": "Europe-2 (failover)",
+                "urls": [
+                    "kda-eu2.ss.poolflare.net:3333"
+                ],
+                "geo": "US (failover)",
+                "urls": [
+                    "kda-us.ss.poolflare.net:3333"
+                ],
+                "geo": "US West (failover)",
+                "urls": [
+                    "kda-us-west.ss.poolflare.net:3333"
+                ],
+                "geo": "US East (failover)",
+                "urls": [
+                    "kda-us-east.ss.poolflare.net:3333"
+                ],
+                "geo": "Asia (failover)",
+                "urls": [
+                    "kda-asia.ss.poolflare.net:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+
+    {
         "coin":"CFX",
         "servers":[
             {

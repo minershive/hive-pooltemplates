@@ -1,3 +1,172 @@
+##### 0.6-229@250219 2025-02-19
+*   Rigel miner v1.21.0 (Add `progpowz` algorithm for mining ZANO, fee 1%; Improved performance `octopus` algorithm on mining CFX/Conflux for GPUs without tensor cores, e.g. Pascal, Volta, CMPs and minor efficiency improvements on the rest of the cards; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+
+##### 0.6-229@250218 2025-02-18
+*   SRBMiner v2.7.9 (Added algorithm `xehash` for mining XE / Xechain coin on AMD/Nvidia/Intel GPUs, fee 1%; Added algorithm `fphash` for mining Cyberchain coin on AMD/Nvidia/Intel GPUs, fee 1%; Added support for mining algorithm `cryptonight_gpu` on Intel GPUs; Fixes for AMD BC-250 on some algorithms incl. dual mining modes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-229@250206 2025-02-06
+*   SRBMiner v2.7.7 (Added support for dual mining `fishhash`+`cryptixhash` on AMD RDNA/RDNA2/RDNA3, Nvidia Turing and newer; Added support for dual mining `autolykos2`/`blocx` + `crypixhash` on AMD RDNA/RDNA2/RDNA3, Nvidia GPUs; Minor performance improvement on NVIDIA 30xx series for algorithm `progpow_quai`; Sending stale shares on algorithm 'progpow_quai' is now enabled by default; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-229@250203 2025-02-03
+*   Rigel miner v1.20.1 (Add RTX 50xx support; Fixed "failed to parse" stratum error on QUAI mining; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+
+##### 0.6-229@250202 2025-02-02
+*   Rigel miner v1.20.0 (Add progpow's family alrorithm `quai` for mining QUAI/Quai Network, dev fee 1%; Fixed displayed memory temperatures on drivers 570+ series; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+*   SRBMiner v2.7.6 (Added algorithm `cryptixhash` for GPU mining CYTX/Cryptix Network on AMD, Nvidia & Intel GPUs, fee 1%; Added algorithm `phihash`  for GPU mining PHI/Phicoin on AMD&Nvidia, fee 0.85%; Updated algorithm `progpow_quai` to use mainnet parameters; Added support for Nvidia Blackwell architecture; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   lolMiner v1.94a (Fixed a bug causing CFX/Conflux mining to crash on some Nvidia GPUs e.g. Turing based GPUs; Fixed a bug causing Ethash / Etchash mining not to start on AMD Navi33 / gfx1102 GPUs e.g. RX 7600; NOTES: Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.94a)
+*   WildRig-Multi v0.42.2 (Fixed support Nvidia Blackwell based GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
+##### 0.6-229@250126 2025-01-26
+*   lolMiner v1.94 (Added support `octopus` algo to mine CFX/Conflux on Nvidia GPUs; NOTES: Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.94)
+*   WildRig-Multi v0.42.0 (Initial support Nvidia Blackwell based GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   CPUminer-Opt-JayDDee v25.3 (Small bug fixes and code cleanups; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases/tag/v25.3)
+
+##### 0.6-229@250115 2025-01-15
+*   SRBMiner v2.7.5 (Added support for dual mining `autolykos2` + `walahash` on AMD RDNA and newer and Nvidia GPUs; Various fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-229@250105 2025-01-05
+*   Rigel miner v1.19.4 (Minor performance improvements on `xelishashv2` algorithm for Nvidia 30xx/40xx GPUs; Fixed extranonce error when mining `xelishashv2` on Nicehash; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+
+##### 0.6-229@241231 2024-12-31
+*   lolMiner v1.93 (Significantly improved core requirements and efficiency of AMD GPUs on mining `Conflux`; Added support to mine `Cortex` for AMD RX 7000 series; NOTES: Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.93)
+
+##### LINUX IMAGE RELEASE 0.6-229 2024-12-31
+*   Stable Image branch Ubuntu 22.04 LTS based ("jammy")
+*   Linux kernel: v6.6.60
+*   Nvidia driver: v550.142
+*   AMD OpenCL ROCm (kernel module):  v5.6.1 (v6.8.2411)
+*   Hive OS Linux GPU client: v0.6-229
+*   md5sum cc685377bf05f077336fb58b10798790
+
+##### 0.6-229@241230 2024-12-30
+*   `HIVEON OS LINUX CLIENT v0.6-229`
+*   Minor improvements & fixes
+
+##### 0.6-228@241229 2024-12-29
+*   SRBMiner v2.7.4 (Added support for dual mining `fishahsh`+`walahash` on AMD RDNA and newer and Nvidia Turing and newer GPUs; Various fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.41.9 (Stability fixes mainly for progpow family algorithms; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
+##### 0.6-228@241223 2024-12-23
+*   SRBMiner v2.7.3 (Hashrate improvement for algorithms `walahash`/ `astrixhash`/ `nxlhash` on Nvidia CMP GPUs; Added support for 'hoohashv1' to mine coin PugDag; Various fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.41.8 (Slightly improved `phihash`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   BzMiner v22.0.0 (Add support mining `Blocx` coin; Add new dual modes: Ergo+Warthog and Blocx+Warthog on Nvidia GPUs; Bug fixes and optimizations, see details at https://github.com/bzminer/bzminer/releases)
+
+##### 0.6-228@241219 2024-12-19
+*   miniZ v2.4e (Added support for `fishhash` algo for AMD and NVIDIA GPUs, fee 1%; Added support for `meraki` algo for mining TLS/Telestai coin on AMD and and NVIDIA GPUs, fee 1%; Added support for `nxlhash` algo for mining NXL/Nexell-AI coin on AMD and and NVIDIA GPUs,fee 1%; Removed support for KarlsenHash and PyrinHash; NOTES: Please, see full changelog at https://miniz.cc/2024/12/15/miniz-v24e-is-out )
+*   WildRig v0.41.7 (Fixes & improvements on Intel GPUs support; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+  
+##### 0.6-228@241216 2024-12-16
+*   `HIVEON OS LINUX CLIENT v0.6-228`
+*   Update `nvtool` to v1.85 (add option `--maxtemp` to show max GPU temp)
+*   Small improvements and fixes on supporting Nvidia GPUs (Add display GPU max temp to `nvidia-info`; Add workaround to fix setting PL on laptop chips on the latest drivers)
+*   Small improvements and fixes on supporting AMD GPUs (Add support ROCm v6.0; Fixed some AMD GPUs reporting issues on latest drivers)
+*   Add support reporting temp & fan speed on Intel dGPUs on newer kernel modules
+*   Other minor improvements & fixes
+
+##### 0.6-227@241210 2024-12-10
+*   OneZeroMiner v1.4.3 (Performance improvement on Nvidia cards on XEL/`Xelis` mining; Minor performance on XEL/`Xelis` mining mprovement on some AMD cards; Some bugs fixes on Dynex mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.4.3)
+*   miniZ v2.4d2 (Fixed memory leak on ProgPow family algorithms; Added support for `meowpow` algo for mining MEWC/MeowCoin, fee 1%; NOTES: Please, see full changelog at https://miniz.cc/2024/12/10/miniz-v24d2-is-out)
+
+##### 0.6-227@241206 2024-12-06
+*   WildRig v0.41.5 (Fixed crash on mixed rigs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+  
+##### 0.6-227@241127 2024-11-27
+*   Rigel miner v1.19.3 (Fixed `kawpow` algorithm which is broken in v1.19.2; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+*   SRBMiner v2.7.2 ( Added algorithm `yespowerdogemone` for mining Dogemone coin on CPU, fee 0.85%; Added support for dual mining KARLSENHASHV2/BLAKE3_DECRED on AMD RDNA/RDNA2/RDNA3, Nvidia and Intels GPUs; Fixed broken progpow algorithms on AMD VEGA GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.41.4 (Fixed crash on big Nvidia rigs (8+ GPUs) for progpow family algorithms; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+  
+##### 0.6-227@241126 2024-11-26
+*   Rigel miner v1.19.2 (Improved performance `xelishashv2` for mining XEL/Xelis on Nvidia CMP 170HX up to ~17%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+
+##### 0.6-227@241125 2024-11-25
+*   WildRig v0.41.2 (Add `phihash` algorithm; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
+##### 0.6-227@241122 2024-11-22
+*   lolMiner v1.92 (Added support `octopus` algo to mine Conflux on AMD Vega and newer GPUs; NOTES: Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.92)
+*   SRBMiner v2.7.1 (Updates dual modes for `hoohash`; Added algorithm `progpow_quai` for GPU mining, fee 0.85% NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   OneZeroMiner v1.4.2 (Improved `xelis` mining performance on Nvidia CMP 170HX; Minor `xelis` mining performance improvements on AMD VEGAs; Lowered dev-fee to 2% on `dynex`; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.4.2)
+*   BzMiner v21.5.3 (Bug fixes and optimizations, see details at https://github.com/bzminer/bzminer/releases/tag/v21.5.3)
+*   WildRig v0.40.9 (Returned back `progpow-quai` with 0.75% dev-fee; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases/tag/0.40.9)
+*   XMRig v6.22.2 (Bug fixes, see details at https://github.com/xmrig/xmrig/releases/tag/v6.22.2)
+*   XMRig-MO v6.22.2-mo1 (Synced code with XMRig v6.22.2; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.22.2-mo1)
+
+##### 0.6-227@241017 2024-10-17
+*   SRBminer v2.6.9 (Added algorithm `walahash` for mining Waglayla coinon AMD/Nvidia/Intel GPUs, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-227@241015 2024-10-15
+*   OneZeroMiner v1.4.1 (Performance improvement for AMD RDNA GPUs on Xelis mining; Minor improvement for AMD VEGA GPUs on Xelis mining; Add AMD "Polaris" support for Xelis mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.4.1)
+*   BzMiner v21.5.1 (New dual modes: IRON/KLS +WART; Slightly improved Ironfish on Nvidia; Various bug fixes; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.5.1)
+*   SRBminer v2.6.8 (Added algorithm `nxlhash` for Nexell-AI coin for  mining on AMD/Nvidia/Intel GPUs, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   NanoMiner v3.9.3 (Added `karlsenhashv2` algo; NOTES: Please, see full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.9.3)
+*   TeamBlackMiner v2.27 (Up to 33% faster DAG on older Nvidia GPUs on progpow-like algos; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.27)
+
+##### 0.6-227@240926 2024-09-26
+*   SRBminer v2.6.6 (Added algorithm `hoohash`HTN/Hoosat coin for GPU mining HTN/Hoosat coin on AMD/Nvidia/Intel GPUs, fee 2%; Added support for dual mining `fishhash` and `karlsenhashv2` with `hoohash` on AMD RDNA and newer, Nvidia newer than Pascal and Intel Arc GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   TeamBlackMiner v2.26 (Various vug fixes; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.26)
+
+##### 0.6-227@240923 2024-09-23
+*   lolMiner v1.91 (Added support to mine `autolykos2` and `karlsenhashv2` on AMD RX 400/500 series and experimental support AMD Vega 1st and 2nd generation, which also require updated OpenCL drivers; Added `autolykos2`, `karlsenhashv2` and `fishhash` dual mine capabilities with GRAM/TON for AMD RX 400/500 and Vega family GPUs; Improved performance `fishhash` on RX 400/500 series by about 3%; NOTES: See full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.91)
+
+##### 0.6-227@240918 2024-09-18
+*   SRBminer v2.6.5 (Added algorithm `astrixhash` for GPU mining AIX/Astrix Network coin on AMD/Nvidia/Intel GPUs, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   Rigel miner v1.19.1 (Minor 2-3% performance improvements on `pyrinhashv2` for Ampere GPUs and newer; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.19.1)
+
+##### 0.6-227@240916 2024-09-16
+*   lolMiner v1.90 (Added support to mine `PyrinHashV2` algo on Nvidia GTX 1000, AMD RX 5000 and newer GPUs, use `PYRINV2` to select the algorithm, fee is 1%; Added dual mining support PyrinHashV2 as second algo with Autolykos2/KarlsenHashV2/FishHash on Nvidia GTX 1000 and newer and AMD RX 6000 and newer GPUs; NOTES: See full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.90)
+*   OneZeroMiner v1.4.0b Beta (Add experimental support `xelishashv2` on AMD Vega and newer GPUs for mining XEL|Xelis coin, fee 3%; Add `--disable-amd` and `--disable-nvidia` flags; Notes: 1) It's Beta version so it's may contains bugs & you need manual selection in Miner settings section of Flight Sheet 2) See full changelog and details at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.4.0b)
+
+##### 0.6-227@240912 2024-09-12
+*   lolMiner v1.89 (Added support to mine `KarlsenHashV2` on Nvidia Pascal and newer and AMD RX 5000 and newer, fee 1%; Added support to dual mine KarlsenHashV2 and Autolykos2 with TON/GRAM and similar; Added support to mine BLOCX. BLOCX mining uses Autolykos2; NOTES: Please, see full changelog at https://github.com/Lolliedieb/lolMiner-releases/releases)
+
+##### 0.6-227@240911 2024-09-11
+*   Rigel miner v1.19.0 (Add `karlsenhashv2` algorithm incl. dual/triple combos supported as the primary algorithm) with PYI/GRAM/ZIL; Add support `pyrinhashv2  algorithm incl. support dual/triple combos supported as the secondary algorithm with ABEL/ERGO/BLOCX/IRON/CFX/KLS/ZIL; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.19.0)
+*   SRBminer v2.6.4 (Added algorithm `pyrinhashv2` for Pyrin coin for GPU mining on AMD/Intel, fee 0.85%; Added support for dual mining `pyrinhashv2` as second algo with `karlsenhashv2`/`fishhash`/`autolykos2` on AMD RDNA* and Intel' GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+    
+##### 0.6-227@240903 2024-09-03
+*   Rigel v1.18.2) (Add support for mining BLOCX coin, please use `autolykos2` algo and mandatory option `--coin blocx`; Fixed performance regression on CMP 170HX cards on XEL mining; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.18.2)
+
+##### 0.6-227@240902 2024-09-02
+*   SRBminer v2.6.3 (Add support `blocx_autolykos2` algorithm for mining BLOCX coin by AMD/Nvidia/Intel GPUs, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-227@240823 2024-08-23
+*   SRBminer v2.6.2 ( Added `xelishashv2_pepew` for CPU mining PEPEW coin, fee 1.5%; Improved hashrate for all progpow based algorithms on AMD Vega and RX 4xx/5xx; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   XMRig v6.22.0 (rebuilded with gcc v13 version with fixed broken dashboard stats on some cases
+
+##### 0.6-227@240818 2024-08-18
+*   XMRig v6.22.0 (dded support `rx/yada` for mining YDA/YadaCoin; Added Zen5 detection; NOTES: Please, see full changelog at https://github.com/xmrig/xmrig-cuda/releases)
+*   XMRig-MO v6.22.0-mo3 (Synced with XMRig v6.22.0; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases)
+
+##### 0.6-227@240807 2024-08-07
+*   SRBMiner v2.6.1 (Added algorithm `progpow_telestai` for GPU mining TLS/TelestAI coin; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig-Multi v0.40.8 (Implemented support algos: `progpow-telestai`, `meowpow` and `x7` (hashx7); Notes: see full changelog and details at https://github.com/andru-kun/wildrig-multi/releases)
+*   CPUMiner-Opt-Rplant v5.0.41 (Implemented support `hashx7` algo; NOTES: Please, see full changelog at https://github.com/rplant8/cpuminer-opt-rplant/releases)
+
+##### 0.6-227@240719 2024-07-19
+*   Rigel v1.18.1 (Performance/efficiency improvements on `xelishashv2`; Fixed invalid shares when mining XEL/Xelis to a node; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.18.1)
+
+##### 0.6-227@240716 2024-07-16
+*   OneZeroMiner v1.3.7 (Minor efficiency improvement on `xelishashv2` for some GPUs; Reduce the ZIL switching delay with applying the OC settings in parallel; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.7)
+
+##### 0.6-227@240712 2024-07-12
+*   OneZeroMiner v1.3.6 (Efficiency improvement on `xelishashv2`; Add new option `--xelis-solo` for support Xelis solo mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.6)
+*   SRBMiner v2.5.9 (Added AVX512 support for CPU algorithm `xelishashv2`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.9)
+
+##### 0.6-227@240711 2024-07-11
+*   OneZeroMiner v1.3.5 (Add support for `xelishashv2` with 2% devfee and removed support of xelishash; Disable snapshot by default for Dynex for enabling use `--enable-snapshot` flag; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.3.5)
+*   TT-Miner v2024.3.2 (Add support `xelishashv2`; Add ability to join EPIC and any CPU algo; Fixed a bug with the extranonce for Spectre pools; NOTES: See full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2024.3.2)
+
+##### 0.6-227@240709 2024-07-09
+*   Rigel v1.18.0 (Add `xelishashv2` algorithm for upcoming XLS/Xelis hardfork, devfee 2%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases/tag/1.18.0)
+*   SRBMiner v2.5.8 (Added algorithm `xelishashv2` / Xelis for CPU mining, fee 2%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.8)
+*   TT-Miner v2024.3.1 (Add support of native CPU algos: `flex`, `spectrex`, `ghostrider`; NOTES: full changelog at https://github.com/TrailingStop/TT-Miner-release/releases/tag/2024.3.1)
+*   NanoMiner v3.9.2 (Fixed ProgPOW-like algorithms `kawpow`, `firopow` on Nvidia GPUs; Added support mining Alephuim /`blake3` algo on AMD and Nvidia GPUs; Added support mining Pyrin on AMD GPUs; NOTES: Full changelog at https://github.com/nanopool/nanominer/releases/tag/v3.9.2)
+*   BzMiner v21.4.0 (Updated Warthog to support upcoming verus 2.2 change; NOTES: full changelog at https://github.com/bzminer/bzminer/releases/tag/v21.4.0)
+*   CPUminer-Opt-JayDDee v24.4 (Fixed some bugs appeared in v24.2 on some algos & AVX2; NOTES: full changelog: https://github.com/JayDDee/cpuminer-opt/releases/tag/v24.4)
+
+##### 0.6-227@240617 2024-06-17
+*   SRBMiner v2.5.7 (Improved performance on algorithms `ghostrider` and `mike`; Improved performance on algorithm `flex` for AVX2 CPUs; Miner now automatically allocates the needed number of huge pages; Removed parameters: `--disable-cpu-optimisations`, `--disable-hw-aes`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.7)
+*   miniZ v2.4d (Improved hashrate for PyrinHash and KarlsenHash up to 7%;  Added support for PyrinHash algo for AMD, fee: 0.8%; Added support for KarlsenHash algo for AMD, fee: 0.8%; Added support for 192,7 algo, for AMD; NOTES: Please, see full changelog at https://miniz.cc/2024/06/15/miniz-v24d-is-out/)
+
 ##### 0.6-227@240604 2024-06-04
 *   SRBMiner v2.5.6 (Added algorithm `flex` for mining KCN/Kylacoin on CPU, fee 2%; Added algorithm `randomxeq` for mining XEQ/Equilibria coin on CPU, fee 0.85%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases/tag/2.5.6)
 *   Fixed run latest XMRig v6.21.3 on Ubuntu 20.04-based Images
@@ -11,7 +180,7 @@
 *   XMRig-MO v6.21.3-mo13 (Various fixes mostly for `flex` algo; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.21.3-mo13)
 *   TeamRedMiner: config generator fix (Fixed worker name processing for Abelian pools)
 
-##### LINUX IMAGE RELEASE 0.6-227 2024-05-30
+#####  ##### LINUX IMAGE RELEASE 0.6-227 2024-05-30
 *   New Stable Image branch Ubuntu 20.04 LTS based
 *   Distro base: Ubuntu v20.04.6 LTS
 *   Linux kernel: v6.1.90
@@ -354,6 +523,7 @@
 *   TT-Miner v2023.4.1 (See changelog at https://github.com/TrailingStop/TT-Miner-release/releases)
 
 ##### 0.6-224@230909 2023-09-09
+*   `HIVEON OS LINUX CLIENT v0.6-224`
 *   Updated misc devices IDs and related tools (USB, PCI-E, AMD GPUs)
 *   Add support Nvidia driver v535 series (updated `nvtool` to v1.8.1 which fixes temperature sensors reading)
 *   Added support CUDA RTL v12.2 (`nvidia-driver-install` tool updated, added RTL v12.2.2)
@@ -603,6 +773,7 @@
 *   md5sum 765a4897e70f477b4166e7691b443ae9
 
 ##### 0.6-222@230404 2023-04-04
+*   `HIVEON OS LINUX CLIENT v0.6-222`
 *   Updated `nvtool` v1.8.0 (add PCI-E utilization along with output this info by `nvidia-info` tool)
 *   Improvements and fixes for `amd-ocl-install` tool (Please note tool still experimental so use at your own risk!)
 *   Fixed `disk-expand` on calculation size of partition to expand
@@ -690,6 +861,7 @@
 *   TeamBlackMiner v1.91 (Added support for `ETH+RVN`, `ETH+VTC` dual and tripple mining with zil; Bug fixes; Notes: see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v1.91)
 
 ##### 0.6-221@230220 2023-02-20
+*   `HIVEON OS LINUX CLIENT v0.6-221`
 *   Added CUDA v12 support (add CUDA RT libs v12.0.1; updated `nvidia-driver-update` tool)
 *   Updated PCI/USB devices IDs
 *   Fixed Nvidia driver support on laptop GPUs
@@ -790,6 +962,7 @@
 *   cpuMiner-Opt-JayDDee v3.21.0 (Added `minotaurx` algo for stratum only; Prehash optimised 'blake256' & 'sha256' to ignore zero-padded data for AVX2 & AVX512; Other small improvements)
 
 ##### 0.6-220@221221 2022-12-21
+*   `HIVEON OS LINUX CLIENT v0.6-220`
 *   Updated `nvtool` to v1.7.8 (Implemented Nvidia CMP idle mode; Added support for Locked Core Clock for Pascal GPUs; Added support for Locked Memory Clock for Pascal and newer GPUs. Notes: If memory overclocking doesn't affect hashrate i.e. mining Kaspa then user can set MemClk offset as '-3000 MHz', as result memory clock will actually set to 810MHz with a significant reduction in energy consumption.  Experimental usage until dashboard is updated)
 *   Updated `NVFlash` to v5.792.0
 *   Updated `nvidia-info`
@@ -1024,6 +1197,7 @@
 *   CPUminer-Opt-JayDDee v3.20.2 (Bit rotation optimizations in Blake* for SSE2 & AVX2; Code cleanup in yescrypt)
 
 ##### 0.6-219@220802 2022-08-02
+*   `HIVEON OS LINUX CLIENT v0.6-219`
 *   Enhanced Web Console (improved color scheme; more convenient copy/paste functionality)
 *   Improved `hive-replace` tool (updated to v2.1: added new option `--select` for interactive replacing image on non-system disks; fixed compatibility with old 4.x kernels)
 *   Fixed `amdvbflasher` v4.100 (in some cases tool couldn't flash modded/non-native VBIOS due RSA signature checking even in force mode)
@@ -1090,6 +1264,7 @@
 *   XMRig-MO v6.18.0 MoneroOcean fork (Synced with XMRig v6.18.0)
 
 ##### 0.6-218@220615 2022-06-15
+*   `HIVEON OS LINUX CLIENT v0.6-218`
 *   Improved `hive-replace` tool (bumped to v2.0: greatly improved compatibility with Debian-based OS; HiveOS rig user password remains the same after replace; diagnostic msgs are sent to dashboard during replace; new option `--rigconf` to use supplied rig.conf for new image configuration; other minor improvements)
 *   Updated `nvtool` to v1.6.6 (added LHR detection and indication sign to the dashboard - added LHR to the end of GPU name, e.g. "GeForce RTX 3080 Ti LHR"; minor bug fixes and improvements)
 *   Updated AMD GPU BIOS Flasher Utility to v4.100  (added support Navi23/Navi24 GPUs)
@@ -1200,12 +1375,14 @@
 *   md5sum a9e813b7992deb9cb876eb25a04221ef
 
 ##### 0.6-217@220422 2022-04-22
+*   `HIVEON OS LINUX CLIENT v0.6-217`
 *   Fixed bug with AMD OC (overclocking for Radeon Pro VII and Radeon Pro W5700 applied incorrectly since the version v0.6-214)
 *   Minor system updates (updated PCI IDs to v2022.04.16: added new IDs eg. Nvidia RTX 3090 Ti, A4000H)
 *   NanoMiner v3.6.2 (significantly reduced stale Ethash shares on Nvidia GPUs)
 *   XMRigCC v3.2.1 XMRig fork (rebase upstream 6.17.1-dev; integrated XDagger Randomx variant `rx/xdag`; fixed Yadacoin `rx/yada` mining)
    
 ##### 0.6-216@220418 2022-04-18
+*   `HIVEON OS LINUX CLIENT v0.6-216`
 *   Small improvements (minor changes to ensure compatibility with newer Linux kernels and future OS Images; reworked miner installation and update procedure)
 *   Minor bug fixes
 
@@ -1218,6 +1395,7 @@
 *   PhoenixMiner 6.1b (Fixed an issue with expired SSL certificate that led to "certificate verify failed" errors; Now the miner will send SSL SNI host name which may be needed by some pools for SSL certificate validation. To go back to the old behavior (no SNI host name), use the new command-line parameter `-nosni`; Other small fixes; *Note: Beta version for testing purposes you should select version manually in miner settings*)
 
 ##### 0.6-215@220409 2022-04-09
+*   `HIVEON OS LINUX CLIENT v0.6-215`
 *   Updated `nvtool` to v1.6.1 (improved memory temperature reporting for GDDR6X memory; mem temp now reports by default from command line if sensor available)
 *   Added OC support for AMD BC-250 board (need new AMD driver)
 *   Updated CUDA RTL to v11.6.2
@@ -1242,6 +1420,7 @@
 *   XMRigCC v3.2 (rebase upstream 6.16.5-dev; added support mining DERO-HE: `astrobwt/v2` algorithm)
 
 ##### 0.6-214@220331 2022-03-31
+*   `HIVEON OS LINUX CLIENT v0.6-214`
 *   Improved Nvidia MEM Temp reporting (updated `nvtool` to v1.6.0: added memory temperature for GDDR6X; fixed vendor detection for HBM2 memory)
 *   Reworked GPU flashing procedure (updated `nvflash` to v5.728; reworked GPUs index mapping)
 *   Improved GPUs detection and overclocking (improved GPU detection; improved `amd-info` and `nvidia-info` tools: added ROM flashing support and disabled/mulfunction GPU info; now OC applies params per GPU without skipping disabled/missed/malfunction; Nvidia: disable P0 state forcing by default; AMD: small OC fixes/workarounds, added AMD Navi24 overclocking support /need new kernel driver/, updated amdgpu.ids to v2022.02.16, added support ASpeed onboard GPU used on some servers boards)
@@ -1528,6 +1707,7 @@
 *   CPUMiner-Opt: fixed display of statistics on the dashboard, broken in previous update
 
 ##### 0.6-212@211124 2021-11-24
+*   `HIVEON OS LINUX CLIENT v0.6-212`
 *   Added display temperature of memory for Nvidia GPUs equipped with HBM/HBM2 memory e.g. A100, CMP 170HX, etc
 *   Updated `nvtool` to v1.57 (added memory temperature reporting using option `--memtemp` for GPUs with HBM/HBM2 memory; added option `--throttle` to show throttle reason which also reported by `nvidia-info` tool, so you can look all info using it)
 *   Updated PCI IDs to v2021-11-20
@@ -1614,6 +1794,7 @@
 *   NBMiner v39.7 (added LHR mode support for new GA104 version of RTX 3060; fixed detection LHR lock on certain situation; fixed Nvidia GPU power consumption issue on certain rig config; removed support for mining `sero`)
 
 ##### 0.6-211@211029 2021-10-29
+*   `HIVEON OS LINUX CLIENT v0.6-211`
 *   Reduced power usage on AMD RDNA2 RX 6x00 series (Recommended SoC ranges to reduce power usage: clock: 800-960MHz, voltage: 800-900mV. **WARNING** Only change these settings if you know what you're doing!)
 *   Added OC support for AMD Radeon PRO cards: PRO VII (Vega20), V520 (Navi12), W6600 (Navi23)
 *   Fixed issue with fluctuating hashrate on some AMD RX 6800 (not XT)
@@ -1732,6 +1913,7 @@
 *   Gminer v2.67 BETA (partial LHR cards unlock without additional power consumption; use `--lhr 1` to force enable unlock for RTX 3060 V1; use `--lhr_tune1` / `lhr_tune2` to tune unlock parameters, positive values increase performance, negative values decrease probability of lock; *Note: added for testing purposes - need select version manually in miner settings while latest version is still v2.66*)
 
 ##### 0.6-210@210909 2021-09-09
+*   `HIVEON OS LINUX CLIENT v0.6-210`
 *   Improved Nvidia OC (improved support of fanless and mobile GPUs; updated nvtool to v1.5.5)
 *   Added support for AMD RX 6900 XT Ultimate (added definitions for AMD RX 6900 XTX/W6900X/RX 6700M/RX 6600M; added OC support for RX 6900 XTX known as Ultimate; fixed displaying name for RX 6700 XT with ASIC NAVI22 XTLH)
 *   Improved update process (added GPUs re-detection after update; added attempt to fix broken packages)
@@ -1770,6 +1952,7 @@
 *   AMD kernel driver v5.11.0701 with supporting the latest GPUs including AMD RX 6600 series
 
 ##### 0.6-208@210818 2021-08-18
+*   `HIVEON OS LINUX CLIENT v0.6-208`
 *   Fixed `agent` (in some cases overall rig stats was broken)
 *   Improvements and fixes for AMD GPUs overclocking (fixed OC for Tonga families GPUs, ex. FirePro S7150; added support OC/UV for "Navi23" RX 6600 series. *Notes about AMD RX 6600 series support: currently requires Beta image. Support will be added to the updated Stable image which will be uploaded in the next several hours*)
    
@@ -1785,6 +1968,7 @@
 *   T-Rex v0.21.6 (added last submitted share timestamp in API; improved compatibility with mining pools on `autolykos` algo; fixed "`fork-at`" option functionality)
 
 ##### 0.6-207@210808 2021-08-08
+*   `HIVEON OS LINUX CLIENT v0.6-207`
 *   updated `nvtool` to v1.5.4 (fixed memory detection for some GPU)
 *   updated PCI IDs definitions to v2021-07-30 (added Nvidia CMP 170HX)
 *   updated `amdmeminfo` to v2.1.10 (added FirePro S7150; minor fixes)
@@ -1806,6 +1990,7 @@
 *   Gminer v2.63 (fixed periodic miner restarts)
 
 ##### 0.6-206@210722 2021-07-22
+*   `HIVEON OS LINUX CLIENT v0.6-206`
 *   Updated `nvtool` to v1.5.2 (improves compatibility with Linux kernel 5.10 which is used on Latest Beta Image; fixed crash under X server terminal)
 *   Minor improvements for `sreboot` command (reboot immediately if root filesystem is already read-only; prevent hang on unmounting; fail safe reboot after 90 sec)
 *   Fixed some confirmed `amd-oc` bugs on Vega20/Navi10/Navi20 (fixed setting core voltage on some RX 6800; fixed reducing performance for Radeon VII with some user's OC settings; fixed processing OC user's settings which is out of range)
@@ -1832,6 +2017,7 @@
 *   AMD OpenCL v20.40
    
 ##### 0.6-205@210715 2021-07-15
+*   `HIVEON OS LINUX CLIENT v0.6-205`
 *   reworked overclocking procedure for AMD Vega20/Navi/BigNavi GPUs (extends acceptable limits for clocks and voltages, reworked BigNavi OC - need AMD kernel module v5.9.0501 or later, added software unlock to support OC/UV for Radeon Pro W5x00 GPUs, fixed bugs)
 *   updated `nvtool` to v1.5.0 (added option `--forcestate n` to support for P0 state forcing; web interface integration will be added soon)
 *   updated CUDA RT libs up to CUDA v11.3 (updated CUDA libs/driver version definition for `nvidia-driver-update`; updated CUDA RT libs from CUDA Toolkit v11.2.2, added CUDA RT libs from CUDA Toolkit v11.3.1)
@@ -1877,6 +2063,7 @@
 *   XMRigCC v2.94 (improved hashrate on RX based algorithms: synced improvements with v6.12.2; fixed invalid shared on panthera algo)
 
 ##### 0.6-204@210608 2021-06-08
+*   `HIVEON OS LINUX CLIENT v0.6-204`
 *   Improved Nvidia OC (improved memory clock setting; added checks for `nvidia-settings` errors)
 *   Added amdgpu version kernel driver display
 *   Updated some system tools (amdmeminfo, amdmemtweak, hugepages)
@@ -1997,6 +2184,7 @@
 *   AMD OpenCL v20.40
 
 ##### 0.6-203@210403 2021-04-03
+*   `HIVEON OS LINUX CLIENT v0.6-203`
 *   Hotfixes for v0.6-202 (fixed lack of video output to monitor on Nvidia GPUs; fixed CPU temp display for Zen3 arch/Ryzen 5000 series CPUs; other minor fixes)
 *   GMiner v2.50 Beta (improved beamhash performance up to 2%; improved cuckatoo32 performance up to 5%; added display of GPU model in statistics table; added `--worker` parameter to specify worker name for ETH pools thats doesn't support wallet.worker notation; added option `--log_date` to display date in log; added option `--log_stratum` to log stratum; display epoch and block number on new job; uses `--proto stratum` for NiceHash by default; bug fixes and stability improvements;  *Notes: added for testing purposes - need select version manually in miner settings*)
 *   Fixed SRBMiner-Multi stats in some dual algo modes
@@ -2005,6 +2193,7 @@
 *   NanoMiner v3.3.3 (faster dataset creation for Ergo coin/autolykos2 algo; added zombie mode for Ergo on 2 Gb GPUs both Nvidia and AMD; fixed issues with shardpool on Zilliqa)
    
 ##### 0.6-202@210331 2021-03-31
+*   `HIVEON OS LINUX CLIENT v0.6-202`
 *   Improved `agent` (introduced new command `tweakers` for testers; fixed VRAM size in VBIOS filenames)
 *   Improved support for 3rd-party hardware (added support for new Octofan controller)
 *   Updated Nvidia tools (Nvidia Flasher v5.692: adds RTX 3060 support, nvtool v1.4.0: added fixed core clocks option for Turing and Ampere)
@@ -2064,6 +2253,7 @@
 *   XMRig v6.10.0 (fixed many new job messages when solo mining; fixed crash in cn-heavy on Zen3 with manual thread count; fixed possible out of order write to log file)
 
 ##### 0.6-201@210306 2021-03-06
+*   `HIVEON OS LINUX CLIENT v0.6-201`
 *   Minor selfupgrade improvements (added option -c | --consolefont to change default text console font to more suitable version with correct pseudographics; added exit codes output for each apt command in case of errors during update process)
 *   Minor agent improvement (skip miner stats if no miner is running)
 *   Updated hive-replace (due End-Of-Life of Vega Images removed Vega image options)
@@ -2078,6 +2268,7 @@
 *   Verthasminer fixes (fixed miner uptime report)
 
 ##### 0.6-200@210301 2021-03-01
+*   `HIVEON OS LINUX CLIENT v0.6-200`
 *   Fixed AMD OC errors on when applied on "Big Navi"
 *   Improved stability hive-replace on some 3rd party hardware (added watchdog-octofan to exclude list)
 *   Improved nvidia-driver-update (added new option `--repo` for custom repository; prefer Hive servers for download by default; skip 32bit libs installation; internal optimizations)
