@@ -1,3 +1,8 @@
+##### 0.6-229@250225 2025-02-25
+*   OneZeroMiner v1.4.4 (Added support for DynexSolve 2.4; Minor performance improvements on Xelis mining for some Nvidia GPUs; Added support for Nvidia 50 series GPUs; Various fixes & improvements; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.4.4)
+*   BzMiner v23.0.2 (Various improvements & fixes on `Warthog` mining; Add support for Nvidia Blackwell for all algos; Bug fixes and optimizations, see details at https://github.com/bzminer/bzminer/releases)
+*   WildRig-Multi v0.42.3 (Fixed support different pools for `progpow-quai`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250219 2025-02-19
 *   Rigel miner v1.21.0 (Add `progpowz` algorithm for mining ZANO, fee 1%; Improved performance `octopus` algorithm on mining CFX/Conflux for GPUs without tensor cores, e.g. Pascal, Volta, CMPs and minor efficiency improvements on the rest of the cards; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
 
