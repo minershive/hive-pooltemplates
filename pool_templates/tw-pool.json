@@ -3,7 +3,7 @@
         "pool": {
             "name": "tw-pool",
             "url": "https://www.tw-pool.com",
-            "type": "PPS+"
+            "type": "PPLNS"
         }
     },
     {
@@ -74,63 +74,6 @@
         }
     },
     {
-        "coin": "OCTA",
-        "servers": [
-          {
-            "geo": "AUTO",
-            "urls": [
-                "octa.tw-pool.com:51001"
-            ],
-            "ssl_urls": [
-                "octa.tw-pool.com:51001"
-            ]
-          }
-        ],
-        "miners": {
-          "_prototype": "miners_ethash",
-          "lolminer": {
-            "template": "%WAL%.%WORKER_NAME%",
-            "url": "%URL%",
-            "user_config": "--ethstratum=ETHV1"
-          },
-          "rigel": {
-            "algo": "octa",
-            "url": "ethstratum+tcp://%URL%"
-          },
-          "bzminer": {
-            "algo": "octa",
-            "url": "ethstratum+tcp://%URL%"
-          },
-          "t-rex": {
-            "algo": "ethash",
-            "url": "ethstratum+tcp://%URL%"
-          },
-          "teamredminer": {
-            "algo": "ethash",
-            "url": "ethstratum+tcp://%URL%",
-            "template": "%WAL%.%WORKER_NAME%",
-            "pass": "x"
-          }
-        }
-    },
-    {
-        "coin": "ETHF",
-        "servers": [
-          {
-            "geo": "AUTO(High Diff)",
-            "urls": [
-                "ethf.tw-pool.com:52002"
-            ],
-            "ssl_urls": [
-                "ethf.tw-pool.com:52002"
-            ]
-          }
-        ],
-        "miners": {
-            "_prototype":"miners_ethash"
-        }
-    },
-    {
         "coin": "KLS",
         "servers": [
             {
@@ -164,29 +107,6 @@
           "_prototype": "miners_pyrinhashv2"
         }
       },
-      {
-        "coin": "NXL",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "nxl.tw-pool.com:13001"
-                ],
-                "ssl_urls": [
-                    "nxl.tw-pool.com:13001"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_karlsenhash",
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "karlsenhash",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
     {
         "coin": "SPR",
         "servers": [
@@ -200,5 +120,40 @@
                 ]
             }
         ]
+    },
+    {
+        "coin" : "QUAI",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "quai.tw-pool.com:6666"
+                ],
+                "ssl_urls": [
+                    "quai.tw-pool.com:6666"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_progpow_quai",
+            "rigel":{
+                "url":"%URL%",
+                "algo":"quai",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%"
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "progpow_quai",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            },
+            "wildrig-multi": {
+                "url": "%URL%",
+                "algo": "progpow-quai",
+                "template": "%WAL%",
+                "user_config": "--worker=%WORKER_NAME%"
+            }
+        }
     }
 ]
