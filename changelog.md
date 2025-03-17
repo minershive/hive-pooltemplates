@@ -1,3 +1,10 @@
+##### 0.6-229@250315 2025-03-15
+*   Rigel miner v1.21.2 (Minor efficiency improvements on XEL/Xelis mining; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+*   SRBMiner v2.8.0 (Added support for AMD RDNA4 generation RX 9000-series GPUs. It's initial support with no special optimizations and only for newer algorithms; Performance improvement on AMD RX 5xxx series for algorithms: 'walahash', 'cryptixhash', 'nxlhash' and 'astrixhash'; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig-Multi v0.42.4 (Implemented support of AMD RDNA4 - RX 9000 series GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   NanoMiner v3.10.0 (Add support Nvidia Blackwell RTX 50xx series GPUs; Fixed dual Zilliqa + some coins on f2pool and k1pool; Removed support Alephium mining; NOTES: Please, see full changelog at https://github.com/nanopool/nanominer/releases)
+*   XMRigCC v3.4.5 as *xmrig-new fork* (Rebase on latest xmrig-6.22.0; NOTES: Please, see full changelog at https://github.com/Bendr0id/xmrigCC/releases)
+
 ##### 0.6-229@250225 2025-02-25
 *   OneZeroMiner v1.4.4 (Added support for DynexSolve 2.4; Minor performance improvements on Xelis mining for some Nvidia GPUs; Added support for Nvidia 50 series GPUs; Various fixes & improvements; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.4.4)
 *   BzMiner v23.0.2 (Various improvements & fixes on `Warthog` mining; Add support for Nvidia Blackwell for all algos; Bug fixes and optimizations, see details at https://github.com/bzminer/bzminer/releases)
