@@ -1,3 +1,7 @@
+##### 0.6-229@250325 2025-03-25
+*   SRBMiner v2.8.1 (Performance improvement on AMD RX 9xxx series for `progpow` and minor improvement for `autolykos2`/`blocx` algorithms; Fixed invalid shares on AMD RX 9xxx series for algorithms: 'xehash', 'fphash', 'cryptonight_gpu'; Removed GPU support for algorithm 'verushash'; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig-Multi v0.42.5 (Improved progpow family algorithms on AMD GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250315 2025-03-15
 *   Rigel miner v1.21.2 (Minor efficiency improvements on XEL/Xelis mining; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
 *   SRBMiner v2.8.0 (Added support for AMD RDNA4 generation RX 9000-series GPUs. It's initial support with no special optimizations and only for newer algorithms; Performance improvement on AMD RX 5xxx series for algorithms: 'walahash', 'cryptixhash', 'nxlhash' and 'astrixhash'; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
