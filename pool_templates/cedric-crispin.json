@@ -87,25 +87,60 @@
     }
   },
   {
-    "coin": "FTB",
+    "coin": "HNS",
     "servers": [
       {
         "geo": "ASIA (GPU)",
-        "urls": ["fortuneblock.cedric-crispin.com:4434"],
-        "ssl_urls": ["fortuneblock.cedric-crispin.com:4435"]
-      }
-    ],
-    "miners": {
-      "_prototype": "miners_mike",
-      "SRBMiner-MULTI": {
-        "algo": "mike",
-        "url": "%URL%",
-        "pass": "%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": ""
-      }
-    }
-  },
+        "urls": ["handshake.cedric-crispin.com:4289"],
+      },
+      {
+        "geo": "ASIA (ASIC/F1)",
+        "urls": ["handshake.cedric-crispin.com:4290"],
+      },
+      {
+        "geo": "ASIA (ASIC/HS1)",
+        "urls": ["handshake.cedric-crispin.com:4291"],
+      },
+      {
+        "geo": "ASIA (ASIC/HS1Plus)",
+        "urls": ["handshake.cedric-crispin.com:4292"],
+      },
+      {
+        "geo": "ASIA (ASIC/HSBox)",
+        "urls": ["handshake.cedric-crispin.com:4293"],
+      },
+      {
+        "geo": "ASIA (ASIC/HSBox2)",
+        "urls": ["handshake.cedric-crispin.com:4294"],
+      },
+      {
+        "geo": "ASIA (ASIC/HSBoxlite&3se)",
+        "urls": ["handshake.cedric-crispin.com:4295"],
+      },
+      {
+        "geo": "ASIA (ASIC/HS5)",
+        "urls": ["handshake.cedric-crispin.com:4296"],
+      },
+      {
+        "geo": "ASIA (ASIC/HS6se)",
+        "urls": ["handshake.cedric-crispin.com:4297"],
+      },
+      {
+        "geo": "ASIA (ASIC/HS6)",
+        "urls": ["handshake.cedric-crispin.com:4298"],
+      },
+      {
+        "geo": "ASIA (ASIC/HS3)",
+        "urls": ["handshake.cedric-crispin.com:4299"],
+      },
+     ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
   {
     "coin": "XEL",
     "servers": [
