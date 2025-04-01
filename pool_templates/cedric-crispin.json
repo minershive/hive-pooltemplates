@@ -1,0 +1,135 @@
+[
+  {
+    "pool": {
+      "name": "Cedric-CRISPIN.com",
+      "url": "https://cedric-crispin.com",
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "ALPH",
+    "servers": [
+      {
+        "geo": "ASIA (GPU)",
+        "urls": ["alephium.cedric-crispin.com:4084"],
+        "ssl_urls": ["alephium.cedric-crispin.com:4085"]
+      },
+      {
+        "geo": "ASIA (FPGA)",
+        "urls": ["alephium.cedric-crispin.com:4086"],
+        "ssl_urls": ["alephium.cedric-crispin.com:4087"]
+      },
+      {
+        "geo": "ASIA (ASIC Low Diff)",
+        "urls": ["alephium.cedric-crispin.com:4088"],
+        "ssl_urls": ["alephium.cedric-crispin.com:4087"]
+      },
+      {
+        "geo": "ASIA (ASIC High Diff)",
+        "urls": ["alephium.cedric-crispin.com:4091"],
+        "ssl_urls": ["alephium.cedric-crispin.com:4092"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_alephium"
+    }
+  },
+  {
+    "coin": "BEAM",
+    "servers": [
+      {
+        "geo": "ASIA (GPU)",
+        "urls": ["beam.cedric-crispin.com:4014"],
+        "ssl_urls": ["beam.cedric-crispin.com:4015"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_beamhash"
+    }
+  },
+  {
+    "coin": "CCX",
+    "servers": [
+      {
+        "geo": "ASIA (GPU)",
+        "urls": ["conceal.cedric-crispin.com:3364"],
+        "ssl_urls": ["conceal.cedric-crispin.com:3365"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_cryptonight_gpu"
+    }
+  },
+  {
+    "coin": "ERGO",
+    "servers": [
+      {
+        "geo": "ASIA (GPU)",
+        "urls": ["ergo.cedric-crispin.com:3354"],
+        "ssl_urls": ["ergo.cedric-crispin.com:3355"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_autolykos2"
+    }
+  },
+  {
+    "coin": "FIRO",
+    "servers": [
+      {
+        "geo": "ASIA (GPU)",
+        "urls": ["firo.cedric-crispin.com:4064"],
+        "ssl_urls": ["firo.cedric-crispin.com:4065"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_firopow"
+    }
+  },
+  {
+    "coin": "FTB",
+    "servers": [
+      {
+        "geo": "ASIA (GPU)",
+        "urls": ["fortuneblock.cedric-crispin.com:4434"],
+        "ssl_urls": ["fortuneblock.cedric-crispin.com:4435"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_mike",
+      "SRBMiner-MULTI": {
+        "algo": "mike",
+        "url": "%URL%",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "user_config": ""
+      }
+    }
+  },
+  {
+    "coin": "XEL",
+    "servers": [
+      {
+        "geo": "ASIA (CPU/GPU)",
+        "urls": ["xelis.cedric-crispin.com:4404"],
+        "ssl_urls": ["xelis.cedric-crispin.com:4405"]
+      }
+    ],
+    "miners": {
+      "onezerominer": {
+        "algo": "xelis",
+        "url": "%URL%",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "user_config": ""
+      },
+      "rigel": {
+        "algo": "xelishashv2",
+        "url": "stratum+tcp://%URL%",
+        "pass": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "user_config": ""
+      }
+    }
+  }
+]
