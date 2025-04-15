@@ -1,3 +1,8 @@
+##### 0.6-229@250415 2025-04-15
+*   SRBMiner v2.8.2 (Added algorithm `ethashr5` for  for GPU mining R5 / R5 Network coin on AMD/Nvidia/Intel GPUs, fee 2%; Added algorithm `rinhash`  for CPU mining RIN/Rincoin, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig-Multi v0.42.7 (Fixed crash on start for some systems; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   cpuMiner-Opt-Rplant v5.0.42 (Add `rinhash` algo for mining RIN/Rincoin; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250325 2025-03-25
 *   SRBMiner v2.8.1 (Performance improvement on AMD RX 9xxx series for `progpow` and minor improvement for `autolykos2`/`blocx` algorithms; Fixed invalid shares on AMD RX 9xxx series for algorithms: 'xehash', 'fphash', 'cryptonight_gpu'; Removed GPU support for algorithm 'verushash'; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig-Multi v0.42.5 (Improved progpow family algorithms on AMD GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
