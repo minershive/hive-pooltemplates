@@ -1,3 +1,6 @@
+##### 0.6-229@250420 2025-04-20
+*   SRBMiner v2.8.3 (Added algorithm 'blake3_lbrt' for GPU mining LBRT / Liberty Project on AMD/Nvidia/Intel, fee 2%; Added algorithm 'randomy' for CPU mining XCB/ Core Coin, fee 1%; Fixed broken algorithm 'ethashr5' on AMD Polaris GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250415 2025-04-15
 *   SRBMiner v2.8.2 (Added algorithm `ethashr5` for  for GPU mining R5 / R5 Network coin on AMD/Nvidia/Intel GPUs, fee 2%; Added algorithm `rinhash`  for CPU mining RIN/Rincoin, fee 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig-Multi v0.42.7 (Fixed crash on start for some systems; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
