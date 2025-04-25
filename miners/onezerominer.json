@@ -1,23 +1,30 @@
 {
     "full_name": "OneZeroMiner",
-    "for_amd": false,
+    "for_amd": true,
     "for_nvidia": true,
     "for_cpu": false,
     "for_asic": false,
+    "for_intel": false,
     "dual": true,
     "ssl_prefix": "",
     "default_algo": "dynex",
     "default_fork": null,
     "default_units": "khs",
     "algos": [
-        "dynex"
+        "dynex",
+        "xelis"
     ],
     "dalgos": [
+        "zil"
     ],
     "dual_modes": {
+        "dynex": ["zil"],
+        "xelis": ["zil"]
     },
     "algomap": {
-        "dynex": "dynexsolve"
+        "dynex": "dynexsolve",
+        "xelis": "xelishashv2",
+        "zil": "ethash"
     },
     "forks": []
 }

@@ -61,6 +61,59 @@
             "_prototype": "miners_ethash_4g"
         }
     },
+
+    {
+       "coin": "XEL",
+       "servers": [
+          {
+             "geo": "RU PPLNS",
+             "urls": [
+                "xel.baikalmine.com:9030"
+             ]
+          },
+	  {
+             "geo": "RU SOLO",
+             "urls": [
+                "xel-solo.baikalmine.com:9032"
+             ]
+          },
+	  {
+             "geo": "EU PPLNS",
+             "urls": [
+                "xel-eu.baikalmine.com:9030"
+             ]
+          },
+          {
+             "geo": "EU SOLO",
+             "urls": [
+                "xel-eu-solo.baikalmine.com:9032"
+             ]
+          }
+       ],
+       "miners": {
+             "_prototype": "miners_xelishashv2"
+       }
+    },
+    {
+       "coin": "CYTX",
+       "servers": [
+          {
+             "geo": "PPLNS",
+             "urls": [
+                "cytx.baikalmine.com:9010"
+             ]
+          },
+	  {
+             "geo": "SOLO",
+             "urls": [
+                "cytx-solo.baikalmine.com:9005"
+             ]
+          }
+       ],
+       "miners": {
+             "_prototype": "miners_cryptixhash"
+       }
+    },
     {
         "coin":"NYC",
         "servers":[
@@ -117,29 +170,50 @@
                 ]
             },
 	    {
-                "geo": "Frankfurt",
+                "geo": "Netherlands",
                 "urls": [
                     "dnx-eu.baikalmine.com:9090"
                 ]
+            },
+	    {
+                "geo": "Moscow",
+                "urls": [
+                    "dnx-solo.baikalmine.com:9095"
+                ]
             }
+	    
         ],
         "miners": {
-            "_prototype": "miners_dynexsolve",
-            "srbminer": {
-                "user_config": "--disable-cpu\n--mallob-endpoint https://eu-mallob.baikalmine.com,https://dnx-mallob.baikalmine.com"
-            },
-            "onezerominer": {
-                "user_config": "--mallob-endpoint https://eu-mallob.baikalmine.com,https://dnx-mallob.baikalmine.com"
-            }
+            "_prototype": "miners_dynexsolve"
         }
     },
     {
-        "coin": "RTH",
+        "coin": "AITT",
+        "servers": [
+            {
+                "geo": "RU",
+                "urls": [
+                    "aitt.baikalmine.com:9801"
+               ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "HYP",
         "servers": [
             {
                 "geo": "Moscow",
                 "urls": [
                     "rth.baikalmine.com:1515"
+                ]
+            },
+	    {
+                "geo": "Moscow SOLO",
+                "urls": [
+                    "rth.baikalmine.com:1520"
                 ]
             }
         ],
@@ -154,32 +228,7 @@
             }
         }
     },
-    {
-        "coin": "ERG",
-        "servers": [
-            {
-                "geo": "EU PPS+",
-                "urls": [
-                    "ergo-pps.baikalmine.com:1516"
-                ]
-            },
-	    {
-                "geo": "EU PPLNS",
-                "urls": [
-                    "ergo.baikalmine.com:1212"
-                ]
-            },
-	    {
-                "geo": "EU SOLO",
-                "urls": [
-                    "ergo-solo.baikalmine.com:1214"
-                ]
-            }
-        ],
-        "miners": {
-		    "_prototype": "miners_autolykos2"
-        }
-    },
+
     {
         "coin": "KAS",
         "servers": [
@@ -198,6 +247,199 @@
         ],
         "miners": {
             "_prototype": "miners_kaspa"
+        }
+    },
+
+    {
+        "coin": "KLS",
+        "servers": [
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "kls.baikalmine.com:2626"
+                ]
+            },
+	    {
+                "geo": "SOLO RU",
+                "urls": [
+                    "kls-solo.baikalmine.com:2636"
+                ]
+            },
+	    {
+                "geo": "PPLNS EU",
+                "urls": [
+                    "kls-eu.baikalmine.com:2626"
+                ]
+            },
+	    {
+                "geo": "SOLO EU",
+                "urls": [
+                    "kls-eu-solo.baikalmine.com:2636"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_karlsenhashv2",
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "karlsenhashv2",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "NXL",
+        "servers": [
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "nexellia.baikalmine.com:9999"
+                ]
+            },
+      {
+                "geo": "SOLO RU",
+                "urls": [
+                    "nexellia-solo.baikalmine.com:9997"
+                ]
+            },
+      {
+                "geo": "PPLNS EU",
+                "urls": [
+                    "nexellia-eu.baikalmine.com:9999"
+                ]
+            },
+      {
+                "geo": "SOLO EU",
+                "urls": [
+                    "nexellia-eu-solo.baikalmine.com:9997"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_karlsenhash"
+        }
+    },
+    {
+        "coin": "NTL",
+        "servers": [
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "ntl.baikalmine.com:9971"
+                ]
+            },
+      {
+                "geo": "SOLO RU",
+                "urls": [
+                    "ntl-solo.baikalmine.com:9972"
+                ]
+            },
+      {
+                "geo": "PPLNS EU",
+                "urls": [
+                    "ntl-eu.baikalmine.com:9971"
+                ]
+            },
+      {
+                "geo": "SOLO EU",
+                "urls": [
+                    "ntl-eu-solo.baikalmine.com:9972"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_karlsenhash"
+        }
+    },
+    {
+        "coin": "CSS",
+        "servers": [
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "css.baikalmine.com:9020"
+                ]
+            },
+      {
+                "geo": "SOLO RU",
+                "urls": [
+                    "css-solo.baikalmine.com:9026"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_karlsenhash"
+        }
+    },
+    {
+        "coin": "PYI",
+        "servers": [
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "pyi.baikalmine.com:2727"
+                ],
+		"ssl_urls": [
+                    "pyi.baikalmine.com:27271"
+                ]
+            },
+	    {
+                "geo": "SOLO RU",
+                "urls": [
+                    "pyi-solo.baikalmine.com:2737"
+                ]
+            },
+	    {
+                "geo": "PPLNS EU",
+                "urls": [
+                    "pyi-eu.baikalmine.com:2727"
+                ],
+		"ssl_urls": [
+                    "pyi-eu.baikalmine.com:27271"
+                ]
+            },
+	    {
+                "geo": "SOLO EU",
+                "urls": [
+                    "pyi-eu-solo.baikalmine.com:2737"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_pyrinhashv2"
+        }
+    },
+    {
+        "coin": "HTN",
+        "servers": [
+            {
+                "geo": "PPLNS RU",
+                "urls": [
+                    "htnd.baikalmine.com:9961"
+                ]
+            },
+	    {
+                "geo": "SOLO RU",
+                "urls": [
+                    "htnd-solo.baikalmine.com:9962"
+                ]
+            },
+	    {
+                "geo": "PPLNS EU",
+                "urls": [
+                    "htnd-eu.baikalmine.com:9961"
+                ]
+            },
+	    {
+                "geo": "SOLO EU",
+                "urls": [
+                    "htnd-eu-solo.baikalmine.com:9962"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_hoohash"
         }
     },
     {

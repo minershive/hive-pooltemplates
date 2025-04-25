@@ -216,7 +216,9 @@ miners_alephium | alephium |  |
 miners_astrobwt | astrobwt | V3 implementation | 
 miners_autolykos2 | autolykos2 |  | 
 miners_autolykos2_slash_email | autolykos2_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
+miners_autolykos2_blocx | autolykos2 | variant for mining BLOCX coin | 
 miners_beamhash | beamhash |  | 
+miners_cryptixhash | cryptixhash |  | 
 miners_cryptonight_gpu | cryptonight_gpu |  | 
 miners_cryptonight_r | cryptonight_r |  | 
 miners_cryptonight_v8 | cryptonight_v8 |  | 
@@ -226,20 +228,29 @@ miners_etchash | etchash |  |
 miners_ethash | ethash |  | 
 miners_ethash_4g | ethash_4g |  | 
 miners_ethash_slash_email | ethash_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
+miners_ethashb3 | ethashb3 |  | 
 miners_firopow | firopow |  | 
+miners_fishhash | fishhash |  | 
 miners_ghostrider | ghostrider |  | 
 miners_hmq1725 | hmq1725 |  | 
+miners_hoohash | hoohash |  | 
 miners_ironfish | ironfish |  | 
+miners_karlsenhash | karlsenhash |  | 
+miners_karlsenhashv2 | karlsenhashv2 |  Karlsen post-HF algorithm v2| 
 miners_kaspa | kaspa |  | 
 miners_kawpow | kawpow |  | 
 miners_kawpow_slash_email | kawpow_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
+miners_meowpow | meowpow |  | 
 miners_minotaurx | minotaurx |  | 
 miners_minotaurx_jiimp | minotaurx_jiimp | JIIMP format | 
 miners_nexapow | nexapow |  | 
 miners_octopus | octopus |  | 
 miners_olhash | olhash |  | 
+miners_progpow_quai | progpow_quai |  | 
 miners_progpow_sero | progpow_sero |  | 
 miners_progpow_zano | progpow_zano |  | 
+miners_pyrinhash | pyrinhash | HeavyHash variant Pyrin| 
+miners_pyrinhashv2 | pyrinhashv2 | Pyrin post-HF v2| 
 miners_radiant | radiant |  |  
 miners_randomhash2_with_email | randomhash2_with_email | Nanopool format "WALLET.WORKER/EMAIL" | 
 miners_randomx | randomx | Nicehash format "wallet.worker" | 
@@ -251,6 +262,9 @@ miners_sha3d | sha3d |  |
 miners_ubqhash | ubqhash |  | 
 miners_verthash | verthash |  | 
 miners_verushash | verushash |  | 
+miners_warthog | warthog | PoBW, mining WART / Warthog coin | 
+miners_xelishash | xelishash | mining ZTX / Zytex | 
+miners_xelishashv2 | xelishashv2 | mining XEL / Xelis | 
 miners_zelhash | zelhash |  | 
 
 

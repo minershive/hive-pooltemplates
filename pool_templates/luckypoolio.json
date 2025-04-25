@@ -2,7 +2,7 @@
     {
         "pool": {
             "name": "LuckyPool.IO",
-            "url": "zano.luckypool.io",
+            "url": "luckypool.io",
             "fee": 0.9,
             "type": "PROP"
         }
@@ -33,10 +33,127 @@
                 "urls": [
                     "zano.luckypool.io:8899"
                 ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "ca.zano.luckypool.io:8888"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "sg.zano.luckypool.io:8888"
+                ]
             }
         ],
         "miners": {
             "_prototype": "miners_progpow_zano"
+        }
+    },
+    {
+        "coin": "NIR",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "nirmata.luckypool.io:3388"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_progpow_zano"
+        }
+    },
+    {
+        "coin": "XEL",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.xelis.luckypool.io:2888"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "ca.luckypool.io:2888"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "sg.luckypool.io:2888"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_xelishashv2"
+        }
+    },
+    {
+
+        "coin": "QUAI",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "quai.luckypool.io:3333"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "ca.luckypool.io:3333"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "sg.luckypool.io:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_progpow_quai"
+        }
+    },
+    {
+        "coin": "XCC",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "cyberchain.luckypool.io:4481"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "fphash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            }
+        }
+    },
+    {
+        "coin": "XE",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "xechain.luckypool.io:3381"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "xehash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            }
         }
     }
 ]
