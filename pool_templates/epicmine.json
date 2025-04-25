@@ -1,0 +1,50 @@
+[
+    {
+        "pool": {
+            "name": "Epicmine",         
+            "url": "https://epicmine.io", 
+            "fee": 2,                    
+            "type": "PPLNS, SOLO"              
+        }
+    },
+    {
+        "coin": "EPIC", 
+        "servers": [ 
+            { 
+                "geo": "Europe",
+                "urls": [
+                    "de.epicmine.io:3333"
+                ],
+                "ssl_urls": [ 
+                    "de.epicmine.io:3334" 
+                ]
+            },
+            { 
+                "geo": "America",
+                "urls": [
+                    "us.epicmine.io:3333"
+                ],
+                "ssl_urls": [ 
+                    "us.epicmine.io:3334" 
+                ]
+            },
+            { 
+                "geo": "Asia",
+                "urls": [
+                    "sg.epicmine.io:3333"
+                ],
+                "ssl_urls": [ 
+                    "sg.epicmine.io:3334" 
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "randomepic",
+                "pass": "m=pool",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

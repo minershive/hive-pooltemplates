@@ -7,32 +7,151 @@
 		}
 	},
     {
-        "coin": "NEOX",
+        "coin": "NEXA",
         "servers": [
             {
                 "geo": "Europe PPLNS",
                 "urls": [
-                    "neoxa.gogpool.eu:4602"
+                    "nex.gogpool.eu:4624"
                 ]
             },
 			{
                 "geo": "Europe SOLO",
                 "urls": [
-                    "neoxa.gogpool.eu:46021"
+                    "nex.gogpool.eu:46241"
                 ]
             }
         ],
 		"miners": {
-		  "_prototype": "miners_kawpow"
+		  "_prototype": "miners_nexapow"
 		}
     },
-    {
-        "coin": "RVN",
+	{
+        "coin": "LRS",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "Europe PPLNS",
                 "urls": [
-                    "rvn.gogpool.eu:4601"
+                    "lrs.gogpool.eu:4636"
+                ]
+            },
+			{
+                "geo": "Europe SOLO",
+                "urls": [
+                    "lrs.gogpool.eu:46361"
+                ]
+            },
+			{
+                "geo": "Europe SOLO ASIC",
+                "urls": [
+                    "lrs.gogpool.eu:46362"
+                ]
+            }
+        ],
+		"miners": {
+		  "_prototype": "miners_ethash",
+		  "claymore": {
+			"epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+			"claymore_user_config": "-allcoins %COIN% -allpools 0 -showdiff 1"
+		  },
+		  "asicminer": {
+			"url": "stratum+tcp://%URL%",
+			"template": "%WAL%"
+		  },
+		  "phoenixminer": {
+			"url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+			"user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
+		  },
+		  "finminer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%",
+			"pass": "x",
+			"user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+		  },
+		  "bminer": {
+			"url": "%URL%",
+			"algo": "ethash",
+			"template": "%WAL%",
+			"pass": "x"
+		  },
+		  "nanominer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%",
+			"pass": "x",
+			"user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+		  },
+		  "teamredminer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%.%WORKER_NAME%",
+			"pass": "x",
+			"user_config": "--temp_limit=75 --temp_resume=65"
+		  },
+		  "tt-miner": {
+			"url": "%URL%",
+			"algo": "ETHASH",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%",
+			"user_config": "-RH\n"
+		  },
+		  "lolminer": {
+			"algo": "ETHASH",
+			"template": "%WAL%.%WORKER_NAME%",
+			"server": "%URL_HOST%",
+			"port": "%URL_PORT%",
+			"pass": "x",
+			"user_config": ""
+		  },
+		  "t-rex": {
+			"algo": "ethash",
+			"template": "%WAL%.%WORKER_NAME%",
+			"server": "%URL%",
+			"pass": "x"
+		  },
+		  "gminer": {
+			"algo": "ethash",
+			"port": "%URL_PORT%",
+			"server": "%URL_HOST%",
+			"template": "%WAL%.%WORKER_NAME%",
+			"user_config": ""
+		  }
+		}
+    },
+    {
+        "coin": "ALPH",
+        "servers": [
+            {
+                "geo": "Europe PPLNS",
+                "urls": [
+                    "alph.gogpool.eu:4629"
+                ]
+            },
+			{
+                "geo": "Europe SOLO",
+                "urls": [
+                    "alph.gogpool.eu:46291"
+                ]
+            }
+        ],
+		"miners": {
+		  "_prototype": "miners_alephium"
+		}
+    },
+    {
+        "coin": "AIPG",
+        "servers": [
+            {
+                "geo": "Europe PPLNS",
+                "urls": [
+                    "aipg.gogpool.eu:4635"
+                ]
+            },
+			{
+                "geo": "Europe SOLO",
+                "urls": [
+                    "aipg.gogpool.eu:46351"
                 ]
             }
         ],
@@ -41,6 +160,93 @@
 		}
     },
     {
+        "coin": "XPB",
+        "servers": [
+            {
+                "geo": "Europe PPLNS",
+                "urls": [
+                    "xpb.gogpool.eu:4622"
+                ]
+            },
+			{
+                "geo": "Europe SOLO",
+                "urls": [
+                    "xpb.gogpool.eu:46221"
+                ]
+            }
+        ],
+		"miners": {
+		  "_prototype": "miners_ethash",
+		  "claymore": {
+			"epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+			"claymore_user_config": "-allcoins %COIN% -allpools 0 -showdiff 1"
+		  },
+		  "asicminer": {
+			"url": "stratum+tcp://%URL%",
+			"template": "%WAL%"
+		  },
+		  "phoenixminer": {
+			"url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+			"user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
+		  },
+		  "finminer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%",
+			"pass": "x",
+			"user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+		  },
+		  "bminer": {
+			"url": "%URL%",
+			"algo": "ethash",
+			"template": "%WAL%",
+			"pass": "x"
+		  },
+		  "nanominer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%",
+			"pass": "x",
+			"user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+		  },
+		  "teamredminer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%.%WORKER_NAME%",
+			"pass": "x",
+			"user_config": "--temp_limit=75 --temp_resume=65"
+		  },
+		  "tt-miner": {
+			"url": "%URL%",
+			"algo": "ETHASH",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%",
+			"user_config": "-RH\n"
+		  },
+		  "lolminer": {
+			"algo": "ETHASH",
+			"template": "%WAL%.%WORKER_NAME%",
+			"server": "%URL_HOST%",
+			"port": "%URL_PORT%",
+			"pass": "x",
+			"user_config": ""
+		  },
+		  "t-rex": {
+			"algo": "ethash",
+			"template": "%WAL%.%WORKER_NAME%",
+			"server": "%URL%",
+			"pass": "x"
+		  },
+		  "gminer": {
+			"algo": "ethash",
+			"port": "%URL_PORT%",
+			"server": "%URL_HOST%",
+			"template": "%WAL%.%WORKER_NAME%",
+			"user_config": ""
+		  }
+		}
+    },
+	{
         "coin": "OCTA",
         "servers": [
             {
@@ -58,47 +264,256 @@
         ],
 		"miners": {
 		  "_prototype": "miners_ethash",
-		  "lolminer": {
-			"template": "%WAL%.%WORKER_NAME%",
-			"url": "%URL%",
-			"user_config": "--ethstratum=ETHV1"
+		  "claymore": {
+			"epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+			"claymore_user_config": "-allcoins %COIN% -allpools 0 -showdiff 1"
 		  },
-		  "rigel": {
-			"algo": "octa",
-			"url": "ethstratum+tcp://%URL%"
+		  "asicminer": {
+			"url": "stratum+tcp://%URL%",
+			"template": "%WAL%"
 		  },
-		  "bzminer": {
-			"algo": "octa",
-			"url": "ethstratum+tcp://%URL%"
+		  "phoenixminer": {
+			"url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+			"user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
 		  },
-		  "t-rex": {
+		  "finminer": {
 			"algo": "ethash",
-			"url": "ethstratum+tcp://%URL%"
+			"url": "%URL%",
+			"template": "%WAL%",
+			"pass": "x",
+			"user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+		  },
+		  "bminer": {
+			"url": "%URL%",
+			"algo": "ethash",
+			"template": "%WAL%",
+			"pass": "x"
+		  },
+		  "nanominer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%",
+			"pass": "x",
+			"user_config": "coin = %COIN% rigName = %WORKER_NAME%"
 		  },
 		  "teamredminer": {
 			"algo": "ethash",
-			"url": "ethstratum+tcp://%URL%",
+			"url": "%URL%",
 			"template": "%WAL%.%WORKER_NAME%",
+			"pass": "x",
+			"user_config": "--temp_limit=75 --temp_resume=65"
+		  },
+		  "tt-miner": {
+			"url": "%URL%",
+			"algo": "ETHASH",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%",
+			"user_config": "-RH\n"
+		  },
+		  "lolminer": {
+			"algo": "ETHASH",
+			"template": "%WAL%.%WORKER_NAME%",
+			"server": "%URL_HOST%",
+			"port": "%URL_PORT%",
+			"pass": "x",
+			"user_config": ""
+		  },
+		  "t-rex": {
+			"algo": "ethash",
+			"template": "%WAL%.%WORKER_NAME%",
+			"server": "%URL%",
 			"pass": "x"
+		  },
+		  "gminer": {
+			"algo": "ethash",
+			"port": "%URL_PORT%",
+			"server": "%URL_HOST%",
+			"template": "%WAL%.%WORKER_NAME%",
+			"user_config": ""
 		  }
 		}
     },
-    {
-        "coin": "RXD",
+	{
+        "coin": "CAU",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "Europe PPLNS",
                 "urls": [
-                    "rxd.gogpool.eu:4605"
+                    "cau.gogpool.eu:4617"
+                ]
+            },
+			{
+                "geo": "Europe SOLO",
+                "urls": [
+                    "cau.gogpool.eu:46171"
                 ]
             }
-            
         ],
 		"miners": {
-		  "_prototype": "miners_radiant"
+		  "_prototype": "miners_ethash",
+		  "claymore": {
+			"epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+			"claymore_user_config": "-allcoins %COIN% -allpools 0 -showdiff 1"
+		  },
+		  "asicminer": {
+			"url": "stratum+tcp://%URL%",
+			"template": "%WAL%"
+		  },
+		  "phoenixminer": {
+			"url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+			"user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
+		  },
+		  "finminer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%",
+			"pass": "x",
+			"user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+		  },
+		  "bminer": {
+			"url": "%URL%",
+			"algo": "ethash",
+			"template": "%WAL%",
+			"pass": "x"
+		  },
+		  "nanominer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%",
+			"pass": "x",
+			"user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+		  },
+		  "teamredminer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%.%WORKER_NAME%",
+			"pass": "x",
+			"user_config": "--temp_limit=75 --temp_resume=65"
+		  },
+		  "tt-miner": {
+			"url": "%URL%",
+			"algo": "ETHASH",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%",
+			"user_config": "-RH\n"
+		  },
+		  "lolminer": {
+			"algo": "ETHASH",
+			"template": "%WAL%.%WORKER_NAME%",
+			"server": "%URL_HOST%",
+			"port": "%URL_PORT%",
+			"pass": "x",
+			"user_config": ""
+		  },
+		  "t-rex": {
+			"algo": "ethash",
+			"template": "%WAL%.%WORKER_NAME%",
+			"server": "%URL%",
+			"pass": "x"
+		  },
+		  "gminer": {
+			"algo": "ethash",
+			"port": "%URL_PORT%",
+			"server": "%URL_HOST%",
+			"template": "%WAL%.%WORKER_NAME%",
+			"user_config": ""
+		  }
 		}
     },
-    {
+	{
+        "coin": "BTN",
+        "servers": [
+            {
+                "geo": "Europe PPLNS",
+                "urls": [
+                    "btn.gogpool.eu:4618"
+                ]
+            },
+			{
+                "geo": "Europe SOLO",
+                "urls": [
+                    "btn.gogpool.eu:46181"
+                ]
+            },
+			{
+                "geo": "Europe SOLO ASIC",
+                "urls": [
+                    "btn.gogpool.eu:46182"
+                ]
+            }
+        ],
+		"miners": {
+		  "_prototype": "miners_ethash",
+		  "claymore": {
+			"epools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+			"claymore_user_config": "-allcoins %COIN% -allpools 0 -showdiff 1"
+		  },
+		  "asicminer": {
+			"url": "stratum+tcp://%URL%",
+			"template": "%WAL%"
+		  },
+		  "phoenixminer": {
+			"url": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x",
+			"user_config": "-coin %COIN% -tstop 80 -tstart 65 -ttli 75"
+		  },
+		  "finminer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%",
+			"pass": "x",
+			"user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+		  },
+		  "bminer": {
+			"url": "%URL%",
+			"algo": "ethash",
+			"template": "%WAL%",
+			"pass": "x"
+		  },
+		  "nanominer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%",
+			"pass": "x",
+			"user_config": "coin = %COIN% rigName = %WORKER_NAME%"
+		  },
+		  "teamredminer": {
+			"algo": "ethash",
+			"url": "%URL%",
+			"template": "%WAL%.%WORKER_NAME%",
+			"pass": "x",
+			"user_config": "--temp_limit=75 --temp_resume=65"
+		  },
+		  "tt-miner": {
+			"url": "%URL%",
+			"algo": "ETHASH",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%",
+			"user_config": "-RH\n"
+		  },
+		  "lolminer": {
+			"algo": "ETHASH",
+			"template": "%WAL%.%WORKER_NAME%",
+			"server": "%URL_HOST%",
+			"port": "%URL_PORT%",
+			"pass": "x",
+			"user_config": ""
+		  },
+		  "t-rex": {
+			"algo": "ethash",
+			"template": "%WAL%.%WORKER_NAME%",
+			"server": "%URL%",
+			"pass": "x"
+		  },
+		  "gminer": {
+			"algo": "ethash",
+			"port": "%URL_PORT%",
+			"server": "%URL_HOST%",
+			"template": "%WAL%.%WORKER_NAME%",
+			"user_config": ""
+		  }
+		}
+    },
+	{
         "coin": "KCN",
         "servers": [
             {
@@ -136,7 +551,7 @@
 		  }
 		}
     },
-    {
+	{
         "coin": "XNA",
         "servers": [
             {
@@ -153,7 +568,85 @@
             }
         ],
 		"miners": {
-		  "_prototype": "miners_kawpow"
+		  "_prototype": "miners_kawpow",
+		  "ethminer": {
+			"fork": "kawpowminer",
+			"cuda": 1,
+			"opencl": 0,
+			"pass": "x",
+			"port": "%URL_PORT%",
+			"server": "%URL_HOST%",
+			"template": "%WAL%.%WORKER_NAME%"
+		  },
+		  "t-rex": {
+			"url": "%URL%",
+			"algo": "kawpow",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%"
+		  },
+		  "nbminer": {
+			"url": "%URL%",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%",
+			"algo": "kawpow"
+		  },
+		  "nanominer": {
+			"algo": "kawpow",
+			"url": "%URL%",
+			"template": "%WAL%",
+			"pass": "x",
+			"user_config": "coin = %COIN%\nrigName = %WORKER_NAME%"
+		  },
+		  "ccminer": {
+			"fork": "enemy",
+			"ccurl": "stratum+tcp://%URL%",
+			"ccalgo": "kawpow",
+			"ccpass": "x",
+			"ccuser": "%WAL%.%WORKER_NAME%"
+		  },
+		  "gminer": {
+			"algo": "kawpow",
+			"server": "%URL_HOST%",
+			"port": "%URL_PORT%",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%"
+		  },
+		  "bminer": {
+			"url": "%URL%",
+			"algo": "raven",
+			"template": "%WAL%.%WORKER_NAME%"
+		  },
+		  "tt-miner": {
+			"url": "%URL%",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%",
+			"algo": "kawpow",
+			"user_config": "-coin %COIN%"
+		  },
+		  "damominer": {
+			"url": "stratum+tcp://%URL%",
+			"algo": "rvn",
+			"worker": "%WORKER_NAME%",
+			"template": "%WAL%"
+		  },
+		  "teamredminer": {
+			"url": "stratum+tcp://%URL%",
+			"algo": "kawpow",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%"
+		  },
+		  "wildrig-multi": {
+			"url": "stratum+tcp://%URL%",
+			"algo": "kawpow",
+			"pass": "x",
+			"template": "%WAL%.%WORKER_NAME%",
+			"user_config": ""
+		  },
+		  "miniz": {
+			"url": "%URL%",
+			"algo": "kawpow",
+			"template": "%WAL%.%WORKER_NAME%"
+		  }
 		}
     }
 ]

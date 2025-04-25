@@ -42,6 +42,23 @@
         }
     },
     {
+        "coin": "AIPG",
+        "servers": [
+            {
+                "geo": "HongKong",
+                "urls": [
+                    "rvn.666pool.com:6155"
+                ],
+                "ssl_urls": [
+                    "rvn.666pool.info:6156"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
         "coin": "CFX",
         "servers": [
             {
@@ -67,17 +84,17 @@
                     "dnx.666pool.com:7336"
                 ],
                 "ssl_urls": [
-                    "dnx.666pool.info:7338"
+                    "stratum+ssl://dnx.666pool.info:7338"
                 ]
             }
         ],
         "miners": {
             "_prototype": "miners_dynexsolve",
-            "srbminer": {
-                "user_config": "--disable-cpu\n--mallob-endpoint 38.60.42.233:18081"
+            "bzminer": {
+                "user_config": "--nc 1 --dynex_pow_ratio 1.0 --dynex_cache_mallob 1"
             },
             "onezerominer": {
-                "user_config": "--mallob-endpoint 154.80.229.28:8081,198.244.169.253:9000,146.0.79.138:8025,65.109.52.145:8085,https://dnx.sg.ekapool.com,https://dnx.ca.ekapool.com,https://dnx.us.ekapool.com,https://dnx.eu.ekapool.com,45.76.20.103:80,45.77.65.97:80,65.20.79.246:80"
+                "user_config": "--no-cert-validation"
             }
         }
     },
@@ -99,23 +116,6 @@
         }
     },
     {
-        "coin": "NEXA",
-        "servers": [
-            {
-                "geo": "HongKong",
-                "urls": [
-                    "nexa.666pool.com:7716"
-                ],
-                "ssl_urls": [
-                    "nexa.666pool.info:7717"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_nexapow"
-        }
-    },
-    {
         "coin": "ETC",
         "servers": [
             {
@@ -130,6 +130,69 @@
         ],
         "miners": {
             "_prototype": "miners_etchash"
+        }
+    },
+    {
+        "coin": "PYI",
+        "servers": [
+            {
+                "geo": "HongKong",
+                "urls": [
+                    "pyi.666pool.com:5776"
+                ],
+                "ssl_urls": [
+                    "pyi.666pool.info:5777"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_pyrinhash"
+        }
+    },
+    {
+        "coin": "XEL",
+        "servers": [
+            {
+                "geo": "HongKong",
+                "urls": [
+                    "xel.666pool.com:8667"
+                ],
+                "ssl_urls": [
+                    "xel.666pool.com:8668"
+                ]
+            }
+        ],
+        "miners": {
+            "rigel": {
+                "algo": "xelishash",
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--no-strict-ssl"
+            }
+        }
+    },
+    {
+        "coin": "VDS",
+        "servers": [
+            {
+                "geo": "HongKong",
+                "urls": [
+                    "vds.666pool.com:9338"
+                ],
+                "ssl_urls": [
+                    "vds.666pool.com:9339"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "vds",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": ""
+            }
         }
     },
     {
