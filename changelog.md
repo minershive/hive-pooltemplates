@@ -1,3 +1,7 @@
+##### 0.6-229@250430 2025-04-30
+*   lolMiner v1.95a (Added support for continuous mining for Conflux on 8G Nvidia GPUs aka "zombie mode"; Added support for Nvidia RTX 5000 and AMD RX 9000 series please, see full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.95a)
+*   SRBMiner v2.8.5 (Major performance improvement for algorithm `clchash` on CPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250424 2025-04-24
 *   SRBMiner v2.8.4 (Added algorithm `clchash` for mining CLC Crypto on CPU, fee 2%; Performance improvement for algorithm 'curvehash' on CPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   cpuMiner-Opt-Rplant v5.0.43 (Add `yespowerADVC` algo for mining ADVC/AdventureCoin; NOTES: Please, see full changelog at https://github.com/rplant8/cpuminer-opt-rplant/releases)
