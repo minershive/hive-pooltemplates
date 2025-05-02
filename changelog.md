@@ -1,3 +1,6 @@
+##### 0.6-229@250502 2025-05-02
+*   WildRig-Multi v0.43.0 (Implemented `clchash` for AMD Navi and newer, Nvidia and Intel GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250430 2025-04-30
 *   lolMiner v1.95a (Added support for continuous mining for Conflux on 8G Nvidia GPUs aka "zombie mode"; Added support for Nvidia RTX 5000 and AMD RX 9000 series please, see full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.95a)
 *   SRBMiner v2.8.5 (Major performance improvement for algorithm `clchash` on CPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
