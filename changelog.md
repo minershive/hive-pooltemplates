@@ -1,3 +1,7 @@
+##### 0.6-229@250507 2025-05-07
+*   Rigel miner v1.21.3 (Allow 8GB GPUs mine CFX/Conflux on `octopus` algorithm at a reduced hashrate when DAG becomes too large; Add support for Blackwell datacenter GPUs; Remove support for the following algorithms: 'blocx', 'pyrinhash', 'pyrinhashv2', 'karlsenhash'; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+*   SRBMiner v2.8.6 (Added algorithm `yespoweradvc` for CPU mining ADVC/Adventure coin, fee 0.85%; Huge performance improvement for algorithm `curvehash` on CPUs; Removed algorithm 'hoohashv1'; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250502 2025-05-02
 *   WildRig-Multi v0.43.0 (Implemented `clchash` for AMD Navi and newer, Nvidia and Intel GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
