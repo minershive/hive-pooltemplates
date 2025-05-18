@@ -1,3 +1,6 @@
+##### 0.6-229@250517 2025-05-17
+*   SRBMiner v2.8.8 (Added support for dual mining 'fishhash' and 'autolykos2' + 'sha3x' on AMD RDNA architectures and Nvidia GPUs; Fixed mining of algorithm 'sha3x' on AMD Vega generation GPUs; Fixed detection of Nvidia GPUs on newer drivers; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250511 2025-05-11
 *   SRBMiner v2.8.7 (Added algorithm `sha3x` for GPU mining XTM/Tari coin on AMD/Nvidia/Intel, fee 3%; Removed algorithm 'blocx_autolykos2'; Removed everything related to ZIL mining; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   miniZ v2.5e (Added support for KarlsenhashV2 for KLS/Karlsen support for AMD and Nvidia, fee 0.95%; Adjusted/improved parameters for dual mining; Removed ZIL support; NOTES: Please, see full changelog at https://miniz.cc/2025/04/27/miniz-v25e-is-out/)
