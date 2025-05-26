@@ -314,6 +314,13 @@
         }
     },
 
+    "miners_cryptonight": {
+        "asicminer": {
+            "url": "stratum+tcp://%URL%",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
+    },
+
     "miners_ethash_4g": {
         "ethminer": {
             "cuda": 1,
@@ -888,6 +895,11 @@
     },
 
     "miners_randomx": {
+        "asicminer": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
         "xmrig": {
             "url": "%URL%",
             "pass": "x",
@@ -970,6 +982,11 @@
     },
 
     "miners_randomx_worker": {
+        "asicminer": {
+            "url": "%URL%",
+            "pass": "%WORKER_NAME%",
+            "template": "%WAL%"
+        },
         "xmrig": {
             "url": "%URL%",
             "pass": "%WORKER_NAME%",
@@ -1010,6 +1027,11 @@
     },
 
     "miners_randomx_slash_email": {
+        "asicminer": {
+            "url": "%URL%",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%/%EMAIL%"
+        },
         "xmrig": {
             "url": "%URL%",
             "pass": "x",

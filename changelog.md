@@ -1,3 +1,14 @@
+##### 0.6-229@250517 2025-05-17
+*   SRBMiner v2.8.8 (Added support for dual mining 'fishhash' and 'autolykos2' + 'sha3x' on AMD RDNA architectures and Nvidia GPUs; Fixed mining of algorithm 'sha3x' on AMD Vega generation GPUs; Fixed detection of Nvidia GPUs on newer drivers; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-229@250511 2025-05-11
+*   SRBMiner v2.8.7 (Added algorithm `sha3x` for GPU mining XTM/Tari coin on AMD/Nvidia/Intel, fee 3%; Removed algorithm 'blocx_autolykos2'; Removed everything related to ZIL mining; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   miniZ v2.5e (Added support for KarlsenhashV2 for KLS/Karlsen support for AMD and Nvidia, fee 0.95%; Adjusted/improved parameters for dual mining; Removed ZIL support; NOTES: Please, see full changelog at https://miniz.cc/2025/04/27/miniz-v25e-is-out/)
+
+##### 0.6-229@250507 2025-05-07
+*   Rigel miner v1.21.3 (Allow 8GB GPUs mine CFX/Conflux on `octopus` algorithm at a reduced hashrate when DAG becomes too large; Add support for Blackwell datacenter GPUs; Remove support for the following algorithms: 'blocx', 'pyrinhash', 'pyrinhashv2', 'karlsenhash'; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+*   SRBMiner v2.8.6 (Added algorithm `yespoweradvc` for CPU mining ADVC/Adventure coin, fee 0.85%; Huge performance improvement for algorithm `curvehash` on CPUs; Removed algorithm 'hoohashv1'; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250502 2025-05-02
 *   WildRig-Multi v0.43.0 (Implemented `clchash` for AMD Navi and newer, Nvidia and Intel GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
