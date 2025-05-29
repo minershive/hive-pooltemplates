@@ -78,7 +78,7 @@
 		"miners": {
 			"_prototype": "miners_cryptonight_gpu",
 			"srbminer": {
-				"user_config": "--disable-cpu --send-stales false --retry-time 30"
+				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -219,7 +219,8 @@
 		"miners": {
 			"asicminer": {
 				"url": "stratum+tcp://%URL%",
-				"template": "%WAL%.%WORKER_NAME%"
+				"template": "%WAL%.%WORKER_NAME%",
+				"pass": "x"
 			}
 		}
 	},
@@ -321,7 +322,7 @@
 				"algo": "flex",
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%",
-				"user_config": "--disable-gpu --retry-time 30"
+				"user_config": "--disable-gpu\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -341,7 +342,7 @@
 		"miners": {
 			"_prototype": "miners_meowpow",
 			"srbminer": {
-				"user_config": "--disable-cpu --send-stales false --retry-time 30"
+				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -361,7 +362,7 @@
 		"miners": {
 			"_prototype": "miners_randomx",
 			"srbminer": {
-				"user_config": "--disable-gpu --disable-huge-pages --keepalive true --retry-time 30"
+				"user_config": "--disable-gpu\n--disable-huge-pages\n\"keepalive\": true\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -381,7 +382,7 @@
 		"miners": {
 			"_prototype": "miners_minotaurx",
 			"srbminer": {
-				"user_config": "--disable-gpu --retry-time 30"
+				"user_config": "--disable-gpu\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -401,7 +402,7 @@
 		"miners": {
 			"_prototype": "miners_kawpow",
 			"srbminer": {
-				"user_config": "--disable-cpu --retry-time 30"
+				"user_config": "--disable-cpu\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -424,7 +425,7 @@
 				"algo": "randomscash",
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%",
-				"user_config": "--disable-gpu --disable-huge-pages --send-stales false --retry-time 30"
+				"user_config": "--disable-gpu\n--disable-huge-pages\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -444,7 +445,7 @@
 		"miners": {
 			"_prototype": "miners_kawpow",
 			"srbminer": {
-				"user_config": "--disable-cpu --retry-time 30"
+				"user_config": "--disable-cpu\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -478,10 +479,10 @@
 		"miners": {
 			"_prototype": "miners_ubqhash",
 			"lolminer": {
-				"user_config": "--ethstratum ETHV1"
+				"user_config": "\"ethstratum\": \"ETHV1\""
 			},
 			"srbminer": {
-				"user_config": "--disable-cpu --esm 2 --retry-time 30"
+				"user_config": "--disable-cpu\n\"esm\": 2\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -527,7 +528,7 @@
 		"miners": {
 			"_prototype": "miners_verushash",
 			"srbminer": {
-				"user_config": "--disable-gpu --send-stales false --retry-time 30"
+				"user_config": "--disable-gpu\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -547,7 +548,7 @@
 		"miners": {
 			"_prototype": "miners_warthog",
 			"bzminer": {
-				"user_config": "--nc 1 --allow_stales false"
+				"user_config": "\"nc\": 1\n\"allow_stales\": false"
 			}
 		}
 	},
@@ -567,7 +568,7 @@
 		"miners": {
 			"_prototype": "miners_xelishashv2",
 			"srbminer": {
-				"user_config": "--disable-gpu --retry-time 30"
+				"user_config": "--disable-gpu\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -587,7 +588,7 @@
 		"miners": {
 			"_prototype": "miners_progpow_zano",
 			"srbminer": {
-				"user_config": "--disable-cpu --send-stales false --retry-time 30"
+				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	}
