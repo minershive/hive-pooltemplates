@@ -1,3 +1,6 @@
+##### 0.6-229@250601 2025-06-01
+*   Rigel miner v1.22.1 (Add support `sha3x` algo; Add dual mining scheme `abelian+sha3x`, `autolykos2+sha3x`, `fishhash+sha3x`, `octopus+sha3x`, `karlsenhashv2+sha3x`; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases) 
+
 ##### 0.6-229@250517 2025-05-17
 *   SRBMiner v2.8.8 (Added support for dual mining 'fishhash' and 'autolykos2' + 'sha3x' on AMD RDNA architectures and Nvidia GPUs; Fixed mining of algorithm 'sha3x' on AMD Vega generation GPUs; Fixed detection of Nvidia GPUs on newer drivers; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
