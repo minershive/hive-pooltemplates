@@ -1,0 +1,82 @@
+[
+  {
+    "pool": {
+      "name": "AlphaPool.Tech",
+      "url": "https://alphapool.tech",
+      "type": "PPLNS"
+    },
+    "coin": "QUAI",
+    "servers": [
+      {
+        "geo": "North America (US East)",
+        "urls": ["us1.alphapool.tech:3333"]
+      },
+      {
+        "geo": "North America (US West)",
+        "urls": ["us2.alphapool.tech:3333"]
+      },
+      {
+        "geo": "Europe (Poland)",
+        "urls": ["eu1.alphapool.tech:3333"]
+      },
+      {
+        "geo": "Asia (Singapore)",
+        "urls": ["asia.alphapool.tech:3333"]
+      }
+    ],
+    "miners": {
+      "rigel": {
+        "algo": "quai",
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "srbminer": {
+        "url": "stratum://%URL%",
+        "algo": "progpow_quai",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "progpow-quai",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "pool": {
+      "name": "AlphaPool.Tech",
+      "url": "https://alphapool.tech",
+      "type": "PPLNS"
+    },
+    "coin": "QI",
+    "servers": [
+      {
+        "geo": "North America (Canada)",
+        "urls": ["ca1.alphapool.tech:3333"]
+      },
+      {
+        "geo": "Europe (Poland)",
+        "urls": ["eu2.alphapool.tech:3333"]
+      }
+    ],
+    "miners": {
+      "rigel": {
+        "algo": "quai",
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "srbminer": {
+        "url": "stratum://%URL%",
+        "algo": "progpow_quai",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "progpow-quai",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]
