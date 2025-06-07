@@ -1,3 +1,11 @@
+##### 0.6-229@250606 2025-06-06
+*   lolMiner v1.96 beta (Added support `sha3x` algorithm for Tari coin mining on AMD GPUs for pool mining, devfee 1%; Removed support of some unused algorithms; NOTES: Since the version is marked as beta, please select it manually from the UI; See full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.96beta)
+*   SRBMiner v2.9.0 (Added algorithm `evohash` (EvoAI coin) for CPU mining, fee 1%; Minor performance/efficiency improvement for algorithm `sha3x`; Lowered devfee on algorithm `sha3x` to 0.65%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig-Multi v0.43.1 (Implemented `evohash` with zero dev-fee, use addition parameters e.g. `-i 18 --gpu-threads 1 --diff-factor 256`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   XMRig v6.22.3 (CUDA backend: added missing RandomX dataset update; Optimized auto-config for AMD CPUs with less than 2 MB L3 cache per thread; NOTES: Please, see full changelog at https://github.com/xmrig/xmrig/releases/tag/v6.22.3)
+*   XMRig-MO v6.22.3-mo1 (Rebase on latest XMRig v6.22.3;  NOTES: miner use XMRig-CUDA plugin v6.22.1-mo1 compatible with CUDA v12.4+; Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases/tag/v6.22.3-mo1)
+*   XMRigCC v3.4.6 (Rebase on latest XMRig v6.22.3;  NOTES: miner use XMRig-CUDA plugin v6.22.1-mo1 compatible with compatible with CUDA v12.4+ by MoneroOcean; Please, see full changelog at https://github.com/Bendr0id/xmrigCC/releases/tag/3.4.6)
+
 ##### 0.6-229@250601 2025-06-01
 *   Rigel miner v1.22.1 (Add support `sha3x` algo; Add dual mining scheme `abelian+sha3x`, `autolykos2+sha3x`, `fishhash+sha3x`, `octopus+sha3x`, `karlsenhashv2+sha3x`; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases) 
 
