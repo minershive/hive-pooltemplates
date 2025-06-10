@@ -1,3 +1,6 @@
+##### 0.6-229@250609 2025-06-09
+*   WildRig-Multi v0.43.2 (Fixed rejects and improved speed on some x-like algorithms for Nvidia Blackwell; Proper parameters for evohash by default, no need to set diff factor and so on; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250606 2025-06-06
 *   lolMiner v1.96 beta (Added support `sha3x` algorithm for Tari coin mining on AMD GPUs for pool mining, devfee 1%; Removed support of some unused algorithms; NOTES: Since the version is marked as beta, please select it manually from the UI; See full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases/tag/1.96beta)
 *   SRBMiner v2.9.0 (Added algorithm `evohash` (EvoAI coin) for CPU mining, fee 1%; Minor performance/efficiency improvement for algorithm `sha3x`; Lowered devfee on algorithm `sha3x` to 0.65%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
