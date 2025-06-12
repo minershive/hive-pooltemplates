@@ -1,3 +1,7 @@
+##### 0.6-229@250611 2025-06-11
+*   lolMiner v1.96 (Added support for Tari-Sha3x on Nvidia Pascal and newer and AMD RX 400 series and newer GPUs fee 1%; Added support for Tari-Sha3x dual mining with Octopus (Conflux), Autolykos V2 (Ergo), Fishhash and Karlsenhash V2 algorithms; NOTES: See full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases)
+*   SRBMiner v2.9.1 (Performance/efficiency improvements for algorithm 'sha3x' on AMD and Nvidia GPUs; Performance/efficiency improvements for dual mining `fishhash+sha3x` on AMD RDNA and Nvidia GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250609 2025-06-09
 *   WildRig-Multi v0.43.2 (Fixed rejects and improved speed on some x-like algorithms for Nvidia Blackwell; Proper parameters for evohash by default, no need to set diff factor and so on; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
