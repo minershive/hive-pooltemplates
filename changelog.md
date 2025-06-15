@@ -1,3 +1,6 @@
+##### 0.6-229@250615 2025-06-15
+*   SRBMiner v2.9.2 (More performance improvements for algorithm `sha3x` on AMD RDNA and NVIDIA GPUs; More performance improvements for DUAL mining FISHHASH+SHA3X and AUTOLYKOS2+SHA3X on AMD RDNA and NVIDIA GPUs; Fixed AMD Vega GPUs on algorithm `sha3x` so they now work on older drivers; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250611 2025-06-11
 *   lolMiner v1.96 (Added support for Tari-Sha3x on Nvidia Pascal and newer and AMD RX 400 series and newer GPUs fee 1%; Added support for Tari-Sha3x dual mining with Octopus (Conflux), Autolykos V2 (Ergo), Fishhash and Karlsenhash V2 algorithms; NOTES: See full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases)
 *   SRBMiner v2.9.1 (Performance/efficiency improvements for algorithm 'sha3x' on AMD and Nvidia GPUs; Performance/efficiency improvements for dual mining `fishhash+sha3x` on AMD RDNA and Nvidia GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
