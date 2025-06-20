@@ -1,3 +1,7 @@
+##### 0.6-229@250619 2025-06-19
+*   XMRig v6.23.0 (Tweaked auto-config for AMD CPUs with < 2 MB L3 cache per thread; NOTES: Please, see full changelog at https://github.com/xmrig/xmrig/releases)
+*   XMRig-MO v6.23.0-mo1 (Rebase on latest XMRig v6.23.0;  NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases)
+
 ##### 0.6-229@250615 2025-06-15
 *   SRBMiner v2.9.2 (More performance improvements for algorithm `sha3x` on AMD RDNA and NVIDIA GPUs; More performance improvements for DUAL mining FISHHASH+SHA3X and AUTOLYKOS2+SHA3X on AMD RDNA and NVIDIA GPUs; Fixed AMD Vega GPUs on algorithm `sha3x` so they now work on older drivers; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
