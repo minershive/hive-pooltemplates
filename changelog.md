@@ -1,3 +1,10 @@
+##### 0.6-229@250626 2025-06-26
+*   SRBMiner v2.9.3 (Performance/efficiency improvements for algorithm `walahash` on AMD RDNA and NVIDIA GPUs; Fixed a few algorithms on NVIDIA 5000 series broken since v2.9.0; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   lolMiner v1.96a (Fixed a bug causing `octopus+sha3x` dual mining not starting on some Nvidia GPUs; NOTES: See full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases)
+*   XMRig v6.24.0 (Fixed detection of L2 cache size for some complex NUMA topologies; Fixed auto-config for AMD CPUs with less than 2 MB L3 cache per thread; NOTES: Please, see full changelog at https://github.com/xmrig/xmrig/releases)
+*   XMRig-MO v6.24.0-mo1 (Rebase on latest XMRig v6.24.0;  NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases)
+*   CPUMiner-Opt-JayDDee v25.4 (Minor bug fixes & improvements; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)
+
 ##### 0.6-229@250619 2025-06-19
 *   XMRig v6.23.0 (Tweaked auto-config for AMD CPUs with < 2 MB L3 cache per thread; NOTES: Please, see full changelog at https://github.com/xmrig/xmrig/releases)
 *   XMRig-MO v6.23.0-mo1 (Rebase on latest XMRig v6.23.0;  NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases)
