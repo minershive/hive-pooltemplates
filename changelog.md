@@ -1,3 +1,6 @@
+##### 0.6-229@250630 2025-06-30
+*   SRBMiner v2.9.4 (Fixed dual mining broke in previous version v2.9.3; Minor improvements to all RandomX-based algorithms on CPU's with AVX2; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250626 2025-06-26
 *   SRBMiner v2.9.3 (Performance/efficiency improvements for algorithm `walahash` on AMD RDNA and NVIDIA GPUs; Fixed a few algorithms on NVIDIA 5000 series broken since v2.9.0; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   lolMiner v1.96a (Fixed a bug causing `octopus+sha3x` dual mining not starting on some Nvidia GPUs; NOTES: See full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases)
