@@ -1,3 +1,6 @@
+##### 0.6-229@250701 2025-07-01
+*   lolMiner v1.97 (Improved performance/efficiency of `sha3x` code for RDNA1 and newer AMD cards as well as Turing and newer Nvidia cards by 1-3%; Fixed a bug when mining Grin Cuckatoo-32 not submitting shares; NOTES: See full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases)
+
 ##### 0.6-229@250630 2025-06-30
 *   SRBMiner v2.9.4 (Fixed dual mining broke in previous version v2.9.3; Minor improvements to all RandomX-based algorithms on CPU's with AVX2; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
