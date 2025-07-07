@@ -1,3 +1,6 @@
+##### 0.6-229@250706 2025-07-06
+*   Rigel miner v1.22.2 (Improved XTM/Tari coin mining on `sha3x` algorithm by ~3-5% depending from GPUs; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+
 ##### 0.6-229@250701 2025-07-01
 *   lolMiner v1.97 (Improved performance/efficiency of `sha3x` code for RDNA1 and newer AMD cards as well as Turing and newer Nvidia cards by 1-3%; Fixed a bug when mining Grin Cuckatoo-32 not submitting shares; NOTES: See full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases)
 
