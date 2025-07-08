@@ -1,3 +1,6 @@
+##### 0.6-229@250707 2025-07-07
+*   OneZeroMiner v1.4.5 (Added support `cryptix` for mining CPAY/Cryptix on Nvidia cards, 2% dev fee; Minor performance improvements for Nvidia GPUs on Xelis mining; Hashrate improvement on CMP 170HX 80+ kH/s at 1305 core Xelis mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+
 ##### 0.6-229@250706 2025-07-06
 *   Rigel miner v1.22.2 (Improved XTM/Tari coin mining on `sha3x` algorithm by ~3-5% depending from GPUs; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
 
