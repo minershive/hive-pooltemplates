@@ -1,3 +1,29 @@
+##### 0.6-229@250707 2025-07-07
+*   OneZeroMiner v1.4.5 (Added support `cryptix` for mining CPAY/Cryptix on Nvidia cards, 2% dev fee; Minor performance improvements for Nvidia GPUs on Xelis mining; Hashrate improvement on CMP 170HX 80+ kH/s at 1305 core Xelis mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+
+##### 0.6-229@250706 2025-07-06
+*   Rigel miner v1.22.2 (Improved XTM/Tari coin mining on `sha3x` algorithm by ~3-5% depending from GPUs; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+
+##### 0.6-229@250701 2025-07-01
+*   lolMiner v1.97 (Improved performance/efficiency of `sha3x` code for RDNA1 and newer AMD cards as well as Turing and newer Nvidia cards by 1-3%; Fixed a bug when mining Grin Cuckatoo-32 not submitting shares; NOTES: See full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases)
+
+##### 0.6-229@250630 2025-06-30
+*   SRBMiner v2.9.4 (Fixed dual mining broke in previous version v2.9.3; Minor improvements to all RandomX-based algorithms on CPU's with AVX2; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-229@250626 2025-06-26
+*   SRBMiner v2.9.3 (Performance/efficiency improvements for algorithm `walahash` on AMD RDNA and NVIDIA GPUs; Fixed a few algorithms on NVIDIA 5000 series broken since v2.9.0; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   lolMiner v1.96a (Fixed a bug causing `octopus+sha3x` dual mining not starting on some Nvidia GPUs; NOTES: See full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases)
+*   XMRig v6.24.0 (Fixed detection of L2 cache size for some complex NUMA topologies; Fixed auto-config for AMD CPUs with less than 2 MB L3 cache per thread; NOTES: Please, see full changelog at https://github.com/xmrig/xmrig/releases)
+*   XMRig-MO v6.24.0-mo1 (Rebase on latest XMRig v6.24.0;  NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases)
+*   CPUMiner-Opt-JayDDee v25.4 (Minor bug fixes & improvements; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)
+
+##### 0.6-229@250619 2025-06-19
+*   XMRig v6.23.0 (Tweaked auto-config for AMD CPUs with < 2 MB L3 cache per thread; NOTES: Please, see full changelog at https://github.com/xmrig/xmrig/releases)
+*   XMRig-MO v6.23.0-mo1 (Rebase on latest XMRig v6.23.0;  NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig/releases)
+
+##### 0.6-229@250615 2025-06-15
+*   SRBMiner v2.9.2 (More performance improvements for algorithm `sha3x` on AMD RDNA and NVIDIA GPUs; More performance improvements for DUAL mining FISHHASH+SHA3X and AUTOLYKOS2+SHA3X on AMD RDNA and NVIDIA GPUs; Fixed AMD Vega GPUs on algorithm `sha3x` so they now work on older drivers; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250611 2025-06-11
 *   lolMiner v1.96 (Added support for Tari-Sha3x on Nvidia Pascal and newer and AMD RX 400 series and newer GPUs fee 1%; Added support for Tari-Sha3x dual mining with Octopus (Conflux), Autolykos V2 (Ergo), Fishhash and Karlsenhash V2 algorithms; NOTES: See full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases)
 *   SRBMiner v2.9.1 (Performance/efficiency improvements for algorithm 'sha3x' on AMD and Nvidia GPUs; Performance/efficiency improvements for dual mining `fishhash+sha3x` on AMD RDNA and Nvidia GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)

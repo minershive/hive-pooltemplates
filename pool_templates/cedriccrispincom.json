@@ -20,7 +20,7 @@
 				]
 			},
 			{
-				"geo": "Asia (Thailand) - FPGA [FK33/TH53/TH55/E300]",
+				"geo": "Asia (Thailand) - FPGA [FK33|TH53|TH55|E300]",
 				"urls": [
 					"alephium.cedric-crispin.com:4086"
 				],
@@ -29,7 +29,7 @@
 				]
 			},
 			{
-				"geo": "Asia (Thailand) - ASIC (Goldshell AL-BOX~AL-BOX II PLUS~AL-BOX III - IceRiver ALPH AL0~ALPH AL2 LITE)",
+				"geo": "Asia (Thailand) - ASIC (Goldshell AL-BOX|AL-BOX II PLUS|AL-BOX III - IceRiver ALPH AL0|ALPH AL2 LITE)",
 				"urls": [
 					"alephium.cedric-crispin.com:4088"
 				]
@@ -68,10 +68,10 @@
 			{
 				"geo": "Asia (Thailand) - GPU",
 				"urls": [
-					"beam.cedric-crispin.com:3364"
+					"conceal.cedric-crispin.com:3364"
 				],
 				"ssl_urls": [
-					"beam.cedric-crispin.com:3365"
+					"conceal.cedric-crispin.com:3365"
 				]
 			}
 		],
@@ -117,6 +117,29 @@
 				"template":"%WAL%.%WORKER_NAME%"
 			}
         	}
+	},
+	{
+		"coin": "DCR",
+		"servers": [
+			{
+				"geo": "Asia (Thailand) - GPU",
+				"urls": [
+					"decred.cedric-crispin.com:4494"
+				],
+				"ssl_urls": [
+					"decred.cedric-crispin.com:4495"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_blake3-dcr",
+			"bzminer": {
+				"user_config": "\"nc\": 1\n\"allow_stales\": false"
+			},
+			"srbminer": {
+				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
+			}
+		}
 	},
 	{
 		"coin": "ERG",
@@ -254,7 +277,7 @@
 				]
 			},
 			{
-				"geo": "Asia (Thailand) - FPGA/ASIC (IceRiver KS0~KS0 Pro)",
+				"geo": "Asia (Thailand) - FPGA/ASIC (IceRiver KS0|KS0 PRO|KS0 ULTRA)",
 				"urls": [
 					"kaspa.cedric-crispin.com:4117"
 				],
@@ -263,16 +286,7 @@
 				]
 			},
 			{
-				"geo": "Asia (Thailand) - FPGA/ASIC (IceRiver KS0 Ultra)",
-				"urls": [
-					"kaspa.cedric-crispin.com:4119"
-				],
-				"ssl_urls": [
-					"kaspa.cedric-crispin.com:4120"
-				]
-			},
-			{
-				"geo": "Asia (Thailand) - ASIC (IceRiver KS1~KS2~KS2 LITE - Goldshell KA-BOX~KA-BOX PRO)",
+				"geo": "Asia (Thailand) - ASIC (IceRiver KS1|KS2|KS2 LITE - Goldshell KA-BOX|KA-BOX PRO)",
 				"urls": [
 					"kaspa.cedric-crispin.com:4121"
 				],
@@ -281,7 +295,7 @@
 				]
 			},
 			{
-				"geo": "Asia (Thailand) - ASIC (IceRiver KS3~KS3L - Bitmain Antminer KS3)",
+				"geo": "Asia (Thailand) - ASIC (IceRiver KS3|KS3L|KS7 LITE - Bitmain Antminer KS3)",
 				"urls": [
 					"kaspa.cedric-crispin.com:4127"
 				],
@@ -290,12 +304,21 @@
 				]
 			},
 			{
-				"geo": "Asia (Thailand) - ASIC (IceRiver KS5~KS5L~KS5M - Bitmain Antminer KS3)",
+				"geo": "Asia (Thailand) - ASIC (IceRiver KS5|KS5L|KS5M - Bitmain Antminer KS5)",
 				"urls": [
 					"kaspa.cedric-crispin.com:4129"
 				],
 				"ssl_urls": [
 					"kaspa.cedric-crispin.com:4130"
+				]
+			},
+			{
+				"geo": "Asia (Thailand) - ASIC (IceRiver KS7 - Bitmain Antminer KS7)",
+				"urls": [
+					"kaspa.cedric-crispin.com:4131"
+				],
+				"ssl_urls": [
+					"kaspa.cedric-crispin.com:4132"
 				]
 			}
 		],
