@@ -1,3 +1,10 @@
+##### 0.6-229@250802 2025-08-02
+*   OneZeroMiner v1.4.6 (Added `qhash` algo for mining QTC/Qubitcoin on Nvidia cards, fee 5%; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   WildRig-Multi v0.43.4 (Implemented in v0.43.3 `qhash` algo for mining QTC/Qubitcoin on AMD/Intel/NVIDIA 40xx/50xx series GPUs; Significant improvements for NVIDIA and Intel GPUs and slightly improved on AMD in v0.43.4; Fixed high rejects rate on `qhash`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   SRBMiner v2.9.5 (Added algorithm `randomalpha` for CPU mining APLHA/Unicity coin, fee 1%; Performance/efficiency improvements for algorithm 'nxlhash' on AMD RDNA and NVIDIA GPUs; Fixed broken dual mining of algorithms 'autolykos2/sha256dt' and 'autolykos2/heavyhash' on NVIDIA 5000 series; Removed some algorithms; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   CPUMiner-Opt-Rplant v5.0.45 (Added `rinhash2` algo; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)  
+*   CPUMiner-Opt-JayDDee v25.6 (Added `argon2d1000` and `argon2d16000` algos; Some performance improvements & bug fixes; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)  
+
 ##### 0.6-229@250707 2025-07-07
 *   OneZeroMiner v1.4.5 (Added support `cryptix` for mining CPAY/Cryptix on Nvidia cards, 2% dev fee; Minor performance improvements for Nvidia GPUs on Xelis mining; Hashrate improvement on CMP 170HX 80+ kH/s at 1305 core Xelis mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 
