@@ -1,0 +1,31 @@
+[
+    {
+        "pool": {
+            "name": "Ocean.XYZ",
+            "url": "https://ocean.xyz",
+            "fee": 0,
+            "type": "TIDES"
+        }
+    },
+
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "Default",
+                "urls": [
+                    "mine.ocean.xyz:3334",
+                    "default.mine.ocean.xyz:3101"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        },
+        "stratum_ping": false,
+        "account_mining": true
+    }
+]
