@@ -1,3 +1,7 @@
+##### 0.6-229@250804 2025-08-04
+*   OneZeroMiner v1.4.9 (QTC/Qubitcoin: Significant performance improvement for 40xx and 50xx series up to 100%, also performance improved for the other cards; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   WildRig-Multi v0.43.6 (Significant improvements to `qhash` for all cards; Hashrate of `qhash` should be the same in miner and on pool side now; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250803 2025-08-03
 *   OneZeroMiner v1.4.8 (Support for the Qubitcoin hardfork and hash function changes, which should significantly reduce the number of rejected shares, but the hashrate on this version will also be lower than on previous versions due to the changes; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 *   WildRig-Multi v0.43.5 (Implemented new changes to `qhash` to avoid rejects, but pool hashrate will be lower now; Fixed auto-tunig of `qhash` for AMD GPUs; Enabled support for all NVIDIA GPUs for `qhash`, but RTX 3000 series and lower is not optimized yet; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
