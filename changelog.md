@@ -1,3 +1,7 @@
+##### 0.6-229@250807 2025-08-07
+*   OneZeroMiner v1.5.1 (Significant performance boost for Qubitcoin mining; NOTES: 1) Adjust the OC settings for this new version 2)Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   WildRig-Multi v0.43.7 (Improved `qhash` on different GPUs; Reduced CPU usage for `qhash`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250805 2025-08-05
 *   OneZeroMiner v1.5.0 (Performance boost about 50% for 30xx and older generations, 25% for the newer cards on Qubitcoin mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 
