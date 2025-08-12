@@ -1,3 +1,6 @@
+##### 0.6-229@250811 2025-08-11
+*   WildRig-Multi v0.43.9 (Improved auto-tune for `qhash`; Significant improved `qhash` on Intel GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250810 2025-08-10
 *   OneZeroMiner v1.5.2 (Added a new kernel `--kernel 2` for CMP cards with nerfed f32/f64 performance for Qubitcoin mining; Performance improvement on Qubitcoin mining for the other cards; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 
