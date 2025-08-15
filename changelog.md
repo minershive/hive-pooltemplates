@@ -1,3 +1,6 @@
+##### 0.6-229@250814 2025-08-14
+*   WildRig-Multi v0.44.0 (Improved `qhash` for AMD RDNA1/2/3 architectures; Significantly improved `qhash` for NVIDIA Ampere and older architectures; Fixed low hashrate on CMP 170HX for `qhash`, use parameter `--qhash-kernel 2`;  Up to 20% improvements for NVIDIA Ada Lovelace and Blackwell; Lowered CPU usage; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250811 2025-08-11
 *   WildRig-Multi v0.43.9 (Improved auto-tune for `qhash`; Significant improved `qhash` on Intel GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
