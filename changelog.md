@@ -1,3 +1,8 @@
+##### 0.6-229@250824 2025-08-24
+*   WildRig-Multi v0.44.5 (Up to 20% speed improvements on `qhash` for AMD and NVIDIA GPUs; Added `--qhash-kernel 2` for CMP 50HX and other Volta/Turing cards; Fixed support AMD RX4x0/RX5x0/Vega GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   OneZeroMiner v1.5.4 (Another major performance boost for Qubitcoin on Nvidia 30xx/40xx/50xx series; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   SRBMiner v2.9.6 (Added algorithm `randomvirel` for CPU mining VRL/Virel blockchain, fee 0.85%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250815 2025-08-15
 *   OneZeroMiner v1.5.3 (Performance improvement on `qhash` up to 50% for Nvidia 40xx/50xx series and up to 25% for 30xx series; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 
