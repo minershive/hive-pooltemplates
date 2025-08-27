@@ -1,3 +1,7 @@
+##### 0.6-229@250827 2025-08-27
+*   OneZeroMiner v1.5.5 (Performance improvement up to 100% for most cards on Qubitcoin mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   miniZ v2.5e2 (Added support for RTX 50XX GPUs; Misc fixes; NOTES: Please, see full changelog at https://github.com/miniZ-miner/miniZ/releases)
+
 ##### 0.6-229@250824 2025-08-24
 *   WildRig-Multi v0.44.5 (Up to 20% speed improvements on `qhash` for AMD and NVIDIA GPUs; Added `--qhash-kernel 2` for CMP 50HX and other Volta/Turing cards; Fixed support AMD RX4x0/RX5x0/Vega GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 *   OneZeroMiner v1.5.4 (Another major performance boost for Qubitcoin on Nvidia 30xx/40xx/50xx series; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
