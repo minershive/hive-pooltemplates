@@ -1,3 +1,7 @@
+##### 0.6-229@250831 2025-08-31
+*   OneZeroMiner v1.5.7 (Qubitcoin mining performance improvement up to ~30% vs v1.5.6; Dropped dev fee on Qubitcoin mining to 3%; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   Rigel miner v1.22.3 (Minor performance improvement on Xelis mining on Nvidia 30xx/40xx, and CMP 170HX cards; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+  
 ##### 0.6-229@250827 2025-08-27
 *   OneZeroMiner v1.5.5 (Performance improvement up to 100% for most cards on Qubitcoin mining; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 *   miniZ v2.5e2 (Added support for RTX 50XX GPUs; Misc fixes; NOTES: Please, see full changelog at https://github.com/miniZ-miner/miniZ/releases)
