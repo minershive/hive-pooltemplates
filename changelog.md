@@ -1,3 +1,7 @@
+##### 0.6-229@250904 2025-09-04
+*   SRBMiner v2.9.7 (Added algorithm `yespowereqpay` for CPU mining EQPAY/Equitypay, fee 2; Added algorithm `yespowerinterchained` for CPU mining ITC/Interchained, fee 0.85%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   CPUMiner-Opt-Rplant v5.0.46 (Added `interchained` algo; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)  
+
 ##### 0.6-229@250831 2025-08-31
 *   OneZeroMiner v1.5.7 (Qubitcoin mining performance improvement up to ~30% vs v1.5.6; Dropped dev fee on Qubitcoin mining to 3%; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 *   Rigel miner v1.22.3 (Minor performance improvement on Xelis mining on Nvidia 30xx/40xx, and CMP 170HX cards; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
