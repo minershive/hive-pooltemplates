@@ -1,3 +1,6 @@
+##### 0.6-229@250907 2025-09-07
+*   WildRig-Multi v0.44.8 (Further speed bump for `qhash` across all GPUs; Improved rejects ratio for `qhash`; Fixed AMD Vega kernels for `qhash`; Fixed some connection issues and crash on start; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250906 2025-09-06
 *   OneZeroMiner v1.5.8 (Huge `qhash` hashrate improvement for Qubitcoin mining, up to 3x times; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 *   WildRig-Multi v0.44.6 (Huge improvements for `qhash` across all GPUs; Added Hopper architecture support; Removed `heavyhash` support; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
