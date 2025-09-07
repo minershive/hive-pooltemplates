@@ -1,3 +1,7 @@
+##### 0.6-229@250906 2025-09-06
+*   OneZeroMiner v1.5.8 (Huge `qhash` hashrate improvement for Qubitcoin mining, up to 3x times; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   WildRig-Multi v0.44.6 (Huge improvements for `qhash` across all GPUs; Added Hopper architecture support; Removed `heavyhash` support; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250904 2025-09-04
 *   SRBMiner v2.9.7 (Added algorithm `yespowereqpay` for CPU mining EQPAY/Equitypay, fee 2; Added algorithm `yespowerinterchained` for CPU mining ITC/Interchained, fee 0.85%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   CPUMiner-Opt-Rplant v5.0.46 (Added `interchained` algo; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)  
