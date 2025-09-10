@@ -1,3 +1,6 @@
+##### 0.6-229@250909 2025-09-09
+*   WildRig-Multi v0.45.0 (Improved up to 100% `qhash` hashrate across all GPUs; Fixed memory corruption on AMD rigs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250908 2025-09-08
 *   OneZeroMiner v1.5.9 (Improved performance `qhash` for Qubitcoin for Pascal/30xx/40xx series up to ~40%; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 
