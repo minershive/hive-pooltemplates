@@ -47,6 +47,50 @@
     },
 
     {
+        "coin": "QTC",
+        "servers": [
+            {
+                "geo": "Global (France)",
+                "urls": [
+                    "qubitcoin.luckypool.io:8611"
+                ]
+            },
+            {
+                "geo": "N.America (Canada)",
+                "urls": [
+                    "ca.luckypool.io:8611"
+                ]
+            },
+            {
+                "geo": "Asia (HongKong)",
+                "urls": [
+                    "hk.luckypool.io:8611"
+                ]
+            },
+            {
+                "geo": "Russia",
+                "urls": [
+                    "ru.luckypool.io:8611"
+                ]
+            }
+        ],
+        "miners": {
+            "onezerominer": {
+                "url": "%URL%",
+                "algo": "qhash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "qhash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
+    },
+
+    {
         "coin": "XCB",
         "servers": [
             {
@@ -229,21 +273,63 @@
         "coin": "XTM",
         "servers": [
             {
-                "geo": "Europe",
+                "geo": "Global (France)",
                 "urls": [
                     "tari.luckypool.io:6118"
                 ]
             },
             {
-                "geo": "Asia",
+                "geo": "Europe (Poland)",
+                "urls": [
+                    "pl-eu.luckypool.io:6118"
+                ]
+            },
+            {
+                "geo": "Europe (Germany)",
+                "urls": [
+                    "de-eu.luckypool.io:6118"
+                ]
+            },
+            {
+                "geo": "Europe (France, backup 1)",
+                "urls": [
+                    "fr1.luckypool.io:6118"
+                ]
+            },
+            {
+                "geo": "Europe (France, backup 2)",
+                "urls": [
+                    "fr2.luckypool.io:6118"
+                ]
+            },
+            {
+                "geo": "Asia (Singapore)",
                 "urls": [
                     "sg.luckypool.io:6118"
                 ]
             },
             {
-                "geo": "North America",
+                "geo": "Asia (Singapore, backup 1)",
+                "urls": [
+                    "sg1.luckypool.io:6118"
+                ]
+            },
+            {
+                "geo": "Asia (Singapore, backup 2)",
+                "urls": [
+                    "sg2.luckypool.io:6118"
+                ]
+            },
+            {
+                "geo": "N.America (Canada)",
                 "urls": [
                     "ca.luckypool.io:6118"
+                ]
+            },
+            {
+                "geo": "N.America (Canada, backup)",
+                "urls": [
+                    "ca1.luckypool.io:6118"
                 ]
             }
         ],
