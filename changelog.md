@@ -1,3 +1,6 @@
+##### 0.6-229@250911 2025-09-11
+*   WildRig-Multi v0.45.1 (Implemented experimental kernel 3 for CMP 70HX/90HX, use `--qhash-kernel 3` option; Added back-up pool for `qhash` dev-fee; Slightly improved `qhash` on some cards; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250909 2025-09-09
 *   WildRig-Multi v0.45.0 (Improved up to 100% `qhash` hashrate across all GPUs; Fixed memory corruption on AMD rigs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
