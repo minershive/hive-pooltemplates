@@ -1,3 +1,7 @@
+##### 0.6-229@250916 2025-09-16
+*   lolMiner v1.98 (Added support for mining algorithm `Cuckaroo 29` as used for XTM/Tari for all Nvidia GTX 1000 cards and newer as well as AMD RX 400 cards and newer with at least 6G of memory, fee is 2%; Misc bug fixes; NOTES: See full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases)
+*   WildRig-Multi v0.45.3 (Fixed low hashrate of `qhash` on AMD Radeon 4xx/5xx series; Slightly better tuned `qhash` on other AMD, Intel and NVIDIA Pascal/Blackwell GPUs; Reverted `--qhash-kernel` parameter back to 1 by default for CMP 30HX/40HX; Possible compatibility fix for some Zano pools; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250912 2025-09-12
 *   WildRig-Multi v0.45.2 (Performance `qhash` improved up to ~7% for all AMD/Nvidia GPUs; Fixed some cases of connection issue; Fixed `qhash` hashrate stability and reduced stale shares; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
