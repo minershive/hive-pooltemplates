@@ -1,3 +1,6 @@
+##### 0.6-229@250924 2025-09-24
+*   WildRig-Multi v0.45.6 (Implemented auto-switch to new `qhash` after QTC hardfork planned to Sep 25, 2025; Up to 10% speed improvement of `qhash` for NVIDIA GPUs; Up to 25% speed improvement of `qhash` for AMD and NVIDIA CMP 70HX/90HX GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250921 2025-09-21
 *   lolMiner v1.98a (Various bug fixes vs previous v1.98, see full changelog for details at https://github.com/Lolliedieb/lolMiner-releases/releases)
 *   OneZeroMiner v1.6.0 (Performance `qhash` improvement for Qubitcoin mining up to ~100%; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
