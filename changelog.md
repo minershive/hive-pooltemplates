@@ -1,3 +1,6 @@
+##### 0.6-229@250928 2025-09-28
+*   SRBMiner v2.9.8 (Performance improvements for `rinhash` on AVX2 CPUs; Minor performance improvements to all `randomx` and `yespower` based algorithms; Removed algorithms: 'blake3_lbrt', 'sha256dt'; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@250924 2025-09-24
 *   WildRig-Multi v0.45.6 (Implemented auto-switch to new `qhash` after QTC hardfork planned to Sep 25, 2025; Up to 10% speed improvement of `qhash` for NVIDIA GPUs; Up to 25% speed improvement of `qhash` for AMD and NVIDIA CMP 70HX/90HX GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
