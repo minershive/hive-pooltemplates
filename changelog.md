@@ -1,3 +1,7 @@
+##### 0.6-229@251009 2025-10-09
+*   OneZeroMiner v1.6.1 (Added the latest changes to `qhash`  algorithm; Performance `qhash` improvement for Qubitcoin mining up to ~100%; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   WildRig-Multi v0.45.7 (Up to 100% boost of `qhash` across all GPUs; Removed `phihash`, `progpow-veil` and `vprogpow`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@250928 2025-09-28
 *   SRBMiner v2.9.8 (Performance improvements for `rinhash` on AVX2 CPUs; Minor performance improvements to all `randomx` and `yespower` based algorithms; Removed algorithms: 'blake3_lbrt', 'sha256dt'; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
