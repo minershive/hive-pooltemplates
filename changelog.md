@@ -1,3 +1,7 @@
+##### 0.6-229@251012 2025-10-12
+*   OneZeroMiner v1.6.2 (Performance `qhash` improvement for Qubitcoin mining up to ~150%; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   WildRig-Multi v0.45.8 (Up to 220% boost of `qhash` across all GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@251009 2025-10-09
 *   OneZeroMiner v1.6.1 (Added the latest changes to `qhash`  algorithm; Performance `qhash` improvement for Qubitcoin mining up to ~100%; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 *   WildRig-Multi v0.45.7 (Up to 100% boost of `qhash` across all GPUs; Removed `phihash`, `progpow-veil` and `vprogpow`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
