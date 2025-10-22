@@ -1,3 +1,6 @@
+##### 0.6-229@251021 2025-10-21
+*   WildRig-Multi v0.46.1 (Slight `qhash` hashrate increase for NVIDIA ~1%; Up to 5% `qhash` hashrate increase for AMD RDNA/VEGA GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@251020 2025-10-20
 *   WildRig-Multi v0.46.0 (Up to 5% improvements of `qhash` for NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
