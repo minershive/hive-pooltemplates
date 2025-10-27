@@ -1,3 +1,6 @@
+##### 0.6-229@251026 2025-10-26
+*   WildRig-Multi v0.46.3 (Significantly increased `qhash` hashrate for all NVIDIA and AMD Vega/RDNA GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@251024 2025-10-24
 *   OneZeroMiner v1.6.4 (Improved performance of the `qhash` algorithm for QTC/Qubitcoin mining by 20-30%; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 
