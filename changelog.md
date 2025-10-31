@@ -1,3 +1,7 @@
+##### 0.6-229@251030 2025-10-30
+*   SRBMiner v2.9.9 (Added algorithm `xhash` for GPU mining LAX/Parallax on AMD/NVIDIA/INTEL platforms, fee 3.0%; Added algorithm `tht` for CPU mining THT/ThoughtAI, fee 5.0%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   miniZ v2.5e3 (Fixed Equihash 192,7/Progpow/Kawpow/Ethash algorithms; Removed Equihash 125/4 and 150/5 algorithms; Other bug fixes; NOTES: Please, see full changelog at https://github.com/miniZ-miner/miniZ/releases)
+
 ##### 0.6-229@251027 2025-10-27
 *   WildRig-Multi v0.46.4 (Improved power efficiency of `qhash` for all NVIDIA and AMD Vega/RDNA GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
