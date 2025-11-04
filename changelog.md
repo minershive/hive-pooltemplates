@@ -1,3 +1,7 @@
+##### 0.6-229@251103 2025-11-03
+*   Clore.AI Rental Service v011 (Added failover repository for service installation which can fail happens on some world regions)
+*   SRBMiner v3.0.0 (Added algorithm `randomhscx` for CPU mining HSCX/HashCoinX, fee 2.0%; Performance improvements for algorithm `tht` on AVX2 CPUs; Fixed broken argon2 family algorithms; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@251030 2025-10-30
 *   SRBMiner v2.9.9 (Added algorithm `xhash` for GPU mining LAX/Parallax on AMD/NVIDIA/INTEL platforms, fee 3.0%; Added algorithm `tht` for CPU mining THT/ThoughtAI, fee 5.0%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   miniZ v2.5e3 (Fixed Equihash 192,7/Progpow/Kawpow/Ethash algorithms; Removed Equihash 125/4 and 150/5 algorithms; Other bug fixes; NOTES: Please, see full changelog at https://github.com/miniZ-miner/miniZ/releases)
