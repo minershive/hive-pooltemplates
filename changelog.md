@@ -1,3 +1,6 @@
+##### 0.6-229@251104 2025-11-04
+*   OneZeroMiner v1.6.5 (Significant hashrate and efficiency `qhash` improvement for mining QTC/Qubitcoin, varies bym GPUs generation; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+
 ##### 0.6-229@251103 2025-11-03
 *   Clore.AI Rental Service v011 (Added failover repository for service installation which can fail happens on some world regions)
 *   SRBMiner v3.0.0 (Added algorithm `randomhscx` for CPU mining HSCX/HashCoinX, fee 2.0%; Performance improvements for algorithm `tht` on AVX2 CPUs; Fixed broken argon2 family algorithms; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
