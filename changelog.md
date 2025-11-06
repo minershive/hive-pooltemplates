@@ -1,3 +1,7 @@
+##### 0.6-229@251105 2025-11-05
+*   WildRig-Multi v0.46.5 (Huge, up to 100%, speed improvements for `qhash` algorithm  across all GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   SRBMiner v3.0.1 (Performance improvements for algorithm `tht`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+   
 ##### 0.6-229@251104 2025-11-04
 *   OneZeroMiner v1.6.5 (Significant hashrate and efficiency `qhash` improvement for mining QTC/Qubitcoin, varies bym GPUs generation; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 
