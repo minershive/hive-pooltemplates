@@ -17,7 +17,7 @@
                     "dnx.eu.ekapool.com:19666"
                 ],
                 "ssl_urls": [
-                    "dnx.eu.ekapool.com:10668"
+                    "dnx.eu.ekapool.com:19668"
                 ]
             },
             {
@@ -26,7 +26,7 @@
                     "dnx.us.ekapool.com:19666"
                 ],
                 "ssl_urls": [
-                    "dnx.us.ekapool.com:10668"
+                    "dnx.us.ekapool.com:19668"
                 ]
             },
             {
@@ -35,7 +35,7 @@
                     "dnx.ca.ekapool.com:19666"
                 ],
                 "ssl_urls": [
-                    "dnx.ca.ekapool.com:10668"
+                    "dnx.ca.ekapool.com:19668"
                 ]
             },
             {
@@ -44,17 +44,17 @@
                     "dnx.sg.ekapool.com:19666"
                 ],
                 "ssl_urls": [
-                    "dnx.sg.ekapool.com:10668"
+                    "dnx.sg.ekapool.com:19668"
                 ]
             }
         ],
         "miners": {
+            "_prototype": "miners_dynexsolve",
             "srbminer": {
-                "url": "%URL%",
-                "algo": "dynex",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "--disable-cpu\n--mallob-endpoint https://dnx.eu.ekapool.com"
+                "user_config": "--disable-cpu\n--mallob-endpoint https://dnx.eu.ekapool.com,https://dnx.us.ekapool.com,https://dnx.ca.ekapool.com,https://dnx.sg.ekapool.com"
+            },
+            "onezerominer": {
+                "user_config": "--mallob-endpoint https://dnx.eu.ekapool.com,https://dnx.us.ekapool.com,https://dnx.ca.ekapool.com,https://dnx.sg.ekapool.com"
             }
         }
     },
@@ -92,6 +92,33 @@
         ],
         "miners": {
             "_prototype": "miners_progpow_zano"
+        }
+    },
+
+    {
+        "coin": "ZEPH",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "zeph.eu.ekapool.com:15666"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "zeph.us.ekapool.com:15666"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "zeph.sg.ekapool.com:15666"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_randomx_worker"
         }
     }
 ]

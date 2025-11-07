@@ -1,33 +1,61 @@
 [
   {
     "pool": {
-      "name": "PMP_Mining-Solo",
-      "url": "https://pmpmining.com",
+      "name": "PMP_Mining-Pool",
+      "url": "https://www.pmpmining.com",
       "type": "SOLO"
+    }
+  },
+  {
+    "coin": "AIPG",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:5002"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:5002"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5002"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:5002"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5002"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow"
     }
   },
   {
     "coin": "BBC",
     "servers": [
       {
-        "geo": "Melbourne, AU GPU/CPU",
+        "geo": "Australia (Sydney)",
         "urls": ["au.pmpmining.com:5038"]
       },
       {
-        "geo": "Sao Paulo, BR GPU/CPU",
-        "urls": ["br.pmpmining.com:5038"]
-      },
-      {
-        "geo": "Frankfurt, GE GPU/CPU",
-        "urls": ["de.pmpmining.com:5038"]
-      },
-      {
-        "geo": "Virginia, USA GPU/CPU",
+        "geo": "USA (South Carolina)",
         "urls": ["us-east.pmpmining.com:5038"]
       },
       {
-        "geo": "Singapore, SG GPU/CPU",
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5038"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
         "urls": ["sg.pmpmining.com:5038"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5038"]
       }
     ],
     "miners": {
@@ -35,27 +63,46 @@
     }
   },
   {
+    "coin": "BTC",
+    "servers": [
+      {
+        "geo": "USA (South Carolina) Nicehash/MRR",
+        "urls": ["btc-us-east.pmpmining.com:5008"]
+      },
+      {
+        "geo": "USA (South Carolina) Hi Diff",
+        "urls": ["btc-us-east.pmpmining.com:5010"]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
     "coin": "BTG",
     "servers": [
       {
-        "geo": "Melbourne, AU GPU",
+        "geo": "Australia (Sydney)",
         "urls": ["au.pmpmining.com:5052"]
       },
       {
-        "geo": "Sao Paulo, BR GPU",
-        "urls": ["br.pmpmining.com:5052"]
-      },
-      {
-        "geo": "Frankfurt, GE GPU",
-        "urls": ["de.pmpmining.com:5052"]
-      },
-      {
-        "geo": "Virginia, USA GPU",
+        "geo": "USA (South Carolina)",
         "urls": ["us-east.pmpmining.com:5052"]
       },
       {
-        "geo": "Singapore, SG GPU",
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5052"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
         "urls": ["sg.pmpmining.com:5052"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5052"]
       }
     ],
     "miners": {
@@ -66,24 +113,24 @@
     "coin": "BTRM",
     "servers": [
       {
-        "geo": "Melbourne, AU CPU/GPU",
+        "geo": "Australia (Sydney)",
         "urls": ["au.pmpmining.com:5016"]
       },
       {
-        "geo": "Sao Paulo, BR CPU/GPU",
-        "urls": ["br.pmpmining.com:5016"]
-      },
-      {
-        "geo": "Frankfurt, GE CPU/GPU",
-        "urls": ["de.pmpmining.com:5016"]
-      },
-      {
-        "geo": "Virginia, USA GPU",
+        "geo": "USA (South Carolina)",
         "urls": ["us-east.pmpmining.com:5016"]
       },
       {
-        "geo": "Singapore, SG CPU/GPU",
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5016"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
         "urls": ["sg.pmpmining.com:5016"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5016"]
       }
     ],
     "miners": {
@@ -91,27 +138,268 @@
     }
   },
   {
-	"coin": "DGB-Sha256d",
+    "coin": "CLORE",
     "servers": [
       {
-        "geo": "Melbourne, AU ASIC",
-        "urls": ["au.pmpmining.com:5010"]
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:5004"]
       },
       {
-        "geo": "Sao Paulo, BR ASIC",
-        "urls": ["br.pmpmining.com:5010"]
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:5004"]
       },
       {
-        "geo": "Frankfurt, GE ASIC",
-        "urls": ["de.pmpmining.com:5010"]
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5004"]
       },
       {
-        "geo": "Virginia, USA ASIC",
-        "urls": ["us-east.pmpmining.com:5010"]
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:5004"]
       },
       {
-        "geo": "Singapore, SG ASIC",
-        "urls": ["sg.pmpmining.com:5010"]
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5004"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow"
+    }
+  },
+  {
+    "coin": "DOGE",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:5210"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:5210"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5210"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:5210"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5210"]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "DOGPU",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:6458"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:6458"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:6458"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:6458"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:6458"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow"
+    }
+  },
+  {
+    "coin": "FREN",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:5006"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:5006"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5006"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:5006"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5006"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow"
+    }
+  },
+  {
+    "coin": "GEMMA",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:9089"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:9089"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:9089"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:9089"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:9089"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow"
+    }
+  },
+  {
+    "coin": "GOLD",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:5079"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:5079"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5079"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:5079"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5079"]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "yescryptr16",
+        "pass": "x",
+        "worker": "%WORKER_NAME%",
+        "template": "%WAL%",
+        "user_config": "--disable-cpu"
+      }
+    }
+  },
+  {
+    "coin": "LOG",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:4936"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:4936"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:4936"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:4936"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:4936"]
+      }
+    ],
+    "miners": {
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "skein2",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "LTC",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:5057"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:5057"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5057"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:5057"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5057"]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "MAZA-Sha256d",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:3086"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:3086"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:3086"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:3086"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:3086"]
       }
     ],
     "miners": {
@@ -119,30 +407,86 @@
         "url": "stratum+tcp://%URL%",
         "template": "%WAL%"
       }
-	}
+    }
   },
-  { 
+  {
+    "coin": "MEWC",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:9087"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:9087"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:9087"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:9087"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:9087"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_meowpow"
+    }
+  },
+  {
+    "coin": "NEOX",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:5009"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:5009"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5009"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:5009"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5009"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow"
+    }
+  },
+  {
     "coin": "NOVO",
     "servers": [
       {
-        "geo": "Melbourne, AU GPU",
+        "geo": "Australia (Sydney)",
         "urls": ["au.pmpmining.com:5086"]
       },
       {
-        "geo": "Sao Paulo, BR GPU",
-        "urls": ["br.pmpmining.com:5086"]
-      },
-      {
-        "geo": "Frankfurt, GE GPU",
-        "urls": ["de.pmpmining.com:5086"]
-      },
-      {
-        "geo": "Virginia, USA GPU",
+        "geo": "USA (South Carolina)",
         "urls": ["us-east.pmpmining.com:5086"]
       },
       {
-        "geo": "Singapore, SG GPU",
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5086"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
         "urls": ["sg.pmpmining.com:5086"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5086"]
       }
     ],
     "miners": {
@@ -164,27 +508,27 @@
     }
   },
   {
-    "coin": "GOLD",
+    "coin": "QOGE",
     "servers": [
       {
-        "geo": "Melbourne, AU CPU/GPU",
-        "urls": ["au.pmpmining.com:5079"]
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:5090"]
       },
       {
-        "geo": "Sao Paulo, BR CPU/GPU",
-        "urls": ["br.pmpmining.com:5079"]
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:5090"]
       },
       {
-        "geo": "Frankfurt, GE CPU/GPU",
-        "urls": ["de.pmpmining.com:5079"]
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5090"]
       },
       {
-        "geo": "Virginia, USA CPU/GPU",
-        "urls": ["us-east.pmpmining.com:5079"]
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:5090"]
       },
       {
-        "geo": "Singapore, SG CPU/GPU",
-        "urls": ["sg.pmpmining.com:5079"]
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5090"]
       }
     ],
     "miners": {
@@ -197,29 +541,57 @@
         "user_config": "--disable-cpu"
       }
     }
-  },	
+  },
   {
-    "coin": "YERB",
+    "coin": "RXD",
     "servers": [
       {
-        "geo": "Melbourne, AU GPU/CPU",
-        "urls": ["au.pmpmining.com:5036"]
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:3088"]
       },
       {
-        "geo": "Sao Paulo, BR GPU/CPU",
-        "urls": ["br.pmpmining.com:5036"]
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:3088"]
       },
       {
-        "geo": "Frankfurt, GE GPU/CPU",
-        "urls": ["de.pmpmining.com:5036"]
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:3088"]
       },
       {
-        "geo": "Virginia, USA GPU/CPU",
-        "urls": ["us-east.pmpmining.com:5036"]
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:3088"]
       },
       {
-        "geo": "Singapore, SG GPU/CPU",
-        "urls": ["sg.pmpmining.com:5036"]
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:3088"]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_radiant"
+    }
+  },
+  {
+    "coin": "RTM",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:5011"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:5011"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5011"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:5011"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5011"]
       }
     ],
     "miners": {
@@ -227,103 +599,119 @@
     }
   },
   {
-    "coin": "FNNC",
+    "coin": "SATOX",
     "servers": [
       {
-        "geo": "Melbourne, AU CPU/GPU",
-        "urls": ["au.pmpmining.com:5081"]
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:5021"]
       },
       {
-        "geo": "Sao Paulo, BR CPU/GPU",
-        "urls": ["br.pmpmining.com:5081"]
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:5021"]
       },
       {
-        "geo": "Frankfurt, GE CPU/GPU",
-        "urls": ["de.pmpmining.com:5081"]
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5021"]
       },
       {
-        "geo": "Virginia, USA CPU/GPU",
-        "urls": ["us-east.pmpmining.com:5081"]
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:5021"]
       },
       {
-        "geo": "Singapore, SG CPU/GPU",
-        "urls": ["sg.pmpmining.com:5081"]
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5021"]
       }
     ],
     "miners": {
-      "srbminer": {
-        "url": "%URL%",
-        "algo": "yescryptr16",
-        "pass": "x",
-        "worker": "%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "--disable-cpu"
-      }
-	}
+      "_prototype": "miners_kawpow"
+    }
   },
   {
-    "coin": "MAZA-Sha256d",
+    "coin": "XNA",
     "servers": [
       {
-        "geo": "Melbourne, AU ASIC ",
-        "urls": ["au.pmpmining.com:3086"]
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:5026"]
       },
       {
-        "geo": "Sao Paulo, BR ASIC ",
-        "urls": ["br.pmpmining.com:3086"]
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:5026"]
       },
       {
-        "geo": "Frankfurt, GE ASIC ",
-        "urls": ["de.pmpmining.com:3086"]
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5026"]
       },
       {
-        "geo": "Virginia, USA-EAST ASIC ",
-        "urls": ["us-east.pmpmining.com:3086"]
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:5026"]
       },
       {
-        "geo": "Singapore, SG ASIC ",
-        "urls": ["sg.pmpmining.com:3086"]
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5026"]
       }
     ],
     "miners": {
-      "asicminer": {
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%"
-	  }
-	}
+      "_prototype": "miners_kawpow"
+    }
   },
   {
-    "coin": "QOGE",
+    "coin": "YERB",
     "servers": [
       {
-        "geo": "Melbourne, AU CPU/GPU",
-        "urls": ["au.pmpmining.com:5089"]
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:5036"]
       },
       {
-        "geo": "Sao Paulo, BR CPU/GPU",
-        "urls": ["br.pmpmining.com:5089"]
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:5036"]
       },
       {
-        "geo": "Frankfurt, GE CPU/GPU",
-        "urls": ["de.pmpmining.com:5089"]
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:5036"]
       },
       {
-        "geo": "Virginia, USA CPU/GPU",
-        "urls": ["us-east.pmpmining.com:5089"]
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:5036"]
       },
       {
-        "geo": "Singapore, SG CPU/GPU",
-        "urls": ["sg.pmpmining.com:5089"]
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:5036"]
       }
     ],
     "miners": {
-      "srbminer": {
-        "url": "%URL%",
+      "_prototype": "miners_ghostrider"
+    }
+  },
+  {
+    "coin": "YTN",
+    "servers": [
+      {
+        "geo": "Australia (Sydney)",
+        "urls": ["au.pmpmining.com:16195"]
+      },
+      {
+        "geo": "USA (South Carolina)",
+        "urls": ["us-east.pmpmining.com:16195"]
+      },
+      {
+        "geo": "USA (St Louis)",
+        "urls": ["us-central.pmpmining.com:16195"]
+      },
+      {
+        "geo": "ASIA (Singapore)",
+        "urls": ["sg.pmpmining.com:16195"]
+      },
+      {
+        "geo": "ASIA (Japan)",
+        "urls": ["jp.pmpmining.com:16195"]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": " stratum+tcp://%URL%",
         "algo": "yescryptr16",
         "pass": "x",
-        "worker": "%WORKER_NAME%",
-        "template": "%WAL%",
-        "user_config": "--disable-cpu"
+        "template": "%WAL%.%WORKER_NAME%"
       }
     }
   }

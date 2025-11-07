@@ -22,16 +22,6 @@
                 ]
             },
             {
-                "geo": "Russia",
-                "urls": [
-                    "ru-etc.hiveon.net:8888",
-                    "ru-etc.hiveon.net:4444"
-                ],
-                "ssl_urls": [
-                    "ru-etc.hiveon.net:20443"
-                ]
-            },
-            {
                 "geo": "Europe",
                 "urls": [
                     "eu-etc.hiveon.net:8888",
@@ -42,23 +32,13 @@
                 ]
             },
             {
-                "geo": "N.America",
+                "geo": "Russia",
                 "urls": [
-                    "na-etc.hiveon.net:8888",
-                    "na-etc.hiveon.net:4444"
+                    "ru-etc.hiveon.net:8888",
+                    "ru-etc.hiveon.net:4444"
                 ],
                 "ssl_urls": [
-                    "na-etc.hiveon.net:20443"
-                ]
-            },
-            {
-                "geo": "Asia-Pacific",
-                "urls": [
-                    "aspac-etc.hiveon.net:8888",
-                    "aspac-etc.hiveon.net:4444"
-                ],
-                "ssl_urls": [
-                    "aspac-etc.hiveon.net:20443"
+                    "ru-etc.hiveon.net:20443"
                 ]
             }
         ],
@@ -102,6 +82,30 @@
                 ],
                 "ssl_urls": [
                     "btc.hiveon.com:20443"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        },
+        "stratum_ping": false,
+        "account_mining": true
+    },
+
+    {
+        "coin": "LTC",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "ltcbtc.hiveon.com:8888",
+                    "ltcbtc.hiveon.com:4444"
+                ],
+                "ssl_urls": [
+                    "ltcbtc.hiveon.com:20443"
                 ]
             }
         ],
