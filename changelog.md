@@ -1,3 +1,6 @@
+##### 0.6-229@251108 2025-11-08
+*   WildRig-Multi v0.46.7 (Ultimate speedup of `qhash` for AMD up to 250%, NVIDIA up to 100% and Intel up to 500%; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@251106 2025-11-06
 *   WildRig-Multi v0.46.6 (Significant speed improvements for `qhash` across all GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 *   SRBMiner-Multi v3.0.2 (Minor performance improvement for algorithm `tht` on CPUs with AVX512; Various bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
