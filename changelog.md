@@ -1,3 +1,8 @@
+##### 0.6-229@251113 2025-11-13
+*   WildRig-Multi v0.46.9 (Up to 25% improvements for `qhash` across all GPUs; Reduced devfee on `qhash` to 2%; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   OneZeroMiner v1.6.7 (Significant performance `qhash` improvement for mining QTC/Qubitcoin vs v1.6.5; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   SRBMiner-Multi v3.0.3 (Performance improvement for algorithm `xhash` on Nvidia CMP 100-210 and other Volta based GPUs; Performance improvement for algorithm `tht` on AVX2 CPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@251108 2025-11-08
 *   WildRig-Multi v0.46.7 (Ultimate speedup of `qhash` for AMD up to 250%, NVIDIA up to 100% and Intel up to 500%; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
