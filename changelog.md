@@ -1,3 +1,7 @@
+##### 0.6-229@251116 2025-11-16
+*   WildRig-Multi v0.47.4 (Minor improvements for `qhash` and fix possible rejects; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   CPUminer-Opt-JayDDee v25.7(Fixed a bug calculating TTF longer than 1 year; Faster implementation argon2d, hamsi AVX512, switfftx AVX2; Other small fixes and improvements; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)
+
 ##### 0.6-229@251115 2025-11-15
 *   WildRig-Multi v0.47.3 (Improved `qhash` speed and power efficiency across all GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
