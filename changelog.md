@@ -1,3 +1,6 @@
+##### 0.6-229@251117 2025-11-17
+*   SRBMiner-Multi v3.0.4 (Performance improvement for algorithm `tht` on CPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@251116 2025-11-16
 *   WildRig-Multi v0.47.4 (Minor improvements for `qhash` and fix possible rejects; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 *   CPUminer-Opt-JayDDee v25.7(Fixed a bug calculating TTF longer than 1 year; Faster implementation argon2d, hamsi AVX512, switfftx AVX2; Other small fixes and improvements; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)
