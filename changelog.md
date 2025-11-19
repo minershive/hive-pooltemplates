@@ -1,3 +1,6 @@
+##### 0.6-229@251118 2025-11-18
+*   WildRig-Multi v0.47.5 (Slightly increased `qhash` performance ~1.2%; Implemented support of FiroPow hardfork; Various fixes; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@251117 2025-11-17
 *   SRBMiner-Multi v3.0.4 (Performance improvement for algorithm `tht` on CPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
