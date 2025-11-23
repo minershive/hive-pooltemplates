@@ -1,3 +1,6 @@
+##### 0.6-229@251123 2025-11-23
+*   SRBMiner-Multi v3.0.5 (Performance improvement for algorithm `tht` on CPUs; Fixed random crashing on algorithm `tht`; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@251119 2025-11-19
 *   WildRig-Multi v0.47.6 (Slightly increased `qhash` speed for Ampere family and newer NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
