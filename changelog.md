@@ -1,3 +1,6 @@
+##### 0.6-229@251124 2025-11-24
+*   OneZeroMiner v1.6.9 (Added support for dual mining Xelis & Qubitcoin on Nvidia GPUs; Added a new argument `--dual-intensity`; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+
 ##### 0.6-229@251123 2025-11-23
 *   SRBMiner-Multi v3.0.5 (Performance improvement for algorithm `tht` on CPUs; Fixed random crashing on algorithm `tht`; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
