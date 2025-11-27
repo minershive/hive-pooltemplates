@@ -1,23 +1,24 @@
-{
-  "name": "Kuradisia MEWC Pool",
-  "url": "https://mewcpool.kuradisia.io/",
-  "type": "stratum",
-  "coin": "MEWC",
-  "algorithm": "meowpow",
-  "description": "Kuradisia-operated Meowcoin (MEWC) pool located in Japan. Fully compatible with MeowPow and HiveOS miners.",
-  "servers": [
-    {
-      "geo": "JP",
-      "urls": [
-        "stratum+tcp://mewcpool.kuradisia.io:3115"
-      ],
-      "ssl_urls": []
+[
+  {
+    "pool": {
+      "name": "Kuradisia MEWC Pool",
+      "url": "https://mewcpool.kuradisia.io/",
+      "fee": 1,
+      "type": "PPLNS"
     }
-  ],
-  "api": {
-    "type": "custom",
-    "url": "https://mewcpool.kuradisia.io/stats"
   },
-  "payout_threshold": "1",
-  "fee": "1"
-}
+  {
+    "coin": "MEWC",
+    "servers": [
+      {
+        "geo": "JP",
+        "urls": [
+          "mewcpool.kuradisia.io:3115"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_meowpow"
+    }
+  }
+]
