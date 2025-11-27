@@ -1,23 +1,24 @@
-{
-  "name": "Kuradisia XMR Pool",
-  "url": "https://xmrpool.kuradisia.io/",
-  "type": "stratum",
-  "coin": "XMR",
-  "algorithm": "randomx",
-  "description": "Community-operated XMR pool hosted in Japan, compatible with XMRig and HiveOS custom miner configuration.",
-  "servers": [
-    {
-      "geo": "JP",
-      "urls": [
-        "stratum+tcp://xmrpool.kuradisia.io:3211"
-      ],
-      "ssl_urls": []
+[
+  {
+    "pool": {
+      "name": "Kuradisia XMR Pool",
+      "url": "https://xmrpool.kuradisia.io/",
+      "fee": 1,
+      "type": "PPLNS"
     }
-  ],
-  "api": {
-    "type": "custom",
-    "url": "https://xmrpool.kuradisia.io/stats"
   },
-  "payout_threshold": "0.005",
-  "fee": "1"
-}
+  {
+    "coin": "XMR",
+    "servers": [
+      {
+        "geo": "JP",
+        "urls": [
+          "rtmpool.kuradisia.io:3111"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_randomx_worker"
+    }
+  }
+]
