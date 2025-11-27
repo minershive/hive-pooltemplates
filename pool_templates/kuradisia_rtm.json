@@ -17,29 +17,8 @@
         ]
       }
     ],
-    "miners": {
-      "cpuminer-opt": {
-        "url": "stratum+tcps://%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "gr",
-        "pass": "x",
-        "max-temp": 0,
-        "fork": "gr"
-      },
-      "xmrig-new": {
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "ghostrider",
-        "pass": "x",
-        "cpu": "1",
-        "fork": "xmrig"
-      },
-      "wildrig-multi": {
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "algo": "ghostrider",
-        "pass": "x"
-      }
+     "miners": {
+      "_prototype": "miners_ghostrider"
     }
   }
 ]
