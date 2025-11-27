@@ -1,23 +1,21 @@
-{
-  "name": "Kuradisia PHI Pool",
-  "url": "https://phipool.kuradisia.io/",
-  "type": "stratum",
-  "coin": "PHI",
-  "algorithm": "phihash",
-  "description": "PHICoin pool powered by FishHash algorithm, compatible with phihashminer and NiceHash connections.",
-  "servers": [
-    {
-      "geo": "JP",
-      "urls": [
-        "stratum+tcp://phipool.kuradisia.io:11111"
-      ],
-      "ssl_urls": []
+[
+  {
+    "pool": {
+      "name": "Kuradisia PHI Pool",
+      "url": "https://phipool.kuradisia.io/",
+      "fee": 1,
+      "type": "PPLNS"
     }
-  ],
-  "api": {
-    "type": "custom",
-    "url": "https://phipool.kuradisia.io/stats"
   },
-  "payout_threshold": "10",
-  "fee": "1"
-}
+  {
+    "coin": "PHI",
+    "servers": [
+      {
+        "geo": "JP",
+        "urls": [
+          "phipool.kuradisia.io:11111"
+        ]
+      }
+    ]
+  }
+]
