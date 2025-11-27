@@ -1,23 +1,45 @@
-{
-  "name": "Kuradisia RTM Pool",
-  "url": "https://rtmpool.kuradisia.io/",
-  "type": "stratum",
-  "coin": "RTM",
-  "algorithm": "ghostrider",
-  "description": "Raptoreum pool hosted in Japan. Stable performance and compatible with cpuminer-gr / rtm-miner.",
-  "servers": [
-    {
-      "geo": "JP",
-      "urls": [
-        "stratum+tcp://rtmpool.kuradisia.io:3112"
-      ],
-      "ssl_urls": []
+[
+  {
+    "pool": {
+      "name": "Kuradisia RTM Pool",
+      "url": "https://rtmpool.kuradisia.io/",
+      "fee": 1,
+      "type": "PPLNS"
     }
-  ],
-  "api": {
-    "type": "custom",
-    "url": "https://rtmpool.kuradisia.io/stats"
   },
-  "payout_threshold": "5",
-  "fee": "1"
-}
+  {
+    "coin": "RTM",
+    "servers": [
+      {
+        "geo": "JP",
+        "urls": [
+          "rtmpool.kuradisia.io:3112"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcps://%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "gr",
+        "pass": "x",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "wildrig-multi": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "algo": "ghostrider",
+        "pass": "x"
+      }
+    }
+  }
+]
