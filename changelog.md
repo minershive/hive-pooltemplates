@@ -1,3 +1,6 @@
+##### 0.6-229@251128 2025-11-28
+*   OneZeroMiner v1.7.1 (Minor performance improvement for Qubitcoin on 20xx, 30xx, and 40xx series; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+
 ##### 0.6-229@251124 2025-11-24
 *   OneZeroMiner v1.6.9 (Added support for dual mining Xelis & Qubitcoin on Nvidia GPUs; Added a new argument `--dual-intensity`; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 
