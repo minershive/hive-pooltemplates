@@ -1,3 +1,6 @@
+##### 0.6-229@251130 2025-11-30
+*   WildRig-Multi v0.47.7 (Slightly increased `qhash` speed for NVIDIA and AMD GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@251128 2025-11-28
 *   OneZeroMiner v1.7.1 (Minor performance improvement for Qubitcoin on 20xx, 30xx, and 40xx series; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 
