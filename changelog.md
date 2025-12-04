@@ -1,3 +1,6 @@
+##### 0.6-229@251204 2025-12-04
+*   WildRig-Multi v0.47.8 (Improved speed and power efficiency of `qhash` for NVIDIA and AMD GPUs; Fixed support `qhash` on AMD RDNA3 and RDNA4 GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@251203 2025-12-03
 *   OneZeroMiner v1.7.2 (Performance `qhash` improved for CMP cards ~5% and minor improvements for the other GPUs; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 
