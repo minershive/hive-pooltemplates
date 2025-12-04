@@ -379,6 +379,173 @@
         }
     },
     {
+        "coin": "XTM",
+        "servers": [
+            {
+                "geo": "Global SHA3X",
+                "urls": [
+                    "xtm-sha3x.kryptex.network:7039"
+                ],
+                "ssl_urls": [
+                    "xtm-sha3x.kryptex.network:8039"
+                ]
+            },
+            {
+                "geo": "Global C29",
+                "urls": [
+                    "xtm-c29.kryptex.network:7040"
+                ],
+                "ssl_urls": [
+                    "xtm-c29.kryptex.network:8040"
+                ]
+            },
+            {
+                "geo": "Global RX",
+                "urls": [
+                    "xtm-rx.kryptex.network:7038"
+                ],
+                "ssl_urls": [
+                    "xtm-rx.kryptex.network:7038"
+                ]
+            },
+            {
+                "geo": "EU SHA3X",
+                "urls": [
+                    "xtm-sha3x-eu.kryptex.network:7039"
+                ],
+                "ssl_urls": [
+                    "xtm-sha3x-eu.kryptex.network:8039"
+                ]
+            },
+            {
+                "geo": "EU C29",
+                "urls": [
+                    "xtm-c29-eu.kryptex.network:7040"
+                ],
+                "ssl_urls": [
+                    "xtm-c29-eu.kryptex.network:8040"
+                ]
+            },
+            {
+                "geo": "EU RX",
+                "urls": [
+                    "xtm-rx-eu.kryptex.network:7038"
+                ],
+                "ssl_urls": [
+                    "xtm-rx-eu.kryptex.network:7038"
+                ]
+            },
+            {
+                "geo": "USA SHA3X",
+                "urls": [
+                    "xtm-sha3x-us.kryptex.network:7039"
+                ],
+                "ssl_urls": [
+                    "xtm-sha3x-us.kryptex.network:8039"
+                ]
+            },
+            {
+                "geo": "USA C29",
+                "urls": [
+                    "xtm-c29-us.kryptex.network:7040"
+                ],
+                "ssl_urls": [
+                    "xtm-c29-us.kryptex.network:8040"
+                ]
+            },
+            {
+                "geo": "USA RX",
+                "urls": [
+                    "xtm-rx-us.kryptex.network:7038"
+                ],
+                "ssl_urls": [
+                    "xtm-rx-us.kryptex.network:7038"
+                ]
+            },
+            {
+                "geo": "Asia SHA3X",
+                "urls": [
+                    "xtm-sha3x-sg.kryptex.network:7039"
+                ],
+                "ssl_urls": [
+                    "xtm-sha3x-sg.kryptex.network:8039"
+                ]
+            },
+            {
+                "geo": "Asia C29",
+                "urls": [
+                    "xtm-c29-sg.kryptex.network:7040"
+                ],
+                "ssl_urls": [
+                    "xtm-c29-sg.kryptex.network:8040"
+                ]
+            },
+            {
+                "geo": "Asia RX",
+                "urls": [
+                    "xtm-rx-sg.kryptex.network:7038"
+                ],
+                "ssl_urls": [
+                    "xtm-rx-sg.kryptex.network:7038"
+                ]
+            },
+            {
+                "geo": "RU C29",
+                "urls": [
+                    "xtm-c29-ru.kryptex.network:7040"
+                ],
+                "ssl_urls": [
+                    "xtm-c29-ru.kryptex.network:8040"
+                ]
+            },
+            {
+                "geo": "RU RX",
+                "urls": [
+                    "xtm-rx-ru.kryptex.network:7038"
+                ],
+                "ssl_urls": [
+                    "xtm-rx-ru.kryptex.network:7038"
+                ]
+            },
+            {
+                "geo": "RU SHA3X",
+                "urls": [
+                    "xtm-sha3x-ru.kryptex.network:7039"
+                ],
+                "ssl_urls": [
+                    "xtm-sha3x-ru.kryptex.network:8039"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_sha3x",
+            "lolminer": {
+                "algo": "CR29",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-a CR29"
+            },
+            "srbminer": {
+                "algo": "randomx",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--send-stales true"
+            },
+            "xmrig-new": {
+                "algo": "rx/0",
+                "fork": "xmrig",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "cpu":"1",
+                "hugepages": "1248",
+                "cpu_config": "\"cpu\": {\n  \"huge-pages\": true,\n  \"hw-aes\": null,\n  \"priority\": null,\n  \"memory-pool\": false,\n  \"asm\": true\n}"
+            }
+        }
+    },
+    {
         "coin": "KAS",
         "servers": [
             {
@@ -821,134 +988,6 @@
         }
     },
     {
-        "coin": "NIR",
-        "servers": [
-            {
-                "geo": "Global",
-                "urls": [
-                    "nir.kryptex.network:7023"
-                ],
-                "ssl_urls": [
-                    "nir.kryptex.network:8023"
-                ]
-            },
-            {
-                "geo": "EU",
-                "urls": [
-                    "nir-eu.kryptex.network:7023"
-                ],
-                "ssl_urls": [
-                    "nir-eu.kryptex.network:8023"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "nir-us.kryptex.network:7023"
-                ],
-                "ssl_urls": [
-                    "nir-us.kryptex.network:8023"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "nir-sg.kryptex.network:7023"
-                ],
-                "ssl_urls": [
-                    "nir-sg.kryptex.network:8023"
-                ]
-            },
-            {
-                "geo": "RU",
-                "urls": [
-                    "nir-ru.kryptex.network:7023"
-                ],
-                "ssl_urls": [
-                    "nir-ru.kryptex.network:8023"
-                ]
-            }
-        ],
-        "miners": {
-            "t-rex": {
-                "url": "%URL%",
-                "algo": "progpowz",
-                "template": "%WAL%/%WORKER_NAME%"
-            },
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "progpowz",
-                "template": "%WAL%/%WORKER_NAME%",
-                "user_config": ""
-            },
-            "tt-miner":{
-                "user_config":"-c ZANO -o %URL% -u %WAL%/%WORKER_NAME%"
-            },
-            "miniz": {
-                "user_config":"--par=ProgPowZ --server=%URL% --user=%WAL%/%WORKER_NAME%"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "progpow_zano",
-                "template": "%WAL%/%WORKER_NAME%",
-                "user_config": "--disable-cpu"
-            }
-        }
-    },
-    {
-        "coin": "SDR",
-        "servers": [
-            {
-                "geo": "Global",
-                "urls": [
-                    "sdr.kryptex.network:7018"
-                ],
-                "ssl_urls": [
-                    "sdr.kryptex.network:8018"
-                ]
-            },
-            {
-                "geo": "EU",
-                "urls": [
-                    "sdr-eu.kryptex.network:7018"
-                ],
-                "ssl_urls": [
-                    "sdr-eu.kryptex.network:8018"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "sdr-us.kryptex.network:7018"
-                ],
-                "ssl_urls": [
-                    "sdr-us.kryptex.network:8018"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "sdr-sg.kryptex.network:7018"
-                ],
-                "ssl_urls": [
-                    "sdr-sg.kryptex.network:8018"
-                ]
-            },
-            {
-                "geo": "RU",
-                "urls": [
-                    "sdr-ru.kryptex.network:7018"
-                ],
-                "ssl_urls": [
-                    "sdr-ru.kryptex.network:8018"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_kaspa"
-        }
-    },
-    {
         "coin": "XEL",
         "servers": [
             {
@@ -1168,25 +1207,25 @@
         "miners": {
             "_prototype": "miners_progpow_quai",
             "rigel": {
-            "algo": "quai",
-            "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
-            "user_config": "-a quai"
+                "algo": "quai",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "-a quai"
             },
             "srbminer": {
-            "algo": "progpow_quai",
-            "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
-            "user_config": ""
+                "algo": "progpow_quai",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": ""
             },
             "wildrig": {
-            "algo": "progpow-quai",
-            "url": "%URL%",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%",
-            "user_config": ""
+                "algo": "progpow-quai",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": ""
             }
         }
     },
@@ -1385,6 +1424,88 @@
                 "geo": "RU",
                 "urls": [
                     "dgb-ru.kryptex.network:7037"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "BC2",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "bc2.kryptex.network:7041"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "bc2-eu.kryptex.network:7041"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "bc2-us.kryptex.network:7041"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "bc2-sg.kryptex.network:7041"
+                ]
+            },
+            {
+                "geo": "RU",
+                "urls": [
+                    "bc2-ru.kryptex.network:7041"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ZEC",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "zec.kryptex.network:7042"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "zec-eu.kryptex.network:7042"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "zec-us.kryptex.network:7042"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "zec-sg.kryptex.network:7042"
+                ]
+            },
+            {
+                "geo": "RU",
+                "urls": [
+                    "zec-ru.kryptex.network:7042"
                 ]
             }
         ],
