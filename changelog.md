@@ -1,3 +1,6 @@
+##### 0.6-229@251206 2025-12-06
+*   SRBMiner-Multi v3.0.6 (Added algorithm `xelishashv3` for Xelis hardfork approx. Dec 13 2025, for CPU mining, fee 1.5%; Added support for dual mining XHASH/BLAKE3_DECRED on AMD RDNA arch and NVIDIA GPUs; Performance improvement for algorithm `tht`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@251204 2025-12-04
 *   WildRig-Multi v0.47.8 (Improved speed and power efficiency of `qhash` for NVIDIA and AMD GPUs; Fixed support `qhash` on AMD RDNA3 and RDNA4 GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
