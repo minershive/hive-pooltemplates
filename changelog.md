@@ -1,3 +1,7 @@
+##### 0.6-229@251213 2025-12-13
+*   OneZeroMiner v1.7.3 (Added support for `xelishashv3` for AMD and Nvidia GPUs, dev fee 2%; Added support for `xelishashv3`+`qhash` dual mining for Nvidia GPUs; Removed `xelishashv2`; Minor efficiency improvement for `qhash`; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   Rigel miner v1.23.0 (Add `xelishashv3` algorithm, dev fee 2%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+
 ##### 0.6-229@251206 2025-12-06
 *   SRBMiner-Multi v3.0.6 (Added algorithm `xelishashv3` for Xelis hardfork approx. Dec 13 2025, for CPU mining, fee 1.5%; Added support for dual mining XHASH/BLAKE3_DECRED on AMD RDNA arch and NVIDIA GPUs; Performance improvement for algorithm `tht`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
