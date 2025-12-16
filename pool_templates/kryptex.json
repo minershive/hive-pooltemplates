@@ -7,6 +7,7 @@
             "type": "PPS+, PROP, SOLO"
         }
     },
+
     {
         "coin": "ETHW",
         "servers": [
@@ -60,6 +61,7 @@
             "_prototype": "miners_ethash"
         }
     },
+
     {
         "coin": "ETC",
         "servers": [
@@ -113,6 +115,7 @@
             "_prototype": "miners_etchash"
         }
     },
+
     {
         "coin": "RVN",
         "servers": [
@@ -166,6 +169,7 @@
             "_prototype": "miners_kawpow"
         }
     },
+
     {
         "coin": "ERG",
         "servers": [
@@ -219,6 +223,7 @@
             "_prototype": "miners_autolykos2"
         }
     },
+
     {
         "coin": "XMR",
         "servers": [
@@ -272,6 +277,7 @@
             "_prototype": "miners_randomx"
         }
     },
+
     {
         "coin": "ZEPH",
         "servers": [
@@ -325,6 +331,7 @@
             "_prototype": "miners_randomx"
         }
     },
+
     {
         "coin": "SAL",
         "servers": [
@@ -378,6 +385,7 @@
             "_prototype": "miners_randomx"
         }
     },
+
     {
         "coin": "XTM",
         "servers": [
@@ -545,6 +553,7 @@
             }
         }
     },
+
     {
         "coin": "KAS",
         "servers": [
@@ -660,6 +669,7 @@
             "_prototype": "miners_nexapow"
         }
     },
+
     {
         "coin": "IRON",
         "servers": [
@@ -713,6 +723,7 @@
             "_prototype": "miners_fishhash"
         }
     },
+
     {
         "coin": "KLS",
         "servers": [
@@ -766,6 +777,7 @@
             "_prototype": "miners_karlsenhashv2"
         }
     },
+
     {
         "coin": "XNA",
         "servers": [
@@ -819,6 +831,7 @@
             "_prototype": "miners_kawpow"
         }
     },
+
     {
         "coin": "CLORE",
         "servers": [
@@ -872,6 +885,7 @@
             "_prototype": "miners_kawpow"
         }
     },
+
     {
         "coin": "CFX",
         "servers": [
@@ -925,6 +939,7 @@
             "_prototype": "miners_octopus"
         }
     },
+
     {
         "coin": "ALPH",
         "servers": [
@@ -987,6 +1002,7 @@
             "_prototype": "miners_alephium"
         }
     },
+
     {
         "coin": "XEL",
         "servers": [
@@ -1040,6 +1056,7 @@
             "_prototype": "miners_xelishashv2"
         }
     },
+
     {
         "coin": "OCTA",
         "servers": [
@@ -1093,6 +1110,7 @@
             "_prototype": "miners_ethash"
         }
     },
+
     {
         "coin": "RXD",
         "servers": [
@@ -1155,80 +1173,114 @@
             "_prototype": "miners_radiant"
         }
     },
+
     {
         "coin": "QUAI",
         "servers": [
             {
                 "geo": "Global",
                 "urls": [
-                    "quai.kryptex.network:7035"
+                    "quai-kawpow-kawpow.kryptex.network:7043"
                 ],
                 "ssl_urls": [
-                    "quai.kryptex.network:8035"
+                    "quai-kawpow.kryptex.network:8043"
                 ]
             },
             {
                 "geo": "EU",
                 "urls": [
-                    "quai-eu.kryptex.network:7035"
+                    "quai-kawpow-eu.kryptex.network:7043"
                 ],
                 "ssl_urls": [
-                    "quai-eu.kryptex.network:8035"
+                    "quai-kawpow-eu.kryptex.network:8043"
                 ]
             },
             {
                 "geo": "USA",
                 "urls": [
-                    "quai-us.kryptex.network:7035"
+                    "quai-kawpow-us.kryptex.network:7043"
                 ],
                 "ssl_urls": [
-                    "quai-us.kryptex.network:8035"
+                    "quai-kawpow-us.kryptex.network:8043"
                 ]
             },
             {
                 "geo": "Asia",
                 "urls": [
-                    "quai-sg.kryptex.network:7035"
+                    "quai-kawpow-sg.kryptex.network:7043"
                 ],
                 "ssl_urls": [
-                    "quai-sg.kryptex.network:8035"
+                    "quai-kawpow-sg.kryptex.network:8043"
                 ]
             },
             {
                 "geo": "RU",
                 "urls": [
-                    "quai-ru.kryptex.network:7035"
+                    "quai-kawpow-ru.kryptex.network:7043"
                 ],
                 "ssl_urls": [
-                    "quai-ru.kryptex.network:8035"
+                    "quai-kawpow-ru.kryptex.network:8043"
                 ]
             }
         ],
         "miners": {
-            "_prototype": "miners_progpow_quai",
+            "_prototype": "miners_kawpow",
             "rigel": {
-                "algo": "quai",
+                "algo": "kawpow",
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "-a quai"
+                "user_config": "--coin quai"
             },
             "srbminer": {
-                "algo": "progpow_quai",
+                "algo": "kawpow",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            },
+            "wildrig": {
+                "algo": "kawpow",
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": ""
             },
-            "wildrig": {
-                "algo": "progpow-quai",
-                "url": "%URL%",
+            "nbminer":{
+                "url":"%URL%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%",
+                "algo":"kawpow"
+            },
+            "gminer":{
+                "algo":"kawpow",
+                "server":"%URL_HOST%",
+                "port":"%URL_PORT%",
+                "pass":"x",
+                "template":"%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "algo": "kawpow",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp:\/\/%URL%",
+                "algo": "kawpow",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": ""
+            },
+            "bzminer": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%"
             }
         }
     },
+
     {
         "coin": "BTC",
         "servers": [
@@ -1270,6 +1322,7 @@
             }
         }
     },
+
     {
         "coin": "BCH",
         "servers": [
@@ -1311,6 +1364,7 @@
             }
         }
     },
+
     {
         "coin": "FB",
         "servers": [
@@ -1352,6 +1406,7 @@
             }
         }
     },
+
     {
         "coin": "XEC",
         "servers": [
@@ -1393,6 +1448,7 @@
             }
         }
     },
+
     {
         "coin": "DGB",
         "servers": [
@@ -1434,6 +1490,7 @@
             }
         }
     },
+
     {
         "coin": "BC2",
         "servers": [
@@ -1475,6 +1532,7 @@
             }
         }
     },
+
     {
         "coin": "ZEC",
         "servers": [
@@ -1516,6 +1574,7 @@
             }
         }
     },
+
     {
         "coin": "LTC",
         "servers": [
