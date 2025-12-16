@@ -1,3 +1,6 @@
+##### 0.6-229@251215 2025-12-15
+*   WildRig-Multi v0.47.9 (Slightly improved `qhash` for NVIDIA Ampere+ ~0.1%, AMD ~1% and Intel ~5% GPUs; Removed support `progpow-ethercore` and `progpow-quai`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@251213 2025-12-13
 *   OneZeroMiner v1.7.3 (Added support for `xelishashv3` for AMD and Nvidia GPUs, dev fee 2%; Added support for `xelishashv3`+`qhash` dual mining for Nvidia GPUs; Removed `xelishashv2`; Minor efficiency improvement for `qhash`; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 *   Rigel miner v1.23.0 (Add `xelishashv3` algorithm, dev fee 2%; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
