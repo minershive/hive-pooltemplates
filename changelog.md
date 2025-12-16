@@ -1,3 +1,6 @@
+##### 0.6-229@251216 2025-12-16
+*   SRBMiner-Multi v3.0.7 (Performance improvement for algorithm `xelishashv3`; Fixed algorithm 'blake3_decred'; Removed algorithm 'xelishashv2'; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@251215 2025-12-15
 *   WildRig-Multi v0.47.9 (Slightly improved `qhash` for NVIDIA Ampere+ ~0.1%, AMD ~1% and Intel ~5% GPUs; Removed support `progpow-ethercore` and `progpow-quai`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
