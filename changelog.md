@@ -1,8 +1,11 @@
+##### 0.6-229@251222 2025-12-22
+*   SRBMiner-Multi v3.1.0 (Fixed regression on algorithm `xelishashv3` for some CPUs; Stale shares sending is now enabled by default for progpow based algorithms; Removed algorithms 'progpow_veil', 'progpow_quai', 'ethashr5'; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@251221 2025-12-21
 *   SRBMiner-Multi v3.0.9 (Performance improvement for algorithm `xelishashv3` on AVX2 and newer CPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   BzMiner v23.0.4 (Various improvements & fixes; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
 
-##### 0.6-229@251216 2025-12-18
+##### 0.6-229@251218 2025-12-18
 *   SRBMiner-Multi v3.0.8 (Added algorithm `randomjuno` for CPU mining Juno Cash, fee 0.85%; Performance improvement for algorithm `xelishashv3` on some CPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
 ##### 0.6-229@251216 2025-12-16
