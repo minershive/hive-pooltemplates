@@ -1,3 +1,9 @@
+##### 0.6-229@251226 2025-12-26
+*   OneZeroMiner v1.7.4 (Performance improvement `xelishhashv3` for CMP 170HX and AMD cards, mostly Vega and Radeon VII; Improvement in xelis/qubitcoin dual mining stability and autotuning; Fixed `xelishhashv3` the initialization error on Polaris 4GB cards; Fixed xelishhashv3 a dev fee pool issue for miners in some regions; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   Rigel miner v1.23.1 (Major performance increase on 170HX for `xelishashv3`, small improvements on other cards; Remove the following algorithms: `quai`, use algo `kawpow` and option `--coin quai` instead, 'xelishash', 'xelishashv2'; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+*   XMRig v6.25.0 (Added Zen4 aka "Hawk Point" CPUs detection; Added support for transparent huge pages; Other minor fixes & improvemenrs; NOTES: Please, see full changelog at https://github.com/xmrig)
+*   XMRigCC v3.4.8 (Added VRL/Virel RandomX variant `rx/vrl`; Rebase on latest xmrig-6.25.0; NOTES: Please, see full changelog at https://github.com/Bendr0id)
+  
 ##### 0.6-229@251222 2025-12-22
 *   SRBMiner-Multi v3.1.0 (Fixed regression on algorithm `xelishashv3` for some CPUs; Stale shares sending is now enabled by default for progpow based algorithms; Removed algorithms 'progpow_veil', 'progpow_quai', 'ethashr5'; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
