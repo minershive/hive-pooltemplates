@@ -62,6 +62,44 @@
 			"_prototype": "miners_beamhash"
 		}
 	},
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "Asia (Thailand) - Low Difficulty",
+                "urls": [
+                    "bitcoin.cedric-crispin.com:4544"
+                ],
+				"ssl_urls": [
+					"bitcoin.cedric-crispin.com:4545"
+				]
+            },
+            {
+                "geo": "Asia (Thailand) - Medium Difficulty",
+                "urls": [
+                    "bitcoin.cedric-crispin.com:4546"
+                ],
+				"ssl_urls": [
+					"bitcoin.cedric-crispin.com:4547"
+				]
+            },
+            {
+                "geo": "Asia (Thailand) - High Difficulty",
+                "urls": [
+                    "bitcoin.cedric-crispin.com:4548"
+                ],
+				"ssl_urls": [
+					"bitcoin.cedric-crispin.com:4549"
+				]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
 	{
 		"coin": "CCX",
 		"servers": [
@@ -139,23 +177,6 @@
 			"srbminer": {
 				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
 			}
-		}
-	},
-	{
-		"coin": "ERG",
-		"servers": [
-			{
-				"geo": "Asia (Thailand) - GPU",
-				"urls": [
-					"ergo.cedric-crispin.com:3354"
-				],
-				"ssl_urls": [
-					"ergo.cedric-crispin.com:3355"
-				]
-			}
-		],
-		"miners": {
-			"_prototype": "miners_autolykos2"
 		}
 	},
 	{
@@ -471,20 +492,6 @@
 				"user_config": "--disable-cpu\n\"retry-time\": 30"
 			}
 		}
-	},
-	{
-		"coin": "SPR",
-		"servers": [
-			{
-				"geo": "Asia (Thailand) - CPU",
-				"urls": [
-					"spectre.cedric-crispin.com:4364"
-				],
-				"ssl_urls": [
-					"spectre.cedric-crispin.com:4365"
-				]
-			}
-		]
 	},
 	{
 		"coin": "VTC",
