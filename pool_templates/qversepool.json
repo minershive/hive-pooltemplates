@@ -1,0 +1,35 @@
+[
+    {
+        "pool": {
+            "name": "Qverse Pool",
+            "url": "https://pool.qverse.pro",
+            "fee": 0
+        }
+    },
+
+    {
+        "coin": "QTC",
+        "servers": [
+            {
+                "geo": "Cloudflare BOOST",
+                "urls": [
+                    "stratum.qverse.pro:25565"
+                ]
+            }
+        ],
+        "miners": {
+            "onezerominer": {
+                "url": "%URL%",
+                "algo": "qhash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "qhash",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
+    }
+]

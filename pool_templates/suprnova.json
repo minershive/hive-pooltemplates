@@ -1,505 +1,288 @@
 [
-    {
-        "coin": "GRLC",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "grlc.suprnova.cc:8600"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "allium",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "allium",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "RTM",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "stratum+tcp://rtm.suprnova.cc:6273"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "stratum+tcp://stratum.apac-hkg1.suprnova.cc:6273"
-                ]
-            },
-            {
-                "geo": "East US",
-                "urls": [
-                    "stratum+tcp://stratum.us-ny1.suprnova.cc:6273"
-                ]
-            },
-            {
-                "geo": "West US",
-                "urls": [
-                    "stratum+tcp://stratum.us-la1.suprnova.cc:6273"
-                ]
-            }
-        ],
-        "miners": {
-            "cpuminer-opt": {
-                "url": "%URL%",
-                "algo": "gr",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "fork": "rplant"
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "heavyhash",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%",
-                "fork": "suprminer"
-            }
-        }
-    },
-    {
-        "coin": "OBTC",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "stratum+tcp://obtc.suprnova.cc:4074"
-                ]
-            },
-            {
-                "geo": "Europe GPU",
-                "urls": [
-                    "stratum+tcp://obtc.suprnova.cc:4075"
-                ]
-            }
-        ],
-        "miners": {
-            "cpuminer-opt": {
-                "url": "%URL%",
-                "algo": "heavyhash",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "fork": "rplant"
-            }
-        }
-    },
-    {
-        "coin": "YTN",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "stratum+tcp://ytn.suprnova.cc:4932"
-                ]
-            }
-        ],
-        "miners": {
-            "cpuminer-opt": {
-                "url": "%URL%",
-                "algo": "yespowerr16",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "fork": "rplant"
-            }
-        }
-    },
-    {
-        "coin": "VTC",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "stratum+tcp://vtc.suprnova.cc:1777"
-                ]
-            },
-            {
-                "geo": "East US",
-                "urls": [
-                    "stratum+tcp://stratum.us-ny1.suprnova.cc:1777"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_verthash"
-        }
-    },
-    {
-        "coin": "DYN",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "stratum+tcp://dyn.suprnova.cc:5960"
-                ]
-            }
-        ],
-        "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "argon2d_dynamic",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "SPLD",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "spl.suprnova.cc:6256"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_kawpow"
-        }
-    },
-    {
-        "coin": "ZER",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "zero.suprnova.cc:6568"
-                ]
-            }
-        ],
-        "miners": {
-            "ewbf": {
-                "algo": "192_7",
-                "fork": "zhash",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "optiminer": {
-                "algo": "equihash192_7",
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "BTG",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "btg.suprnova.cc:8866"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_zhash_btg"
-        }
-    },
-    {
-        "coin": "ZEN",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "zen.suprnova.cc:3618"
-                ]
-            },
-            {
-                "geo": "for Z9",
-                "urls": [
-                    "zen.suprnova.cc:3620"
-                ]
-            },
-            {
-                "geo": "SSL",
-                "urls": [
-                    "zen.suprnova.cc:3621"
-                ]
-            }
-        ],
-        "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "stratum+tcp://%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x, ESM: 3, ALLPOOLS: 1"
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "GRS",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "grs.suprnova.cc:5544"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "groestl",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "groestlcoin",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME% PSW: x",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "LBRY",
-        "servers": [
-            {
-                "geo": "Nicehash & ASICs",
-                "urls": [
-                    " lbry.suprnova.cc:6257"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://lbry.suprnova.cc:6256",
-                "ccalgo": "lbry",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://lbry.suprnova.cc:6256",
-                "algo": "lbry",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            },
-            "claymore": {
-                "dcri": "30",
-                "dcoin": "lbry",
-                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
-            }
-        }
-    },
-    {
-        "coin": "MONA",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "mona.suprnova.cc:2995"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2rev2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2v2",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "FLO",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "flo.suprnova.cc:3210"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "EMC2",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "emc2.suprnova.cc:3366"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "DASH",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "dash.suprnova.cc:9991"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "SIB",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "sib.suprnova.cc:3458"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "sib",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "sibcoin",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "DASH",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "dash.suprnova.cc:9991"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "DGB-Qubit",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "dgbq.suprnova.cc:8531"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "qubit",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "qubitcoin",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "DGB-Skein",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "dgbs.suprnova.cc:5226"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "skein",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "skein",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "RVN",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "rvn.suprnova.cc:8888"
-                ]
-            }
-        ],
-        "miners": {
-           "_prototype": "miners_kawpow"
-        }
+  {
+    "coin": "RIC",
+    "note": "Use Suprnova account username in Wallet field, not a coin address",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "ric.suprnova.cc:5000"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "algo": "primesr",
+        "url": "stratum+tcp://%URL%",
+        "user": "%WAL%.%WORKER_NAME%",
+        "pass": "x"
+      }
     }
+  },
+  {
+    "coin": "GAP",
+    "note": "Use Suprnova account username in Wallet field, not a coin address",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "gap.suprnova.cc:2433"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "algo": "gapsearch",
+        "url": "stratum+tcp://%URL%",
+        "user": "%WAL%.%WORKER_NAME%",
+        "pass": "x"
+      }
+    }
+  },
+  {
+    "coin": "VTC",
+    "note": "Use Suprnova account username in Wallet field, not a coin address. EU Verthash ports only.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "vtc.suprnova.cc:1775",
+          "vtc.suprnova.cc:1776",
+          "vtc.suprnova.cc:1777",
+          "vtc.suprnova.cc:1778",
+          "vtc.suprnova.cc:1779"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_verthash",
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "verthash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "RVN",
+    "note": "Use wallet address in Wallet field. Port 8890 for Nicehash KawPow.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "rvn.suprnova.cc:8888",
+          "rvn.suprnova.cc:8890"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow"
+    }
+  },
+  {
+    "coin": "RTM",
+    "note": "PPLNS pool. Use wallet address in Wallet field.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "rtm.suprnova.cc:6273"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "%URL%",
+        "algo": "gr",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "fork": "rplant"
+      }
+    }
+  },
+  {
+    "coin": "QTC",
+    "note": "PROP payouts, 0% fee. Use Suprnova account username in Wallet field.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "qtc.suprnova.cc:5555",
+          "qtc.suprnova.cc:5557"
+        ]
+      },
+      {
+        "geo": "United States",
+        "urls": [
+          "stratum-us.suprnova.cc:5555"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "qhash",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "GRS",
+    "note": "Use Suprnova account username in Wallet field (username.worker). Supports ASICs.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "grs.suprnova.cc:5544"
+        ]
+      },
+      {
+        "geo": "United States",
+        "urls": [
+          "stratum-us.suprnova.cc:5544"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "groestl",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "DGB-Qubit",
+    "note": "Use Suprnova account username in Wallet field. Port 8532 for Nicehash/ASICs.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "dgbq.suprnova.cc:8531",
+          "dgbq.suprnova.cc:8532"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "qubit",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "XEL",
+    "note": "Use wallet address in Wallet field. Variable difficulty.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "xel.suprnova.cc:3333"
+        ]
+      }
+    ],
+    "miners": {
+      "xelis-miner": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "xelishashv3",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "XMR",
+    "note": "Use wallet address in Wallet field. Variable difficulty; ports have different initial diff levels.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "xmr.suprnova.cc:6662",
+          "xmr.suprnova.cc:6663",
+          "xmr.suprnova.cc:6664",
+          "xmr.suprnova.cc:6665"
+        ]
+      }
+    ],
+    "miners": {
+      "xmrig": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "randomx",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "ZEC",
+    "note": "Use wallet address in Wallet field. Variable difficulty; pool may not respond to ICMP ping.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "zec.suprnova.cc:3732",
+          "zec.suprnova.cc:3733",
+          "zec.suprnova.cc:3734"
+        ]
+      }
+    ],
+    "miners": {
+      "ewbf": {
+        "algo": "equihash",
+        "pass": "x",
+        "zport": "%URL_PORT%",
+        "zserver": "%URL_HOST%",
+        "ztemplate": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "NPT",
+    "note": "Use wallet address in Wallet field. Tip5-Hash-NPT. Uses suprminer (-a npt).",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "npt.suprnova.cc:3933"
+        ]
+      }
+    ],
+    "miners": {
+      "suprminer": {
+        "url": "%URL%",
+        "algo": "npt",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "XNT",
+    "note": "Use wallet address in Wallet field. Tip5-Hash-XNT. Uses suprminer (-a xnt).",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "xnt.suprnova.cc:3833"
+        ]
+      }
+    ],
+    "miners": {
+      "suprminer": {
+        "url": "%URL%",
+        "algo": "xnt",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
 ]

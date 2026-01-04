@@ -61,11 +61,11 @@
           }
        ],
        "miners": {
-             "_prototype": "miners_xelishashv2"
+             "_prototype": "miners_xelishashv3"
        }
     },
     {
-       "coin": "CYTX",
+       "coin": "CPAY",
        "servers": [
           {
              "geo": "PPLNS",
@@ -81,7 +81,12 @@
           }
        ],
        "miners": {
-             "_prototype": "miners_cryptixhash"
+           "_prototype": "miners_cryptix",
+           "onezerominer": {
+                   "url": "%URL%",
+                   "algo": "cryptix",
+                   "template": "%WAL%.%WORKER_NAME%"
+           }
        }
     },
     {

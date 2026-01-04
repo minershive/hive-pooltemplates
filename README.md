@@ -265,6 +265,8 @@ miners_verushash | verushash |  |
 miners_warthog | warthog | PoBW, mining WART / Warthog coin | 
 miners_xelishash | xelishash | mining ZTX / Zytex | 
 miners_xelishashv2 | xelishashv2 | mining XEL / Xelis | 
+miners_xelishashv3 | xelishashv3 | mining XEL / Xelis after Dec 15, 2025 | 
+miners_xhash | xhash | mining LAX / Parallax | 
 miners_zelhash | zelhash |  | 
 
 
