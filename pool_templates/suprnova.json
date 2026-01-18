@@ -284,5 +284,43 @@
         "template": "%WAL%.%WORKER_NAME%"
       }
     }
+  },
+  {
+    "coin": "JUNO",
+    "note": "Use wallet address in Wallet field. Pool pays to shielded (j1) address only - set in pool user settings. CPU mining with RandomJuno algorithm.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "juno.suprnova.cc:8383"
+        ]
+      },
+      {
+        "geo": "United States",
+        "urls": [
+          "stratum-us.suprnova.cc:8383"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt-supr": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "rxjuno",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "xmrig": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "rx/juno",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "randomjuno",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
   }
 ]
