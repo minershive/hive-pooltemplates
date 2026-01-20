@@ -100,5 +100,84 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "IRON",
+        "servers": [
+            {
+                "geo": "USA, New York [PPLNS]",
+                "urls": [
+                    "us.grandpool.io:2027"
+                ],
+                "ssl_urls": [
+                    "us.grandpool.io:2028"
+                ]
+            },
+            {
+                "geo": "USA, New York [SOLO]",
+                "urls": [
+                    "us.grandpool.io:3027"
+                ],
+                "ssl_urls": [
+                    "us.grandpool.io:3028"
+                ]
+            },
+            {
+                "geo": "France, Paris [PPLNS]",
+                "urls": [
+                    "fr.grandpool.io:2027"
+                ],
+                "ssl_urls": [
+                    "fr.grandpool.io:2028"
+                ]
+            },
+            {
+                "geo": "France, Paris [SOLO]",
+                "urls": [
+                    "fr.grandpool.io:3027"
+                ],
+                "ssl_urls": [
+                    "fr.grandpool.io:3028"
+                ]
+            },
+            {
+                "geo": "Russia, Moscow [PPLNS]",
+                "urls": [
+                    "ru.grandpool.io:2027"
+                ],
+                "ssl_urls": [
+                    "ru.grandpool.io:2028"
+                ]
+            },
+            {
+                "geo": "Russia, Moscow [SOLO]",
+                "urls": [
+                    "ru.grandpool.io:3027"
+                ],
+                "ssl_urls": [
+                    "ru.grandpool.io:3028"
+                ]
+            }
+        ],
+        "miners": {
+            "bzminer": {
+                "algo": "fishhash",
+                "url": "%URL%",
+                "template": "%WAL%"
+                "worker": "%WORKER_NAME%"
+            }
+            "rigel": {
+                "algo": "fishhash",
+                "url": "%URL%",
+                "template": "%WAL%"
+                "worker": "%WORKER_NAME%"
+            },
+            "srbminer-multi": {
+                "algo": "fishhash",
+                "url": "%URL%",
+                "template": "%WAL%"
+                "worker": "%WORKER_NAME%"
+            }
+        }
     }
 ]
