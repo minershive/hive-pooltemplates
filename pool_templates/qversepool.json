@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
     {
         "pool": {
@@ -29,6 +30,49 @@
                 "algo": "qhash",
                 "template": "%WAL%.%WORKER_NAME%",
                 "pass": "x"
+=======
+{
+    "name": "Qverse Pool",
+    "url": "https://pool.qverse.pro",
+    "logo": "https://pool.qverse.pro/logo-dark.png",
+    "fee": "0%",
+    "coins": {
+        "QTC": {
+            "coin": "QTC",
+            "servers": [
+                {
+                    "geo": "Cloudflare BOOST",
+                    "urls": [
+                        "stratum.qverse.pro:25565"
+                    ]
+                },
+                {
+                    "geo": "Russia",
+                    "urls": [
+                        "ru.qverse.pro:25565"
+                    ]
+                },
+                {
+                    "geo": "HongKong",
+                    "urls": [
+                        "hk.qverse.pro:25565"
+                    ]
+                }
+            ],
+            "miners": {
+                "onezerominer": {
+                    "url": "%URL%",
+                    "algo": "qhash",
+                    "template": "%WAL%.%WORKER_NAME%",
+                    "pass": "x"
+                },
+                "wildrig-multi": {
+                    "url": "stratum+tcp://%URL%",
+                    "algo": "qhash",
+                    "template": "%WAL%.%WORKER_NAME%",
+                    "pass": "x"
+                }
+>>>>>>> 7b850fe0 (Add Russia and HongKong stratum servers for QTC)
             }
         }
     }
