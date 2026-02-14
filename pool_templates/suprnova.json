@@ -1,5 +1,13 @@
 [
   {
+    "pool": {
+      "name": "Suprnova",
+      "url": "https://www.suprnova.cc",
+      "fee": 0,
+      "type": "PPLNS"
+    }
+  },
+  {
     "coin": "RIC",
     "note": "Use Suprnova account username in Wallet field, not a coin address",
     "servers": [
@@ -92,6 +100,7 @@
       }
     ],
     "miners": {
+      "_prototype": "miners_ghostrider",
       "cpuminer-opt": {
         "url": "%URL%",
         "algo": "gr",
@@ -108,7 +117,9 @@
       {
         "geo": "Europe",
         "urls": [
-          "qtc.suprnova.cc:5555",
+          "qtc.suprnova.cc:5555"
+        ],
+        "ssl_urls": [
           "qtc.suprnova.cc:5557"
         ]
       },
@@ -116,6 +127,18 @@
         "geo": "United States",
         "urls": [
           "stratum-us.suprnova.cc:5555"
+        ],
+        "ssl_urls": [
+          "stratum-us.suprnova.cc:5557"
+        ]
+      },
+      {
+        "geo": "Asia Pacific",
+        "urls": [
+          "stratum-apac.suprnova.cc:5555"
+        ],
+        "ssl_urls": [
+          "stratum-apac.suprnova.cc:5557"
         ]
       }
     ],
@@ -146,6 +169,7 @@
       }
     ],
     "miners": {
+      "_prototype": "miners_groestl",
       "ccminer": {
         "ccurl": "stratum+tcp://%URL%",
         "ccalgo": "groestl",
@@ -171,6 +195,7 @@
       }
     ],
     "miners": {
+      "_prototype": "miners_qubit",
       "ccminer": {
         "ccurl": "stratum+tcp://%URL%",
         "ccalgo": "qubit",
@@ -187,10 +212,32 @@
         "geo": "Europe",
         "urls": [
           "xel.suprnova.cc:3333"
+        ],
+        "ssl_urls": [
+          "xel.suprnova.cc:3336"
+        ]
+      },
+      {
+        "geo": "United States",
+        "urls": [
+          "stratum-us.suprnova.cc:3333"
+        ],
+        "ssl_urls": [
+          "stratum-us.suprnova.cc:3336"
+        ]
+      },
+      {
+        "geo": "Asia Pacific",
+        "urls": [
+          "stratum-apac.suprnova.cc:3333"
+        ],
+        "ssl_urls": [
+          "stratum-apac.suprnova.cc:3336"
         ]
       }
     ],
     "miners": {
+      "_prototype": "miners_xelishashv3",
       "xelis-miner": {
         "url": "stratum+tcp://%URL%",
         "algo": "xelishashv3",
@@ -214,6 +261,7 @@
       }
     ],
     "miners": {
+      "_prototype": "miners_randomx",
       "xmrig": {
         "url": "stratum+tcp://%URL%",
         "algo": "randomx",
@@ -236,6 +284,7 @@
       }
     ],
     "miners": {
+      "_prototype": "miners_equihash",
       "ewbf": {
         "algo": "equihash",
         "pass": "x",
@@ -280,6 +329,75 @@
       "suprminer": {
         "url": "%URL%",
         "algo": "xnt",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "PXC",
+    "note": "Use Suprnova account username in Wallet field. NeoScrypt algorithm.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "pxc.suprnova.cc:2026"
+        ],
+        "ssl_urls": [
+          "pxc.suprnova.cc:2027"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_neoscrypt",
+      "suprminer-dual": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "neoscrypt",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "suprminer-amd": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "neoscrypt",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "JUNO",
+    "note": "Use wallet address in Wallet field. Pool pays to shielded (j1) address only - set in pool user settings. CPU mining with RandomJuno algorithm.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "juno.suprnova.cc:8383"
+        ]
+      },
+      {
+        "geo": "United States",
+        "urls": [
+          "stratum-us.suprnova.cc:8383"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_randomx",
+      "cpuminer-opt-supr": {
+        "url": "%URL%",
+        "algo": "randomjuno",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "xmrig": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "rx/juno",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "randomjuno",
         "pass": "x",
         "template": "%WAL%.%WORKER_NAME%"
       }
