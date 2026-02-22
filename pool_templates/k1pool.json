@@ -454,30 +454,24 @@
     }
   },
   {
-    "coin": "CLORE",
+    "coin": "QUAI",
     "servers": [
       {
         "geo": "Europe",
         "urls": [
-          "eu.clore.k1pool.com:5030"
-        ]
-      },
-      {
-        "geo": "Europe2 / RU",
-        "urls": [
-          "ru.clore.k1pool.com:5030"
+          "eu.quaikawpow.k1pool.com:3344"
         ]
       },
       {
         "geo": "USA",
         "urls": [
-          "us.clore.k1pool.com:5030"
+          "us.quaikawpow.k1pool.com:3344"
         ]
       },
       {
         "geo": "China",
         "urls": [
-          "cn.clore.k1pool.com:5030"
+          "cn.quaikawpow.k1pool.com:3344"
         ]
       },
       {
@@ -487,15 +481,6 @@
         ],
         "ssl_urls": [
           "eu.kawpow.k1pool.com:5100"
-        ]
-      },
-      {
-        "geo": "Europe2 / RU KAWPOW Switcher",
-        "urls": [
-          "ru.kawpow.k1pool.com:5100"
-        ],
-        "ssl_urls": [
-          "ru.kawpow.k1pool.com:5100"
         ]
       },
       {
@@ -519,25 +504,25 @@
       {
         "geo": "Europe SOLO",
         "urls": [
-          "eu.cloresolo.k1pool.com:5032"
+          "eu.quaikawpowsolo.k1pool.com:3354"
         ]
       },
       {
         "geo": "Europe2 / RU SOLO",
         "urls": [
-          "ru.cloresolo.k1pool.com:5032"
+          "ru.quaikawpowsolo.k1pool.com:3354"
         ]
       },
       {
         "geo": "USA SOLO",
         "urls": [
-          "us.cloresolo.k1pool.com:5032"
+          "us.quaikawpowsolo.k1pool.com:3354"
         ]
       },
       {
         "geo": "China SOLO",
         "urls": [
-          "cn.cloresolo.k1pool.com:5032"
+          "cn.quaikawpowsolo.k1pool.com:3354"
         ]
       }
     ],
@@ -1066,17 +1051,18 @@
       }
     ],
     "miners": {
+      "_prototype": "miners_xelishashv3",
       "onezerominer": {
+        "algo": "xelis",
         "url": "%URL%",
         "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "-a xelis"
+        "template": "%WAL%.%WORKER_NAME%"
       },
       "rigel": {
+        "algo": "xelishashv3",
         "url": "%URL%",
         "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": "-a xelishashv2+zil -o [2]stratum+ssl://eu.zil.k1pool.com:1111 -u [2]%WAL%.%WORKER_NAME% --zil-countdown"
+        "template": "%WAL%.%WORKER_NAME%"
       }
     }
   },
