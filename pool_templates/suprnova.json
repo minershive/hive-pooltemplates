@@ -335,36 +335,6 @@
     }
   },
   {
-    "coin": "PXC",
-    "note": "Use Suprnova account username in Wallet field. NeoScrypt algorithm.",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": [
-          "pxc.suprnova.cc:2026"
-        ],
-        "ssl_urls": [
-          "pxc.suprnova.cc:2027"
-        ]
-      }
-    ],
-    "miners": {
-      "_prototype": "miners_neoscrypt",
-      "suprminer-dual": {
-        "url": "stratum+tcp://%URL%",
-        "algo": "neoscrypt",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "suprminer-amd": {
-        "url": "stratum+tcp://%URL%",
-        "algo": "neoscrypt",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
-    }
-  },
-  {
     "coin": "JUNO",
     "note": "Use wallet address in Wallet field. Pool pays to shielded (j1) address only - set in pool user settings. CPU mining with RandomJuno algorithm.",
     "servers": [
@@ -382,10 +352,9 @@
       }
     ],
     "miners": {
-      "_prototype": "miners_randomx",
       "cpuminer-opt-supr": {
-        "url": "%URL%",
-        "algo": "randomjuno",
+        "url": "stratum+tcp://%URL%",
+        "algo": "rxjuno",
         "pass": "x",
         "template": "%WAL%.%WORKER_NAME%"
       },
