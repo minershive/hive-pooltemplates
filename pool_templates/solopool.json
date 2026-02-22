@@ -1,5 +1,13 @@
 [
     {
+        "pool": {
+            "name": "SoloPool.org",
+            "url": "https://solopool.org",
+            "fee": 1.5,
+            "type": "SOLO"
+        }
+    },
+    {
         "coin": "ETC",
         "servers": [
             {
@@ -166,32 +174,6 @@
         }
     },
     {
-        "coin": "SDR",
-        "servers": [
-            {
-                "geo": "EU GPU/KS0",
-                "urls": [
-                    "eu3.solopool.org:8003"
-                ]
-            },
-            {
-                "geo": "EU KS1/KS2",
-                "urls": [
-                    "eu3.solopool.org:7003"
-                ]
-            },
-            {
-                "geo": "EU KS3/KS3L",
-                "urls": [
-                    "eu3.solopool.org:9003"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_kaspa"
-        }
-    },
-    {
         "coin": "ERG",
         "servers": [
             {
@@ -215,50 +197,6 @@
         ],
         "miners": {
             "_prototype": "miners_autolykos2"
-        }
-    },
-    {
-        "coin": "ALPH",
-        "servers": [
-            {
-                "geo": "EU Low Diff",
-                "urls": [
-                    "eu1.solopool.org:8002"
-                ]
-            },
-            {
-                "geo": "EU Mid Diff",
-                "urls": [
-                    "eu1.solopool.org:7002"
-                ]
-            },
-            {
-                "geo": "EU High Diff",
-                "urls": [
-                    "eu1.solopool.org:9002"
-                ]
-            },
-            {
-                "geo": "US Low Diff",
-                "urls": [
-                    "us1.solopool.org:8002"
-                ]
-            },
-            {
-                "geo": "US Mid Diff",
-                "urls": [
-                    "us1.solopool.org:7002"
-                ]
-            },
-            {
-                "geo": "US High Diff",
-                "urls": [
-                    "us1.solopool.org:9002"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_alephium"
         }
     },
     {
@@ -314,32 +252,6 @@
         }
     },
     {
-        "coin": "BTG",
-        "servers": [
-            {
-                "geo": "EU Low Diff",
-                "urls": [
-                    "eu2.solopool.org:8010"
-                ]
-            },
-            {
-                "geo": "EU Mid Diff",
-                "urls": [
-                    "eu2.solopool.org:7010"
-                ]
-            },
-            {
-                "geo": "EU High Diff",
-                "urls": [
-                    "eu2.solopool.org:9010"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_zhash_btg"
-        }
-    },
-    {
         "coin": "RVN",
         "servers": [
             {
@@ -384,92 +296,61 @@
         }
     },
     {
-        "coin": "XNA",
+        "coin": "LTC",
         "servers": [
             {
                 "geo": "EU Low Diff",
                 "urls": [
-                    "eu1.solopool.org:8015"
+                    "eu3.solopool.org:8003"
                 ]
             },
             {
                 "geo": "EU Mid Diff",
                 "urls": [
-                    "eu1.solopool.org:7015"
+                    "eu3.solopool.org:7003"
                 ]
             },
             {
                 "geo": "EU High Diff",
                 "urls": [
-                    "eu1.solopool.org:9015"
-                ]
-            },
-            {
-                "geo": "US Low Diff",
-                "urls": [
-                    "us1.solopool.org:8015"
-                ]
-            },
-            {
-                "geo": "US Mid Diff",
-                "urls": [
-                    "us1.solopool.org:7015"
-                ]
-            },
-            {
-                "geo": "US High Diff",
-                "urls": [
-                    "us1.solopool.org:9015"
+                    "eu3.solopool.org:9003"
                 ]
             }
         ],
         "miners": {
-            "_prototype": "miners_kawpow"
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "[%WAL%].%WORKER_NAME%"
+            }
         }
     },
-
     {
-        "coin": "NEOX",
+        "coin": "DOGE",
         "servers": [
             {
                 "geo": "EU Low Diff",
                 "urls": [
-                    "eu1.solopool.org:8005"
+                    "eu3.solopool.org:8003"
                 ]
             },
             {
                 "geo": "EU Mid Diff",
                 "urls": [
-                    "eu1.solopool.org:7005"
+                    "eu3.solopool.org:7003"
                 ]
             },
             {
                 "geo": "EU High Diff",
                 "urls": [
-                    "eu1.solopool.org:9005"
-                ]
-            },
-            {
-                "geo": "US Low Diff",
-                "urls": [
-                    "us1.solopool.org:8005"
-                ]
-            },
-            {
-                "geo": "US Mid Diff",
-                "urls": [
-                    "us1.solopool.org:7005"
-                ]
-            },
-            {
-                "geo": "US High Diff",
-                "urls": [
-                    "us1.solopool.org:9005"
+                    "eu3.solopool.org:9003"
                 ]
             }
         ],
         "miners": {
-            "_prototype": "miners_kawpow"
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "[%WAL%].%WORKER_NAME%"
+            }
         }
     },
     {
@@ -539,6 +420,24 @@
                 "urls": [
                     "eu2.solopool.org:9002"
                 ]
+            },
+            {
+                "geo": "US Low Diff",
+                "urls": [
+                    "us1.solopool.org:8002"
+                ]
+            },
+            {
+                "geo": "US Mid Diff",
+                "urls": [
+                    "us1.solopool.org:7002"
+                ]
+            },
+            {
+                "geo": "US High Diff",
+                "urls": [
+                    "us1.solopool.org:9002"
+                ]
             }
         ],
         "miners": {
@@ -578,7 +477,36 @@
         }
     },
     {
-        "coin": "MVC",
+        "coin": "FB",
+        "servers": [
+            {
+                "geo": "EU Low Diff",
+                "urls": [
+                    "eu3.solopool.org:8002"
+                ]
+            },
+            {
+                "geo": "EU Mid Diff",
+                "urls": [
+                    "eu3.solopool.org:7002"
+                ]
+            },
+            {
+                "geo": "EU High Diff",
+                "urls": [
+                    "eu3.solopool.org:9002"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "BC2",
         "servers": [
             {
                 "geo": "EU Low Diff",
@@ -607,24 +535,24 @@
         }
     },
     {
-        "coin": "FB",
+        "coin": "BTC",
         "servers": [
             {
                 "geo": "EU Low Diff",
                 "urls": [
-                    "eu3.solopool.org:8002"
+                    "eu3.solopool.org:8005"
                 ]
             },
             {
                 "geo": "EU Mid Diff",
                 "urls": [
-                    "eu3.solopool.org:7002"
+                    "eu3.solopool.org:7005"
                 ]
             },
             {
                 "geo": "EU High Diff",
                 "urls": [
-                    "eu3.solopool.org:9002"
+                    "eu3.solopool.org:9005"
                 ]
             }
         ],
