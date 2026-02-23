@@ -1,3 +1,7 @@
+##### 0.6-229@260222 2026-02-22
+*   SRBMiner-Multi v3.1.5 (Added algorithm `randomc64` for CPU mining C64/C64 Chain , fee 0.85%; Added algorithm `randomsnap` for CPU mining SNAP/Snap Coin, fee 0.85%; Added NVIDIA & AMD GPU support for algorithm `xelishashv3`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   BZMiner v24.0.1 (Add new coin XEL/Xelix, CPU mining only; Improved `warthog` and `verus` hashrates; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+
 ##### 0.6-229@260112 2026-01-12
 *   SRBMiner-Multi v3.1.1 (Added algorithm `yespowermwc`  for CPU mining MinersWorldCoin, fee 0.85%; Fixed algorithm `blake3_decred` pool login issue; Removed algorithm `tht`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   XMRigCC v3.4.9 (Added SCASH/Satoshi Cash RandomX variant `rx/scash`; NOTES: Please, see full changelog at https://github.com/Bendr0id)
