@@ -1,3 +1,6 @@
+##### 0.6-229@260223 2026-02-23
+*   SRBMiner-Multi v3.1.6 (Added algorithm `qhash` for GPU mining QTC/Qubit coin on AMD/NVIDIA/INTEL GPUs, fee 1.5%; Added support for dual mining modes FISHHASH/QHASH and AUTOLYKOS2/QHASH; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@260222 2026-02-22
 *   SRBMiner-Multi v3.1.5 (Added algorithm `randomc64` for CPU mining C64/C64 Chain , fee 0.85%; Added algorithm `randomsnap` for CPU mining SNAP/Snap Coin, fee 0.85%; Added NVIDIA & AMD GPU support for algorithm `xelishashv3`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   BZMiner v24.0.1 (Add new coin XEL/Xelix, CPU mining only; Improved `warthog` and `verus` hashrates; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
