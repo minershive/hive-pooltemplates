@@ -1,3 +1,6 @@
+##### 0.6-229@260226 2026-02-26
+*   SRBMiner-Multi v3.1.8 (Added support for dual mining XHASH+QHASH on AMD RDNA and NVIDIA GPUs; Minor improvements on AUTOLYKOS2/IRONFISH + QHASH for all supported GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@260225 2026-02-25
 *   SRBMiner-Multi v3.1.7 (Hashrate improvement on algorithm `qhash` for all supported GPUs; Improved efficiency on algorithm `qhash` for AMD RDNA GPUs; Minor hashrate improvement on AUTOLYKOS2/IRONFISH + QHASH for NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
