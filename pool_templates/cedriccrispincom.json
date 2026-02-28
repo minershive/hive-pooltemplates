@@ -46,6 +46,44 @@
 		}
 	},
 	{
+		"coin": "ARQ",
+		"servers": [
+			{
+				"geo": "Asia (Thailand) - CPU",
+				"urls": [
+					"arqma.cedric-crispin.com:4574"
+				],
+				"ssl_urls": [
+					"arqma.cedric-crispin.com:4575"
+				]
+			}
+		],
+		"miners": {
+			"srbminer": {
+				"url": "%URL%",
+				"algo": "randomarq",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "--disable-gpu\n--disable-huge-pages\n\"send-stales\": false\n\"retry-time\": 30"
+			},
+            "xmr-stak": {
+				"amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+				"nvidia": "\"gpu_threads_conf\" : [],",
+				"url": "%URL%",
+				"fork": "randomx",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"currency\":\"randomx_arqma\""
+			},
+			"xmrig-new": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"algo\": \"rx/arq\"\n\"donate-level\": 1"
+			}
+		}
+	},
+	{
 		"coin": "BEAM",
 		"servers": [
 			{
@@ -62,44 +100,44 @@
 			"_prototype": "miners_beamhash"
 		}
 	},
-    {
-        "coin": "BTC",
-        "servers": [
-            {
-                "geo": "Asia (Thailand) - Low Difficulty",
-                "urls": [
-                    "bitcoin.cedric-crispin.com:4544"
-                ],
+	{
+		"coin": "BTC",
+		"servers": [
+			{
+				"geo": "Asia (Thailand) - Low Difficulty",
+				"urls": [
+					"bitcoin.cedric-crispin.com:4544"
+				],
 				"ssl_urls": [
 					"bitcoin.cedric-crispin.com:4545"
 				]
-            },
-            {
-                "geo": "Asia (Thailand) - Medium Difficulty",
-                "urls": [
-                    "bitcoin.cedric-crispin.com:4546"
-                ],
+			},
+			{
+				"geo": "Asia (Thailand) - Medium Difficulty",
+				"urls": [
+					"bitcoin.cedric-crispin.com:4546"
+				],
 				"ssl_urls": [
 					"bitcoin.cedric-crispin.com:4547"
 				]
-            },
-            {
-                "geo": "Asia (Thailand) - High Difficulty",
-                "urls": [
-                    "bitcoin.cedric-crispin.com:4548"
-                ],
+			},
+			{
+				"geo": "Asia (Thailand) - High Difficulty",
+				"urls": [
+					"bitcoin.cedric-crispin.com:4548"
+				],
 				"ssl_urls": [
 					"bitcoin.cedric-crispin.com:4549"
 				]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
+			}
+		],
+		"miners": {
+			"asicminer": {
+				"url": "stratum+tcp://%URL%",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
 	{
 		"coin": "CCX",
 		"servers": [
@@ -371,6 +409,26 @@
 		}
 	},
 	{
+		"coin": "LAX",
+		"servers": [
+			{
+				"geo": "Asia (Thailand) - GPU",
+				"urls": [
+					"parallax.cedric-crispin.com:4554"
+				],
+				"ssl_urls": [
+					"parallax.cedric-crispin.com:4555"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_xhash",
+			"srbminer": {
+				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
+			}
+		}
+	},
+	{
 		"coin": "MEWC",
 		"servers": [
 			{
@@ -470,6 +528,12 @@
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%",
 				"user_config": "--disable-gpu\n--disable-huge-pages\n\"send-stales\": false\n\"retry-time\": 30"
+			},
+			"xmrig-new": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"algo\": \"rx/scash\"\n\"donate-level\": 1"
 			}
 		}
 	},
@@ -576,6 +640,35 @@
 			"_prototype": "miners_xelishashv3",
 			"srbminer": {
 				"user_config": "--disable-gpu\n\"retry-time\": 30"
+			}
+		}
+	},
+	{
+		"coin": "XEQ",
+		"servers": [
+			{
+				"geo": "Asia (Thailand) - CPU",
+				"urls": [
+					"equilibria.cedric-crispin.com:4564"
+				],
+				"ssl_urls": [
+					"equilibria.cedric-crispin.com:4565"
+				]
+			}
+		],
+		"miners": {
+			"srbminer": {
+				"url": "%URL%",
+				"algo": "randomxeq",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "--disable-gpu\n--disable-huge-pages\n\"send-stales\": false\n\"retry-time\": 30"
+			},
+			"xmrig-new": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"algo\": \"rx/xeq\"\n\"donate-level\": 1"
 			}
 		}
 	},
