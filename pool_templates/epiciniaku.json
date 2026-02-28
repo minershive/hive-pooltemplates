@@ -1,0 +1,47 @@
+[
+    {
+        "pool": {
+            "name": "IniAku Pool",
+            "url": "https://epic.iniaku.my.id",
+            "fee": 2,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "EPIC",
+        "servers": [
+            {
+                "geo": "Asia (Indonesia)",
+                "urls": [
+                    "epic.iniaku.my.id:3333"
+                ],
+                "ssl_urls": [
+                    "epic.iniaku.my.id:3334"
+                ]
+            },
+            {
+                "geo": "Europe (Germany)",
+                "urls": [
+                    "de.epic.iniaku.my.id:3333"
+                ],
+                "ssl_urls": [
+                    "de.epic.iniaku.my.id:3334"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "progpow_epic",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig": {
+                "url": "%URL%",
+                "algo": "rx/epic",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

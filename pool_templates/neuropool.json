@@ -3,11 +3,10 @@
         "pool": {
             "name": "NeuroPool",
             "url": "https://dynex.neuropool.net",
-            "fee": 0.9,
-            "type": "PROP"
+            "fee": 1,
+            "type": "PPLNS"
         }
     },
-
     {
         "coin": "DNX",
         "servers": [
@@ -37,21 +36,66 @@
                   "ssl_urls": [
                     "dnx.as2.neuropool.net:19343"
                 ]
-            },
-            {
-                "geo": "AU/Melbourne",
-                "urls": [
-                    "dnx.au.neuropool.net:19333"
-                ],
-                  "ssl_urls": [
-                    "dnx.au.neuropool.net:19343"
-                ]
             }
         ],
         "miners": {
             "_prototype": "miners_dynexsolve",
             "onezerominer": {
                 "user_config": ""
+            }
+        }
+    },
+    {
+        "coin": "PHI",
+        "servers": [
+            {
+                "geo": "EU/Frankfurt",
+                "urls": [
+                    "eu.neuropool.net:10110"
+                ]
+            },
+            {
+                "geo": "US/Chicago",
+                "urls": [
+                    "us.neuropool.net:10110"
+                ]
+            },
+            {
+                "geo": "AS/Hong Kong",
+                "urls": [
+                    "as.neuropool.net:10110"
+                ]
+            }
+        ],
+        "description": "This pool is intended to be used with the official PhiHash miner (phihashminer) as a custom miner in HiveOS.\n\nDownload URL:\nhttps://github.com/PhicoinProject/phihashminer_v2/releases/latest/download/phihashminer.tar.gz\n\nExample configuration (Custom miner):\nURL: stratum+tcp://eu.neuropool.net:10100\nWALLET: <your PHI address>\nWORKER: <rig name>\nPASSWORD: x\nExtra args: -G"
+      
+    },{
+        "coin": "RIN",
+        "servers": [
+            {
+                "geo": "EU/Frankfurt",
+                "urls": [
+                    "eu.neuropool.net:10210"
+                ]
+            },
+            {
+                "geo": "US/Chicago",
+                "urls": [
+                    "us.neuropool.net:10210"
+                ]
+            },
+            {
+                "geo": "AS/Hong Kong",
+                "urls": [
+                    "as.neuropool.net:10210"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer-multi": {
+                "algo": "rinhash",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     }

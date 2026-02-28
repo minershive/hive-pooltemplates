@@ -1,3 +1,23 @@
+##### 0.6-229@260226 2026-02-26
+*   SRBMiner-Multi v3.1.8 (Added support for dual mining XHASH+QHASH on AMD RDNA and NVIDIA GPUs; Minor improvements on AUTOLYKOS2/IRONFISH + QHASH for all supported GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-229@260225 2026-02-25
+*   SRBMiner-Multi v3.1.7 (Hashrate improvement on algorithm `qhash` for all supported GPUs; Improved efficiency on algorithm `qhash` for AMD RDNA GPUs; Minor hashrate improvement on AUTOLYKOS2/IRONFISH + QHASH for NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-229@260223 2026-02-23
+*   SRBMiner-Multi v3.1.6 (Added algorithm `qhash` for GPU mining QTC/Qubit coin on AMD/NVIDIA/INTEL GPUs, fee 1.5%; Added support for dual mining modes FISHHASH/QHASH and AUTOLYKOS2/QHASH; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-229@260222 2026-02-22
+*   SRBMiner-Multi v3.1.5 (Added algorithm `randomc64` for CPU mining C64/C64 Chain , fee 0.85%; Added algorithm `randomsnap` for CPU mining SNAP/Snap Coin, fee 0.85%; Added NVIDIA & AMD GPU support for algorithm `xelishashv3`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   BZMiner v24.0.1 (Add new coin XEL/Xelix, CPU mining only; Improved `warthog` and `verus` hashrates; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+
+##### 0.6-229@260112 2026-01-12
+*   SRBMiner-Multi v3.1.1 (Added algorithm `yespowermwc`  for CPU mining MinersWorldCoin, fee 0.85%; Fixed algorithm `blake3_decred` pool login issue; Removed algorithm `tht`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   XMRigCC v3.4.9 (Added SCASH/Satoshi Cash RandomX variant `rx/scash`; NOTES: Please, see full changelog at https://github.com/Bendr0id)
+*   XMRig-MO v6.25.0-mo1 (MoneroOcean pool fork, synced to XMRig v6.25.0 code; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig)
+*   CPUMiner-Opt-Rplant v5.0.48 (Add `yespowerMWC` for mining WMC/MinersWorldCoin; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
+*   CPUMiner-Opt-JayDDee v26.1 (Fixed segfault in `scrypt` algo on some older CPUs; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)
+
 ##### 0.6-229@251226 2025-12-26
 *   OneZeroMiner v1.7.4 (Performance improvement `xelishhashv3` for CMP 170HX and AMD cards, mostly Vega and Radeon VII; Improvement in xelis/qubitcoin dual mining stability and autotuning; Fixed `xelishhashv3` the initialization error on Polaris 4GB cards; Fixed xelishhashv3 a dev fee pool issue for miners in some regions; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 *   Rigel miner v1.23.1 (Major performance increase on 170HX for `xelishashv3`, small improvements on other cards; Remove the following algorithms: `quai`, use algo `kawpow` and option `--coin quai` instead, 'xelishash', 'xelishashv2'; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
@@ -56,7 +76,7 @@
 
 ##### 0.6-229@251116 2025-11-16
 *   WildRig-Multi v0.47.4 (Minor improvements for `qhash` and fix possible rejects; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
-*   CPUminer-Opt-JayDDee v25.7(Fixed a bug calculating TTF longer than 1 year; Faster implementation argon2d, hamsi AVX512, switfftx AVX2; Other small fixes and improvements; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)
+*   CPUminer-Opt-JayDDee v25.7 (Fixed a bug calculating TTF longer than 1 year; Faster implementation argon2d, hamsi AVX512, switfftx AVX2; Other small fixes and improvements; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)
 
 ##### 0.6-229@251115 2025-11-15
 *   WildRig-Multi v0.47.3 (Improved `qhash` speed and power efficiency across all GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
@@ -158,7 +178,7 @@
 
 ##### 0.6-229@250904 2025-09-04
 *   SRBMiner-Multi v2.9.7 (Added algorithm `yespowereqpay` for CPU mining EQPAY/Equitypay, fee 2; Added algorithm `yespowerinterchained` for CPU mining ITC/Interchained, fee 0.85%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
-*   CPUMiner-Opt-Rplant v5.0.46 (Added `interchained` algo; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)  
+*   CPUMiner-Opt-Rplant v5.0.46 (Added `interchained` algo; NOTES: Please, see full changelog at https://github.com/rplant8/cpuminer-opt-rplant/releases)  
 
 ##### 0.6-229@250831 2025-08-31
 *   OneZeroMiner v1.5.7 (Qubitcoin mining performance improvement up to ~30% vs v1.5.6; Dropped dev fee on Qubitcoin mining to 3%; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
@@ -207,7 +227,7 @@
 *   OneZeroMiner v1.4.6 (Added `qhash` algo for mining QTC/Qubitcoin on Nvidia cards, fee 5%; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 *   WildRig-Multi v0.43.4 (Implemented in v0.43.3 `qhash` algo for mining QTC/Qubitcoin on AMD/Intel/NVIDIA 40xx/50xx series GPUs, fee 5%; Significant improvements for NVIDIA and Intel GPUs and slightly improved on AMD in v0.43.4; Fixed high rejects rate on `qhash`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 *   SRBMiner-Multi v2.9.5 (Added algorithm `randomalpha` for CPU mining APLHA/Unicity coin, fee 1%; Performance/efficiency improvements for algorithm 'nxlhash' on AMD RDNA and NVIDIA GPUs; Fixed broken dual mining of algorithms 'autolykos2/sha256dt' and 'autolykos2/heavyhash' on NVIDIA 5000 series; Removed some algorithms; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
-*   CPUMiner-Opt-Rplant v5.0.45 (Added `rinhash2` algo; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)  
+*   CPUMiner-Opt-Rplant v5.0.45 (Added `rinhash2` algo; NOTES: Please, see full changelog at https://github.com/rplant8/cpuminer-opt-rplant/releases)  
 *   CPUMiner-Opt-JayDDee v25.6 (Added `argon2d1000` and `argon2d16000` algos; Some performance improvements & bug fixes; NOTES: Please, see full changelog at https://github.com/JayDDee/cpuminer-opt/releases)  
 
 ##### 0.6-229@250707 2025-07-07

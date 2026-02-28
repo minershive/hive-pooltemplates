@@ -251,6 +251,7 @@ miners_progpow_sero | progpow_sero |  |
 miners_progpow_zano | progpow_zano |  | 
 miners_pyrinhash | pyrinhash | HeavyHash variant Pyrin| 
 miners_pyrinhashv2 | pyrinhashv2 | Pyrin post-HF v2| 
+miners_qhash | qhash | QTC (Qubit coin)| 
 miners_radiant | radiant |  |  
 miners_randomhash2_with_email | randomhash2_with_email | Nanopool format "WALLET.WORKER/EMAIL" | 
 miners_randomx | randomx | Nicehash format "wallet.worker" | 
