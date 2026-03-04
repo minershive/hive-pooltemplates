@@ -1,0 +1,62 @@
+[
+	{
+		"pool": {
+			"name": "JETSKIPOOL.AI",
+			"url": "https://jetskipool.ai"
+		}
+	},
+	{
+		"coin": "QUBIC",
+		"servers": [
+			{
+				"geo": "Global",
+				"urls": [
+					"qubic.jetskipool.ai:443"
+				],
+				"ssl_urls": [
+					"qubic.jetskipool.ai:443"
+				]
+			}
+		],
+		"miners": {
+			"custom": {
+				"template": "%WAL%-%WORKER_NAME%",
+				"url": "wss://%URL%"
+			}
+		}
+	},
+	{
+		"coin": "XMR",
+		"servers": [
+			{
+				"geo": "France-P2P",
+				"urls": [
+					"p2pxmrski.jetskipool.ai:5555"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_randomx"
+		}
+	},
+	{
+		"coin": "XEL",
+		"servers": [
+			{
+				"geo": "France",
+				"urls": [
+					"fr.xelskipool.xyz:9191"
+				]
+			},
+			{
+				"geo": "Canada",
+				"urls": [
+					"na.xelskipool.xyz:9191"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_xelishashv3"
+		}
+	}
+]
