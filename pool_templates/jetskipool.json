@@ -1,7 +1,7 @@
 [
 	{
 		"pool": {
-			"name": "JETSKIPOOL.AI",
+			"name": "jetskipool.ai",
 			"url": "https://jetskipool.ai"
 		}
 	},
@@ -20,8 +20,12 @@
 		],
 		"miners": {
 			"custom": {
+				"url": "https://qubic.jetskipool.ai/",
+				"algo": "qubic",
+				"miner": "qubjetski.PPLNS",
 				"template": "%WAL%-%WORKER_NAME%",
-				"url": "wss://%URL%"
+				"install_url": "https://github.com/jtskxx/Jetski-Qubic-Pool/releases/download/latest/qubjetski.PPLNS-latest.tar.gz",
+				"user_config": "\"amountOfThreads\":0\n\"hugePages\":1000\n\"idleSettings\":{\"command\":\"\"}"
 			}
 		}
 	},
