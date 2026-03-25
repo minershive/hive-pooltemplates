@@ -193,35 +193,7 @@
             }
         ],
         "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"algo\": \"rx/0\""
-            },
-            "xmrig-new": {
-                "cpu": "1",
-                "url": "%URL%",
-                "algo": "rx/0",
-                "fork": "xmrig",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "srbminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "randomx"
-            },
-            "xmr-stak": {
-                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
-                "nvidia": "\"gpu_threads_conf\" : [],",
-                "url": "%URL%",
-                "fork": "randomx",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\":\"monero\""
-            }
+            "_prototype": "miners_randomx"
         }
     },
 

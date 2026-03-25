@@ -1,0 +1,94 @@
+[
+    {
+        "pool": {
+            "name": "Apool",
+            "url": "https://www.apool.io/",
+            "fee": 10,
+            "type": "PPLNS"
+        }
+    },
+
+    {
+        "coin": "QUBIC",
+        "servers": [
+            {
+                "geo": "EU, WSS",
+                "urls": [
+                    "qubic.eu.apool.net:8080"
+                ]
+            },
+            {
+                "geo": "HK, TCP",
+                "urls": [
+                    "qubic1.hk.apool.io:3334"
+                ]
+            },
+            {
+                "geo": "HK, SSL",
+                "urls": [
+                    "qubic1.hk.apool.io:2334"
+                ]
+            },
+            {
+                "geo": "Asia, WSS",
+                "urls": [
+                    "qubic.asia.apool.io:4334"
+                ]
+            }
+        ],
+        "miners": {
+            "apoolminer": {
+              "algo": "qubic",
+              "url": "%URL%",
+              "template": "%WAL%",
+              "worker": "%WORKER_NAME%"
+            }
+        }
+    },
+
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "EU, WSS",
+                "urls": [
+                    "xmr.eu.apool.net:8080"
+                ]
+            },
+            {
+                "geo": "Asia, WSS",
+                "urls": [
+                    "xmr.asia.apool.io:4334"
+                ]
+            }
+        ],
+        "miners": {
+            "apoolminer": {
+              "algo": "xmr",
+              "url": "%URL%",
+              "template": "%WAL%",
+              "worker": "%WORKER_NAME%"
+            }
+        }
+    },
+
+    {
+        "coin": "QUAI",
+        "servers": [
+            {
+                "geo": "HK",
+                "urls": [
+                    "quai.hk.apool.io:3335"
+                ]
+            }
+        ],
+        "miners": {
+            "apoolminer": {
+              "algo": "quai",
+              "url": "%URL%",
+              "template": "%WAL%",
+              "worker": "%WORKER_NAME%"
+            }
+        }
+    }
+]

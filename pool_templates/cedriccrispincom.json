@@ -20,7 +20,7 @@
 				]
 			},
 			{
-				"geo": "Asia (Thailand) - FPGA [FK33/TH53/TH55/E300]",
+				"geo": "Asia (Thailand) - FPGA [FK33|TH53|TH55|E300]",
 				"urls": [
 					"alephium.cedric-crispin.com:4086"
 				],
@@ -29,7 +29,7 @@
 				]
 			},
 			{
-				"geo": "Asia (Thailand) - ASIC (Goldshell AL-BOX~AL-BOX II PLUS~AL-BOX III - IceRiver ALPH AL0~ALPH AL2 LITE)",
+				"geo": "Asia (Thailand) - ASIC (Goldshell AL-BOX|AL-BOX II PLUS|AL-BOX III - IceRiver ALPH AL0|ALPH AL2 LITE)",
 				"urls": [
 					"alephium.cedric-crispin.com:4088"
 				]
@@ -43,6 +43,44 @@
 		],
 		"miners": {
 			"_prototype": "miners_alephium"
+		}
+	},
+	{
+		"coin": "ARQ",
+		"servers": [
+			{
+				"geo": "Asia (Thailand) - CPU",
+				"urls": [
+					"arqma.cedric-crispin.com:4574"
+				],
+				"ssl_urls": [
+					"arqma.cedric-crispin.com:4575"
+				]
+			}
+		],
+		"miners": {
+			"srbminer": {
+				"url": "%URL%",
+				"algo": "randomarq",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "--disable-gpu\n--disable-huge-pages\n\"send-stales\": false\n\"retry-time\": 30"
+			},
+            "xmr-stak": {
+				"amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+				"nvidia": "\"gpu_threads_conf\" : [],",
+				"url": "%URL%",
+				"fork": "randomx",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"currency\":\"randomx_arqma\""
+			},
+			"xmrig-new": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"algo\": \"rx/arq\"\n\"donate-level\": 1"
+			}
 		}
 	},
 	{
@@ -63,22 +101,60 @@
 		}
 	},
 	{
+		"coin": "BTC",
+		"servers": [
+			{
+				"geo": "Asia (Thailand) - Low Difficulty",
+				"urls": [
+					"bitcoin.cedric-crispin.com:4544"
+				],
+				"ssl_urls": [
+					"bitcoin.cedric-crispin.com:4545"
+				]
+			},
+			{
+				"geo": "Asia (Thailand) - Medium Difficulty",
+				"urls": [
+					"bitcoin.cedric-crispin.com:4546"
+				],
+				"ssl_urls": [
+					"bitcoin.cedric-crispin.com:4547"
+				]
+			},
+			{
+				"geo": "Asia (Thailand) - High Difficulty",
+				"urls": [
+					"bitcoin.cedric-crispin.com:4548"
+				],
+				"ssl_urls": [
+					"bitcoin.cedric-crispin.com:4549"
+				]
+			}
+		],
+		"miners": {
+			"asicminer": {
+				"url": "stratum+tcp://%URL%",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
+		}
+	},
+	{
 		"coin": "CCX",
 		"servers": [
 			{
 				"geo": "Asia (Thailand) - GPU",
 				"urls": [
-					"beam.cedric-crispin.com:3364"
+					"conceal.cedric-crispin.com:3364"
 				],
 				"ssl_urls": [
-					"beam.cedric-crispin.com:3365"
+					"conceal.cedric-crispin.com:3365"
 				]
 			}
 		],
 		"miners": {
 			"_prototype": "miners_cryptonight_gpu",
 			"srbminer": {
-				"user_config": "--disable-cpu --send-stales false --retry-time 30"
+				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -119,20 +195,26 @@
         	}
 	},
 	{
-		"coin": "ERG",
+		"coin": "DCR",
 		"servers": [
 			{
 				"geo": "Asia (Thailand) - GPU",
 				"urls": [
-					"ergo.cedric-crispin.com:3354"
+					"decred.cedric-crispin.com:4494"
 				],
 				"ssl_urls": [
-					"ergo.cedric-crispin.com:3355"
+					"decred.cedric-crispin.com:4495"
 				]
 			}
 		],
 		"miners": {
-			"_prototype": "miners_autolykos2"
+			"_prototype": "miners_blake3-dcr",
+			"bzminer": {
+				"user_config": "\"nc\": 1\n\"allow_stales\": false"
+			},
+			"srbminer": {
+				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
+			}
 		}
 	},
 	{
@@ -219,7 +301,8 @@
 		"miners": {
 			"asicminer": {
 				"url": "stratum+tcp://%URL%",
-				"template": "%WAL%.%WORKER_NAME%"
+				"template": "%WAL%.%WORKER_NAME%",
+				"pass": "x"
 			}
 		}
 	},
@@ -253,7 +336,7 @@
 				]
 			},
 			{
-				"geo": "Asia (Thailand) - FPGA/ASIC (IceRiver KS0~KS0 Pro)",
+				"geo": "Asia (Thailand) - FPGA/ASIC (IceRiver KS0|KS0 PRO|KS0 ULTRA)",
 				"urls": [
 					"kaspa.cedric-crispin.com:4117"
 				],
@@ -262,16 +345,7 @@
 				]
 			},
 			{
-				"geo": "Asia (Thailand) - FPGA/ASIC (IceRiver KS0 Ultra)",
-				"urls": [
-					"kaspa.cedric-crispin.com:4119"
-				],
-				"ssl_urls": [
-					"kaspa.cedric-crispin.com:4120"
-				]
-			},
-			{
-				"geo": "Asia (Thailand) - ASIC (IceRiver KS1~KS2~KS2 LITE - Goldshell KA-BOX~KA-BOX PRO)",
+				"geo": "Asia (Thailand) - ASIC (IceRiver KS1|KS2|KS2 LITE - Goldshell KA-BOX|KA-BOX PRO)",
 				"urls": [
 					"kaspa.cedric-crispin.com:4121"
 				],
@@ -280,7 +354,7 @@
 				]
 			},
 			{
-				"geo": "Asia (Thailand) - ASIC (IceRiver KS3~KS3L - Bitmain Antminer KS3)",
+				"geo": "Asia (Thailand) - ASIC (IceRiver KS3|KS3L|KS7 LITE - Bitmain Antminer KS3)",
 				"urls": [
 					"kaspa.cedric-crispin.com:4127"
 				],
@@ -289,12 +363,21 @@
 				]
 			},
 			{
-				"geo": "Asia (Thailand) - ASIC (IceRiver KS5~KS5L~KS5M - Bitmain Antminer KS3)",
+				"geo": "Asia (Thailand) - ASIC (IceRiver KS5|KS5L|KS5M - Bitmain Antminer KS5)",
 				"urls": [
 					"kaspa.cedric-crispin.com:4129"
 				],
 				"ssl_urls": [
 					"kaspa.cedric-crispin.com:4130"
+				]
+			},
+			{
+				"geo": "Asia (Thailand) - ASIC (IceRiver KS7 - Bitmain Antminer KS7)",
+				"urls": [
+					"kaspa.cedric-crispin.com:4131"
+				],
+				"ssl_urls": [
+					"kaspa.cedric-crispin.com:4132"
 				]
 			}
 		],
@@ -321,7 +404,27 @@
 				"algo": "flex",
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%",
-				"user_config": "--disable-gpu --retry-time 30"
+				"user_config": "--disable-gpu\n\"retry-time\": 30"
+			}
+		}
+	},
+	{
+		"coin": "LAX",
+		"servers": [
+			{
+				"geo": "Asia (Thailand) - GPU",
+				"urls": [
+					"parallax.cedric-crispin.com:4554"
+				],
+				"ssl_urls": [
+					"parallax.cedric-crispin.com:4555"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_xhash",
+			"srbminer": {
+				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -341,7 +444,7 @@
 		"miners": {
 			"_prototype": "miners_meowpow",
 			"srbminer": {
-				"user_config": "--disable-cpu --send-stales false --retry-time 30"
+				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -361,7 +464,7 @@
 		"miners": {
 			"_prototype": "miners_randomx",
 			"srbminer": {
-				"user_config": "--disable-gpu --disable-huge-pages --keepalive true --retry-time 30"
+				"user_config": "--disable-gpu\n--disable-huge-pages\n\"keepalive\": true\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -381,7 +484,7 @@
 		"miners": {
 			"_prototype": "miners_minotaurx",
 			"srbminer": {
-				"user_config": "--disable-gpu --retry-time 30"
+				"user_config": "--disable-gpu\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -401,7 +504,7 @@
 		"miners": {
 			"_prototype": "miners_kawpow",
 			"srbminer": {
-				"user_config": "--disable-cpu --retry-time 30"
+				"user_config": "--disable-cpu\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -424,7 +527,13 @@
 				"algo": "randomscash",
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%",
-				"user_config": "--disable-gpu --disable-huge-pages --send-stales false --retry-time 30"
+				"user_config": "--disable-gpu\n--disable-huge-pages\n\"send-stales\": false\n\"retry-time\": 30"
+			},
+			"xmrig-new": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"algo\": \"rx/scash\"\n\"donate-level\": 1"
 			}
 		}
 	},
@@ -444,44 +553,7 @@
 		"miners": {
 			"_prototype": "miners_kawpow",
 			"srbminer": {
-				"user_config": "--disable-cpu --retry-time 30"
-			}
-		}
-	},
-	{
-		"coin": "SPR",
-		"servers": [
-			{
-				"geo": "Asia (Thailand) - CPU",
-				"urls": [
-					"spectre.cedric-crispin.com:4364"
-				],
-				"ssl_urls": [
-					"spectre.cedric-crispin.com:4365"
-				]
-			}
-		]
-	},
-	{
-		"coin": "UBQ",
-		"servers": [
-			{
-				"geo": "Asia (Thailand) - GPU/FPGA/ASIC",
-				"urls": [
-					"ubiq.cedric-crispin.com:3384"
-				],
-				"ssl_urls": [
-					"ubiq.cedric-crispin.com:3385"
-				]
-			}
-		],
-		"miners": {
-			"_prototype": "miners_ubqhash",
-			"lolminer": {
-				"user_config": "--ethstratum ETHV1"
-			},
-			"srbminer": {
-				"user_config": "--disable-cpu --esm 2 --retry-time 30"
+				"user_config": "--disable-cpu\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -527,7 +599,7 @@
 		"miners": {
 			"_prototype": "miners_verushash",
 			"srbminer": {
-				"user_config": "--disable-gpu --send-stales false --retry-time 30"
+				"user_config": "--disable-gpu\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -547,7 +619,7 @@
 		"miners": {
 			"_prototype": "miners_warthog",
 			"bzminer": {
-				"user_config": "--nc 1 --allow_stales false"
+				"user_config": "\"nc\": 1\n\"allow_stales\": false"
 			}
 		}
 	},
@@ -565,9 +637,38 @@
 			}
 		],
 		"miners": {
-			"_prototype": "miners_xelishashv2",
+			"_prototype": "miners_xelishashv3",
 			"srbminer": {
-				"user_config": "--disable-gpu --retry-time 30"
+				"user_config": "--disable-gpu\n\"retry-time\": 30"
+			}
+		}
+	},
+	{
+		"coin": "XEQ",
+		"servers": [
+			{
+				"geo": "Asia (Thailand) - CPU",
+				"urls": [
+					"equilibria.cedric-crispin.com:4564"
+				],
+				"ssl_urls": [
+					"equilibria.cedric-crispin.com:4565"
+				]
+			}
+		],
+		"miners": {
+			"srbminer": {
+				"url": "%URL%",
+				"algo": "randomxeq",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "--disable-gpu\n--disable-huge-pages\n\"send-stales\": false\n\"retry-time\": 30"
+			},
+			"xmrig-new": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"algo\": \"rx/xeq\"\n\"donate-level\": 1"
 			}
 		}
 	},
@@ -587,7 +688,7 @@
 		"miners": {
 			"_prototype": "miners_progpow_zano",
 			"srbminer": {
-				"user_config": "--disable-cpu --send-stales false --retry-time 30"
+				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	}

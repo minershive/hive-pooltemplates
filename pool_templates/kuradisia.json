@@ -1,0 +1,81 @@
+[
+  {
+    "pool": {
+      "name": "Kuradisia",
+      "url": "https://pools.kuradisia.io/",
+      "fee": 1,
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "LTC",
+    "servers": [
+      {
+        "geo": "JP",
+        "urls": [
+          "ltcpool.kuradisia.io:3116"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "PHI",
+    "servers": [
+      {
+        "geo": "JP",
+        "urls": [
+          "phipool.kuradisia.io:11111"
+        ]
+      }
+    ],
+    "description": "This pool is intended to be used with the official PhiHash miner (phihashminer) as a custom miner in HiveOS.\n\nDownload URL:\nhttps://github.com/PhicoinProject/phihashminer_v2/releases/latest/download/phihashminer.tar.gz\n\nExample configuration (Custom miner):\nURL: stratum+tcp://phipool.kuradisia.io:11111\nWALLET: <your PHI address>\nWORKER: <rig name>\nPASSWORD: x\nExtra args: -G"
+  },
+  {
+    "coin": "RTM",
+    "servers": [
+      {
+        "geo": "JP",
+        "urls": [
+          "rtmpool.kuradisia.io:3112"
+        ]
+      }
+    ],
+     "miners": {
+      "_prototype": "miners_ghostrider"
+    }
+  },
+  {
+    "coin": "XMR",
+    "servers": [
+      {
+        "geo": "JP",
+        "urls": [
+          "xmrpool.kuradisia.io:3211"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_randomx"
+    }
+  },
+  {
+    "coin": "MEWC",
+    "servers": [
+      {
+        "geo": "JP",
+        "urls": [
+          "mewcpool.kuradisia.io:3115"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_meowpow"
+    }
+  }
+]

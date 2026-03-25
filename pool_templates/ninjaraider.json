@@ -1,0 +1,49 @@
+[
+    {
+        "coin": "YEC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "ninjaraider.com:44560"
+                ],
+                "ssl_urls": [
+                    "ninjaraider.com:44561"
+                ]
+            },
+            {
+                "geo": "EU-Solo",
+                "urls": [
+                    "ninjaraider.com:44570"
+                ],
+                "ssl_urls": [
+                    "ninjaraider.com:44571"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "pass": "x",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            },
+            "lolminer": {
+                "algo": "YEC",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

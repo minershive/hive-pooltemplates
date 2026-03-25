@@ -23,6 +23,14 @@
         }
     },
 
+    "miners_xhash": {
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "xhash",
+            "template": "%WAL%.%WORKER_NAME%"
+        }
+    },
+
     "miners_alephium": {
         "bzminer":{
             "url":"%URL%",
@@ -2213,6 +2221,27 @@
 	}
     },
 
+    "miners_xelishashv3": {
+        "rigel": {
+            "url": "%URL%",
+            "algo": "xelishashv3",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%"
+        },
+        "onezerominer": {
+            "url": "%URL%",
+            "algo": "xelis",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+	"srbminer": {
+	    "url": "%URL%",
+	    "algo": "xelishashv3",
+	    "template": "%WAL%",
+	    "worker": "%WORKER_NAME%"
+	}
+    },
+
    "miners_gram_stratum": {
         "lolminer": {
             "algo": "GRAM",
@@ -2253,6 +2282,30 @@
             "algo": "cryptixhash",
             "template": "%WAL%.%WORKER_NAME%",
             "user_config": "--disable-cpu"
+        }
+    },
+
+    "miners_qhash": {
+        "srbminer": {
+            "url": "%URL%",
+            "algo": "qhash",
+            "template": "%WAL%",
+            "worker": "%WORKER_NAME%",
+            "user_config": "--disable-cpu"
+        },
+
+        "wildrig-multi": {
+            "url": "%URL%",
+            "algo": "qhash",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
+        },
+
+        "onezerominer": {
+            "url": "%URL%",
+            "algo": "qhash",
+            "pass": "x",
+            "template": "%WAL%.%WORKER_NAME%"
         }
     }
 }

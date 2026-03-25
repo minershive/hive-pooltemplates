@@ -1,0 +1,47 @@
+[
+    {
+        "pool": {
+            "name": "Neopool",
+            "url": "https://neopool.com",
+            "fee": 1,
+            "type": "PPS+"
+        }
+    },
+
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "US",
+                "urls": [
+                    "us.btc.neopool.com:3333",
+                    "us.btc.neopool.com:4444"
+                ]
+            },
+
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.btc.neopool.com:3333",
+                    "eu.btc.neopool.com:4444"
+                ]
+            },
+
+            {
+                "geo": "RU",
+                "urls": [
+                    "ru.btc.neopool.com:3333",
+                    "ru.btc.neopool.com:4444"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        },
+        "stratum_ping": false,
+        "account_mining": true
+    }
+]
