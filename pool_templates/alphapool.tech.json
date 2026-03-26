@@ -1,82 +1,273 @@
 [
-  {
-    "pool": {
-      "name": "AlphaPool.Tech",
-      "url": "https://alphapool.tech",
-      "type": "PPLNS"
+    {
+        "pool": {
+            "name": "AlphaPool.Tech",
+            "url": "https://alphapool.tech",
+            "fee": 0.75,
+            "type": "PPLNS / SOLO"
+        }
     },
-    "coin": "QUAI",
-    "servers": [
-      {
-        "geo": "North America (US East)",
-        "urls": ["us1.alphapool.tech:3333"]
-      },
-      {
-        "geo": "North America (US West)",
-        "urls": ["us2.alphapool.tech:3333"]
-      },
-      {
-        "geo": "Europe (Poland)",
-        "urls": ["eu1.alphapool.tech:3333"]
-      },
-      {
-        "geo": "Asia (Singapore)",
-        "urls": ["asia.alphapool.tech:3333"]
-      }
-    ],
-    "miners": {
-      "rigel": {
-        "algo": "quai",
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "srbminer": {
-        "url": "stratum://%URL%",
-        "algo": "progpow_quai",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "wildrig-multi": {
-        "url": "stratum+tcp://%URL%",
-        "algo": "progpow-quai",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
-    }
-  },
-  {
-    "pool": {
-      "name": "AlphaPool.Tech",
-      "url": "https://alphapool.tech",
-      "type": "PPLNS"
+    {
+        "coin": "QUAI",
+        "servers": [
+            {
+                "geo": "US East",
+                "urls": [
+                    "us1.alphapool.tech:3333"
+                ]
+            },
+            {
+                "geo": "US West",
+                "urls": [
+                    "us2.alphapool.tech:3333"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu1.alphapool.tech:3333"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "sg1.alphapool.tech:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "rigel": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "srbminer": {
+                "url": "stratum://%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
     },
-    "coin": "QI",
-    "servers": [
-      {
-        "geo": "North America (Canada)",
-        "urls": ["ca1.alphapool.tech:3333"]
-      },
-      {
-        "geo": "Europe (Poland)",
-        "urls": ["eu2.alphapool.tech:3333"]
-      }
-    ],
-    "miners": {
-      "rigel": {
-        "algo": "quai",
-        "url": "stratum+tcp://%URL%",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "srbminer": {
-        "url": "stratum://%URL%",
-        "algo": "progpow_quai",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
-      },
-      "wildrig-multi": {
-        "url": "stratum+tcp://%URL%",
-        "algo": "progpow-quai",
-        "template": "%WAL%.%WORKER_NAME%"
-      }
+    {
+        "coin": "QI",
+        "servers": [
+            {
+                "geo": "US East",
+                "urls": [
+                    "us3.alphapool.tech:3333"
+                ]
+            },
+            {
+                "geo": "EU Central",
+                "urls": [
+                    "eu2.alphapool.tech:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "rigel": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "srbminer": {
+                "url": "stratum://%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "US East - Low Diff",
+                "urls": [
+                    "us1.alphapool.tech:4444"
+                ]
+            },
+            {
+                "geo": "US East - High Diff",
+                "urls": [
+                    "us1.alphapool.tech:4445"
+                ]
+            },
+            {
+                "geo": "US West - Low Diff",
+                "urls": [
+                    "us2.alphapool.tech:4444"
+                ]
+            },
+            {
+                "geo": "US West - High Diff",
+                "urls": [
+                    "us2.alphapool.tech:4445"
+                ]
+            },
+            {
+                "geo": "US3 - Low Diff",
+                "urls": [
+                    "us3.alphapool.tech:4444"
+                ]
+            },
+            {
+                "geo": "US3 - High Diff",
+                "urls": [
+                    "us3.alphapool.tech:4445"
+                ]
+            },
+            {
+                "geo": "EU West - Low Diff",
+                "urls": [
+                    "eu1.alphapool.tech:4444"
+                ]
+            },
+            {
+                "geo": "EU West - High Diff",
+                "urls": [
+                    "eu1.alphapool.tech:4445"
+                ]
+            },
+            {
+                "geo": "Asia - Low Diff",
+                "urls": [
+                    "sg1.alphapool.tech:4444"
+                ]
+            },
+            {
+                "geo": "Asia - High Diff",
+                "urls": [
+                    "sg1.alphapool.tech:4445"
+                ]
+            },
+            {
+                "geo": "Solo - US East",
+                "urls": [
+                    "us1.alphapool.tech:4448"
+                ]
+            },
+            {
+                "geo": "Solo - US West",
+                "urls": [
+                    "us2.alphapool.tech:4448"
+                ]
+            },
+            {
+                "geo": "Solo - EU West",
+                "urls": [
+                    "eu1.alphapool.tech:4448"
+                ]
+            },
+            {
+                "geo": "Solo - Asia",
+                "urls": [
+                    "sg1.alphapool.tech:4448"
+                ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "rx/0",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "srbminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "randomx",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
+    },
+    {
+        "coin": "ZANO",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "zano.alphapool.tech:5336",
+                    "zano.alphapool.tech:5337"
+                ]
+            },
+            {
+                "geo": "US East",
+                "urls": [
+                    "us1.alphapool.tech:5336",
+                    "us1.alphapool.tech:5337"
+                ]
+            },
+            {
+                "geo": "EU West",
+                "urls": [
+                    "eu1.alphapool.tech:5336",
+                    "eu1.alphapool.tech:5337"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "sg1.alphapool.tech:5336",
+                    "sg1.alphapool.tech:5337"
+                ]
+            },
+            {
+                "geo": "Solo / NiceHash / High Diff",
+                "urls": [
+                    "zano.alphapool.tech:5338",
+                    "us1.alphapool.tech:5338",
+                    "eu1.alphapool.tech:5338",
+                    "sg1.alphapool.tech:5338"
+                ]
+            }
+        ],
+        "miners": {
+            "rigel": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "progpowz",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "srbminer": {
+                "url": "stratum://%URL%",
+                "algo": "progpowz",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "progpowz",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
     }
-  }
 ]
