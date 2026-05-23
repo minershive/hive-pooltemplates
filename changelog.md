@@ -1,3 +1,6 @@
+##### 0.6-229@260320 2026-03-20
+*   SRBMiner-Multi v3.2.2 (Added algorithm `yespowerbitok` for CPU mining BITOK/Bitok coin, fee 0.85%; Hashrate improvement on all 'yescrypt' variants for NVIDIA & AMD GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@260226 2026-02-26
 *   SRBMiner-Multi v3.1.8 (Added support for dual mining XHASH+QHASH on AMD RDNA and NVIDIA GPUs; Minor improvements on AUTOLYKOS2/IRONFISH + QHASH for all supported GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 

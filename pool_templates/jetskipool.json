@@ -1,0 +1,66 @@
+[
+	{
+		"pool": {
+			"name": "jetskipool.ai",
+			"url": "https://jetskipool.ai"
+		}
+	},
+	{
+		"coin": "QUBIC",
+		"servers": [
+			{
+				"geo": "Global",
+				"urls": [
+					"qubic.jetskipool.ai:443"
+				],
+				"ssl_urls": [
+					"qubic.jetskipool.ai:443"
+				]
+			}
+		],
+		"miners": {
+			"custom": {
+				"url": "https://qubic.jetskipool.ai/",
+				"algo": "qubic",
+				"miner": "qubjetski.PPLNS",
+				"template": "%WAL%-%WORKER_NAME%",
+				"install_url": "https://github.com/jtskxx/Jetski-Qubic-Pool/releases/download/latest/qubjetski.PPLNS-latest.tar.gz",
+				"user_config": "\"amountOfThreads\":0\n\"hugePages\":1000"
+			}
+		}
+	},
+	{
+		"coin": "XMR",
+		"servers": [
+			{
+				"geo": "France-P2P",
+				"urls": [
+					"p2pxmrski.jetskipool.ai:5555"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_randomx"
+		}
+	},
+	{
+		"coin": "XEL",
+		"servers": [
+			{
+				"geo": "France",
+				"urls": [
+					"fr.xelskipool.xyz:9191"
+				]
+			},
+			{
+				"geo": "Canada",
+				"urls": [
+					"na.xelskipool.xyz:9191"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_xelishashv3"
+		}
+	}
+]
