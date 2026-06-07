@@ -1,3 +1,6 @@
+##### 0.6-229@260608 2026-06-08
+*   SRBMiner v3.3.5 (Added AMD RDNA2 series support for algorithm `pearlhash`; Minor hashrate improvement on algorithm `pearlhash` for NVIDIA 3000 series GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-229@260607 2026-06-07
 *   Fixed display per GPU hashrate for SRBMiner when mining Pearl
 
