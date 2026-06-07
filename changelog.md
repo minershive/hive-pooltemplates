@@ -1,3 +1,6 @@
+##### 0.6-229@260607 2026-06-07
+*   Fixed display per GPU hashrate for SRBMiner when mining Pearl
+
 ##### 0.6-229@260606 2026-06-06
 *   SRBMiner v3.3.4 (Huge hashrate improvement on algorithm `pearlhash` for 2000 series GPU's; Improved hashrate on algorithm 'pearlhash' for weaker 5000 series GPU's; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig v0.48.0 (Experimental release for Pearl mining made in collaboration with pearlhash.xyz team, 0% dev-fee on miner side; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
