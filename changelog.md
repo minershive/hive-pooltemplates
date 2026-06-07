@@ -1,3 +1,12 @@
+##### 0.6-229@260606 2026-06-06
+*   SRBMiner v3.3.4 (Huge hashrate improvement on algorithm `pearlhash` for 2000 series GPU's; Improved hashrate on algorithm 'pearlhash' for weaker 5000 series GPU's; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.48.0 (Experimental release for Pearl mining made in collaboration with pearlhash.xyz team, 0% dev-fee on miner side; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   BzMiner v25.0.0b2 (New coin: Pearl (2% dev fee, CPU only this beta, must be sure to enable CPU mining; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+*   ApoolMiner v3.7.0 (Qubic epoch 215; NOTES: Please, see full changelog at https://github.com/apool-io/apoolminer/releases)
+*   Rigel v1.23.2 (Minor performance improvements on 50xx cardson Xelis; NOTES: Please, see full changelog at https://github.com/rigelminer/rigel/releases)
+*   XMRig v6.26.0 (Added support for RandomX v2; RandomX: added VAES-512 support for Zen5; RandomX: Optimized VAES code; NOTES: Please, see full changelog at https://github.com/xmrig)
+*   XMRig-MO v6.26.0-mo3 (MoneroOcean pool fork, synced to XMRig v6.26.0 code; NOTES: Please, see full changelog at https://github.com/MoneroOcean/xmrig)
+
 ##### 0.6-229@260320 2026-03-20
 *   SRBMiner-Multi v3.2.2 (Added algorithm `yespowerbitok` for CPU mining BITOK/Bitok coin, fee 0.85%; Hashrate improvement on all 'yescrypt' variants for NVIDIA & AMD GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
