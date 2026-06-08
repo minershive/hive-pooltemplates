@@ -32,6 +32,38 @@
             "_prototype": "miners_etchash"
         }
     },
+	{
+        "coin": "PRL",
+        "servers": [
+            {
+                "geo": "PPLNS RU varDiff 600Th>",
+                "urls": [
+                    "pearl.baikalmine.com:2010"
+                ]
+            },
+	    {
+                "geo": "PPLNS RU varDiff <600Th",
+                "urls": [
+                    "pearl-ru2.baikalmine.com:2010"
+                ]
+            },
+	    {
+                "geo": "PPLNS EU",
+                "urls": [
+                    "pearl-eu.baikalmine.com:2010"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_pearlhash",
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "pearlhash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
     {
        "coin": "XEL",
        "servers": [
