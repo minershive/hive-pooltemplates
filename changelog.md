@@ -1,3 +1,7 @@
+##### 0.6-229@260609 2026-06-09
+*   SRBMiner v3.3.6 (Added algorithm `oggpow` for OGG/Ogg coin mining on AMD/NVIDIA/INTEL GPUs , fee 0.85%; Improved hashrate on algorithm `pearlhash` for NVIDIA H100/H200 GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.48.1 (Improved `pearlhash` performance for NVIDIA RTX 3000/4000/5000 GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@260608 2026-06-08
 *   SRBMiner v3.3.5 (Added AMD RDNA2 series support for algorithm `pearlhash`; Minor hashrate improvement on algorithm `pearlhash` for NVIDIA 3000 series GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
