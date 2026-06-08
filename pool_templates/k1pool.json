@@ -626,6 +626,47 @@
     }
   },
   {
+    "coin": "BTC",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.btc.k1pool.com:2309"
+        ]
+      },
+      {
+        "geo": "Russia",
+        "urls": [
+          "ru.btc.k1pool.org:2309"
+        ]
+      },
+      {
+        "geo": "Russia backup",
+        "urls": [
+          "ru.btc.k1pool.org:12309"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+          "us.btc.k1pool.com:2309"
+        ]
+      },
+      {
+        "geo": "China",
+        "urls": [
+          "cn.btc.k1pool.com:2309"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
     "coin": "QUAI-Scrypt",
     "servers": [
       {
@@ -1221,39 +1262,6 @@
     }
   },
   {
-    "coin": "LAX",
-    "servers": [
-      {
-        "geo": "Europe",
-        "urls": [
-          "eu.lax.k1pool.com:5291"
-        ]
-      },
-      {
-        "geo": "USA",
-        "urls": [
-          "us.lax.k1pool.com:5291"
-        ]
-      },
-      {
-        "geo": "Asia",
-        "urls": [
-          "cn.lax.k1pool.com:5291"
-        ]
-      }
-    ],
-    "miners": {
-      "_prototype": "miners_xhash",
-      "srbminer": {
-        "algo": "xhash",
-        "url": "%URL%",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%",
-        "user_config": ""
-      }
-    }
-  },
-  {
     "coin": "ZANO",
     "servers": [
       {
@@ -1265,7 +1273,7 @@
       {
         "geo": "Europe2 / RU",
         "urls": [
-          "eu.zano.k1pool.com:8866"
+          "ru.zano.k1pool.com:8866"
         ]
       },
       {
@@ -1285,7 +1293,6 @@
       "_prototype": "miners_progpow_zano"
     }
   },
-
   {
     "coin": "PRL",
     "servers": [
@@ -1296,26 +1303,67 @@
         ]
       },
       {
+        "geo": "Russia",
+        "urls": [
+          "ru.pearl.k1pool.com:3360"
+        ]
+      },
+      {
         "geo": "USA",
         "urls": [
           "us.pearl.k1pool.com:3360"
         ]
       },
       {
-        "geo": "Russia",
-        "urls": [
-          "ru.pearl.k1pool.org:3360"
-        ]
-      },
-      {
-        "geo": "China",
+        "geo": "Asia",
         "urls": [
           "cn.pearl.k1pool.com:3360"
         ]
       }
     ],
     "miners": {
-      "_prototype": "miners_pearlhash"
+      "_prototype": "miners_pearlhash",
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "pearlhash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "QTC",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.qtc.k1pool.com:8610"
+        ],
+        "ssl_urls": [
+          "eu.qtc.k1pool.com:8615"
+        ]
+      },
+      {
+        "geo": "Russia",
+        "urls": [
+          "ru.qtc.k1pool.com:8610"
+        ]
+      },
+      {
+        "geo": "USA",
+        "urls": [
+          "us.qtc.k1pool.com:8610"
+        ]
+      },
+      {
+        "geo": "Asia",
+        "urls": [
+          "cn.qtc.k1pool.com:8610"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_qhash"
     }
   }
 ]
