@@ -7,104 +7,105 @@
     }
   },
 
-   {
+  {
+    "coin": "CAP",
+    "servers": [
+      { "geo": "USA", "urls": ["us1.1miner.net:3791"] },
+      { "geo": "Europe", "urls": ["eu1.1miner.net:3791"] }
+    ],
+    "miners": {
+      "dankminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "capstash",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+
+  {
+    "coin": "BC2",
+    "servers": [
+      { "geo": "USA",    "urls": ["us1.1miner.net:4431", "us1.1miner.net:4432", "us1.1miner.net:4433", "us1.1miner.net:4434"] },
+      { "geo": "Europe", "urls": ["eu1.1miner.net:4431", "eu1.1miner.net:4432", "eu1.1miner.net:4433", "eu1.1miner.net:4434"] }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%",
+        "pass": "c=BC2,ID=%WORKER_NAME%"
+      }
+    }
+  },
+
+  {
+    "coin": "BTC",
+    "servers": [
+      { "geo": "USA",    "urls": ["us1.1miner.net:5002", "us1.1miner.net:5102"] },
+      { "geo": "Europe", "urls": ["eu1.1miner.net:5002", "eu1.1miner.net:5102"] }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%",
+        "pass": "c=BTC,ID=%WORKER_NAME%"
+      }
+    }
+  },
+
+  {
+    "coin": "BCH",
+    "servers": [
+      { "geo": "USA",    "urls": ["us1.1miner.net:4801", "us1.1miner.net:4802", "us1.1miner.net:4803"] },
+      { "geo": "Europe", "urls": ["eu1.1miner.net:4801", "eu1.1miner.net:4802", "eu1.1miner.net:4803"] }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%",
+        "pass": "c=BCH,ID=%WORKER_NAME%"
+      }
+    }
+  },
+
+  {
+    "coin": "BCH2",
+    "servers": [
+      { "geo": "USA",    "urls": ["us1.1miner.net:4631", "us1.1miner.net:4632", "us1.1miner.net:4633", "us1.1miner.net:4634"] },
+      { "geo": "Europe", "urls": ["eu1.1miner.net:4631", "eu1.1miner.net:4632", "eu1.1miner.net:4633", "eu1.1miner.net:4634"] }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%",
+        "pass": "c=BCH2,ID=%WORKER_NAME%"
+      }
+    }
+  },
+
+  {
     "coin": "WART",
     "servers": [
-      {
-        "geo": "USA Central (MO) SOLO",
-        "urls": ["us1.wart.1miner.net:4201"]
-      },
-      {
-        "geo": "USA East(NY) SOLO",
-        "urls": ["us2.wart.1miner.net:4201"]
-      },
-      {
-        "geo": "USA West (WA) SOLO",
-        "urls": ["us3.wart.1miner.net:4201"]
-      },
-      {
-        "geo": "ASIA (SGP) SOLO",
-        "urls": ["sgp.wart.1miner.net:4201"]
-      },
-      {
-        "geo": "USA South (TX) SOLO",
-        "urls": ["us4.wart.1miner.net:4201"]
-      },
-      {
-        "geo": "EU (FR) SOLO",
-        "urls": ["eu1.wart.1miner.net:4201"]
-      },
-      {
-        "geo": "EU (UK) SOLO",
-        "urls": ["eu2.wart.1miner.net:4201"]
-      },
-      {
-        "geo": "AU (SYD) SOLO",
-        "urls": ["au.wart.1miner.net:4201"]
-      },
-      {
-        "geo": "JP (TKY) SOLO",
-        "urls": ["jp.wart.1miner.net:4201"]
-      },
-      {
-        "geo": "CN (HK) SOLO",
-        "urls": ["cn1.wart.1miner.net:4201"]
-      }
+      { "geo": "USA",    "urls": ["us1.1miner.net:4201"] },
+      { "geo": "Europe", "urls": ["eu1.1miner.net:4201"] }
     ],
     "miners": {
       "_prototype": "miners_warthog"
     }
-   },
+  },
 
   {
     "coin": "XEL",
     "servers": [
-      {
-        "geo": "USA Central (MO) SOLO",
-        "urls": ["us1.xelis.1miner.net:4074"]
-      },
-      {
-        "geo": "USA East(NY) SOLO",
-        "urls": ["us2.xelis.1miner.net:4074"]
-      },
-      {
-        "geo": "USA West (WA) SOLO",
-        "urls": ["us3.xelis.1miner.net:4074"]
-      },
-      {
-        "geo": "USA South (TX) SOLO",
-        "urls": ["us4.xelis.1miner.net:4074"]
-      },
-      {
-        "geo": "ASIA (SGP) SOLO",
-        "urls": ["sgp.xelis.1miner.net:4074"]
-      },
-      {
-        "geo": "EU (FR) SOLO",
-        "urls": ["eu1.xelis.1miner.net:4074"]
-      },
-      {
-        "geo": "EU (UK) SOLO",
-        "urls": ["eu2.xelis.1miner.net:4074"]
-      },
-      {
-        "geo": "AU (SYD) SOLO",
-        "urls": ["au.xelis.1miner.net:4074"]
-      },
-      {
-        "geo": "JP (TKY) SOLO",
-        "urls": ["jp.xelis.1miner.net:4074"]
-      },
-      {
-        "geo": "CN (HK) SOLO",
-        "urls": ["cn1.xelis.1miner.net:4074"]
-      }
+      { "geo": "USA",    "urls": ["us1.1miner.net:4074"] },
+      { "geo": "Europe", "urls": ["eu1.1miner.net:4074"] }
     ],
     "miners": {
       "_prototype": "miners_xelishashv3",
-      "rigel": {
-        "algo": "xelishashv3",
-        "url": "%URL%",
+      "dankminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "xelis",
+        "pass": "x",
         "template": "%WAL%.%WORKER_NAME%"
       }
     }

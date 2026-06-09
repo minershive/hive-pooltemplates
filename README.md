@@ -34,10 +34,11 @@ Available miners:
 - claymore-x - Claymore's Cryptonote AMD GPU miner
 - claymore-z - Claymore's AMD GPU ZCash miner
 - cminer - ethash miner for Nvidia
-- cortex-miner - Cortex CUDA miner 
+- cortex-miner - Cortex CUDA miner
 - cpuminer-opt - cpuminer-opt CPU miner (forks: JayDDee, cpupower, rkz, rplant, gr)
 - cryptodredge - multi algo CUDA miner (NVidia)
 - damominer - multi algo CUDA miner (NVidia)
+- dankminer - multi-algo CUDA/OpenCL miner for CapStash (whirlpool-xorfold), Xelis (xelishashv3), Warthog (janushash), and Monero (RandomX, CPU); supports GPU + XMR-on-CPU dual mining (AMD/Nvidia GPUs + CPU)
 - dero-stratum-miner - AstroBWTv3 miner for CPU
 - dstm - legacy 0.3.4b and new zhash
 - eggminergpu - CUDA/OpenCL miner for BIS - Bismuth coin on Eggpool (AMD/Nvidia)
@@ -110,7 +111,7 @@ Available miners:
                     "eu-eth.hiveon.net:4444",  // pool server URL  and port
                     "eu-eth.hiveon.net:14444"  // another server instance
                 ],
-                "ssl_urls": [   // SSL/TLS connection 
+                "ssl_urls": [   // SSL/TLS connection
                     "eu-eth.hiveon.net:24443"  // pool server URL and port
                 ]
             },
@@ -120,7 +121,7 @@ Available miners:
                     "ru-eth.hiveon.net:4444",  // pool server URL  and port
                     "ru-eth.hiveon.net:14444"  // another server instance
                 ],
-                "ssl_urls": [   // SSL/TLS connection 
+                "ssl_urls": [   // SSL/TLS connection
                     "ru-eth.hiveon.net:24443"  // pool server URL and port
                 ]
             }
@@ -200,7 +201,7 @@ For example: for adding all miners which supports `kawpow` algorithm vs adding a
     "_prototype": "miners_kawpow"
 }
 ```
-If some miner need to override some miner option it can be done 
+If some miner need to override some miner option it can be done
 ```
 "miners": {
     "_prototype": "miners_kawpow"
@@ -212,63 +213,64 @@ If some miner need to override some miner option it can be done
 Available such prototypes:
 Prototype | Algorithm | Notes |
 --------- | ----------| ----- |
-miners_alephium | alephium |  | 
-miners_astrobwt | astrobwt | V3 implementation | 
-miners_autolykos2 | autolykos2 |  | 
-miners_autolykos2_slash_email | autolykos2_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
-miners_autolykos2_blocx | autolykos2 | variant for mining BLOCX coin | 
-miners_beamhash | beamhash |  | 
-miners_cryptixhash | cryptixhash |  | 
-miners_cryptonight_gpu | cryptonight_gpu |  | 
-miners_cryptonight_r | cryptonight_r |  | 
-miners_cryptonight_v8 | cryptonight_v8 |  | 
-miners_cryptonight_xhv | cryptonight_xhv |  | 
-miners_dynexsolve | dynexsolve |  | 
-miners_etchash | etchash |  | 
-miners_ethash | ethash |  | 
-miners_ethash_4g | ethash_4g |  | 
-miners_ethash_slash_email | ethash_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
-miners_ethashb3 | ethashb3 |  | 
-miners_firopow | firopow |  | 
-miners_fishhash | fishhash |  | 
-miners_ghostrider | ghostrider |  | 
-miners_hmq1725 | hmq1725 |  | 
-miners_hoohash | hoohash |  | 
-miners_ironfish | ironfish |  | 
-miners_karlsenhash | karlsenhash |  | 
-miners_karlsenhashv2 | karlsenhashv2 |  Karlsen post-HF algorithm v2| 
-miners_kaspa | kaspa |  | 
-miners_kawpow | kawpow |  | 
-miners_kawpow_slash_email | kawpow_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
-miners_meowpow | meowpow |  | 
-miners_minotaurx | minotaurx |  | 
-miners_minotaurx_jiimp | minotaurx_jiimp | JIIMP format | 
-miners_nexapow | nexapow |  | 
-miners_octopus | octopus |  | 
-miners_olhash | olhash |  | 
-miners_progpow_quai | progpow_quai |  | 
-miners_progpow_sero | progpow_sero |  | 
-miners_progpow_zano | progpow_zano |  | 
-miners_pyrinhash | pyrinhash | HeavyHash variant Pyrin| 
-miners_pyrinhashv2 | pyrinhashv2 | Pyrin post-HF v2| 
-miners_qhash | qhash | QTC (Qubit coin)| 
-miners_radiant | radiant |  |  
-miners_randomhash2_with_email | randomhash2_with_email | Nanopool format "WALLET.WORKER/EMAIL" | 
-miners_randomx | randomx | Nicehash format "wallet.worker" | 
-miners_randomx_plus | randomx_plus | xmrpool format "wallet+worker" | 
-miners_randomx_slash_email | randomx_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
-miners_randomx_worker | randomx_worker | worker name in password | 
-miners_randomx_xdag | randomx_xdag |  | 
-miners_sha3d | sha3d |  | 
-miners_ubqhash | ubqhash |  | 
-miners_verthash | verthash |  | 
-miners_verushash | verushash |  | 
-miners_warthog | warthog | PoBW, mining WART / Warthog coin | 
-miners_xelishash | xelishash | mining ZTX / Zytex | 
-miners_xelishashv2 | xelishashv2 | mining XEL / Xelis | 
-miners_xelishashv3 | xelishashv3 | mining XEL / Xelis after Dec 15, 2025 | 
-miners_xhash | xhash | mining LAX / Parallax | 
-miners_zelhash | zelhash |  | 
+miners_alephium | alephium |  |
+miners_astrobwt | astrobwt | V3 implementation |
+miners_autolykos2 | autolykos2 |  |
+miners_autolykos2_slash_email | autolykos2_slash_email | Nanopool format "WALLET.WORKER/EMAIL" |
+miners_autolykos2_blocx | autolykos2 | variant for mining BLOCX coin |
+miners_beamhash | beamhash |  |
+miners_cryptixhash | cryptixhash |  |
+miners_cryptonight_gpu | cryptonight_gpu |  |
+miners_cryptonight_r | cryptonight_r |  |
+miners_cryptonight_v8 | cryptonight_v8 |  |
+miners_cryptonight_xhv | cryptonight_xhv |  |
+miners_dynexsolve | dynexsolve |  |
+miners_etchash | etchash |  |
+miners_ethash | ethash |  |
+miners_ethash_4g | ethash_4g |  |
+miners_ethash_slash_email | ethash_slash_email | Nanopool format "WALLET.WORKER/EMAIL" |
+miners_ethashb3 | ethashb3 |  |
+miners_firopow | firopow |  |
+miners_fishhash | fishhash |  |
+miners_ghostrider | ghostrider |  |
+miners_hmq1725 | hmq1725 |  |
+miners_hoohash | hoohash |  |
+miners_ironfish | ironfish |  |
+miners_karlsenhash | karlsenhash |  |
+miners_karlsenhashv2 | karlsenhashv2 |  Karlsen post-HF algorithm v2|
+miners_kaspa | kaspa |  |
+miners_kawpow | kawpow |  |
+miners_kawpow_slash_email | kawpow_slash_email | Nanopool format "WALLET.WORKER/EMAIL" |
+miners_meowpow | meowpow |  |
+miners_minotaurx | minotaurx |  |
+miners_minotaurx_jiimp | minotaurx_jiimp | JIIMP format |
+miners_nexapow | nexapow |  |
+miners_octopus | octopus |  |
+miners_olhash | olhash |  |
+miners_progpow_quai | progpow_quai |  |
+miners_progpow_sero | progpow_sero |  |
+miners_progpow_zano | progpow_zano |  |
+miners_pyrinhash | pyrinhash | HeavyHash variant Pyrin|
+miners_pyrinhashv2 | pyrinhashv2 | Pyrin post-HF v2|
+miners_qhash | qhash | QTC (Qubit coin)|
+miners_radiant | radiant |  |
+miners_randomhash2_with_email | randomhash2_with_email | Nanopool format "WALLET.WORKER/EMAIL" |
+miners_randomx | randomx | Nicehash format "wallet.worker" |
+miners_randomx_plus | randomx_plus | xmrpool format "wallet+worker" |
+miners_randomx_slash_email | randomx_slash_email | Nanopool format "WALLET.WORKER/EMAIL" |
+miners_randomx_worker | randomx_worker | worker name in password |
+miners_randomx_xdag | randomx_xdag |  |
+miners_sha3d | sha3d |  |
+miners_ubqhash | ubqhash |  |
+miners_verthash | verthash |  |
+miners_verushash | verushash |  |
+miners_warthog | warthog | PoBW, mining WART / Warthog coin |
+miners_whirlpool_xorfold | whirlpool-xorfold | mining CAP / CapStash |
+miners_xelishash | xelishash | mining ZTX / Zytex |
+miners_xelishashv2 | xelishashv2 | mining XEL / Xelis |
+miners_xelishashv3 | xelishashv3 | mining XEL / Xelis after Dec 15, 2025 |
+miners_xhash | xhash | mining LAX / Parallax |
+miners_zelhash | zelhash |  |
 
 
 # Changelog for Hive 2.0
