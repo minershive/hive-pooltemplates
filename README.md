@@ -220,6 +220,7 @@ miners_autolykos2_slash_email | autolykos2_slash_email | Nanopool format "WALLET
 miners_autolykos2_blocx | autolykos2 | variant for mining BLOCX coin | 
 miners_beamhash | beamhash |  | 
 miners_cryptixhash | cryptixhash |  | 
+miners_cryptonight | cryptonight | generic prototype (ASIC only) |
 miners_cryptonight_gpu | cryptonight_gpu |  | 
 miners_cryptonight_r | cryptonight_r |  | 
 miners_cryptonight_v8 | cryptonight_v8 |  | 
@@ -233,6 +234,7 @@ miners_ethashb3 | ethashb3 |  |
 miners_firopow | firopow |  | 
 miners_fishhash | fishhash |  | 
 miners_ghostrider | ghostrider |  | 
+miners_gram_stratum | ton | TON / Gram, stratum mode |
 miners_hmq1725 | hmq1725 |  | 
 miners_hoohash | hoohash |  | 
 miners_ironfish | ironfish |  | 
@@ -254,7 +256,8 @@ miners_progpow_zano | progpow_zano |  |
 miners_pyrinhash | pyrinhash | HeavyHash variant Pyrin| 
 miners_pyrinhashv2 | pyrinhashv2 | Pyrin post-HF v2| 
 miners_qhash | qhash | QTC (Qubit coin)| 
-miners_radiant | radiant |  |  
+miners_radiant | radiant |  | 
+miners_radiant_wpass | radiant | worker name in password |
 miners_randomhash2_with_email | randomhash2_with_email | Nanopool format "WALLET.WORKER/EMAIL" | 
 miners_randomx | randomx | Nicehash format "wallet.worker" | 
 miners_randomx_plus | randomx_plus | xmrpool format "wallet+worker" | 
@@ -271,3 +274,4 @@ miners_xelishashv2 | xelishashv2 | mining XEL / Xelis |
 miners_xelishashv3 | xelishashv3 | mining XEL / Xelis after Dec 15, 2025 | 
 miners_xhash | xhash | mining LAX / Parallax | 
 miners_zelhash | zelhash |  | 
+miners_zhash_btg | zhash | Bitcoin Gold (Equihash 144,5) |
