@@ -259,5 +259,22 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+
+    {
+        "coin": "XMR",
+        "servers": [
+            { "geo": "USA, d=7500",   "urls": ["1miner.net:3332"]},
+            { "geo": "USA, d=300000", "urls": ["1miner.net:3333"]}
+        ],
+        "miners": {
+            "dankminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "ramdomx",
+                "dalgo": "ramdomx",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
