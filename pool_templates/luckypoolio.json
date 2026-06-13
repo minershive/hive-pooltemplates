@@ -75,18 +75,7 @@
             }
         ],
         "miners": {
-            "onezerominer": {
-                "url": "%URL%",
-                "algo": "qhash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            },
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "qhash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
-            }
+            "_prototype": "miners_qhash"
         }
     },
 
@@ -450,6 +439,51 @@
         ],
         "miners": {
             "_prototype": "miners_progpow_zano"
+        }
+    },
+
+    {
+        "coin": "PRL",
+        "servers": [
+            {
+                "geo": "Global (France)",
+                "urls": [
+                    "pearl-eu2.luckypool.io:3360"
+                ]
+            },
+            {
+                "geo": "Europe (France)",
+                "urls": [
+                    "pearl-eu1.luckypool.io:3360"
+                ]
+            },
+            {
+                "geo": "N.America (Canada)",
+                "urls": [
+                    "pearl-ca1.luckypool.io:3360"
+                ]
+            },
+            {
+                "geo": "N.America 2 (Canada)",
+                "urls": [
+                    "pearl-ca2.luckypool.io:3360"
+                ]
+            },
+            {
+                "geo": "Asia (Singapore)",
+                "urls": [
+                    "pearl-sg1.luckypool.io:3360"
+                ]
+            },
+            {
+                "geo": "Asia 2 (Singapore)",
+                "urls": [
+                    "pearl-sg2.luckypool.io:3360"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_pearlhash"
         }
     }
 ]
