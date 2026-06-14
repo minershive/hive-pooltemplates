@@ -7,28 +7,33 @@
   "for_intel": false,
   "dual": true,
   "ssl_prefix": "",
-  "default_algo": null,
+  "default_algo": "capstash",
   "default_fork": null,
   "default_units": "khs",
-  "algos": [
-    "capstash",
-    "xelis",
-    "warthog",
-    "randomx"
-  ],
-  "algomap": {
-    "capstash": "whirlpool",
-    "xelis": "xelishashv3",
-    "warthog": "janushash",
-    "xmr": "randomx"
+  "algos": {
+    "capstash": "Whirlpool-XORfold (CAP)",
+    "xelis":    "XelisHash v3 (XEL)",
+    "warthog":  "JanusHash (WART)",
+    "randomx":  "RandomX (XMR)"
   },
-  "dalgos": [
-    "randomx"
-  ],
+  "dalgos": {
+    "randomx": "RandomX (XMR)"
+  },
   "dual_modes": {
     "capstash": ["randomx"],
     "xelis":    ["randomx"],
     "warthog":  ["randomx"]
+  },
+  "algomap": {
+    "capstash": "whirlpool",
+    "whirlpool-xorfold": "whirlpool",
+    "xelis": "xelishashv3",
+    "xelishash": "xelishashv3",
+    "xelishashv3": "xelishashv3",
+    "warthog": "janushash",
+    "xmr": "randomx",
+    "rx/0": "randomx",
+    "randomx": "randomx"
   },
   "forks": []
 }
