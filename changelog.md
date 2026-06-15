@@ -1,3 +1,8 @@
+##### 0.6-229@260614 2026-06-14
+*   SRBMiner v3.3.8 (Minor hashrate improvement on algorithm `pearlhash` for NVIDIA 3000, 4000 and 5000 series GPUs; Added support for progpow algorithms, 'autolykos2', 'verthash', 'fishhash' and 'xhash' on Nvidia Volta GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.48.4 (Slightly improved `pearlhash` for NVIDIA RTX 3000, 4000, 5000 GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   ApoolMiner v3.7.1 (Performance improvements; Fixed a bug causing zero compute; NOTES: Please, see full changelog at https://github.com/apool-io/apoolminer/releases)
+
 ##### 0.6-229@260610 2026-06-10
 *   SRBMiner v3.3.7 (Huge hashrate improvement on algorithm `pearlhash` for NVIDIA B200 GPU's ~1,1PH/S @ 985W; Fixed broken algorithm `oggpow` on rplant pool; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig v0.48.3 (Significantly improved power efficiency for NVIDIA RTX 3000 and 4000 gpu's. Use locked memory at 5001; Bug fixes; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
