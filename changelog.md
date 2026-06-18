@@ -1,3 +1,7 @@
+##### 0.6-229@260617 2026-06-17
+*   SRBMiner v3.3.9 (Added algorithm `neuromorph` for CPU mining CRB/Cereblix coin, fee 3.0%; Minor hashrate improvement on algorithm `pearlhash` for all supported GPUs; Fixed support for progpow algorithms, 'autolykos2', 'verthash', 'fishhash' and 'xhash' on Nvidia Volta GPUs; Reduced poolside rejected shares on algorithm 'qhash'; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.48.6 (Improved `pearlhash` for NVIDIA RTX 4000 & 5000 series GPUs; Improved power efficiency of `pearlhash` for NVIDIA RTX 3000 series since v0.48.5; Improved `pearlhash` for NVIDIA RTX 2000 series GPUs v0.48.5; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-229@260614 2026-06-14
 *   SRBMiner v3.3.8 (Minor hashrate improvement on algorithm `pearlhash` for NVIDIA 3000, 4000 and 5000 series GPUs; Added support for progpow algorithms, 'autolykos2', 'verthash', 'fishhash' and 'xhash' on Nvidia Volta GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig v0.48.4 (Slightly improved `pearlhash` for NVIDIA RTX 3000, 4000, 5000 GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
