@@ -1,5 +1,6 @@
 ##### 0.6-229@260627 2026-06-27
 *   SRBMiner v3.4.2 (Improved algorithm `pearlhash` for NVIDIA GPUs; Readded `pearlhash support for NVIDIA A100; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   BzMiner v25.0.0b8 BETA! (Optimization `pearlhash` support for NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
 
 ##### 0.6-229@260626 2026-06-26
 *   SRBMiner v3.4.1 (Improved algorithm `pearlhash` for NVIDIA GPUs and lowered devfee to 2%; Hashrate improvement on algorithm `neuromorph` for AVX2 CPUs and lowered devfee to 1%; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
