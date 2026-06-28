@@ -1,20 +1,46 @@
 [
-   {
-      "pool": {
-         "name": "Mining To The Last Block",
-         "url": "https://miningtothelastblock.top",
-         "type": "PPLNS SOLO"
+  {
+    "pool": {
+      "name": "Mining To The Last Block",
+      "url": "https://miningtothelastblock.top",
+      "type": "PPLNS SOLO"
+    }
+  },
+  {
+    "coin": "DERO",
+    "servers": [
+      {
+        "geo": "Global Native WSS",
+        "urls": [
+          "dero.miningtothelastblock.top:4000"
+        ]
+      },
+      {
+        "geo": "Global Low Diff",
+        "urls": [
+          "dero.miningtothelastblock.top:3333"
+        ]
+      },
+      {
+        "geo": "Global Med Diff",
+        "urls": [
+          "dero.miningtothelastblock.top:5555"
+        ]
+      },
+      {
+        "geo": "Global High Diff",
+        "urls": [
+          "dero.miningtothelastblock.top:7777"
+        ]
       }
-   },
-   {
-      "coin": "DERO",
-      "servers": [
-         {
-            "geo": "Brasil PPLNS",
-            "urls": [
-               "dero.miningtothelastblock.top:4000"
-            ]
-         }
-      ]
-   }
+    ],
+    "miners": {
+      "_prototype": "miners_astrobwt",
+      "custom": {
+        "url": "%URL%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "x"
+      }
+    }
+  }
 ]
