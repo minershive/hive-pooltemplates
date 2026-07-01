@@ -46,6 +46,44 @@
 		}
 	},
 	{
+		"coin": "ARQ",
+		"servers": [
+			{
+				"geo": "Asia (Thailand) - CPU",
+				"urls": [
+					"arqma.cedric-crispin.com:4574"
+				],
+				"ssl_urls": [
+					"arqma.cedric-crispin.com:4575"
+				]
+			}
+		],
+		"miners": {
+			"srbminer": {
+				"url": "%URL%",
+				"algo": "randomarq",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "--disable-gpu\n--disable-huge-pages\n\"send-stales\": false\n\"retry-time\": 30"
+			},
+            "xmr-stak": {
+				"amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+				"nvidia": "\"gpu_threads_conf\" : [],",
+				"url": "%URL%",
+				"fork": "randomx",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"currency\":\"randomx_arqma\""
+			},
+			"xmrig-new": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"algo\": \"rx/arq\"\n\"donate-level\": 1"
+			}
+		}
+	},
+	{
 		"coin": "BEAM",
 		"servers": [
 			{
@@ -60,6 +98,44 @@
 		],
 		"miners": {
 			"_prototype": "miners_beamhash"
+		}
+	},
+	{
+		"coin": "BTC",
+		"servers": [
+			{
+				"geo": "Asia (Thailand) - Low Difficulty",
+				"urls": [
+					"bitcoin.cedric-crispin.com:4544"
+				],
+				"ssl_urls": [
+					"bitcoin.cedric-crispin.com:4545"
+				]
+			},
+			{
+				"geo": "Asia (Thailand) - Medium Difficulty",
+				"urls": [
+					"bitcoin.cedric-crispin.com:4546"
+				],
+				"ssl_urls": [
+					"bitcoin.cedric-crispin.com:4547"
+				]
+			},
+			{
+				"geo": "Asia (Thailand) - High Difficulty",
+				"urls": [
+					"bitcoin.cedric-crispin.com:4548"
+				],
+				"ssl_urls": [
+					"bitcoin.cedric-crispin.com:4549"
+				]
+			}
+		],
+		"miners": {
+			"asicminer": {
+				"url": "stratum+tcp://%URL%",
+				"template": "%WAL%.%WORKER_NAME%"
+			}
 		}
 	},
 	{
@@ -142,23 +218,6 @@
 		}
 	},
 	{
-		"coin": "ERG",
-		"servers": [
-			{
-				"geo": "Asia (Thailand) - GPU",
-				"urls": [
-					"ergo.cedric-crispin.com:3354"
-				],
-				"ssl_urls": [
-					"ergo.cedric-crispin.com:3355"
-				]
-			}
-		],
-		"miners": {
-			"_prototype": "miners_autolykos2"
-		}
-	},
-	{
 		"coin": "FIRO",
 		"servers": [
 			{
@@ -172,7 +231,10 @@
 			}
 		],
 		"miners": {
-			"_prototype": "miners_firopow"
+			"_prototype": "miners_firopow",
+			"srbminer": {
+				"user_config": "--disable-cpu\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
+			}
 		}
 	},
 	{
@@ -350,6 +412,26 @@
 		}
 	},
 	{
+		"coin": "LAX",
+		"servers": [
+			{
+				"geo": "Asia (Thailand) - GPU",
+				"urls": [
+					"parallax.cedric-crispin.com:4554"
+				],
+				"ssl_urls": [
+					"parallax.cedric-crispin.com:4555"
+				]
+			}
+		],
+		"miners": {
+			"_prototype": "miners_xhash",
+			"srbminer": {
+				"user_config": "--disable-cpu\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
+			}
+		}
+	},
+	{
 		"coin": "MEWC",
 		"servers": [
 			{
@@ -365,7 +447,7 @@
 		"miners": {
 			"_prototype": "miners_meowpow",
 			"srbminer": {
-				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
+				"user_config": "--disable-cpu\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -425,7 +507,7 @@
 		"miners": {
 			"_prototype": "miners_kawpow",
 			"srbminer": {
-				"user_config": "--disable-cpu\n\"retry-time\": 30"
+				"user_config": "--disable-cpu\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -449,6 +531,12 @@
 				"pass": "x",
 				"template": "%WAL%.%WORKER_NAME%",
 				"user_config": "--disable-gpu\n--disable-huge-pages\n\"send-stales\": false\n\"retry-time\": 30"
+			},
+			"xmrig-new": {
+				"url": "%URL%",
+				"pass": "x",
+				"template": "%WAL%.%WORKER_NAME%",
+				"user_config": "\"algo\": \"rx/scash\"\n\"donate-level\": 1"
 			}
 		}
 	},
@@ -468,23 +556,9 @@
 		"miners": {
 			"_prototype": "miners_kawpow",
 			"srbminer": {
-				"user_config": "--disable-cpu\n\"retry-time\": 30"
+				"user_config": "--disable-cpu\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
-	},
-	{
-		"coin": "SPR",
-		"servers": [
-			{
-				"geo": "Asia (Thailand) - CPU",
-				"urls": [
-					"spectre.cedric-crispin.com:4364"
-				],
-				"ssl_urls": [
-					"spectre.cedric-crispin.com:4365"
-				]
-			}
-		]
 	},
 	{
 		"coin": "VTC",
@@ -588,7 +662,7 @@
 		"miners": {
 			"_prototype": "miners_progpow_zano",
 			"srbminer": {
-				"user_config": "--disable-cpu\n\"send-stales\": false\n\"retry-time\": 30"
+				"user_config": "--disable-cpu\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	}
