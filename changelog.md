@@ -1,6 +1,11 @@
+##### 0.6-229@260704 2026-07-04
+*   SRBMiner v3.4.3 (Added algorithm `btx` for BTX coin for AMD/NVIDIA GPUs, fee 1%; Some `pearlhash` related fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.49.1 (Improved `pearlhash` for NVIDIA RTX 3000, 4000 and 5000 series; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   BzMiner v25.0.0b9 BETA (Improved `pearlhash` hashrate on Ampere; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+
 ##### 0.6-229@260627 2026-06-27
 *   SRBMiner v3.4.2 (Improved algorithm `pearlhash` for NVIDIA GPUs; Readded `pearlhash support for NVIDIA A100; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
-*   BzMiner v25.0.0b8 BETA! (Optimization `pearlhash` support for NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+*   BzMiner v25.0.0b8 BETA (Optimization `pearlhash` support for NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
 
 ##### 0.6-229@260626 2026-06-26
 *   SRBMiner v3.4.1 (Improved algorithm `pearlhash` for NVIDIA GPUs and lowered devfee to 2%; Hashrate improvement on algorithm `neuromorph` for AVX2 CPUs and lowered devfee to 1%; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
