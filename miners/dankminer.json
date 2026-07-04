@@ -11,29 +11,39 @@
   "default_fork": null,
   "default_units": "khs",
   "algos": {
-    "capstash": "Whirlpool-XORfold (CAP)",
-    "xelis":    "XelisHash v3 (XEL)",
-    "warthog":  "JanusHash (WART)",
-    "randomx":  "RandomX (XMR)"
+    "capstash": "CapStash (CAP)",
+    "xelis": "XelisHash v3 (XEL)",
+    "warthog": "Warthog (WART)",
+    "xmr": "RandomX (XMR)",
+    "crb": "Cereblix / NeuroMorph (CRB)"
   },
   "dalgos": {
-    "randomx": "RandomX (XMR)"
+    "xmr": "RandomX (XMR)",
+    "crb": "Cereblix / NeuroMorph (CRB)"
   },
   "dual_modes": {
-    "capstash": ["randomx"],
-    "xelis":    ["randomx"],
-    "warthog":  ["randomx"]
+    "capstash": ["xmr", "crb"],
+    "xelis": ["xmr", "crb"],
+    "warthog": ["xmr", "crb"]
   },
   "algomap": {
     "capstash": "whirlpool",
     "whirlpool-xorfold": "whirlpool",
+    "whirlpool": "whirlpool",
     "xelis": "xelishashv3",
     "xelishash": "xelishashv3",
     "xelishashv3": "xelishashv3",
-    "warthog": "janushash",
+    "warthog": "warthog",
+    "janushash": "warthog",
+    "sha256t": "warthog",
     "xmr": "randomx",
+    "monero": "randomx",
     "rx/0": "randomx",
-    "randomx": "randomx"
+    "randomx": "randomx",
+    "crb": "neuromorph",
+    "cereblix": "neuromorph",
+    "nm/1": "neuromorph",
+    "neuromorph": "neuromorph"
   },
   "forks": []
 }
