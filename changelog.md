@@ -1,3 +1,14 @@
+##### 0.6-230@260706 2026-07-06
+*  Prepared the client for the new Ubuntu 24.04-based image (required before migrating your rig).
+*  Added support for NVIDIA Blackwell cards (RTX 5090 / 5080 / 5070 Ti and others), including VBIOS flashing and monitoring/overclocking via `nvtool` v1.8.7.
+*  Added support for AMD Radeon RX 9000 series cards, including initial overclocking support.
+*  Added CUDA 13 support for the latest NVIDIA GPUs.
+*  Fixed SSH and Web Shell being turned off despite being enabled in the dashboard.
+*  Improved failover to backup Hive Worker API servers: your rigs should stay connected more reliably.
+*  More reliable and safer OS image reinstall directly from the rig.
+*  Added the `hpkg kernel` command to list, install, and switch Linux kernels directly on the rig.
+*  Other improvements and fixes.
+
 ##### 0.6-229@260704 2026-07-04
 *   SRBMiner v3.4.3 (Added algorithm `btx` for BTX coin for AMD/NVIDIA GPUs, fee 1%; Some `pearlhash` related fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig v0.49.1 (Improved `pearlhash` for NVIDIA RTX 3000, 4000 and 5000 series; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
