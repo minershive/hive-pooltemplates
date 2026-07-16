@@ -1,3 +1,17 @@
+##### 0.6-230@260712 2026-07-12
+*   SRBMiner v3.4.6 (Improved algorithm `btx` for Turing and Ampere based NVIDIA CMP GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.49.3 (Fixed high RAM usage for algorithm `pearlhash`; Fixed broken `qhash` algorithm for NVIDIA RTX 4000 series GPUs; Fixed `pearlhash` for AMD 6000 series GPUs; Fixed broken AMD support for all algorithms except `pearlhash`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   BzMiner v25.0.1b2 BETA (Supports gzip for pearl stratum; Improved `pearlhash` hashrate on Nvidia; Fixed ROCm drivers; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+*   [NEW] DankMiner v1.5.3 (Adds support CPU mining CRB/Cereblix coin on algo `NeuroMorph` ; Miner also can mine CapStash, Xelis, Warthog, Monero; NOTES: Please, see full changelog at https://github.com/DankMiner/DankMiner/releases)
+
+##### LINUX IMAGE RELEASE 0.6-230 2026-07-08
+*   Stable Image branch Ubuntu 22.04 LTS based ("jammy")
+*   Linux kernel: v6.12.95
+*   Nvidia driver: v580.173.02
+*   AMD OpenCL ROCm (kernel module):  v6.4.4 (v6.19.2606)
+*   Hive OS Linux GPU client: v0.6-230
+*   md5sum efa1a8e412e69b310ae3eae93234e7e8
+
 ##### 0.6-230@260706 2026-07-06
 *  Prepared the client for the new Ubuntu 24.04-based image (required before migrating your rig).
 *  Added support for NVIDIA Blackwell cards (RTX 5090 / 5080 / 5070 Ti and others), including VBIOS flashing and monitoring/overclocking via `nvtool` v1.8.7.
