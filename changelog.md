@@ -1,3 +1,6 @@
+##### 0.6-230@260720 2026-07-20
+*   WildRig v0.49.6 (Improved `pearlhash` for NVIDIA RTX 3000, 4000 series and unlocked CMP170HX; Improved `pearlhash` up to 10% for AMD 9000 series; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+  
 ##### 0.6-230@260712 2026-07-12
 *   SRBMiner v3.4.6 (Improved algorithm `btx` for Turing and Ampere based NVIDIA CMP GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig v0.49.3 (Fixed high RAM usage for algorithm `pearlhash`; Fixed broken `qhash` algorithm for NVIDIA RTX 4000 series GPUs; Fixed `pearlhash` for AMD 6000 series GPUs; Fixed broken AMD support for all algorithms except `pearlhash`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
