@@ -1,0 +1,32 @@
+[
+    {
+        "pool": {
+            "name": "Pearlhash",
+            "url": "https://pearlhash.xyz/",
+            "fee": 0,
+            "type": "PPLNS"
+        }
+    },
+
+    {
+        "coin": "PRL",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "pool.pearlhash.xyz:9000"
+                ]
+            }
+
+        ],
+        "miners": {
+            "wildrig-multi": {
+                "url": "%URL%",
+                "algo": "pearlhash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "_prototype": "miners_pearlhash"
+        }
+    }
+]

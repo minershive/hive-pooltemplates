@@ -205,6 +205,29 @@
     }
   },
   {
+    "coin": "PXC",
+    "note": "Use Suprnova account username or wallet address in Wallet field. NeoScrypt GPU mining.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "pxc.suprnova.cc:2026"
+        ],
+        "ssl_urls": [
+          "pxc.suprnova.cc:2027"
+        ]
+      }
+    ],
+    "miners": {
+      "suprminer": {
+        "url": "%URL%",
+        "algo": "neoscrypt",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
     "coin": "XEL",
     "note": "Use wallet address in Wallet field. Variable difficulty.",
     "servers": [
@@ -369,6 +392,115 @@
         "algo": "randomjuno",
         "pass": "x",
         "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "DCR",
+    "note": "Use wallet address in Wallet field. Blake3 GPU mining. Variable difficulty across all ports.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "dcr.suprnova.cc:9332",
+          "dcr.suprnova.cc:9333",
+          "dcr.suprnova.cc:9334",
+          "dcr.suprnova.cc:9335"
+        ],
+        "ssl_urls": [
+          "dcr.suprnova.cc:9336"
+        ]
+      },
+      {
+        "geo": "United States",
+        "urls": [
+          "stratum-us.suprnova.cc:9332",
+          "stratum-us.suprnova.cc:9333",
+          "stratum-us.suprnova.cc:9334",
+          "stratum-us.suprnova.cc:9335"
+        ],
+        "ssl_urls": [
+          "stratum-us.suprnova.cc:9336"
+        ]
+      },
+      {
+        "geo": "Asia Pacific",
+        "urls": [
+          "stratum-apac.suprnova.cc:9332",
+          "stratum-apac.suprnova.cc:9333",
+          "stratum-apac.suprnova.cc:9334",
+          "stratum-apac.suprnova.cc:9335"
+        ],
+        "ssl_urls": [
+          "stratum-apac.suprnova.cc:9336"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "blake3_decred",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "bzminer": {
+        "url": "%URL%",
+        "algo": "decred",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "C64",
+    "note": "Use wallet address in Wallet field. CPU-only RandomX variant (rx/c64). Variable difficulty.",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "c64.suprnova.cc:6464",
+          "c64.suprnova.cc:6465",
+          "c64.suprnova.cc:6466",
+          "c64.suprnova.cc:6467",
+          "c64.suprnova.cc:6468"
+        ],
+        "ssl_urls": [
+          "c64.suprnova.cc:6469"
+        ]
+      },
+      {
+        "geo": "Asia Pacific",
+        "urls": [
+          "stratum-apac.suprnova.cc:6464",
+          "stratum-apac.suprnova.cc:6465",
+          "stratum-apac.suprnova.cc:6466",
+          "stratum-apac.suprnova.cc:6467",
+          "stratum-apac.suprnova.cc:6468"
+        ],
+        "ssl_urls": [
+          "stratum-apac.suprnova.cc:6469"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt-supr": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "c64",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "xmrig": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "rx/c64",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "randomx",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--randomx-variant c64"
       }
     }
   }
