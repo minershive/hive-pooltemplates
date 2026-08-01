@@ -1,3 +1,7 @@
+##### 0.6-230@260728 2026-07-28
+*   SRBMiner v3.4.7 (Improved algorithm `pearlhash` for NVIDIA 2000, 3000, 4000 and 5000 series GPUs; Added optimised code for unlocked CMP 170HX on algorithm `pearlhash`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   CPUMiner-Opt-Rplant v6.0.7 (Miner completely rewritten and now has 0% devfee; Add `randomkadikama` algo for mining KAD/Kadikama coin; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
+
 ##### 0.6-230@260720 2026-07-20
 *   WildRig v0.49.6 (Improved `pearlhash` for NVIDIA RTX 3000, 4000 series and unlocked CMP170HX; Improved `pearlhash` up to 10% for AMD 9000 series; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
   
