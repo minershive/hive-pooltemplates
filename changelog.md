@@ -1,3 +1,12 @@
+##### 0.6-231@260801 2026-08-01
+*   Improved `nvidia-driver-update` (New `--legacy` and `--open` options force the proprietary (Maxwell/Pascal/Volta) or open (Turing and newer) kernel modules; without an option, the tool picks the module type automatically based on the GPUs in the rig)
+*   Improved `hive-replace` (Safer OS reinstall on rigs with low free RAM (installer now checks available memory upfront, enables ZRAM if that makes the data fit, or aborts early with a clear message instead of failing mid-process)
+*   Stopped showing a bogus memory temperature on NVIDIA Blackwell GPUs until a proper fix is ready
+*   Fixed DNSCrypt not working on the new Ubuntu 24.04-based Image which needs to proper DNS over HTTPS (DoH)
+*   Fixed Linux kernel install/switch on the Ubuntu 24.04-based Image sometimes downgrading the running kernel
+*   Fixed an issue where a false error message caused the installation of CUDA 13 drivers to fail with the error "library does not exist"
+*   Other improvements and fixes
+
 ##### 0.6-230@260728 2026-07-28
 *   SRBMiner v3.4.7 (Improved algorithm `pearlhash` for NVIDIA 2000, 3000, 4000 and 5000 series GPUs; Added optimised code for unlocked CMP 170HX on algorithm `pearlhash`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   CPUMiner-Opt-Rplant v6.0.7 (Miner completely rewritten and now has 0% devfee; Add `randomkadikama` algo for mining KAD/Kadikama coin; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
