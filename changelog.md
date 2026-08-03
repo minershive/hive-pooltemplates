@@ -1,3 +1,6 @@
+##### 0.6-231@260802 2026-08-02
+*   SRBMiner v3.4.8 (Improved algorithm `pearlhash` for NVIDIA 3000 series, A100 and CMP 170HX GPUs; Other improvements & bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-231@260801 2026-08-01
 *   Improved `nvidia-driver-update` (New `--legacy` and `--open` options force the proprietary (Maxwell/Pascal/Volta) or open (Turing and newer) kernel modules; without an option, the tool picks the module type automatically based on the GPUs in the rig)
 *   Improved `hive-replace` (Safer OS reinstall on rigs with low free RAM (installer now checks available memory upfront, enables ZRAM if that makes the data fit, or aborts early with a clear message instead of failing mid-process)
