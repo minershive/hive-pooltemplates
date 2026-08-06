@@ -1,3 +1,7 @@
+##### 0.6-231@260806 2026-08-06
+*   SRBMiner v3.5.0 (MANDATORY UPDATE: for upcoming `rank-128` softfork of `pearlhash` algorithm; Fixes for algorithm `pearlhash` on 3000 series NVIDIA GPUs; Removed AMD RDNA2 support for algorithm 'pearlhash'; Removed algorithms 'btx' and 'sha256mem'; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.49.8 (MANDATORY UPDATE: for upcoming `rank-128` softfork of `pearlhash` algorithm; Improved `pearlhash` for NVIDIA RTX 5000 series; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-231@260802 2026-08-02
 *   SRBMiner v3.4.8 (Improved algorithm `pearlhash` for NVIDIA 3000 series, A100 and CMP 170HX GPUs; Other improvements & bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
