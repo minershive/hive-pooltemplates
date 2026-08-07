@@ -159,42 +159,6 @@
 		}
 	},
 	{
-		"coin": "CTXC",
-		"servers": [
-			{
-				"geo": "Asia (Thailand) - GPU",
-				"urls": [
-					"cortex.cedric-crispin.com:4414"
-				],
-				"ssl_urls": [
-					"cortex.cedric-crispin.com:4415"
-				]
-			}
-		],
-		"miners": {
-			"gminer": {
-				"algo": "cortex",
-				"port": "%URL_PORT%",
-				"server": "%URL_HOST%",
-				"template": "%WAL%.%WORKER_NAME%"
-			},
-			"lolminer": {
-				"algo": "C30CTX",
-				"server": "%URL_HOST%",
-				"port": "%URL_PORT%",
-				"pass": "x",
-				"template": "%WAL%.%WORKER_NAME%"
-			},
-			"cortex-miner":{
-				"algo":"cuckoo",
-				"server":"%URL_HOST%",
-				"port":"%URL_PORT%",
-				"pass":"x",
-				"template":"%WAL%.%WORKER_NAME%"
-			}
-        	}
-	},
-	{
 		"coin": "DCR",
 		"servers": [
 			{
@@ -233,7 +197,7 @@
 		"miners": {
 			"_prototype": "miners_firopow",
 			"srbminer": {
-				"user_config": "--disable-cpu\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
+				"user_config": "--disable-cpu\n--enable-workers-ramp-up\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -427,7 +391,7 @@
 		"miners": {
 			"_prototype": "miners_xhash",
 			"srbminer": {
-				"user_config": "--disable-cpu\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
+				"user_config": "--disable-cpu\n--enable-workers-ramp-up\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -447,7 +411,7 @@
 		"miners": {
 			"_prototype": "miners_meowpow",
 			"srbminer": {
-				"user_config": "--disable-cpu\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
+				"user_config": "--disable-cpu\n--enable-workers-ramp-up\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -507,7 +471,7 @@
 		"miners": {
 			"_prototype": "miners_kawpow",
 			"srbminer": {
-				"user_config": "--disable-cpu\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
+				"user_config": "--disable-cpu\n--enable-workers-ramp-up\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -556,7 +520,7 @@
 		"miners": {
 			"_prototype": "miners_kawpow",
 			"srbminer": {
-				"user_config": "--disable-cpu\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
+				"user_config": "--disable-cpu\n--enable-workers-ramp-up\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	},
@@ -662,7 +626,7 @@
 		"miners": {
 			"_prototype": "miners_progpow_zano",
 			"srbminer": {
-				"user_config": "--disable-cpu\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
+				"user_config": "--disable-cpu\n--enable-workers-ramp-up\n--gpu-table-slow-build\n\"send-stales\": false\n\"retry-time\": 30"
 			}
 		}
 	}
