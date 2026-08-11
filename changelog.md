@@ -1,3 +1,7 @@
+##### 0.6-231@260811 2026-08-11
+*   SRBMiner v3.5.3 (MANDATORY UPDATE: Emergency hardfork for Pearl coin, algorithm `pearlhash`; Added optional `pearlhash` kernel for 3070, 3070ti which can be used with higher core clocks, use `--pearl-k2`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.50.1 (Implemented support hardfork for Pearl on pearlhash.xyz pool; Tuned `pearlhash` kernels for NVIDIA RTX 3000/4000 to be efficient instead of max hashrate; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+   
 ##### 0.6-231@260809 2026-08-09
 *   SRBMiner v3.5.1 (Improved algorithm `pearlhash` for all NVIDIA GPUs, except Turing architecture; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig v0.49.9 (Slight power efficiency bump for `pearlhash` on NVIDIA RTX 3000, 4000 and 5000 series; Fixed `pearlhash` support for AMD GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
