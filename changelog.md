@@ -1,3 +1,7 @@
+##### 0.6-231@260813 2026-08-13
+*   SRBMiner v3.5.4 (Improved algorithm `pearlhash` for NVIDIA 4000 series GPUs, mostly efficiency; Improved algorithm `pearlhash` for NVIDIA H100 GPUs, for efficiency mode use `--gpu-cclock 900`; Minor efficiency improvements for some 2000 and 3000 series GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   CPUMiner-Opt-Rplant v6.0.8 (Add `rx/hobc` algo for HOBC/HobbyHash coin; Add `civiclight` algo for CIVC/CivicNet coin; Misc improvements & fixes; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
+
 ##### 0.6-231@260811 2026-08-11
 *   SRBMiner v3.5.3 (MANDATORY UPDATE: Emergency hardfork for Pearl coin, algorithm `pearlhash`; Added optional `pearlhash` kernel for 3070, 3070ti which can be used with higher core clocks, use `--pearl-k2`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig v0.50.1 (Implemented support hardfork for Pearl on pearlhash.xyz pool; Tuned `pearlhash` kernels for NVIDIA RTX 3000/4000 to be efficient instead of max hashrate; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
