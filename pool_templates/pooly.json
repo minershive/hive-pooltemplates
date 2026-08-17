@@ -1,0 +1,767 @@
+[
+    {
+        "pool": {
+            "name": "Pooly",
+            "url": "https://pooly.ca",
+            "fee": 1,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "BUCK",
+        "servers": [
+            {
+                "geo": "NA",
+                "urls": [
+                    "ca.pooly.ca:3034"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.pooly.ca:3034"
+                ]
+            },
+            {
+                "geo": "Auto",
+                "urls": [
+                    "pooly.ca:3034"
+                ]
+            },
+            {
+                "geo": "NA HiDIFF",
+                "urls": [
+                    "ca.pooly.ca:3035"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "eu.pooly.ca:3035"
+                ]
+            },
+            {
+                "geo": "Auto HiDIFF",
+                "urls": [
+                    "pooly.ca:3035"
+                ]
+            }
+        ],
+        "miners": {
+            "dstm": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "gminer": {
+                "algo": "equihash",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ZEC",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ZER",
+        "servers": [
+            {
+                "geo": "NA",
+                "urls": [
+                    "ca.pooly.ca:3050"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.pooly.ca:3050"
+                ]
+            },
+            {
+                "geo": "Auto",
+                "urls": [
+                    "pooly.ca:3050"
+                ]
+            },
+            {
+                "geo": "NA HiDIFF",
+                "urls": [
+                    "ca.pooly.ca:3051"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "eu.pooly.ca:3051"
+                ]
+            },
+            {
+                "geo": "Auto HiDIFF",
+                "urls": [
+                    "pooly.ca:3051"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "192_7",
+                "fork": "zhash",
+                "zserver": "%URL_HOST%",
+                "zport": "%URL_PORT%",
+                "zpass": "x",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers ZERO_PoW"
+            },
+            "gminer": {
+                "algo": "192_7",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZERO_PoW"
+            },
+            "lolminer": {
+                "algo": "ZER",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZERO_PoW"
+            }
+        }
+    },
+    {
+        "coin": "YEC",
+        "servers": [
+            {
+                "geo": "NA",
+                "urls": [
+                    "ca.pooly.ca:3054"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.pooly.ca:3054"
+                ]
+            },
+            {
+                "geo": "Auto",
+                "urls": [
+                    "pooly.ca:3054"
+                ]
+            },
+            {
+                "geo": "NA HiDIFF",
+                "urls": [
+                    "ca.pooly.ca:3055"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "eu.pooly.ca:3055"
+                ]
+            },
+            {
+                "geo": "Auto HiDIFF",
+                "urls": [
+                    "pooly.ca:3055"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "192_7",
+                "fork": "zhash",
+                "zserver": "%URL_HOST%",
+                "zport": "%URL_PORT%",
+                "zpass": "x",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers ZcashPoW"
+            },
+            "gminer": {
+                "algo": "192_7",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            },
+            "lolminer": {
+                "algo": "YEC",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            }
+        }
+    },
+    {
+        "coin": "BTCZ",
+        "servers": [
+            {
+                "geo": "NA",
+                "urls": [
+                    "ca.pooly.ca:3072"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.pooly.ca:3072"
+                ]
+            },
+            {
+                "geo": "Auto",
+                "urls": [
+                    "pooly.ca:3072"
+                ]
+            },
+            {
+                "geo": "NA HiDIFF",
+                "urls": [
+                    "ca.pooly.ca:3073"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "eu.pooly.ca:3073"
+                ]
+            },
+            {
+                "geo": "Auto HiDIFF",
+                "urls": [
+                    "pooly.ca:3073"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zserver": "%URL_HOST%",
+                "zport": "%URL_PORT%",
+                "zpass": "x",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers BitcoinZ"
+            },
+            "bminer": {
+                "algo": "zhash",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "gminer": {
+                "algo": "144_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers BitcoinZ"
+            },
+            "lolminer": {
+                "algo": "BTCZ",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "144,5",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers BitcoinZ"
+            }
+        }
+    },
+    {
+        "coin": "GLINK",
+        "servers": [
+            {
+                "geo": "NA",
+                "urls": [
+                    "ca.pooly.ca:3074"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.pooly.ca:3074"
+                ]
+            },
+            {
+                "geo": "Auto",
+                "urls": [
+                    "pooly.ca:3074"
+                ]
+            },
+            {
+                "geo": "NA HiDIFF",
+                "urls": [
+                    "ca.pooly.ca:3075"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "eu.pooly.ca:3075"
+                ]
+            },
+            {
+                "geo": "Auto HiDIFF",
+                "urls": [
+                    "pooly.ca:3075"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zserver": "%URL_HOST%",
+                "zport": "%URL_PORT%",
+                "zpass": "x",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers sngemPoW"
+            },
+            "bminer": {
+                "algo": "zhash",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
+            },
+            "gminer": {
+                "algo": "144_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers sngemPoW"
+            },
+            "lolminer": {
+                "algo": "GLINK",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "miniz": {
+                "algo": "144,5",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers sngemPoW"
+            }
+        }
+    },
+    {
+        "coin": "FIRO",
+        "servers": [
+            {
+                "geo": "NA",
+                "urls": [
+                    "ca.pooly.ca:3094"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.pooly.ca:3094"
+                ]
+            },
+            {
+                "geo": "Auto",
+                "urls": [
+                    "pooly.ca:3094"
+                ]
+            },
+            {
+                "geo": "NA HiDIFF",
+                "urls": [
+                    "ca.pooly.ca:3095"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "eu.pooly.ca:3095"
+                ]
+            },
+            {
+                "geo": "Auto HiDIFF",
+                "urls": [
+                    "pooly.ca:3095"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_firopow"
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "NA",
+                "urls": [
+                    "ca.pooly.ca:3100"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.pooly.ca:3100"
+                ]
+            },
+            {
+                "geo": "Auto",
+                "urls": [
+                    "pooly.ca:3100"
+                ]
+            },
+            {
+                "geo": "NA HiDIFF",
+                "urls": [
+                    "ca.pooly.ca:3101"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "eu.pooly.ca:3101"
+                ]
+            },
+            {
+                "geo": "Auto HiDIFF",
+                "urls": [
+                    "pooly.ca:3101"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "NEOX",
+        "servers": [
+            {
+                "geo": "NA",
+                "urls": [
+                    "ca.pooly.ca:3102"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.pooly.ca:3102"
+                ]
+            },
+            {
+                "geo": "Auto",
+                "urls": [
+                    "pooly.ca:3102"
+                ]
+            },
+            {
+                "geo": "NA HiDIFF",
+                "urls": [
+                    "ca.pooly.ca:3103"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF",
+                "urls": [
+                    "eu.pooly.ca:3103"
+                ]
+            },
+            {
+                "geo": "Auto HiDIFF",
+                "urls": [
+                    "pooly.ca:3103"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "KRGN",
+        "servers": [
+            {
+                "geo": "NA Equihash 200,9",
+                "urls": [
+                    "ca.pooly.ca:3200"
+                ]
+            },
+            {
+                "geo": "EU Equihash 200,9",
+                "urls": [
+                    "eu.pooly.ca:3200"
+                ]
+            },
+            {
+                "geo": "Auto Equihash 200,9",
+                "urls": [
+                    "pooly.ca:3200"
+                ]
+            },
+            {
+                "geo": "NA Equihash 200,9 HiDIFF",
+                "urls": [
+                    "ca.pooly.ca:3201"
+                ]
+            },
+            {
+                "geo": "EU Equihash 200,9 HiDIFF",
+                "urls": [
+                    "eu.pooly.ca:3201"
+                ]
+            },
+            {
+                "geo": "Auto Equihash 200,9 HiDIFF",
+                "urls": [
+                    "pooly.ca:3201"
+                ]
+            }
+        ],
+        "miners": {
+            "dstm": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%"
+            },
+            "gminer": {
+                "algo": "equihash",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "ZEC",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "KRGN",
+        "servers": [
+            {
+                "geo": "NA Equihash 192,7",
+                "urls": [
+                    "ca.pooly.ca:3202"
+                ]
+            },
+            {
+                "geo": "EU Equihash 192,7",
+                "urls": [
+                    "eu.pooly.ca:3202"
+                ]
+            },
+            {
+                "geo": "Auto Equihash 192,7",
+                "urls": [
+                    "pooly.ca:3202"
+                ]
+            },
+            {
+                "geo": "NA Equihash 192,7 HiDIFF",
+                "urls": [
+                    "ca.pooly.ca:3203"
+                ]
+            },
+            {
+                "geo": "EU Equihash 192,7 HiDIFF",
+                "urls": [
+                    "eu.pooly.ca:3203"
+                ]
+            },
+            {
+                "geo": "Auto Equihash 192,7 HiDIFF",
+                "urls": [
+                    "pooly.ca:3203"
+                ]
+            }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "192_7",
+                "fork": "zhash",
+                "zserver": "%URL_HOST%",
+                "zport": "%URL_PORT%",
+                "zpass": "x",
+                "ztemplate": "%WAL%.%WORKER_NAME%",
+                "user_config": "pers kerrigan"
+            },
+            "gminer": {
+                "algo": "192_7",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers kerrigan"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers kerrigan"
+            }
+        }
+    },
+    {
+        "coin": "KRGN",
+        "servers": [
+            {
+                "geo": "NA KawPow",
+                "urls": [
+                    "ca.pooly.ca:3204"
+                ]
+            },
+            {
+                "geo": "EU KawPow",
+                "urls": [
+                    "eu.pooly.ca:3204"
+                ]
+            },
+            {
+                "geo": "Auto KawPow",
+                "urls": [
+                    "pooly.ca:3204"
+                ]
+            },
+            {
+                "geo": "NA KawPow HiDIFF",
+                "urls": [
+                    "ca.pooly.ca:3205"
+                ]
+            },
+            {
+                "geo": "EU KawPow HiDIFF",
+                "urls": [
+                    "eu.pooly.ca:3205"
+                ]
+            },
+            {
+                "geo": "Auto KawPow HiDIFF",
+                "urls": [
+                    "pooly.ca:3205"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "KRGN",
+        "servers": [
+            {
+                "geo": "NA X11",
+                "urls": [
+                    "ca.pooly.ca:3206"
+                ]
+            },
+            {
+                "geo": "EU X11",
+                "urls": [
+                    "eu.pooly.ca:3206"
+                ]
+            },
+            {
+                "geo": "Auto X11",
+                "urls": [
+                    "pooly.ca:3206"
+                ]
+            },
+            {
+                "geo": "NA X11 HiDIFF",
+                "urls": [
+                    "ca.pooly.ca:3207"
+                ]
+            },
+            {
+                "geo": "EU X11 HiDIFF",
+                "urls": [
+                    "eu.pooly.ca:3207"
+                ]
+            },
+            {
+                "geo": "Auto X11 HiDIFF",
+                "urls": [
+                    "pooly.ca:3207"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "srbminer-multi": {
+                "url": "%URL%",
+                "algo": "x11",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ccminer": {
+                "ccurl": "stratum+tcp://%URL%",
+                "ccalgo": "x11",
+                "ccpass": "x",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
