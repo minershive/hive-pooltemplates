@@ -1,9 +1,9 @@
 ##### 0.6-231@260817 2026-08-17
-*   SRBMiner v3.5.6 (Added algorithm `randompcn` for CPU mining PCN/Pcoin, fee 0.85%; Added algorithm `randomzqvx` for CPU mining ZQVX/Zerqavon, fee 0.85%; Improved algorithm `pearlhash` for NVIDIA 2000 series GPUs, aprox. ~3.5%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   SRBMiner v3.5.6 (Added algorithm `randompcn` for CPU mining PCN/Pcoin, fee 0.85%; Added algorithm `randomzqvx` for CPU mining ZQV/Zerqavon, fee 0.85%; Improved algorithm `pearlhash` for NVIDIA 2000 series GPUs, aprox. ~3.5%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
 ##### 0.6-231@260816 2026-08-16
 *   SRBMiner v3.5.5 (Added algorithm `sha3t` for mining BC3/BitcoinIII on AMD/NVIDIA/INTEL GPUs, fee 1.0%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
-*   CPUMiner-Opt-Rplant v6.0.10 (Add `randomzqvx` algo for mining ZQVX/Zerqavon; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
+*   CPUMiner-Opt-Rplant v6.0.10 (Add `randomzqvx` algo for mining ZQV/Zerqavon; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
 
 ##### 0.6-231@260813 2026-08-13
 *   SRBMiner v3.5.4 (Improved algorithm `pearlhash` for NVIDIA 4000 series GPUs, mostly efficiency; Improved algorithm `pearlhash` for NVIDIA H100 GPUs, for efficiency mode use `--gpu-cclock 900`; Minor efficiency improvements for some 2000 and 3000 series GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
