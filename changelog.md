@@ -1,3 +1,94 @@
+##### 0.6-231@260817 2026-08-17
+*   SRBMiner v3.5.6 (Added algorithm `randompcn` for CPU mining PCN/Pcoin, fee 0.85%; Added algorithm `randomzqvx` for CPU mining ZQV/Zerqavon, fee 0.85%; Improved algorithm `pearlhash` for NVIDIA 2000 series GPUs, aprox. ~3.5%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-231@260816 2026-08-16
+*   SRBMiner v3.5.5 (Added algorithm `sha3t` for mining BC3/BitcoinIII on AMD/NVIDIA/INTEL GPUs, fee 1.0%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   CPUMiner-Opt-Rplant v6.0.10 (Add `randomzqvx` algo for mining ZQV/Zerqavon; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
+
+##### 0.6-231@260813 2026-08-13
+*   SRBMiner v3.5.4 (Improved algorithm `pearlhash` for NVIDIA 4000 series GPUs, mostly efficiency; Improved algorithm `pearlhash` for NVIDIA H100 GPUs, for efficiency mode use `--gpu-cclock 900`; Minor efficiency improvements for some 2000 and 3000 series GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   CPUMiner-Opt-Rplant v6.0.8 (Add `rx/hobc` algo for HOBC/HobbyHash coin; Add `civiclight` algo for CIVC/CivicNet coin; Misc improvements & fixes; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
+
+##### 0.6-231@260811 2026-08-11
+*   SRBMiner v3.5.3 (MANDATORY UPDATE: Emergency hardfork for Pearl coin, algorithm `pearlhash`; Added optional `pearlhash` kernel for 3070, 3070ti which can be used with higher core clocks, use `--pearl-k2`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.50.1 (Implemented support hardfork for Pearl on pearlhash.xyz pool; Tuned `pearlhash` kernels for NVIDIA RTX 3000/4000 to be efficient instead of max hashrate; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+   
+##### 0.6-231@260809 2026-08-09
+*   SRBMiner v3.5.1 (Improved algorithm `pearlhash` for all NVIDIA GPUs, except Turing architecture; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.49.9 (Slight power efficiency bump for `pearlhash` on NVIDIA RTX 3000, 4000 and 5000 series; Fixed `pearlhash` support for AMD GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
+##### 0.6-231@260806 2026-08-06
+*   SRBMiner v3.5.0 (MANDATORY UPDATE: for upcoming `rank-128` softfork of `pearlhash` algorithm; Fixes for algorithm `pearlhash` on 3000 series NVIDIA GPUs; Removed AMD RDNA2 support for algorithm 'pearlhash'; Removed algorithms 'btx' and 'sha256mem'; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.49.8 (MANDATORY UPDATE: for upcoming `rank-128` softfork of `pearlhash` algorithm; Improved `pearlhash` for NVIDIA RTX 5000 series; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
+##### 0.6-231@260802 2026-08-02
+*   SRBMiner v3.4.8 (Improved algorithm `pearlhash` for NVIDIA 3000 series, A100 and CMP 170HX GPUs; Other improvements & bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-231@260801 2026-08-01
+*   Improved `nvidia-driver-update` (New `--legacy` and `--open` options force the proprietary (Maxwell/Pascal/Volta) or open (Turing and newer) kernel modules; without an option, the tool picks the module type automatically based on the GPUs in the rig)
+*   Improved `hive-replace` (Safer OS reinstall on rigs with low free RAM (installer now checks available memory upfront, enables ZRAM if that makes the data fit, or aborts early with a clear message instead of failing mid-process)
+*   Stopped showing a bogus memory temperature on NVIDIA Blackwell GPUs until a proper fix is ready
+*   Fixed DNSCrypt not working on the new Ubuntu 24.04-based Image which needs to proper DNS over HTTPS (DoH)
+*   Fixed Linux kernel install/switch on the Ubuntu 24.04-based Image sometimes downgrading the running kernel
+*   Fixed an issue where a false error message caused the installation of CUDA 13 drivers to fail with the error "library does not exist"
+*   Other improvements and fixes
+
+##### 0.6-230@260728 2026-07-28
+*   SRBMiner v3.4.7 (Improved algorithm `pearlhash` for NVIDIA 2000, 3000, 4000 and 5000 series GPUs; Added optimised code for unlocked CMP 170HX on algorithm `pearlhash`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   CPUMiner-Opt-Rplant v6.0.7 (Miner completely rewritten and now has 0% devfee; Add `randomkadikama` algo for mining KAD/Kadikama coin; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
+
+##### 0.6-230@260720 2026-07-20
+*   WildRig v0.49.6 (Improved `pearlhash` for NVIDIA RTX 3000, 4000 series and unlocked CMP170HX; Improved `pearlhash` up to 10% for AMD 9000 series; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+  
+##### 0.6-230@260712 2026-07-12
+*   SRBMiner v3.4.6 (Improved algorithm `btx` for Turing and Ampere based NVIDIA CMP GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.49.3 (Fixed high RAM usage for algorithm `pearlhash`; Fixed broken `qhash` algorithm for NVIDIA RTX 4000 series GPUs; Fixed `pearlhash` for AMD 6000 series GPUs; Fixed broken AMD support for all algorithms except `pearlhash`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   BzMiner v25.0.1b2 BETA (Supports gzip for pearl stratum; Improved `pearlhash` hashrate on Nvidia; Fixed ROCm drivers; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+*   [NEW] DankMiner v1.5.3 (Adds support CPU mining CRB/Cereblix coin on algo `NeuroMorph` ; Miner also can mine CapStash, Xelis, Warthog, Monero; NOTES: Please, see full changelog at https://github.com/DankMiner/DankMiner/releases)
+
+##### LINUX IMAGE RELEASE 0.6-230 2026-07-08
+*   Stable Image branch Ubuntu 22.04 LTS based ("jammy")
+*   Linux kernel: v6.12.95
+*   Nvidia driver: v580.173.02
+*   AMD OpenCL ROCm (kernel module):  v6.4.4 (v6.19.2606)
+*   Hive OS Linux GPU client: v0.6-230
+*   md5sum efa1a8e412e69b310ae3eae93234e7e8
+
+##### 0.6-230@260706 2026-07-06
+*  Prepared the client for the new Ubuntu 24.04-based image (required before migrating your rig).
+*  Added support for NVIDIA Blackwell cards (RTX 5090 / 5080 / 5070 Ti and others), including VBIOS flashing and monitoring/overclocking via `nvtool` v1.8.7.
+*  Added support for AMD Radeon RX 9000 series cards, including initial overclocking support.
+*  Added CUDA 13 support for the latest NVIDIA GPUs.
+*  Fixed SSH and Web Shell being turned off despite being enabled in the dashboard.
+*  Improved failover to backup Hive Worker API servers: your rigs should stay connected more reliably.
+*  More reliable and safer OS image reinstall directly from the rig.
+*  Added the `hpkg kernel` command to list, install, and switch Linux kernels directly on the rig.
+*  Other improvements and fixes.
+
+##### 0.6-229@260704 2026-07-04
+*   SRBMiner v3.4.3 (Added algorithm `btx` for BTX coin for AMD/NVIDIA GPUs, fee 1%; Some `pearlhash` related fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.49.1 (Improved `pearlhash` for NVIDIA RTX 3000, 4000 and 5000 series; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   BzMiner v25.0.0b9 BETA (Improved `pearlhash` hashrate on Ampere; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+
+##### 0.6-229@260627 2026-06-27
+*   SRBMiner v3.4.2 (Improved algorithm `pearlhash` for NVIDIA GPUs; Readded `pearlhash support for NVIDIA A100; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   BzMiner v25.0.0b8 BETA (Optimization `pearlhash` support for NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+
+##### 0.6-229@260626 2026-06-26
+*   SRBMiner v3.4.1 (Improved algorithm `pearlhash` for NVIDIA GPUs and lowered devfee to 2%; Hashrate improvement on algorithm `neuromorph` for AVX2 CPUs and lowered devfee to 1%; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.48.9 (Improved `pearlhash` for NVIDIA RTX 4000, up to 4% vs v0.48.6; Slightly improved `pearlhash` for NVIDIA RTX 3000; Improved `pearlhash` for NVIDIA RTX 2000 series GPUs, up to 10% vs v0.48.6; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   BzMiner v25.0.0b7 (Add support `pearlhash` support for NVIDIA Ampere and newer GPUs and AMD RDNA architecture; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+*   [NEW] cpuminer-opt-supr v1.47 (Fork of cpuminer-opt by ocminer / Suprnova pool; NOTES: Please, see full changelog at https://github.com/ocminer/cpuminer-opt-supr)
+
+##### 0.6-229@260617 2026-06-17
+*   SRBMiner v3.3.9 (Added algorithm `neuromorph` for CPU mining CRB/Cereblix coin, fee 3.0%; Minor hashrate improvement on algorithm `pearlhash` for all supported GPUs; Fixed support for progpow algorithms, 'autolykos2', 'verthash', 'fishhash' and 'xhash' on Nvidia Volta GPUs; Reduced poolside rejected shares on algorithm 'qhash'; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.48.6 (Improved `pearlhash` for NVIDIA RTX 4000 & 5000 series GPUs; Improved power efficiency of `pearlhash` for NVIDIA RTX 3000 series since v0.48.5; Improved `pearlhash` for NVIDIA RTX 2000 series GPUs v0.48.5; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
+##### 0.6-229@260614 2026-06-14
+*   SRBMiner v3.3.8 (Minor hashrate improvement on algorithm `pearlhash` for NVIDIA 3000, 4000 and 5000 series GPUs; Added support for progpow algorithms, 'autolykos2', 'verthash', 'fishhash' and 'xhash' on Nvidia Volta GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.48.4 (Slightly improved `pearlhash` for NVIDIA RTX 3000, 4000, 5000 GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   ApoolMiner v3.7.1 (Performance improvements; Fixed a bug causing zero compute; NOTES: Please, see full changelog at https://github.com/apool-io/apoolminer/releases)
+
 ##### 0.6-229@260610 2026-06-10
 *   SRBMiner v3.3.7 (Huge hashrate improvement on algorithm `pearlhash` for NVIDIA B200 GPU's ~1,1PH/S @ 985W; Fixed broken algorithm `oggpow` on rplant pool; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig v0.48.3 (Significantly improved power efficiency for NVIDIA RTX 3000 and 4000 gpu's. Use locked memory at 5001; Bug fixes; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
