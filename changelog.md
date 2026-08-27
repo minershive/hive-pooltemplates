@@ -1,3 +1,17 @@
+##### 0.6-231@260826 2026-08-26
+*   WildRig v0.50.4 (Implemented `pearlhash` support for NVIDIA B200; Improved `pearlhash` for NVIDIA Hopper family; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   🆕 RGMiner v1.0.3 (Initial Hive OS integration: CUDA miner for `pearlhash`, `exfer-argon2id`, `memhash`; Unlock Nvidia CMP 40HX / 50HX / 70HX / 90HX / 170HX, performed by the miner at startup - it's requires special NVIDIA on the rig, installing the driver is not part of this integration; Use `--no-cmp-unlock` or `--unlock-level-map` in the flight sheet "Extra config arguments" field to control the unlock path; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer)
+
+##### 0.6-231@260823 2026-08-23
+*   SRBMiner v3.5.9 (Improved algorithm `pearlhash` for unlocked CMP 90HX; Improved algorithm `pearlhash` for 2000 series GPUs for efficiency and hashrate ; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.50.4 (Improved `pearlhash` up to 130% for NVIDIA Tesla V100; Improved `pearlhash` up to 10% for NVIDIA A100/CMP 170HX; Improved `pearlhash` up to 8% for NVIDIA RTX 2000 series; Improved `pearlhash` up to 20% for unlocked NVIDIA CMP 90HX; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
+##### 0.6-231@260820 2026-08-20
+*   SRBMiner v3.5.8 (Added algorithm `sha256d_csd`  for mining CSD/Compute Substrate on AMD[RDNA]/NVIDIA/INTEL GPUs, fee 1%; Improved algorithms `xelishashv3`, `verushash` on CPUs; Removed algorithms 'progpow_sero', 'progpow_telestai', 'walahash', 'karlsenhashv2' and related dual implementations; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-231@260819 2026-08-19
+*   SRBMiner v3.5.7 (Added algorithm `randomdrgx` for CPU mining DRGX/DragonX, fee 0.85%; Added algorithm `blake3_an` for mining ALP/Alphanumeric on AMD[RDNA]/NVIDIA/INTEL GPUs, fee 2%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-231@260817 2026-08-17
 *   SRBMiner v3.5.6 (Added algorithm `randompcn` for CPU mining PCN/Pcoin, fee 0.85%; Added algorithm `randomzqvx` for CPU mining ZQV/Zerqavon, fee 0.85%; Improved algorithm `pearlhash` for NVIDIA 2000 series GPUs, aprox. ~3.5%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
