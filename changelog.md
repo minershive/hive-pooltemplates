@@ -1,3 +1,7 @@
+##### 0.6-231@260831 2026-08-31
+*   WildRig v0.50.9.1 (Slightly improved `pearlhash` for NVIDIA H20/H100/H200/H800; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   CPUminer-Opt-Rplant v6.0.11 (Add `randompbc` algo for mining PBC/Privacy Bank Chain; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-231@260830 2026-08-30
 *   WildRig v0.50.8 (Improved `pearlhash` speed and efficiency up to 10% for NVIDIA RTX 2000 series including CMP 40HX/CMP 50HX; Minor speed bump of `pearlhash` for NVIDIA RTX 4000 series; Fixed extra memory allocation for non-Blackwell GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 *   SRBMiner v3.6.1 (Added support for NVIDIA B300 on algorithm `pearlhash`; Improved algorithm `pearlhash` for NVIDIA B200, unlocked CMP 70HX; Added AMD RDNA GPUs support for algorithm `pearlhash`; Improved algorithm `pearlhash` for 2000 series GPUs, also for unlocked CMP 40HX/CMP 50HX; Added optional `pearlhash` kernel for 2080 Ti / CMP 50HX, use `--pearl-k2`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
