@@ -1,6 +1,9 @@
+##### 0.6-231@260907 2026-09-07
+*   SRBMiner v3.6.3 (Added algorithm `noid` for mining NOID/Parano1d for NVIDIA 3000, 4000, 5000 + H100, B200, B300 GPUs and AMD RDNA 2/3/4, fee 3%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-231@260906 2026-09-06
 *   WildRig v0.51.1 (Improved `pearlhash` up to 5% for NVIDIA H20/H100/H200/H800; Improved `pearlhash` for NVIDIA RTX 2000, 3000 and 4000 series including CMP 40HX/50HX; Minor `pearlhash` improvements for NVIDIA CMP 70HX/90HX; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
-*   SRBMiner v3.6.2 (Improved algorithm `pearlhash` for NVIDIA H100, H200, B200; Improved algorithm `pearlhash` for 4000 series GPUs; Minor improvements on `pearlhash` for : CMP 70HX, CMP 90HX, CMP 170HX, A100; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   SRBMiner v3.6.2 (Improved algorithm `pearlhash` for NVIDIA H100, H200, B200; Improved algorithm `pearlhash` for 4000 series GPUs; Minor improvements on `pearlhash` for CMP 70HX, CMP 90HX, CMP 170HX, A100; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   RGMiner v1.04b (Improved energy efficiency of CMP 170HX and Volta GPUs by up to 17%; Improved Turing hashrate by up to 18%, depending on the GPU, with energy efficiency gains of up to 8%; Slightly improved hashrate for all other supported GPUs; Other improvements & fixes; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer)
 *   CPUminer-Opt-Rplant v6.0.14 (Add `homescrypt` algo for mining LMT/Lumenite; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
