@@ -1,3 +1,10 @@
+##### 0.6-231@260915 2026-09-15
+*   SRBMiner v3.6.7 (Improved algorithm `noid` for mining Parano1d on NVIDIA 3000 and newer GPUs; Improved algorithm `quantus` for mining Quantus on NVIDIA 2000 and newer GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.51.2 (Some stability fixes; Improved `pearlhash` for AMD 6000, 7000 and 9000 series; Fixed `pearlhash` support for AMD; Slightly better eff for NVIDIA RTX 5000 series; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   RGMiner v1.0.5 (Improved GPU `pearlhash` performance and efficiency, up to 0.61-0.91% hashrate gain on RTX 3000 series; Reduced video memory usage during mining and preparation; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer)
+*   OneZeroMiner v1.7.6 (Added support for `pearlhash` algorithm on Nvidia GPUs 20xx and newer; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.7.6)
+*   Clore Rentals v012
+  
 ##### 0.6-231@260907 2026-09-07
 *   SRBMiner v3.6.3 (Added algorithm `noid` for mining NOID/Parano1d for NVIDIA 3000, 4000, 5000 + H100, B200, B300 GPUs and AMD RDNA 2/3/4, fee 3%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 
