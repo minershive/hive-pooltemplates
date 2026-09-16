@@ -1,3 +1,6 @@
+##### 0.6-231@260916 2026-09-16
+*   BzMiner v100.23 (Miner completely rewritten; New algos: `pearlhash`, `quantus`, `cuckaroo29`; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+
 ##### 0.6-231@260915 2026-09-15
 *   SRBMiner v3.6.7 (Improved algorithm `noid` for mining Parano1d on NVIDIA 3000 and newer GPUs; Improved algorithm `quantus` for mining Quantus on NVIDIA 2000 and newer GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig v0.51.2 (Some stability fixes; Improved `pearlhash` for AMD 6000, 7000 and 9000 series; Fixed `pearlhash` support for AMD; Slightly better eff for NVIDIA RTX 5000 series; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
