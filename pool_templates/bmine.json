@@ -1,0 +1,39 @@
+[
+    {
+        "pool": {
+            "name": "Bmine",
+            "url": "https://bmine.pro",
+            "fee": 3.5,
+            "type": "FPPS"
+        }
+    },
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "bmine.pro:3333"
+                ]
+            },
+            {
+                "geo": "RU",
+                "urls": [
+                    "ru.btc.bmine.pro:80"
+                ]
+            },
+            {
+                "geo": "RU 2",
+                "urls": [
+                    "ru2.btc.bmine.pro:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
