@@ -124,5 +124,52 @@
         "miners": {
             "_prototype": "miners_kawpow"
         }
+    },
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "EU SOLO 64K",
+                "urls": [
+                    "eu.molepool.com:3450"
+                ]
+            },
+            {
+                "geo": "EU SOLO 1M",
+                "urls": [
+                    "eu.molepool.com:3451"
+                ]
+            },
+            {
+                "geo": "EU SOLO 10M",
+                "urls": [
+                    "eu.molepool.com:3452"
+                ]
+            },
+            {
+                "geo": "US SOLO 64K",
+                "urls": [
+                    "us.molepool.com:3450"
+                ]
+            },
+            {
+                "geo": "US SOLO 1M",
+                "urls": [
+                    "us.molepool.com:3451"
+                ]
+            },
+            {
+                "geo": "US SOLO 10M",
+                "urls": [
+                    "us.molepool.com:3452"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]

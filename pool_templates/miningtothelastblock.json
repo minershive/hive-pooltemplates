@@ -1,66 +1,24 @@
 [
-  {
-    "pool": {
-      "name": "Mining To The Last Block",
-      "url": "https://miningtothelastblock.top",
-      "type": "PPLNS SOLO"
+    {
+        "pool": {
+            "name": "Mining To The Last Block",
+            "url": "https://miningtothelastblock.top",
+            "fee": 1,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "CS",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "cs.miningtothelastblock.top:3332"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_zelhash"
+        }
     }
-  },
-  {
-    "coin": "DERO",
-    "servers": [
-      {
-        "geo": "Global Native WSS",
-        "urls": [
-          "dero.miningtothelastblock.top:4000"
-        ]
-      },
-      {
-        "geo": "Global Low Diff",
-        "urls": [
-          "dero.miningtothelastblock.top:3333"
-        ]
-      },
-      {
-        "geo": "Global Med Diff",
-        "urls": [
-          "dero.miningtothelastblock.top:5555"
-        ]
-      },
-      {
-        "geo": "Global High Diff",
-        "urls": [
-          "dero.miningtothelastblock.top:7777"
-        ]
-      }
-    ],
-    "miners": {
-      "_prototype": "miners_astrobwt",
-      "custom": {
-        "url": "%URL%",
-        "template": "%WAL%.%WORKER_NAME%",
-        "pass": "x"
-      }
-    }
-  },
-  {
-    "coin": "CS",
-    "servers": [
-      {
-        "geo": "Global",
-        "urls": [
-          "cs.miningtothelastblock.top:3332"
-        ]
-      }
-    ],
-    "miners": {
-      "custom": {
-        "url": "%URL%",
-        "algo": "zelhash",
-        "miner": "cs-miner",
-        "template": "%WAL%",
-        "install_url": "https://github.com/MauricioSpagnol/cs-miner-releases/releases/download/hive-v0.61.0/cs-miner-v0.61.0.tar.gz"
-      }
-    }
-  }
 ]

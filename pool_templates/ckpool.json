@@ -1,0 +1,63 @@
+[
+    {
+        "pool": {
+            "name": "Solo CKPool",
+            "url": "https://solo.ckpool.org",
+            "fee": 2,
+            "type": "SOLO"
+        }
+    },
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "Auto (lowest latency)",
+                "urls": [
+                    "stratum.ckpool.org:3333"
+                ]
+            },
+            {
+                "geo": "Auto HiDIFF (rentals only)",
+                "urls": [
+                    "stratum.ckpool.org:4334"
+                ]
+            },
+            {
+                "geo": "USA West",
+                "urls": [
+                    "uwsolo.ckpool.org:3333"
+                ]
+            },
+            {
+                "geo": "USA East",
+                "urls": [
+                    "uesolo.ckpool.org:3333"
+                ]
+            },
+            {
+                "geo": "Germany",
+                "urls": [
+                    "eusolo.ckpool.org:3333"
+                ]
+            },
+            {
+                "geo": "Singapore",
+                "urls": [
+                    "sgsolo.ckpool.org:3333"
+                ]
+            },
+            {
+                "geo": "Australia",
+                "urls": [
+                    "ausolo.ckpool.org:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

@@ -1,0 +1,75 @@
+[
+    {
+        "pool": {
+            "name": "RBMpool",
+            "url": "https://rbmpool.com",
+            "fee": 1,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "SCASH",
+        "servers": [
+            {
+                "geo": "USA",
+                "urls": [
+                    "scash.rbmpool.com:4444"
+                ],
+                "ssl_urls": [
+                    "scash.rbmpool.com:5555"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "randomscash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"algo\": \"rx/scash\""
+            }
+        }
+    },
+    {
+        "coin": "RTM",
+        "servers": [
+            {
+                "geo": "USA",
+                "urls": [
+                    "rtm.rbmpool.com:7777"
+                ],
+                "ssl_urls": [
+                    "rtm.rbmpool.com:8888"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_ghostrider"
+        }
+    },
+    {
+        "coin": "BTX",
+        "servers": [
+            {
+                "geo": "USA",
+                "urls": [
+                    "btx.rbmpool.com:1111"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "btx",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
+    }
+]
