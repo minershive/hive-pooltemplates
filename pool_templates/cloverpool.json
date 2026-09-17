@@ -1,0 +1,44 @@
+[
+    {
+        "pool": {
+            "name": "CloverPool",
+            "url": "https://cloverpool.com",
+            "type": "FPPS"
+        }
+    },
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "eu.ss.cloverpool.com:1800",
+                    "eu.ss.cloverpool.com:443",
+                    "eu.ss.cloverpool.com:3333"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.ss.cloverpool.com:1800",
+                    "us.ss.cloverpool.com:443",
+                    "us.ss.cloverpool.com:3333"
+                ]
+            },
+            {
+                "geo": "Singapore",
+                "urls": [
+                    "sg.ss.cloverpool.com:1800",
+                    "sg.ss.cloverpool.com:443",
+                    "sg.ss.cloverpool.com:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
