@@ -1,126 +1,38 @@
 [
     {
         "pool": {
-            "name": "Poolkh",
-            "url": "https://poolkh.com",
+            "name": "PoolKH",
+            "url": "https://www.poolkh.com",
+            "fee": 1,
             "type": "PPLNS"
         }
     },
     {
-        "coin": "PDN",
+        "coin": "LTC",
         "servers": [
             {
-                "geo": "ASIA",
+                "geo": "EU",
                 "urls": [
-                    "poolkh.com:4444"
+                    "eu.poolkh.com:3433"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.poolkh.com:3433"
+                ]
+            },
+            {
+                "geo": "Singapore",
+                "urls": [
+                    "sg.poolkh.com:3433"
                 ]
             }
         ],
         "miners": {
-            "_prototype": "miners_pufferfish2",
-            "wildrig-multi": {
+            "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "algo": "pufferfish2",
-                "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "NOVO",
-        "servers": [
-            {
-                "geo": "ASIA",
-                "urls": [
-                    "poolkh.com.com:4450"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_novo",
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "sha256dt",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--disable-cpu"
-            
-            }
-        }
-    },
-    {
-        "coin": "ELH",
-        "servers": [
-            {
-                "geo": "ASIA",
-                "urls": [
-                    "poolkh.com.com:4454"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
-        "coin": "GRAMS",
-        "servers": [
-            {
-                "geo": "ASIA",
-                "urls": [
-                    "poolkh.com.com:4458"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
-        "coin": "AVS",
-        "servers": [
-            {
-                "geo": "ASIA",
-                "urls": [
-                    "poolkh.com.com:4462"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
-        "coin": "OCTA",
-        "servers": [
-            {
-                "geo": "ASIA",
-                "urls": [
-                    "poolkh.com.com:4466"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ethash"
-        }
-    },
-    {
-        "coin": "PEPEW",
-        "servers": [
-            {
-                "geo": "ASIA",
-                "urls": [
-                    "poolkh.com.com:4468"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_memehash",
-            "srbminer": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "memehash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
             }
         }
     }
