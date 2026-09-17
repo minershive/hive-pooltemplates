@@ -5,16 +5,17 @@
             "url": "https://www.nicehash.com"
         }
     },
+
     {
-        "coin": "Nicehash-Scrypt",
+        "coin": "BTC",
         "servers": [
             {
                 "geo": "AUTO",
                 "urls": [
-                    "scrypt.auto.nicehash.com:9200"
+                    "sha256asicboost.auto.nicehash.com:9200"
                 ],
                 "ssl_urls": [
-                    "scrypt.auto.nicehash.com:443"
+                    "sha256asicboost.auto.nicehash.com:443"
                 ]
             }
         ],
@@ -42,6 +43,69 @@
         "miners": {
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+
+    {
+        "coin": "Nicehash-Scrypt",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "scrypt.auto.nicehash.com:9200"
+                ],
+                "ssl_urls": [
+                    "scrypt.auto.nicehash.com:443"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+
+    {
+        "coin": "Nicehash-SHA256AsicBoost",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "sha256asicboost.auto.nicehash.com:9200"
+                ],
+                "ssl_urls": [
+                    "sha256asicboost.auto.nicehash.com:443"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+
+    {
+        "coin": "Nicehash-SHA256AsicBoost_USDT",
+        "servers": [
+            {
+                "geo": "AUTO",
+                "urls": [
+                    "stratum+tcp://sha256asicboost-usdt.auto.nicehash.com:9200"
+                ],
+                "ssl_urls": [
+                    "stratum+ssl://sha256asicboost-usdt.auto.nicehash.com:443"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
@@ -87,69 +151,7 @@
             }
         }
     },
-    {
-        "coin": "Nicehash-X13",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "x13.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "x13.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "x13",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "marucoin",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Keccak",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "keccak.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "keccak.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "dcri": "30",
-                "dcoin": "keccak",
-                "dpools_tpl": "POOL: stratum+tcp://%URL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x"
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "keccak",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "keccak",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
+
     {
         "coin": "Nicehash-Neoscrypt",
         "servers": [
@@ -179,93 +181,7 @@
             }
         }
     },
-    {
-        "coin": "Nicehash-Qubit",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "qubit.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "qubit.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "qubit",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "qubitcoin",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Quark",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "quark.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "quark.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "quark",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "quarkcoin",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Lyra2REv2",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "lyra2rev2.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "lyra2rev2.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "lyra2rev2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "lyra2v2",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
+
     {
         "coin": "Nicehash-Ethash",
         "servers": [
@@ -350,78 +266,7 @@
             }
         }
     },
-    {
-        "coin": "Nicehash-Decred",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "decred.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "decred.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "dcri": "20",
-                "dcoin": "dcr",
-                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x"
-            },
-            "ccminer": {
-                "ccurl": "%URL%",
-                "ccalgo": "decred",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "blake256r14",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-LBRY",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "lbry.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "lbry.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "dcri": "30",
-                "dcoin": "lbc",
-                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x"
-            },
-            "ccminer": {
-                "ccurl": "%URL%",
-                "ccalgo": "lbry",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://lbry.eu-new.nicehash.com:3356",
-                "algo": "lbry",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
+
     {
         "coin": "Nicehash-Equihash",
         "servers": [
@@ -469,154 +314,6 @@
             }
         }
     },
-    {
-        "coin": "Nicehash-Blake2s",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "blake2s.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "blake2s.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "dcri": "30",
-                "dcoin": "blake2s",
-                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%%, PSW: x, ESM: 3, ALLPOOLS: 1",
-                "claymore_user_config": "-allpools 0"
-            },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "blake2s",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "blake2s",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Lyra2Z",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "lyra2z.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "lyra2z.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "%URL%",
-                "ccalgo": "lyra2z",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "pass": "x",
-                "miner": "tdxminer",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "http://download.hiveos.farm/custom/tdxminer-0.2.2.2.tar.gz"
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-X16R",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "x16r.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "x16r.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "fork": "enemy",
-                "ccurl": "%URL%",
-                "ccalgo": "x16r",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "t-rex": {
-                "url": "%URL%",
-                "algo": "x16r",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16r",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
-            },
-            "teamredminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "x16r"
-            }
-        }
-
-    },
-    {
-        "coin": "Nicehash-SHA256AsicBoost",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "sha256asicboost.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "sha256asicboost.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-
-    {
-        "coin": "BTC",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "sha256asicboost.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "sha256asicboost.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
 
     {
         "coin": "Nicehash-Zhash",
@@ -635,136 +332,7 @@
             "_prototype": "miners_zhash_btg"
         }
     },
-    {
-        "coin": "Nicehash-Cuckatoo31",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "grincuckatoo31.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "grincuckatoo31.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "lolminer": {
-                "algo": "GRIN-C31",
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "gminer": {
-                "algo": "grin31",
-                "template": "%WAL%.%WORKER_NAME%",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%"
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-CryptoNightR",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "cryptonightr.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "cryptonightr.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"currency\": \"cryptonight_r\""
-            },
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"algo\": \"cryptonight/r\""
-            },
-            "xmrig-amd": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"algo\": \"cryptonight/r\""
-            },
-            "xmrig-nvidia": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "\"algo\": \"cryptonight/r\""
-            },
-            "teamredminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "cnr"
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-CuckooCycle",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "cuckoocycle.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "cuckoocycle.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": null
-    },
-    {
-        "coin": "Nicehash-X16Rv2",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "x16rv2.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "x16rv2.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "fork": "enemy",
-                "ccurl": "stratum+tcp://%URL%",
-                "ccalgo": "x16rv2",
-                "ccpass": "x",
-                "ccuser": "%WAL%.%WORKER_NAME%"
-            },
-            "t-rex": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x16rv2",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "cryptodredge": {
-                "algo": "x16rv2",
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "teamredminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "x16rv2"
-            }
-        }
-    },
+
     {
         "coin": "Nicehash-RandomXmonero",
         "servers": [
@@ -818,77 +386,7 @@
             }
         }
     },
-    {
-        "coin": "Nicehash-Cuckatoo32",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "grincuckatoo32.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "grincuckatoo32.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "lolminer": {
-                "algo": "GRIN-C32",
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "gminer": {
-                "algo": "grin32",
-                "template": "%WAL%.%WORKER_NAME%",
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%"
-            },
-            "bminer": {
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "cuckatoo32"
-            }
-        }
-    },
-    {
-        "coin": "Nicehash-Handshake",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "handshake.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "handshake.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "bl2bsha3",
-                "pass": "x",
-                "worker": "%WORKER_NAME%",
-                "template": "%WAL%",
-                "user_config": "--disable-cpu"
-            },
-            "nbminer": {
-                "url": "%URL%",
-                "algo": "hns",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "gminer": {
-                "algo": "hns",
-                "pass": "X",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
+
     {
         "coin": "Nicehash-KawPow",
         "servers": [
@@ -985,23 +483,7 @@
             "_prototype": "miners_autolykos2"
         }
     },
-    {
-        "coin": "Nicehash-ZelHash",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "zelhash.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "zelhash.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_zelhash"
-        }
-    },
+
     {
         "coin": "Nicehash-EtcHash",
         "servers": [
@@ -1073,42 +555,6 @@
     },
 
     {
-        "coin": "Nicehash-Ironfish",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "ironfish.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "ironfish.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_ironfish"
-        }
-    },
-
-    {
-        "coin": "Nicehash-KarlsenHash",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "karlsenhash.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "karlsenhash.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_karlsenhash"
-        }
-    },
-
-    {
         "coin": "Nicehash-Alephium",
         "servers": [
             {
@@ -1141,42 +587,6 @@
         ],
         "miners": {
             "_prototype": "miners_fishhash"
-        }
-    },
-
-    {
-        "coin": "Nicehash-PyrinHash",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "pyrinhash.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "pyrinhash.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_pyrinhash"
-        }
-    },
-
-    {
-        "coin": "Nicehash-XelisHashV2",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "xelishashv2.auto.nicehash.com:9200"
-                ],
-                "ssl_urls": [
-                    "xelishashv2.auto.nicehash.com:443"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_xelishashv2"
         }
     }
 ]
