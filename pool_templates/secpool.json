@@ -1,0 +1,44 @@
+[
+    {
+        "pool": {
+            "name": "SECPOOL",
+            "url": "https://www.secpool.com",
+            "type": "PPLNS / FPPS"
+        }
+    },
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "btc.secpool.com:3333",
+                    "btc.secpool.com:443",
+                    "btc.secpool.com:25"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "btc-eu.secpool.com:3333",
+                    "btc-eu.secpool.com:443",
+                    "btc-eu.secpool.com:25"
+                ]
+            },
+            {
+                "geo": "North America",
+                "urls": [
+                    "btc-na.secpool.com:3333",
+                    "btc-na.secpool.com:443",
+                    "btc-na.secpool.com:25"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
