@@ -1,0 +1,32 @@
+[
+	{
+		"pool": {
+			"name": "qubic.li",
+			"url": "https://platform.qubic.li"
+		}
+	},
+	{
+		"coin": "QUBIC",
+		"servers": [
+			{
+				"geo": "Global",
+				"urls": [
+					"wps.qubic.li:443"
+				],
+				"ssl_urls": [
+					"wps.qubic.li:443"
+				]
+			}
+		],
+		"miners": {
+			"custom": {
+				"url": "wss://wps.qubic.li/ws",
+				"algo": "qubic",
+				"miner": "qubminer",
+				"template": "%WAL%-%WORKER_NAME%",
+				"install_url": "https://github.com/qubic-li/hiveos/releases/download/latest/qubminer-latest.tar.gz",
+				"user_config": "\"accessToken\":\"YOUROWNTOKEN\"\nAutoUpdate"
+			}
+		}
+	}
+]
