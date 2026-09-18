@@ -676,5 +676,54 @@
     "miners": {
       "_prototype": "miners_quantus"
     }
+  },
+  {
+    "coin": "KRX",
+    "servers": [
+    {
+      "geo": "Europe (VarDiff)",
+      "urls": [
+        "krx.suprnova.cc:4404"
+      ]
+    },
+    {
+      "geo": "Europe (VarDiff low / fixed)",
+      "urls": [
+        "krx.suprnova.cc:4401",
+        "krx.suprnova.cc:4402"
+      ]
+    }
+    ],
+    "miners": {
+      "_prototype": "miners_keryxhash"
+    }
+  },
+  {
+    "coin": "TSC",
+    "servers": [
+    {
+      "geo": "Europe (fast GPUs)",
+      "urls": [
+        "tsc.suprnova.cc:3310"
+      ]
+    },
+    {
+      "geo": "Europe (slower GPUs)",
+      "urls": [
+        "tsc.suprnova.cc:3309"
+      ]
+    }
+    ],
+    "miners": {
+      "custom": {
+        "url": "%URL%",
+        "algo": "tensorcash",
+        "pass": "x",
+        "miner": "lpminer",
+        "template": "%WAL%.%WORKER_NAME%",
+        "install_url": "https://eu.lproute.com/lpminer-tensorcash/lpminer-1.2.4.tar.gz",
+        "user_config": "--algo tensorcash --pool %URL% --wallet %WAL% --worker %WORKER_NAME% --password x"
+      }
+    }
   }
 ]
