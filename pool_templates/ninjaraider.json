@@ -1,7 +1,7 @@
 [
     {
         "pool": {
-            "name": "ninjaraider",
+            "name": "NinjaRaider",
             "url": "https://ninjaraider.com"
         }
     },
@@ -48,6 +48,31 @@
                 "pass": "x",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "EXFER",
+        "servers": [
+        {
+            "geo": "Europe",
+            "urls": [
+                "ninjaraider.com:44912"
+            ]
+        },
+        {
+            "geo": "Europe SOLO",
+            "urls": [
+                "ninjaraider.com:44914"
+            ]
+        }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "argon2id_exfer",
+                "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
