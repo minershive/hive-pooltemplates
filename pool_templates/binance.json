@@ -164,5 +164,46 @@
         "miners": {
             "_prototype": "miners_kawpow"
         }
+    },
+    {
+        "coin": "ETHW",
+        "servers": [
+        {
+            "geo": "AUTO (port 1800)",
+            "urls": [
+                "ethw.poolbinance.com:1800"
+            ]
+        },
+        {
+            "geo": "AUTO (port 3333)",
+            "urls": [
+                "ethw.poolbinance.com:3333"
+            ]
+        },
+        {
+            "geo": "AUTO (port 8888)",
+            "urls": [
+                "ethw.poolbinance.com:8888"
+            ]
+        },
+        {
+            "geo": "AUTO (port HTTPS)",
+            "urls": [
+                "ethw.poolbinance.com:443"
+            ]
+        },
+        {
+            "geo": "AUTO (port SMTP)",
+            "urls": [
+                "ethw.poolbinance.com:25"
+            ]
+        }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash",
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
+            }
+        }
     }
 ]
