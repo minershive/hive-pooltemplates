@@ -1,0 +1,33 @@
+[
+    {
+        "pool": {
+            "name": "SoloBCH",
+            "url": "https://pool.solobch.com",
+            "fee": 1.5,
+            "type": "SOLO"
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "mining-eu.solobch.com:5555"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "mining-us.solobch.com:5555"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

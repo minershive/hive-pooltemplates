@@ -1,0 +1,33 @@
+[
+    {
+        "pool": {
+            "name": "LetsMine.it",
+            "url": "https://letsmine.it",
+            "fee": 1,
+            "type": "SOLO, PROP"
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "SOLO",
+                "urls": [
+                    "gb1.letsmine.it:3334"
+                ]
+            },
+            {
+                "geo": "PROP",
+                "urls": [
+                    "gb1.letsmine.it:3434"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "pool": {
+            "name": "mkpool",
+            "url": "https://mkpool.com",
+            "fee": 2,
+            "type": "SOLO"
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "Anycast, vardiff",
+                "urls": [
+                    "bch.mkpool.com:3343"
+                ]
+            },
+            {
+                "geo": "Anycast, fixed 1M",
+                "urls": [
+                    "bch.mkpool.com:3347"
+                ]
+            },
+            {
+                "geo": "Anycast, fixed 10M",
+                "urls": [
+                    "bch.mkpool.com:3348"
+                ]
+            },
+            {
+                "geo": "Anycast, fixed 50M",
+                "urls": [
+                    "bch.mkpool.com:3349"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
