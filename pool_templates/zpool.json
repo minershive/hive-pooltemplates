@@ -1409,5 +1409,74 @@
         "template": "%WAL%"
       }
     }
+  },
+  {
+    "coin": "Zpool-kawpow",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "kawpow.eu.mine.zpool.ca:1325"
+        ],
+        "ssl_urls": [
+          "kawpow.eu.mine.zpool.ca:51325"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "kawpow.na.mine.zpool.ca:1325"
+        ],
+        "ssl_urls": [
+          "kawpow.na.mine.zpool.ca:51325"
+        ]
+      }
+    ],
+    "miners": {
+      "t-rex": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "gminer": {
+        "algo": "kawpow",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "teamredminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "user_config": "--disable-cpu"
+      },
+      "rigel": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
+    }
   }
 ]
