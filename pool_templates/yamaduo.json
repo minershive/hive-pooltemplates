@@ -1,0 +1,32 @@
+[
+    {
+        "pool": {
+            "name": "G-Pools",
+            "url": "https://pool.yamaduo.no",
+            "fee": 2.5,
+            "type": "PPLNS / SOLO"
+        }
+    },
+    {
+        "coin": "CSD",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "pool.yamaduo.no:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "sha256d",
+                "pass": "x",
+                "miner": "csdpool",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "https://github.com/dangraagu/CSD-Mining-pool-public/releases/latest/download/csdpool.tar.gz",
+                "user_config": "--backend cuda --address %WAL%"
+            }
+        }
+    }
+]
