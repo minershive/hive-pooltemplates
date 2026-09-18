@@ -1,0 +1,61 @@
+[
+    {
+        "pool": {
+            "name": "QuanPool",
+            "url": "https://quanpool.com",
+            "fee": 1,
+            "type": "PPLNS / SOLO"
+        }
+    },
+    {
+        "coin": "QUAN",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "global.quanpool.com:9834"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "asia.quanpool.com:9834"
+                ]
+            },
+            {
+                "geo": "America",
+                "urls": [
+                    "us.quanpool.com:9834"
+                ]
+            },
+            {
+                "geo": "Global SOLO",
+                "urls": [
+                    "global.quanpool.com:9844"
+                ]
+            },
+            {
+                "geo": "Asia SOLO",
+                "urls": [
+                    "asia.quanpool.com:9844"
+                ]
+            },
+            {
+                "geo": "America SOLO",
+                "urls": [
+                    "us.quanpool.com:9844"
+                ]
+            }
+        ],
+        "miners": {
+            "custom": {
+                "url": "%URL%",
+                "pass": "x",
+                "miner": "quanpool-hive",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "https://download.quanpool.com/quanpool-hive.tar.gz",
+                "user_config": "--tls-cert-sha256 87dc37af6096a3ddc860b94368ca087775f3ad3e0c4e9bcff3b07ea08d8abef6"
+            }
+        }
+    }
+]
