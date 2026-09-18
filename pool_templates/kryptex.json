@@ -7,7 +7,6 @@
             "type": "PPS+, PROP, SOLO"
         }
     },
-
     {
         "coin": "ETHW",
         "servers": [
@@ -61,7 +60,6 @@
             "_prototype": "miners_ethash"
         }
     },
-
     {
         "coin": "ETC",
         "servers": [
@@ -115,7 +113,6 @@
             "_prototype": "miners_etchash"
         }
     },
-
     {
         "coin": "RVN",
         "servers": [
@@ -169,7 +166,6 @@
             "_prototype": "miners_kawpow"
         }
     },
-
     {
         "coin": "ERG",
         "servers": [
@@ -223,7 +219,6 @@
             "_prototype": "miners_autolykos2"
         }
     },
-
     {
         "coin": "XMR",
         "servers": [
@@ -277,7 +272,6 @@
             "_prototype": "miners_randomx"
         }
     },
-
     {
         "coin": "ZEPH",
         "servers": [
@@ -331,7 +325,6 @@
             "_prototype": "miners_randomx"
         }
     },
-
     {
         "coin": "SAL",
         "servers": [
@@ -385,12 +378,11 @@
             "_prototype": "miners_randomx"
         }
     },
-
     {
-        "coin": "XTM",
+        "coin": "XTM-sha3x",
         "servers": [
             {
-                "geo": "Global SHA3X",
+                "geo": "Global",
                 "urls": [
                     "xtm-sha3x.kryptex.network:7039"
                 ],
@@ -399,25 +391,7 @@
                 ]
             },
             {
-                "geo": "Global C29",
-                "urls": [
-                    "xtm-c29.kryptex.network:7040"
-                ],
-                "ssl_urls": [
-                    "xtm-c29.kryptex.network:8040"
-                ]
-            },
-            {
-                "geo": "Global RX",
-                "urls": [
-                    "xtm-rx.kryptex.network:7038"
-                ],
-                "ssl_urls": [
-                    "xtm-rx.kryptex.network:7038"
-                ]
-            },
-            {
-                "geo": "EU SHA3X",
+                "geo": "EU",
                 "urls": [
                     "xtm-sha3x-eu.kryptex.network:7039"
                 ],
@@ -426,25 +400,7 @@
                 ]
             },
             {
-                "geo": "EU C29",
-                "urls": [
-                    "xtm-c29-eu.kryptex.network:7040"
-                ],
-                "ssl_urls": [
-                    "xtm-c29-eu.kryptex.network:8040"
-                ]
-            },
-            {
-                "geo": "EU RX",
-                "urls": [
-                    "xtm-rx-eu.kryptex.network:7038"
-                ],
-                "ssl_urls": [
-                    "xtm-rx-eu.kryptex.network:7038"
-                ]
-            },
-            {
-                "geo": "USA SHA3X",
+                "geo": "USA",
                 "urls": [
                     "xtm-sha3x-us.kryptex.network:7039"
                 ],
@@ -453,25 +409,7 @@
                 ]
             },
             {
-                "geo": "USA C29",
-                "urls": [
-                    "xtm-c29-us.kryptex.network:7040"
-                ],
-                "ssl_urls": [
-                    "xtm-c29-us.kryptex.network:8040"
-                ]
-            },
-            {
-                "geo": "USA RX",
-                "urls": [
-                    "xtm-rx-us.kryptex.network:7038"
-                ],
-                "ssl_urls": [
-                    "xtm-rx-us.kryptex.network:7038"
-                ]
-            },
-            {
-                "geo": "Asia SHA3X",
+                "geo": "Asia",
                 "urls": [
                     "xtm-sha3x-sg.kryptex.network:7039"
                 ],
@@ -480,43 +418,7 @@
                 ]
             },
             {
-                "geo": "Asia C29",
-                "urls": [
-                    "xtm-c29-sg.kryptex.network:7040"
-                ],
-                "ssl_urls": [
-                    "xtm-c29-sg.kryptex.network:8040"
-                ]
-            },
-            {
-                "geo": "Asia RX",
-                "urls": [
-                    "xtm-rx-sg.kryptex.network:7038"
-                ],
-                "ssl_urls": [
-                    "xtm-rx-sg.kryptex.network:7038"
-                ]
-            },
-            {
-                "geo": "RU C29",
-                "urls": [
-                    "xtm-c29-ru.kryptex.network:7040"
-                ],
-                "ssl_urls": [
-                    "xtm-c29-ru.kryptex.network:8040"
-                ]
-            },
-            {
-                "geo": "RU RX",
-                "urls": [
-                    "xtm-rx-ru.kryptex.network:7038"
-                ],
-                "ssl_urls": [
-                    "xtm-rx-ru.kryptex.network:7038"
-                ]
-            },
-            {
-                "geo": "RU SHA3X",
+                "geo": "RU",
                 "urls": [
                     "xtm-sha3x-ru.kryptex.network:7039"
                 ],
@@ -526,34 +428,153 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_sha3x",
-            "lolminer": {
-                "algo": "CR29",
+            "srbminer": {
                 "url": "%URL%",
+                "algo": "sha3x",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "-a CR29"
+                "user_config": "--disable-cpu"
             },
-            "srbminer": {
-                "algo": "randomx",
+            "lolminer": {
                 "url": "%URL%",
+                "algo": "SHA3X",
+                "dalgo": "SHA3XDUAL",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "rigel": {
+                "url": "%URL%",
+                "algo": "sha3x",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XTM-cuckaroo29",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "xtm-c29.kryptex.network:7040"
+                ],
+                "ssl_urls": [
+                    "xtm-c29.kryptex.network:8040"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "xtm-c29-eu.kryptex.network:7040"
+                ],
+                "ssl_urls": [
+                    "xtm-c29-eu.kryptex.network:8040"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "xtm-c29-us.kryptex.network:7040"
+                ],
+                "ssl_urls": [
+                    "xtm-c29-us.kryptex.network:8040"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "xtm-c29-sg.kryptex.network:7040"
+                ],
+                "ssl_urls": [
+                    "xtm-c29-sg.kryptex.network:8040"
+                ]
+            },
+            {
+                "geo": "RU",
+                "urls": [
+                    "xtm-c29-ru.kryptex.network:7040"
+                ],
+                "ssl_urls": [
+                    "xtm-c29-ru.kryptex.network:8040"
+                ]
+            }
+        ],
+        "miners": {
+            "lolminer": {
+                "url": "%URL%",
+                "algo": "CR29",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XTM-randomx",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "xtm-rx.kryptex.network:7038"
+                ],
+                "ssl_urls": [
+                    "xtm-rx.kryptex.network:7038"
+                ]
+            },
+            {
+                "geo": "EU",
+                "urls": [
+                    "xtm-rx-eu.kryptex.network:7038"
+                ],
+                "ssl_urls": [
+                    "xtm-rx-eu.kryptex.network:7038"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "xtm-rx-us.kryptex.network:7038"
+                ],
+                "ssl_urls": [
+                    "xtm-rx-us.kryptex.network:7038"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "xtm-rx-sg.kryptex.network:7038"
+                ],
+                "ssl_urls": [
+                    "xtm-rx-sg.kryptex.network:7038"
+                ]
+            },
+            {
+                "geo": "RU",
+                "urls": [
+                    "xtm-rx-ru.kryptex.network:7038"
+                ],
+                "ssl_urls": [
+                    "xtm-rx-ru.kryptex.network:7038"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "randomx",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "--send-stales true"
             },
             "xmrig-new": {
-                "algo": "rx/0",
+                "cpu": "1",
                 "fork": "xmrig",
                 "url": "%URL%",
+                "algo": "rx/0",
                 "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "cpu":"1",
-                "hugepages": "1248",
-                "cpu_config": "\"cpu\": {\n  \"huge-pages\": true,\n  \"hw-aes\": null,\n  \"priority\": null,\n  \"memory-pool\": false,\n  \"asm\": true\n}"
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
-
     {
         "coin": "KAS",
         "servers": [
@@ -669,7 +690,6 @@
             "_prototype": "miners_nexapow"
         }
     },
-
     {
         "coin": "IRON",
         "servers": [
@@ -723,7 +743,6 @@
             "_prototype": "miners_fishhash"
         }
     },
-
     {
         "coin": "XNA",
         "servers": [
@@ -777,7 +796,6 @@
             "_prototype": "miners_kawpow"
         }
     },
-
     {
         "coin": "CFX",
         "servers": [
@@ -831,7 +849,6 @@
             "_prototype": "miners_octopus"
         }
     },
-
     {
         "coin": "ALPH",
         "servers": [
@@ -894,7 +911,6 @@
             "_prototype": "miners_alephium"
         }
     },
-
     {
         "coin": "XEL",
         "servers": [
@@ -948,7 +964,6 @@
             "_prototype": "miners_xelishashv3"
         }
     },
-
     {
         "coin": "OCTA",
         "servers": [
@@ -1002,7 +1017,6 @@
             "_prototype": "miners_ethash"
         }
     },
-
     {
         "coin": "RXD",
         "servers": [
@@ -1065,7 +1079,6 @@
             "_prototype": "miners_radiant"
         }
     },
-
     {
         "coin": "QUAI",
         "servers": [
@@ -1138,27 +1151,27 @@
                 "template": "%WAL%.%WORKER_NAME%",
                 "user_config": ""
             },
-            "nbminer":{
-                "url":"%URL%",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%",
-                "algo":"kawpow"
+            "nbminer": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "algo": "kawpow"
             },
-            "gminer":{
-                "algo":"kawpow",
-                "server":"%URL_HOST%",
-                "port":"%URL_PORT%",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%"
+            "gminer": {
+                "algo": "kawpow",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "teamredminer": {
-                "url": "stratum+tcp:\/\/%URL%",
+                "url": "stratum+tcp://%URL%",
                 "algo": "kawpow",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "wildrig-multi": {
-                "url": "stratum+tcp:\/\/%URL%",
+                "url": "stratum+tcp://%URL%",
                 "algo": "kawpow",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%",
@@ -1172,7 +1185,6 @@
             }
         }
     },
-
     {
         "coin": "BTC",
         "servers": [
@@ -1214,7 +1226,6 @@
             }
         }
     },
-
     {
         "coin": "BCH",
         "servers": [
@@ -1256,7 +1267,6 @@
             }
         }
     },
-
     {
         "coin": "FB",
         "servers": [
@@ -1298,7 +1308,6 @@
             }
         }
     },
-
     {
         "coin": "XEC",
         "servers": [
@@ -1340,7 +1349,6 @@
             }
         }
     },
-
     {
         "coin": "DGB-sha256",
         "servers": [
@@ -1382,7 +1390,6 @@
             }
         }
     },
-
     {
         "coin": "BC2",
         "servers": [
@@ -1424,7 +1431,6 @@
             }
         }
     },
-
     {
         "coin": "ZEC",
         "servers": [
@@ -1466,7 +1472,6 @@
             }
         }
     },
-
     {
         "coin": "LTC",
         "servers": [
@@ -1508,7 +1513,6 @@
             }
         }
     },
-
     {
         "coin": "PRL",
         "servers": [

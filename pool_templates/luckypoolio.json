@@ -116,7 +116,7 @@
     }
   },
   {
-    "coin": "XTM",
+    "coin": "XTM-sha3x",
     "servers": [
       {
         "geo": "France",
@@ -175,6 +175,86 @@
         "url": "%URL%",
         "algo": "SHA3X",
         "dalgo": "SHA3XDUAL",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "XTM-randomx",
+    "servers": [
+      {
+        "geo": "France",
+        "urls": [
+          "fr-tarirx.luckypool.io:9118"
+        ]
+      },
+      {
+        "geo": "Poland",
+        "urls": [
+          "pl-tarirx.luckypool.io:9118"
+        ]
+      },
+      {
+        "geo": "Canada",
+        "urls": [
+          "ca-tarirx.luckypool.io:9118"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "urls": [
+          "sg-tarirx.luckypool.io:9118"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "randomx",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--send-stales true"
+      },
+      "xmrig-new": {
+        "cpu": "1",
+        "fork": "xmrig",
+        "url": "%URL%",
+        "algo": "rx/0",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "XTM-cuckaroo29",
+    "servers": [
+      {
+        "geo": "France",
+        "urls": [
+          "taric29.luckypool.io:3111",
+          "taric29.luckypool.io:3110"
+        ]
+      },
+      {
+        "geo": "CA",
+        "urls": [
+          "taric29-ca.luckypool.io:3111",
+          "taric29-ca.luckypool.io:3110"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "urls": [
+          "taric29-sg.luckypool.io:3111",
+          "taric29-sg.luckypool.io:3110"
+        ]
+      }
+    ],
+    "miners": {
+      "lolminer": {
+        "url": "%URL%",
+        "algo": "CR29",
+        "pass": "x",
         "template": "%WAL%.%WORKER_NAME%"
       }
     }
