@@ -1,0 +1,39 @@
+[
+    {
+        "pool": {
+            "name": "PrimeTriad",
+            "url": "https://pool.primetriad.com",
+            "fee": 1.5,
+            "type": "Hybrid PPS+"
+        }
+    },
+    {
+        "coin": "FB",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "pool.primetriad.com:3334"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "eu.pool.primetriad.com:3334"
+                ]
+            },
+            {
+                "geo": "Singapore",
+                "urls": [
+                    "sg.pool.primetriad.com:3334"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

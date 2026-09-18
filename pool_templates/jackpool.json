@@ -58,5 +58,34 @@
     "miners": {
       "_prototype": "miners_kawpow"
     }
+  },
+  {
+    "coin": "FB",
+    "servers": [
+      {
+        "geo": "Low-End Hardware",
+        "urls": [
+          "jackpool.ru:5355"
+        ]
+      },
+      {
+        "geo": "Mid-Range Hardware",
+        "urls": [
+          "jackpool.ru:5356"
+        ]
+      },
+      {
+        "geo": "High-End Hardware",
+        "urls": [
+          "jackpool.ru:5357"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
   }
 ]
