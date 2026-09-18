@@ -3,7 +3,7 @@
         "pool": {
             "name": "Grinmint",
             "url": "https://grinmint.com",
-            "fee": 0,
+            "fee": 0.8,
             "type": "PPLNG"
         }
     },
@@ -11,42 +11,44 @@
         "coin": "GRIN",
         "servers": [
             {
-                "geo": "EU",
+                "geo": "Asia",
+                "urls": [
+                    "asia-east-stratum.grinmint.com:3416",
+                    "asia-east-stratum.grinmint.com:13416"
+                ],
+                "ssl_urls": [
+                    "asia-east-stratum.grinmint.com:4416"
+                ]
+            },
+            {
+                "geo": "Europe",
                 "urls": [
                     "eu-west-stratum.grinmint.com:3416",
                     "eu-west-stratum.grinmint.com:13416"
+                ],
+                "ssl_urls": [
+                    "eu-west-stratum.grinmint.com:4416"
                 ]
             },
             {
-                "geo": "US",
+                "geo": "USA",
                 "urls": [
                     "us-east-stratum.grinmint.com:3416",
                     "us-east-stratum.grinmint.com:13416"
-                ]
-            },
-            {
-                "geo": "EU (TLS)",
-                "urls": [
-                    "eu-west-stratum.grinmint.com:4416",
-                    "eu-west-stratum.grinmint.com:23416"
-                ]
-            },
-            {
-                "geo": "US (TLS)",
-                "urls": [
-                    "us-east-stratum.grinmint.com:4416",
-                    "us-east-stratum.grinmint.com:23416"
+                ],
+                "ssl_urls": [
+                    "us-east-stratum.grinmint.com:4416"
                 ]
             }
         ],
         "miners": {
             "bminer": {
-                "algo": "cuckaroo29",
+                "algo": "cuckatoo32",
                 "template": "%WAL%/%WORKER_NAME%",
                 "url": "%URL%"
             },
             "gminer": {
-                "algo": "grin29",
+                "algo": "grin32",
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
                 "template": "%WAL%/%WORKER_NAME%"
@@ -66,7 +68,18 @@
             "nbminer": {
                 "url": "%URL%",
                 "template": "%WAL%/%WORKER_NAME%",
-                "algo": "cuckaroo"
+                "algo": "cuckatoo32"
+            },
+            "lolminer": {
+                "algo": "GRIN-C32",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%/%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%/%WORKER_NAME%"
             }
         }
     }
