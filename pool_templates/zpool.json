@@ -1363,5 +1363,51 @@
                 "user_config": "--pers auto"
             }
         }
+    },
+  {
+    "coin": "Zpool-sha512256d",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "sha512256d.eu.mine.zpool.ca:3342"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "sha512256d.na.mine.zpool.ca:3342"
+        ]
+      }
+    ],
+    "miners": {
+      "lolminer": {
+        "algo": "RADIANT",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha512_256d_radiant",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "user_config": "--disable-cpu"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "sha512256d",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "gminer": {
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "algo": "radiant",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
     }
+  }
 ]
