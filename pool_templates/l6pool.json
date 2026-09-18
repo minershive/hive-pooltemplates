@@ -27,5 +27,37 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "LTC",
+        "servers": [
+            {
+                "geo": "Global 1",
+                "urls": [
+                    "ltc.l6pool.com:2520"
+                ],
+                "ssl_urls": [
+                    "ltc.l6pool.com:2522"
+                ]
+            },
+            {
+                "geo": "Hong Kong",
+                "urls": [
+                    "ltc.l6pool.com:2521"
+                ]
+            },
+            {
+                "geo": "EU (TLS)",
+                "ssl_urls": [
+                    "ltc.l6pool.com:2523"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
