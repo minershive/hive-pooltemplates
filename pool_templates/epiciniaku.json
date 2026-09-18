@@ -8,7 +8,7 @@
         }
     },
     {
-        "coin": "EPIC",
+        "coin": "EPIC-randomx",
         "servers": [
             {
                 "geo": "Asia (Indonesia)",
@@ -20,12 +20,67 @@
                 ]
             },
             {
-                "geo": "Europe (Germany)",
+                "geo": "Oceania (Australia)",
                 "urls": [
-                    "de.epic.iniaku.my.id:3333"
+                    "au.epic.iniaku.my.id:3333"
                 ],
                 "ssl_urls": [
-                    "de.epic.iniaku.my.id:3334"
+                    "au.epic.iniaku.my.id:3334"
+                ]
+            },
+            {
+                "geo": "America (USA)",
+                "urls": [
+                    "us.epic.iniaku.my.id:3333"
+                ],
+                "ssl_urls": [
+                    "us.epic.iniaku.my.id:3334"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "randomepic",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "rx/epic",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "EPIC-progpow",
+        "servers": [
+            {
+                "geo": "Asia (Indonesia)",
+                "urls": [
+                    "epic.iniaku.my.id:3333"
+                ],
+                "ssl_urls": [
+                    "epic.iniaku.my.id:3334"
+                ]
+            },
+            {
+                "geo": "Oceania (Australia)",
+                "urls": [
+                    "au.epic.iniaku.my.id:3333"
+                ],
+                "ssl_urls": [
+                    "au.epic.iniaku.my.id:3334"
+                ]
+            },
+            {
+                "geo": "America (USA)",
+                "urls": [
+                    "us.epic.iniaku.my.id:3333"
+                ],
+                "ssl_urls": [
+                    "us.epic.iniaku.my.id:3334"
                 ]
             }
         ],
@@ -36,9 +91,9 @@
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             },
-            "xmrig": {
+            "tt-miner": {
                 "url": "%URL%",
-                "algo": "rx/epic",
+                "algo": "progpowepic",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
             }

@@ -1,40 +1,40 @@
 [
     {
         "pool": {
-            "name": "Epicmine",         
-            "url": "https://epicmine.io", 
-            "fee": 2,                    
-            "type": "PPLNS, SOLO"              
+            "name": "Epicmine",
+            "url": "https://epicmine.io",
+            "fee": 2.5,
+            "type": "PPLNS, SOLO"
         }
     },
     {
-        "coin": "EPIC", 
-        "servers": [ 
-            { 
+        "coin": "EPIC-randomx",
+        "servers": [
+            {
                 "geo": "Europe",
                 "urls": [
                     "de.epicmine.io:3333"
                 ],
-                "ssl_urls": [ 
-                    "de.epicmine.io:3334" 
+                "ssl_urls": [
+                    "de.epicmine.io:3334"
                 ]
             },
-            { 
+            {
                 "geo": "America",
                 "urls": [
                     "us.epicmine.io:3333"
                 ],
-                "ssl_urls": [ 
-                    "us.epicmine.io:3334" 
+                "ssl_urls": [
+                    "us.epicmine.io:3334"
                 ]
             },
-            { 
+            {
                 "geo": "Asia",
                 "urls": [
                     "sg.epicmine.io:3333"
                 ],
-                "ssl_urls": [ 
-                    "sg.epicmine.io:3334" 
+                "ssl_urls": [
+                    "sg.epicmine.io:3334"
                 ]
             }
         ],
@@ -42,6 +42,58 @@
             "srbminer": {
                 "url": "%URL%",
                 "algo": "randomepic",
+                "pass": "m=pool",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "rx/epic",
+                "pass": "m=pool",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "EPIC-progpow",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "de.epicmine.io:3333"
+                ],
+                "ssl_urls": [
+                    "de.epicmine.io:3334"
+                ]
+            },
+            {
+                "geo": "America",
+                "urls": [
+                    "us.epicmine.io:3333"
+                ],
+                "ssl_urls": [
+                    "us.epicmine.io:3334"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "sg.epicmine.io:3333"
+                ],
+                "ssl_urls": [
+                    "sg.epicmine.io:3334"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "progpow_epic",
+                "pass": "m=pool",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "tt-miner": {
+                "url": "%URL%",
+                "algo": "progpowepic",
                 "pass": "m=pool",
                 "template": "%WAL%.%WORKER_NAME%"
             }
