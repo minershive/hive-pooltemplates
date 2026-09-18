@@ -314,5 +314,30 @@
         "miners": {
             "_prototype": "miners_randomx_worker"
         }
+    },
+    {
+        "coin": "SCASH",
+        "servers": [
+            {
+                "geo": "Switzerland CPU",
+                "urls": [
+                    "pool.tazmining.ch:7781"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "randomscash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"algo\": \"rx/scash\""
+            }
+        }
     }
 ]
