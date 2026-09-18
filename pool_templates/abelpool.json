@@ -1,0 +1,35 @@
+[
+    {
+        "pool": {
+            "name": "AbelPool",
+            "url": "https://www.abelpool.io",
+            "fee": 1,
+            "type": "PROP"
+        }
+    },
+    {
+        "coin": "ABEL",
+        "servers": [
+            {
+                "geo": "Global",
+                "ssl_urls": [
+                    "global-service.abelpool.io:27778"
+                ]
+            }
+        ],
+        "miners": {
+            "rigel": {
+                "url": "stratum+ssl://%URL%",
+                "algo": "abelian",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "stratum+ssl://%URL%",
+                "algo": "abel",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
