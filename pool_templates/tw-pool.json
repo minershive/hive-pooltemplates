@@ -3,6 +3,7 @@
         "pool": {
             "name": "tw-pool",
             "url": "https://www.tw-pool.com",
+            "fee": 0.75,
             "type": "PPLNS"
         }
     },
@@ -51,51 +52,38 @@
         }
     },
     {
-        "coin": "KLS",
+        "coin": "KAS",
         "servers": [
             {
-                "geo": "AUTO",
+                "geo": "AUTO 0-2T",
                 "urls": [
-                    "kls.tw-pool.com:11001"
+                    "kas.tw-pool.com:10005"
                 ],
                 "ssl_urls": [
-                    "kls.tw-pool.com:11001"
+                    "kas.tw-pool.com:10005"
+                ]
+            },
+            {
+                "geo": "AUTO 5-10T",
+                "urls": [
+                    "kas.tw-pool.com:10006"
+                ],
+                "ssl_urls": [
+                    "kas.tw-pool.com:10006"
+                ]
+            },
+            {
+                "geo": "AUTO 10-21T",
+                "urls": [
+                    "kas.tw-pool.com:10007"
+                ],
+                "ssl_urls": [
+                    "kas.tw-pool.com:10007"
                 ]
             }
         ],
         "miners": {
-            "_prototype": "miners_karlsenhashv2"
+            "_prototype": "miners_kaspa"
         }
-    },
-    {
-        "coin": "PYI",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "pyi.tw-pool.com:12001"
-                ],
-                "ssl_urls": [
-                    "pyi.tw-pool.com:12001"
-                ]
-            }
-        ],
-        "miners": {
-          "_prototype": "miners_pyrinhashv2"
-        }
-      },
-    {
-        "coin": "SPR",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "spr.tw-pool.com:14001"
-                ],
-                "ssl_urls": [
-                    "spr.tw-pool.com:14001"
-                ]
-            }
-        ]
     }
 ]
