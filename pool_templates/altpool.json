@@ -5,7 +5,6 @@
             "url": "https://altpool.pro"
         }
     },
-
     {
         "coin": "ETC",
         "servers": [
@@ -13,6 +12,9 @@
                 "geo": "EU",
                 "urls": [
                     "etc.altpool.pro:3821"
+                ],
+                "ssl_urls": [
+                    "etc.altpool.pro:3822"
                 ]
             },
             {
@@ -31,6 +33,81 @@
                 "server": "stratum1+tcp://%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
             }
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "rvn.altpool.pro:7861"
+                ]
+            },
+            {
+                "geo": "EU KAWPOW Switcher",
+                "urls": [
+                    "rvn.altpool.pro:5100"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "solo-rvn.altpool.pro:7863"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "ALPH",
+        "servers": [
+            {
+                "geo": "EU 549G",
+                "urls": [
+                    "alph.altpool.pro:1220"
+                ]
+            },
+            {
+                "geo": "EU 8.8T",
+                "urls": [
+                    "alph.altpool.pro:1221"
+                ]
+            },
+            {
+                "geo": "EU 17.6T",
+                "urls": [
+                    "alph.altpool.pro:1222"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_alephium"
+        }
+    },
+    {
+        "coin": "QUAI",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "quai.altpool.pro:3344"
+                ],
+                "ssl_urls": [
+                    "quai.altpool.pro:3345"
+                ]
+            },
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "quai.altpool.pro:3354"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
         }
     }
 ]
