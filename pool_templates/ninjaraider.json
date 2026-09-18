@@ -76,5 +76,64 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "BTX",
+        "servers": [
+        {
+            "geo": "Europe",
+            "urls": [
+                "btx.ninjaraider.com:44950",
+                "btx.ninjaraider.com:44951"
+            ]
+        }
+        ],
+        "miners": {
+            "peakminer": {
+                "url": "%URL%",
+                "algo": "btx",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "pass": "x"
+            },
+            "forgeminer": {
+                "url": "%URL%",
+                "algo": "btx",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "pass": "x"
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "btx",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "pass": "x"
+            }
+        }
+    },
+    {
+        "coin": "NUMN",
+        "servers": [
+        {
+            "geo": "Europe",
+            "urls": [
+                "numen.ninjaraider.com:44960"
+            ],
+            "ssl_urls": [
+                "numen.ninjaraider.com:44961"
+            ]
+        }
+        ],
+        "miners": {
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "poscan",
+                "pass": "x",
+                "miner": "numen",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "https://github.com/numen-network/numen/releases/download/v1.0.0/numen-linux-x86_64.tar.gz"
+            }
+        }
     }
 ]
