@@ -1286,5 +1286,52 @@
         "template": "%WAL%"
       }
     }
+  },
+  {
+    "coin": "Zpool-ghostrider",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "ghostrider.eu.mine.zpool.ca:5354"
+        ],
+        "ssl_urls": [
+          "ghostrider.eu.mine.zpool.ca:55354"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "ghostrider.na.mine.zpool.ca:5354"
+        ],
+        "ssl_urls": [
+          "ghostrider.na.mine.zpool.ca:55354"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "gr",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
+    }
   }
 ]
