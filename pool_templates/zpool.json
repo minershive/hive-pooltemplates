@@ -1372,5 +1372,49 @@
         "user_config": "--disable-gpu"
       }
     }
+  },
+  {
+    "coin": "Zpool-verushash",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "verushash.eu.mine.zpool.ca:6143"
+        ],
+        "ssl_urls": [
+          "verushash.eu.mine.zpool.ca:56143"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "verushash.na.mine.zpool.ca:6143"
+        ],
+        "ssl_urls": [
+          "verushash.na.mine.zpool.ca:56143"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccuser": "%WAL%",
+        "ccalgo": "verus",
+        "ccpass": "c=BTC",
+        "fork": "verus"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "verushash",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "hellminer": {
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
+    }
   }
 ]
