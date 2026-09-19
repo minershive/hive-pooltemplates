@@ -1333,5 +1333,44 @@
         "template": "%WAL%"
       }
     }
+  },
+  {
+    "coin": "Zpool-minotaurx",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "minotaurx.eu.mine.zpool.ca:7019"
+        ],
+        "ssl_urls": [
+          "minotaurx.eu.mine.zpool.ca:57019"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "minotaurx.na.mine.zpool.ca:7019"
+        ],
+        "ssl_urls": [
+          "minotaurx.na.mine.zpool.ca:57019"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "minotaurx",
+        "fork": "rplant",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "minotaurx",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "user_config": "--disable-gpu"
+      }
+    }
   }
 ]
