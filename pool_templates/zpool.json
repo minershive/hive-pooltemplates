@@ -1619,5 +1619,36 @@
         "user_config": "--disable-gpu"
       }
     }
+  },
+  {
+    "coin": "Zpool-skydoge",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "skydoge.eu.mine.zpool.ca:7091"
+        ],
+        "ssl_urls": [
+          "skydoge.eu.mine.zpool.ca:57091"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "skydoge.na.mine.zpool.ca:7091"
+        ],
+        "ssl_urls": [
+          "skydoge.na.mine.zpool.ca:57091"
+        ]
+      }
+    ],
+    "miners": {
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "skydoge",
+        "pass": "%WORKER_NAME%,c=BTC",
+        "template": "%WAL%"
+      }
+    }
   }
 ]
