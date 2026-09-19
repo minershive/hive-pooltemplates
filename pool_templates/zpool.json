@@ -1488,5 +1488,45 @@
         "template": "%WAL%"
       }
     }
+  },
+  {
+    "coin": "Zpool-flex",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "flex.eu.mine.zpool.ca:3340"
+        ],
+        "ssl_urls": [
+          "flex.eu.mine.zpool.ca:53340"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "flex.na.mine.zpool.ca:3340"
+        ],
+        "ssl_urls": [
+          "flex.na.mine.zpool.ca:53340"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "flex",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "user_config": "--disable-gpu"
+      },
+      "xmrig-new": {
+        "cpu": "1",
+        "fork": "xmrig",
+        "url": "%URL%",
+        "algo": "flex",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
+    }
   }
 ]
