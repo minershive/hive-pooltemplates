@@ -1416,5 +1416,47 @@
         "template": "%WAL%"
       }
     }
+  },
+  {
+    "coin": "Zpool-x11",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "x11.eu.mine.zpool.ca:3533"
+        ],
+        "ssl_urls": [
+          "x11.eu.mine.zpool.ca:53533"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "x11.na.mine.zpool.ca:3533"
+        ],
+        "ssl_urls": [
+          "x11.na.mine.zpool.ca:53533"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccuser": "%WAL%",
+        "ccalgo": "x11",
+        "ccpass": "c=BTC"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "x11",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
+    }
   }
 ]
