@@ -111,5 +111,34 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "XEC",
+        "servers": [
+            {
+                "geo": "Anycast, vardiff",
+                "urls": [
+                    "xec.mkpool.com:3393"
+                ]
+            },
+            {
+                "geo": "Anycast, fixed 1M",
+                "urls": [
+                    "xec.mkpool.com:3396"
+                ]
+            },
+            {
+                "geo": "Anycast, fixed 10M",
+                "urls": [
+                    "xec.mkpool.com:3397"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
