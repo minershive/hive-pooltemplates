@@ -76,5 +76,40 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "ZEC",
+        "servers": [
+            {
+                "geo": "Anycast, vardiff",
+                "urls": [
+                    "zec.mkpool.com:3403"
+                ]
+            },
+            {
+                "geo": "Anycast, fixed 524K",
+                "urls": [
+                    "zec.mkpool.com:3407"
+                ]
+            },
+            {
+                "geo": "Anycast, fixed 2M",
+                "urls": [
+                    "zec.mkpool.com:3408"
+                ]
+            },
+            {
+                "geo": "Anycast, fixed 8M",
+                "urls": [
+                    "zec.mkpool.com:3409"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]

@@ -1,0 +1,31 @@
+[
+    {
+        "pool": {
+            "name": "ZecMiningPool",
+            "url": "https://pool.zecminingpool.com",
+            "fee": 0.1,
+            "type": "PPS"
+        }
+    },
+    {
+        "coin": "ZEC",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "pool.zecminingpool.com:3333",
+                    "pool.zecminingpool.com:3334",
+                    "pool.zecminingpool.com:3335",
+                    "pool.zecminingpool.com:3336",
+                    "pool.zecminingpool.com:3337"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
