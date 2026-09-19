@@ -32,5 +32,31 @@
                 "user_config": "--disable-gpu"
             }
         }
+    },
+    {
+        "coin": "YTN",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "stratum.poolab.org:8448"
+                ]
+            }
+        ],
+        "miners": {
+            "cpuminer-opt": {
+                "url": "%URL%",
+                "algo": "yespowerR16",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "yespowerr16",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-gpu"
+            }
+        }
     }
 ]
