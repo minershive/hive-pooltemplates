@@ -116,5 +116,34 @@
         "miners": {
             "_prototype": "miners_radiant"
         }
+    },
+    {
+        "coin": "ALEO",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "aleo.eu1.whalepool.com:42343"
+                ]
+            },
+            {
+                "geo": "USA",
+                "urls": [
+                    "aleo.us1.whalepool.com:42343"
+                ]
+            },
+            {
+                "geo": "Asia",
+                "urls": [
+                    "aleo.asia1.whalepool.com:42343"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]

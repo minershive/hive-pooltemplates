@@ -316,5 +316,34 @@
         "miners": {
             "_prototype": "miners_alephium"
         }
+    },
+    {
+        "coin": "ALEO",
+        "servers": [
+            {
+                "geo": "IceRiver ASIC",
+                "urls": [
+                    "aleo.f2pool.com:4400"
+                ]
+            },
+            {
+                "geo": "Goldshell ASIC",
+                "urls": [
+                    "aleo.f2pool.com:4430"
+                ]
+            },
+            {
+                "geo": "Global TLS",
+                "ssl_urls": [
+                    "aleo.f2pool.com:4420"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
