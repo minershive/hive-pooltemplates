@@ -240,5 +240,40 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "CKB",
+        "servers": [
+            {
+                "geo": "AUTO (port 1800)",
+                "urls": [
+                    "ckb.poolbinance.com:1800"
+                ]
+            },
+            {
+                "geo": "AUTO (port 3333)",
+                "urls": [
+                    "ckb.poolbinance.com:3333"
+                ]
+            },
+            {
+                "geo": "AUTO (port 8888)",
+                "urls": [
+                    "ckb.poolbinance.com:8888"
+                ]
+            },
+            {
+                "geo": "AUTO (port HTTPS)",
+                "urls": [
+                    "ckb.poolbinance.com:443"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]
