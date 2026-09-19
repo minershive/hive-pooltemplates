@@ -1,0 +1,33 @@
+[
+    {
+        "pool": {
+            "name": "SoloPool.site",
+            "url": "https://solopool.site",
+            "fee": 2,
+            "type": "SOLO, L-PROP"
+        }
+    },
+    {
+        "coin": "PPC",
+        "servers": [
+            {
+                "geo": "L-PROP",
+                "urls": [
+                    "solopool.site:4347"
+                ]
+            },
+            {
+                "geo": "SOLO",
+                "urls": [
+                    "solopool.site:5347"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
