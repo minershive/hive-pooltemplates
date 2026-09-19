@@ -1,0 +1,78 @@
+[
+    {
+        "pool": {
+            "name": "ArgfaMining PROP",
+            "url": "https://argfamining.com",
+            "fee": 2,
+            "type": "PROP"
+        }
+    },
+    {
+        "coin": "BC3",
+        "servers": [
+            {
+                "geo": "LATAM Venezuela CPU",
+                "urls": [
+                    "stratum.argfamining.com:24053"
+                ]
+            },
+            {
+                "geo": "LATAM Venezuela GPU",
+                "urls": [
+                    "stratum.argfamining.com:24153"
+                ]
+            },
+            {
+                "geo": "USA Virginia CPU",
+                "urls": [
+                    "stratum-us.argfamining.com:24053"
+                ]
+            },
+            {
+                "geo": "USA Virginia GPU",
+                "urls": [
+                    "stratum-us.argfamining.com:24153"
+                ]
+            },
+            {
+                "geo": "EU Frankfurt CPU",
+                "urls": [
+                    "stratum-eu.argfamining.com:24053"
+                ]
+            },
+            {
+                "geo": "EU Frankfurt GPU",
+                "urls": [
+                    "stratum-eu.argfamining.com:24153"
+                ]
+            },
+            {
+                "geo": "India Mumbai CPU",
+                "urls": [
+                    "stratum-in.argfamining.com:24053"
+                ]
+            },
+            {
+                "geo": "India Mumbai GPU",
+                "urls": [
+                    "stratum-in.argfamining.com:24153"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "sha3t",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "x",
+                "miner": "argfamining-bc3-gpu-v5.5.2",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "https://argfamining.com/downloads/bc3-gpu/v5.5.2/argfamining-bc3-gpu-v5.5.2-hiveos.tar.gz"
+            }
+        }
+    }
+]
