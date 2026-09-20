@@ -1,5 +1,11 @@
 [
     {
+        "pool": {
+            "name": "AntPool",
+            "url": "https://www.antpool.com"
+        }
+    },
+    {
         "coin": "BTC",
         "servers": [
             {
@@ -140,24 +146,6 @@
         }
     },
     {
-        "coin": "SC",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "bwsc.bw.com:5555"
-                ]
-            }
-        ],
-        "miners": {
-            "claymore": {
-                "dcri": "15",
-                "dcoin": "sia",
-                "dpools_tpl": "POOL: %URL%, WALLET: %WAL%, WORKER: %WORKER_NAME%, PSW: x"
-            }
-        }
-    },
-    {
         "coin": "XMC",
         "servers": [
             {
@@ -183,24 +171,6 @@
             "claymore-x": {
                 "xpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%, PSW: x"
             },
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "BTM",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "stratum-btm.antpool.com:6666",
-                    "stratum-btm.antpool.com:443"
-                ]
-            }
-        ],
-        "miners": {
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"

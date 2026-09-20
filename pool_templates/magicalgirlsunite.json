@@ -1,0 +1,38 @@
+[
+    {
+        "pool": {
+            "name": "Magical Girls Unite",
+            "url": "https://magicalgirlsunite.moe",
+            "fee": 0.01,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "SCASH",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "magicalgirlsunite.moe:3094"
+                ],
+                "ssl_urls": [
+                    "magicalgirlsunite.moe:3095"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "randomscash",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "\"algo\": \"rx/scash\""
+            }
+        }
+    }
+]

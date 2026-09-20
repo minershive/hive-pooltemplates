@@ -1,0 +1,33 @@
+[
+    {
+        "pool": {
+            "name": "bitcoincash.ee",
+            "url": "https://bitcoincash.ee",
+            "fee": 2,
+            "type": "PROP, Bonus"
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "mainnet.bitcoincash.ee:3333"
+                ]
+            },
+            {
+                "geo": "High diff / rentals",
+                "urls": [
+                    "mainnet.bitcoincash.ee:3334"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

@@ -1,5 +1,11 @@
 [
     {
+        "pool": {
+            "name": "DxPool",
+            "url": "https://www.dxpool.com"
+        }
+    },
+    {
         "coin": "XMR",
         "servers": [
             {
@@ -11,6 +17,37 @@
         ],
         "miners": {
             "_prototype": "miners_randomx"
+        }
+    },
+    {
+        "coin": "ALPH",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "alph.ss.dxpool.com:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_alephium"
+        }
+    },
+    {
+        "coin": "SC",
+        "servers": [
+            {
+                "geo": "China",
+                "urls": [
+                    "sc.ss.dxpool.com:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
         }
     }
 ]

@@ -1,0 +1,30 @@
+[
+    {
+        "pool": {
+            "name": "BlockForge Pool",
+            "url": "https://blockforgepool.com",
+            "fee": 1,
+            "type": "SOLO"
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "Stratum, diff tiers",
+                "urls": [
+                    "bch.blockforgepool.com:3341",
+                    "bch.blockforgepool.com:3343",
+                    "bch.blockforgepool.com:3345",
+                    "bch.blockforgepool.com:3347"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

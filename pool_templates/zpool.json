@@ -1,5 +1,11 @@
 [
     {
+        "pool": {
+            "name": "zpool",
+            "url": "https://zpool.ca"
+        }
+    },
+    {
         "coin": "Zpool-equihash",
         "servers": [
             {
@@ -390,6 +396,11 @@
             }
         ],
         "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "c=BTC",
+                "template": "%WAL%"
+            },
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%",
@@ -495,38 +506,6 @@
         }
     },
     {
-        "coin": "Zpool-aergo",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "aergo.eu.mine.zpool.ca:3691"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "aergo.na.mine.zpool.ca:3691"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "aergo",
-                "ccpass": "c=BTC"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "aergo",
-                "pass": "c=BTC",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
         "coin": "Zpool-x17",
         "servers": [
             {
@@ -584,70 +563,6 @@
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "x16s",
-                "pass": "c=BTC",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "Zpool-nist5",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "nist5.eu.mine.zpool.ca:3833"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "nist5.na.mine.zpool.ca:3833"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "nist5",
-                "ccpass": "c=BTC"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "nist5",
-                "pass": "c=BTC",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "Zpool-hsr",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "hsr.eu.mine.zpool.ca:7433"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "hsr.na.mine.zpool.ca:7433"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "hsr",
-                "ccpass": "c=BTC"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "hsr",
                 "pass": "c=BTC",
                 "template": "%WAL%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
@@ -814,38 +729,6 @@
         }
     },
     {
-        "coin": "Zpool-x11evo",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "x11evo.eu.mine.zpool.ca:3553"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "x11evo.na.mine.zpool.ca:3553"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "x11evo",
-                "ccpass": "c=BTC"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "x11evo",
-                "pass": "c=BTC",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
         "coin": "Zpool-c11",
         "servers": [
             {
@@ -958,6 +841,11 @@
             }
         ],
         "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "pass": "c=BTC",
+                "template": "%WAL%"
+            },
             "ccminer": {
                 "ccurl": "stratum+tcp://%URL%",
                 "ccuser": "%WAL%",
@@ -967,38 +855,6 @@
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "lyra2v2",
-                "pass": "c=BTC",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "Zpool-skunk",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "skunk.eu.mine.zpool.ca:8433"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "skunk.na.mine.zpool.ca:8433"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "skunk",
-                "ccpass": "c=BTC"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "skunk",
                 "pass": "c=BTC",
                 "template": "%WAL%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
@@ -1095,38 +951,6 @@
             "sgminer-gm": {
                 "url": "stratum+tcp://%URL%",
                 "algo": "tribus",
-                "pass": "c=BTC",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            }
-        }
-    },
-    {
-        "coin": "Zpool-decred",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "decred.eu.mine.zpool.ca:5744"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "decred.na.mine.zpool.ca:5744"
-                ]
-            }
-        ],
-        "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "decred",
-                "ccpass": "c=BTC"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "decred",
                 "pass": "c=BTC",
                 "template": "%WAL%",
                 "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
@@ -1246,5 +1070,585 @@
                  "template": "%WAL%.%WORKER_NAME%"
              }
         }
+    },
+    {
+        "coin": "Zpool-megabtx",
+        "servers": [
+        {
+            "geo": "Europe",
+            "urls": [
+                "megabtx.eu.mine.zpool.ca:3558"
+            ]
+        },
+        {
+            "geo": "North America",
+            "urls": [
+                "megabtx.na.mine.zpool.ca:3558"
+            ]
+        }
+        ],
+        "miners": {
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "megabtx",
+                "template": "%WAL%",
+                "pass": "c=BTC"
+            }
+        }
+    },
+    {
+        "coin": "Zpool-equihash144",
+        "servers": [
+        {
+            "geo": "Europe",
+            "urls": [
+                "equihash144.eu.mine.zpool.ca:2144"
+            ]
+        },
+        {
+            "geo": "North America",
+            "urls": [
+                "equihash144.na.mine.zpool.ca:2144"
+            ]
+        }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "144_5",
+                "fork": "zhash",
+                "zserver": "%URL_HOST%",
+                "zport": "%URL_PORT%",
+                "zpass": "c=BTC",
+                "ztemplate": "%WAL%",
+                "user_config": "pers auto"
+            },
+            "gminer": {
+                "algo": "144_5",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "c=BTC",
+                "template": "%WAL%",
+                "user_config": "--pers auto"
+            },
+            "miniz": {
+                "algo": "144,5",
+                "url": "%URL%",
+                "pass": "c=BTC",
+                "template": "%WAL%",
+                "user_config": "--pers auto"
+            }
+        }
+    },
+    {
+        "coin": "Zpool-equihash192",
+        "servers": [
+        {
+            "geo": "Europe",
+            "urls": [
+                "equihash192.eu.mine.zpool.ca:2192"
+            ]
+        },
+        {
+            "geo": "North America",
+            "urls": [
+                "equihash192.na.mine.zpool.ca:2192"
+            ]
+        }
+        ],
+        "miners": {
+            "ewbf": {
+                "algo": "192_7",
+                "fork": "zhash",
+                "zserver": "%URL_HOST%",
+                "zport": "%URL_PORT%",
+                "zpass": "c=BTC",
+                "ztemplate": "%WAL%",
+                "user_config": "pers auto"
+            },
+            "gminer": {
+                "algo": "192_7",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "c=BTC",
+                "template": "%WAL%",
+                "user_config": "--pers auto"
+            },
+            "miniz": {
+                "algo": "192,7",
+                "url": "%URL%",
+                "pass": "c=BTC",
+                "template": "%WAL%",
+                "user_config": "--pers auto"
+            }
+        }
+    },
+  {
+    "coin": "Zpool-sha512256d",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "sha512256d.eu.mine.zpool.ca:3342"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "sha512256d.na.mine.zpool.ca:3342"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "lolminer": {
+        "algo": "RADIANT",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha512_256d_radiant",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "user_config": "--disable-cpu"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "sha512256d",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "gminer": {
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "algo": "radiant",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
     }
+  },
+  {
+    "coin": "Zpool-kawpow",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "kawpow.eu.mine.zpool.ca:1325"
+        ],
+        "ssl_urls": [
+          "kawpow.eu.mine.zpool.ca:51325"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "kawpow.na.mine.zpool.ca:1325"
+        ],
+        "ssl_urls": [
+          "kawpow.na.mine.zpool.ca:51325"
+        ]
+      }
+    ],
+    "miners": {
+      "t-rex": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "nbminer": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "gminer": {
+        "algo": "kawpow",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "teamredminer": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "kawpow",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "user_config": "--disable-cpu"
+      },
+      "rigel": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
+    }
+  },
+  {
+    "coin": "Zpool-ghostrider",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "ghostrider.eu.mine.zpool.ca:5354"
+        ],
+        "ssl_urls": [
+          "ghostrider.eu.mine.zpool.ca:55354"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "ghostrider.na.mine.zpool.ca:5354"
+        ],
+        "ssl_urls": [
+          "ghostrider.na.mine.zpool.ca:55354"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "gr",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "max-temp": 0,
+        "fork": "gr"
+      },
+      "xmrig-new": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "cpu": "1",
+        "fork": "xmrig"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "ghostrider",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
+    }
+  },
+  {
+    "coin": "Zpool-minotaurx",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "minotaurx.eu.mine.zpool.ca:7019"
+        ],
+        "ssl_urls": [
+          "minotaurx.eu.mine.zpool.ca:57019"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "minotaurx.na.mine.zpool.ca:7019"
+        ],
+        "ssl_urls": [
+          "minotaurx.na.mine.zpool.ca:57019"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "minotaurx",
+        "fork": "rplant",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "minotaurx",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "user_config": "--disable-gpu"
+      }
+    }
+  },
+  {
+    "coin": "Zpool-verushash",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "verushash.eu.mine.zpool.ca:6143"
+        ],
+        "ssl_urls": [
+          "verushash.eu.mine.zpool.ca:56143"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "verushash.na.mine.zpool.ca:6143"
+        ],
+        "ssl_urls": [
+          "verushash.na.mine.zpool.ca:56143"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccuser": "%WAL%",
+        "ccalgo": "verus",
+        "ccpass": "c=BTC",
+        "fork": "verus"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "verushash",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "hellminer": {
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
+    }
+  },
+  {
+    "coin": "Zpool-x11",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "x11.eu.mine.zpool.ca:3533"
+        ],
+        "ssl_urls": [
+          "x11.eu.mine.zpool.ca:53533"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "x11.na.mine.zpool.ca:3533"
+        ],
+        "ssl_urls": [
+          "x11.na.mine.zpool.ca:53533"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccuser": "%WAL%",
+        "ccalgo": "x11",
+        "ccpass": "c=BTC"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "x11",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
+    }
+  },
+  {
+    "coin": "Zpool-sha256",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "sha256.eu.mine.zpool.ca:3333"
+        ],
+        "ssl_urls": [
+          "sha256.eu.mine.zpool.ca:53333"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "sha256.na.mine.zpool.ca:3333"
+        ],
+        "ssl_urls": [
+          "sha256.na.mine.zpool.ca:53333"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
+    }
+  },
+  {
+    "coin": "Zpool-flex",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "flex.eu.mine.zpool.ca:3340"
+        ],
+        "ssl_urls": [
+          "flex.eu.mine.zpool.ca:53340"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "flex.na.mine.zpool.ca:3340"
+        ],
+        "ssl_urls": [
+          "flex.na.mine.zpool.ca:53340"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "flex",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "user_config": "--disable-gpu"
+      },
+      "xmrig-new": {
+        "cpu": "1",
+        "fork": "xmrig",
+        "url": "%URL%",
+        "algo": "flex",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      }
+    }
+  },
+  {
+    "coin": "Zpool-yespowertide",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "yespowertide.eu.mine.zpool.ca:6239"
+        ],
+        "ssl_urls": [
+          "yespowertide.eu.mine.zpool.ca:56239"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "yespowertide.na.mine.zpool.ca:6239"
+        ],
+        "ssl_urls": [
+          "yespowertide.na.mine.zpool.ca:56239"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "%URL%",
+        "algo": "yespowerTIDE",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "yespowertide",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "user_config": "--disable-gpu"
+      }
+    }
+  },
+  {
+    "coin": "Zpool-yespowerr16",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "yespowerr16.eu.mine.zpool.ca:6534"
+        ],
+        "ssl_urls": [
+          "yespowerr16.eu.mine.zpool.ca:56534"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "yespowerr16.na.mine.zpool.ca:6534"
+        ],
+        "ssl_urls": [
+          "yespowerr16.na.mine.zpool.ca:56534"
+        ]
+      }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "%URL%",
+        "algo": "yespowerR16",
+        "pass": "c=BTC",
+        "template": "%WAL%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "yespowerr16",
+        "pass": "c=BTC",
+        "template": "%WAL%",
+        "user_config": "--disable-gpu"
+      }
+    }
+  },
+  {
+    "coin": "Zpool-skydoge",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "skydoge.eu.mine.zpool.ca:7091"
+        ],
+        "ssl_urls": [
+          "skydoge.eu.mine.zpool.ca:57091"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "skydoge.na.mine.zpool.ca:7091"
+        ],
+        "ssl_urls": [
+          "skydoge.na.mine.zpool.ca:57091"
+        ]
+      }
+    ],
+    "miners": {
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "skydoge",
+        "pass": "%WORKER_NAME%,c=BTC",
+        "template": "%WAL%"
+      }
+    }
+  }
 ]

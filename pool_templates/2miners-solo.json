@@ -617,7 +617,7 @@
         ],
         "miners": {
             "gminer": {
-                "algo": "grin29",
+                "algo": "grin32",
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -630,7 +630,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "bminer": {
-                "algo": "cuckaroo29z",
+                "algo": "cuckatoo32",
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -1130,27 +1130,9 @@
             }
         ],
         "miners": {
-            "gminer": {
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "eaglesong"
-            },
-            "nbminer": {
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "eaglesong"
-            },
-            "bminer": {
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "algo": "ckb"
-            },
-            "smine": {
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1399,5 +1381,113 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "BTC",
+        "servers": [
+            {
+                "geo": "SOLO EU",
+                "urls": [
+                    "solo-btc.2miners.com:2323"
+                ],
+                "ssl_urls": [
+                    "solo-btc.2miners.com:12323"
+                ]
+            },
+            {
+                "geo": "SOLO RU",
+                "urls": [
+                    "solo-btc.2miners.ru:2323"
+                ],
+                "ssl_urls": [
+                    "solo-btc.2miners.ru:12323"
+                ]
+            },
+            {
+                "geo": "SOLO US",
+                "urls": [
+                    "us-solo-btc.2miners.com:2323"
+                ],
+                "ssl_urls": [
+                    "us-solo-btc.2miners.com:12323"
+                ]
+            },
+            {
+                "geo": "SOLO ASIA",
+                "urls": [
+                    "asia-solo-btc.2miners.com:2323"
+                ],
+                "ssl_urls": [
+                    "asia-solo-btc.2miners.com:12323"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "MWC",
+        "servers": [
+        {
+            "geo": "SOLO EU",
+            "urls": [
+                "solo-mwc.2miners.com:8585"
+            ],
+            "ssl_urls": [
+                "solo-mwc.2miners.com:18585"
+            ]
+        },
+        {
+            "geo": "SOLO RU",
+            "urls": [
+                "solo-mwc.2miners.ru:8585"
+            ],
+            "ssl_urls": [
+                "solo-mwc.2miners.ru:18585"
+            ]
+        },
+        {
+            "geo": "SOLO US",
+            "urls": [
+                "us-solo-mwc.2miners.com:8585"
+            ],
+            "ssl_urls": [
+                "us-solo-mwc.2miners.com:18585"
+            ]
+        },
+        {
+            "geo": "SOLO ASIA",
+            "urls": [
+                "asia-solo-mwc.2miners.com:8585"
+            ],
+            "ssl_urls": [
+                "asia-solo-mwc.2miners.com:18585"
+            ]
+        }
+        ],
+            "miners": {
+                "gminer": {
+                    "algo": "grin31",
+                    "server": "%URL_HOST%",
+                    "port": "%URL_PORT%",
+                    "template": "%WAL%.%WORKER_NAME%",
+                    "pass": "x"
+                },
+                "lolminer": {
+                    "algo": "MWC-C31",
+                    "server": "%URL_HOST%",
+                    "port": "%URL_PORT%",
+                    "template": "%WAL%.%WORKER_NAME%",
+                    "pass": "x"
+                },
+                "asicminer": {
+                    "url": "stratum+tcp://%URL%",
+                    "template": "%WAL%.%WORKER_NAME%"
+                }
+            }
     }
 ]

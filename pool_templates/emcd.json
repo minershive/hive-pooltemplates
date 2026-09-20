@@ -1,5 +1,11 @@
 [
     {
+        "pool": {
+            "name": "EMCD",
+            "url": "https://emcd.io"
+        }
+    },
+    {
         "coin": "BTC",
         "servers": [
 
@@ -17,32 +23,6 @@
                 "urls": [
                     "eu.emcd.io:3339",
                     "eu2.emcd.io:3339"
-                ]
-            },
-            {
-                "geo": "Iran",
-                "urls": [
-                    "ir.emcd.io:3333",
-                    "ir.emcd.io:443"
-                ]
-            },
-            {
-                "geo": "Iran Low-Diff",
-                "urls": [
-                    "ir.emcd.io:3339"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "usa.emcd.io:3333",
-                    "usa.emcd.io:443"
-                ]
-            },
-            {
-                "geo": "USA Low-Diff",
-                "urls": [
-                    "usa.emcd.io:3339"
                 ]
             },
             {
@@ -134,12 +114,6 @@
                 ]
             },
             {
-                "geo": "Iran",
-                "urls": [
-                    "ir.emcd.io:3434"
-                ]
-            },
-            {
                 "geo": "Kyrgyzstan",
                 "urls": [
                     "kg.emcd.io:3434"
@@ -179,18 +153,6 @@
                 "geo": "China",
                 "urls": [
                     "cn.emcd.io:8888"
-                ]
-            },
-            {
-                "geo": "USA",
-                "urls": [
-                    "usa.emcd.io:8888"
-                ]
-            },
-            {
-                "geo": "Iran",
-                "urls": [
-                    "ir.emcd.io:8888"
                 ]
             },
             {
@@ -236,18 +198,6 @@
                 ]
             },
             {
-                "geo": "USA",
-                "urls": [
-                    "usa.emcd.io:5555"
-                ]
-            },
-            {
-                "geo": "Iran",
-                "urls": [
-                    "ir.emcd.io:5555"
-                ]
-            },
-            {
                 "geo": "Kyrgyzstan",
                 "urls": [
                     "kg.emcd.io:5555"
@@ -289,12 +239,6 @@
                 ]
             },
             {
-                "geo": "Iran",
-                "urls": [
-                    "ir.emcd.io:7878"
-                ]
-            },
-            {
                 "geo": "USA",
                 "urls": [
                     "us.emcd.io:7878"
@@ -308,6 +252,10 @@
             }
         ],
         "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
             "phoenixminer": {
                 "url": "POOL: %URL%, WAL: %WAL%.%WORKER_NAME%, PASS: x, COIN: %COIN%"
             },

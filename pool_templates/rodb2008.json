@@ -1,0 +1,39 @@
+[
+    {
+        "pool": {
+            "name": "Rodb2008 Pool",
+            "url": "https://pool.rodb2008.com",
+            "fee": 2,
+            "type": "SOLO"
+        }
+    },
+    {
+        "coin": "BC2",
+        "servers": [
+            {
+                "geo": "Low diff",
+                "urls": [
+                    "rodb2008.com:6180"
+                ]
+            },
+            {
+                "geo": "Mid diff",
+                "urls": [
+                    "rodb2008.com:6181"
+                ]
+            },
+            {
+                "geo": "High diff",
+                "urls": [
+                    "rodb2008.com:6182"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

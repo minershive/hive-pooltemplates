@@ -1,0 +1,160 @@
+[
+  {
+    "pool": {
+      "name": "M2Pool",
+      "url": "https://m2pool.com",
+      "fee": 1,
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "NEXA",
+    "servers": [
+      {
+        "geo": "Global",
+        "urls": [
+          "nexa.m2pool.com:33333"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_nexapow"
+    }
+  },
+  {
+    "coin": "RXD",
+    "servers": [
+      {
+        "geo": "Global",
+        "urls": [
+          "rxd.m2pool.com:33370"
+        ],
+        "ssl_urls": [
+          "rxd.m2pool.com:33375"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_radiant"
+    }
+  },
+  {
+    "coin": "DGB-Odocrypt",
+    "servers": [
+      {
+        "geo": "Global",
+        "urls": [
+          "dgbo.m2pool.com:33340"
+        ],
+        "ssl_urls": [
+          "dgbo.m2pool.com:33345"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "DGB-Qubit",
+    "servers": [
+      {
+        "geo": "Global",
+        "urls": [
+          "dgbq.m2pool.com:33360"
+        ],
+        "ssl_urls": [
+          "dgbq.m2pool.com:33365"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "qubit",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "sgminer-gm": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "qubitcoin",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+      },
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "DGB-Skein",
+    "servers": [
+      {
+        "geo": "Global",
+        "urls": [
+          "dgbs.m2pool.com:33350"
+        ],
+        "ssl_urls": [
+          "dgbs.m2pool.com:33355"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "skein",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "sgminer-gm": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "skein",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+      },
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "MONA",
+    "servers": [
+      {
+        "geo": "Global",
+        "urls": [
+          "mona.m2pool.com:33320"
+        ],
+        "ssl_urls": [
+          "mona.m2pool.com:33325"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "lyra2v2",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "sgminer-gm": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "lyra2v2",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"gpu-threads\" : \"2\""
+      },
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "pool": {
+            "name": "SoloHash",
+            "url": "https://solohash.co.uk",
+            "fee": 0.5,
+            "type": "SOLO"
+        }
+    },
+    {
+        "coin": "BCH",
+        "servers": [
+            {
+                "geo": "UK London, low diff",
+                "urls": [
+                    "solo.solohash.co.uk:3337"
+                ]
+            },
+            {
+                "geo": "UK London, high diff",
+                "urls": [
+                    "solo.solohash.co.uk:3338"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XEC",
+        "servers": [
+            {
+                "geo": "UK London, low diff",
+                "urls": [
+                    "solo.solohash.co.uk:3341"
+                ]
+            },
+            {
+                "geo": "UK London, high diff",
+                "urls": [
+                    "solo.solohash.co.uk:3342"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

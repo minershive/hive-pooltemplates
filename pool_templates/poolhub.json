@@ -1,0 +1,52 @@
+[
+    {
+        "pool": {
+            "name": "PoolHub",
+            "url": "https://poolhub.io",
+            "fee": 10,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "NPT",
+        "note": "OXZD miner. Put the Neptune Cash (NPT) address in the Wallet field - it is passed to the miner through the custom user config.",
+        "servers": [
+            {
+                "geo": "Europe",
+                "ssl_urls": [
+                    "eu.poolhub.io:4444"
+                ]
+            }
+        ],
+        "miners": {
+            "custom": {
+                "url": "%URL%",
+                "miner": "oxzd_HiveOS_x86_64_0.8.5c",
+                "template": "%WAL%",
+                "install_url": "https://github.com/Qubic-Solutions/HiveOS/releases/download/v0.8.5c/oxzd_HiveOS_x86_64_0.8.5c.tar.gz",
+                "user_config": "{\n  \"main_algo_gpu\": \"neptune\",\n  \"npt_address\": \"%WAL%\",\n  \"npt_url\": \"stratum+ssl://%URL%\",\n  \"worker_name\": \"%WORKER_NAME%\"\n}"
+            }
+        }
+    },
+    {
+        "coin": "XNT",
+        "note": "OXZD miner. Put the Neptune Private (XNT) address in the Wallet field - it is passed to the miner through the custom user config.",
+        "servers": [
+            {
+                "geo": "Europe",
+                "ssl_urls": [
+                    "eu.poolhub.io:30111"
+                ]
+            }
+        ],
+        "miners": {
+            "custom": {
+                "url": "%URL%",
+                "miner": "oxzd_HiveOS_x86_64_0.8.5c",
+                "template": "%WAL%",
+                "install_url": "https://github.com/Qubic-Solutions/HiveOS/releases/download/v0.8.5c/oxzd_HiveOS_x86_64_0.8.5c.tar.gz",
+                "user_config": "{\n  \"main_algo_gpu\": \"xnt\",\n  \"xnt_address\": \"%WAL%\",\n  \"xnt_url\": \"stratum+ssl://%URL%\",\n  \"worker_name\": \"%WORKER_NAME%\"\n}"
+            }
+        }
+    }
+]

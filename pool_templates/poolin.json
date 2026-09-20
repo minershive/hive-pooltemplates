@@ -1,5 +1,11 @@
 [
     {
+        "pool": {
+            "name": "Poolin",
+            "url": "https://www.poolin.com"
+        }
+    },
+    {
         "coin": "BTC",
         "servers": [
             {
@@ -58,23 +64,6 @@
         }
     },
     {
-        "coin": "BSV",
-        "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "bsv.ss.poolin.com:1883"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
         "coin": "ZEC",
         "servers": [
             {
@@ -121,46 +110,42 @@
         }
     },
     {
-        "coin": "DCR",
+        "coin": "KAS",
         "servers": [
             {
-                "geo": null,
+                "geo": "Global",
                 "urls": [
-                    "dcr.ss.poolin.com:1883"
+                    "kas.ss.poolin.com:1883",
+                    "kas.ss.poolin.com:443"
                 ]
             }
         ],
         "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
+            "_prototype": "miners_kaspa"
         }
     },
     {
-        "coin": "DASH",
+        "coin": "ETC",
         "servers": [
-            {
-                "geo": null,
-                "urls": [
-                    "dash.ss.poolin.com:1883"
-                ]
-            }
+        {
+            "geo": "Global",
+            "urls": [
+                "etc.ss.poolin.com:1883",
+                "etc.ss.poolin.com:443"
+            ]
+        }
         ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "miners": {
+                "_prototype": "miners_etchash"
             }
-        }
     },
     {
-        "coin": "XMR",
+        "coin": "CKB",
         "servers": [
             {
-                "geo": null,
+                "geo": "GLOBAL",
                 "urls": [
-                    "bch.ss.poolin.com:1883"
+                    "ckb.ss.poolin.com:1883"
                 ]
             }
         ],

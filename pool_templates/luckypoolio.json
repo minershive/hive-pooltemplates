@@ -1,489 +1,1115 @@
 [
-    {
-        "pool": {
-            "name": "LuckyPool.IO",
-            "url": "luckypool.io",
-            "fee": 0.9,
-            "type": "PROP"
-        }
-    },
-
-    {
-        "coin": "CLC",
-        "servers": [
-            {
-                "geo": "Global",
-                "urls": [
-                    "clc.luckypool.io:5118"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "ca.luckypool.io:5118"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "sg.luckypool.io:5118"
-                ]
-            }
-        ],
-        "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "clchash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "PASSWORD_FOR_PAYOUT"
-            },
-            "wildrig-multi": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "clchash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "PASSWORD_FOR_PAYOUT"
-            }
-        }
-    },
-
-    {
-        "coin": "QTC",
-        "servers": [
-            {
-                "geo": "Global (France)",
-                "urls": [
-                    "qubitcoin.luckypool.io:8611"
-                ]
-            },
-            {
-                "geo": "N.America (Canada)",
-                "urls": [
-                    "ca.luckypool.io:8611"
-                ]
-            },
-            {
-                "geo": "Asia (HongKong)",
-                "urls": [
-                    "hk.luckypool.io:8611"
-                ]
-            },
-            {
-                "geo": "Russia",
-                "urls": [
-                    "ru.luckypool.io:8611"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_qhash"
-        }
-    },
-
-    {
-        "coin": "XCB",
-        "servers": [
-            {
-                "geo": "Global",
-                "urls": [
-                    "corecoin.luckypool.io:3118"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "ca.luckypool.io:3118"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "sg.luckypool.io:3118"
-                ]
-            }
-        ],
-        "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "randomy",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-
-    {
-        "coin": "XCC",
-        "servers": [
-            {
-                "geo": "Global",
-                "urls": [
-                    "cyberchain.luckypool.io:4488"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "ca.luckypool.io:4488"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "sg.luckypool.io:4488"
-                ]
-            }
-        ],
-        "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "fphash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--disable-cpu"
-            }
-        }
-    },
-
-    {
-        "coin": "LBRT",
-        "servers": [
-            {
-                "geo": "Global",
-                "urls": [
-                    "liberty.luckypool.io:4118"
-                ]
-            }
-        ],
-        "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "blake3_lbrt",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-
-    {
-        "coin": "MCM",
-        "servers": [
-            {
-                "geo": "Global",
-                "urls": [
-                    "mochimo.luckypool.io:3336"
-                ]
-            }
-        ],
-        "miners": {
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "peach",
-                "pass": "x",
-                "miner": "lpmochimo",
-                "template": "%WAL%",
-                "install_url": "https://mochimo.luckypool.io/lpmochimo.tar.gz",
-                "user_config": "--wallet %WAL% --worker %WORKER_NAME% --region eu --diff 28"
-            }
-        }
-    },
-
-    {
-        "coin": "NIR",
-        "servers": [
-            {
-                "geo": "Global",
-                "urls": [
-                    "nirmata.luckypool.io:3388"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_progpow_zano"
-        }
-    },
-
-    {
-        "coin": "QUAI",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "quai.luckypool.io:3333"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "ca.luckypool.io:3333"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "sg.luckypool.io:3333"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_progpow_quai"
-        }
-    },
-
-    {
-        "coin": "R5",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "r5.luckypool.io:2118"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "sg.luckypool.io:2118"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "ca.luckypool.io:2118"
-                ]
-            }
-        ],
-        "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "ethashr5",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--disable-cpu"
-            }
-        }
-    },
-
-    {
-        "coin": "XTM",
-        "servers": [
-            {
-                "geo": "Global (France)",
-                "urls": [
-                    "tari.luckypool.io:6118"
-                ]
-            },
-            {
-                "geo": "Europe (Poland)",
-                "urls": [
-                    "pl-eu.luckypool.io:6118"
-                ]
-            },
-            {
-                "geo": "Europe (Germany)",
-                "urls": [
-                    "de-eu.luckypool.io:6118"
-                ]
-            },
-            {
-                "geo": "Europe (France, backup 1)",
-                "urls": [
-                    "fr1.luckypool.io:6118"
-                ]
-            },
-            {
-                "geo": "Europe (France, backup 2)",
-                "urls": [
-                    "fr2.luckypool.io:6118"
-                ]
-            },
-            {
-                "geo": "Asia (Singapore)",
-                "urls": [
-                    "sg.luckypool.io:6118"
-                ]
-            },
-            {
-                "geo": "Asia (Singapore, backup 1)",
-                "urls": [
-                    "sg1.luckypool.io:6118"
-                ]
-            },
-            {
-                "geo": "Asia (Singapore, backup 2)",
-                "urls": [
-                    "sg2.luckypool.io:6118"
-                ]
-            },
-            {
-                "geo": "N.America (Canada)",
-                "urls": [
-                    "ca.luckypool.io:6118"
-                ]
-            },
-            {
-                "geo": "N.America (Canada, backup)",
-                "urls": [
-                    "ca1.luckypool.io:6118"
-                ]
-            }
-        ],
-        "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "sha3x",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--disable-cpu"
-            },
-            "lolminer": {
-                "url": "%URL%",
-                "algo": "SHA3X",
-                "dalgo": "SHA3XDUAL",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-
-    {
-        "coin": "XE",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "xechain.luckypool.io:3381"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "sg.luckypool.io:3381"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "ca.luckypool.io:3381"
-                ]
-            }
-        ],
-        "miners": {
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "xehash",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--disable-cpu"
-            }
-        }
-    },
-
-    {
-        "coin": "XEL",
-        "servers": [
-            {
-                "geo": "Europe",
-                "urls": [
-                    "eu.xelis.luckypool.io:2888"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "ca.luckypool.io:2888"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "sg.luckypool.io:2888"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_xelishashv3"
-        }
-    },
-
-    {
-        "coin": "ZANO",
-        "servers": [
-            {
-                "geo": "CPU + Old GPU card",
-                "urls": [
-                    "zano.luckypool.io:8866"
-                ]
-            },
-            {
-                "geo": "Low end + Mid end GPU cards",
-                "urls": [
-                    "zano.luckypool.io:8877"
-                ]
-            },
-            {
-                "geo": "High end GPU cards",
-                "urls": [
-                    "zano.luckypool.io:8888"
-                ]
-            },
-            {
-                "geo": "Nicehash, MRR",
-                "urls": [
-                    "zano.luckypool.io:8899"
-                ]
-            },
-            {
-                "geo": "North America",
-                "urls": [
-                    "ca.zano.luckypool.io:8888"
-                ]
-            },
-            {
-                "geo": "Asia",
-                "urls": [
-                    "sg.zano.luckypool.io:8888"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_progpow_zano"
-        }
-    },
-
-    {
-        "coin": "PRL",
-        "servers": [
-            {
-                "geo": "Global (France)",
-                "urls": [
-                    "pearl-eu2.luckypool.io:3360"
-                ]
-            },
-            {
-                "geo": "Europe (France)",
-                "urls": [
-                    "pearl-eu1.luckypool.io:3360"
-                ]
-            },
-            {
-                "geo": "N.America (Canada)",
-                "urls": [
-                    "pearl-ca1.luckypool.io:3360"
-                ]
-            },
-            {
-                "geo": "N.America 2 (Canada)",
-                "urls": [
-                    "pearl-ca2.luckypool.io:3360"
-                ]
-            },
-            {
-                "geo": "Asia (Singapore)",
-                "urls": [
-                    "pearl-sg1.luckypool.io:3360"
-                ]
-            },
-            {
-                "geo": "Asia 2 (Singapore)",
-                "urls": [
-                    "pearl-sg2.luckypool.io:3360"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_pearlhash"
-        }
+  {
+    "pool": {
+      "name": "LuckyPool.IO",
+      "url": "https://luckypool.io",
+      "fee": 1,
+      "type": "PROP"
     }
+  },
+  {
+    "coin": "ZANO",
+    "servers": [
+      {
+        "geo": "Europe — GPUs/Rigs with a hashrate of 15-25 MH/s",
+        "urls": [
+          "zano.luckypool.io:8866"
+        ]
+      },
+      {
+        "geo": "Europe — Rigs with a hashrate of around 100 MH/s",
+        "urls": [
+          "zano.luckypool.io:8877"
+        ]
+      },
+      {
+        "geo": "Europe — Rigs with a hashrate of around 200 MH/s",
+        "urls": [
+          "zano.luckypool.io:8888"
+        ]
+      },
+      {
+        "geo": "Europe — Rigs/Nicehash/MRR with a total hashrate of > 1 GH/s",
+        "urls": [
+          "zano.luckypool.io:8899"
+        ]
+      },
+      {
+        "geo": "Singapore — GPUs/Rigs with a hashrate of 15-25 MH/s",
+        "urls": [
+          "sg.luckypool.io:8866"
+        ]
+      },
+      {
+        "geo": "Singapore — Rigs with a hashrate of around 100 MH/s",
+        "urls": [
+          "sg.luckypool.io:8877"
+        ]
+      },
+      {
+        "geo": "Singapore — Rigs with a hashrate of around 200 MH/s",
+        "urls": [
+          "sg.luckypool.io:8888"
+        ]
+      },
+      {
+        "geo": "Singapore — Rigs/Nicehash/MRR with a total hashrate of > 1 GH/s",
+        "urls": [
+          "sg.luckypool.io:8899"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_progpow_zano"
+    }
+  },
+  {
+    "coin": "XCB",
+    "servers": [
+      {
+        "geo": "France",
+        "urls": [
+          "corecoin.luckypool.io:3118"
+        ]
+      },
+      {
+        "geo": "Canada",
+        "urls": [
+          "ca.luckypool.io:3118"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "urls": [
+          "sg.luckypool.io:3118"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "randomy",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "MCM",
+    "servers": [
+      {
+        "geo": "France",
+        "urls": [
+          "mochimo.luckypool.io:3338"
+        ]
+      }
+    ],
+    "miners": {
+      "custom": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "peach",
+        "pass": "x",
+        "miner": "lpmochimo",
+        "template": "%WAL%",
+        "install_url": "https://mochimo.luckypool.io/lpmochimo.tar.gz",
+        "user_config": "--wallet %WAL% --worker %WORKER_NAME% --region eu --diff 28"
+      }
+    }
+  },
+  {
+    "coin": "XTM-sha3x",
+    "servers": [
+      {
+        "geo": "France",
+        "urls": [
+          "tari.luckypool.io:6118"
+        ]
+      },
+      {
+        "geo": "Germany",
+        "urls": [
+          "de-eu.luckypool.io:6118"
+        ]
+      },
+      {
+        "geo": "Canada",
+        "urls": [
+          "ca.luckypool.io:6118"
+        ],
+        "ssl_urls": [
+          "ca.luckypool.io:6318"
+        ]
+      },
+      {
+        "geo": "Canada",
+        "urls": [
+          "ca2.luckypool.io:6118"
+        ],
+        "ssl_urls": [
+          "ca2.luckypool.io:6318"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "urls": [
+          "sg.luckypool.io:6118"
+        ],
+        "ssl_urls": [
+          "sg.luckypool.io:6318"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "urls": [
+          "sg2.luckypool.io:6118"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha3x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--disable-cpu"
+      },
+      "lolminer": {
+        "url": "%URL%",
+        "algo": "SHA3X",
+        "dalgo": "SHA3XDUAL",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "XTM-randomx",
+    "servers": [
+      {
+        "geo": "France",
+        "urls": [
+          "fr-tarirx.luckypool.io:9118"
+        ]
+      },
+      {
+        "geo": "Poland",
+        "urls": [
+          "pl-tarirx.luckypool.io:9118"
+        ]
+      },
+      {
+        "geo": "Canada",
+        "urls": [
+          "ca-tarirx.luckypool.io:9118"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "urls": [
+          "sg-tarirx.luckypool.io:9118"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "randomx",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--send-stales true"
+      },
+      "xmrig-new": {
+        "cpu": "1",
+        "fork": "xmrig",
+        "url": "%URL%",
+        "algo": "rx/0",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "XTM-cuckaroo29",
+    "servers": [
+      {
+        "geo": "France",
+        "urls": [
+          "taric29.luckypool.io:3111",
+          "taric29.luckypool.io:3110"
+        ]
+      },
+      {
+        "geo": "CA",
+        "urls": [
+          "taric29-ca.luckypool.io:3111",
+          "taric29-ca.luckypool.io:3110"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "urls": [
+          "taric29-sg.luckypool.io:3111",
+          "taric29-sg.luckypool.io:3110"
+        ]
+      }
+    ],
+    "miners": {
+      "lolminer": {
+        "url": "%URL%",
+        "algo": "CR29",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "QTC",
+    "servers": [
+      {
+        "geo": "Europe",
+        "ssl_urls": [
+          "qtc-eu.lproute.com:8610",
+          "qtc-eu.lproute.com:8611",
+          "qtc-eu.lproute.com:8615",
+          "qtc-eu.lproute.com:8616"
+        ]
+      },
+      {
+        "geo": "Poland",
+        "ssl_urls": [
+          "qtc-pl.lproute.com:8610",
+          "qtc-pl.lproute.com:8611",
+          "qtc-pl.lproute.com:8615",
+          "qtc-pl.lproute.com:8616"
+        ]
+      },
+      {
+        "geo": "Russia",
+        "ssl_urls": [
+          "qtc-ru.lproute.com:8610",
+          "qtc-ru.lproute.com:8611",
+          "qtc-ru.lproute.com:8615",
+          "qtc-ru.lproute.com:8616"
+        ]
+      },
+      {
+        "geo": "United States",
+        "ssl_urls": [
+          "qtc-us-east.lproute.com:8610",
+          "qtc-us-east.lproute.com:8611",
+          "qtc-us-east.lproute.com:8615",
+          "qtc-us-east.lproute.com:8616"
+        ]
+      },
+      {
+        "geo": "United States",
+        "ssl_urls": [
+          "qtc-us-west.lproute.com:8610",
+          "qtc-us-west.lproute.com:8611",
+          "qtc-us-west.lproute.com:8615",
+          "qtc-us-west.lproute.com:8616"
+        ]
+      },
+      {
+        "geo": "Brazil",
+        "ssl_urls": [
+          "qtc-br.lproute.com:8610",
+          "qtc-br.lproute.com:8611",
+          "qtc-br.lproute.com:8615",
+          "qtc-br.lproute.com:8616"
+        ]
+      },
+      {
+        "geo": "Hong Kong",
+        "ssl_urls": [
+          "qtc-hk.lproute.com:8610",
+          "qtc-hk.lproute.com:8611",
+          "qtc-hk.lproute.com:8615",
+          "qtc-hk.lproute.com:8616"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "ssl_urls": [
+          "qtc-sg.lproute.com:8610",
+          "qtc-sg.lproute.com:8611",
+          "qtc-sg.lproute.com:8615",
+          "qtc-sg.lproute.com:8616"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_qhash"
+    }
+  },
+  {
+    "coin": "EXFER",
+    "servers": [
+      {
+        "geo": "France",
+        "urls": [
+          "exfer.luckypool.io:3335"
+        ],
+        "ssl_urls": [
+          "exfer.luckypool.io:3336"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "urls": [
+          "exfer-sg.luckypool.io:3335"
+        ],
+        "ssl_urls": [
+          "exfer-sg.luckypool.io:3336"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "argon2id_exfer",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "PRL",
+    "servers": [
+      {
+        "geo": "Europe",
+        "ssl_urls": [
+          "pearl-eu2.luckypool.io:3360",
+          "pearl-eu2.luckypool.io:3361",
+          "pearl-eu2.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Europe",
+        "ssl_urls": [
+          "pearl-eu1.luckypool.io:3360",
+          "pearl-eu1.luckypool.io:3361",
+          "pearl-eu1.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Poland",
+        "ssl_urls": [
+          "pearl-pl.luckypool.io:3360",
+          "pearl-pl.luckypool.io:3361",
+          "pearl-pl.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Turkey",
+        "ssl_urls": [
+          "pearl-tr.luckypool.io:3360",
+          "pearl-tr.luckypool.io:3361",
+          "pearl-tr.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Russia",
+        "ssl_urls": [
+          "pearl-ru.luckypool.io:3360",
+          "pearl-ru.luckypool.io:3361",
+          "pearl-ru.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "US",
+        "ssl_urls": [
+          "pearl-us-east.luckypool.io:3360",
+          "pearl-us-east.luckypool.io:3361",
+          "pearl-us-east.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "US",
+        "ssl_urls": [
+          "pearl-us-west.luckypool.io:3360",
+          "pearl-us-west.luckypool.io:3361",
+          "pearl-us-west.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "US",
+        "ssl_urls": [
+          "pearl-us-central.luckypool.io:3360",
+          "pearl-us-central.luckypool.io:3361",
+          "pearl-us-central.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "US",
+        "ssl_urls": [
+          "pearl-us-ord.luckypool.io:3360",
+          "pearl-us-ord.luckypool.io:3361",
+          "pearl-us-ord.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Brazil",
+        "ssl_urls": [
+          "pearl-br.luckypool.io:3360",
+          "pearl-br.luckypool.io:3361",
+          "pearl-br.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Canada",
+        "ssl_urls": [
+          "pearl-ca1.luckypool.io:3360",
+          "pearl-ca1.luckypool.io:3361",
+          "pearl-ca1.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Canada",
+        "ssl_urls": [
+          "pearl-ca2.luckypool.io:3360",
+          "pearl-ca2.luckypool.io:3361",
+          "pearl-ca2.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "ssl_urls": [
+          "pearl-sg1.luckypool.io:3360",
+          "pearl-sg1.luckypool.io:3361",
+          "pearl-sg1.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "ssl_urls": [
+          "pearl-sg2.luckypool.io:3360",
+          "pearl-sg2.luckypool.io:3361",
+          "pearl-sg2.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Indonesia",
+        "ssl_urls": [
+          "pearl-id.luckypool.io:3360",
+          "pearl-id.luckypool.io:3361",
+          "pearl-id.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Hong Kong",
+        "ssl_urls": [
+          "pearl-hk.luckypool.io:3360",
+          "pearl-hk.luckypool.io:3361",
+          "pearl-hk.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "India",
+        "ssl_urls": [
+          "pearl-in.luckypool.io:3360",
+          "pearl-in.luckypool.io:3361",
+          "pearl-in.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Japan",
+        "ssl_urls": [
+          "pearl-jp.luckypool.io:3360",
+          "pearl-jp.luckypool.io:3361",
+          "pearl-jp.luckypool.io:3362"
+        ]
+      },
+      {
+        "geo": "Australia",
+        "ssl_urls": [
+          "pearl-au.luckypool.io:3360",
+          "pearl-au.luckypool.io:3361",
+          "pearl-au.luckypool.io:3362"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_pearlhash"
+    }
+  },
+  {
+    "coin": "OGG",
+    "servers": [
+      {
+        "geo": "Hong Kong",
+        "ssl_urls": [
+          "ogg-hk.lproute.com:8360"
+        ]
+      },
+      {
+        "geo": "Russia",
+        "ssl_urls": [
+          "ogg-ru.lproute.com:8360"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "ssl_urls": [
+          "ogg-sg.lproute.com:8360"
+        ]
+      },
+      {
+        "geo": "United States",
+        "ssl_urls": [
+          "ogg-us.lproute.com:8360"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "oggpow",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "BTX",
+    "servers": [
+      {
+        "geo": "Australia",
+        "ssl_urls": [
+          "btx-au.lproute.com:8665"
+        ]
+      },
+      {
+        "geo": "Europe",
+        "ssl_urls": [
+          "btx-eu.lproute.com:8665"
+        ]
+      },
+      {
+        "geo": "Poland",
+        "ssl_urls": [
+          "btx-pl.lproute.com:8665"
+        ]
+      },
+      {
+        "geo": "Russia",
+        "ssl_urls": [
+          "btx-ru.lproute.com:8665"
+        ]
+      },
+      {
+        "geo": "Hong Kong",
+        "ssl_urls": [
+          "btx-hk.lproute.com:8665"
+        ]
+      },
+      {
+        "geo": "Indonesia",
+        "ssl_urls": [
+          "btx-id.lproute.com:8665"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "ssl_urls": [
+          "btx-sg.lproute.com:8665"
+        ]
+      },
+      {
+        "geo": "United States Central",
+        "ssl_urls": [
+          "btx-us-central.lproute.com:8665"
+        ]
+      },
+      {
+        "geo": "United States West",
+        "ssl_urls": [
+          "btx-us-west.lproute.com:8665"
+        ]
+      },
+      {
+        "geo": "United States East",
+        "ssl_urls": [
+          "btx-us-east.lproute.com:8665"
+        ]
+      },
+      {
+        "geo": "United States Chicago",
+        "ssl_urls": [
+          "btx-us-ord.lproute.com:8665"
+        ]
+      },
+      {
+        "geo": "Brazil",
+        "ssl_urls": [
+          "btx-br.lproute.com:8665"
+        ]
+      }
+    ],
+    "miners": {
+      "peakminer": {
+        "url": "%URL%",
+        "algo": "btx",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+      },
+      "forgeminer": {
+        "url": "%URL%",
+        "algo": "btx",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "btx",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "CSD",
+    "servers": [
+      {
+        "geo": "Australia",
+        "ssl_urls": [
+          "csd-au.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "Brazil",
+        "ssl_urls": [
+          "csd-br.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "Canada",
+        "ssl_urls": [
+          "csd-ca.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "Europe",
+        "ssl_urls": [
+          "csd-eu.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "Hong Kong",
+        "ssl_urls": [
+          "csd-hk.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "Indonesia",
+        "ssl_urls": [
+          "csd-id.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "India",
+        "ssl_urls": [
+          "csd-in.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "Japan",
+        "ssl_urls": [
+          "csd-jp.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "Poland",
+        "ssl_urls": [
+          "csd-pl.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "Russia",
+        "ssl_urls": [
+          "csd-ru.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "ssl_urls": [
+          "csd-sg.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "Turkey",
+        "ssl_urls": [
+          "csd-tr.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "United States Central",
+        "ssl_urls": [
+          "csd-us-central.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "United States East",
+        "ssl_urls": [
+          "csd-us-east.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "United States Chicago",
+        "ssl_urls": [
+          "csd-us-ord.lproute.com:8760"
+        ]
+      },
+      {
+        "geo": "United States West",
+        "ssl_urls": [
+          "csd-us-west.lproute.com:8760"
+        ]
+      }
+    ],
+    "miners": {
+      "peakminer": {
+        "url": "%URL%",
+        "algo": "csd",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha256_csd",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "MDS",
+    "servers": [
+      {
+        "geo": "Europe",
+        "ssl_urls": [
+          "eu.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "United States East",
+        "ssl_urls": [
+          "us-east.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "ssl_urls": [
+          "sg.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "Poland",
+        "ssl_urls": [
+          "pl.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "Turkey",
+        "ssl_urls": [
+          "tr.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "Russia",
+        "ssl_urls": [
+          "ru.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "United States Central",
+        "ssl_urls": [
+          "us-central.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "United States Chicago",
+        "ssl_urls": [
+          "us-ord.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "United States West",
+        "ssl_urls": [
+          "us-west.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "Hong Kong",
+        "ssl_urls": [
+          "hk.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "Japan",
+        "ssl_urls": [
+          "jp.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "Indonesia",
+        "ssl_urls": [
+          "id.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "India",
+        "ssl_urls": [
+          "in.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "Canada",
+        "ssl_urls": [
+          "ca.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "Brazil",
+        "ssl_urls": [
+          "br.lproute.com:8960"
+        ]
+      },
+      {
+        "geo": "Australia",
+        "ssl_urls": [
+          "au.lproute.com:8960"
+        ]
+      }
+    ],
+    "miners": {
+      "peakminer": {
+        "url": "%URL%",
+        "algo": "midstate",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+      }
+    }
+  },
+  {
+    "coin": "ALP",
+    "servers": [
+      {
+        "geo": "Europe",
+        "ssl_urls": [
+          "eu.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "United States East",
+        "ssl_urls": [
+          "us-east.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "ssl_urls": [
+          "sg.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "Poland",
+        "ssl_urls": [
+          "pl.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "Turkey",
+        "ssl_urls": [
+          "tr.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "Russia",
+        "ssl_urls": [
+          "ru.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "United States Central",
+        "ssl_urls": [
+          "us-central.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "United States Chicago",
+        "ssl_urls": [
+          "us-ord.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "United States West",
+        "ssl_urls": [
+          "us-west.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "Hong Kong",
+        "ssl_urls": [
+          "hk.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "Japan",
+        "ssl_urls": [
+          "jp.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "Indonesia",
+        "ssl_urls": [
+          "id.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "India",
+        "ssl_urls": [
+          "in.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "Canada",
+        "ssl_urls": [
+          "ca.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "Brazil",
+        "ssl_urls": [
+          "br.lproute.com:4260"
+        ]
+      },
+      {
+        "geo": "Australia",
+        "ssl_urls": [
+          "au.lproute.com:4260"
+        ]
+      }
+    ],
+    "miners": {
+      "peakminer": {
+        "url": "%URL%",
+        "algo": "alphanumeric",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "blake3_an",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "QUAN",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "eu.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "United States East",
+        "urls": [
+          "us-east.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "Singapore",
+        "urls": [
+          "sg.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "Poland",
+        "urls": [
+          "pl.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "Turkey",
+        "urls": [
+          "tr.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "Russia",
+        "urls": [
+          "ru.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "United States Central",
+        "urls": [
+          "us-central.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "United States Chicago",
+        "urls": [
+          "us-ord.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "United States West",
+        "urls": [
+          "us-west.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "Hong Kong",
+        "urls": [
+          "hk.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "Japan",
+        "urls": [
+          "jp.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "Indonesia",
+        "urls": [
+          "id.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "India",
+        "urls": [
+          "in.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "Canada",
+        "urls": [
+          "ca.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "Brazil",
+        "urls": [
+          "br.lproute.com:5660"
+        ]
+      },
+      {
+        "geo": "Australia",
+        "urls": [
+          "au.lproute.com:5660"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_quantus"
+    }
+  }
 ]

@@ -3,6 +3,7 @@
         "pool": {
             "name": "tw-pool",
             "url": "https://www.tw-pool.com",
+            "fee": 0.75,
             "type": "PPLNS"
         }
     },
@@ -20,23 +21,6 @@
         ],
         "miners": {
             "_prototype": "miners_nexapow"
-        }
-    },
-    {
-        "coin": "RXD",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "rxd.tw-pool.com:30001"
-                ],
-                "ssl_urls": [
-                    "rxd.tw-pool.com:30001"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_sha512256d"
         }
     },
     {
@@ -60,12 +44,6 @@
             "template": "%WAL%.%WORKER_NAME%",
             "user_config": "--disable-cpu"
           },
-          "bzminer": {
-            "url": "%URL%",
-            "algo": "ironfish",
-            "pass": "x",
-            "template": "%WAL%.%WORKER_NAME%"
-          },
           "rigel": {
             "url": "%URL%",
             "algo": "ironfish",
@@ -74,86 +52,38 @@
         }
     },
     {
-        "coin": "KLS",
+        "coin": "KAS",
         "servers": [
             {
-                "geo": "AUTO",
+                "geo": "AUTO 0-2T",
                 "urls": [
-                    "kls.tw-pool.com:11001"
+                    "kas.tw-pool.com:10005"
                 ],
                 "ssl_urls": [
-                    "kls.tw-pool.com:11001"
+                    "kas.tw-pool.com:10005"
                 ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_karlsenhashv2"
-        }
-    },
-    {
-        "coin": "PYI",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "pyi.tw-pool.com:12001"
-                ],
-                "ssl_urls": [
-                    "pyi.tw-pool.com:12001"
-                ]
-            }
-        ],
-        "miners": {
-          "_prototype": "miners_pyrinhashv2"
-        }
-      },
-    {
-        "coin": "SPR",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "spr.tw-pool.com:14001"
-                ],
-                "ssl_urls": [
-                    "spr.tw-pool.com:14001"
-                ]
-            }
-        ]
-    },
-    {
-        "coin" : "QUAI",
-        "servers": [
-            {
-                "geo": "AUTO",
-                "urls": [
-                    "quai.tw-pool.com:6666"
-                ],
-                "ssl_urls": [
-                    "quai.tw-pool.com:6666"
-                ]
-            }
-        ],
-        "miners": {
-            "_prototype": "miners_progpow_quai",
-            "rigel":{
-                "url":"%URL%",
-                "algo":"quai",
-                "pass":"x",
-                "template":"%WAL%.%WORKER_NAME%"
             },
-            "srbminer": {
-                "url": "%URL%",
-                "algo": "progpow_quai",
-                "template": "%WAL%.%WORKER_NAME%",
-                "user_config": "--disable-cpu"
+            {
+                "geo": "AUTO 5-10T",
+                "urls": [
+                    "kas.tw-pool.com:10006"
+                ],
+                "ssl_urls": [
+                    "kas.tw-pool.com:10006"
+                ]
             },
-            "wildrig-multi": {
-                "url": "%URL%",
-                "algo": "progpow-quai",
-                "template": "%WAL%",
-                "user_config": "--worker=%WORKER_NAME%"
+            {
+                "geo": "AUTO 10-21T",
+                "urls": [
+                    "kas.tw-pool.com:10007"
+                ],
+                "ssl_urls": [
+                    "kas.tw-pool.com:10007"
+                ]
             }
+        ],
+        "miners": {
+            "_prototype": "miners_kaspa"
         }
     }
 ]

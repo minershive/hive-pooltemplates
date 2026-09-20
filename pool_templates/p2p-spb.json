@@ -1,0 +1,77 @@
+[
+  {
+    "pool": {
+      "name": "P2P-SPB",
+      "url": "http://p2p-spb.xyz:3017",
+      "fee": 0,
+      "type": "P2POOL"
+    }
+  },
+  {
+    "coin": "BTX-megabtx",
+    "servers": [
+      {
+        "geo": "Russia",
+        "urls": [
+          "p2p-spb.xyz:3017"
+        ]
+      }
+    ],
+    "miners": {
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "megabtx",
+        "template": "%WAL%",
+        "pass": "x"
+      }
+    }
+  },
+  {
+    "coin": "BCH",
+    "servers": [
+      {
+        "geo": "Russia",
+        "urls": [
+          "p2p-spb.xyz:9338"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "LCC-minotaurx",
+    "servers": [
+      {
+        "geo": "Russia",
+        "urls": [
+          "p2p-spb.xyz:5557"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_minotaurx"
+    }
+  },
+  {
+    "coin": "DASH",
+    "servers": [
+      {
+        "geo": "Russia",
+        "urls": [
+          "p2p-spb.xyz:7903"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]

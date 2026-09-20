@@ -1,0 +1,1042 @@
+[
+  {
+    "pool": {
+      "name": "HimPool SOLO",
+      "url": "https://himpool.com",
+      "fee": 2,
+      "type": "SOLO"
+    }
+  },
+  {
+    "coin": "BTG",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1465"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1466"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1467"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1465"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1466"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1467"
+        ]
+      },
+      {
+        "geo": "Canada Low GPU",
+        "urls": [
+          "ca.himpool.com:1465"
+        ]
+      },
+      {
+        "geo": "Canada Mid GPU / ASIC",
+        "urls": [
+          "ca.himpool.com:1466"
+        ],
+        "ssl_urls": [
+          "ca.himpool.com:1467"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_zhash_btg"
+    }
+  },
+  {
+    "coin": "ALP",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1510"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1511"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1512"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1510"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1511"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1512"
+        ]
+      },
+      {
+        "geo": "Canada Low GPU",
+        "urls": [
+          "ca.himpool.com:1510"
+        ]
+      },
+      {
+        "geo": "Canada Mid GPU / ASIC",
+        "urls": [
+          "ca.himpool.com:1511"
+        ],
+        "ssl_urls": [
+          "ca.himpool.com:1512"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "blake3_an",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "BCH",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1301"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1302"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1303"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1301"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1302"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1303"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "BTCZ",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1459"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1460"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1461"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1459"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1460"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1461"
+        ]
+      }
+    ],
+    "miners": {
+      "ewbf": {
+        "algo": "144_5",
+        "fork": "zhash",
+        "zserver": "%URL_HOST%",
+        "zport": "%URL_PORT%",
+        "zpass": "x",
+        "ztemplate": "%WAL%.%WORKER_NAME%",
+        "user_config": "pers BitcoinZ"
+      },
+      "gminer": {
+        "algo": "144_5",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--pers BitcoinZ"
+      },
+      "lolminer": {
+        "algo": "BTCZ",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "miniz": {
+        "algo": "144,5",
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--pers BitcoinZ"
+      }
+    }
+  },
+  {
+    "coin": "CSD",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1504"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1505"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1506"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "DGB-sha256",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1319"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1320"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1321"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1319"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1320"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1321"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "ETC",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1385"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1386"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1387"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1385"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1386"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1387"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_etchash"
+    }
+  },
+  {
+    "coin": "FB",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1398"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1399"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1398"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1399"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "KMD",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1423"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1424"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1425"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "KRGN-kawpow",
+    "servers": [
+      {
+        "geo": "Europe KawPow Low GPU",
+        "urls": [
+          "eu.himpool.com:1435"
+        ]
+      },
+      {
+        "geo": "Europe KawPow Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1436"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1437"
+        ]
+      },
+      {
+        "geo": "Canada KawPow Low GPU",
+        "urls": [
+          "ca.himpool.com:1435"
+        ]
+      },
+      {
+        "geo": "Canada KawPow Mid GPU / ASIC",
+        "urls": [
+          "ca.himpool.com:1436"
+        ],
+        "ssl_urls": [
+          "ca.himpool.com:1437"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_kawpow"
+    }
+  },
+  {
+    "coin": "KRGN-equihash",
+    "servers": [
+      {
+        "geo": "Europe Equihash 200,9 Low GPU",
+        "urls": [
+          "eu.himpool.com:1441"
+        ]
+      },
+      {
+        "geo": "Europe Equihash 200,9 Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1442"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1443"
+        ]
+      },
+      {
+        "geo": "Canada Equihash 200,9 Low GPU",
+        "urls": [
+          "ca.himpool.com:1441"
+        ]
+      },
+      {
+        "geo": "Canada Equihash 200,9 Mid GPU / ASIC",
+        "urls": [
+          "ca.himpool.com:1442"
+        ],
+        "ssl_urls": [
+          "ca.himpool.com:1443"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "KRGN-equihash192",
+    "servers": [
+      {
+        "geo": "Europe Equihash 192,7 Low GPU",
+        "urls": [
+          "eu.himpool.com:1471"
+        ]
+      },
+      {
+        "geo": "Europe Equihash 192,7 Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1472"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1473"
+        ]
+      },
+      {
+        "geo": "Canada Equihash 192,7 Low GPU",
+        "urls": [
+          "ca.himpool.com:1471"
+        ]
+      },
+      {
+        "geo": "Canada Equihash 192,7 Mid GPU / ASIC",
+        "urls": [
+          "ca.himpool.com:1472"
+        ],
+        "ssl_urls": [
+          "ca.himpool.com:1473"
+        ]
+      }
+    ],
+    "miners": {
+      "ewbf": {
+        "algo": "192_7",
+        "fork": "zhash",
+        "zserver": "%URL_HOST%",
+        "zport": "%URL_PORT%",
+        "zpass": "x",
+        "ztemplate": "%WAL%.%WORKER_NAME%",
+        "user_config": "pers kerrigan"
+      },
+      "gminer": {
+        "algo": "192_7",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--pers kerrigan"
+      },
+      "miniz": {
+        "algo": "192,7",
+        "url": "%URL%",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%",
+        "user_config": "--pers kerrigan"
+      }
+    }
+  },
+  {
+    "coin": "KRGN-x11",
+    "servers": [
+      {
+        "geo": "Europe X11 Low GPU",
+        "urls": [
+          "eu.himpool.com:1447"
+        ]
+      },
+      {
+        "geo": "Europe X11 Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1448"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1449"
+        ]
+      },
+      {
+        "geo": "Canada X11 Low GPU",
+        "urls": [
+          "ca.himpool.com:1447"
+        ]
+      },
+      {
+        "geo": "Canada X11 Mid GPU / ASIC",
+        "urls": [
+          "ca.himpool.com:1448"
+        ],
+        "ssl_urls": [
+          "ca.himpool.com:1449"
+        ]
+      }
+    ],
+    "miners": {
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "x11",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "wildrig-multi": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "x11",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "x"
+      },
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "LTC",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1411"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1412"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1413"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1411"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1412"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1413"
+        ]
+      },
+      {
+        "geo": "Canada Low GPU",
+        "urls": [
+          "ca.himpool.com:1411"
+        ]
+      },
+      {
+        "geo": "Canada Mid GPU / ASIC",
+        "urls": [
+          "ca.himpool.com:1412"
+        ],
+        "ssl_urls": [
+          "ca.himpool.com:1413"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "OCTA",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1379"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1380"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1381"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1379"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1380"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1381"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_ethash"
+    }
+  },
+  {
+    "coin": "PPC",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1331"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1332"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1333"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1331"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1332"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1333"
+        ]
+      },
+      {
+        "geo": "Canada Low GPU",
+        "urls": [
+          "ca.himpool.com:1331"
+        ]
+      },
+      {
+        "geo": "Canada Mid GPU / ASIC",
+        "urls": [
+          "ca.himpool.com:1332"
+        ],
+        "ssl_urls": [
+          "ca.himpool.com:1333"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "PRL",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1483"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1484"
+        ]
+      },
+      {
+        "geo": "Europe High / Rental",
+        "urls": [
+          "eu.himpool.com:1485"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1483"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1484"
+        ]
+      },
+      {
+        "geo": "India High / Rental",
+        "urls": [
+          "in.himpool.com:1485"
+        ]
+      },
+      {
+        "geo": "Canada Low GPU",
+        "urls": [
+          "ca.himpool.com:1483"
+        ]
+      },
+      {
+        "geo": "Canada Mid GPU / ASIC",
+        "urls": [
+          "ca.himpool.com:1484"
+        ]
+      },
+      {
+        "geo": "Canada High / Rental",
+        "urls": [
+          "ca.himpool.com:1485"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_pearlhash"
+    }
+  },
+  {
+    "coin": "QUAI-sha256",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1367"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1368"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1369"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1367"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1368"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1369"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "QUAI-Scrypt",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1373"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1374"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1375"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1373"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1374"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1375"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "XEC",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1325"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1326"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1327"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1325"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1326"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1327"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "QUAN",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1337"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1338"
+        ],
+        "ssl_urls": [
+          "eu.himpool.com:1339"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1337"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1338"
+        ],
+        "ssl_urls": [
+          "in.himpool.com:1339"
+        ]
+      },
+      {
+        "geo": "Canada Low GPU",
+        "urls": [
+          "ca.himpool.com:1337"
+        ]
+      },
+      {
+        "geo": "Canada Mid GPU / ASIC",
+        "urls": [
+          "ca.himpool.com:1338"
+        ],
+        "ssl_urls": [
+          "ca.himpool.com:1339"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_quantus"
+    }
+  },
+  {
+    "coin": "ARRR",
+    "servers": [
+      {
+        "geo": "Europe Low GPU",
+        "urls": [
+          "eu.himpool.com:1417"
+        ]
+      },
+      {
+        "geo": "Europe Mid GPU / ASIC",
+        "urls": [
+          "eu.himpool.com:1418"
+        ]
+      },
+      {
+        "geo": "Europe High / Rental",
+        "urls": [
+          "eu.himpool.com:1419"
+        ]
+      },
+      {
+        "geo": "India Low GPU",
+        "urls": [
+          "in.himpool.com:1417"
+        ]
+      },
+      {
+        "geo": "India Mid GPU / ASIC",
+        "urls": [
+          "in.himpool.com:1418"
+        ]
+      },
+      {
+        "geo": "India High / Rental",
+        "urls": [
+          "in.himpool.com:1419"
+        ]
+      },
+      {
+        "geo": "Canada Low GPU",
+        "urls": [
+          "ca.himpool.com:1417"
+        ]
+      },
+      {
+        "geo": "Canada Mid GPU / ASIC",
+        "urls": [
+          "ca.himpool.com:1418"
+        ]
+      },
+      {
+        "geo": "Canada High / Rental",
+        "urls": [
+          "ca.himpool.com:1419"
+        ]
+      }
+    ],
+    "miners": {
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "pool": {
+            "name": "Bowserlab-Pool",
+            "url": "https://bowserlab.ddns.net",
+            "fee": 1,
+            "type": "PROP"
+        }
+    },
+    {
+        "coin": "LCC-minotaurx",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "bowserlab.ddns.net:7019"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "minotaurx",
+                "pass": "c=LCC,ID=%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "--disable-gpu"
+            },
+            "cpuminer-opt": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "minotaurx",
+                "fork": "rplant",
+                "pass": "c=LCC,ID=%WORKER_NAME%",
+                "template": "%WAL%"
+            }
+        }
+    }
+]

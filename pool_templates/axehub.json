@@ -1,0 +1,52 @@
+[
+    {
+        "pool": {
+            "name": "AxeHub Pool",
+            "url": "https://pool.axehub.app",
+            "fee": 0,
+            "type": "SOLO"
+        }
+    },
+    {
+        "coin": "BC2",
+        "servers": [
+            {
+                "geo": "Endpoint 1",
+                "urls": [
+                    "pool.axehub.app:3333"
+                ]
+            },
+            {
+                "geo": "Endpoint 2",
+                "urls": [
+                    "pool.axehub.app:3334"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "BC3",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "pool.axehub.app:3338"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "sha3t",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

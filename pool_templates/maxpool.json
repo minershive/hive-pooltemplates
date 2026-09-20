@@ -1,0 +1,41 @@
+[
+    {
+        "pool": {
+            "name": "Maxpool",
+            "url": "https://maxpool.org",
+            "fee": 1,
+            "type": "PROP"
+        }
+    },
+    {
+        "coin": "ABEL",
+        "servers": [
+            {
+                "geo": "Emily",
+                "ssl_urls": [
+                    "emily-service.abelian.info:27778"
+                ]
+            },
+            {
+                "geo": "Fiona",
+                "ssl_urls": [
+                    "fiona-service.abelian.info:27778"
+                ]
+            }
+        ],
+        "miners": {
+            "rigel": {
+                "url": "stratum+ssl://%URL%",
+                "algo": "abelian",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "stratum+ssl://%URL%",
+                "algo": "abel",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

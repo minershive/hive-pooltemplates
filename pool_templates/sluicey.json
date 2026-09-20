@@ -1,0 +1,33 @@
+[
+    {
+        "pool": {
+            "name": "Sluicey",
+            "url": "https://sluicey.xyz",
+            "fee": 0.75,
+            "type": "TIDES"
+        }
+    },
+    {
+        "coin": "ZEC",
+        "servers": [
+            {
+                "geo": "Pool 1",
+                "urls": [
+                    "pool1.sluicey.xyz:3333"
+                ]
+            },
+            {
+                "geo": "Pool 2 (spare)",
+                "urls": [
+                    "pool2.sluicey.xyz:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

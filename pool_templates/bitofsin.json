@@ -1,0 +1,39 @@
+[
+    {
+        "pool": {
+            "name": "BitOfSin",
+            "url": "https://pool.bitofsin.com",
+            "fee": 0.5,
+            "type": "PPLNSBF"
+        }
+    },
+    {
+        "coin": "BSV",
+        "servers": [
+            {
+                "geo": "Small ASIC",
+                "urls": [
+                    "mine.bitofsin.com:6050"
+                ]
+            },
+            {
+                "geo": "General ASIC",
+                "urls": [
+                    "mine.bitofsin.com:6051"
+                ]
+            },
+            {
+                "geo": "High Rental ASIC",
+                "urls": [
+                    "mine.bitofsin.com:6052"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

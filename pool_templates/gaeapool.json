@@ -1,0 +1,65 @@
+[
+    {
+        "pool": {
+            "name": "GaeaPool",
+            "url": "https://gaeapool.com",
+            "fee": 1,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "GRIN",
+        "servers": [
+            {
+                "geo": "Asia",
+                "urls": [
+                    "grin32.asia.gaeapool.com:3344"
+                ]
+            },
+            {
+                "geo": "Europe",
+                "urls": [
+                    "grin32.eu.gaeapool.com:3344"
+                ]
+            },
+            {
+                "geo": "America",
+                "urls": [
+                    "grin32.us.gaeapool.com:3344"
+                ]
+            }
+        ],
+        "miners": {
+            "lolminer": {
+                "algo": "GRIN-C32",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "gminer": {
+                "algo": "grin32",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "cuckatoo32",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "%URL%",
+                "algo": "cuckatoo32",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

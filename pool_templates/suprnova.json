@@ -160,12 +160,6 @@
         "urls": [
           "grs.suprnova.cc:5544"
         ]
-      },
-      {
-        "geo": "United States",
-        "urls": [
-          "stratum-us.suprnova.cc:5544"
-        ]
       }
     ],
     "miners": {
@@ -247,15 +241,6 @@
         ],
         "ssl_urls": [
           "stratum-us.suprnova.cc:3336"
-        ]
-      },
-      {
-        "geo": "Asia Pacific",
-        "urls": [
-          "stratum-apac.suprnova.cc:3333"
-        ],
-        "ssl_urls": [
-          "stratum-apac.suprnova.cc:3336"
         ]
       }
     ],
@@ -366,12 +351,6 @@
         "urls": [
           "juno.suprnova.cc:8383"
         ]
-      },
-      {
-        "geo": "United States",
-        "urls": [
-          "stratum-us.suprnova.cc:8383"
-        ]
       }
     ],
     "miners": {
@@ -442,12 +421,6 @@
         "algo": "blake3_decred",
         "pass": "x",
         "template": "%WAL%.%WORKER_NAME%"
-      },
-      "bzminer": {
-        "url": "%URL%",
-        "algo": "decred",
-        "pass": "x",
-        "template": "%WAL%.%WORKER_NAME%"
       }
     }
   },
@@ -501,6 +474,255 @@
         "pass": "x",
         "template": "%WAL%.%WORKER_NAME%",
         "user_config": "--randomx-variant c64"
+      }
+    }
+  },
+  {
+    "coin": "LPEPE",
+    "servers": [
+    {
+      "geo": "Europe (low difficulty)",
+      "urls": [
+        "lpepe.suprnova.cc:6464"
+      ]
+    },
+    {
+      "geo": "Europe (high difficulty)",
+      "urls": [
+        "lpepe.suprnova.cc:6467"
+      ]
+    }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "yescryptr32",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "yescryptr32",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "yescryptr32",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "FAIR",
+    "servers": [
+    {
+      "geo": "Europe",
+      "urls": [
+        "fair.suprnova.cc:3833"
+      ],
+      "ssl_urls": [
+        "fair.suprnova.cc:3834"
+      ]
+    },
+    {
+      "geo": "Europe (low-power, phones)",
+      "urls": [
+        "fair.suprnova.cc:3835"
+      ]
+    }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "sha256mem",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha256mem",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "PRL",
+    "servers": [
+    {
+      "geo": "Europe (VarDiff)",
+      "urls": [
+        "prl.suprnova.cc:3373"
+      ]
+    },
+    {
+      "geo": "Europe (fixed difficulty)",
+      "urls": [
+        "prl.suprnova.cc:3370",
+        "prl.suprnova.cc:3371",
+        "prl.suprnova.cc:3372"
+      ]
+    }
+    ],
+    "miners": {
+      "_prototype": "miners_pearlhash"
+    }
+  },
+  {
+    "coin": "BLOZ",
+    "servers": [
+    {
+      "geo": "Europe (VarDiff)",
+      "urls": [
+        "bloz.suprnova.cc:7304"
+      ]
+    }
+    ],
+    "miners": {
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "randombloz",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "BC3",
+    "servers": [
+    {
+      "geo": "Europe (VarDiff)",
+      "urls": [
+        "bc3.suprnova.cc:7701",
+        "bc3.suprnova.cc:7700"
+      ]
+    }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "sha3t",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "NOID",
+    "servers": [
+    {
+      "geo": "Europe (low difficulty)",
+      "urls": [
+        "noid.suprnova.cc:3337"
+      ]
+    },
+    {
+      "geo": "Europe (high difficulty)",
+      "urls": [
+        "noid.suprnova.cc:3340"
+      ]
+    }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "poseidon2b",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      },
+      "peakminer": {
+        "url": "%URL%",
+        "algo": "parano1d",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+      },
+      "forgeminer": {
+        "url": "%URL%",
+        "algo": "noid",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+      }
+    }
+  },
+  {
+    "coin": "QUAN",
+    "servers": [
+    {
+      "geo": "Europe (low difficulty)",
+      "urls": [
+        "quantus.suprnova.cc:7071"
+      ]
+    },
+    {
+      "geo": "Europe (high difficulty)",
+      "urls": [
+        "quantus.suprnova.cc:7073"
+      ]
+    },
+    {
+      "geo": "Europe SOLO",
+      "urls": [
+        "quantus.suprnova.cc:7075"
+      ],
+      "ssl_urls": [
+        "quantus.suprnova.cc:7076"
+      ]
+    }
+    ],
+    "miners": {
+      "_prototype": "miners_quantus"
+    }
+  },
+  {
+    "coin": "KRX",
+    "servers": [
+    {
+      "geo": "Europe (VarDiff)",
+      "urls": [
+        "krx.suprnova.cc:4404"
+      ]
+    },
+    {
+      "geo": "Europe (VarDiff low / fixed)",
+      "urls": [
+        "krx.suprnova.cc:4401",
+        "krx.suprnova.cc:4402"
+      ]
+    }
+    ],
+    "miners": {
+      "_prototype": "miners_keryxhash"
+    }
+  },
+  {
+    "coin": "TSC",
+    "servers": [
+    {
+      "geo": "Europe (fast GPUs)",
+      "urls": [
+        "tsc.suprnova.cc:3310"
+      ]
+    },
+    {
+      "geo": "Europe (slower GPUs)",
+      "urls": [
+        "tsc.suprnova.cc:3309"
+      ]
+    }
+    ],
+    "miners": {
+      "custom": {
+        "url": "%URL%",
+        "algo": "tensorcash",
+        "pass": "x",
+        "miner": "lpminer",
+        "template": "%WAL%.%WORKER_NAME%",
+        "install_url": "https://eu.lproute.com/lpminer-tensorcash/lpminer-1.2.4.tar.gz",
+        "user_config": "--algo tensorcash --pool %URL% --wallet %WAL% --worker %WORKER_NAME% --password x"
       }
     }
   }

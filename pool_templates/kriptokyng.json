@@ -1,0 +1,41 @@
+[
+    {
+        "pool": {
+            "name": "KriptoKyng",
+            "url": "https://kriptokyng.com",
+            "fee": 2.1,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "LCC-sha256",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "stratum.kriptokyng.com:4675"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "LCC-minotaurx",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "stratum.kriptokyng.com:4678"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_minotaurx"
+        }
+    }
+]

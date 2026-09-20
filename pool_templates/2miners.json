@@ -473,7 +473,7 @@
         ],
         "miners": {
             "gminer": {
-                "algo": "grin29",
+                "algo": "grin32",
                 "port": "%URL_PORT%",
                 "server": "%URL_HOST%",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -486,7 +486,7 @@
                 "template": "%WAL%.%WORKER_NAME%"
             },
             "bminer": {
-                "algo": "cuckaroo29z",
+                "algo": "cuckatoo32",
                 "url": "%URL%",
                 "pass": "x",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -962,27 +962,9 @@
             }
         ],
         "miners": {
-            "gminer": {
-                "server": "%URL_HOST%",
-                "port": "%URL_PORT%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "eaglesong"
-            },
-            "nbminer": {
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "algo": "eaglesong"
-            },
-            "bminer": {
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x",
-                "algo": "ckb"
-            },
-            "smine": {
-                "url": "%URL%",
-                "template": "%WAL%.%WORKER_NAME%",
-                "pass": "x"
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -1231,5 +1213,66 @@
                 "template": "%WAL%.%WORKER_NAME%"
             }
         }
+    },
+    {
+        "coin": "MWC",
+        "servers": [
+        {
+            "geo": "EU",
+            "urls": [
+                "mwc.2miners.com:7575"
+            ],
+            "ssl_urls": [
+                "mwc.2miners.com:17575"
+            ]
+        },
+        {
+            "geo": "RU",
+            "urls": [
+                "mwc.2miners.ru:7575"
+            ],
+            "ssl_urls": [
+                "mwc.2miners.ru:17575"
+            ]
+        },
+        {
+            "geo": "US",
+            "urls": [
+                "us-mwc.2miners.com:7575"
+            ],
+            "ssl_urls": [
+                "us-mwc.2miners.com:17575"
+            ]
+        },
+        {
+            "geo": "ASIA",
+            "urls": [
+                "asia-mwc.2miners.com:7575"
+            ],
+            "ssl_urls": [
+                "asia-mwc.2miners.com:17575"
+            ]
+        }
+        ],
+            "miners": {
+                "gminer": {
+                    "algo": "grin31",
+                    "server": "%URL_HOST%",
+                    "port": "%URL_PORT%",
+                    "template": "%WAL%.%WORKER_NAME%",
+                    "pass": "x"
+                },
+                "lolminer": {
+                    "algo": "MWC-C31",
+                    "server": "%URL_HOST%",
+                    "port": "%URL_PORT%",
+                    "template": "%WAL%.%WORKER_NAME%",
+                    "pass": "x"
+                },
+                "asicminer": {
+                    "url": "stratum+tcp://%URL%",
+                    "template": "%WAL%.%WORKER_NAME%"
+                }
+            }
     }
 ]

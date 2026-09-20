@@ -48,21 +48,7 @@
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%",
-                "claymore_user_config": "-allpools 1\n-mode 1"
-            },
-            "ethminer": {
-                "cuda": 1,
-                "opencl": 1,
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "stratum1+tcp://%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "phoenixminer": {
-                "url": "POOL: %URL%, WAL: %WAL%"
-            }
+            "_prototype": "miners_ethash"
         }
     }
 ]

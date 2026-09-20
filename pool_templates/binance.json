@@ -95,5 +95,185 @@
                 "url": "stratum1+tcp://%URL%"
             }
         }
+    },
+    {
+        "coin": "LTC",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "ltc.poolbinance.com:3333",
+                    "ltc.poolbinance.com:443",
+                    "ltc.poolbinance.com:25"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "KAS",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "kas.poolbinance.com:3333",
+                    "kas.poolbinance.com:8888",
+                    "kas.poolbinance.com:443",
+                    "kas.poolbinance.com:1800"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kaspa"
+        }
+    },
+    {
+        "coin": "CFX",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "cfx.poolbinance.com:3333",
+                    "cfx.poolbinance.com:8888",
+                    "cfx.poolbinance.com:443",
+                    "cfx.poolbinance.com:1800"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_octopus"
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+        {
+            "geo": "Global",
+            "urls": [
+                "rvn.poolbinance.com:9000",
+                "rvn.poolbinance.com:9100",
+                "rvn.poolbinance.com:9200"
+            ]
+        }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "ETHW",
+        "servers": [
+        {
+            "geo": "AUTO (port 1800)",
+            "urls": [
+                "ethw.poolbinance.com:1800"
+            ]
+        },
+        {
+            "geo": "AUTO (port 3333)",
+            "urls": [
+                "ethw.poolbinance.com:3333"
+            ]
+        },
+        {
+            "geo": "AUTO (port 8888)",
+            "urls": [
+                "ethw.poolbinance.com:8888"
+            ]
+        },
+        {
+            "geo": "AUTO (port HTTPS)",
+            "urls": [
+                "ethw.poolbinance.com:443"
+            ]
+        },
+        {
+            "geo": "AUTO (port SMTP)",
+            "urls": [
+                "ethw.poolbinance.com:25"
+            ]
+        }
+        ],
+        "miners": {
+            "_prototype": "miners_ethash",
+            "tt-miner": {
+                "url": "stratum1+tcp://%URL%"
+            }
+        }
+    },
+    {
+        "coin": "DASH",
+        "servers": [
+            {
+                "geo": "AUTO (port 1800)",
+                "urls": [
+                    "dash.poolbinance.com:1800"
+                ]
+            },
+            {
+                "geo": "AUTO (port 3333)",
+                "urls": [
+                    "dash.poolbinance.com:3333"
+                ]
+            },
+            {
+                "geo": "AUTO (port 8888)",
+                "urls": [
+                    "dash.poolbinance.com:8888"
+                ]
+            },
+            {
+                "geo": "AUTO (port HTTPS)",
+                "urls": [
+                    "dash.poolbinance.com:443"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "CKB",
+        "servers": [
+            {
+                "geo": "AUTO (port 1800)",
+                "urls": [
+                    "ckb.poolbinance.com:1800"
+                ]
+            },
+            {
+                "geo": "AUTO (port 3333)",
+                "urls": [
+                    "ckb.poolbinance.com:3333"
+                ]
+            },
+            {
+                "geo": "AUTO (port 8888)",
+                "urls": [
+                    "ckb.poolbinance.com:8888"
+                ]
+            },
+            {
+                "geo": "AUTO (port HTTPS)",
+                "urls": [
+                    "ckb.poolbinance.com:443"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
     }
 ]

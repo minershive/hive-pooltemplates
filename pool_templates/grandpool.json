@@ -11,24 +11,6 @@
         "coin": "XEL",
         "servers": [
             {
-                "geo": "Ukraine, Kyiv [PPLNS]",
-                "urls": [
-                    "ua.grandpool.io:2025"
-                ],
-                "ssl_urls": [
-                    "ua.grandpool.io:2026"
-                ]
-            },
-            {
-                "geo": "Ukraine, Kyiv [SOLO]",
-                "urls": [
-                    "ua.grandpool.io:3025"
-                ],
-                "ssl_urls": [
-                    "ua.grandpool.io:3026"
-                ]
-            },
-            {
                 "geo": "USA, New York [PPLNS]",
                 "urls": [
                     "us.grandpool.io:2025"
@@ -88,7 +70,7 @@
         }
     },
     {
-        "coin": "IRON",
+        "coin": "BCH",
         "servers": [
             {
                 "geo": "USA, New York [PPLNS]",
@@ -146,7 +128,10 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_fishhash"
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
         }
     },
     {
@@ -277,7 +262,7 @@
         }
     },
     {
-        "coin": "DGB",
+        "coin": "DGB-sha256",
         "servers": [
             {
                 "geo": "USA, New York [PPLNS]",

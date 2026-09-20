@@ -1,0 +1,48 @@
+[
+    {
+        "pool": {
+            "name": "DRPool",
+            "url": "https://drpool.io"
+        }
+    },
+    {
+        "coin": "NPT",
+        "note": "Account based pool: put your DRPool account name in the Wallet field, not a coin address.",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "neptune.drpool.io:30127"
+                ]
+            }
+        ],
+        "miners": {
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "miner": "nptprover",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "https://pub-e1b06c9c8c3f481d81fa9619f12d0674.r2.dev/image/v2/nptprover-6.1.0.tar.gz"
+            }
+        }
+    },
+    {
+        "coin": "XNT",
+        "note": "Account based pool: put your DRPool account name in the Wallet field, not a coin address.",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "xnt.drpool.io:30120"
+                ]
+            }
+        ],
+        "miners": {
+            "custom": {
+                "url": "stratum+tcp://%URL%",
+                "miner": "xntprover",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "https://pub-7c2f8935763c410d8897cc0d6379670e.r2.dev/xntprover-1.2.0.tar.gz"
+            }
+        }
+    }
+]

@@ -1,0 +1,138 @@
+[
+    {
+        "pool": {
+            "name": "MegaHashPool",
+            "url": "https://megahashpool.es",
+            "fee": 3,
+            "type": "PROP / SOLO"
+        }
+    },
+    {
+        "coin": "GAEL",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "megahashpool.es:6753"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "pass": "c=GAEL",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "pass": "c=GAEL",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "gminer": {
+                "algo": "kawpow",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "c=GAEL",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "pass": "c=GAEL",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "pass": "c=GAEL",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "pass": "c=GAEL",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            },
+            "rigel": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "pass": "c=GAEL",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "bzminer": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "pass": "c=GAEL"
+            }
+        }
+    },
+    {
+        "coin": "SATOX",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "megahashpool.es:5827"
+                ]
+            }
+        ],
+        "miners": {
+            "t-rex": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "pass": "c=SATOX",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "nbminer": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "pass": "c=SATOX",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "gminer": {
+                "algo": "kawpow",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "c=SATOX",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "pass": "c=SATOX",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "kawpow",
+                "pass": "c=SATOX",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "pass": "c=SATOX",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--disable-cpu"
+            },
+            "rigel": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "pass": "c=SATOX",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "bzminer": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "pass": "c=SATOX"
+            }
+        }
+    }
+]

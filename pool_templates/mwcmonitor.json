@@ -1,0 +1,41 @@
+[
+  {
+    "pool": {
+      "name": "MWC Monitor Pool",
+      "url": "https://pool.mwcmonitor.com",
+      "fee": 1,
+      "type": "PPLNS"
+    }
+  },
+  {
+    "coin": "MWC",
+    "servers": [
+      {
+        "geo": "Global",
+        "urls": [
+          "pool.mwcmonitor.com:3333"
+        ]
+      }
+    ],
+    "miners": {
+      "gminer": {
+        "algo": "grin31",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "x"
+      },
+      "lolminer": {
+        "algo": "MWC-C31",
+        "server": "%URL_HOST%",
+        "port": "%URL_PORT%",
+        "template": "%WAL%.%WORKER_NAME%",
+        "pass": "x"
+      },
+      "asicminer": {
+        "url": "stratum+tcp://%URL%",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  }
+]

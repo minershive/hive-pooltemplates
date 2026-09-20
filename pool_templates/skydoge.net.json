@@ -1,0 +1,41 @@
+[
+    {
+        "pool": {
+            "name": "SkydogeNET",
+            "url": "https://pool.skydoge.net",
+            "fee": 0,
+            "type": "PPLNT"
+        }
+    },
+    {
+        "coin": "SKYDOGE",
+        "servers": [
+            {
+                "geo": "Global, GPU rigs",
+                "urls": [
+                    "pool.skydoge.net:3033"
+                ]
+            },
+            {
+                "geo": "Global, farms (high diff)",
+                "urls": [
+                    "pool.skydoge.net:3034"
+                ]
+            },
+            {
+                "geo": "Global, TLS",
+                "ssl_urls": [
+                    "pool.skydoge.net:3035"
+                ]
+            }
+        ],
+        "miners": {
+            "wildrig-multi": {
+                "url": "%URL%",
+                "algo": "skydoge",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

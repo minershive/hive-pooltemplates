@@ -1,0 +1,220 @@
+[
+  {
+    "pool": {
+      "name": "RabbitMiner",
+      "url": "https://rabbitminer.cc",
+      "fee": 1,
+      "type": "PROP"
+    }
+  },
+  {
+    "coin": "PRL",
+    "servers": [
+      {
+        "geo": "Netherlands",
+        "urls": [
+          "nl.rabbitminer.cc:1902"
+        ]
+      },
+      {
+        "geo": "Netherlands 2",
+        "urls": [
+          "nl2.rabbitminer.cc:1902"
+        ]
+      },
+      {
+        "geo": "Finland",
+        "urls": [
+          "fi.rabbitminer.cc:1902"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_pearlhash"
+    }
+  },
+  {
+    "coin": "XCB",
+    "servers": [
+      {
+        "geo": "Netherlands",
+        "urls": [
+          "nl.rabbitminer.cc:2905"
+        ]
+      },
+      {
+        "geo": "Finland",
+        "urls": [
+          "fi.rabbitminer.cc:2905"
+        ]
+      },
+      {
+        "geo": "Netherlands SOLO",
+        "urls": [
+          "nl.rabbitminer.cc:1915"
+        ]
+      },
+      {
+        "geo": "Finland SOLO",
+        "urls": [
+          "fi.rabbitminer.cc:1915"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "randomy",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+      }
+    }
+  },
+  {
+    "coin": "C64",
+    "servers": [
+      {
+        "geo": "Netherlands",
+        "urls": [
+          "nl.rabbitminer.cc:1908"
+        ]
+      },
+      {
+        "geo": "Finland",
+        "urls": [
+          "fi.rabbitminer.cc:1908"
+        ]
+      },
+      {
+        "geo": "Netherlands SOLO",
+        "urls": [
+          "nl.rabbitminer.cc:1918"
+        ]
+      },
+      {
+        "geo": "Finland SOLO",
+        "urls": [
+          "fi.rabbitminer.cc:1918"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "randomc64",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+      },
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "randomc64",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "BSTY",
+    "servers": [
+      {
+        "geo": "Netherlands",
+        "urls": [
+          "nl.rabbitminer.cc:1907"
+        ]
+      },
+      {
+        "geo": "Finland",
+        "urls": [
+          "fi.rabbitminer.cc:1907"
+        ]
+      }
+    ],
+    "miners": {
+      "srbminer": {
+        "url": "%URL%",
+        "algo": "yescrypt",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x"
+      },
+      "ccminer": {
+        "ccurl": "stratum+tcp://%URL%",
+        "ccalgo": "yescrypt",
+        "ccpass": "x",
+        "ccuser": "%WAL%.%WORKER_NAME%"
+      },
+      "cpuminer-opt": {
+        "url": "stratum+tcp://%URL%",
+        "algo": "yescrypt",
+        "pass": "x",
+        "template": "%WAL%.%WORKER_NAME%"
+      }
+    }
+  },
+  {
+    "coin": "SAL",
+    "servers": [
+      {
+        "geo": "Netherlands",
+        "urls": [
+          "nl.rabbitminer.cc:1900"
+        ]
+      },
+      {
+        "geo": "Finland",
+        "urls": [
+          "fi.rabbitminer.cc:1900"
+        ]
+      },
+      {
+        "geo": "Netherlands SOLO",
+        "urls": [
+          "nl.rabbitminer.cc:1910"
+        ]
+      },
+      {
+        "geo": "Finland SOLO",
+        "urls": [
+          "fi.rabbitminer.cc:1910"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_randomx_worker"
+    }
+  },
+  {
+    "coin": "XMR",
+    "servers": [
+      {
+        "geo": "Netherlands",
+        "urls": [
+          "nl.rabbitminer.cc:1909"
+        ]
+      },
+      {
+        "geo": "Finland",
+        "urls": [
+          "fi.rabbitminer.cc:1909"
+        ]
+      },
+      {
+        "geo": "Netherlands SOLO",
+        "urls": [
+          "nl.rabbitminer.cc:1919"
+        ]
+      },
+      {
+        "geo": "Finland SOLO",
+        "urls": [
+          "fi.rabbitminer.cc:1919"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_randomx_worker"
+    }
+  }
+]

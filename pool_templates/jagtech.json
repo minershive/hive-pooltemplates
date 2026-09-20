@@ -1,0 +1,104 @@
+[
+    {
+        "pool": {
+            "name": "Jagtech RXT",
+            "url": "https://pool.rxt.tari.jagtech.io",
+            "fee": 0.6,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "XTM-randomx",
+        "servers": [
+            {
+                "geo": "EU-1 Low (100K)",
+                "urls": [
+                    "eu-1.pool.rxt.tari.jagtech.io:3333"
+                ]
+            },
+            {
+                "geo": "EU-1 Mid (500K)",
+                "urls": [
+                    "eu-1.pool.rxt.tari.jagtech.io:5555"
+                ],
+                "ssl_urls": [
+                    "eu-1.pool.rxt.tari.jagtech.io:9001"
+                ]
+            },
+            {
+                "geo": "EU-1 High (1M)",
+                "urls": [
+                    "eu-1.pool.rxt.tari.jagtech.io:7777"
+                ],
+                "ssl_urls": [
+                    "eu-1.pool.rxt.tari.jagtech.io:9000"
+                ]
+            },
+            {
+                "geo": "EU-2 Low (100K)",
+                "urls": [
+                    "eu-2.pool.rxt.tari.jagtech.io:3333"
+                ]
+            },
+            {
+                "geo": "EU-2 Mid (500K)",
+                "urls": [
+                    "eu-2.pool.rxt.tari.jagtech.io:5555"
+                ],
+                "ssl_urls": [
+                    "eu-2.pool.rxt.tari.jagtech.io:9001"
+                ]
+            },
+            {
+                "geo": "EU-2 High (1M)",
+                "urls": [
+                    "eu-2.pool.rxt.tari.jagtech.io:7777"
+                ],
+                "ssl_urls": [
+                    "eu-2.pool.rxt.tari.jagtech.io:9000"
+                ]
+            },
+            {
+                "geo": "EU-3 Low (100K)",
+                "urls": [
+                    "eu-3.pool.rxt.tari.jagtech.io:3333"
+                ]
+            },
+            {
+                "geo": "EU-3 Mid (500K)",
+                "urls": [
+                    "eu-3.pool.rxt.tari.jagtech.io:5555"
+                ],
+                "ssl_urls": [
+                    "eu-3.pool.rxt.tari.jagtech.io:9001"
+                ]
+            },
+            {
+                "geo": "EU-3 High (1M)",
+                "urls": [
+                    "eu-3.pool.rxt.tari.jagtech.io:7777"
+                ],
+                "ssl_urls": [
+                    "eu-3.pool.rxt.tari.jagtech.io:9000"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "randomx",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--send-stales true"
+            },
+            "xmrig-new": {
+                "cpu": "1",
+                "fork": "xmrig",
+                "url": "%URL%",
+                "algo": "rx/0",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "pool": {
+            "name": "Abel-Nakamoto",
+            "url": "https://abel-nakamoto.xyz",
+            "fee": 3,
+            "type": "PROP"
+        }
+    },
+    {
+        "coin": "ABEL",
+        "servers": [
+            {
+                "geo": "Global",
+                "urls": [
+                    "pool.abel-nakamoto.xyz:3333"
+                ]
+            }
+        ],
+        "miners": {
+            "rigel": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "abelian",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "abel",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
