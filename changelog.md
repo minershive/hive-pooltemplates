@@ -1,9 +1,36 @@
+##### 0.6-231@260916 2026-09-16
+*   BzMiner v100.23 (Miner completely rewritten; New algos: `pearlhash`, `quantus`, `cuckaroo29`; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+
+##### 0.6-231@260915 2026-09-15
+*   SRBMiner v3.6.7 (Improved algorithm `noid` for mining Parano1d on NVIDIA 3000 and newer GPUs; Improved algorithm `quantus` for mining Quantus on NVIDIA 2000 and newer GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   WildRig v0.51.2 (Some stability fixes; Improved `pearlhash` for AMD 6000, 7000 and 9000 series; Fixed `pearlhash` support for AMD; Slightly better eff for NVIDIA RTX 5000 series; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   RGMiner v1.0.5 (Improved GPU `pearlhash` performance and efficiency, up to 0.61-0.91% hashrate gain on RTX 3000 series; Reduced video memory usage during mining and preparation; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer)
+*   OneZeroMiner v1.7.6 (Added support for `pearlhash` algorithm on Nvidia GPUs 20xx and newer; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases/tag/v1.7.6)
+*   Clore Rentals v012
+  
+##### 0.6-231@260907 2026-09-07
+*   SRBMiner v3.6.3 (Added algorithm `noid` for mining NOID/Parano1d for NVIDIA 3000, 4000, 5000 + H100, B200, B300 GPUs and AMD RDNA 2/3/4, fee 3%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
+##### 0.6-231@260906 2026-09-06
+*   WildRig v0.51.1 (Improved `pearlhash` up to 5% for NVIDIA H20/H100/H200/H800; Improved `pearlhash` for NVIDIA RTX 2000, 3000 and 4000 series including CMP 40HX/50HX; Minor `pearlhash` improvements for NVIDIA CMP 70HX/90HX; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   SRBMiner v3.6.2 (Improved algorithm `pearlhash` for NVIDIA H100, H200, B200; Improved algorithm `pearlhash` for 4000 series GPUs; Minor improvements on `pearlhash` for CMP 70HX, CMP 90HX, CMP 170HX, A100; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   RGMiner v1.04b (Improved energy efficiency of CMP 170HX and Volta GPUs by up to 17%; Improved Turing hashrate by up to 18%, depending on the GPU, with energy efficiency gains of up to 8%; Slightly improved hashrate for all other supported GPUs; Other improvements & fixes; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer)
+*   CPUminer-Opt-Rplant v6.0.14 (Add `homescrypt` algo for mining LMT/Lumenite; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
+##### 0.6-231@260831 2026-08-31
+*   WildRig v0.50.9.1 (Slightly improved `pearlhash` for NVIDIA H20/H100/H200/H800; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   CPUminer-Opt-Rplant v6.0.11 (Add `randompbc` algo for mining PBC/Privacy Bank Chain; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
+##### 0.6-231@260830 2026-08-30
+*   WildRig v0.50.8 (Improved `pearlhash` speed and efficiency up to 10% for NVIDIA RTX 2000 series including CMP 40HX/CMP 50HX; Minor speed bump of `pearlhash` for NVIDIA RTX 4000 series; Fixed extra memory allocation for non-Blackwell GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   SRBMiner v3.6.1 (Added support for NVIDIA B300 on algorithm `pearlhash`; Improved algorithm `pearlhash` for NVIDIA B200, unlocked CMP 70HX; Added AMD RDNA GPUs support for algorithm `pearlhash`; Improved algorithm `pearlhash` for 2000 series GPUs, also for unlocked CMP 40HX/CMP 50HX; Added optional `pearlhash` kernel for 2080 Ti / CMP 50HX, use `--pearl-k2`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+
 ##### 0.6-231@260826 2026-08-26
-*   WildRig v0.50.4 (Implemented `pearlhash` support for NVIDIA B200; Improved `pearlhash` for NVIDIA Hopper family; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   WildRig v0.50.6 (Implemented `pearlhash` support for NVIDIA B200; Improved `pearlhash` for NVIDIA Hopper family; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 *   🆕 RGMiner v1.0.3 (Initial Hive OS integration: CUDA miner for `pearlhash`, `exfer-argon2id`, `memhash`; Unlock Nvidia CMP 40HX / 50HX / 70HX / 90HX / 170HX, performed by the miner at startup - it's requires special NVIDIA on the rig, installing the driver is not part of this integration; Use `--no-cmp-unlock` or `--unlock-level-map` in the flight sheet "Extra config arguments" field to control the unlock path; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer)
 
 ##### 0.6-231@260823 2026-08-23
-*   SRBMiner v3.5.9 (Improved algorithm `pearlhash` for unlocked CMP 90HX; Improved algorithm `pearlhash` for 2000 series GPUs for efficiency and hashrate ; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   SRBMiner v3.5.9 (Improved algorithm `pearlhash` for unlocked CMP 90HX; Improved algorithm `pearlhash` for 2000 series GPUs for efficiency and hashrate; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   WildRig v0.50.4 (Improved `pearlhash` up to 130% for NVIDIA Tesla V100; Improved `pearlhash` up to 10% for NVIDIA A100/CMP 170HX; Improved `pearlhash` up to 8% for NVIDIA RTX 2000 series; Improved `pearlhash` up to 20% for unlocked NVIDIA CMP 90HX; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
 ##### 0.6-231@260820 2026-08-20
