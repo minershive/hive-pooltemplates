@@ -1,3 +1,10 @@
+##### 0.6-231@260921 2026-09-21
+*   SRBMiner v3.6.9 (Huge efficiency improvements on algorithm `pearlhash` for NVIDIA GPUs; Improved algorithm `quantus` on AMD GPUs and on NVIDIA 5000 series GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   ForgeMiner v1.8.1 (Quantus is faster on every supported architecture: Turing up to +29%, Ampere up to +9%, Ada up to +5%, Blackwell up to +30%; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
+*   PeakMiner v2.16.5rc1 (Improved `quantus` on RTX 20xx/16xx, A100, CMP, RTX 50xx; NOTES: Version for manual selection as v2.16.5; Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   🆕 PearlFortune Miner v2.2.4 (Initial Hive OS integration: 0% dev-fee mining on PearlFortune, mining on Kryptex will incur a 1.5%–2% dev-fee; NOTES: Please, see full changelog at https://github.com/pearlfortune/pearl-miner)
+*   RGMiner: improved Hive OS integration
+
 ##### 0.6-231@260920 2026-09-20
 *   SRBMiner v3.6.8 (Hashrate improvement on `pearlhash` for NVIDIA GPUs; Added support `quantus` for AMD RX400/RX500 series GPUs; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   BzMiner v100.31 (Improved `pearlhash` hashrate on AMD and NVIDIA; Add AMD Vega 56/64 GPU support for `warthog`; Add AMD RX400/500 series support for `quantus`; Improved `randomx` performance on Intel and AMD Zen CPUs; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
