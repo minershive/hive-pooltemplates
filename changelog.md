@@ -1,3 +1,12 @@
+##### 0.6-231@260920 2026-09-20
+*   SRBMiner v3.6.8 (Hashrate improvement on `pearlhash` for NVIDIA GPUs; Added support `quantus` for AMD RX400/RX500 series GPUs; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   BzMiner v100.31 (Improved `pearlhash` hashrate on AMD and NVIDIA; Add AMD Vega 56/64 GPU support for `warthog`; Add AMD RX400/500 series support for `quantus`; Improved `randomx` performance on Intel and AMD Zen CPUs; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+*   RGMiner v1.0.7 (Minor improvement of Pearl mining performance; v1.0.6: added support for mining Quantus, dev fee 2%; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer/releases)
+*   🆕 PeakMiner v2.16.4 (Initial Hive OS integration: Algorithms: `pearlhash`, `btx-matmul`, `sha256_csd`, `blake3_seq`, `blake3_an`, `poseidon2b` for NOID and `poseidon2` for Quantus; v2.16.4: Faster and more efficient `pearlhash` on datacentre cards - H100, H200, B200 and B300; Faster and more efficient on `quantus`; Improved `pearlhash` by 1-2% higher hashrate and efficiency on RTX 20xx; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer)
+*   🆕 ForgeMiner v1.8.0 (Initial Hive OS integration: Algorithms: `pearlhash`, `qhash`, `quantus`, `btx`, `noid`, `octopus`, `kawpow`, `xelis`; v1.8.0: Added algorithm `quantus` on Kryptex and LuckyPool, RTX 20-series (Turing) and newer, CMP 50HX and 90HX included; Hashrate now refreshes twice a second on every algorithm, and the smoothed figure is what the Hive OS stats, the API and the luck estimate report; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner)
+*   🆕 NekoMiner v0.14.44 (Initial Hive OS integration: Algorithms: `poscan`, `btx`, `equihash 192/7` and some other; NOTES: Please, see full changelog at https://github.com/nr800/nekominer)
+*   🆕 Suprminer v1.9.24 (Initial Hive OS integration: Algorithms: `pearl`, `sha3t`, `xelis`, `qhash`, `gap`, `nock`, `quantus` and some other; NOTES: Please, see full changelog at https://github.com/ocminer/suprminer)
+
 ##### 0.6-231@260916 2026-09-16
 *   BzMiner v100.23 (Miner completely rewritten; New algos: `pearlhash`, `quantus`, `cuckaroo29`; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
 
