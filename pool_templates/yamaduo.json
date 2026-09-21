@@ -18,14 +18,12 @@
             }
         ],
         "miners": {
-            "custom": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "sha256d",
-                "pass": "x",
-                "miner": "csdpool",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "https://github.com/dangraagu/CSD-Mining-pool-public/releases/latest/download/csdpool.tar.gz",
-                "user_config": "--backend cuda --address %WAL%"
+            "peakminer": {
+                "url": "%URL%",
+                "algo": "csd",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "pass": "x"
             }
         }
     }

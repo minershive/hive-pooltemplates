@@ -60,13 +60,25 @@
             }
         ],
         "miners": {
-            "custom": {
-                "url": "stratum+ssl://%URL%",
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "poseidon2b",
                 "pass": "x",
-                "miner": "invminer",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "https://github.com/getrigeos/INVminer-Release/releases/download/v0.1.85/invminer-0.1.85.tar.gz",
-                "user_config": "--coin noid"
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "peakminer": {
+                "url": "%URL%",
+                "algo": "parano1d",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "pass": "x"
+            },
+            "forgeminer": {
+                "url": "%URL%",
+                "algo": "noid",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "pass": "x"
             }
         }
     },
@@ -111,14 +123,7 @@
             }
         ],
         "miners": {
-            "custom": {
-                "url": "stratum+ssl://%URL%",
-                "pass": "x",
-                "miner": "invminer",
-                "template": "%WAL%.%WORKER_NAME%",
-                "install_url": "https://github.com/getrigeos/INVminer-Release/releases/download/v0.1.85/invminer-0.1.85.tar.gz",
-                "user_config": "--coin quan"
-            }
+            "_prototype": "miners_quantus"
         }
     }
 ]

@@ -186,7 +186,10 @@
             }
         ],
         "miners": {
-          "_prototype": "miners_kaspa"
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
         }
     },
     {
@@ -354,33 +357,6 @@
             }
         ],
         "miners": {
-            "dstm": {
-                "pass": "x",
-                "port": "%URL_PORT%",
-                "server": "%URL_HOST%",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "ewbf": {
-                "zpass": "x",
-                "zport": "%URL_PORT%",
-                "zserver": "%URL_HOST%",
-                "ztemplate": "%WAL%.%WORKER_NAME%"
-            },
-            "bminer": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
-            "claymore-z": {
-                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
-            },
-            "sgminer-gm": {
-                "url": "%URL%",
-                "algo": "equihash",
-                "fork": "gm",
-                "pass": "x",
-                "template": "%WAL%.%WORKER_NAME%"
-            },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
                 "template": "%WAL%.%WORKER_NAME%"
@@ -650,7 +626,14 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_kawpow"
+            "_prototype": "miners_kawpow",
+            "forgeminer": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "pass": "x"
+            }
         }
     },
     {
@@ -730,7 +713,15 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_kawpow"
+            "_prototype": "miners_kawpow",
+            "forgeminer": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "pass": "x",
+                "user_config": "--coin xna"
+            }
         }
     },
     {
@@ -1092,7 +1083,15 @@
             }
         ],
         "miners": {
-            "_prototype": "miners_kawpow"
+            "_prototype": "miners_kawpow",
+            "forgeminer": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "template": "%WAL%",
+                "worker": "%WORKER_NAME%",
+                "pass": "x",
+                "user_config": "--coin quai"
+            }
         }
     },
     {

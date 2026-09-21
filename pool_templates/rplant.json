@@ -580,7 +580,15 @@
       }
     ],
     "miners": {
-      "_prototype": "miners_kawpow"
+      "_prototype": "miners_kawpow",
+      "forgeminer": {
+        "url": "%URL%",
+        "algo": "kawpow",
+        "template": "%WAL%",
+        "worker": "%WORKER_NAME%",
+        "pass": "x",
+        "user_config": "--coin xna"
+      }
     }
   },
   {
@@ -1213,13 +1221,11 @@
       }
     ],
     "miners": {
-      "custom": {
-        "url": "stratum+tcp://%URL%",
+      "nekominer": {
+        "url": "%URL%",
         "algo": "poscan",
         "pass": "x",
-        "miner": "numen",
-        "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/numen-network/numen/releases/download/v1.0.0/numen-linux-x86_64.tar.gz"
+        "template": "%WAL%.%WORKER_NAME%"
       }
     }
   },
@@ -1275,6 +1281,41 @@
         "worker": "%WORKER_NAME%",
         "pass": "x"
       }
+    }
+  },
+  {
+    "coin": "CPAY",
+    "servers": [
+      {
+        "geo": "Europe",
+        "urls": [
+          "stratum-eu.rplant.xyz:7153"
+        ],
+        "ssl_urls": [
+          "stratum-eu.rplant.xyz:17153"
+        ]
+      },
+      {
+        "geo": "Asia",
+        "urls": [
+          "stratum-asia.rplant.xyz:7153"
+        ],
+        "ssl_urls": [
+          "stratum-asia.rplant.xyz:17153"
+        ]
+      },
+      {
+        "geo": "North America",
+        "urls": [
+          "stratum-na.rplant.xyz:7153"
+        ],
+        "ssl_urls": [
+          "stratum-na.rplant.xyz:17153"
+        ]
+      }
+    ],
+    "miners": {
+      "_prototype": "miners_cryptix"
     }
   }
 ]
