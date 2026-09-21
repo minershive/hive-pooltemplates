@@ -22,22 +22,10 @@
             }
         ],
         "miners": {
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "equihash ",
-                "ccpass": "c=BTC"
-            },
-            "sgminer-gm": {
-                "url": "stratum+tcp://%URL%",
-                "algo": "equihash ",
-                "pass": "c=BTC",
-                "template": "%WAL%",
-                "user_config": "\"rawintensity\" : \"5120\"\n\"worksize\" : \"256\"\n\"lookup-gap\" : \"2\"\n\"thread-concurrency\" : \"8192\"\n\"shaders\" : \"0\"\n\"gpu-threads\" : \"2\""
-            },
             "asicminer": {
                 "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+                "pass": "c=BTC",
+                "template": "%WAL%"
             }
         }
     },
@@ -1455,18 +1443,6 @@
       }
     ],
     "miners": {
-      "ccminer": {
-        "ccurl": "stratum+tcp://%URL%",
-        "ccuser": "%WAL%",
-        "ccalgo": "x11",
-        "ccpass": "c=BTC"
-      },
-      "srbminer": {
-        "url": "%URL%",
-        "algo": "x11",
-        "pass": "c=BTC",
-        "template": "%WAL%"
-      },
       "asicminer": {
         "url": "stratum+tcp://%URL%",
         "pass": "c=BTC",
