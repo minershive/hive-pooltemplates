@@ -173,26 +173,6 @@ If your pool contains SSL ports on the same domains then you can add special sec
 }
 ```
 
-
-## Retired coins
-A coin stays in `algos.json` for as long as it can be mined. When its project is closed, drained by an exploit, merged into another coin or moved off proof of work, the ticker is not deleted: it moves to `algos_graveyard.json` and its pool entries are removed from `pool_templates/`. The graveyard keeps what the main registry has no room for - the full coin name, the algorithms the coin used to sit on, why it is gone, when that happened and a link to the evidence:
-```json
-{
-    "ticker": "XHV",
-    "title": "Haven Protocol",
-    "algos": [
-        "cryptonight-xhv"
-    ],
-    "reason": "closed",
-    "date": "2024-12-12",
-    "note": "The team announced the closure after an exploit minted about 1.3 billion illicit XHV.",
-    "source": "https://havenprotocol.org/2024/12/12/project-closure-announcement/"
-}
-```
-`reason` is one of `closed`, `exploit`, `merged`, `abandoned` or `pow-ended`, and `date` is when that happened, not when the file was edited. A coin only gets buried on hard evidence - an announcement from the team, a confirmed exploit, a merge or a switch away from proof of work. Having no pools and no markets is not enough on its own.
-
-`check_coins.py` runs in CI and keeps the two registries apart: no ticker may be in both files, no pool template may reference a buried coin, and every coin used in `pool_templates/` has to be registered in `algos.json`.
-
 # Miners definitions for Hive 2.0
 
 Each file in `miners` directory contains definitions for corresponding miner.
@@ -302,3 +282,24 @@ miners_xelishashv3 | xelishashv3 | mining XEL / Xelis after Dec 15, 2025 |
 miners_xhash | xhash | mining LAX / Parallax | 
 miners_zelhash | zelhash |  | 
 miners_zhash_btg | zhash | Bitcoin Gold (Equihash 144,5) |
+
+---
+
+## Retired coins
+A coin stays in `algos.json` for as long as it can be mined. When its project is closed, drained by an exploit, merged into another coin or moved off proof of work, the ticker is not deleted: it moves to `algos_graveyard.json` and its pool entries are removed from `pool_templates/`. The graveyard keeps what the main registry has no room for - the full coin name, the algorithms the coin used to sit on, why it is gone, when that happened and a link to the evidence:
+```json
+{
+    "ticker": "XHV",
+    "title": "Haven Protocol",
+    "algos": [
+        "cryptonight-xhv"
+    ],
+    "reason": "closed",
+    "date": "2024-12-12",
+    "note": "The team announced the closure after an exploit minted about 1.3 billion illicit XHV.",
+    "source": "https://havenprotocol.org/2024/12/12/project-closure-announcement/"
+}
+```
+`reason` is one of `closed`, `exploit`, `merged`, `abandoned` or `pow-ended`, and `date` is when that happened, not when the file was edited. A coin only gets buried on hard evidence - an announcement from the team, a confirmed exploit, a merge or a switch away from proof of work. Having no pools and no markets is not enough on its own.
+
+`check_coins.py` runs in CI and keeps the two registries apart: no ticker may be in both files, no pool template may reference a buried coin, and every coin used in `pool_templates/` has to be registered in `algos.json`.
