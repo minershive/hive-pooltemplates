@@ -1,3 +1,7 @@
+##### 0.6-231@260922 2026-09-22
+*   PeakMiner v2.16.5 (Improved `quantus` on RTX 20xx/16xx, A100, CMP, RTX 50xx; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   CPUminer-Opt-Rplant v6.0.16 (Add `poscan` algo for mining NUMN/Numen; Add `isochron` algo for mining PLNE/Plaine; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-231@260921 2026-09-21
 *   SRBMiner v3.6.9 (Huge efficiency improvements on algorithm `pearlhash` for NVIDIA GPUs; Improved algorithm `quantus` on AMD GPUs and on NVIDIA 5000 series GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   ForgeMiner v1.8.1 (Quantus is faster on every supported architecture: Turing up to +29%, Ampere up to +9%, Ada up to +5%, Blackwell up to +30%; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
