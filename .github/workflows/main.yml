@@ -30,3 +30,8 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: ocular-d/json-linter@7d3716a34bcd6fcc5b3b38141a21b9e02da6531d
         uses: ocular-d/json-linter@0.0.2
+
+      # Checks that every coin is registered exactly once: in algos.json while
+      # it can be mined, in algos_graveyard.json once its project is gone
+      - name: coins-check
+        run: python3 check_coins.py
