@@ -1,3 +1,7 @@
+##### 0.6-231@260923 2026-09-23
+*   PeakMiner v2.17.0rc1 (Improved `pearlhash` hashrate and efficiency: RTX 20xx, 30xx, 40xx, 50xx, CMP 40HX, 50HX, 90HX, 170HX, T4, A100, H100, H200, B200, B300; NOTES: Version for manual selection as v2.17.0; Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   BzMiner v100.36 (Big `pearlhash` improvement on AMD RDNA4 and other AMD too; Improved `c29`, `randomx`; Some other changes & improvements; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+
 ##### 0.6-231@260922 2026-09-22
 *   PeakMiner v2.16.5 (Improved `quantus` on RTX 20xx/16xx, A100, CMP, RTX 50xx; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
 *   CPUminer-Opt-Rplant v6.0.16 (Add `poscan` algo for mining NUMN/Numen; Add `isochron` algo for mining PLNE/Plaine; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
