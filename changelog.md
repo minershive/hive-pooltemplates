@@ -1,3 +1,8 @@
+##### 0.6-231@260924 2026-09-24
+*   RGMiner v1.0.8 (Improved `pearlhash` performance for all supported GPUs, with updated power and efficiency figures; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer/releases)
+*   PeakMiner v2.17.0rc2 (Improved `pearlhash` hashrate and efficiency: RTX 20xx, 30xx, 40xx, 50xx, CMP 40HX, 50HX, 90HX, 170HX, T4, A100, H100, H200, B200, B300; NOTES: Version for manual selection as v2.17.0; Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   PearlFortune Miner v2.2.6 (Optimized low-power mining performance for RTX 4070 / 4070 SUPER / 4070 Ti SUPER / 5090; Improved A100 / A800 / CMP 170HX mining performance by an average of 20%; Improved RTX 4090 full-power mining: market-leading performance; Fixed all known reported issues; NOTES: Please, see full changelog at https://github.com/pearlfortune/pearl-miner/releases)
+
 ##### 0.6-231@260923 2026-09-23
 *   PeakMiner v2.17.0rc1 (Improved `pearlhash` hashrate and efficiency: RTX 20xx, 30xx, 40xx, 50xx, CMP 40HX, 50HX, 90HX, 170HX, T4, A100, H100, H200, B200, B300; NOTES: Version for manual selection as v2.17.0; Please, see full changelog at https://github.com/peakminer/peakminer/releases)
 *   BzMiner v100.36 (Big `pearlhash` improvement on AMD RDNA4 and other AMD too; Improved `c29`, `randomx`; Some other changes & improvements; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
