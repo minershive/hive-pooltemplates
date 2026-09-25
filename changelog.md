@@ -1,3 +1,6 @@
+##### 0.6-231@260925-2 2026-09-25
+*   WildRig v0.51.3 (Improved `pearlhash` power efficiency up to 10% across NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+
 ##### 0.6-231@260925 2026-09-25
 *   RGMiner v1.0.9b (Hashrate increased on `Quantus` mining by 5% on Turing, 3% on Ampere, 1.3% on Ada and 1.8% on Blackwell; Add Unlocker v3 for CMP 170HX : four more SM blocks are unlocked; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer/releases)
 *   PeakMiner v2.17.1 (Add option `--cmp-unlock` to unlock compute performance on CMP HX GPUs; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
