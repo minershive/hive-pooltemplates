@@ -1,3 +1,8 @@
+##### 0.6-231@260925 2026-09-25
+*   RGMiner v1.0.9b (Hashrate increased on `Quantus` mining by 5% on Turing, 3% on Ampere, 1.3% on Ada and 1.8% on Blackwell; Add Unlocker v3 for CMP 170HX : four more SM blocks are unlocked; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer/releases)
+*   PeakMiner v2.17.1 (Add option `--cmp-unlock` to unlock compute performance on CMP HX GPUs; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   Suprminer v1.9.25 (Adds PRL + NOCK merged mining on compatible pools; NOTES: Please, see full changelog at https://github.com/ocminer/suprminer)
+  
 ##### 0.6-231@260924 2026-09-24
 *   RGMiner v1.0.8 (Improved `pearlhash` performance for all supported GPUs, with updated power and efficiency figures; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer/releases)
 *   PeakMiner v2.17.0rc2 (Improved `pearlhash` hashrate and efficiency: RTX 20xx, 30xx, 40xx, 50xx, CMP 40HX, 50HX, 90HX, 170HX, T4, A100, H100, H200, B200, B300; NOTES: Version for manual selection as v2.17.0; Please, see full changelog at https://github.com/peakminer/peakminer/releases)
