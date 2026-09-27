@@ -1,3 +1,8 @@
+##### 0.6-231@260927 2026-09-27
+*   PeakMiner v2.17.2 (Higher hashrate and efficiency on RTX 30xx on Quantus mining; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   ForgeMiner v1.8.2 (Pearl mining draws less power on every supported GPU  — the same hashrate at lower wattage, up to 8% depending on GPU; Improved hashrate for Turing and Blackwell about +2%; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
+*   BzMiner v100.40 (Big Nvidia & AMD Pearl optimizations; Further `randomx` optimizations; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+
 ##### 0.6-231@260925-2 2026-09-25
 *   WildRig v0.51.3 (Improved `pearlhash` power efficiency up to 10% across NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
