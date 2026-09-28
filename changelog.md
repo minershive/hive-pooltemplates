@@ -1,3 +1,10 @@
+##### 0.6-231@260928 2026-09-28
+*   PeakMiner v2.17.3 (Add support Quantus mining on AMD cards RX 400/500 "Polaris" and RX 5x00 Navi10 GPUs; Higher hashrate on Quantus mining and better efficiency on the GTX 10xx series, on the Tesla V100, and across the RTX 40xx and RTX Ada cards; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   ForgeMiner v1.8.3 (Faster Quantus and more efficient on every supported GPU: up to about +3% more hashrate, and more hashrate-per-watt too; Fixed startup for 6 GB cards; Improved hashrate for Turing and Blackwell about +2%; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
+*   SRBMiner v3.7.0 (Minor improvements on `pearlhash` for NVIDIA GPUs; Improved algorithm `quantus` on AMD GPUs and on NVIDIA 5000 series GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   NekoMiner v0.14.57 (Equihash 192/7: Pascal and Turing fixes; NOTES: Please, see full changelog at https://github.com/nr800/nekominer)
+*   PearlFortune Miner v2.2.7 (Significantly improved B200 / H100 / H800 mining performance; Optimized mining performance for RTX 5090 / 5090D; Optimized memory usage for better compatibility with devices equipped with 4 GB of system RAM; NOTES: Please, see full changelog at https://github.com/pearlfortune/pearl-miner/releases)
+
 ##### 0.6-231@260927 2026-09-27
 *   PeakMiner v2.17.2 (Higher hashrate and efficiency on RTX 30xx on Quantus mining; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
 *   ForgeMiner v1.8.2 (Pearl mining draws less power on every supported GPU  — the same hashrate at lower wattage, up to 8% depending on GPU; Improved hashrate for Turing and Blackwell about +2%; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
