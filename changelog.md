@@ -1,3 +1,9 @@
+##### 0.6-231@260929 2026-09-29
+*   PeakMiner v2.17.4 (Improved `quantus` on Nvidia GTX 10xx series, Titan Xp and the Quadro P cards gain +18.7% to +22.4% hashrate, and +18.5% to +25.3% efficiency; Improved `quantus` on Nvidia Tesla V100 and Titan V gain +3.0% to +4.0% hashrate and up to +4.5% efficiency; Add support Nvidia Tesla P100 on `quantus`; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   SRBMiner v3.7.1 (Improvements on algorithm `quantus` for AMD and INTEL GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   CPUminer-Opt-Rplant v6.0.17 (Add `towerwalk` algo — JTM/Jetsam; Add `rx/zecnero` algo — ZMR/Zecnero; Faster `yespower` and `power2b` on AMD EPYC; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   ForgeMiner: Improved integration
+
 ##### 0.6-231@260928 2026-09-28
 *   PeakMiner v2.17.3 (Add support Quantus mining on AMD cards RX 400/500 "Polaris" and RX 5x00 Navi10 GPUs; Higher hashrate on Quantus mining and better efficiency on the GTX 10xx series, on the Tesla V100, and across the RTX 40xx and RTX Ada cards; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
 *   ForgeMiner v1.8.3 (Faster Quantus and more efficient on every supported GPU: up to about +3% more hashrate, and more hashrate-per-watt too; Fixed startup for 6 GB cards; Improved hashrate for Turing and Blackwell about +2%; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
@@ -11,7 +17,7 @@
 *   BzMiner v100.40 (Big Nvidia & AMD Pearl optimizations; Further `randomx` optimizations; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
 
 ##### 0.6-231@260925-2 2026-09-25
-*   WildRig v0.51.3 (Improved `pearlhash` power efficiency up to 10% across NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   WildRig v0.51.3 (Improved `pearlhash` power efficiency up to 10% across NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
 
 ##### 0.6-231@260925 2026-09-25
 *   RGMiner v1.0.9b (Hashrate increased on `Quantus` mining by 5% on Turing, 3% on Ampere, 1.3% on Ada and 1.8% on Blackwell; Add Unlocker v3 for CMP 170HX : four more SM blocks are unlocked; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer/releases)
@@ -29,7 +35,7 @@
 
 ##### 0.6-231@260922 2026-09-22
 *   PeakMiner v2.16.5 (Improved `quantus` on RTX 20xx/16xx, A100, CMP, RTX 50xx; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
-*   CPUminer-Opt-Rplant v6.0.16 (Add `poscan` algo for mining NUMN/Numen; Add `isochron` algo for mining PLNE/Plaine; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   CPUminer-Opt-Rplant v6.0.16 (Add `poscan` algo for mining NUMN/Numen; Add `isochron` algo for mining PLNE/Plaine; NOTES: https://github.com/rplant-pool/cpuminer-rplant/releases)
 
 ##### 0.6-231@260921 2026-09-21
 *   SRBMiner v3.6.9 (Huge efficiency improvements on algorithm `pearlhash` for NVIDIA GPUs; Improved algorithm `quantus` on AMD GPUs and on NVIDIA 5000 series GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
@@ -68,7 +74,7 @@
 
 ##### 0.6-231@260831 2026-08-31
 *   WildRig v0.50.9.1 (Slightly improved `pearlhash` for NVIDIA H20/H100/H200/H800; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
-*   CPUminer-Opt-Rplant v6.0.11 (Add `randompbc` algo for mining PBC/Privacy Bank Chain; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   CPUminer-Opt-Rplant v6.0.11 (Add `randompbc` algo for mining PBC/Privacy Bank Chain; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
 
 ##### 0.6-231@260830 2026-08-30
 *   WildRig v0.50.8 (Improved `pearlhash` speed and efficiency up to 10% for NVIDIA RTX 2000 series including CMP 40HX/CMP 50HX; Minor speed bump of `pearlhash` for NVIDIA RTX 4000 series; Fixed extra memory allocation for non-Blackwell GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
