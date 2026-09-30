@@ -1,3 +1,8 @@
+##### 0.6-231@260930 2026-09-30
+*   ForgeMiner v1.8.4 (Reduced CPU load on Quantus mining; Quantus hashrate is slightly higher on almost every GPU; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
+*   RGMiner v1.1.0 (Improved `pearlhash` on Blackwell by 1.4%; Added an SM60 backend for CMP 100-100 and Tesla P100 on Quantus mining; Fixed a pool connection error on PearlFortune on Pearl mining; Added `Nock-ZK` algorithm with dev-fee 2%, supported RabbitMiner pool; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer/releases)
+*   FiroMiner v1.5.2 (ethminer fork; CUDA 12.9 & OpenCL build; NOTES: Please, see full changelog at https://github.com/firoorg/firominer/releases)
+
 ##### 0.6-231@260929 2026-09-29
 *   PeakMiner v2.17.4 (Improved `quantus` on Nvidia GTX 10xx series, Titan Xp and the Quadro P cards gain +18.7% to +22.4% hashrate, and +18.5% to +25.3% efficiency; Improved `quantus` on Nvidia Tesla V100 and Titan V gain +3.0% to +4.0% hashrate and up to +4.5% efficiency; Add support Nvidia Tesla P100 on `quantus`; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
 *   SRBMiner v3.7.1 (Improvements on algorithm `quantus` for AMD and INTEL GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
