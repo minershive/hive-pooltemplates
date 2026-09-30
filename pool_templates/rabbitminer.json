@@ -216,5 +216,25 @@
     "miners": {
       "_prototype": "miners_randomx_worker"
     }
+  },
+  {
+    "coin": "NOCK",
+    "servers": [
+      {
+        "geo": "Netherlands",
+        "urls": [
+          "nl2.rabbitminer.cc:1108"
+        ]
+      }
+    ],
+    "miners": {
+        "rgminer": {
+            "url": "%URL%",
+            "algo": "nock-zk",
+            "proto": "rabbit",
+            "worker": "%WORKER_NAME%",
+            "template": "%WAL%"
+        }
+    }
   }
 ]
