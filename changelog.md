@@ -1,3 +1,10 @@
+##### 0.6-231@261001 2026-10-01
+*   RGMiner v1.1.1 (Improved Quantus mining: hashrate increased by 41% on Pascal, 4.4% on Turing, 1.7% on Ampere, 2.3% on Ada, and 0.7% on Blackwell, also fixed autotune on Ampere; Improved Nockchain mining: faster proof generation on all GPUs reduces the risk of orphaned blocks; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer/releases)
+*   PeakMiner v2.17.5 (Improved Quantus mining on Pascal and Volta GPUs: GTX 1080 +3.8%, GTX 1070 +3.2%, GTX 1060 +2.7%, Tesla V100-SXM2 gains +10.3%; Bug fixes, and a steadier mining loop; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   BzMiner v100.41 (Improved mining `pearlhash`, `quantus`, `c29`, `cn` on Nvidia GTX 1660 series cards; Improved mining Pearl to 20 series Nvidia; Improved `quantus` on AMD GPUs; Minor `pearlhash` improvements to all AMD GPUs; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+*   NekoMiner v0.14.59 (Equihash 192/7: small speedups on Ampere, Ada and Blackwell; NOTES: Please, see full changelog at https://github.com/nr800/nekominer/releases)
+*   Suprminer v1.9.26 (Faster Quantus on NVIDIA RTX 40-series "Ada" GPUs; Faster Quantus OpenCL arithmetic in the AMD / GTX 10-series; Improved Pearl mining; NOTES: Please, see full changelog at https://github.com/ocminer/suprminer/releases)
+
 ##### 0.6-231@260930 2026-09-30
 *   ForgeMiner v1.8.4 (Reduced CPU load on Quantus mining; Quantus hashrate is slightly higher on almost every GPU; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
 *   RGMiner v1.1.0 (Improved `pearlhash` on Blackwell by 1.4%; Added an SM60 backend for CMP 100-100 and Tesla P100 on Quantus mining; Fixed a pool connection error on PearlFortune on Pearl mining; Added `Nock-ZK` algorithm with dev-fee 2%, supported RabbitMiner pool; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer/releases)
