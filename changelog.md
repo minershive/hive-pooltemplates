@@ -1,3 +1,9 @@
+##### 0.6-231@261002 2026-10-02
+*   OneZeroMiner v1.7.7 (Added support for Blackwell and Hopper: 50xx series, H100/H200/H800, B200; Significant performance improvement for the previously supported generations; NOTES: This version need manual selection v2.17.6 in miner settings; Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   PeakMiner v2.17.6rc1 (Improved `pearlhash` on Nvidia CMP 90HX which gains +2.6% hashrate and drops about power consuption by 19 W, also improved across the RTX 50xx and RTX PRO cards, from +0.5% to +1.5%; Improved Quantus mining on NVIDIA Tesla P100 which gains +21.3%; NOTES: This version need manual selection v2.17.6 in miner settings; Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   CPUminer-Opt-Rplant v6.0.19 (Add `rx/2b` algo RandomX v2 over the bitcoin header: CONN/ConnectCoin; Add `rx/arq` algo: PDC/Privacy Data Coin; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
+*   RGminer: Improved integration
+
 ##### 0.6-231@261001 2026-10-01
 *   RGMiner v1.1.1 (Improved Quantus mining: hashrate increased by 41% on Pascal, 4.4% on Turing, 1.7% on Ampere, 2.3% on Ada, and 0.7% on Blackwell, also fixed autotune on Ampere; Improved Nockchain mining: faster proof generation on all GPUs reduces the risk of orphaned blocks; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer/releases)
 *   PeakMiner v2.17.5 (Improved Quantus mining on Pascal and Volta GPUs: GTX 1080 +3.8%, GTX 1070 +3.2%, GTX 1060 +2.7%, Tesla V100-SXM2 gains +10.3%; Bug fixes, and a steadier mining loop; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
@@ -13,7 +19,7 @@
 ##### 0.6-231@260929 2026-09-29
 *   PeakMiner v2.17.4 (Improved `quantus` on Nvidia GTX 10xx series, Titan Xp and the Quadro P cards gain +18.7% to +22.4% hashrate, and +18.5% to +25.3% efficiency; Improved `quantus` on Nvidia Tesla V100 and Titan V gain +3.0% to +4.0% hashrate and up to +4.5% efficiency; Add support Nvidia Tesla P100 on `quantus`; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
 *   SRBMiner v3.7.1 (Improvements on algorithm `quantus` for AMD and INTEL GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
-*   CPUminer-Opt-Rplant v6.0.17 (Add `towerwalk` algo — JTM/Jetsam; Add `rx/zecnero` algo — ZMR/Zecnero; Faster `yespower` and `power2b` on AMD EPYC; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   CPUminer-Opt-Rplant v6.0.17 (Add `towerwalk` algo — JTM/Jetsam; Add `rx/zecnero` algo — ZMR/Zecnero; Faster `yespower` and `power2b` on AMD EPYC; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
 *   ForgeMiner: Improved integration
 
 ##### 0.6-231@260928 2026-09-28
