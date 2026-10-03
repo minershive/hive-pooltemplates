@@ -1,6 +1,13 @@
+##### 0.6-231@261003 2026-10-03
+*   OneZeroMiner v1.7.8 (Added support for `quantus` algorithm on Nvidia GPUs Pascal and newer, dev fee ~2%; Minor `pearlhash` performance improvement for A100/CMP 170HX, dev fee ~2%; Added option `--intensity` for Quantus: comma separated list of values between 6 and 12, default is 8; NOTES: This version need manual selection v2.17.6 in miner settings; Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   PeakMiner v2.17.6rc2 (Fixed GPU utilization dropping on the H100, H200, B200 and B300; NOTES: This version need manual selection v2.17.6 in miner settings; Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   BzMiner v100.45 (Improvements on Pearl for Nvidia by ~2%; Improvements on Quantus on both AMD and Nvidia 30 and 50 series; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+*   Suprminer v1.9.27 (Improved Quantus performance; NOTES: Please, see full changelog at https://github.com/ocminer/suprminer/releases)
+*   FiroMiner v1.5.3 (ethminer fork; CUDA 12.9 & OpenCL build; NOTES: Please, see full changelog at https://github.com/firoorg/firominer/releases)
+
 ##### 0.6-231@261002 2026-10-02
-*   OneZeroMiner v1.7.7 (Added support for Blackwell and Hopper: 50xx series, H100/H200/H800, B200; Significant performance improvement for the previously supported generations; NOTES: This version need manual selection v2.17.6 in miner settings; Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
-*   PeakMiner v2.17.6rc1 (Improved `pearlhash` on Nvidia CMP 90HX which gains +2.6% hashrate and drops about power consuption by 19 W, also improved across the RTX 50xx and RTX PRO cards, from +0.5% to +1.5%; Improved Quantus mining on NVIDIA Tesla P100 which gains +21.3%; NOTES: This version need manual selection v2.17.6 in miner settings; Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   OneZeroMiner v1.7.7 (Added support `pearlhash` for Blackwell and Hopper: 50xx series, H100/H200/H800, B200; Significant performance improvement for the previously supported generations; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   PeakMiner v2.17.6rc1 (Improved `pearlhash` on Nvidia CMP 90HX which gains +2.6% hashrate and drops about power consumption by 19W, also improved across the RTX 50xx and RTX PRO cards, from +0.5% to +1.5%; Improved Quantus mining on NVIDIA Tesla P100 which gains +21.3%; NOTES: This version need manual selection v2.17.6 in miner settings; Please, see full changelog at https://github.com/peakminer/peakminer/releases)
 *   CPUminer-Opt-Rplant v6.0.19 (Add `rx/2b` algo RandomX v2 over the bitcoin header: CONN/ConnectCoin; Add `rx/arq` algo: PDC/Privacy Data Coin; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
 *   RGminer: Improved integration
 
