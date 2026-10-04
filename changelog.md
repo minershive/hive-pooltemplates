@@ -1,3 +1,8 @@
+##### 0.6-231@261004 2026-10-04
+*   PeakMiner v2.17.6 (Improved `quantus` hashrate on Tesla P100 by +21.3%; Improved `pearlhash` efficiency on CMP 90HX gains hashrate +2.6% and drops about 19W power consumption; Improved `pearlhash` hashrate on RTX 50xx and RTX PRO cards, from +0.5% to +1.5%; Fixed GPU utilization dropping on the H100, H200, B200 and B300; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   PearlFortune Miner v2.2.8 (Significantly improved mining performance across all supported GPU series; Drops support Kryptex Pool, only PearlFortune Pool supported; NOTES: Please, see full changelog at https://github.com/pearlfortune/pearl-miner/releases)
+*   DankMiner v1.5.5 (Add support Quantus mining; Warthog OpenCL backend and startup repair; Corrected Xelis GPU selection; NOTES: Please, see full changelog at https://github.com/DankMiner/DankMiner/releases)
+  
 ##### 0.6-231@261003 2026-10-03
 *   OneZeroMiner v1.7.8 (Added support for `quantus` algorithm on Nvidia GPUs Pascal and newer, dev fee ~2%; Minor `pearlhash` performance improvement for A100/CMP 170HX, dev fee ~2%; Added option `--intensity` for Quantus: comma separated list of values between 6 and 12, default is 8; NOTES: This version need manual selection v2.17.6 in miner settings; Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 *   PeakMiner v2.17.6rc2 (Fixed GPU utilization dropping on the H100, H200, B200 and B300; NOTES: This version need manual selection v2.17.6 in miner settings; Please, see full changelog at https://github.com/peakminer/peakminer/releases)
