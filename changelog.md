@@ -1,3 +1,7 @@
+##### 0.6-231@261005 2026-10-05
+*   PeakMiner v2.17.7 (Improved `quantus` on AMD Polaris by +3.2%, on the RX 470/RX 570/RX 580 GPUs; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   ForgeMiner v1.8.5 (Huge `pearlhash` improvements on Nvidia Turing 20-series GPUs: about +43% hashrate on an RTX 2080 Ti, and about +30% more hashrate per watt; Improved `pearlhash` on Nvidia Ampere 30 series GPUs: about +4% hashrate and +3% hashrate per watt; Reduced stale shares rate on `pearlhash`; Improved `quantus`: about +4% on the RTX 30-series, +2% on the RTX 40-series and +2.5% on the RTX 20-series; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
+
 ##### 0.6-231@261004 2026-10-04
 *   PeakMiner v2.17.6 (Improved `quantus` hashrate on Tesla P100 by +21.3%; Improved `pearlhash` efficiency on CMP 90HX gains hashrate +2.6% and drops about 19W power consumption; Improved `pearlhash` hashrate on RTX 50xx and RTX PRO cards, from +0.5% to +1.5%; Fixed GPU utilization dropping on the H100, H200, B200 and B300; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
 *   PearlFortune Miner v2.2.8 (Significantly improved mining performance across all supported GPU series; Drops support Kryptex Pool, only PearlFortune Pool supported; NOTES: Please, see full changelog at https://github.com/pearlfortune/pearl-miner/releases)
