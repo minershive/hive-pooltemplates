@@ -1,3 +1,12 @@
+##### 0.6-231@261010 2026-10-10
+*   ForgeMiner v1.8.6 ( Improvements `quantus` by using new kernels on every generation: about +11% on the RTX 20-series, +7% on the RTX 30-series, +8% on the RTX 40-series and +14% on the RTX 50-series, with hashrate per watt up by about the same; Improveemnts `pearlhash` for GTX 10-series about +55% hashrate and +34% hashrate per watt on a GTX 1080 Ti; CMP 40HX/50HX now mine the same tuned kernel as the RTX 20-series; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
+*   SRBMiner v3.7.5 (Improvements on algorithm `noid` for NVIDIA and AMD GPUs; Improvements on algorithm `quantus` for NVIDIA GPUs and some some AMD GPUs; Improvements on algorithm `pearlhash` for NVIDIA 2000 and 5000 series GPUs; Added support for NVIDIA SM80 (A100, CMP170HX) on algorithm `noid`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   PeakMiner v2.18.3 (Higher `quantus` hashrate, and a smaller gap between the hashrate the miner reports and pool hashrate; Higher `quantus` hashrate on NVIDIA Pascal, Volta, Turing families and A100/CMP170HX v2.18.2; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   OneZeroMiner v1.8.0 (Improved `pearlhash` by adding a new compact kernel `--kernel 2` for locked 810 memory clock for Ampere, Ada, and Blackwell cards, also performance improvement of the primary kernel mem 5001/7001/unlocked for all supported cards; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   WildRig v0.51.4 (Implemented power efficient kernel for `pearlhash` via parameter `--pearlhash-kernel 2`; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   NekoMiner v0.14.60 (Equihash 192/7: minor hashrate improvement on Pascal and Turing; NOTES: Please, see full changelog at https://github.com/nr800/nekominer)
+*   Suprminer v1.9.30 (NOID is faster on RTX 50-, 40- and 30-series GPUs. Every other algorithm and GPU is unchanged; NOTES: Please, see full changelog at https://github.com/ocminer/suprminer/releases)   
+
 ##### 0.6-231@261008 2026-10-08
 *   SRBMiner v3.7.3 (New experimental NVIDIA `pearlhash` kernels are now the DEFAULT for Ampere, Ada and Blackwell - kernels are significantly more efficient and need new OC settings, e.g., memory clock can now be locked at 810MHz; Improvements on algorithm `pearlhash` for AMD GPUs; Improvements on algorithm `quantus` for NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   PeakMiner v2.18.1 (Fixed Quantus for AMD Polaris RX 470/RX 480/RX 570/RX 580 on older amdgpu-pro 20.x runtime AMD OpenCL drivers; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
@@ -64,7 +73,7 @@
 *   BzMiner v100.40 (Big Nvidia & AMD Pearl optimizations; Further `randomx` optimizations; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
 
 ##### 0.6-231@260925-2 2026-09-25
-*   WildRig v0.51.3 (Improved `pearlhash` power efficiency up to 10% across NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
+*   WildRig v0.51.3 (Improved `pearlhash` power efficiency up to 10% across NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
 
 ##### 0.6-231@260925 2026-09-25
 *   RGMiner v1.0.9b (Hashrate increased on `Quantus` mining by 5% on Turing, 3% on Ampere, 1.3% on Ada and 1.8% on Blackwell; Add Unlocker v3 for CMP 170HX : four more SM blocks are unlocked; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer/releases)
