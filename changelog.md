@@ -1,3 +1,8 @@
+##### 0.6-231@261011 2026-10-11
+*   RGMiner v1.1.3b (Improved `Pearl` mining efficiency on RTX 30/40/50 series and CMP 70HX/90HX; Improved `Quantus` mining efficiency on Turing and newer, depending on GPU family; Improved `Nockchain` mining efficiency on Turing and newer GPUs, depending on GPU family; NOTES: Please, see full changelog at https://github.com/Printscan/rgminer/releases)
+*   OneZeroMiner v1.8.1 (`Quantus` performance improvement ~3%; Bug fixes; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   Suprminer v1.9.31 (Adds `xnt` algorithm for GPU mining XNT / Neptune Privacy; NOTES: Please, see full changelog at https://github.com/ocminer/suprminer/releases)
+
 ##### 0.6-231@261010 2026-10-10
 *   ForgeMiner v1.8.6 ( Improvements `quantus` by using new kernels on every generation: about +11% on the RTX 20-series, +7% on the RTX 30-series, +8% on the RTX 40-series and +14% on the RTX 50-series, with hashrate per watt up by about the same; Improveemnts `pearlhash` for GTX 10-series about +55% hashrate and +34% hashrate per watt on a GTX 1080 Ti; CMP 40HX/50HX now mine the same tuned kernel as the RTX 20-series; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
 *   SRBMiner v3.7.5 (Improvements on algorithm `noid` for NVIDIA and AMD GPUs; Improvements on algorithm `quantus` for NVIDIA GPUs and some some AMD GPUs; Improvements on algorithm `pearlhash` for NVIDIA 2000 and 5000 series GPUs; Added support for NVIDIA SM80 (A100, CMP170HX) on algorithm `noid`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
