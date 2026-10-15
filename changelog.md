@@ -1,3 +1,8 @@
+##### 0.6-231@261015 2026-10-15
+*   PeakMiner v2.19.1 (Fixed hashrate drop on Quantus; Fixed hashrate drop and stability improvements on Pearl; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   NekoMiner v0.15.0 (Added `cmfd` algorithm, the model ~6.4G is downloaded on first start; NOTES: Please, see full changelog at https://github.com/nr800/nekominer)
+*   CPUminer-Opt-Rplant v6.0.23 (Add `randomgnr` algo for mining GNR/Genoryn; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
+
 ##### 0.6-231@261014 2026-10-14
 *   ForgeMiner v1.8.8 (Improved Pearl mining efficiency with new kernels for RTX 30/40/50 and the CMP 70HX/90HX; Improved Quantus mining efficiency for the RTX 30/40; Improved NOID mining efficiency for the RTX 30/40/50; Reduced memory usage on Pearl mining; Bug fixes; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
 *   PeakMiner v2.19.0 (Higher hashrate and better efficiency for Compute Substrate/CSD,  Midstate/MDS and ParanO(1)d/NOID; Reduced power usage on Pearl mining by locking the memory clock at 810 MHz is now supported on RTX 30xx/40xx/50xx; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
