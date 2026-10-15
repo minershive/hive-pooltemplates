@@ -1,0 +1,251 @@
+[
+    {
+        "pool": {
+            "name": "VEIN Pool",
+            "url": "https://veinpool.fr",
+            "fee": 1,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "ERG",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3032"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_autolykos2"
+        }
+    },
+    {
+        "coin": "QUAN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3040"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_quantus"
+        }
+    },
+    {
+        "coin": "FIRO",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3060"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_firopow"
+        }
+    },
+    {
+        "coin": "RVN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3080"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "XNA",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3130"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "SATOX",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3140"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "NEOX",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3160"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "GAEL",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3240"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "ZANO",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3170"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_progpow_zano"
+        }
+    },
+    {
+        "coin": "EPIC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3150"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "progpow_epic",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "QTC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3210"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_qhash"
+        }
+    },
+    {
+        "coin": "YEC",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3230"
+                ]
+            }
+        ],
+        "miners": {
+            "miniz": {
+                "algo": "192,7",
+                "pass": "x",
+                "url": "%URL%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            },
+            "gminer": {
+                "algo": "192_7",
+                "pass": "x",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--pers ZcashPoW"
+            }
+        }
+    },
+    {
+        "coin": "XEL",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3120"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_xelishashv3"
+        }
+    },
+    {
+        "coin": "BEAM",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3360"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_beamhash"
+        }
+    },
+    {
+        "coin": "GRIN",
+        "servers": [
+            {
+                "geo": "Europe",
+                "urls": [
+                    "veinpool.fr:3380"
+                ]
+            }
+        ],
+        "miners": {
+            "gminer": {
+                "algo": "grin32",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "lolminer": {
+                "algo": "GRIN-C32",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    }
+]
