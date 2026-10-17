@@ -1,3 +1,9 @@
+##### 0.6-231@261017 2026-10-17
+*   WildRig v0.51.5 (Improved `pearlhash` up to 5% for NVIDIA 3000 and 4000 series GPUSs by locking memory clocks at 810Mhz for maximum performance; Slightly better `--pearlhash-kernel 2` for NVIDIA 5000 series GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   OneZeroMiner v1.8.2 (Added support `poseidon2b` for NOID mining on all Nvidia GPUs, dev fee 1%; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   NekoMiner v0.16.3 (Added `vela` algorithm, the model ~1.2 GB is downloaded on first start; NOTES: Please, see full changelog at https://github.com/nr800/nekominer)
+*   Suprminer v1.9.32 (Improves `noid` mining performance across supported NVIDIA GPUs; NOTES: Please, see full changelog at https://github.com/ocminer/suprminer/releases)
+
 ##### 0.6-231@261015 2026-10-15
 *   PeakMiner v2.19.1 (Fixed hashrate drop on Quantus; Fixed hashrate drop and stability improvements on Pearl; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
 *   NekoMiner v0.15.0 (Added `cmfd` algorithm, the model ~6.4G is downloaded on first start; NOTES: Please, see full changelog at https://github.com/nr800/nekominer)
