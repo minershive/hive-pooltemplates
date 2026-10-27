@@ -1,3 +1,12 @@
+##### 0.6-231@261026 2026-10-26
+*   PeakMiner v2.20.2 (Higher hashrate on Pearl mining on RTX 20xx and newer Nvidia GPUs; Higher hashrate on Quantus mining on RTX 20xx Nvidia GPUs; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   OneZeroMiner v1.8.4 (Efficiency `pearlhash` improvement for 30xx, 40xx, and 50xx series by 2%; Minor performance `pearlhash` improvement of both kernel 1 and kernel 2 for Turing - 20xx series and CMP 50HX; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   WildRig v0.51.8 (Minor `pearlhash` improvements to NVIDIA RTX 3000, 4000 and 5000 series GPUs; Improved `pearlhash` for NVIDIA A100/CMP 170HX and AMD RDNA2/RDNA3; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   NekoMiner v0.19.3 (Improved `poscan` hashrate; vs 0.18.0: Added `sha3_256` algorithm for mining RigorChain; Improved `quantus` hashrate on Nvidia Turing and newer; Improved `btxv4` hashrate on Nvidia Ada and Blackwell; NOTES: Please, see full changelog at https://github.com/nr800/nekominer)
+*   PearlFortune Miner v2.3.5 (Improved stability; NOTES: Please, see full changelog at https://github.com/pearlfortune/pearl-miner/releases)
+*   BzMiner v100.52 (Fixed `pearl` hashrate for Nvidia Blackwell; Optimized `quantus` on Nvidia Blackwell; Optimized `pearl` + `c29` for AMD RDNA 1-4; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+*   DankMiner v1.5.5a (Improved Quantus mining on Nvidia Ada; NOTES: Please, see full changelog at https://github.com/DankMiner/DankMiner/releases)
+
 ##### 0.6-231@261023 2026-10-23
 *   ForgeMiner v1.8.9 (Add support for AMD Radeon 5000+ series and newer for every coin supported by miner; Improved Quantus and NOID on NVIDIA; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
 *   PeakMiner v2.20.0 (Higher `pearlhash` hashrate on RTX 50xx; Bug fixes for `pearlhash` on RTX 30xx and RTX 40xx; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
