@@ -1,3 +1,8 @@
+##### 0.6-231@261028 2026-10-28
+*   ForgeMiner v1.9.0 (Add support `ironfish` for Nvidia and AMD GPUs; Improved efficiency on `pearhash` for RTX 30/40 series, less power draw ~7%; Fixed `pearlhash` on GTX 16 series; Many other improvemnets and bug fixes; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
+*   SRBMiner v3.8.1 (New feature: efficiency fine-tuner for your existing OC; Improvements on algorithm `quantus` for NVIDIA GPUs; Improvements on algorithm `noid` for AMD GPUs; Improvements on algorithm `pearlhash` for NVIDIA A100/CMP170HX; Minor improvements on algorithm `pearlhash` for NVIDIA 20xx and newer GPUs; Added parameters `--gpu-power-tuner` and `--gpu-power-tuner-loss`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   PeakMiner v2.20.3 (Fixed a crash on RTX 20xx while Pearl and had to be restarted; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+
 ##### 0.6-231@261026 2026-10-26
 *   PeakMiner v2.20.2 (Higher hashrate on Pearl mining on RTX 20xx and newer Nvidia GPUs; Higher hashrate on Quantus mining on RTX 20xx Nvidia GPUs; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
 *   OneZeroMiner v1.8.4 (Efficiency `pearlhash` improvement for 30xx, 40xx, and 50xx series by 2%; Minor performance `pearlhash` improvement of both kernel 1 and kernel 2 for Turing - 20xx series and CMP 50HX; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
