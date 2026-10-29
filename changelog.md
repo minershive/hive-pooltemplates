@@ -1,3 +1,7 @@
+##### 0.6-231@261029 2026-10-29
+*   SRBMiner v3.8.2 (Improvements to efficiency fine-tuner feature; Minor improvements on algorithm `pearlhash` for NVIDIA 5000 series GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   PearlFortune Miner v2.3.6 (Improved mining performance across all supported GPU series; NOTES: Please, see full changelog at https://github.com/pearlfortune/pearl-miner/releases)
+
 ##### 0.6-231@261028 2026-10-28
 *   ForgeMiner v1.9.0 (Add support `ironfish` for Nvidia and AMD GPUs; Improved efficiency on `pearhash` for RTX 30/40 series, less power draw ~7%; Fixed `pearlhash` on GTX 16 series; Many other improvemnets and bug fixes; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
 *   SRBMiner v3.8.1 (New feature: efficiency fine-tuner for your existing OC; Improvements on algorithm `quantus` for NVIDIA GPUs; Improvements on algorithm `noid` for AMD GPUs; Improvements on algorithm `pearlhash` for NVIDIA A100/CMP170HX; Minor improvements on algorithm `pearlhash` for NVIDIA 20xx and newer GPUs; Added parameters `--gpu-power-tuner` and `--gpu-power-tuner-loss`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
