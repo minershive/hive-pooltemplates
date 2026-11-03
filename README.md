@@ -93,6 +93,7 @@ Available miners:
 - xmrig-nvidia - XMRig (NVidia cryptonight variants miner  with forks fruityminer, hycon)
 - xpmclient - XPMclient (XPM/Primecoin miner by eXtremal-ik7 for OpenCL and CUDA)
 - zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
+- arcminer - KawPoW, MeowPoW, Etchash, Autolykos2, and Alephium (NVIDIA CUDA; experimental, single algorithm only)
 - custom - Custom miner package
 
 ## Other
