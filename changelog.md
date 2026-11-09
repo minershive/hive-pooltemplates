@@ -1,3 +1,15 @@
+##### 0.6-231@261108 2026-11-08
+*   ForgeMiner v1.9.2 (Improved Quantus on the NVIDIA RTX 30/40/50 series; Fixed support AMD RX 7000 series cards; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   SRBMiner-Multi v3.8.6 (Improved efficiency on algorithm `pearlhash` for NVIDIA 3000, 4000 and 5000 GPUs; Improvements on algorithm `quantus` for NVIDIA 2000 and 5000 series GPUs; Improvements on algorithm `quantus` for AMD GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   OneZeroMiner v1.8.5 (Added experimental support for locking memory clock of CMP 30/40/50/70/90 HX at 5000, 810, and 405 MHz which brings 20..50% more efficiency to cmp cards on all core algos; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
+*   PeakMiner v2.20.7 (Improved Pearl and Quantus hashrate and better hashrate per watt on GTX 16, RTX 20, RTX 30 and RTX 40 series cards when the memory clock is locked at 405 or 810 MHz with `--gpu-lmem 405` or `--gpu-lmem 810`; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   WildRig-Multi v0.51.9 (Improved network backend for `pearlhash`, less stales now; Improved `pearlhash` efficiency for NVIDIA RTX 2000, 3000, 4000 and 5000 series GPUs; Improvements on algorithm `quantus` for AMD GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   PearlFortune v2.3.8 (Performance ~2–3% optimization for the 20 series; NOTES: Please, see full changelog at https://github.com/pearlfortune/pearl-miner/releases)
+*   BzMiner v100.70 (Improved pearl hashrate/efficiency on Nvidia Ampere, Ada, Blackwell and AMD RDNA4; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
+*   cpuMiner-opt-Rplant v6.0.26 (Add `rx/opca` algo for mining OPCA/Opacra; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
+*   Suprminer v1.9.35 (Various NOID/TAPE improvements & fixes; NOTES: Please, see full changelog at https://github.com/ocminer/suprminer/releases)
+*   TeamBlackMiner v2.45 (Added NVIDIA and AMD support for `pearlhash`; Added NVIDIA and AMD support for `autolykos2`; Fixed GPU stats for older AMD cards; NOTES: Please, see full changelog at https://github.com/sp-hash/TeamBlackMiner/releases/tag/v2.27)
+
 ##### 0.6-231@261029 2026-10-29
 *   SRBMiner v3.8.2 (Improvements to efficiency fine-tuner feature; Minor improvements on algorithm `pearlhash` for NVIDIA 5000 series GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   PearlFortune Miner v2.3.6 (Improved mining performance across all supported GPU series; NOTES: Please, see full changelog at https://github.com/pearlfortune/pearl-miner/releases)
@@ -26,7 +38,7 @@
 *   NekoMiner v0.18.0 (Add support `equihash 144/5`; Add initial support for `quantus`; Improved `vela`; NOTES: Please, see full changelog at https://github.com/nr800/nekominer)
 *   BzMiner v100.50 (Improved `pearlhash` on Nvidia 30 and newer GPUs; Improved `quantus` Nvidia 30 and newer GPUs;  Improvements on c29 cpu usage; NOTES: Please, see full changelog at https://github.com/bzminer/bzminer/releases)
 *   PearlFortune Miner v2.3.4 (Significantly optimized system RAM and VRAM usage; Significantly improved mining performance for RTX 20 Series and CMP 40HX / 50HX GPUs; NOTES: Please, see full changelog at https://github.com/pearlfortune/pearl-miner/releases)
-*   CPUminer-Opt-Rplant v6.0.24a (; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
+*   CPUminer-Opt-Rplant v6.0.24a (Add algo `verushash` support: VerusHash v2.2; NOTES: Please, see full changelog at https://github.com/rplant-pool/cpuminer-rplant/releases)
 
 ##### 0.6-231@261017 2026-10-17
 *   WildRig v0.51.5 (Improved `pearlhash` up to 5% for NVIDIA 3000 and 4000 series GPUs by locking memory clocks at 810Mhz for maximum performance; Slightly better `--pearlhash-kernel 2` for NVIDIA 5000 series GPUs; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
