@@ -1,3 +1,7 @@
+##### 0.6-231@261109 2026-11-09
+*   WildRig-Multi v0.52.1 (Improved `pearlhash` power efficiency up to 8% for NVIDIA GPUs; Iimproved pearlhash for AMD gpu's; Improvements on algorithm `quantus` for AMD GPUs; ; NOTES: Please, see full changelog at https://github.com/andru-kun/wildrig-multi/releases)
+*   PearlFortune v2.3.9 (Performance optimization for the 30/40/50 / Pro series; Supports multiple servers and SOCKS5 proxies; NOTES: Please, see full changelog at https://github.com/pearlfortune/pearl-miner/releases)
+ 
 ##### 0.6-231@261108 2026-11-08
 *   ForgeMiner v1.9.2 (Improved Quantus on the NVIDIA RTX 30/40/50 series; Fixed support AMD RX 7000 series cards; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   SRBMiner-Multi v3.8.6 (Improved efficiency on algorithm `pearlhash` for NVIDIA 3000, 4000 and 5000 GPUs; Improvements on algorithm `quantus` for NVIDIA 2000 and 5000 series GPUs; Improvements on algorithm `quantus` for AMD GPUs; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
