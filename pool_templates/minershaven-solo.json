@@ -1,0 +1,538 @@
+[
+    {
+        "pool": {
+            "name": "Miners Haven SOLO",
+            "url": "https://theminershaven.org",
+            "fee": 1,
+            "type": "SOLO"
+        }
+    },
+    {
+        "coin": "LTC",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3031"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3032"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3031"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3032"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "DOGE",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3051"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3052"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3051"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3052"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "DGB-Scrypt",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3291"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3292"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3291"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3292"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "DGB-sha256",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3271"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3272"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3271"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3272"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "DGB-Skein",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3311"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3312"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3311"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3312"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "stratum+tcp://%URL%"
+            },
+            "ccminer": {
+                "ccalgo": "skein",
+                "ccpass": "x",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "algo": "skein",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "stratum+tcp://%URL%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+    {
+        "coin": "DGB-Qubit",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3331"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3332"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3331"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3332"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "stratum+tcp://%URL%"
+            },
+            "ccminer": {
+                "ccalgo": "qubit",
+                "ccpass": "x",
+                "ccurl": "stratum+tcp://%URL%",
+                "ccuser": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "algo": "qubitcoin",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "url": "stratum+tcp://%URL%",
+                "user_config": "\"worksize\": \"64\"\n\"gpu-threads\": \"2\"\n\"intensity\": \"21\""
+            }
+        }
+    },
+    {
+        "coin": "KAS",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3211"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3212"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3211"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3212"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kaspa",
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "QUAN",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3111"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3112"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3111"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3112"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_quantus"
+        }
+    },
+    {
+        "coin": "PRL",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3011"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3012"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3011"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3012"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_pearlhash"
+        }
+    },
+    {
+        "coin": "ZANO",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3071"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3072"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3071"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3072"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_progpow_zano"
+        }
+    },
+    {
+        "coin": "FIRO",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3131"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3132"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3131"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3132"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_firopow"
+        }
+    },
+    {
+        "coin": "NEOX",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3091"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3092"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3091"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3092"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "ABRS",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3171"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3172"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3171"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3172"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+    },
+    {
+        "coin": "XMR",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3151"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3152"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3151"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3152"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_randomx"
+        }
+    },
+    {
+        "coin": "QRL",
+        "servers": [
+            {
+                "geo": "EU",
+                "urls": [
+                    "theminershaven.org:3191"
+                ]
+            },
+            {
+                "geo": "EU HiDIFF / Rentals",
+                "urls": [
+                    "theminershaven.org:3192"
+                ]
+            },
+            {
+                "geo": "US",
+                "urls": [
+                    "us.theminershaven.org:3191"
+                ]
+            },
+            {
+                "geo": "US HiDIFF / Rentals",
+                "urls": [
+                    "us.theminershaven.org:3192"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_randomx_worker"
+        }
+    }
+]
