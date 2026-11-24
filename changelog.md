@@ -1,5 +1,13 @@
+##### 0.6-231@261123 2026-11-23
+*   ForgeMiner v2.1.2 (Add new coin: NEB; Improved hashrate on PROX/Proxima mining up to +26 % on the RTX 20, 30 and 40 series; Add support PROX/Proxima mining on the AMD RX 400/500 and RX Vega 56/64; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
+*   SRBMiner-Multi v3.9.0 (Improvements on algorithm `quantus` for NVIDIA GPUs; Fine tuned many NVIDIA GPUs on algorithm `pearlhash`; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   Suprminer v1.9.57 (Prepares for Pearl's FP8 upgrade; Faster NEB mining; NOTES: Please, see full changelog at https://github.com/ocminer/suprminer/releases)
+*   PeakMiner v2.21.0rc2 (Add new coin for mining `xtmc29` XTM on `cuckaroo 29`; NOTES: Need manual version selection on miner settings; Please, see full changelog at https://github.com/peakminer/peakminer/releases)
+*   Fixed NekoMiner v0.21.0 package
+*   Fixed OneZeroMiner stats
+   
 ##### 0.6-231@261121 2026-11-21
-*   ForgeMiner v2.1.1 (Changes vs v1.9.2: Add new coins: PROX/Proxima, Zano, CSD/Compute Substrate; Improved mining performance on most algorithm; Improved Nvidia OC options; Add support Qubitcoin and Conflux on AMD GPUs; Lowered devfee on Pearl, Quantus and NOID to 1%; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
+*   ForgeMiner v2.1.1 (Changes vs v1.9.2: Add new coins: PROX/Proxima, Zano, CSD/Compute Substrate; Improved mining performance on most algorithm; Improved Nvidia OC options; Add support Qubitcoin and Conflux on AMD GPUs; Lowered devfee on Pearl, Quantus and NOID to 1%; NOTES: Please, see full changelog at https://github.com/0xHashRaptor/ForgeMiner/releases)
 *   SRBMiner-Multi v3.8.9 (Changes vs v3.8.6: Efficiency improvements on algorithm `pearlhash` for NVIDIA 3000..5000 series GPUs; Improved fine-tuner feature; Lowered to 0% devfee for algorithm `fishhash`; Bug fixes; NOTES: Please, see full changelog at https://github.com/doktor83/SRBMiner-Multi/releases)
 *   OneZeroMiner v1.8.6 (Efficiency `pearlhash` improvement for 30xx, 40xx, and 50xx series; Performance `pearlhash` improvement for 20xx and CMP 40/50HX; NOTES: Please, see full changelog at https://github.com/OneZeroMiner/onezerominer/releases)
 *   PeakMiner v2.20.9 (Hashrate efficiency on `pearlhash` improved on RTX 20/30/40/50 series cards; Higher Quantus hashrate on the whole RTX line; NOTES: Please, see full changelog at https://github.com/peakminer/peakminer/releases)
