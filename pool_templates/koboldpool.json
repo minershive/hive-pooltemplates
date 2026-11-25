@@ -1,0 +1,202 @@
+[
+    {
+        "pool": {
+            "name": "Kobold Pool",
+            "url": "https://koboldpool.com",
+            "fee": 0,
+            "type": "PPLNS"
+        }
+    },
+    {
+        "coin": "QUAN",
+        "servers": [
+            {
+                "geo": "Europe (Frankfurt)",
+                "urls": [
+                    "quan.koboldpool.com:3640"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_quantus",
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "quantus",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "peakminer": {
+                "url": "%URL%",
+                "algo": "quantus",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "NEB",
+        "servers": [
+            {
+                "geo": "Europe (Frankfurt)",
+                "urls": [
+                    "neb.koboldpool.com:3460"
+                ]
+            }
+        ],
+        "miners": {
+            "custom": {
+                "url": "%URL%",
+                "algo": "nebhash",
+                "pass": "x",
+                "miner": "ffgn-hive",
+                "template": "%WAL%.%WORKER_NAME%",
+                "install_url": "https://github.com/pepsykolya/FreeForGemNeb/releases/download/v1.0.14/ffgn-hive-1.0.14.tar.gz"
+            }
+        }
+    },
+    {
+        "coin": "EPIC-progpow",
+        "note": "Wallet: your epicbox address (es...). If your wallet uses another epicbox server, add it: es...@epicbox.stackwallet.com",
+        "servers": [
+            {
+                "geo": "Europe (Frankfurt)",
+                "urls": [
+                    "epic.koboldpool.com:3560"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "progpow_epic",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "EPIC-randomx",
+        "note": "Wallet: your epicbox address (es...). If your wallet uses another epicbox server, add it: es...@epicbox.stackwallet.com",
+        "servers": [
+            {
+                "geo": "Europe (Frankfurt)",
+                "urls": [
+                    "epic.koboldpool.com:3560"
+                ]
+            }
+        ],
+        "miners": {
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "randomepic",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XNA",
+        "servers": [
+            {
+                "geo": "Europe (Frankfurt)",
+                "urls": [
+                    "xna.koboldpool.com:3660"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow",
+            "rigel": {
+                "url": "%URL%",
+                "algo": "kawpow",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--coin xna"
+            }
+        }
+    },
+    {
+        "coin": "ABEL",
+        "note": "GPU (ABEL-ETHash), needs 8 GB of GPU memory or more",
+        "servers": [
+            {
+                "geo": "Europe (Frankfurt)",
+                "urls": [
+                    "abelgpu.koboldpool.com:3720"
+                ]
+            }
+        ],
+        "miners": {
+            "rigel": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "abelian",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "teamredminer": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "abel",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "ZANO",
+        "servers": [
+            {
+                "geo": "Europe (Frankfurt)",
+                "urls": [
+                    "zano.koboldpool.com:3700"
+                ]
+            }
+        ],
+        "miners": {
+            "rigel": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "progpowz",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "algo": "progpow_zano",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "t-rex": {
+                "url": "%URL%",
+                "algo": "progpowz",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "wildrig-multi": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "progpowz",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "BEAM",
+        "servers": [
+            {
+                "geo": "Europe (Frankfurt)",
+                "urls": [
+                    "beam.koboldpool.com:3680"
+                ]
+            }
+        ],
+        "miners": {
+            "lolminer": {
+                "algo": "BEAM-III",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
+                "user_config": "--tls off"
+            }
+        }
+    }
+]
