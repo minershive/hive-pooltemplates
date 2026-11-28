@@ -42,7 +42,7 @@ Available miners:
 - cryptodredge - multi algo CUDA miner (NVidia)
 - damominer - multi algo CUDA miner (NVidia)
 - danilaminer - TON (sha256-ton) miner (AMD/Nvidia)
-- dankminer - capstash/xelis/warthog/xmr/crb miner (CPU, AMD/Nvidia GPUs)
+- dankminer - capstash/xelis/warthog/quantus/xmr miner (CPU, AMD/Nvidia GPUs; Xelis requires Nvidia CUDA)
 - dero-stratum-miner - AstroBWTv3 miner for CPU
 - dstm - legacy 0.3.4b and new zhash
 - eggminergpu - CUDA/OpenCL miner for BIS - Bismuth coin on Eggpool (AMD/Nvidia)
@@ -67,7 +67,7 @@ Available miners:
 - noncerpro-opencl - OpenCL miner for NIM - Nimiq coin (AMD)
 - noncerpro-kadena - CUDA/OpenCL miner for KDA - Kadena (Nvidia/AMD)
 - nq-miner - Nimiq GPU OpenCL/CUDA miner (Nvidia/AMD)
-- onezerominer - cryptix/dynex/qhash/pearl/xelis miner (AMD/Nvidia)
+- onezerominer - cryptix/dynex/qhash/quantus/pearl/xelis miner (AMD/Nvidia)
 - optiminer - equihash variants OpenCL miner (AMD/Nvidia)
 - phoenixminer - ethash miner (AMD/NVidia)
 - rgminer - pearlhash/exfer/memhash CUDA miner (Nvidia)
@@ -94,6 +94,14 @@ Available miners:
 - xpmclient - XPMclient (XPM/Primecoin miner by eXtremal-ik7 for OpenCL and CUDA)
 - zjazz-cuda - CUDA bitcash/cuckoo/x22i miner (NVidia)
 - custom - Custom miner package
+
+### DankMiner
+
+The definitions target [DankMiner v1.5.5](https://github.com/DankMiner/DankMiner/releases/tag/DankMinerV1.5.5). Install its [HiveOS custom package](https://github.com/DankMiner/DankMiner/releases/download/DankMinerV1.5.5/dankminer-1.5.5.tar.gz) if the miner is not available in your HiveOS installation. Use miner name `dankminer`, the selected algorithm, `%WAL%.%WORKER_NAME%`, the selected TCP pool URL, and password `x`.
+
+For Quantus, select coin `QUAN` and algorithm `quantus`. The 1Miner PPLNS and SOLO templates use TCP ports `19835` and `19837`; ports `19834` and `19836` use QUIC and are not interchangeable with these Stratum URLs. Difficulty is negotiated by the pool; the template does not request a fixed difficulty.
+
+CRB/Cereblix was removed in v1.5.5. A GPU algorithm can run alongside Monero using `--xmr-wallet`, `--xmr-pool`, and `--xmr-threads` in the custom miner's extra configuration arguments. The package does not consume HiveOS's native dual-mining fields. Coin uses a synced local node and `--coin-wallet`/`--coin-rpc` options; it is not a 1Miner pool template. See [DankMiner's HiveOS instructions](https://github.com/DankMiner/DankMiner#hiveos) for configuration and hardware requirements.
 
 ## Other
 - fah - Folding@Home client
@@ -262,7 +270,7 @@ miners_progpow_zano | progpow_zano |  |
 miners_pyrinhash | pyrinhash | HeavyHash variant Pyrin| 
 miners_pyrinhashv2 | pyrinhashv2 | Pyrin post-HF v2| 
 miners_qhash | qhash | QTC (Qubit coin)| 
-miners_quantus | quantus | Quantus Network (QUANTUS) | 
+miners_quantus | quantus | Quantus Network (QUAN); QTC is reserved for Qubit in this registry |
 miners_radiant | radiant |  | 
 miners_radiant_wpass | radiant | worker name in password |
 miners_randomhash2_with_email | randomhash2_with_email | Nanopool format "WALLET.WORKER/EMAIL" | 
@@ -271,6 +279,7 @@ miners_randomx_plus | randomx_plus | xmrpool format "wallet+worker" |
 miners_randomx_slash_email | randomx_slash_email | Nanopool format "WALLET.WORKER/EMAIL" | 
 miners_randomx_worker | randomx_worker | worker name in password | 
 miners_randomx_xdag | randomx_xdag |  | 
+miners_sha256 | sha256 | ASICs and SHA-256d CPU/GPU miners |
 miners_sha3d | sha3d |  | 
 miners_ubqhash | ubqhash |  | 
 miners_verthash | verthash |  | 
